@@ -1,0 +1,35 @@
+{
+    "$id": "https://ns.adobe.com/xdm/context/experienceevent-web",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "ExperienceEvent Web Details",
+    "type": "object",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "meta:intendedToExtend": [
+        "https://ns.adobe.com/xdm/context/experienceevent"
+    ],
+    "description": "The web details for ExperienceEvents.",
+    "definitions": {
+        "experienceevent-web": {
+            "properties": {
+                "web": {
+                    "title": "Web",
+                    "$ref": "https://ns.adobe.com/xdm/context/webinfo",
+                    "description": "The information related to web page and link of the ExperienceEvent.",
+                    "meta:xdmField": "xdm:web"
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+        },
+        {
+            "$ref": "#/definitions/experienceevent-web"
+        }
+    ],
+    "meta:status": "stabilizing",
+    "meta:xdmId": "https://ns.adobe.com/xdm/context/experienceevent-web",
+    "meta:altId": "_xdm.context.experienceevent-web"
+}

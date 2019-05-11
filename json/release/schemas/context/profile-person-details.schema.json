@@ -1,0 +1,35 @@
+{
+    "$id": "https://ns.adobe.com/xdm/context/profile-person-details",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Profile Person Details",
+    "type": "object",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "meta:intendedToExtend": [
+        "https://ns.adobe.com/xdm/context/profile"
+    ],
+    "description": "Profile person details including naming, gender etc.",
+    "definitions": {
+        "profile-person-details": {
+            "properties": {
+                "person": {
+                    "title": "Person",
+                    "$ref": "https://ns.adobe.com/xdm/context/person",
+                    "description": "An individual actor, contact, or owner.",
+                    "meta:xdmField": "xdm:person"
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+        },
+        {
+            "$ref": "#/definitions/profile-person-details"
+        }
+    ],
+    "meta:status": "experimental",
+    "meta:xdmId": "https://ns.adobe.com/xdm/context/profile-person-details",
+    "meta:altId": "_xdm.context.profile-person-details"
+}

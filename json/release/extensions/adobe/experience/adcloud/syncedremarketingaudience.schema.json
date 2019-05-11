@@ -1,0 +1,48 @@
+{
+    "$id": "https://ns.adobe.com/experience/adcloud/syncedremarketingaudience",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Synchronized Remarketing Audiences",
+    "type": "object",
+    "description": "Details about AdCloud Search segments used for retargeting surfers on a Search/Marketing platform.",
+    "definitions": {
+        "syncedremarketingaudience": {
+            "properties": {
+                "segmentID": {
+                    "title": "Segment ID",
+                    "type": "string",
+                    "description": "Id for the segment that would be used to retarget the surfer.",
+                    "meta:xdmField": "xdm:segmentID"
+                },
+                "type": {
+                    "title": "Segment/Audience type",
+                    "type": "integer",
+                    "description": "Type of segment, eg. AAM.",
+                    "meta:xdmField": "xdm:type"
+                },
+                "timestamp": {
+                    "title": "Timestamp",
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "The timestamp when the retargeting entity, e.g. aam-segment, was sycned to the marketing platform.",
+                    "meta:xdmField": "xdm:timestamp"
+                },
+                "partnerDetails": {
+                    "title": "Marketing Partner Details",
+                    "type": "array",
+                    "items": {
+                        "$ref": "https://ns.adobe.com/experience/adcloud/partnerdata"
+                    },
+                    "meta:xdmField": "xdm:partnerDetails"
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/syncedremarketingaudience"
+        }
+    ],
+    "meta:status": "experimental",
+    "meta:xdmId": "https://ns.adobe.com/experience/adcloud/syncedremarketingaudience",
+    "meta:altId": "_experience.adcloud.syncedremarketingaudience"
+}

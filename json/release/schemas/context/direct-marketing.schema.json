@@ -1,0 +1,75 @@
+{
+    "$id": "https://ns.adobe.com/xdm/context/direct-marketing",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Direct Marketing",
+    "type": "object",
+    "description": "The events and properties related to direct/outbound marketing such as email, direct mail, texts and in-app notifications.",
+    "meta:extensible": true,
+    "definitions": {
+        "direct-marketing": {
+            "properties": {
+                "bounces": {
+                    "$ref": "https://ns.adobe.com/xdm/data/measure",
+                    "description": "Asynchronous message(s) that have been returned as temporarily undeliverable the receiving system.",
+                    "meta:xdmField": "xdm:bounces"
+                },
+                "clicks": {
+                    "$ref": "https://ns.adobe.com/xdm/data/measure",
+                    "description": "Click(s) actions on a message.",
+                    "meta:xdmField": "xdm:clicks"
+                },
+                "mirrorPages": {
+                    "$ref": "https://ns.adobe.com/xdm/data/measure",
+                    "description": "Click on a link in a message to a web hosted mirror page.",
+                    "meta:xdmField": "xdm:mirrorPages"
+                },
+                "nonDeliverables": {
+                    "$ref": "https://ns.adobe.com/xdm/data/measure",
+                    "description": "Asynchronous message(s) failed to deliver in a way that indicates that no future delivery attempts will be successful to the address.",
+                    "meta:xdmField": "xdm:nonDeliverables"
+                },
+                "sends": {
+                    "$ref": "https://ns.adobe.com/xdm/data/measure",
+                    "description": "Asynchronous message(s) (email, SMS, MMS etc) have been dispatched to a person's account/address/device.",
+                    "meta:xdmField": "xdm:sends"
+                },
+                "userComplaints": {
+                    "$ref": "https://ns.adobe.com/xdm/data/measure",
+                    "description": "User complaint(s) have been received. This generally occurs when a recipient of a message reports it as spam.",
+                    "meta:xdmField": "xdm:userComplaints"
+                },
+                "opens": {
+                    "$ref": "https://ns.adobe.com/xdm/data/measure",
+                    "description": "The direct marketing message (email, SMS, Push Notifications etc) has been opened/swyped/touched by the recipient.",
+                    "meta:xdmField": "xdm:opens"
+                },
+                "unsubscriptions": {
+                    "$ref": "https://ns.adobe.com/xdm/data/measure",
+                    "description": "The recipient of the direct marketing message (email, newsletters, etc) has opted out from receiving them.",
+                    "meta:xdmField": "xdm:unsubscriptions"
+                },
+                "notSent": {
+                    "$ref": "https://ns.adobe.com/xdm/data/measure",
+                    "description": "Asynchronous message (email, SMS, MMS etc) was not dispatched due to cancellation or expiration of the marketing activity.",
+                    "meta:xdmField": "xdm:notSent"
+                },
+                "offerOpens": {
+                    "$ref": "https://ns.adobe.com/xdm/data/measure",
+                    "description": "Offer in a marketing message (email, SMS, Push Notifications etc) has been opened/swyped/touched/interacted with by the recipient.",
+                    "meta:xdmField": "xdm:offerOpens"
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+        },
+        {
+            "$ref": "#/definitions/direct-marketing"
+        }
+    ],
+    "meta:status": "stabilizing",
+    "meta:xdmId": "https://ns.adobe.com/xdm/context/direct-marketing",
+    "meta:altId": "_xdm.context.direct-marketing"
+}

@@ -1,0 +1,48 @@
+{
+    "$id": "https://ns.adobe.com/experience/decisioning/proposition-details",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "DecisionEvent List of Propositions",
+    "type": "object",
+    "meta:abstract": true,
+    "meta:extensible": true,
+    "meta:intendedToExtend": [
+        "https://ns.adobe.com/experience/decisioning/decisionevent"
+    ],
+    "description": "Decision Proposition is used to capture the outcome of a decisioning process.",
+    "definitions": {
+        "proposition-details-mixin": {
+            "properties": {
+                "_experience": {
+                    "type": "object",
+                    "properties": {
+                        "decisioning": {
+                            "type": "object",
+                            "properties": {
+                                "propositionDetails": {
+                                    "title": "Outputs and contexts of a single decision event.",
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "https://ns.adobe.com/experience/decisioning/proposition-detail"
+                                    },
+                                    "description": "Details about the results of the decision. An array providing the output of a single decision event, one proposition per activity parameter in the request.",
+                                    "meta:xdmField": "https://ns.adobe.com/experience/decisioning/propositionDetails"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+        },
+        {
+            "$ref": "#/definitions/proposition-details-mixin"
+        }
+    ],
+    "meta:status": "experimental",
+    "meta:xdmId": "https://ns.adobe.com/experience/decisioning/proposition-details",
+    "meta:altId": "_experience.decisioning.proposition-details"
+}

@@ -1,0 +1,36 @@
+{
+    "$id": "https://ns.adobe.com/xdm/context/directmarketing-phonenumber",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Direct Marketing Phone Number",
+    "type": "object",
+    "description": "Direct Marketing Phone Number.",
+    "definitions": {
+        "directmarketing-phonenumber": {
+            "properties": {
+                "errorCount": {
+                    "title": "Error Count",
+                    "type": "integer",
+                    "description": "Number of consecutive errors when calling this phone number.",
+                    "meta:xdmField": "xdm:errorCount"
+                },
+                "quality": {
+                    "title": "Quality",
+                    "type": "string",
+                    "description": "Quality rating.",
+                    "meta:xdmField": "xdm:quality"
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/directmarketing-phonenumber"
+        },
+        {
+            "$ref": "https://ns.adobe.com/xdm/context/phonenumber"
+        }
+    ],
+    "meta:status": "experimental",
+    "meta:xdmId": "https://ns.adobe.com/xdm/context/directmarketing-phonenumber",
+    "meta:altId": "_xdm.context.directmarketing-phonenumber"
+}

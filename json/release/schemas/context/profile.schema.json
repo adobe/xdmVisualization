@@ -1,0 +1,39 @@
+{
+    "$id": "https://ns.adobe.com/xdm/context/profile",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "XDM Profile",
+    "type": "object",
+    "auditable": true,
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "meta:extends": [
+        "https://ns.adobe.com/xdm/data/record",
+        "https://ns.adobe.com/xdm/context/identitymap"
+    ],
+    "description": "An XDM Profile forms a singular representation of the attributes and interests of both identified and partially-identified subjects. Less-identified profiles may contain only anonymous behavioral signals, such as browser cookies, while highly-identified profiles may contain detailed personal information such as name, date of birth, location, and email address. As a profile continues to grow, it becomes a robust repository of personal information, identification information, contact details, and communication preferences for an individual subject.",
+    "definitions": {
+        "profile": {
+            "properties": {}
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+        },
+        {
+            "$ref": "https://ns.adobe.com/xdm/common/auditable"
+        },
+        {
+            "$ref": "https://ns.adobe.com/xdm/context/identitymap"
+        },
+        {
+            "$ref": "https://ns.adobe.com/xdm/data/record"
+        },
+        {
+            "$ref": "#/definitions/profile"
+        }
+    ],
+    "meta:status": "experimental",
+    "meta:xdmId": "https://ns.adobe.com/xdm/context/profile",
+    "meta:altId": "_xdm.context.profile"
+}

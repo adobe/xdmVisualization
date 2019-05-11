@@ -1,0 +1,51 @@
+{
+    "$id": "https://ns.adobe.com/xdm/common/auditable",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Audit Trail",
+    "type": "object",
+    "meta:abstract": true,
+    "description": "Inclusion of this schema indicates that the data record is auditable, i.e. it can be determined when the record has last been modified and by whom.",
+    "definitions": {
+        "auditlog": {
+            "properties": {
+                "repositoryCreatedBy": {
+                    "title": "Created by User Identifier",
+                    "type": "string",
+                    "description": "User id who has created the entity.",
+                    "meta:xdmField": "xdm:repositoryCreatedBy"
+                },
+                "repositoryLastModifiedBy": {
+                    "title": "Modified by User Identifier",
+                    "type": "string",
+                    "description": "User id who last modified the entity. At creation time, `modifiedByUser` is set as `createdByUser`.",
+                    "meta:xdmField": "xdm:repositoryLastModifiedBy"
+                },
+                "createdByBatchID": {
+                    "title": "Created by Batch Identifier",
+                    "type": "string",
+                    "format": "uri-reference",
+                    "description": "The Data Set Files in Catalog Services which has been originating the creation of the entity.",
+                    "meta:xdmField": "xdm:createdByBatchID"
+                },
+                "modifiedByBatchID": {
+                    "title": "Modified by Batch Identifier",
+                    "type": "string",
+                    "format": "uri-reference",
+                    "description": "The last Data Set Files in Catalog Services which has modified the entity. At creation time, `modifiedByBatchID` is set as `createdByBatchID`.",
+                    "meta:xdmField": "xdm:modifiedByBatchID"
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/auditlog"
+        },
+        {
+            "$ref": "http://ns.adobe.com/adobecloud/core/1.0#/definitions/date-properties"
+        }
+    ],
+    "meta:status": "experimental",
+    "meta:xdmId": "https://ns.adobe.com/xdm/common/auditable",
+    "meta:altId": "_xdm.common.auditable"
+}

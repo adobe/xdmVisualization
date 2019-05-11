@@ -1,0 +1,59 @@
+{
+    "$id": "https://ns.adobe.com/xdm/context/profile-personal-details",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Profile Personal Details",
+    "type": "object",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "meta:intendedToExtend": [
+        "https://ns.adobe.com/xdm/context/profile"
+    ],
+    "description": "Personal related end user profile details.",
+    "definitions": {
+        "profile-personal-details": {
+            "properties": {
+                "homeAddress": {
+                    "title": "Home Address",
+                    "$ref": "https://ns.adobe.com/xdm/common/address",
+                    "description": "A home postal address.",
+                    "meta:xdmField": "xdm:homeAddress"
+                },
+                "personalEmail": {
+                    "title": "Personal Email",
+                    "$ref": "https://ns.adobe.com/xdm/context/emailaddress",
+                    "description": "A personal email address.",
+                    "meta:xdmField": "xdm:personalEmail"
+                },
+                "homePhone": {
+                    "title": "Home Phone",
+                    "$ref": "https://ns.adobe.com/xdm/context/phonenumber",
+                    "description": "Home phone number.",
+                    "meta:xdmField": "xdm:homePhone"
+                },
+                "mobilePhone": {
+                    "title": "Mobile Phone",
+                    "$ref": "https://ns.adobe.com/xdm/context/phonenumber",
+                    "description": "Mobile phone number.",
+                    "meta:xdmField": "xdm:mobilePhone"
+                },
+                "faxPhone": {
+                    "title": "Fax Phone",
+                    "$ref": "https://ns.adobe.com/xdm/context/phonenumber",
+                    "description": "Fax phone number.",
+                    "meta:xdmField": "xdm:faxPhone"
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+        },
+        {
+            "$ref": "#/definitions/profile-personal-details"
+        }
+    ],
+    "meta:status": "experimental",
+    "meta:xdmId": "https://ns.adobe.com/xdm/context/profile-personal-details",
+    "meta:altId": "_xdm.context.profile-personal-details"
+}

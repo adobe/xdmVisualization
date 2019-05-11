@@ -1,0 +1,35 @@
+{
+    "$id": "https://ns.adobe.com/xdm/context/experienceevent-marketing",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "ExperienceEvent Details for Marketing",
+    "type": "object",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "meta:intendedToExtend": [
+        "https://ns.adobe.com/xdm/context/experienceevent"
+    ],
+    "description": "ExperienceEvent Details for Marketing.",
+    "definitions": {
+        "experienceevent-marketing": {
+            "properties": {
+                "marketing": {
+                    "title": "Marketing",
+                    "$ref": "https://ns.adobe.com/xdm/context/marketing",
+                    "description": "The information related to marketing activities that are active with the touchpoint.",
+                    "meta:xdmField": "xdm:marketing"
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+        },
+        {
+            "$ref": "#/definitions/experienceevent-marketing"
+        }
+    ],
+    "meta:status": "stabilizing",
+    "meta:xdmId": "https://ns.adobe.com/xdm/context/experienceevent-marketing",
+    "meta:altId": "_xdm.context.experienceevent-marketing"
+}

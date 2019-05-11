@@ -1,0 +1,42 @@
+{
+    "$id": "https://ns.adobe.com/xdm/data/record",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Record Schema",
+    "type": "object",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "description": "Used to indicate the behaviour of record data semantic when composed into data Schemas.",
+    "definitions": {
+        "record": {
+            "properties": {
+                "_id": {
+                    "title": "Identifier",
+                    "type": "string",
+                    "format": "uri-reference",
+                    "description": "A unique identifier for the record.",
+                    "meta:xdmField": "@id"
+                },
+                "timeSeriesEvents": {
+                    "title": "Time-series Events",
+                    "description": "List of time-series based events that relate to schemas based on record.",
+                    "type": "array",
+                    "items": {
+                        "$ref": "https://ns.adobe.com/xdm/data/time-series"
+                    },
+                    "meta:xdmField": "xdm:timeSeriesEvents"
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/record"
+        },
+        {
+            "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+        }
+    ],
+    "meta:status": "experimental",
+    "meta:xdmId": "https://ns.adobe.com/xdm/data/record",
+    "meta:altId": "_xdm.data.record"
+}

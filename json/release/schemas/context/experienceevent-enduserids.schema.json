@@ -1,0 +1,35 @@
+{
+    "$id": "https://ns.adobe.com/xdm/context/experienceevent-enduserids",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "ExperienceEvent endUserIDs",
+    "type": "object",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "meta:intendedToExtend": [
+        "https://ns.adobe.com/xdm/context/experienceevent"
+    ],
+    "description": "Condensed, normalized encapsulation of end user identifiers asserted for this ExperienceEvent.",
+    "definitions": {
+        "experienceevent-enduserids": {
+            "properties": {
+                "endUserIDs": {
+                    "title": "End User IDs",
+                    "$ref": "https://ns.adobe.com/xdm/context/enduserids",
+                    "description": "Condensed, normalized encapsulation of end user identifiers asserted for this ExperienceEvent.",
+                    "meta:xdmField": "xdm:endUserIDs"
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+        },
+        {
+            "$ref": "#/definitions/experienceevent-enduserids"
+        }
+    ],
+    "meta:status": "stabilizing",
+    "meta:xdmId": "https://ns.adobe.com/xdm/context/experienceevent-enduserids",
+    "meta:altId": "_xdm.context.experienceevent-enduserids"
+}

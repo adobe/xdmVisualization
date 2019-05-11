@@ -1,0 +1,40 @@
+{
+    "$id": "https://ns.adobe.com/xdm/context/profileStitchIdentity",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Profile Stitch Identity",
+    "type": "object",
+    "description": "ProfileStitchIdentity is used to clearly distinguish Profile Stitching from multiple sources. ProfileStitchIdentity is established by an Profile Stitch identity provider, which itself is referenced in the `namespace` attribute. Within each `namespace`, the profileStitchIdentity is unique.",
+    "definitions": {
+        "profileStitchIdentity": {
+            "properties": {
+                "_id": {
+                    "title": "Identifier",
+                    "type": "string",
+                    "format": "uri-reference",
+                    "description": "Identity of the Profile Stitch in the related namespace.",
+                    "meta:xdmField": "@id"
+                },
+                "namespace": {
+                    "title": "Namespace",
+                    "$ref": "https://ns.adobe.com/xdm/context/namespace",
+                    "description": "The namespace associated with the `xid` attribute.",
+                    "meta:xdmField": "xdm:namespace"
+                },
+                "xid": {
+                    "title": "Experience Identifier",
+                    "type": "string",
+                    "description": "When present, this value represents a cross-namespace identifier that is unique across all namespace-scoped identifiers in all namespaces.",
+                    "meta:xdmField": "xdm:xid"
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/profileStitchIdentity"
+        }
+    ],
+    "meta:status": "experimental",
+    "meta:xdmId": "https://ns.adobe.com/xdm/context/profileStitchIdentity",
+    "meta:altId": "_xdm.context.profileStitchIdentity"
+}

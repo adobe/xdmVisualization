@@ -1,0 +1,36 @@
+{
+    "$id": "https://ns.adobe.com/xdm/context/directmarketing-emailaddress",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Direct Marketing Email Address",
+    "type": "object",
+    "description": "Direct Marketing Email Address.",
+    "definitions": {
+        "directmarketing-emailaddress": {
+            "properties": {
+                "errorCount": {
+                    "title": "Error Count",
+                    "type": "integer",
+                    "description": "Number of consecutive errors when sending to this email address.",
+                    "meta:xdmField": "xdm:errorCount"
+                },
+                "quality": {
+                    "title": "Quality",
+                    "type": "string",
+                    "description": "Quality rating.",
+                    "meta:xdmField": "xdm:quality"
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/directmarketing-emailaddress"
+        },
+        {
+            "$ref": "https://ns.adobe.com/xdm/context/emailaddress"
+        }
+    ],
+    "meta:status": "experimental",
+    "meta:xdmId": "https://ns.adobe.com/xdm/context/directmarketing-emailaddress",
+    "meta:altId": "_xdm.context.directmarketing-emailaddress"
+}

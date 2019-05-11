@@ -1,0 +1,35 @@
+{
+    "$id": "https://ns.adobe.com/experience/target/activity/activityevent/segmentevent",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Activity Segment Event",
+    "type": "object",
+    "description": "Represents Activity Segment Event.",
+    "definitions": {
+        "segmentevent": {
+            "properties": {
+                "segmentID": {
+                    "title": "Segment Identifier",
+                    "$ref": "https://ns.adobe.com/xdm/context/segmentidentity",
+                    "description": "Activity Segment Event.",
+                    "meta:xdmField": "xdm:segmentID"
+                },
+                "eventScope": {
+                    "$ref": "https://ns.adobe.com/experience/target/activity/activityevent/eventscope#/definitions/eventscope",
+                    "meta:xdmField": "xdm:eventScope"
+                }
+            },
+            "required": [
+                "segmentID",
+                "eventScope"
+            ]
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/segmentevent"
+        }
+    ],
+    "meta:status": "experimental",
+    "meta:xdmId": "https://ns.adobe.com/experience/target/activity/activityevent/segmentevent",
+    "meta:altId": "_experience.target.activity.activityevent.segmentevent"
+}

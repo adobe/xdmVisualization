@@ -1,0 +1,35 @@
+{
+    "$id": "https://ns.adobe.com/xdm/context/experienceevent-application",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "ExperienceEvent Application Details",
+    "type": "object",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "meta:intendedToExtend": [
+        "https://ns.adobe.com/xdm/context/experienceevent"
+    ],
+    "description": "ExperienceEvent Application Details.",
+    "definitions": {
+        "experienceevent-application": {
+            "properties": {
+                "application": {
+                    "title": "Application",
+                    "$ref": "https://ns.adobe.com/xdm/context/application",
+                    "description": "Application related data from  ExperienceEvent observations. It could be either the application targeted by the event like the send of a push notification or the application originating the event such as a click, or a login.",
+                    "meta:xdmField": "xdm:application"
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+        },
+        {
+            "$ref": "#/definitions/experienceevent-application"
+        }
+    ],
+    "meta:status": "stabilizing",
+    "meta:xdmId": "https://ns.adobe.com/xdm/context/experienceevent-application",
+    "meta:altId": "_xdm.context.experienceevent-application"
+}

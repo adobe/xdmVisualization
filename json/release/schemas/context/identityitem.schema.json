@@ -1,0 +1,54 @@
+{
+    "$id": "https://ns.adobe.com/xdm/context/identityitem",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Identity Item",
+    "type": "object",
+    "meta:extensible": true,
+    "description": "An end-user identity item, to be included in an instance of `context/identitymap`",
+    "definitions": {
+        "identityitem": {
+            "properties": {
+                "id": {
+                    "title": "Identifier",
+                    "type": "string",
+                    "description": "Identity of the consumer in the related namespace.",
+                    "meta:xdmField": "xdm:id"
+                },
+                "authenticatedState": {
+                    "description": "The state this identity is authenticated as for this observed ExperienceEvent.",
+                    "type": "string",
+                    "default": "ambiguous",
+                    "enum": [
+                        "ambiguous",
+                        "authenticated",
+                        "loggedOut"
+                    ],
+                    "meta:enum": {
+                        "ambiguous": "Ambiguous",
+                        "authenticated": "User identified by a login or simular action that was valid at the time of the event observation.",
+                        "loggedOut": "User was identified by a login action at some point of time previously, but is not currently logged in."
+                    },
+                    "meta:xdmField": "xdm:authenticatedState"
+                },
+                "primary": {
+                    "title": "Primary",
+                    "type": "boolean",
+                    "default": false,
+                    "description": "Indicates this identity is the preferred identity. Is used as a hint to help systems better organize how identities are queried.",
+                    "meta:xdmField": "xdm:primary"
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+        },
+        {
+            "$ref": "#/definitions/identityitem"
+        }
+    ],
+    "meta:status": "experimental",
+    "meta:xdmId": "https://ns.adobe.com/xdm/context/identityitem",
+    "meta:altId": "_xdm.context.identityitem"
+}

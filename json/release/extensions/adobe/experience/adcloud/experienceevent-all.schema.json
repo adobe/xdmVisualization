@@ -1,0 +1,69 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$id": "https://ns.adobe.com/experience/adcloud/experienceevent-all",
+    "title": "Adobe AdCloud ExperienceEvent Full Extension",
+    "type": "object",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "meta:intendedToExtend": [
+        "https://ns.adobe.com/xdm/context/experienceevent"
+    ],
+    "description": "Adobe AdCloud ExperienceEvent Full Extension. Contains all Solution added fields.",
+    "definitions": {
+        "experienceevent-all": {
+            "properties": {
+                "_experience": {
+                    "type": "object",
+                    "properties": {
+                        "adcloud": {
+                            "type": "object",
+                            "properties": {
+                                "eventType": {
+                                    "title": "Event Type",
+                                    "type": "string",
+                                    "description": "Adobe AdCloud event type.",
+                                    "meta:xdmField": "https://ns.adobe.com/experience/adcloud/eventType"
+                                },
+                                "campaign": {
+                                    "title": "Ad Campaign Details",
+                                    "$ref": "https://ns.adobe.com/experience/adcloud/campaign",
+                                    "description": "Adobe AdCloud ad campaign hierarchy details.",
+                                    "meta:xdmField": "https://ns.adobe.com/experience/adcloud/campaign"
+                                },
+                                "inventory": {
+                                    "title": "Ad Inventory Details",
+                                    "$ref": "https://ns.adobe.com/experience/adcloud/inventory",
+                                    "description": "Adobe AdCloud inventory details.",
+                                    "meta:xdmField": "https://ns.adobe.com/experience/adcloud/inventory"
+                                },
+                                "advertisement": {
+                                    "title": "Ad Asset Details",
+                                    "$ref": "https://ns.adobe.com/experience/adcloud/advertisement",
+                                    "description": "Digital advertisement details",
+                                    "meta:xdmField": "https://ns.adobe.com/experience/adcloud/advertisement"
+                                },
+                                "stitchId": {
+                                    "title": "Stitch ID Chosen",
+                                    "type": "string",
+                                    "description": "ID from the Ad Servers through AdCloud STATS to track click-through conversion on browsers that block third party cookies",
+                                    "meta:xdmField": "https://ns.adobe.com/experience/adcloud/stitchId"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "https://ns.adobe.com/xdm/context/experienceevent#/definitions/experienceevent"
+        },
+        {
+            "$ref": "#/definitions/experienceevent-all"
+        }
+    ],
+    "meta:status": "experimental",
+    "meta:xdmId": "https://ns.adobe.com/experience/adcloud/experienceevent-all",
+    "meta:altId": "_experience.adcloud.experienceevent-all"
+}

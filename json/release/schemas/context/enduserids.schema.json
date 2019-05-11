@@ -1,0 +1,89 @@
+{
+    "$id": "https://ns.adobe.com/xdm/context/enduserids",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "End User IDs",
+    "type": "object",
+    "meta:extensible": true,
+    "description": "Condensed, normalized encapsulation of all end user identifiers. NOTE: At least one of the fields is required.",
+    "minProperties": 1,
+    "definitions": {
+        "enduserids": {
+            "properties": {
+                "_experience": {
+                    "type": "object",
+                    "properties": {
+                        "mcid": {
+                            "title": "Adobe Marketing Cloud ID",
+                            "$ref": "https://ns.adobe.com/xdm/context/identity",
+                            "description": "A unique identifier from Adobe Marketing Cloud.",
+                            "meta:xdmField": "https://ns.adobe.com/experience/mcid"
+                        },
+                        "aaid": {
+                            "title": "Adobe Analytics Cloud End User IDs",
+                            "$ref": "https://ns.adobe.com/xdm/context/identity",
+                            "description": "Adobe Analytics Cloud extension to End User IDs.",
+                            "meta:xdmField": "https://ns.adobe.com/experience/aaid"
+                        },
+                        "aacustomid": {
+                            "title": "Adobe Analytics Cloud Custom End User IDs",
+                            "$ref": "https://ns.adobe.com/xdm/context/identity",
+                            "description": "An Adobe Analytics custom identifier passed in on a hit.",
+                            "meta:xdmField": "https://ns.adobe.com/experience/aacustomid"
+                        },
+                        "acid": {
+                            "title": "Adobe Campaign End User IDs",
+                            "$ref": "https://ns.adobe.com/xdm/context/identity",
+                            "description": "Adobe Campaign extension to End User IDs.",
+                            "meta:xdmField": "https://ns.adobe.com/experience/acid"
+                        },
+                        "tntid": {
+                            "title": "Adobe Target End User IDs",
+                            "$ref": "https://ns.adobe.com/xdm/context/identity",
+                            "description": "Adobe Target extension to End User IDs.",
+                            "meta:xdmField": "https://ns.adobe.com/experience/tntid"
+                        },
+                        "adcloud": {
+                            "title": "Adobe AdCloud End User IDs",
+                            "$ref": "https://ns.adobe.com/xdm/context/identity",
+                            "description": "Adobe Adcloud extension to End User IDs.",
+                            "meta:xdmField": "https://ns.adobe.com/experience/adcloud"
+                        },
+                        "emailid": {
+                            "title": "Email Address IDs",
+                            "$ref": "https://ns.adobe.com/xdm/context/identity",
+                            "description": "Email addresses used as IDs.",
+                            "meta:xdmField": "https://ns.adobe.com/experience/emailid"
+                        },
+                        "phonenumberid": {
+                            "title": "Phone Number IDs",
+                            "$ref": "https://ns.adobe.com/xdm/context/identity",
+                            "description": "Phone numbers used as IDs.",
+                            "meta:xdmField": "https://ns.adobe.com/experience/phonenumberid"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "meta:keys": {
+        "https://ns.adobe.com/experience/adcloud": "Adobe AdCloud",
+        "https://ns.adobe.com/experience/tntid": "Adobe Target",
+        "https://ns.adobe.com/experience/acid": "Adobe Campaign",
+        "https://ns.adobe.com/experience/aaid": "Adobe Analytics",
+        "https://ns.adobe.com/experience/aacustomid": "Adobe Analytics Custom",
+        "https://ns.adobe.com/experience/mcid": "Marketing Cloud Identity Core Service",
+        "https://ns.adobe.com/experience/emailid": "Email Address",
+        "https://ns.adobe.com/experience/phonenumberid": "Phone Number"
+    },
+    "allOf": [
+        {
+            "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+        },
+        {
+            "$ref": "#/definitions/enduserids"
+        }
+    ],
+    "meta:status": "stabilizing",
+    "meta:xdmId": "https://ns.adobe.com/xdm/context/enduserids",
+    "meta:altId": "_xdm.context.enduserids"
+}

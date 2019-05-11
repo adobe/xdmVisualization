@@ -1,0 +1,61 @@
+{
+    "$id": "https://ns.adobe.com/xdm/data/media-segment-views",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Media Segment Views",
+    "type": "object",
+    "meta:extensible": true,
+    "meta:extends": [
+        "https://ns.adobe.com/xdm/data/metricdefinition"
+    ],
+    "description": "Indicates whether at least one frame (not necessarily the first) was viewed.",
+    "definitions": {
+        "metricdefinition": {
+            "properties": {
+                "_id": {
+                    "type": "string",
+                    "const": "xdm:mediaSegmentViews",
+                    "description": "The unique identifier of this metric.",
+                    "meta:xdmField": "@id"
+                },
+                "_schema": {
+                    "type": "object",
+                    "properties": {
+                        "name": {
+                            "type": "string",
+                            "const": "metric: mediaSegmentViews",
+                            "description": "Indicates whether at least one frame (not necessarily the first) was viewed.",
+                            "meta:xdmField": "schema:name"
+                        }
+                    }
+                },
+                "measurement": {
+                    "type": "string",
+                    "description": "How to take measures of this metric.",
+                    "const": "count",
+                    "meta:xdmField": "xdm:measurement"
+                },
+                "unit": {
+                    "const": "",
+                    "meta:xdmField": "xdm:unit"
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/metricdefinition"
+        },
+        {
+            "$ref": "https://ns.adobe.com/xdm/data/metricdefinition"
+        }
+    ],
+    "meta:status": "stabilizing",
+    "meta:xdmId": "https://ns.adobe.com/xdm/data/media-segment-views",
+    "meta:altId": "_xdm.data.media-segment-views",
+    "required": [
+        "_id",
+        "schema:name",
+        "measurement",
+        "unit"
+    ]
+}

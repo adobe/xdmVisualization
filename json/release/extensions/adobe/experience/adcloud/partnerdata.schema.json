@@ -1,0 +1,33 @@
+{
+    "$id": "https://ns.adobe.com/experience/adcloud/partnerdata",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Adcloud partner data",
+    "type": "object",
+    "description": "Details about AdCloud partners.",
+    "definitions": {
+        "partnerdata": {
+            "properties": {
+                "id": {
+                    "title": "Search/Marketing partner ID",
+                    "type": "string",
+                    "description": "Internal mapping of search/marketing platforms/partners to IDs for Adcloud Search.",
+                    "meta:xdmField": "xdm:id"
+                },
+                "data": {
+                    "title": "Search/Marketing partner data associated with a segment",
+                    "type": "string",
+                    "description": "Unique identifiers such conversion id (in case of Google) associated with the synced segment.",
+                    "meta:xdmField": "xdm:data"
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/partnerdata"
+        }
+    ],
+    "meta:status": "experimental",
+    "meta:xdmId": "https://ns.adobe.com/experience/adcloud/partnerdata",
+    "meta:altId": "_experience.adcloud.partnerdata"
+}

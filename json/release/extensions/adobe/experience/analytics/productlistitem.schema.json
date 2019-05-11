@@ -1,0 +1,50 @@
+{
+    "$id": "https://ns.adobe.com/experience/analytics/productlistitem",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Adobe Analytics extension to XDM Product List Item",
+    "type": "object",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "description": "XDM Product List Item extension properties specific to Adobe Analytics that implements Merchandizing support.",
+    "definitions": {
+        "productlistitems": {
+            "properties": {
+                "_experience": {
+                    "type": "object",
+                    "properties": {
+                        "analytics": {
+                            "type": "object",
+                            "properties": {
+                                "customDimensions": {
+                                    "type": "object",
+                                    "title": "Merchandizing Custom Dimensions",
+                                    "properties": {
+                                        "eVars": {
+                                            "title": "Merchandizing eVars",
+                                            "$ref": "https://ns.adobe.com/experience/analytics/evars",
+                                            "meta:xdmField": "xdm:eVars"
+                                        }
+                                    },
+                                    "meta:xdmField": "https://ns.adobe.com/experience/analytics/customDimensions"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/productlistitems"
+        },
+        {
+            "$ref": "https://ns.adobe.com/xdm/content/productlistitem"
+        },
+        {
+            "$ref": "https://ns.adobe.com/experience/analytics/events"
+        }
+    ],
+    "meta:xdmId": "https://ns.adobe.com/experience/analytics/productlistitem",
+    "meta:altId": "_experience.analytics.productlistitem"
+}

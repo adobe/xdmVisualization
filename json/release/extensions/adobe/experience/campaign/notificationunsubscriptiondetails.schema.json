@@ -1,0 +1,47 @@
+{
+    "$id": "https://ns.adobe.com/experience/campaign/notificationunsubscriptiondetails",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Notification unsubscription details",
+    "type": "object",
+    "meta:extensible": true,
+    "description": "Adobe Campaign notification unsubscriptions allow endusers opt out after opting into topics that can be used for communication such as Marketing subscription lists.",
+    "definitions": {
+        "notificationUnSubscriptionDetails": {
+            "properties": {
+                "unsubscriptionDate": {
+                    "title": "Unsubscription Date",
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "Date and time when the enduser has unsubscribed from a notification topic. When the subscription is registered the xdm:unsubscriptionDate must be empty.",
+                    "meta:xdmField": "xdm:unsubscriptionDate"
+                },
+                "remarkID": {
+                    "title": "Remark Identifier",
+                    "type": "string",
+                    "description": "The pre defined remark that the enduser identified when unbsubscribing.",
+                    "meta:xdmField": "xdm:remarkID"
+                },
+                "remarkText": {
+                    "title": "Remark text",
+                    "type": "string",
+                    "description": "A customer comment/remark that the enduser provided when unbsubscribing.",
+                    "meta:xdmField": "xdm:remarkText"
+                }
+            },
+            "required": [
+                "unsubscriptionDate"
+            ]
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+        },
+        {
+            "$ref": "#/definitions/notificationUnSubscriptionDetails"
+        }
+    ],
+    "meta:status": "experimental",
+    "meta:xdmId": "https://ns.adobe.com/experience/campaign/notificationunsubscriptiondetails",
+    "meta:altId": "_experience.campaign.notificationunsubscriptiondetails"
+}

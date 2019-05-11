@@ -1,0 +1,37 @@
+{
+    "$id": "https://ns.adobe.com/xdm/context/identitymap",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "IdentityMap",
+    "type": "object",
+    "meta:extensible": true,
+    "meta:intendedToExtend": [
+        "https://ns.adobe.com/xdm/context/profile",
+        "https://ns.adobe.com/xdm/context/experienceevent"
+    ],
+    "description": "Defines a map containing a set of end user identities, keyed on either namespace integration code or the namespace ID of the identity.  The values of the map are an array, meaning that more than one identity of each namespace may be carried.",
+    "definitions": {
+        "identitymap": {
+            "properties": {
+                "identityMap": {
+                    "type": "object",
+                    "meta:xdmType": "map",
+                    "additionalProperties": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "https://ns.adobe.com/xdm/context/identityitem"
+                        }
+                    },
+                    "meta:xdmField": "xdm:identityMap"
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/identitymap"
+        }
+    ],
+    "meta:status": "experimental",
+    "meta:xdmId": "https://ns.adobe.com/xdm/context/identitymap",
+    "meta:altId": "_xdm.context.identitymap"
+}

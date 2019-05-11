@@ -1,0 +1,45 @@
+{
+    "$id": "https://ns.adobe.com/experience/target/activity/preview",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Activity Preview Parameters",
+    "type": "object",
+    "description": "Adobe Target Activity Preview Parameters. QA Mode/Preview Mode parameters that were specified in the request, if any.",
+    "definitions": {
+        "activitypreview": {
+            "properties": {
+                "forcedExperienceID": {
+                    "title": "Experience Identifier",
+                    "type": "string",
+                    "description": "Activity Experience Identifier of previewed experience",
+                    "meta:xdmField": "xdm:forcedExperienceID"
+                },
+                "audienceIDsToEvaluateAsTrue": {
+                    "title": "Audience identifiers to evaluate as true",
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "description": "Evaluated as matching audience identifiers.",
+                    "meta:xdmField": "xdm:audienceIDsToEvaluateAsTrue"
+                },
+                "audienceIDsToEvaluateAsFalse": {
+                    "title": "Audience identifiers to evaluate as false",
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "description": "Evaluated as non-matching audience identifiers.",
+                    "meta:xdmField": "xdm:audienceIDsToEvaluateAsFalse"
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/activitypreview"
+        }
+    ],
+    "meta:status": "experimental",
+    "meta:xdmId": "https://ns.adobe.com/experience/target/activity/preview",
+    "meta:altId": "_experience.target.activity.preview"
+}

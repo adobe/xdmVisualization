@@ -1,0 +1,39 @@
+{
+    "$id": "http://www.iptc.org/series",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Series",
+    "type": "object",
+    "description": "The series the show belongs to. Based on [www.iptc.org](https://www.iptc.org/std/videometadatahub/recommendation/pre-versions/IPTC-VideoMetadataHub-props-Rec_1.1.html)",
+    "definitions": {
+        "series": {
+            "properties": {
+                "_iptc4xmpExt": {
+                    "type": "object",
+                    "properties": {
+                        "Name": {
+                            "title": "Series Name",
+                            "type": "string",
+                            "description": "Name of the series.",
+                            "meta:xdmField": "iptc4xmpExt:Name"
+                        },
+                        "Identifier": {
+                            "title": "Series Identifier",
+                            "type": "string",
+                            "format": "uri",
+                            "description": "Identifier of the series.",
+                            "meta:xdmField": "iptc4xmpExt:Identifier"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/series"
+        }
+    ],
+    "meta:status": "experimental",
+    "meta:xdmId": "http://www.iptc.org/series",
+    "meta:altId": "_www.iptc.org.series"
+}

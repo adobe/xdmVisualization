@@ -1,0 +1,37 @@
+{
+    "$id": "https://ns.adobe.com/experience/campaign/orchestration/orchestrationdetails",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Orchestration Details",
+    "type": "object",
+    "description": "Set of attributes that are associated with every orchestration.",
+    "properties": {
+        "journey": {
+            "title": "Journey for an entity",
+            "$ref": "https://ns.adobe.com/experience/campaign/orchestration/experienceevent#/definitions/journey",
+            "description": "Journey created by marketer for its entities.",
+            "meta:xdmField": "xdm:journey"
+        },
+        "journeyVersion": {
+            "title": "Journey Version for an entity",
+            "$ref": "https://ns.adobe.com/experience/campaign/orchestration/experienceevent#/definitions/journeyVersion",
+            "description": "Schema for describing the version of a journey, where version holds the state machine.",
+            "meta:xdmField": "xdm:journeyVersion"
+        },
+        "action": {
+            "title": "Action associated with a journey",
+            "$ref": "https://ns.adobe.com/experience/campaign/orchestration/experienceevent#/definitions/action",
+            "description": "Action that is executed for an entity when reached a step in in the journey state machine.",
+            "meta:xdmField": "xdm:action",
+            "required": [
+                "actionID"
+            ]
+        }
+    },
+    "meta:xdmId": "https://ns.adobe.com/experience/campaign/orchestration/orchestrationdetails",
+    "meta:altId": "_experience.campaign.orchestration.orchestrationdetails",
+    "required": [
+        "journey",
+        "journeyVersion",
+        "action"
+    ]
+}

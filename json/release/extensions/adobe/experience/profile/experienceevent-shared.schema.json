@@ -1,0 +1,42 @@
+{
+    "$id": "https://ns.adobe.com/experience/profile/experienceevent-shared",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Adobe Unified Profile Service ExperienceEvent Shared Extension",
+    "type": "object",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "meta:intendedToExtend": [
+        "https://ns.adobe.com/xdm/context/experienceevent"
+    ],
+    "description": "Adobe Unified Profile Service Shared Extension. Contains Solution fields shared with other Solutions.",
+    "definitions": {
+        "profile-experienceevent-shared": {
+            "properties": {
+                "_experience": {
+                    "type": "object",
+                    "properties": {
+                        "profile": {
+                            "type": "object",
+                            "properties": {
+                                "originDatasetID": {
+                                    "title": "Origin Dataset ID",
+                                    "type": "string",
+                                    "description": "Identity of the Dataset that the Profile Service ingested the data from. Usage is reserved for the Profile Service.",
+                                    "meta:xdmField": "https://ns.adobe.com/experience/profile/originDatasetID"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/profile-experienceevent-shared"
+        }
+    ],
+    "meta:status": "experimental",
+    "meta:xdmId": "https://ns.adobe.com/experience/profile/experienceevent-shared",
+    "meta:altId": "_experience.profile.experienceevent-shared"
+}

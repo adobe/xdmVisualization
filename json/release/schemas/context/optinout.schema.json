@@ -1,0 +1,435 @@
+{
+    "$id": "https://ns.adobe.com/xdm/context/optinout",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "OptInOut",
+    "type": "object",
+    "description": "Describes a users' communication preferences by channel. For each channel individually, which is a property of this object, a user's preference (opt-in, opt-out, pending) can be recorded. In addition, a global override opt-out is possible. Each property of this schema must be a valid and known URI for an XDM Channel.",
+    "definitions": {
+        "optinout": {
+            "properties": {
+                "_channels": {
+                    "type": "object",
+                    "properties": {
+                        "adm": {
+                            "title": "ADM",
+                            "description": "Amazon Device Messaging channel OptInOut.",
+                            "type": "string",
+                            "default": "not_provided",
+                            "enum": [
+                                "not_provided",
+                                "pending",
+                                "in",
+                                "out"
+                            ],
+                            "meta:enum": {
+                                "not_provided": "Not Provided",
+                                "pending": "Pending Verification",
+                                "in": "Opt-In: the user explicitly consents to receiving messages.",
+                                "out": "Opt-Out: the user declines to receive any messages on this channel"
+                            },
+                            "meta:xdmField": "https://ns.adobe.com/xdm/channels/adm"
+                        },
+                        "agency": {
+                            "title": "Agency",
+                            "description": "External Agency channel OptInOut.",
+                            "type": "string",
+                            "default": "not_provided",
+                            "enum": [
+                                "not_provided",
+                                "pending",
+                                "in",
+                                "out"
+                            ],
+                            "meta:enum": {
+                                "not_provided": "Not Provided",
+                                "pending": "Pending Verification",
+                                "in": "Opt-In: the user explicitly consents to receiving messages.",
+                                "out": "Opt-Out: the user declines to receive any messages on this channel"
+                            },
+                            "meta:xdmField": "https://ns.adobe.com/xdm/channels/agency"
+                        },
+                        "apns": {
+                            "title": "APNS",
+                            "description": "Apple Push Notification Service channel OptInOut.",
+                            "type": "string",
+                            "default": "not_provided",
+                            "enum": [
+                                "not_provided",
+                                "pending",
+                                "in",
+                                "out"
+                            ],
+                            "meta:enum": {
+                                "not_provided": "Not Provided",
+                                "pending": "Pending Verification",
+                                "in": "Opt-In: the user explicitly consents to receiving messages.",
+                                "out": "Opt-Out: the user declines to receive any messages on this channel"
+                            },
+                            "meta:xdmField": "https://ns.adobe.com/xdm/channels/apns"
+                        },
+                        "application": {
+                            "title": "Application",
+                            "description": "Application channel OptInOut.",
+                            "type": "string",
+                            "default": "not_provided",
+                            "enum": [
+                                "not_provided",
+                                "pending",
+                                "in",
+                                "out"
+                            ],
+                            "meta:enum": {
+                                "not_provided": "Not Provided",
+                                "pending": "Pending Verification",
+                                "in": "Opt-In: the user explicitly consents to receiving messages.",
+                                "out": "Opt-Out: the user declines to receive any messages on this channel"
+                            },
+                            "meta:xdmField": "https://ns.adobe.com/xdm/channels/application"
+                        },
+                        "baidu": {
+                            "title": "Baidu",
+                            "description": "Baidu Cloud Push Service channel OptInOut.",
+                            "type": "string",
+                            "default": "not_provided",
+                            "enum": [
+                                "not_provided",
+                                "pending",
+                                "in",
+                                "out"
+                            ],
+                            "meta:enum": {
+                                "not_provided": "Not Provided",
+                                "pending": "Pending Verification",
+                                "in": "Opt-In: the user explicitly consents to receiving messages.",
+                                "out": "Opt-Out: the user declines to receive any messages on this channel"
+                            },
+                            "meta:xdmField": "https://ns.adobe.com/xdm/channels/baidu"
+                        },
+                        "channel": {
+                            "title": "Experience Channel",
+                            "description": "Experience channel OptInOut.",
+                            "type": "string",
+                            "default": "not_provided",
+                            "enum": [
+                                "not_provided",
+                                "pending",
+                                "in",
+                                "out"
+                            ],
+                            "meta:enum": {
+                                "not_provided": "Not Provided",
+                                "pending": "Pending Verification",
+                                "in": "Opt-In: the user explicitly consents to receiving messages.",
+                                "out": "Opt-Out: the user declines to receive any messages on this channel"
+                            },
+                            "meta:xdmField": "https://ns.adobe.com/xdm/channels/channel"
+                        },
+                        "directMail": {
+                            "title": "Direct Mail",
+                            "description": "Mail delivered by a postal service channel OptInOut.",
+                            "type": "string",
+                            "default": "not_provided",
+                            "enum": [
+                                "not_provided",
+                                "pending",
+                                "in",
+                                "out"
+                            ],
+                            "meta:enum": {
+                                "not_provided": "Not Provided",
+                                "pending": "Pending Verification",
+                                "in": "Opt-In: the user explicitly consents to receiving messages.",
+                                "out": "Opt-Out: the user declines to receive any messages on this channel"
+                            },
+                            "meta:xdmField": "https://ns.adobe.com/xdm/channels/direct-mail"
+                        },
+                        "email": {
+                            "title": "E-Mail",
+                            "description": "E-Mail messages, delivered via SMTP to list subscribers channel OptInOut.",
+                            "type": "string",
+                            "default": "not_provided",
+                            "enum": [
+                                "not_provided",
+                                "pending",
+                                "in",
+                                "out"
+                            ],
+                            "meta:enum": {
+                                "not_provided": "Not Provided",
+                                "pending": "Pending Verification",
+                                "in": "Opt-In: the user explicitly consents to receiving messages.",
+                                "out": "Opt-Out: the user declines to receive any messages on this channel"
+                            },
+                            "meta:xdmField": "https://ns.adobe.com/xdm/channels/email"
+                        },
+                        "facebookFeed": {
+                            "title": "Facebook News Feed",
+                            "description": "The Facebook News Feed channel OptInOut.",
+                            "type": "string",
+                            "default": "not_provided",
+                            "enum": [
+                                "not_provided",
+                                "pending",
+                                "in",
+                                "out"
+                            ],
+                            "meta:enum": {
+                                "not_provided": "Not Provided",
+                                "pending": "Pending Verification",
+                                "in": "Opt-In: the user explicitly consents to receiving messages.",
+                                "out": "Opt-Out: the user declines to receive any messages on this channel"
+                            },
+                            "meta:xdmField": "https://ns.adobe.com/xdm/channels/facebook-feed"
+                        },
+                        "fax": {
+                            "title": "Fax",
+                            "description": "Telefacsimile channel OptInOut.",
+                            "type": "string",
+                            "default": "not_provided",
+                            "enum": [
+                                "not_provided",
+                                "pending",
+                                "in",
+                                "out"
+                            ],
+                            "meta:enum": {
+                                "not_provided": "Not Provided",
+                                "pending": "Pending Verification",
+                                "in": "Opt-In: the user explicitly consents to receiving messages.",
+                                "out": "Opt-Out: the user declines to receive any messages on this channel"
+                            },
+                            "meta:xdmField": "https://ns.adobe.com/xdm/channels/fax"
+                        },
+                        "gcm": {
+                            "title": "GCM",
+                            "description": "Google Cloud Messaging channel OptInOut.",
+                            "type": "string",
+                            "default": "not_provided",
+                            "enum": [
+                                "not_provided",
+                                "pending",
+                                "in",
+                                "out"
+                            ],
+                            "meta:enum": {
+                                "not_provided": "Not Provided",
+                                "pending": "Pending Verification",
+                                "in": "Opt-In: the user explicitly consents to receiving messages.",
+                                "out": "Opt-Out: the user declines to receive any messages on this channel"
+                            },
+                            "meta:xdmField": "https://ns.adobe.com/xdm/channels/gcm"
+                        },
+                        "line": {
+                            "title": "LINE",
+                            "description": "Line Platform Notification channel OptInOut.",
+                            "type": "string",
+                            "default": "not_provided",
+                            "enum": [
+                                "not_provided",
+                                "pending",
+                                "in",
+                                "out"
+                            ],
+                            "meta:enum": {
+                                "not_provided": "Not Provided",
+                                "pending": "Pending Verification",
+                                "in": "Opt-In: the user explicitly consents to receiving messages.",
+                                "out": "Opt-Out: the user declines to receive any messages on this channel"
+                            },
+                            "meta:xdmField": "https://ns.adobe.com/xdm/channels/line"
+                        },
+                        "mobileApp": {
+                            "title": "Web",
+                            "description": "Native mobile applications that are installed through an app store channel OptInOut.",
+                            "type": "string",
+                            "default": "not_provided",
+                            "enum": [
+                                "not_provided",
+                                "pending",
+                                "in",
+                                "out"
+                            ],
+                            "meta:enum": {
+                                "not_provided": "Not Provided",
+                                "pending": "Pending Verification",
+                                "in": "Opt-In: the user explicitly consents to receiving messages.",
+                                "out": "Opt-Out: the user declines to receive any messages on this channel"
+                            },
+                            "meta:xdmField": "https://ns.adobe.com/xdm/channels/mobile-app"
+                        },
+                        "mpns": {
+                            "title": "MPNS",
+                            "description": "Microsoft Push Notification Service channel OptInOut.",
+                            "type": "string",
+                            "default": "not_provided",
+                            "enum": [
+                                "not_provided",
+                                "pending",
+                                "in",
+                                "out"
+                            ],
+                            "meta:enum": {
+                                "not_provided": "Not Provided",
+                                "pending": "Pending Verification",
+                                "in": "Opt-In: the user explicitly consents to receiving messages.",
+                                "out": "Opt-Out: the user declines to receive any messages on this channel"
+                            },
+                            "meta:xdmField": "https://ns.adobe.com/xdm/channels/mpns"
+                        },
+                        "phone": {
+                            "title": "Phone",
+                            "description": "The telephone channel OptInOut.",
+                            "type": "string",
+                            "default": "not_provided",
+                            "enum": [
+                                "not_provided",
+                                "pending",
+                                "in",
+                                "out"
+                            ],
+                            "meta:enum": {
+                                "not_provided": "Not Provided",
+                                "pending": "Pending Verification",
+                                "in": "Opt-In: the user explicitly consents to receiving messages.",
+                                "out": "Opt-Out: the user declines to receive any messages on this channel"
+                            },
+                            "meta:xdmField": "https://ns.adobe.com/xdm/channels/phone"
+                        },
+                        "sms": {
+                            "title": "SMS",
+                            "description": "Short Message Service delivered to a mobile phone channel OptInOut.",
+                            "type": "string",
+                            "default": "not_provided",
+                            "enum": [
+                                "not_provided",
+                                "pending",
+                                "in",
+                                "out"
+                            ],
+                            "meta:enum": {
+                                "not_provided": "Not Provided",
+                                "pending": "Pending Verification",
+                                "in": "Opt-In: the user explicitly consents to receiving messages.",
+                                "out": "Opt-Out: the user declines to receive any messages on this channel"
+                            },
+                            "meta:xdmField": "https://ns.adobe.com/xdm/channels/sms"
+                        },
+                        "twitterFeed": {
+                            "title": "Twitter Feed",
+                            "description": "Twitter Feed channel OptInOut.",
+                            "type": "string",
+                            "default": "not_provided",
+                            "enum": [
+                                "not_provided",
+                                "pending",
+                                "in",
+                                "out"
+                            ],
+                            "meta:enum": {
+                                "not_provided": "Not Provided",
+                                "pending": "Pending Verification",
+                                "in": "Opt-In: the user explicitly consents to receiving messages.",
+                                "out": "Opt-Out: the user declines to receive any messages on this channel"
+                            },
+                            "meta:xdmField": "https://ns.adobe.com/xdm/channels/twitter-feed"
+                        },
+                        "web": {
+                            "title": "Web",
+                            "description": "World Wide Web and mobile web channel OptInOut.",
+                            "type": "string",
+                            "default": "not_provided",
+                            "enum": [
+                                "not_provided",
+                                "pending",
+                                "in",
+                                "out"
+                            ],
+                            "meta:enum": {
+                                "not_provided": "Not Provided",
+                                "pending": "Pending Verification",
+                                "in": "Opt-In: the user explicitly consents to receiving messages.",
+                                "out": "Opt-Out: the user declines to receive any messages on this channel"
+                            },
+                            "meta:xdmField": "https://ns.adobe.com/xdm/channels/web"
+                        },
+                        "webpage": {
+                            "title": "Web Page",
+                            "description": "Web Page channel OptInOut.",
+                            "type": "string",
+                            "default": "not_provided",
+                            "enum": [
+                                "not_provided",
+                                "pending",
+                                "in",
+                                "out"
+                            ],
+                            "meta:enum": {
+                                "not_provided": "Not Provided",
+                                "pending": "Pending Verification",
+                                "in": "Opt-In: the user explicitly consents to receiving messages.",
+                                "out": "Opt-Out: the user declines to receive any messages on this channel"
+                            },
+                            "meta:xdmField": "https://ns.adobe.com/xdm/channels/webpage"
+                        },
+                        "wechat": {
+                            "title": "WeChat",
+                            "description": "WeChat Platform Notification channel OptInOut.",
+                            "type": "string",
+                            "default": "not_provided",
+                            "enum": [
+                                "not_provided",
+                                "pending",
+                                "in",
+                                "out"
+                            ],
+                            "meta:enum": {
+                                "not_provided": "Not Provided",
+                                "pending": "Pending Verification",
+                                "in": "Opt-In: the user explicitly consents to receiving messages.",
+                                "out": "Opt-Out: the user declines to receive any messages on this channel"
+                            },
+                            "meta:xdmField": "https://ns.adobe.com/xdm/channels/wechat"
+                        },
+                        "wns": {
+                            "title": "WNS",
+                            "description": "Windows Push Notification Service channel OptInOut.",
+                            "type": "string",
+                            "default": "not_provided",
+                            "enum": [
+                                "not_provided",
+                                "pending",
+                                "in",
+                                "out"
+                            ],
+                            "meta:enum": {
+                                "not_provided": "Not Provided",
+                                "pending": "Pending Verification",
+                                "in": "Opt-In: the user explicitly consents to receiving messages.",
+                                "out": "Opt-Out: the user declines to receive any messages on this channel"
+                            },
+                            "meta:xdmField": "https://ns.adobe.com/xdm/channels/wns"
+                        }
+                    }
+                },
+                "globalOptout": {
+                    "title": "Global Opt-out",
+                    "type": "boolean",
+                    "description": "Do not contact this profile on any outbound channel.",
+                    "default": false,
+                    "meta:xdmField": "xdm:globalOptout"
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+        },
+        {
+            "$ref": "#/definitions/optinout"
+        }
+    ],
+    "meta:status": "experimental",
+    "meta:xdmId": "https://ns.adobe.com/xdm/context/optinout",
+    "meta:altId": "_xdm.context.optinout"
+}

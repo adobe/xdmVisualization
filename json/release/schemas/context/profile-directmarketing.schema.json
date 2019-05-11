@@ -1,0 +1,47 @@
+{
+    "$id": "https://ns.adobe.com/xdm/context/profile-directmarketing",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Profile Direct Marketing",
+    "type": "object",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "meta:intendedToExtend": [
+        "https://ns.adobe.com/xdm/context/profile"
+    ],
+    "description": "Direct Marketing addressing for profiles.",
+    "definitions": {
+        "profile-directmarketing": {
+            "properties": {
+                "directMarketingAddress": {
+                    "title": "Direct Marketing Address",
+                    "$ref": "https://ns.adobe.com/xdm/context/directmarketing-address",
+                    "description": "Direct Marketing postal address.",
+                    "meta:xdmField": "xdm:directMarketingAddress"
+                },
+                "directMarketingEmail": {
+                    "title": "Direct Marketing Email",
+                    "$ref": "https://ns.adobe.com/xdm/context/directmarketing-emailaddress",
+                    "description": "Direct Marketing email address.",
+                    "meta:xdmField": "xdm:directMarketingEmail"
+                },
+                "directMarketingPhone": {
+                    "title": "Direct Marketing Phone",
+                    "$ref": "https://ns.adobe.com/xdm/context/directmarketing-phonenumber",
+                    "description": "Direct Marketing phone number.",
+                    "meta:xdmField": "xdm:directMarketingPhone"
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+        },
+        {
+            "$ref": "#/definitions/profile-directmarketing"
+        }
+    ],
+    "meta:status": "experimental",
+    "meta:xdmId": "https://ns.adobe.com/xdm/context/profile-directmarketing",
+    "meta:altId": "_xdm.context.profile-directmarketing"
+}

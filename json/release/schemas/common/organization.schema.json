@@ -1,0 +1,84 @@
+{
+    "$id": "https://ns.adobe.com/xdm/common/organization",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Organization",
+    "type": "object",
+    "description": "",
+    "definitions": {
+        "organization": {
+            "properties": {
+                "_id": {
+                    "title": "Organization ID",
+                    "type": "string",
+                    "format": "uri-reference",
+                    "description": "A unique identifier for the organization.",
+                    "meta:xdmField": "@id"
+                },
+                "legalName": {
+                    "title": "Organization Name",
+                    "type": "string",
+                    "description": "The official name of the organization.",
+                    "meta:xdmField": "xdm:legalName"
+                },
+                "_schema": {
+                    "type": "object",
+                    "properties": {
+                        "description": {
+                            "title": "Organization Description",
+                            "type": "string",
+                            "description": "A description of the organization.",
+                            "meta:xdmField": "schema:description"
+                        },
+                        "numberOfEmployees": {
+                            "title": "Number of Employees",
+                            "type": "number",
+                            "description": "The number of employees the organization has.",
+                            "meta:xdmField": "schema:numberOfEmployees"
+                        }
+                    }
+                },
+                "industry": {
+                    "title": "Industry",
+                    "type": "string",
+                    "description": "The the industry that this organization is a part of. This is a free-form field, and it is advisable to use a structured value for queries or to use the `xdm:classifier` property.",
+                    "meta:xdmField": "xdm:industry"
+                },
+                "website": {
+                    "title": "Web Site",
+                    "type": "string",
+                    "format": "uri",
+                    "description": "The URL of the organization's website.",
+                    "meta:xdmField": "xdm:website"
+                },
+                "marketSegment": {
+                    "title": "Market Segment",
+                    "type": "string",
+                    "description": "The named market segment that the organization participates in. This is a free-form field, and it is advisable to use a structured value for queries or to use the `xdm:identifier` property.",
+                    "meta:xdmField": "xdm:marketSegment"
+                },
+                "location": {
+                    "title": "Location",
+                    "$ref": "https://ns.adobe.com/xdm/context/place",
+                    "description": "The location of the organization's main office.",
+                    "meta:xdmField": "xdm:location"
+                },
+                "rating": {
+                    "title": "Rating",
+                    "type": "number",
+                    "minimum": 0,
+                    "maximum": 1,
+                    "description": "The calculated score or star rating for this organization. `1` indicates the maximum possible rating, `0` the minumum possible rating.",
+                    "meta:xdmField": "xdm:rating"
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/organization"
+        }
+    ],
+    "meta:status": "stabilizing",
+    "meta:xdmId": "https://ns.adobe.com/xdm/common/organization",
+    "meta:altId": "_xdm.common.organization"
+}

@@ -1,0 +1,36 @@
+{
+    "$id": "https://ns.adobe.com/xdm/context/experienceevent-media",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "ExperienceEvent Details for Media",
+    "type": "object",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "meta:intendedToExtend": [
+        "https://ns.adobe.com/xdm/context/experienceevent"
+    ],
+    "description": "ExperienceEvent Details for Media.",
+    "definitions": {
+        "experienceevent-media": {
+            "properties": {
+                "media": {
+                    "title": "Media",
+                    "meta:status": "experimental",
+                    "$ref": "https://ns.adobe.com/xdm/context/media",
+                    "description": "Media activity information related to the experience event",
+                    "meta:xdmField": "xdm:media"
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+        },
+        {
+            "$ref": "#/definitions/experienceevent-media"
+        }
+    ],
+    "meta:status": "stabilizing",
+    "meta:xdmId": "https://ns.adobe.com/xdm/context/experienceevent-media",
+    "meta:altId": "_xdm.context.experienceevent-media"
+}

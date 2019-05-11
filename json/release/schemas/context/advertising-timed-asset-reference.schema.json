@@ -1,0 +1,61 @@
+{
+    "$id": "https://ns.adobe.com/xdm/context/advertising-timed-asset-reference",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Ad Asset Reference",
+    "type": "object",
+    "description": "Asset information about the ad captured by the experience event.",
+    "meta:extensible": true,
+    "definitions": {
+        "adAssetReference": {
+            "properties": {
+                "_id": {
+                    "title": "Ad ID",
+                    "type": "string",
+                    "format": "uri-reference",
+                    "description": "Identifier of the ad asset provided by Media Analytics customers.",
+                    "meta:xdmField": "@id"
+                },
+                "_dc": {
+                    "type": "object",
+                    "properties": {
+                        "title": {
+                            "title": "Ad Name",
+                            "type": "string",
+                            "description": "The friendly (human-readable) name of the ad asset.",
+                            "meta:xdmField": "dc:title"
+                        }
+                    }
+                },
+                "_xmpDM": {
+                    "type": "object",
+                    "properties": {
+                        "duration": {
+                            "title": "Ad Length/Duration",
+                            "type": "integer",
+                            "description": "Length of ad asset in seconds.",
+                            "meta:xdmField": "xmpDM:duration"
+                        }
+                    },
+                    "required": [
+                        "duration"
+                    ]
+                }
+            },
+            "required": [
+                "_id",
+                "_xmpDM"
+            ]
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+        },
+        {
+            "$ref": "#/definitions/adAssetReference"
+        }
+    ],
+    "meta:status": "experimental",
+    "meta:xdmId": "https://ns.adobe.com/xdm/context/advertising-timed-asset-reference",
+    "meta:altId": "_xdm.context.advertising-timed-asset-reference"
+}

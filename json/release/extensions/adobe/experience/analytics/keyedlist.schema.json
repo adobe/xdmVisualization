@@ -1,0 +1,29 @@
+{
+    "$id": "https://ns.adobe.com/experience/analytics/keyedlist",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Keyed List",
+    "type": "object",
+    "description": "List of keyed values.",
+    "definitions": {
+        "keyedlist": {
+            "properties": {
+                "list": {
+                    "title": "Keyed List",
+                    "type": "array",
+                    "items": {
+                        "$ref": "https://ns.adobe.com/experience/analytics/keyvalue"
+                    },
+                    "description": "List of keyed values.",
+                    "meta:xdmField": "xdm:list"
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/keyedlist"
+        }
+    ],
+    "meta:xdmId": "https://ns.adobe.com/experience/analytics/keyedlist",
+    "meta:altId": "_experience.analytics.keyedlist"
+}

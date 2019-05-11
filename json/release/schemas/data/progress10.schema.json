@@ -1,0 +1,61 @@
+{
+    "$id": "https://ns.adobe.com/xdm/data/progress10",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "10% Progress Marker",
+    "type": "object",
+    "meta:extensible": true,
+    "meta:extends": [
+        "https://ns.adobe.com/xdm/data/metricdefinition"
+    ],
+    "description": "Indicates that the playhead passed the 10% marker of media based on stream length. The marker is only counted once, even if seeking backwards. If seeking forward, markers that are skipped are not counted.",
+    "definitions": {
+        "metricdefinition": {
+            "properties": {
+                "_id": {
+                    "type": "string",
+                    "const": "xdm:progress10",
+                    "description": "The unique identifier of this metric.",
+                    "meta:xdmField": "@id"
+                },
+                "_schema": {
+                    "type": "object",
+                    "properties": {
+                        "name": {
+                            "type": "string",
+                            "const": "metric: progress10",
+                            "description": "Indicates that the playhead passed the 10% marker of media based on stream length. The marker is only counted once, even if seeking backwards. If seeking forward, markers that are skipped are not counted.",
+                            "meta:xdmField": "schema:name"
+                        }
+                    }
+                },
+                "measurement": {
+                    "type": "string",
+                    "description": "How to take measures of this metric.",
+                    "const": "count",
+                    "meta:xdmField": "xdm:measurement"
+                },
+                "unit": {
+                    "const": "",
+                    "meta:xdmField": "xdm:unit"
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/metricdefinition"
+        },
+        {
+            "$ref": "https://ns.adobe.com/xdm/data/metricdefinition"
+        }
+    ],
+    "meta:status": "stabilizing",
+    "meta:xdmId": "https://ns.adobe.com/xdm/data/progress10",
+    "meta:altId": "_xdm.data.progress10",
+    "required": [
+        "_id",
+        "schema:name",
+        "measurement",
+        "unit"
+    ]
+}

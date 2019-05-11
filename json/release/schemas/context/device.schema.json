@@ -1,0 +1,108 @@
+{
+    "$id": "https://ns.adobe.com/xdm/context/device",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Device",
+    "type": "object",
+    "meta:extensible": true,
+    "description": "An identified device that is an application or browser instance that is trackable across sessions, normally by cookies.",
+    "definitions": {
+        "device": {
+            "properties": {
+                "typeID": {
+                    "title": "Type Identifier",
+                    "type": "string",
+                    "description": "An identifier for the device. This may be an identifier from Device Atlas or another service that identifies the hardware that is being used.",
+                    "meta:xdmField": "xdm:typeID"
+                },
+                "typeIDService": {
+                    "title": "Type Identifier Service",
+                    "type": "string",
+                    "format": "uri",
+                    "description": "The namespace of the service that is used to identify the device type.",
+                    "meta:enum": {
+                        "https://ns.adobe.com/xdm/external/deviceatlas": "Device Atlas",
+                        "https://ns.adobe.com/xdm/external/adobecampaign": "Adobe Campaign"
+                    },
+                    "meta:xdmField": "xdm:typeIDService"
+                },
+                "type": {
+                    "title": "Type",
+                    "type": "string",
+                    "description": "Type of device being tracked.",
+                    "meta:enum": {
+                        "mobile": "Mobile",
+                        "tablet": "Tablet",
+                        "desktop": "Desktop",
+                        "ereader": "E-Reader",
+                        "gaming": "Gaming Console",
+                        "television": "Television",
+                        "settop": "Set-top Box",
+                        "mediaplayer": "Media Player"
+                    },
+                    "meta:xdmField": "xdm:type"
+                },
+                "manufacturer": {
+                    "title": "Manufacturer",
+                    "type": "string",
+                    "description": "The name of the organization who owns the design and creation of the Device. For example, 'Apple' is the manufacturer of the iPhone.",
+                    "meta:xdmField": "xdm:manufacturer"
+                },
+                "model": {
+                    "title": "Model",
+                    "type": "string",
+                    "description": "The name of the model for the Device. This is the common, human-readable or marketing name for the Device. The 'iPhone 6S' is a particular model of mobile phone.",
+                    "meta:xdmField": "xdm:model"
+                },
+                "modelNumber": {
+                    "title": "Model Number",
+                    "type": "string",
+                    "description": "The unique model number designation assigned by the manufacturer for this Device. Model numbers are not versions, but unique identifiers that identify a particular model configuration. While the model for a particular phone might be 'iPhone 6S' the model number would be 'A1633', or 'A1634' based on configuration at the time of sale.",
+                    "meta:xdmField": "xdm:modelNumber"
+                },
+                "screenHeight": {
+                    "title": "Screen Height",
+                    "type": "integer",
+                    "description": "The number of veritcal pixels of the device's active display in its default orientation.",
+                    "meta:xdmField": "xdm:screenHeight"
+                },
+                "screenWidth": {
+                    "title": "Screen Width",
+                    "type": "integer",
+                    "description": "The number of horizontal pixels of the device's active display in its default orientation.",
+                    "meta:xdmField": "xdm:screenWidth"
+                },
+                "colorDepth": {
+                    "title": "Color Depth",
+                    "type": "integer",
+                    "description": "The number of colors the display is able to represent.",
+                    "meta:xdmField": "xdm:colorDepth"
+                },
+                "screenOrientation": {
+                    "title": "Screen Orientation",
+                    "type": "string",
+                    "description": "The current screen orientation (\"portait\" or \"landscape\")",
+                    "enum": [
+                        "portrait",
+                        "landscape"
+                    ],
+                    "meta:enum": {
+                        "portrait": "Portrait",
+                        "landscape": "Landscape"
+                    },
+                    "meta:xdmField": "xdm:screenOrientation"
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+        },
+        {
+            "$ref": "#/definitions/device"
+        }
+    ],
+    "meta:status": "stabilizing",
+    "meta:xdmId": "https://ns.adobe.com/xdm/context/device",
+    "meta:altId": "_xdm.context.device"
+}

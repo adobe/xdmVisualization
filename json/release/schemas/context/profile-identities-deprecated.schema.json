@@ -1,0 +1,40 @@
+{
+    "$id": "https://ns.adobe.com/xdm/context/profile-identities-deprecated",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Identities Array for Profile (deprecated)",
+    "type": "object",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "meta:intendedToExtend": [
+        "https://ns.adobe.com/xdm/context/profile"
+    ],
+    "description": "Identities Array for Profile (deprecated).",
+    "definitions": {
+        "profile-identities-deprecated": {
+            "properties": {
+                "identities": {
+                    "meta:status": "deprecated",
+                    "title": "All User Identities (deprecated)",
+                    "type": "array",
+                    "items": {
+                        "$ref": "https://ns.adobe.com/xdm/context/identity"
+                    },
+                    "minItems": 1,
+                    "description": "Array of Identities. Condensed, normalized encapsulation of all end user identifiers.  Deprecated, use `xdm:identityMap` instead.",
+                    "meta:xdmField": "xdm:identities"
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+        },
+        {
+            "$ref": "#/definitions/profile-identities-deprecated"
+        }
+    ],
+    "meta:status": "deprecated",
+    "meta:xdmId": "https://ns.adobe.com/xdm/context/profile-identities-deprecated",
+    "meta:altId": "_xdm.context.profile-identities-deprecated"
+}

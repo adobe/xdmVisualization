@@ -1,0 +1,73 @@
+{
+    "$id": "https://ns.adobe.com/experience/implementations",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Adobe Experience Platform implementation details",
+    "type": "object",
+    "description": "Details the type and version of client implementations for data collection interacting with Adobe Experience Cloud services. Used for debugging and usage analysis.",
+    "definitions": {
+        "implementations": {
+            "properties": {
+                "_experience": {
+                    "type": "object",
+                    "properties": {
+                        "analytics": {
+                            "type": "object",
+                            "properties": {
+                                "implementation": {
+                                    "title": "Client Implementation for Adobe Analytics",
+                                    "$ref": "https://ns.adobe.com/xdm/context/implementationdetails",
+                                    "description": "Client details interacting with Adobe Analytics.",
+                                    "meta:xdmField": "https://ns.adobe.com/experience/analytics/implementation"
+                                }
+                            }
+                        },
+                        "target": {
+                            "type": "object",
+                            "properties": {
+                                "implementation": {
+                                    "title": "Client Implementation for Adobe Target",
+                                    "$ref": "https://ns.adobe.com/xdm/context/implementationdetails",
+                                    "description": "Client details interacting with Adobe Target.",
+                                    "meta:xdmField": "https://ns.adobe.com/xdm/experience/target/implementation"
+                                }
+                            }
+                        },
+                        "idservice": {
+                            "type": "object",
+                            "properties": {
+                                "implementation": {
+                                    "title": "Client Implementation for Adobe Visitor Service",
+                                    "$ref": "https://ns.adobe.com/xdm/context/implementationdetails",
+                                    "description": "Client details interacting with Adobe Experience Cloud ID Service.",
+                                    "meta:xdmField": "https://ns.adobe.com/experience/idservice/implementation"
+                                }
+                            }
+                        },
+                        "adcloud": {
+                            "type": "object",
+                            "properties": {
+                                "implementation": {
+                                    "title": "Client Implementation for Adobe AdCloud",
+                                    "$ref": "https://ns.adobe.com/xdm/context/implementationdetails",
+                                    "description": "Client details interacting with Adobe AdCloud.",
+                                    "meta:xdmField": "https://ns.adobe.com/experience/adcloud/implementation"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+        },
+        {
+            "$ref": "#/definitions/implementations"
+        }
+    ],
+    "meta:status": "stabilizing",
+    "meta:xdmId": "https://ns.adobe.com/experience/implementations",
+    "meta:altId": "_experience.implementations"
+}

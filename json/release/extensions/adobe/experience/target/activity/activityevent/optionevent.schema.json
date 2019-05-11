@@ -1,0 +1,122 @@
+{
+    "$id": "https://ns.adobe.com/experience/target/activity/activityevent/optionevent",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Activity Option Event",
+    "type": "object",
+    "description": "Represents the option and its that was displayed during the activity processing.",
+    "definitions": {
+        "optionevent": {
+            "properties": {
+                "_experience": {
+                    "type": "object",
+                    "properties": {
+                        "target": {
+                            "type": "object",
+                            "properties": {
+                                "activity": {
+                                    "type": "object",
+                                    "properties": {
+                                        "activityevent": {
+                                            "type": "object",
+                                            "properties": {
+                                                "optionevent": {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "activityLocation": {
+                                                            "title": "Activity Location",
+                                                            "type": "object",
+                                                            "description": "A location is a page on your website. It could also refer to a place in a mobile app, an email, or any other place where you run an optimization.",
+                                                            "properties": {
+                                                                "locationID": {
+                                                                    "title": "Location Identifier",
+                                                                    "type": "string",
+                                                                    "description": "The local location identifier",
+                                                                    "meta:xdmField": "xdm:locationID"
+                                                                },
+                                                                "selector": {
+                                                                    "title": "Selector",
+                                                                    "type": "string",
+                                                                    "description": "A CSS selector in a html page.",
+                                                                    "meta:xdmField": "xdm:selector"
+                                                                }
+                                                            },
+                                                            "meta:xdmField": "https://ns.adobe.com/experience/target/activity/activityevent/optionevent/activityLocation",
+                                                            "required": [
+                                                                "locationID"
+                                                            ]
+                                                        },
+                                                        "targetOption": {
+                                                            "title": "Activity Option",
+                                                            "type": "object",
+                                                            "description": "An option is the displayed content on your web pages during activities.",
+                                                            "properties": {
+                                                                "optionID": {
+                                                                    "title": "Option Identifier",
+                                                                    "type": "string",
+                                                                    "description": "Unique activity option identifier.",
+                                                                    "meta:xdmField": "xdm:optionID"
+                                                                },
+                                                                "offerID": {
+                                                                    "title": "Offer Identifier",
+                                                                    "type": "string",
+                                                                    "description": "An offer is the content displayed on your web pages during campaigns or activities.",
+                                                                    "meta:xdmField": "xdm:offerID"
+                                                                },
+                                                                "version": {
+                                                                    "title": "Offer Version",
+                                                                    "type": "string",
+                                                                    "description": "Version of the offer that was displayed.",
+                                                                    "meta:xdmField": "xdm:version"
+                                                                }
+                                                            },
+                                                            "meta:xdmField": "https://ns.adobe.com/experience/target/activity/activityevent/optionevent/targetOption",
+                                                            "required": [
+                                                                "optionID"
+                                                            ]
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "activityLocation",
+                                                        "targetOption"
+                                                    ]
+                                                }
+                                            },
+                                            "required": [
+                                                "optionevent"
+                                            ]
+                                        }
+                                    },
+                                    "required": [
+                                        "activityevent"
+                                    ]
+                                }
+                            },
+                            "required": [
+                                "activity"
+                            ]
+                        }
+                    },
+                    "required": [
+                        "target"
+                    ]
+                },
+                "eventScope": {
+                    "$ref": "https://ns.adobe.com/experience/target/activity/activityevent/eventscope#/definitions/eventscope",
+                    "meta:xdmField": "xdm:eventScope"
+                }
+            },
+            "required": [
+                "_experience",
+                "eventScope"
+            ]
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/optionevent"
+        }
+    ],
+    "meta:status": "experimental",
+    "meta:xdmId": "https://ns.adobe.com/experience/target/activity/activityevent/optionevent",
+    "meta:altId": "_experience.target.activity.activityevent.optionevent"
+}

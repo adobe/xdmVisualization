@@ -1,0 +1,61 @@
+{
+    "$id": "https://ns.adobe.com/xdm/data/measuredwindowinactive",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "measured-window-inactive",
+    "type": "object",
+    "meta:extensible": true,
+    "meta:extends": [
+        "https://ns.adobe.com/xdm/data/metricdefinition"
+    ],
+    "description": "The advertising/viewability metric measured-window-inactive describes whether the ad was displayed in a window not active by the user at event time.",
+    "definitions": {
+        "metricdefinition": {
+            "properties": {
+                "_id": {
+                    "type": "string",
+                    "const": "xdm:measuredWindowInactive",
+                    "description": "The unique identifier of this metric.",
+                    "meta:xdmField": "@id"
+                },
+                "_schema": {
+                    "type": "object",
+                    "properties": {
+                        "name": {
+                            "type": "string",
+                            "const": "advertising/viewability metric: measuredWindowInactive",
+                            "description": "The advertising/viewability metric measured-window-inactive describes whether the ad was displayed in a window not active by the user at event time.",
+                            "meta:xdmField": "schema:name"
+                        }
+                    }
+                },
+                "measurement": {
+                    "type": "string",
+                    "description": "How to take measures of this metric.",
+                    "const": "count",
+                    "meta:xdmField": "xdm:measurement"
+                },
+                "unit": {
+                    "const": "",
+                    "meta:xdmField": "xdm:unit"
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/metricdefinition"
+        },
+        {
+            "$ref": "https://ns.adobe.com/xdm/data/metricdefinition"
+        }
+    ],
+    "meta:status": "stabilizing",
+    "meta:xdmId": "https://ns.adobe.com/xdm/data/measuredwindowinactive",
+    "meta:altId": "_xdm.data.measuredwindowinactive",
+    "required": [
+        "_id",
+        "schema:name",
+        "measurement",
+        "unit"
+    ]
+}

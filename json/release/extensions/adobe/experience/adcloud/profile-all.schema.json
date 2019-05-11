@@ -1,0 +1,35 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$id": "https://ns.adobe.com/experience/adcloud/profile-all",
+    "title": "Adobe AdCloud Profile Full Extension",
+    "type": "object",
+    "meta:extensible": true,
+    "meta:abstract": true,
+    "meta:intendedToExtend": [
+        "https://ns.adobe.com/xdm/context/profile"
+    ],
+    "description": "Adobe AdCloud Profile Full Extension. Contains all Solution added fields.",
+    "definitions": {
+        "profile-all": {
+            "properties": {
+                "syncedRemarketingAudiences": {
+                    "title": "Synchronized segments",
+                    "type": "array",
+                    "items": {
+                        "$ref": "https://ns.adobe.com/experience/adcloud/syncedremarketingaudience"
+                    },
+                    "description": "List of Search retargeting entities that have been synced with the adCloud partner to build audiences on the platform, e.g. RLSA for Google, WCA for Facebook",
+                    "meta:xdmField": "xdm:syncedRemarketingAudiences"
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/profile-all"
+        }
+    ],
+    "meta:status": "experimental",
+    "meta:xdmId": "https://ns.adobe.com/experience/adcloud/profile-all",
+    "meta:altId": "_experience.adcloud.profile-all"
+}

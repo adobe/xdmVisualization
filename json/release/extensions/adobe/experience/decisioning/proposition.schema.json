@@ -1,0 +1,53 @@
+{
+    "$id": "https://ns.adobe.com/experience/decisioning/proposition",
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "title": "Decision Proposition Reference",
+    "type": "object",
+    "meta:abstract": true,
+    "meta:extensible": true,
+    "meta:intendedToExtend": [
+        "https://ns.adobe.com/xdm/context/experienceevent",
+        "https://ns.adobe.com/experience/decisioning/decisionevent"
+    ],
+    "meta:extends": [
+        "https://ns.adobe.com/xdm/context/identitymap"
+    ],
+    "description": "Decision Proposition Reference is used to link to the proposition in experience events that are response to a particular proposition.",
+    "definitions": {
+        "proposition-mixin": {
+            "properties": {
+                "_experience": {
+                    "type": "object",
+                    "properties": {
+                        "decisioning": {
+                            "type": "object",
+                            "properties": {
+                                "propositionID": {
+                                    "title": "Proposition Identifier",
+                                    "type": "string",
+                                    "format": "uri-reference",
+                                    "description": "An Identity for the Proposition entity associated with an XDM DecisionEvent. A single DecisionEvent can propose multiple Options for a set of Activities at once, one for each Activity involved. It is the expectation that applications reference this PropositionID in every ExperienceEvent that was influended by the set of propositions. An Profile's proposition-response history is maintained with these Proposition identifiers.",
+                                    "meta:xdmField": "https://ns.adobe.com/experience/decisioning/propositionID"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "https://ns.adobe.com/xdm/common/extensible#/definitions/@context"
+        },
+        {
+            "$ref": "https://ns.adobe.com/xdm/context/identitymap"
+        },
+        {
+            "$ref": "#/definitions/proposition-mixin"
+        }
+    ],
+    "meta:status": "experimental",
+    "meta:xdmId": "https://ns.adobe.com/experience/decisioning/proposition",
+    "meta:altId": "_experience.decisioning.proposition"
+}
