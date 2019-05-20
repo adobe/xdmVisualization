@@ -1,7 +1,7 @@
 {
     "$schema": "http://json-schema.org/draft-06/schema#",
     "$id": "https://ns.adobe.com/experience/adcloud/experienceevent-all",
-    "title": "Adobe AdCloud ExperienceEvent Full Extension",
+    "title": "Adobe Advertising Cloud ExperienceEvent Full Extension",
     "type": "object",
     "meta:extensible": true,
     "meta:abstract": true,
@@ -47,6 +47,24 @@
                                     "type": "string",
                                     "description": "ID from the Ad Servers through AdCloud STATS to track click-through conversion on browsers that block third party cookies",
                                     "meta:xdmField": "https://ns.adobe.com/experience/adcloud/stitchId"
+                                },
+                                "adDeliveryDetails": {
+                                    "title": "Ad Delivery Details",
+                                    "$ref": "https://ns.adobe.com/experience/adcloud/addeliverydetails",
+                                    "description": "Adobe AdCloud Search Ad Delivery Details.",
+                                    "meta:xdmField": "https://ns.adobe.com/experience/adcloud/adDeliveryDetails"
+                                },
+                                "productDetails": {
+                                    "title": "Ad Product Details",
+                                    "$ref": "https://ns.adobe.com/experience/adcloud/productdetails",
+                                    "description": "Adobe AdCloud Search Ad Product Details.",
+                                    "meta:xdmField": "https://ns.adobe.com/experience/adcloud/productDetails"
+                                },
+                                "conversionDetails": {
+                                    "title": "Ad Conversion Details",
+                                    "$ref": "https://ns.adobe.com/experience/adcloud/conversiondetails",
+                                    "description": "Search Ad Conversion Details.",
+                                    "meta:xdmField": "https://ns.adobe.com/experience/adcloud/conversionDetails"
                                 }
                             }
                         }

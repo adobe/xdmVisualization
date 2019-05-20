@@ -8,45 +8,45 @@
         "campaign": {
             "properties": {
                 "accountId": {
-                    "title": "Account ID",
+                    "title": "Account Identifier",
                     "type": "string",
-                    "description": "Unique identifier for the account this event is associated with.",
+                    "description": "Identifier for the account.",
                     "meta:xdmField": "xdm:accountId"
                 },
                 "campaignId": {
-                    "title": "Campaign ID",
+                    "title": "Campaign Identifier",
                     "type": "string",
-                    "description": "Unique identifier for the campaign which this event is associated with.",
+                    "description": "Identifier for the campaign.",
                     "meta:xdmField": "xdm:campaignId"
                 },
                 "placementId": {
-                    "title": "Placement ID",
+                    "title": "Placement Identifier",
                     "type": "string",
-                    "description": "Unique identifier for the placement which this event is associated with.",
+                    "description": "Identifier for the placement.",
                     "meta:xdmField": "xdm:placementId"
                 },
                 "packageId": {
-                    "title": "Package ID",
+                    "title": "Package Identifier",
                     "type": "string",
-                    "description": "Unique identifier for the package which this event is associated with.",
+                    "description": "Identifier for the package.",
                     "meta:xdmField": "xdm:packageId"
                 },
                 "advertiserId": {
-                    "title": "Advertiser ID",
+                    "title": "Advertiser Identifier",
                     "type": "string",
-                    "description": "Unique identifier for the advertiser which this event is associated with.",
+                    "description": "Identifier for the advertiser.",
                     "meta:xdmField": "xdm:advertiserId"
                 },
                 "experimentId": {
-                    "title": "Experiment ID",
+                    "title": "Experiment Identifier",
                     "type": "string",
-                    "description": "Unique identifier for the experiment which this event is associated with.",
+                    "description": "Identifier for the experiment.",
                     "meta:xdmField": "xdm:experimentId"
                 },
                 "sampleGroupId": {
-                    "title": "Sample Group ID",
+                    "title": "Sample Group Identifier",
                     "type": "string",
-                    "description": "Unique identifier for the sample group which this event is associated with.",
+                    "description": "Identifier for the sample group.",
                     "meta:xdmField": "xdm:sampleGroupId"
                 },
                 "currency": {
@@ -57,7 +57,7 @@
                         "EUR"
                     ],
                     "pattern": "^[A-Z]{3}$",
-                    "description": "The ISO 4217 billing currency code for the account this event is associated with.",
+                    "description": "The ISO 4217 billing currency code for the account.",
                     "meta:xdmField": "xdm:currency"
                 }
             }
