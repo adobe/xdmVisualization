@@ -1,4 +1,10 @@
 {
+    "meta:license": [
+        "Copyright 2017 Adobe Systems Incorporated. All rights reserved.",
+        "This work is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license",
+        "you may not use this file except in compliance with the License. You may obtain a copy",
+        "of the License at https://creativecommons.org/licenses/by/4.0/"
+    ],
     "$id": "https://ns.adobe.com/xdm/context/person",
     "$schema": "http://json-schema.org/draft-06/schema#",
     "title": "Person",
@@ -9,35 +15,31 @@
     "definitions": {
         "person": {
             "properties": {
-                "name": {
-                    "title": "Full name",
+                "xdm:name": {
+                    "title": "Full Name",
                     "$ref": "https://ns.adobe.com/xdm/context/person-name",
-                    "description": "The person's full name",
-                    "meta:xdmField": "xdm:name"
+                    "description": "The person's full name"
                 },
-                "birthDate": {
+                "xdm:birthDate": {
                     "title": "Birth Date",
                     "type": "string",
                     "format": "date",
-                    "description": "The full date a person was born.",
-                    "meta:xdmField": "xdm:birthDate"
+                    "description": "The full date a person was born."
                 },
-                "birthDayAndMonth": {
+                "xdm:birthDayAndMonth": {
                     "title": "Birth Date",
                     "type": "string",
                     "pattern": "[0-1][0-9]-[0-9][0-9]",
-                    "description": "The day and month a person was born, in the format MM-DD. This field should be used when the day and month of a person's birth is known, but not the year.",
-                    "meta:xdmField": "xdm:birthDayAndMonth"
+                    "description": "The day and month a person was born, in the format MM-DD. This field should be used when the day and month of a person's birth is known, but not the year."
                 },
-                "birthYear": {
-                    "title": "Birth year",
+                "xdm:birthYear": {
+                    "title": "Birth Year",
                     "type": "integer",
                     "description": "The year a person was born including the century (yyyy, e.g 1983).  This field should be used when only the person's age is known, not the full birth date.",
                     "minimum": 1,
-                    "maximum": 32767,
-                    "meta:xdmField": "xdm:birthYear"
+                    "maximum": 32767
                 },
-                "gender": {
+                "xdm:gender": {
                     "title": "Gender",
                     "type": "string",
                     "enum": [
@@ -53,8 +55,7 @@
                         "non_specific": "Nonspecific"
                     },
                     "description": "Gender identity of the person.\n",
-                    "default": "not_specified",
-                    "meta:xdmField": "xdm:gender"
+                    "default": "not_specified"
                 }
             }
         }
@@ -67,7 +68,5 @@
             "$ref": "#/definitions/person"
         }
     ],
-    "meta:status": "experimental",
-    "meta:xdmId": "https://ns.adobe.com/xdm/context/person",
-    "meta:altId": "_xdm.context.person"
+    "meta:status": "experimental"
 }
