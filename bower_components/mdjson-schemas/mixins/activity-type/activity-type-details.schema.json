@@ -1,0 +1,23 @@
+{
+  "id": "_xdm.context.activity-type-details",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "XDM Activity Type Details",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "description": "An XDM Activity representing task or a business event",
+  "meta:status": "experimental",
+  "meta:xdmType": "object",
+  "properties": {
+    "activityType": {
+      "title": "Activity Type Details",
+      "$ref": "../../datatypes/activity-type-reference-details.schema.json",
+      "description": "Additional properties for Activity type",
+      "meta:xdmField": "xdm:activityType",
+      "tagNumber": 1
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/context/activity-type-details",
+  "meta:altId": "_xdm.context.activity-type-details",
+  "id": "_xdm.context.activity-type-details"
+}

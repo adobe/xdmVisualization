@@ -1,6 +1,5 @@
 # XDM Schemas
 
-This repository is intended to be READ ONLY and is used to stage and prepare schemas that are loaded into the XDM Registry. 
+This repository is intended to be the visualization of xdms in https://github.com/adobe/xdm.
 
 All schema design and discussions should happen at https://github.com/adobe/xdm
-

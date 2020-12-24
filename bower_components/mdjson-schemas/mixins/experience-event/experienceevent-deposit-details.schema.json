@@ -1,0 +1,49 @@
+{
+  "id": "_xdm.mixins.experienceevent-deposit-details",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Deposit Details",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:industry": [
+    "financial_services"
+  ],
+  "description": "Deposit details such as ID, type, and amount.",
+  "meta:status": "experimental",
+  "meta:xdmType": "object",
+  "properties": {
+    "personalFinances": {
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "depositDetails": {
+          "type": "object",
+          "meta:xdmType": "object",
+          "properties": {
+            "deposit": {
+              "title": "Deposit",
+              "$ref": "../../datatypes/transaction.schema.json",
+              "description": "Extension of transaction data type.",
+              "meta:xdmField": "xdm:deposit",
+              "tagNumber": 1
+            },
+            "depositAccount": {
+              "title": "Deposit Account",
+              "$ref": "../../datatypes/financial-account.schema.json",
+              "description": "Extension of financialAccount data type.",
+              "meta:xdmField": "xdm:depositAccount",
+              "tagNumber": 2
+            }
+          },
+          "meta:xdmField": "xdm:depositDetails",
+          "tagNumber": 1
+        }
+      },
+      "meta:xdmField": "xdm:personalFinances",
+      "tagNumber": 1
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/mixins/experienceevent-deposit-details",
+  "meta:altId": "_xdm.mixins.experienceevent-deposit-details",
+  "id": "_xdm.mixins.experienceevent-deposit-details"
+}

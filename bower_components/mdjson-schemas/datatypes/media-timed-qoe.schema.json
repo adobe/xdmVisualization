@@ -1,0 +1,167 @@
+{
+  "id": "_xdm.context.media-timed-qoe",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Timed media quality of experience",
+  "type": "object",
+  "meta:status": "stable",
+  "meta:extensible": true,
+  "description": "Timed media properties related to the content playback's quality of experience (QoE).",
+  "meta:xdmType": "object",
+  "properties": {
+    "errors": {
+      "title": "Errors",
+      "$ref": "data/measure.schema.json",
+      "description": "The number of errors that were encountered during playback.",
+      "meta:xdmField": "xdm:errors",
+      "tagNumber": 1
+    },
+    "buffers": {
+      "title": "Buffer events",
+      "$ref": "data/measure.schema.json",
+      "description": "The number of buffer states that occurred during a playback session.",
+      "meta:xdmField": "xdm:buffers",
+      "tagNumber": 2
+    },
+    "bufferTime": {
+      "title": "Total buffer duration",
+      "$ref": "data/measure.schema.json",
+      "description": "Describes the total amount of time in seconds, spent buffering.",
+      "meta:xdmField": "xdm:bufferTime",
+      "tagNumber": 3
+    },
+    "bufferImpactedStreams": {
+      "title": "Buffer impacted streams",
+      "$ref": "data/measure.schema.json",
+      "description": "The number of streams impacted by buffering.",
+      "meta:xdmField": "xdm:bufferImpactedStreams",
+      "tagNumber": 4
+    },
+    "stalls": {
+      "title": "Stalling events",
+      "$ref": "data/measure.schema.json",
+      "description": "The number of stall states that occurred during a playback session.",
+      "meta:xdmField": "xdm:stalls",
+      "tagNumber": 5
+    },
+    "stallTime": {
+      "title": "Total stalling duration",
+      "$ref": "data/measure.schema.json",
+      "description": "Describes the duration in seconds in which the playback was stalled during playback.",
+      "meta:xdmField": "xdm:stallTime",
+      "tagNumber": 6
+    },
+    "stallingImpactedStreams": {
+      "title": "Stalling impacted streams",
+      "$ref": "data/measure.schema.json",
+      "description": "The number of streams impacted by stalling.",
+      "meta:xdmField": "xdm:stallingImpactedStreams",
+      "tagNumber": 7
+    },
+    "bitrateChanges": {
+      "title": "Bitrate changes",
+      "$ref": "data/measure.schema.json",
+      "description": "The number of bitrate change events that occurred during a playback session.",
+      "meta:xdmField": "xdm:bitrateChanges",
+      "tagNumber": 8
+    },
+    "bitrateAverage": {
+      "title": "Average bitrate",
+      "$ref": "data/measure.schema.json",
+      "description": "A weighted average of all bitrate values related to the play duration that occurred during a playback session.",
+      "meta:xdmField": "xdm:bitrateAverage",
+      "tagNumber": 9
+    },
+    "bitrateAverageBucket": {
+      "title": "Average bitrate bucket",
+      "type": "string",
+      "description": "The average bitrate (in kbps). The value is predefined buckets at 100kbps intervals.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:bitrateAverageBucket",
+      "tagNumber": 10
+    },
+    "bitrateChangeImpactedStreams": {
+      "title": "Bitrate change impacted streams",
+      "$ref": "data/measure.schema.json",
+      "description": "The number of streams in which bitrate changes occurred.",
+      "meta:xdmField": "xdm:bitrateChangeImpactedStreams",
+      "tagNumber": 11
+    },
+    "droppedFrames": {
+      "title": "Dropped frames",
+      "$ref": "data/measure.schema.json",
+      "description": "The number of frames dropped during playback of the main content.",
+      "meta:xdmField": "xdm:droppedFrames",
+      "tagNumber": 12
+    },
+    "droppedFrameImpactedStreams": {
+      "title": "Dropped frame impacted streams",
+      "$ref": "data/measure.schema.json",
+      "description": "The number of streams in which frames were dropped.",
+      "meta:xdmField": "xdm:droppedFrameImpactedStreams",
+      "tagNumber": 13
+    },
+    "dropBeforeStarts": {
+      "title": "Drops before starts",
+      "$ref": "data/measure.schema.json",
+      "description": "Indicates the user abandoned the media stream before the first frame for example, during the pre-roll ad break, or due to an error while loading the content from the CDN.",
+      "meta:xdmField": "xdm:dropBeforeStarts",
+      "tagNumber": 14
+    },
+    "timeToStart": {
+      "title": "Time to start",
+      "$ref": "data/measure.schema.json",
+      "description": "Describes the duration (in seconds) passed between video load and start.",
+      "meta:xdmField": "xdm:timeToStart",
+      "tagNumber": 15
+    },
+    "playerSdkErrors": {
+      "title": "Player SDK Error IDs",
+      "type": "array",
+      "description": "The error IDs encountered during a playback session that originated in the Player.",
+      "meta:xdmType": "array",
+      "items": {
+        "type": "string",
+        "meta:xdmType": "string",
+        "tagNumber": 1
+      },
+      "meta:xdmField": "xdm:playerSdkErrors",
+      "tagNumber": 16
+    },
+    "mediaSdkErrors": {
+      "title": "Media SDK Error IDs",
+      "type": "array",
+      "description": "The error IDs encountered during a playback session that originated in the Media SDK.",
+      "meta:xdmType": "array",
+      "items": {
+        "type": "string",
+        "meta:xdmType": "string",
+        "tagNumber": 1
+      },
+      "meta:xdmField": "xdm:mediaSdkErrors",
+      "tagNumber": 17
+    },
+    "externalSdkErrors": {
+      "title": "External Error IDs",
+      "type": "array",
+      "description": "The error IDs encountered during a playback session that originated outside the Player or SDK.",
+      "meta:xdmType": "array",
+      "items": {
+        "type": "string",
+        "meta:xdmType": "string",
+        "tagNumber": 1
+      },
+      "meta:xdmField": "xdm:externalSdkErrors",
+      "tagNumber": 18
+    },
+    "errorImpactedStreams": {
+      "title": "Error impacted streams",
+      "$ref": "data/measure.schema.json",
+      "description": "The number of streams in which an error event occurred.",
+      "meta:xdmField": "xdm:errorImpactedStreams",
+      "tagNumber": 19
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/context/media-timed-qoe",
+  "meta:altId": "_xdm.context.media-timed-qoe",
+  "id": "_xdm.context.media-timed-qoe"
+}

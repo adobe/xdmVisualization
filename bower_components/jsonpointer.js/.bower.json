@@ -1,0 +1,22 @@
+{
+  "name": "jsonpointer.js",
+  "version": "0.4.0",
+  "main": "src/jsonpointer.js",
+  "ignore": [
+    "**/.*",
+    "Gruntfile.js",
+    "package.json",
+    "node_modules",
+    "test/"
+  ],
+  "homepage": "https://github.com/alexeykuzmin/jsonpointer.js",
+  "_release": "0.4.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.4.0",
+    "commit": "b3c253d4eb69eab6c1b5dd72f7320b6c5f5b4e12"
+  },
+  "_source": "https://github.com/alexeykuzmin/jsonpointer.js.git",
+  "_target": "~0.4.0",
+  "_originalSource": "jsonpointer.js"
+}
