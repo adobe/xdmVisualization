@@ -1,0 +1,90 @@
+{
+  "id": "_xdm.mixins.experienceevent-claim-process",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Claim Process",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:industry": [
+    "financial_services",
+    "health_and_life_sciences",
+    "high_tech"
+  ],
+  "description": "Claim details such as claim policy ID and claim creation steps.",
+  "meta:status": "experimental",
+  "meta:xdmType": "object",
+  "properties": {
+    "disputes": {
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "claimProcess": {
+          "type": "object",
+          "meta:xdmType": "object",
+          "properties": {
+            "claimID": {
+              "title": "Claim ID",
+              "type": "string",
+              "description": "ID of the claim being submitted.",
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:claimID",
+              "tagNumber": 1
+            },
+            "claimStartDate": {
+              "title": "Claim Start Date",
+              "type": "string",
+              "format": "date-time",
+              "description": "Date the claim was successfully submitted.",
+              "meta:xdmType": "date-time",
+              "meta:xdmField": "xdm:claimStartDate",
+              "tagNumber": 2
+            },
+            "claimStatus": {
+              "title": "Claim Status",
+              "type": "string",
+              "enum": [
+                "initiated",
+                "in progress",
+                "approved",
+                "declined"
+              ],
+              "description": "Captures the status of the claim for any given point in the application process.",
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:claimStatus",
+              "tagNumber": 3
+            },
+            "claimSteps": {
+              "title": "Claim Steps",
+              "$ref": "../../datatypes/tool-usage.schema.json",
+              "description": "Extension of toolUsage data type.",
+              "meta:xdmField": "xdm:claimSteps",
+              "tagNumber": 4
+            },
+            "claimType": {
+              "title": "Claim Type",
+              "type": "string",
+              "description": "Type of claim submitted.",
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:claimType",
+              "tagNumber": 5
+            },
+            "policy": {
+              "title": "Policy",
+              "$ref": "../../datatypes/policy-details.schema.json",
+              "description": "Extension of Policy data type.",
+              "meta:xdmField": "xdm:policy",
+              "tagNumber": 6
+            }
+          },
+          "meta:xdmField": "xdm:claimProcess",
+          "tagNumber": 1
+        }
+      },
+      "meta:xdmField": "xdm:disputes",
+      "tagNumber": 1
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/mixins/experienceevent-claim-process",
+  "meta:altId": "_xdm.mixins.experienceevent-claim-process",
+  "id": "_xdm.mixins.experienceevent-claim-process"
+}

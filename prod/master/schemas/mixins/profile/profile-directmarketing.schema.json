@@ -1,0 +1,37 @@
+{
+  "id": "_xdm.context.profile-directmarketing",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Profile direct marketing",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "description": "Use for direct marketing activities such as addresses, emails, and phone numbers.",
+  "meta:status": "stable",
+  "meta:xdmType": "object",
+  "properties": {
+    "directMarketingAddress": {
+      "title": "Direct marketing address",
+      "$ref": "../../datatypes/directmarketing-address.schema.json",
+      "description": "Direct marketing postal address.",
+      "meta:xdmField": "xdm:directMarketingAddress",
+      "tagNumber": 1
+    },
+    "directMarketingEmail": {
+      "title": "Direct marketing email",
+      "$ref": "../../datatypes/directmarketing-emailaddress.schema.json",
+      "description": "Direct marketing email address.",
+      "meta:xdmField": "xdm:directMarketingEmail",
+      "tagNumber": 2
+    },
+    "directMarketingPhone": {
+      "title": "Direct marketing phone",
+      "$ref": "../../datatypes/directmarketing-phonenumber.schema.json",
+      "description": "Direct marketing phone number.",
+      "meta:xdmField": "xdm:directMarketingPhone",
+      "tagNumber": 3
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/context/profile-directmarketing",
+  "meta:altId": "_xdm.context.profile-directmarketing",
+  "id": "_xdm.context.profile-directmarketing"
+}

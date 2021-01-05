@@ -1,0 +1,58 @@
+{
+  "id": "_xdm.common.b2b-contact",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "B2B Contact",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "description": "This Data Type is used to capture B2B Contact specific attributes.",
+  "meta:status": "deprecated",
+  "meta:xdmType": "object",
+  "properties": {
+    "ID": {
+      "title": "Contact Record Id",
+      "description": "Unique record id of the contact in the source system.",
+      "type": "string",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:ID",
+      "tagNumber": 1
+    },
+    "accountID": {
+      "title": "Contact Account id",
+      "description": "ID of the account that’s the parent of this contact.",
+      "type": "string",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:accountID",
+      "tagNumber": 2
+    },
+    "leadSource": {
+      "title": "Lead Source",
+      "description": "Field recording what source the lead originated from.",
+      "type": "string",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:leadSource",
+      "tagNumber": 3
+    },
+    "extendedContact": {
+      "title": "Contact Extended Properties",
+      "description": "Holds additional properties for a person to be recognized as a contact in the business-to-business space.",
+      "$ref": "contact-lead.schema.json",
+      "meta:xdmField": "xdm:extendedContact",
+      "tagNumber": 4
+    },
+    "preferences": {
+      "title": "Contact Preferences",
+      "description": "Holds opt out values for different channels as selected by the contact.",
+      "$ref": "optinout.schema.json",
+      "meta:xdmField": "xdm:preferences",
+      "tagNumber": 5
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/common/b2b-contact",
+  "meta:altId": "_xdm.common.b2b-contact",
+  "required": [
+    "ID",
+    "accountID"
+  ],
+  "id": "_xdm.common.b2b-contact"
+}

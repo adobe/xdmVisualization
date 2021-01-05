@@ -1,0 +1,82 @@
+{
+  "id": "_xdm.datatypes.comparisons",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Comparisons",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:industry": [
+    "retail",
+    "financial_services",
+    "travel_and_hospitality",
+    "telecom",
+    "automotive",
+    "health_and_life_sciences",
+    "high_tech",
+    "manufacturing"
+  ],
+  "description": "Used for site comparisons, such as products, cards, rooms, flights, etc.",
+  "meta:status": "experimental",
+  "meta:xdmType": "object",
+  "properties": {
+    "comparisonAddition": {
+      "title": "Comparison Addition",
+      "$ref": "data/measure.schema.json",
+      "description": "Tracked when an item is added to a comparison.",
+      "meta:xdmField": "xdm:comparisonAddition",
+      "tagNumber": 1
+    },
+    "comparisonCount": {
+      "title": "Comparison Count",
+      "type": "integer",
+      "description": "Count of the total number of items being compared.",
+      "meta:xdmType": "int",
+      "meta:xdmField": "xdm:comparisonCount",
+      "tagNumber": 2
+    },
+    "comparisonItems": {
+      "title": "Comparison List Items",
+      "type": "array",
+      "description": "An array of all item IDs/SKUs in the list of products.  ",
+      "meta:xdmType": "array",
+      "items": {
+        "type": "string",
+        "meta:xdmType": "string",
+        "tagNumber": 1
+      },
+      "meta:xdmField": "xdm:comparisonItems",
+      "tagNumber": 3
+    },
+    "comparisonRemoval": {
+      "title": "Comparison Removal",
+      "$ref": "data/measure.schema.json",
+      "description": "Tracked when an item is removed from a comparison.",
+      "meta:xdmField": "xdm:comparisonRemoval",
+      "tagNumber": 4
+    },
+    "comparisonType": {
+      "title": "Comparison Type",
+      "type": "string",
+      "description": "Type of comparison tool in use.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:comparisonType",
+      "tagNumber": 5
+    },
+    "comparisonView": {
+      "title": "Comparison View",
+      "$ref": "data/measure.schema.json",
+      "description": "Tracked when a comparison page is viewed.",
+      "meta:xdmField": "xdm:comparisonView",
+      "tagNumber": 6
+    },
+    "comparisonImpressions": {
+      "title": "Comparison Impressions",
+      "$ref": "impressions.schema.json",
+      "description": "Extension of the impressions data type.",
+      "meta:xdmField": "xdm:comparisonImpressions",
+      "tagNumber": 7
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/datatypes/comparisons",
+  "meta:altId": "_xdm.datatypes.comparisons",
+  "id": "_xdm.datatypes.comparisons"
+}

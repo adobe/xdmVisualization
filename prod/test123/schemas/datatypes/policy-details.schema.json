@@ -1,0 +1,74 @@
+{
+  "id": "_xdm.datatypes.policy-details",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Policy Details",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:industry": [
+    "financial_services"
+  ],
+  "description": "Details for the insurance policy such as type, start date, and ID.",
+  "meta:status": "experimental",
+  "meta:xdmType": "object",
+  "properties": {
+    "policyEndDate": {
+      "title": "Policy End Date",
+      "type": "string",
+      "format": "date-time",
+      "description": "Date which the insurance policy coverage ended.",
+      "meta:xdmType": "date-time",
+      "meta:xdmField": "xdm:policyEndDate",
+      "tagNumber": 1
+    },
+    "policyID": {
+      "title": "Policy ID",
+      "type": "string",
+      "description": "Unique insurance policy identifier.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:policyID",
+      "tagNumber": 2
+    },
+    "policyName": {
+      "title": "Policy Name",
+      "type": "string",
+      "description": "Insurance policy name.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:policyName",
+      "tagNumber": 3
+    },
+    "policyStartDate": {
+      "title": "Policy Start Date",
+      "type": "string",
+      "format": "date-time",
+      "description": "Date which the insurance policy coverage started.",
+      "meta:xdmType": "date-time",
+      "meta:xdmField": "xdm:policyStartDate",
+      "tagNumber": 4
+    },
+    "policyState": {
+      "title": "Policy State",
+      "type": "string",
+      "description": "State in which the insurance policy is issued.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:policyState",
+      "tagNumber": 5
+    },
+    "policyType": {
+      "title": "Policy Type",
+      "type": "string",
+      "enum": [
+        "home",
+        "automobile",
+        "renter",
+        "boat"
+      ],
+      "description": "Type of insurance policy, such as home, automobile, renter, or boat.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:policyType",
+      "tagNumber": 6
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/datatypes/policy-details",
+  "meta:altId": "_xdm.datatypes.policy-details",
+  "id": "_xdm.datatypes.policy-details"
+}

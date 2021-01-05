@@ -1,0 +1,51 @@
+{
+  "id": "_xdm.datatypes.impressions",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Impressions",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:industry": [
+    "retail",
+    "financial_services",
+    "travel_and_hospitality",
+    "telecom",
+    "automotive",
+    "education",
+    "health_and_life_sciences",
+    "high_tech",
+    "manufacturing",
+    "media_and_entertainment",
+    "public_sector"
+  ],
+  "description": "Tracks when impressions are presented on a site, along with names, types, and counts.",
+  "meta:status": "experimental",
+  "meta:xdmType": "object",
+  "properties": {
+    "impressionDisplays": {
+      "title": "Impression Displays",
+      "$ref": "data/measure.schema.json",
+      "description": "Counts the number of times an impression item has been displayed to a visitor.",
+      "meta:xdmField": "xdm:impressionDisplays",
+      "tagNumber": 1
+    },
+    "impressionID": {
+      "title": "Impression ID",
+      "type": "string",
+      "description": "Tracks the ID of an item in an impression array.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:impressionID",
+      "tagNumber": 2
+    },
+    "impressionType": {
+      "title": "Impression Type",
+      "type": "string",
+      "description": "Tracks the type of impression in an impression array.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:impressionType",
+      "tagNumber": 3
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/datatypes/impressions",
+  "meta:altId": "_xdm.datatypes.impressions",
+  "id": "_xdm.datatypes.impressions"
+}

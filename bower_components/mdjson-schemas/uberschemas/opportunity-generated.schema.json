@@ -1,0 +1,321 @@
+{
+  "id": "_xdm.context.opportunity-generated",
+  "title": "Uber schema for https://ns.adobe.com/xdm/context/opportunity",
+  "description": "Uber schema for https://ns.adobe.com/xdm/context/opportunity",
+  "type": "object",
+  "meta:xdmType": "object",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "auditable": true,
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:status": [
+    "experimental",
+    "stable",
+    "deprecated"
+  ],
+  "properties": {
+    "_id": {
+      "title": "Identifier",
+      "type": "string",
+      "format": "uri-reference",
+      "description": "A unique identifier for the record.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "@id",
+      "tagNumber": 1
+    },
+    "opportunityID": {
+      "title": "Opportunity ID",
+      "description": "Opportunity unique identifer",
+      "type": "string",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:opportunityID",
+      "tagNumber": 2
+    },
+    "opportunityName": {
+      "title": "Opportunity Name",
+      "description": "Subject or descriptive name, such as the expected order or company name, for the opportunity.",
+      "type": "string",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:opportunityName",
+      "tagNumber": 3
+    },
+    "opportunityDescription": {
+      "title": "Opportunity Description",
+      "description": "Additional information to describe the opportunity, such as possible products to sell or past purchases from the customer.",
+      "type": "string",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:opportunityDescription",
+      "tagNumber": 4
+    },
+    "opportunityType": {
+      "title": "Opportunity Type",
+      "description": "Opportunity type such as Existing Business or New Business",
+      "type": "string",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:opportunityType",
+      "tagNumber": 5
+    },
+    "opportunityStage": {
+      "title": "Opportunity Stage",
+      "description": "Sales stage of this opportunity to aid the sales team in their efforts to win this opportunity.",
+      "type": "string",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:opportunityStage",
+      "tagNumber": 6
+    },
+    "accountID": {
+      "title": "Account ID",
+      "description": "Account unique identifier reference that this opportunity is linked to.",
+      "type": "string",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:accountID",
+      "tagNumber": 7
+    },
+    "extSourceSystemAudit": {
+      "title": "External Source System Audit Properties",
+      "$ref": "../datatypes/external-source-system-audit.schema.json",
+      "description": "Audit attributes for external sources.",
+      "meta:xdmField": "xdm:extSourceSystemAudit",
+      "tagNumber": 8
+    },
+    "opportunityComponents": {
+      "type": "array",
+      "meta:xdmType": "array",
+      "meta:xdmField": "xdm:opportunityComponents",
+      "tagNumber": 9,
+      "items": {
+        "$ref": "obj42656279848197487.schema.json"
+      }
+    },
+    "sourceType": {
+      "title": "Opportunity Source Type",
+      "description": "Opportunity source type such as Existing Business or New Business",
+      "type": "string",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:sourceType",
+      "tagNumber": 10
+    },
+    "ownerID": {
+      "title": "Opportunity Owner",
+      "description": "Assigned owner for this opportunity.",
+      "type": "string",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:ownerID",
+      "tagNumber": 11
+    },
+    "leadSource": {
+      "title": "Lead Source",
+      "description": "Source of the opportunity such as Advertisement, Partner, or Web.",
+      "type": "string",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:leadSource",
+      "tagNumber": 12
+    },
+    "stage": {
+      "title": "Opportunity Stage",
+      "description": "Sales stage of this opportunity to aid the sales team in their efforts to win this opportunity.",
+      "type": "string",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:stage",
+      "tagNumber": 13
+    },
+    "amount": {
+      "title": "Opportunity Amount",
+      "description": "Estimated total sale amount.",
+      "type": "number",
+      "minimum": 0,
+      "default": 0,
+      "meta:xdmType": "number",
+      "meta:xdmField": "xdm:amount",
+      "tagNumber": 14
+    },
+    "currencyCode": {
+      "title": "Currency Code",
+      "description": "Standard ISO code(ISO 4217) for currency.",
+      "type": "string",
+      "pattern": "^([A-Z]{3})$",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:currencyCode",
+      "tagNumber": 15
+    },
+    "quantity": {
+      "title": "Opportunity Quantity",
+      "description": "Total of all quantity field values for all products in the Products related list for this opportunity.",
+      "type": "integer",
+      "minimum": 0,
+      "default": 0,
+      "meta:xdmType": "int",
+      "meta:xdmField": "xdm:quantity",
+      "tagNumber": 16
+    },
+    "fiscalYear": {
+      "title": "Fiscal Year",
+      "description": "The fiscal year this opportunity is targeted.",
+      "type": "integer",
+      "pattern": "^([0-9]{4})$",
+      "meta:xdmType": "int",
+      "meta:xdmField": "xdm:fiscalYear",
+      "tagNumber": 17
+    },
+    "fiscalQuarter": {
+      "title": "Fiscal Quarter",
+      "description": "The fiscal quarter this opportunity is targeted..",
+      "type": "string",
+      "pattern": "^([1-4]{1})$|^([Qq][1-4]{1})$",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:fiscalQuarter",
+      "tagNumber": 18
+    },
+    "hasOpportunityLineItem": {
+      "title": "Has Opportunity Line Item Flag",
+      "description": "Flag to indicate whether this opportunity have more line items.",
+      "type": "boolean",
+      "meta:xdmType": "boolean",
+      "meta:xdmField": "xdm:hasOpportunityLineItem",
+      "tagNumber": 19
+    },
+    "probabilityPercentage": {
+      "title": "Probability Percentage",
+      "description": "Likelihood that opportunity will close, stated as a percentage.",
+      "type": "number",
+      "minimum": 0,
+      "maximum": 100,
+      "meta:xdmType": "number",
+      "meta:xdmField": "xdm:probabilityPercentage",
+      "tagNumber": 20
+    },
+    "isClosed": {
+      "title": "Closed Flag",
+      "description": "Flag indicating if this opportunity is closed.",
+      "type": "boolean",
+      "meta:xdmType": "boolean",
+      "meta:xdmField": "xdm:isClosed",
+      "tagNumber": 21
+    },
+    "isWon": {
+      "title": "Won Flag",
+      "description": "Flag indicating if this opportunity is Won.",
+      "type": "boolean",
+      "meta:xdmType": "boolean",
+      "meta:xdmField": "xdm:isWon",
+      "tagNumber": 22
+    },
+    "isDeleted": {
+      "title": "Deleted Flag",
+      "description": "Flag indicating if this opportunity is deleted.",
+      "type": "boolean",
+      "meta:xdmType": "boolean",
+      "meta:xdmField": "xdm:isDeleted",
+      "tagNumber": 23
+    },
+    "closeDate": {
+      "title": "Close Date",
+      "description": "Date of closure for this opportunity.",
+      "type": "string",
+      "format": "date-time",
+      "meta:xdmType": "date-time",
+      "meta:xdmField": "xdm:closeDate",
+      "tagNumber": 24
+    },
+    "nextStep": {
+      "title": "Next Step",
+      "description": "Description of next task in closing opportunity.",
+      "type": "string",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:nextStep",
+      "tagNumber": 25
+    },
+    "isPrivate": {
+      "title": "Private Flag",
+      "description": "Indicates that the opportunity is private.",
+      "type": "boolean",
+      "meta:xdmType": "boolean",
+      "meta:xdmField": "xdm:isPrivate",
+      "tagNumber": 26
+    },
+    "contractID": {
+      "title": "Contract ID",
+      "description": "Contract unique Identifier reference that this opportunity is linked to.",
+      "type": "string",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:contractID",
+      "tagNumber": 27
+    },
+    "forecastCategory": {
+      "title": "Forecast Category",
+      "description": "Forecast Category determined by the opportunity Stage value eg: omitted,pipeline,bestcase,commit,closed.",
+      "type": "string",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:forecastCategory",
+      "tagNumber": 28
+    },
+    "forecastCategoryName": {
+      "title": "Forecast Category Name",
+      "description": "Forecast category name that is displayed in reports for a perticular forecast category.",
+      "type": "string",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:forecastCategoryName",
+      "tagNumber": 29
+    },
+    "expectedRevenue": {
+      "title": "Expected Revenue",
+      "description": "Calculated revenue based on the Amount and Probability.",
+      "type": "number",
+      "minimum": 0,
+      "default": 0,
+      "meta:xdmType": "number",
+      "$ref": "../datatypes/currency.schema.json",
+      "meta:xdmField": "xdm:expectedRevenue",
+      "tagNumber": 30
+    },
+    "opportunityOwnerID": {
+      "title": "opportunity Owner Id",
+      "description": "Assigned owner for this opportunity.",
+      "type": "string",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:opportunityOwnerID",
+      "tagNumber": 31
+    },
+    "campaignID": {
+      "title": "Campaign ID",
+      "description": "Campaign unique identifer reference.",
+      "type": "string",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:campaignID",
+      "tagNumber": 32
+    },
+    "opportunityAmount": {
+      "title": "Opportunity Amount",
+      "description": "Estimated total sale amount.",
+      "$ref": "../datatypes/currency.schema.json",
+      "meta:xdmField": "xdm:opportunityAmount",
+      "tagNumber": 33
+    },
+    "opportunityQuantity": {
+      "title": "Opportunity Quantity",
+      "description": "Total of all quantity field values for all products in the Products related list for this opportunity.",
+      "type": "integer",
+      "minimum": 0,
+      "default": 0,
+      "meta:xdmType": "int",
+      "meta:xdmField": "xdm:opportunityQuantity",
+      "tagNumber": 34
+    },
+    "lastActivityDate": {
+      "title": "Last Activity Date",
+      "description": "Last activity date for this opportunity.",
+      "type": "string",
+      "format": "date-time",
+      "meta:xdmType": "date-time",
+      "meta:xdmField": "xdm:lastActivityDate",
+      "tagNumber": 35
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/context/opportunity-generated",
+  "meta:altId": "_xdm.context.opportunity-generated",
+  "required": [
+    "opportunityID",
+    "stage"
+  ],
+  "id": "_xdm.context.opportunity-generated"
+}

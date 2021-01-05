@@ -1,0 +1,26 @@
+{
+  "id": "_xdm.mixins.marketing-list-components",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "XDM Business Marketing List Components",
+  "type": "object",
+  "auditable": true,
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "description": "Marketing list relationship attributes form a single data source. This is the place to add attributes if there is a need to do any kind of segmentation in future.",
+  "meta:status": "experimental",
+  "meta:xdmType": "object",
+  "properties": {
+    "marketingListComponents": {
+      "type": "array",
+      "meta:xdmType": "array",
+      "meta:xdmField": "xdm:marketingListComponents",
+      "tagNumber": 1,
+      "items": {
+        "$ref": "obj5913473299910204.schema.json"
+      }
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/mixins/marketing-list-components",
+  "meta:altId": "_xdm.mixins.marketing-list-components",
+  "id": "_xdm.mixins.marketing-list-components"
+}

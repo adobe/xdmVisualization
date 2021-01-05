@@ -1,0 +1,116 @@
+{
+  "id": "_xdm.datatypes.tool-usage",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Tool Usage",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:industry": [
+    "retail",
+    "financial_services",
+    "travel_and_hospitality",
+    "telecom",
+    "automotive",
+    "education",
+    "health_and_life_sciences",
+    "high_tech",
+    "manufacturing",
+    "media_and_entertainment",
+    "public_sector"
+  ],
+  "description": "Tool usage comprises the most common steps used in a site tool or utility, such as calculators, registrations, and requests for more information.",
+  "meta:status": "experimental",
+  "meta:xdmType": "object",
+  "properties": {
+    "toolUsageCancelled": {
+      "title": "Tool Usage Cancelled",
+      "$ref": "data/measure.schema.json",
+      "description": "Captured when a visitor cancels out of a tool usage process.",
+      "meta:xdmField": "xdm:toolUsageCancelled",
+      "tagNumber": 1
+    },
+    "toolUsageComplete": {
+      "title": "Tool Usage Complete",
+      "$ref": "data/measure.schema.json",
+      "description": "Captured when a visitor successfully finishes using any type of tool or utility on the site/app.",
+      "meta:xdmField": "xdm:toolUsageComplete",
+      "tagNumber": 2
+    },
+    "toolUsageFailure": {
+      "title": "Tool Usage Failed",
+      "$ref": "data/measure.schema.json",
+      "description": "Captured when a step in the tool usage process fails.",
+      "meta:xdmField": "xdm:toolUsageFailure",
+      "tagNumber": 3
+    },
+    "toolUsageID": {
+      "title": "Tool Usage ID",
+      "type": "string",
+      "description": "Captures the ID of the tool process utilized, if applicable.  For example, this could be a claim, application, or booking ID, etc.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:toolUsageID",
+      "tagNumber": 4
+    },
+    "toolUsageName": {
+      "title": "Tool Usage Name",
+      "type": "string",
+      "description": "Tracks the name of the tool in use.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:toolUsageName",
+      "tagNumber": 5
+    },
+    "toolUsageSaved": {
+      "title": "Tool Usage Saved",
+      "$ref": "data/measure.schema.json",
+      "description": "Captured when a visitor saves and exits a tool usage process.",
+      "meta:xdmField": "xdm:toolUsageSaved",
+      "tagNumber": 6
+    },
+    "toolUsageStart": {
+      "title": "Tool Usage Start",
+      "$ref": "data/measure.schema.json",
+      "description": "Captured when a visitor initializes using any type of tool or utility on the site/app.",
+      "meta:xdmField": "xdm:toolUsageStart",
+      "tagNumber": 7
+    },
+    "toolUsageStep": {
+      "title": "Tool Usage Step",
+      "$ref": "data/measure.schema.json",
+      "description": "Captured when any intermediary tool step is started on the site/app.",
+      "meta:xdmField": "xdm:toolUsageStep",
+      "tagNumber": 8
+    },
+    "toolUsageStepName": {
+      "title": "Tool Usage Step Name",
+      "type": "string",
+      "description": "Tracks the name of the tool step in use.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:toolUsageStepName",
+      "tagNumber": 9
+    },
+    "toolUsageSubmitted": {
+      "title": "Tool Usage Submitted",
+      "$ref": "data/measure.schema.json",
+      "description": "Captured when a visitor submits data during a tool step.  Not necessarily synonymous with a successful event.",
+      "meta:xdmField": "xdm:toolUsageSubmitted",
+      "tagNumber": 10
+    },
+    "toolUsageTransaction": {
+      "title": "Tool Usage Transaction",
+      "$ref": "transaction.schema.json",
+      "description": "Extension of Transaction Data Type",
+      "meta:xdmField": "xdm:toolUsageTransaction",
+      "tagNumber": 11
+    },
+    "toolUsageType": {
+      "title": "Tool Usage Type",
+      "type": "string",
+      "description": "Tracks the type or category of the tool in use.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:toolUsageType",
+      "tagNumber": 12
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/datatypes/tool-usage",
+  "meta:altId": "_xdm.datatypes.tool-usage",
+  "id": "_xdm.datatypes.tool-usage"
+}

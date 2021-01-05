@@ -1,0 +1,926 @@
+{
+  "id": "_xdm.context.experienceevent-generated",
+  "title": "Uber schema for https://ns.adobe.com/xdm/context/experienceevent",
+  "description": "Uber schema for https://ns.adobe.com/xdm/context/experienceevent",
+  "type": "object",
+  "meta:xdmType": "object",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:status": [
+    "stable",
+    "experimental",
+    "deprecated"
+  ],
+  "meta:conditionalField": "xdm:eventType",
+  "meta:conditionalValue": [
+    "listOperation.addToList",
+    "opportunityEvent.addToOpportunity",
+    "leadOperation.convertLead",
+    "leadOperation.interestingMoment",
+    "leadOperation.newLead",
+    "listOpearation.removeFromList",
+    "opportunityEvent.removeFromOpportunity",
+    "web.webpagedetails.pageViews"
+  ],
+  "meta:industry": [
+    "financial_services",
+    "health_and_life_sciences",
+    "high_tech",
+    "retail",
+    "travel_and_hospitality",
+    "telecom",
+    "automotive",
+    "education",
+    "manufacturing",
+    "media_and_entertainment",
+    "public_sector"
+  ],
+  "properties": {
+    "identityMap": {
+      "type": "object",
+      "meta:xdmType": "map",
+      "additionalProperties": {
+        "type": "array",
+        "meta:xdmType": "array",
+        "items": {
+          "$ref": "../datatypes/identityitem.schema.json",
+          "tagNumber": 1
+        },
+        "tagNumber": 1
+      },
+      "meta:xdmField": "xdm:identityMap",
+      "tagNumber": 1
+    },
+    "_id": {
+      "title": "Identifier",
+      "type": "string",
+      "format": "uri-reference",
+      "description": "A unique identifier for the time-series event.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "@id",
+      "tagNumber": 2
+    },
+    "timestamp": {
+      "title": "Timestamp",
+      "type": "string",
+      "format": "date-time",
+      "description": "The time when an event or observation occurred.",
+      "meta:xdmType": "date-time",
+      "meta:xdmField": "xdm:timestamp",
+      "tagNumber": 3
+    },
+    "eventType": {
+      "title": "Event Type",
+      "type": "string",
+      "description": "The primary event type for this time-series record.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:eventType",
+      "tagNumber": 4
+    },
+    "eventMergeId": {
+      "title": "ExperienceEvent merge ID",
+      "type": "string",
+      "description": "An ID to correlate or merge multiple Experience events together that are essentially the same event or should be merged. This is intended to be populated by the data producer prior to ingestion.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:eventMergeId",
+      "tagNumber": 5
+    },
+    "listOperations": {
+      "title": "List Operations",
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "listID": {
+          "title": "List ID",
+          "type": "string",
+          "description": "List unique identifier.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:listID",
+          "tagNumber": 1
+        }
+      },
+      "meta:xdmField": "xdm:listOperations",
+      "tagNumber": 6
+    },
+    "opportunityEvent": {
+      "title": "Opportunity Event",
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "opportunityID": {
+          "title": "Opportunity ID",
+          "type": "string",
+          "description": "Opportunity ID",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:opportunityID",
+          "tagNumber": 1
+        },
+        "isPrimary": {
+          "title": "Is Primary",
+          "type": "boolean",
+          "description": "Is primary.",
+          "meta:xdmType": "boolean",
+          "meta:xdmField": "xdm:isPrimary",
+          "tagNumber": 2
+        },
+        "role": {
+          "title": "Role",
+          "type": "string",
+          "description": "Role.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:role",
+          "tagNumber": 3
+        }
+      },
+      "meta:xdmField": "xdm:opportunityEvent",
+      "tagNumber": 7
+    },
+    "leadOpearation": {
+      "title": "Lead Operation",
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "convertLead": {
+          "title": "Convert Lead",
+          "type": "object",
+          "meta:xdmType": "object",
+          "properties": {
+            "assignTo": {
+              "title": "Assign To",
+              "type": "string",
+              "description": ".",
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:assignTo",
+              "tagNumber": 1
+            },
+            "isSentNotificationEmail": {
+              "title": "Is Sent Notification Email",
+              "type": "boolean",
+              "description": "Sent notification email.",
+              "meta:xdmType": "boolean",
+              "meta:xdmField": "xdm:isSentNotificationEmail",
+              "tagNumber": 2
+            },
+            "convertedStatus": {
+              "title": "Converted Status",
+              "type": "string",
+              "description": "Converted status.",
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:convertedStatus",
+              "tagNumber": 3
+            }
+          },
+          "meta:xdmField": "xdm:convertLead",
+          "tagNumber": 1
+        },
+        "interestingMoment": {
+          "title": "Interesting Moment",
+          "type": "object",
+          "meta:xdmType": "object",
+          "properties": {
+            "type": {
+              "title": "Type",
+              "type": "string",
+              "description": "Interesting moment type.",
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:type",
+              "tagNumber": 1
+            },
+            "description": {
+              "title": "Description",
+              "type": "string",
+              "description": "Interesting moment description.",
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:description",
+              "tagNumber": 2
+            },
+            "date": {
+              "title": "Date",
+              "type": "string",
+              "format": "date-time",
+              "description": "Interesting moment date.",
+              "meta:xdmType": "date-time",
+              "meta:xdmField": "xdm:date",
+              "tagNumber": 3
+            },
+            "source": {
+              "title": "Source",
+              "type": "string",
+              "description": "Interesting moment source.",
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:source",
+              "tagNumber": 4
+            }
+          },
+          "meta:xdmField": "xdm:interestingMoment",
+          "tagNumber": 2
+        },
+        "newLead": {
+          "title": "New Lead",
+          "type": "object",
+          "meta:xdmType": "object",
+          "properties": {
+            "sourceType": {
+              "title": "Source Type",
+              "type": "string",
+              "description": ".",
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:sourceType",
+              "tagNumber": 1
+            },
+            "formName": {
+              "title": "Form Name",
+              "type": "string",
+              "description": ".",
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:formName",
+              "tagNumber": 2
+            },
+            "listName": {
+              "title": "List Name",
+              "type": "string",
+              "description": ".",
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:listName",
+              "tagNumber": 3
+            },
+            "sfdcType": {
+              "title": "SFDC Type",
+              "type": "string",
+              "description": ".",
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:sfdcType",
+              "tagNumber": 4
+            },
+            "leadSource": {
+              "title": "Lead Source",
+              "type": "string",
+              "description": ".",
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:leadSource",
+              "tagNumber": 5
+            },
+            "createdDate": {
+              "title": "Created Date",
+              "type": "string",
+              "format": "date-time",
+              "description": ".",
+              "meta:xdmType": "date-time",
+              "meta:xdmField": "xdm:createdDate",
+              "tagNumber": 6
+            }
+          },
+          "meta:xdmField": "xdm:newLead",
+          "tagNumber": 3
+        }
+      },
+      "meta:xdmField": "xdm:leadOpearation",
+      "tagNumber": 8
+    },
+    "web": {
+      "title": "Web",
+      "type": "object",
+      "meta:xdmType": "object",
+      "$ref": "../datatypes/webinfo.schema.json",
+      "description": "The information related to web page and link of the ExperienceEvent.",
+      "properties": {
+        "webPageDetails": {
+          "title": "Web Page Details",
+          "type": "object",
+          "meta:xdmType": "object",
+          "properties": {
+            "webPageID": {
+              "title": "Webpage ID",
+              "type": "string",
+              "description": ".",
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:webPageID",
+              "tagNumber": 1
+            },
+            "name": {
+              "title": "Name",
+              "type": "string",
+              "description": "The normative name of the web page. This name is not necessarily the page title or directly associate with page content, but is used to organize a site's pages for classification purposes.",
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:name",
+              "tagNumber": 2
+            },
+            "URL": {
+              "title": "URL",
+              "type": "string",
+              "format": "uri",
+              "description": "The normative or usual URL of the web page.  This may or may not be the actual URL used to reach the page, which would be recorded using `Web Link`.",
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:URL",
+              "tagNumber": 3
+            },
+            "queryParamaters": {
+              "title": "Query Paramaters",
+              "type": "string",
+              "description": "Query Paramters used for the web page.",
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:queryParamaters",
+              "tagNumber": 4
+            },
+            "isPersonalizedURL": {
+              "title": "Is Personalized URL",
+              "type": "boolean",
+              "description": "Personalized URL of the web page.  This may or may not be the actual URL used to reach the page, which would be recorded using `Web Link`.",
+              "meta:xdmType": "boolean",
+              "meta:xdmField": "xdm:isPersonalizedURL",
+              "tagNumber": 5
+            }
+          },
+          "meta:xdmField": "xdm:webPageDetails",
+          "tagNumber": 1
+        },
+        "webReferrer": {
+          "title": "Web Referrer",
+          "type": "object",
+          "meta:xdmType": "object",
+          "properties": {
+            "URL": {
+              "title": "URL",
+              "type": "string",
+              "description": "The referrer URL.",
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:URL",
+              "tagNumber": 1
+            }
+          },
+          "meta:xdmField": "xdm:webReferrer",
+          "tagNumber": 2
+        }
+      },
+      "meta:xdmField": "xdm:web",
+      "tagNumber": 9
+    },
+    "environment": {
+      "title": "Environment",
+      "type": "object",
+      "description": "The information related to web page and link of the ExperienceEvent.",
+      "meta:xdmType": "object",
+      "$ref": "../datatypes/environment.schema.json",
+      "properties": {
+        "ipV4": {
+          "title": "IPv4",
+          "type": "string",
+          "format": "ipv4",
+          "description": "The numerical label assigned to a device participating in a computer network that uses the Internet Protocol for communication. ",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:ipV4",
+          "tagNumber": 1
+        },
+        "browserDetails": {
+          "title": "Browser details",
+          "type": "object",
+          "description": "The browser specific details such as browser name, version, javascript version, user agent string, and accept language.",
+          "meta:xdmType": "object",
+          "properties": {
+            "userAgent": {
+              "title": "User agent",
+              "type": "string",
+              "description": "The HTTP user-agent string from the client request.",
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:userAgent",
+              "tagNumber": 1
+            }
+          },
+          "meta:xdmField": "xdm:browserDetails",
+          "tagNumber": 2
+        }
+      },
+      "meta:xdmField": "xdm:environment",
+      "tagNumber": 10
+    },
+    "search": {
+      "title": "Search",
+      "type": "object",
+      "description": "The information related to web or mobile search.",
+      "meta:xdmType": "object",
+      "$ref": "../datatypes/search.schema.json",
+      "properties": {
+        "searchEngine": {
+          "title": "Search engine",
+          "type": "string",
+          "description": "The search engine used by the search.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:searchEngine",
+          "tagNumber": 1
+        },
+        "keywords": {
+          "title": "Keywords",
+          "type": "string",
+          "description": "Keywords for the search.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:keywords",
+          "tagNumber": 2
+        }
+      },
+      "meta:xdmField": "xdm:search",
+      "tagNumber": 11
+    },
+    "advertising": {
+      "title": "Advertising",
+      "$ref": "../datatypes/advertising.schema.json",
+      "description": "Information related to advertising activity in ExperienceEvents.",
+      "meta:xdmField": "xdm:advertising",
+      "tagNumber": 12
+    },
+    "application": {
+      "title": "Application",
+      "$ref": "../datatypes/application.schema.json",
+      "description": "This mixin is used to capture application information related to an ExperienceEvent, including the name of the application, app version, installs, launches, crashes, and closures. It could be either the application targeted by the event like the send of a push notification or the application originating the event such as a click, or a login.",
+      "meta:xdmField": "xdm:application",
+      "tagNumber": 13
+    },
+    "personalFinance": {
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "billPaySteps": {
+          "type": "object",
+          "meta:xdmType": "object",
+          "properties": {
+            "billPay": {
+              "title": "Bill Pay Steps",
+              "$ref": "../datatypes/tool-usage.schema.json",
+              "description": "Extension of toolUsage data type.",
+              "meta:xdmField": "xdm:billPay",
+              "tagNumber": 1
+            },
+            "billPayAccount": {
+              "title": "Bill Pay Account",
+              "$ref": "../datatypes/financial-account.schema.json",
+              "description": "Extension of financialAccount data type.",
+              "meta:xdmField": "xdm:billPayAccount",
+              "tagNumber": 2
+            }
+          },
+          "meta:xdmField": "xdm:billPaySteps",
+          "tagNumber": 1
+        }
+      },
+      "meta:xdmField": "xdm:personalFinance",
+      "tagNumber": 14
+    },
+    "personalFinances": {
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "cardApplicationProcess": {
+          "type": "object",
+          "meta:xdmType": "object",
+          "properties": {
+            "cardApplicationComparisons": {
+              "title": "Card Comparisons",
+              "$ref": "../datatypes/comparisons.schema.json",
+              "description": "Extension of comparison data type.",
+              "meta:xdmField": "xdm:cardApplicationComparisons",
+              "tagNumber": 1
+            },
+            "cardApplicationSteps": {
+              "title": "Card Application Steps",
+              "$ref": "../datatypes/form-applications.schema.json",
+              "description": "Extension of form application data type.",
+              "meta:xdmField": "xdm:cardApplicationSteps",
+              "tagNumber": 2
+            }
+          },
+          "meta:xdmField": "xdm:cardApplicationProcess",
+          "tagNumber": 1
+        },
+        "creditLimitIncreaseDetails": {
+          "type": "object",
+          "meta:xdmType": "object",
+          "properties": {
+            "creditLimitIncrease": {
+              "title": "Credit Limit Increase",
+              "$ref": "../datatypes/form-applications.schema.json",
+              "description": "Extension of form application data type.",
+              "meta:xdmField": "xdm:creditLimitIncrease",
+              "tagNumber": 1
+            }
+          },
+          "meta:xdmField": "xdm:creditLimitIncreaseDetails",
+          "tagNumber": 2
+        },
+        "depositDetails": {
+          "type": "object",
+          "meta:xdmType": "object",
+          "properties": {
+            "deposit": {
+              "title": "Deposit",
+              "$ref": "../datatypes/transaction.schema.json",
+              "description": "Extension of transaction data type.",
+              "meta:xdmField": "xdm:deposit",
+              "tagNumber": 1
+            },
+            "depositAccount": {
+              "title": "Deposit Account",
+              "$ref": "../datatypes/financial-account.schema.json",
+              "description": "Extension of financialAccount data type.",
+              "meta:xdmField": "xdm:depositAccount",
+              "tagNumber": 2
+            }
+          },
+          "meta:xdmField": "xdm:depositDetails",
+          "tagNumber": 3
+        }
+      },
+      "meta:xdmField": "xdm:personalFinances",
+      "tagNumber": 15
+    },
+    "channel": {
+      "title": "Experience channel",
+      "description": "Experience channel related to the ExperienceEvent.",
+      "$ref": "../datatypes/channels/channel.schema.json",
+      "meta:xdmField": "xdm:channel",
+      "tagNumber": 16
+    },
+    "disputes": {
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "claimProcess": {
+          "type": "object",
+          "meta:xdmType": "object",
+          "properties": {
+            "claimID": {
+              "title": "Claim ID",
+              "type": "string",
+              "description": "ID of the claim being submitted.",
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:claimID",
+              "tagNumber": 1
+            },
+            "claimStartDate": {
+              "title": "Claim Start Date",
+              "type": "string",
+              "format": "date-time",
+              "description": "Date the claim was successfully submitted.",
+              "meta:xdmType": "date-time",
+              "meta:xdmField": "xdm:claimStartDate",
+              "tagNumber": 2
+            },
+            "claimStatus": {
+              "title": "Claim Status",
+              "type": "string",
+              "enum": [
+                "initiated",
+                "in progress",
+                "approved",
+                "declined"
+              ],
+              "description": "Captures the status of the claim for any given point in the application process.",
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:claimStatus",
+              "tagNumber": 3
+            },
+            "claimSteps": {
+              "title": "Claim Steps",
+              "$ref": "../datatypes/tool-usage.schema.json",
+              "description": "Extension of toolUsage data type.",
+              "meta:xdmField": "xdm:claimSteps",
+              "tagNumber": 4
+            },
+            "claimType": {
+              "title": "Claim Type",
+              "type": "string",
+              "description": "Type of claim submitted.",
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:claimType",
+              "tagNumber": 5
+            },
+            "policy": {
+              "title": "Policy",
+              "$ref": "../datatypes/policy-details.schema.json",
+              "description": "Extension of Policy data type.",
+              "meta:xdmField": "xdm:policy",
+              "tagNumber": 6
+            }
+          },
+          "meta:xdmField": "xdm:claimProcess",
+          "tagNumber": 1
+        },
+        "disputeSteps": {
+          "type": "object",
+          "meta:xdmType": "object",
+          "properties": {
+            "dispute": {
+              "title": "Dispute",
+              "$ref": "../datatypes/tool-usage.schema.json",
+              "description": "Extension of toolUsage data type.",
+              "meta:xdmField": "xdm:dispute",
+              "tagNumber": 1
+            }
+          },
+          "meta:xdmField": "xdm:disputeSteps",
+          "tagNumber": 2
+        }
+      },
+      "meta:xdmField": "xdm:disputes",
+      "tagNumber": 17
+    },
+    "productListItems": {
+      "title": "Product list items",
+      "type": "array",
+      "description": "A list of items representing a product selected by a customer with specific options and pricing that are for that usage context at a specific point of time and may differ from the product record.",
+      "meta:xdmType": "array",
+      "items": {
+        "$ref": "../datatypes/productlistitem.schema.json",
+        "tagNumber": 1
+      },
+      "meta:xdmField": "xdm:productListItems",
+      "tagNumber": 18
+    },
+    "commerce": {
+      "title": "Commerce",
+      "$ref": "../datatypes/commerce.schema.json",
+      "description": "Commerce specific data related to this event.",
+      "meta:xdmField": "xdm:commerce",
+      "tagNumber": 19
+    },
+    "device": {
+      "title": "Device",
+      "$ref": "../datatypes/device.schema.json",
+      "description": "An identified device, application or device browser instance that is trackable across sessions, normally by cookies.",
+      "meta:xdmField": "xdm:device",
+      "tagNumber": 20
+    },
+    "placeContext": {
+      "title": "Place context",
+      "$ref": "../datatypes/placecontext.schema.json",
+      "description": "The transient circumstances related to the observation. Examples include locale specific information such as weather, local time, traffic, day of the week, workday vs. holiday, and working hours.",
+      "meta:xdmField": "xdm:placeContext",
+      "tagNumber": 21
+    },
+    "marketing": {
+      "title": "Marketing",
+      "$ref": "../datatypes/marketing.schema.json",
+      "description": "The information related to marketing activities that are active with the touchpoint.",
+      "meta:xdmField": "xdm:marketing",
+      "tagNumber": 22
+    },
+    "media": {
+      "title": "Media",
+      "$ref": "../datatypes/media.schema.json",
+      "description": "Media activity information related to the experience event.",
+      "meta:xdmField": "xdm:media",
+      "tagNumber": 23
+    },
+    "segmentMemberships": {
+      "title": "Segment Memberships",
+      "meta:status": "deprecated",
+      "description": "The segments associated with this ExperienceEvent. Deprecated, use `xdm:segmentMembership` instead.",
+      "type": "array",
+      "meta:xdmType": "array",
+      "items": {
+        "$ref": "../datatypes/segmentmembershipitem.schema.json",
+        "tagNumber": 1
+      },
+      "meta:xdmField": "xdm:segmentMemberships",
+      "tagNumber": 24
+    },
+    "segmentMembership": {
+      "title": "Segment Membership Map",
+      "type": "object",
+      "meta:xdmType": "map",
+      "additionalProperties": {
+        "title": "Segment Membership per Namespace",
+        "type": "object",
+        "meta:xdmType": "map",
+        "additionalProperties": {
+          "$ref": "../datatypes/segmentmembership.schema.json",
+          "tagNumber": 1
+        },
+        "tagNumber": 1
+      },
+      "meta:xdmField": "xdm:segmentMembership",
+      "tagNumber": 25
+    },
+    "dataSource": {
+      "title": "Data source",
+      "$ref": "../datatypes/data/datasource.schema.json",
+      "description": "Globally unique identification of a data source.",
+      "meta:xdmField": "xdm:dataSource",
+      "tagNumber": 26
+    },
+    "receivedTimestamp": {
+      "title": "Received time stamp",
+      "type": "string",
+      "format": "date-time",
+      "description": "The time at which this interaction was received by a server.",
+      "meta:xdmType": "date-time",
+      "meta:xdmField": "xdm:receivedTimestamp",
+      "tagNumber": 27
+    },
+    "customerFeedback": {
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "contactRequestDetails": {
+          "type": "object",
+          "meta:xdmType": "object",
+          "properties": {
+            "chatDeclined": {
+              "title": "Chat Declined",
+              "$ref": "../datatypes/data/measure.schema.json",
+              "description": "Captured when an offered chat is declined by a visitor.",
+              "meta:xdmField": "xdm:chatDeclined",
+              "tagNumber": 1
+            },
+            "chatEnd": {
+              "title": "Chat End",
+              "$ref": "../datatypes/data/measure.schema.json",
+              "description": "Captured when a chat is ended with a visitor.",
+              "meta:xdmField": "xdm:chatEnd",
+              "tagNumber": 2
+            },
+            "chatOffered": {
+              "title": "Chat Offered",
+              "$ref": "../datatypes/data/measure.schema.json",
+              "description": "Captures the number of times a chat session has been offered to a visitor.",
+              "meta:xdmField": "xdm:chatOffered",
+              "tagNumber": 3
+            },
+            "chatSessionID": {
+              "title": "Chat Session ID",
+              "type": "string",
+              "description": "Captures the chat session identifier, if available.",
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:chatSessionID",
+              "tagNumber": 4
+            },
+            "chatStart": {
+              "title": "Chat Start",
+              "$ref": "../datatypes/data/measure.schema.json",
+              "description": "Captured when a chat is initiated with a visitor.",
+              "meta:xdmField": "xdm:chatStart",
+              "tagNumber": 5
+            },
+            "clickToCall": {
+              "title": "Click to Call",
+              "$ref": "../datatypes/data/measure.schema.json",
+              "description": "Visitor initiates a call to the client from a telephone number link on the site/app.",
+              "meta:xdmField": "xdm:clickToCall",
+              "tagNumber": 6
+            },
+            "clickToDirectMessage": {
+              "title": "Click to Direct Message",
+              "$ref": "../datatypes/data/measure.schema.json",
+              "description": "Visitor initiates a direct message or feedback to the client from a direct message form on the site/app.",
+              "meta:xdmField": "xdm:clickToDirectMessage",
+              "tagNumber": 7
+            },
+            "clickToEmail": {
+              "title": "Click to Email",
+              "$ref": "../datatypes/data/measure.schema.json",
+              "description": "Visitor initiates an email to the client from an email link on the site/app.",
+              "meta:xdmField": "xdm:clickToEmail",
+              "tagNumber": 8
+            },
+            "clickToText": {
+              "title": "Click to Text",
+              "$ref": "../datatypes/data/measure.schema.json",
+              "description": "Visitor initiates a SMS/text message to the client from a SMS/text link on the site/app.",
+              "meta:xdmField": "xdm:clickToText",
+              "tagNumber": 9
+            },
+            "Subject": {
+              "title": "Subject",
+              "type": "string",
+              "description": "Subject of contact requested by the visitor, such as in-store purchase support, online order support, credit customer service, etc.",
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:Subject",
+              "tagNumber": 10
+            },
+            "callBackNumber": {
+              "title": "Call Back Contact Information",
+              "$ref": "../datatypes/phonenumber.schema.json",
+              "description": "The contact phone number the visitor uses for responses to contact requests.",
+              "meta:xdmField": "xdm:callBackNumber",
+              "tagNumber": 11
+            },
+            "replyToEmailAddress": {
+              "title": "Reply to Email Address",
+              "$ref": "../datatypes/emailaddress.schema.json",
+              "description": "The email address the visitor uses for responses to contact requests.",
+              "meta:xdmField": "xdm:replyToEmailAddress",
+              "tagNumber": 12
+            }
+          },
+          "meta:xdmField": "xdm:contactRequestDetails",
+          "tagNumber": 1
+        }
+      },
+      "meta:xdmField": "xdm:customerFeedback",
+      "tagNumber": 28
+    },
+    "directMarketing": {
+      "title": "Direct marketing",
+      "$ref": "../datatypes/direct-marketing.schema.json",
+      "description": "Events and properties related to direct and outbound marketing such as email, direct mail, texts, and in-app notifications.",
+      "meta:xdmField": "xdm:directMarketing",
+      "tagNumber": 29
+    },
+    "endUserIDs": {
+      "meta:status": "deprecated",
+      "title": "End-User IDs",
+      "$ref": "../datatypes/enduserids.schema.json",
+      "description": "Condensed, normalized encapsulation of all end-user identifiers. Deprecated, use `xdm:identityMap` instead.",
+      "meta:xdmField": "xdm:endUserIDs",
+      "tagNumber": 30
+    },
+    "implementationDetails": {
+      "title": "Implementation details",
+      "$ref": "../datatypes/implementationdetails.schema.json",
+      "description": "The details of the software used to collect the ExperienceEvent.",
+      "meta:xdmField": "xdm:implementationDetails",
+      "tagNumber": 31
+    },
+    "consentStrings": {
+      "title": "Identity level consent information",
+      "type": "array",
+      "meta:xdmType": "array",
+      "items": {
+        "$ref": "../datatypes/consentstring.schema.json",
+        "tagNumber": 1
+      },
+      "meta:xdmField": "xdm:consentStrings",
+      "tagNumber": 32
+    },
+    "profileStitch": {
+      "title": "Profile stitch",
+      "description": "Details about the IDs that were joined by profile stitching.",
+      "type": "array",
+      "meta:xdmType": "array",
+      "items": {
+        "$ref": "../datatypes/profilestitch.schema.json",
+        "tagNumber": 1
+      },
+      "meta:xdmField": "xdm:profileStitch",
+      "tagNumber": 33
+    },
+    "pushNotificationTracking": {
+      "title": "push notification tracking details",
+      "type": "object",
+      "description": "Describes interaction with a push notification.",
+      "meta:xdmType": "object",
+      "properties": {
+        "customAction": {
+          "title": "custom action",
+          "type": "object",
+          "description": "End user clicked custom action in the push notification",
+          "meta:xdmType": "object",
+          "properties": {
+            "actionID": {
+              "title": "action ID",
+              "type": "string",
+              "description": "user clicked custom action identifier",
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:actionID",
+              "tagNumber": 1
+            },
+            "value": {
+              "title": "value",
+              "type": "number",
+              "description": "value associated with the custom action, if any",
+              "meta:xdmType": "number",
+              "meta:xdmField": "xdm:value",
+              "tagNumber": 2
+            }
+          },
+          "meta:xdmField": "xdm:customAction",
+          "tagNumber": 1
+        },
+        "pushProviderMessageID": {
+          "title": "Push Provider message ID",
+          "type": "string",
+          "description": "ID assigned to this notification as assigned by the push provider",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:pushProviderMessageID",
+          "tagNumber": 2
+        },
+        "pushProvider": {
+          "title": "Push Provider",
+          "type": "string",
+          "description": "Push provider, e.g. apns or fcm",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:pushProvider",
+          "tagNumber": 3
+        }
+      },
+      "meta:xdmField": "xdm:pushNotificationTracking",
+      "tagNumber": 34
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/context/experienceevent-generated",
+  "meta:altId": "_xdm.context.experienceevent-generated",
+  "required": [
+    "_id",
+    "timestamp"
+  ],
+  "id": "_xdm.context.experienceevent-generated"
+}

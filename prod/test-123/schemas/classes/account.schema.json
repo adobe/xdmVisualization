@@ -1,0 +1,47 @@
+{
+  "id": "_xdm.context.account",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "XDM Business Account",
+  "type": "object",
+  "auditable": true,
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "description": "An XDM Business Account.",
+  "meta:status": [
+    "experimental",
+    "stable"
+  ],
+  "meta:xdmType": "object",
+  "properties": {
+    "_id": {
+      "title": "Identifier",
+      "type": "string",
+      "format": "uri-reference",
+      "description": "A unique identifier for the record.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "@id",
+      "tagNumber": 1
+    },
+    "accountID": {
+      "title": "Account ID",
+      "description": "Account identifer",
+      "type": "string",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:accountID",
+      "tagNumber": 2
+    },
+    "extSourceSystemAudit": {
+      "title": "External Source System Audit Properties",
+      "$ref": "../datatypes/external-source-system-audit.schema.json",
+      "description": "Audit attributes for external sources.",
+      "meta:xdmField": "xdm:extSourceSystemAudit",
+      "tagNumber": 3
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/context/account",
+  "meta:altId": "_xdm.context.account",
+  "required": [
+    "accountID"
+  ],
+  "id": "_xdm.context.account"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "_xdm.mixins.person-identifier",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Person ID",
+  "type": "object",
+  "description": "Used to store Person ID for an entity.",
+  "meta:status": "experimental",
+  "meta:xdmType": "object",
+  "properties": {
+    "personID": {
+      "title": "Person ID",
+      "description": "Person unique identifier.",
+      "type": "string",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:personID",
+      "tagNumber": 1
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/mixins/person-identifier",
+  "meta:altId": "_xdm.mixins.person-identifier",
+  "id": "_xdm.mixins.person-identifier"
+}
