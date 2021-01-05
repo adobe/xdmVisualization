@@ -1,0 +1,36 @@
+{
+  "type": "object",
+  "meta:xdmType": "object",
+  "properties": {
+    "code": {
+      "type": "string",
+      "description": "An enumerated code that details the type of error encountered. This value should be understandable by the reader and writer and eventually allow for localized error message (and solution) descriptions.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:code",
+      "tagNumber": 1
+    },
+    "rows": {
+      "type": "array",
+      "description": "Indicates which rows exhibit this error. Could be a single number, or a hyphen-delimited range.",
+      "meta:xdmType": "array",
+      "items": {
+        "type": "string",
+        "description": "Row or range of rows this error was encountered on.",
+        "meta:xdmType": "string",
+        "tagNumber": 1
+      },
+      "meta:xdmField": "xdm:rows",
+      "tagNumber": 2
+    },
+    "description": {
+      "type": "string",
+      "description": "A human-readable description of the error. This message may be transmitted to clients, but isn't meant for customer-facing UIS.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:description",
+      "tagNumber": 3
+    }
+  },
+  "tagNumber": 1,
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "id": "obj07996088232339815.schema.json"
+}
