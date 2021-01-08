@@ -4,15 +4,24 @@
   "title": "Comparisons",
   "type": "object",
   "meta:extensible": true,
+  "meta:industry": [
+    "retail",
+    "financial_services",
+    "travel_and_hospitality",
+    "telecom",
+    "automotive",
+    "health_and_life_sciences",
+    "high_tech",
+    "manufacturing"
+  ],
   "description": "Used for site comparisons, such as products, cards, rooms, flights, etc.",
   "meta:status": "experimental",
   "meta:xdmType": "object",
   "properties": {
     "comparisonAddition": {
       "title": "Comparison Addition",
-      "type": "integer",
+      "$ref": "data/measure.schema.json",
       "description": "Tracked when an item is added to a comparison.",
-      "meta:xdmType": "int",
       "meta:xdmField": "xdm:comparisonAddition",
       "tagNumber": 1
     },
@@ -39,9 +48,8 @@
     },
     "comparisonRemoval": {
       "title": "Comparison Removal",
-      "type": "integer",
+      "$ref": "data/measure.schema.json",
       "description": "Tracked when an item is removed from a comparison.",
-      "meta:xdmType": "int",
       "meta:xdmField": "xdm:comparisonRemoval",
       "tagNumber": 4
     },
@@ -55,9 +63,8 @@
     },
     "comparisonView": {
       "title": "Comparison View",
-      "type": "integer",
+      "$ref": "data/measure.schema.json",
       "description": "Tracked when a comparison page is viewed.",
-      "meta:xdmType": "int",
       "meta:xdmField": "xdm:comparisonView",
       "tagNumber": 6
     },

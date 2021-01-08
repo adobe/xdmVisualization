@@ -23,37 +23,6 @@
     "opportunityEvent.removeFromOpportunity",
     "web.webpagedetails.pageViews"
   ],
-  "meta:tags": [
-    {
-      "industry": [
-        "retail",
-        "financial_services",
-        "travel_and_hospitality",
-        "health_and_life_sciences",
-        "public_sector"
-      ]
-    },
-    {
-      "industry": [
-        "retail",
-        "financial_services",
-        "travel_and_hospitality"
-      ]
-    },
-    {
-      "industry": [
-        "financial_services",
-        "health_and_life_sciences",
-        "manufacturing",
-        "public_sector"
-      ]
-    },
-    {
-      "industry": [
-        "financial_services"
-      ]
-    }
-  ],
   "meta:industry": [
     "financial_services",
     "health_and_life_sciences",
@@ -459,103 +428,47 @@
       "meta:xdmField": "xdm:advertising",
       "tagNumber": 12
     },
-    "alerts": {
-      "type": "object",
-      "meta:xdmType": "object",
-      "properties": {
-        "alertClicks": {
-          "title": "Alert Clicks",
-          "type": "integer",
-          "description": "Counts the number of times an alert has been clicked.",
-          "meta:xdmType": "int",
-          "meta:xdmField": "xdm:alertClicks",
-          "tagNumber": 1
-        },
-        "alertDismissals": {
-          "title": "Alert Dismissals",
-          "type": "integer",
-          "description": "Counts the number of times an alert has been dismissed.",
-          "meta:xdmType": "int",
-          "meta:xdmField": "xdm:alertDismissals",
-          "tagNumber": 2
-        },
-        "alertImpressions": {
-          "title": "Alert Impression Details",
-          "type": "array",
-          "description": "An array of alerts that have been displayed to a customer.",
-          "meta:xdmType": "array",
-          "items": {
-            "$ref": "../datatypes/impressions.schema.json",
-            "tagNumber": 1
-          },
-          "meta:xdmField": "xdm:alertImpressions",
-          "tagNumber": 3
-        },
-        "alertSetup": {
-          "title": "Alert Setup",
-          "$ref": "../datatypes/tool-usage.schema.json",
-          "description": "Extension of toolUsage data type.",
-          "meta:xdmField": "xdm:alertSetup",
-          "tagNumber": 4
-        }
-      },
-      "meta:xdmField": "xdm:alerts",
-      "tagNumber": 13
-    },
     "application": {
       "title": "Application",
       "$ref": "../datatypes/application.schema.json",
       "description": "This mixin is used to capture application information related to an ExperienceEvent, including the name of the application, app version, installs, launches, crashes, and closures. It could be either the application targeted by the event like the send of a push notification or the application originating the event such as a click, or a login.",
       "meta:xdmField": "xdm:application",
-      "tagNumber": 14
+      "tagNumber": 13
     },
-    "userAccount": {
+    "personalFinance": {
       "type": "object",
       "meta:xdmType": "object",
       "properties": {
-        "appointmentRequestSteps": {
-          "title": "Appointment Request Steps",
-          "$ref": "../datatypes/tool-usage.schema.json",
-          "description": "Extension of toolUsage data type.",
-          "meta:xdmField": "xdm:appointmentRequestSteps",
+        "billPaySteps": {
+          "type": "object",
+          "meta:xdmType": "object",
+          "properties": {
+            "billPay": {
+              "title": "Bill Pay Steps",
+              "$ref": "../datatypes/tool-usage.schema.json",
+              "description": "Extension of toolUsage data type.",
+              "meta:xdmField": "xdm:billPay",
+              "tagNumber": 1
+            },
+            "billPayAccount": {
+              "title": "Bill Pay Account",
+              "$ref": "../datatypes/financial-account.schema.json",
+              "description": "Extension of financialAccount data type.",
+              "meta:xdmField": "xdm:billPayAccount",
+              "tagNumber": 2
+            }
+          },
+          "meta:xdmField": "xdm:billPaySteps",
           "tagNumber": 1
         }
       },
-      "meta:xdmField": "xdm:userAccount",
-      "tagNumber": 15
+      "meta:xdmField": "xdm:personalFinance",
+      "tagNumber": 14
     },
     "personalFinances": {
       "type": "object",
       "meta:xdmType": "object",
       "properties": {
-        "balanceTransfer": {
-          "title": "Balance Transfer",
-          "$ref": "../datatypes/transaction.schema.json",
-          "description": "Extension of transaction data type.",
-          "meta:xdmField": "xdm:balanceTransfer",
-          "tagNumber": 1
-        },
-        "balanceTransferAccount": {
-          "title": "Balance Transfer Account",
-          "$ref": "../datatypes/financial-account.schema.json",
-          "description": "Extension of financialAccount data type.",
-          "meta:xdmField": "xdm:balanceTransferAccount",
-          "tagNumber": 2
-        },
-        "billPay": {
-          "title": "Bill Pay Steps",
-          "$ref": "../datatypes/tool-usage.schema.json",
-          "description": "Extension of toolUsage data type.",
-          "meta:xdmField": "xdm:billPay",
-          "tagNumber": 3
-        },
-        "billPayAccount": {
-          "title": "Bill Pay Account",
-          "$ref": "../datatypes/financial-account.schema.json",
-          "description": "Extension of financialAccount data type.",
-          "meta:xdmField": "xdm:billPayAccount",
-          "tagNumber": 4
-        },
         "cardApplicationProcess": {
           "type": "object",
           "meta:xdmType": "object",
@@ -576,7 +489,7 @@
             }
           },
           "meta:xdmField": "xdm:cardApplicationProcess",
-          "tagNumber": 5
+          "tagNumber": 1
         },
         "creditLimitIncreaseDetails": {
           "type": "object",
@@ -591,7 +504,7 @@
             }
           },
           "meta:xdmField": "xdm:creditLimitIncreaseDetails",
-          "tagNumber": 6
+          "tagNumber": 2
         },
         "depositDetails": {
           "type": "object",
@@ -613,18 +526,18 @@
             }
           },
           "meta:xdmField": "xdm:depositDetails",
-          "tagNumber": 7
+          "tagNumber": 3
         }
       },
       "meta:xdmField": "xdm:personalFinances",
-      "tagNumber": 16
+      "tagNumber": 15
     },
     "channel": {
       "title": "Experience channel",
       "description": "Experience channel related to the ExperienceEvent.",
       "$ref": "../datatypes/channels/channel.schema.json",
       "meta:xdmField": "xdm:channel",
-      "tagNumber": 17
+      "tagNumber": 16
     },
     "disputes": {
       "type": "object",
@@ -708,7 +621,7 @@
         }
       },
       "meta:xdmField": "xdm:disputes",
-      "tagNumber": 18
+      "tagNumber": 17
     },
     "productListItems": {
       "title": "Product list items",
@@ -720,42 +633,42 @@
         "tagNumber": 1
       },
       "meta:xdmField": "xdm:productListItems",
-      "tagNumber": 19
+      "tagNumber": 18
     },
     "commerce": {
       "title": "Commerce",
       "$ref": "../datatypes/commerce.schema.json",
       "description": "Commerce specific data related to this event.",
       "meta:xdmField": "xdm:commerce",
-      "tagNumber": 20
+      "tagNumber": 19
     },
     "device": {
       "title": "Device",
       "$ref": "../datatypes/device.schema.json",
       "description": "An identified device, application or device browser instance that is trackable across sessions, normally by cookies.",
       "meta:xdmField": "xdm:device",
-      "tagNumber": 21
+      "tagNumber": 20
     },
     "placeContext": {
       "title": "Place context",
       "$ref": "../datatypes/placecontext.schema.json",
       "description": "The transient circumstances related to the observation. Examples include locale specific information such as weather, local time, traffic, day of the week, workday vs. holiday, and working hours.",
       "meta:xdmField": "xdm:placeContext",
-      "tagNumber": 22
+      "tagNumber": 21
     },
     "marketing": {
       "title": "Marketing",
       "$ref": "../datatypes/marketing.schema.json",
       "description": "The information related to marketing activities that are active with the touchpoint.",
       "meta:xdmField": "xdm:marketing",
-      "tagNumber": 23
+      "tagNumber": 22
     },
     "media": {
       "title": "Media",
       "$ref": "../datatypes/media.schema.json",
       "description": "Media activity information related to the experience event.",
       "meta:xdmField": "xdm:media",
-      "tagNumber": 24
+      "tagNumber": 23
     },
     "segmentMemberships": {
       "title": "Segment Memberships",
@@ -768,7 +681,7 @@
         "tagNumber": 1
       },
       "meta:xdmField": "xdm:segmentMemberships",
-      "tagNumber": 25
+      "tagNumber": 24
     },
     "segmentMembership": {
       "title": "Segment Membership Map",
@@ -785,14 +698,14 @@
         "tagNumber": 1
       },
       "meta:xdmField": "xdm:segmentMembership",
-      "tagNumber": 26
+      "tagNumber": 25
     },
     "dataSource": {
       "title": "Data source",
       "$ref": "../datatypes/data/datasource.schema.json",
       "description": "Globally unique identification of a data source.",
       "meta:xdmField": "xdm:dataSource",
-      "tagNumber": 27
+      "tagNumber": 26
     },
     "receivedTimestamp": {
       "title": "Received time stamp",
@@ -801,7 +714,7 @@
       "description": "The time at which this interaction was received by a server.",
       "meta:xdmType": "date-time",
       "meta:xdmField": "xdm:receivedTimestamp",
-      "tagNumber": 28
+      "tagNumber": 27
     },
     "customerFeedback": {
       "type": "object",
@@ -903,14 +816,14 @@
         }
       },
       "meta:xdmField": "xdm:customerFeedback",
-      "tagNumber": 29
+      "tagNumber": 28
     },
     "directMarketing": {
       "title": "Direct marketing",
       "$ref": "../datatypes/direct-marketing.schema.json",
       "description": "Events and properties related to direct and outbound marketing such as email, direct mail, texts, and in-app notifications.",
       "meta:xdmField": "xdm:directMarketing",
-      "tagNumber": 30
+      "tagNumber": 29
     },
     "endUserIDs": {
       "meta:status": "deprecated",
@@ -918,14 +831,14 @@
       "$ref": "../datatypes/enduserids.schema.json",
       "description": "Condensed, normalized encapsulation of all end-user identifiers. Deprecated, use `xdm:identityMap` instead.",
       "meta:xdmField": "xdm:endUserIDs",
-      "tagNumber": 31
+      "tagNumber": 30
     },
     "implementationDetails": {
       "title": "Implementation details",
       "$ref": "../datatypes/implementationdetails.schema.json",
       "description": "The details of the software used to collect the ExperienceEvent.",
       "meta:xdmField": "xdm:implementationDetails",
-      "tagNumber": 32
+      "tagNumber": 31
     },
     "consentStrings": {
       "title": "Identity level consent information",
@@ -936,7 +849,7 @@
         "tagNumber": 1
       },
       "meta:xdmField": "xdm:consentStrings",
-      "tagNumber": 33
+      "tagNumber": 32
     },
     "profileStitch": {
       "title": "Profile stitch",
@@ -948,7 +861,7 @@
         "tagNumber": 1
       },
       "meta:xdmField": "xdm:profileStitch",
-      "tagNumber": 34
+      "tagNumber": 33
     },
     "pushNotificationTracking": {
       "title": "push notification tracking details",
@@ -1000,7 +913,7 @@
         }
       },
       "meta:xdmField": "xdm:pushNotificationTracking",
-      "tagNumber": 35
+      "tagNumber": 34
     }
   },
   "meta:xdmId": "https://ns.adobe.com/xdm/context/experienceevent-generated",
