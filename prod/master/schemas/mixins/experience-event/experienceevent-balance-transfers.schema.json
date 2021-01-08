@@ -1,0 +1,43 @@
+{
+  "id": "_xdm.mixins.experienceevent-balance-transfers",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Balance Transfers",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:tags": {
+    "industry": [
+      "financial_services"
+    ]
+  },
+  "description": "Used for financial account balance transfers between accounts.",
+  "meta:status": "experimental",
+  "meta:xdmType": "object",
+  "properties": {
+    "personalFinances": {
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "balanceTransfer": {
+          "title": "Balance Transfer",
+          "$ref": "../../datatypes/transaction.schema.json",
+          "description": "Extension of transaction data type.",
+          "meta:xdmField": "xdm:balanceTransfer",
+          "tagNumber": 1
+        },
+        "balanceTransferAccount": {
+          "title": "Balance Transfer Account",
+          "$ref": "../../datatypes/financial-account.schema.json",
+          "description": "Extension of financialAccount data type.",
+          "meta:xdmField": "xdm:balanceTransferAccount",
+          "tagNumber": 2
+        }
+      },
+      "meta:xdmField": "xdm:personalFinances",
+      "tagNumber": 1
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/mixins/experienceevent-balance-transfers",
+  "meta:altId": "_xdm.mixins.experienceevent-balance-transfers",
+  "id": "_xdm.mixins.experienceevent-balance-transfers"
+}

@@ -4,12 +4,6 @@
   "title": "Form Applications",
   "type": "object",
   "meta:extensible": true,
-  "meta:industry": [
-    "financial_services",
-    "automotive",
-    "education",
-    "public_sector"
-  ],
   "description": "Used when any application process is started, such as financing, limit changes, or educational programs.",
   "meta:status": "experimental",
   "meta:xdmType": "object",
@@ -52,6 +46,7 @@
     },
     "formApplicationStatus": {
       "title": "Form Application Status",
+      "type": "string",
       "enum": [
         "initiated",
         "in progress",
@@ -59,6 +54,7 @@
         "declined"
       ],
       "description": "Captures the status of the application for any given point in the application process.",
+      "meta:xdmType": "string",
       "meta:xdmField": "xdm:formApplicationStatus",
       "tagNumber": 6
     },
@@ -69,12 +65,12 @@
       "meta:xdmField": "xdm:formApplicationStatusUpdate",
       "tagNumber": 7
     },
-    "FormApplicationType": {
+    "formApplicationType": {
       "title": "Form Application Type",
       "type": "string",
       "description": "Type of the application process.",
       "meta:xdmType": "string",
-      "meta:xdmField": "xdm:FormApplicationType",
+      "meta:xdmField": "xdm:formApplicationType",
       "tagNumber": 8
     },
     "formApplicationUnderReview": {

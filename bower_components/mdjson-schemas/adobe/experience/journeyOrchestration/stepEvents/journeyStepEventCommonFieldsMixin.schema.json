@@ -200,12 +200,12 @@
                       "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/instanceType",
                       "tagNumber": 22
                     },
-                    "recurrenceIndex": {
-                      "title": "recurrenceIndex",
-                      "description": "Index of the recurrence if the journey is batch and recurring (first run has recurrenceIndex = 1).",
+                    "batchRecurrenceIndex": {
+                      "title": "batchRecurrenceIndex",
+                      "description": "Index of the recurrence if the journey is batch and recurring (first run has batchRecurrenceIndex = 1).",
                       "type": "integer",
                       "meta:xdmType": "int",
-                      "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/recurrenceIndex",
+                      "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/batchRecurrenceIndex",
                       "tagNumber": 23
                     },
                     "batchToUnitary": {

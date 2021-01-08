@@ -10,6 +10,8 @@ All schema design and discussions should happen at https://github.com/adobe/xdm
 
 2\. Grunt grunt-cli version 1.3.2 (npm install -g grunt-cli)
 
+3\. Setup dependencies by "npm install"
+
 
 ### Usage
 
