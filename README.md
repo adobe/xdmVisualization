@@ -17,4 +17,6 @@ All schema design and discussions should happen at https://github.com/adobe/xdm
 
 1\. Under the root of git branch, run `./scripts/xdmVisual4Git.sh yourBranchName`. Example: `./scripts/xdmVisual4Git.sh master`
 
-2\. Go to `https://opensource.adobe.com/xdmVisualization/prod/yourBranchName/` to see XDM visualization in D3. 
+2\. Commit changes to master branch.
+
+3\. Go to `https://opensource.adobe.com/xdmVisualization/prod/yourBranchName/` to see XDM visualization in D3. 
