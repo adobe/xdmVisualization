@@ -6,15 +6,15 @@ See [visualization of XDM Public Repo's master branch](https://opensource.adobe.
 
 ### Prerequisite
 
-1\. Ruby gem version 2.6.14 (use "sudo gem install -n /usr/local/bin sass" for sass install)
+1\. Ruby gem version 2.6.14 (use `sudo gem install -n /usr/local/bin sass` to install sass)
 
-2\. Grunt grunt-cli version 1.3.2 (npm install -g grunt-cli)
+2\. Grunt grunt-cli version 1.3.2 (use `npm install -g grunt-cli` to install)
 
 ### Usage
         
 1\. Clone the git repo.
 
-2.\ Under the root of git branch, setup dependencies by "npm install"
+2.\ Under the root of git branch, run `npm install` to setup dependencies.
 
 3\. Under the root of git branch, run `./scripts/xdmVisual4Git.sh yourBranchName`. Example: `./scripts/xdmVisual4Git.sh master`
 
