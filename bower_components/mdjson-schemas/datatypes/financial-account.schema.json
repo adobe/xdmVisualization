@@ -4,9 +4,6 @@
   "title": "Financial Account",
   "type": "object",
   "meta:extensible": true,
-  "meta:industry": [
-    "financial_services"
-  ],
   "description": "Financial account details, such as owners, balances, and types.",
   "meta:status": "experimental",
   "meta:xdmType": "object",

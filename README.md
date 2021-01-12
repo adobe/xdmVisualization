@@ -1,8 +1,8 @@
 # XDM Visualization
 
-This repository is intended to be the visualization of xdms in https://github.com/adobe/xdm.
+This repository is intended to be the visualization of xdms in [XDM Public Repo](https://github.com/adobe/xdm). All schema design and discussions should happen there.
 
-All schema design and discussions should happen at https://github.com/adobe/xdm
+See XDM Public Repo's master branch visualization [Here](https://opensource.adobe.com/xdmVisualization/prod/master/)
 
 ### Prerequisite
 
@@ -14,9 +14,11 @@ All schema design and discussions should happen at https://github.com/adobe/xdm
 
 
 ### Usage
+        
+1\. Clone the git repo
 
-1\. Under the root of git branch, run `./scripts/xdmVisual4Git.sh yourBranchName`. Example: `./scripts/xdmVisual4Git.sh master`
+2\. Under the root of git branch, run `./scripts/xdmVisual4Git.sh yourBranchName`. Example: `./scripts/xdmVisual4Git.sh master`
 
-2\. Commit changes to master branch.
+3\. Commit changes to master branch.
 
-3\. Go to `https://opensource.adobe.com/xdmVisualization/prod/yourBranchName/` to see XDM visualization in D3. 
+4\. Go to `https://opensource.adobe.com/xdmVisualization/prod/yourBranchName/` to see XDM visualization in D3. 

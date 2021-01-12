@@ -47,6 +47,9 @@ echo "</head>" >> index.html
 echo "<body>" >> index.html
 echo "<h1>XDM Visualization</h1>" >> index.html
 
+uberSchemas=()
+standardXdms=()
+extensionXdms=()
 folders=(adobe behaviors common airship classes datatypes mixins uberschemas)
 
 for folder in ${folders[@]}; do
@@ -58,14 +61,42 @@ for folder in ${folders[@]}; do
     #echo "filename-->" $filename
     if [[ $filename != *.obj[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]* ]] # not showing generated objs
     then
-        echo "Generating HTML:" $filename
+        if [[ $filename == adobe.* ]]
+        then
+          extensionXdms+=( ${filename} )
+        elif [[ $filename == uberschemas.* ]];
+        then
+          uberSchemas+=( $filename )
+        else
+          standardXdms+=( ${filename} )
+        fi
         #echo "<a href = "http://localhost:9001/prod/$1/$filename.html">${filename}</a>" >> index.html
-        echo "<a href = "http://opensource.adobe.com/xdmVisualization/prod/$1/$filename.html">${filename}</a>" >> index.html
-        echo "<br>" >> index.html
+        #echo "<br>" >> index.html
     fi
     cp basic.html $filename.html #use basic as template
     sed  -i '' "s#experience/Profile.schema.json#$origin#g" $filename.html
   done
+done
+
+echo "<h2>Uber Schemas</h2>" >> index.html
+for i in ${uberSchemas[@]}; do
+  echo "Generating HTML:" $i
+  echo "<a href = "http://opensource.adobe.com/xdmVisualization/prod/$1/$i.html">$i</a>" >> index.html
+  echo "<br>" >> index.html
+done
+
+echo "<h2>Standard XDMs</h2>" >> index.html
+for i in ${standardXdms[@]}; do
+  echo "Generating HTML:" $i
+  echo "<a href = "http://opensource.adobe.com/xdmVisualization/prod/$1/$i.html">$i</a>" >> index.html
+  echo "<br>" >> index.html
+done
+
+echo "<h2>Extension XDMs</h2>" >> index.html
+for i in ${extensionXdms[@]}; do
+  echo "Generating HTML:" $i
+  echo "<a href = "http://opensource.adobe.com/xdmVisualization/prod/$1/$i.html">$i</a>" >> index.html
+  echo "<br>" >> index.html
 done
 
 echo "</body>" >> index.html
