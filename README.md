@@ -2,7 +2,7 @@
 
 This repository is intended to be the visualization of xdms in [XDM Public Repo](https://github.com/adobe/xdm). All schema design and discussions should happen there.
 
-See XDM Public Repo's master branch visualization [Here](https://opensource.adobe.com/xdmVisualization/prod/master/).
+See [visualization of XDM Public Repo's master branch](https://opensource.adobe.com/xdmVisualization/prod/master/).
 
 ### Prerequisite
 
