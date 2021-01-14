@@ -1,7 +1,7 @@
 # XDM Visualization
 ### Uber Schemas
-[test1](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.profile-edgeregion.html)
-[test2](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.profile-edgeregion.html)
+- [test1](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.profile-edgeregion.html)\
+- [test2](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.profile-edgeregion.html)\
 
 
 ### Standard XDMs
