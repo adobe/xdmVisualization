@@ -1,11 +1,8 @@
 # XDM Visualization
 ### Uber Schemas
+[test1](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.profile-edgeregion.html)
+[test2](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.profile-edgeregion.html)
 
-<details>
-<summary>Example</summary>
-<ul><li>This dropdown contains</li>
-<li>a list!</li></ul>
-</details>
 
 ### Standard XDMs
 <a href = http://opensource.adobe.com/xdmVisualization/prod/master/behaviors.time-series.html>behaviors.time-series</a>
