@@ -1,9 +1,12 @@
 # XDM Visualization
 ### Uber Schemas
-<a href = http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html>uberschemas.product-generated</a>
-<br>
-<a href = http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.opportunity-contact-role-generated.html>uberschemas.opportunity-contact-role-generated</a>
-<br>
+
+<details>
+<summary>Example</summary>
+<ul><li>This dropdown contains</li>
+<li>a list!</li></ul>
+</details>
+
 ### Standard XDMs
 <a href = http://opensource.adobe.com/xdmVisualization/prod/master/behaviors.time-series.html>behaviors.time-series</a>
 <br>
