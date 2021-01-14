@@ -38,14 +38,8 @@ grunt prod
 
 #generate xdm schema visualization pages
 cd prod/$1/
-rm index.html
-echo "<!DOCTYPE html>" >> index.html
-echo "<html>" >> index.html
-echo "<head>" >> index.html
-echo "<title>XDM Visualization</title>" >> index.html
-echo "</head>" >> index.html
-echo "<body>" >> index.html
-echo "<h1>XDM Visualization</h1>" >> index.html
+rm index.html index.md
+echo "# XDM Visualization" >> index.md
 
 uberSchemas=()
 standardXdms=()
@@ -78,29 +72,24 @@ for folder in ${folders[@]}; do
   done
 done
 
-echo "<h2>Uber Schemas</h2>" >> index.html
+echo "### Uber Schemas" >> index.md
 for i in ${uberSchemas[@]}; do
   echo "Generating HTML:" $i
-  echo "<a href = "http://opensource.adobe.com/xdmVisualization/prod/$1/$i.html">$i</a>" >> index.html
-  echo "<br>" >> index.html
+  echo "[$i](http://opensource.adobe.com/xdmVisualization/prod/$1/$i.html)<br/>" >> index.md
 done
 
-echo "<h2>Standard XDMs</h2>" >> index.html
+echo "### Standard XDMs" >> index.md
 for i in ${standardXdms[@]}; do
   echo "Generating HTML:" $i
-  echo "<a href = "http://opensource.adobe.com/xdmVisualization/prod/$1/$i.html">$i</a>" >> index.html
-  echo "<br>" >> index.html
+  echo "[$i](http://opensource.adobe.com/xdmVisualization/prod/$1/$i.html)<br/>" >> index.md
 done
 
-echo "<h2>Extension XDMs</h2>" >> index.html
+echo "### Extension XDMs" >> index.md
 for i in ${extensionXdms[@]}; do
   echo "Generating HTML:" $i
-  echo "<a href = "http://opensource.adobe.com/xdmVisualization/prod/$1/$i.html">$i</a>" >> index.html
-  echo "<br>" >> index.html
+  echo echo "[$i](http://opensource.adobe.com/xdmVisualization/prod/$1/$i.html)<br/>" >> index.md
 done
 
-echo "</body>" >> index.html
-echo "</html>" >> index.html
 (rm ../index.html; rm ../../index.html)
 
 #grunt connect:server:keepalive
