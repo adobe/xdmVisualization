@@ -38,8 +38,9 @@ grunt prod
 
 #generate xdm schema visualization pages
 cd prod/$1/
-rm index.html index.md
+rm index.html
 echo "# XDM Visualization" >> index.md
+echo "## Git Repo Branch: $1" >> index.md
 
 uberSchemas=()
 standardXdms=()
@@ -87,9 +88,8 @@ done
 echo "### Extension XDMs" >> index.md
 for i in ${extensionXdms[@]}; do
   echo "Generating HTML:" $i
-  echo echo "[$i](http://opensource.adobe.com/xdmVisualization/prod/$1/$i.html)<br/>" >> index.md
+  echo "[$i](http://opensource.adobe.com/xdmVisualization/prod/$1/$i.html)<br/>" >> index.md
 done
 
 (rm ../index.html; rm ../../index.html)
-
 #grunt connect:server:keepalive

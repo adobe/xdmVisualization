@@ -1,0 +1,43 @@
+{
+  "id": "_xdm.mixins.experienceevent-bill-pay-steps",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Bill Pay Steps",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:tags": {
+    "industry": [
+      "financial_services"
+    ]
+  },
+  "description": "Bill pay steps such as start, save, failure, and complete.",
+  "meta:status": "experimental",
+  "meta:xdmType": "object",
+  "properties": {
+    "personalFinances": {
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "billPay": {
+          "title": "Bill Pay Steps",
+          "$ref": "../../datatypes/tool-usage.schema.json",
+          "description": "Extension of toolUsage data type.",
+          "meta:xdmField": "xdm:billPay",
+          "tagNumber": 1
+        },
+        "billPayAccount": {
+          "title": "Bill Pay Account",
+          "$ref": "../../datatypes/financial-account.schema.json",
+          "description": "Extension of financialAccount data type.",
+          "meta:xdmField": "xdm:billPayAccount",
+          "tagNumber": 2
+        }
+      },
+      "meta:xdmField": "xdm:personalFinances",
+      "tagNumber": 1
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/mixins/experienceevent-bill-pay-steps",
+  "meta:altId": "_xdm.mixins.experienceevent-bill-pay-steps",
+  "id": "_xdm.mixins.experienceevent-bill-pay-steps"
+}

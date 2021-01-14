@@ -1,0 +1,40 @@
+{
+  "id": "_xdm.datatypes.b2b-source",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "B2B Source",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "description": "This Data Type is used to capture B2B/CRM Source identifiers.",
+  "meta:status": "experimental",
+  "meta:xdmType": "object",
+  "properties": {
+    "systemID": {
+      "title": "System ID",
+      "type": "string",
+      "description": "This is an identifier for the source system itself and potentially includes the object type.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:systemID",
+      "tagNumber": 1
+    },
+    "ID": {
+      "title": "ID",
+      "type": "string",
+      "description": "This is the row id for the fragment (of whatever type it is).It could be row id for the contact, account, lead etc.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:ID",
+      "tagNumber": 2
+    },
+    "key": {
+      "title": "System Key",
+      "description": "This is concatination of systemId and id. The concatenated value is created by the connector in the data pipe, so it’s already in the source.",
+      "type": "string",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:key",
+      "tagNumber": 3
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+  "meta:altId": "_xdm.datatypes.b2b-source",
+  "id": "_xdm.datatypes.b2b-source"
+}

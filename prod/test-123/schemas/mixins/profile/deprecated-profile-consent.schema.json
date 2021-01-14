@@ -1,0 +1,23 @@
+{
+  "id": "_xdm.mixins.profile-consent",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Privacy/Marketing Preferences (Consent)",
+  "description": "This schema captures privacy, personalization and marketing preferences (consents).",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:status": "deprecated",
+  "meta:xdmType": "object",
+  "properties": {
+    "consentsAndPreferences": {
+      "title": "Global Privacy/Marketing Preference Values",
+      "description": "Global (User/Profile-level) Privacy/Personalization/Marketing Preferences.",
+      "$ref": "../../datatypes/deprecated-consentpreferences.schema.json",
+      "meta:xdmField": "xdm:consentsAndPreferences",
+      "tagNumber": 1
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/mixins/profile-consent",
+  "meta:altId": "_xdm.mixins.profile-consent",
+  "id": "_xdm.mixins.profile-consent"
+}

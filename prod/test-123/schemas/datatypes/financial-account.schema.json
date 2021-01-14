@@ -1,0 +1,73 @@
+{
+  "id": "_xdm.datatypes.financial-account",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Financial Account",
+  "type": "object",
+  "meta:extensible": true,
+  "description": "Financial account details, such as owners, balances, and types.",
+  "meta:status": "experimental",
+  "meta:xdmType": "object",
+  "properties": {
+    "currentAccountBalance": {
+      "title": "Current Financial Account Balance",
+      "$ref": "currency.schema.json",
+      "description": "Balance in the account.",
+      "meta:xdmField": "xdm:currentAccountBalance",
+      "tagNumber": 1
+    },
+    "financialAccountID": {
+      "title": "Financial Account ID",
+      "type": "string",
+      "description": "Current account balance for a single user account.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:financialAccountID",
+      "tagNumber": 2
+    },
+    "financialAccountName": {
+      "title": "Financial Account Name",
+      "type": "string",
+      "description": "Name assigned to the financial account.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:financialAccountName",
+      "tagNumber": 3
+    },
+    "financialAccountOwner": {
+      "title": "Financial Account Owners",
+      "type": "array",
+      "description": "Array of the owner(s) of the selected financial account. Extension of the personal profile details data type.",
+      "meta:xdmType": "array",
+      "items": {
+        "$ref": "../mixins/profile/profile-personal-details.schema.json",
+        "tagNumber": 1
+      },
+      "meta:xdmField": "xdm:financialAccountOwner",
+      "tagNumber": 4
+    },
+    "financialAccountType": {
+      "title": "Financial Account Type",
+      "type": "string",
+      "enum": [
+        "checking",
+        "savings",
+        "retirement",
+        "investment"
+      ],
+      "description": "Describes the type of finanical account, such as checking, savings, or retirement.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:financialAccountType",
+      "tagNumber": 5
+    },
+    "openedDate": {
+      "title": "Financial Account Open Date",
+      "type": "string",
+      "format": "date-time",
+      "description": "Date which the account was opened.",
+      "meta:xdmType": "date-time",
+      "meta:xdmField": "xdm:openedDate",
+      "tagNumber": 6
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/datatypes/financial-account",
+  "meta:altId": "_xdm.datatypes.financial-account",
+  "id": "_xdm.datatypes.financial-account"
+}

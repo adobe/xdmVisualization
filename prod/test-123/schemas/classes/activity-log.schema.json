@@ -1,0 +1,93 @@
+{
+  "id": "_xdm.context.activity-log",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "XDM Business Activity Log",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "description": "An XDM Activity in the form of a task or a business event.",
+  "meta:status": [
+    "experimental",
+    "stable"
+  ],
+  "meta:xdmType": "object",
+  "properties": {
+    "_id": {
+      "title": "Identifier",
+      "type": "string",
+      "format": "uri-reference",
+      "description": "A unique identifier for the time-series event.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "@id",
+      "tagNumber": 1
+    },
+    "timestamp": {
+      "title": "Timestamp",
+      "type": "string",
+      "format": "date-time",
+      "description": "The time when an event or observation occurred.",
+      "meta:xdmType": "date-time",
+      "meta:xdmField": "xdm:timestamp",
+      "tagNumber": 2
+    },
+    "eventType": {
+      "title": "Event Type",
+      "type": "string",
+      "description": "The primary event type for this time-series record.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:eventType",
+      "tagNumber": 3
+    },
+    "extSourceSystemAudit": {
+      "title": "External Source System Audit Properties",
+      "$ref": "../datatypes/external-source-system-audit.schema.json",
+      "description": "Audit attributes for external sources.",
+      "meta:xdmField": "xdm:extSourceSystemAudit",
+      "tagNumber": 4
+    },
+    "activityID": {
+      "title": "Activity ID",
+      "description": "Activity log unique identifer",
+      "type": "string",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:activityID",
+      "tagNumber": 5
+    },
+    "activityType": {
+      "type": "object",
+      "title": "Activity Type",
+      "description": "The tacking type of the activity in the form of a task or a business planned event",
+      "meta:xdmType": "object",
+      "properties": {
+        "ID": {
+          "title": "ID of the Activity Type",
+          "description": "The tacking type of the activity in the form of a task or a business planned event",
+          "type": "string",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:ID",
+          "tagNumber": 1
+        },
+        "type": {
+          "title": "Type of the Activity Type",
+          "description": "The tacking type of the activity in the form of a task or a business planned event",
+          "type": "string",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:type",
+          "tagNumber": 2
+        }
+      },
+      "meta:xdmField": "xdm:activityType",
+      "required": [
+        "ID",
+        "type"
+      ],
+      "tagNumber": 6
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/context/activity-log",
+  "meta:altId": "_xdm.context.activity-log",
+  "required": [
+    "activityID"
+  ],
+  "id": "_xdm.context.activity-log"
+}
