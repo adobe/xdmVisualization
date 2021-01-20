@@ -62,6 +62,14 @@
                   },
                   "meta:xdmField": "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/tags",
                   "tagNumber": 4
+                },
+                "label": {
+                  "title": "Tracker URL Label",
+                  "type": "string",
+                  "description": "Human-Friendly label",
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/label",
+                  "tagNumber": 5
                 }
               },
               "tagNumber": 1

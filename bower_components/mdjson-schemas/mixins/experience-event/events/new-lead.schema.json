@@ -22,7 +22,7 @@
             "sourceType": {
               "title": "Source Type",
               "type": "string",
-              "description": ".",
+              "description": "Type of the source.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:sourceType",
               "tagNumber": 1
@@ -30,7 +30,7 @@
             "formName": {
               "title": "Form Name",
               "type": "string",
-              "description": ".",
+              "description": "Friendly name to form.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:formName",
               "tagNumber": 2
@@ -38,7 +38,7 @@
             "listName": {
               "title": "List Name",
               "type": "string",
-              "description": ".",
+              "description": "Name of the list.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:listName",
               "tagNumber": 3
@@ -46,7 +46,7 @@
             "sfdcType": {
               "title": "SFDC Type",
               "type": "string",
-              "description": ".",
+              "description": "Type defined in salesforce source.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:sfdcType",
               "tagNumber": 4
@@ -54,7 +54,7 @@
             "leadSource": {
               "title": "Lead Source",
               "type": "string",
-              "description": ".",
+              "description": "Source from where this perticlar lead come from.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:leadSource",
               "tagNumber": 5
@@ -63,7 +63,7 @@
               "title": "Created Date",
               "type": "string",
               "format": "date-time",
-              "description": ".",
+              "description": "Date when this lead is created.",
               "meta:xdmType": "date-time",
               "meta:xdmField": "xdm:createdDate",
               "tagNumber": 6

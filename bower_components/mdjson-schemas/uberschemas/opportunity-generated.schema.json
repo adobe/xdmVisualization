@@ -84,7 +84,7 @@
       "meta:xdmField": "xdm:opportunityComponents",
       "tagNumber": 9,
       "items": {
-        "$ref": "obj2625082197419826.schema.json"
+        "$ref": "obj6411012593214929.schema.json"
       }
     },
     "sourceType": {
@@ -212,8 +212,14 @@
       "title": "Close Date",
       "description": "Date of closure for this opportunity.",
       "type": "string",
-      "format": "date-time",
-      "meta:xdmType": "date-time",
+      "format": [
+        "date-time",
+        "date"
+      ],
+      "meta:xdmType": [
+        "date-time",
+        "date"
+      ],
       "meta:xdmField": "xdm:closeDate",
       "tagNumber": 24
     },

@@ -17,10 +17,21 @@
     "listOperation.addToList",
     "opportunityEvent.addToOpportunity",
     "leadOperation.convertLead",
+    "directMarketing.emailBounced",
+    "directMarketing.emailBouncedSoft",
+    "directMarketing.emailClicked",
+    "directMarketing.emailDelivered",
+    "directMarketing.emailOpened",
+    "directMarketing.emailUnsubscribed",
+    "web.formFilledOut",
     "leadOperation.interestingMoment",
+    "web.webInteraction.linkClicks",
     "leadOperation.newLead",
+    "opportunityEvent.opportunityUpdated",
     "listOpearation.removeFromList",
     "opportunityEvent.removeFromOpportunity",
+    "leadOperation.scoreChanged",
+    "leadOperation.statusInCampaignProgressionChanged",
     "web.webpagedetails.pageViews"
   ],
   "meta:tags": [
@@ -162,6 +173,16 @@
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:role",
           "tagNumber": 3
+        },
+        "dataValueChanges": {
+          "title": "Data Value Changes",
+          "type": "array",
+          "meta:xdmType": "array",
+          "meta:xdmField": "xdm:dataValueChanges",
+          "tagNumber": 4,
+          "items": {
+            "$ref": "obj5149769491127947.schema.json"
+          }
         }
       },
       "meta:xdmField": "xdm:opportunityEvent",
@@ -255,7 +276,7 @@
             "sourceType": {
               "title": "Source Type",
               "type": "string",
-              "description": ".",
+              "description": "Type of the source.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:sourceType",
               "tagNumber": 1
@@ -263,7 +284,7 @@
             "formName": {
               "title": "Form Name",
               "type": "string",
-              "description": ".",
+              "description": "Friendly name to form.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:formName",
               "tagNumber": 2
@@ -271,7 +292,7 @@
             "listName": {
               "title": "List Name",
               "type": "string",
-              "description": ".",
+              "description": "Name of the list.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:listName",
               "tagNumber": 3
@@ -279,7 +300,7 @@
             "sfdcType": {
               "title": "SFDC Type",
               "type": "string",
-              "description": ".",
+              "description": "Type defined in salesforce source.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:sfdcType",
               "tagNumber": 4
@@ -287,7 +308,7 @@
             "leadSource": {
               "title": "Lead Source",
               "type": "string",
-              "description": ".",
+              "description": "Source from where this perticlar lead come from.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:leadSource",
               "tagNumber": 5
@@ -296,7 +317,7 @@
               "title": "Created Date",
               "type": "string",
               "format": "date-time",
-              "description": ".",
+              "description": "Date when this lead is created.",
               "meta:xdmType": "date-time",
               "meta:xdmField": "xdm:createdDate",
               "tagNumber": 6
@@ -309,82 +330,87 @@
       "meta:xdmField": "xdm:leadOpearation",
       "tagNumber": 8
     },
-    "web": {
-      "title": "Web",
+    "directMarketing": {
+      "title": "Direct marketing",
       "type": "object",
       "meta:xdmType": "object",
-      "$ref": "../datatypes/webinfo.schema.json",
-      "description": "The information related to web page and link of the ExperienceEvent.",
+      "$ref": "../datatypes/direct-marketing.schema.json",
+      "description": "Events and properties related to direct and outbound marketing such as email, direct mail, texts, and in-app notifications.",
       "properties": {
-        "webPageDetails": {
-          "title": "Web Page Details",
-          "type": "object",
-          "meta:xdmType": "object",
-          "properties": {
-            "webPageID": {
-              "title": "Webpage ID",
-              "type": "string",
-              "description": ".",
-              "meta:xdmType": "string",
-              "meta:xdmField": "xdm:webPageID",
-              "tagNumber": 1
-            },
-            "name": {
-              "title": "Name",
-              "type": "string",
-              "description": "The normative name of the web page. This name is not necessarily the page title or directly associate with page content, but is used to organize a site's pages for classification purposes.",
-              "meta:xdmType": "string",
-              "meta:xdmField": "xdm:name",
-              "tagNumber": 2
-            },
-            "URL": {
-              "title": "URL",
-              "type": "string",
-              "format": "uri",
-              "description": "The normative or usual URL of the web page.  This may or may not be the actual URL used to reach the page, which would be recorded using `Web Link`.",
-              "meta:xdmType": "string",
-              "meta:xdmField": "xdm:URL",
-              "tagNumber": 3
-            },
-            "queryParamaters": {
-              "title": "Query Paramaters",
-              "type": "string",
-              "description": "Query Paramters used for the web page.",
-              "meta:xdmType": "string",
-              "meta:xdmField": "xdm:queryParamaters",
-              "tagNumber": 4
-            },
-            "isPersonalizedURL": {
-              "title": "Is Personalized URL",
-              "type": "boolean",
-              "description": "Personalized URL of the web page.  This may or may not be the actual URL used to reach the page, which would be recorded using `Web Link`.",
-              "meta:xdmType": "boolean",
-              "meta:xdmField": "xdm:isPersonalizedURL",
-              "tagNumber": 5
-            }
-          },
-          "meta:xdmField": "xdm:webPageDetails",
+        "mailingID": {
+          "title": "Mailing ID",
+          "type": "string",
+          "description": "Unique identifier of the mailing.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:mailingID",
           "tagNumber": 1
         },
-        "webReferrer": {
-          "title": "Web Referrer",
-          "type": "object",
-          "meta:xdmType": "object",
-          "properties": {
-            "URL": {
-              "title": "URL",
-              "type": "string",
-              "description": "The referrer URL.",
-              "meta:xdmType": "string",
-              "meta:xdmField": "xdm:URL",
-              "tagNumber": 1
-            }
-          },
-          "meta:xdmField": "xdm:webReferrer",
+        "mailingName": {
+          "title": "Mailing Name",
+          "type": "string",
+          "description": "Friendly name for the mailing.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:mailingName",
           "tagNumber": 2
+        },
+        "emailBouncedCategory": {
+          "title": "Email Bounced Category",
+          "type": "string",
+          "description": "Category in which this email failure belongs.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:emailBouncedCategory",
+          "tagNumber": 3
+        },
+        "emailBouncedDetails": {
+          "title": "Email Bounced Details",
+          "type": "string",
+          "description": "Email failure reason description message.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:emailBouncedDetails",
+          "tagNumber": 4
+        },
+        "emailBouncedSubcategory": {
+          "title": "Email Bounced Subcategory",
+          "type": "string",
+          "description": "Subcategory this failure reason belongs to.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:emailBouncedSubcategory",
+          "tagNumber": 5
+        },
+        "email": {
+          "title": "email",
+          "type": "string",
+          "description": "visitor email ID.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:email",
+          "tagNumber": 6
+        },
+        "testVariantID": {
+          "title": "Test Variant ID",
+          "type": "string",
+          "description": "Unique identifier for the test variant.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:testVariantID",
+          "tagNumber": 7
+        },
+        "testVariantName": {
+          "title": "Test Variant Name",
+          "type": "string",
+          "description": "Friendly name for the test variant.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:testVariantName",
+          "tagNumber": 8
+        },
+        "linkURL": {
+          "title": "Link URL",
+          "type": "string",
+          "description": "The link URL.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:linkURL",
+          "tagNumber": 9
         }
       },
-      "meta:xdmField": "xdm:web",
+      "meta:xdmField": "xdm:directMarketing",
       "tagNumber": 9
     },
     "environment": {
@@ -394,13 +420,12 @@
       "meta:xdmType": "object",
       "$ref": "../datatypes/environment.schema.json",
       "properties": {
-        "ipV4": {
-          "title": "IPv4",
+        "operatingSystem": {
+          "title": "Operating system",
           "type": "string",
-          "format": "ipv4",
-          "description": "The numerical label assigned to a device participating in a computer network that uses the Internet Protocol for communication. ",
+          "description": "The name of the operating system used when the observation was made. The attribute should not contain any version information such as '10.5.3', but instead contain 'edition' designations such as 'Ultimate' or 'Professional'.",
           "meta:xdmType": "string",
-          "meta:xdmField": "xdm:ipV4",
+          "meta:xdmField": "xdm:operatingSystem",
           "tagNumber": 1
         },
         "browserDetails": {
@@ -420,10 +445,370 @@
           },
           "meta:xdmField": "xdm:browserDetails",
           "tagNumber": 2
+        },
+        "ipV4": {
+          "title": "IPv4",
+          "type": "string",
+          "format": "ipv4",
+          "description": "The numerical label assigned to a device participating in a computer network that uses the Internet Protocol for communication. ",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:ipV4",
+          "tagNumber": 3
         }
       },
       "meta:xdmField": "xdm:environment",
       "tagNumber": 10
+    },
+    "device": {
+      "title": "Device",
+      "type": "object",
+      "meta:xdmType": "object",
+      "$ref": "../datatypes/device.schema.json",
+      "description": "An identified device, application or device browser instance that is trackable across sessions, normally by cookies.",
+      "properties": {
+        "isMobileDevice": {
+          "title": "Is Mobile Device",
+          "type": "boolean",
+          "description": "Is this mobile device.",
+          "meta:xdmType": "boolean",
+          "meta:xdmField": "xdm:isMobileDevice",
+          "tagNumber": 1
+        },
+        "model": {
+          "title": "Model",
+          "type": "string",
+          "description": "The name of the model for the device. This is the common, human-readable, or marketing name for the device. For example, the 'iPhone 6S' is a particular model of mobile phone.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:model",
+          "tagNumber": 2
+        }
+      },
+      "meta:xdmField": "xdm:device",
+      "tagNumber": 11
+    },
+    "web": {
+      "title": "Web",
+      "type": "object",
+      "meta:xdmType": "object",
+      "$ref": "../datatypes/webinfo.schema.json",
+      "description": "The information related to web page and link of the ExperienceEvent.",
+      "properties": {
+        "webInteraction": {
+          "title": "Web Interaction",
+          "type": "object",
+          "meta:xdmType": "object",
+          "properties": {
+            "linkID": {
+              "title": "Link ID",
+              "type": "string",
+              "description": "Unique identifier to link.",
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:linkID",
+              "tagNumber": 1
+            },
+            "linkName": {
+              "title": "Link Name",
+              "type": "string",
+              "description": "Friendly name to link",
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:linkName",
+              "tagNumber": 2
+            }
+          },
+          "meta:xdmField": "xdm:webInteraction",
+          "tagNumber": 1
+        },
+        "filloutform": {
+          "title": "Fill Out Form",
+          "type": "object",
+          "meta:xdmType": "object",
+          "properties": {
+            "webFormID": {
+              "title": "Web Form ID",
+              "type": "string",
+              "description": "Unique Identifier for web form.",
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:webFormID",
+              "tagNumber": 1
+            },
+            "webFormName": {
+              "title": "Web Form Name",
+              "type": "string",
+              "description": "Friendly name for web form.",
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:webFormName",
+              "tagNumber": 2
+            }
+          },
+          "meta:xdmField": "xdm:filloutform",
+          "tagNumber": 2
+        },
+        "webPageDetails": {
+          "title": "Web Page Details",
+          "type": "object",
+          "meta:xdmType": "object",
+          "properties": {
+            "webPageID": {
+              "title": "Web Page ID",
+              "type": "string",
+              "description": "Unique Identifier for web page.",
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:webPageID",
+              "tagNumber": 1
+            },
+            "name": {
+              "title": "Name",
+              "type": "string",
+              "description": "The normative name of the web page. This name is not necessarily the page title or directly associate with page content, but is used to organize a site's pages for classification purposes.",
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:name",
+              "tagNumber": 2
+            },
+            "queryParamaters": {
+              "title": "Query Paramaters",
+              "type": "string",
+              "description": "Query Paramters used for the web page.",
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:queryParamaters",
+              "tagNumber": 3
+            },
+            "URL": {
+              "title": "URL",
+              "type": "string",
+              "format": "uri",
+              "description": "The normative or usual URL of the web page.  This may or may not be the actual URL used to reach the page, which would be recorded using `Web Link`.",
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:URL",
+              "tagNumber": 4
+            },
+            "isPersonalizedURL": {
+              "title": "Is Personalized URL",
+              "type": "boolean",
+              "description": "Personalized URL of the web page.  This may or may not be the actual URL used to reach the page, which would be recorded using `Web Link`.",
+              "meta:xdmType": "boolean",
+              "meta:xdmField": "xdm:isPersonalizedURL",
+              "tagNumber": 5
+            }
+          },
+          "meta:xdmField": "xdm:webPageDetails",
+          "tagNumber": 3
+        },
+        "webReferrer": {
+          "title": "Web Referrer",
+          "type": "object",
+          "meta:xdmType": "object",
+          "properties": {
+            "URL": {
+              "title": "URL",
+              "type": "string",
+              "description": "The referrer URL.",
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:URL",
+              "tagNumber": 1
+            }
+          },
+          "meta:xdmField": "xdm:webReferrer",
+          "tagNumber": 4
+        },
+        "fillOutForm": {
+          "title": "Fill Out Form",
+          "type": "object",
+          "meta:xdmType": "object",
+          "properties": {
+            "webFormID": {
+              "title": "Web Form ID",
+              "type": "string",
+              "description": "Unique Identifier for web form.",
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:webFormID",
+              "tagNumber": 1
+            },
+            "webFormName": {
+              "title": "Web Form Name",
+              "type": "string",
+              "description": "Friendly name for web form.",
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:webFormName",
+              "tagNumber": 2
+            }
+          },
+          "meta:xdmField": "xdm:fillOutForm",
+          "tagNumber": 5
+        }
+      },
+      "meta:xdmField": "xdm:web",
+      "tagNumber": 12
+    },
+    "leadOperation": {
+      "title": "Lead Operation",
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "changeScore": {
+          "title": "Change Score",
+          "type": "object",
+          "meta:xdmType": "object",
+          "properties": {
+            "scoreAttributeID": {
+              "title": "Score Atribute ID",
+              "type": "string",
+              "description": "Unique identifier for score attribute.",
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:scoreAttributeID",
+              "tagNumber": 1
+            },
+            "scoreAttributeName": {
+              "title": "Score Atribute Name",
+              "type": "string",
+              "description": "friendly name for the score.",
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:scoreAttributeName",
+              "tagNumber": 2
+            },
+            "changeValue": {
+              "title": "Change Value",
+              "type": "string",
+              "description": "changed value.",
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:changeValue",
+              "tagNumber": 3
+            },
+            "newValue": {
+              "title": "New Value",
+              "type": "integer",
+              "description": "New score Value.",
+              "meta:xdmType": "int",
+              "meta:xdmField": "xdm:newValue",
+              "tagNumber": 4
+            },
+            "oldValue": {
+              "title": "Old Value",
+              "type": "integer",
+              "description": "old score Value.",
+              "meta:xdmType": "int",
+              "meta:xdmField": "xdm:oldValue",
+              "tagNumber": 5
+            },
+            "reason": {
+              "title": "Reason",
+              "type": "string",
+              "description": "Reason for the change.",
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:reason",
+              "tagNumber": 6
+            },
+            "urgency": {
+              "title": "Urgency",
+              "type": "number",
+              "description": "Urgency for this change.",
+              "meta:xdmType": "number",
+              "meta:xdmField": "xdm:urgency",
+              "tagNumber": 7
+            },
+            "priority": {
+              "title": "Priority",
+              "type": "integer",
+              "description": "Priority for this change.",
+              "meta:xdmType": "int",
+              "meta:xdmField": "xdm:priority",
+              "tagNumber": 8
+            },
+            "relativeScore": {
+              "title": "Relative Score",
+              "type": "integer",
+              "description": "Relative score.",
+              "meta:xdmType": "int",
+              "meta:xdmField": "xdm:relativeScore",
+              "tagNumber": 9
+            },
+            "relativeUrgency": {
+              "title": "Relative Urgency",
+              "type": "integer",
+              "description": "Relative Urgency for this change.",
+              "meta:xdmType": "int",
+              "meta:xdmField": "xdm:relativeUrgency",
+              "tagNumber": 10
+            }
+          },
+          "meta:xdmField": "xdm:changeScore",
+          "tagNumber": 1
+        },
+        "campaignProgression": {
+          "title": "Campaign Progression",
+          "type": "object",
+          "meta:xdmType": "object",
+          "properties": {
+            "campaignID": {
+              "title": "Campaign ID",
+              "type": "string",
+              "description": "Unique identifier for campaign.",
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:campaignID",
+              "tagNumber": 1
+            },
+            "newStatusID": {
+              "title": "New Status ID",
+              "type": "string",
+              "description": "Unique identifier for new status.",
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:newStatusID",
+              "tagNumber": 2
+            },
+            "newStatusName": {
+              "title": "New Status Name",
+              "type": "string",
+              "description": "Friendly name for new status.",
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:newStatusName",
+              "tagNumber": 3
+            },
+            "oldStatusID": {
+              "title": "Old Status ID",
+              "type": "string",
+              "description": "Unique identifier for old status.",
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:oldStatusID",
+              "tagNumber": 4
+            },
+            "oldStatusName": {
+              "title": "Old Status Name",
+              "type": "string",
+              "description": "Friendly name for old status.",
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:oldStatusName",
+              "tagNumber": 5
+            },
+            "reason": {
+              "title": "Reason",
+              "type": "string",
+              "description": "Reason for status change.",
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:reason",
+              "tagNumber": 6
+            },
+            "isAcquiredBy": {
+              "title": "Is Acquired By",
+              "type": "boolean",
+              "description": "Change acquired by user.",
+              "meta:xdmType": "boolean",
+              "meta:xdmField": "xdm:isAcquiredBy",
+              "tagNumber": 7
+            },
+            "isSuccessful": {
+              "title": "Is Successful",
+              "type": "boolean",
+              "description": "Is the change successful or failed in process.",
+              "meta:xdmType": "boolean",
+              "meta:xdmField": "xdm:isSuccessful",
+              "tagNumber": 8
+            }
+          },
+          "meta:xdmField": "xdm:campaignProgression",
+          "tagNumber": 2
+        }
+      },
+      "meta:xdmField": "xdm:leadOperation",
+      "tagNumber": 13
     },
     "search": {
       "title": "Search",
@@ -450,14 +835,14 @@
         }
       },
       "meta:xdmField": "xdm:search",
-      "tagNumber": 11
+      "tagNumber": 14
     },
     "advertising": {
       "title": "Advertising",
       "$ref": "../datatypes/advertising.schema.json",
       "description": "Information related to advertising activity in ExperienceEvents.",
       "meta:xdmField": "xdm:advertising",
-      "tagNumber": 12
+      "tagNumber": 15
     },
     "alerts": {
       "type": "object",
@@ -500,14 +885,14 @@
         }
       },
       "meta:xdmField": "xdm:alerts",
-      "tagNumber": 13
+      "tagNumber": 16
     },
     "application": {
       "title": "Application",
       "$ref": "../datatypes/application.schema.json",
       "description": "This mixin is used to capture application information related to an ExperienceEvent, including the name of the application, app version, installs, launches, crashes, and closures. It could be either the application targeted by the event like the send of a push notification or the application originating the event such as a click, or a login.",
       "meta:xdmField": "xdm:application",
-      "tagNumber": 14
+      "tagNumber": 17
     },
     "userAccount": {
       "type": "object",
@@ -522,7 +907,7 @@
         }
       },
       "meta:xdmField": "xdm:userAccount",
-      "tagNumber": 15
+      "tagNumber": 18
     },
     "personalFinances": {
       "type": "object",
@@ -617,14 +1002,14 @@
         }
       },
       "meta:xdmField": "xdm:personalFinances",
-      "tagNumber": 16
+      "tagNumber": 19
     },
     "channel": {
       "title": "Experience channel",
       "description": "Experience channel related to the ExperienceEvent.",
       "$ref": "../datatypes/channels/channel.schema.json",
       "meta:xdmField": "xdm:channel",
-      "tagNumber": 17
+      "tagNumber": 20
     },
     "disputes": {
       "type": "object",
@@ -708,7 +1093,7 @@
         }
       },
       "meta:xdmField": "xdm:disputes",
-      "tagNumber": 18
+      "tagNumber": 21
     },
     "productListItems": {
       "title": "Product list items",
@@ -720,42 +1105,35 @@
         "tagNumber": 1
       },
       "meta:xdmField": "xdm:productListItems",
-      "tagNumber": 19
+      "tagNumber": 22
     },
     "commerce": {
       "title": "Commerce",
       "$ref": "../datatypes/commerce.schema.json",
       "description": "Commerce specific data related to this event.",
       "meta:xdmField": "xdm:commerce",
-      "tagNumber": 20
-    },
-    "device": {
-      "title": "Device",
-      "$ref": "../datatypes/device.schema.json",
-      "description": "An identified device, application or device browser instance that is trackable across sessions, normally by cookies.",
-      "meta:xdmField": "xdm:device",
-      "tagNumber": 21
+      "tagNumber": 23
     },
     "placeContext": {
       "title": "Place context",
       "$ref": "../datatypes/placecontext.schema.json",
       "description": "The transient circumstances related to the observation. Examples include locale specific information such as weather, local time, traffic, day of the week, workday vs. holiday, and working hours.",
       "meta:xdmField": "xdm:placeContext",
-      "tagNumber": 22
+      "tagNumber": 24
     },
     "marketing": {
       "title": "Marketing",
       "$ref": "../datatypes/marketing.schema.json",
       "description": "The information related to marketing activities that are active with the touchpoint.",
       "meta:xdmField": "xdm:marketing",
-      "tagNumber": 23
+      "tagNumber": 25
     },
     "media": {
       "title": "Media",
       "$ref": "../datatypes/media.schema.json",
       "description": "Media activity information related to the experience event.",
       "meta:xdmField": "xdm:media",
-      "tagNumber": 24
+      "tagNumber": 26
     },
     "segmentMemberships": {
       "title": "Segment Memberships",
@@ -768,7 +1146,7 @@
         "tagNumber": 1
       },
       "meta:xdmField": "xdm:segmentMemberships",
-      "tagNumber": 25
+      "tagNumber": 27
     },
     "segmentMembership": {
       "title": "Segment Membership Map",
@@ -785,14 +1163,14 @@
         "tagNumber": 1
       },
       "meta:xdmField": "xdm:segmentMembership",
-      "tagNumber": 26
+      "tagNumber": 28
     },
     "dataSource": {
       "title": "Data source",
       "$ref": "../datatypes/data/datasource.schema.json",
       "description": "Globally unique identification of a data source.",
       "meta:xdmField": "xdm:dataSource",
-      "tagNumber": 27
+      "tagNumber": 29
     },
     "receivedTimestamp": {
       "title": "Received time stamp",
@@ -801,7 +1179,7 @@
       "description": "The time at which this interaction was received by a server.",
       "meta:xdmType": "date-time",
       "meta:xdmField": "xdm:receivedTimestamp",
-      "tagNumber": 28
+      "tagNumber": 30
     },
     "customerFeedback": {
       "type": "object",
@@ -903,14 +1281,7 @@
         }
       },
       "meta:xdmField": "xdm:customerFeedback",
-      "tagNumber": 29
-    },
-    "directMarketing": {
-      "title": "Direct marketing",
-      "$ref": "../datatypes/direct-marketing.schema.json",
-      "description": "Events and properties related to direct and outbound marketing such as email, direct mail, texts, and in-app notifications.",
-      "meta:xdmField": "xdm:directMarketing",
-      "tagNumber": 30
+      "tagNumber": 31
     },
     "endUserIDs": {
       "meta:status": "deprecated",
@@ -918,14 +1289,14 @@
       "$ref": "../datatypes/enduserids.schema.json",
       "description": "Condensed, normalized encapsulation of all end-user identifiers. Deprecated, use `xdm:identityMap` instead.",
       "meta:xdmField": "xdm:endUserIDs",
-      "tagNumber": 31
+      "tagNumber": 32
     },
     "implementationDetails": {
       "title": "Implementation details",
       "$ref": "../datatypes/implementationdetails.schema.json",
       "description": "The details of the software used to collect the ExperienceEvent.",
       "meta:xdmField": "xdm:implementationDetails",
-      "tagNumber": 32
+      "tagNumber": 33
     },
     "consentStrings": {
       "title": "Identity level consent information",
@@ -936,7 +1307,7 @@
         "tagNumber": 1
       },
       "meta:xdmField": "xdm:consentStrings",
-      "tagNumber": 33
+      "tagNumber": 34
     },
     "profileStitch": {
       "title": "Profile stitch",
@@ -948,7 +1319,7 @@
         "tagNumber": 1
       },
       "meta:xdmField": "xdm:profileStitch",
-      "tagNumber": 34
+      "tagNumber": 35
     },
     "pushNotificationTracking": {
       "title": "push notification tracking details",
@@ -1000,7 +1371,7 @@
         }
       },
       "meta:xdmField": "xdm:pushNotificationTracking",
-      "tagNumber": 35
+      "tagNumber": 36
     }
   },
   "meta:xdmId": "https://ns.adobe.com/xdm/context/experienceevent-generated",

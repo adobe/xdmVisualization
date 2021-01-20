@@ -113,8 +113,8 @@
       "title": "Close Date",
       "description": "Date of closure for this opportunity.",
       "type": "string",
-      "format": "date-time",
-      "meta:xdmType": "date-time",
+      "format": "date",
+      "meta:xdmType": "date",
       "meta:xdmField": "xdm:closeDate",
       "tagNumber": 13
     },
