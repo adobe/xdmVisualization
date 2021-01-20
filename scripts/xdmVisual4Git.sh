@@ -92,7 +92,8 @@ for i in ${extensionXdms[@]}; do
 done
 
 (rm ../index.html; rm ../../index.html)
-#git add .
-#git commit -m "merge xdm visualization for $1 branch"
-#git push origin
+git add .
+sleep 2
+git commit -m "merge xdm visualization for $1 branch"
+git push origin
 #grunt connect:server:keepalive
