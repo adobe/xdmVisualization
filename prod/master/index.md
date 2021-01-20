@@ -255,6 +255,7 @@
 [mixins.experience-event.events.emailclicked](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.events.emailclicked.html)<br/>
 [mixins.experience-event.events.emaildelivered](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.events.emaildelivered.html)<br/>
 [mixins.experience-event.experienceevent-alert-impressions](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.experienceevent-alert-impressions.html)<br/>
+[mixins.experience-event.experienceevent-card-actions](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.experienceevent-card-actions.html)<br/>
 [mixins.experience-event.experienceevent-enduserids-deprecated](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.experienceevent-enduserids-deprecated.html)<br/>
 [mixins.experience-event.experienceevent-deposit-details](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.experienceevent-deposit-details.html)<br/>
 [mixins.experience-event.experienceevent-balance-transfers](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.experienceevent-balance-transfers.html)<br/>

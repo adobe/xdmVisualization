@@ -63,20 +63,32 @@
       "industry": [
         "financial_services"
       ]
+    },
+    {
+      "industry": [
+        "financial_services",
+        "health_and_life_sciences",
+        "high_tech"
+      ]
+    },
+    {
+      "industry": [
+        "retail",
+        "financial_services",
+        "travel_and_hospitality",
+        "telecom",
+        "automotive",
+        "education",
+        "health_and_life_sciences",
+        "high_tech",
+        "manufacturing",
+        "media_and_entertainment",
+        "public_sector"
+      ]
     }
   ],
   "meta:industry": [
-    "financial_services",
-    "health_and_life_sciences",
-    "high_tech",
-    "retail",
-    "travel_and_hospitality",
-    "telecom",
-    "automotive",
-    "education",
-    "manufacturing",
-    "media_and_entertainment",
-    "public_sector"
+    "financial_services"
   ],
   "properties": {
     "identityMap": {
@@ -181,7 +193,7 @@
           "meta:xdmField": "xdm:dataValueChanges",
           "tagNumber": 4,
           "items": {
-            "$ref": "obj41658549406300827.schema.json"
+            "$ref": "obj6741199475415118.schema.json"
           }
         }
       },
@@ -941,42 +953,123 @@
           "meta:xdmField": "xdm:billPayAccount",
           "tagNumber": 4
         },
-        "cardApplicationProcess": {
-          "type": "object",
-          "meta:xdmType": "object",
-          "properties": {
-            "cardApplicationComparisons": {
-              "title": "Card Comparisons",
-              "$ref": "../datatypes/comparisons.schema.json",
-              "description": "Extension of comparison data type.",
-              "meta:xdmField": "xdm:cardApplicationComparisons",
-              "tagNumber": 1
-            },
-            "cardApplicationSteps": {
-              "title": "Card Application Steps",
-              "$ref": "../datatypes/form-applications.schema.json",
-              "description": "Extension of form application data type.",
-              "meta:xdmField": "xdm:cardApplicationSteps",
-              "tagNumber": 2
-            }
-          },
-          "meta:xdmField": "xdm:cardApplicationProcess",
+        "cardActivated": {
+          "title": "Card Activated Success",
+          "type": "integer",
+          "description": "Tracks when a card has been successfully activated.",
+          "meta:xdmType": "int",
+          "meta:xdmField": "xdm:cardActivated",
           "tagNumber": 5
         },
-        "creditLimitIncreaseDetails": {
-          "type": "object",
-          "meta:xdmType": "object",
-          "properties": {
-            "creditLimitIncrease": {
-              "title": "Credit Limit Increase",
-              "$ref": "../datatypes/form-applications.schema.json",
-              "description": "Extension of form application data type.",
-              "meta:xdmField": "xdm:creditLimitIncrease",
-              "tagNumber": 1
-            }
-          },
-          "meta:xdmField": "xdm:creditLimitIncreaseDetails",
+        "cardActivationStart": {
+          "title": "Card Activation Started",
+          "type": "integer",
+          "description": "Tracks when a card activation process has been started.",
+          "meta:xdmType": "int",
+          "meta:xdmField": "xdm:cardActivationStart",
           "tagNumber": 6
+        },
+        "cardCancelled": {
+          "title": "Card Cancelled",
+          "type": "integer",
+          "description": "Tracks when a card has been cancelled.",
+          "meta:xdmType": "int",
+          "meta:xdmField": "xdm:cardCancelled",
+          "tagNumber": 7
+        },
+        "cardControlsLocked": {
+          "title": "Card Controls Locked",
+          "type": "integer",
+          "description": "Tracks when a card controls have been locked.",
+          "meta:xdmType": "int",
+          "meta:xdmField": "xdm:cardControlsLocked",
+          "tagNumber": 8
+        },
+        "cardControlsUnlocked": {
+          "title": "Card Controls Unlocked",
+          "type": "integer",
+          "description": "Tracks when a card controls have been unlocked.",
+          "meta:xdmType": "int",
+          "meta:xdmField": "xdm:cardControlsUnlocked",
+          "tagNumber": 9
+        },
+        "cardLocked": {
+          "title": "Card Locked",
+          "type": "integer",
+          "description": "Tracks when a card has been locked.",
+          "meta:xdmType": "int",
+          "meta:xdmField": "xdm:cardLocked",
+          "tagNumber": 10
+        },
+        "cardOrderNew": {
+          "title": "Order New Card",
+          "type": "integer",
+          "description": "Tracks when a card has been requested.",
+          "meta:xdmType": "int",
+          "meta:xdmField": "xdm:cardOrderNew",
+          "tagNumber": 11
+        },
+        "cardOrderType": {
+          "title": "Card Order Type",
+          "type": "string",
+          "enum": [
+            "new",
+            "lost",
+            "stolen",
+            "never received",
+            "damaged"
+          ],
+          "description": "Tracks the type of card order associated with a card order event.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:cardOrderType",
+          "tagNumber": 12
+        },
+        "cardType": {
+          "title": "Card Type",
+          "type": "string",
+          "enum": [
+            "credit",
+            "debit",
+            "prepaid",
+            "paypal",
+            "atm",
+            "virtual",
+            "hsa",
+            "fsa"
+          ],
+          "description": "Tracks the type of card associated with an event.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:cardType",
+          "tagNumber": 13
+        },
+        "cardUnlocked": {
+          "title": "Card Unlocked",
+          "type": "integer",
+          "description": "Tracks when a card has been unlocked.",
+          "meta:xdmType": "int",
+          "meta:xdmField": "xdm:cardUnlocked",
+          "tagNumber": 14
+        },
+        "cardApplicationComparisons": {
+          "title": "Card Comparisons",
+          "$ref": "../datatypes/comparisons.schema.json",
+          "description": "Extension of comparison data type.",
+          "meta:xdmField": "xdm:cardApplicationComparisons",
+          "tagNumber": 15
+        },
+        "cardApplicationSteps": {
+          "title": "Card Application Steps",
+          "$ref": "../datatypes/form-applications.schema.json",
+          "description": "Extension of form application data type.",
+          "meta:xdmField": "xdm:cardApplicationSteps",
+          "tagNumber": 16
+        },
+        "creditLimitIncrease": {
+          "title": "Credit Limit Increase",
+          "$ref": "../datatypes/form-applications.schema.json",
+          "description": "Extension of form application data type.",
+          "meta:xdmField": "xdm:creditLimitIncrease",
+          "tagNumber": 17
         },
         "depositDetails": {
           "type": "object",
@@ -998,7 +1091,7 @@
             }
           },
           "meta:xdmField": "xdm:depositDetails",
-          "tagNumber": 7
+          "tagNumber": 18
         }
       },
       "meta:xdmField": "xdm:personalFinances",
@@ -1015,66 +1108,70 @@
       "type": "object",
       "meta:xdmType": "object",
       "properties": {
-        "claimProcess": {
-          "type": "object",
-          "meta:xdmType": "object",
-          "properties": {
-            "claimID": {
-              "title": "Claim ID",
-              "type": "string",
-              "description": "ID of the claim being submitted.",
-              "meta:xdmType": "string",
-              "meta:xdmField": "xdm:claimID",
-              "tagNumber": 1
-            },
-            "claimStartDate": {
-              "title": "Claim Start Date",
-              "type": "string",
-              "format": "date-time",
-              "description": "Date the claim was successfully submitted.",
-              "meta:xdmType": "date-time",
-              "meta:xdmField": "xdm:claimStartDate",
-              "tagNumber": 2
-            },
-            "claimStatus": {
-              "title": "Claim Status",
-              "type": "string",
-              "enum": [
-                "initiated",
-                "in progress",
-                "approved",
-                "declined"
-              ],
-              "description": "Captures the status of the claim for any given point in the application process.",
-              "meta:xdmType": "string",
-              "meta:xdmField": "xdm:claimStatus",
-              "tagNumber": 3
-            },
-            "claimSteps": {
-              "title": "Claim Steps",
-              "$ref": "../datatypes/tool-usage.schema.json",
-              "description": "Extension of toolUsage data type.",
-              "meta:xdmField": "xdm:claimSteps",
-              "tagNumber": 4
-            },
-            "claimType": {
-              "title": "Claim Type",
-              "type": "string",
-              "description": "Type of claim submitted.",
-              "meta:xdmType": "string",
-              "meta:xdmField": "xdm:claimType",
-              "tagNumber": 5
-            },
-            "policy": {
-              "title": "Policy",
-              "$ref": "../datatypes/policy-details.schema.json",
-              "description": "Extension of Policy data type.",
-              "meta:xdmField": "xdm:policy",
-              "tagNumber": 6
-            }
-          },
-          "meta:xdmField": "xdm:claimProcess",
+        "claimID": {
+          "title": "Claim ID",
+          "type": "string",
+          "description": "ID of the claim being submitted.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:claimID",
           "tagNumber": 1
+        },
+        "claimStartDate": {
+          "title": "Claim Start Date",
+          "type": "string",
+          "format": "date-time",
+          "description": "Date the claim was successfully submitted.",
+          "meta:xdmType": "date-time",
+          "meta:xdmField": "xdm:claimStartDate",
+          "tagNumber": 2
+        },
+        "claimStatus": {
+          "title": "Claim Status",
+          "type": "string",
+          "enum": [
+            "initiated",
+            "in progress",
+            "approved",
+            "declined"
+          ],
+          "description": "Captures the status of the claim for any given point in the application process.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:claimStatus",
+          "tagNumber": 3
+        },
+        "claimSteps": {
+          "title": "Claim Steps",
+          "$ref": "../datatypes/tool-usage.schema.json",
+          "description": "Extension of toolUsage data type.",
+          "meta:xdmField": "xdm:claimSteps",
+          "tagNumber": 4
+        },
+        "claimType": {
+          "title": "Claim Type",
+          "type": "string",
+          "enum": [
+            "homeowners",
+            "automobile",
+            "renters",
+            "third party automobile",
+            "third party home",
+            "life",
+            "health",
+            "dental",
+            "flood",
+            "earthquake"
+          ],
+          "description": "Type of claim submitted.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:claimType",
+          "tagNumber": 5
+        },
+        "policy": {
+          "title": "Policy",
+          "$ref": "../datatypes/policy-details.schema.json",
+          "description": "Extension of Policy data type.",
+          "meta:xdmField": "xdm:policy",
+          "tagNumber": 6
         },
         "disputeSteps": {
           "type": "object",
@@ -1089,7 +1186,7 @@
             }
           },
           "meta:xdmField": "xdm:disputeSteps",
-          "tagNumber": 2
+          "tagNumber": 7
         }
       },
       "meta:xdmField": "xdm:disputes",
@@ -1185,99 +1282,99 @@
       "type": "object",
       "meta:xdmType": "object",
       "properties": {
-        "contactRequestDetails": {
-          "type": "object",
-          "meta:xdmType": "object",
-          "properties": {
-            "chatDeclined": {
-              "title": "Chat Declined",
-              "$ref": "../datatypes/data/measure.schema.json",
-              "description": "Captured when an offered chat is declined by a visitor.",
-              "meta:xdmField": "xdm:chatDeclined",
-              "tagNumber": 1
-            },
-            "chatEnd": {
-              "title": "Chat End",
-              "$ref": "../datatypes/data/measure.schema.json",
-              "description": "Captured when a chat is ended with a visitor.",
-              "meta:xdmField": "xdm:chatEnd",
-              "tagNumber": 2
-            },
-            "chatOffered": {
-              "title": "Chat Offered",
-              "$ref": "../datatypes/data/measure.schema.json",
-              "description": "Captures the number of times a chat session has been offered to a visitor.",
-              "meta:xdmField": "xdm:chatOffered",
-              "tagNumber": 3
-            },
-            "chatSessionID": {
-              "title": "Chat Session ID",
-              "type": "string",
-              "description": "Captures the chat session identifier, if available.",
-              "meta:xdmType": "string",
-              "meta:xdmField": "xdm:chatSessionID",
-              "tagNumber": 4
-            },
-            "chatStart": {
-              "title": "Chat Start",
-              "$ref": "../datatypes/data/measure.schema.json",
-              "description": "Captured when a chat is initiated with a visitor.",
-              "meta:xdmField": "xdm:chatStart",
-              "tagNumber": 5
-            },
-            "clickToCall": {
-              "title": "Click to Call",
-              "$ref": "../datatypes/data/measure.schema.json",
-              "description": "Visitor initiates a call to the client from a telephone number link on the site/app.",
-              "meta:xdmField": "xdm:clickToCall",
-              "tagNumber": 6
-            },
-            "clickToDirectMessage": {
-              "title": "Click to Direct Message",
-              "$ref": "../datatypes/data/measure.schema.json",
-              "description": "Visitor initiates a direct message or feedback to the client from a direct message form on the site/app.",
-              "meta:xdmField": "xdm:clickToDirectMessage",
-              "tagNumber": 7
-            },
-            "clickToEmail": {
-              "title": "Click to Email",
-              "$ref": "../datatypes/data/measure.schema.json",
-              "description": "Visitor initiates an email to the client from an email link on the site/app.",
-              "meta:xdmField": "xdm:clickToEmail",
-              "tagNumber": 8
-            },
-            "clickToText": {
-              "title": "Click to Text",
-              "$ref": "../datatypes/data/measure.schema.json",
-              "description": "Visitor initiates a SMS/text message to the client from a SMS/text link on the site/app.",
-              "meta:xdmField": "xdm:clickToText",
-              "tagNumber": 9
-            },
-            "Subject": {
-              "title": "Subject",
-              "type": "string",
-              "description": "Subject of contact requested by the visitor, such as in-store purchase support, online order support, credit customer service, etc.",
-              "meta:xdmType": "string",
-              "meta:xdmField": "xdm:Subject",
-              "tagNumber": 10
-            },
-            "callBackNumber": {
-              "title": "Call Back Contact Information",
-              "$ref": "../datatypes/phonenumber.schema.json",
-              "description": "The contact phone number the visitor uses for responses to contact requests.",
-              "meta:xdmField": "xdm:callBackNumber",
-              "tagNumber": 11
-            },
-            "replyToEmailAddress": {
-              "title": "Reply to Email Address",
-              "$ref": "../datatypes/emailaddress.schema.json",
-              "description": "The email address the visitor uses for responses to contact requests.",
-              "meta:xdmField": "xdm:replyToEmailAddress",
-              "tagNumber": 12
-            }
-          },
-          "meta:xdmField": "xdm:contactRequestDetails",
+        "chatDeclined": {
+          "title": "Chat Declined",
+          "type": "integer",
+          "description": "Captured when an offered chat is declined by a visitor.",
+          "meta:xdmType": "int",
+          "meta:xdmField": "xdm:chatDeclined",
           "tagNumber": 1
+        },
+        "chatEnd": {
+          "title": "Chat End",
+          "type": "integer",
+          "description": "Captured when a chat is ended with a visitor.",
+          "meta:xdmType": "int",
+          "meta:xdmField": "xdm:chatEnd",
+          "tagNumber": 2
+        },
+        "chatOffered": {
+          "title": "Chat Offered",
+          "type": "integer",
+          "description": "Captures the number of times a chat session has been offered to a visitor.",
+          "meta:xdmType": "int",
+          "meta:xdmField": "xdm:chatOffered",
+          "tagNumber": 3
+        },
+        "chatSessionID": {
+          "title": "Chat Session ID",
+          "type": "string",
+          "description": "Captures the chat session identifier, if available.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:chatSessionID",
+          "tagNumber": 4
+        },
+        "chatStart": {
+          "title": "Chat Start",
+          "type": "integer",
+          "description": "Captured when a chat is initiated with a visitor.",
+          "meta:xdmType": "int",
+          "meta:xdmField": "xdm:chatStart",
+          "tagNumber": 5
+        },
+        "clickToCall": {
+          "title": "Click to Call",
+          "type": "integer",
+          "description": "Visitor initiates a call to the client from a telephone number link on the site/app.",
+          "meta:xdmType": "int",
+          "meta:xdmField": "xdm:clickToCall",
+          "tagNumber": 6
+        },
+        "clickToDirectMessage": {
+          "title": "Click to Direct Message",
+          "type": "integer",
+          "description": "Visitor initiates a direct message or feedback to the client from a direct message form on the site/app.",
+          "meta:xdmType": "int",
+          "meta:xdmField": "xdm:clickToDirectMessage",
+          "tagNumber": 7
+        },
+        "clickToEmail": {
+          "title": "Click to Email",
+          "type": "integer",
+          "description": "Visitor initiates an email to the client from an email link on the site/app.",
+          "meta:xdmType": "int",
+          "meta:xdmField": "xdm:clickToEmail",
+          "tagNumber": 8
+        },
+        "clickToText": {
+          "title": "Click to Text",
+          "type": "integer",
+          "description": "Visitor initiates a SMS/text message to the client from a SMS/text link on the site/app.",
+          "meta:xdmType": "int",
+          "meta:xdmField": "xdm:clickToText",
+          "tagNumber": 9
+        },
+        "subject": {
+          "title": "Subject",
+          "type": "string",
+          "description": "Subject of contact requested by the visitor, such as in-store purchase support, online order support, credit customer service, etc.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:subject",
+          "tagNumber": 10
+        },
+        "callBackNumber": {
+          "title": "Call Back Contact Information",
+          "$ref": "../datatypes/phonenumber.schema.json",
+          "description": "The contact phone number the visitor uses for responses to contact requests.",
+          "meta:xdmField": "xdm:callBackNumber",
+          "tagNumber": 11
+        },
+        "replyToEmailAddress": {
+          "title": "Reply to Email Address",
+          "$ref": "../datatypes/emailaddress.schema.json",
+          "description": "The email address the visitor uses for responses to contact requests.",
+          "meta:xdmField": "xdm:replyToEmailAddress",
+          "tagNumber": 12
         }
       },
       "meta:xdmField": "xdm:customerFeedback",
