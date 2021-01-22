@@ -1,14 +1,16 @@
 name: learn-github-actions
 on: [push]
 jobs:
-  check-bats-version:
+  xdm-visualization:
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
         with:
           node-version: '14.13'
+      - uses: actions/setup-ruby@v1
+        with:
+          ruby-version: '2.6.14'
       - run: npm install -g grunt-cli
       - run: npm install
-      - run: git status
 
