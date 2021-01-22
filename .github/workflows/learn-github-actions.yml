@@ -10,7 +10,7 @@ jobs:
           node-version: '14.13'
       - uses: actions/setup-ruby@v1
         with:
-          ruby-version: '2.6.14'
+          ruby-version: '2.6'
       - run: npm install -g grunt-cli
       - run: npm install
 
