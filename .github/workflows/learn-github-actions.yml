@@ -12,7 +12,7 @@ jobs:
         with:
           ruby-version: '2.6'
       - run: bundle install
-      - run: bundle exec rake
+      - run: which gem
       - run: npm install -g grunt-cli
       - run: npm install
 
