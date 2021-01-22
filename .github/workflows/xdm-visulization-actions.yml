@@ -15,4 +15,5 @@ jobs:
       - run: gem install -n /usr/local/bin sass
       - run: npm install -g grunt-cli
       - run: npm install
+      - run: ./scripts/xdmVisual4Git.sh master
 
