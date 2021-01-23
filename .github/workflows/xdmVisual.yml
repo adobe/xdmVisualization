@@ -1,5 +1,6 @@
 name: xdm-visualization
 on:
+  push:
   schedule:
     - cron:  '53 9 * * *'
 jobs:
