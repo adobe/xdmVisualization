@@ -1,8 +1,7 @@
 name: xdm-visualization
 on:
-  push:
   schedule:
-    - cron:  '*/15 * * * *'
+    - cron:  '* * * * *'
 jobs:
   xdm-visualization:
     runs-on: ubuntu-latest
