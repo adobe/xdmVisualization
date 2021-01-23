@@ -1,8 +1,7 @@
 name: xdm-visualization
 on:
-  push:
   schedule:
-    - cron:  '55 21 * * *'
+    - cron:  '*/5 * * * *'
 jobs:
   xdm-visualization:
     runs-on: macos-latest
