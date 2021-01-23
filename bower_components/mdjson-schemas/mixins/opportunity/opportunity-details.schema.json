@@ -109,14 +109,23 @@
       "meta:xdmField": "xdm:opportunityQuantity",
       "tagNumber": 12
     },
-    "closeDate": {
-      "title": "Close Date",
-      "description": "Date of closure for this opportunity.",
+    "expectedCloseDate": {
+      "title": "Expected Close Date",
+      "description": "Expected date of closure for this opportunity.",
       "type": "string",
       "format": "date",
       "meta:xdmType": "date",
-      "meta:xdmField": "xdm:closeDate",
+      "meta:xdmField": "xdm:expectedCloseDate",
       "tagNumber": 13
+    },
+    "actualCloseDate": {
+      "title": "Actual Close Date",
+      "description": "Actual date of closure for this opportunity.",
+      "type": "string",
+      "format": "date-time",
+      "meta:xdmType": "date-time",
+      "meta:xdmField": "xdm:actualCloseDate",
+      "tagNumber": 14
     },
     "lastActivityDate": {
       "title": "Last Activity Date",
@@ -125,7 +134,7 @@
       "format": "date-time",
       "meta:xdmType": "date-time",
       "meta:xdmField": "xdm:lastActivityDate",
-      "tagNumber": 14
+      "tagNumber": 15
     },
     "leadSource": {
       "title": "Lead Source",
@@ -133,7 +142,7 @@
       "type": "string",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:leadSource",
-      "tagNumber": 15
+      "tagNumber": 16
     },
     "nextStep": {
       "title": "Next Step",
@@ -141,7 +150,7 @@
       "type": "string",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:nextStep",
-      "tagNumber": 16
+      "tagNumber": 17
     }
   },
   "meta:xdmId": "https://ns.adobe.com/xdm/mixins/opportunity-details",

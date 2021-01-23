@@ -67,7 +67,7 @@
     },
     "beaconInteractionDetails": {
       "title": "Beacon interaction details",
-      "$ref": "beacon-interaction-details.schema.json",
+      "$ref": "interactions/beacon-interaction-details.schema.json",
       "description": "Beacon details active for the POI interaction.",
       "meta:xdmField": "xdm:beaconInteractionDetails",
       "tagNumber": 8

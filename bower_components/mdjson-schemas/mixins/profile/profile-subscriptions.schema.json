@@ -15,7 +15,7 @@
       "description": "Subscriptions that the profile is entitled to including terminated, expired, or exhausted subscriptions.",
       "meta:xdmType": "array",
       "items": {
-        "$ref": "../../datatypes/subscription.schema.json",
+        "$ref": "../../datatypes/industry-verticals/subscription.schema.json",
         "tagNumber": 1
       },
       "meta:xdmField": "xdm:subscriptions",

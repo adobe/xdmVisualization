@@ -9,8 +9,8 @@
   "meta:abstract": true,
   "meta:status": [
     "stable",
-    "experimental",
-    "deprecated"
+    "deprecated",
+    "experimental"
   ],
   "meta:conditionalField": "xdm:eventType",
   "meta:conditionalValue": [
@@ -37,6 +37,11 @@
   "meta:tags": [
     {
       "industry": [
+        "financial_services"
+      ]
+    },
+    {
+      "industry": [
         "retail",
         "financial_services",
         "travel_and_hospitality",
@@ -57,11 +62,6 @@
         "health_and_life_sciences",
         "manufacturing",
         "public_sector"
-      ]
-    },
-    {
-      "industry": [
-        "financial_services"
       ]
     },
     {
@@ -140,6 +140,14 @@
       "meta:xdmField": "xdm:eventMergeId",
       "tagNumber": 5
     },
+    "endUserIDs": {
+      "meta:status": "deprecated",
+      "title": "End-User IDs",
+      "$ref": "../datatypes/enduserids.schema.json",
+      "description": "Condensed, normalized encapsulation of all end-user identifiers. Deprecated, use `xdm:identityMap` instead.",
+      "meta:xdmField": "xdm:endUserIDs",
+      "tagNumber": 6
+    },
     "listOperations": {
       "title": "List Operations",
       "type": "object",
@@ -155,7 +163,7 @@
         }
       },
       "meta:xdmField": "xdm:listOperations",
-      "tagNumber": 6
+      "tagNumber": 7
     },
     "opportunityEvent": {
       "title": "Opportunity Event",
@@ -193,12 +201,12 @@
           "meta:xdmField": "xdm:dataValueChanges",
           "tagNumber": 4,
           "items": {
-            "$ref": "obj6741199475415118.schema.json"
+            "$ref": "obj06175372758754705.schema.json"
           }
         }
       },
       "meta:xdmField": "xdm:opportunityEvent",
-      "tagNumber": 7
+      "tagNumber": 8
     },
     "leadOpearation": {
       "title": "Lead Operation",
@@ -340,13 +348,13 @@
         }
       },
       "meta:xdmField": "xdm:leadOpearation",
-      "tagNumber": 8
+      "tagNumber": 9
     },
     "directMarketing": {
       "title": "Direct marketing",
       "type": "object",
       "meta:xdmType": "object",
-      "$ref": "../datatypes/direct-marketing.schema.json",
+      "$ref": "../datatypes/marketing/direct-marketing.schema.json",
       "description": "Events and properties related to direct and outbound marketing such as email, direct mail, texts, and in-app notifications.",
       "properties": {
         "mailingID": {
@@ -423,7 +431,7 @@
         }
       },
       "meta:xdmField": "xdm:directMarketing",
-      "tagNumber": 9
+      "tagNumber": 10
     },
     "environment": {
       "title": "Environment",
@@ -469,7 +477,7 @@
         }
       },
       "meta:xdmField": "xdm:environment",
-      "tagNumber": 10
+      "tagNumber": 11
     },
     "device": {
       "title": "Device",
@@ -496,13 +504,13 @@
         }
       },
       "meta:xdmField": "xdm:device",
-      "tagNumber": 11
+      "tagNumber": 12
     },
     "web": {
       "title": "Web",
       "type": "object",
       "meta:xdmType": "object",
-      "$ref": "../datatypes/webinfo.schema.json",
+      "$ref": "../datatypes/web/webinfo.schema.json",
       "description": "The information related to web page and link of the ExperienceEvent.",
       "properties": {
         "webInteraction": {
@@ -649,7 +657,7 @@
         }
       },
       "meta:xdmField": "xdm:web",
-      "tagNumber": 12
+      "tagNumber": 13
     },
     "leadOperation": {
       "title": "Lead Operation",
@@ -820,7 +828,7 @@
         }
       },
       "meta:xdmField": "xdm:leadOperation",
-      "tagNumber": 13
+      "tagNumber": 14
     },
     "search": {
       "title": "Search",
@@ -847,14 +855,372 @@
         }
       },
       "meta:xdmField": "xdm:search",
-      "tagNumber": 14
+      "tagNumber": 15
     },
     "advertising": {
       "title": "Advertising",
-      "$ref": "../datatypes/advertising.schema.json",
+      "$ref": "../datatypes/marketing/advertising.schema.json",
       "description": "Information related to advertising activity in ExperienceEvents.",
       "meta:xdmField": "xdm:advertising",
-      "tagNumber": 15
+      "tagNumber": 16
+    },
+    "application": {
+      "title": "Application",
+      "$ref": "../datatypes/application.schema.json",
+      "description": "This mixin is used to capture application information related to an ExperienceEvent, including the name of the application, app version, installs, launches, crashes, and closures. It could be either the application targeted by the event like the send of a push notification or the application originating the event such as a click, or a login.",
+      "meta:xdmField": "xdm:application",
+      "tagNumber": 17
+    },
+    "personalFinances": {
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "cardActivated": {
+          "title": "Card Activated Success",
+          "type": "integer",
+          "description": "Tracks when a card has been successfully activated.",
+          "meta:xdmType": "int",
+          "meta:xdmField": "xdm:cardActivated",
+          "tagNumber": 1
+        },
+        "cardActivationStart": {
+          "title": "Card Activation Started",
+          "type": "integer",
+          "description": "Tracks when a card activation process has been started.",
+          "meta:xdmType": "int",
+          "meta:xdmField": "xdm:cardActivationStart",
+          "tagNumber": 2
+        },
+        "cardCancelled": {
+          "title": "Card Cancelled",
+          "type": "integer",
+          "description": "Tracks when a card has been cancelled.",
+          "meta:xdmType": "int",
+          "meta:xdmField": "xdm:cardCancelled",
+          "tagNumber": 3
+        },
+        "cardControlsLocked": {
+          "title": "Card Controls Locked",
+          "type": "integer",
+          "description": "Tracks when a card controls have been locked.",
+          "meta:xdmType": "int",
+          "meta:xdmField": "xdm:cardControlsLocked",
+          "tagNumber": 4
+        },
+        "cardControlsUnlocked": {
+          "title": "Card Controls Unlocked",
+          "type": "integer",
+          "description": "Tracks when a card controls have been unlocked.",
+          "meta:xdmType": "int",
+          "meta:xdmField": "xdm:cardControlsUnlocked",
+          "tagNumber": 5
+        },
+        "cardLocked": {
+          "title": "Card Locked",
+          "type": "integer",
+          "description": "Tracks when a card has been locked.",
+          "meta:xdmType": "int",
+          "meta:xdmField": "xdm:cardLocked",
+          "tagNumber": 6
+        },
+        "cardOrderNew": {
+          "title": "Order New Card",
+          "type": "integer",
+          "description": "Tracks when a card has been requested.",
+          "meta:xdmType": "int",
+          "meta:xdmField": "xdm:cardOrderNew",
+          "tagNumber": 7
+        },
+        "cardOrderType": {
+          "title": "Card Order Type",
+          "type": "string",
+          "enum": [
+            "new",
+            "lost",
+            "stolen",
+            "never received",
+            "damaged"
+          ],
+          "description": "Tracks the type of card order associated with a card order event.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:cardOrderType",
+          "tagNumber": 8
+        },
+        "cardType": {
+          "title": "Card Type",
+          "type": "string",
+          "enum": [
+            "credit",
+            "debit",
+            "prepaid",
+            "paypal",
+            "atm",
+            "virtual",
+            "hsa",
+            "fsa"
+          ],
+          "description": "Tracks the type of card associated with an event.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:cardType",
+          "tagNumber": 9
+        },
+        "cardUnlocked": {
+          "title": "Card Unlocked",
+          "type": "integer",
+          "description": "Tracks when a card has been unlocked.",
+          "meta:xdmType": "int",
+          "meta:xdmField": "xdm:cardUnlocked",
+          "tagNumber": 10
+        },
+        "balanceTransfer": {
+          "title": "Balance Transfer",
+          "$ref": "../datatypes/industry-verticals/transaction.schema.json",
+          "description": "Extension of transaction data type.",
+          "meta:xdmField": "xdm:balanceTransfer",
+          "tagNumber": 11
+        },
+        "balanceTransferAccount": {
+          "title": "Balance Transfer Account",
+          "$ref": "../datatypes/industry-verticals/financial-account.schema.json",
+          "description": "Extension of financialAccount data type.",
+          "meta:xdmField": "xdm:balanceTransferAccount",
+          "tagNumber": 12
+        },
+        "billPay": {
+          "title": "Bill Pay Steps",
+          "$ref": "../datatypes/industry-verticals/tool-usage.schema.json",
+          "description": "Extension of toolUsage data type.",
+          "meta:xdmField": "xdm:billPay",
+          "tagNumber": 13
+        },
+        "billPayAccount": {
+          "title": "Bill Pay Account",
+          "$ref": "../datatypes/industry-verticals/financial-account.schema.json",
+          "description": "Extension of financialAccount data type.",
+          "meta:xdmField": "xdm:billPayAccount",
+          "tagNumber": 14
+        },
+        "cardApplicationComparisons": {
+          "title": "Card Comparisons",
+          "$ref": "../datatypes/industry-verticals/comparisons.schema.json",
+          "description": "Extension of comparison data type.",
+          "meta:xdmField": "xdm:cardApplicationComparisons",
+          "tagNumber": 15
+        },
+        "cardApplicationSteps": {
+          "title": "Card Application Steps",
+          "$ref": "../datatypes/industry-verticals/form-applications.schema.json",
+          "description": "Extension of form application data type.",
+          "meta:xdmField": "xdm:cardApplicationSteps",
+          "tagNumber": 16
+        },
+        "creditLimitIncrease": {
+          "title": "Credit Limit Increase",
+          "$ref": "../datatypes/industry-verticals/form-applications.schema.json",
+          "description": "Extension of form application data type.",
+          "meta:xdmField": "xdm:creditLimitIncrease",
+          "tagNumber": 17
+        },
+        "depositDetails": {
+          "type": "object",
+          "meta:xdmType": "object",
+          "properties": {
+            "deposit": {
+              "title": "Deposit",
+              "$ref": "../datatypes/industry-verticals/transaction.schema.json",
+              "description": "Extension of transaction data type.",
+              "meta:xdmField": "xdm:deposit",
+              "tagNumber": 1
+            },
+            "depositAccount": {
+              "title": "Deposit Account",
+              "$ref": "../datatypes/industry-verticals/financial-account.schema.json",
+              "description": "Extension of financialAccount data type.",
+              "meta:xdmField": "xdm:depositAccount",
+              "tagNumber": 2
+            }
+          },
+          "meta:xdmField": "xdm:depositDetails",
+          "tagNumber": 18
+        }
+      },
+      "meta:xdmField": "xdm:personalFinances",
+      "tagNumber": 18
+    },
+    "channel": {
+      "title": "Experience channel",
+      "description": "Experience channel related to the ExperienceEvent.",
+      "$ref": "../datatypes/channels/channel.schema.json",
+      "meta:xdmField": "xdm:channel",
+      "tagNumber": 19
+    },
+    "productListItems": {
+      "title": "Product list items",
+      "type": "array",
+      "description": "A list of items representing a product selected by a customer with specific options and pricing that are for that usage context at a specific point of time and may differ from the product record.",
+      "meta:xdmType": "array",
+      "items": {
+        "$ref": "../datatypes/productlistitem.schema.json",
+        "tagNumber": 1
+      },
+      "meta:xdmField": "xdm:productListItems",
+      "tagNumber": 20
+    },
+    "commerce": {
+      "title": "Commerce",
+      "$ref": "../datatypes/marketing/commerce.schema.json",
+      "description": "Commerce specific data related to this event.",
+      "meta:xdmField": "xdm:commerce",
+      "tagNumber": 21
+    },
+    "placeContext": {
+      "title": "Place context",
+      "$ref": "../datatypes/placecontext.schema.json",
+      "description": "The transient circumstances related to the observation. Examples include locale specific information such as weather, local time, traffic, day of the week, workday vs. holiday, and working hours.",
+      "meta:xdmField": "xdm:placeContext",
+      "tagNumber": 22
+    },
+    "marketing": {
+      "title": "Marketing",
+      "$ref": "../datatypes/marketing/marketing.schema.json",
+      "description": "The information related to marketing activities that are active with the touchpoint.",
+      "meta:xdmField": "xdm:marketing",
+      "tagNumber": 23
+    },
+    "media": {
+      "title": "Media",
+      "$ref": "../datatypes/media/media.schema.json",
+      "description": "Media activity information related to the experience event.",
+      "meta:xdmField": "xdm:media",
+      "tagNumber": 24
+    },
+    "segmentMemberships": {
+      "title": "Segment Memberships",
+      "meta:status": "deprecated",
+      "description": "The segments associated with this ExperienceEvent. Deprecated, use `xdm:segmentMembership` instead.",
+      "type": "array",
+      "meta:xdmType": "array",
+      "items": {
+        "$ref": "../datatypes/segmentmembershipitem.schema.json",
+        "tagNumber": 1
+      },
+      "meta:xdmField": "xdm:segmentMemberships",
+      "tagNumber": 25
+    },
+    "segmentMembership": {
+      "title": "Segment Membership Map",
+      "type": "object",
+      "meta:xdmType": "map",
+      "additionalProperties": {
+        "title": "Segment Membership per Namespace",
+        "type": "object",
+        "meta:xdmType": "map",
+        "additionalProperties": {
+          "$ref": "../datatypes/segmentmembership.schema.json",
+          "tagNumber": 1
+        },
+        "tagNumber": 1
+      },
+      "meta:xdmField": "xdm:segmentMembership",
+      "tagNumber": 26
+    },
+    "dataSource": {
+      "title": "Data source",
+      "$ref": "../datatypes/data/datasource.schema.json",
+      "description": "Globally unique identification of a data source.",
+      "meta:xdmField": "xdm:dataSource",
+      "tagNumber": 27
+    },
+    "receivedTimestamp": {
+      "title": "Received time stamp",
+      "type": "string",
+      "format": "date-time",
+      "description": "The time at which this interaction was received by a server.",
+      "meta:xdmType": "date-time",
+      "meta:xdmField": "xdm:receivedTimestamp",
+      "tagNumber": 28
+    },
+    "implementationDetails": {
+      "title": "Implementation details",
+      "$ref": "../datatypes/industry-verticals/implementationdetails.schema.json",
+      "description": "The details of the software used to collect the ExperienceEvent.",
+      "meta:xdmField": "xdm:implementationDetails",
+      "tagNumber": 29
+    },
+    "consentStrings": {
+      "title": "Identity level consent information",
+      "type": "array",
+      "meta:xdmType": "array",
+      "items": {
+        "$ref": "../datatypes/consentstring.schema.json",
+        "tagNumber": 1
+      },
+      "meta:xdmField": "xdm:consentStrings",
+      "tagNumber": 30
+    },
+    "profileStitch": {
+      "title": "Profile stitch",
+      "description": "Details about the IDs that were joined by profile stitching.",
+      "type": "array",
+      "meta:xdmType": "array",
+      "items": {
+        "$ref": "../datatypes/profilestitch.schema.json",
+        "tagNumber": 1
+      },
+      "meta:xdmField": "xdm:profileStitch",
+      "tagNumber": 31
+    },
+    "pushNotificationTracking": {
+      "title": "push notification tracking details",
+      "type": "object",
+      "description": "Describes interaction with a push notification.",
+      "meta:xdmType": "object",
+      "properties": {
+        "customAction": {
+          "title": "custom action",
+          "type": "object",
+          "description": "End user clicked custom action in the push notification",
+          "meta:xdmType": "object",
+          "properties": {
+            "actionID": {
+              "title": "action ID",
+              "type": "string",
+              "description": "user clicked custom action identifier",
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:actionID",
+              "tagNumber": 1
+            },
+            "value": {
+              "title": "value",
+              "type": "number",
+              "description": "value associated with the custom action, if any",
+              "meta:xdmType": "number",
+              "meta:xdmField": "xdm:value",
+              "tagNumber": 2
+            }
+          },
+          "meta:xdmField": "xdm:customAction",
+          "tagNumber": 1
+        },
+        "pushProviderMessageID": {
+          "title": "Push Provider message ID",
+          "type": "string",
+          "description": "ID assigned to this notification as assigned by the push provider",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:pushProviderMessageID",
+          "tagNumber": 2
+        },
+        "pushProvider": {
+          "title": "Push Provider",
+          "type": "string",
+          "description": "Push provider, e.g. apns or fcm",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:pushProvider",
+          "tagNumber": 3
+        }
+      },
+      "meta:xdmField": "xdm:pushNotificationTracking",
+      "tagNumber": 32
     },
     "alerts": {
       "type": "object",
@@ -882,7 +1248,7 @@
           "description": "An array of alerts that have been displayed to a customer.",
           "meta:xdmType": "array",
           "items": {
-            "$ref": "../datatypes/impressions.schema.json",
+            "$ref": "../datatypes/industry-verticals/impressions.schema.json",
             "tagNumber": 1
           },
           "meta:xdmField": "xdm:alertImpressions",
@@ -890,21 +1256,14 @@
         },
         "alertSetup": {
           "title": "Alert Setup",
-          "$ref": "../datatypes/tool-usage.schema.json",
+          "$ref": "../datatypes/industry-verticals/tool-usage.schema.json",
           "description": "Extension of toolUsage data type.",
           "meta:xdmField": "xdm:alertSetup",
           "tagNumber": 4
         }
       },
       "meta:xdmField": "xdm:alerts",
-      "tagNumber": 16
-    },
-    "application": {
-      "title": "Application",
-      "$ref": "../datatypes/application.schema.json",
-      "description": "This mixin is used to capture application information related to an ExperienceEvent, including the name of the application, app version, installs, launches, crashes, and closures. It could be either the application targeted by the event like the send of a push notification or the application originating the event such as a click, or a login.",
-      "meta:xdmField": "xdm:application",
-      "tagNumber": 17
+      "tagNumber": 33
     },
     "userAccount": {
       "type": "object",
@@ -912,197 +1271,14 @@
       "properties": {
         "appointmentRequestSteps": {
           "title": "Appointment Request Steps",
-          "$ref": "../datatypes/tool-usage.schema.json",
+          "$ref": "../datatypes/industry-verticals/tool-usage.schema.json",
           "description": "Extension of toolUsage data type.",
           "meta:xdmField": "xdm:appointmentRequestSteps",
           "tagNumber": 1
         }
       },
       "meta:xdmField": "xdm:userAccount",
-      "tagNumber": 18
-    },
-    "personalFinances": {
-      "type": "object",
-      "meta:xdmType": "object",
-      "properties": {
-        "balanceTransfer": {
-          "title": "Balance Transfer",
-          "$ref": "../datatypes/transaction.schema.json",
-          "description": "Extension of transaction data type.",
-          "meta:xdmField": "xdm:balanceTransfer",
-          "tagNumber": 1
-        },
-        "balanceTransferAccount": {
-          "title": "Balance Transfer Account",
-          "$ref": "../datatypes/financial-account.schema.json",
-          "description": "Extension of financialAccount data type.",
-          "meta:xdmField": "xdm:balanceTransferAccount",
-          "tagNumber": 2
-        },
-        "billPay": {
-          "title": "Bill Pay Steps",
-          "$ref": "../datatypes/tool-usage.schema.json",
-          "description": "Extension of toolUsage data type.",
-          "meta:xdmField": "xdm:billPay",
-          "tagNumber": 3
-        },
-        "billPayAccount": {
-          "title": "Bill Pay Account",
-          "$ref": "../datatypes/financial-account.schema.json",
-          "description": "Extension of financialAccount data type.",
-          "meta:xdmField": "xdm:billPayAccount",
-          "tagNumber": 4
-        },
-        "cardActivated": {
-          "title": "Card Activated Success",
-          "type": "integer",
-          "description": "Tracks when a card has been successfully activated.",
-          "meta:xdmType": "int",
-          "meta:xdmField": "xdm:cardActivated",
-          "tagNumber": 5
-        },
-        "cardActivationStart": {
-          "title": "Card Activation Started",
-          "type": "integer",
-          "description": "Tracks when a card activation process has been started.",
-          "meta:xdmType": "int",
-          "meta:xdmField": "xdm:cardActivationStart",
-          "tagNumber": 6
-        },
-        "cardCancelled": {
-          "title": "Card Cancelled",
-          "type": "integer",
-          "description": "Tracks when a card has been cancelled.",
-          "meta:xdmType": "int",
-          "meta:xdmField": "xdm:cardCancelled",
-          "tagNumber": 7
-        },
-        "cardControlsLocked": {
-          "title": "Card Controls Locked",
-          "type": "integer",
-          "description": "Tracks when a card controls have been locked.",
-          "meta:xdmType": "int",
-          "meta:xdmField": "xdm:cardControlsLocked",
-          "tagNumber": 8
-        },
-        "cardControlsUnlocked": {
-          "title": "Card Controls Unlocked",
-          "type": "integer",
-          "description": "Tracks when a card controls have been unlocked.",
-          "meta:xdmType": "int",
-          "meta:xdmField": "xdm:cardControlsUnlocked",
-          "tagNumber": 9
-        },
-        "cardLocked": {
-          "title": "Card Locked",
-          "type": "integer",
-          "description": "Tracks when a card has been locked.",
-          "meta:xdmType": "int",
-          "meta:xdmField": "xdm:cardLocked",
-          "tagNumber": 10
-        },
-        "cardOrderNew": {
-          "title": "Order New Card",
-          "type": "integer",
-          "description": "Tracks when a card has been requested.",
-          "meta:xdmType": "int",
-          "meta:xdmField": "xdm:cardOrderNew",
-          "tagNumber": 11
-        },
-        "cardOrderType": {
-          "title": "Card Order Type",
-          "type": "string",
-          "enum": [
-            "new",
-            "lost",
-            "stolen",
-            "never received",
-            "damaged"
-          ],
-          "description": "Tracks the type of card order associated with a card order event.",
-          "meta:xdmType": "string",
-          "meta:xdmField": "xdm:cardOrderType",
-          "tagNumber": 12
-        },
-        "cardType": {
-          "title": "Card Type",
-          "type": "string",
-          "enum": [
-            "credit",
-            "debit",
-            "prepaid",
-            "paypal",
-            "atm",
-            "virtual",
-            "hsa",
-            "fsa"
-          ],
-          "description": "Tracks the type of card associated with an event.",
-          "meta:xdmType": "string",
-          "meta:xdmField": "xdm:cardType",
-          "tagNumber": 13
-        },
-        "cardUnlocked": {
-          "title": "Card Unlocked",
-          "type": "integer",
-          "description": "Tracks when a card has been unlocked.",
-          "meta:xdmType": "int",
-          "meta:xdmField": "xdm:cardUnlocked",
-          "tagNumber": 14
-        },
-        "cardApplicationComparisons": {
-          "title": "Card Comparisons",
-          "$ref": "../datatypes/comparisons.schema.json",
-          "description": "Extension of comparison data type.",
-          "meta:xdmField": "xdm:cardApplicationComparisons",
-          "tagNumber": 15
-        },
-        "cardApplicationSteps": {
-          "title": "Card Application Steps",
-          "$ref": "../datatypes/form-applications.schema.json",
-          "description": "Extension of form application data type.",
-          "meta:xdmField": "xdm:cardApplicationSteps",
-          "tagNumber": 16
-        },
-        "creditLimitIncrease": {
-          "title": "Credit Limit Increase",
-          "$ref": "../datatypes/form-applications.schema.json",
-          "description": "Extension of form application data type.",
-          "meta:xdmField": "xdm:creditLimitIncrease",
-          "tagNumber": 17
-        },
-        "depositDetails": {
-          "type": "object",
-          "meta:xdmType": "object",
-          "properties": {
-            "deposit": {
-              "title": "Deposit",
-              "$ref": "../datatypes/transaction.schema.json",
-              "description": "Extension of transaction data type.",
-              "meta:xdmField": "xdm:deposit",
-              "tagNumber": 1
-            },
-            "depositAccount": {
-              "title": "Deposit Account",
-              "$ref": "../datatypes/financial-account.schema.json",
-              "description": "Extension of financialAccount data type.",
-              "meta:xdmField": "xdm:depositAccount",
-              "tagNumber": 2
-            }
-          },
-          "meta:xdmField": "xdm:depositDetails",
-          "tagNumber": 18
-        }
-      },
-      "meta:xdmField": "xdm:personalFinances",
-      "tagNumber": 19
-    },
-    "channel": {
-      "title": "Experience channel",
-      "description": "Experience channel related to the ExperienceEvent.",
-      "$ref": "../datatypes/channels/channel.schema.json",
-      "meta:xdmField": "xdm:channel",
-      "tagNumber": 20
+      "tagNumber": 34
     },
     "disputes": {
       "type": "object",
@@ -1141,7 +1317,7 @@
         },
         "claimSteps": {
           "title": "Claim Steps",
-          "$ref": "../datatypes/tool-usage.schema.json",
+          "$ref": "../datatypes/industry-verticals/tool-usage.schema.json",
           "description": "Extension of toolUsage data type.",
           "meta:xdmField": "xdm:claimSteps",
           "tagNumber": 4
@@ -1168,7 +1344,7 @@
         },
         "policy": {
           "title": "Policy",
-          "$ref": "../datatypes/policy-details.schema.json",
+          "$ref": "../datatypes/industry-verticals/policy-details.schema.json",
           "description": "Extension of Policy data type.",
           "meta:xdmField": "xdm:policy",
           "tagNumber": 6
@@ -1179,7 +1355,7 @@
           "properties": {
             "dispute": {
               "title": "Dispute",
-              "$ref": "../datatypes/tool-usage.schema.json",
+              "$ref": "../datatypes/industry-verticals/tool-usage.schema.json",
               "description": "Extension of toolUsage data type.",
               "meta:xdmField": "xdm:dispute",
               "tagNumber": 1
@@ -1190,93 +1366,7 @@
         }
       },
       "meta:xdmField": "xdm:disputes",
-      "tagNumber": 21
-    },
-    "productListItems": {
-      "title": "Product list items",
-      "type": "array",
-      "description": "A list of items representing a product selected by a customer with specific options and pricing that are for that usage context at a specific point of time and may differ from the product record.",
-      "meta:xdmType": "array",
-      "items": {
-        "$ref": "../datatypes/productlistitem.schema.json",
-        "tagNumber": 1
-      },
-      "meta:xdmField": "xdm:productListItems",
-      "tagNumber": 22
-    },
-    "commerce": {
-      "title": "Commerce",
-      "$ref": "../datatypes/commerce.schema.json",
-      "description": "Commerce specific data related to this event.",
-      "meta:xdmField": "xdm:commerce",
-      "tagNumber": 23
-    },
-    "placeContext": {
-      "title": "Place context",
-      "$ref": "../datatypes/placecontext.schema.json",
-      "description": "The transient circumstances related to the observation. Examples include locale specific information such as weather, local time, traffic, day of the week, workday vs. holiday, and working hours.",
-      "meta:xdmField": "xdm:placeContext",
-      "tagNumber": 24
-    },
-    "marketing": {
-      "title": "Marketing",
-      "$ref": "../datatypes/marketing.schema.json",
-      "description": "The information related to marketing activities that are active with the touchpoint.",
-      "meta:xdmField": "xdm:marketing",
-      "tagNumber": 25
-    },
-    "media": {
-      "title": "Media",
-      "$ref": "../datatypes/media.schema.json",
-      "description": "Media activity information related to the experience event.",
-      "meta:xdmField": "xdm:media",
-      "tagNumber": 26
-    },
-    "segmentMemberships": {
-      "title": "Segment Memberships",
-      "meta:status": "deprecated",
-      "description": "The segments associated with this ExperienceEvent. Deprecated, use `xdm:segmentMembership` instead.",
-      "type": "array",
-      "meta:xdmType": "array",
-      "items": {
-        "$ref": "../datatypes/segmentmembershipitem.schema.json",
-        "tagNumber": 1
-      },
-      "meta:xdmField": "xdm:segmentMemberships",
-      "tagNumber": 27
-    },
-    "segmentMembership": {
-      "title": "Segment Membership Map",
-      "type": "object",
-      "meta:xdmType": "map",
-      "additionalProperties": {
-        "title": "Segment Membership per Namespace",
-        "type": "object",
-        "meta:xdmType": "map",
-        "additionalProperties": {
-          "$ref": "../datatypes/segmentmembership.schema.json",
-          "tagNumber": 1
-        },
-        "tagNumber": 1
-      },
-      "meta:xdmField": "xdm:segmentMembership",
-      "tagNumber": 28
-    },
-    "dataSource": {
-      "title": "Data source",
-      "$ref": "../datatypes/data/datasource.schema.json",
-      "description": "Globally unique identification of a data source.",
-      "meta:xdmField": "xdm:dataSource",
-      "tagNumber": 29
-    },
-    "receivedTimestamp": {
-      "title": "Received time stamp",
-      "type": "string",
-      "format": "date-time",
-      "description": "The time at which this interaction was received by a server.",
-      "meta:xdmType": "date-time",
-      "meta:xdmField": "xdm:receivedTimestamp",
-      "tagNumber": 30
+      "tagNumber": 35
     },
     "customerFeedback": {
       "type": "object",
@@ -1364,110 +1454,20 @@
         },
         "callBackNumber": {
           "title": "Call Back Contact Information",
-          "$ref": "../datatypes/phonenumber.schema.json",
+          "$ref": "../datatypes/demographic/phonenumber.schema.json",
           "description": "The contact phone number the visitor uses for responses to contact requests.",
           "meta:xdmField": "xdm:callBackNumber",
           "tagNumber": 11
         },
         "replyToEmailAddress": {
           "title": "Reply to Email Address",
-          "$ref": "../datatypes/emailaddress.schema.json",
+          "$ref": "../datatypes/demographic/emailaddress.schema.json",
           "description": "The email address the visitor uses for responses to contact requests.",
           "meta:xdmField": "xdm:replyToEmailAddress",
           "tagNumber": 12
         }
       },
       "meta:xdmField": "xdm:customerFeedback",
-      "tagNumber": 31
-    },
-    "endUserIDs": {
-      "meta:status": "deprecated",
-      "title": "End-User IDs",
-      "$ref": "../datatypes/enduserids.schema.json",
-      "description": "Condensed, normalized encapsulation of all end-user identifiers. Deprecated, use `xdm:identityMap` instead.",
-      "meta:xdmField": "xdm:endUserIDs",
-      "tagNumber": 32
-    },
-    "implementationDetails": {
-      "title": "Implementation details",
-      "$ref": "../datatypes/implementationdetails.schema.json",
-      "description": "The details of the software used to collect the ExperienceEvent.",
-      "meta:xdmField": "xdm:implementationDetails",
-      "tagNumber": 33
-    },
-    "consentStrings": {
-      "title": "Identity level consent information",
-      "type": "array",
-      "meta:xdmType": "array",
-      "items": {
-        "$ref": "../datatypes/consentstring.schema.json",
-        "tagNumber": 1
-      },
-      "meta:xdmField": "xdm:consentStrings",
-      "tagNumber": 34
-    },
-    "profileStitch": {
-      "title": "Profile stitch",
-      "description": "Details about the IDs that were joined by profile stitching.",
-      "type": "array",
-      "meta:xdmType": "array",
-      "items": {
-        "$ref": "../datatypes/profilestitch.schema.json",
-        "tagNumber": 1
-      },
-      "meta:xdmField": "xdm:profileStitch",
-      "tagNumber": 35
-    },
-    "pushNotificationTracking": {
-      "title": "push notification tracking details",
-      "type": "object",
-      "description": "Describes interaction with a push notification.",
-      "meta:xdmType": "object",
-      "properties": {
-        "customAction": {
-          "title": "custom action",
-          "type": "object",
-          "description": "End user clicked custom action in the push notification",
-          "meta:xdmType": "object",
-          "properties": {
-            "actionID": {
-              "title": "action ID",
-              "type": "string",
-              "description": "user clicked custom action identifier",
-              "meta:xdmType": "string",
-              "meta:xdmField": "xdm:actionID",
-              "tagNumber": 1
-            },
-            "value": {
-              "title": "value",
-              "type": "number",
-              "description": "value associated with the custom action, if any",
-              "meta:xdmType": "number",
-              "meta:xdmField": "xdm:value",
-              "tagNumber": 2
-            }
-          },
-          "meta:xdmField": "xdm:customAction",
-          "tagNumber": 1
-        },
-        "pushProviderMessageID": {
-          "title": "Push Provider message ID",
-          "type": "string",
-          "description": "ID assigned to this notification as assigned by the push provider",
-          "meta:xdmType": "string",
-          "meta:xdmField": "xdm:pushProviderMessageID",
-          "tagNumber": 2
-        },
-        "pushProvider": {
-          "title": "Push Provider",
-          "type": "string",
-          "description": "Push provider, e.g. apns or fcm",
-          "meta:xdmType": "string",
-          "meta:xdmField": "xdm:pushProvider",
-          "tagNumber": 3
-        }
-      },
-      "meta:xdmField": "xdm:pushNotificationTracking",
       "tagNumber": 36
     }
   },

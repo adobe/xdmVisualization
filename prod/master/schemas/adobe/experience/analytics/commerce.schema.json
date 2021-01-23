@@ -23,7 +23,7 @@
     },
     "commerce": {
       "title": "Commerce",
-      "$ref": "../../../datatypes/commerce.schema.json",
+      "$ref": "../../../datatypes/marketing/commerce.schema.json",
       "description": "Commerce specific data related to this event.",
       "meta:xdmField": "xdm:commerce",
       "tagNumber": 2

@@ -1,0 +1,42 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "id": "_experience.decisioning.contents",
+  "meta:abstract": true,
+  "meta:extensible": true,
+  "type": "object",
+  "title": "Decision Option Contents",
+  "description": "Content items to render the decision item in different contexts. A single decision option can have multiple contents variants. Content is information that is directed towards an audience for consumption in a (digital) experience. Content is delivered through channels into a particular placement.",
+  "meta:status": "stable",
+  "meta:xdmType": "object",
+  "properties": {
+    "_experience": {
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "decisioning": {
+          "type": "object",
+          "meta:xdmType": "object",
+          "properties": {
+            "contents": {
+              "type": "array",
+              "title": "Content Details",
+              "description": "Content items to render the decision item in different contexts. A single decision option can have multiple contents variants. Content is information that is directed towards an audience for consumption in a (digital) experience. Content is delivered through channels into a particular placement.",
+              "meta:xdmType": "array",
+              "items": {
+                "$ref": "content-details.schema.json",
+                "tagNumber": 1
+              },
+              "meta:xdmField": "https://ns.adobe.com/experience/decisioning/contents",
+              "tagNumber": 1
+            }
+          },
+          "tagNumber": 1
+        }
+      },
+      "tagNumber": 1
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/experience/decisioning/contents",
+  "meta:altId": "_experience.decisioning.contents",
+  "id": "_experience.decisioning.contents"
+}

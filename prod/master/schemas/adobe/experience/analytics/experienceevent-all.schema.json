@@ -56,7 +56,7 @@
                 },
                 "web": {
                   "title": "Session Entry Web",
-                  "$ref": "../../../datatypes/webinfo.schema.json",
+                  "$ref": "../../../datatypes/web/webinfo.schema.json",
                   "description": "The information related to web page, link, and referrer at the entry of this session.",
                   "meta:xdmField": "xdm:web",
                   "tagNumber": 5
@@ -82,7 +82,7 @@
                 },
                 "firstWeb": {
                   "title": "End-User First Web Details",
-                  "$ref": "../../../datatypes/webinfo.schema.json",
+                  "$ref": "../../../datatypes/web/webinfo.schema.json",
                   "description": "The information related to web page, link, and referrer from the first ExperienceEvent for this end-user.",
                   "meta:xdmField": "xdm:firstWeb",
                   "tagNumber": 2

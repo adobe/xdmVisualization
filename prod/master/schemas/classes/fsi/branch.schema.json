@@ -31,7 +31,7 @@
     },
     "branchAddress": {
       "title": "Branch Address",
-      "$ref": "../../datatypes/address.schema.json",
+      "$ref": "../../datatypes/demographic/address.schema.json",
       "description": "Physical address where the branch is located.",
       "meta:xdmField": "xdm:branchAddress",
       "tagNumber": 3

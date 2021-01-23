@@ -20,7 +20,7 @@
     "inferredAddress": {
       "title": "Inferred Address",
       "description": "Address details inferred by reverse IP lookup of the lead’s first recorded web visit.",
-      "$ref": "../../datatypes/address.schema.json",
+      "$ref": "../../datatypes/demographic/address.schema.json",
       "meta:xdmField": "xdm:inferredAddress",
       "tagNumber": 2
     },

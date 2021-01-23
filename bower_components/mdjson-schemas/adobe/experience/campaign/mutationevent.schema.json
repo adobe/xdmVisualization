@@ -18,14 +18,14 @@
     },
     "web": {
       "title": "Web",
-      "$ref": "../../../datatypes/webinfo.schema.json",
+      "$ref": "../../../datatypes/web/webinfo.schema.json",
       "description": "The information related to web page and link of the ExperienceEvent.",
       "meta:xdmField": "xdm:web",
       "tagNumber": 2
     },
     "directMarketing": {
       "title": "Direct Marketing",
-      "$ref": "../../../datatypes/direct-marketing.schema.json",
+      "$ref": "../../../datatypes/marketing/direct-marketing.schema.json",
       "description": "The events and properties related to direct/outbound marketing such as email, direct mail, texts and in-app notifications.",
       "meta:xdmField": "xdm:directMarketing",
       "tagNumber": 3

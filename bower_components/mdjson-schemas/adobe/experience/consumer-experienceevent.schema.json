@@ -49,14 +49,14 @@
     },
     "marketing": {
       "title": "Marketing",
-      "$ref": "../../datatypes/marketing.schema.json",
+      "$ref": "../../datatypes/marketing/marketing.schema.json",
       "description": "The information related to marketing activities that are active with the touchpoint.",
       "meta:xdmField": "xdm:marketing",
       "tagNumber": 6
     },
     "media": {
       "title": "Media",
-      "$ref": "../../datatypes/media.schema.json",
+      "$ref": "../../datatypes/media/media.schema.json",
       "description": "Media activity information related to the experience event.",
       "meta:xdmField": "xdm:media",
       "tagNumber": 7
@@ -116,7 +116,7 @@
     },
     "web": {
       "title": "Web",
-      "$ref": "../../datatypes/webinfo.schema.json",
+      "$ref": "../../datatypes/web/webinfo.schema.json",
       "description": "The information related to web page and link of the ExperienceEvent.",
       "meta:xdmField": "xdm:web",
       "tagNumber": 13
@@ -135,7 +135,7 @@
     },
     "commerce": {
       "title": "Commerce",
-      "$ref": "../../datatypes/commerce.schema.json",
+      "$ref": "../../datatypes/marketing/commerce.schema.json",
       "description": "Commerce specific data related to this event.",
       "meta:xdmField": "xdm:commerce",
       "tagNumber": 15

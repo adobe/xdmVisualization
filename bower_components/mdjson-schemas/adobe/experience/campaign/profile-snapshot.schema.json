@@ -9,28 +9,28 @@
   "properties": {
     "person": {
       "title": "Person",
-      "$ref": "../../../datatypes/person.schema.json",
+      "$ref": "../../../datatypes/person/person.schema.json",
       "description": "An individual actor, contact, or owner.",
       "meta:xdmField": "xdm:person",
       "tagNumber": 1
     },
     "directMarketingAddress": {
       "title": "Direct Marketing Address",
-      "$ref": "../../../datatypes/directmarketing-address.schema.json",
+      "$ref": "../../../datatypes/marketing/directmarketing-address.schema.json",
       "description": "Direct Marketing postal address.",
       "meta:xdmField": "xdm:directMarketingAddress",
       "tagNumber": 2
     },
     "directMarketingEmail": {
       "title": "Direct Marketing Email",
-      "$ref": "../../../datatypes/directmarketing-emailaddress.schema.json",
+      "$ref": "../../../datatypes/marketing/directmarketing-emailaddress.schema.json",
       "description": "Direct Marketing email address.",
       "meta:xdmField": "xdm:directMarketingEmail",
       "tagNumber": 3
     },
     "directMarketingPhone": {
       "title": "Direct Marketing Phone",
-      "$ref": "../../../datatypes/directmarketing-phonenumber.schema.json",
+      "$ref": "../../../datatypes/marketing/directmarketing-phonenumber.schema.json",
       "description": "Direct Marketing phone number.",
       "meta:xdmField": "xdm:directMarketingPhone",
       "tagNumber": 4

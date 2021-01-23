@@ -105,14 +105,14 @@
     "accountPhone": {
       "title": "Account Phone Number",
       "description": "Phone number for the account.",
-      "$ref": "../../datatypes/phonenumber.schema.json",
+      "$ref": "../../datatypes/demographic/phonenumber.schema.json",
       "meta:xdmField": "xdm:accountPhone",
       "tagNumber": 12
     },
     "accountFax": {
       "title": "Account Fax Number",
       "description": "Fax number for the account.",
-      "$ref": "../../datatypes/phonenumber.schema.json",
+      "$ref": "../../datatypes/demographic/phonenumber.schema.json",
       "meta:xdmField": "xdm:accountFax",
       "tagNumber": 13
     },
@@ -141,26 +141,26 @@
     },
     "accountBillingAddress": {
       "title": "Account Billing Address",
-      "$ref": "../../datatypes/address.schema.json",
+      "$ref": "../../datatypes/demographic/address.schema.json",
       "meta:xdmField": "xdm:accountBillingAddress",
       "tagNumber": 17
     },
     "accountShippingAddress": {
       "title": "Account Shipping Address",
-      "$ref": "../../datatypes/address.schema.json",
+      "$ref": "../../datatypes/demographic/address.schema.json",
       "meta:xdmField": "xdm:accountShippingAddress",
       "tagNumber": 18
     },
     "accountPhysicalAddress": {
       "title": "Account Physical Address",
       "description": "Actual physical address of the account. Could be the HQ address or any preffered business address for communication.",
-      "$ref": "../../datatypes/address.schema.json",
+      "$ref": "../../datatypes/demographic/address.schema.json",
       "meta:xdmField": "xdm:accountPhysicalAddress",
       "tagNumber": 19
     },
     "accountOrganization": {
       "title": "Account Organization",
-      "$ref": "../../datatypes/account-organization.schema.json",
+      "$ref": "../../datatypes/b2b/account-organization.schema.json",
       "meta:xdmField": "xdm:accountOrganization",
       "tagNumber": 20
     }

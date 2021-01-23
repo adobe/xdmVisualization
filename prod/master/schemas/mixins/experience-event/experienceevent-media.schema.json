@@ -11,7 +11,7 @@
   "properties": {
     "media": {
       "title": "Media",
-      "$ref": "../../datatypes/media.schema.json",
+      "$ref": "../../datatypes/media/media.schema.json",
       "description": "Media activity information related to the experience event.",
       "meta:xdmField": "xdm:media",
       "tagNumber": 1

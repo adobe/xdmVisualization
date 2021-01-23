@@ -30,14 +30,14 @@
                   "properties": {
                     "orgUnit": {
                       "title": "Organizational Unit",
-                      "$ref": "../../../datatypes/orgunit.schema.json",
+                      "$ref": "../../../datatypes/b2b/orgunit.schema.json",
                       "description": "The unit within the organization owning the profile. This can be used to reference the organization details maintained in another dataset.",
                       "meta:xdmField": "xdm:orgUnit",
                       "tagNumber": 1
                     },
                     "geoUnit": {
                       "title": "Geographical Unit",
-                      "$ref": "../../../datatypes/geounit.schema.json",
+                      "$ref": "../../../datatypes/demographic/geounit.schema.json",
                       "description": "The geographical unit within the organization owning the profile. This can be used to reference the geographical information maintained in another dataset.",
                       "meta:xdmField": "xdm:geoUnit",
                       "tagNumber": 2

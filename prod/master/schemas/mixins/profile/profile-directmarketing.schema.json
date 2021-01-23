@@ -11,21 +11,21 @@
   "properties": {
     "directMarketingAddress": {
       "title": "Direct marketing address",
-      "$ref": "../../datatypes/directmarketing-address.schema.json",
+      "$ref": "../../datatypes/marketing/directmarketing-address.schema.json",
       "description": "Direct marketing postal address.",
       "meta:xdmField": "xdm:directMarketingAddress",
       "tagNumber": 1
     },
     "directMarketingEmail": {
       "title": "Direct marketing email",
-      "$ref": "../../datatypes/directmarketing-emailaddress.schema.json",
+      "$ref": "../../datatypes/marketing/directmarketing-emailaddress.schema.json",
       "description": "Direct marketing email address.",
       "meta:xdmField": "xdm:directMarketingEmail",
       "tagNumber": 2
     },
     "directMarketingPhone": {
       "title": "Direct marketing phone",
-      "$ref": "../../datatypes/directmarketing-phonenumber.schema.json",
+      "$ref": "../../datatypes/marketing/directmarketing-phonenumber.schema.json",
       "description": "Direct marketing phone number.",
       "meta:xdmField": "xdm:directMarketingPhone",
       "tagNumber": 3

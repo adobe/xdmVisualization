@@ -34,7 +34,7 @@
     },
     "orgUnit": {
       "title": "Organizational Unit",
-      "$ref": "../../../../datatypes/orgunit.schema.json",
+      "$ref": "../../../../datatypes/b2b/orgunit.schema.json",
       "description": "The unit within the organization owning this journey version.",
       "meta:xdmField": "xdm:orgUnit",
       "tagNumber": 4

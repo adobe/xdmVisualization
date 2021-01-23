@@ -11,7 +11,7 @@
   "properties": {
     "implementationDetails": {
       "title": "Implementation details",
-      "$ref": "../../datatypes/implementationdetails.schema.json",
+      "$ref": "../../datatypes/industry-verticals/implementationdetails.schema.json",
       "description": "The details of the software used to collect the ExperienceEvent.",
       "meta:xdmField": "xdm:implementationDetails",
       "tagNumber": 1

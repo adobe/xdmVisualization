@@ -11,7 +11,7 @@
   "properties": {
     "advertising": {
       "title": "Advertising",
-      "$ref": "../../datatypes/advertising.schema.json",
+      "$ref": "../../datatypes/marketing/advertising.schema.json",
       "description": "Information related to advertising activity in ExperienceEvents.",
       "meta:xdmField": "xdm:advertising",
       "tagNumber": 1

@@ -10,8 +10,8 @@
   "meta:abstract": true,
   "meta:status": [
     "stable",
-    "experimental",
-    "deprecated"
+    "deprecated",
+    "experimental"
   ],
   "properties": {
     "repositoryCreatedBy": {
@@ -109,13 +109,34 @@
       "meta:xdmField": "xdm:timeSeriesEvents",
       "tagNumber": 8
     },
+    "consentsAndPreferences": {
+      "title": "Global Privacy/Marketing Preference Values",
+      "description": "Global (User/Profile-level) Privacy/Personalization/Marketing Preferences.",
+      "$ref": "../datatypes/deprecated-consentpreferences.schema.json",
+      "meta:xdmField": "xdm:consentsAndPreferences",
+      "tagNumber": 9
+    },
+    "identities": {
+      "meta:status": "deprecated",
+      "title": "All user identities (deprecated)",
+      "type": "array",
+      "minItems": 1,
+      "description": "Array of identities. Condensed, normalized encapsulation of all end-user identifiers.  Deprecated, use `xdm:identityMap` instead.",
+      "meta:xdmType": "array",
+      "items": {
+        "$ref": "../datatypes/identity.schema.json",
+        "tagNumber": 1
+      },
+      "meta:xdmField": "xdm:identities",
+      "tagNumber": 10
+    },
     "personComponents": {
       "type": "array",
       "meta:xdmType": "array",
       "meta:xdmField": "xdm:personComponents",
-      "tagNumber": 9,
+      "tagNumber": 11,
       "items": {
-        "$ref": "obj43660096574467544.schema.json"
+        "$ref": "obj27248498899547013.schema.json"
       }
     },
     "b2b": {
@@ -260,69 +281,69 @@
         },
         "leadOrganization": {
           "title": "Lead Organization Properties",
-          "$ref": "../datatypes/account-organization.schema.json",
+          "$ref": "../datatypes/b2b/account-organization.schema.json",
           "meta:xdmField": "xdm:leadOrganization",
           "tagNumber": 18
         }
       },
       "meta:xdmField": "xdm:b2b",
-      "tagNumber": 10
+      "tagNumber": 12
     },
     "homeAddress": {
       "title": "Home address",
-      "$ref": "../datatypes/address.schema.json",
+      "$ref": "../datatypes/demographic/address.schema.json",
       "description": "A home postal address.",
       "meta:xdmField": "xdm:homeAddress",
-      "tagNumber": 11
+      "tagNumber": 13
     },
     "personalEmail": {
       "title": "Personal email",
-      "$ref": "../datatypes/emailaddress.schema.json",
+      "$ref": "../datatypes/demographic/emailaddress.schema.json",
       "description": "A personal email address.",
       "meta:xdmField": "xdm:personalEmail",
-      "tagNumber": 12
+      "tagNumber": 14
     },
     "homePhone": {
       "title": "Home phone",
-      "$ref": "../datatypes/phonenumber.schema.json",
+      "$ref": "../datatypes/demographic/phonenumber.schema.json",
       "description": "Home phone number.",
       "meta:xdmField": "xdm:homePhone",
-      "tagNumber": 13
+      "tagNumber": 15
     },
     "mobilePhone": {
       "title": "Mobile phone",
-      "$ref": "../datatypes/phonenumber.schema.json",
+      "$ref": "../datatypes/demographic/phonenumber.schema.json",
       "description": "Mobile phone number.",
       "meta:xdmField": "xdm:mobilePhone",
-      "tagNumber": 14
+      "tagNumber": 16
     },
     "faxPhone": {
       "title": "Fax phone",
-      "$ref": "../datatypes/phonenumber.schema.json",
+      "$ref": "../datatypes/demographic/phonenumber.schema.json",
       "description": "Fax phone number.",
       "meta:xdmField": "xdm:faxPhone",
-      "tagNumber": 15
+      "tagNumber": 17
     },
     "person": {
       "title": "Person",
-      "$ref": "../datatypes/person.schema.json",
+      "$ref": "../datatypes/person/person.schema.json",
       "description": "An individual actor, contact, or owner.",
       "meta:xdmField": "xdm:person",
-      "tagNumber": 16
+      "tagNumber": 18
     },
     "otherAddress": {
       "title": "Other Address",
-      "$ref": "../datatypes/address.schema.json",
+      "$ref": "../datatypes/demographic/address.schema.json",
       "description": "Other/Alternate postal address of the person.",
       "meta:xdmField": "xdm:otherAddress",
-      "tagNumber": 17
+      "tagNumber": 19
     },
     "otherPhone": {
       "title": "Other Phone",
-      "$ref": "../datatypes/phonenumber.schema.json",
+      "$ref": "../datatypes/demographic/phonenumber.schema.json",
       "description": "Other/Alternate phone number of the person.",
       "meta:xdmField": "xdm:otherPhone",
-      "tagNumber": 18
+      "tagNumber": 20
     },
     "extendedWorkDetails": {
       "type": "object",
@@ -336,14 +357,14 @@
           "properties": {
             "name": {
               "title": "Assistant Name",
-              "$ref": "../datatypes/person-name.schema.json",
+              "$ref": "../datatypes/person/person-name.schema.json",
               "description": "Person's assistant full name.",
               "meta:xdmField": "xdm:name",
               "tagNumber": 1
             },
             "phone": {
               "title": "Assistant Phone",
-              "$ref": "../datatypes/phonenumber.schema.json",
+              "$ref": "../datatypes/demographic/phonenumber.schema.json",
               "description": "Person's assistant phone number.",
               "meta:xdmField": "xdm:phone",
               "tagNumber": 2
@@ -392,28 +413,28 @@
         }
       },
       "meta:xdmField": "xdm:extendedWorkDetails",
-      "tagNumber": 19
+      "tagNumber": 21
     },
     "workAddress": {
       "title": "Work Address",
-      "$ref": "../datatypes/address.schema.json",
+      "$ref": "../datatypes/demographic/address.schema.json",
       "description": "A work postal address.",
       "meta:xdmField": "xdm:workAddress",
-      "tagNumber": 20
+      "tagNumber": 22
     },
     "workEmail": {
       "title": "Work Email",
-      "$ref": "../datatypes/emailaddress.schema.json",
+      "$ref": "../datatypes/demographic/emailaddress.schema.json",
       "description": "A work email address.",
       "meta:xdmField": "xdm:workEmail",
-      "tagNumber": 21
+      "tagNumber": 23
     },
     "workPhone": {
       "title": "Work Phone",
-      "$ref": "../datatypes/phonenumber.schema.json",
+      "$ref": "../datatypes/demographic/phonenumber.schema.json",
       "description": "Work phone number.",
       "meta:xdmField": "xdm:workPhone",
-      "tagNumber": 22
+      "tagNumber": 24
     },
     "organizations": {
       "title": "Organizations",
@@ -425,7 +446,7 @@
         "tagNumber": 1
       },
       "meta:xdmField": "xdm:organizations",
-      "tagNumber": 23
+      "tagNumber": 25
     },
     "identityMap": {
       "type": "object",
@@ -440,7 +461,7 @@
         "tagNumber": 1
       },
       "meta:xdmField": "xdm:identityMap",
-      "tagNumber": 24
+      "tagNumber": 26
     },
     "anonymousHostname": {
       "title": "Anonymous Hostname",
@@ -448,14 +469,14 @@
       "type": "string",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:anonymousHostname",
-      "tagNumber": 25
+      "tagNumber": 27
     },
     "inferredAddress": {
       "title": "Inferred Address",
       "description": "Address details inferred by reverse IP lookup of the lead’s first recorded web visit.",
-      "$ref": "../datatypes/address.schema.json",
+      "$ref": "../datatypes/demographic/address.schema.json",
       "meta:xdmField": "xdm:inferredAddress",
-      "tagNumber": 26
+      "tagNumber": 28
     },
     "inferredCompany": {
       "title": "Inferred Company",
@@ -463,7 +484,7 @@
       "type": "string",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:inferredCompany",
-      "tagNumber": 27
+      "tagNumber": 29
     },
     "inferredCompanyStatus": {
       "title": "Inferred Company Status",
@@ -471,7 +492,7 @@
       "type": "string",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:inferredCompanyStatus",
-      "tagNumber": 28
+      "tagNumber": 30
     },
     "inferredMetropolitanArea": {
       "title": "Inferred Metropolitan Area",
@@ -479,7 +500,7 @@
       "type": "string",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:inferredMetropolitanArea",
-      "tagNumber": 29
+      "tagNumber": 31
     },
     "inferredPhoneAreaCode": {
       "title": "Inferred Phone Area Code",
@@ -487,21 +508,14 @@
       "type": "string",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:inferredPhoneAreaCode",
-      "tagNumber": 30
+      "tagNumber": 32
     },
     "extSourceSystemAudit": {
       "title": "External Source System Audit Properties",
-      "$ref": "../datatypes/external-source-system-audit.schema.json",
+      "$ref": "../datatypes/auditing/external-source-system-audit.schema.json",
       "description": "Audit attributes for external sources.",
       "meta:xdmField": "xdm:extSourceSystemAudit",
-      "tagNumber": 31
-    },
-    "consentsAndPreferences": {
-      "title": "Global Privacy/Marketing Preference Values",
-      "description": "Global (User/Profile-level) Privacy/Personalization/Marketing Preferences.",
-      "$ref": "../datatypes/deprecated-consentpreferences.schema.json",
-      "meta:xdmField": "xdm:consentsAndPreferences",
-      "tagNumber": 32
+      "tagNumber": 33
     },
     "consents": {
       "title": "Consents and Preferences",
@@ -1253,70 +1267,42 @@
         }
       },
       "meta:xdmField": "xdm:consents",
-      "tagNumber": 33
-    },
-    "orgUnit": {
-      "title": "Organizational unit",
-      "$ref": "../datatypes/orgunit.schema.json",
-      "description": "The unit within the organization owning the profile. This can be used to reference the organization details maintained in another dataset.",
-      "meta:xdmField": "xdm:orgUnit",
       "tagNumber": 34
-    },
-    "geoUnit": {
-      "title": "Geographical unit",
-      "$ref": "../datatypes/geounit.schema.json",
-      "description": "The geographical unit within the organization owning the profile. This can be used to reference the geographical information maintained in another dataset.",
-      "meta:xdmField": "xdm:geoUnit",
-      "tagNumber": 35
-    },
-    "contact": {
-      "title": "Contact Details",
-      "description": "Holds properties for a person to be recognized as a contact in the business-to-business space.",
-      "$ref": "../datatypes/b2b-contact.schema.json",
-      "meta:xdmField": "xdm:contact",
-      "tagNumber": 36
     },
     "directMarketingAddress": {
       "title": "Direct marketing address",
-      "$ref": "../datatypes/directmarketing-address.schema.json",
+      "$ref": "../datatypes/marketing/directmarketing-address.schema.json",
       "description": "Direct marketing postal address.",
       "meta:xdmField": "xdm:directMarketingAddress",
-      "tagNumber": 37
+      "tagNumber": 35
     },
     "directMarketingEmail": {
       "title": "Direct marketing email",
-      "$ref": "../datatypes/directmarketing-emailaddress.schema.json",
+      "$ref": "../datatypes/marketing/directmarketing-emailaddress.schema.json",
       "description": "Direct marketing email address.",
       "meta:xdmField": "xdm:directMarketingEmail",
-      "tagNumber": 38
+      "tagNumber": 36
     },
     "directMarketingPhone": {
       "title": "Direct marketing phone",
-      "$ref": "../datatypes/directmarketing-phonenumber.schema.json",
+      "$ref": "../datatypes/marketing/directmarketing-phonenumber.schema.json",
       "description": "Direct marketing phone number.",
       "meta:xdmField": "xdm:directMarketingPhone",
+      "tagNumber": 37
+    },
+    "orgUnit": {
+      "title": "Organizational unit",
+      "$ref": "../datatypes/b2b/orgunit.schema.json",
+      "description": "The unit within the organization owning the profile. This can be used to reference the organization details maintained in another dataset.",
+      "meta:xdmField": "xdm:orgUnit",
+      "tagNumber": 38
+    },
+    "geoUnit": {
+      "title": "Geographical unit",
+      "$ref": "../datatypes/demographic/geounit.schema.json",
+      "description": "The geographical unit within the organization owning the profile. This can be used to reference the geographical information maintained in another dataset.",
+      "meta:xdmField": "xdm:geoUnit",
       "tagNumber": 39
-    },
-    "identities": {
-      "meta:status": "deprecated",
-      "title": "All user identities (deprecated)",
-      "type": "array",
-      "minItems": 1,
-      "description": "Array of identities. Condensed, normalized encapsulation of all end-user identifiers.  Deprecated, use `xdm:identityMap` instead.",
-      "meta:xdmType": "array",
-      "items": {
-        "$ref": "../datatypes/identity.schema.json",
-        "tagNumber": 1
-      },
-      "meta:xdmField": "xdm:identities",
-      "tagNumber": 40
-    },
-    "lead": {
-      "title": "Lead Details",
-      "description": "Holds properties for a person to be recognized as a lead in the business-to-business space.",
-      "$ref": "../datatypes/b2b-lead.schema.json",
-      "meta:xdmField": "xdm:lead",
-      "tagNumber": 41
     },
     "preferredLanguage": {
       "title": "Preferred language",
@@ -1330,7 +1316,7 @@
       "description": "Describes the preferred system of communication used by the profile. Language codes are expressed in BCP 47 format.",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:preferredLanguage",
-      "tagNumber": 42
+      "tagNumber": 40
     },
     "profilePictureLink": {
       "title": "Profile picture link",
@@ -1338,7 +1324,7 @@
       "description": "Link to profile's picture.",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:profilePictureLink",
-      "tagNumber": 43
+      "tagNumber": 41
     },
     "emailFormat": {
       "title": "Email format",
@@ -1346,7 +1332,7 @@
       "description": "Email format preferred by the profile. This can be rich text or plain text.",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:emailFormat",
-      "tagNumber": 44
+      "tagNumber": 42
     },
     "timeZone": {
       "title": "Time zone",
@@ -1359,14 +1345,14 @@
       "description": "Describes which time zone the profile is present in, most frequently the time zone preferred by the profile. Time zones are expressed according to the IETF tz database: https://www.ietf.org/timezones/tzdb-2016i/tz-link.htm",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:timeZone",
-      "tagNumber": 45
+      "tagNumber": 43
     },
     "optInOut": {
       "title": "OptInOut",
       "$ref": "../datatypes/optinout.schema.json",
       "description": "Describes a users opting in and out preferences for communication by medium and communication type.",
       "meta:xdmField": "xdm:optInOut",
-      "tagNumber": 46
+      "tagNumber": 44
     },
     "optOutConsentLevel": {
       "type": "object",
@@ -1383,12 +1369,12 @@
           "meta:xdmField": "xdm:privacyOptOuts",
           "tagNumber": 1,
           "items": {
-            "$ref": "obj1266678658888687.schema.json"
+            "$ref": "obj8042196714204721.schema.json"
           }
         }
       },
       "meta:xdmField": "xdm:optOutConsentLevel",
-      "tagNumber": 47
+      "tagNumber": 45
     },
     "identityPrivacyInfo": {
       "title": "Identity level privacy information",
@@ -1439,7 +1425,7 @@
         "tagNumber": 1
       },
       "meta:xdmField": "xdm:identityPrivacyInfo",
-      "tagNumber": 48
+      "tagNumber": 46
     },
     "pushNotificationTokens": {
       "title": "Push notification tokens",
@@ -1451,7 +1437,7 @@
         "tagNumber": 1
       },
       "meta:xdmField": "xdm:pushNotificationTokens",
-      "tagNumber": 49
+      "tagNumber": 47
     },
     "pushNotificationDetails": {
       "title": "Push details",
@@ -1463,7 +1449,7 @@
         "tagNumber": 1
       },
       "meta:xdmField": "xdm:pushNotificationDetails",
-      "tagNumber": 50
+      "tagNumber": 48
     },
     "segments": {
       "title": "Segment membership",
@@ -1475,7 +1461,7 @@
         "tagNumber": 1
       },
       "meta:xdmField": "xdm:segments",
-      "tagNumber": 51
+      "tagNumber": 49
     },
     "segmentMembership": {
       "title": "Segment membership map",
@@ -1492,7 +1478,7 @@
         "tagNumber": 1
       },
       "meta:xdmField": "xdm:segmentMembership",
-      "tagNumber": 52
+      "tagNumber": 50
     },
     "subscriptions": {
       "title": "Subscriptions",
@@ -1500,11 +1486,11 @@
       "description": "Subscriptions that the profile is entitled to including terminated, expired, or exhausted subscriptions.",
       "meta:xdmType": "array",
       "items": {
-        "$ref": "../datatypes/subscription.schema.json",
+        "$ref": "../datatypes/industry-verticals/subscription.schema.json",
         "tagNumber": 1
       },
       "meta:xdmField": "xdm:subscriptions",
-      "tagNumber": 53
+      "tagNumber": 51
     },
     "testProfile": {
       "title": "Test profile",
@@ -1513,7 +1499,7 @@
       "default": false,
       "meta:xdmType": "boolean",
       "meta:xdmField": "xdm:testProfile",
-      "tagNumber": 54
+      "tagNumber": 52
     }
   },
   "meta:xdmId": "https://ns.adobe.com/xdm/context/profile-generated",

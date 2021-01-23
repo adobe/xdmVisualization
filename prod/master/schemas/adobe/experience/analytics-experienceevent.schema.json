@@ -11,7 +11,7 @@
   "properties": {
     "advertising": {
       "title": "Advertising",
-      "$ref": "../../datatypes/advertising.schema.json",
+      "$ref": "../../datatypes/marketing/advertising.schema.json",
       "description": "Information related to advertising activity in ExperienceEvents.",
       "meta:xdmField": "xdm:advertising",
       "tagNumber": 1
@@ -32,7 +32,7 @@
     },
     "directMarketing": {
       "title": "Direct marketing",
-      "$ref": "../../datatypes/direct-marketing.schema.json",
+      "$ref": "../../datatypes/marketing/direct-marketing.schema.json",
       "description": "Events and properties related to direct and outbound marketing such as email, direct mail, texts, and in-app notifications.",
       "meta:xdmField": "xdm:directMarketing",
       "tagNumber": 4
@@ -60,14 +60,14 @@
     },
     "marketing": {
       "title": "Marketing",
-      "$ref": "../../datatypes/marketing.schema.json",
+      "$ref": "../../datatypes/marketing/marketing.schema.json",
       "description": "The information related to marketing activities that are active with the touchpoint.",
       "meta:xdmField": "xdm:marketing",
       "tagNumber": 8
     },
     "media": {
       "title": "Media",
-      "$ref": "../../datatypes/media.schema.json",
+      "$ref": "../../datatypes/media/media.schema.json",
       "description": "Media activity information related to the experience event.",
       "meta:xdmField": "xdm:media",
       "tagNumber": 9
@@ -139,7 +139,7 @@
     },
     "web": {
       "title": "Web",
-      "$ref": "../../datatypes/webinfo.schema.json",
+      "$ref": "../../datatypes/web/webinfo.schema.json",
       "description": "The information related to web page and link of the ExperienceEvent.",
       "meta:xdmField": "xdm:web",
       "tagNumber": 16
@@ -192,7 +192,7 @@
                 },
                 "web": {
                   "title": "Session Entry Web",
-                  "$ref": "../../datatypes/webinfo.schema.json",
+                  "$ref": "../../datatypes/web/webinfo.schema.json",
                   "description": "The information related to web page, link, and referrer at the entry of this session.",
                   "meta:xdmField": "xdm:web",
                   "tagNumber": 5
@@ -218,7 +218,7 @@
                 },
                 "firstWeb": {
                   "title": "End-User First Web Details",
-                  "$ref": "../../datatypes/webinfo.schema.json",
+                  "$ref": "../../datatypes/web/webinfo.schema.json",
                   "description": "The information related to web page, link, and referrer from the first ExperienceEvent for this end-user.",
                   "meta:xdmField": "xdm:firstWeb",
                   "tagNumber": 2
@@ -10701,7 +10701,7 @@
     },
     "commerce": {
       "title": "Commerce",
-      "$ref": "../../datatypes/commerce.schema.json",
+      "$ref": "../../datatypes/marketing/commerce.schema.json",
       "description": "Commerce specific data related to this event.",
       "meta:xdmField": "xdm:commerce",
       "tagNumber": 21

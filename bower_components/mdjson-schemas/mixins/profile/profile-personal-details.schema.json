@@ -11,35 +11,35 @@
   "properties": {
     "homeAddress": {
       "title": "Home address",
-      "$ref": "../../datatypes/address.schema.json",
+      "$ref": "../../datatypes/demographic/address.schema.json",
       "description": "A home postal address.",
       "meta:xdmField": "xdm:homeAddress",
       "tagNumber": 1
     },
     "personalEmail": {
       "title": "Personal email",
-      "$ref": "../../datatypes/emailaddress.schema.json",
+      "$ref": "../../datatypes/demographic/emailaddress.schema.json",
       "description": "A personal email address.",
       "meta:xdmField": "xdm:personalEmail",
       "tagNumber": 2
     },
     "homePhone": {
       "title": "Home phone",
-      "$ref": "../../datatypes/phonenumber.schema.json",
+      "$ref": "../../datatypes/demographic/phonenumber.schema.json",
       "description": "Home phone number.",
       "meta:xdmField": "xdm:homePhone",
       "tagNumber": 3
     },
     "mobilePhone": {
       "title": "Mobile phone",
-      "$ref": "../../datatypes/phonenumber.schema.json",
+      "$ref": "../../datatypes/demographic/phonenumber.schema.json",
       "description": "Mobile phone number.",
       "meta:xdmField": "xdm:mobilePhone",
       "tagNumber": 4
     },
     "faxPhone": {
       "title": "Fax phone",
-      "$ref": "../../datatypes/phonenumber.schema.json",
+      "$ref": "../../datatypes/demographic/phonenumber.schema.json",
       "description": "Fax phone number.",
       "meta:xdmField": "xdm:faxPhone",
       "tagNumber": 5

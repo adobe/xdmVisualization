@@ -11,7 +11,7 @@
   "properties": {
     "web": {
       "title": "Web",
-      "$ref": "../../datatypes/webinfo.schema.json",
+      "$ref": "../../datatypes/web/webinfo.schema.json",
       "description": "The information related to web page and link of the ExperienceEvent.",
       "meta:xdmField": "xdm:web",
       "tagNumber": 1

@@ -31,7 +31,7 @@
     },
     "atmAddress": {
       "title": "ATM Address",
-      "$ref": "../../datatypes/address.schema.json",
+      "$ref": "../../datatypes/demographic/address.schema.json",
       "description": "Physicial address where the ATM is located.",
       "meta:xdmField": "xdm:atmAddress",
       "tagNumber": 3

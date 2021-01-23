@@ -154,7 +154,7 @@
         },
         "leadOrganization": {
           "title": "Lead Organization Properties",
-          "$ref": "../../datatypes/account-organization.schema.json",
+          "$ref": "../../datatypes/b2b/account-organization.schema.json",
           "meta:xdmField": "xdm:leadOrganization",
           "tagNumber": 18
         }
@@ -164,56 +164,56 @@
     },
     "homeAddress": {
       "title": "Home address",
-      "$ref": "../../datatypes/address.schema.json",
+      "$ref": "../../datatypes/demographic/address.schema.json",
       "description": "A home postal address.",
       "meta:xdmField": "xdm:homeAddress",
       "tagNumber": 2
     },
     "personalEmail": {
       "title": "Personal email",
-      "$ref": "../../datatypes/emailaddress.schema.json",
+      "$ref": "../../datatypes/demographic/emailaddress.schema.json",
       "description": "A personal email address.",
       "meta:xdmField": "xdm:personalEmail",
       "tagNumber": 3
     },
     "homePhone": {
       "title": "Home phone",
-      "$ref": "../../datatypes/phonenumber.schema.json",
+      "$ref": "../../datatypes/demographic/phonenumber.schema.json",
       "description": "Home phone number.",
       "meta:xdmField": "xdm:homePhone",
       "tagNumber": 4
     },
     "mobilePhone": {
       "title": "Mobile phone",
-      "$ref": "../../datatypes/phonenumber.schema.json",
+      "$ref": "../../datatypes/demographic/phonenumber.schema.json",
       "description": "Mobile phone number.",
       "meta:xdmField": "xdm:mobilePhone",
       "tagNumber": 5
     },
     "faxPhone": {
       "title": "Fax phone",
-      "$ref": "../../datatypes/phonenumber.schema.json",
+      "$ref": "../../datatypes/demographic/phonenumber.schema.json",
       "description": "Fax phone number.",
       "meta:xdmField": "xdm:faxPhone",
       "tagNumber": 6
     },
     "person": {
       "title": "Person",
-      "$ref": "../../datatypes/person.schema.json",
+      "$ref": "../../datatypes/person/person.schema.json",
       "description": "An individual actor, contact, or owner.",
       "meta:xdmField": "xdm:person",
       "tagNumber": 7
     },
     "otherAddress": {
       "title": "Other Address",
-      "$ref": "../../datatypes/address.schema.json",
+      "$ref": "../../datatypes/demographic/address.schema.json",
       "description": "Other/Alternate postal address of the person.",
       "meta:xdmField": "xdm:otherAddress",
       "tagNumber": 8
     },
     "otherPhone": {
       "title": "Other Phone",
-      "$ref": "../../datatypes/phonenumber.schema.json",
+      "$ref": "../../datatypes/demographic/phonenumber.schema.json",
       "description": "Other/Alternate phone number of the person.",
       "meta:xdmField": "xdm:otherPhone",
       "tagNumber": 9
@@ -230,14 +230,14 @@
           "properties": {
             "name": {
               "title": "Assistant Name",
-              "$ref": "../../datatypes/person-name.schema.json",
+              "$ref": "../../datatypes/person/person-name.schema.json",
               "description": "Person's assistant full name.",
               "meta:xdmField": "xdm:name",
               "tagNumber": 1
             },
             "phone": {
               "title": "Assistant Phone",
-              "$ref": "../../datatypes/phonenumber.schema.json",
+              "$ref": "../../datatypes/demographic/phonenumber.schema.json",
               "description": "Person's assistant phone number.",
               "meta:xdmField": "xdm:phone",
               "tagNumber": 2
@@ -290,21 +290,21 @@
     },
     "workAddress": {
       "title": "Work Address",
-      "$ref": "../../datatypes/address.schema.json",
+      "$ref": "../../datatypes/demographic/address.schema.json",
       "description": "A work postal address.",
       "meta:xdmField": "xdm:workAddress",
       "tagNumber": 11
     },
     "workEmail": {
       "title": "Work Email",
-      "$ref": "../../datatypes/emailaddress.schema.json",
+      "$ref": "../../datatypes/demographic/emailaddress.schema.json",
       "description": "A work email address.",
       "meta:xdmField": "xdm:workEmail",
       "tagNumber": 12
     },
     "workPhone": {
       "title": "Work Phone",
-      "$ref": "../../datatypes/phonenumber.schema.json",
+      "$ref": "../../datatypes/demographic/phonenumber.schema.json",
       "description": "Work phone number.",
       "meta:xdmField": "xdm:workPhone",
       "tagNumber": 13
@@ -347,7 +347,7 @@
     "inferredAddress": {
       "title": "Inferred Address",
       "description": "Address details inferred by reverse IP lookup of the lead’s first recorded web visit.",
-      "$ref": "../../datatypes/address.schema.json",
+      "$ref": "../../datatypes/demographic/address.schema.json",
       "meta:xdmField": "xdm:inferredAddress",
       "tagNumber": 17
     },
@@ -385,7 +385,7 @@
     },
     "extSourceSystemAudit": {
       "title": "External Source System Audit Properties",
-      "$ref": "../../datatypes/external-source-system-audit.schema.json",
+      "$ref": "../../datatypes/auditing/external-source-system-audit.schema.json",
       "description": "Audit attributes for external sources.",
       "meta:xdmField": "xdm:extSourceSystemAudit",
       "tagNumber": 22

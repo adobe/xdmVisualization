@@ -11,7 +11,7 @@
   "properties": {
     "directMarketing": {
       "title": "Direct marketing",
-      "$ref": "../../datatypes/direct-marketing.schema.json",
+      "$ref": "../../datatypes/marketing/direct-marketing.schema.json",
       "description": "Events and properties related to direct and outbound marketing such as email, direct mail, texts, and in-app notifications.",
       "meta:xdmField": "xdm:directMarketing",
       "tagNumber": 1

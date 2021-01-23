@@ -11,14 +11,14 @@
   "properties": {
     "otherAddress": {
       "title": "Other Address",
-      "$ref": "../../datatypes/address.schema.json",
+      "$ref": "../../datatypes/demographic/address.schema.json",
       "description": "Other/Alternate postal address of the person.",
       "meta:xdmField": "xdm:otherAddress",
       "tagNumber": 1
     },
     "otherPhone": {
       "title": "Other Phone",
-      "$ref": "../../datatypes/phonenumber.schema.json",
+      "$ref": "../../datatypes/demographic/phonenumber.schema.json",
       "description": "Other/Alternate phone number of the person.",
       "meta:xdmField": "xdm:otherPhone",
       "tagNumber": 2
@@ -35,14 +35,14 @@
           "properties": {
             "name": {
               "title": "Assistant Name",
-              "$ref": "../../datatypes/person-name.schema.json",
+              "$ref": "../../datatypes/person/person-name.schema.json",
               "description": "Person's assistant full name.",
               "meta:xdmField": "xdm:name",
               "tagNumber": 1
             },
             "phone": {
               "title": "Assistant Phone",
-              "$ref": "../../datatypes/phonenumber.schema.json",
+              "$ref": "../../datatypes/demographic/phonenumber.schema.json",
               "description": "Person's assistant phone number.",
               "meta:xdmField": "xdm:phone",
               "tagNumber": 2

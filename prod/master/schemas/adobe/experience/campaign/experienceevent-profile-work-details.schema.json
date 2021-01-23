@@ -30,21 +30,21 @@
                   "properties": {
                     "workAddress": {
                       "title": "Work Address",
-                      "$ref": "../../../datatypes/address.schema.json",
+                      "$ref": "../../../datatypes/demographic/address.schema.json",
                       "description": "A work postal address.",
                       "meta:xdmField": "xdm:workAddress",
                       "tagNumber": 1
                     },
                     "workEmail": {
                       "title": "Work Email",
-                      "$ref": "../../../datatypes/emailaddress.schema.json",
+                      "$ref": "../../../datatypes/demographic/emailaddress.schema.json",
                       "description": "A work email address.",
                       "meta:xdmField": "xdm:workEmail",
                       "tagNumber": 2
                     },
                     "workPhone": {
                       "title": "Work Phone",
-                      "$ref": "../../../datatypes/phonenumber.schema.json",
+                      "$ref": "../../../datatypes/demographic/phonenumber.schema.json",
                       "description": "Work phone number.",
                       "meta:xdmField": "xdm:workPhone",
                       "tagNumber": 3

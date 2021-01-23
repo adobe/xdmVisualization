@@ -11,7 +11,7 @@
   "properties": {
     "marketing": {
       "title": "Marketing",
-      "$ref": "../../datatypes/marketing.schema.json",
+      "$ref": "../../datatypes/marketing/marketing.schema.json",
       "description": "The information related to marketing activities that are active with the touchpoint.",
       "meta:xdmField": "xdm:marketing",
       "tagNumber": 1

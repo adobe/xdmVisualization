@@ -30,35 +30,35 @@
                   "properties": {
                     "homeAddress": {
                       "title": "Home Address",
-                      "$ref": "../../../datatypes/address.schema.json",
+                      "$ref": "../../../datatypes/demographic/address.schema.json",
                       "description": "A home postal address.",
                       "meta:xdmField": "xdm:homeAddress",
                       "tagNumber": 1
                     },
                     "personalEmail": {
                       "title": "Personal Email",
-                      "$ref": "../../../datatypes/emailaddress.schema.json",
+                      "$ref": "../../../datatypes/demographic/emailaddress.schema.json",
                       "description": "A personal email address.",
                       "meta:xdmField": "xdm:personalEmail",
                       "tagNumber": 2
                     },
                     "homePhone": {
                       "title": "Home Phone",
-                      "$ref": "../../../datatypes/phonenumber.schema.json",
+                      "$ref": "../../../datatypes/demographic/phonenumber.schema.json",
                       "description": "Home phone number.",
                       "meta:xdmField": "xdm:homePhone",
                       "tagNumber": 3
                     },
                     "mobilePhone": {
                       "title": "Mobile Phone",
-                      "$ref": "../../../datatypes/phonenumber.schema.json",
+                      "$ref": "../../../datatypes/demographic/phonenumber.schema.json",
                       "description": "Mobile phone number.",
                       "meta:xdmField": "xdm:mobilePhone",
                       "tagNumber": 4
                     },
                     "faxPhone": {
                       "title": "Fax Phone",
-                      "$ref": "../../../datatypes/phonenumber.schema.json",
+                      "$ref": "../../../datatypes/demographic/phonenumber.schema.json",
                       "description": "Fax phone number.",
                       "meta:xdmField": "xdm:faxPhone",
                       "tagNumber": 5

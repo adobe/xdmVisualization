@@ -35,7 +35,7 @@
     },
     "geo": {
       "title": "Geo",
-      "$ref": "geo.schema.json",
+      "$ref": "demographic/geo.schema.json",
       "description": "The geographic location where the experience was delivered.",
       "meta:xdmField": "xdm:geo",
       "tagNumber": 4
@@ -44,7 +44,7 @@
       "title": "POI interaction",
       "description": "The point of interest (POI) interaction details.",
       "meta:status": "experimental",
-      "$ref": "poi-interaction.schema.json",
+      "$ref": "interactions/poi-interaction.schema.json",
       "meta:xdmField": "xdm:POIinteraction",
       "tagNumber": 5
     },

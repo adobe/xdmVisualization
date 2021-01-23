@@ -11,7 +11,7 @@
   "properties": {
     "person": {
       "title": "Person",
-      "$ref": "../../datatypes/person.schema.json",
+      "$ref": "../../datatypes/person/person.schema.json",
       "description": "An individual actor, contact, or owner.",
       "meta:xdmField": "xdm:person",
       "tagNumber": 1
