@@ -1,10 +1,11 @@
 name: xdm-visualization
 on:
+  push:
   schedule:
-    - cron:  '* * * * *'
+    - cron:  '*/5 * * *'
 jobs:
   xdm-visualization:
-    runs-on: macos-latest
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
