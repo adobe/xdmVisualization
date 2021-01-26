@@ -5,9 +5,11 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:industry": [
-    "financial_services"
-  ],
+  "meta:tags": {
+    "industry": [
+      "financial_services"
+    ]
+  },
   "description": "Deposit details such as ID, type, and amount.",
   "meta:status": "experimental",
   "meta:xdmType": "object",
@@ -16,27 +18,19 @@
       "type": "object",
       "meta:xdmType": "object",
       "properties": {
-        "depositDetails": {
-          "type": "object",
-          "meta:xdmType": "object",
-          "properties": {
-            "deposit": {
-              "title": "Deposit",
-              "$ref": "../../../datatypes/industry-verticals/transaction.schema.json",
-              "description": "Extension of transaction data type.",
-              "meta:xdmField": "xdm:deposit",
-              "tagNumber": 1
-            },
-            "depositAccount": {
-              "title": "Deposit Account",
-              "$ref": "../../../datatypes/industry-verticals/financial-account.schema.json",
-              "description": "Extension of financialAccount data type.",
-              "meta:xdmField": "xdm:depositAccount",
-              "tagNumber": 2
-            }
-          },
-          "meta:xdmField": "xdm:depositDetails",
+        "deposit": {
+          "title": "Deposit",
+          "$ref": "../../../datatypes/industry-verticals/transaction.schema.json",
+          "description": "Extension of transaction data type.",
+          "meta:xdmField": "xdm:deposit",
           "tagNumber": 1
+        },
+        "depositAccount": {
+          "title": "Deposit Account",
+          "$ref": "../../../datatypes/industry-verticals/financial-account.schema.json",
+          "description": "Extension of financialAccount data type.",
+          "meta:xdmField": "xdm:depositAccount",
+          "tagNumber": 2
         }
       },
       "meta:xdmField": "xdm:personalFinances",
