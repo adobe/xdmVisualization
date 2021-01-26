@@ -1,0 +1,49 @@
+{
+  "id": "_xdm.mixins.events.add-to-opportunity",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Add To Opportunity",
+  "type": "object",
+  "meta:conditionalField": "xdm:eventType",
+  "meta:conditionalValue": "opportunityEvent.addToOpportunity",
+  "description": "Use for information regarding opportunity event add to opportunity events.",
+  "meta:status": "experimental",
+  "meta:xdmType": "object",
+  "properties": {
+    "opportunityEvent": {
+      "title": "Opportunity Event",
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "opportunityID": {
+          "title": "Opportunity ID",
+          "type": "string",
+          "description": "Opportunity ID",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:opportunityID",
+          "tagNumber": 1
+        },
+        "isPrimary": {
+          "title": "Is Primary",
+          "type": "boolean",
+          "description": "Is primary.",
+          "meta:xdmType": "boolean",
+          "meta:xdmField": "xdm:isPrimary",
+          "tagNumber": 2
+        },
+        "role": {
+          "title": "Role",
+          "type": "string",
+          "description": "Role.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:role",
+          "tagNumber": 3
+        }
+      },
+      "meta:xdmField": "xdm:opportunityEvent",
+      "tagNumber": 1
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/mixins/events/add-to-opportunity",
+  "meta:altId": "_xdm.mixins.events.add-to-opportunity",
+  "id": "_xdm.mixins.events.add-to-opportunity"
+}
