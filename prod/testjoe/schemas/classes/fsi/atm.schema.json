@@ -1,0 +1,59 @@
+{
+  "id": "_xdm.classes.fsi.atm",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "ATM",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "description": "For ATM information such as active status, addrerss, ID and name. ",
+  "meta:status": [
+    "experimental",
+    "stable"
+  ],
+  "meta:xdmType": "object",
+  "properties": {
+    "_id": {
+      "title": "Identifier",
+      "type": "string",
+      "format": "uri-reference",
+      "description": "A unique identifier for the record.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "@id",
+      "tagNumber": 1
+    },
+    "isAtmActive": {
+      "title": "Is ATM Active",
+      "type": "boolean",
+      "description": "Yes/no if the ATM is currently active.",
+      "meta:xdmType": "boolean",
+      "meta:xdmField": "xdm:isAtmActive",
+      "tagNumber": 2
+    },
+    "atmAddress": {
+      "title": "ATM Address",
+      "$ref": "../../datatypes/demographic/address.schema.json",
+      "description": "Physicial address where the ATM is located.",
+      "meta:xdmField": "xdm:atmAddress",
+      "tagNumber": 3
+    },
+    "atmID": {
+      "title": "ATM ID",
+      "type": "string",
+      "description": "ID associated with the ATM.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:atmID",
+      "tagNumber": 4
+    },
+    "atmName": {
+      "title": "ATM Name",
+      "type": "string",
+      "description": "Name associated with the ATM.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:atmName",
+      "tagNumber": 5
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/classes/fsi/atm",
+  "meta:altId": "_xdm.classes.fsi.atm",
+  "id": "_xdm.classes.fsi.atm"
+}

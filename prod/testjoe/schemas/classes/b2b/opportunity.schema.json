@@ -1,0 +1,87 @@
+{
+  "id": "_xdm.context.opportunity",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "XDM Business Opportunity",
+  "type": "object",
+  "auditable": true,
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "description": "This class is used to capture minimum set of properties that define business opportunity.",
+  "meta:status": [
+    "experimental",
+    "stable"
+  ],
+  "meta:xdmType": "object",
+  "properties": {
+    "_id": {
+      "title": "Identifier",
+      "type": "string",
+      "format": "uri-reference",
+      "description": "A unique identifier for the record.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "@id",
+      "tagNumber": 1
+    },
+    "opportunityID": {
+      "title": "Opportunity ID",
+      "description": "Opportunity unique identifer",
+      "type": "string",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:opportunityID",
+      "tagNumber": 2
+    },
+    "opportunityName": {
+      "title": "Opportunity Name",
+      "description": "Subject or descriptive name, such as the expected order or company name, for the opportunity.",
+      "type": "string",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:opportunityName",
+      "tagNumber": 3
+    },
+    "opportunityDescription": {
+      "title": "Opportunity Description",
+      "description": "Additional information to describe the opportunity, such as possible products to sell or past purchases from the customer.",
+      "type": "string",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:opportunityDescription",
+      "tagNumber": 4
+    },
+    "opportunityType": {
+      "title": "Opportunity Type",
+      "description": "Opportunity type such as Existing Business or New Business",
+      "type": "string",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:opportunityType",
+      "tagNumber": 5
+    },
+    "opportunityStage": {
+      "title": "Opportunity Stage",
+      "description": "Sales stage of this opportunity to aid the sales team in their efforts to win this opportunity.",
+      "type": "string",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:opportunityStage",
+      "tagNumber": 6
+    },
+    "accountID": {
+      "title": "Account ID",
+      "description": "Account unique identifier reference that this opportunity is linked to.",
+      "type": "string",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:accountID",
+      "tagNumber": 7
+    },
+    "extSourceSystemAudit": {
+      "title": "External Source System Audit Properties",
+      "$ref": "../../datatypes/auditing/external-source-system-audit.schema.json",
+      "description": "Audit attributes for external sources.",
+      "meta:xdmField": "xdm:extSourceSystemAudit",
+      "tagNumber": 8
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/context/opportunity",
+  "meta:altId": "_xdm.context.opportunity",
+  "required": [
+    "opportunityID"
+  ],
+  "id": "_xdm.context.opportunity"
+}

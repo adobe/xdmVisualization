@@ -1,0 +1,57 @@
+{
+  "id": "_xdm.mixins.events.emaildelivered",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Email Delivered",
+  "type": "object",
+  "meta:conditionalField": "xdm:eventType",
+  "meta:conditionalValue": "directMarketing.emailDelivered",
+  "description": "Use for information regarding direct marketing email delivered events.",
+  "meta:status": "experimental",
+  "meta:xdmType": "object",
+  "properties": {
+    "directMarketing": {
+      "title": "Direct marketing",
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "mailingID": {
+          "title": "Mailing ID",
+          "type": "string",
+          "description": "Unique identifier of the mailing.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:mailingID",
+          "tagNumber": 1
+        },
+        "mailingName": {
+          "title": "Mailing Name",
+          "type": "string",
+          "description": "Friendly name for the mailing.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:mailingName",
+          "tagNumber": 2
+        },
+        "testVariantID": {
+          "title": "Test Variant ID",
+          "type": "string",
+          "description": "Unique identifier for the test variant.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:testVariantID",
+          "tagNumber": 3
+        },
+        "testVariantName": {
+          "title": "Test Variant Name",
+          "type": "string",
+          "description": "Friendly name for the test variant.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:testVariantName",
+          "tagNumber": 4
+        }
+      },
+      "meta:xdmField": "xdm:directMarketing",
+      "tagNumber": 1
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/mixins/events/emaildelivered",
+  "meta:altId": "_xdm.mixins.events.emaildelivered",
+  "id": "_xdm.mixins.events.emaildelivered"
+}

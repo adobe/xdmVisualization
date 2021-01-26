@@ -1,0 +1,59 @@
+{
+  "id": "_xdm.context.consentstring",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Consent String",
+  "type": "object",
+  "meta:extensible": true,
+  "description": "Consent String as presented by user along with standard information to help consent enforcer to parse the String.",
+  "meta:status": "stable",
+  "meta:xdmType": "object",
+  "properties": {
+    "consentStandard": {
+      "title": "Standard for the consent",
+      "type": "string",
+      "description": "This helps determine the format of the consent string as set by consent management services.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:consentStandard",
+      "tagNumber": 1
+    },
+    "consentStandardVersion": {
+      "title": "Standards Version",
+      "type": "string",
+      "description": "Standards version to accurately define the format of the consent string as set by consent management services.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:consentStandardVersion",
+      "tagNumber": 2
+    },
+    "consentStringValue": {
+      "title": "Consent String",
+      "type": "string",
+      "description": "Full consent string as provided by consent management services. Standard and Version help define how to parse this string.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:consentStringValue",
+      "tagNumber": 3
+    },
+    "gdprApplies": {
+      "title": "GDPR Applies",
+      "type": "boolean",
+      "default": false,
+      "description": "If this is true, it means this consent string needs to be processed for consent enforcement.",
+      "meta:xdmType": "boolean",
+      "meta:xdmField": "xdm:gdprApplies",
+      "tagNumber": 4
+    },
+    "containsPersonalData": {
+      "title": "Contains personal data",
+      "type": "boolean",
+      "description": "If this is true, it means consent is coming with personal data.",
+      "meta:xdmType": "boolean",
+      "meta:xdmField": "xdm:containsPersonalData",
+      "tagNumber": 5
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/context/consentstring",
+  "meta:altId": "_xdm.context.consentstring",
+  "required": [
+    "gdprApplies"
+  ],
+  "id": "_xdm.context.consentstring"
+}
