@@ -1,6 +1,11 @@
 name: xdm-visualization
 on:
   workflow_dispatch:
+    inputs:
+      name:
+        description: 'Branch name'
+        required: true
+        default: 'master'
 jobs:
   xdm-visualization:
     runs-on: macos-latest
