@@ -1,0 +1,94 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "id": "_experience.decisioning.personalized-content-option",
+  "meta:abstract": true,
+  "meta:extensible": true,
+  "type": "object",
+  "title": "Personalized Content Decision Option",
+  "description": "Personalized decision options form the set of choices for any decision actvity. The objective for decisioning is to take a large inventory of items and apply numerous constraint rules to that inventory to narrow it down and then to rank the qualifying options according to a criteria. The resulting propositions assemble and personalize the experience for specific individuals.",
+  "meta:status": "stable",
+  "meta:xdmType": "object",
+  "properties": {
+    "_experience": {
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "decisioning": {
+          "type": "object",
+          "meta:xdmType": "object",
+          "properties": {
+            "lifecycleStatus": {
+              "type": "string",
+              "title": "Lifecycle Status",
+              "description": "Lifecycle status allows workflows to be conducted with an object. The status may affect where an object is visible or considered relevant. Status changes are driven by the clients or services that use the objects.",
+              "enum": [
+                "draft",
+                "approved",
+                "live",
+                "completed",
+                "archived"
+              ],
+              "default": "draft",
+              "meta:xdmType": "string",
+              "meta:xdmField": "https://ns.adobe.com/experience/decisioning/lifecycleStatus",
+              "tagNumber": 1
+            },
+            "tags": {
+              "type": "array",
+              "title": "Tags",
+              "description": "The set of tags associated with this entity. The tags are used in filter expressions to constrain the overall inventory to a sub set (category).",
+              "meta:xdmType": "array",
+              "items": {
+                "type": "string",
+                "format": "uri-reference",
+                "description": "An identifier of a tag object. The value is the @id of the tag that is referenced. See tag schema: https://ns.adobe.com/experience/decisioning/tag",
+                "meta:xdmType": "string",
+                "tagNumber": 1
+              },
+              "meta:xdmField": "https://ns.adobe.com/experience/decisioning/tags",
+              "tagNumber": 2
+            },
+            "contents": {
+              "type": "array",
+              "title": "Content Details",
+              "description": "Content items to render the decision item in different contexts. A single decision option can have multiple contents variants. Content is information that is directed towards an audience for consumption in a (digital) experience. Content is delivered through channels into a particular placement.",
+              "meta:xdmType": "array",
+              "items": {
+                "$ref": "content-details.schema.json",
+                "tagNumber": 1
+              },
+              "meta:xdmField": "https://ns.adobe.com/experience/decisioning/contents",
+              "tagNumber": 3
+            },
+            "calendarConstaints": {
+              "$ref": "calendar-constraint-details.schema.json",
+              "title": "Calendar Constraint Details",
+              "description": "Calendar constraints decide if a decision option is valid given a date range. Outside that date range the option cannot be proposed.",
+              "meta:xdmField": "https://ns.adobe.com/experience/decisioning/calendarConstaints",
+              "tagNumber": 4
+            },
+            "profileConstraints": {
+              "$ref": "profile-constraint-details.schema.json",
+              "title": "Profile Constraint Details",
+              "description": "The profile constraints decide if an option is eligible for this profile identity, at this moment, in this context. If the profile constraint does not need to consider values of each of the option, i.e. it is invariant of the options from the option selection, the profile constraint that evaluates to 'false' cancels out the entire option selection. On the other hand, a profile constraint rule that takes an option as a parameter is evaluated for each qualifiying option of the option selection.",
+              "meta:xdmField": "https://ns.adobe.com/experience/decisioning/profileConstraints",
+              "tagNumber": 5
+            },
+            "ranking": {
+              "$ref": "ranking-details.schema.json",
+              "title": "Ranking Details",
+              "description": "Rank (priority). Defines what is considered the \"best action\" given the context of the decision criterion. Among all the selected options that meet the eligibility constraint, the ranking order will decide the top (or top N) option(s) to be proposed.",
+              "meta:xdmField": "https://ns.adobe.com/experience/decisioning/ranking",
+              "tagNumber": 6
+            }
+          },
+          "tagNumber": 1
+        }
+      },
+      "tagNumber": 1
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/experience/decisioning/personalized-content-option",
+  "meta:altId": "_experience.decisioning.personalized-content-option",
+  "id": "_experience.decisioning.personalized-content-option"
+}

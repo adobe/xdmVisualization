@@ -1,0 +1,73 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "id": "_experience.decisioning.fallback-content-option",
+  "meta:abstract": true,
+  "meta:extensible": true,
+  "type": "object",
+  "title": "Fallback Content Decision Option",
+  "description": "A default decision option that is used when there is no personalized content is left after checking all constraints. The Fallback content mixin cannot be combined with mixins that express constraint because a fallback option must be remain applicable for any use in a given context.",
+  "meta:status": "stable",
+  "meta:xdmType": "object",
+  "properties": {
+    "_experience": {
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "decisioning": {
+          "type": "object",
+          "meta:xdmType": "object",
+          "properties": {
+            "lifecycleStatus": {
+              "type": "string",
+              "title": "Lifecycle Status",
+              "description": "Lifecycle status allows workflows to be conducted with an object. The status may affect where an object is visible or considered relevant. Status changes are driven by the clients or services that use the objects.",
+              "enum": [
+                "draft",
+                "approved",
+                "live",
+                "completed",
+                "archived"
+              ],
+              "default": "draft",
+              "meta:xdmType": "string",
+              "meta:xdmField": "https://ns.adobe.com/experience/decisioning/lifecycleStatus",
+              "tagNumber": 1
+            },
+            "tags": {
+              "type": "array",
+              "title": "Tags",
+              "description": "The set of tags associated with this entity. The tags are used in filter expressions to constrain the overall inventory to a sub set (category).",
+              "meta:xdmType": "array",
+              "items": {
+                "type": "string",
+                "format": "uri-reference",
+                "description": "An identifier of a tag object. The value is the @id of the tag that is referenced. See tag schema: https://ns.adobe.com/experience/decisioning/tag",
+                "meta:xdmType": "string",
+                "tagNumber": 1
+              },
+              "meta:xdmField": "https://ns.adobe.com/experience/decisioning/tags",
+              "tagNumber": 2
+            },
+            "contents": {
+              "type": "array",
+              "title": "Content Details",
+              "description": "Content items to render the decision item in different contexts. A single decision option can have multiple contents variants. Content is information that is directed towards an audience for consumption in a (digital) experience. Content is delivered through channels into a particular placement.",
+              "meta:xdmType": "array",
+              "items": {
+                "$ref": "content-details.schema.json",
+                "tagNumber": 1
+              },
+              "meta:xdmField": "https://ns.adobe.com/experience/decisioning/contents",
+              "tagNumber": 3
+            }
+          },
+          "tagNumber": 1
+        }
+      },
+      "tagNumber": 1
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/experience/decisioning/fallback-content-option",
+  "meta:altId": "_experience.decisioning.fallback-content-option",
+  "id": "_experience.decisioning.fallback-content-option"
+}

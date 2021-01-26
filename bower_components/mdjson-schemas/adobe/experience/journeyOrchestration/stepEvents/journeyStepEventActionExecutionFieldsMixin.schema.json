@@ -1,0 +1,157 @@
+{
+  "id": "_experience.journeyorchestration.stepevents.journeystepeventactionexecutionfields",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Journey Orchestration Step Event Action Execution Fields",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "description": "This Mixin will have Journey Action Metadata Fields.",
+  "meta:status": "stable",
+  "meta:xdmType": "object",
+  "properties": {
+    "_experience": {
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "journeyOrchestration": {
+          "type": "object",
+          "meta:xdmType": "object",
+          "properties": {
+            "stepEvents": {
+              "title": "Journey Orchestration Action Execution Fields.",
+              "type": "object",
+              "meta:xdmType": "object",
+              "properties": {
+                "_experience": {
+                  "journeyOrchestration": {
+                    "actionID": {
+                      "title": "actionID",
+                      "description": "ID of the action that is being executed.",
+                      "type": "string",
+                      "meta:xdmType": "string",
+                      "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/actionID",
+                      "tagNumber": 1
+                    },
+                    "actionName": {
+                      "title": "actionName",
+                      "description": "Name of the action If no name has been set, the stepName will be taken.",
+                      "type": "string",
+                      "meta:xdmType": "string",
+                      "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/actionName",
+                      "tagNumber": 2
+                    },
+                    "actionType": {
+                      "title": "actionType",
+                      "description": "Type of the action.",
+                      "type": "string",
+                      "meta:xdmType": "string",
+                      "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/actionType",
+                      "tagNumber": 3
+                    },
+                    "actionParameterized": {
+                      "title": "actionParameterized",
+                      "description": "Indicates if the action is parameterized or not.",
+                      "type": "boolean",
+                      "meta:xdmType": "boolean",
+                      "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/actionParameterized",
+                      "tagNumber": 4
+                    },
+                    "actionExecutionTime": {
+                      "title": "actionExecutionTime",
+                      "description": "The amount of time (in milliseconds) taken to execute a current action.",
+                      "type": "integer",
+                      "meta:xdmType": "int",
+                      "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/actionExecutionTime",
+                      "tagNumber": 5
+                    },
+                    "actionExecutionError": {
+                      "title": "actionExecutionError",
+                      "description": "Type of error that happens when the action is called.",
+                      "type": "string",
+                      "meta:xdmType": "string",
+                      "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/actionExecutionError",
+                      "tagNumber": 6
+                    },
+                    "actionExecutionErrorCode": {
+                      "title": "actionExecutionErrorCode",
+                      "description": "Code for action execution error. Present if the error has a code, such as an HTTP one.",
+                      "type": "string",
+                      "meta:xdmType": "string",
+                      "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/actionExecutionErrorCode",
+                      "tagNumber": 7
+                    },
+                    "actionExecutionOriginError": {
+                      "title": "actionExecutionOriginError",
+                      "description": "This Field tells about the timeout errors during retry for a Journey Action, such as HTTP,Capping.",
+                      "type": "string",
+                      "meta:xdmType": "string",
+                      "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/actionExecutionOriginError",
+                      "tagNumber": 8
+                    },
+                    "actionExecutionOriginCode": {
+                      "title": "actionExecutionOriginCode",
+                      "description": "error code of the actionExecutionOriginError.",
+                      "type": "string",
+                      "meta:xdmType": "string",
+                      "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/actionExecutionOriginCode",
+                      "tagNumber": 9
+                    },
+                    "actionBusinessType": {
+                      "title": "actionBusinessType",
+                      "description": "What type of action it is. It could be ACS, Business  Action, SMS etc.",
+                      "type": "string",
+                      "meta:xdmType": "string",
+                      "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/actionBusinessType",
+                      "tagNumber": 10
+                    },
+                    "deliveryJobID": {
+                      "title": "deliveryJobID",
+                      "description": "This describes the delivery Job Id for the batch Journey.",
+                      "type": "string",
+                      "meta:xdmType": "string",
+                      "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/deliveryJobID",
+                      "tagNumber": 11
+                    },
+                    "batchDeliveryID": {
+                      "title": "batchDeliveryID",
+                      "description": "This describes the delivery Id for the batch Journey.",
+                      "type": "string",
+                      "meta:xdmType": "string",
+                      "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/batchDeliveryID",
+                      "tagNumber": 12
+                    },
+                    "fromSegmentTrigger": {
+                      "title": "fromSegmentTrigger",
+                      "description": "This describes if the Batch Journey triggered from Audisence Segment.",
+                      "type": "boolean",
+                      "meta:xdmType": "boolean",
+                      "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/fromSegmentTrigger",
+                      "tagNumber": 13
+                    },
+                    "actionSchedulerCount": {
+                      "title": "actionSchedulerCount",
+                      "description": "count of scheduler notification requests sent to the scheduler service during the step processing.",
+                      "type": "integer",
+                      "meta:xdmType": "int",
+                      "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/actionSchedulerCount",
+                      "tagNumber": 14
+                    },
+                    "tagNumber": 1
+                  },
+                  "tagNumber": 1
+                }
+              },
+              "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/stepEvents",
+              "tagNumber": 1
+            }
+          },
+          "tagNumber": 1
+        }
+      },
+      "tagNumber": 1
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/experience/journeyOrchestration/stepEvents/journeyStepEventActionExecutionFields",
+  "meta:altId": "_experience.journeyorchestration.stepevents.journeystepeventactionexecutionfields",
+  "id": "_experience.journeyorchestration.stepevents.journeystepeventactionexecutionfields"
+}

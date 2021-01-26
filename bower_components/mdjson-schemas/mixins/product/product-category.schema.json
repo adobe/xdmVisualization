@@ -1,0 +1,49 @@
+{
+  "id": "_xdm.mixins.product-category",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Product Category",
+  "type": "object",
+  "auditable": true,
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "description": "This mixin is used to capture properties related to product category.",
+  "meta:status": "experimental",
+  "meta:xdmType": "object",
+  "properties": {
+    "productCategoryName": {
+      "title": "Product Category Name",
+      "type": "string",
+      "description": "friendly name of the product category.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:productCategoryName",
+      "tagNumber": 1
+    },
+    "productCategoryDescription": {
+      "title": "Product Category Description",
+      "type": "string",
+      "description": "Friendly description of product category.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:productCategoryDescription",
+      "tagNumber": 2
+    },
+    "productSubcategoryName": {
+      "title": "Product Subcategory Name",
+      "type": "string",
+      "description": "friendly name of the product subcategory.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:productSubcategoryName",
+      "tagNumber": 3
+    },
+    "productSubcategoryDescription": {
+      "title": "Product Sub category Description",
+      "type": "string",
+      "description": "Friendly description of product subcategory.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:productSubcategoryDescription",
+      "tagNumber": 4
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/mixins/product-category",
+  "meta:altId": "_xdm.mixins.product-category",
+  "id": "_xdm.mixins.product-category"
+}
