@@ -416,6 +416,7 @@
 [adobe.experience.customerJourneyManagement.messageprofile](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.customerJourneyManagement.messageprofile.html)<br/>
 [adobe.experience.customerJourneyManagement.message-interaction](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.customerJourneyManagement.message-interaction.html)<br/>
 [adobe.experience.customerJourneyManagement.messageexecution](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.customerJourneyManagement.messageexecution.html)<br/>
+[adobe.experience.mobile-lifecycle-details-test](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.mobile-lifecycle-details-test.html)<br/>
 [adobe.experience.experienceevent-edgeregion](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.experienceevent-edgeregion.html)<br/>
 [adobe.experience.journeyOrchestration.stepEvents.journeyStepEventClass](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.journeyOrchestration.stepEvents.journeyStepEventClass.html)<br/>
 [adobe.experience.journeyOrchestration.stepEvents.journeyStepEventDataFetchFieldsMixin](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.journeyOrchestration.stepEvents.journeyStepEventDataFetchFieldsMixin.html)<br/>
