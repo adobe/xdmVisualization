@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
     inputs:
       name:
-        description: 'Branch name'
+        description: 'XDM Public Repo Branch name'
         required: true
         default: 'master'
 jobs:
