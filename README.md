@@ -11,10 +11,10 @@ To refresh the xdm visualization manually for a specific git branch, please foll
 
 2\. Under Workflows -> All workflows, select `xdm-visualization`.
 
-3\. Click `Run workflow`.
+3\. Select the `Run workflow` drop down on the far right.
 
 4\. Under `XDM Public Repo Branch Name *`, enter the branch to generate the visualization from. Default is "master".
 
-5\. Click `Run workflow`
+5\. Click the green `Run workflow` button.
 
 6\. Go to `https://opensource.adobe.com/xdmVisualization/prod/<branch entered above>/` to see XDM visualization in D3. 
