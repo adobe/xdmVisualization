@@ -60,11 +60,11 @@
               "meta:xdmField": "https://ns.adobe.com/experience/decisioning/contents",
               "tagNumber": 3
             },
-            "calendarConstaints": {
+            "calendarConstraints": {
               "$ref": "calendar-constraint-details.schema.json",
               "title": "Calendar Constraint Details",
               "description": "Calendar constraints decide if a decision option is valid given a date range. Outside that date range the option cannot be proposed.",
-              "meta:xdmField": "https://ns.adobe.com/experience/decisioning/calendarConstaints",
+              "meta:xdmField": "https://ns.adobe.com/experience/decisioning/calendarConstraints",
               "tagNumber": 4
             },
             "profileConstraints": {
