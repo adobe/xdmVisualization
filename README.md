@@ -6,7 +6,7 @@ See [visualization of XDM Public Repo's master branch](https://opensource.adobe.
 
 ### Usage
 The xdm visualization is currently refreshed every 12 hours for the master branch of the public repo. 
-If you want to refresh it manually, please follow the steps ![here](images/xdmVisualization.png)
+If you want to refresh it manually, please follow the steps below. ![here](images/xdmVisualization.png)
 
         
 1\. Click `Actions` from github web interface.
