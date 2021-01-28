@@ -1,17 +1,21 @@
 # XDM Visualization
 ## Git Repo Branch: master
-#### Uber Schemas
 <details>
-<summary>list of schemas</summary>
+<summary>Uber Schemas</summary>
 <ul>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">prod1</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">prod2</a></li>
 </ul>
 </details>
-
-#### Standard xdms
 <details>
-<summary>list of schemas</summary>
+<summary>Standard XDMs</summary>
+<ul>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">prod1</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">prod2</a></li>
+</ul>
+</details>
+<details>
+<summary>Extension XDMs</summary>
 <ul>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">prod1</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">prod2</a></li>
