@@ -4,8 +4,8 @@
 <details>
 <summary>uber schemas</summary>
 <ul>
-<li>[uberschemas.product-generated](http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html)<br/></li>
-<li>[uberschemas.product-generated](http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html)<br/></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">prod1</a><br/></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">prod2</a><br/></li>
 </ul>
-
 </details>
+
