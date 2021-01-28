@@ -41,6 +41,8 @@ cd prod/$1/
 rm index.html
 echo "# XDM Visualization" >> index.md
 echo "## Git Repo Branch: $1" >> index.md
+echo "# XDM Visualization" >> dropdown.md
+echo "## Git Repo Branch: $1" >> dropdown.md
 
 uberSchemas=()
 standardXdms=()
@@ -74,22 +76,38 @@ for folder in ${folders[@]}; do
 done
 
 echo "### Uber Schemas" >> index.md
+echo "<details>" >> dropdown.md
+echo "<summary>Uber Schemas</summary>" >> dropdown.md
+echo "<ul>" >> dropdown.md
 for i in ${uberSchemas[@]}; do
   echo "Generating HTML:" $i
   echo "[$i](http://opensource.adobe.com/xdmVisualization/prod/$1/$i.html)<br/>" >> index.md
+  echo "<li><a href="http://opensource.adobe.com/xdmVisualization/prod/$1/$i.html">$i</a></li>" >> dropdown.md
 done
+echo "</ul>" >> dropdown.md
+echo "</details>" >> dropdown.md
 
 echo "### Standard XDMs" >> index.md
+echo "<details>" >> dropdown.md
+echo "<summary>Standard XDMs</summary>" >> dropdown.md
 for i in ${standardXdms[@]}; do
   echo "Generating HTML:" $i
   echo "[$i](http://opensource.adobe.com/xdmVisualization/prod/$1/$i.html)<br/>" >> index.md
+  echo "<li><a href="http://opensource.adobe.com/xdmVisualization/prod/$1/$i.html">$i</a></li>" >> dropdown.md
 done
+echo "</ul>" >> dropdown.md
+echo "</details>" >> dropdown.md
 
 echo "### Extension XDMs" >> index.md
+echo "<details>" >> dropdown.md
+echo "<summary>Extension XDMs</summary>" >> dropdown.md
 for i in ${extensionXdms[@]}; do
   echo "Generating HTML:" $i
   echo "[$i](http://opensource.adobe.com/xdmVisualization/prod/$1/$i.html)<br/>" >> index.md
+  echo "<li><a href="http://opensource.adobe.com/xdmVisualization/prod/$1/$i.html">$i</a></li>" >> dropdown.md
 done
+echo "</ul>" >> dropdown.md
+echo "</details>" >> dropdown.md
 
 (rm ../index.html; rm ../../index.html)
 git add ../../
