@@ -21,6 +21,7 @@
 </details>
 <details>
 <summary>Standard XDMs</summary>
+<ul>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/behaviors.time-series.html">behaviors.time-series</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/behaviors.record.html">behaviors.record</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/common.identity.html">common.identity</a></li>
@@ -287,6 +288,7 @@
 </details>
 <details>
 <summary>Extension XDMs</summary>
+<ul>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.profile-edgeregion.html">adobe.experience.profile-edgeregion</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.target-experienceevent.html">adobe.experience.target-experienceevent</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.adcloud-experienceevent.html">adobe.experience.adcloud-experienceevent</a></li>
