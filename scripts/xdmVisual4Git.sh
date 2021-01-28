@@ -82,7 +82,7 @@ echo "<ul>" >> dropdown.md
 for i in ${uberSchemas[@]}; do
   echo "Generating HTML:" $i
   echo "[$i](http://opensource.adobe.com/xdmVisualization/prod/$1/$i.html)<br/>" >> index.md
-  echo "<li><a href="http://opensource.adobe.com/xdmVisualization/prod/$1/$i.html">$i</a></li>" >> dropdown.md
+  echo "<li><a href=\"http://opensource.adobe.com/xdmVisualization/prod/$1/$i.html\">$i</a></li>" >> dropdown.md
 done
 echo "</ul>" >> dropdown.md
 echo "</details>" >> dropdown.md
@@ -93,7 +93,7 @@ echo "<summary>Standard XDMs</summary>" >> dropdown.md
 for i in ${standardXdms[@]}; do
   echo "Generating HTML:" $i
   echo "[$i](http://opensource.adobe.com/xdmVisualization/prod/$1/$i.html)<br/>" >> index.md
-  echo "<li><a href="http://opensource.adobe.com/xdmVisualization/prod/$1/$i.html">$i</a></li>" >> dropdown.md
+  echo "<li><a href=\"http://opensource.adobe.com/xdmVisualization/prod/$1/$i.html\">$i</a></li>" >> dropdown.md
 done
 echo "</ul>" >> dropdown.md
 echo "</details>" >> dropdown.md
@@ -104,7 +104,7 @@ echo "<summary>Extension XDMs</summary>" >> dropdown.md
 for i in ${extensionXdms[@]}; do
   echo "Generating HTML:" $i
   echo "[$i](http://opensource.adobe.com/xdmVisualization/prod/$1/$i.html)<br/>" >> index.md
-  echo "<li><a href="http://opensource.adobe.com/xdmVisualization/prod/$1/$i.html">$i</a></li>" >> dropdown.md
+  echo "<li><a href=\"http://opensource.adobe.com/xdmVisualization/prod/$1/$i.html\">$i</a></li>" >> dropdown.md
 done
 echo "</ul>" >> dropdown.md
 echo "</details>" >> dropdown.md
