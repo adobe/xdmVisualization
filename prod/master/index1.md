@@ -3,6 +3,9 @@
 ### Uber Schemas
 <details>
 <summary>uber schemas</summary>
-[uberschemas.product-generated](http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html)<br/>
-[uberschemas.product-generated](http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html)<br/>
+<ul>
+<li>[uberschemas.product-generated](http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html)<br/></li>
+<li>[uberschemas.product-generated](http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html)<br/></li>
+</ul>
+
 </details>
