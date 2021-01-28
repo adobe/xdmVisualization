@@ -3,8 +3,8 @@
 <details>
 <summary>Uber Schemas</summary>
 <ul>
-<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">prod1</a></li>
-<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">prod2</a></li>
+<li><a href=http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html>uberschemas.product-generated</a></li>
+<li><a href=http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.opportunity-contact-role-generated.html>uberschemas.opportunity-contact-role-generated</a></li>
 </ul>
 </details>
 <details>
