@@ -1,7 +1,7 @@
 # XDM Visualization
 ## Git Repo Branch: master
 <details>
-<summary>Uber Schemas</summary>
+<summary>Standard XDM Schemas</summary>
 <ul>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">uberschemas.product-generated</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.opportunity-contact-role-generated.html">uberschemas.opportunity-contact-role-generated</a></li>
@@ -20,7 +20,7 @@
 </ul>
 </details>
 <details>
-<summary>Standard XDMs</summary>
+<summary>Standard Core Components</summary>
 <ul>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/behaviors.time-series.html">behaviors.time-series</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/behaviors.record.html">behaviors.record</a></li>
@@ -287,7 +287,7 @@
 </ul>
 </details>
 <details>
-<summary>Extension XDMs</summary>
+<summary>Extension Components</summary>
 <ul>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.profile-edgeregion.html">adobe.experience.profile-edgeregion</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.target-experienceevent.html">adobe.experience.target-experienceevent</a></li>

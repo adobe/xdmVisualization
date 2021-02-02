@@ -1,6 +1,6 @@
 # XDM Visualization
 ## Git Repo Branch: master
-### Uber Schemas
+### Standard XDM Schemas
 [uberschemas.product-generated](http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html)<br/>
 [uberschemas.opportunity-contact-role-generated](http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.opportunity-contact-role-generated.html)<br/>
 [uberschemas.opportunity-person-generated](http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.opportunity-person-generated.html)<br/>
@@ -15,7 +15,7 @@
 [uberschemas.marketing-list-member-generated](http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.marketing-list-member-generated.html)<br/>
 [uberschemas.account-person-generated](http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.account-person-generated.html)<br/>
 [uberschemas.campaign-member-generated](http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.campaign-member-generated.html)<br/>
-### Standard XDMs
+### Standard Core Components
 [behaviors.time-series](http://opensource.adobe.com/xdmVisualization/prod/master/behaviors.time-series.html)<br/>
 [behaviors.record](http://opensource.adobe.com/xdmVisualization/prod/master/behaviors.record.html)<br/>
 [common.identity](http://opensource.adobe.com/xdmVisualization/prod/master/common.identity.html)<br/>
@@ -278,7 +278,7 @@
 [mixins.deprecated.deprecated-profile-consent](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.deprecated.deprecated-profile-consent.html)<br/>
 [mixins.deprecated.profile-identities-deprecated](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.deprecated.profile-identities-deprecated.html)<br/>
 [mixins.deprecated.experienceevent-enduserids-deprecated](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.deprecated.experienceevent-enduserids-deprecated.html)<br/>
-### Extension XDMs
+### Extension Components
 [adobe.experience.profile-edgeregion](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.profile-edgeregion.html)<br/>
 [adobe.experience.target-experienceevent](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.target-experienceevent.html)<br/>
 [adobe.experience.adcloud-experienceevent](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.adcloud-experienceevent.html)<br/>
