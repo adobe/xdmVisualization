@@ -75,9 +75,9 @@ for folder in ${folders[@]}; do
   done
 done
 
-echo "### Uber Schemas" >> index.md
+echo "### Standard XDM Schemas" >> index.md
 echo "<details>" >> dropdown.md
-echo "<summary>Uber Schemas</summary>" >> dropdown.md
+echo "<summary>Standard XDM Schemas</summary>" >> dropdown.md
 echo "<ul>" >> dropdown.md
 for i in ${uberSchemas[@]}; do
   echo "Generating HTML:" $i
@@ -87,9 +87,9 @@ done
 echo "</ul>" >> dropdown.md
 echo "</details>" >> dropdown.md
 
-echo "### Standard XDMs" >> index.md
+echo "### Standard Core Components" >> index.md
 echo "<details>" >> dropdown.md
-echo "<summary>Standard XDMs</summary>" >> dropdown.md
+echo "<summary>Standard Core Components</summary>" >> dropdown.md
 echo "<ul>" >> dropdown.md
 for i in ${standardXdms[@]}; do
   echo "Generating HTML:" $i
@@ -99,9 +99,9 @@ done
 echo "</ul>" >> dropdown.md
 echo "</details>" >> dropdown.md
 
-echo "### Extension XDMs" >> index.md
+echo "### Extension Components" >> index.md
 echo "<details>" >> dropdown.md
-echo "<summary>Extension XDMs</summary>" >> dropdown.md
+echo "<summary>Extension Components</summary>" >> dropdown.md
 echo "<ul>" >> dropdown.md
 for i in ${extensionXdms[@]}; do
   echo "Generating HTML:" $i
