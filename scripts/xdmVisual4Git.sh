@@ -129,7 +129,7 @@ echo "</ul>" >> dropdown.md
 echo "</details>" >> dropdown.md
 
 (rm ../index.html; rm ../../index.html)
-#git add ../../
-#git commit -m "merge xdm visualization for $1 branch"
-#git push origin
-#grunt connect:server:keepalive
+git add ../../
+git commit -m "merge xdm visualization for $1 branch"
+git push origin
+grunt connect:server:keepalive
