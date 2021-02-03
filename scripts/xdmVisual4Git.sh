@@ -103,7 +103,7 @@ echo "<summary>Standard Core Components</summary>" >> dropdown.md
 echo "<ul>" >> dropdown.md
 
 for h in ${standardCompGrp[@]}; do
-  echo "##### "$h >> index.md
+  echo "#### "$h >> index.md
   for i in ${standardComponents[@]}; do
     if [[ $i == $h.* ]]
     then
