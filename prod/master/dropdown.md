@@ -25,7 +25,6 @@
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/behaviors.time-series.html">behaviors.time-series</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/behaviors.record.html">behaviors.record</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/common.identity.html">common.identity</a></li>
-<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/airship.airship-event.html">airship.airship-event</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/classes.experienceevent.html">classes.experienceevent</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/classes.profile.html">classes.profile</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/classes.graphs.html">classes.graphs</a></li>
@@ -447,5 +446,6 @@
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.b2b.bizible.bizible-opportunity-details.html">adobe.b2b.bizible.bizible-opportunity-details</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.b2b.bizible.bizible-person-details.html">adobe.b2b.bizible.bizible-person-details</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.b2b.marketo.marketo-web-url.html">adobe.b2b.marketo.marketo-web-url</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/airship.airship-event.html">airship.airship-event</a></li>
 </ul>
 </details>

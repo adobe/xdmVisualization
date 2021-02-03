@@ -45,8 +45,10 @@ echo "# XDM Visualization" >> dropdown.md
 echo "## Git Repo Branch: $1" >> dropdown.md
 
 uberSchemas=()
-standardXdms=()
-extensionXdms=()
+standardComponents=()
+extensionComponents=()
+standardCompGrp=()
+
 folders=(adobe behaviors common airship classes datatypes mixins uberschemas)
 
 for folder in ${folders[@]}; do
@@ -58,14 +60,14 @@ for folder in ${folders[@]}; do
     #echo "filename-->" $filename
     if [[ $filename != *.obj[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]* ]] # not showing generated objs
     then
-        if [[ $filename == adobe.* ]]
+        if [[ $filename == adobe.* || $filename == airship.* ]]
         then
-          extensionXdms+=( ${filename} )
+          extensionComponents+=( ${filename} )
         elif [[ $filename == uberschemas.* ]];
         then
           uberSchemas+=( $filename )
         else
-          standardXdms+=( ${filename} )
+          standardComponents+=( ${filename} )
         fi
         #echo "<a href = "http://localhost:9001/prod/$1/$filename.html">${filename}</a>" >> index.html
         #echo "<br>" >> index.html
@@ -73,6 +75,14 @@ for folder in ${folders[@]}; do
     cp basic.html $filename.html #use basic as template
     sed  -i '' "s#experience/Profile.schema.json#$origin#g" $filename.html
   done
+done
+
+#standard component group
+for i in ${standardComponents[@]}; do
+  value=$(echo ${i%%.*})
+  if ! (printf '%s\n' "${standardCompGrp[@]}" | grep -xq $value); then
+    standardCompGrp+=( $value )
+  fi
 done
 
 echo "### Standard XDM Schemas" >> index.md
@@ -91,10 +101,17 @@ echo "### Standard Core Components" >> index.md
 echo "<details>" >> dropdown.md
 echo "<summary>Standard Core Components</summary>" >> dropdown.md
 echo "<ul>" >> dropdown.md
-for i in ${standardXdms[@]}; do
-  echo "Generating HTML:" $i
-  echo "[$i](http://opensource.adobe.com/xdmVisualization/prod/$1/$i.html)<br/>" >> index.md
-  echo "<li><a href=\"http://opensource.adobe.com/xdmVisualization/prod/$1/$i.html\">$i</a></li>" >> dropdown.md
+
+for h in ${standardCompGrp[@]}; do
+  echo "##### "$h >> index.md
+  for i in ${standardComponents[@]}; do
+    if [[ $i == $h.* ]]
+    then
+      echo "Generating HTML:" $i
+      echo "[$i](http://opensource.adobe.com/xdmVisualization/prod/$1/$i.html)<br/>" >> index.md
+      echo "<li><a href=\"http://opensource.adobe.com/xdmVisualization/prod/$1/$i.html\">$i</a></li>" >> dropdown.md
+    fi
+  done
 done
 echo "</ul>" >> dropdown.md
 echo "</details>" >> dropdown.md
@@ -103,7 +120,7 @@ echo "### Extension Components" >> index.md
 echo "<details>" >> dropdown.md
 echo "<summary>Extension Components</summary>" >> dropdown.md
 echo "<ul>" >> dropdown.md
-for i in ${extensionXdms[@]}; do
+for i in ${extensionComponents[@]}; do
   echo "Generating HTML:" $i
   echo "[$i](http://opensource.adobe.com/xdmVisualization/prod/$1/$i.html)<br/>" >> index.md
   echo "<li><a href=\"http://opensource.adobe.com/xdmVisualization/prod/$1/$i.html\">$i</a></li>" >> dropdown.md
@@ -112,7 +129,7 @@ echo "</ul>" >> dropdown.md
 echo "</details>" >> dropdown.md
 
 (rm ../index.html; rm ../../index.html)
-git add ../../
-git commit -m "merge xdm visualization for $1 branch"
-git push origin
+#git add ../../
+#git commit -m "merge xdm visualization for $1 branch"
+#git push origin
 #grunt connect:server:keepalive

@@ -16,10 +16,12 @@
 [uberschemas.account-person-generated](http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.account-person-generated.html)<br/>
 [uberschemas.campaign-member-generated](http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.campaign-member-generated.html)<br/>
 ### Standard Core Components
+##### behaviors
 [behaviors.time-series](http://opensource.adobe.com/xdmVisualization/prod/master/behaviors.time-series.html)<br/>
 [behaviors.record](http://opensource.adobe.com/xdmVisualization/prod/master/behaviors.record.html)<br/>
+##### common
 [common.identity](http://opensource.adobe.com/xdmVisualization/prod/master/common.identity.html)<br/>
-[airship.airship-event](http://opensource.adobe.com/xdmVisualization/prod/master/airship.airship-event.html)<br/>
+##### classes
 [classes.experienceevent](http://opensource.adobe.com/xdmVisualization/prod/master/classes.experienceevent.html)<br/>
 [classes.profile](http://opensource.adobe.com/xdmVisualization/prod/master/classes.profile.html)<br/>
 [classes.graphs](http://opensource.adobe.com/xdmVisualization/prod/master/classes.graphs.html)<br/>
@@ -36,6 +38,7 @@
 [classes.segmentdefinition](http://opensource.adobe.com/xdmVisualization/prod/master/classes.segmentdefinition.html)<br/>
 [classes.fsi.atm](http://opensource.adobe.com/xdmVisualization/prod/master/classes.fsi.atm.html)<br/>
 [classes.fsi.branch](http://opensource.adobe.com/xdmVisualization/prod/master/classes.fsi.branch.html)<br/>
+##### datatypes
 [datatypes.device](http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.device.html)<br/>
 [datatypes.interactions.poi-interaction](http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.interactions.poi-interaction.html)<br/>
 [datatypes.interactions.meeting-interaction](http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.interactions.meeting-interaction.html)<br/>
@@ -161,6 +164,7 @@
 [datatypes.media.media-timed-chapter-asset-reference](http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.media.media-timed-chapter-asset-reference.html)<br/>
 [datatypes.media.media-timed-asset-reference](http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.media.media-timed-asset-reference.html)<br/>
 [datatypes.media.media-timed-audio](http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.media.media-timed-audio.html)<br/>
+##### mixins
 [mixins.opportunity.opportunity-details](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.opportunity.opportunity-details.html)<br/>
 [mixins.opportunity.opportunity-person-components](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.opportunity.opportunity-person-components.html)<br/>
 [mixins.opportunity.opportunity-components](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.opportunity.opportunity-components.html)<br/>
@@ -437,3 +441,4 @@
 [adobe.b2b.bizible.bizible-opportunity-details](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.b2b.bizible.bizible-opportunity-details.html)<br/>
 [adobe.b2b.bizible.bizible-person-details](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.b2b.bizible.bizible-person-details.html)<br/>
 [adobe.b2b.marketo.marketo-web-url](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.b2b.marketo.marketo-web-url.html)<br/>
+[airship.airship-event](http://opensource.adobe.com/xdmVisualization/prod/master/airship.airship-event.html)<br/>
