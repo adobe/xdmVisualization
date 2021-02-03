@@ -1,0 +1,98 @@
+{
+  "type": "object",
+  "meta:xdmType": "object",
+  "properties": {
+    "sourceAccountID": {
+      "title": "Source Account ID",
+      "description": "Source account ID.",
+      "$ref": "../datatypes/b2b/b2b-source.schema.json",
+      "meta:xdmField": "xdm:sourceAccountID",
+      "tagNumber": 1
+    },
+    "sourceAccountParentID": {
+      "title": "Source Parent Account",
+      "description": "Parent company for companies that are subsidiaries of a larger company or organization. The parent account must be an existing account in salesforce. You can enter the account name, or select (or optionally, create) the account using the lookup icon.",
+      "$ref": "../datatypes/b2b/b2b-source.schema.json",
+      "meta:xdmField": "xdm:sourceAccountParentID",
+      "tagNumber": 2
+    },
+    "sourceExternalID": {
+      "title": "Source External ID",
+      "description": "External ID.",
+      "$ref": "../datatypes/b2b/b2b-source.schema.json",
+      "meta:xdmField": "xdm:sourceExternalID",
+      "tagNumber": 3
+    },
+    "sourcePartnerAccountID": {
+      "title": "Source Partner Account Id",
+      "description": "Partner accounts are accounts that a channel manager uses to manage partner organizations, partner users, and activities when using a partner community or partner portal.",
+      "$ref": "../datatypes/b2b/b2b-source.schema.json",
+      "meta:xdmField": "xdm:sourcePartnerAccountID",
+      "tagNumber": 4
+    },
+    "sourceAccountOwnerID": {
+      "title": "Account Owner Id",
+      "description": "Account owner ID.",
+      "$ref": "../datatypes/b2b/b2b-source.schema.json",
+      "meta:xdmField": "xdm:sourceAccountOwnerID",
+      "tagNumber": 5
+    },
+    "segmentationAttributes": {
+      "properties": {
+        "accountName": {
+          "title": "Account Name",
+          "description": "name of company. Up to 255 characters are allowed in this field.",
+          "type": "string",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:accountName",
+          "tagNumber": 1
+        },
+        "accountTerritoryID": {
+          "title": "Account Territory Id",
+          "description": "The territory to which the account has been assigned.",
+          "type": "string",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:accountTerritoryID",
+          "tagNumber": 2
+        },
+        "accountScore": {
+          "title": "Account Score",
+          "type": "number",
+          "meta:xdmType": "number",
+          "meta:xdmField": "xdm:accountScore",
+          "tagNumber": 3
+        },
+        "accountBillingAddress": {
+          "title": "Account Billing Address",
+          "$ref": "../datatypes/demographic/address.schema.json",
+          "meta:xdmField": "xdm:accountBillingAddress",
+          "tagNumber": 4
+        },
+        "accountShippingAddress": {
+          "title": "Account Shipping Address",
+          "$ref": "../datatypes/demographic/address.schema.json",
+          "meta:xdmField": "xdm:accountShippingAddress",
+          "tagNumber": 5
+        },
+        "accountPhysicalAddress": {
+          "title": "Account Physical Address",
+          "description": "Actual physical address of the account. Could be the HQ address or any preffered business address for communication.",
+          "$ref": "../datatypes/demographic/address.schema.json",
+          "meta:xdmField": "xdm:accountPhysicalAddress",
+          "tagNumber": 6
+        },
+        "accountOrganization": {
+          "title": "Account Organization",
+          "$ref": "../datatypes/b2b/account-organization.schema.json",
+          "meta:xdmField": "xdm:accountOrganization",
+          "tagNumber": 7
+        }
+      },
+      "meta:xdmField": "xdm:segmentationAttributes",
+      "tagNumber": 6
+    }
+  },
+  "tagNumber": 1,
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "id": "obj8397839615306246.schema.json"
+}
