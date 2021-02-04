@@ -4,6 +4,7 @@
   "title": "Ad Campaign Detail",
   "type": "object",
   "description": "Adobe Advertising Cloud ad campaign hierarchy details such as, account, package, advertiser, and campaign IDs.",
+  "meta:status": "stable",
   "meta:xdmType": "object",
   "properties": {
     "accountId": {

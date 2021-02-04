@@ -6,6 +6,7 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "description": "Detail about the entity that represents one of the possible selections or choices for a decision. When referenced in propositions, options are enriched with the observed metrics that applied to them, i.e. they are measurable.",
+  "meta:status": "stable",
   "meta:xdmType": "object",
   "properties": {
     "id": {

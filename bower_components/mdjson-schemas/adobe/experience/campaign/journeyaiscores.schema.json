@@ -4,6 +4,7 @@
   "title": "Journey AI Scores",
   "type": "object",
   "description": "Journey AI scores for one channel.",
+  "meta:status": "stable",
   "meta:xdmType": "object",
   "properties": {
     "fatigue": {

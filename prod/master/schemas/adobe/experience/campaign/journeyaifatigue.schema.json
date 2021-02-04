@@ -4,6 +4,7 @@
   "title": "Fatigue Score and Level",
   "type": "object",
   "description": "Fatigue score and fatigue level from Journey AI.",
+  "meta:status": "stable",
   "meta:xdmType": "object",
   "properties": {
     "fatigueScore": {

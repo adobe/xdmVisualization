@@ -8,9 +8,9 @@
     true
   ],
   "description": "Adobe Advertising Cloud segmentation traits.",
+  "meta:status": "stable",
   "meta:xdmType": "object",
   "meta:abstract": true,
-  "meta:status": "stable",
   "properties": {
     "repositoryCreatedBy": {
       "title": "Created by user identifier",

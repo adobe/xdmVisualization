@@ -4,6 +4,7 @@
   "title": "List Details",
   "type": "object",
   "description": "List of values with details.",
+  "meta:status": "stable",
   "meta:xdmType": "object",
   "properties": {
     "values": {

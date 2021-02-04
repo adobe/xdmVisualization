@@ -6,8 +6,8 @@
   "meta:abstract": true,
   "meta:extensible": true,
   "description": "This mixin is used capture information regarding an interaction, response or reaction to one or more prior propositions. Each decision output has a unique ID that can be sent back with an experience event. The decision is assumed to have contributed to the experience event and is now associated with it.",
-  "meta:xdmType": "object",
   "meta:status": "stable",
+  "meta:xdmType": "object",
   "properties": {
     "identityMap": {
       "type": "object",

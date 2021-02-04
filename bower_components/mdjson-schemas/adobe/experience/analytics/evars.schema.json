@@ -4,6 +4,7 @@
   "title": "eVars",
   "type": "object",
   "description": "Custom eVars.",
+  "meta:status": "stable",
   "meta:xdmType": "object",
   "properties": {
     "eVar1": {

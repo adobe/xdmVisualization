@@ -6,8 +6,8 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "description": "XDM Product List Item extension properties specific to Adobe Analytics that implements Merchandizing support.",
-  "meta:xdmType": "object",
   "meta:status": "stable",
+  "meta:xdmType": "object",
   "properties": {
     "_experience": {
       "type": "object",

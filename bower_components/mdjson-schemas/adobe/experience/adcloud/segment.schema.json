@@ -4,6 +4,7 @@
   "title": "Adobe Advertising Cloud Segment Detail",
   "type": "object",
   "description": "Adobe Advertising Cloud segmentation traits.",
+  "meta:status": "stable",
   "meta:xdmType": "object",
   "properties": {
     "attributablePartnerId": {

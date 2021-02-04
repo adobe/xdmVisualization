@@ -4,6 +4,7 @@
   "title": "Key Value Pair",
   "type": "object",
   "description": "Key value pair.",
+  "meta:status": "stable",
   "meta:xdmType": "object",
   "properties": {
     "key": {

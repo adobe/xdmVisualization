@@ -6,6 +6,7 @@
   "meta:abstract": true,
   "meta:extensible": true,
   "description": "Mixin for Decision Events that adds dimensions for rollup by organization, container, batch job and request.",
+  "meta:status": "stable",
   "meta:xdmType": "object",
   "properties": {
     "_adobecloudplatform": {

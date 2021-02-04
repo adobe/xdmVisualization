@@ -6,6 +6,7 @@
   "meta:abstract": true,
   "meta:extensible": true,
   "description": "Offer detail is used to capture the attributes of an offer in a proposition or response. Offers are the decision options in the offer management domain and the offer detail datatype extends the option detail datatype.",
+  "meta:status": "stable",
   "meta:xdmType": "object",
   "properties": {
     "tags": {

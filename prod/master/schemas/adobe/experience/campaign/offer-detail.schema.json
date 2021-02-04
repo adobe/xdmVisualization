@@ -6,6 +6,7 @@
   "type": "object",
   "title": "Campaign Offer Detail",
   "description": "Campaign offer detail is used to capture the attributes of a Campaign offer in a proposition or response. Offers are the decision options in the Offer Management domain and the Campaign offer detail datatype extends the option detail datatype.",
+  "meta:status": "stable",
   "meta:xdmType": "object",
   "properties": {
     "eligibilityRule": {

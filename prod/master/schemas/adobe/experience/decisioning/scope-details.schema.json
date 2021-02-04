@@ -6,6 +6,7 @@
   "meta:abstract": true,
   "meta:extensible": true,
   "description": "Decision scope details capture properties that existed to narrow the scope of the decision to a location (the \"Where\"), a the business activity (the \"How\") and the provider of the decision (\"By Whom\"). The location is expressed with the concept of a Placement.",
+  "meta:status": "stable",
   "meta:xdmType": "object",
   "properties": {
     "id": {

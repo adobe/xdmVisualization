@@ -6,8 +6,8 @@
   "meta:abstract": true,
   "meta:extensible": true,
   "description": "A decision proposition reference is used to link an experience event that is a response to a particular proposition event.",
-  "meta:xdmType": "object",
   "meta:status": "stable",
+  "meta:xdmType": "object",
   "properties": {
     "identityMap": {
       "type": "object",

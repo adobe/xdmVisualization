@@ -6,6 +6,7 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "description": "Detail about the entity defining and controlling the decisioning process. Decisions are made in the context of a placement. At any given time, the best option is re-evaluated, or ranked, based on the most current set of context variables, rules and constraints applicable for this placement.",
+  "meta:status": "stable",
   "meta:xdmType": "object",
   "properties": {
     "id": {

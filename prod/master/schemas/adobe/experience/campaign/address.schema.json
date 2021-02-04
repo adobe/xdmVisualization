@@ -4,6 +4,7 @@
   "title": "Address Extensions for Adobe Campaign",
   "type": "object",
   "description": "Address extension properties specific to Adobe Campaign.",
+  "meta:status": "stable",
   "meta:xdmType": "object",
   "properties": {
     "_experience": {

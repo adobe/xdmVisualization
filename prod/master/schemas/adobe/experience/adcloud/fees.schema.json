@@ -4,6 +4,7 @@
   "title": "Advertising Fee Details",
   "type": "object",
   "description": "Adobe Advertising Cloud Fee Details.",
+  "meta:status": "stable",
   "meta:xdmType": "object",
   "properties": {
     "DSPMediaFees": {

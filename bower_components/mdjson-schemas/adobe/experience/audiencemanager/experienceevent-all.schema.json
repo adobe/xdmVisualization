@@ -6,6 +6,7 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "description": "Adobe Audience Manager ExperienceEvent full extension. Contains all Solution added fields.",
+  "meta:status": "stable",
   "meta:xdmType": "object",
   "properties": {
     "signals": {

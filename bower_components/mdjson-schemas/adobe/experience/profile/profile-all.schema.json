@@ -6,8 +6,8 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:xdmType": "object",
   "meta:status": "stable",
+  "meta:xdmType": "object",
   "properties": {
     "_experience": {
       "type": "object",
@@ -104,7 +104,7 @@
           "meta:xdmField": "xdm:privacyOptOuts",
           "tagNumber": 1,
           "items": {
-            "$ref": "obj5788180055655683.schema.json"
+            "$ref": "obj4872943806918346.schema.json"
           }
         }
       },

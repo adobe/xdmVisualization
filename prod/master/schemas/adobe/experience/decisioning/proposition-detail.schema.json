@@ -6,6 +6,7 @@
   "meta:abstract": true,
   "meta:extensible": true,
   "description": "A decision proposition detail is used to capture the output of a decisioning activity. Propositions are enriched with the observed metrics that applied to the selected options at the time the decision was made.",
+  "meta:status": "stable",
   "meta:xdmType": "object",
   "properties": {
     "activity": {

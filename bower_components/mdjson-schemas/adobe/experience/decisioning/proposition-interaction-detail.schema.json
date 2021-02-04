@@ -6,6 +6,7 @@
   "meta:abstract": true,
   "meta:extensible": true,
   "description": "A proposition interaction is used to link an experience event to a prior decision proposition. Each decision output has a unique event ID that can be sent back with an experience event. The decision proposition is assumed to have contributed to the experience event and is now associated with it.",
+  "meta:status": "stable",
   "meta:xdmType": "object",
   "properties": {
     "items": {

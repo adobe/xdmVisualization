@@ -6,6 +6,7 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "description": "Snapshot of the properties of the decision activity. A decision activity is an entity that controls a decisioning process. Decisions are made in the context of an activity. See definition of decision activty for more details.",
+  "meta:status": "stable",
   "meta:xdmType": "object",
   "properties": {
     "id": {
