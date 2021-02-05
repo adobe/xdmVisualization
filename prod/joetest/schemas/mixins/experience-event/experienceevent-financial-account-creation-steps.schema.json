@@ -1,0 +1,36 @@
+{
+  "id": "_xdm.mixins.experienceevent-financial-account-creation-steps",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Financial Account Creation Steps",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:tags": {
+    "industry": [
+      "financial_services"
+    ]
+  },
+  "description": "Financial account creation steps such as start, save, failure, and complete.",
+  "meta:status": "experimental",
+  "meta:xdmType": "object",
+  "properties": {
+    "personalFinances": {
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "financialAccount": {
+          "title": "Financial Account",
+          "$ref": "../../datatypes/industry-verticals/tool-usage.schema.json",
+          "description": "Extension of toolUsage data type.",
+          "meta:xdmField": "xdm:financialAccount",
+          "tagNumber": 1
+        }
+      },
+      "meta:xdmField": "xdm:personalFinances",
+      "tagNumber": 1
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/mixins/experienceevent-financial-account-creation-steps",
+  "meta:altId": "_xdm.mixins.experienceevent-financial-account-creation-steps",
+  "id": "_xdm.mixins.experienceevent-financial-account-creation-steps"
+}
