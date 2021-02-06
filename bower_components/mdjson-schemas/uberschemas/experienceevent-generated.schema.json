@@ -268,14 +268,14 @@
           "meta:xdmField": "xdm:dataValueChanges",
           "tagNumber": 4,
           "items": {
-            "$ref": "obj910888124363602.schema.json"
+            "$ref": "obj0024889336119662264.schema.json"
           }
         }
       },
       "meta:xdmField": "xdm:opportunityEvent",
       "tagNumber": 8
     },
-    "leadOpearation": {
+    "leadOperation": {
       "title": "Lead Operation",
       "type": "object",
       "meta:xdmType": "object",
@@ -412,9 +412,171 @@
           },
           "meta:xdmField": "xdm:newLead",
           "tagNumber": 3
+        },
+        "changeScore": {
+          "title": "Change Score",
+          "type": "object",
+          "meta:xdmType": "object",
+          "properties": {
+            "scoreAttributeID": {
+              "title": "Score Atribute ID",
+              "type": "string",
+              "description": "Unique identifier for score attribute.",
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:scoreAttributeID",
+              "tagNumber": 1
+            },
+            "scoreAttributeName": {
+              "title": "Score Atribute Name",
+              "type": "string",
+              "description": "friendly name for the score.",
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:scoreAttributeName",
+              "tagNumber": 2
+            },
+            "changeValue": {
+              "title": "Change Value",
+              "type": "string",
+              "description": "changed value.",
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:changeValue",
+              "tagNumber": 3
+            },
+            "newValue": {
+              "title": "New Value",
+              "type": "integer",
+              "description": "New score Value.",
+              "meta:xdmType": "int",
+              "meta:xdmField": "xdm:newValue",
+              "tagNumber": 4
+            },
+            "oldValue": {
+              "title": "Old Value",
+              "type": "integer",
+              "description": "old score Value.",
+              "meta:xdmType": "int",
+              "meta:xdmField": "xdm:oldValue",
+              "tagNumber": 5
+            },
+            "reason": {
+              "title": "Reason",
+              "type": "string",
+              "description": "Reason for the change.",
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:reason",
+              "tagNumber": 6
+            },
+            "urgency": {
+              "title": "Urgency",
+              "type": "number",
+              "description": "Urgency for this change.",
+              "meta:xdmType": "number",
+              "meta:xdmField": "xdm:urgency",
+              "tagNumber": 7
+            },
+            "priority": {
+              "title": "Priority",
+              "type": "integer",
+              "description": "Priority for this change.",
+              "meta:xdmType": "int",
+              "meta:xdmField": "xdm:priority",
+              "tagNumber": 8
+            },
+            "relativeScore": {
+              "title": "Relative Score",
+              "type": "integer",
+              "description": "Relative score.",
+              "meta:xdmType": "int",
+              "meta:xdmField": "xdm:relativeScore",
+              "tagNumber": 9
+            },
+            "relativeUrgency": {
+              "title": "Relative Urgency",
+              "type": "integer",
+              "description": "Relative Urgency for this change.",
+              "meta:xdmType": "int",
+              "meta:xdmField": "xdm:relativeUrgency",
+              "tagNumber": 10
+            }
+          },
+          "meta:xdmField": "xdm:changeScore",
+          "tagNumber": 4
+        },
+        "campaignProgression": {
+          "title": "Campaign Progression",
+          "type": "object",
+          "meta:xdmType": "object",
+          "properties": {
+            "campaignID": {
+              "title": "Campaign ID",
+              "type": "string",
+              "description": "Unique identifier for campaign.",
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:campaignID",
+              "tagNumber": 1
+            },
+            "newStatusID": {
+              "title": "New Status ID",
+              "type": "string",
+              "description": "Unique identifier for new status.",
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:newStatusID",
+              "tagNumber": 2
+            },
+            "newStatusName": {
+              "title": "New Status Name",
+              "type": "string",
+              "description": "Friendly name for new status.",
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:newStatusName",
+              "tagNumber": 3
+            },
+            "oldStatusID": {
+              "title": "Old Status ID",
+              "type": "string",
+              "description": "Unique identifier for old status.",
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:oldStatusID",
+              "tagNumber": 4
+            },
+            "oldStatusName": {
+              "title": "Old Status Name",
+              "type": "string",
+              "description": "Friendly name for old status.",
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:oldStatusName",
+              "tagNumber": 5
+            },
+            "reason": {
+              "title": "Reason",
+              "type": "string",
+              "description": "Reason for status change.",
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:reason",
+              "tagNumber": 6
+            },
+            "isAcquiredBy": {
+              "title": "Is Acquired By",
+              "type": "boolean",
+              "description": "Change acquired by user.",
+              "meta:xdmType": "boolean",
+              "meta:xdmField": "xdm:isAcquiredBy",
+              "tagNumber": 7
+            },
+            "isSuccessful": {
+              "title": "Is Successful",
+              "type": "boolean",
+              "description": "Is the change successful or failed in process.",
+              "meta:xdmType": "boolean",
+              "meta:xdmField": "xdm:isSuccessful",
+              "tagNumber": 8
+            }
+          },
+          "meta:xdmField": "xdm:campaignProgression",
+          "tagNumber": 5
         }
       },
-      "meta:xdmField": "xdm:leadOpearation",
+      "meta:xdmField": "xdm:leadOperation",
       "tagNumber": 9
     },
     "directMarketing": {
@@ -733,177 +895,6 @@
       "meta:xdmField": "xdm:web",
       "tagNumber": 13
     },
-    "leadOperation": {
-      "title": "Lead Operation",
-      "type": "object",
-      "meta:xdmType": "object",
-      "properties": {
-        "changeScore": {
-          "title": "Change Score",
-          "type": "object",
-          "meta:xdmType": "object",
-          "properties": {
-            "scoreAttributeID": {
-              "title": "Score Atribute ID",
-              "type": "string",
-              "description": "Unique identifier for score attribute.",
-              "meta:xdmType": "string",
-              "meta:xdmField": "xdm:scoreAttributeID",
-              "tagNumber": 1
-            },
-            "scoreAttributeName": {
-              "title": "Score Atribute Name",
-              "type": "string",
-              "description": "friendly name for the score.",
-              "meta:xdmType": "string",
-              "meta:xdmField": "xdm:scoreAttributeName",
-              "tagNumber": 2
-            },
-            "changeValue": {
-              "title": "Change Value",
-              "type": "string",
-              "description": "changed value.",
-              "meta:xdmType": "string",
-              "meta:xdmField": "xdm:changeValue",
-              "tagNumber": 3
-            },
-            "newValue": {
-              "title": "New Value",
-              "type": "integer",
-              "description": "New score Value.",
-              "meta:xdmType": "int",
-              "meta:xdmField": "xdm:newValue",
-              "tagNumber": 4
-            },
-            "oldValue": {
-              "title": "Old Value",
-              "type": "integer",
-              "description": "old score Value.",
-              "meta:xdmType": "int",
-              "meta:xdmField": "xdm:oldValue",
-              "tagNumber": 5
-            },
-            "reason": {
-              "title": "Reason",
-              "type": "string",
-              "description": "Reason for the change.",
-              "meta:xdmType": "string",
-              "meta:xdmField": "xdm:reason",
-              "tagNumber": 6
-            },
-            "urgency": {
-              "title": "Urgency",
-              "type": "number",
-              "description": "Urgency for this change.",
-              "meta:xdmType": "number",
-              "meta:xdmField": "xdm:urgency",
-              "tagNumber": 7
-            },
-            "priority": {
-              "title": "Priority",
-              "type": "integer",
-              "description": "Priority for this change.",
-              "meta:xdmType": "int",
-              "meta:xdmField": "xdm:priority",
-              "tagNumber": 8
-            },
-            "relativeScore": {
-              "title": "Relative Score",
-              "type": "integer",
-              "description": "Relative score.",
-              "meta:xdmType": "int",
-              "meta:xdmField": "xdm:relativeScore",
-              "tagNumber": 9
-            },
-            "relativeUrgency": {
-              "title": "Relative Urgency",
-              "type": "integer",
-              "description": "Relative Urgency for this change.",
-              "meta:xdmType": "int",
-              "meta:xdmField": "xdm:relativeUrgency",
-              "tagNumber": 10
-            }
-          },
-          "meta:xdmField": "xdm:changeScore",
-          "tagNumber": 1
-        },
-        "campaignProgression": {
-          "title": "Campaign Progression",
-          "type": "object",
-          "meta:xdmType": "object",
-          "properties": {
-            "campaignID": {
-              "title": "Campaign ID",
-              "type": "string",
-              "description": "Unique identifier for campaign.",
-              "meta:xdmType": "string",
-              "meta:xdmField": "xdm:campaignID",
-              "tagNumber": 1
-            },
-            "newStatusID": {
-              "title": "New Status ID",
-              "type": "string",
-              "description": "Unique identifier for new status.",
-              "meta:xdmType": "string",
-              "meta:xdmField": "xdm:newStatusID",
-              "tagNumber": 2
-            },
-            "newStatusName": {
-              "title": "New Status Name",
-              "type": "string",
-              "description": "Friendly name for new status.",
-              "meta:xdmType": "string",
-              "meta:xdmField": "xdm:newStatusName",
-              "tagNumber": 3
-            },
-            "oldStatusID": {
-              "title": "Old Status ID",
-              "type": "string",
-              "description": "Unique identifier for old status.",
-              "meta:xdmType": "string",
-              "meta:xdmField": "xdm:oldStatusID",
-              "tagNumber": 4
-            },
-            "oldStatusName": {
-              "title": "Old Status Name",
-              "type": "string",
-              "description": "Friendly name for old status.",
-              "meta:xdmType": "string",
-              "meta:xdmField": "xdm:oldStatusName",
-              "tagNumber": 5
-            },
-            "reason": {
-              "title": "Reason",
-              "type": "string",
-              "description": "Reason for status change.",
-              "meta:xdmType": "string",
-              "meta:xdmField": "xdm:reason",
-              "tagNumber": 6
-            },
-            "isAcquiredBy": {
-              "title": "Is Acquired By",
-              "type": "boolean",
-              "description": "Change acquired by user.",
-              "meta:xdmType": "boolean",
-              "meta:xdmField": "xdm:isAcquiredBy",
-              "tagNumber": 7
-            },
-            "isSuccessful": {
-              "title": "Is Successful",
-              "type": "boolean",
-              "description": "Is the change successful or failed in process.",
-              "meta:xdmType": "boolean",
-              "meta:xdmField": "xdm:isSuccessful",
-              "tagNumber": 8
-            }
-          },
-          "meta:xdmField": "xdm:campaignProgression",
-          "tagNumber": 2
-        }
-      },
-      "meta:xdmField": "xdm:leadOperation",
-      "tagNumber": 14
-    },
     "search": {
       "title": "Search",
       "type": "object",
@@ -929,21 +920,21 @@
         }
       },
       "meta:xdmField": "xdm:search",
-      "tagNumber": 15
+      "tagNumber": 14
     },
     "advertising": {
       "title": "Advertising",
       "$ref": "../datatypes/marketing/advertising.schema.json",
       "description": "Information related to advertising activity in ExperienceEvents.",
       "meta:xdmField": "xdm:advertising",
-      "tagNumber": 16
+      "tagNumber": 15
     },
     "application": {
       "title": "Application",
       "$ref": "../datatypes/application.schema.json",
       "description": "This mixin is used to capture application information related to an ExperienceEvent, including the name of the application, app version, installs, launches, crashes, and closures. It could be either the application targeted by the event like the send of a push notification or the application originating the event such as a click, or a login.",
       "meta:xdmField": "xdm:application",
-      "tagNumber": 17
+      "tagNumber": 16
     },
     "personalFinances": {
       "type": "object",
@@ -1251,14 +1242,14 @@
         }
       },
       "meta:xdmField": "xdm:personalFinances",
-      "tagNumber": 18
+      "tagNumber": 17
     },
     "channel": {
       "title": "Experience channel",
       "description": "Experience channel related to the ExperienceEvent.",
       "$ref": "../datatypes/channels/channel.schema.json",
       "meta:xdmField": "xdm:channel",
-      "tagNumber": 19
+      "tagNumber": 18
     },
     "productListItems": {
       "title": "Product list items",
@@ -1270,35 +1261,35 @@
         "tagNumber": 1
       },
       "meta:xdmField": "xdm:productListItems",
-      "tagNumber": 20
+      "tagNumber": 19
     },
     "commerce": {
       "title": "Commerce",
       "$ref": "../datatypes/marketing/commerce.schema.json",
       "description": "Commerce specific data related to this event.",
       "meta:xdmField": "xdm:commerce",
-      "tagNumber": 21
+      "tagNumber": 20
     },
     "placeContext": {
       "title": "Place context",
       "$ref": "../datatypes/placecontext.schema.json",
       "description": "The transient circumstances related to the observation. Examples include locale specific information such as weather, local time, traffic, day of the week, workday vs. holiday, and working hours.",
       "meta:xdmField": "xdm:placeContext",
-      "tagNumber": 22
+      "tagNumber": 21
     },
     "marketing": {
       "title": "Marketing",
       "$ref": "../datatypes/marketing/marketing.schema.json",
       "description": "The information related to marketing activities that are active with the touchpoint.",
       "meta:xdmField": "xdm:marketing",
-      "tagNumber": 23
+      "tagNumber": 22
     },
     "media": {
       "title": "Media",
       "$ref": "../datatypes/media/media.schema.json",
       "description": "Media activity information related to the experience event.",
       "meta:xdmField": "xdm:media",
-      "tagNumber": 24
+      "tagNumber": 23
     },
     "segmentMemberships": {
       "title": "Segment Memberships",
@@ -1311,7 +1302,7 @@
         "tagNumber": 1
       },
       "meta:xdmField": "xdm:segmentMemberships",
-      "tagNumber": 25
+      "tagNumber": 24
     },
     "segmentMembership": {
       "title": "Segment Membership Map",
@@ -1328,14 +1319,14 @@
         "tagNumber": 1
       },
       "meta:xdmField": "xdm:segmentMembership",
-      "tagNumber": 26
+      "tagNumber": 25
     },
     "dataSource": {
       "title": "Data source",
       "$ref": "../datatypes/data/datasource.schema.json",
       "description": "Globally unique identification of a data source.",
       "meta:xdmField": "xdm:dataSource",
-      "tagNumber": 27
+      "tagNumber": 26
     },
     "receivedTimestamp": {
       "title": "Received time stamp",
@@ -1344,7 +1335,7 @@
       "description": "The time at which this interaction was received by a server.",
       "meta:xdmType": "date-time",
       "meta:xdmField": "xdm:receivedTimestamp",
-      "tagNumber": 28
+      "tagNumber": 27
     },
     "fileTransfer": {
       "type": "object",
@@ -1366,14 +1357,14 @@
         }
       },
       "meta:xdmField": "xdm:fileTransfer",
-      "tagNumber": 29
+      "tagNumber": 28
     },
     "implementationDetails": {
       "title": "Implementation details",
       "$ref": "../datatypes/industry-verticals/implementationdetails.schema.json",
       "description": "The details of the software used to collect the ExperienceEvent.",
       "meta:xdmField": "xdm:implementationDetails",
-      "tagNumber": 30
+      "tagNumber": 29
     },
     "siteKnowledge": {
       "type": "object",
@@ -1419,7 +1410,7 @@
         }
       },
       "meta:xdmField": "xdm:siteKnowledge",
-      "tagNumber": 31
+      "tagNumber": 30
     },
     "marketing ": {
       "type": "object",
@@ -1510,7 +1501,7 @@
         }
       },
       "meta:xdmField": "xdm:marketing ",
-      "tagNumber": 32
+      "tagNumber": 31
     },
     "userAccount": {
       "type": "object",
@@ -1750,7 +1741,7 @@
         }
       },
       "meta:xdmField": "xdm:userAccount",
-      "tagNumber": 33
+      "tagNumber": 32
     },
     "consentStrings": {
       "title": "Identity level consent information",
@@ -1761,7 +1752,7 @@
         "tagNumber": 1
       },
       "meta:xdmField": "xdm:consentStrings",
-      "tagNumber": 34
+      "tagNumber": 33
     },
     "profileStitch": {
       "title": "Profile stitch",
@@ -1773,7 +1764,7 @@
         "tagNumber": 1
       },
       "meta:xdmField": "xdm:profileStitch",
-      "tagNumber": 35
+      "tagNumber": 34
     },
     "pushNotificationTracking": {
       "title": "push notification tracking details",
@@ -1825,7 +1816,7 @@
         }
       },
       "meta:xdmField": "xdm:pushNotificationTracking",
-      "tagNumber": 36
+      "tagNumber": 35
     },
     "quoteRequestSteps": {
       "type": "object",
@@ -1877,7 +1868,7 @@
         }
       },
       "meta:xdmField": "xdm:quoteRequestSteps",
-      "tagNumber": 37
+      "tagNumber": 36
     },
     "servicePaymentDetails": {
       "type": "object",
@@ -1892,7 +1883,7 @@
         }
       },
       "meta:xdmField": "xdm:service-payment-details",
-      "tagNumber": 38
+      "tagNumber": 37
     },
     "supportRequest": {
       "type": "object",
@@ -1907,7 +1898,7 @@
         }
       },
       "meta:xdmField": "xdm:supportRequest",
-      "tagNumber": 39
+      "tagNumber": 38
     },
     "surveyResponse": {
       "type": "object",
@@ -1956,7 +1947,7 @@
         }
       },
       "meta:xdmField": "xdm:surveyResponse",
-      "tagNumber": 40
+      "tagNumber": 39
     },
     "alerts": {
       "type": "object",
@@ -1999,7 +1990,7 @@
         }
       },
       "meta:xdmField": "xdm:alerts",
-      "tagNumber": 41
+      "tagNumber": 40
     },
     "disputes": {
       "type": "object",
@@ -2079,7 +2070,7 @@
         }
       },
       "meta:xdmField": "xdm:disputes",
-      "tagNumber": 42
+      "tagNumber": 41
     },
     "customerFeedback": {
       "type": "object",
@@ -2181,7 +2172,7 @@
         }
       },
       "meta:xdmField": "xdm:customerFeedback",
-      "tagNumber": 43
+      "tagNumber": 42
     }
   },
   "meta:xdmId": "https://ns.adobe.com/xdm/context/experienceevent-generated",

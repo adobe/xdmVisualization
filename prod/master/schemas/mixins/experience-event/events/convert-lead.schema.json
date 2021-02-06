@@ -9,7 +9,7 @@
   "meta:status": "experimental",
   "meta:xdmType": "object",
   "properties": {
-    "leadOpearation": {
+    "leadOperation": {
       "title": "Lead Operation",
       "type": "object",
       "meta:xdmType": "object",
@@ -48,7 +48,7 @@
           "tagNumber": 1
         }
       },
-      "meta:xdmField": "xdm:leadOpearation",
+      "meta:xdmField": "xdm:leadOperation",
       "tagNumber": 1
     }
   },
