@@ -3,17 +3,13 @@
 ### Standard XDM Schemas
 [uberschemas.product-generated](http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html)<br/>
 [uberschemas.opportunity-contact-role-generated](http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.opportunity-contact-role-generated.html)<br/>
-[uberschemas.opportunity-person-generated](http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.opportunity-person-generated.html)<br/>
 [uberschemas.campaign-generated](http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.campaign-generated.html)<br/>
 [uberschemas.opportunity-generated](http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.opportunity-generated.html)<br/>
 [uberschemas.profile-generated](http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.profile-generated.html)<br/>
-[uberschemas.marketing-list-generated](http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.marketing-list-generated.html)<br/>
 [uberschemas.segmentdefinition-generated](http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.segmentdefinition-generated.html)<br/>
 [uberschemas.graphs-generated](http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.graphs-generated.html)<br/>
 [uberschemas.experienceevent-generated](http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.experienceevent-generated.html)<br/>
 [uberschemas.account-generated](http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.account-generated.html)<br/>
-[uberschemas.marketing-list-member-generated](http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.marketing-list-member-generated.html)<br/>
-[uberschemas.account-person-generated](http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.account-person-generated.html)<br/>
 [uberschemas.campaign-member-generated](http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.campaign-member-generated.html)<br/>
 ### Standard Core Components
 #### behaviors
@@ -166,8 +162,6 @@
 [datatypes.media.media-timed-audio](http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.media.media-timed-audio.html)<br/>
 #### mixins
 [mixins.opportunity.opportunity-details](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.opportunity.opportunity-details.html)<br/>
-[mixins.opportunity.opportunity-person-components](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.opportunity.opportunity-person-components.html)<br/>
-[mixins.opportunity.opportunity-components](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.opportunity.opportunity-components.html)<br/>
 [mixins.segment-definition.segmentdefinition-expression](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.segment-definition.segmentdefinition-expression.html)<br/>
 [mixins.shared.external-source-system-audit-details](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.shared.external-source-system-audit-details.html)<br/>
 [mixins.shared.identitymap](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.shared.identitymap.html)<br/>
@@ -177,8 +171,6 @@
 [mixins.product.product-identifiers](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.product.product-identifiers.html)<br/>
 [mixins.product.product-catalog-category](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.product.product-catalog-category.html)<br/>
 [mixins.product.product-measurement](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.product.product-measurement.html)<br/>
-[mixins.marketing-list.marketing-list-member-components](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.marketing-list.marketing-list-member-components.html)<br/>
-[mixins.marketing-list.marketing-list-components](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.marketing-list.marketing-list-components.html)<br/>
 [mixins.profile.b2b-person-components](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.b2b-person-components.html)<br/>
 [mixins.profile.profile-person-details-v2](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-person-details-v2.html)<br/>
 [mixins.profile.profile-segmentation](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-segmentation.html)<br/>
@@ -268,17 +260,13 @@
 [mixins.experience-event.industry-verticals.experienceevent-balance-transfers](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.industry-verticals.experienceevent-balance-transfers.html)<br/>
 [mixins.experience-event.experienceevent-referral-steps](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.experienceevent-referral-steps.html)<br/>
 [mixins.opportunity-contact-role.opportunity-contact-role-details](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.opportunity-contact-role.opportunity-contact-role-details.html)<br/>
-[mixins.campaign.campaign-components](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.campaign.campaign-components.html)<br/>
 [mixins.campaign.campaign-details](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.campaign.campaign-details.html)<br/>
-[mixins.campaign-member.campaign-member-components](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.campaign-member.campaign-member-components.html)<br/>
 [mixins.campaign-member.campaign-member-details](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.campaign-member.campaign-member-details.html)<br/>
 [mixins.graphs.graph](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.graphs.graph.html)<br/>
 [mixins.graphs.graph-edge](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.graphs.graph-edge.html)<br/>
 [mixins.graphs.graph-node](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.graphs.graph-node.html)<br/>
-[mixins.account.account-person-components](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.account.account-person-components.html)<br/>
 [mixins.account.account-details](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.account.account-details.html)<br/>
 [mixins.account.related-accounts](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.account.related-accounts.html)<br/>
-[mixins.account.account-components](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.account.account-components.html)<br/>
 [mixins.deprecated.deprecated-profile-consent](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.deprecated.deprecated-profile-consent.html)<br/>
 [mixins.deprecated.profile-identities-deprecated](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.deprecated.profile-identities-deprecated.html)<br/>
 [mixins.deprecated.experienceevent-enduserids-deprecated](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.deprecated.experienceevent-enduserids-deprecated.html)<br/>

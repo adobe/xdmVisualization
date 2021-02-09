@@ -6,7 +6,7 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "description": "This Data Type is used to capture B2B/CRM Source identifiers.",
-  "meta:status": "experimental",
+  "meta:status": "deprecated",
   "meta:xdmType": "object",
   "properties": {
     "systemID": {

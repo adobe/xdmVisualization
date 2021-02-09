@@ -5,17 +5,13 @@
 <ul>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">uberschemas.product-generated</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.opportunity-contact-role-generated.html">uberschemas.opportunity-contact-role-generated</a></li>
-<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.opportunity-person-generated.html">uberschemas.opportunity-person-generated</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.campaign-generated.html">uberschemas.campaign-generated</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.opportunity-generated.html">uberschemas.opportunity-generated</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.profile-generated.html">uberschemas.profile-generated</a></li>
-<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.marketing-list-generated.html">uberschemas.marketing-list-generated</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.segmentdefinition-generated.html">uberschemas.segmentdefinition-generated</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.graphs-generated.html">uberschemas.graphs-generated</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.experienceevent-generated.html">uberschemas.experienceevent-generated</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.account-generated.html">uberschemas.account-generated</a></li>
-<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.marketing-list-member-generated.html">uberschemas.marketing-list-member-generated</a></li>
-<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.account-person-generated.html">uberschemas.account-person-generated</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.campaign-member-generated.html">uberschemas.campaign-member-generated</a></li>
 </ul>
 </details>
@@ -167,8 +163,6 @@
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.media.media-timed-asset-reference.html">datatypes.media.media-timed-asset-reference</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.media.media-timed-audio.html">datatypes.media.media-timed-audio</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.opportunity.opportunity-details.html">mixins.opportunity.opportunity-details</a></li>
-<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.opportunity.opportunity-person-components.html">mixins.opportunity.opportunity-person-components</a></li>
-<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.opportunity.opportunity-components.html">mixins.opportunity.opportunity-components</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.segment-definition.segmentdefinition-expression.html">mixins.segment-definition.segmentdefinition-expression</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.shared.external-source-system-audit-details.html">mixins.shared.external-source-system-audit-details</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.shared.identitymap.html">mixins.shared.identitymap</a></li>
@@ -178,8 +172,6 @@
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.product.product-identifiers.html">mixins.product.product-identifiers</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.product.product-catalog-category.html">mixins.product.product-catalog-category</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.product.product-measurement.html">mixins.product.product-measurement</a></li>
-<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.marketing-list.marketing-list-member-components.html">mixins.marketing-list.marketing-list-member-components</a></li>
-<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.marketing-list.marketing-list-components.html">mixins.marketing-list.marketing-list-components</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.b2b-person-components.html">mixins.profile.b2b-person-components</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-person-details-v2.html">mixins.profile.profile-person-details-v2</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-segmentation.html">mixins.profile.profile-segmentation</a></li>
@@ -269,17 +261,13 @@
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.industry-verticals.experienceevent-balance-transfers.html">mixins.experience-event.industry-verticals.experienceevent-balance-transfers</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.experienceevent-referral-steps.html">mixins.experience-event.experienceevent-referral-steps</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.opportunity-contact-role.opportunity-contact-role-details.html">mixins.opportunity-contact-role.opportunity-contact-role-details</a></li>
-<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.campaign.campaign-components.html">mixins.campaign.campaign-components</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.campaign.campaign-details.html">mixins.campaign.campaign-details</a></li>
-<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.campaign-member.campaign-member-components.html">mixins.campaign-member.campaign-member-components</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.campaign-member.campaign-member-details.html">mixins.campaign-member.campaign-member-details</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.graphs.graph.html">mixins.graphs.graph</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.graphs.graph-edge.html">mixins.graphs.graph-edge</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.graphs.graph-node.html">mixins.graphs.graph-node</a></li>
-<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.account.account-person-components.html">mixins.account.account-person-components</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.account.account-details.html">mixins.account.account-details</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.account.related-accounts.html">mixins.account.related-accounts</a></li>
-<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.account.account-components.html">mixins.account.account-components</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.deprecated.deprecated-profile-consent.html">mixins.deprecated.deprecated-profile-consent</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.deprecated.profile-identities-deprecated.html">mixins.deprecated.profile-identities-deprecated</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.deprecated.experienceevent-enduserids-deprecated.html">mixins.deprecated.experienceevent-enduserids-deprecated</a></li>

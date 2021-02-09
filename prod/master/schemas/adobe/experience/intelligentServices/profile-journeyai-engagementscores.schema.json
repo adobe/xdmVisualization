@@ -6,7 +6,7 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "description": "This mixin contains JourneyAI Engagement Scores, which provides individual customer's propensities to engage with a message.",
-  "meta:status": "experimental",
+  "meta:status": "stable",
   "meta:xdmType": "object",
   "properties": {
     "_experience": {
