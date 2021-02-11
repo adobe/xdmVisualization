@@ -1,0 +1,94 @@
+{
+  "id": "_xdm.common.descriptors.relationshiponetomany",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "One to Many Bi-Directional Relationship Descriptor",
+  "meta:extensible": false,
+  "meta:abstract": false,
+  "type": "object",
+  "description": "Describes a bi-directional one to many relationship",
+  "properties": {
+    "_type": {
+      "type": "string",
+      "const": "xdm:relationshipOneToMany",
+      "meta:xdmType": "string",
+      "meta:xdmField": "@type",
+      "tagNumber": 1
+    },
+    "oneSideSchema": {
+      "type": "string",
+      "title": "One Side Schema ID",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:oneSideSchema",
+      "tagNumber": 2
+    },
+    "oneSideVersion": {
+      "type": "number",
+      "title": "One Side Schema Major Version",
+      "meta:xdmType": "number",
+      "meta:xdmField": "xdm:oneSideVersion",
+      "tagNumber": 3
+    },
+    "oneSideProperty": {
+      "type": "string",
+      "title": "One Side Field Path",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:oneSideProperty",
+      "tagNumber": 4
+    },
+    "manySideSchema": {
+      "type": "string",
+      "title": "Many Side Schema ID",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:manySideSchema",
+      "tagNumber": 5
+    },
+    "manySideVersion": {
+      "type": "number",
+      "title": "Many Side Schema Major Version",
+      "meta:xdmType": "number",
+      "meta:xdmField": "xdm:manySideVersion",
+      "tagNumber": 6
+    },
+    "manySideProperty": {
+      "type": "string",
+      "title": "Many Side Field Path",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:manySideProperty",
+      "tagNumber": 7
+    },
+    "manySideNamespace": {
+      "type": "string",
+      "title": "Identity Namespace Code",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:manySideNamespace",
+      "tagNumber": 8
+    },
+    "oneToManyDisplayName": {
+      "type": "string",
+      "title": "One To Many Edge Name",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:oneToManyDisplayName",
+      "tagNumber": 9
+    },
+    "manyToOneDisplayName": {
+      "type": "string",
+      "title": "Many To One Edge Name",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:manyToOneDisplayName",
+      "tagNumber": 10
+    }
+  },
+  "meta:status": "experimental",
+  "meta:xdmType": "object",
+  "meta:xdmId": "https://ns.adobe.com/xdm/common/descriptors/relationshipOneToMany",
+  "meta:altId": "_xdm.common.descriptors.relationshiponetomany",
+  "required": [
+    "_type",
+    "oneSideSchema",
+    "oneSideVersion",
+    "manySideSchema",
+    "manySideVersion",
+    "manySideProperty"
+  ],
+  "id": "_xdm.common.descriptors.relationshiponetomany"
+}

@@ -2,10 +2,15 @@ name: xdm-visualization
 on:
   workflow_dispatch:
     inputs:
-      name:
+      repoBranch:
         description: 'XDM Public Repo Branch name'
         required: true
         default: 'master'
+      repoHttpsUrl:
+        description: 'XDM Public Repo Branch name'
+        required: true
+        default: 'https://github.com/adobe/xdm.git'
+
 jobs:
   xdm-visualization:
     runs-on: macos-latest
@@ -20,5 +25,5 @@ jobs:
       - run: bundle install
       - run: npm install -g grunt-cli
       - run: npm install
-      - run: ./scripts/xdmVisual4Git.sh ${{ github.event.inputs.name }}
+      - run: ./scripts/xdmVisual4Git.sh ${{ github.event.inputs.repoBranch }} ${{ github.event.inputs.repoHttpsUrl }}
 

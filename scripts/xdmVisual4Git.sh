@@ -3,7 +3,7 @@
 
 if [ "$#" -ne 2 ]; then
   echo "Wrong number of argument!"
-  echo "Usage: ./scripts/xdmVisual4Git.sh repoBranchName repoURL"
+  echo "Usage: ./scripts/xdmVisual4Git.sh repoBranchName repoHttpsURL"
   exit 1
 fi
 

@@ -1,0 +1,182 @@
+{
+  "id": "_xdm.common.emailinteraction",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Email Interaction",
+  "type": "object",
+  "meta:extensible": true,
+  "description": "Captures information in the context of an email correspondence between persons",
+  "meta:status": "experimental",
+  "meta:xdmType": "object",
+  "properties": {
+    "priority": {
+      "title": "Email's priority",
+      "type": "string",
+      "description": "Captures the priority set by the person who sent the email",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:priority",
+      "tagNumber": 1
+    },
+    "sentDateTime": {
+      "title": "Date and time the email was sent",
+      "type": "string",
+      "format": "date-time",
+      "description": "Captures the date and time the email correspondence was sent to an individual or a group of people",
+      "meta:xdmType": "date-time",
+      "meta:xdmField": "xdm:sentDateTime",
+      "tagNumber": 2
+    },
+    "receivedDateTime": {
+      "title": "Date and time the email was received",
+      "type": "string",
+      "format": "date-time",
+      "description": "Captures the date and time when the email was received",
+      "meta:xdmType": "date-time",
+      "meta:xdmField": "xdm:receivedDateTime",
+      "tagNumber": 3
+    },
+    "body": {
+      "title": "Body of the mail",
+      "type": "string",
+      "description": "The contents of the email after substitution of the placeholders in the template",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:body",
+      "tagNumber": 4
+    },
+    "hasAttachments": {
+      "title": "Email has attachments",
+      "type": "boolean",
+      "description": "A flag represent whether any attachment is part of the email message",
+      "meta:xdmType": "boolean",
+      "meta:xdmField": "xdm:hasAttachments",
+      "tagNumber": 5
+    },
+    "isQuarantined": {
+      "title": "quarantine message",
+      "type": "boolean",
+      "description": "A flag to represent whether the email message is a spam",
+      "meta:xdmType": "boolean",
+      "meta:xdmField": "xdm:isQuarantined",
+      "tagNumber": 6
+    },
+    "sizeInBytes": {
+      "title": "Email message size",
+      "type": "number",
+      "description": "Record the size of the email message in bytes",
+      "meta:xdmType": "number",
+      "meta:xdmField": "xdm:sizeInBytes",
+      "tagNumber": 7
+    },
+    "failureReasonCode": {
+      "title": "Reason code for failure",
+      "type": "string",
+      "description": "Indicates the error code for not able to deliver the email message",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:failureReasonCode",
+      "tagNumber": 8
+    },
+    "failureReasonMessage": {
+      "title": "Reason Message for failure",
+      "type": "string",
+      "description": "Indicates the full message for the error code, for not able to deliver the message",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:failureReasonMessage",
+      "tagNumber": 9
+    },
+    "fromAddress": {
+      "title": "Person sending the email communication",
+      "type": "string",
+      "format": "email",
+      "description": "Person who is sender of the email message",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:fromAddress",
+      "tagNumber": 10
+    },
+    "toAddress": {
+      "type": "array",
+      "title": "An array of email addresses for the To list",
+      "description": "Person or list of people who are in the To list of the email message",
+      "meta:xdmType": "array",
+      "items": {
+        "type": "string",
+        "format": "email",
+        "meta:xdmType": "string",
+        "tagNumber": 1
+      },
+      "meta:xdmField": "xdm:toAddress",
+      "tagNumber": 11
+    },
+    "ccAddress": {
+      "type": "array",
+      "title": "An array of email addresses for the cc list",
+      "description": "Person or list of people who are in the cc list of the email message",
+      "meta:xdmType": "array",
+      "items": {
+        "type": "string",
+        "format": "email",
+        "meta:xdmType": "string",
+        "tagNumber": 1
+      },
+      "meta:xdmField": "xdm:ccAddress",
+      "tagNumber": 12
+    },
+    "bccAddress": {
+      "type": "array",
+      "title": "An array of email addresses for the bcc list",
+      "description": "Person or list of people who are in the bcc list of the email message",
+      "meta:xdmType": "array",
+      "items": {
+        "type": "string",
+        "format": "email",
+        "meta:xdmType": "string",
+        "tagNumber": 1
+      },
+      "meta:xdmField": "xdm:bccAddress",
+      "tagNumber": 13
+    },
+    "headers": {
+      "title": "Email headers",
+      "type": "string",
+      "description": "Captures the headers of the email for diagnosis",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:headers",
+      "tagNumber": 14
+    },
+    "incomingMessage": {
+      "title": "Inbound or Outbound Message ",
+      "type": "boolean",
+      "description": "A flag to represent whether a message was sent or recieved",
+      "meta:xdmType": "boolean",
+      "meta:xdmField": "xdm:incomingMessage",
+      "tagNumber": 15
+    },
+    "firstOpenDate": {
+      "title": "First time the email was opened by the receiver",
+      "type": "string",
+      "format": "date-time",
+      "description": "First date and time when the receiver took the action to open the email",
+      "meta:xdmType": "date-time",
+      "meta:xdmField": "xdm:firstOpenDate",
+      "tagNumber": 16
+    },
+    "lastOpenDate": {
+      "title": "Last time when the email was opened by the receiver",
+      "type": "string",
+      "format": "date-time",
+      "description": "Last time the email was opened, by any receiver",
+      "meta:xdmType": "date-time",
+      "meta:xdmField": "xdm:lastOpenDate",
+      "tagNumber": 17
+    },
+    "isTracked": {
+      "title": "Email Tracking flag",
+      "type": "boolean",
+      "description": "A flag to capture whether the email was tracked by the sender",
+      "meta:xdmType": "boolean",
+      "meta:xdmField": "xdm:isTracked",
+      "tagNumber": 18
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/common/emailinteraction",
+  "meta:altId": "_xdm.common.emailinteraction",
+  "id": "_xdm.common.emailinteraction"
+}

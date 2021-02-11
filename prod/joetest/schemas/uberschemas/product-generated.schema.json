@@ -1,0 +1,212 @@
+{
+  "id": "_xdm.classes.product-generated",
+  "title": "Uber schema for https://ns.adobe.com/xdm/classes/product",
+  "description": "Uber schema for https://ns.adobe.com/xdm/classes/product",
+  "type": "object",
+  "meta:xdmType": "object",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "auditable": true,
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:status": [
+    "experimental",
+    "stable"
+  ],
+  "properties": {
+    "_id": {
+      "title": "Identifier",
+      "type": "string",
+      "format": "uri-reference",
+      "description": "A unique identifier for the record.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "@id",
+      "tagNumber": 1
+    },
+    "productID": {
+      "title": "Product ID",
+      "type": "string",
+      "description": "Product unique identifer.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:productID",
+      "tagNumber": 2
+    },
+    "productName": {
+      "title": "Product Name",
+      "type": "string",
+      "description": "Name of the product.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:productName",
+      "tagNumber": 3
+    },
+    "productDescription": {
+      "title": "Product Description",
+      "type": "string",
+      "description": "Description of the product.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:productDescription",
+      "tagNumber": 4
+    },
+    "productRating": {
+      "title": "Product Rating",
+      "type": "number",
+      "description": "Customer review rating of the product.",
+      "meta:xdmType": "number",
+      "meta:xdmField": "xdm:productRating",
+      "tagNumber": 5
+    },
+    "productListPrice": {
+      "title": "Product List price",
+      "$ref": "../datatypes/currency.schema.json",
+      "description": "Default price of the product before sales and discounting.",
+      "meta:xdmField": "xdm:productListPrice",
+      "tagNumber": 6
+    },
+    "productManufacturedDate": {
+      "title": "Product Manufactured date",
+      "type": "string",
+      "format": "date-time",
+      "description": "The date when this product was created. The time using RFC3339 with a stated time zone offset such as \"2001-07-04T12:08:56-07:00\". An example formatting pattern is \"yyyy-MM-dd'T'HH:mm:ssXXX\".",
+      "meta:xdmType": "date-time",
+      "meta:xdmField": "xdm:productManufacturedDate",
+      "tagNumber": 7
+    },
+    "productLastModifiedDate": {
+      "title": "Product last modified Date",
+      "type": "string",
+      "format": "date-time",
+      "description": "The date when this product was last modified for any updates. The time using RFC3339 with a stated time zone offset such as \"2001-07-04T12:08:56-07:00\". An example formatting pattern is \"yyyy-MM-dd'T'HH:mm:ssXXX\".",
+      "meta:xdmType": "date-time",
+      "meta:xdmField": "xdm:productLastModifiedDate",
+      "tagNumber": 8
+    },
+    "productCatalogCategoryName": {
+      "title": "Product Category Name",
+      "type": "string",
+      "description": "friendly name of the product category.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:productCatalogCategoryName",
+      "tagNumber": 9
+    },
+    "parentProductCatalogCategoryName": {
+      "title": "Parent Product Catalog Category Name",
+      "type": "string",
+      "description": "Parent product category name used to build hierarchy.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:parentProductCatalogCategoryName",
+      "tagNumber": 10
+    },
+    "productCatalogName": {
+      "title": "Product Catalog Name",
+      "type": "string",
+      "description": "friendly name of the product catalog.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:productCatalogName",
+      "tagNumber": 11
+    },
+    "productCatalogDescription": {
+      "title": "Product Catalog Description",
+      "type": "string",
+      "description": "Catalog description of the product.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:productCatalogDescription",
+      "tagNumber": 12
+    },
+    "productCategoryName": {
+      "title": "Product Category Name",
+      "type": "string",
+      "description": "friendly name of the product category.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:productCategoryName",
+      "tagNumber": 13
+    },
+    "productCategoryDescription": {
+      "title": "Product Category Description",
+      "type": "string",
+      "description": "Friendly description of product category.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:productCategoryDescription",
+      "tagNumber": 14
+    },
+    "productSubcategoryName": {
+      "title": "Product Subcategory Name",
+      "type": "string",
+      "description": "friendly name of the product subcategory.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:productSubcategoryName",
+      "tagNumber": 15
+    },
+    "productSubcategoryDescription": {
+      "title": "Product Sub category Description",
+      "type": "string",
+      "description": "Friendly description of product subcategory.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:productSubcategoryDescription",
+      "tagNumber": 16
+    },
+    "productSKU": {
+      "title": "Product SKU",
+      "type": "string",
+      "description": "The unique SKU (stock keeping unit) of the product assigned by the vendor.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:productSKU",
+      "tagNumber": 17
+    },
+    "productGTIN": {
+      "title": "Product GTIN",
+      "type": "string",
+      "description": "Global Trade Item Number of the product.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:productGTIN",
+      "tagNumber": 18
+    },
+    "productImageURL": {
+      "title": "Product Image URL",
+      "type": "string",
+      "format": "uri",
+      "description": "The URL for the primary product image of the product.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:productImageURL",
+      "tagNumber": 19
+    },
+    "productSearchKeywords": {
+      "title": "Product Search Keywords",
+      "type": "array",
+      "description": "The search keywords associated with the product.",
+      "meta:xdmType": "array",
+      "items": {
+        "type": "string",
+        "meta:xdmType": "string",
+        "tagNumber": 1
+      },
+      "meta:xdmField": "xdm:productSearchKeywords",
+      "tagNumber": 20
+    },
+    "productSize": {
+      "title": "Product Size",
+      "type": "string",
+      "description": "Standard product size for the product.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:productSize",
+      "tagNumber": 21
+    },
+    "unitOfMeasureCode": {
+      "title": "Product Unit Of Measure Code",
+      "type": "string",
+      "description": "Standard unit of measure of the product and or variation and relates the units for the size measurement.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:unitOfMeasureCode",
+      "tagNumber": 22
+    },
+    "unitOfMeasureName": {
+      "title": "Product Unit Of Measure Name",
+      "type": "string",
+      "description": "Friendly name for product unit of measure.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:unitOfMeasureName",
+      "tagNumber": 23
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/classes/product-generated",
+  "meta:altId": "_xdm.classes.product-generated",
+  "id": "_xdm.classes.product-generated"
+}

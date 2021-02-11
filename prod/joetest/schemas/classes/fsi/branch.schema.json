@@ -1,0 +1,77 @@
+{
+  "id": "_xdm.classes.fsi.branch",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Branch",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "description": "For branch information such as ID, name, and open and close times.",
+  "meta:status": [
+    "experimental",
+    "stable"
+  ],
+  "meta:xdmType": "object",
+  "properties": {
+    "_id": {
+      "title": "Identifier",
+      "type": "string",
+      "format": "uri-reference",
+      "description": "A unique identifier for the record.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "@id",
+      "tagNumber": 1
+    },
+    "isBranchActive": {
+      "title": "Is Branch Active",
+      "type": "boolean",
+      "description": "Yes/no if the branch is currently active.",
+      "meta:xdmType": "boolean",
+      "meta:xdmField": "xdm:isBranchActive",
+      "tagNumber": 2
+    },
+    "branchAddress": {
+      "title": "Branch Address",
+      "$ref": "../../datatypes/demographic/address.schema.json",
+      "description": "Physical address where the branch is located.",
+      "meta:xdmField": "xdm:branchAddress",
+      "tagNumber": 3
+    },
+    "branchID": {
+      "title": "Branch ID",
+      "type": "string",
+      "description": "ID associated with the branch. ",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:branchID",
+      "tagNumber": 4
+    },
+    "branchName": {
+      "title": "Branch Name",
+      "type": "string",
+      "description": "Name of the branch.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:branchName",
+      "tagNumber": 5
+    },
+    "branchCloseTime": {
+      "title": "Branch Close Time",
+      "type": "string",
+      "format": "date-time",
+      "description": "Time of day the branch closes.",
+      "meta:xdmType": "date-time",
+      "meta:xdmField": "xdm:branchCloseTime",
+      "tagNumber": 6
+    },
+    "branchOpenTime": {
+      "title": "Brancn Open Time",
+      "type": "string",
+      "format": "date-time",
+      "description": "Time of day the branch opens.",
+      "meta:xdmType": "date-time",
+      "meta:xdmField": "xdm:branchOpenTime",
+      "tagNumber": 7
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/classes/fsi/branch",
+  "meta:altId": "_xdm.classes.fsi.branch",
+  "id": "_xdm.classes.fsi.branch"
+}

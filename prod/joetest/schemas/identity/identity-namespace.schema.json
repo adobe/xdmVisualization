@@ -1,0 +1,107 @@
+{
+  "id": "_xdm.context.identity-namespace",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Identity Namespace",
+  "type": "object",
+  "meta:extensible": [
+    false,
+    true
+  ],
+  "meta:abstract": [
+    false,
+    true
+  ],
+  "description": "Identity Namespace Schema.",
+  "meta:status": "stable",
+  "meta:xdmType": "object",
+  "properties": {
+    "_id": {
+      "title": "Identifier",
+      "type": "string",
+      "format": "uri-reference",
+      "description": "A unique identifier for the record.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "@id",
+      "tagNumber": 1
+    },
+    "namespaceID": {
+      "title": "Unique Namespace ID",
+      "type": "integer",
+      "description": "Unique Identifier for namespace",
+      "meta:xdmType": "int",
+      "meta:xdmField": "xdm:namespaceID",
+      "tagNumber": 2
+    },
+    "namespaceName": {
+      "title": "Namespace Name",
+      "type": "string",
+      "description": "This is human readable name for the namespace",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:namespaceName",
+      "tagNumber": 3
+    },
+    "namespaceCode": {
+      "title": "Namespace Code",
+      "type": "string",
+      "description": "This code is a human readable identifier for the namespace",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:namespaceCode",
+      "tagNumber": 4
+    },
+    "namespaceDescription": {
+      "title": "Namespace Description",
+      "type": "string",
+      "description": "Description for the namespace",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:namespaceDescription",
+      "tagNumber": 5
+    },
+    "namespaceIdType": {
+      "title": "Namespace Id Type",
+      "type": "string",
+      "description": "Identity identifier type for the namespace",
+      "enum": [
+        "EMAIL",
+        "PHONE_NUMBER",
+        "DEVICE",
+        "COOKIE",
+        "CROSS_DEVICE",
+        "NON_PEOPLE"
+      ],
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:namespaceIdType",
+      "tagNumber": 6
+    },
+    "createDate": {
+      "title": "Create Date Time",
+      "format": "date-time",
+      "type": "string",
+      "examples": [
+        "An example form is \"2004-10-23T12:00:00-06:00\"."
+      ],
+      "description": "The date and time when the namespace was created in ISO 8601 format",
+      "meta:xdmType": "date-time",
+      "meta:xdmField": "xdm:createDate",
+      "tagNumber": 7
+    },
+    "modifyDate": {
+      "title": "Update Date Time",
+      "format": "date-time",
+      "type": "string",
+      "examples": [
+        "An example form is \"2004-10-23T12:00:00-06:00\"."
+      ],
+      "description": "The date and time when the namespace was updated in ISO 8601 format",
+      "meta:xdmType": "date-time",
+      "meta:xdmField": "xdm:modifyDate",
+      "tagNumber": 8
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/context/identity-namespace",
+  "meta:altId": "_xdm.context.identity-namespace",
+  "required": [
+    "namespaceID",
+    "namespaceCode"
+  ],
+  "id": "_xdm.context.identity-namespace"
+}

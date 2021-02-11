@@ -1,0 +1,67 @@
+{
+  "id": "_xdm.mixins.events.interesting-moment",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Interesting Moment",
+  "type": "object",
+  "meta:conditionalField": "xdm:eventType",
+  "meta:conditionalValue": "leadOperation.interestingMoment",
+  "description": "Use for information regarding lead operation interesting moments events.",
+  "meta:status": "experimental",
+  "meta:xdmType": "object",
+  "properties": {
+    "leadOperation": {
+      "title": "lead Operation",
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "interestingMoment": {
+          "title": "Interesting Moment",
+          "type": "object",
+          "meta:xdmType": "object",
+          "properties": {
+            "type": {
+              "title": "Type",
+              "type": "string",
+              "description": "Interesting moment type.",
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:type",
+              "tagNumber": 1
+            },
+            "description": {
+              "title": "Description",
+              "type": "string",
+              "description": "Interesting moment description.",
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:description",
+              "tagNumber": 2
+            },
+            "date": {
+              "title": "Date",
+              "type": "string",
+              "format": "date-time",
+              "description": "Interesting moment date.",
+              "meta:xdmType": "date-time",
+              "meta:xdmField": "xdm:date",
+              "tagNumber": 3
+            },
+            "source": {
+              "title": "Source",
+              "type": "string",
+              "description": "Interesting moment source.",
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:source",
+              "tagNumber": 4
+            }
+          },
+          "meta:xdmField": "xdm:interestingMoment",
+          "tagNumber": 1
+        }
+      },
+      "meta:xdmField": "xdm:leadOperation",
+      "tagNumber": 1
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/mixins/events/interesting-moment",
+  "meta:altId": "_xdm.mixins.events.interesting-moment",
+  "id": "_xdm.mixins.events.interesting-moment"
+}

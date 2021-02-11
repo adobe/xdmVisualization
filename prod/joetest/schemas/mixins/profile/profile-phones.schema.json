@@ -1,0 +1,44 @@
+{
+  "id": "_xdm.context.profile-phones",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Phone Number Details",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "description": "Phone number such as fax, mobile, home, and work.",
+  "meta:status": "experimental",
+  "meta:xdmType": "object",
+  "properties": {
+    "homePhone": {
+      "title": "Home Phone",
+      "$ref": "../../datatypes/demographic/phonenumber.schema.json",
+      "description": "Home phone number.",
+      "meta:xdmField": "xdm:homePhone",
+      "tagNumber": 1
+    },
+    "mobilePhone": {
+      "title": "Mobile Phone",
+      "$ref": "../../datatypes/demographic/phonenumber.schema.json",
+      "description": "Mobile phone number.",
+      "meta:xdmField": "xdm:mobilePhone",
+      "tagNumber": 2
+    },
+    "workPhone": {
+      "title": "Work Phone",
+      "$ref": "../../datatypes/demographic/phonenumber.schema.json",
+      "description": "Work phone number.",
+      "meta:xdmField": "xdm:workPhone",
+      "tagNumber": 3
+    },
+    "faxPhone": {
+      "title": "Fax Phone",
+      "$ref": "../../datatypes/demographic/phonenumber.schema.json",
+      "description": "Fax phone number.",
+      "meta:xdmField": "xdm:faxPhone",
+      "tagNumber": 4
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/context/profile-phones",
+  "meta:altId": "_xdm.context.profile-phones",
+  "id": "_xdm.context.profile-phones"
+}

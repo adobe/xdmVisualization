@@ -1,0 +1,126 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "id": "_experience.intelligentservices.profile-journeyai-engagementscores",
+  "title": "Intelligent Services JourneyAI Engagement Scores",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "description": "This mixin contains JourneyAI Engagement Scores, which provides individual customer's propensities to engage with a message.",
+  "meta:status": "stable",
+  "meta:xdmType": "object",
+  "properties": {
+    "_experience": {
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "intelligentServices": {
+          "type": "object",
+          "meta:xdmType": "object",
+          "properties": {
+            "journeyAI": {
+              "title": "Journey AI",
+              "description": "Journey AI intelligent service provides various insights about message deliveries along customer's journey.",
+              "type": "object",
+              "meta:xdmType": "object",
+              "properties": {
+                "_experience": {
+                  "intelligentServices": {
+                    "engagementScores": {
+                      "title": "Engagement Scores",
+                      "description": "Journey AI engagement scores provide likelihoods of a customer engaging with a newly delivered message.",
+                      "type": "object",
+                      "meta:xdmType": "object",
+                      "properties": {
+                        "_experience": {
+                          "intelligentServices": {
+                            "emailEngagementScores": {
+                              "title": "Email Engagement Scores",
+                              "description": "Engagement scores here are for email channel messages.",
+                              "type": "object",
+                              "meta:xdmType": "object",
+                              "properties": {
+                                "_experience": {
+                                  "intelligentServices": {
+                                    "clickEngagementScore": {
+                                      "title": "Click Engagement Score",
+                                      "description": "This score represents the probability for a customer to click on links in an email.",
+                                      "type": "number",
+                                      "meta:xdmType": "number",
+                                      "meta:xdmField": "https://ns.adobe.com/experience/intelligentServices/clickEngagementScore",
+                                      "tagNumber": 1
+                                    },
+                                    "openEnagementScore": {
+                                      "title": "Open Engagement Score",
+                                      "description": "This score represents the probability of a customer to open an email.",
+                                      "type": "number",
+                                      "meta:xdmType": "number",
+                                      "meta:xdmField": "https://ns.adobe.com/experience/intelligentServices/openEnagementScore",
+                                      "tagNumber": 2
+                                    },
+                                    "retentionLevel": {
+                                      "title": "Retention Level",
+                                      "description": "Retention level is a qualitative categorization of customer's likelihood of staying subscribed to the email list.",
+                                      "type": "string",
+                                      "meta:xdmType": "string",
+                                      "meta:xdmField": "https://ns.adobe.com/experience/intelligentServices/retentionLevel",
+                                      "tagNumber": 3
+                                    },
+                                    "retentionPercentRank": {
+                                      "title": "Retention Percent Rank",
+                                      "description": "Retention percent rank is a percentile rank of the likelihood of staying subscribed to the email list.",
+                                      "type": "number",
+                                      "meta:xdmType": "number",
+                                      "meta:xdmField": "https://ns.adobe.com/experience/intelligentServices/retentionPercentRank",
+                                      "tagNumber": 4
+                                    },
+                                    "unsubscriptionProbability": {
+                                      "title": "Unsubscription Probability",
+                                      "description": "Unsubscription probability is the probability of a recipient to unsubscribe from email channel conditioned on email opened.",
+                                      "type": "number",
+                                      "meta:xdmType": "number",
+                                      "meta:xdmField": "https://ns.adobe.com/experience/intelligentServices/unsubscriptionProbability",
+                                      "tagNumber": 5
+                                    },
+                                    "tagNumber": 1
+                                  },
+                                  "tagNumber": 1
+                                }
+                              },
+                              "meta:xdmField": "https://ns.adobe.com/experience/intelligentServices/emailEngagementScores",
+                              "tagNumber": 1
+                            },
+                            "engagementScoresInfo": {
+                              "title": "Engagement Scores Info",
+                              "description": "This information contains engagement scores model version and scoring date as a concatenated string, e.g. v1.3.0_2020-11-04.",
+                              "type": "string",
+                              "meta:xdmType": "string",
+                              "meta:xdmField": "https://ns.adobe.com/experience/intelligentServices/engagementScoresInfo",
+                              "tagNumber": 2
+                            },
+                            "tagNumber": 1
+                          },
+                          "tagNumber": 1
+                        }
+                      },
+                      "meta:xdmField": "https://ns.adobe.com/experience/intelligentServices/engagementScores",
+                      "tagNumber": 1
+                    },
+                    "tagNumber": 1
+                  },
+                  "tagNumber": 1
+                }
+              },
+              "meta:xdmField": "https://ns.adobe.com/experience/intelligentServices/journeyAI",
+              "tagNumber": 1
+            }
+          },
+          "tagNumber": 1
+        }
+      },
+      "tagNumber": 1
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/experience/intelligentServices/profile-journeyai-engagementscores",
+  "meta:altId": "_experience.intelligentservices.profile-journeyai-engagementscores",
+  "id": "_experience.intelligentservices.profile-journeyai-engagementscores"
+}

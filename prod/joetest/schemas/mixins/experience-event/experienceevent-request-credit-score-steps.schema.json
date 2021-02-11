@@ -1,0 +1,37 @@
+{
+  "id": "_xdm.mixins.experienceevent-request-credit-score-steps",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Request Credit Score Steps",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:tags": {
+    "industry": [
+      "financial_services",
+      "automotive"
+    ]
+  },
+  "description": "",
+  "meta:status": "experimental",
+  "meta:xdmType": "object",
+  "properties": {
+    "personalFinances": {
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "requestCreditScore": {
+          "title": "Request Credit Score",
+          "$ref": "../../datatypes/industry-verticals/tool-usage.schema.json",
+          "description": "Extension of toolUsage data type.",
+          "meta:xdmField": "xdm:requestCreditScore",
+          "tagNumber": 1
+        }
+      },
+      "meta:xdmField": "xdm:personalFinances",
+      "tagNumber": 1
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/mixins/experienceevent-request-credit-score-steps",
+  "meta:altId": "_xdm.mixins.experienceevent-request-credit-score-steps",
+  "id": "_xdm.mixins.experienceevent-request-credit-score-steps"
+}
