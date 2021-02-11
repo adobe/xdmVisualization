@@ -1,14 +1,14 @@
 #!/bin/bash
 #used to generate xdm visualization from a single branch of xdm public repo
 
-if [ "$#" -ne 1 ]; then
+if [ "$#" -ne 2 ]; then
   echo "Wrong number of argument!"
-  echo "Usage: ./scripts/xdmVisual4Git.sh yourXdmGitBranchName"
+  echo "Usage: ./scripts/xdmVisual4Git.sh repoBranchName repoURL"
   exit 1
 fi
 
 #Pre-processing xdm json schemas
-(rm -rf publicXdm; git clone -b $1 https://github.com/adobe/xdm.git publicXdm)
+(rm -rf publicXdm; git clone -b $1 $2 publicXdm)
 (cd publicXdm; npm install; npm run xed-validation)
 (rm -rf bower_components/mdjson-schemas/*; cp -r ./publicXdm/bin/xed-validation/xed/* ./bower_components/mdjson-schemas/; rm -rf publicXdm)
 node ./scripts/convert.js
