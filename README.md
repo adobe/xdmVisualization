@@ -13,7 +13,7 @@ To refresh the xdm visualization manually for a specific git branch, please foll
 
 3\. Select the `Run workflow` drop down on the far right.
 
-4\. Under `XDM Public Repo Branch Name *`, enter the branch to generate the visualization from. Default is "master".
+4\. Under `XDM Repo Branch Name *` and `XDM Repo HTTPS URL *`, enter the branch and repoURL to generate the visualization from. Default is master branch of https://github.com/adobe/xdm.git.
 
 5\. Click the green `Run workflow` button.
 
