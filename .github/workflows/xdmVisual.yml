@@ -3,11 +3,11 @@ on:
   workflow_dispatch:
     inputs:
       repoBranch:
-        description: 'XDM Public Repo Branch name'
+        description: 'XDM Repo Branch name'
         required: true
         default: 'master'
       repoHttpsUrl:
-        description: 'XDM Public Repo Branch name'
+        description: 'XDM Repo HTTPS URL'
         required: true
         default: 'https://github.com/adobe/xdm.git'
 
