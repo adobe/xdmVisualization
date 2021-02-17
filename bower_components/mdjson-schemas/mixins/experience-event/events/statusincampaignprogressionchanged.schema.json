@@ -5,7 +5,7 @@
   "type": "object",
   "meta:conditionalField": "xdm:eventType",
   "meta:conditionalValue": "leadOperation.statusInCampaignProgressionChanged",
-  "description": "Use for information regarding lead operation status in campaign progression changed events.",
+  "description": "Use to capture details when a lead's status in a campaign changes.",
   "meta:status": "experimental",
   "meta:xdmType": "object",
   "properties": {

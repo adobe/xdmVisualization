@@ -5,7 +5,7 @@
   "type": "object",
   "meta:conditionalField": "xdm:eventType",
   "meta:conditionalValue": "directMarketing.emailOpened",
-  "description": "Use for information regarding direct marketing email opened events.",
+  "description": "Use to capture details when a person opens a marketing email.",
   "meta:status": "experimental",
   "meta:xdmType": "object",
   "properties": {

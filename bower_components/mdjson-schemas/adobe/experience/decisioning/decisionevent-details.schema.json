@@ -6,7 +6,7 @@
   "meta:abstract": true,
   "meta:extensible": true,
   "description": "Decision Event Details is used to capture additional information of a decisioning process. The details contain properties that are important to record but are not the proposed options. For instance the experience that is composed from the proposition or information about how the decision was made. ",
-  "meta:status": "stable",
+  "meta:status": "deprecated",
   "meta:xdmType": "object",
   "properties": {
     "experienceID": {

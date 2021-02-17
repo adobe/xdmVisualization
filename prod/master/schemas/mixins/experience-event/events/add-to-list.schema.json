@@ -5,7 +5,7 @@
   "type": "object",
   "meta:conditionalField": "xdm:eventType",
   "meta:conditionalValue": "listOperation.addToList",
-  "description": "Use for information regarding list operation add to list events.",
+  "description": "Use to track when a person is added to a specific list.",
   "meta:status": "experimental",
   "meta:xdmType": "object",
   "properties": {

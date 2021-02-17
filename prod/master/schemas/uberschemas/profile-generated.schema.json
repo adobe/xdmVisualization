@@ -136,7 +136,7 @@
       "meta:xdmField": "xdm:personComponents",
       "tagNumber": 11,
       "items": {
-        "$ref": "obj4403456081623154.schema.json"
+        "$ref": "obj3332231247102846.schema.json"
       }
     },
     "b2b": {
@@ -151,21 +151,13 @@
           "meta:xdmField": "xdm:accountID",
           "tagNumber": 1
         },
-        "personOwnerID": {
-          "title": "Person Owner ID",
-          "description": "Person owner id.",
-          "type": "string",
-          "meta:xdmType": "string",
-          "meta:xdmField": "xdm:personOwnerID",
-          "tagNumber": 2
-        },
         "isBlocked": {
           "title": "Blocked Indicator",
           "description": "Indicator if the person is blocked or not.",
           "type": "boolean",
           "meta:xdmType": "boolean",
           "meta:xdmField": "xdm:isBlocked",
-          "tagNumber": 3
+          "tagNumber": 2
         },
         "blockedCause": {
           "title": "Blocked Cause",
@@ -173,7 +165,7 @@
           "type": "string",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:blockedCause",
-          "tagNumber": 4
+          "tagNumber": 3
         },
         "isMarketingSuspended": {
           "title": "Marketing Suspended Indicator",
@@ -181,7 +173,7 @@
           "type": "boolean",
           "meta:xdmType": "boolean",
           "meta:xdmField": "xdm:isMarketingSuspended",
-          "tagNumber": 5
+          "tagNumber": 4
         },
         "marketingSuspendedCause": {
           "title": "Marketing Suspended Cause",
@@ -189,7 +181,7 @@
           "type": "string",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:marketingSuspendedCause",
-          "tagNumber": 6
+          "tagNumber": 5
         },
         "isConverted": {
           "title": "Converted Indicator",
@@ -197,7 +189,7 @@
           "type": "boolean",
           "meta:xdmType": "boolean",
           "meta:xdmField": "xdm:isConverted",
-          "tagNumber": 7
+          "tagNumber": 6
         },
         "convertedDate": {
           "title": "Converted Date",
@@ -206,15 +198,7 @@
           "format": "date-time",
           "meta:xdmType": "date-time",
           "meta:xdmField": "xdm:convertedDate",
-          "tagNumber": 8
-        },
-        "convertedAccountID": {
-          "title": "Converted Account ID",
-          "description": "Account Id if the lead was successfully converted.",
-          "type": "string",
-          "meta:xdmType": "string",
-          "meta:xdmField": "xdm:convertedAccountID",
-          "tagNumber": 9
+          "tagNumber": 7
         },
         "convertedContactID": {
           "title": "Converted Contact ID",
@@ -222,22 +206,14 @@
           "type": "string",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:convertedContactID",
-          "tagNumber": 10
-        },
-        "convertedOpportunityID": {
-          "title": "Converted Opportunity ID",
-          "description": "Opportunity Id if the lead was successfully converted.",
-          "type": "string",
-          "meta:xdmType": "string",
-          "meta:xdmField": "xdm:convertedOpportunityID",
-          "tagNumber": 11
+          "tagNumber": 8
         },
         "personOptInOut": {
           "title": "Person Preferences",
           "description": "Holds opt out values for different channels as selected by the person.",
           "$ref": "../datatypes/optinout.schema.json",
           "meta:xdmField": "xdm:personOptInOut",
-          "tagNumber": 12
+          "tagNumber": 9
         },
         "personType": {
           "title": "Person Type",
@@ -245,7 +221,7 @@
           "type": "string",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:personType",
-          "tagNumber": 13
+          "tagNumber": 10
         },
         "personStatus": {
           "title": "Person Status",
@@ -253,7 +229,7 @@
           "type": "string",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:personStatus",
-          "tagNumber": 14
+          "tagNumber": 11
         },
         "personSource": {
           "title": "Person Source",
@@ -261,7 +237,7 @@
           "type": "string",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:personSource",
-          "tagNumber": 15
+          "tagNumber": 12
         },
         "personScore": {
           "title": "Person Score",
@@ -269,7 +245,7 @@
           "type": "number",
           "meta:xdmType": "number",
           "meta:xdmField": "xdm:personScore",
-          "tagNumber": 16
+          "tagNumber": 13
         },
         "personGroupID": {
           "title": "Person Group ID",
@@ -277,13 +253,7 @@
           "type": "string",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:personGroupID",
-          "tagNumber": 17
-        },
-        "leadOrganization": {
-          "title": "Lead Organization Properties",
-          "$ref": "../datatypes/b2b/account-organization.schema.json",
-          "meta:xdmField": "xdm:leadOrganization",
-          "tagNumber": 18
+          "tagNumber": 14
         }
       },
       "meta:xdmField": "xdm:b2b",
@@ -463,59 +433,12 @@
       "meta:xdmField": "xdm:identityMap",
       "tagNumber": 26
     },
-    "anonymousHostname": {
-      "title": "Anonymous Hostname",
-      "description": "Anonymous hostname.",
-      "type": "string",
-      "meta:xdmType": "string",
-      "meta:xdmField": "xdm:anonymousHostname",
-      "tagNumber": 27
-    },
-    "inferredAddress": {
-      "title": "Inferred Address",
-      "description": "Address details inferred by reverse IP lookup of the lead’s first recorded web visit.",
-      "$ref": "../datatypes/demographic/address.schema.json",
-      "meta:xdmField": "xdm:inferredAddress",
-      "tagNumber": 28
-    },
-    "inferredCompany": {
-      "title": "Inferred Company",
-      "description": "Company name inferred by reverse IP lookup of the lead’s first recorded web visit.",
-      "type": "string",
-      "meta:xdmType": "string",
-      "meta:xdmField": "xdm:inferredCompany",
-      "tagNumber": 29
-    },
-    "inferredCompanyStatus": {
-      "title": "Inferred Company Status",
-      "description": "Status of the company name inferred by reverse IP lookup of the lead’s first recorded web visit.",
-      "type": "string",
-      "meta:xdmType": "string",
-      "meta:xdmField": "xdm:inferredCompanyStatus",
-      "tagNumber": 30
-    },
-    "inferredMetropolitanArea": {
-      "title": "Inferred Metropolitan Area",
-      "description": "Metropolitan area inferred by reverse IP lookup of lead’s first recorded web visit.",
-      "type": "string",
-      "meta:xdmType": "string",
-      "meta:xdmField": "xdm:inferredMetropolitanArea",
-      "tagNumber": 31
-    },
-    "inferredPhoneAreaCode": {
-      "title": "Inferred Phone Area Code",
-      "description": "Phone area code inferred by reverse IP lookup of lead’s first recorded web visit.",
-      "type": "string",
-      "meta:xdmType": "string",
-      "meta:xdmField": "xdm:inferredPhoneAreaCode",
-      "tagNumber": 32
-    },
     "extSourceSystemAudit": {
       "title": "External Source System Audit Properties",
       "$ref": "../datatypes/auditing/external-source-system-audit.schema.json",
       "description": "Audit attributes for external sources.",
       "meta:xdmField": "xdm:extSourceSystemAudit",
-      "tagNumber": 33
+      "tagNumber": 27
     },
     "consents": {
       "title": "Consents and Preferences",
@@ -1267,27 +1190,74 @@
         }
       },
       "meta:xdmField": "xdm:consents",
-      "tagNumber": 34
+      "tagNumber": 28
     },
     "directMarketingAddress": {
       "title": "Direct marketing address",
       "$ref": "../datatypes/marketing/directmarketing-address.schema.json",
       "description": "Direct marketing postal address.",
       "meta:xdmField": "xdm:directMarketingAddress",
-      "tagNumber": 35
+      "tagNumber": 29
     },
     "directMarketingEmail": {
       "title": "Direct marketing email",
       "$ref": "../datatypes/marketing/directmarketing-emailaddress.schema.json",
       "description": "Direct marketing email address.",
       "meta:xdmField": "xdm:directMarketingEmail",
-      "tagNumber": 36
+      "tagNumber": 30
     },
     "directMarketingPhone": {
       "title": "Direct marketing phone",
       "$ref": "../datatypes/marketing/directmarketing-phonenumber.schema.json",
       "description": "Direct marketing phone number.",
       "meta:xdmField": "xdm:directMarketingPhone",
+      "tagNumber": 31
+    },
+    "anonymousHostname": {
+      "title": "Anonymous Hostname",
+      "description": "Anonymous hostname.",
+      "type": "string",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:anonymousHostname",
+      "tagNumber": 32
+    },
+    "inferredAddress": {
+      "title": "Inferred Address",
+      "description": "Address details inferred by reverse IP lookup of the lead’s first recorded web visit.",
+      "$ref": "../datatypes/demographic/address.schema.json",
+      "meta:xdmField": "xdm:inferredAddress",
+      "tagNumber": 33
+    },
+    "inferredCompany": {
+      "title": "Inferred Company",
+      "description": "Company name inferred by reverse IP lookup of the lead’s first recorded web visit.",
+      "type": "string",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:inferredCompany",
+      "tagNumber": 34
+    },
+    "inferredCompanyStatus": {
+      "title": "Inferred Company Status",
+      "description": "Status of the company name inferred by reverse IP lookup of the lead’s first recorded web visit.",
+      "type": "string",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:inferredCompanyStatus",
+      "tagNumber": 35
+    },
+    "inferredMetropolitanArea": {
+      "title": "Inferred Metropolitan Area",
+      "description": "Metropolitan area inferred by reverse IP lookup of lead’s first recorded web visit.",
+      "type": "string",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:inferredMetropolitanArea",
+      "tagNumber": 36
+    },
+    "inferredPhoneAreaCode": {
+      "title": "Inferred Phone Area Code",
+      "description": "Phone area code inferred by reverse IP lookup of lead’s first recorded web visit.",
+      "type": "string",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:inferredPhoneAreaCode",
       "tagNumber": 37
     },
     "orgUnit": {
@@ -1369,7 +1339,7 @@
           "meta:xdmField": "xdm:privacyOptOuts",
           "tagNumber": 1,
           "items": {
-            "$ref": "obj2866936834086391.schema.json"
+            "$ref": "obj9890959229826837.schema.json"
           }
         }
       },

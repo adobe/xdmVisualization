@@ -5,7 +5,7 @@
   "type": "object",
   "meta:conditionalField": "xdm:eventType",
   "meta:conditionalValue": "opportunityEvent.opportunityUpdated",
-  "description": "Use for information regarding opportunity event opportunity updated events.",
+  "description": "Use to capture details when the fields on a sales opportunity are updated.",
   "meta:status": "experimental",
   "meta:xdmType": "object",
   "properties": {
@@ -29,7 +29,7 @@
           "meta:xdmField": "xdm:dataValueChanges",
           "tagNumber": 2,
           "items": {
-            "$ref": "obj30794225685384813.schema.json"
+            "$ref": "obj835880421192077.schema.json"
           }
         }
       },

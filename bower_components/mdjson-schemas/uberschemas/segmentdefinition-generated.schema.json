@@ -134,12 +134,13 @@
     "segmentStatus": {
       "type": "string",
       "title": "Segment status",
-      "description": "Current status of segment from external system normalized to active, inactive, deleted or draft.",
+      "description": "Current status of segment from external system normalized to active, inactive, deleted, draft or revoked.",
       "enum": [
         "ACTIVE",
         "INACTIVE",
         "DELETED",
-        "DRAFT"
+        "DRAFT",
+        "REVOKED"
       ],
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:segmentStatus",
