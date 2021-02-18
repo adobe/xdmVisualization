@@ -5,6 +5,11 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
+  "meta:tags": {
+    "industry": [
+      "all"
+    ]
+  },
   "description": "Contact information for an individual person such as home address, phone number, fax, and email.",
   "meta:status": "stable",
   "meta:xdmType": "object",

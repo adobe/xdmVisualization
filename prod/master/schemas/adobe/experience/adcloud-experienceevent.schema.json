@@ -8,6 +8,11 @@
   "meta:abstract": true,
   "meta:status": "stable",
   "meta:xdmType": "object",
+  "meta:tags": {
+    "industry": [
+      "all"
+    ]
+  },
   "properties": {
     "advertising": {
       "title": "Advertising",
@@ -171,6 +176,14 @@
       "meta:xdmField": "xdm:eventMergeId",
       "tagNumber": 19
     },
+    "eventType": {
+      "title": "Event Type",
+      "type": "string",
+      "description": "The primary event type for this time-series record.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:eventType",
+      "tagNumber": 20
+    },
     "_experience": {
       "type": "object",
       "meta:xdmType": "object",
@@ -290,14 +303,14 @@
           "tagNumber": 4
         }
       },
-      "tagNumber": 20
+      "tagNumber": 21
     },
     "endUserIDs": {
       "title": "EndUserIDs",
       "$ref": "../../datatypes/enduserids.schema.json",
       "description": "Condensed, normalized encapsulation of end user identifiers asserted for this ExperienceEvent.",
       "meta:xdmField": "xdm:endUserIDs",
-      "tagNumber": 21
+      "tagNumber": 22
     }
   },
   "meta:xdmId": "https://ns.adobe.com/experience/adcloud-experienceevent",

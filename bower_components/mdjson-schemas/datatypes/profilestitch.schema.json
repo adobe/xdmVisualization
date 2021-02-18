@@ -7,6 +7,11 @@
   "meta:status": "stable",
   "meta:xdmType": "object",
   "meta:extensible": true,
+  "meta:tags": {
+    "industry": [
+      "all"
+    ]
+  },
   "properties": {
     "identityMap": {
       "type": "object",

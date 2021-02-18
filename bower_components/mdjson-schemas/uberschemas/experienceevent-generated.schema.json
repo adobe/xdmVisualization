@@ -12,29 +12,12 @@
     "deprecated",
     "experimental"
   ],
-  "meta:conditionalField": "xdm:eventType",
-  "meta:conditionalValue": [
-    "listOperation.addToList",
-    "opportunityEvent.addToOpportunity",
-    "leadOperation.convertLead",
-    "directMarketing.emailBounced",
-    "directMarketing.emailBouncedSoft",
-    "directMarketing.emailClicked",
-    "directMarketing.emailDelivered",
-    "directMarketing.emailOpened",
-    "directMarketing.emailUnsubscribed",
-    "web.formFilledOut",
-    "leadOperation.interestingMoment",
-    "web.webInteraction.linkClicks",
-    "leadOperation.newLead",
-    "opportunityEvent.opportunityUpdated",
-    "listOpearation.removeFromList",
-    "opportunityEvent.removeFromOpportunity",
-    "leadOperation.scoreChanged",
-    "leadOperation.statusInCampaignProgressionChanged",
-    "web.webpagedetails.pageViews"
-  ],
   "meta:tags": [
+    {
+      "industry": [
+        "all"
+      ]
+    },
     {
       "industry": [
         "financial_services"
@@ -211,6 +194,28 @@
       ]
     }
   ],
+  "meta:conditionalField": "xdm:eventType",
+  "meta:conditionalValue": [
+    "listOperation.addToList",
+    "opportunityEvent.addToOpportunity",
+    "leadOperation.convertLead",
+    "directMarketing.emailBounced",
+    "directMarketing.emailBouncedSoft",
+    "directMarketing.emailClicked",
+    "directMarketing.emailDelivered",
+    "directMarketing.emailOpened",
+    "directMarketing.emailUnsubscribed",
+    "web.formFilledOut",
+    "leadOperation.interestingMoment",
+    "web.webInteraction.linkClicks",
+    "leadOperation.newLead",
+    "opportunityEvent.opportunityUpdated",
+    "listOpearation.removeFromList",
+    "opportunityEvent.removeFromOpportunity",
+    "leadOperation.scoreChanged",
+    "leadOperation.statusInCampaignProgressionChanged",
+    "web.webpagedetails.pageViews"
+  ],
   "properties": {
     "identityMap": {
       "type": "object",
@@ -245,20 +250,20 @@
       "meta:xdmField": "xdm:timestamp",
       "tagNumber": 3
     },
-    "eventType": {
-      "title": "Event Type",
-      "type": "string",
-      "description": "The primary event type for this time-series record.",
-      "meta:xdmType": "string",
-      "meta:xdmField": "xdm:eventType",
-      "tagNumber": 4
-    },
     "eventMergeId": {
       "title": "ExperienceEvent merge ID",
       "type": "string",
       "description": "An ID to correlate or merge multiple Experience events together that are essentially the same event or should be merged. This is intended to be populated by the data producer prior to ingestion.",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:eventMergeId",
+      "tagNumber": 4
+    },
+    "eventType": {
+      "title": "Event Type",
+      "type": "string",
+      "description": "The primary event type for this time-series record.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:eventType",
       "tagNumber": 5
     },
     "endUserIDs": {
@@ -322,7 +327,7 @@
           "meta:xdmField": "xdm:dataValueChanges",
           "tagNumber": 4,
           "items": {
-            "$ref": "obj586730306267377.schema.json"
+            "$ref": "obj4469772739195981.schema.json"
           }
         }
       },

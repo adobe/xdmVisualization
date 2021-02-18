@@ -8,6 +8,11 @@
   "description": "Captures information regarding an action taken for one or more prior propositions. Each decision has a unique ID that is sent back with an experience event. The decision is assumed to have contributed to the experience event and is now associated with it.",
   "meta:status": "stable",
   "meta:xdmType": "object",
+  "meta:tags": {
+    "industry": [
+      "all"
+    ]
+  },
   "properties": {
     "identityMap": {
       "type": "object",
