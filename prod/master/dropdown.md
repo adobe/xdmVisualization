@@ -279,6 +279,7 @@
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.graphs.graph-node.html">mixins.graphs.graph-node</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.account.account-details.html">mixins.account.account-details</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.account.related-accounts.html">mixins.account.related-accounts</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.account.account-components.html">mixins.account.account-components</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.deprecated.deprecated-profile-consent.html">mixins.deprecated.deprecated-profile-consent</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.deprecated.profile-identities-deprecated.html">mixins.deprecated.profile-identities-deprecated</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.deprecated.experienceevent-enduserids-deprecated.html">mixins.deprecated.experienceevent-enduserids-deprecated</a></li>
