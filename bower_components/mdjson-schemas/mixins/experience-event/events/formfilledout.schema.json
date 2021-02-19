@@ -5,7 +5,7 @@
   "type": "object",
   "meta:conditionalField": "xdm:eventType",
   "meta:conditionalValue": "web.formFilledOut",
-  "description": "Use to capture details when a person fills out a form on a webpage.",
+  "description": "Use for information regarding formFilledOut web details.",
   "meta:status": "experimental",
   "meta:xdmType": "object",
   "properties": {

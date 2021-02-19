@@ -8,11 +8,6 @@
   "meta:abstract": true,
   "meta:status": "stable",
   "meta:xdmType": "object",
-  "meta:tags": {
-    "industry": [
-      "all"
-    ]
-  },
   "properties": {
     "advertising": {
       "title": "Advertising",
@@ -566,7 +561,7 @@
               "title": "Proposition Identifier",
               "type": "string",
               "format": "uri-reference",
-              "description": "A unique identifier for the proposition event referenced by another \"XDM ExperienceEvent\". It is the expectation that applications use this \"propositionID\" in every experience event that was influenced by the set of propositions. An individual profile's proposition-response history is maintained with these proposition identifiers.",
+              "description": "A unique identifier for the proposition event referenced by an \"XDM ExperienceEvent\". It is the expectation that applications use this \"propositionID\" in every experience event that was influenced by the set of propositions. An individual profile's proposition-response history is maintained with these proposition identifiers.",
               "meta:xdmType": "string",
               "meta:xdmField": "https://ns.adobe.com/experience/decisioning/propositionID",
               "tagNumber": 1

@@ -5,7 +5,7 @@
   "type": "object",
   "meta:conditionalField": "xdm:eventType",
   "meta:conditionalValue": "listOpearation.removeFromList",
-  "description": "Use to track when a person is removed from a specific list.",
+  "description": "Remove from list.",
   "meta:status": "experimental",
   "meta:xdmType": "object",
   "properties": {

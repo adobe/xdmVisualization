@@ -8,11 +8,6 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:status": "stable",
-  "meta:tags": {
-    "industry": [
-      "all"
-    ]
-  },
   "properties": {
     "identityMap": {
       "type": "object",
@@ -139,13 +134,12 @@
     "segmentStatus": {
       "type": "string",
       "title": "Segment status",
-      "description": "Current status of segment from external system normalized to active, inactive, deleted, draft or revoked.",
+      "description": "Current status of segment from external system normalized to active, inactive, deleted or draft.",
       "enum": [
         "ACTIVE",
         "INACTIVE",
         "DELETED",
-        "DRAFT",
-        "REVOKED"
+        "DRAFT"
       ],
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:segmentStatus",

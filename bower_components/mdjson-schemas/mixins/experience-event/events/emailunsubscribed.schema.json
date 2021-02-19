@@ -5,7 +5,7 @@
   "type": "object",
   "meta:conditionalField": "xdm:eventType",
   "meta:conditionalValue": "directMarketing.emailUnsubscribed",
-  "description": "Use to capture details when a person unsubscribes from an email.",
+  "description": "Use for information regarding direct marketing unsubscribe email events.",
   "meta:status": "experimental",
   "meta:xdmType": "object",
   "properties": {

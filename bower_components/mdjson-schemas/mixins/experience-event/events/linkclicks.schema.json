@@ -5,7 +5,7 @@
   "type": "object",
   "meta:conditionalField": "xdm:eventType",
   "meta:conditionalValue": "web.webInteraction.linkClicks",
-  "description": "Use to capture details when a person clicks a link on a webpage.",
+  "description": "Use for information regarding linkclicks web interaction events.",
   "meta:status": "experimental",
   "meta:xdmType": "object",
   "properties": {

@@ -5,7 +5,7 @@
   "type": "object",
   "meta:conditionalField": "xdm:eventType",
   "meta:conditionalValue": "directMarketing.emailBouncedSoft",
-  "description": "Use to capture details when a marketing email to person soft-bounces.",
+  "description": "Use for information regarding direct marketing email bounced soft events.",
   "meta:status": "experimental",
   "meta:xdmType": "object",
   "properties": {

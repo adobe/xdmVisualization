@@ -5,7 +5,7 @@
   "type": "object",
   "meta:conditionalField": "xdm:eventType",
   "meta:conditionalValue": "leadOperation.scoreChanged",
-  "description": "Use to capture details when the lead score of a person changes.",
+  "description": "Use for information regarding lead operation change score events.",
   "meta:status": "experimental",
   "meta:xdmType": "object",
   "properties": {

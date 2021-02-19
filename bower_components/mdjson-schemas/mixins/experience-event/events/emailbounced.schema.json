@@ -5,7 +5,7 @@
   "type": "object",
   "meta:conditionalField": "xdm:eventType",
   "meta:conditionalValue": "directMarketing.emailBounced",
-  "description": "Use to capture details when email to person bounces.",
+  "description": "Use for information regarding direct marketing email bounced events.",
   "meta:status": "experimental",
   "meta:xdmType": "object",
   "properties": {

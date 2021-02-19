@@ -5,7 +5,7 @@
   "type": "object",
   "meta:conditionalField": "xdm:eventType",
   "meta:conditionalValue": "web.webpagedetails.pageViews",
-  "description": "Use for tracking the details of a person's visit to a webpage.",
+  "description": "Use for information regarding web details events such as interaction, page details, and referrer.",
   "meta:status": "experimental",
   "meta:xdmType": "object",
   "properties": {
