@@ -10,7 +10,8 @@
   "meta:abstract": true,
   "meta:status": [
     "experimental",
-    "stable"
+    "stable",
+    "deprecated"
   ],
   "properties": {
     "_id": {
@@ -53,13 +54,22 @@
       "meta:xdmField": "xdm:personID",
       "tagNumber": 5
     },
+    "campaignMemberComponents": {
+      "type": "array",
+      "meta:xdmType": "array",
+      "meta:xdmField": "xdm:campaignMemberComponents",
+      "tagNumber": 6,
+      "items": {
+        "$ref": "obj6340299841396819.schema.json"
+      }
+    },
     "memberStatus": {
       "title": "Campaign Member Status",
       "description": "",
       "type": "string",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:memberStatus",
-      "tagNumber": 6
+      "tagNumber": 7
     },
     "memberStatusReason": {
       "title": "Campaign Member Status Reason",
@@ -67,7 +77,7 @@
       "type": "string",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:memberStatusReason",
-      "tagNumber": 7
+      "tagNumber": 8
     },
     "nurtureTrackName": {
       "title": "Nurture Track Name",
@@ -75,7 +85,7 @@
       "type": "string",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:nurtureTrackName",
-      "tagNumber": 8
+      "tagNumber": 9
     },
     "nurtureCadence": {
       "title": "Nurture Cadence",
@@ -83,7 +93,7 @@
       "type": "string",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:nurtureCadence",
-      "tagNumber": 9
+      "tagNumber": 10
     },
     "isExhausted": {
       "title": "isExhausted",
@@ -91,7 +101,7 @@
       "type": "boolean",
       "meta:xdmType": "boolean",
       "meta:xdmField": "xdm:isExhausted",
-      "tagNumber": 10
+      "tagNumber": 11
     },
     "webinarRegistrationID": {
       "title": "Webinar Registration ID",
@@ -99,7 +109,7 @@
       "type": "string",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:webinarRegistrationID",
-      "tagNumber": 11
+      "tagNumber": 12
     },
     "webinarConfirmationUrl": {
       "title": "Webinar Confirmation Url",
@@ -107,7 +117,7 @@
       "type": "string",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:webinarConfirmationUrl",
-      "tagNumber": 12
+      "tagNumber": 13
     },
     "acquiredByCampaignID": {
       "title": "Acquired By CampaignID",
@@ -115,7 +125,7 @@
       "type": "string",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:acquiredByCampaignID",
-      "tagNumber": 13
+      "tagNumber": 14
     },
     "hasReachedSuccess": {
       "title": "Has Reached Success",
@@ -123,7 +133,7 @@
       "type": "boolean",
       "meta:xdmType": "boolean",
       "meta:xdmField": "xdm:hasReachedSuccess",
-      "tagNumber": 14
+      "tagNumber": 15
     },
     "reachedSuccessDate": {
       "title": "Reached Success Date",
@@ -132,7 +142,7 @@
       "format": "date-time",
       "meta:xdmType": "date-time",
       "meta:xdmField": "xdm:reachedSuccessDate",
-      "tagNumber": 15
+      "tagNumber": 16
     },
     "membershipDate": {
       "title": "Membership Date",
@@ -141,7 +151,7 @@
       "format": "date-time",
       "meta:xdmType": "date-time",
       "meta:xdmField": "xdm:membershipDate",
-      "tagNumber": 16
+      "tagNumber": 17
     },
     "lastStatus": {
       "title": "Last Status",
@@ -149,7 +159,7 @@
       "type": "string",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:lastStatus",
-      "tagNumber": 17
+      "tagNumber": 18
     },
     "hasResponded": {
       "title": "Has Responded",
@@ -157,7 +167,7 @@
       "type": "boolean",
       "meta:xdmType": "boolean",
       "meta:xdmField": "xdm:hasResponded",
-      "tagNumber": 18
+      "tagNumber": 19
     },
     "firstRespondedDate": {
       "title": "First Responded Date",
@@ -166,7 +176,7 @@
       "format": "date-time",
       "meta:xdmType": "date-time",
       "meta:xdmField": "xdm:firstRespondedDate",
-      "tagNumber": 19
+      "tagNumber": 20
     }
   },
   "meta:xdmId": "https://ns.adobe.com/xdm/context/campaign-member-generated",
