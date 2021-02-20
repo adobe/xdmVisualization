@@ -33,14 +33,6 @@
       "meta:xdmField": "xdm:timestamp",
       "tagNumber": 2
     },
-    "eventType": {
-      "title": "Event Type",
-      "type": "string",
-      "description": "The primary event type for this time-series record.",
-      "meta:xdmType": "string",
-      "meta:xdmField": "xdm:eventType",
-      "tagNumber": 3
-    },
     "_searchads": {
       "type": "object",
       "meta:xdmType": "object",
@@ -163,7 +155,7 @@
           "tagNumber": 14
         }
       },
-      "tagNumber": 4
+      "tagNumber": 3
     }
   },
   "meta:xdmId": "https://ns.adobe.com/xdm/adcloud/searchads/aggregateperformancebykeyword",

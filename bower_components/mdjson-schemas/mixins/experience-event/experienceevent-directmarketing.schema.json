@@ -5,6 +5,11 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
+  "meta:tags": {
+    "industry": [
+      "all"
+    ]
+  },
   "description": "Direct marketing events such as opens, clicks, impressions, and unsubscribes.",
   "meta:status": "stable",
   "meta:xdmType": "object",

@@ -8,6 +8,11 @@
   "meta:abstract": true,
   "meta:status": "stable",
   "meta:xdmType": "object",
+  "meta:tags": {
+    "industry": [
+      "all"
+    ]
+  },
   "properties": {
     "_experience": {
       "type": "object",
@@ -104,7 +109,7 @@
           "meta:xdmField": "xdm:privacyOptOuts",
           "tagNumber": 1,
           "items": {
-            "$ref": "obj5145818316147837.schema.json"
+            "$ref": "obj9645575595825435.schema.json"
           }
         }
       },
