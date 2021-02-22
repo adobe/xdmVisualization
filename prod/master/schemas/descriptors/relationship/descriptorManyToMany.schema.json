@@ -6,7 +6,7 @@
   "meta:abstract": false,
   "type": "object",
   "description": "Describes many to many relationship descriptor.",
-  "meta:status": "stable",
+  "meta:status": "deprecated",
   "meta:xdmType": "object",
   "properties": {
     "_id": {
@@ -97,21 +97,42 @@
       "meta:xdmField": "xdm:label",
       "tagNumber": 12
     },
-    "apiLabel": {
-      "title": "API Label",
+    "sourceNamespace": {
+      "title": "Source Property Namespace",
       "type": "string",
-      "description": "Provides a user friendly name or label which is used in PQL/SQL or other needs",
+      "description": "Identity Service namespace associated with the source property",
       "meta:xdmType": "string",
-      "meta:xdmField": "xdm:apiLabel",
+      "meta:xdmField": "xdm:sourceNamespace",
       "tagNumber": 13
     },
-    "description": {
-      "title": "Relationship Description",
+    "sourceToDestinationTitle": {
+      "title": "Source to Destination Title",
       "type": "string",
-      "description": "Provides a user friendly description of this relationship",
+      "description": "Provides a user friendly title for the source->destination edge",
       "meta:xdmType": "string",
-      "meta:xdmField": "xdm:description",
+      "meta:xdmField": "xdm:sourceToDestinationTitle",
       "tagNumber": 14
+    },
+    "destinationToSourceTitle": {
+      "title": "Destination to Source Title",
+      "type": "string",
+      "description": "Provides a user friendly title for the destination->source edge",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:destinationToSourceTitle",
+      "tagNumber": 15
+    },
+    "cardinality": {
+      "title": "Relationship Cardinality",
+      "type": "string",
+      "description": "Source to Destination cardinality",
+      "enum": [
+        "M:1",
+        "1:1"
+      ],
+      "default": "M:1",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:cardinality",
+      "tagNumber": 16
     }
   },
   "meta:xdmId": "https://ns.adobe.com/xdm/common/descriptors/descriptorManyToMany",
