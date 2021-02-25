@@ -176,14 +176,6 @@
       "meta:xdmField": "xdm:eventMergeId",
       "tagNumber": 19
     },
-    "eventType": {
-      "title": "Event Type",
-      "type": "string",
-      "description": "The primary event type for this time-series record.",
-      "meta:xdmType": "string",
-      "meta:xdmField": "xdm:eventType",
-      "tagNumber": 20
-    },
     "_experience": {
       "type": "object",
       "meta:xdmType": "object",
@@ -303,14 +295,14 @@
           "tagNumber": 4
         }
       },
-      "tagNumber": 21
+      "tagNumber": 20
     },
     "endUserIDs": {
       "title": "EndUserIDs",
       "$ref": "../../datatypes/enduserids.schema.json",
       "description": "Condensed, normalized encapsulation of end user identifiers asserted for this ExperienceEvent.",
       "meta:xdmField": "xdm:endUserIDs",
-      "tagNumber": 22
+      "tagNumber": 21
     }
   },
   "meta:xdmId": "https://ns.adobe.com/experience/adcloud-experienceevent",

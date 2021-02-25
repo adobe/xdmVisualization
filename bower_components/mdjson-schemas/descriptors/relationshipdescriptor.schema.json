@@ -104,13 +104,21 @@
       "meta:xdmField": "xdm:sourceNamespace",
       "tagNumber": 13
     },
+    "destinationNamespace": {
+      "title": "Source Property Namespace",
+      "type": "string",
+      "description": "Identity Service namespace associated with the source property",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:destinationNamespace",
+      "tagNumber": 14
+    },
     "sourceToDestinationTitle": {
       "title": "Source to Destination Title",
       "type": "string",
       "description": "Provides a user friendly title for the source->destination edge",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:sourceToDestinationTitle",
-      "tagNumber": 14
+      "tagNumber": 15
     },
     "destinationToSourceTitle": {
       "title": "Destination to Source Title",
@@ -118,7 +126,7 @@
       "description": "Provides a user friendly title for the destination->source edge",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:destinationToSourceTitle",
-      "tagNumber": 15
+      "tagNumber": 16
     },
     "cardinality": {
       "title": "Relationship Cardinality",
@@ -131,7 +139,7 @@
       "default": "M:1",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:cardinality",
-      "tagNumber": 16
+      "tagNumber": 17
     }
   },
   "meta:xdmId": "https://ns.adobe.com/xdm/common/descriptors/relationshipdescriptor",

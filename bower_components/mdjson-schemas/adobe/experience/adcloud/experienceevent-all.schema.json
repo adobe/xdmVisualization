@@ -17,14 +17,6 @@
       "meta:xdmField": "xdm:eventMergeId",
       "tagNumber": 1
     },
-    "eventType": {
-      "title": "Event Type",
-      "type": "string",
-      "description": "The primary event type for this time-series record.",
-      "meta:xdmType": "string",
-      "meta:xdmField": "xdm:eventType",
-      "tagNumber": 2
-    },
     "_experience": {
       "type": "object",
       "meta:xdmType": "object",
@@ -102,7 +94,7 @@
           "tagNumber": 1
         }
       },
-      "tagNumber": 3
+      "tagNumber": 2
     }
   },
   "meta:xdmId": "https://ns.adobe.com/experience/adcloud/experienceevent-all",

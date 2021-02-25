@@ -35,6 +35,14 @@
       "meta:xdmField": "xdm:timestamp",
       "tagNumber": 2
     },
+    "eventType": {
+      "title": "Event Type",
+      "type": "string",
+      "description": "The primary event type for this time-series record.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:eventType",
+      "tagNumber": 3
+    },
     "identityMap": {
       "type": "object",
       "meta:xdmType": "map",
@@ -48,7 +56,7 @@
         "tagNumber": 1
       },
       "meta:xdmField": "xdm:identityMap",
-      "tagNumber": 3
+      "tagNumber": 4
     },
     "_experience": {
       "type": "object",
@@ -139,7 +147,7 @@
       "required": [
         "decisioning"
       ],
-      "tagNumber": 4
+      "tagNumber": 5
     }
   },
   "meta:xdmId": "https://ns.adobe.com/experience/decisioning/decisionevent",
