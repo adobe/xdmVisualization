@@ -17,7 +17,7 @@
         "mailingID": {
           "title": "Mailing ID",
           "type": "string",
-          "description": "Unique identifier of the mailing.",
+          "description": "Unique ID of the email asset.",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:mailingID",
           "tagNumber": 1
@@ -25,7 +25,7 @@
         "mailingName": {
           "title": "Mailing Name",
           "type": "string",
-          "description": "Friendly name for the mailing.",
+          "description": "Friendly name of the email asset.",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:mailingName",
           "tagNumber": 2
@@ -33,7 +33,7 @@
         "testVariantID": {
           "title": "Test Variant ID",
           "type": "string",
-          "description": "Unique identifier for the test variant.",
+          "description": "Unique ID of the test variant of the email asset.",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:testVariantID",
           "tagNumber": 3
@@ -41,7 +41,7 @@
         "testVariantName": {
           "title": "Test Variant Name",
           "type": "string",
-          "description": "Friendly name for the test variant.",
+          "description": "Friendly name of the test variant of the email asset.",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:testVariantName",
           "tagNumber": 4
@@ -63,7 +63,7 @@
             "webFormID": {
               "title": "Web Form ID",
               "type": "string",
-              "description": "Unique Identifier for web form.",
+              "description": "Unique ID of the form.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:webFormID",
               "tagNumber": 1
@@ -71,7 +71,7 @@
             "webFormName": {
               "title": "Web Form Name",
               "type": "string",
-              "description": "Friendly name for web form.",
+              "description": "Friendly name of the form.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:webFormName",
               "tagNumber": 2
@@ -88,7 +88,7 @@
             "webPageID": {
               "title": "Web Page ID",
               "type": "string",
-              "description": "Unique Identifier for web page.",
+              "description": "Unique ID of the web page.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:webPageID",
               "tagNumber": 1
@@ -101,12 +101,12 @@
               "meta:xdmField": "xdm:name",
               "tagNumber": 2
             },
-            "queryParamaters": {
-              "title": "Query Paramaters",
+            "queryParameters": {
+              "title": "Query Parameters",
               "type": "string",
-              "description": "Query Paramters used for the web page.",
+              "description": "Query Parameters used for the web page. This is normally the value of a string after `?` in the url.",
               "meta:xdmType": "string",
-              "meta:xdmField": "xdm:queryParamaters",
+              "meta:xdmField": "xdm:queryParameters",
               "tagNumber": 3
             }
           },
@@ -121,7 +121,7 @@
             "URL": {
               "title": "URL",
               "type": "string",
-              "description": "The referrer URL.",
+              "description": "URL of referrer to web page.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:URL",
               "tagNumber": 1
@@ -144,7 +144,7 @@
           "title": "IPv4",
           "type": "string",
           "format": "ipv4",
-          "description": "The numerical label assigned to a device participating in a computer network that uses the Internet Protocol for communication. ",
+          "description": "The numerical label assigned to a device participating in a computer network that uses the Internet Protocol for communication.",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:ipV4",
           "tagNumber": 1

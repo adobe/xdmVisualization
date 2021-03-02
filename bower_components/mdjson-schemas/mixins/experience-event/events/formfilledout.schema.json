@@ -5,7 +5,7 @@
   "type": "object",
   "meta:conditionalField": "xdm:eventType",
   "meta:conditionalValue": "web.formFilledOut",
-  "description": "Use to capture details when a person fills out a form on a webpage.",
+  "description": "Use to capture details when a person fills out a form on a web page.",
   "meta:status": "experimental",
   "meta:xdmType": "object",
   "properties": {
@@ -22,7 +22,7 @@
             "webFormID": {
               "title": "Web Form ID",
               "type": "string",
-              "description": "Unique Identifier for web form.",
+              "description": "Unique ID of the form.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:webFormID",
               "tagNumber": 1
@@ -30,7 +30,7 @@
             "webFormName": {
               "title": "Web Form Name",
               "type": "string",
-              "description": "Friendly name for web form.",
+              "description": "Friendly name of the form.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:webFormName",
               "tagNumber": 2
@@ -47,7 +47,7 @@
             "webPageID": {
               "title": "Web Page ID",
               "type": "string",
-              "description": "Unique Identifier for web page.",
+              "description": "Unique ID of the web page.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:webPageID",
               "tagNumber": 1
@@ -60,12 +60,12 @@
               "meta:xdmField": "xdm:name",
               "tagNumber": 2
             },
-            "queryParamaters": {
-              "title": "Query Paramaters",
+            "queryParameters": {
+              "title": "Query Parameters",
               "type": "string",
-              "description": "Query Paramters used for the web page.",
+              "description": "Query Parameters used for the web page. This is normally the value of a string after `?` in the url.",
               "meta:xdmType": "string",
-              "meta:xdmField": "xdm:queryParamaters",
+              "meta:xdmField": "xdm:queryParameters",
               "tagNumber": 3
             }
           },
@@ -103,7 +103,7 @@
           "title": "IPv4",
           "type": "string",
           "format": "ipv4",
-          "description": "The numerical label assigned to a device participating in a computer network that uses the Internet Protocol for communication. ",
+          "description": "The numerical label assigned to a device participating in a computer network that uses the Internet Protocol for communication.",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:ipV4",
           "tagNumber": 1

@@ -17,19 +17,20 @@
         "opportunityID": {
           "title": "Opportunity ID",
           "type": "string",
-          "description": "Unique identifier for opportunity",
+          "description": "Unique ID of the Opportunity",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:opportunityID",
           "tagNumber": 1
         },
         "dataValueChanges": {
           "title": "Data Value Changes",
+          "description": "Full record of data values updated",
           "type": "array",
           "meta:xdmType": "array",
           "meta:xdmField": "xdm:dataValueChanges",
           "tagNumber": 2,
           "items": {
-            "$ref": "obj0531813734628237.schema.json"
+            "$ref": "obj5292172552825518.schema.json"
           }
         }
       },

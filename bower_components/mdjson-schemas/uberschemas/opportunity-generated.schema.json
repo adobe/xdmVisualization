@@ -25,7 +25,7 @@
     },
     "opportunityID": {
       "title": "Opportunity ID",
-      "description": "Opportunity unique identifer",
+      "description": "Unique ID of the opportunity.",
       "type": "string",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:opportunityID",
@@ -33,7 +33,7 @@
     },
     "opportunityName": {
       "title": "Opportunity Name",
-      "description": "Subject or descriptive name, such as the expected order or company name, for the opportunity.",
+      "description": "Name of the opportunity.",
       "type": "string",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:opportunityName",
@@ -41,7 +41,7 @@
     },
     "opportunityDescription": {
       "title": "Opportunity Description",
-      "description": "Additional information to describe the opportunity, such as possible products to sell or past purchases from the customer.",
+      "description": "Description of the opportunity.",
       "type": "string",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:opportunityDescription",
@@ -49,7 +49,7 @@
     },
     "opportunityType": {
       "title": "Opportunity Type",
-      "description": "Opportunity type such as Existing Business or New Business",
+      "description": "Type of the opportunity.",
       "type": "string",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:opportunityType",
@@ -57,7 +57,7 @@
     },
     "opportunityStage": {
       "title": "Opportunity Stage",
-      "description": "Sales stage of this opportunity to aid the sales team in their efforts to win this opportunity.",
+      "description": "Sales stage of the opportunity.",
       "type": "string",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:opportunityStage",
@@ -65,7 +65,7 @@
     },
     "accountID": {
       "title": "Account ID",
-      "description": "Account unique identifier reference that this opportunity is linked to.",
+      "description": "Unique ID of the account this opportunity is associated with.",
       "type": "string",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:accountID",
@@ -84,12 +84,12 @@
       "meta:xdmField": "xdm:opportunityComponents",
       "tagNumber": 9,
       "items": {
-        "$ref": "obj33971128311827914.schema.json"
+        "$ref": "obj8480698408089848.schema.json"
       }
     },
     "opportunityOwnerID": {
       "title": "opportunity Owner Id",
-      "description": "Assigned owner for this opportunity.",
+      "description": "Unique ID of the internal owner for this opportunity.",
       "type": "string",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:opportunityOwnerID",
@@ -97,7 +97,7 @@
     },
     "campaignID": {
       "title": "Campaign ID",
-      "description": "Campaign unique identifer reference.",
+      "description": "Unique ID of the campaign related to this opportunity.",
       "type": "string",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:campaignID",
@@ -105,7 +105,7 @@
     },
     "fiscalYear": {
       "title": "Fiscal Year",
-      "description": "The fiscal year this opportunity is targeted.",
+      "description": "The fiscal year this opportunity is targeted for.",
       "type": "integer",
       "pattern": "^([0-9]{4})$",
       "meta:xdmType": "int",
@@ -114,7 +114,7 @@
     },
     "fiscalQuarter": {
       "title": "Fiscal Quarter",
-      "description": "The fiscal quarter this opportunity is targeted.",
+      "description": "The fiscal quarter this opportunity is targeted for.",
       "type": "string",
       "pattern": "^([1-4]{1})$|^([Qq][1-4]{1})$",
       "meta:xdmType": "string",
@@ -123,7 +123,7 @@
     },
     "forecastCategory": {
       "title": "Forecast Category",
-      "description": "Forecast Category determined by the opportunity Stage value eg: omitted,pipeline,bestcase,commit,closed.",
+      "description": "Forecast category for the opportunity based on the opportunity stage.",
       "type": "string",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:forecastCategory",
@@ -131,7 +131,7 @@
     },
     "forecastCategoryName": {
       "title": "Forecast Category Name",
-      "description": "Forecast category name that is displayed in reports for a perticular forecast category.",
+      "description": "Name of the forecast category for the opportunity.",
       "type": "string",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:forecastCategoryName",
@@ -139,7 +139,7 @@
     },
     "isClosed": {
       "title": "Closed Flag",
-      "description": "Flag indicating if this opportunity is closed.",
+      "description": "Boolean indicating if the opportunity is closed.",
       "type": "boolean",
       "meta:xdmType": "boolean",
       "meta:xdmField": "xdm:isClosed",
@@ -147,7 +147,7 @@
     },
     "isWon": {
       "title": "Won Flag",
-      "description": "Flag indicating if this opportunity is Won.",
+      "description": "Boolean indicating if the opportunity was won.",
       "type": "boolean",
       "meta:xdmType": "boolean",
       "meta:xdmField": "xdm:isWon",
@@ -155,7 +155,7 @@
     },
     "probabilityPercentage": {
       "title": "Probability Percentage",
-      "description": "Likelihood that opportunity will close, stated as a percentage.",
+      "description": "Probability as a percentage that the opportunity will be closed, represented as a number between 0 and 1.",
       "type": "number",
       "minimum": 0,
       "maximum": 100,
@@ -165,21 +165,21 @@
     },
     "opportunityAmount": {
       "title": "Opportunity Amount",
-      "description": "Estimated total sale amount.",
+      "description": "Estimated sale amount for the opportunity.",
       "$ref": "../datatypes/currency.schema.json",
       "meta:xdmField": "xdm:opportunityAmount",
       "tagNumber": 19
     },
     "expectedRevenue": {
       "title": "Expected Revenue",
-      "description": "Calculated revenue based on the Amount and Probability.",
+      "description": "Expected revenue based on the probability percentage and opportunity amount.",
       "$ref": "../datatypes/currency.schema.json",
       "meta:xdmField": "xdm:expectedRevenue",
       "tagNumber": 20
     },
     "opportunityQuantity": {
       "title": "Opportunity Quantity",
-      "description": "Total of all quantity field values for all products in the Products related list for this opportunity.",
+      "description": "Total quantity of all related products for the opportunity.",
       "type": "integer",
       "minimum": 0,
       "default": 0,
@@ -189,7 +189,7 @@
     },
     "expectedCloseDate": {
       "title": "Expected Close Date",
-      "description": "Expected date of closure for this opportunity.",
+      "description": "Expected date the opportunity will close.",
       "type": "string",
       "format": "date",
       "meta:xdmType": "date",
@@ -198,7 +198,7 @@
     },
     "actualCloseDate": {
       "title": "Actual Close Date",
-      "description": "Actual date of closure for this opportunity.",
+      "description": "Actual date the opportunity was closed.",
       "type": "string",
       "format": "date-time",
       "meta:xdmType": "date-time",
@@ -207,7 +207,7 @@
     },
     "lastActivityDate": {
       "title": "Last Activity Date",
-      "description": "Last activity date for this opportunity.",
+      "description": "Date of last activity for the opportunity.",
       "type": "string",
       "format": "date-time",
       "meta:xdmType": "date-time",
@@ -216,7 +216,7 @@
     },
     "leadSource": {
       "title": "Lead Source",
-      "description": "Source of the opportunity such as Advertisement, Partner, or Web.",
+      "description": "Source that the opportunity originated from.",
       "type": "string",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:leadSource",
@@ -224,7 +224,7 @@
     },
     "nextStep": {
       "title": "Next Step",
-      "description": "Description of next task in closing opportunity.",
+      "description": "Description of the next step for the opportunity.",
       "type": "string",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:nextStep",

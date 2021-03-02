@@ -282,7 +282,7 @@
         "listID": {
           "title": "List ID",
           "type": "string",
-          "description": "List unique identifier.",
+          "description": "Unique ID of the Marketing List.",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:listID",
           "tagNumber": 1
@@ -299,7 +299,7 @@
         "opportunityID": {
           "title": "Opportunity ID",
           "type": "string",
-          "description": "Opportunity ID",
+          "description": "Unique ID of the Opportunity.",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:opportunityID",
           "tagNumber": 1
@@ -307,7 +307,7 @@
         "isPrimary": {
           "title": "Is Primary",
           "type": "boolean",
-          "description": "Is primary.",
+          "description": "Boolean indicating if person is the primary contact on the Opportunity.",
           "meta:xdmType": "boolean",
           "meta:xdmField": "xdm:isPrimary",
           "tagNumber": 2
@@ -315,19 +315,20 @@
         "role": {
           "title": "Role",
           "type": "string",
-          "description": "Role.",
+          "description": "Role of the person on the Opportunity.",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:role",
           "tagNumber": 3
         },
         "dataValueChanges": {
           "title": "Data Value Changes",
+          "description": "Full record of data values updated",
           "type": "array",
           "meta:xdmType": "array",
           "meta:xdmField": "xdm:dataValueChanges",
           "tagNumber": 4,
           "items": {
-            "$ref": "obj5478264161550936.schema.json"
+            "$ref": "obj5288121678570017.schema.json"
           }
         }
       },
@@ -347,7 +348,7 @@
             "assignTo": {
               "title": "Assign To",
               "type": "string",
-              "description": ".",
+              "description": "Sales user converted lead is assigned to.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:assignTo",
               "tagNumber": 1
@@ -355,7 +356,7 @@
             "isSentNotificationEmail": {
               "title": "Is Sent Notification Email",
               "type": "boolean",
-              "description": "Sent notification email.",
+              "description": "Indicates whether assigned sales user received email notification of the converted lead.",
               "meta:xdmType": "boolean",
               "meta:xdmField": "xdm:isSentNotificationEmail",
               "tagNumber": 2
@@ -363,7 +364,7 @@
             "convertedStatus": {
               "title": "Converted Status",
               "type": "string",
-              "description": "Converted status.",
+              "description": "Converted status of lead.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:convertedStatus",
               "tagNumber": 3
@@ -380,7 +381,7 @@
             "type": {
               "title": "Type",
               "type": "string",
-              "description": "Interesting moment type.",
+              "description": "Type of Interesting Moment.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:type",
               "tagNumber": 1
@@ -388,7 +389,7 @@
             "description": {
               "title": "Description",
               "type": "string",
-              "description": "Interesting moment description.",
+              "description": "Description of Interesting Moment.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:description",
               "tagNumber": 2
@@ -397,7 +398,7 @@
               "title": "Date",
               "type": "string",
               "format": "date-time",
-              "description": "Interesting moment date.",
+              "description": "Date of the Interesting Moment.",
               "meta:xdmType": "date-time",
               "meta:xdmField": "xdm:date",
               "tagNumber": 3
@@ -405,7 +406,7 @@
             "source": {
               "title": "Source",
               "type": "string",
-              "description": "Interesting moment source.",
+              "description": "Source of the action that triggered the interesting moment.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:source",
               "tagNumber": 4
@@ -422,7 +423,7 @@
             "sourceType": {
               "title": "Source Type",
               "type": "string",
-              "description": "Type of the source.",
+              "description": "Type of lead source.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:sourceType",
               "tagNumber": 1
@@ -438,7 +439,7 @@
             "listName": {
               "title": "List Name",
               "type": "string",
-              "description": "Name of the list.",
+              "description": "Name of marketing list.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:listName",
               "tagNumber": 3
@@ -446,7 +447,7 @@
             "sfdcType": {
               "title": "SFDC Type",
               "type": "string",
-              "description": "Type defined in salesforce source.",
+              "description": "Lead type in SFDC.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:sfdcType",
               "tagNumber": 4
@@ -454,7 +455,7 @@
             "leadSource": {
               "title": "Lead Source",
               "type": "string",
-              "description": "Source from where this perticlar lead come from.",
+              "description": "Source of lead.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:leadSource",
               "tagNumber": 5
@@ -463,7 +464,7 @@
               "title": "Created Date",
               "type": "string",
               "format": "date-time",
-              "description": "Date when this lead is created.",
+              "description": "Lead creation date.",
               "meta:xdmType": "date-time",
               "meta:xdmField": "xdm:createdDate",
               "tagNumber": 6
@@ -480,7 +481,7 @@
             "scoreAttributeID": {
               "title": "Score Atribute ID",
               "type": "string",
-              "description": "Unique identifier for score attribute.",
+              "description": "Unique ID of the lead score attribute.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:scoreAttributeID",
               "tagNumber": 1
@@ -488,7 +489,7 @@
             "scoreAttributeName": {
               "title": "Score Atribute Name",
               "type": "string",
-              "description": "friendly name for the score.",
+              "description": "Friendly name of the lead score attribute.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:scoreAttributeName",
               "tagNumber": 2
@@ -496,7 +497,7 @@
             "changeValue": {
               "title": "Change Value",
               "type": "string",
-              "description": "changed value.",
+              "description": "Absolute value or difference between new value and previous value of the lead score attribute.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:changeValue",
               "tagNumber": 3
@@ -504,7 +505,7 @@
             "newValue": {
               "title": "New Value",
               "type": "integer",
-              "description": "New score Value.",
+              "description": "New value of the lead score attribute.",
               "meta:xdmType": "int",
               "meta:xdmField": "xdm:newValue",
               "tagNumber": 4
@@ -512,7 +513,7 @@
             "oldValue": {
               "title": "Old Value",
               "type": "integer",
-              "description": "old score Value.",
+              "description": "Previous value of the lead score attribute.",
               "meta:xdmType": "int",
               "meta:xdmField": "xdm:oldValue",
               "tagNumber": 5
@@ -520,7 +521,7 @@
             "reason": {
               "title": "Reason",
               "type": "string",
-              "description": "Reason for the change.",
+              "description": "Reason for the change to the lead score attribute.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:reason",
               "tagNumber": 6
@@ -528,7 +529,7 @@
             "urgency": {
               "title": "Urgency",
               "type": "number",
-              "description": "Urgency for this change.",
+              "description": "Gauge of how much the lead's score has changed recently.",
               "meta:xdmType": "number",
               "meta:xdmField": "xdm:urgency",
               "tagNumber": 7
@@ -536,7 +537,7 @@
             "priority": {
               "title": "Priority",
               "type": "integer",
-              "description": "Priority for this change.",
+              "description": "Overall priority the lead should receive based on urgency and score.",
               "meta:xdmType": "int",
               "meta:xdmField": "xdm:priority",
               "tagNumber": 8
@@ -544,7 +545,7 @@
             "relativeScore": {
               "title": "Relative Score",
               "type": "integer",
-              "description": "Relative score.",
+              "description": "How the lead's score compares to other leads in the database.",
               "meta:xdmType": "int",
               "meta:xdmField": "xdm:relativeScore",
               "tagNumber": 9
@@ -552,7 +553,7 @@
             "relativeUrgency": {
               "title": "Relative Urgency",
               "type": "integer",
-              "description": "Relative Urgency for this change.",
+              "description": "How the lead's urgency compares to other leads in the database.",
               "meta:xdmType": "int",
               "meta:xdmField": "xdm:relativeUrgency",
               "tagNumber": 10
@@ -569,7 +570,7 @@
             "campaignID": {
               "title": "Campaign ID",
               "type": "string",
-              "description": "Unique identifier for campaign.",
+              "description": "Unique ID of the Campaign.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:campaignID",
               "tagNumber": 1
@@ -577,7 +578,7 @@
             "newStatusID": {
               "title": "New Status ID",
               "type": "string",
-              "description": "Unique identifier for new status.",
+              "description": "ID of the lead's new status in the campaign.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:newStatusID",
               "tagNumber": 2
@@ -585,7 +586,7 @@
             "newStatusName": {
               "title": "New Status Name",
               "type": "string",
-              "description": "Friendly name for new status.",
+              "description": "Friendly name of the lead's new status in the campaign.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:newStatusName",
               "tagNumber": 3
@@ -593,7 +594,7 @@
             "oldStatusID": {
               "title": "Old Status ID",
               "type": "string",
-              "description": "Unique identifier for old status.",
+              "description": "ID of the lead's previous status in the campaign.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:oldStatusID",
               "tagNumber": 4
@@ -601,7 +602,7 @@
             "oldStatusName": {
               "title": "Old Status Name",
               "type": "string",
-              "description": "Friendly name for old status.",
+              "description": "Friendly name of the lead's previous status in the campaign.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:oldStatusName",
               "tagNumber": 5
@@ -609,7 +610,7 @@
             "reason": {
               "title": "Reason",
               "type": "string",
-              "description": "Reason for status change.",
+              "description": "Reason for the change in the lead's status.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:reason",
               "tagNumber": 6
@@ -617,7 +618,7 @@
             "isAcquiredBy": {
               "title": "Is Acquired By",
               "type": "boolean",
-              "description": "Change acquired by user.",
+              "description": "Boolean indicating if lead was acquired by the campaign.",
               "meta:xdmType": "boolean",
               "meta:xdmField": "xdm:isAcquiredBy",
               "tagNumber": 7
@@ -625,7 +626,7 @@
             "isSuccessful": {
               "title": "Is Successful",
               "type": "boolean",
-              "description": "Is the change successful or failed in process.",
+              "description": "Boolean indicating if there was a change in the lead's status.",
               "meta:xdmType": "boolean",
               "meta:xdmField": "xdm:isSuccessful",
               "tagNumber": 8
@@ -648,7 +649,7 @@
         "mailingID": {
           "title": "Mailing ID",
           "type": "string",
-          "description": "Unique identifier of the mailing.",
+          "description": "Unique ID of the email asset.",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:mailingID",
           "tagNumber": 1
@@ -656,66 +657,58 @@
         "mailingName": {
           "title": "Mailing Name",
           "type": "string",
-          "description": "Friendly name for the mailing.",
+          "description": "Friendly name of the email asset.",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:mailingName",
           "tagNumber": 2
         },
-        "emailBouncedCategory": {
+        "emailBouncedCode": {
           "title": "Email Bounced Category",
           "type": "string",
-          "description": "Category in which this email failure belongs.",
+          "description": "Code denoting the type of bounce received from the Mail Transfer Agent.",
           "meta:xdmType": "string",
-          "meta:xdmField": "xdm:emailBouncedCategory",
+          "meta:xdmField": "xdm:emailBouncedCode",
           "tagNumber": 3
         },
         "emailBouncedDetails": {
           "title": "Email Bounced Details",
           "type": "string",
-          "description": "Email failure reason description message.",
+          "description": "Details of email bounce from the Mail Transfer Agent.",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:emailBouncedDetails",
           "tagNumber": 4
         },
-        "emailBouncedSubcategory": {
-          "title": "Email Bounced Subcategory",
-          "type": "string",
-          "description": "Subcategory this failure reason belongs to.",
-          "meta:xdmType": "string",
-          "meta:xdmField": "xdm:emailBouncedSubcategory",
-          "tagNumber": 5
-        },
         "email": {
           "title": "email",
           "type": "string",
-          "description": "visitor email ID.",
+          "description": "Recipient's email address.",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:email",
-          "tagNumber": 6
+          "tagNumber": 5
         },
         "testVariantID": {
           "title": "Test Variant ID",
           "type": "string",
-          "description": "Unique identifier for the test variant.",
+          "description": "Unique ID of the test variant of the email asset.",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:testVariantID",
-          "tagNumber": 7
+          "tagNumber": 6
         },
         "testVariantName": {
           "title": "Test Variant Name",
           "type": "string",
-          "description": "Friendly name for the test variant.",
+          "description": "Friendly name of the test variant of the email asset .",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:testVariantName",
-          "tagNumber": 8
+          "tagNumber": 7
         },
         "linkURL": {
           "title": "Link URL",
           "type": "string",
-          "description": "The link URL.",
+          "description": "URL of the link clicked.",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:linkURL",
-          "tagNumber": 9
+          "tagNumber": 8
         }
       },
       "meta:xdmField": "xdm:directMarketing",
@@ -758,7 +751,7 @@
           "title": "IPv4",
           "type": "string",
           "format": "ipv4",
-          "description": "The numerical label assigned to a device participating in a computer network that uses the Internet Protocol for communication. ",
+          "description": "The numerical label assigned to a device participating in a computer network that uses the Internet Protocol for communication.",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:ipV4",
           "tagNumber": 3
@@ -777,7 +770,7 @@
         "isMobileDevice": {
           "title": "Is Mobile Device",
           "type": "boolean",
-          "description": "Is this mobile device.",
+          "description": "Boolean that indicates if device used was a mobile device.",
           "meta:xdmType": "boolean",
           "meta:xdmField": "xdm:isMobileDevice",
           "tagNumber": 1
@@ -809,7 +802,7 @@
             "linkID": {
               "title": "Link ID",
               "type": "string",
-              "description": "Unique identifier to link.",
+              "description": "Optional user-entered value as the `id`  of the link element in the HTML of the email.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:linkID",
               "tagNumber": 1
@@ -821,6 +814,14 @@
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:linkName",
               "tagNumber": 2
+            },
+            "linkURL": {
+              "title": "Link URL",
+              "type": "string",
+              "description": "URL of the link clicked.",
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:linkURL",
+              "tagNumber": 3
             }
           },
           "meta:xdmField": "xdm:webInteraction",
@@ -834,7 +835,7 @@
             "webFormID": {
               "title": "Web Form ID",
               "type": "string",
-              "description": "Unique Identifier for web form.",
+              "description": "Unique ID of the form.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:webFormID",
               "tagNumber": 1
@@ -842,7 +843,7 @@
             "webFormName": {
               "title": "Web Form Name",
               "type": "string",
-              "description": "Friendly name for web form.",
+              "description": "Friendly name of the form.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:webFormName",
               "tagNumber": 2
@@ -859,7 +860,7 @@
             "webPageID": {
               "title": "Web Page ID",
               "type": "string",
-              "description": "Unique Identifier for web page.",
+              "description": "Unique ID of the web page.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:webPageID",
               "tagNumber": 1
@@ -872,12 +873,12 @@
               "meta:xdmField": "xdm:name",
               "tagNumber": 2
             },
-            "queryParamaters": {
-              "title": "Query Paramaters",
+            "queryParameters": {
+              "title": "Query Parameters",
               "type": "string",
-              "description": "Query Paramters used for the web page.",
+              "description": "Query Parameters used for the web page. This is normally the value of a string after `?` in the url.",
               "meta:xdmType": "string",
-              "meta:xdmField": "xdm:queryParamaters",
+              "meta:xdmField": "xdm:queryParameters",
               "tagNumber": 3
             },
             "URL": {
@@ -892,7 +893,7 @@
             "isPersonalizedURL": {
               "title": "Is Personalized URL",
               "type": "boolean",
-              "description": "Personalized URL of the web page.  This may or may not be the actual URL used to reach the page, which would be recorded using `Web Link`.",
+              "description": "Boolean indicating if person accessed the web page via a personalized URL.",
               "meta:xdmType": "boolean",
               "meta:xdmField": "xdm:isPersonalizedURL",
               "tagNumber": 5
@@ -909,7 +910,7 @@
             "URL": {
               "title": "URL",
               "type": "string",
-              "description": "The referrer URL.",
+              "description": "URL of referrer to web page.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:URL",
               "tagNumber": 1
@@ -926,7 +927,7 @@
             "webFormID": {
               "title": "Web Form ID",
               "type": "string",
-              "description": "Unique Identifier for web form.",
+              "description": "Unique ID of the form.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:webFormID",
               "tagNumber": 1
@@ -934,7 +935,7 @@
             "webFormName": {
               "title": "Web Form Name",
               "type": "string",
-              "description": "Friendly name for web form.",
+              "description": "Friendly name of the form.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:webFormName",
               "tagNumber": 2

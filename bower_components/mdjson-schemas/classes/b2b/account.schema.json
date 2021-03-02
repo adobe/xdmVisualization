@@ -23,8 +23,8 @@
       "tagNumber": 1
     },
     "accountID": {
-      "title": "Account ID",
-      "description": "Account identifer",
+      "title": "Account identifer",
+      "description": "Unique ID for the account.",
       "type": "string",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:accountID",

@@ -17,7 +17,7 @@
         "mailingID": {
           "title": "Mailing ID",
           "type": "string",
-          "description": "Unique identifier of the mailing.",
+          "description": "Unique ID of the email asset.",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:mailingID",
           "tagNumber": 1
@@ -25,7 +25,7 @@
         "mailingName": {
           "title": "Mailing Name",
           "type": "string",
-          "description": "Friendly name for the mailing.",
+          "description": "Friendly name of the email asset.",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:mailingName",
           "tagNumber": 2
@@ -33,7 +33,7 @@
         "testVariantID": {
           "title": "Test Variant ID",
           "type": "string",
-          "description": "Unique identifier for the test variant.",
+          "description": "Unique ID of the test variant of the email asset.",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:testVariantID",
           "tagNumber": 3
@@ -41,7 +41,7 @@
         "testVariantName": {
           "title": "Test Variant Name",
           "type": "string",
-          "description": "Friendly name for the test variant.",
+          "description": "Friendly name of the test variant of the email asset.",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:testVariantName",
           "tagNumber": 4
@@ -94,7 +94,7 @@
         "isMobileDevice": {
           "title": "Is Mobile Device",
           "type": "boolean",
-          "description": "Is this mobile device.",
+          "description": "Boolean that indicates if device used was a mobile device.",
           "meta:xdmType": "boolean",
           "meta:xdmField": "xdm:isMobileDevice",
           "tagNumber": 1

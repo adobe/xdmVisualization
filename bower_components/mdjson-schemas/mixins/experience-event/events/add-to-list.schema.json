@@ -17,7 +17,7 @@
         "listID": {
           "title": "List ID",
           "type": "string",
-          "description": "List unique identifier.",
+          "description": "Unique ID of the Marketing List.",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:listID",
           "tagNumber": 1

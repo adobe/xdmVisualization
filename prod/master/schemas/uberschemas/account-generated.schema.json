@@ -24,8 +24,8 @@
       "tagNumber": 1
     },
     "accountID": {
-      "title": "Account ID",
-      "description": "Account identifer",
+      "title": "Account identifer",
+      "description": "Unique ID for the account.",
       "type": "string",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:accountID",
@@ -44,7 +44,7 @@
       "meta:xdmField": "xdm:accountComponents",
       "tagNumber": 4,
       "items": {
-        "$ref": "obj19481266365886074.schema.json"
+        "$ref": "obj4211377611243239.schema.json"
       }
     },
     "accountParentID": {

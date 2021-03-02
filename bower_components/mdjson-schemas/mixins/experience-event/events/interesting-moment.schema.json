@@ -22,7 +22,7 @@
             "type": {
               "title": "Type",
               "type": "string",
-              "description": "Interesting moment type.",
+              "description": "Type of Interesting Moment.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:type",
               "tagNumber": 1
@@ -30,7 +30,7 @@
             "description": {
               "title": "Description",
               "type": "string",
-              "description": "Interesting moment description.",
+              "description": "Description of Interesting Moment.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:description",
               "tagNumber": 2
@@ -39,7 +39,7 @@
               "title": "Date",
               "type": "string",
               "format": "date-time",
-              "description": "Interesting moment date.",
+              "description": "Date of the Interesting Moment.",
               "meta:xdmType": "date-time",
               "meta:xdmField": "xdm:date",
               "tagNumber": 3
@@ -47,7 +47,7 @@
             "source": {
               "title": "Source",
               "type": "string",
-              "description": "Interesting moment source.",
+              "description": "Source of the action that triggered the interesting moment.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:source",
               "tagNumber": 4

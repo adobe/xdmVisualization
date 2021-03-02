@@ -25,7 +25,7 @@
     },
     "marketingListMemberID": {
       "title": "Marketing List Member ID",
-      "description": "Marketing list member identifer",
+      "description": "Unique ID for the membership of this person to this marketing list.",
       "type": "string",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:marketingListMemberID",
@@ -33,7 +33,7 @@
     },
     "personID": {
       "title": "Person Identifier",
-      "description": "Person associated with the marketing list.",
+      "description": "Unique ID for the person who is a member of this marketing list.",
       "type": "string",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:personID",
@@ -41,7 +41,7 @@
     },
     "marketingListID": {
       "title": "Marketing List Identifier",
-      "description": "Unique identifier for the marketing list.",
+      "description": "Unique ID for the marketing list this person is a member of.",
       "type": "string",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:marketingListID",
@@ -60,7 +60,7 @@
       "meta:xdmField": "xdm:marketingListMemberComponents",
       "tagNumber": 6,
       "items": {
-        "$ref": "obj3618761676140192.schema.json"
+        "$ref": "obj6294411975117162.schema.json"
       }
     }
   },

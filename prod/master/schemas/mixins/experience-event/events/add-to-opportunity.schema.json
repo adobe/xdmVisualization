@@ -17,7 +17,7 @@
         "opportunityID": {
           "title": "Opportunity ID",
           "type": "string",
-          "description": "Opportunity ID",
+          "description": "Unique ID of the Opportunity.",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:opportunityID",
           "tagNumber": 1
@@ -25,7 +25,7 @@
         "isPrimary": {
           "title": "Is Primary",
           "type": "boolean",
-          "description": "Is primary.",
+          "description": "Boolean indicating if person is the primary contact on the Opportunity.",
           "meta:xdmType": "boolean",
           "meta:xdmField": "xdm:isPrimary",
           "tagNumber": 2
@@ -33,7 +33,7 @@
         "role": {
           "title": "Role",
           "type": "string",
-          "description": "Role.",
+          "description": "Role of the person on the Opportunity.",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:role",
           "tagNumber": 3

@@ -5,7 +5,7 @@
   "type": "object",
   "meta:conditionalField": "xdm:eventType",
   "meta:conditionalValue": "web.webInteraction.linkClicks",
-  "description": "Use to capture details when a person clicks a link on a webpage.",
+  "description": "Use to capture details when a person clicks a link on a web page.",
   "meta:status": "experimental",
   "meta:xdmType": "object",
   "properties": {
@@ -22,17 +22,17 @@
             "linkID": {
               "title": "Link ID",
               "type": "string",
-              "description": "unique identifier to Link.",
+              "description": "Unique ID of the link clicked.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:linkID",
               "tagNumber": 1
             },
-            "linkName": {
-              "title": "Link Name",
+            "linkURL": {
+              "title": "Link URL",
               "type": "string",
-              "description": "Friendly name to link",
+              "description": "URL of the link clicked.",
               "meta:xdmType": "string",
-              "meta:xdmField": "xdm:linkName",
+              "meta:xdmField": "xdm:linkURL",
               "tagNumber": 2
             }
           },
@@ -47,7 +47,7 @@
             "webPageID": {
               "title": "Web Page ID",
               "type": "string",
-              "description": "Unique Identifier for web page.",
+              "description": "Unique ID of the web page.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:webPageID",
               "tagNumber": 1
@@ -60,12 +60,12 @@
               "meta:xdmField": "xdm:name",
               "tagNumber": 2
             },
-            "queryParamaters": {
-              "title": "Query Paramaters",
+            "queryParameters": {
+              "title": "Query Parameters",
               "type": "string",
-              "description": "Query Paramters used for the web page.",
+              "description": "Query Parameters used for the web page. This is normally the value of a string after `?` in the url.",
               "meta:xdmType": "string",
-              "meta:xdmField": "xdm:queryParamaters",
+              "meta:xdmField": "xdm:queryParameters",
               "tagNumber": 3
             }
           },
@@ -80,7 +80,7 @@
             "URL": {
               "title": "URL",
               "type": "string",
-              "description": "The referrer URL.",
+              "description": "URL of the referrer to the website.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:URL",
               "tagNumber": 1
@@ -103,7 +103,7 @@
           "title": "IPv4",
           "type": "string",
           "format": "ipv4",
-          "description": "The numerical label assigned to a device participating in a computer network that uses the Internet Protocol for communication. ",
+          "description": "The numerical label assigned to a device participating in a computer network that uses the Internet Protocol for communication.",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:ipV4",
           "tagNumber": 1
