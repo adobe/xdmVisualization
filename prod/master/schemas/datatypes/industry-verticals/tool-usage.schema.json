@@ -8,99 +8,99 @@
   "meta:status": "experimental",
   "meta:xdmType": "object",
   "properties": {
-    "toolUsageCancelled": {
-      "title": "Tool Usage Cancelled",
+    "cancelled": {
+      "title": "Cancelled",
       "type": "integer",
       "description": "Captured when a visitor cancels out of a tool usage process.",
       "meta:xdmType": "int",
-      "meta:xdmField": "xdm:toolUsageCancelled",
+      "meta:xdmField": "xdm:cancelled",
       "tagNumber": 1
     },
-    "toolUsageComplete": {
-      "title": "Tool Usage Complete",
+    "complete": {
+      "title": "Complete",
       "type": "integer",
       "description": "Captured when a visitor successfully finishes using any type of tool or utility on the site/app.",
       "meta:xdmType": "int",
-      "meta:xdmField": "xdm:toolUsageComplete",
+      "meta:xdmField": "xdm:complete",
       "tagNumber": 2
     },
-    "toolUsageFailure": {
-      "title": "Tool Usage Failed",
+    "failure": {
+      "title": "Failed",
       "type": "integer",
       "description": "Captured when a step in the tool usage process fails.",
       "meta:xdmType": "int",
-      "meta:xdmField": "xdm:toolUsageFailure",
+      "meta:xdmField": "xdm:failure",
       "tagNumber": 3
     },
-    "toolUsageID": {
-      "title": "Tool Usage ID",
+    "ID": {
+      "title": "ID",
       "type": "string",
       "description": "Captures the ID of the tool process utilized, if applicable.  For example, this could be a claim, application, or booking ID, etc.",
       "meta:xdmType": "string",
-      "meta:xdmField": "xdm:toolUsageID",
+      "meta:xdmField": "xdm:ID",
       "tagNumber": 4
     },
-    "toolUsageName": {
-      "title": "Tool Usage Name",
+    "name": {
+      "title": "Name",
       "type": "string",
       "description": "Tracks the name of the tool in use.",
       "meta:xdmType": "string",
-      "meta:xdmField": "xdm:toolUsageName",
+      "meta:xdmField": "xdm:name",
       "tagNumber": 5
     },
-    "toolUsageSaved": {
-      "title": "Tool Usage Saved",
+    "saved": {
+      "title": "Saved",
       "type": "integer",
       "description": "Captured when a visitor saves and exits a tool usage process.",
       "meta:xdmType": "int",
-      "meta:xdmField": "xdm:toolUsageSaved",
+      "meta:xdmField": "xdm:saved",
       "tagNumber": 6
     },
-    "toolUsageStart": {
-      "title": "Tool Usage Start",
+    "start": {
+      "title": "Start",
       "type": "integer",
       "description": "Captured when a visitor initializes using any type of tool or utility on the site/app.",
       "meta:xdmType": "int",
-      "meta:xdmField": "xdm:toolUsageStart",
+      "meta:xdmField": "xdm:start",
       "tagNumber": 7
     },
-    "toolUsageStep": {
-      "title": "Tool Usage Step",
+    "step": {
+      "title": "Step",
       "type": "integer",
       "description": "Captured when any intermediary tool step is started on the site/app.",
       "meta:xdmType": "int",
-      "meta:xdmField": "xdm:toolUsageStep",
+      "meta:xdmField": "xdm:step",
       "tagNumber": 8
     },
-    "toolUsageStepName": {
-      "title": "Tool Usage Step Name",
+    "stepName": {
+      "title": "Step Name",
       "type": "string",
       "description": "Tracks the name of the tool step in use.",
       "meta:xdmType": "string",
-      "meta:xdmField": "xdm:toolUsageStepName",
+      "meta:xdmField": "xdm:stepName",
       "tagNumber": 9
     },
-    "toolUsageSubmitted": {
-      "title": "Tool Usage Submitted",
+    "submitted": {
+      "title": "Submitted",
       "type": "integer",
       "description": "Captured when a visitor submits data during a tool step.  Not necessarily synonymous with a successful event.",
       "meta:xdmType": "int",
-      "meta:xdmField": "xdm:toolUsageSubmitted",
+      "meta:xdmField": "xdm:submitted",
       "tagNumber": 10
     },
-    "toolUsageTransaction": {
-      "title": "Tool Usage Transaction",
+    "transaction": {
+      "title": "Transaction",
       "$ref": "transaction.schema.json",
       "description": "Extension of Transaction Data Type",
-      "meta:xdmField": "xdm:toolUsageTransaction",
+      "meta:xdmField": "xdm:transaction",
       "tagNumber": 11
     },
-    "toolUsageType": {
-      "title": "Tool Usage Type",
+    "type": {
+      "title": "Type",
       "type": "string",
       "description": "Tracks the type or category of the tool in use.",
       "meta:xdmType": "string",
-      "meta:xdmField": "xdm:toolUsageType",
+      "meta:xdmField": "xdm:type",
       "tagNumber": 12
     }
   },

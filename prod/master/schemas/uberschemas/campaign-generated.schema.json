@@ -68,7 +68,7 @@
       "meta:xdmField": "xdm:campaignComponents",
       "tagNumber": 7,
       "items": {
-        "$ref": "obj7485130073532806.schema.json"
+        "$ref": "obj9125432169414329.schema.json"
       }
     },
     "parentCampaignID": {
@@ -79,21 +79,13 @@
       "meta:xdmField": "xdm:parentCampaignID",
       "tagNumber": 8
     },
-    "campaignOwnerID": {
-      "title": "Campaign Owner ID.",
-      "description": "",
-      "type": "string",
-      "meta:xdmType": "string",
-      "meta:xdmField": "xdm:campaignOwnerID",
-      "tagNumber": 9
-    },
     "campaignStatus": {
       "title": "Campaign Status",
       "description": "",
       "type": "string",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:campaignStatus",
-      "tagNumber": 10
+      "tagNumber": 9
     },
     "campaignProgressionName": {
       "title": "Campaign Progression Name",
@@ -101,7 +93,7 @@
       "type": "string",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:campaignProgressionName",
-      "tagNumber": 11
+      "tagNumber": 10
     },
     "integrationPartnerName": {
       "title": "Integration Partner Name",
@@ -109,7 +101,7 @@
       "type": "string",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:integrationPartnerName",
-      "tagNumber": 12
+      "tagNumber": 11
     },
     "channelName": {
       "title": "Channel Name",
@@ -117,7 +109,7 @@
       "type": "string",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:channelName",
-      "tagNumber": 13
+      "tagNumber": 12
     },
     "campaignStartDate": {
       "title": "Campaign Start Date",
@@ -126,7 +118,7 @@
       "format": "date-time",
       "meta:xdmType": "date-time",
       "meta:xdmField": "xdm:campaignStartDate",
-      "tagNumber": 14
+      "tagNumber": 13
     },
     "campaignEndDate": {
       "title": "Campaign End Date",
@@ -135,7 +127,7 @@
       "format": "date-time",
       "meta:xdmType": "date-time",
       "meta:xdmField": "xdm:campaignEndDate",
-      "tagNumber": 15
+      "tagNumber": 14
     },
     "timeZone": {
       "title": "Timezone",
@@ -143,7 +135,7 @@
       "type": "string",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:timeZone",
-      "tagNumber": 16
+      "tagNumber": 15
     },
     "timezoneName": {
       "title": "Timezone Name",
@@ -151,7 +143,7 @@
       "type": "string",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:timezoneName",
-      "tagNumber": 17
+      "tagNumber": 16
     },
     "timeZoneDelivery": {
       "title": "TimeZone Delivery",
@@ -159,7 +151,7 @@
       "type": "string",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:timeZoneDelivery",
-      "tagNumber": 18
+      "tagNumber": 17
     },
     "webinarSessionName": {
       "title": "Webinar Session Name",
@@ -167,7 +159,7 @@
       "type": "string",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:webinarSessionName",
-      "tagNumber": 19
+      "tagNumber": 18
     },
     "webinarSessionDescription": {
       "title": "Webinar Session Description",
@@ -175,7 +167,7 @@
       "type": "string",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:webinarSessionDescription",
-      "tagNumber": 20
+      "tagNumber": 19
     },
     "webinarHistorySyncStatus": {
       "title": "Webinar History Sync Status",
@@ -183,7 +175,7 @@
       "type": "string",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:webinarHistorySyncStatus",
-      "tagNumber": 21
+      "tagNumber": 20
     },
     "webinarHistorySyncDate": {
       "title": "Webinar History Sync Date",
@@ -192,7 +184,7 @@
       "format": "date-time",
       "meta:xdmType": "date-time",
       "meta:xdmField": "xdm:webinarHistorySyncDate",
-      "tagNumber": 22
+      "tagNumber": 21
     },
     "isActive": {
       "title": "Is Active",
@@ -200,7 +192,7 @@
       "type": "boolean",
       "meta:xdmType": "boolean",
       "meta:xdmField": "xdm:isActive",
-      "tagNumber": 23
+      "tagNumber": 22
     },
     "lastActivityDate": {
       "title": "last Activity Date",
@@ -209,7 +201,7 @@
       "format": "date-time",
       "meta:xdmType": "date-time",
       "meta:xdmField": "xdm:lastActivityDate",
-      "tagNumber": 24
+      "tagNumber": 23
     },
     "expectedResponse": {
       "title": "Expected Response",
@@ -217,28 +209,28 @@
       "type": "string",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:expectedResponse",
-      "tagNumber": 25
+      "tagNumber": 24
     },
     "expectedRevenue": {
       "title": "Expected Revenue",
       "description": "",
       "$ref": "../datatypes/currency.schema.json",
       "meta:xdmField": "xdm:expectedRevenue",
-      "tagNumber": 26
+      "tagNumber": 25
     },
     "budgetedCost": {
       "title": "Budgeted Cost",
       "description": "",
       "$ref": "../datatypes/currency.schema.json",
       "meta:xdmField": "xdm:budgetedCost",
-      "tagNumber": 27
+      "tagNumber": 26
     },
     "actualCost": {
       "title": "Actual Cost",
       "description": "",
       "$ref": "../datatypes/currency.schema.json",
       "meta:xdmField": "xdm:actualCost",
-      "tagNumber": 28
+      "tagNumber": 27
     }
   },
   "meta:xdmId": "https://ns.adobe.com/xdm/classes/campaign-generated",

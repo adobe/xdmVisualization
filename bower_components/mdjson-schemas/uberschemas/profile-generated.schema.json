@@ -13,11 +13,38 @@
     "deprecated",
     "experimental"
   ],
-  "meta:tags": {
-    "industry": [
-      "all"
-    ]
-  },
+  "meta:tags": [
+    {
+      "industry": [
+        "all"
+      ]
+    },
+    {
+      "industry": [
+        "retail",
+        "travel_and_hospitality",
+        "automotive",
+        "health_and_life_sciences",
+        "high_tech",
+        "manufacturing"
+      ]
+    },
+    {
+      "industry": [
+        "retail",
+        "financial_services",
+        "travel_and_hospitality",
+        "telecom",
+        "automotive",
+        "education",
+        "health_and_life_sciences",
+        "high_tech",
+        "manufacturing",
+        "media_and_entertainment",
+        "public_sector"
+      ]
+    }
+  ],
   "properties": {
     "repositoryCreatedBy": {
       "title": "Created by user identifier",
@@ -141,7 +168,7 @@
       "meta:xdmField": "xdm:personComponents",
       "tagNumber": 11,
       "items": {
-        "$ref": "obj09398061786168577.schema.json"
+        "$ref": "obj4592726224267185.schema.json"
       }
     },
     "b2b": {
@@ -1265,19 +1292,97 @@
       "meta:xdmField": "xdm:inferredPhoneAreaCode",
       "tagNumber": 37
     },
+    "loyalty": {
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "accountCreationStep": {
+          "title": "Account Creation Steps",
+          "$ref": "../datatypes/industry-verticals/tool-usage.schema.json",
+          "description": "Loyalty account creation steps.",
+          "meta:xdmField": "xdm:accountCreationStep",
+          "tagNumber": 1
+        },
+        "joinDate": {
+          "title": "Program Join Date",
+          "type": "string",
+          "format": "date-time",
+          "description": "Date which the visitor registered for the loyalty program.",
+          "meta:xdmType": "date-time",
+          "meta:xdmField": "xdm:joinDate",
+          "tagNumber": 2
+        },
+        "loyaltyID": {
+          "title": "Program ID",
+          "type": "array",
+          "description": "The loyalty program ID(s) associated with a specific user, if they are enrolled in the client's loyalty program.",
+          "meta:xdmType": "array",
+          "items": {
+            "type": "string",
+            "meta:xdmType": "string",
+            "tagNumber": 1
+          },
+          "meta:xdmField": "xdm:loyaltyID",
+          "tagNumber": 3
+        },
+        "points": {
+          "title": "Program Points Balance",
+          "type": "number",
+          "description": "Current balance of the loyalty points/awards in a visitor's loyalty account.",
+          "meta:xdmType": "number",
+          "meta:xdmField": "xdm:points",
+          "tagNumber": 4
+        },
+        "pointsExpiration": {
+          "title": "Points Expiration",
+          "type": "string",
+          "format": "date-time",
+          "description": "Date on which the loyalty points expire.",
+          "meta:xdmType": "date-time",
+          "meta:xdmField": "xdm:pointsExpiration",
+          "tagNumber": 5
+        },
+        "pointsRedeemed": {
+          "title": "Points Redeemed",
+          "type": "number",
+          "description": "Amount of points applied toward a purchase or otherwise redeemed.",
+          "meta:xdmType": "number",
+          "meta:xdmField": "xdm:pointsRedeemed",
+          "tagNumber": 6
+        },
+        "pointsAsOfDate": {
+          "title": "Points as of date",
+          "type": "number",
+          "description": "Point balance on the current date",
+          "meta:xdmType": "number",
+          "meta:xdmField": "xdm:pointsAsOfDate",
+          "tagNumber": 7
+        },
+        "program": {
+          "title": "Program Name",
+          "type": "string",
+          "description": "This should define the loyalty progam in which a visitor is enrolled.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:program",
+          "tagNumber": 8
+        }
+      },
+      "meta:xdmField": "xdm:loyalty",
+      "tagNumber": 38
+    },
     "orgUnit": {
       "title": "Organizational unit",
       "$ref": "../datatypes/b2b/orgunit.schema.json",
       "description": "The unit within the organization owning the profile. This can be used to reference the organization details maintained in another dataset.",
       "meta:xdmField": "xdm:orgUnit",
-      "tagNumber": 38
+      "tagNumber": 39
     },
     "geoUnit": {
       "title": "Geographical unit",
       "$ref": "../datatypes/demographic/geounit.schema.json",
       "description": "The geographical unit within the organization owning the profile. This can be used to reference the geographical information maintained in another dataset.",
       "meta:xdmField": "xdm:geoUnit",
-      "tagNumber": 39
+      "tagNumber": 40
     },
     "preferredLanguage": {
       "title": "Preferred language",
@@ -1291,7 +1396,7 @@
       "description": "Describes the preferred system of communication used by the profile. Language codes are expressed in BCP 47 format.",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:preferredLanguage",
-      "tagNumber": 40
+      "tagNumber": 41
     },
     "profilePictureLink": {
       "title": "Profile picture link",
@@ -1299,7 +1404,7 @@
       "description": "Link to profile's picture.",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:profilePictureLink",
-      "tagNumber": 41
+      "tagNumber": 42
     },
     "emailFormat": {
       "title": "Email format",
@@ -1307,7 +1412,7 @@
       "description": "Email format preferred by the profile. This can be rich text or plain text.",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:emailFormat",
-      "tagNumber": 42
+      "tagNumber": 43
     },
     "timeZone": {
       "title": "Time zone",
@@ -1320,14 +1425,14 @@
       "description": "Describes which time zone the profile is present in, most frequently the time zone preferred by the profile. Time zones are expressed according to the IETF tz database: https://www.ietf.org/timezones/tzdb-2016i/tz-link.htm",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:timeZone",
-      "tagNumber": 43
+      "tagNumber": 44
     },
     "optInOut": {
       "title": "OptInOut",
       "$ref": "../datatypes/optinout.schema.json",
       "description": "Describes a users opting in and out preferences for communication by medium and communication type.",
       "meta:xdmField": "xdm:optInOut",
-      "tagNumber": 44
+      "tagNumber": 45
     },
     "optOutConsentLevel": {
       "type": "object",
@@ -1344,12 +1449,12 @@
           "meta:xdmField": "xdm:privacyOptOuts",
           "tagNumber": 1,
           "items": {
-            "$ref": "obj7619848894468424.schema.json"
+            "$ref": "obj56882872143703.schema.json"
           }
         }
       },
       "meta:xdmField": "xdm:optOutConsentLevel",
-      "tagNumber": 45
+      "tagNumber": 46
     },
     "identityPrivacyInfo": {
       "title": "Identity level privacy information",
@@ -1400,7 +1505,7 @@
         "tagNumber": 1
       },
       "meta:xdmField": "xdm:identityPrivacyInfo",
-      "tagNumber": 46
+      "tagNumber": 47
     },
     "pushNotificationTokens": {
       "title": "Push notification tokens",
@@ -1412,7 +1517,7 @@
         "tagNumber": 1
       },
       "meta:xdmField": "xdm:pushNotificationTokens",
-      "tagNumber": 47
+      "tagNumber": 48
     },
     "pushNotificationDetails": {
       "title": "Push details",
@@ -1424,7 +1529,7 @@
         "tagNumber": 1
       },
       "meta:xdmField": "xdm:pushNotificationDetails",
-      "tagNumber": 48
+      "tagNumber": 49
     },
     "segments": {
       "title": "Segment membership",
@@ -1436,7 +1541,7 @@
         "tagNumber": 1
       },
       "meta:xdmField": "xdm:segments",
-      "tagNumber": 49
+      "tagNumber": 50
     },
     "segmentMembership": {
       "title": "Segment membership map",
@@ -1453,7 +1558,7 @@
         "tagNumber": 1
       },
       "meta:xdmField": "xdm:segmentMembership",
-      "tagNumber": 50
+      "tagNumber": 51
     },
     "subscriptions": {
       "title": "Subscriptions",
@@ -1465,7 +1570,7 @@
         "tagNumber": 1
       },
       "meta:xdmField": "xdm:subscriptions",
-      "tagNumber": 51
+      "tagNumber": 52
     },
     "testProfile": {
       "title": "Test profile",
@@ -1474,7 +1579,81 @@
       "default": false,
       "meta:xdmType": "boolean",
       "meta:xdmField": "xdm:testProfile",
-      "tagNumber": 52
+      "tagNumber": 53
+    },
+    "userAccount": {
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "userAccountID": {
+          "title": "User Account ID",
+          "type": "string",
+          "description": "Captures the user account ID.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:userAccountID",
+          "tagNumber": 1
+        },
+        "userAccountPersonalDetails": {
+          "title": "User Account Personal Details",
+          "$ref": "../mixins/profile/profile-personal-details.schema.json",
+          "description": "Extension of the Personal Profile data type.",
+          "meta:xdmField": "xdm:userAccountPersonalDetails",
+          "tagNumber": 2
+        },
+        "userAccountStart": {
+          "title": "User Account Start Date",
+          "type": "string",
+          "format": "date-time",
+          "description": "Date when the account was opened.",
+          "meta:xdmType": "date-time",
+          "meta:xdmField": "xdm:userAccountStart",
+          "tagNumber": 3
+        },
+        "userAccountStatus": {
+          "title": "User Account Status",
+          "type": "string",
+          "enum": [
+            "active",
+            "inactive",
+            "disabled",
+            "other"
+          ],
+          "description": "This should describe the current status of the account",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:userAccountStatus",
+          "tagNumber": 4
+        },
+        "userAccountType": {
+          "title": "User Account Type",
+          "type": "string",
+          "description": "Captures the user account type, if applicable.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:userAccountType",
+          "tagNumber": 5
+        },
+        "userAccountRegistration": {
+          "title": "User Account Registration",
+          "$ref": "../datatypes/industry-verticals/tool-usage.schema.json",
+          "description": "Extension of toolUsage data type.",
+          "meta:xdmField": "xdm:userAccountRegistration",
+          "tagNumber": 6
+        },
+        "userAccountPreferences": {
+          "title": "User Account Preferences",
+          "type": "array",
+          "description": "M/F, other shopping preferences. Preferences in personal profile is already captured- things like perferred method of contact, not shopping prefs. ",
+          "meta:xdmType": "array",
+          "items": {
+            "type": "string",
+            "meta:xdmType": "string",
+            "tagNumber": 1
+          },
+          "meta:xdmField": "xdm:userAccountPreferences",
+          "tagNumber": 7
+        }
+      },
+      "meta:xdmField": "xdm:userAccount",
+      "tagNumber": 54
     }
   },
   "meta:xdmId": "https://ns.adobe.com/xdm/context/profile-generated",

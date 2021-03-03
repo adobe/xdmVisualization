@@ -1,7 +1,7 @@
 {
   "id": "_xdm.datatypes.b2b-account-organization",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Account Organization",
+  "title": "Account Details",
   "type": "object",
   "description": "Commonly used organizational attributes for a B2B account such as number of employees, market segment, industry, rating, tickersymbol etc.",
   "meta:status": "experimental",
@@ -10,7 +10,7 @@
     "organizationType": {
       "title": "Type of Organizations",
       "type": "string",
-      "description": "Label describing the type of organization.",
+      "description": "Label describing the type of organization",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:organizationType",
       "tagNumber": 1
@@ -18,14 +18,14 @@
     "numberOfEmployees": {
       "title": "Number of employees",
       "type": "integer",
-      "description": "Number of employees of the account.",
+      "description": "The number of employees at the organization.",
       "meta:xdmType": "int",
       "meta:xdmField": "xdm:numberOfEmployees",
       "tagNumber": 2
     },
     "annualRevenue": {
       "title": "Annual Revenue",
-      "description": "Estimated annual revenue of the account.",
+      "description": "Estimated amount of annual revenue of the organization.",
       "$ref": "../currency.schema.json",
       "meta:xdmField": "xdm:annualRevenue",
       "tagNumber": 3
@@ -33,7 +33,7 @@
     "industry": {
       "title": "Industry",
       "type": "string",
-      "description": "Industry of the account.",
+      "description": "The industry that this organization is a part of. This is a free-form field, and it is advisable to use a structured value for queries or to use the `xdm:classifier` property.",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:industry",
       "tagNumber": 4
@@ -41,7 +41,7 @@
     "website": {
       "title": "Website URL",
       "type": "string",
-      "description": "The URL of the account's website.",
+      "description": "The URL of the organization's website.",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:website",
       "tagNumber": 5
@@ -49,7 +49,7 @@
     "marketSegment": {
       "title": "Market segment",
       "type": "string",
-      "description": "Market segment of the account.",
+      "description": "The named market segment that the organization participates in. This is a free-form field, and it is advisable to use a structured value for queries or to use the `xdm:identifier` property.",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:marketSegment",
       "tagNumber": 6
@@ -59,14 +59,14 @@
       "type": "number",
       "minimum": 0,
       "maximum": 1,
-      "description": "The calculated score or star rating for this account. `1` indicates the maximum possible rating, `0` the minimum possible rating.",
+      "description": "The calculated score or star rating for this organization. `1` indicates the maximum possible rating, `0` the minimum possible rating.",
       "meta:xdmType": "number",
       "meta:xdmField": "xdm:rating",
       "tagNumber": 7
     },
     "tickerSymbol": {
       "title": "Ticker Symbol",
-      "description": "The stock market symbol for this account.",
+      "description": "The stock market symbol for this account. Maximum of 20 characters.",
       "type": "string",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:tickerSymbol",
@@ -74,7 +74,7 @@
     },
     "logoUrl": {
       "title": "Logo URL",
-      "description": "URL for the image of the account's logo.",
+      "description": "Path to be combined with the URL of a Salesforce instance (for example, https://yourInstance.salesforce.com/) to generate a URL to request the social network profile image associated with the account. Generated URL returns an HTTP redirect (code 302) to the social network profile image for the account.",
       "type": "string",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:logoUrl",
@@ -82,7 +82,7 @@
     },
     "linkedinPageUrl": {
       "title": "Linkedinin Page URL",
-      "description": "The URL of the account's LinkedIn page.",
+      "description": "Website link to the Linkedin account of the account",
       "type": "string",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:linkedinPageUrl",
@@ -90,7 +90,7 @@
     },
     "twitterHandleUrl": {
       "title": "Twitter handle URL",
-      "description": "The URL of the account's Twitter profile.",
+      "description": "Website link to the twitter handle of the account",
       "type": "string",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:twitterHandleUrl",
@@ -98,7 +98,7 @@
     },
     "facebookPageUrl": {
       "title": "Facebook Page URL",
-      "description": "The URL of the account's Facebook page.",
+      "description": "Website link to the Facebook account of the account",
       "type": "string",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:facebookPageUrl",
@@ -107,7 +107,7 @@
     "NAICSCode": {
       "title": "NAICS Code",
       "type": "string",
-      "description": "The code for the account's industry within the North American Industry Classification System.",
+      "description": "A NAICS (pronounced NAKES) Code is a classification within the North American Industry Classification System.",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:NAICSCode",
       "tagNumber": 13
@@ -115,14 +115,14 @@
     "SICCode": {
       "title": "SIC Code",
       "type": "string",
-      "description": "The code for the account's industry within the Standard Industrial Classification system.",
+      "description": "The Standard Industrial Classification (SIC) are four-digit codes that categorize the industries that companies belong to based on their business activities.",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:SICCode",
       "tagNumber": 14
     },
     "NAICSDescription": {
       "title": "NAICS Description",
-      "description": "The description for the account's industry based on its NAICS code.",
+      "description": "A brief description of an organization’s line of business, based on its NAICS code.",
       "type": "string",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:NAICSDescription",
@@ -130,7 +130,7 @@
     },
     "SICDescription": {
       "title": "SIC Description",
-      "description": "The description for the account's industry based on its SIC code.",
+      "description": "A brief description of an organization’s line of business, based on its SIC code.",
       "type": "string",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:SICDescription",
@@ -138,7 +138,7 @@
     },
     "DUNSNumber": {
       "title": "Dun & Bradstreet D-U-N-S Number",
-      "description": "The number for the account in the Dun & Bradstreet database.",
+      "description": "The Dun & Bradstreet D-U-N-S Number is a non-indicative, nine-digit number assigned to each business location in the Dun & Bradstreet database having a unique, separate, and distinct operation, and is maintained solely by Dun & Bradstreet.",
       "type": "string",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:DUNSNumber",
@@ -146,7 +146,7 @@
     },
     "jigsaw": {
       "title": "Jigsaw",
-      "description": "The key for the account in Data.com.",
+      "description": "Data.com Key.",
       "type": "string",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:jigsaw",
@@ -155,14 +155,13 @@
     "primaryEmailDomain": {
       "title": "Primary Email Domain",
       "type": "string",
-      "description": "The primary domain of email addresses associated with the account.",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:primaryEmailDomain",
       "tagNumber": 19
     },
     "companyProductAndServices": {
       "title": "Company Product and Services",
-      "description": "Description of the account's product and/or services.",
+      "description": "Product and Services the Company is dealing or doing business in.",
       "type": "string",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:companyProductAndServices",

@@ -9,148 +9,140 @@
   "meta:status": "experimental",
   "meta:xdmType": "object",
   "properties": {
-    "opportunityOwnerID": {
-      "title": "opportunity Owner Id",
-      "description": "Unique ID of the internal owner for this opportunity.",
-      "type": "string",
-      "meta:xdmType": "string",
-      "meta:xdmField": "xdm:opportunityOwnerID",
-      "tagNumber": 1
-    },
     "campaignID": {
       "title": "Campaign ID",
-      "description": "Unique ID of the campaign related to this opportunity.",
+      "description": "Campaign unique identifer reference.",
       "type": "string",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:campaignID",
-      "tagNumber": 2
+      "tagNumber": 1
     },
     "fiscalYear": {
       "title": "Fiscal Year",
-      "description": "The fiscal year this opportunity is targeted for.",
+      "description": "The fiscal year this opportunity is targeted.",
       "type": "integer",
       "pattern": "^([0-9]{4})$",
       "meta:xdmType": "int",
       "meta:xdmField": "xdm:fiscalYear",
-      "tagNumber": 3
+      "tagNumber": 2
     },
     "fiscalQuarter": {
       "title": "Fiscal Quarter",
-      "description": "The fiscal quarter this opportunity is targeted for.",
+      "description": "The fiscal quarter this opportunity is targeted.",
       "type": "string",
       "pattern": "^([1-4]{1})$|^([Qq][1-4]{1})$",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:fiscalQuarter",
-      "tagNumber": 4
+      "tagNumber": 3
     },
     "forecastCategory": {
       "title": "Forecast Category",
-      "description": "Forecast category for the opportunity based on the opportunity stage.",
+      "description": "Forecast Category determined by the opportunity Stage value eg: omitted,pipeline,bestcase,commit,closed.",
       "type": "string",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:forecastCategory",
-      "tagNumber": 5
+      "tagNumber": 4
     },
     "forecastCategoryName": {
       "title": "Forecast Category Name",
-      "description": "Name of the forecast category for the opportunity.",
+      "description": "Forecast category name that is displayed in reports for a perticular forecast category.",
       "type": "string",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:forecastCategoryName",
-      "tagNumber": 6
+      "tagNumber": 5
     },
     "isClosed": {
       "title": "Closed Flag",
-      "description": "Boolean indicating if the opportunity is closed.",
+      "description": "Flag indicating if this opportunity is closed.",
       "type": "boolean",
       "meta:xdmType": "boolean",
       "meta:xdmField": "xdm:isClosed",
-      "tagNumber": 7
+      "tagNumber": 6
     },
     "isWon": {
       "title": "Won Flag",
-      "description": "Boolean indicating if the opportunity was won.",
+      "description": "Flag indicating if this opportunity is Won.",
       "type": "boolean",
       "meta:xdmType": "boolean",
       "meta:xdmField": "xdm:isWon",
-      "tagNumber": 8
+      "tagNumber": 7
     },
     "probabilityPercentage": {
       "title": "Probability Percentage",
-      "description": "Probability as a percentage that the opportunity will be closed, represented as a number between 0 and 1.",
+      "description": "Likelihood that opportunity will close, stated as a percentage.",
       "type": "number",
       "minimum": 0,
       "maximum": 100,
       "meta:xdmType": "number",
       "meta:xdmField": "xdm:probabilityPercentage",
-      "tagNumber": 9
+      "tagNumber": 8
     },
     "opportunityAmount": {
       "title": "Opportunity Amount",
-      "description": "Estimated sale amount for the opportunity.",
+      "description": "Estimated total sale amount.",
       "$ref": "../../datatypes/currency.schema.json",
       "meta:xdmField": "xdm:opportunityAmount",
-      "tagNumber": 10
+      "tagNumber": 9
     },
     "expectedRevenue": {
       "title": "Expected Revenue",
-      "description": "Expected revenue based on the probability percentage and opportunity amount.",
+      "description": "Calculated revenue based on the Amount and Probability.",
       "$ref": "../../datatypes/currency.schema.json",
       "meta:xdmField": "xdm:expectedRevenue",
-      "tagNumber": 11
+      "tagNumber": 10
     },
     "opportunityQuantity": {
       "title": "Opportunity Quantity",
-      "description": "Total quantity of all related products for the opportunity.",
+      "description": "Total of all quantity field values for all products in the Products related list for this opportunity.",
       "type": "integer",
       "minimum": 0,
       "default": 0,
       "meta:xdmType": "int",
       "meta:xdmField": "xdm:opportunityQuantity",
-      "tagNumber": 12
+      "tagNumber": 11
     },
     "expectedCloseDate": {
       "title": "Expected Close Date",
-      "description": "Expected date the opportunity will close.",
+      "description": "Expected date of closure for this opportunity.",
       "type": "string",
       "format": "date",
       "meta:xdmType": "date",
       "meta:xdmField": "xdm:expectedCloseDate",
-      "tagNumber": 13
+      "tagNumber": 12
     },
     "actualCloseDate": {
       "title": "Actual Close Date",
-      "description": "Actual date the opportunity was closed.",
+      "description": "Actual date of closure for this opportunity.",
       "type": "string",
       "format": "date-time",
       "meta:xdmType": "date-time",
       "meta:xdmField": "xdm:actualCloseDate",
-      "tagNumber": 14
+      "tagNumber": 13
     },
     "lastActivityDate": {
       "title": "Last Activity Date",
-      "description": "Date of last activity for the opportunity.",
+      "description": "Last activity date for this opportunity.",
       "type": "string",
       "format": "date-time",
       "meta:xdmType": "date-time",
       "meta:xdmField": "xdm:lastActivityDate",
-      "tagNumber": 15
+      "tagNumber": 14
     },
     "leadSource": {
       "title": "Lead Source",
-      "description": "Source that the opportunity originated from.",
+      "description": "Source of the opportunity such as Advertisement, Partner, or Web.",
       "type": "string",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:leadSource",
-      "tagNumber": 16
+      "tagNumber": 15
     },
     "nextStep": {
       "title": "Next Step",
-      "description": "Description of the next step for the opportunity.",
+      "description": "Description of next task in closing opportunity.",
       "type": "string",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:nextStep",
-      "tagNumber": 17
+      "tagNumber": 16
     }
   },
   "meta:xdmId": "https://ns.adobe.com/xdm/mixins/opportunity-details",

@@ -36,6 +36,7 @@
 [classes.b2b.opportunity-person](http://opensource.adobe.com/xdmVisualization/prod/master/classes.b2b.opportunity-person.html)<br/>
 [classes.campaign-member](http://opensource.adobe.com/xdmVisualization/prod/master/classes.campaign-member.html)<br/>
 [classes.segmentdefinition](http://opensource.adobe.com/xdmVisualization/prod/master/classes.segmentdefinition.html)<br/>
+[classes.promotion](http://opensource.adobe.com/xdmVisualization/prod/master/classes.promotion.html)<br/>
 [classes.fsi.atm](http://opensource.adobe.com/xdmVisualization/prod/master/classes.fsi.atm.html)<br/>
 [classes.fsi.branch](http://opensource.adobe.com/xdmVisualization/prod/master/classes.fsi.branch.html)<br/>
 #### datatypes
@@ -188,8 +189,10 @@
 [mixins.profile.profile-consents](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-consents.html)<br/>
 [mixins.profile.profile-preferences-details](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-preferences-details.html)<br/>
 [mixins.profile.profile-directmarketing](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-directmarketing.html)<br/>
+[mixins.profile.profile-loyalty-details](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-loyalty-details.html)<br/>
 [mixins.profile.profile-personal-details](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-personal-details.html)<br/>
 [mixins.profile.profile-phones](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-phones.html)<br/>
+[mixins.profile.profile-user-account-details](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-user-account-details.html)<br/>
 [mixins.profile.profile-push-notification-details](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-push-notification-details.html)<br/>
 [mixins.profile.profile-subscriptions](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-subscriptions.html)<br/>
 [mixins.profile.b2b-person-details](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.b2b-person-details.html)<br/>
@@ -208,13 +211,11 @@
 [mixins.experience-event.experienceevent-commerce](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.experienceevent-commerce.html)<br/>
 [mixins.experience-event.experienceevent-marketing](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.experienceevent-marketing.html)<br/>
 [mixins.experience-event.experienceevent-technical-details](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.experienceevent-technical-details.html)<br/>
-[mixins.experience-event.experienceevent-user-account-details](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.experienceevent-user-account-details.html)<br/>
 [mixins.experience-event.experienceevent-support-site-search](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.experienceevent-support-site-search.html)<br/>
 [mixins.experience-event.experienceevent-social-network-usage-details](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.experienceevent-social-network-usage-details.html)<br/>
 [mixins.experience-event.experienceevent-knowledge-base-details](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.experienceevent-knowledge-base-details.html)<br/>
 [mixins.experience-event.experienceevent-enduserids](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.experienceevent-enduserids.html)<br/>
 [mixins.experience-event.experienceevent-watchlist-steps](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.experienceevent-watchlist-steps.html)<br/>
-[mixins.experience-event.experienceevent-loyalty-details](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.experienceevent-loyalty-details.html)<br/>
 [mixins.experience-event.experienceevent-service-payment-details](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.experienceevent-service-payment-details.html)<br/>
 [mixins.experience-event.experienceevent-pushtracking](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.experienceevent-pushtracking.html)<br/>
 [mixins.experience-event.experienceevent-offer-impression-details](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.experienceevent-offer-impression-details.html)<br/>
@@ -276,6 +277,7 @@
 [mixins.experience-event.industry-verticals.experienceevent-card-application-process](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.industry-verticals.experienceevent-card-application-process.html)<br/>
 [mixins.experience-event.industry-verticals.experienceevent-alert-impressions](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.industry-verticals.experienceevent-alert-impressions.html)<br/>
 [mixins.experience-event.industry-verticals.experienceevent-deposit-details](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.industry-verticals.experienceevent-deposit-details.html)<br/>
+[mixins.experience-event.industry-verticals.experienceevent-prescription-details](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.industry-verticals.experienceevent-prescription-details.html)<br/>
 [mixins.experience-event.industry-verticals.experienceevent-balance-transfers](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.industry-verticals.experienceevent-balance-transfers.html)<br/>
 [mixins.experience-event.experienceevent-referral-steps](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.experienceevent-referral-steps.html)<br/>
 [mixins.opportunity-contact-role.opportunity-contact-role-details](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.opportunity-contact-role.opportunity-contact-role-details.html)<br/>
