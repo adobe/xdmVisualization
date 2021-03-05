@@ -7,10 +7,19 @@ if [ "$#" -ne 2 ]; then
   exit 1
 fi
 
+#set repo branch name
+repoBranch=$2"_"$1
+xdmgit="/xdm.git"
+github="https://github.com/"
+repoBranch=${repoBranch//$xdmgit}
+repoBranch=${repoBranch//$github}
+if [[ $repoBranch == adobe_* ]]
+then
+  repoBranch=${repoBranch//"adobe_"}
+fi
+
 #Pre-processing xdm json schemas
 (rm -rf publicXdm; git clone -b $1 $2 publicXdm)
-repoBranch=$2"_"$1
-echo $(repoBranch//https://github.com/)
 (cd publicXdm; npm install; npm run xed-validation)
 (rm -rf bower_components/mdjson-schemas/*; cp -r ./publicXdm/bin/xed-validation/xed/* ./bower_components/mdjson-schemas/; rm -rf publicXdm)
 node ./scripts/convert.js
@@ -33,18 +42,18 @@ done
 
 #grunt prod
 echo "Running grunt prod"
-rm -rf prod/$1/
+rm -rf prod/$repoBranch/
 rm -rf Gruntfile.js
 sed "s/xdmVersion/$1/g" Gruntfile_template.js > Gruntfile.js
 grunt prod
 
 #generate xdm schema visualization pages
-cd prod/$1/
+cd prod/$repoBranch/
 rm index.html
 echo "# XDM Visualization" >> index.md
-echo "## Git Repo Branch: $1" >> index.md
+echo "## Git Repo Branch: $repoBranch" >> index.md
 echo "# XDM Visualization" >> dropdown.md
-echo "## Git Repo Branch: $1" >> dropdown.md
+echo "## Git Repo Branch: $repoBranch" >> dropdown.md
 
 uberSchemas=()
 standardComponents=()
@@ -71,7 +80,7 @@ for folder in ${folders[@]}; do
         else
           standardComponents+=( ${filename} )
         fi
-        #echo "<a href = "http://localhost:9001/prod/$1/$filename.html">${filename}</a>" >> index.html
+        #echo "<a href = "http://localhost:9001/prod/$repoBranch/$filename.html">${filename}</a>" >> index.html
         #echo "<br>" >> index.html
     fi
     cp basic.html $filename.html #use basic as template
@@ -93,8 +102,8 @@ echo "<summary>Standard XDM Schemas</summary>" >> dropdown.md
 echo "<ul>" >> dropdown.md
 for i in ${uberSchemas[@]}; do
   echo "Generating HTML:" $i
-  echo "[$i](http://opensource.adobe.com/xdmVisualization/prod/$1/$i.html)<br/>" >> index.md
-  echo "<li><a href=\"http://opensource.adobe.com/xdmVisualization/prod/$1/$i.html\">$i</a></li>" >> dropdown.md
+  echo "[$i](http://opensource.adobe.com/xdmVisualization/prod/$repoBranch/$i.html)<br/>" >> index.md
+  echo "<li><a href=\"http://opensource.adobe.com/xdmVisualization/prod/$repoBranch/$i.html\">$i</a></li>" >> dropdown.md
 done
 echo "</ul>" >> dropdown.md
 echo "</details>" >> dropdown.md
@@ -110,8 +119,8 @@ for h in ${standardCompGrp[@]}; do
     if [[ $i == $h.* ]]
     then
       echo "Generating HTML:" $i
-      echo "[$i](http://opensource.adobe.com/xdmVisualization/prod/$1/$i.html)<br/>" >> index.md
-      echo "<li><a href=\"http://opensource.adobe.com/xdmVisualization/prod/$1/$i.html\">$i</a></li>" >> dropdown.md
+      echo "[$i](http://opensource.adobe.com/xdmVisualization/prod/$repoBranch/$i.html)<br/>" >> index.md
+      echo "<li><a href=\"http://opensource.adobe.com/xdmVisualization/prod/$repoBranch/$i.html\">$i</a></li>" >> dropdown.md
     fi
   done
 done
@@ -124,14 +133,14 @@ echo "<summary>Extension Components</summary>" >> dropdown.md
 echo "<ul>" >> dropdown.md
 for i in ${extensionComponents[@]}; do
   echo "Generating HTML:" $i
-  echo "[$i](http://opensource.adobe.com/xdmVisualization/prod/$1/$i.html)<br/>" >> index.md
-  echo "<li><a href=\"http://opensource.adobe.com/xdmVisualization/prod/$1/$i.html\">$i</a></li>" >> dropdown.md
+  echo "[$i](http://opensource.adobe.com/xdmVisualization/prod/$repoBranch/$i.html)<br/>" >> index.md
+  echo "<li><a href=\"http://opensource.adobe.com/xdmVisualization/prod/$repoBranch/$i.html\">$i</a></li>" >> dropdown.md
 done
 echo "</ul>" >> dropdown.md
 echo "</details>" >> dropdown.md
 
 (rm ../index.html; rm ../../index.html)
 git add ../../
-git commit -m "merge xdm visualization for $1 branch"
+git commit -m "merge xdm visualization for $repoBranch branch"
 git push origin
 #grunt connect:server:keepalive
