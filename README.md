@@ -17,4 +17,4 @@ To refresh the xdm visualization manually for a specific git branch, please foll
 
 5\. Click the green `Run workflow` button.
 
-6\. Go to `https://opensource.adobe.com/xdmVisualization/prod/<branch entered above>/` to see XDM visualization in D3. 
+6\. Go to `https://opensource.adobe.com/xdmVisualization/prod/yourGithubID_branchEnteredAbove/` to see XDM visualization in D3 if the branch is folked repo, if the branch is created directly from public repo, use `https://opensource.adobe.com/xdmVisualization/prod/branchEnteredAbove/`. 
