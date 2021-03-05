@@ -44,7 +44,7 @@ done
 echo "Running grunt prod"
 rm -rf prod/$repoBranch/
 rm -rf Gruntfile.js
-sed "s/xdmVersion/$1/g" Gruntfile_template.js > Gruntfile.js
+sed "s/xdmVersion/$repoBranch/g" Gruntfile_template.js > Gruntfile.js
 grunt prod
 
 #generate xdm schema visualization pages
