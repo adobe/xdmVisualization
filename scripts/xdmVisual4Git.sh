@@ -9,6 +9,8 @@ fi
 
 #Pre-processing xdm json schemas
 (rm -rf publicXdm; git clone -b $1 $2 publicXdm)
+repoBranch=$2"_"$1
+echo $repoBranch
 (cd publicXdm; npm install; npm run xed-validation)
 (rm -rf bower_components/mdjson-schemas/*; cp -r ./publicXdm/bin/xed-validation/xed/* ./bower_components/mdjson-schemas/; rm -rf publicXdm)
 node ./scripts/convert.js
