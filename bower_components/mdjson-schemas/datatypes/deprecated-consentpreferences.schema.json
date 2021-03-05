@@ -1,0 +1,2181 @@
+{
+  "id": "_xdm.datatypes.consent-preferences",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Privacy/Marketing Preferences (Consent)",
+  "description": "This schema captures privacy, personalization and marketing preferences (consents).",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:status": "deprecated",
+  "meta:xdmType": "object",
+  "properties": {
+    "choices": {
+      "properties": {
+        "consents": {
+          "title": "Consents",
+          "description": "Encapsulates user consents.",
+          "type": "object",
+          "meta:xdmType": "object",
+          "properties": {
+            "dataCollection": {
+              "type": "object",
+              "meta:xdmType": "object",
+              "properties": {
+                "choice": {
+                  "title": "Choice Value",
+                  "description": "The value specified by the user as their preference",
+                  "type": "string",
+                  "enum": [
+                    "yes",
+                    "no",
+                    "pending",
+                    "unknown",
+                    "not_applicable"
+                  ],
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:choice",
+                  "tagNumber": 1
+                },
+                "basisOfProcessing": {
+                  "title": "Basis Of Processing",
+                  "type": "string",
+                  "description": "Legal basis for collecting/processing data: is user consent required?",
+                  "enum": [
+                    "consent",
+                    "legitimate_interest",
+                    "contract",
+                    "compliance",
+                    "vital_interest",
+                    "public_interest"
+                  ],
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:basisOfProcessing",
+                  "tagNumber": 2
+                },
+                "timestamp": {
+                  "title": "Preference timestamp",
+                  "description": "Time this specific preference was collected.",
+                  "type": "string",
+                  "format": "date-time",
+                  "meta:xdmType": "date-time",
+                  "meta:xdmField": "xdm:timestamp",
+                  "tagNumber": 3
+                },
+                "source": {
+                  "title": "Preference Source",
+                  "description": "Through which interface did the user provide this preference value",
+                  "type": "string",
+                  "maxLength": 20,
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:source",
+                  "tagNumber": 4
+                }
+              },
+              "meta:xdmField": "xdm:dataCollection",
+              "tagNumber": 1
+            },
+            "sellData": {
+              "type": "object",
+              "meta:xdmType": "object",
+              "properties": {
+                "choice": {
+                  "title": "Choice Value",
+                  "description": "The value specified by the user as their preference",
+                  "type": "string",
+                  "enum": [
+                    "yes",
+                    "no",
+                    "pending",
+                    "unknown",
+                    "not_applicable"
+                  ],
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:choice",
+                  "tagNumber": 1
+                },
+                "basisOfProcessing": {
+                  "title": "Basis Of Processing",
+                  "type": "string",
+                  "description": "Legal basis for collecting/processing data: is user consent required?",
+                  "enum": [
+                    "consent",
+                    "legitimate_interest",
+                    "contract",
+                    "compliance",
+                    "vital_interest",
+                    "public_interest"
+                  ],
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:basisOfProcessing",
+                  "tagNumber": 2
+                },
+                "timestamp": {
+                  "title": "Preference timestamp",
+                  "description": "Time this specific preference was collected.",
+                  "type": "string",
+                  "format": "date-time",
+                  "meta:xdmType": "date-time",
+                  "meta:xdmField": "xdm:timestamp",
+                  "tagNumber": 3
+                },
+                "source": {
+                  "title": "Preference Source",
+                  "description": "Through which interface did the user provide this preference value",
+                  "type": "string",
+                  "maxLength": 20,
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:source",
+                  "tagNumber": 4
+                }
+              },
+              "meta:xdmField": "xdm:sellData",
+              "tagNumber": 2
+            },
+            "shareData": {
+              "type": "object",
+              "meta:xdmType": "object",
+              "properties": {
+                "choice": {
+                  "title": "Choice Value",
+                  "description": "The value specified by the user as their preference",
+                  "type": "string",
+                  "enum": [
+                    "yes",
+                    "no",
+                    "pending",
+                    "unknown",
+                    "not_applicable"
+                  ],
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:choice",
+                  "tagNumber": 1
+                },
+                "basisOfProcessing": {
+                  "title": "Basis Of Processing",
+                  "type": "string",
+                  "description": "Legal basis for collecting/processing data: is user consent required?",
+                  "enum": [
+                    "consent",
+                    "legitimate_interest",
+                    "contract",
+                    "compliance",
+                    "vital_interest",
+                    "public_interest"
+                  ],
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:basisOfProcessing",
+                  "tagNumber": 2
+                },
+                "timestamp": {
+                  "title": "Preference timestamp",
+                  "description": "Time this specific preference was collected.",
+                  "type": "string",
+                  "format": "date-time",
+                  "meta:xdmType": "date-time",
+                  "meta:xdmField": "xdm:timestamp",
+                  "tagNumber": 3
+                },
+                "source": {
+                  "title": "Preference Source",
+                  "description": "Through which interface did the user provide this preference value",
+                  "type": "string",
+                  "maxLength": 20,
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:source",
+                  "tagNumber": 4
+                }
+              },
+              "meta:xdmField": "xdm:shareData",
+              "tagNumber": 3
+            },
+            "pseudonymousAnalysis": {
+              "type": "object",
+              "meta:xdmType": "object",
+              "properties": {
+                "choice": {
+                  "title": "Choice Value",
+                  "description": "The value specified by the user as their preference",
+                  "type": "string",
+                  "enum": [
+                    "yes",
+                    "no",
+                    "pending",
+                    "unknown",
+                    "not_applicable"
+                  ],
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:choice",
+                  "tagNumber": 1
+                },
+                "basisOfProcessing": {
+                  "title": "Basis Of Processing",
+                  "type": "string",
+                  "description": "Legal basis for collecting/processing data: is user consent required?",
+                  "enum": [
+                    "consent",
+                    "legitimate_interest",
+                    "contract",
+                    "compliance",
+                    "vital_interest",
+                    "public_interest"
+                  ],
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:basisOfProcessing",
+                  "tagNumber": 2
+                },
+                "timestamp": {
+                  "title": "Preference timestamp",
+                  "description": "Time this specific preference was collected.",
+                  "type": "string",
+                  "format": "date-time",
+                  "meta:xdmType": "date-time",
+                  "meta:xdmField": "xdm:timestamp",
+                  "tagNumber": 3
+                },
+                "source": {
+                  "title": "Preference Source",
+                  "description": "Through which interface did the user provide this preference value",
+                  "type": "string",
+                  "maxLength": 20,
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:source",
+                  "tagNumber": 4
+                }
+              },
+              "meta:xdmField": "xdm:pseudonymousAnalysis",
+              "tagNumber": 4
+            },
+            "deviceLinking": {
+              "type": "object",
+              "meta:xdmType": "object",
+              "properties": {
+                "choice": {
+                  "title": "Choice Value",
+                  "description": "The value specified by the user as their preference",
+                  "type": "string",
+                  "enum": [
+                    "yes",
+                    "no",
+                    "pending",
+                    "unknown",
+                    "not_applicable"
+                  ],
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:choice",
+                  "tagNumber": 1
+                },
+                "basisOfProcessing": {
+                  "title": "Basis Of Processing",
+                  "type": "string",
+                  "description": "Legal basis for collecting/processing data: is user consent required?",
+                  "enum": [
+                    "consent",
+                    "legitimate_interest",
+                    "contract",
+                    "compliance",
+                    "vital_interest",
+                    "public_interest"
+                  ],
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:basisOfProcessing",
+                  "tagNumber": 2
+                },
+                "timestamp": {
+                  "title": "Preference timestamp",
+                  "description": "Time this specific preference was collected.",
+                  "type": "string",
+                  "format": "date-time",
+                  "meta:xdmType": "date-time",
+                  "meta:xdmField": "xdm:timestamp",
+                  "tagNumber": 3
+                },
+                "source": {
+                  "title": "Preference Source",
+                  "description": "Through which interface did the user provide this preference value",
+                  "type": "string",
+                  "maxLength": 20,
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:source",
+                  "tagNumber": 4
+                }
+              },
+              "meta:xdmField": "xdm:deviceLinking",
+              "tagNumber": 5
+            }
+          },
+          "meta:xdmField": "xdm:consents",
+          "tagNumber": 1
+        },
+        "personalizationPreferences": {
+          "title": "Personalization Preferences",
+          "description": "User's Personalization Preferences",
+          "type": "object",
+          "meta:xdmType": "object",
+          "properties": {
+            "anyPersonalization": {
+              "type": "object",
+              "meta:xdmType": "object",
+              "properties": {
+                "choice": {
+                  "title": "Choice Value",
+                  "description": "The value specified by the user as their preference",
+                  "type": "string",
+                  "enum": [
+                    "yes",
+                    "no",
+                    "pending",
+                    "unknown",
+                    "not_applicable"
+                  ],
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:choice",
+                  "tagNumber": 1
+                },
+                "basisOfProcessing": {
+                  "title": "Basis Of Processing",
+                  "type": "string",
+                  "description": "Legal basis for collecting/processing data: is user consent required?",
+                  "enum": [
+                    "consent",
+                    "legitimate_interest",
+                    "contract",
+                    "compliance",
+                    "vital_interest",
+                    "public_interest"
+                  ],
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:basisOfProcessing",
+                  "tagNumber": 2
+                },
+                "timestamp": {
+                  "title": "Preference timestamp",
+                  "description": "Time this specific preference was collected.",
+                  "type": "string",
+                  "format": "date-time",
+                  "meta:xdmType": "date-time",
+                  "meta:xdmField": "xdm:timestamp",
+                  "tagNumber": 3
+                },
+                "source": {
+                  "title": "Preference Source",
+                  "description": "Through which interface did the user provide this preference value",
+                  "type": "string",
+                  "maxLength": 20,
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:source",
+                  "tagNumber": 4
+                }
+              },
+              "meta:xdmField": "xdm:anyPersonalization",
+              "tagNumber": 1
+            },
+            "email": {
+              "type": "object",
+              "meta:xdmType": "object",
+              "properties": {
+                "choice": {
+                  "title": "Choice Value",
+                  "description": "The value specified by the user as their preference",
+                  "type": "string",
+                  "enum": [
+                    "yes",
+                    "no",
+                    "pending",
+                    "unknown",
+                    "not_applicable"
+                  ],
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:choice",
+                  "tagNumber": 1
+                },
+                "basisOfProcessing": {
+                  "title": "Basis Of Processing",
+                  "type": "string",
+                  "description": "Legal basis for collecting/processing data: is user consent required?",
+                  "enum": [
+                    "consent",
+                    "legitimate_interest",
+                    "contract",
+                    "compliance",
+                    "vital_interest",
+                    "public_interest"
+                  ],
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:basisOfProcessing",
+                  "tagNumber": 2
+                },
+                "timestamp": {
+                  "title": "Preference timestamp",
+                  "description": "Time this specific preference was collected.",
+                  "type": "string",
+                  "format": "date-time",
+                  "meta:xdmType": "date-time",
+                  "meta:xdmField": "xdm:timestamp",
+                  "tagNumber": 3
+                },
+                "source": {
+                  "title": "Preference Source",
+                  "description": "Through which interface did the user provide this preference value",
+                  "type": "string",
+                  "maxLength": 20,
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:source",
+                  "tagNumber": 4
+                }
+              },
+              "meta:xdmField": "xdm:email",
+              "tagNumber": 2
+            },
+            "physicalMail": {
+              "type": "object",
+              "meta:xdmType": "object",
+              "properties": {
+                "choice": {
+                  "title": "Choice Value",
+                  "description": "The value specified by the user as their preference",
+                  "type": "string",
+                  "enum": [
+                    "yes",
+                    "no",
+                    "pending",
+                    "unknown",
+                    "not_applicable"
+                  ],
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:choice",
+                  "tagNumber": 1
+                },
+                "basisOfProcessing": {
+                  "title": "Basis Of Processing",
+                  "type": "string",
+                  "description": "Legal basis for collecting/processing data: is user consent required?",
+                  "enum": [
+                    "consent",
+                    "legitimate_interest",
+                    "contract",
+                    "compliance",
+                    "vital_interest",
+                    "public_interest"
+                  ],
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:basisOfProcessing",
+                  "tagNumber": 2
+                },
+                "timestamp": {
+                  "title": "Preference timestamp",
+                  "description": "Time this specific preference was collected.",
+                  "type": "string",
+                  "format": "date-time",
+                  "meta:xdmType": "date-time",
+                  "meta:xdmField": "xdm:timestamp",
+                  "tagNumber": 3
+                },
+                "source": {
+                  "title": "Preference Source",
+                  "description": "Through which interface did the user provide this preference value",
+                  "type": "string",
+                  "maxLength": 20,
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:source",
+                  "tagNumber": 4
+                }
+              },
+              "meta:xdmField": "xdm:physicalMail",
+              "tagNumber": 3
+            },
+            "pushNotifications": {
+              "type": "object",
+              "meta:xdmType": "object",
+              "properties": {
+                "choice": {
+                  "title": "Choice Value",
+                  "description": "The value specified by the user as their preference",
+                  "type": "string",
+                  "enum": [
+                    "yes",
+                    "no",
+                    "pending",
+                    "unknown",
+                    "not_applicable"
+                  ],
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:choice",
+                  "tagNumber": 1
+                },
+                "basisOfProcessing": {
+                  "title": "Basis Of Processing",
+                  "type": "string",
+                  "description": "Legal basis for collecting/processing data: is user consent required?",
+                  "enum": [
+                    "consent",
+                    "legitimate_interest",
+                    "contract",
+                    "compliance",
+                    "vital_interest",
+                    "public_interest"
+                  ],
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:basisOfProcessing",
+                  "tagNumber": 2
+                },
+                "timestamp": {
+                  "title": "Preference timestamp",
+                  "description": "Time this specific preference was collected.",
+                  "type": "string",
+                  "format": "date-time",
+                  "meta:xdmType": "date-time",
+                  "meta:xdmField": "xdm:timestamp",
+                  "tagNumber": 3
+                },
+                "source": {
+                  "title": "Preference Source",
+                  "description": "Through which interface did the user provide this preference value",
+                  "type": "string",
+                  "maxLength": 20,
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:source",
+                  "tagNumber": 4
+                }
+              },
+              "meta:xdmField": "xdm:pushNotifications",
+              "tagNumber": 4
+            },
+            "sms": {
+              "type": "object",
+              "meta:xdmType": "object",
+              "properties": {
+                "choice": {
+                  "title": "Choice Value",
+                  "description": "The value specified by the user as their preference",
+                  "type": "string",
+                  "enum": [
+                    "yes",
+                    "no",
+                    "pending",
+                    "unknown",
+                    "not_applicable"
+                  ],
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:choice",
+                  "tagNumber": 1
+                },
+                "basisOfProcessing": {
+                  "title": "Basis Of Processing",
+                  "type": "string",
+                  "description": "Legal basis for collecting/processing data: is user consent required?",
+                  "enum": [
+                    "consent",
+                    "legitimate_interest",
+                    "contract",
+                    "compliance",
+                    "vital_interest",
+                    "public_interest"
+                  ],
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:basisOfProcessing",
+                  "tagNumber": 2
+                },
+                "timestamp": {
+                  "title": "Preference timestamp",
+                  "description": "Time this specific preference was collected.",
+                  "type": "string",
+                  "format": "date-time",
+                  "meta:xdmType": "date-time",
+                  "meta:xdmField": "xdm:timestamp",
+                  "tagNumber": 3
+                },
+                "source": {
+                  "title": "Preference Source",
+                  "description": "Through which interface did the user provide this preference value",
+                  "type": "string",
+                  "maxLength": 20,
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:source",
+                  "tagNumber": 4
+                }
+              },
+              "meta:xdmField": "xdm:sms",
+              "tagNumber": 5
+            },
+            "phoneCalls": {
+              "type": "object",
+              "meta:xdmType": "object",
+              "properties": {
+                "choice": {
+                  "title": "Choice Value",
+                  "description": "The value specified by the user as their preference",
+                  "type": "string",
+                  "enum": [
+                    "yes",
+                    "no",
+                    "pending",
+                    "unknown",
+                    "not_applicable"
+                  ],
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:choice",
+                  "tagNumber": 1
+                },
+                "basisOfProcessing": {
+                  "title": "Basis Of Processing",
+                  "type": "string",
+                  "description": "Legal basis for collecting/processing data: is user consent required?",
+                  "enum": [
+                    "consent",
+                    "legitimate_interest",
+                    "contract",
+                    "compliance",
+                    "vital_interest",
+                    "public_interest"
+                  ],
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:basisOfProcessing",
+                  "tagNumber": 2
+                },
+                "timestamp": {
+                  "title": "Preference timestamp",
+                  "description": "Time this specific preference was collected.",
+                  "type": "string",
+                  "format": "date-time",
+                  "meta:xdmType": "date-time",
+                  "meta:xdmField": "xdm:timestamp",
+                  "tagNumber": 3
+                },
+                "source": {
+                  "title": "Preference Source",
+                  "description": "Through which interface did the user provide this preference value",
+                  "type": "string",
+                  "maxLength": 20,
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:source",
+                  "tagNumber": 4
+                }
+              },
+              "meta:xdmField": "xdm:phoneCalls",
+              "tagNumber": 6
+            },
+            "iotDevices": {
+              "type": "object",
+              "meta:xdmType": "object",
+              "properties": {
+                "choice": {
+                  "title": "Choice Value",
+                  "description": "The value specified by the user as their preference",
+                  "type": "string",
+                  "enum": [
+                    "yes",
+                    "no",
+                    "pending",
+                    "unknown",
+                    "not_applicable"
+                  ],
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:choice",
+                  "tagNumber": 1
+                },
+                "basisOfProcessing": {
+                  "title": "Basis Of Processing",
+                  "type": "string",
+                  "description": "Legal basis for collecting/processing data: is user consent required?",
+                  "enum": [
+                    "consent",
+                    "legitimate_interest",
+                    "contract",
+                    "compliance",
+                    "vital_interest",
+                    "public_interest"
+                  ],
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:basisOfProcessing",
+                  "tagNumber": 2
+                },
+                "timestamp": {
+                  "title": "Preference timestamp",
+                  "description": "Time this specific preference was collected.",
+                  "type": "string",
+                  "format": "date-time",
+                  "meta:xdmType": "date-time",
+                  "meta:xdmField": "xdm:timestamp",
+                  "tagNumber": 3
+                },
+                "source": {
+                  "title": "Preference Source",
+                  "description": "Through which interface did the user provide this preference value",
+                  "type": "string",
+                  "maxLength": 20,
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:source",
+                  "tagNumber": 4
+                }
+              },
+              "meta:xdmField": "xdm:iotDevices",
+              "tagNumber": 7
+            },
+            "socialMedia": {
+              "type": "object",
+              "meta:xdmType": "object",
+              "properties": {
+                "choice": {
+                  "title": "Choice Value",
+                  "description": "The value specified by the user as their preference",
+                  "type": "string",
+                  "enum": [
+                    "yes",
+                    "no",
+                    "pending",
+                    "unknown",
+                    "not_applicable"
+                  ],
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:choice",
+                  "tagNumber": 1
+                },
+                "basisOfProcessing": {
+                  "title": "Basis Of Processing",
+                  "type": "string",
+                  "description": "Legal basis for collecting/processing data: is user consent required?",
+                  "enum": [
+                    "consent",
+                    "legitimate_interest",
+                    "contract",
+                    "compliance",
+                    "vital_interest",
+                    "public_interest"
+                  ],
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:basisOfProcessing",
+                  "tagNumber": 2
+                },
+                "timestamp": {
+                  "title": "Preference timestamp",
+                  "description": "Time this specific preference was collected.",
+                  "type": "string",
+                  "format": "date-time",
+                  "meta:xdmType": "date-time",
+                  "meta:xdmField": "xdm:timestamp",
+                  "tagNumber": 3
+                },
+                "source": {
+                  "title": "Preference Source",
+                  "description": "Through which interface did the user provide this preference value",
+                  "type": "string",
+                  "maxLength": 20,
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:source",
+                  "tagNumber": 4
+                }
+              },
+              "meta:xdmField": "xdm:socialMedia",
+              "tagNumber": 8
+            },
+            "inAppMessages": {
+              "type": "object",
+              "meta:xdmType": "object",
+              "properties": {
+                "choice": {
+                  "title": "Choice Value",
+                  "description": "The value specified by the user as their preference",
+                  "type": "string",
+                  "enum": [
+                    "yes",
+                    "no",
+                    "pending",
+                    "unknown",
+                    "not_applicable"
+                  ],
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:choice",
+                  "tagNumber": 1
+                },
+                "basisOfProcessing": {
+                  "title": "Basis Of Processing",
+                  "type": "string",
+                  "description": "Legal basis for collecting/processing data: is user consent required?",
+                  "enum": [
+                    "consent",
+                    "legitimate_interest",
+                    "contract",
+                    "compliance",
+                    "vital_interest",
+                    "public_interest"
+                  ],
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:basisOfProcessing",
+                  "tagNumber": 2
+                },
+                "timestamp": {
+                  "title": "Preference timestamp",
+                  "description": "Time this specific preference was collected.",
+                  "type": "string",
+                  "format": "date-time",
+                  "meta:xdmType": "date-time",
+                  "meta:xdmField": "xdm:timestamp",
+                  "tagNumber": 3
+                },
+                "source": {
+                  "title": "Preference Source",
+                  "description": "Through which interface did the user provide this preference value",
+                  "type": "string",
+                  "maxLength": 20,
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:source",
+                  "tagNumber": 4
+                }
+              },
+              "meta:xdmField": "xdm:inAppMessages",
+              "tagNumber": 9
+            },
+            "inVehicle": {
+              "type": "object",
+              "meta:xdmType": "object",
+              "properties": {
+                "choice": {
+                  "title": "Choice Value",
+                  "description": "The value specified by the user as their preference",
+                  "type": "string",
+                  "enum": [
+                    "yes",
+                    "no",
+                    "pending",
+                    "unknown",
+                    "not_applicable"
+                  ],
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:choice",
+                  "tagNumber": 1
+                },
+                "basisOfProcessing": {
+                  "title": "Basis Of Processing",
+                  "type": "string",
+                  "description": "Legal basis for collecting/processing data: is user consent required?",
+                  "enum": [
+                    "consent",
+                    "legitimate_interest",
+                    "contract",
+                    "compliance",
+                    "vital_interest",
+                    "public_interest"
+                  ],
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:basisOfProcessing",
+                  "tagNumber": 2
+                },
+                "timestamp": {
+                  "title": "Preference timestamp",
+                  "description": "Time this specific preference was collected.",
+                  "type": "string",
+                  "format": "date-time",
+                  "meta:xdmType": "date-time",
+                  "meta:xdmField": "xdm:timestamp",
+                  "tagNumber": 3
+                },
+                "source": {
+                  "title": "Preference Source",
+                  "description": "Through which interface did the user provide this preference value",
+                  "type": "string",
+                  "maxLength": 20,
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:source",
+                  "tagNumber": 4
+                }
+              },
+              "meta:xdmField": "xdm:inVehicle",
+              "tagNumber": 10
+            },
+            "inHome": {
+              "type": "object",
+              "meta:xdmType": "object",
+              "properties": {
+                "choice": {
+                  "title": "Choice Value",
+                  "description": "The value specified by the user as their preference",
+                  "type": "string",
+                  "enum": [
+                    "yes",
+                    "no",
+                    "pending",
+                    "unknown",
+                    "not_applicable"
+                  ],
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:choice",
+                  "tagNumber": 1
+                },
+                "basisOfProcessing": {
+                  "title": "Basis Of Processing",
+                  "type": "string",
+                  "description": "Legal basis for collecting/processing data: is user consent required?",
+                  "enum": [
+                    "consent",
+                    "legitimate_interest",
+                    "contract",
+                    "compliance",
+                    "vital_interest",
+                    "public_interest"
+                  ],
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:basisOfProcessing",
+                  "tagNumber": 2
+                },
+                "timestamp": {
+                  "title": "Preference timestamp",
+                  "description": "Time this specific preference was collected.",
+                  "type": "string",
+                  "format": "date-time",
+                  "meta:xdmType": "date-time",
+                  "meta:xdmField": "xdm:timestamp",
+                  "tagNumber": 3
+                },
+                "source": {
+                  "title": "Preference Source",
+                  "description": "Through which interface did the user provide this preference value",
+                  "type": "string",
+                  "maxLength": 20,
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:source",
+                  "tagNumber": 4
+                }
+              },
+              "meta:xdmField": "xdm:inHome",
+              "tagNumber": 11
+            },
+            "inStore": {
+              "type": "object",
+              "meta:xdmType": "object",
+              "properties": {
+                "choice": {
+                  "title": "Choice Value",
+                  "description": "The value specified by the user as their preference",
+                  "type": "string",
+                  "enum": [
+                    "yes",
+                    "no",
+                    "pending",
+                    "unknown",
+                    "not_applicable"
+                  ],
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:choice",
+                  "tagNumber": 1
+                },
+                "basisOfProcessing": {
+                  "title": "Basis Of Processing",
+                  "type": "string",
+                  "description": "Legal basis for collecting/processing data: is user consent required?",
+                  "enum": [
+                    "consent",
+                    "legitimate_interest",
+                    "contract",
+                    "compliance",
+                    "vital_interest",
+                    "public_interest"
+                  ],
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:basisOfProcessing",
+                  "tagNumber": 2
+                },
+                "timestamp": {
+                  "title": "Preference timestamp",
+                  "description": "Time this specific preference was collected.",
+                  "type": "string",
+                  "format": "date-time",
+                  "meta:xdmType": "date-time",
+                  "meta:xdmField": "xdm:timestamp",
+                  "tagNumber": 3
+                },
+                "source": {
+                  "title": "Preference Source",
+                  "description": "Through which interface did the user provide this preference value",
+                  "type": "string",
+                  "maxLength": 20,
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:source",
+                  "tagNumber": 4
+                }
+              },
+              "meta:xdmField": "xdm:inStore",
+              "tagNumber": 12
+            },
+            "content": {
+              "type": "object",
+              "meta:xdmType": "object",
+              "properties": {
+                "choice": {
+                  "title": "Choice Value",
+                  "description": "The value specified by the user as their preference",
+                  "type": "string",
+                  "enum": [
+                    "yes",
+                    "no",
+                    "pending",
+                    "unknown",
+                    "not_applicable"
+                  ],
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:choice",
+                  "tagNumber": 1
+                },
+                "basisOfProcessing": {
+                  "title": "Basis Of Processing",
+                  "type": "string",
+                  "description": "Legal basis for collecting/processing data: is user consent required?",
+                  "enum": [
+                    "consent",
+                    "legitimate_interest",
+                    "contract",
+                    "compliance",
+                    "vital_interest",
+                    "public_interest"
+                  ],
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:basisOfProcessing",
+                  "tagNumber": 2
+                },
+                "timestamp": {
+                  "title": "Preference timestamp",
+                  "description": "Time this specific preference was collected.",
+                  "type": "string",
+                  "format": "date-time",
+                  "meta:xdmType": "date-time",
+                  "meta:xdmField": "xdm:timestamp",
+                  "tagNumber": 3
+                },
+                "source": {
+                  "title": "Preference Source",
+                  "description": "Through which interface did the user provide this preference value",
+                  "type": "string",
+                  "maxLength": 20,
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:source",
+                  "tagNumber": 4
+                }
+              },
+              "meta:xdmField": "xdm:content",
+              "tagNumber": 13
+            },
+            "offers": {
+              "type": "object",
+              "meta:xdmType": "object",
+              "properties": {
+                "choice": {
+                  "title": "Choice Value",
+                  "description": "The value specified by the user as their preference",
+                  "type": "string",
+                  "enum": [
+                    "yes",
+                    "no",
+                    "pending",
+                    "unknown",
+                    "not_applicable"
+                  ],
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:choice",
+                  "tagNumber": 1
+                },
+                "basisOfProcessing": {
+                  "title": "Basis Of Processing",
+                  "type": "string",
+                  "description": "Legal basis for collecting/processing data: is user consent required?",
+                  "enum": [
+                    "consent",
+                    "legitimate_interest",
+                    "contract",
+                    "compliance",
+                    "vital_interest",
+                    "public_interest"
+                  ],
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:basisOfProcessing",
+                  "tagNumber": 2
+                },
+                "timestamp": {
+                  "title": "Preference timestamp",
+                  "description": "Time this specific preference was collected.",
+                  "type": "string",
+                  "format": "date-time",
+                  "meta:xdmType": "date-time",
+                  "meta:xdmField": "xdm:timestamp",
+                  "tagNumber": 3
+                },
+                "source": {
+                  "title": "Preference Source",
+                  "description": "Through which interface did the user provide this preference value",
+                  "type": "string",
+                  "maxLength": 20,
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:source",
+                  "tagNumber": 4
+                }
+              },
+              "meta:xdmField": "xdm:offers",
+              "tagNumber": 14
+            },
+            "customerSupport": {
+              "type": "object",
+              "meta:xdmType": "object",
+              "properties": {
+                "choice": {
+                  "title": "Choice Value",
+                  "description": "The value specified by the user as their preference",
+                  "type": "string",
+                  "enum": [
+                    "yes",
+                    "no",
+                    "pending",
+                    "unknown",
+                    "not_applicable"
+                  ],
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:choice",
+                  "tagNumber": 1
+                },
+                "basisOfProcessing": {
+                  "title": "Basis Of Processing",
+                  "type": "string",
+                  "description": "Legal basis for collecting/processing data: is user consent required?",
+                  "enum": [
+                    "consent",
+                    "legitimate_interest",
+                    "contract",
+                    "compliance",
+                    "vital_interest",
+                    "public_interest"
+                  ],
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:basisOfProcessing",
+                  "tagNumber": 2
+                },
+                "timestamp": {
+                  "title": "Preference timestamp",
+                  "description": "Time this specific preference was collected.",
+                  "type": "string",
+                  "format": "date-time",
+                  "meta:xdmType": "date-time",
+                  "meta:xdmField": "xdm:timestamp",
+                  "tagNumber": 3
+                },
+                "source": {
+                  "title": "Preference Source",
+                  "description": "Through which interface did the user provide this preference value",
+                  "type": "string",
+                  "maxLength": 20,
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:source",
+                  "tagNumber": 4
+                }
+              },
+              "meta:xdmField": "xdm:customerSupport",
+              "tagNumber": 15
+            },
+            "thirdPartyOffers": {
+              "type": "object",
+              "meta:xdmType": "object",
+              "properties": {
+                "choice": {
+                  "title": "Choice Value",
+                  "description": "The value specified by the user as their preference",
+                  "type": "string",
+                  "enum": [
+                    "yes",
+                    "no",
+                    "pending",
+                    "unknown",
+                    "not_applicable"
+                  ],
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:choice",
+                  "tagNumber": 1
+                },
+                "basisOfProcessing": {
+                  "title": "Basis Of Processing",
+                  "type": "string",
+                  "description": "Legal basis for collecting/processing data: is user consent required?",
+                  "enum": [
+                    "consent",
+                    "legitimate_interest",
+                    "contract",
+                    "compliance",
+                    "vital_interest",
+                    "public_interest"
+                  ],
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:basisOfProcessing",
+                  "tagNumber": 2
+                },
+                "timestamp": {
+                  "title": "Preference timestamp",
+                  "description": "Time this specific preference was collected.",
+                  "type": "string",
+                  "format": "date-time",
+                  "meta:xdmType": "date-time",
+                  "meta:xdmField": "xdm:timestamp",
+                  "tagNumber": 3
+                },
+                "source": {
+                  "title": "Preference Source",
+                  "description": "Through which interface did the user provide this preference value",
+                  "type": "string",
+                  "maxLength": 20,
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:source",
+                  "tagNumber": 4
+                }
+              },
+              "meta:xdmField": "xdm:thirdPartyOffers",
+              "tagNumber": 16
+            },
+            "thirdPartyContent": {
+              "type": "object",
+              "meta:xdmType": "object",
+              "properties": {
+                "choice": {
+                  "title": "Choice Value",
+                  "description": "The value specified by the user as their preference",
+                  "type": "string",
+                  "enum": [
+                    "yes",
+                    "no",
+                    "pending",
+                    "unknown",
+                    "not_applicable"
+                  ],
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:choice",
+                  "tagNumber": 1
+                },
+                "basisOfProcessing": {
+                  "title": "Basis Of Processing",
+                  "type": "string",
+                  "description": "Legal basis for collecting/processing data: is user consent required?",
+                  "enum": [
+                    "consent",
+                    "legitimate_interest",
+                    "contract",
+                    "compliance",
+                    "vital_interest",
+                    "public_interest"
+                  ],
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:basisOfProcessing",
+                  "tagNumber": 2
+                },
+                "timestamp": {
+                  "title": "Preference timestamp",
+                  "description": "Time this specific preference was collected.",
+                  "type": "string",
+                  "format": "date-time",
+                  "meta:xdmType": "date-time",
+                  "meta:xdmField": "xdm:timestamp",
+                  "tagNumber": 3
+                },
+                "source": {
+                  "title": "Preference Source",
+                  "description": "Through which interface did the user provide this preference value",
+                  "type": "string",
+                  "maxLength": 20,
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:source",
+                  "tagNumber": 4
+                }
+              },
+              "meta:xdmField": "xdm:thirdPartyContent",
+              "tagNumber": 17
+            },
+            "advertising": {
+              "type": "object",
+              "meta:xdmType": "object",
+              "properties": {
+                "choice": {
+                  "title": "Choice Value",
+                  "description": "The value specified by the user as their preference",
+                  "type": "string",
+                  "enum": [
+                    "yes",
+                    "no",
+                    "pending",
+                    "unknown",
+                    "not_applicable"
+                  ],
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:choice",
+                  "tagNumber": 1
+                },
+                "basisOfProcessing": {
+                  "title": "Basis Of Processing",
+                  "type": "string",
+                  "description": "Legal basis for collecting/processing data: is user consent required?",
+                  "enum": [
+                    "consent",
+                    "legitimate_interest",
+                    "contract",
+                    "compliance",
+                    "vital_interest",
+                    "public_interest"
+                  ],
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:basisOfProcessing",
+                  "tagNumber": 2
+                },
+                "timestamp": {
+                  "title": "Preference timestamp",
+                  "description": "Time this specific preference was collected.",
+                  "type": "string",
+                  "format": "date-time",
+                  "meta:xdmType": "date-time",
+                  "meta:xdmField": "xdm:timestamp",
+                  "tagNumber": 3
+                },
+                "source": {
+                  "title": "Preference Source",
+                  "description": "Through which interface did the user provide this preference value",
+                  "type": "string",
+                  "maxLength": 20,
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:source",
+                  "tagNumber": 4
+                }
+              },
+              "meta:xdmField": "xdm:advertising",
+              "tagNumber": 18
+            }
+          },
+          "meta:xdmField": "xdm:personalizationPreferences",
+          "tagNumber": 2
+        },
+        "marketingPreferences": {
+          "title": "Marketing Preferences",
+          "description": "User's Direct Marketing Preferences",
+          "type": "object",
+          "meta:xdmType": "object",
+          "properties": {
+            "preferredChannel": {
+              "title": "Preferred Channel",
+              "description": "User's preferred channel for receiving communications",
+              "type": "string",
+              "enum": [
+                "email",
+                "push_notifications",
+                "in_app_messages",
+                "sms",
+                "phone_calls",
+                "physical_mail",
+                "inVehicle_messages",
+                "in_home_messages",
+                "iot_messages",
+                "social_media",
+                "other",
+                "none",
+                "unknown"
+              ],
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:preferredChannel",
+              "tagNumber": 1
+            },
+            "anyMarketing": {
+              "type": "object",
+              "meta:xdmType": "object",
+              "properties": {
+                "choice": {
+                  "title": "Choice Value",
+                  "description": "The value specified by the user as their preference",
+                  "type": "string",
+                  "enum": [
+                    "yes",
+                    "no",
+                    "pending",
+                    "unknown",
+                    "not_applicable"
+                  ],
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:choice",
+                  "tagNumber": 1
+                },
+                "basisOfProcessing": {
+                  "title": "Basis Of Processing",
+                  "type": "string",
+                  "description": "Legal basis for collecting/processing data: is user consent required?",
+                  "enum": [
+                    "consent",
+                    "legitimate_interest",
+                    "contract",
+                    "compliance",
+                    "vital_interest",
+                    "public_interest"
+                  ],
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:basisOfProcessing",
+                  "tagNumber": 2
+                },
+                "timestamp": {
+                  "title": "Preference timestamp",
+                  "description": "Time this specific preference was collected.",
+                  "type": "string",
+                  "format": "date-time",
+                  "meta:xdmType": "date-time",
+                  "meta:xdmField": "xdm:timestamp",
+                  "tagNumber": 3
+                },
+                "source": {
+                  "title": "Preference Source",
+                  "description": "Through which interface did the user provide this preference value",
+                  "type": "string",
+                  "maxLength": 20,
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:source",
+                  "tagNumber": 4
+                },
+                "reason": {
+                  "title": "Opt out reason",
+                  "type": "string",
+                  "description": "Reason for opting out",
+                  "maxLength": 20,
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:reason",
+                  "tagNumber": 5
+                }
+              },
+              "meta:xdmField": "xdm:anyMarketing",
+              "tagNumber": 2
+            },
+            "email": {
+              "type": "object",
+              "meta:xdmType": "object",
+              "properties": {
+                "choice": {
+                  "title": "Choice Value",
+                  "description": "The value specified by the user as their preference",
+                  "type": "string",
+                  "enum": [
+                    "yes",
+                    "no",
+                    "pending",
+                    "unknown",
+                    "not_applicable"
+                  ],
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:choice",
+                  "tagNumber": 1
+                },
+                "basisOfProcessing": {
+                  "title": "Basis Of Processing",
+                  "type": "string",
+                  "description": "Legal basis for collecting/processing data: is user consent required?",
+                  "enum": [
+                    "consent",
+                    "legitimate_interest",
+                    "contract",
+                    "compliance",
+                    "vital_interest",
+                    "public_interest"
+                  ],
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:basisOfProcessing",
+                  "tagNumber": 2
+                },
+                "timestamp": {
+                  "title": "Preference timestamp",
+                  "description": "Time this specific preference was collected.",
+                  "type": "string",
+                  "format": "date-time",
+                  "meta:xdmType": "date-time",
+                  "meta:xdmField": "xdm:timestamp",
+                  "tagNumber": 3
+                },
+                "source": {
+                  "title": "Preference Source",
+                  "description": "Through which interface did the user provide this preference value",
+                  "type": "string",
+                  "maxLength": 20,
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:source",
+                  "tagNumber": 4
+                },
+                "reason": {
+                  "title": "Opt out reason",
+                  "type": "string",
+                  "description": "Reason for opting out",
+                  "maxLength": 20,
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:reason",
+                  "tagNumber": 5
+                }
+              },
+              "meta:xdmField": "xdm:email",
+              "tagNumber": 3
+            },
+            "physicalMail": {
+              "type": "object",
+              "meta:xdmType": "object",
+              "properties": {
+                "choice": {
+                  "title": "Choice Value",
+                  "description": "The value specified by the user as their preference",
+                  "type": "string",
+                  "enum": [
+                    "yes",
+                    "no",
+                    "pending",
+                    "unknown",
+                    "not_applicable"
+                  ],
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:choice",
+                  "tagNumber": 1
+                },
+                "basisOfProcessing": {
+                  "title": "Basis Of Processing",
+                  "type": "string",
+                  "description": "Legal basis for collecting/processing data: is user consent required?",
+                  "enum": [
+                    "consent",
+                    "legitimate_interest",
+                    "contract",
+                    "compliance",
+                    "vital_interest",
+                    "public_interest"
+                  ],
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:basisOfProcessing",
+                  "tagNumber": 2
+                },
+                "timestamp": {
+                  "title": "Preference timestamp",
+                  "description": "Time this specific preference was collected.",
+                  "type": "string",
+                  "format": "date-time",
+                  "meta:xdmType": "date-time",
+                  "meta:xdmField": "xdm:timestamp",
+                  "tagNumber": 3
+                },
+                "source": {
+                  "title": "Preference Source",
+                  "description": "Through which interface did the user provide this preference value",
+                  "type": "string",
+                  "maxLength": 20,
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:source",
+                  "tagNumber": 4
+                },
+                "reason": {
+                  "title": "Opt out reason",
+                  "type": "string",
+                  "description": "Reason for opting out",
+                  "maxLength": 20,
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:reason",
+                  "tagNumber": 5
+                }
+              },
+              "meta:xdmField": "xdm:physicalMail",
+              "tagNumber": 4
+            },
+            "pushNotifications": {
+              "type": "object",
+              "meta:xdmType": "object",
+              "properties": {
+                "choice": {
+                  "title": "Choice Value",
+                  "description": "The value specified by the user as their preference",
+                  "type": "string",
+                  "enum": [
+                    "yes",
+                    "no",
+                    "pending",
+                    "unknown",
+                    "not_applicable"
+                  ],
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:choice",
+                  "tagNumber": 1
+                },
+                "basisOfProcessing": {
+                  "title": "Basis Of Processing",
+                  "type": "string",
+                  "description": "Legal basis for collecting/processing data: is user consent required?",
+                  "enum": [
+                    "consent",
+                    "legitimate_interest",
+                    "contract",
+                    "compliance",
+                    "vital_interest",
+                    "public_interest"
+                  ],
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:basisOfProcessing",
+                  "tagNumber": 2
+                },
+                "timestamp": {
+                  "title": "Preference timestamp",
+                  "description": "Time this specific preference was collected.",
+                  "type": "string",
+                  "format": "date-time",
+                  "meta:xdmType": "date-time",
+                  "meta:xdmField": "xdm:timestamp",
+                  "tagNumber": 3
+                },
+                "source": {
+                  "title": "Preference Source",
+                  "description": "Through which interface did the user provide this preference value",
+                  "type": "string",
+                  "maxLength": 20,
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:source",
+                  "tagNumber": 4
+                },
+                "reason": {
+                  "title": "Opt out reason",
+                  "type": "string",
+                  "description": "Reason for opting out",
+                  "maxLength": 20,
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:reason",
+                  "tagNumber": 5
+                }
+              },
+              "meta:xdmField": "xdm:pushNotifications",
+              "tagNumber": 5
+            },
+            "sms": {
+              "type": "object",
+              "meta:xdmType": "object",
+              "properties": {
+                "choice": {
+                  "title": "Choice Value",
+                  "description": "The value specified by the user as their preference",
+                  "type": "string",
+                  "enum": [
+                    "yes",
+                    "no",
+                    "pending",
+                    "unknown",
+                    "not_applicable"
+                  ],
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:choice",
+                  "tagNumber": 1
+                },
+                "basisOfProcessing": {
+                  "title": "Basis Of Processing",
+                  "type": "string",
+                  "description": "Legal basis for collecting/processing data: is user consent required?",
+                  "enum": [
+                    "consent",
+                    "legitimate_interest",
+                    "contract",
+                    "compliance",
+                    "vital_interest",
+                    "public_interest"
+                  ],
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:basisOfProcessing",
+                  "tagNumber": 2
+                },
+                "timestamp": {
+                  "title": "Preference timestamp",
+                  "description": "Time this specific preference was collected.",
+                  "type": "string",
+                  "format": "date-time",
+                  "meta:xdmType": "date-time",
+                  "meta:xdmField": "xdm:timestamp",
+                  "tagNumber": 3
+                },
+                "source": {
+                  "title": "Preference Source",
+                  "description": "Through which interface did the user provide this preference value",
+                  "type": "string",
+                  "maxLength": 20,
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:source",
+                  "tagNumber": 4
+                },
+                "reason": {
+                  "title": "Opt out reason",
+                  "type": "string",
+                  "description": "Reason for opting out",
+                  "maxLength": 20,
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:reason",
+                  "tagNumber": 5
+                }
+              },
+              "meta:xdmField": "xdm:sms",
+              "tagNumber": 6
+            },
+            "phoneCalls": {
+              "type": "object",
+              "meta:xdmType": "object",
+              "properties": {
+                "choice": {
+                  "title": "Choice Value",
+                  "description": "The value specified by the user as their preference",
+                  "type": "string",
+                  "enum": [
+                    "yes",
+                    "no",
+                    "pending",
+                    "unknown",
+                    "not_applicable"
+                  ],
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:choice",
+                  "tagNumber": 1
+                },
+                "basisOfProcessing": {
+                  "title": "Basis Of Processing",
+                  "type": "string",
+                  "description": "Legal basis for collecting/processing data: is user consent required?",
+                  "enum": [
+                    "consent",
+                    "legitimate_interest",
+                    "contract",
+                    "compliance",
+                    "vital_interest",
+                    "public_interest"
+                  ],
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:basisOfProcessing",
+                  "tagNumber": 2
+                },
+                "timestamp": {
+                  "title": "Preference timestamp",
+                  "description": "Time this specific preference was collected.",
+                  "type": "string",
+                  "format": "date-time",
+                  "meta:xdmType": "date-time",
+                  "meta:xdmField": "xdm:timestamp",
+                  "tagNumber": 3
+                },
+                "source": {
+                  "title": "Preference Source",
+                  "description": "Through which interface did the user provide this preference value",
+                  "type": "string",
+                  "maxLength": 20,
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:source",
+                  "tagNumber": 4
+                },
+                "reason": {
+                  "title": "Opt out reason",
+                  "type": "string",
+                  "description": "Reason for opting out",
+                  "maxLength": 20,
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:reason",
+                  "tagNumber": 5
+                }
+              },
+              "meta:xdmField": "xdm:phoneCalls",
+              "tagNumber": 7
+            },
+            "iotMessages": {
+              "type": "object",
+              "meta:xdmType": "object",
+              "properties": {
+                "choice": {
+                  "title": "Choice Value",
+                  "description": "The value specified by the user as their preference",
+                  "type": "string",
+                  "enum": [
+                    "yes",
+                    "no",
+                    "pending",
+                    "unknown",
+                    "not_applicable"
+                  ],
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:choice",
+                  "tagNumber": 1
+                },
+                "basisOfProcessing": {
+                  "title": "Basis Of Processing",
+                  "type": "string",
+                  "description": "Legal basis for collecting/processing data: is user consent required?",
+                  "enum": [
+                    "consent",
+                    "legitimate_interest",
+                    "contract",
+                    "compliance",
+                    "vital_interest",
+                    "public_interest"
+                  ],
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:basisOfProcessing",
+                  "tagNumber": 2
+                },
+                "timestamp": {
+                  "title": "Preference timestamp",
+                  "description": "Time this specific preference was collected.",
+                  "type": "string",
+                  "format": "date-time",
+                  "meta:xdmType": "date-time",
+                  "meta:xdmField": "xdm:timestamp",
+                  "tagNumber": 3
+                },
+                "source": {
+                  "title": "Preference Source",
+                  "description": "Through which interface did the user provide this preference value",
+                  "type": "string",
+                  "maxLength": 20,
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:source",
+                  "tagNumber": 4
+                },
+                "reason": {
+                  "title": "Opt out reason",
+                  "type": "string",
+                  "description": "Reason for opting out",
+                  "maxLength": 20,
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:reason",
+                  "tagNumber": 5
+                }
+              },
+              "meta:xdmField": "xdm:iotMessages",
+              "tagNumber": 8
+            },
+            "socialMedia": {
+              "type": "object",
+              "meta:xdmType": "object",
+              "properties": {
+                "choice": {
+                  "title": "Choice Value",
+                  "description": "The value specified by the user as their preference",
+                  "type": "string",
+                  "enum": [
+                    "yes",
+                    "no",
+                    "pending",
+                    "unknown",
+                    "not_applicable"
+                  ],
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:choice",
+                  "tagNumber": 1
+                },
+                "basisOfProcessing": {
+                  "title": "Basis Of Processing",
+                  "type": "string",
+                  "description": "Legal basis for collecting/processing data: is user consent required?",
+                  "enum": [
+                    "consent",
+                    "legitimate_interest",
+                    "contract",
+                    "compliance",
+                    "vital_interest",
+                    "public_interest"
+                  ],
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:basisOfProcessing",
+                  "tagNumber": 2
+                },
+                "timestamp": {
+                  "title": "Preference timestamp",
+                  "description": "Time this specific preference was collected.",
+                  "type": "string",
+                  "format": "date-time",
+                  "meta:xdmType": "date-time",
+                  "meta:xdmField": "xdm:timestamp",
+                  "tagNumber": 3
+                },
+                "source": {
+                  "title": "Preference Source",
+                  "description": "Through which interface did the user provide this preference value",
+                  "type": "string",
+                  "maxLength": 20,
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:source",
+                  "tagNumber": 4
+                },
+                "reason": {
+                  "title": "Opt out reason",
+                  "type": "string",
+                  "description": "Reason for opting out",
+                  "maxLength": 20,
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:reason",
+                  "tagNumber": 5
+                }
+              },
+              "meta:xdmField": "xdm:socialMedia",
+              "tagNumber": 9
+            },
+            "inAppMessages": {
+              "type": "object",
+              "meta:xdmType": "object",
+              "properties": {
+                "choice": {
+                  "title": "Choice Value",
+                  "description": "The value specified by the user as their preference",
+                  "type": "string",
+                  "enum": [
+                    "yes",
+                    "no",
+                    "pending",
+                    "unknown",
+                    "not_applicable"
+                  ],
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:choice",
+                  "tagNumber": 1
+                },
+                "basisOfProcessing": {
+                  "title": "Basis Of Processing",
+                  "type": "string",
+                  "description": "Legal basis for collecting/processing data: is user consent required?",
+                  "enum": [
+                    "consent",
+                    "legitimate_interest",
+                    "contract",
+                    "compliance",
+                    "vital_interest",
+                    "public_interest"
+                  ],
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:basisOfProcessing",
+                  "tagNumber": 2
+                },
+                "timestamp": {
+                  "title": "Preference timestamp",
+                  "description": "Time this specific preference was collected.",
+                  "type": "string",
+                  "format": "date-time",
+                  "meta:xdmType": "date-time",
+                  "meta:xdmField": "xdm:timestamp",
+                  "tagNumber": 3
+                },
+                "source": {
+                  "title": "Preference Source",
+                  "description": "Through which interface did the user provide this preference value",
+                  "type": "string",
+                  "maxLength": 20,
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:source",
+                  "tagNumber": 4
+                },
+                "reason": {
+                  "title": "Opt out reason",
+                  "type": "string",
+                  "description": "Reason for opting out",
+                  "maxLength": 20,
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:reason",
+                  "tagNumber": 5
+                }
+              },
+              "meta:xdmField": "xdm:inAppMessages",
+              "tagNumber": 10
+            },
+            "inVehicleMessages": {
+              "type": "object",
+              "meta:xdmType": "object",
+              "properties": {
+                "choice": {
+                  "title": "Choice Value",
+                  "description": "The value specified by the user as their preference",
+                  "type": "string",
+                  "enum": [
+                    "yes",
+                    "no",
+                    "pending",
+                    "unknown",
+                    "not_applicable"
+                  ],
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:choice",
+                  "tagNumber": 1
+                },
+                "basisOfProcessing": {
+                  "title": "Basis Of Processing",
+                  "type": "string",
+                  "description": "Legal basis for collecting/processing data: is user consent required?",
+                  "enum": [
+                    "consent",
+                    "legitimate_interest",
+                    "contract",
+                    "compliance",
+                    "vital_interest",
+                    "public_interest"
+                  ],
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:basisOfProcessing",
+                  "tagNumber": 2
+                },
+                "timestamp": {
+                  "title": "Preference timestamp",
+                  "description": "Time this specific preference was collected.",
+                  "type": "string",
+                  "format": "date-time",
+                  "meta:xdmType": "date-time",
+                  "meta:xdmField": "xdm:timestamp",
+                  "tagNumber": 3
+                },
+                "source": {
+                  "title": "Preference Source",
+                  "description": "Through which interface did the user provide this preference value",
+                  "type": "string",
+                  "maxLength": 20,
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:source",
+                  "tagNumber": 4
+                },
+                "reason": {
+                  "title": "Opt out reason",
+                  "type": "string",
+                  "description": "Reason for opting out",
+                  "maxLength": 20,
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:reason",
+                  "tagNumber": 5
+                }
+              },
+              "meta:xdmField": "xdm:inVehicleMessages",
+              "tagNumber": 11
+            },
+            "inHomeMessages": {
+              "type": "object",
+              "meta:xdmType": "object",
+              "properties": {
+                "choice": {
+                  "title": "Choice Value",
+                  "description": "The value specified by the user as their preference",
+                  "type": "string",
+                  "enum": [
+                    "yes",
+                    "no",
+                    "pending",
+                    "unknown",
+                    "not_applicable"
+                  ],
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:choice",
+                  "tagNumber": 1
+                },
+                "basisOfProcessing": {
+                  "title": "Basis Of Processing",
+                  "type": "string",
+                  "description": "Legal basis for collecting/processing data: is user consent required?",
+                  "enum": [
+                    "consent",
+                    "legitimate_interest",
+                    "contract",
+                    "compliance",
+                    "vital_interest",
+                    "public_interest"
+                  ],
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:basisOfProcessing",
+                  "tagNumber": 2
+                },
+                "timestamp": {
+                  "title": "Preference timestamp",
+                  "description": "Time this specific preference was collected.",
+                  "type": "string",
+                  "format": "date-time",
+                  "meta:xdmType": "date-time",
+                  "meta:xdmField": "xdm:timestamp",
+                  "tagNumber": 3
+                },
+                "source": {
+                  "title": "Preference Source",
+                  "description": "Through which interface did the user provide this preference value",
+                  "type": "string",
+                  "maxLength": 20,
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:source",
+                  "tagNumber": 4
+                },
+                "reason": {
+                  "title": "Opt out reason",
+                  "type": "string",
+                  "description": "Reason for opting out",
+                  "maxLength": 20,
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:reason",
+                  "tagNumber": 5
+                }
+              },
+              "meta:xdmField": "xdm:inHomeMessages",
+              "tagNumber": 12
+            }
+          },
+          "meta:xdmField": "xdm:marketingPreferences",
+          "tagNumber": 3
+        }
+      },
+      "meta:xdmField": "xdm:choices",
+      "tagNumber": 1
+    },
+    "choicesMetadata": {
+      "properties": {
+        "version": {
+          "title": "Consent Schema Version",
+          "description": "Version of the Consents and Preferences Schema",
+          "type": "string",
+          "pattern": "^[0-9]{1,2}\\.[0-9]{1,2}\\.[0-9]{1,4}$",
+          "default": "1.0.0",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:version",
+          "tagNumber": 1
+        },
+        "timestamp": {
+          "title": "Consent/Preferences timestamp",
+          "description": "Timestamp of this complete set of user consents and preferences",
+          "type": "string",
+          "format": "date-time",
+          "meta:xdmType": "date-time",
+          "meta:xdmField": "xdm:timestamp",
+          "tagNumber": 2
+        },
+        "source": {
+          "title": "Preference Source",
+          "description": "Through which interface did the user provide this preference value",
+          "type": "string",
+          "maxLength": 20,
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:source",
+          "tagNumber": 3
+        },
+        "userIDfromSource": {
+          "title": "Source's ID for the user",
+          "description": "Source's ID for the user",
+          "type": "string",
+          "maxLength": 20,
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:userIDfromSource",
+          "tagNumber": 4
+        },
+        "userCountryRegionCode": {
+          "title": "User Country (and optionally Region) Code",
+          "description": "ISO 3166 alpha2 country code or ISO 3166-2 country plus state/province code for use in helping to determine how to interpret consent values",
+          "type": "string",
+          "maxLength": 6,
+          "pattern": "^[A-Z]{2}(-[A-Z0-9]{1,3}){0,1}$",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:userCountryRegionCode",
+          "tagNumber": 5
+        },
+        "countryRegionSource": {
+          "title": "Country/Region Source",
+          "description": "Method used to determine the user's country/region",
+          "type": "string",
+          "enum": [
+            "ip",
+            "gps",
+            "user_provided",
+            "website_location",
+            "inferred",
+            "other"
+          ],
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:countryRegionSource",
+          "tagNumber": 6
+        }
+      },
+      "meta:xdmField": "xdm:choicesMetadata",
+      "tagNumber": 2
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/datatypes/consent-preferences",
+  "meta:altId": "_xdm.datatypes.consent-preferences",
+  "id": "_xdm.datatypes.consent-preferences"
+}

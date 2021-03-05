@@ -1,0 +1,45 @@
+{
+  "id": "_xdm.context.profile-segmentation",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Segment Membership Details",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "description": "Segment membership information such as including which segments the individual belongs to, the last qualification time, and when the membership is valid until.",
+  "meta:status": "stable",
+  "meta:xdmType": "object",
+  "properties": {
+    "segments": {
+      "title": "Segment membership",
+      "meta:status": "deprecated",
+      "type": "array",
+      "meta:xdmType": "array",
+      "items": {
+        "$ref": "../../datatypes/segmentmembership.schema.json",
+        "tagNumber": 1
+      },
+      "meta:xdmField": "xdm:segments",
+      "tagNumber": 1
+    },
+    "segmentMembership": {
+      "title": "Segment membership map",
+      "type": "object",
+      "meta:xdmType": "map",
+      "additionalProperties": {
+        "title": "Segment membership per namespace",
+        "type": "object",
+        "meta:xdmType": "map",
+        "additionalProperties": {
+          "$ref": "../../datatypes/segmentmembership.schema.json",
+          "tagNumber": 1
+        },
+        "tagNumber": 1
+      },
+      "meta:xdmField": "xdm:segmentMembership",
+      "tagNumber": 2
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/context/profile-segmentation",
+  "meta:altId": "_xdm.context.profile-segmentation",
+  "id": "_xdm.context.profile-segmentation"
+}

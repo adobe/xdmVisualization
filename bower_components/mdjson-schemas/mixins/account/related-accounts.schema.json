@@ -1,0 +1,29 @@
+{
+  "id": "_xdm.mixins.related-accounts",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "XDM Related Business Accounts",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "description": "An array of all related accounts linked to the primary account.",
+  "meta:status": "experimental",
+  "meta:xdmType": "object",
+  "properties": {
+    "relatedAccounts": {
+      "title": "Related Accounts",
+      "description": "Related accounts which are linked to a primary Business Account. This is an array of Account IDs.",
+      "type": "array",
+      "meta:xdmType": "array",
+      "items": {
+        "type": "string",
+        "meta:xdmType": "string",
+        "tagNumber": 1
+      },
+      "meta:xdmField": "xdm:relatedAccounts",
+      "tagNumber": 1
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/mixins/related-accounts",
+  "meta:altId": "_xdm.mixins.related-accounts",
+  "id": "_xdm.mixins.related-accounts"
+}

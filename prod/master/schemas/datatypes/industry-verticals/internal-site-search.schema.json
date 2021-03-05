@@ -1,0 +1,197 @@
+{
+  "id": "_xdm.datatypes.internal-site-search",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Internal Site Search",
+  "type": "object",
+  "meta:extensible": true,
+  "description": "Used for internal site searches and includes all related search behaviors and details.",
+  "meta:status": "experimental",
+  "meta:xdmType": "object",
+  "properties": {
+    "numberOfResults": {
+      "title": "Number of Results",
+      "type": "integer",
+      "description": "Count of the total number of search results returned.",
+      "meta:xdmType": "int",
+      "meta:xdmField": "xdm:numberOfResults",
+      "tagNumber": 1
+    },
+    "productFindingMethods": {
+      "title": "Product Finding Method",
+      "type": "string",
+      "description": "The internal site search term value with merchandising binding. Will show what term was searched for immediately before viewing a product.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:productFindingMethods",
+      "tagNumber": 2
+    },
+    "refinementValue": {
+      "title": "Refinement Value",
+      "type": "string",
+      "description": "Number of times an internal site search refinement has occurred.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:refinementValue",
+      "tagNumber": 3
+    },
+    "refinementType": {
+      "title": "Refinement Type",
+      "type": "array",
+      "description": "Captures the refinement type(s) applied to the search results (i.e. department, brand, price, in-store, review rating, color, material, etc.)",
+      "meta:xdmType": "array",
+      "items": {
+        "type": "string",
+        "meta:xdmType": "string",
+        "tagNumber": 1
+      },
+      "meta:xdmField": "xdm:refinementType",
+      "tagNumber": 4
+    },
+    "refinementInstances": {
+      "title": "Refinement Instances",
+      "type": "integer",
+      "description": "Captures when a search refinement action occurs.",
+      "meta:xdmType": "int",
+      "meta:xdmField": "xdm:refinementInstances",
+      "tagNumber": 5
+    },
+    "resultsPageNumber": {
+      "title": "Results Page Number",
+      "type": "integer",
+      "description": "For paginated search results, tracks the page of results the visitor is viewing.",
+      "meta:xdmType": "int",
+      "meta:xdmField": "xdm:resultsPageNumber",
+      "tagNumber": 6
+    },
+    "resultsPerPage": {
+      "title": "Results Per Page",
+      "type": "integer",
+      "description": "For paginated search results, tracks the number of search results displayed per page.",
+      "meta:xdmType": "int",
+      "meta:xdmField": "xdm:resultsPerPage",
+      "tagNumber": 7
+    },
+    "instances": {
+      "title": "Instances",
+      "type": "integer",
+      "description": "Number of times an internal site search has occurred.",
+      "meta:xdmType": "int",
+      "meta:xdmField": "xdm:instances",
+      "tagNumber": 8
+    },
+    "locationInPage": {
+      "title": "Location in Page",
+      "type": "string",
+      "description": "When multiple search boxes exist on the page, this value should be used to identify the specific location the user used to search",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:locationInPage",
+      "tagNumber": 9
+    },
+    "nullInstances": {
+      "title": "Null Instances",
+      "type": "integer",
+      "description": "Number of times an internal site search has occurred that provided zero results.",
+      "meta:xdmType": "int",
+      "meta:xdmField": "xdm:nullInstances",
+      "tagNumber": 10
+    },
+    "postalCode": {
+      "title": "Postal Code",
+      "type": "string",
+      "description": "Captures the zip code used for a search, if applicable",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:postalCode",
+      "tagNumber": 11
+    },
+    "radiusDistance": {
+      "title": "Radius Distance",
+      "type": "integer",
+      "description": "Captures the selected distance of the search radius.",
+      "meta:xdmType": "int",
+      "meta:xdmField": "xdm:radiusDistance",
+      "tagNumber": 12
+    },
+    "radiusType": {
+      "title": "Radius Type",
+      "type": "string",
+      "enum": [
+        "miles",
+        "kilometers"
+      ],
+      "description": "Captures the selected distance type of the search radius in either miles or kilometers.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:radiusType",
+      "tagNumber": 13
+    },
+    "term": {
+      "title": "Term",
+      "type": "string",
+      "description": "Tracks the internal site search term entered by the visitor.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:term",
+      "tagNumber": 14
+    },
+    "autoCompleteClicked": {
+      "title": "Auto Complete Clicked",
+      "type": "boolean",
+      "description": "Indicates when a visitor uses a suggested/autocompleted search value to execute the search",
+      "meta:xdmType": "boolean",
+      "meta:xdmField": "xdm:autoCompleteClicked",
+      "tagNumber": 15
+    },
+    "autoCompleteValue": {
+      "title": "Auto Complete Value",
+      "type": "string",
+      "description": "For autocomplete scenarios, users sometimes abandon their search and click a specific term from the drop down. This value is used to track the specific terms clicked",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:autoCompleteValue",
+      "tagNumber": 16
+    },
+    "autoCompleteTypedValue": {
+      "title": "Auto Complete Typed Value",
+      "type": "string",
+      "description": "For autocomplete scenarios, users sometimes abandon their search and click a specific term from the drop down. This value tracks what the user started to type in order to generate the specific set of suggested search terms",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:autoCompleteTypedValue",
+      "tagNumber": 17
+    },
+    "searchType": {
+      "title": "Search Type",
+      "type": "string",
+      "description": "Captures the method of search being executed, if applicable. Examples could include a type-ahead search, directly-typed search, or any other type of custom search functionality a site might have.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:searchType",
+      "tagNumber": 18
+    },
+    "sortOrder": {
+      "title": "Sort Order",
+      "type": "string",
+      "enum": [
+        "ascending",
+        "descending"
+      ],
+      "description": "ascending/descending",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:sortOrder",
+      "tagNumber": 19
+    },
+    "sortType": {
+      "title": "Sort Type",
+      "type": "string",
+      "enum": [
+        "price: low to high",
+        "price: high to low",
+        "featured",
+        "best match",
+        "average customer review",
+        "discount",
+        "new items"
+      ],
+      "description": "Captures the type of sort applied to search results, i.e. best match, price, rating, etc.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:sortType",
+      "tagNumber": 20
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/datatypes/internal-site-search",
+  "meta:altId": "_xdm.datatypes.internal-site-search",
+  "id": "_xdm.datatypes.internal-site-search"
+}

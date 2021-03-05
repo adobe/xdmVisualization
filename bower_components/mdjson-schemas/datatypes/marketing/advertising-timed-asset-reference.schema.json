@@ -1,0 +1,105 @@
+{
+  "id": "_xdm.context.advertising-timed-asset-reference",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Ad asset reference",
+  "type": "object",
+  "description": "Ad asset reference is info about the ad captured by the experience event.",
+  "meta:extensible": true,
+  "meta:status": "stable",
+  "meta:xdmType": "object",
+  "properties": {
+    "_id": {
+      "title": "Ad ID",
+      "type": "string",
+      "format": "uri-reference",
+      "description": "Identifier of the ad asset provided by media analytics customers. Following the Ad-ID standard [https://www.ad-id.org].",
+      "meta:xdmType": "string",
+      "meta:xdmField": "@id",
+      "tagNumber": 1
+    },
+    "creativeID": {
+      "title": "Ad creative ID",
+      "type": "string",
+      "description": "The ID of the ad creative.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:creativeID",
+      "tagNumber": 2
+    },
+    "creativeURL": {
+      "title": "Ad creative URL",
+      "type": "string",
+      "description": "The URL of the ad creative.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:creativeURL",
+      "tagNumber": 3
+    },
+    "siteID": {
+      "title": "Ad site ID",
+      "type": "string",
+      "description": "ID of the ad site.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:siteID",
+      "tagNumber": 4
+    },
+    "placementID": {
+      "title": "Ad placement ID",
+      "type": "string",
+      "description": "Placement ID of the ad.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:placementID",
+      "tagNumber": 5
+    },
+    "_dc": {
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "title": {
+          "title": "Ad name",
+          "type": "string",
+          "description": "The friendly and human-readable name of the ad asset.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "dc:title",
+          "tagNumber": 1
+        }
+      },
+      "tagNumber": 6
+    },
+    "advertiser": {
+      "title": "Ad advertiser",
+      "type": "string",
+      "description": "Company/Brand whose product is featured in the ad.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:advertiser",
+      "tagNumber": 7
+    },
+    "campaign": {
+      "title": "Ad campaign",
+      "type": "string",
+      "description": "ID of the ad campaign.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:campaign",
+      "tagNumber": 8
+    },
+    "_xmpDM": {
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "duration": {
+          "title": "Ad length or duration",
+          "type": "integer",
+          "description": "Length or duration of ad asset in seconds.",
+          "meta:xdmType": "int",
+          "meta:xdmField": "xmpDM:duration",
+          "tagNumber": 1
+        }
+      },
+      "tagNumber": 9
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/context/advertising-timed-asset-reference",
+  "meta:altId": "_xdm.context.advertising-timed-asset-reference",
+  "required": [
+    "_id"
+  ],
+  "id": "_xdm.context.advertising-timed-asset-reference"
+}

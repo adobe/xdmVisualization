@@ -1,0 +1,75 @@
+{
+  "id": "_xdm.mixins.industry-verticals.experienceevent-prescription-details",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Prescription Details",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:tags": {
+    "industry": [
+      "health_and_life_sciences"
+    ]
+  },
+  "description": "",
+  "meta:status": "experimental",
+  "meta:xdmType": "object",
+  "properties": {
+    "prescription": {
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "deliveryEligible": {
+          "title": "Delivery Eligible",
+          "type": "boolean",
+          "description": "Indicates if the prescription available to be delivered.",
+          "meta:xdmType": "boolean",
+          "meta:xdmField": "xdm:deliveryEligible",
+          "tagNumber": 1
+        },
+        "ID": {
+          "title": "ID",
+          "type": "string",
+          "description": "ID for the prescription being filled.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:ID",
+          "tagNumber": 2
+        },
+        "refill": {
+          "title": "Refill",
+          "type": "boolean",
+          "description": "Indicates if the prescription is new or being refilled.",
+          "meta:xdmType": "boolean",
+          "meta:xdmField": "xdm:refill",
+          "tagNumber": 3
+        },
+        "refillsRemaining": {
+          "title": "Refills Remaining",
+          "type": "integer",
+          "description": "Count of the remaining prescription refills available.",
+          "meta:xdmType": "int",
+          "meta:xdmField": "xdm:refillsRemaining",
+          "tagNumber": 4
+        },
+        "steps": {
+          "title": "Steps",
+          "$ref": "../../../datatypes/industry-verticals/tool-usage.schema.json",
+          "description": "Extension of toolUsage data type.",
+          "meta:xdmField": "xdm:steps",
+          "tagNumber": 5
+        },
+        "upload": {
+          "title": "Upload",
+          "$ref": "../../../datatypes/industry-verticals/file-transfer.schema.json",
+          "description": "Extension of the File Transfer data type.",
+          "meta:xdmField": "xdm:upload",
+          "tagNumber": 6
+        }
+      },
+      "meta:xdmField": "xdm:prescription",
+      "tagNumber": 1
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/mixins/industry-verticals/experienceevent-prescription-details",
+  "meta:altId": "_xdm.mixins.industry-verticals.experienceevent-prescription-details",
+  "id": "_xdm.mixins.industry-verticals.experienceevent-prescription-details"
+}
