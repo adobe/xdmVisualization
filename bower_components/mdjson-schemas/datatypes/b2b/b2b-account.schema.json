@@ -6,7 +6,7 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "description": "This Data Type is used to capture B2B Account properties. They are grouped functioanlly under separate definitions.",
-  "meta:status": "deprecated",
+  "meta:status": "experimental",
   "meta:xdmType": "object",
   "properties": {
     "accountParentID": {
@@ -25,13 +25,21 @@
       "meta:xdmField": "xdm:partnerAccountID",
       "tagNumber": 2
     },
+    "accountOwnerID": {
+      "title": "Account Owner Id",
+      "description": "Account owner ID.",
+      "type": "string",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:accountOwnerID",
+      "tagNumber": 3
+    },
     "accountNumber": {
       "title": "Account Number",
       "description": "Tracking or reference number for account. Up to 40 characters are allowed in this field.",
       "type": "string",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:accountNumber",
-      "tagNumber": 3
+      "tagNumber": 4
     },
     "accountDescription": {
       "title": "Account Description",
@@ -39,7 +47,7 @@
       "type": "string",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:accountDescription",
-      "tagNumber": 4
+      "tagNumber": 5
     },
     "accountSite": {
       "title": "Account Site Details",
@@ -47,7 +55,7 @@
       "type": "string",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:accountSite",
-      "tagNumber": 5
+      "tagNumber": 6
     },
     "accountType": {
       "title": "Account Type",
@@ -55,7 +63,7 @@
       "type": "string",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:accountType",
-      "tagNumber": 6
+      "tagNumber": 7
     },
     "accountSourceType": {
       "title": "Account Source Type",
@@ -63,7 +71,7 @@
       "type": "string",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:accountSourceType",
-      "tagNumber": 7
+      "tagNumber": 8
     },
     "defaultCurrencyCode": {
       "title": "Default Currency Code",
@@ -76,7 +84,7 @@
       "description": "The ISO 4217 currency code.",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:defaultCurrencyCode",
-      "tagNumber": 8
+      "tagNumber": 9
     },
     "accountOwnership": {
       "title": "Ownership",
@@ -84,7 +92,7 @@
       "type": "string",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:accountOwnership",
-      "tagNumber": 9
+      "tagNumber": 10
     },
     "accountTradeStyle": {
       "title": "Account Trade Style",
@@ -92,21 +100,21 @@
       "type": "string",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:accountTradeStyle",
-      "tagNumber": 10
+      "tagNumber": 11
     },
     "accountPhone": {
       "title": "Account Phone Number",
       "description": "Phone number for the account.",
       "$ref": "../demographic/phonenumber.schema.json",
       "meta:xdmField": "xdm:accountPhone",
-      "tagNumber": 11
+      "tagNumber": 12
     },
     "accountFax": {
       "title": "Account Fax Number",
       "description": "Fax number for the account.",
       "$ref": "../demographic/phonenumber.schema.json",
       "meta:xdmField": "xdm:accountFax",
-      "tagNumber": 12
+      "tagNumber": 13
     },
     "accountName": {
       "title": "Account Name",
@@ -114,7 +122,7 @@
       "type": "string",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:accountName",
-      "tagNumber": 13
+      "tagNumber": 14
     },
     "accountTerritoryID": {
       "title": "Account Territory Id",
@@ -122,39 +130,39 @@
       "type": "string",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:accountTerritoryID",
-      "tagNumber": 14
+      "tagNumber": 15
     },
     "accountScore": {
       "title": "Account Score",
       "type": "number",
       "meta:xdmType": "number",
       "meta:xdmField": "xdm:accountScore",
-      "tagNumber": 15
+      "tagNumber": 16
     },
     "accountBillingAddress": {
       "title": "Account Billing Address",
       "$ref": "../demographic/address.schema.json",
       "meta:xdmField": "xdm:accountBillingAddress",
-      "tagNumber": 16
+      "tagNumber": 17
     },
     "accountShippingAddress": {
       "title": "Account Shipping Address",
       "$ref": "../demographic/address.schema.json",
       "meta:xdmField": "xdm:accountShippingAddress",
-      "tagNumber": 17
+      "tagNumber": 18
     },
     "accountPhysicalAddress": {
       "title": "Account Physical Address",
       "description": "Actual physical address of the account. Could be the HQ address or any preffered business address for communication.",
       "$ref": "../demographic/address.schema.json",
       "meta:xdmField": "xdm:accountPhysicalAddress",
-      "tagNumber": 18
+      "tagNumber": 19
     },
     "accountOrganization": {
       "title": "Account Organization",
       "$ref": "account-organization.schema.json",
       "meta:xdmField": "xdm:accountOrganization",
-      "tagNumber": 19
+      "tagNumber": 20
     }
   },
   "meta:xdmId": "https://ns.adobe.com/xdm/datatypes/b2b-account",

@@ -70,15 +70,6 @@
       "meta:xdmField": "xdm:characteristics",
       "tagNumber": 5
     },
-    "score": {
-      "title": "Decision Option Score",
-      "description": "Calcuated value for that option in the context of a single scope. The value is only available if a score was calculated.",
-      "type": "number",
-      "minimum": 0,
-      "meta:xdmType": "number",
-      "meta:xdmField": "xdm:score",
-      "tagNumber": 6
-    },
     "_experience": {
       "type": "object",
       "meta:xdmType": "object",
@@ -103,7 +94,7 @@
           "tagNumber": 1
         }
       },
-      "tagNumber": 7
+      "tagNumber": 6
     }
   },
   "meta:xdmId": "https://ns.adobe.com/experience/offer-management/offer-detail",

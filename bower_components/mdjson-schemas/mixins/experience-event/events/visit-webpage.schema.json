@@ -1,11 +1,11 @@
 {
   "id": "_xdm.mixins.events.visit-webpage",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Visit Web Page",
+  "title": "Visit WebPage",
   "type": "object",
   "meta:conditionalField": "xdm:eventType",
   "meta:conditionalValue": "web.webpagedetails.pageViews",
-  "description": "Use for tracking the details of a person's visit to a web page.",
+  "description": "Use for information regarding web details events such as interaction, page details, and referrer.",
   "meta:status": "experimental",
   "meta:xdmType": "object",
   "properties": {
@@ -20,9 +20,9 @@
           "meta:xdmType": "object",
           "properties": {
             "webPageID": {
-              "title": "Web Page ID",
+              "title": "Webpage ID",
               "type": "string",
-              "description": "Unique ID of the web page.",
+              "description": ".",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:webPageID",
               "tagNumber": 1
@@ -44,18 +44,18 @@
               "meta:xdmField": "xdm:URL",
               "tagNumber": 3
             },
-            "queryParameters": {
-              "title": "Query Parameters",
+            "queryParamaters": {
+              "title": "Query Paramaters",
               "type": "string",
-              "description": "Query Parameters used for the web page. This is normally the value of a string after ? in the url.",
+              "description": "Query Paramters used for the web page.",
               "meta:xdmType": "string",
-              "meta:xdmField": "xdm:queryParameters",
+              "meta:xdmField": "xdm:queryParamaters",
               "tagNumber": 4
             },
             "isPersonalizedURL": {
               "title": "Is Personalized URL",
               "type": "boolean",
-              "description": "Boolean indicating if person accessed the web page via a personalized URL.",
+              "description": "Personalized URL of the web page.  This may or may not be the actual URL used to reach the page, which would be recorded using `Web Link`.",
               "meta:xdmType": "boolean",
               "meta:xdmField": "xdm:isPersonalizedURL",
               "tagNumber": 5
@@ -72,7 +72,7 @@
             "URL": {
               "title": "URL",
               "type": "string",
-              "description": "URL of the referring web page.",
+              "description": "The referrer URL.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:URL",
               "tagNumber": 1

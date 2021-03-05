@@ -12,12 +12,29 @@
     "deprecated",
     "experimental"
   ],
+  "meta:conditionalField": "xdm:eventType",
+  "meta:conditionalValue": [
+    "listOperation.addToList",
+    "opportunityEvent.addToOpportunity",
+    "leadOperation.convertLead",
+    "directMarketing.emailBounced",
+    "directMarketing.emailBouncedSoft",
+    "directMarketing.emailClicked",
+    "directMarketing.emailDelivered",
+    "directMarketing.emailOpened",
+    "directMarketing.emailUnsubscribed",
+    "web.formFilledOut",
+    "leadOperation.interestingMoment",
+    "web.webInteraction.linkClicks",
+    "leadOperation.newLead",
+    "opportunityEvent.opportunityUpdated",
+    "listOpearation.removeFromList",
+    "opportunityEvent.removeFromOpportunity",
+    "leadOperation.scoreChanged",
+    "leadOperation.statusInCampaignProgressionChanged",
+    "web.webpagedetails.pageViews"
+  ],
   "meta:tags": [
-    {
-      "industry": [
-        "all"
-      ]
-    },
     {
       "industry": [
         "financial_services"
@@ -134,82 +151,11 @@
     },
     {
       "industry": [
-        "retail",
-        "financial_services",
-        "telecom",
-        "automotive",
-        "education",
-        "health_and_life_sciences",
-        "media_and_entertainment"
-      ]
-    },
-    {
-      "industry": [
         "financial_services",
         "health_and_life_sciences",
-        "high_tech"
-      ]
-    },
-    {
-      "industry": [
-        "telecom"
-      ]
-    },
-    {
-      "industry": [
-        "travel_and_hospitality"
-      ]
-    },
-    {
-      "industry": [
-        "health_and_life_sciences"
-      ]
-    },
-    {
-      "industry": [
-        "retail",
-        "financial_services",
-        "travel_and_hospitality",
-        "telecom",
-        "automotive",
-        "high_tech",
-        "manufacturing",
-        "media_and_entertainment"
-      ]
-    },
-    {
-      "industry": [
-        "retail",
-        "financial_services",
-        "travel_and_hospitality",
-        "telecom",
-        "automotive",
-        "education",
         "high_tech"
       ]
     }
-  ],
-  "meta:conditionalField": "xdm:eventType",
-  "meta:conditionalValue": [
-    "listOperation.addToList",
-    "opportunityEvent.addToOpportunity",
-    "leadOperation.convertLead",
-    "directMarketing.emailBounced",
-    "directMarketing.emailBouncedSoft",
-    "directMarketing.emailClicked",
-    "directMarketing.emailDelivered",
-    "directMarketing.emailOpened",
-    "directMarketing.emailUnsubscribed",
-    "web.formFilledOut",
-    "leadOperation.interestingMoment",
-    "web.webInteraction.linkClicks",
-    "leadOperation.newLead",
-    "opportunityEvent.opportunityUpdated",
-    "listOpearation.removeFromList",
-    "opportunityEvent.removeFromOpportunity",
-    "leadOperation.scoreChanged",
-    "leadOperation.statusInCampaignProgressionChanged",
-    "web.webpagedetails.pageViews"
   ],
   "properties": {
     "identityMap": {
@@ -277,7 +223,7 @@
         "listID": {
           "title": "List ID",
           "type": "string",
-          "description": "Unique ID of the Marketing List.",
+          "description": "List unique identifier.",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:listID",
           "tagNumber": 1
@@ -294,7 +240,7 @@
         "opportunityID": {
           "title": "Opportunity ID",
           "type": "string",
-          "description": "Unique ID of the Opportunity.",
+          "description": "Opportunity ID",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:opportunityID",
           "tagNumber": 1
@@ -302,7 +248,7 @@
         "isPrimary": {
           "title": "Is Primary",
           "type": "boolean",
-          "description": "Boolean indicating if person is the primary contact on the Opportunity.",
+          "description": "Is primary.",
           "meta:xdmType": "boolean",
           "meta:xdmField": "xdm:isPrimary",
           "tagNumber": 2
@@ -310,20 +256,19 @@
         "role": {
           "title": "Role",
           "type": "string",
-          "description": "Role of the person on the Opportunity.",
+          "description": "Role.",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:role",
           "tagNumber": 3
         },
         "dataValueChanges": {
           "title": "Data Value Changes",
-          "description": "Full record of data values updated",
           "type": "array",
           "meta:xdmType": "array",
           "meta:xdmField": "xdm:dataValueChanges",
           "tagNumber": 4,
           "items": {
-            "$ref": "obj8142298384837221.schema.json"
+            "$ref": "obj29506623846636404.schema.json"
           }
         }
       },
@@ -343,7 +288,7 @@
             "assignTo": {
               "title": "Assign To",
               "type": "string",
-              "description": "Sales user converted lead is assigned to.",
+              "description": ".",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:assignTo",
               "tagNumber": 1
@@ -351,7 +296,7 @@
             "isSentNotificationEmail": {
               "title": "Is Sent Notification Email",
               "type": "boolean",
-              "description": "Indicates whether assigned sales user received email notification of the converted lead.",
+              "description": "Sent notification email.",
               "meta:xdmType": "boolean",
               "meta:xdmField": "xdm:isSentNotificationEmail",
               "tagNumber": 2
@@ -359,7 +304,7 @@
             "convertedStatus": {
               "title": "Converted Status",
               "type": "string",
-              "description": "Converted status of lead.",
+              "description": "Converted status.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:convertedStatus",
               "tagNumber": 3
@@ -376,7 +321,7 @@
             "type": {
               "title": "Type",
               "type": "string",
-              "description": "Type of Interesting Moment.",
+              "description": "Interesting moment type.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:type",
               "tagNumber": 1
@@ -384,7 +329,7 @@
             "description": {
               "title": "Description",
               "type": "string",
-              "description": "Description of Interesting Moment.",
+              "description": "Interesting moment description.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:description",
               "tagNumber": 2
@@ -393,7 +338,7 @@
               "title": "Date",
               "type": "string",
               "format": "date-time",
-              "description": "Date of the Interesting Moment.",
+              "description": "Interesting moment date.",
               "meta:xdmType": "date-time",
               "meta:xdmField": "xdm:date",
               "tagNumber": 3
@@ -401,7 +346,7 @@
             "source": {
               "title": "Source",
               "type": "string",
-              "description": "Source of the action that triggered the interesting moment.",
+              "description": "Interesting moment source.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:source",
               "tagNumber": 4
@@ -418,7 +363,7 @@
             "sourceType": {
               "title": "Source Type",
               "type": "string",
-              "description": "Type of lead source.",
+              "description": "Type of the source.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:sourceType",
               "tagNumber": 1
@@ -434,7 +379,7 @@
             "listName": {
               "title": "List Name",
               "type": "string",
-              "description": "Name of marketing list.",
+              "description": "Name of the list.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:listName",
               "tagNumber": 3
@@ -442,7 +387,7 @@
             "sfdcType": {
               "title": "SFDC Type",
               "type": "string",
-              "description": "Lead type in SFDC.",
+              "description": "Type defined in salesforce source.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:sfdcType",
               "tagNumber": 4
@@ -450,7 +395,7 @@
             "leadSource": {
               "title": "Lead Source",
               "type": "string",
-              "description": "Source of lead.",
+              "description": "Source from where this perticlar lead come from.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:leadSource",
               "tagNumber": 5
@@ -459,7 +404,7 @@
               "title": "Created Date",
               "type": "string",
               "format": "date-time",
-              "description": "Lead creation date.",
+              "description": "Date when this lead is created.",
               "meta:xdmType": "date-time",
               "meta:xdmField": "xdm:createdDate",
               "tagNumber": 6
@@ -476,7 +421,7 @@
             "scoreAttributeID": {
               "title": "Score Atribute ID",
               "type": "string",
-              "description": "Unique ID of the lead score attribute.",
+              "description": "Unique identifier for score attribute.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:scoreAttributeID",
               "tagNumber": 1
@@ -484,7 +429,7 @@
             "scoreAttributeName": {
               "title": "Score Atribute Name",
               "type": "string",
-              "description": "Friendly name of the lead score attribute.",
+              "description": "friendly name for the score.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:scoreAttributeName",
               "tagNumber": 2
@@ -492,7 +437,7 @@
             "changeValue": {
               "title": "Change Value",
               "type": "string",
-              "description": "Absolute value or difference between new value and previous value of the lead score attribute.",
+              "description": "changed value.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:changeValue",
               "tagNumber": 3
@@ -500,7 +445,7 @@
             "newValue": {
               "title": "New Value",
               "type": "integer",
-              "description": "New value of the lead score attribute.",
+              "description": "New score Value.",
               "meta:xdmType": "int",
               "meta:xdmField": "xdm:newValue",
               "tagNumber": 4
@@ -508,7 +453,7 @@
             "oldValue": {
               "title": "Old Value",
               "type": "integer",
-              "description": "Previous value of the lead score attribute.",
+              "description": "old score Value.",
               "meta:xdmType": "int",
               "meta:xdmField": "xdm:oldValue",
               "tagNumber": 5
@@ -516,7 +461,7 @@
             "reason": {
               "title": "Reason",
               "type": "string",
-              "description": "Reason for the change to the lead score attribute.",
+              "description": "Reason for the change.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:reason",
               "tagNumber": 6
@@ -524,7 +469,7 @@
             "urgency": {
               "title": "Urgency",
               "type": "number",
-              "description": "Gauge of how much the lead's score has changed recently.",
+              "description": "Urgency for this change.",
               "meta:xdmType": "number",
               "meta:xdmField": "xdm:urgency",
               "tagNumber": 7
@@ -532,7 +477,7 @@
             "priority": {
               "title": "Priority",
               "type": "integer",
-              "description": "Overall priority the lead should receive based on urgency and score.",
+              "description": "Priority for this change.",
               "meta:xdmType": "int",
               "meta:xdmField": "xdm:priority",
               "tagNumber": 8
@@ -540,7 +485,7 @@
             "relativeScore": {
               "title": "Relative Score",
               "type": "integer",
-              "description": "How the lead's score compares to other leads in the database.",
+              "description": "Relative score.",
               "meta:xdmType": "int",
               "meta:xdmField": "xdm:relativeScore",
               "tagNumber": 9
@@ -548,7 +493,7 @@
             "relativeUrgency": {
               "title": "Relative Urgency",
               "type": "integer",
-              "description": "How the lead's urgency compares to other leads in the database.",
+              "description": "Relative Urgency for this change.",
               "meta:xdmType": "int",
               "meta:xdmField": "xdm:relativeUrgency",
               "tagNumber": 10
@@ -565,7 +510,7 @@
             "campaignID": {
               "title": "Campaign ID",
               "type": "string",
-              "description": "Unique ID of the Campaign.",
+              "description": "Unique identifier for campaign.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:campaignID",
               "tagNumber": 1
@@ -573,7 +518,7 @@
             "newStatusID": {
               "title": "New Status ID",
               "type": "string",
-              "description": "ID of the lead's new status in the campaign.",
+              "description": "Unique identifier for new status.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:newStatusID",
               "tagNumber": 2
@@ -581,7 +526,7 @@
             "newStatusName": {
               "title": "New Status Name",
               "type": "string",
-              "description": "Friendly name of the lead's new status in the campaign.",
+              "description": "Friendly name for new status.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:newStatusName",
               "tagNumber": 3
@@ -589,7 +534,7 @@
             "oldStatusID": {
               "title": "Old Status ID",
               "type": "string",
-              "description": "ID of the lead's previous status in the campaign.",
+              "description": "Unique identifier for old status.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:oldStatusID",
               "tagNumber": 4
@@ -597,7 +542,7 @@
             "oldStatusName": {
               "title": "Old Status Name",
               "type": "string",
-              "description": "Friendly name of the lead's previous status in the campaign.",
+              "description": "Friendly name for old status.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:oldStatusName",
               "tagNumber": 5
@@ -605,7 +550,7 @@
             "reason": {
               "title": "Reason",
               "type": "string",
-              "description": "Reason for the change in the lead's status.",
+              "description": "Reason for status change.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:reason",
               "tagNumber": 6
@@ -613,7 +558,7 @@
             "isAcquiredBy": {
               "title": "Is Acquired By",
               "type": "boolean",
-              "description": "Boolean indicating if lead was acquired by the campaign.",
+              "description": "Change acquired by user.",
               "meta:xdmType": "boolean",
               "meta:xdmField": "xdm:isAcquiredBy",
               "tagNumber": 7
@@ -621,7 +566,7 @@
             "isSuccessful": {
               "title": "Is Successful",
               "type": "boolean",
-              "description": "Boolean indicating if there was a change in the lead's status.",
+              "description": "Is the change successful or failed in process.",
               "meta:xdmType": "boolean",
               "meta:xdmField": "xdm:isSuccessful",
               "tagNumber": 8
@@ -644,7 +589,7 @@
         "mailingID": {
           "title": "Mailing ID",
           "type": "string",
-          "description": "Unique ID of the email asset.",
+          "description": "Unique identifier of the mailing.",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:mailingID",
           "tagNumber": 1
@@ -652,58 +597,66 @@
         "mailingName": {
           "title": "Mailing Name",
           "type": "string",
-          "description": "Friendly name of the email asset.",
+          "description": "Friendly name for the mailing.",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:mailingName",
           "tagNumber": 2
         },
-        "emailBouncedCode": {
+        "emailBouncedCategory": {
           "title": "Email Bounced Category",
           "type": "string",
-          "description": "Code denoting the type of bounce received from the Mail Transfer Agent.",
+          "description": "Category in which this email failure belongs.",
           "meta:xdmType": "string",
-          "meta:xdmField": "xdm:emailBouncedCode",
+          "meta:xdmField": "xdm:emailBouncedCategory",
           "tagNumber": 3
         },
         "emailBouncedDetails": {
           "title": "Email Bounced Details",
           "type": "string",
-          "description": "Details of email bounce from the Mail Transfer Agent.",
+          "description": "Email failure reason description message.",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:emailBouncedDetails",
           "tagNumber": 4
         },
+        "emailBouncedSubcategory": {
+          "title": "Email Bounced Subcategory",
+          "type": "string",
+          "description": "Subcategory this failure reason belongs to.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:emailBouncedSubcategory",
+          "tagNumber": 5
+        },
         "email": {
           "title": "email",
           "type": "string",
-          "description": "Recipient's email address.",
+          "description": "visitor email ID.",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:email",
-          "tagNumber": 5
+          "tagNumber": 6
         },
         "testVariantID": {
           "title": "Test Variant ID",
           "type": "string",
-          "description": "Unique ID of the test variant of the email asset.",
+          "description": "Unique identifier for the test variant.",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:testVariantID",
-          "tagNumber": 6
+          "tagNumber": 7
         },
         "testVariantName": {
           "title": "Test Variant Name",
           "type": "string",
-          "description": "Friendly name of the test variant of the email asset .",
+          "description": "Friendly name for the test variant.",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:testVariantName",
-          "tagNumber": 7
+          "tagNumber": 8
         },
         "linkURL": {
           "title": "Link URL",
           "type": "string",
-          "description": "URL of the link clicked.",
+          "description": "The link URL.",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:linkURL",
-          "tagNumber": 8
+          "tagNumber": 9
         }
       },
       "meta:xdmField": "xdm:directMarketing",
@@ -746,7 +699,7 @@
           "title": "IPv4",
           "type": "string",
           "format": "ipv4",
-          "description": "The numerical label assigned to a device participating in a computer network that uses the Internet Protocol for communication.",
+          "description": "The numerical label assigned to a device participating in a computer network that uses the Internet Protocol for communication. ",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:ipV4",
           "tagNumber": 3
@@ -765,7 +718,7 @@
         "isMobileDevice": {
           "title": "Is Mobile Device",
           "type": "boolean",
-          "description": "Boolean that indicates if device used was a mobile device.",
+          "description": "Is this mobile device.",
           "meta:xdmType": "boolean",
           "meta:xdmField": "xdm:isMobileDevice",
           "tagNumber": 1
@@ -797,7 +750,7 @@
             "linkID": {
               "title": "Link ID",
               "type": "string",
-              "description": "Optional user-entered value as the `id`  of the link element in the HTML of the email.",
+              "description": "Unique identifier to link.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:linkID",
               "tagNumber": 1
@@ -809,14 +762,6 @@
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:linkName",
               "tagNumber": 2
-            },
-            "linkURL": {
-              "title": "Link URL",
-              "type": "string",
-              "description": "URL of the link clicked.",
-              "meta:xdmType": "string",
-              "meta:xdmField": "xdm:linkURL",
-              "tagNumber": 3
             }
           },
           "meta:xdmField": "xdm:webInteraction",
@@ -830,7 +775,7 @@
             "webFormID": {
               "title": "Web Form ID",
               "type": "string",
-              "description": "Unique ID of the form.",
+              "description": "Unique Identifier for web form.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:webFormID",
               "tagNumber": 1
@@ -838,7 +783,7 @@
             "webFormName": {
               "title": "Web Form Name",
               "type": "string",
-              "description": "Friendly name of the form.",
+              "description": "Friendly name for web form.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:webFormName",
               "tagNumber": 2
@@ -855,7 +800,7 @@
             "webPageID": {
               "title": "Web Page ID",
               "type": "string",
-              "description": "Unique ID of the web page.",
+              "description": "Unique Identifier for web page.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:webPageID",
               "tagNumber": 1
@@ -868,12 +813,12 @@
               "meta:xdmField": "xdm:name",
               "tagNumber": 2
             },
-            "queryParameters": {
-              "title": "Query Parameters",
+            "queryParamaters": {
+              "title": "Query Paramaters",
               "type": "string",
-              "description": "Query Parameters used for the web page. This is normally the value of a string after `?` in the url.",
+              "description": "Query Paramters used for the web page.",
               "meta:xdmType": "string",
-              "meta:xdmField": "xdm:queryParameters",
+              "meta:xdmField": "xdm:queryParamaters",
               "tagNumber": 3
             },
             "URL": {
@@ -888,7 +833,7 @@
             "isPersonalizedURL": {
               "title": "Is Personalized URL",
               "type": "boolean",
-              "description": "Boolean indicating if person accessed the web page via a personalized URL.",
+              "description": "Personalized URL of the web page.  This may or may not be the actual URL used to reach the page, which would be recorded using `Web Link`.",
               "meta:xdmType": "boolean",
               "meta:xdmField": "xdm:isPersonalizedURL",
               "tagNumber": 5
@@ -905,7 +850,7 @@
             "URL": {
               "title": "URL",
               "type": "string",
-              "description": "URL of referrer to web page.",
+              "description": "The referrer URL.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:URL",
               "tagNumber": 1
@@ -922,7 +867,7 @@
             "webFormID": {
               "title": "Web Form ID",
               "type": "string",
-              "description": "Unique ID of the form.",
+              "description": "Unique Identifier for web form.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:webFormID",
               "tagNumber": 1
@@ -930,7 +875,7 @@
             "webFormName": {
               "title": "Web Form Name",
               "type": "string",
-              "description": "Friendly name of the form.",
+              "description": "Friendly name for web form.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:webFormName",
               "tagNumber": 2
@@ -1569,13 +1514,79 @@
           "meta:xdmField": "xdm:paperlessEnrollment",
           "tagNumber": 1
         },
+        "userAccountID": {
+          "title": "User Account ID",
+          "type": "string",
+          "description": "Captures the user account ID.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:userAccountID",
+          "tagNumber": 2
+        },
+        "userAccountPersonalDetails": {
+          "title": "User Account Personal Details",
+          "$ref": "../mixins/profile/profile-personal-details.schema.json",
+          "description": "Extension of the Personal Profile data type.",
+          "meta:xdmField": "xdm:userAccountPersonalDetails",
+          "tagNumber": 3
+        },
+        "userAccountStart": {
+          "title": "User Account Start Date",
+          "type": "string",
+          "format": "date-time",
+          "description": "Date when the account was opened.",
+          "meta:xdmType": "date-time",
+          "meta:xdmField": "xdm:userAccountStart",
+          "tagNumber": 4
+        },
+        "userAccountStatus": {
+          "title": "User Account Status",
+          "type": "string",
+          "enum": [
+            "active",
+            "inactive",
+            "disabled",
+            "other"
+          ],
+          "description": "This should describe the current status of the account",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:userAccountStatus",
+          "tagNumber": 5
+        },
         "userAccountSwitch": {
           "title": "Switch User Accounts",
           "type": "integer",
           "description": "Captures when a visitor switches their account during a visit.",
           "meta:xdmType": "int",
           "meta:xdmField": "xdm:userAccountSwitch",
-          "tagNumber": 2
+          "tagNumber": 6
+        },
+        "userAccountType": {
+          "title": "User Account Type",
+          "type": "string",
+          "description": "Captures the user account type, if applicable.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:userAccountType",
+          "tagNumber": 7
+        },
+        "userAccountRegistration": {
+          "title": "User Account Registration",
+          "$ref": "../datatypes/industry-verticals/tool-usage.schema.json",
+          "description": "Extension of toolUsage data type.",
+          "meta:xdmField": "xdm:userAccountRegistration",
+          "tagNumber": 8
+        },
+        "userAccountPreferences": {
+          "title": "User Account Preferences",
+          "type": "array",
+          "description": "M/F, other shopping preferences. Preferences in personal profile is already captured- things like perferred method of contact, not shopping prefs. ",
+          "meta:xdmType": "array",
+          "items": {
+            "type": "string",
+            "meta:xdmType": "string",
+            "tagNumber": 1
+          },
+          "meta:xdmField": "xdm:userAccountPreferences",
+          "tagNumber": 9
         },
         "userCookieConsentAccepted": {
           "title": "Cookie Consent Accepted",
@@ -1583,7 +1594,7 @@
           "description": "Tracked when a visitor opts-in to allowing cookies to be set within their browser.",
           "meta:xdmType": "boolean",
           "meta:xdmField": "xdm:userCookieConsentAccepted",
-          "tagNumber": 3
+          "tagNumber": 10
         },
         "userCookieConsentViewed": {
           "title": "Cookie Consent Viewed",
@@ -1591,7 +1602,7 @@
           "description": "Tracked when a visitor views the cookie consent information.",
           "meta:xdmType": "int",
           "meta:xdmField": "xdm:userCookieConsentViewed",
-          "tagNumber": 4
+          "tagNumber": 11
         },
         "userForgotPassword": {
           "title": "Forgot Password",
@@ -1599,7 +1610,7 @@
           "description": "Counter event when a visitor begins the forgot password process.",
           "meta:xdmType": "int",
           "meta:xdmField": "xdm:userForgotPassword",
-          "tagNumber": 5
+          "tagNumber": 12
         },
         "userForgotUsername": {
           "title": "Forgot Username",
@@ -1607,7 +1618,7 @@
           "description": "Counter event when a visitor begins the forgot username process.",
           "meta:xdmType": "int",
           "meta:xdmField": "xdm:userForgotUsername",
-          "tagNumber": 6
+          "tagNumber": 13
         },
         "userLogin": {
           "title": "Visitor Login",
@@ -1615,7 +1626,7 @@
           "description": "Counter event indicating a successful visitor login.",
           "meta:xdmType": "int",
           "meta:xdmField": "xdm:userLogin",
-          "tagNumber": 7
+          "tagNumber": 14
         },
         "userLoginBiometric": {
           "title": "Biometric Authentication",
@@ -1623,7 +1634,7 @@
           "description": "Flag determining if the user has used a biometric authentication process to login.",
           "meta:xdmType": "boolean",
           "meta:xdmField": "xdm:userLoginBiometric",
-          "tagNumber": 8
+          "tagNumber": 15
         },
         "userLoginFailure": {
           "title": "Visitor Login Failure",
@@ -1631,7 +1642,7 @@
           "description": "Counter event indicating a failed visitor login attempt.",
           "meta:xdmType": "int",
           "meta:xdmField": "xdm:userLoginFailure",
-          "tagNumber": 9
+          "tagNumber": 16
         },
         "userLoginLocation": {
           "title": "Login Page Location",
@@ -1639,7 +1650,7 @@
           "description": "When multiple login locations exist on the page, this value should be used to identify the specific location the user used for login",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:userLoginLocation",
-          "tagNumber": 10
+          "tagNumber": 17
         },
         "userLoginKeychain": {
           "title": "Keychain ",
@@ -1647,7 +1658,7 @@
           "description": "Flag determining if the user has used a keychain authentication process to login.",
           "meta:xdmType": "boolean",
           "meta:xdmField": "xdm:userLoginKeychain",
-          "tagNumber": 11
+          "tagNumber": 18
         },
         "userLoginMultiFactor": {
           "title": "Multi-Factor Authentication",
@@ -1655,7 +1666,7 @@
           "description": "Flag determining if the user has used a multi-factor authentication process to login.",
           "meta:xdmType": "boolean",
           "meta:xdmField": "xdm:userLoginMultiFactor",
-          "tagNumber": 12
+          "tagNumber": 19
         },
         "userLoginStatus": {
           "title": "Login Status",
@@ -1663,7 +1674,7 @@
           "description": "Used to track the current login status for site visitors, regardless of whether login occurred as a result of a login during the current session or a previous session as identified by a cookie value. ",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:userLoginStatus",
-          "tagNumber": 13
+          "tagNumber": 20
         },
         "userLoginThirdParty": {
           "title": "Login with Third Party",
@@ -1671,7 +1682,7 @@
           "description": "Counter event that is incremented when a visitor has used another login network to authenticate, such as Apple, Facebook, or Google.",
           "meta:xdmType": "int",
           "meta:xdmField": "xdm:userLoginThirdParty",
-          "tagNumber": 14
+          "tagNumber": 21
         },
         "userLoginThirdPartySite": {
           "title": "Third Party Login Site",
@@ -1679,7 +1690,7 @@
           "description": "Tracks the site used to authetnicate when a third-party sign-in event is tracked.",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:userLoginThirdPartySite",
-          "tagNumber": 15
+          "tagNumber": 22
         },
         "userLoginType": {
           "title": "User Login Type",
@@ -1687,7 +1698,7 @@
           "description": "Email address vs social login",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:userLoginType",
-          "tagNumber": 16
+          "tagNumber": 23
         },
         "userLogout": {
           "title": "Visitor Logout",
@@ -1695,7 +1706,7 @@
           "description": "Counter event indicating a successful visitor logout.",
           "meta:xdmType": "int",
           "meta:xdmField": "xdm:userLogout",
-          "tagNumber": 17
+          "tagNumber": 24
         },
         "userResetPassword": {
           "title": "Reset Password",
@@ -1703,7 +1714,7 @@
           "description": "Counter event when a visitor begins the reset password process.",
           "meta:xdmType": "int",
           "meta:xdmField": "xdm:userResetPassword",
-          "tagNumber": 18
+          "tagNumber": 25
         },
         "userSessionTimeout": {
           "title": "Session Timeout",
@@ -1711,7 +1722,7 @@
           "description": "Tracked when a visitor has an authenticated session that is automatically logged out after a predetermined amount of time.",
           "meta:xdmType": "int",
           "meta:xdmField": "xdm:userSessionTimeout",
-          "tagNumber": 19
+          "tagNumber": 26
         },
         "userUpdate": {
           "title": "Account Profile Update",
@@ -1719,14 +1730,14 @@
           "description": "Counter event indicating a user has updated their account profile.",
           "meta:xdmType": "int",
           "meta:xdmField": "xdm:userUpdate",
-          "tagNumber": 20
+          "tagNumber": 27
         },
         "appointmentRequestSteps": {
           "title": "Appointment Request Steps",
           "$ref": "../datatypes/industry-verticals/tool-usage.schema.json",
           "description": "Extension of toolUsage data type.",
           "meta:xdmField": "xdm:appointmentRequestSteps",
-          "tagNumber": 21
+          "tagNumber": 28
         }
       },
       "meta:xdmField": "xdm:userAccount",
@@ -1981,29 +1992,6 @@
       "meta:xdmField": "xdm:alerts",
       "tagNumber": 40
     },
-    "autopayEnrollment": {
-      "type": "object",
-      "meta:xdmType": "object",
-      "properties": {
-        "autoPayEnrollment": {
-          "title": "Autopay Enrollment",
-          "$ref": "../datatypes/industry-verticals/tool-usage.schema.json",
-          "description": "Extension of toolUsage data type.",
-          "meta:xdmField": "xdm:autoPayEnrollment",
-          "tagNumber": 1
-        },
-        "autoPayEnrollmentStatus": {
-          "title": "Autopay Status",
-          "type": "boolean",
-          "description": "Tracks the visitor's autopay enrollment status.",
-          "meta:xdmType": "boolean",
-          "meta:xdmField": "xdm:autoPayEnrollmentStatus",
-          "tagNumber": 2
-        }
-      },
-      "meta:xdmField": "xdm:autopayEnrollment",
-      "tagNumber": 41
-    },
     "disputes": {
       "type": "object",
       "meta:xdmType": "object",
@@ -2082,7 +2070,7 @@
         }
       },
       "meta:xdmField": "xdm:disputes",
-      "tagNumber": 42
+      "tagNumber": 41
     },
     "customerFeedback": {
       "type": "object",
@@ -2184,1012 +2172,7 @@
         }
       },
       "meta:xdmField": "xdm:customerFeedback",
-      "tagNumber": 43
-    },
-    "deviceConfiguration": {
-      "title": "Device Configuration",
-      "$ref": "../datatypes/industry-verticals/tool-usage.schema.json",
-      "description": "Extension of toolUsage data type.",
-      "meta:xdmField": "xdm:deviceConfiguration",
-      "tagNumber": 44
-    },
-    "deviceTradeInDetails": {
-      "type": "object",
-      "meta:xdmType": "object",
-      "properties": {
-        "deviceTradeIn": {
-          "title": "Steps",
-          "$ref": "../datatypes/industry-verticals/tool-usage.schema.json",
-          "description": "Extension of toolUsage data type.",
-          "meta:xdmField": "xdm:deviceTradeIn",
-          "tagNumber": 1
-        },
-        "deviceTradeInManufacturer": {
-          "title": "Manufacturer",
-          "type": "string",
-          "description": "Manufacturer of the device being traded.",
-          "meta:xdmType": "string",
-          "meta:xdmField": "xdm:deviceTradeInManufacturer",
-          "tagNumber": 2
-        },
-        "deviceTradeInModel": {
-          "title": "Model",
-          "type": "string",
-          "description": "Model of the device being traded.",
-          "meta:xdmType": "string",
-          "meta:xdmField": "xdm:deviceTradeInModel",
-          "tagNumber": 3
-        },
-        "deviceTradeInValue": {
-          "title": "Value",
-          "$ref": "../datatypes/currency.schema.json",
-          "description": "Value of the device being traded.",
-          "meta:xdmField": "xdm:deviceTradeInValue",
-          "tagNumber": 4
-        }
-      },
-      "meta:xdmField": "xdm:deviceTradeInDetails",
-      "tagNumber": 45
-    },
-    "deviceActivation": {
-      "title": "Device Activation",
-      "$ref": "../datatypes/industry-verticals/tool-usage.schema.json",
-      "description": "Extension of toolUsage data type.",
-      "meta:xdmField": "xdm:deviceActivation",
-      "tagNumber": 46
-    },
-    "reservations": {
-      "type": "object",
-      "meta:xdmType": "object",
-      "properties": {
-        "diningReservation": {
-          "type": "object",
-          "meta:xdmType": "object",
-          "properties": {
-            "cuisine": {
-              "title": "Cuisine",
-              "type": "string",
-              "enum": [
-                "Chinese",
-                "Steak",
-                "Sushi",
-                "Asian",
-                "Vietnamese",
-                "European",
-                "French",
-                "Italian",
-                "Burgers",
-                "Japanese",
-                "Barbecue",
-                "Mediterranean",
-                "Indian",
-                "Grill",
-                "Seafood",
-                "Steakhouse",
-                "Mexican",
-                "Greek",
-                "American",
-                "Thai"
-              ],
-              "description": "Type of restaurant cuisine.",
-              "meta:xdmType": "string",
-              "meta:xdmField": "xdm:cuisine",
-              "tagNumber": 1
-            },
-            "deliveryPartners": {
-              "title": "Delivery Partners",
-              "type": "string",
-              "enum": [
-                "GrubHub",
-                "UberEats",
-                "DoorDash",
-                "Other"
-              ],
-              "description": "Delivery partners available from the restaurant.",
-              "meta:xdmType": "string",
-              "meta:xdmField": "xdm:deliveryPartners",
-              "tagNumber": 2
-            },
-            "location": {
-              "title": "Dining Location",
-              "$ref": "../datatypes/demographic/place.schema.json",
-              "description": "Physical location for the restaurant.",
-              "meta:xdmField": "xdm:location",
-              "tagNumber": 3
-            },
-            "diningOptions": {
-              "title": "Dining Options",
-              "type": "string",
-              "enum": [
-                "Outdoor Dining",
-                "Delivery",
-                "Curbside",
-                "Takeout"
-              ],
-              "description": "Delivery and dining options available from the restaurant.",
-              "meta:xdmType": "string",
-              "meta:xdmField": "xdm:diningOptions",
-              "tagNumber": 4
-            },
-            "groupReservation": {
-              "title": "Group Reservation",
-              "type": "boolean",
-              "description": "Indicates if the reservation is being made for a group.",
-              "meta:xdmType": "boolean",
-              "meta:xdmField": "xdm:groupReservation",
-              "tagNumber": 5
-            },
-            "loyaltyID": {
-              "title": "Loyalty ID",
-              "type": "string",
-              "description": "Includes the loyalty/rewards program ID for the party listed in the reservation.",
-              "meta:xdmType": "string",
-              "meta:xdmField": "xdm:loyaltyID",
-              "tagNumber": 6
-            },
-            "partySize": {
-              "title": "Party Size",
-              "type": "integer",
-              "description": "Number of individuals in the dining party.",
-              "meta:xdmType": "int",
-              "meta:xdmField": "xdm:partySize",
-              "tagNumber": 7
-            },
-            "priceCategory": {
-              "title": "Price Category",
-              "type": "string",
-              "enum": [
-                "$",
-                "$$",
-                "$$$",
-                "$$$$"
-              ],
-              "description": "Price category for the reservation being made.",
-              "meta:xdmType": "string",
-              "meta:xdmField": "xdm:priceCategory",
-              "tagNumber": 8
-            },
-            "reservationTime": {
-              "title": "Reservation Time",
-              "type": "string",
-              "format": "date-time",
-              "description": "The time for which the dining reservation is booked.",
-              "meta:xdmType": "date-time",
-              "meta:xdmField": "xdm:reservationTime",
-              "tagNumber": 9
-            },
-            "specialOccasion": {
-              "title": "Special Occasion",
-              "type": "boolean",
-              "description": "Indicates if the reservation is being made for a special occasion.",
-              "meta:xdmType": "boolean",
-              "meta:xdmField": "xdm:specialOccasion",
-              "tagNumber": 10
-            }
-          },
-          "meta:xdmField": "xdm:diningReservation",
-          "tagNumber": 1
-        },
-        "ancillaryRevenue": {
-          "title": "Ancillary Revenue",
-          "$ref": "../datatypes/currency.schema.json",
-          "description": "Protection and equipment revenue associated with a reservation.",
-          "meta:xdmField": "xdm:ancillaryRevenue",
-          "tagNumber": 2
-        },
-        "cancellation": {
-          "title": "Cancellation",
-          "type": "integer",
-          "description": "Tracked when a reservation has been cancelled.",
-          "meta:xdmType": "int",
-          "meta:xdmField": "xdm:cancellation",
-          "tagNumber": 3
-        },
-        "created": {
-          "title": "Created",
-          "type": "integer",
-          "description": "Tracked when a reservation has been created.",
-          "meta:xdmType": "int",
-          "meta:xdmField": "xdm:created",
-          "tagNumber": 4
-        },
-        "currencyCode": {
-          "title": "Currency Code",
-          "type": "string",
-          "description": "Currency code used to make the purchase. ISO 4217 currency code.",
-          "pattern": "^[A-Z]{3}$",
-          "meta:xdmType": "string",
-          "meta:xdmField": "xdm:currencyCode",
-          "tagNumber": 5
-        },
-        "endDate": {
-          "title": "End Date",
-          "type": "string",
-          "format": "date-time",
-          "description": "The end drop-off/return/check-out date of the reservation.",
-          "meta:xdmType": "date-time",
-          "meta:xdmField": "xdm:endDate",
-          "tagNumber": 6
-        },
-        "ID": {
-          "title": "ID",
-          "type": "string",
-          "description": "Tracks the reservation number/identifier.",
-          "meta:xdmType": "string",
-          "meta:xdmField": "xdm:ID",
-          "tagNumber": 7
-        },
-        "itemComparison": {
-          "title": "Item Comparison",
-          "$ref": "../datatypes/industry-verticals/comparisons.schema.json",
-          "description": "Used to track room, flight, vehicle, or restaurant comparisons on a site or an app.",
-          "meta:xdmField": "xdm:itemComparison",
-          "tagNumber": 8
-        },
-        "length": {
-          "title": "Length",
-          "type": "integer",
-          "description": "Tracks the total number of days for a reservation.",
-          "meta:xdmType": "int",
-          "meta:xdmField": "xdm:length",
-          "tagNumber": 9
-        },
-        "modification": {
-          "title": "Modification",
-          "type": "integer",
-          "description": "Captured when a reservation has been modified.",
-          "meta:xdmType": "int",
-          "meta:xdmField": "xdm:modification",
-          "tagNumber": 10
-        },
-        "modificationDate": {
-          "title": "Modification Date",
-          "type": "string",
-          "format": "date-time",
-          "description": "Tracks when a reservation has been modified.",
-          "meta:xdmType": "date-time",
-          "meta:xdmField": "xdm:modificationDate",
-          "tagNumber": 11
-        },
-        "nonRefundableAmount": {
-          "title": "Non-Refundable Amount",
-          "$ref": "../datatypes/currency.schema.json",
-          "description": "Amount of the reservation price that is marked as non-refundable.",
-          "meta:xdmField": "xdm:nonRefundableAmount",
-          "tagNumber": 12
-        },
-        "numberOfAdults": {
-          "title": "Number of Adults",
-          "type": "integer",
-          "description": "Captures the number of adults associated with the reservation.",
-          "meta:xdmType": "int",
-          "meta:xdmField": "xdm:numberOfAdults",
-          "tagNumber": 13
-        },
-        "numberOfChildren": {
-          "title": "Number of Children",
-          "type": "integer",
-          "description": "Captures the number of children associated with the reservation.",
-          "meta:xdmType": "int",
-          "meta:xdmField": "xdm:numberOfChildren",
-          "tagNumber": 14
-        },
-        "processSteps": {
-          "title": "Process Steps",
-          "$ref": "../datatypes/industry-verticals/tool-usage.schema.json",
-          "description": "Extension of toolUsage data type.",
-          "meta:xdmField": "xdm:processSteps",
-          "tagNumber": 15
-        },
-        "purpose": {
-          "title": "Purpose",
-          "type": "string",
-          "enum": [
-            "business",
-            "personal"
-          ],
-          "description": "Tracks the purpose of the reservation, typically either business or personal.",
-          "meta:xdmType": "string",
-          "meta:xdmField": "xdm:purpose",
-          "tagNumber": 16
-        },
-        "rackrate": {
-          "title": "Rack Rate",
-          "$ref": "../datatypes/currency.schema.json",
-          "description": "Cost for the same day reservation without prior booking arrangements.",
-          "meta:xdmField": "xdm:rackrate",
-          "tagNumber": 17
-        },
-        "startDate": {
-          "title": "Start Date",
-          "type": "string",
-          "format": "date-time",
-          "description": "The start pick-up/outbound/check-in date of the reservation.",
-          "meta:xdmType": "date-time",
-          "meta:xdmField": "xdm:startDate",
-          "tagNumber": 18
-        },
-        "transaction": {
-          "title": "Transaction",
-          "$ref": "../datatypes/industry-verticals/transaction.schema.json",
-          "description": "Extension of transaction data type.",
-          "meta:xdmField": "xdm:transaction",
-          "tagNumber": 19
-        },
-        "triptype": {
-          "title": "Trip Type",
-          "type": "string",
-          "enum": [
-            "roundtrip",
-            "one-way",
-            "multi-city"
-          ],
-          "description": "Indicates if the reservation is for a one way, round trip, or multi-city.",
-          "meta:xdmType": "string",
-          "meta:xdmField": "xdm:triptype",
-          "tagNumber": 20
-        },
-        "type": {
-          "title": "Type",
-          "type": "string",
-          "description": "Records the type of reservation being placed.",
-          "meta:xdmType": "string",
-          "meta:xdmField": "xdm:type",
-          "tagNumber": 21
-        },
-        "flightReservation": {
-          "type": "object",
-          "meta:xdmType": "object",
-          "properties": {
-            "arrivalLocation": {
-              "title": "Arrival Location",
-              "type": "string",
-              "description": "Tracks the arrival city airport code.",
-              "pattern": "^[A-Z]{3}$",
-              "meta:xdmType": "string",
-              "meta:xdmField": "xdm:arrivalLocation",
-              "tagNumber": 1
-            },
-            "departureLocation": {
-              "title": "Departure Location",
-              "type": "string",
-              "description": "Tracks the departure city airport code.",
-              "pattern": "^[A-Z]{3}$",
-              "meta:xdmType": "string",
-              "meta:xdmField": "xdm:departureLocation",
-              "tagNumber": 2
-            },
-            "fareClass": {
-              "title": "Fare Class",
-              "type": "string",
-              "enum": [
-                "first class",
-                "business class",
-                "premium economy",
-                "economy"
-              ],
-              "description": "The fare class of the flight being reserved.",
-              "meta:xdmType": "string",
-              "meta:xdmField": "xdm:fareClass",
-              "tagNumber": 3
-            },
-            "flightDate": {
-              "title": "Flight Date",
-              "type": "string",
-              "format": "date-time",
-              "description": "The date of the flight being reserved.",
-              "meta:xdmType": "date-time",
-              "meta:xdmField": "xdm:flightDate",
-              "tagNumber": 4
-            },
-            "flightNumber": {
-              "title": "Flight Number",
-              "type": "string",
-              "description": "Tracks the flight number.",
-              "meta:xdmType": "string",
-              "meta:xdmField": "xdm:flightNumber",
-              "tagNumber": 5
-            },
-            "loyaltyID": {
-              "title": "Loyalty ID",
-              "type": "string",
-              "description": "Includes the loyalty/rewards program ID for the passenger listed in the reservation.",
-              "meta:xdmType": "string",
-              "meta:xdmField": "xdm:loyaltyID",
-              "tagNumber": 6
-            },
-            "passenger": {
-              "title": "Passenger",
-              "$ref": "../datatypes/person/person.schema.json",
-              "description": "Passenger info associated with the reservation.",
-              "meta:xdmField": "xdm:passenger",
-              "tagNumber": 7
-            },
-            "reservationID": {
-              "title": "Reservation ID",
-              "type": "string",
-              "description": "",
-              "meta:xdmType": "string",
-              "meta:xdmField": "xdm:reservationID",
-              "tagNumber": 8
-            },
-            "seatMapProcess": {
-              "title": "Seat Map Process",
-              "$ref": "../datatypes/industry-verticals/tool-usage.schema.json",
-              "description": "Extension of toolUsage data type.",
-              "meta:xdmField": "xdm:seatMapProcess",
-              "tagNumber": 9
-            },
-            "securityScreening": {
-              "title": "Security Screening",
-              "type": "string",
-              "enum": [
-                "Standard",
-                "PreCheck"
-              ],
-              "description": "Type of security screening the passenger is subject to.",
-              "meta:xdmType": "string",
-              "meta:xdmField": "xdm:securityScreening",
-              "tagNumber": 10
-            }
-          },
-          "meta:xdmField": "xdm:flightReservation",
-          "tagNumber": 22
-        },
-        "lodgingReservation": {
-          "type": "object",
-          "meta:xdmType": "object",
-          "properties": {
-            "agentID": {
-              "title": "Agent ID",
-              "type": "string",
-              "description": "Agent ID associated with the hotel booking.",
-              "meta:xdmType": "string",
-              "meta:xdmField": "xdm:agentID",
-              "tagNumber": 1
-            },
-            "averageDailyPrice": {
-              "title": "Average Daily Price",
-              "$ref": "../datatypes/currency.schema.json",
-              "description": "Average daily price of the hotel room.",
-              "meta:xdmField": "xdm:averageDailyPrice",
-              "tagNumber": 2
-            },
-            "basePrice": {
-              "title": "Base Price",
-              "type": "string",
-              "description": "Base price before any discounts are added. ",
-              "meta:xdmType": "string",
-              "meta:xdmField": "xdm:basePrice",
-              "tagNumber": 3
-            },
-            "bookingID": {
-              "title": "Booking ID",
-              "type": "string",
-              "description": "Booking ID associated with the hotel booking. ",
-              "meta:xdmType": "string",
-              "meta:xdmField": "xdm:bookingID",
-              "tagNumber": 4
-            },
-            "checkInDate": {
-              "title": "Check-In Date",
-              "type": "string",
-              "format": "date-time",
-              "description": "The check-in date of the for the room reservation.",
-              "meta:xdmType": "date-time",
-              "meta:xdmField": "xdm:checkInDate",
-              "tagNumber": 5
-            },
-            "checkOutDate": {
-              "title": "Check-Out Date",
-              "type": "string",
-              "format": "date-time",
-              "description": "The check-out date of the for the room reservation.",
-              "meta:xdmType": "date-time",
-              "meta:xdmField": "xdm:checkOutDate",
-              "tagNumber": 6
-            },
-            "couponCode": {
-              "title": "Coupon Code",
-              "type": "string",
-              "description": "Coupon code associated with the hotel booking.",
-              "meta:xdmType": "string",
-              "meta:xdmField": "xdm:couponCode",
-              "tagNumber": 7
-            },
-            "discountPercent": {
-              "title": "Discount Percent",
-              "type": "number",
-              "description": "Discount percentage associated with the booking.",
-              "meta:xdmType": "number",
-              "meta:xdmField": "xdm:discountPercent",
-              "tagNumber": 8
-            },
-            "freeCancelation": {
-              "title": "Free Cancelation",
-              "type": "boolean",
-              "description": "Yes/no if the room has a free cancellation.",
-              "meta:xdmType": "boolean",
-              "meta:xdmField": "xdm:freeCancelation",
-              "tagNumber": 9
-            },
-            "guestID": {
-              "title": "Guest ID",
-              "type": "string",
-              "description": "Guest ID associated with the hotel booking.",
-              "meta:xdmType": "string",
-              "meta:xdmField": "xdm:guestID",
-              "tagNumber": 10
-            },
-            "loyaltyID": {
-              "title": "Loyalty ID",
-              "type": "string",
-              "description": "Includes the loyalty/rewards program ID for the passenger listed in the reservation.",
-              "meta:xdmType": "string",
-              "meta:xdmField": "xdm:loyaltyID",
-              "tagNumber": 11
-            },
-            "numberOfRooms": {
-              "title": "Number of Rooms",
-              "type": "integer",
-              "description": "Captures the number of rooms associated with the reservation.",
-              "meta:xdmType": "int",
-              "meta:xdmField": "xdm:numberOfRooms",
-              "tagNumber": 12
-            },
-            "propertyID": {
-              "title": "Property ID",
-              "type": "string",
-              "description": "Identifier of the hotel/resort for the reservation.",
-              "meta:xdmType": "string",
-              "meta:xdmField": "xdm:propertyID",
-              "tagNumber": 13
-            },
-            "propertyName": {
-              "title": "Property Name",
-              "type": "string",
-              "description": "Name of the hotel/resort for the reservation.",
-              "meta:xdmType": "string",
-              "meta:xdmField": "xdm:propertyName",
-              "tagNumber": 14
-            },
-            "ratePlan": {
-              "title": "Rate Plan",
-              "type": "string",
-              "description": "The rate deal on which the room was sold.",
-              "meta:xdmType": "string",
-              "meta:xdmField": "xdm:ratePlan",
-              "tagNumber": 15
-            },
-            "refundable": {
-              "title": "Refundable",
-              "type": "boolean",
-              "description": "Yes/no if the room is refundable.",
-              "meta:xdmType": "boolean",
-              "meta:xdmField": "xdm:refundable",
-              "tagNumber": 16
-            },
-            "reservationStatus": {
-              "title": "Reservation Status",
-              "type": "string",
-              "description": "update",
-              "meta:xdmType": "string",
-              "meta:xdmField": "xdm:reservationStatus",
-              "tagNumber": 17
-            },
-            "roomAccessibilityType": {
-              "title": "Room Accessibility Type",
-              "type": "string",
-              "enum": [
-                "mobility",
-                "hearing",
-                "n/a"
-              ],
-              "description": "Type of accessible room, such as mobility, hearing, or other.",
-              "meta:xdmType": "string",
-              "meta:xdmField": "xdm:roomAccessibilityType",
-              "tagNumber": 18
-            },
-            "roomCapacity": {
-              "title": "Room Capacity",
-              "type": "integer",
-              "description": "Number of people the hotel room holds.",
-              "meta:xdmType": "int",
-              "meta:xdmField": "xdm:roomCapacity",
-              "tagNumber": 19
-            },
-            "roomType": {
-              "title": "Room Type",
-              "type": "string",
-              "enum": [
-                "queen",
-                "king",
-                "double"
-              ],
-              "description": "Captures the type of room being reserved.",
-              "meta:xdmType": "string",
-              "meta:xdmField": "xdm:roomType",
-              "tagNumber": 20
-            },
-            "smoking": {
-              "title": "Smoking",
-              "type": "boolean",
-              "description": "Yes/no if the room allows smoking.",
-              "meta:xdmType": "boolean",
-              "meta:xdmField": "xdm:smoking",
-              "tagNumber": 21
-            }
-          },
-          "meta:xdmField": "xdm:lodgingReservation",
-          "tagNumber": 23
-        },
-        "vehicleReservation": {
-          "type": "object",
-          "meta:xdmType": "object",
-          "properties": {
-            "couponCode": {
-              "title": "Coupon Code",
-              "type": "string",
-              "description": "Coupon code associated with the vehicle booking.",
-              "meta:xdmType": "string",
-              "meta:xdmField": "xdm:couponCode",
-              "tagNumber": 1
-            },
-            "vehicleDifferentDropoffLocation": {
-              "title": "Different Drop-off Location",
-              "type": "boolean",
-              "description": "Indicates if a vehicle reservation has a different drop-off location than the pick-up location.",
-              "meta:xdmType": "boolean",
-              "meta:xdmField": "xdm:vehicleDifferentDropoffLocation",
-              "tagNumber": 2
-            },
-            "discountPercent": {
-              "title": "Discount Percent",
-              "type": "number",
-              "description": "Discount percentage associated with the booking.",
-              "meta:xdmType": "number",
-              "meta:xdmField": "xdm:discountPercent",
-              "tagNumber": 3
-            },
-            "dropOffDateTime": {
-              "title": "Drop-off Date & Time",
-              "type": "string",
-              "format": "date-time",
-              "description": "The drop-off date & time of the for the vehicle reservation.",
-              "meta:xdmType": "date-time",
-              "meta:xdmField": "xdm:dropOffDateTime",
-              "tagNumber": 4
-            },
-            "vehicleDropOffLocation": {
-              "title": "Drop-off Location",
-              "type": "string",
-              "description": "Drop-off location of the vehicle.",
-              "meta:xdmType": "string",
-              "meta:xdmField": "xdm:vehicleDropOffLocation",
-              "tagNumber": 5
-            },
-            "vehicleDropOffLocationCode": {
-              "title": "Drop-off Location Code",
-              "type": "string",
-              "description": "The airport location code for the vehicle drop off.",
-              "pattern": "^[A-Z]{3}$",
-              "meta:xdmType": "string",
-              "meta:xdmField": "xdm:vehicleDropOffLocationCode",
-              "tagNumber": 6
-            },
-            "freeCancelation": {
-              "title": "Free Cancelation",
-              "type": "boolean",
-              "description": "Yes/no if the car booking has a free cancellation.",
-              "meta:xdmType": "boolean",
-              "meta:xdmField": "xdm:freeCancelation",
-              "tagNumber": 7
-            },
-            "guestID": {
-              "title": "Guest ID",
-              "type": "string",
-              "description": "Guest ID associated with the vehicle booking.",
-              "meta:xdmType": "string",
-              "meta:xdmField": "xdm:guestID",
-              "tagNumber": 8
-            },
-            "loyaltyID": {
-              "title": "Loyalty ID",
-              "type": "string",
-              "description": "Includes the loyalty/rewards program ID for the passenger listed in the reservation.",
-              "meta:xdmType": "string",
-              "meta:xdmField": "xdm:loyaltyID",
-              "tagNumber": 9
-            },
-            "payLaterEligible": {
-              "title": "Pay Later Eligible",
-              "type": "boolean",
-              "description": "Yes/no if the booking is eligible to be paid later.",
-              "meta:xdmType": "boolean",
-              "meta:xdmField": "xdm:payLaterEligible",
-              "tagNumber": 10
-            },
-            "pickUpDateTime": {
-              "title": "Pick-up Date & Time",
-              "type": "string",
-              "format": "date-time",
-              "description": "The pick-up date & time of the for the vehicle reservation.",
-              "meta:xdmType": "date-time",
-              "meta:xdmField": "xdm:pickUpDateTime",
-              "tagNumber": 11
-            },
-            "vehiclePickUpLocation": {
-              "title": "Pick-up Location",
-              "type": "string",
-              "description": "Pick-up location of the vehicle.",
-              "meta:xdmType": "string",
-              "meta:xdmField": "xdm:vehiclePickUpLocation",
-              "tagNumber": 12
-            },
-            "vehiclePickUpLocationCode": {
-              "title": "Pick-up Location Code",
-              "type": "string",
-              "description": "The airport location code for the vehicle pick up.",
-              "pattern": "^[A-Z]{3}$",
-              "meta:xdmType": "string",
-              "meta:xdmField": "xdm:vehiclePickUpLocationCode",
-              "tagNumber": 13
-            },
-            "prePaid": {
-              "title": "Pre Paid",
-              "type": "boolean",
-              "description": "Yes/no if the booking is pre-paid",
-              "meta:xdmType": "boolean",
-              "meta:xdmField": "xdm:prePaid",
-              "tagNumber": 14
-            },
-            "productID": {
-              "title": "Product ID",
-              "type": "string",
-              "description": "The product ID associated with the booking.",
-              "meta:xdmType": "string",
-              "meta:xdmField": "xdm:productID",
-              "tagNumber": 15
-            },
-            "refundable": {
-              "title": "Refundable",
-              "type": "boolean",
-              "description": "Yes/no if the car booking is refundable.",
-              "meta:xdmType": "boolean",
-              "meta:xdmField": "xdm:refundable",
-              "tagNumber": 16
-            },
-            "rentersAge": {
-              "title": "Renter's Age",
-              "type": "integer",
-              "description": "Age of the renter on the vehicle reservation.",
-              "meta:xdmType": "int",
-              "meta:xdmField": "xdm:rentersAge",
-              "tagNumber": 17
-            },
-            "vehicleClass": {
-              "title": "Vehicle Class",
-              "type": "string",
-              "enum": [
-                "economy",
-                "compact",
-                "midsize",
-                "fullsize",
-                "standard",
-                "suv",
-                "premium",
-                "minivan"
-              ],
-              "description": "The class/category of vehicle being reserved.",
-              "meta:xdmType": "string",
-              "meta:xdmField": "xdm:vehicleClass",
-              "tagNumber": 18
-            }
-          },
-          "meta:xdmField": "xdm:vehicleReservation",
-          "tagNumber": 24
-        }
-      },
-      "meta:xdmField": "xdm:reservations",
-      "tagNumber": 47
-    },
-    "checkIn": {
-      "type": "object",
-      "meta:xdmType": "object",
-      "properties": {
-        "checkedBags": {
-          "title": "Checked Bags",
-          "type": "integer",
-          "description": "Tracks the number of bags checked for a flight.",
-          "meta:xdmType": "int",
-          "meta:xdmField": "xdm:checkedBags",
-          "tagNumber": 1
-        },
-        "checkedPassengers": {
-          "title": "Checked Passengers",
-          "type": "integer",
-          "description": "Tracks the number of passengers checked in for a flight, if multiple passengers exist for the same reservation number.",
-          "meta:xdmType": "int",
-          "meta:xdmField": "xdm:checkedPassengers",
-          "tagNumber": 2
-        },
-        "checkInMethod": {
-          "title": "Check In Method",
-          "type": "string",
-          "enum": [
-            "counter",
-            "mobile",
-            "web",
-            "kiosk"
-          ],
-          "description": "Tracks the method used to check in i.e. counter, online, kiosk, or self-service.",
-          "meta:xdmType": "string",
-          "meta:xdmField": "xdm:checkInMethod",
-          "tagNumber": 3
-        },
-        "checkInProcess": {
-          "title": "Check In Process",
-          "$ref": "../datatypes/industry-verticals/tool-usage.schema.json",
-          "description": "Extension of toolUsage data type.",
-          "meta:xdmField": "xdm:checkInProcess",
-          "tagNumber": 4
-        }
-      },
-      "meta:xdmField": "xdm:checkIn",
-      "tagNumber": 48
-    },
-    "statusSearch": {
-      "type": "object",
-      "meta:xdmType": "object",
-      "properties": {
-        "arrivalLocation": {
-          "title": "Arrival Location",
-          "type": "string",
-          "description": "Tracks the arrival city or airport code.",
-          "meta:xdmType": "string",
-          "meta:xdmField": "xdm:arrivalLocation",
-          "tagNumber": 1
-        },
-        "date": {
-          "title": "Travel Date",
-          "type": "string",
-          "format": "date-time",
-          "description": "Tracks the flight departure date.",
-          "meta:xdmType": "date-time",
-          "meta:xdmField": "xdm:date",
-          "tagNumber": 2
-        },
-        "departureLocation": {
-          "title": "Departure Location",
-          "type": "string",
-          "description": "Tracks the departure city or airport code.",
-          "meta:xdmType": "string",
-          "meta:xdmField": "xdm:departureLocation",
-          "tagNumber": 3
-        },
-        "flightNumber": {
-          "title": "Flight Number",
-          "type": "string",
-          "description": "Tracks the flight number.",
-          "meta:xdmType": "string",
-          "meta:xdmField": "xdm:flightNumber",
-          "tagNumber": 4
-        },
-        "flightStatusSearch": {
-          "title": "Flight Status Search",
-          "$ref": "../datatypes/industry-verticals/internal-site-search.schema.json",
-          "description": "Extension of internalSearch data type.",
-          "meta:xdmField": "xdm:flightStatusSearch",
-          "tagNumber": 5
-        }
-      },
-      "meta:xdmField": "xdm:statusSearch",
-      "tagNumber": 49
-    },
-    "seatMapProcess": {
-      "title": "Seat Map Process",
-      "$ref": "../datatypes/industry-verticals/tool-usage.schema.json",
-      "description": "Extension of toolUsage data type.",
-      "meta:xdmField": "xdm:seatMapProcess",
-      "tagNumber": 50
-    },
-    "prescription": {
-      "type": "object",
-      "meta:xdmType": "object",
-      "properties": {
-        "deliveryEligible": {
-          "title": "Delivery Eligible",
-          "type": "boolean",
-          "description": "Indicates if the prescription available to be delivered.",
-          "meta:xdmType": "boolean",
-          "meta:xdmField": "xdm:deliveryEligible",
-          "tagNumber": 1
-        },
-        "ID": {
-          "title": "ID",
-          "type": "string",
-          "description": "ID for the prescription being filled.",
-          "meta:xdmType": "string",
-          "meta:xdmField": "xdm:ID",
-          "tagNumber": 2
-        },
-        "refill": {
-          "title": "Refill",
-          "type": "boolean",
-          "description": "Indicates if the prescription is new or being refilled.",
-          "meta:xdmType": "boolean",
-          "meta:xdmField": "xdm:refill",
-          "tagNumber": 3
-        },
-        "refillsRemaining": {
-          "title": "Refills Remaining",
-          "type": "integer",
-          "description": "Count of the remaining prescription refills available.",
-          "meta:xdmType": "int",
-          "meta:xdmField": "xdm:refillsRemaining",
-          "tagNumber": 4
-        },
-        "steps": {
-          "title": "Steps",
-          "$ref": "../datatypes/industry-verticals/tool-usage.schema.json",
-          "description": "Extension of toolUsage data type.",
-          "meta:xdmField": "xdm:steps",
-          "tagNumber": 5
-        },
-        "upload": {
-          "title": "Upload",
-          "$ref": "../datatypes/industry-verticals/file-transfer.schema.json",
-          "description": "Extension of the File Transfer data type.",
-          "meta:xdmField": "xdm:upload",
-          "tagNumber": 6
-        }
-      },
-      "meta:xdmField": "xdm:prescription",
-      "tagNumber": 51
-    },
-    "upgrade": {
-      "type": "object",
-      "meta:xdmType": "object",
-      "properties": {
-        "upgradeOffer": {
-          "title": "Upgrade Offer",
-          "$ref": "../mixins/experience-event/experienceevent-offer-impression-details.schema.json",
-          "description": "Extension of offer details data type.",
-          "meta:xdmField": "xdm:upgradeOffer",
-          "tagNumber": 1
-        },
-        "upgradeTransaction": {
-          "title": "Upgrade Transaction",
-          "$ref": "../datatypes/industry-verticals/transaction.schema.json",
-          "description": "Extension of transaction data type.",
-          "meta:xdmField": "xdm:upgradeTransaction",
-          "tagNumber": 2
-        }
-      },
-      "meta:xdmField": "xdm:upgrade",
-      "tagNumber": 52
-    },
-    "upsell": {
-      "type": "object",
-      "meta:xdmType": "object",
-      "properties": {
-        "upsellOffer": {
-          "title": "Upsell Offer",
-          "$ref": "../mixins/experience-event/experienceevent-offer-impression-details.schema.json",
-          "description": "Extension of offer details data type.",
-          "meta:xdmField": "xdm:upsellOffer",
-          "tagNumber": 1
-        },
-        "upsellTransaction": {
-          "title": "Upsell Transaction",
-          "$ref": "../datatypes/industry-verticals/transaction.schema.json",
-          "description": "Extension of transaction data type.",
-          "meta:xdmField": "xdm:upsellTransaction",
-          "tagNumber": 2
-        }
-      },
-      "meta:xdmField": "xdm:upsell",
-      "tagNumber": 53
+      "tagNumber": 42
     }
   },
   "meta:xdmId": "https://ns.adobe.com/xdm/context/experienceevent-generated",

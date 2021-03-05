@@ -5,7 +5,7 @@
   "type": "object",
   "meta:conditionalField": "xdm:eventType",
   "meta:conditionalValue": "directMarketing.emailBounced",
-  "description": "Use to capture details when email to person bounces.",
+  "description": "Use for information regarding direct marketing email bounced events.",
   "meta:status": "experimental",
   "meta:xdmType": "object",
   "properties": {
@@ -17,7 +17,7 @@
         "mailingID": {
           "title": "Mailing ID",
           "type": "string",
-          "description": "Unique ID of the email asset.",
+          "description": "Unique identifier of the mailing.",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:mailingID",
           "tagNumber": 1
@@ -25,50 +25,58 @@
         "mailingName": {
           "title": "Mailing Name",
           "type": "string",
-          "description": "Friendly name of the email asset.",
+          "description": "Friendly name for the mailing.",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:mailingName",
           "tagNumber": 2
         },
-        "emailBouncedCode": {
+        "emailBouncedCategory": {
           "title": "Email Bounced Category",
           "type": "string",
-          "description": "Code denoting the type of bounce received from the Mail Transfer Agent.",
+          "description": "Category in which this email failure belongs.",
           "meta:xdmType": "string",
-          "meta:xdmField": "xdm:emailBouncedCode",
+          "meta:xdmField": "xdm:emailBouncedCategory",
           "tagNumber": 3
         },
         "emailBouncedDetails": {
           "title": "Email Bounced Details",
           "type": "string",
-          "description": "Details of email bounce from the Mail Transfer Agent.",
+          "description": "Email failure reason description message.",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:emailBouncedDetails",
           "tagNumber": 4
         },
+        "emailBouncedSubcategory": {
+          "title": "Email Bounced Subcategory",
+          "type": "string",
+          "description": "Subcategory this failure reason belongs to.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:emailBouncedSubcategory",
+          "tagNumber": 5
+        },
         "email": {
           "title": "email",
           "type": "string",
-          "description": "Recipient's email address.",
+          "description": "visitor email ID.",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:email",
-          "tagNumber": 5
+          "tagNumber": 6
         },
         "testVariantID": {
           "title": "Test Variant ID",
           "type": "string",
-          "description": "Unique ID of the test variant of the email asset.",
+          "description": "Unique identifier for the test variant.",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:testVariantID",
-          "tagNumber": 6
+          "tagNumber": 7
         },
         "testVariantName": {
           "title": "Test Variant Name",
           "type": "string",
-          "description": "Friendly name of the test variant of the email asset .",
+          "description": "Friendly name for the test variant.",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:testVariantName",
-          "tagNumber": 7
+          "tagNumber": 8
         }
       },
       "meta:xdmField": "xdm:directMarketing",

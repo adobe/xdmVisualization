@@ -5,7 +5,7 @@
   "type": "object",
   "meta:conditionalField": "xdm:eventType",
   "meta:conditionalValue": "directMarketing.emailUnsubscribed",
-  "description": "Use to capture details when a person unsubscribes from an email.",
+  "description": "Use for information regarding direct marketing unsubscribe email events.",
   "meta:status": "experimental",
   "meta:xdmType": "object",
   "properties": {
@@ -17,7 +17,7 @@
         "mailingID": {
           "title": "Mailing ID",
           "type": "string",
-          "description": "Unique ID of the email asset.",
+          "description": "Unique identifier of the mailing.",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:mailingID",
           "tagNumber": 1
@@ -25,7 +25,7 @@
         "mailingName": {
           "title": "Mailing Name",
           "type": "string",
-          "description": "Friendly name of the email asset.",
+          "description": "Friendly name for the mailing.",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:mailingName",
           "tagNumber": 2
@@ -33,7 +33,7 @@
         "testVariantID": {
           "title": "Test Variant ID",
           "type": "string",
-          "description": "Unique ID of the test variant of the email asset.",
+          "description": "Unique identifier for the test variant.",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:testVariantID",
           "tagNumber": 3
@@ -41,7 +41,7 @@
         "testVariantName": {
           "title": "Test Variant Name",
           "type": "string",
-          "description": "Friendly name of the test variant of the email asset.",
+          "description": "Friendly name for the test variant.",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:testVariantName",
           "tagNumber": 4
@@ -63,7 +63,7 @@
             "webFormID": {
               "title": "Web Form ID",
               "type": "string",
-              "description": "Unique ID of the form.",
+              "description": "Unique Identifier for web form.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:webFormID",
               "tagNumber": 1
@@ -71,7 +71,7 @@
             "webFormName": {
               "title": "Web Form Name",
               "type": "string",
-              "description": "Friendly name of the form.",
+              "description": "Friendly name for web form.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:webFormName",
               "tagNumber": 2
@@ -88,7 +88,7 @@
             "webPageID": {
               "title": "Web Page ID",
               "type": "string",
-              "description": "Unique ID of the web page.",
+              "description": "Unique Identifier for web page.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:webPageID",
               "tagNumber": 1
@@ -101,12 +101,12 @@
               "meta:xdmField": "xdm:name",
               "tagNumber": 2
             },
-            "queryParameters": {
-              "title": "Query Parameters",
+            "queryParamaters": {
+              "title": "Query Paramaters",
               "type": "string",
-              "description": "Query Parameters used for the web page. This is normally the value of a string after `?` in the url.",
+              "description": "Query Paramters used for the web page.",
               "meta:xdmType": "string",
-              "meta:xdmField": "xdm:queryParameters",
+              "meta:xdmField": "xdm:queryParamaters",
               "tagNumber": 3
             }
           },
@@ -121,7 +121,7 @@
             "URL": {
               "title": "URL",
               "type": "string",
-              "description": "URL of referrer to web page.",
+              "description": "The referrer URL.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:URL",
               "tagNumber": 1
@@ -144,7 +144,7 @@
           "title": "IPv4",
           "type": "string",
           "format": "ipv4",
-          "description": "The numerical label assigned to a device participating in a computer network that uses the Internet Protocol for communication.",
+          "description": "The numerical label assigned to a device participating in a computer network that uses the Internet Protocol for communication. ",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:ipV4",
           "tagNumber": 1

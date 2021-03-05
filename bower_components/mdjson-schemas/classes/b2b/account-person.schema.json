@@ -23,7 +23,7 @@
     },
     "accountPersonID": {
       "title": "Account Person ID",
-      "description": "Unique ID for this relationship between an account and a person.",
+      "description": "Account person relation unique identifer.",
       "type": "string",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:accountPersonID",
@@ -31,7 +31,7 @@
     },
     "accountID": {
       "title": "Account ID",
-      "description": "Unique ID for the account in this account person relationship.",
+      "description": "Account unique identifier reference.",
       "type": "string",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:accountID",
@@ -39,7 +39,7 @@
     },
     "personID": {
       "title": "Person ID",
-      "description": "Unique ID for the person in this account person relationship.",
+      "description": "Person unique identifier reference.",
       "type": "string",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:personID",
@@ -47,7 +47,7 @@
     },
     "personRole": {
       "title": "Person Role",
-      "description": "Role of the person on this account.",
+      "description": "Role of the person/contact for this account.",
       "type": "string",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:personRole",
@@ -55,7 +55,7 @@
     },
     "isDirect": {
       "title": "Direct Flag",
-      "description": "Boolean to indicate if this is a direct relationship between the account and the person.",
+      "description": "A flag to signify that this is the direct account contact.",
       "type": "boolean",
       "meta:xdmType": "boolean",
       "meta:xdmField": "xdm:isDirect",
@@ -63,7 +63,7 @@
     },
     "isActive": {
       "title": "Active Flag",
-      "description": "Boolean to indicate if this relationship between the account and the person is active.",
+      "description": "A flag to signify that this relation is active or not.",
       "type": "boolean",
       "meta:xdmType": "boolean",
       "meta:xdmField": "xdm:isActive",
@@ -71,7 +71,7 @@
     },
     "isPrimary": {
       "title": "Primary Flag",
-      "description": "Boolean to indicate if the person is the primary contact on the account.",
+      "description": "A flag to signify that this relation is primary or not.",
       "type": "boolean",
       "meta:xdmType": "boolean",
       "meta:xdmField": "xdm:isPrimary",
@@ -79,7 +79,7 @@
     },
     "relationStartDate": {
       "title": "Relationship Start Date",
-      "description": "The date when the relationship between the account and the person started.",
+      "description": "The date when this account person relationship was established.",
       "type": "string",
       "format": "date-time",
       "meta:xdmType": "date-time",
@@ -88,7 +88,7 @@
     },
     "relationEndDate": {
       "title": "Relationship End Date",
-      "description": "The date when the relationship between the account and the person ended.",
+      "description": "The date when this account person relationship was discontinued.",
       "type": "string",
       "format": "date-time",
       "meta:xdmType": "date-time",
@@ -103,7 +103,7 @@
         "EUR"
       ],
       "pattern": "^[A-Z]{3}$",
-      "description": "The ISO 4217 currency code used for the relationship between the account and the person.",
+      "description": "The ISO 4217 currency code used for this relation.",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:currencyCode",
       "tagNumber": 11

@@ -6,11 +6,6 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:tags": {
-    "industry": [
-      "all"
-    ]
-  },
   "meta:status": "stable",
   "meta:xdmType": "object",
   "properties": {
@@ -29,7 +24,7 @@
           "meta:xdmField": "xdm:privacyOptOuts",
           "tagNumber": 1,
           "items": {
-            "$ref": "obj2219431200297779.schema.json"
+            "$ref": "obj051970299325833746.schema.json"
           }
         }
       },

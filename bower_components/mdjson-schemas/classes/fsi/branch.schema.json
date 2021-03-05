@@ -5,11 +5,6 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:tags": {
-    "industry": [
-      "financial_services"
-    ]
-  },
   "description": "For branch information such as ID, name, and open and close times.",
   "meta:status": [
     "experimental",

@@ -28,7 +28,7 @@
                   "enum": [
                     "click",
                     "open",
-                    "unsubscribe"
+                    "action"
                   ],
                   "meta:xdmType": "string",
                   "meta:xdmField": "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/interactionType",

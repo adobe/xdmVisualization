@@ -11,11 +11,6 @@
   "meta:status": "stable",
   "meta:xdmType": "object",
   "meta:abstract": true,
-  "meta:tags": {
-    "industry": [
-      "all"
-    ]
-  },
   "properties": {
     "repositoryCreatedBy": {
       "title": "Created by user identifier",
@@ -142,13 +137,12 @@
     "segmentStatus": {
       "type": "string",
       "title": "Segment status",
-      "description": "Current status of segment from external system normalized to active, inactive, deleted, draft or revoked.",
+      "description": "Current status of segment from external system normalized to active, inactive, deleted or draft.",
       "enum": [
         "ACTIVE",
         "INACTIVE",
         "DELETED",
-        "DRAFT",
-        "REVOKED"
+        "DRAFT"
       ],
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:segmentStatus",

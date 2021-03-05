@@ -10,8 +10,7 @@
   "meta:abstract": true,
   "meta:status": [
     "experimental",
-    "stable",
-    "deprecated"
+    "stable"
   ],
   "properties": {
     "_id": {
@@ -25,7 +24,7 @@
     },
     "opportunityID": {
       "title": "Opportunity ID",
-      "description": "Unique ID of the opportunity.",
+      "description": "Opportunity unique identifer",
       "type": "string",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:opportunityID",
@@ -33,7 +32,7 @@
     },
     "opportunityName": {
       "title": "Opportunity Name",
-      "description": "Name of the opportunity.",
+      "description": "Subject or descriptive name, such as the expected order or company name, for the opportunity.",
       "type": "string",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:opportunityName",
@@ -41,7 +40,7 @@
     },
     "opportunityDescription": {
       "title": "Opportunity Description",
-      "description": "Description of the opportunity.",
+      "description": "Additional information to describe the opportunity, such as possible products to sell or past purchases from the customer.",
       "type": "string",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:opportunityDescription",
@@ -49,7 +48,7 @@
     },
     "opportunityType": {
       "title": "Opportunity Type",
-      "description": "Type of the opportunity.",
+      "description": "Opportunity type such as Existing Business or New Business",
       "type": "string",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:opportunityType",
@@ -57,7 +56,7 @@
     },
     "opportunityStage": {
       "title": "Opportunity Stage",
-      "description": "Sales stage of the opportunity.",
+      "description": "Sales stage of this opportunity to aid the sales team in their efforts to win this opportunity.",
       "type": "string",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:opportunityStage",
@@ -65,7 +64,7 @@
     },
     "accountID": {
       "title": "Account ID",
-      "description": "Unique ID of the account this opportunity is associated with.",
+      "description": "Account unique identifier reference that this opportunity is linked to.",
       "type": "string",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:accountID",
@@ -78,14 +77,13 @@
       "meta:xdmField": "xdm:extSourceSystemAudit",
       "tagNumber": 8
     },
-    "opportunityComponents": {
-      "type": "array",
-      "meta:xdmType": "array",
-      "meta:xdmField": "xdm:opportunityComponents",
-      "tagNumber": 9,
-      "items": {
-        "$ref": "obj389990307134638.schema.json"
-      }
+    "opportunityOwnerID": {
+      "title": "opportunity Owner Id",
+      "description": "Assigned owner for this opportunity.",
+      "type": "string",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:opportunityOwnerID",
+      "tagNumber": 9
     },
     "campaignID": {
       "title": "Campaign ID",

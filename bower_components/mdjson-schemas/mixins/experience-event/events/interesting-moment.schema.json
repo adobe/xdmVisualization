@@ -5,7 +5,7 @@
   "type": "object",
   "meta:conditionalField": "xdm:eventType",
   "meta:conditionalValue": "leadOperation.interestingMoment",
-  "description": "Use for tracking high value activities by potential customers.",
+  "description": "Use for information regarding lead operation interesting moments events.",
   "meta:status": "experimental",
   "meta:xdmType": "object",
   "properties": {
@@ -22,7 +22,7 @@
             "type": {
               "title": "Type",
               "type": "string",
-              "description": "Type of Interesting Moment.",
+              "description": "Interesting moment type.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:type",
               "tagNumber": 1
@@ -30,7 +30,7 @@
             "description": {
               "title": "Description",
               "type": "string",
-              "description": "Description of Interesting Moment.",
+              "description": "Interesting moment description.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:description",
               "tagNumber": 2
@@ -39,7 +39,7 @@
               "title": "Date",
               "type": "string",
               "format": "date-time",
-              "description": "Date of the Interesting Moment.",
+              "description": "Interesting moment date.",
               "meta:xdmType": "date-time",
               "meta:xdmField": "xdm:date",
               "tagNumber": 3
@@ -47,7 +47,7 @@
             "source": {
               "title": "Source",
               "type": "string",
-              "description": "Source of the action that triggered the interesting moment.",
+              "description": "Interesting moment source.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:source",
               "tagNumber": 4

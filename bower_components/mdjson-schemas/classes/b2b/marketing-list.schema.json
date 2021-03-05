@@ -23,7 +23,7 @@
     },
     "marketingListID": {
       "title": "Marketing List ID",
-      "description": "Unique ID of the marketing list.",
+      "description": "Marketing list unique identifer.",
       "type": "string",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:marketingListID",
@@ -31,7 +31,7 @@
     },
     "marketingListName": {
       "title": "Marketing List Name",
-      "description": "Name of the marketing list.",
+      "description": "Marketing list name.",
       "type": "string",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:marketingListName",
@@ -39,7 +39,7 @@
     },
     "marketingListDescription": {
       "title": "Marketing List Description",
-      "description": "Description of the marketing list.",
+      "description": "Marketing list description.",
       "type": "string",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:marketingListDescription",

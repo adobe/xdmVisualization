@@ -5,7 +5,7 @@
   "type": "object",
   "meta:conditionalField": "xdm:eventType",
   "meta:conditionalValue": "leadOperation.statusInCampaignProgressionChanged",
-  "description": "Use to capture details when a lead's status in a campaign changes.",
+  "description": "Use for information regarding lead operation status in campaign progression changed events.",
   "meta:status": "experimental",
   "meta:xdmType": "object",
   "properties": {
@@ -22,7 +22,7 @@
             "campaignID": {
               "title": "Campaign ID",
               "type": "string",
-              "description": "Unique ID of the Campaign.",
+              "description": "Unique identifier for campaign.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:campaignID",
               "tagNumber": 1
@@ -30,7 +30,7 @@
             "newStatusID": {
               "title": "New Status ID",
               "type": "string",
-              "description": "ID of the lead's new status in the campaign.",
+              "description": "Unique identifier for new status.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:newStatusID",
               "tagNumber": 2
@@ -38,7 +38,7 @@
             "newStatusName": {
               "title": "New Status Name",
               "type": "string",
-              "description": "Friendly name of the lead's new status in the campaign.",
+              "description": "Friendly name for new status.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:newStatusName",
               "tagNumber": 3
@@ -46,7 +46,7 @@
             "oldStatusID": {
               "title": "Old Status ID",
               "type": "string",
-              "description": "ID of the lead's previous status in the campaign.",
+              "description": "Unique identifier for old status.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:oldStatusID",
               "tagNumber": 4
@@ -54,7 +54,7 @@
             "oldStatusName": {
               "title": "Old Status Name",
               "type": "string",
-              "description": "Friendly name of the lead's previous status in the campaign.",
+              "description": "Friendly name for old status.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:oldStatusName",
               "tagNumber": 5
@@ -62,7 +62,7 @@
             "reason": {
               "title": "Reason",
               "type": "string",
-              "description": "Reason for the change in the lead's status.",
+              "description": "Reason for status change.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:reason",
               "tagNumber": 6
@@ -70,7 +70,7 @@
             "isAcquiredBy": {
               "title": "Is Acquired By",
               "type": "boolean",
-              "description": "Boolean indicating if lead was acquired by the campaign.",
+              "description": "Change acquired by user.",
               "meta:xdmType": "boolean",
               "meta:xdmField": "xdm:isAcquiredBy",
               "tagNumber": 7
@@ -78,7 +78,7 @@
             "isSuccessful": {
               "title": "Is Successful",
               "type": "boolean",
-              "description": "Boolean indicating if there was a change in the lead's status.",
+              "description": "Is the change successful or failed in process.",
               "meta:xdmType": "boolean",
               "meta:xdmField": "xdm:isSuccessful",
               "tagNumber": 8

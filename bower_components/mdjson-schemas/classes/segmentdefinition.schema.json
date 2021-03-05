@@ -8,11 +8,6 @@
   "description": "This is the base class for a segment definition which includes required fields like identity of a segment and name of segment. Segment definitions coming from various system can use this class to build Segment Definition XDM schema.",
   "meta:status": "stable",
   "meta:xdmType": "object",
-  "meta:tags": {
-    "industry": [
-      "all"
-    ]
-  },
   "properties": {
     "identityMap": {
       "type": "object",
@@ -139,13 +134,12 @@
     "segmentStatus": {
       "type": "string",
       "title": "Segment status",
-      "description": "Current status of segment from external system normalized to active, inactive, deleted, draft or revoked.",
+      "description": "Current status of segment from external system normalized to active, inactive, deleted or draft.",
       "enum": [
         "ACTIVE",
         "INACTIVE",
         "DELETED",
-        "DRAFT",
-        "REVOKED"
+        "DRAFT"
       ],
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:segmentStatus",

@@ -97,50 +97,21 @@
       "meta:xdmField": "xdm:label",
       "tagNumber": 12
     },
-    "sourceNamespace": {
-      "title": "Source Property Namespace",
+    "apiLabel": {
+      "title": "API Label",
       "type": "string",
-      "description": "Identity Service namespace associated with the source property",
+      "description": "Provides a user friendly name or label which is used in PQL/SQL or other needs",
       "meta:xdmType": "string",
-      "meta:xdmField": "xdm:sourceNamespace",
+      "meta:xdmField": "xdm:apiLabel",
       "tagNumber": 13
     },
-    "destinationNamespace": {
-      "title": "Source Property Namespace",
+    "description": {
+      "title": "Relationship Description",
       "type": "string",
-      "description": "Identity Service namespace associated with the source property",
+      "description": "Provides a user friendly description of this relationship",
       "meta:xdmType": "string",
-      "meta:xdmField": "xdm:destinationNamespace",
+      "meta:xdmField": "xdm:description",
       "tagNumber": 14
-    },
-    "sourceToDestinationTitle": {
-      "title": "Source to Destination Title",
-      "type": "string",
-      "description": "Provides a user friendly title for the source->destination edge",
-      "meta:xdmType": "string",
-      "meta:xdmField": "xdm:sourceToDestinationTitle",
-      "tagNumber": 15
-    },
-    "destinationToSourceTitle": {
-      "title": "Destination to Source Title",
-      "type": "string",
-      "description": "Provides a user friendly title for the destination->source edge",
-      "meta:xdmType": "string",
-      "meta:xdmField": "xdm:destinationToSourceTitle",
-      "tagNumber": 16
-    },
-    "cardinality": {
-      "title": "Relationship Cardinality",
-      "type": "string",
-      "description": "Source to Destination cardinality",
-      "enum": [
-        "M:1",
-        "1:1"
-      ],
-      "default": "M:1",
-      "meta:xdmType": "string",
-      "meta:xdmField": "xdm:cardinality",
-      "tagNumber": 17
     }
   },
   "meta:xdmId": "https://ns.adobe.com/xdm/common/descriptors/descriptorManyToOne",

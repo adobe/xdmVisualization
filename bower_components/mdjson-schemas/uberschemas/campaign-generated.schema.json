@@ -10,8 +10,7 @@
   "meta:abstract": true,
   "meta:status": [
     "experimental",
-    "stable",
-    "deprecated"
+    "stable"
   ],
   "properties": {
     "extSourceSystemAudit": {
@@ -62,21 +61,20 @@
       "meta:xdmField": "xdm:campaignDescription",
       "tagNumber": 6
     },
-    "campaignComponents": {
-      "type": "array",
-      "meta:xdmType": "array",
-      "meta:xdmField": "xdm:campaignComponents",
-      "tagNumber": 7,
-      "items": {
-        "$ref": "obj24871509546422632.schema.json"
-      }
-    },
     "parentCampaignID": {
       "title": "Parent Campaign ID",
       "description": "Member type and associated reference ID.",
       "type": "string",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:parentCampaignID",
+      "tagNumber": 7
+    },
+    "campaignOwnerID": {
+      "title": "Campaign Owner ID.",
+      "description": "",
+      "type": "string",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:campaignOwnerID",
       "tagNumber": 8
     },
     "campaignStatus": {

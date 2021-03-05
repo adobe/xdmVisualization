@@ -8,11 +8,6 @@
   "meta:abstract": true,
   "meta:status": "stable",
   "meta:xdmType": "object",
-  "meta:tags": {
-    "industry": [
-      "all"
-    ]
-  },
   "properties": {
     "implementationDetails": {
       "title": "Implementation details",
@@ -74,47 +69,6 @@
       "description": "The information related to web page and link of the ExperienceEvent.",
       "meta:xdmField": "xdm:web",
       "tagNumber": 6
-    },
-    "identityMap": {
-      "type": "object",
-      "meta:xdmType": "map",
-      "additionalProperties": {
-        "type": "array",
-        "meta:xdmType": "array",
-        "items": {
-          "$ref": "../../datatypes/identityitem.schema.json",
-          "tagNumber": 1
-        },
-        "tagNumber": 1
-      },
-      "meta:xdmField": "xdm:identityMap",
-      "tagNumber": 7
-    },
-    "_experience": {
-      "type": "object",
-      "meta:xdmType": "object",
-      "properties": {
-        "decisioning": {
-          "type": "object",
-          "meta:xdmType": "object",
-          "properties": {
-            "propositions": {
-              "title": "Involved Propositions",
-              "type": "array",
-              "description": "An array of decision propositions that contributed to the experience event. The experience event is attributed (at least partially) to those prior decisions/propositions. An individual profile's proposition-response history is maintained with these decision identifiers.",
-              "meta:xdmType": "array",
-              "items": {
-                "$ref": "decisioning/proposition-interaction-detail.schema.json",
-                "tagNumber": 1
-              },
-              "meta:xdmField": "https://ns.adobe.com/experience/decisioning/propositions",
-              "tagNumber": 1
-            }
-          },
-          "tagNumber": 1
-        }
-      },
-      "tagNumber": 8
     }
   },
   "meta:xdmId": "https://ns.adobe.com/experience/aep-web-sdk-experienceevent",

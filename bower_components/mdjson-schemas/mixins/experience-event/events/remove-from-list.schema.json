@@ -5,7 +5,7 @@
   "type": "object",
   "meta:conditionalField": "xdm:eventType",
   "meta:conditionalValue": "listOpearation.removeFromList",
-  "description": "Use to track when a person is removed from a specific list.",
+  "description": "Remove from list.",
   "meta:status": "experimental",
   "meta:xdmType": "object",
   "properties": {
@@ -17,7 +17,7 @@
         "listID": {
           "title": "List ID",
           "type": "string",
-          "description": "Unique ID of the Marketing List.",
+          "description": "List unique identifier.",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:listID",
           "tagNumber": 1

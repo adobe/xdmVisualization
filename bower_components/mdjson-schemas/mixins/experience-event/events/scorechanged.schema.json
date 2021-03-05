@@ -5,7 +5,7 @@
   "type": "object",
   "meta:conditionalField": "xdm:eventType",
   "meta:conditionalValue": "leadOperation.scoreChanged",
-  "description": "Use to capture details when the lead score of a person changes.",
+  "description": "Use for information regarding lead operation change score events.",
   "meta:status": "experimental",
   "meta:xdmType": "object",
   "properties": {
@@ -22,7 +22,7 @@
             "scoreAttributeID": {
               "title": "Score Atribute ID",
               "type": "string",
-              "description": "Unique ID of the lead score attribute.",
+              "description": "Unique identifier for score attribute.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:scoreAttributeID",
               "tagNumber": 1
@@ -30,7 +30,7 @@
             "scoreAttributeName": {
               "title": "Score Atribute Name",
               "type": "string",
-              "description": "Friendly name of the lead score attribute.",
+              "description": "friendly name for the score.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:scoreAttributeName",
               "tagNumber": 2
@@ -38,7 +38,7 @@
             "changeValue": {
               "title": "Change Value",
               "type": "string",
-              "description": "Absolute value or difference between new value and previous value of the lead score attribute.",
+              "description": "changed value.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:changeValue",
               "tagNumber": 3
@@ -46,7 +46,7 @@
             "newValue": {
               "title": "New Value",
               "type": "integer",
-              "description": "New value of the lead score attribute.",
+              "description": "New score Value.",
               "meta:xdmType": "int",
               "meta:xdmField": "xdm:newValue",
               "tagNumber": 4
@@ -54,7 +54,7 @@
             "oldValue": {
               "title": "Old Value",
               "type": "integer",
-              "description": "Previous value of the lead score attribute.",
+              "description": "old score Value.",
               "meta:xdmType": "int",
               "meta:xdmField": "xdm:oldValue",
               "tagNumber": 5
@@ -62,7 +62,7 @@
             "reason": {
               "title": "Reason",
               "type": "string",
-              "description": "Reason for the change to the lead score attribute.",
+              "description": "Reason for the change.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:reason",
               "tagNumber": 6
@@ -70,7 +70,7 @@
             "urgency": {
               "title": "Urgency",
               "type": "number",
-              "description": "Gauge of how much the lead's score has changed recently.",
+              "description": "Urgency for this change.",
               "meta:xdmType": "number",
               "meta:xdmField": "xdm:urgency",
               "tagNumber": 7
@@ -78,7 +78,7 @@
             "priority": {
               "title": "Priority",
               "type": "integer",
-              "description": "Overall priority the lead should receive based on urgency and score.",
+              "description": "Priority for this change.",
               "meta:xdmType": "int",
               "meta:xdmField": "xdm:priority",
               "tagNumber": 8
@@ -86,7 +86,7 @@
             "relativeScore": {
               "title": "Relative Score",
               "type": "integer",
-              "description": "How the lead's score compares to other leads in the database.",
+              "description": "Relative score.",
               "meta:xdmType": "int",
               "meta:xdmField": "xdm:relativeScore",
               "tagNumber": 9
@@ -94,7 +94,7 @@
             "relativeUrgency": {
               "title": "Relative Urgency",
               "type": "integer",
-              "description": "How the lead's urgency compares to other leads in the database.",
+              "description": "Relative Urgency for this change.",
               "meta:xdmType": "int",
               "meta:xdmField": "xdm:relativeUrgency",
               "tagNumber": 10
