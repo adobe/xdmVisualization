@@ -1,0 +1,41 @@
+{
+  "id": "_xdm.mixins.product-measurement",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Product Measurement",
+  "type": "object",
+  "auditable": true,
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "description": "This mixin is used to capture properties related to product measurements.",
+  "meta:status": "experimental",
+  "meta:xdmType": "object",
+  "properties": {
+    "productSize": {
+      "title": "Product Size",
+      "type": "string",
+      "description": "Standard product size for the product.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:productSize",
+      "tagNumber": 1
+    },
+    "unitOfMeasureCode": {
+      "title": "Product Unit Of Measure Code",
+      "type": "string",
+      "description": "Standard unit of measure of the product and or variation and relates the units for the size measurement.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:unitOfMeasureCode",
+      "tagNumber": 2
+    },
+    "unitOfMeasureName": {
+      "title": "Product Unit Of Measure Name",
+      "type": "string",
+      "description": "Friendly name for product unit of measure.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:unitOfMeasureName",
+      "tagNumber": 3
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/mixins/product-measurement",
+  "meta:altId": "_xdm.mixins.product-measurement",
+  "id": "_xdm.mixins.product-measurement"
+}

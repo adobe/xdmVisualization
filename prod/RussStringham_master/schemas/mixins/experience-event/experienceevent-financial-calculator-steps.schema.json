@@ -1,0 +1,36 @@
+{
+  "id": "_xdm.mixins.experienceevent-financial-calculator-steps",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Financial Calculator Steps",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:tags": {
+    "industry": [
+      "financial_services"
+    ]
+  },
+  "description": "",
+  "meta:status": "experimental",
+  "meta:xdmType": "object",
+  "properties": {
+    "personalFinances": {
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "calcuator": {
+          "title": "Financial Calculator Steps",
+          "$ref": "../../datatypes/industry-verticals/tool-usage.schema.json",
+          "description": "Extension of toolUsage data type.",
+          "meta:xdmField": "xdm:calcuator",
+          "tagNumber": 1
+        }
+      },
+      "meta:xdmField": "xdm:personalFinances",
+      "tagNumber": 1
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/mixins/experienceevent-financial-calculator-steps",
+  "meta:altId": "_xdm.mixins.experienceevent-financial-calculator-steps",
+  "id": "_xdm.mixins.experienceevent-financial-calculator-steps"
+}
