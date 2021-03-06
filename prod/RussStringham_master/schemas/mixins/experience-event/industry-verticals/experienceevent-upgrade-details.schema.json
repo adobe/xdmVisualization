@@ -1,0 +1,50 @@
+{
+  "id": "_xdm.mixins.industry-verticals.experienceevent-upgrade-details",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Upgrade Details",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:tags": {
+    "industry": [
+      "retail",
+      "financial_services",
+      "travel_and_hospitality",
+      "telecom",
+      "automotive",
+      "high_tech",
+      "manufacturing",
+      "media_and_entertainment"
+    ]
+  },
+  "description": "Upgrade details such as offer name, type, and ID, as well as transaction details such as type and amount.",
+  "meta:status": "experimental",
+  "meta:xdmType": "object",
+  "properties": {
+    "upgrade": {
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "upgradeOffer": {
+          "title": "Upgrade Offer",
+          "$ref": "../experienceevent-offer-impression-details.schema.json",
+          "description": "Extension of offer details data type.",
+          "meta:xdmField": "xdm:upgradeOffer",
+          "tagNumber": 1
+        },
+        "upgradeTransaction": {
+          "title": "Upgrade Transaction",
+          "$ref": "../../../datatypes/industry-verticals/transaction.schema.json",
+          "description": "Extension of transaction data type.",
+          "meta:xdmField": "xdm:upgradeTransaction",
+          "tagNumber": 2
+        }
+      },
+      "meta:xdmField": "xdm:upgrade",
+      "tagNumber": 1
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/mixins/industry-verticals/experienceevent-upgrade-details",
+  "meta:altId": "_xdm.mixins.industry-verticals.experienceevent-upgrade-details",
+  "id": "_xdm.mixins.industry-verticals.experienceevent-upgrade-details"
+}

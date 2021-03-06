@@ -1,0 +1,178 @@
+{
+  "id": "_xdm.mixins.campaign-details",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "XDM Business Campaign Details",
+  "type": "object",
+  "auditable": true,
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "description": "This mixin is used to capture properties related to business campaign details.",
+  "meta:status": "experimental",
+  "meta:xdmType": "object",
+  "properties": {
+    "parentCampaignID": {
+      "title": "Parent Campaign ID",
+      "description": "Member type and associated reference ID.",
+      "type": "string",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:parentCampaignID",
+      "tagNumber": 1
+    },
+    "campaignStatus": {
+      "title": "Campaign Status",
+      "description": "",
+      "type": "string",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:campaignStatus",
+      "tagNumber": 2
+    },
+    "campaignProgressionName": {
+      "title": "Campaign Progression Name",
+      "description": "",
+      "type": "string",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:campaignProgressionName",
+      "tagNumber": 3
+    },
+    "integrationPartnerName": {
+      "title": "Integration Partner Name",
+      "description": "",
+      "type": "string",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:integrationPartnerName",
+      "tagNumber": 4
+    },
+    "channelName": {
+      "title": "Channel Name",
+      "description": "",
+      "type": "string",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:channelName",
+      "tagNumber": 5
+    },
+    "campaignStartDate": {
+      "title": "Campaign Start Date",
+      "description": "",
+      "type": "string",
+      "format": "date-time",
+      "meta:xdmType": "date-time",
+      "meta:xdmField": "xdm:campaignStartDate",
+      "tagNumber": 6
+    },
+    "campaignEndDate": {
+      "title": "Campaign End Date",
+      "description": "",
+      "type": "string",
+      "format": "date-time",
+      "meta:xdmType": "date-time",
+      "meta:xdmField": "xdm:campaignEndDate",
+      "tagNumber": 7
+    },
+    "timeZone": {
+      "title": "Timezone",
+      "description": "",
+      "type": "string",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:timeZone",
+      "tagNumber": 8
+    },
+    "timezoneName": {
+      "title": "Timezone Name",
+      "description": "",
+      "type": "string",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:timezoneName",
+      "tagNumber": 9
+    },
+    "timeZoneDelivery": {
+      "title": "TimeZone Delivery",
+      "description": "",
+      "type": "string",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:timeZoneDelivery",
+      "tagNumber": 10
+    },
+    "webinarSessionName": {
+      "title": "Webinar Session Name",
+      "description": "",
+      "type": "string",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:webinarSessionName",
+      "tagNumber": 11
+    },
+    "webinarSessionDescription": {
+      "title": "Webinar Session Description",
+      "description": "",
+      "type": "string",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:webinarSessionDescription",
+      "tagNumber": 12
+    },
+    "webinarHistorySyncStatus": {
+      "title": "Webinar History Sync Status",
+      "description": "",
+      "type": "string",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:webinarHistorySyncStatus",
+      "tagNumber": 13
+    },
+    "webinarHistorySyncDate": {
+      "title": "Webinar History Sync Date",
+      "description": "",
+      "type": "string",
+      "format": "date-time",
+      "meta:xdmType": "date-time",
+      "meta:xdmField": "xdm:webinarHistorySyncDate",
+      "tagNumber": 14
+    },
+    "isActive": {
+      "title": "Is Active",
+      "description": "",
+      "type": "boolean",
+      "meta:xdmType": "boolean",
+      "meta:xdmField": "xdm:isActive",
+      "tagNumber": 15
+    },
+    "lastActivityDate": {
+      "title": "last Activity Date",
+      "description": "",
+      "type": "string",
+      "format": "date-time",
+      "meta:xdmType": "date-time",
+      "meta:xdmField": "xdm:lastActivityDate",
+      "tagNumber": 16
+    },
+    "expectedResponse": {
+      "title": "Expected Response",
+      "description": "",
+      "type": "string",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:expectedResponse",
+      "tagNumber": 17
+    },
+    "expectedRevenue": {
+      "title": "Expected Revenue",
+      "description": "",
+      "$ref": "../../datatypes/currency.schema.json",
+      "meta:xdmField": "xdm:expectedRevenue",
+      "tagNumber": 18
+    },
+    "budgetedCost": {
+      "title": "Budgeted Cost",
+      "description": "",
+      "$ref": "../../datatypes/currency.schema.json",
+      "meta:xdmField": "xdm:budgetedCost",
+      "tagNumber": 19
+    },
+    "actualCost": {
+      "title": "Actual Cost",
+      "description": "",
+      "$ref": "../../datatypes/currency.schema.json",
+      "meta:xdmField": "xdm:actualCost",
+      "tagNumber": 20
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/mixins/campaign-details",
+  "meta:altId": "_xdm.mixins.campaign-details",
+  "id": "_xdm.mixins.campaign-details"
+}
