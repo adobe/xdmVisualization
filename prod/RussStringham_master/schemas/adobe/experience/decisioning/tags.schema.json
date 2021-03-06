@@ -1,0 +1,45 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "id": "_experience.decisioning.tags",
+  "meta:abstract": true,
+  "meta:extensible": true,
+  "type": "object",
+  "title": "Decisioning Option Tags",
+  "description": "Tagging information used to form categories of entities.",
+  "meta:status": "stable",
+  "meta:xdmType": "object",
+  "properties": {
+    "_experience": {
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "decisioning": {
+          "type": "object",
+          "meta:xdmType": "object",
+          "properties": {
+            "tags": {
+              "type": "array",
+              "title": "Tags",
+              "description": "The set of tags associated with this entity. The tags are used in filter expressions to constrain the overall inventory to a sub set (category).",
+              "meta:xdmType": "array",
+              "items": {
+                "type": "string",
+                "format": "uri-reference",
+                "description": "An identifier of a tag object. The value is the @id of the tag that is referenced. See tag schema: https://ns.adobe.com/experience/decisioning/tag",
+                "meta:xdmType": "string",
+                "tagNumber": 1
+              },
+              "meta:xdmField": "https://ns.adobe.com/experience/decisioning/tags",
+              "tagNumber": 1
+            }
+          },
+          "tagNumber": 1
+        }
+      },
+      "tagNumber": 1
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/experience/decisioning/tags",
+  "meta:altId": "_experience.decisioning.tags",
+  "id": "_experience.decisioning.tags"
+}

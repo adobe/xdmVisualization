@@ -1,0 +1,66 @@
+{
+  "id": "_xdm.mixins.experienceevent-knowledge-base-details",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Knowledge Base Details",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:tags": {
+    "industry": [
+      "financial_services",
+      "telecom",
+      "education",
+      "health_and_life_sciences",
+      "high_tech",
+      "manufacturing",
+      "public_sector"
+    ]
+  },
+  "description": "",
+  "meta:status": "experimental",
+  "meta:xdmType": "object",
+  "properties": {
+    "siteKnowledge": {
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "knowledgeBaseArticeID": {
+          "title": "Knowledge Base Article ID",
+          "type": "string",
+          "description": "Tracks the knowledge base article ID when it has been viewed.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:knowledgeBaseArticeID",
+          "tagNumber": 1
+        },
+        "knowledgeBaseArticleType": {
+          "title": "Knowledge Base Article Type",
+          "type": "string",
+          "description": "Tracks the knowledge base article type when it has been viewed.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:knowledgeBaseArticleType",
+          "tagNumber": 2
+        },
+        "knowledgeBaseArticleView": {
+          "title": "Knowledge Base Article View",
+          "type": "integer",
+          "description": "Tracked when a knowledge base article has been viewed.",
+          "meta:xdmType": "int",
+          "meta:xdmField": "xdm:knowledgeBaseArticleView",
+          "tagNumber": 3
+        },
+        "knowledgeBaseSearch": {
+          "title": "Knowledge Base Search",
+          "$ref": "../../datatypes/industry-verticals/internal-site-search.schema.json",
+          "description": "Extension of internalSearch data type.",
+          "meta:xdmField": "xdm:knowledgeBaseSearch",
+          "tagNumber": 4
+        }
+      },
+      "meta:xdmField": "xdm:siteKnowledge",
+      "tagNumber": 1
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/mixins/experienceevent-knowledge-base-details",
+  "meta:altId": "_xdm.mixins.experienceevent-knowledge-base-details",
+  "id": "_xdm.mixins.experienceevent-knowledge-base-details"
+}

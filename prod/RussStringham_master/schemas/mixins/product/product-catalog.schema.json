@@ -1,0 +1,33 @@
+{
+  "id": "_xdm.mixins.product-catalog",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Product Catalog",
+  "type": "object",
+  "auditable": true,
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "description": "This mixin is used to capture properties related to product catalog.",
+  "meta:status": "experimental",
+  "meta:xdmType": "object",
+  "properties": {
+    "productCatalogName": {
+      "title": "Product Catalog Name",
+      "type": "string",
+      "description": "friendly name of the product catalog.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:productCatalogName",
+      "tagNumber": 1
+    },
+    "productCatalogDescription": {
+      "title": "Product Catalog Description",
+      "type": "string",
+      "description": "Catalog description of the product.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:productCatalogDescription",
+      "tagNumber": 2
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/mixins/product-catalog",
+  "meta:altId": "_xdm.mixins.product-catalog",
+  "id": "_xdm.mixins.product-catalog"
+}

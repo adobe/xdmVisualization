@@ -1,0 +1,83 @@
+{
+  "id": "_xdm.mixins.events.new-lead",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "New Lead",
+  "type": "object",
+  "meta:conditionalField": "xdm:eventType",
+  "meta:conditionalValue": "leadOperation.newLead",
+  "description": "Use to record the creation and details of a new marketing lead.",
+  "meta:status": "experimental",
+  "meta:xdmType": "object",
+  "properties": {
+    "leadOperation": {
+      "title": "Lead Operation",
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "newLead": {
+          "title": "New Lead",
+          "type": "object",
+          "meta:xdmType": "object",
+          "properties": {
+            "sourceType": {
+              "title": "Source Type",
+              "type": "string",
+              "description": "Type of lead source.",
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:sourceType",
+              "tagNumber": 1
+            },
+            "formName": {
+              "title": "Form Name",
+              "type": "string",
+              "description": "Friendly name to form.",
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:formName",
+              "tagNumber": 2
+            },
+            "listName": {
+              "title": "List Name",
+              "type": "string",
+              "description": "Name of marketing list.",
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:listName",
+              "tagNumber": 3
+            },
+            "sfdcType": {
+              "title": "SFDC Type",
+              "type": "string",
+              "description": "Lead type in SFDC.",
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:sfdcType",
+              "tagNumber": 4
+            },
+            "leadSource": {
+              "title": "Lead Source",
+              "type": "string",
+              "description": "Source of lead.",
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:leadSource",
+              "tagNumber": 5
+            },
+            "createdDate": {
+              "title": "Created Date",
+              "type": "string",
+              "format": "date-time",
+              "description": "Lead creation date.",
+              "meta:xdmType": "date-time",
+              "meta:xdmField": "xdm:createdDate",
+              "tagNumber": 6
+            }
+          },
+          "meta:xdmField": "xdm:newLead",
+          "tagNumber": 1
+        }
+      },
+      "meta:xdmField": "xdm:leadOperation",
+      "tagNumber": 1
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/mixins/events/new-lead",
+  "meta:altId": "_xdm.mixins.events.new-lead",
+  "id": "_xdm.mixins.events.new-lead"
+}

@@ -1,0 +1,33 @@
+{
+  "id": "_xdm.mixins.events.add-to-list",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Add To List",
+  "type": "object",
+  "meta:conditionalField": "xdm:eventType",
+  "meta:conditionalValue": "listOperation.addToList",
+  "description": "Use to track when a person is added to a specific list.",
+  "meta:status": "experimental",
+  "meta:xdmType": "object",
+  "properties": {
+    "listOperations": {
+      "title": "List Operations",
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "listID": {
+          "title": "List ID",
+          "type": "string",
+          "description": "Unique ID of the Marketing List.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:listID",
+          "tagNumber": 1
+        }
+      },
+      "meta:xdmField": "xdm:listOperations",
+      "tagNumber": 1
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/mixins/events/add-to-list",
+  "meta:altId": "_xdm.mixins.events.add-to-list",
+  "id": "_xdm.mixins.events.add-to-list"
+}
