@@ -32,21 +32,13 @@
       "meta:xdmField": "xdm:version",
       "tagNumber": 3
     },
-    "userAgent": {
-      "title": "User agent",
-      "type": "string",
-      "description": "The HTTP user-agent string from the client request.",
-      "meta:xdmType": "string",
-      "meta:xdmField": "xdm:userAgent",
-      "tagNumber": 4
-    },
     "acceptLanguage": {
       "title": "Accept language",
       "type": "string",
       "description": "An IETF language tag (RFC 5646).",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:acceptLanguage",
-      "tagNumber": 5
+      "tagNumber": 4
     },
     "cookiesEnabled": {
       "title": "Allows cookies",
@@ -54,7 +46,7 @@
       "description": "The current user agent settings allow for the writing of cookies.'",
       "meta:xdmType": "boolean",
       "meta:xdmField": "xdm:cookiesEnabled",
-      "tagNumber": 6
+      "tagNumber": 5
     },
     "javaScriptEnabled": {
       "title": "JavaScript enabled",
@@ -62,7 +54,7 @@
       "description": "If JavaScript was enabled in the device this observation was made from.",
       "meta:xdmType": "boolean",
       "meta:xdmField": "xdm:javaScriptEnabled",
-      "tagNumber": 7
+      "tagNumber": 6
     },
     "javaScriptVersion": {
       "title": "JavaScript version",
@@ -70,7 +62,7 @@
       "description": "The version of JavaScript supported during the observation.",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:javaScriptVersion",
-      "tagNumber": 8
+      "tagNumber": 7
     },
     "javaEnabled": {
       "title": "Java enabled",
@@ -78,7 +70,7 @@
       "description": "If Java was enabled in the device this observation was made from.",
       "meta:xdmType": "boolean",
       "meta:xdmField": "xdm:javaEnabled",
-      "tagNumber": 9
+      "tagNumber": 8
     },
     "javaVersion": {
       "title": "Java version",
@@ -86,7 +78,7 @@
       "description": "The version of Java supported during the observation.",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:javaVersion",
-      "tagNumber": 10
+      "tagNumber": 9
     },
     "quicktimeVersion": {
       "title": "Quicktime version",
@@ -94,7 +86,7 @@
       "description": "The version of Apple Quicktime supported during the observation.",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:quicktimeVersion",
-      "tagNumber": 11
+      "tagNumber": 10
     },
     "thirdPartyCookiesEnabled": {
       "title": "Allows third-party cookies",
@@ -102,7 +94,7 @@
       "description": "If third-party cookies were enabled when this observation was made.",
       "meta:xdmType": "boolean",
       "meta:xdmField": "xdm:thirdPartyCookiesEnabled",
-      "tagNumber": 12
+      "tagNumber": 11
     },
     "viewportHeight": {
       "title": "Viewport height",
@@ -111,7 +103,7 @@
       "minimum": 0,
       "meta:xdmType": "int",
       "meta:xdmField": "xdm:viewportHeight",
-      "tagNumber": 13
+      "tagNumber": 12
     },
     "viewportWidth": {
       "title": "Viewport width",
@@ -120,6 +112,14 @@
       "minimum": 0,
       "meta:xdmType": "int",
       "meta:xdmField": "xdm:viewportWidth",
+      "tagNumber": 13
+    },
+    "userAgent": {
+      "title": "User agent",
+      "type": "string",
+      "description": "The HTTP user-agent string from the client request.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:userAgent",
       "tagNumber": 14
     }
   },
