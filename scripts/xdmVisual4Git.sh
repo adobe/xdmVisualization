@@ -62,6 +62,7 @@ standardCompGrp=()
 
 folders=(adobe behaviors common airship classes datatypes mixins uberschemas)
 
+rm listOfXdms.txt
 for folder in ${folders[@]}; do
   objs=$(find "schemas/$folder" -name "*.schema.json" -print -maxdepth 5)
   for obj in $objs; do
@@ -71,6 +72,7 @@ for folder in ${folders[@]}; do
     #echo "filename-->" $filename
     if [[ $filename != *.obj[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]* ]] # not showing generated objs
     then
+        echo $filename >> listOfXdms.txt
         if [[ $filename == adobe.* || $filename == airship.* ]]
         then
           extensionComponents+=( ${filename} )
