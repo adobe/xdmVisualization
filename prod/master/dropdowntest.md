@@ -6,220 +6,220 @@
 <details>
 <summary>experience</summary>
 <ul>
-<li>profile-edgeregion</li>
-<li>target-experienceevent</li>
-<li>adcloud-experienceevent</li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">profile-edgeregion</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">target-experienceevent</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">adcloud-experienceevent</li></a></li>
 <details>
 <summary>offer-management</summary>
 <ul>
-<li>proposition-response-detail</li>
-<li>offer-activity-detail</li>
-<li>offer-detail</li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">proposition-response-detail</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">offer-activity-detail</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">offer-detail</li></a></li>
 </ul>
 </details>
 <details>
 <summary>target</summary>
 <ul>
-<li>experienceevent-all</li>
-<li>activity</li>
-<li>experienceevent-shared</li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">experienceevent-all</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">activity</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">experienceevent-shared</li></a></li>
 </ul>
 </details>
 <details>
 <summary>adcloud</summary>
 <ul>
-<li>experienceevent-all</li>
-<li>adcloudsegment</li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">experienceevent-all</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">adcloudsegment</li></a></li>
 <details>
 <summary>searchadvertising</summary>
 <ul>
-<li>account</li>
-<li>aggregateperformancebykeyword</li>
-<li>aggregateperformancebyad</li>
-<li>adgroup</li>
-<li>portfolio</li>
-<li>campaign</li>
-<li>platform</li>
-<li>aggregateperformancebyadbykeyword</li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">account</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">aggregateperformancebykeyword</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">aggregateperformancebyad</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">adgroup</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">portfolio</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">campaign</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">platform</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">aggregateperformancebyadbykeyword</li></a></li>
 </ul>
 </details>
-<li>profile-all</li>
-<li>partnerdata</li>
-<li>creative</li>
-<li>attributedconversionmodel</li>
-<li>segment</li>
-<li>advertisement</li>
-<li>fees</li>
-<li>campaign</li>
-<li>creative-event</li>
-<li>inventory</li>
-<li>conversiondetails</li>
-<li>addeliverydetails</li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">profile-all</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">partnerdata</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">creative</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">attributedconversionmodel</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">segment</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">advertisement</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">fees</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">campaign</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">creative-event</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">inventory</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">conversiondetails</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">addeliverydetails</li></a></li>
 <details>
 <summary>searchads</summary>
 <ul>
-<li>account</li>
-<li>aggregateperformancebykeyword</li>
-<li>aggregateperformancebyad</li>
-<li>adgroup</li>
-<li>portfolio</li>
-<li>campaign</li>
-<li>transactionproperties</li>
-<li>platform</li>
-<li>aggregateperformancebyadbykeyword</li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">account</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">aggregateperformancebykeyword</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">aggregateperformancebyad</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">adgroup</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">portfolio</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">campaign</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">transactionproperties</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">platform</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">aggregateperformancebyadbykeyword</li></a></li>
 </ul>
 </details>
-<li>syncedremarketingaudience</li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">syncedremarketingaudience</li></a></li>
 <details>
 <summary>dsp</summary>
 <ul>
-<li>account</li>
-<li>placement</li>
-<li>promotedvideo</li>
-<li>advertisement</li>
-<li>campaign</li>
-<li>site</li>
-<li>advertiser</li>
-<li>package</li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">account</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">placement</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">promotedvideo</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">advertisement</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">campaign</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">site</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">advertiser</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">package</li></a></li>
 </ul>
 </details>
-<li>productdetails</li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">productdetails</li></a></li>
 </ul>
 </details>
-<li>consumer-experienceevent</li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">consumer-experienceevent</li></a></li>
 <details>
 <summary>audiencemanager</summary>
 <ul>
-<li>experienceevent-all</li>
-<li>segmentdefinition</li>
-<li>segmentfolder</li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">experienceevent-all</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">segmentdefinition</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">segmentfolder</li></a></li>
 </ul>
 </details>
-<li>adcloud-profile</li>
-<li>implementations-ext</li>
-<li>aam-experienceevent</li>
-<li>aep-web-sdk-experienceevent</li>
-<li>analytics-experienceevent</li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">adcloud-profile</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">implementations-ext</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">aam-experienceevent</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">aep-web-sdk-experienceevent</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">analytics-experienceevent</li></a></li>
 <details>
 <summary>intelligentServices</summary>
 <ul>
-<li>profile-journeyai-engagementscores</li>
-<li>profile-journeyai-sendtimeoptimization</li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">profile-journeyai-engagementscores</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">profile-journeyai-sendtimeoptimization</li></a></li>
 </ul>
 </details>
 <details>
 <summary>decisioning</summary>
 <ul>
-<li>profile-constraint-details</li>
-<li>tag</li>
-<li>criterion-details</li>
-<li>activity-detail</li>
-<li>lifecycle-status</li>
-<li>proposition</li>
-<li>proposition-details</li>
-<li>experienceevent-proposition-interaction</li>
-<li>option-detail</li>
-<li>calendar-constraint-details</li>
-<li>calendar-constraints</li>
-<li>placement</li>
-<li>tags</li>
-<li>decisionevent-details</li>
-<li>decisionevent-all</li>
-<li>scope-details</li>
-<li>placement-detail</li>
-<li>contents</li>
-<li>personalized-content-option</li>
-<li>proposition-detail</li>
-<li>fallback-content-option</li>
-<li>proposition-metric-profile</li>
-<li>option-selection-details</li>
-<li>ranking-details</li>
-<li>content-details</li>
-<li>proposition-interaction-detail</li>
-<li>interaction-measurement-details</li>
-<li>ranking</li>
-<li>decisionevent</li>
-<li>activity</li>
-<li>strategy-details</li>
-<li>filter</li>
-<li>criteria</li>
-<li>profile-constraints</li>
-<li>option</li>
-<li>content-component-details</li>
-<li>proposition-metric-total</li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">profile-constraint-details</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">tag</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">criterion-details</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">activity-detail</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">lifecycle-status</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">proposition</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">proposition-details</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">experienceevent-proposition-interaction</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">option-detail</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">calendar-constraint-details</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">calendar-constraints</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">placement</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">tags</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">decisionevent-details</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">decisionevent-all</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">scope-details</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">placement-detail</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">contents</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">personalized-content-option</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">proposition-detail</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">fallback-content-option</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">proposition-metric-profile</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">option-selection-details</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">ranking-details</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">content-details</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">proposition-interaction-detail</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">interaction-measurement-details</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">ranking</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">decisionevent</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">activity</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">strategy-details</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">filter</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">criteria</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">profile-constraints</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">option</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">content-component-details</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">proposition-metric-total</li></a></li>
 </ul>
 </details>
 <details>
 <summary>profile</summary>
 <ul>
-<li>profile-all</li>
-<li>experienceevent-shared</li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">profile-all</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">experienceevent-shared</li></a></li>
 </ul>
 </details>
-<li>implementations</li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">implementations</li></a></li>
 <details>
 <summary>campaign</summary>
 <ul>
-<li>experienceevent-all</li>
-<li>profile-snapshot</li>
-<li>profile-all</li>
-<li>experienceevent-profile-push-details</li>
-<li>notificationsubscriptiontarget</li>
-<li>mutationevent</li>
-<li>experienceevent-profile-owning-entities</li>
-<li>offer-response-detail</li>
-<li>feedbackevent</li>
-<li>journeyaifatigue</li>
-<li>experienceevent-profile-subscriptions</li>
-<li>offer-proposition-detail</li>
-<li>experienceevent-profile-preferences-details</li>
-<li>journeyaiscores</li>
-<li>offer-detail</li>
-<li>experienceevent-profile-personal-details</li>
-<li>notificationunsubscriptiondetails</li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">experienceevent-all</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">profile-snapshot</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">profile-all</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">experienceevent-profile-push-details</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">notificationsubscriptiontarget</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">mutationevent</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">experienceevent-profile-owning-entities</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">offer-response-detail</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">feedbackevent</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">journeyaifatigue</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">experienceevent-profile-subscriptions</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">offer-proposition-detail</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">experienceevent-profile-preferences-details</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">journeyaiscores</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">offer-detail</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">experienceevent-profile-personal-details</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">notificationunsubscriptiondetails</li></a></li>
 <details>
 <summary>orchestration</summary>
 <ul>
-<li>orchestrationdetails</li>
-<li>reportingeventmetrics</li>
-<li>experienceevent</li>
-<li>reportingevent</li>
-<li>reportingexternalevent</li>
-<li>eventid</li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">orchestrationdetails</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">reportingeventmetrics</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">experienceevent</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">reportingevent</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">reportingexternalevent</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">eventid</li></a></li>
 </ul>
 </details>
-<li>experienceevent-profile-work-details</li>
-<li>experienceevent-profile-test-profile</li>
-<li>address</li>
-<li>notificationsubscription</li>
-<li>experienceevent-profile-segmentation</li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">experienceevent-profile-work-details</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">experienceevent-profile-test-profile</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">address</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">notificationsubscription</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">experienceevent-profile-segmentation</li></a></li>
 </ul>
 </details>
-<li>campaign-experienceevent</li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">campaign-experienceevent</li></a></li>
 <details>
 <summary>customerJourneyManagement</summary>
 <ul>
-<li>message-delivery-feedback</li>
-<li>messageprofile</li>
-<li>message-interaction</li>
-<li>messageexecution</li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">message-delivery-feedback</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">messageprofile</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">message-interaction</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">messageexecution</li></a></li>
 </ul>
 </details>
-<li>mobile-lifecycle-details-test</li>
-<li>experienceevent-edgeregion</li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">mobile-lifecycle-details-test</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">experienceevent-edgeregion</li></a></li>
 <details>
 <summary>journeyOrchestration</summary>
 <ul>
 <details>
 <summary>stepEvents</summary>
 <ul>
-<li>journeyStepEventClass</li>
-<li>journeyStepEventDataFetchFieldsMixin</li>
-<li>journeyStepEventIdentityFieldsMixin</li>
-<li>journeyClass</li>
-<li>journeyStepEventCommonFieldsMixin</li>
-<li>journeyStepEventActionExecutionFieldsMixin</li>
-<li>journeyStepEventJourneyFieldsMixin</li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">journeyStepEventClass</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">journeyStepEventDataFetchFieldsMixin</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">journeyStepEventIdentityFieldsMixin</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">journeyClass</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">journeyStepEventCommonFieldsMixin</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">journeyStepEventActionExecutionFieldsMixin</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">journeyStepEventJourneyFieldsMixin</li></a></li>
 </ul>
 </details>
 </ul>
@@ -227,14 +227,14 @@
 <details>
 <summary>analytics</summary>
 <ul>
-<li>keyvalue</li>
-<li>experienceevent-all</li>
-<li>events</li>
-<li>keyedlist</li>
-<li>evars</li>
-<li>listdetails</li>
-<li>commerce</li>
-<li>productlistitem</li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">keyvalue</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">experienceevent-all</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">events</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">keyedlist</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">evars</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">listdetails</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">commerce</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">productlistitem</li></a></li>
 </ul>
 </details>
 </ul>
@@ -245,15 +245,15 @@
 <details>
 <summary>bizible</summary>
 <ul>
-<li>bizible-account-details</li>
-<li>bizible-opportunity-details</li>
-<li>bizible-person-details</li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">bizible-account-details</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">bizible-opportunity-details</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">bizible-person-details</li></a></li>
 </ul>
 </details>
 <details>
 <summary>marketo</summary>
 <ul>
-<li>marketo-web-url</li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">marketo-web-url</li></a></li>
 </ul>
 </details>
 </ul>
@@ -263,50 +263,50 @@
 <details>
 <summary>behaviors</summary>
 <ul>
-<li>time-series</li>
-<li>record</li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">time-series</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">record</li></a></li>
 </ul>
 </details>
 <details>
 <summary>common</summary>
 <ul>
-<li>identity</li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">identity</li></a></li>
 </ul>
 </details>
 <details>
 <summary>airship</summary>
 <ul>
-<li>airship-event</li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">airship-event</li></a></li>
 </ul>
 </details>
 <details>
 <summary>classes</summary>
 <ul>
-<li>experienceevent</li>
-<li>profile</li>
-<li>graphs</li>
-<li>product</li>
-<li>campaign</li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">experienceevent</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">profile</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">graphs</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">product</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">campaign</li></a></li>
 <details>
 <summary>b2b</summary>
 <ul>
-<li>account</li>
-<li>account-person</li>
-<li>marketing-list-member</li>
-<li>opportunity</li>
-<li>opportunity-contact-role</li>
-<li>marketing-list</li>
-<li>opportunity-person</li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">account</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">account-person</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">marketing-list-member</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">opportunity</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">opportunity-contact-role</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">marketing-list</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">opportunity-person</li></a></li>
 </ul>
 </details>
-<li>campaign-member</li>
-<li>segmentdefinition</li>
-<li>promotion</li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">campaign-member</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">segmentdefinition</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">promotion</li></a></li>
 <details>
 <summary>fsi</summary>
 <ul>
-<li>atm</li>
-<li>branch</li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">atm</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">branch</li></a></li>
 </ul>
 </details>
 </ul>
@@ -314,88 +314,88 @@
 <details>
 <summary>datatypes</summary>
 <ul>
-<li>device</li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">device</li></a></li>
 <details>
 <summary>interactions</summary>
 <ul>
-<li>poi-interaction</li>
-<li>meeting-interaction</li>
-<li>email-interaction</li>
-<li>beacon-interaction-details</li>
-<li>phone-interaction</li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">poi-interaction</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">meeting-interaction</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">email-interaction</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">beacon-interaction-details</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">phone-interaction</li></a></li>
 </ul>
 </details>
-<li>identityitem</li>
-<li>consentstring</li>
-<li>currency</li>
-<li>environment</li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">identityitem</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">consentstring</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">currency</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">environment</li></a></li>
 <details>
 <summary>demographic</summary>
 <ul>
-<li>emailaddress</li>
-<li>geo</li>
-<li>place</li>
-<li>phonenumber</li>
-<li>geounit</li>
-<li>address</li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">emailaddress</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">geo</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">place</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">phonenumber</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">geounit</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">address</li></a></li>
 </ul>
 </details>
-<li>enduserids</li>
-<li>pushdetail</li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">enduserids</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">pushdetail</li></a></li>
 <details>
 <summary>person</summary>
 <ul>
-<li>person</li>
-<li>person-name</li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">person</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">person-name</li></a></li>
 </ul>
 </details>
 <details>
 <summary>web</summary>
 <ul>
-<li>webpagedetails</li>
-<li>webinfo</li>
-<li>webreferrer</li>
-<li>webinteraction</li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">webpagedetails</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">webinfo</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">webreferrer</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">webinteraction</li></a></li>
 </ul>
 </details>
-<li>geo-interaction-details</li>
-<li>consent-preferences</li>
-<li>poi-detail</li>
-<li>optinout-additional-details</li>
-<li>product</li>
-<li>pushnotificationtoken</li>
-<li>optinout</li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">geo-interaction-details</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">consent-preferences</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">poi-detail</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">optinout-additional-details</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">product</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">pushnotificationtoken</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">optinout</li></a></li>
 <details>
 <summary>b2b</summary>
 <ul>
-<li>account-organization</li>
-<li>organization</li>
-<li>b2b-source</li>
-<li>b2b-account</li>
-<li>orgunit</li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">account-organization</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">organization</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">b2b-source</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">b2b-account</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">orgunit</li></a></li>
 </ul>
 </details>
-<li>player-state</li>
-<li>namespace</li>
-<li>search</li>
-<li>deprecated-consentpreferences</li>
-<li>browserdetails</li>
-<li>identity</li>
-<li>segmentidentity</li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">player-state</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">namespace</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">search</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">deprecated-consentpreferences</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">browserdetails</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">identity</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">segmentidentity</li></a></li>
 <details>
 <summary>marketing</summary>
 <ul>
-<li>directmarketing-address</li>
-<li>advertising-timed-asset-reference</li>
-<li>marketing</li>
-<li>directmarketing-phonenumber</li>
-<li>advertising-break</li>
-<li>adviewability</li>
-<li>advertising</li>
-<li>direct-marketing</li>
-<li>advertising-timed-asset-view-details</li>
-<li>commerce</li>
-<li>directmarketing-emailaddress</li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">directmarketing-address</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">advertising-timed-asset-reference</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">marketing</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">directmarketing-phonenumber</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">advertising-break</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">adviewability</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">advertising</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">direct-marketing</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">advertising-timed-asset-view-details</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">commerce</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">directmarketing-emailaddress</li></a></li>
 </ul>
 </details>
 <details>
@@ -404,114 +404,114 @@
 <details>
 <summary>id3</summary>
 <ul>
-<li>audio</li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">audio</li></a></li>
 </ul>
 </details>
 <details>
 <summary>schema</summary>
 <ul>
-<li>geoshape</li>
-<li>geocircle</li>
-<li>geocoordinates</li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">geoshape</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">geocircle</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">geocoordinates</li></a></li>
 </ul>
 </details>
 <details>
 <summary>iptc</summary>
 <ul>
-<li>season</li>
-<li>series</li>
-<li>creator</li>
-<li>rating</li>
-<li>episode</li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">season</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">series</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">creator</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">rating</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">episode</li></a></li>
 </ul>
 </details>
 </ul>
 </details>
-<li>profilestitch</li>
-<li>placecontext</li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">profilestitch</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">placecontext</li></a></li>
 <details>
 <summary>auditing</summary>
 <ul>
-<li>auditable</li>
-<li>external-source-system-audit</li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">auditable</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">external-source-system-audit</li></a></li>
 </ul>
 </details>
-<li>productlistitem</li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">productlistitem</li></a></li>
 <details>
 <summary>data</summary>
 <ul>
-<li>linkclicks</li>
-<li>product-list-adds</li>
-<li>product-list-reopens</li>
-<li>product-list-opens</li>
-<li>user-complaints</li>
-<li>checkouts</li>
-<li>metricdefinition</li>
-<li>poi-exits</li>
-<li>product-list-views</li>
-<li>paymentitem</li>
-<li>measure</li>
-<li>pageviews</li>
-<li>unsubscriptions</li>
-<li>save-for-laters</li>
-<li>record-timeseries-events</li>
-<li>bounces</li>
-<li>not-sent</li>
-<li>datasource</li>
-<li>product-views</li>
-<li>product-list-removals</li>
-<li>impressions</li>
-<li>mirror-pages</li>
-<li>order</li>
-<li>non-deliverables</li>
-<li>purchases</li>
-<li>sends</li>
-<li>opens</li>
-<li>cart-abandons</li>
-<li>poi-entries</li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">linkclicks</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">product-list-adds</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">product-list-reopens</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">product-list-opens</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">user-complaints</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">checkouts</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">metricdefinition</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">poi-exits</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">product-list-views</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">paymentitem</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">measure</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">pageviews</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">unsubscriptions</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">save-for-laters</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">record-timeseries-events</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">bounces</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">not-sent</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">datasource</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">product-views</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">product-list-removals</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">impressions</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">mirror-pages</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">order</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">non-deliverables</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">purchases</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">sends</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">opens</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">cart-abandons</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">poi-entries</li></a></li>
 </ul>
 </details>
 <details>
 <summary>industry-verticals</summary>
 <ul>
-<li>comparisons</li>
-<li>implementationdetails</li>
-<li>tool-usage</li>
-<li>policy-details</li>
-<li>impressions</li>
-<li>form-applications</li>
-<li>transaction</li>
-<li>file-transfer</li>
-<li>subscription</li>
-<li>selfservice</li>
-<li>internal-site-search</li>
-<li>financial-account</li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">comparisons</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">implementationdetails</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">tool-usage</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">policy-details</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">impressions</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">form-applications</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">transaction</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">file-transfer</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">subscription</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">selfservice</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">internal-site-search</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">financial-account</li></a></li>
 </ul>
 </details>
-<li>segmentmembershipitem</li>
-<li>application</li>
-<li>segmentmembership</li>
-<li>profilestitchidentity</li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">segmentmembershipitem</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">application</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">segmentmembership</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">profilestitchidentity</li></a></li>
 <details>
 <summary>channels</summary>
 <ul>
-<li>channel</li>
-<li>application</li>
-<li>phone</li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">channel</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">application</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">phone</li></a></li>
 </ul>
 </details>
 <details>
 <summary>media</summary>
 <ul>
-<li>media-timed-qoe</li>
-<li>media-timed</li>
-<li>media-timed-chapter-view-details</li>
-<li>media-timed-chapter</li>
-<li>media-timed-asset-view-details</li>
-<li>media</li>
-<li>media-timed-chapter-asset-reference</li>
-<li>media-timed-asset-reference</li>
-<li>media-timed-audio</li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">media-timed-qoe</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">media-timed</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">media-timed-chapter-view-details</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">media-timed-chapter</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">media-timed-asset-view-details</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">media</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">media-timed-chapter-asset-reference</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">media-timed-asset-reference</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">media-timed-audio</li></a></li>
 </ul>
 </details>
 </ul>
@@ -522,205 +522,205 @@
 <details>
 <summary>opportunity</summary>
 <ul>
-<li>opportunity-details</li>
-<li>opportunity-person-components</li>
-<li>opportunity-components</li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">opportunity-details</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">opportunity-person-components</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">opportunity-components</li></a></li>
 </ul>
 </details>
 <details>
 <summary>segment-definition</summary>
 <ul>
-<li>segmentdefinition-expression</li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">segmentdefinition-expression</li></a></li>
 </ul>
 </details>
 <details>
 <summary>shared</summary>
 <ul>
-<li>external-source-system-audit-details</li>
-<li>identitymap</li>
-<li>person-identifier</li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">external-source-system-audit-details</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">identitymap</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">person-identifier</li></a></li>
 </ul>
 </details>
 <details>
 <summary>product</summary>
 <ul>
-<li>product-category</li>
-<li>product-catalog</li>
-<li>product-identifiers</li>
-<li>product-catalog-category</li>
-<li>product-measurement</li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">product-category</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">product-catalog</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">product-identifiers</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">product-catalog-category</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">product-measurement</li></a></li>
 </ul>
 </details>
 <details>
 <summary>marketing-list</summary>
 <ul>
-<li>marketing-list-member-components</li>
-<li>marketing-list-components</li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">marketing-list-member-components</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">marketing-list-components</li></a></li>
 </ul>
 </details>
 <details>
 <summary>profile</summary>
 <ul>
-<li>b2b-person-components</li>
-<li>profile-person-details-v2</li>
-<li>profile-segmentation</li>
-<li>profile-inferred-person</li>
-<li>profile-test-profile</li>
-<li>profile-work-details</li>
-<li>profile-consents</li>
-<li>profile-preferences-details</li>
-<li>profile-directmarketing</li>
-<li>profile-loyalty-details</li>
-<li>profile-personal-details</li>
-<li>profile-phones</li>
-<li>profile-user-account-details</li>
-<li>profile-push-notification-details</li>
-<li>profile-subscriptions</li>
-<li>b2b-person-details</li>
-<li>profile-privacy</li>
-<li>profile-push-details</li>
-<li>profile-other-work-details</li>
-<li>profile-owning-entities</li>
-<li>profile-person-details</li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">b2b-person-components</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">profile-person-details-v2</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">profile-segmentation</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">profile-inferred-person</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">profile-test-profile</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">profile-work-details</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">profile-consents</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">profile-preferences-details</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">profile-directmarketing</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">profile-loyalty-details</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">profile-personal-details</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">profile-phones</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">profile-user-account-details</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">profile-push-notification-details</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">profile-subscriptions</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">b2b-person-details</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">profile-privacy</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">profile-push-details</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">profile-other-work-details</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">profile-owning-entities</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">profile-person-details</li></a></li>
 </ul>
 </details>
 <details>
 <summary>experience-event</summary>
 <ul>
-<li>experienceevent-implementation-details</li>
-<li>experienceevent-segmentmembership</li>
-<li>experienceevent-directmarketing</li>
-<li>experienceevent-profile-stitch</li>
-<li>experienceevent-consumer</li>
-<li>experienceevent-paperless-enrollment-steps</li>
-<li>experienceevent-user-login-process</li>
-<li>experienceevent-commerce</li>
-<li>experienceevent-marketing</li>
-<li>experienceevent-technical-details</li>
-<li>experienceevent-support-site-search</li>
-<li>experienceevent-social-network-usage-details</li>
-<li>experienceevent-knowledge-base-details</li>
-<li>experienceevent-enduserids</li>
-<li>experienceevent-watchlist-steps</li>
-<li>experienceevent-service-payment-details</li>
-<li>experienceevent-pushtracking</li>
-<li>experienceevent-offer-impression-details</li>
-<li>experienceevent-file-upload-details</li>
-<li>experienceevent-channel</li>
-<li>experienceevent-financial-calculator-steps</li>
-<li>experienceevent-web</li>
-<li>experienceevent-privacy</li>
-<li>experienceevent-search</li>
-<li>experienceevent-file-download-details</li>
-<li>experienceevent-advertising</li>
-<li>experienceevent-loan-details</li>
-<li>experienceevent-environment-details</li>
-<li>experienceevent-request-credit-score-steps</li>
-<li>experienceevent-media</li>
-<li>experienceevent-survey-response-details</li>
-<li>experienceevent-financial-account-creation-steps</li>
-<li>experienceevent-application</li>
-<li>experienceevent-quote-request-steps</li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">experienceevent-implementation-details</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">experienceevent-segmentmembership</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">experienceevent-directmarketing</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">experienceevent-profile-stitch</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">experienceevent-consumer</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">experienceevent-paperless-enrollment-steps</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">experienceevent-user-login-process</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">experienceevent-commerce</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">experienceevent-marketing</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">experienceevent-technical-details</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">experienceevent-support-site-search</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">experienceevent-social-network-usage-details</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">experienceevent-knowledge-base-details</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">experienceevent-enduserids</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">experienceevent-watchlist-steps</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">experienceevent-service-payment-details</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">experienceevent-pushtracking</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">experienceevent-offer-impression-details</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">experienceevent-file-upload-details</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">experienceevent-channel</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">experienceevent-financial-calculator-steps</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">experienceevent-web</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">experienceevent-privacy</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">experienceevent-search</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">experienceevent-file-download-details</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">experienceevent-advertising</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">experienceevent-loan-details</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">experienceevent-environment-details</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">experienceevent-request-credit-score-steps</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">experienceevent-media</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">experienceevent-survey-response-details</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">experienceevent-financial-account-creation-steps</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">experienceevent-application</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">experienceevent-quote-request-steps</li></a></li>
 <details>
 <summary>events</summary>
 <ul>
-<li>scorechanged</li>
-<li>linkclicks</li>
-<li>convert-lead</li>
-<li>add-to-list</li>
-<li>opportunityupdated</li>
-<li>interesting-moment</li>
-<li>formfilledout</li>
-<li>visit-webpage</li>
-<li>emailbounced</li>
-<li>emailunsubscribed</li>
-<li>new-lead</li>
-<li>remove-from-opportunity</li>
-<li>emailbouncedsoft</li>
-<li>remove-from-list</li>
-<li>add-to-opportunity</li>
-<li>statusincampaignprogressionchanged</li>
-<li>emailopened</li>
-<li>emailclicked</li>
-<li>emaildelivered</li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">scorechanged</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">linkclicks</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">convert-lead</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">add-to-list</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">opportunityupdated</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">interesting-moment</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">formfilledout</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">visit-webpage</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">emailbounced</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">emailunsubscribed</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">new-lead</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">remove-from-opportunity</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">emailbouncedsoft</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">remove-from-list</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">add-to-opportunity</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">statusincampaignprogressionchanged</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">emailopened</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">emailclicked</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">emaildelivered</li></a></li>
 </ul>
 </details>
-<li>experienceevent-card-actions</li>
-<li>experienceevent-support-request</li>
-<li>experienceevent-personal-finance-details</li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">experienceevent-card-actions</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">experienceevent-support-request</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">experienceevent-personal-finance-details</li></a></li>
 <details>
 <summary>industry-verticals</summary>
 <ul>
-<li>experienceevent-contact-request-details</li>
-<li>experienceevent-lodging-reservation</li>
-<li>experienceevent-upsell-details</li>
-<li>experienceevent-flight-reservation</li>
-<li>experienceevent-dining-reservation</li>
-<li>experienceevent-device-details</li>
-<li>experienceevent-appointment-request-steps</li>
-<li>experienceevent-credit-limit-increase-details</li>
-<li>experienceevent-upgrade-details</li>
-<li>experienceevent-bill-pay-steps</li>
-<li>experienceevent-alert-setup-steps</li>
-<li>experienceevent-claim-process</li>
-<li>experienceevent-vehicle-reservation</li>
-<li>experienceevent-flight</li>
-<li>experienceevent-autopay-enrollment-details</li>
-<li>experienceevent-reservation-details</li>
-<li>experienceevent-dispute-steps</li>
-<li>experienceevent-card-application-process</li>
-<li>experienceevent-alert-impressions</li>
-<li>experienceevent-deposit-details</li>
-<li>experienceevent-prescription-details</li>
-<li>experienceevent-balance-transfers</li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">experienceevent-contact-request-details</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">experienceevent-lodging-reservation</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">experienceevent-upsell-details</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">experienceevent-flight-reservation</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">experienceevent-dining-reservation</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">experienceevent-device-details</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">experienceevent-appointment-request-steps</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">experienceevent-credit-limit-increase-details</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">experienceevent-upgrade-details</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">experienceevent-bill-pay-steps</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">experienceevent-alert-setup-steps</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">experienceevent-claim-process</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">experienceevent-vehicle-reservation</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">experienceevent-flight</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">experienceevent-autopay-enrollment-details</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">experienceevent-reservation-details</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">experienceevent-dispute-steps</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">experienceevent-card-application-process</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">experienceevent-alert-impressions</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">experienceevent-deposit-details</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">experienceevent-prescription-details</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">experienceevent-balance-transfers</li></a></li>
 </ul>
 </details>
-<li>experienceevent-referral-steps</li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">experienceevent-referral-steps</li></a></li>
 </ul>
 </details>
 <details>
 <summary>opportunity-contact-role</summary>
 <ul>
-<li>opportunity-contact-role-details</li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">opportunity-contact-role-details</li></a></li>
 </ul>
 </details>
 <details>
 <summary>campaign</summary>
 <ul>
-<li>campaign-components</li>
-<li>campaign-details</li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">campaign-components</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">campaign-details</li></a></li>
 </ul>
 </details>
 <details>
 <summary>campaign-member</summary>
 <ul>
-<li>campaign-member-components</li>
-<li>campaign-member-details</li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">campaign-member-components</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">campaign-member-details</li></a></li>
 </ul>
 </details>
 <details>
 <summary>graphs</summary>
 <ul>
-<li>graph</li>
-<li>graph-edge</li>
-<li>graph-node</li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">graph</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">graph-edge</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">graph-node</li></a></li>
 </ul>
 </details>
 <details>
 <summary>account</summary>
 <ul>
-<li>account-person-components</li>
-<li>account-details</li>
-<li>related-accounts</li>
-<li>account-components</li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">account-person-components</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">account-details</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">related-accounts</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">account-components</li></a></li>
 </ul>
 </details>
 <details>
 <summary>deprecated</summary>
 <ul>
-<li>deprecated-profile-consent</li>
-<li>profile-identities-deprecated</li>
-<li>experienceevent-enduserids-deprecated</li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">deprecated-profile-consent</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">profile-identities-deprecated</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">experienceevent-enduserids-deprecated</li></a></li>
 </ul>
 </details>
 </ul>
@@ -728,19 +728,19 @@
 <details>
 <summary>uberschemas</summary>
 <ul>
-<li>product-generated</li>
-<li>opportunity-contact-role-generated</li>
-<li>opportunity-person-generated</li>
-<li>campaign-generated</li>
-<li>opportunity-generated</li>
-<li>profile-generated</li>
-<li>marketing-list-generated</li>
-<li>segmentdefinition-generated</li>
-<li>graphs-generated</li>
-<li>experienceevent-generated</li>
-<li>account-generated</li>
-<li>marketing-list-member-generated</li>
-<li>account-person-generated</li>
-<li>campaign-member-generated</li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">product-generated</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">opportunity-contact-role-generated</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">opportunity-person-generated</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">campaign-generated</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">opportunity-generated</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">profile-generated</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">marketing-list-generated</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">segmentdefinition-generated</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">graphs-generated</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">experienceevent-generated</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">account-generated</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">marketing-list-member-generated</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">account-person-generated</li></a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html">campaign-member-generated</li></a></li>
 </ul>
 </details>

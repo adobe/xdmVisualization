@@ -41,7 +41,7 @@ function dropDownGen(o) {
             fs.appendFileSync("prod/master/dropdowntest.md", "</details>\n", 'utf8');
         }
         else {//leaf
-            fs.appendFileSync("prod/master/dropdowntest.md", "<li>"+i+"</li>\n", 'utf8');
+            fs.appendFileSync("prod/master/dropdowntest.md", "<li><a href=\"http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html\">"+i+"</li></a></li>\n", 'utf8');
         }
     }
 
