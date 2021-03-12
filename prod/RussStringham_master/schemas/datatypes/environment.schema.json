@@ -140,31 +140,13 @@
       "meta:xdmField": "xdm:carrier",
       "tagNumber": 13
     },
-    "ipV4": {
-      "title": "IPv4",
-      "type": "string",
-      "format": "ipv4",
-      "description": "The numerical label assigned to a device participating in a computer network that uses the Internet Protocol for communication. ",
-      "meta:xdmType": "string",
-      "meta:xdmField": "xdm:ipV4",
-      "tagNumber": 14
-    },
-    "ipV6": {
-      "title": "IPv6",
-      "type": "string",
-      "format": "ipv6",
-      "description": "The numerical label assigned to a device participating in a computer network that uses the Internet Protocol for communication. ",
-      "meta:xdmType": "string",
-      "meta:xdmField": "xdm:ipV6",
-      "tagNumber": 15
-    },
     "domain": {
       "title": "Domain",
       "type": "string",
       "description": "The domain of the users ISP.",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:domain",
-      "tagNumber": 16
+      "tagNumber": 14
     },
     "ISP": {
       "title": "Internet service provider",
@@ -172,7 +154,7 @@
       "description": "The name of the user's internet service provider.",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:ISP",
-      "tagNumber": 17
+      "tagNumber": 15
     },
     "_dc": {
       "type": "object",
@@ -194,6 +176,24 @@
           "tagNumber": 1
         }
       },
+      "tagNumber": 16
+    },
+    "ipV4": {
+      "title": "IPv4",
+      "type": "string",
+      "format": "ipv4",
+      "description": "The numerical label assigned to a device participating in a computer network that uses the Internet Protocol for communication. ",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:ipV4",
+      "tagNumber": 17
+    },
+    "ipV6": {
+      "title": "IPv6",
+      "type": "string",
+      "format": "ipv6",
+      "description": "The numerical label assigned to a device participating in a computer network that uses the Internet Protocol for communication. ",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:ipV6",
       "tagNumber": 18
     }
   },

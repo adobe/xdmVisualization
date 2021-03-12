@@ -31,6 +31,20 @@
               },
               "meta:xdmField": "https://ns.adobe.com/experience/profile/identityNamespaces",
               "tagNumber": 1
+            },
+            "associatedIdentities": {
+              "type": "object",
+              "meta:xdmType": "map",
+              "additionalProperties": {
+                "type": "array",
+                "meta:xdmType": "array",
+                "tagNumber": 1,
+                "items": {
+                  "$ref": "obj13626731664241154.schema.json"
+                }
+              },
+              "meta:xdmField": "https://ns.adobe.com/experience/profile/associatedIdentities",
+              "tagNumber": 2
             }
           },
           "tagNumber": 1
@@ -109,7 +123,7 @@
           "meta:xdmField": "xdm:privacyOptOuts",
           "tagNumber": 1,
           "items": {
-            "$ref": "obj9433206694362553.schema.json"
+            "$ref": "obj1359097084507508.schema.json"
           }
         }
       },
