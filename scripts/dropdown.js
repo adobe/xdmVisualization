@@ -50,7 +50,7 @@ function dropDownGen(o) {
             fs.appendFileSync(filename, "</details>\n", 'utf8');
         }
         else {//leaf
-            fs.appendFileSync(filename, "<li><a href=\"http://opensource.adobe.com/xdmVisualization/prod/"+branch+"/"+o[i]+".html\">"+i+"</li></a></li>\n", 'utf8');
+            fs.appendFileSync(filename, "<li><a href=\"http://opensource.adobe.com/xdmVisualization/prod/"+branch+"/"+o[i]+".html\">"+i+"</a></li>\n", 'utf8');
         }
     }
 
