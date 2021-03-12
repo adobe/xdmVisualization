@@ -11,7 +11,7 @@ if (process.argv.length !=3) {
     throw err;
 }
 const branch = process.argv[2];
-const filename = "prod/"+branch+"/dropdowntest.md";
+const filename = "prod/"+branch+"/dropdown.md";
 
 async function readLines(stream) {
     const rl = readline.createInterface({
@@ -32,7 +32,6 @@ readLines(fs.createReadStream("listOfXdms.txt")).then(result => {
         dotProp.set(obj, result[i], result[i]);
         //console.log(result[i])
     }
-    fs.unlinkSync(filename);
     fs.appendFileSync(filename, "# XDM Visualization\n", 'utf8');
     fs.appendFileSync(filename, "## Git Repo Branch: " + branch + "\n", 'utf8');
     dropDownGen(obj)

@@ -52,8 +52,6 @@ cd prod/$repoBranch/
 rm index.html
 echo "# XDM Visualization" >> index.md
 echo "## Git Repo Branch: $repoBranch" >> index.md
-echo "# XDM Visualization" >> dropdown.md
-echo "## Git Repo Branch: $repoBranch" >> dropdown.md
 
 uberSchemas=()
 standardComponents=()
@@ -99,21 +97,12 @@ for i in ${standardComponents[@]}; do
 done
 
 echo "### Standard XDM Schemas" >> index.md
-echo "<details>" >> dropdown.md
-echo "<summary>Standard XDM Schemas</summary>" >> dropdown.md
-echo "<ul>" >> dropdown.md
 for i in ${uberSchemas[@]}; do
   echo "Generating HTML:" $i
   echo "[$i](http://opensource.adobe.com/xdmVisualization/prod/$repoBranch/$i.html)<br/>" >> index.md
-  echo "<li><a href=\"http://opensource.adobe.com/xdmVisualization/prod/$repoBranch/$i.html\">$i</a></li>" >> dropdown.md
 done
-echo "</ul>" >> dropdown.md
-echo "</details>" >> dropdown.md
 
 echo "### Standard Core Components" >> index.md
-echo "<details>" >> dropdown.md
-echo "<summary>Standard Core Components</summary>" >> dropdown.md
-echo "<ul>" >> dropdown.md
 
 for h in ${standardCompGrp[@]}; do
   echo "#### "$h >> index.md
@@ -122,29 +111,20 @@ for h in ${standardCompGrp[@]}; do
     then
       echo "Generating HTML:" $i
       echo "[$i](http://opensource.adobe.com/xdmVisualization/prod/$repoBranch/$i.html)<br/>" >> index.md
-      echo "<li><a href=\"http://opensource.adobe.com/xdmVisualization/prod/$repoBranch/$i.html\">$i</a></li>" >> dropdown.md
     fi
   done
 done
-echo "</ul>" >> dropdown.md
-echo "</details>" >> dropdown.md
 
 echo "### Extension Components" >> index.md
-echo "<details>" >> dropdown.md
-echo "<summary>Extension Components</summary>" >> dropdown.md
-echo "<ul>" >> dropdown.md
 for i in ${extensionComponents[@]}; do
   echo "Generating HTML:" $i
   echo "[$i](http://opensource.adobe.com/xdmVisualization/prod/$repoBranch/$i.html)<br/>" >> index.md
-  echo "<li><a href=\"http://opensource.adobe.com/xdmVisualization/prod/$repoBranch/$i.html\">$i</a></li>" >> dropdown.md
 done
-echo "</ul>" >> dropdown.md
-echo "</details>" >> dropdown.md
 
-#cd ../../
-#node ./scripts/dropdown.js $repoBranch
-(rm ../index.html; rm ../../index.html)
-git add ../../
+cd ../../
+node ./scripts/dropdown.js $repoBranch
+(rm prod/index.html; rm index.html)
+git add .
 git commit -m "merge xdm visualization for $repoBranch branch"
 git push origin
 #grunt connect:server:keepalive
