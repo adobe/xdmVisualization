@@ -4,6 +4,15 @@ const readline = require('readline');
 const fs = require('fs');
 const dotProp = require('dot-prop');
 
+const err = 'Wrong parameters!' + '\n' +
+    'Usage: node ./scripts/dropdown.js branchName' + '\n';
+
+if (process.argv.length !=3) {
+    throw err;
+}
+const branch = process.argv[2];
+const filename = "prod/"+branch+"/dropdowntest.md";
+
 async function readLines(stream) {
     const rl = readline.createInterface({
         input: stream,
@@ -23,9 +32,9 @@ readLines(fs.createReadStream("listOfXdms.txt")).then(result => {
         dotProp.set(obj, result[i], result[i]);
         //console.log(result[i])
     }
-    fs.unlinkSync("prod/master/dropdowntest.md");
-    fs.appendFileSync("prod/master/dropdowntest.md", "# XDM Visualization\n", 'utf8');
-    fs.appendFileSync("prod/master/dropdowntest.md", "## Git Repo Branch: master\n", 'utf8');
+    fs.unlinkSync(filename);
+    fs.appendFileSync(filename, "# XDM Visualization\n", 'utf8');
+    fs.appendFileSync(filename, "## Git Repo Branch: " + branch + "\n", 'utf8');
     dropDownGen(obj)
 })
 
@@ -33,15 +42,15 @@ function dropDownGen(o) {
     //console.log(JSON.stringify(o, null,2))
     for (let i in o) {
         if (o[i] !== null && typeof(o[i]) == "object") {
-            fs.appendFileSync("prod/master/dropdowntest.md", "<details>\n", 'utf8');
-            fs.appendFileSync("prod/master/dropdowntest.md", "<summary>" + i + "</summary>\n", 'utf8');
-            fs.appendFileSync("prod/master/dropdowntest.md", "<ul>\n", 'utf8');
+            fs.appendFileSync(filename, "<details>\n", 'utf8');
+            fs.appendFileSync(filename, "<summary>" + i + "</summary>\n", 'utf8');
+            fs.appendFileSync(filename, "<ul>\n", 'utf8');
             dropDownGen(o[i]);
-            fs.appendFileSync("prod/master/dropdowntest.md", "</ul>\n", 'utf8');
-            fs.appendFileSync("prod/master/dropdowntest.md", "</details>\n", 'utf8');
+            fs.appendFileSync(filename, "</ul>\n", 'utf8');
+            fs.appendFileSync(filename, "</details>\n", 'utf8');
         }
         else {//leaf
-            fs.appendFileSync("prod/master/dropdowntest.md", "<li><a href=\"http://opensource.adobe.com/xdmVisualization/prod/master/"+o[i]+".html\">"+i+"</li></a></li>\n", 'utf8');
+            fs.appendFileSync(filename, "<li><a href=\"http://opensource.adobe.com/xdmVisualization/prod/"+branch+"/"+o[i]+".html\">"+i+"</li></a></li>\n", 'utf8');
         }
     }
 
