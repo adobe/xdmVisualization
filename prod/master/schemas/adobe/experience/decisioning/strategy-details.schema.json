@@ -5,7 +5,7 @@
   "type": "object",
   "meta:extensible": true,
   "description": "Decision strategy details capture data values for a particular step that will be or was taken during the decision process.",
-  "meta:status": "experimental",
+  "meta:status": "stable",
   "meta:xdmType": "object",
   "properties": {
     "step": {
@@ -18,14 +18,14 @@
     },
     "strategyID": {
       "type": "string",
-      "title": "Step Strategy",
-      "description": "The unique identifier of the step's strategy. When executing a decision various steps are performed. Each step is performed according to a strategy and the chosen strategy is recorded to measure its performance.",
+      "title": "Step's Strategy Identifier",
+      "description": "The unique identifier of the step's strategy. When executing a decision various steps are performed. Each step is performed according to a strategy or policy and the chosen idetifier is recorded to measure its performance. This identifier could be the URI of a profile merge policy, an eligibility rule, a ML ranking strategy, a function that calculates the rank, a capping threshold or any object that signficantly contributes to the decision result.",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:strategyID",
       "tagNumber": 2
     },
     "algorithmID": {
-      "title": "Algorithm Reference",
+      "title": "Algorithm Identifier",
       "type": "string",
       "format": "uri-reference",
       "description": "Unique identifier for the algorithm used to make the decision, if applicable.",

@@ -168,7 +168,7 @@
       "meta:xdmField": "xdm:personComponents",
       "tagNumber": 11,
       "items": {
-        "$ref": "obj05866022307814367.schema.json"
+        "$ref": "obj799985818293597.schema.json"
       }
     },
     "b2b": {
@@ -1245,53 +1245,6 @@
       "meta:xdmField": "xdm:directMarketingPhone",
       "tagNumber": 31
     },
-    "anonymousHostname": {
-      "title": "Anonymous Hostname",
-      "description": "Anonymous hostname.",
-      "type": "string",
-      "meta:xdmType": "string",
-      "meta:xdmField": "xdm:anonymousHostname",
-      "tagNumber": 32
-    },
-    "inferredAddress": {
-      "title": "Inferred Address",
-      "description": "Address details inferred by reverse IP lookup of the lead’s first recorded web visit.",
-      "$ref": "../datatypes/demographic/address.schema.json",
-      "meta:xdmField": "xdm:inferredAddress",
-      "tagNumber": 33
-    },
-    "inferredCompany": {
-      "title": "Inferred Company",
-      "description": "Company name inferred by reverse IP lookup of the lead’s first recorded web visit.",
-      "type": "string",
-      "meta:xdmType": "string",
-      "meta:xdmField": "xdm:inferredCompany",
-      "tagNumber": 34
-    },
-    "inferredCompanyStatus": {
-      "title": "Inferred Company Status",
-      "description": "Status of the company name inferred by reverse IP lookup of the lead’s first recorded web visit.",
-      "type": "string",
-      "meta:xdmType": "string",
-      "meta:xdmField": "xdm:inferredCompanyStatus",
-      "tagNumber": 35
-    },
-    "inferredMetropolitanArea": {
-      "title": "Inferred Metropolitan Area",
-      "description": "Metropolitan area inferred by reverse IP lookup of lead’s first recorded web visit.",
-      "type": "string",
-      "meta:xdmType": "string",
-      "meta:xdmField": "xdm:inferredMetropolitanArea",
-      "tagNumber": 36
-    },
-    "inferredPhoneAreaCode": {
-      "title": "Inferred Phone Area Code",
-      "description": "Phone area code inferred by reverse IP lookup of lead’s first recorded web visit.",
-      "type": "string",
-      "meta:xdmType": "string",
-      "meta:xdmField": "xdm:inferredPhoneAreaCode",
-      "tagNumber": 37
-    },
     "loyalty": {
       "type": "object",
       "meta:xdmType": "object",
@@ -1368,21 +1321,21 @@
         }
       },
       "meta:xdmField": "xdm:loyalty",
-      "tagNumber": 38
+      "tagNumber": 32
     },
     "orgUnit": {
       "title": "Organizational unit",
       "$ref": "../datatypes/b2b/orgunit.schema.json",
       "description": "The unit within the organization owning the profile. This can be used to reference the organization details maintained in another dataset.",
       "meta:xdmField": "xdm:orgUnit",
-      "tagNumber": 39
+      "tagNumber": 33
     },
     "geoUnit": {
       "title": "Geographical unit",
       "$ref": "../datatypes/demographic/geounit.schema.json",
       "description": "The geographical unit within the organization owning the profile. This can be used to reference the geographical information maintained in another dataset.",
       "meta:xdmField": "xdm:geoUnit",
-      "tagNumber": 40
+      "tagNumber": 34
     },
     "preferredLanguage": {
       "title": "Preferred language",
@@ -1396,7 +1349,7 @@
       "description": "Describes the preferred system of communication used by the profile. Language codes are expressed in BCP 47 format.",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:preferredLanguage",
-      "tagNumber": 41
+      "tagNumber": 35
     },
     "profilePictureLink": {
       "title": "Profile picture link",
@@ -1404,7 +1357,7 @@
       "description": "Link to profile's picture.",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:profilePictureLink",
-      "tagNumber": 42
+      "tagNumber": 36
     },
     "emailFormat": {
       "title": "Email format",
@@ -1412,7 +1365,7 @@
       "description": "Email format preferred by the profile. This can be rich text or plain text.",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:emailFormat",
-      "tagNumber": 43
+      "tagNumber": 37
     },
     "timeZone": {
       "title": "Time zone",
@@ -1425,14 +1378,14 @@
       "description": "Describes which time zone the profile is present in, most frequently the time zone preferred by the profile. Time zones are expressed according to the IETF tz database: https://www.ietf.org/timezones/tzdb-2016i/tz-link.htm",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:timeZone",
-      "tagNumber": 44
+      "tagNumber": 38
     },
     "optInOut": {
       "title": "OptInOut",
       "$ref": "../datatypes/optinout.schema.json",
       "description": "Describes a users opting in and out preferences for communication by medium and communication type.",
       "meta:xdmField": "xdm:optInOut",
-      "tagNumber": 45
+      "tagNumber": 39
     },
     "optOutConsentLevel": {
       "type": "object",
@@ -1449,12 +1402,12 @@
           "meta:xdmField": "xdm:privacyOptOuts",
           "tagNumber": 1,
           "items": {
-            "$ref": "obj6334766186328171.schema.json"
+            "$ref": "obj05469391928225309.schema.json"
           }
         }
       },
       "meta:xdmField": "xdm:optOutConsentLevel",
-      "tagNumber": 46
+      "tagNumber": 40
     },
     "identityPrivacyInfo": {
       "title": "Identity level privacy information",
@@ -1505,7 +1458,7 @@
         "tagNumber": 1
       },
       "meta:xdmField": "xdm:identityPrivacyInfo",
-      "tagNumber": 47
+      "tagNumber": 41
     },
     "pushNotificationTokens": {
       "title": "Push notification tokens",
@@ -1517,7 +1470,7 @@
         "tagNumber": 1
       },
       "meta:xdmField": "xdm:pushNotificationTokens",
-      "tagNumber": 48
+      "tagNumber": 42
     },
     "pushNotificationDetails": {
       "title": "Push details",
@@ -1529,7 +1482,7 @@
         "tagNumber": 1
       },
       "meta:xdmField": "xdm:pushNotificationDetails",
-      "tagNumber": 49
+      "tagNumber": 43
     },
     "segments": {
       "title": "Segment membership",
@@ -1541,7 +1494,7 @@
         "tagNumber": 1
       },
       "meta:xdmField": "xdm:segments",
-      "tagNumber": 50
+      "tagNumber": 44
     },
     "segmentMembership": {
       "title": "Segment membership map",
@@ -1558,7 +1511,7 @@
         "tagNumber": 1
       },
       "meta:xdmField": "xdm:segmentMembership",
-      "tagNumber": 51
+      "tagNumber": 45
     },
     "subscriptions": {
       "title": "Subscriptions",
@@ -1570,7 +1523,7 @@
         "tagNumber": 1
       },
       "meta:xdmField": "xdm:subscriptions",
-      "tagNumber": 52
+      "tagNumber": 46
     },
     "testProfile": {
       "title": "Test profile",
@@ -1579,7 +1532,7 @@
       "default": false,
       "meta:xdmType": "boolean",
       "meta:xdmField": "xdm:testProfile",
-      "tagNumber": 53
+      "tagNumber": 47
     },
     "userAccount": {
       "type": "object",
@@ -1653,7 +1606,7 @@
         }
       },
       "meta:xdmField": "xdm:userAccount",
-      "tagNumber": 54
+      "tagNumber": 48
     }
   },
   "meta:xdmId": "https://ns.adobe.com/xdm/context/profile-generated",

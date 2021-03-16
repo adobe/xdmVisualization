@@ -205,7 +205,6 @@
 [mixins.profile.b2b-person-components](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.b2b-person-components.html)<br/>
 [mixins.profile.profile-person-details-v2](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-person-details-v2.html)<br/>
 [mixins.profile.profile-segmentation](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-segmentation.html)<br/>
-[mixins.profile.profile-inferred-person](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-inferred-person.html)<br/>
 [mixins.profile.profile-test-profile](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-test-profile.html)<br/>
 [mixins.profile.profile-work-details](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-work-details.html)<br/>
 [mixins.profile.profile-consents](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-consents.html)<br/>

@@ -564,7 +564,6 @@
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.b2b-person-components.html">b2b-person-components</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-person-details-v2.html">profile-person-details-v2</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-segmentation.html">profile-segmentation</a></li>
-<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-inferred-person.html">profile-inferred-person</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-test-profile.html">profile-test-profile</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-work-details.html">profile-work-details</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-consents.html">profile-consents</a></li>

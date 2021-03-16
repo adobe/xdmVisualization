@@ -69,6 +69,16 @@
           "meta:xdmField": "repo:name",
           "tagNumber": 1
         },
+        "repositoryID": {
+          "type": "string",
+          "description": "An optional unique identifier to reference the asset in a content repository. When Platform APIs are used to retrieve the representation the client can expect an addtional propery \"repo:resolveUrl\" to retrieve the asset.",
+          "examples": [
+            "C87932A55B06F7070A49412D@AdobeOrg"
+          ],
+          "meta:xdmType": "string",
+          "meta:xdmField": "repo:repositoryID",
+          "tagNumber": 2
+        },
         "id": {
           "type": "string",
           "description": "An optional unique identifier to reference the asset in a content repository. When Platform APIs are used to retrieve the representation the client can expect an addtional propery \"repo:resolveUrl\" to retrieve the asset.",
@@ -77,7 +87,7 @@
           ],
           "meta:xdmType": "string",
           "meta:xdmField": "repo:id",
-          "tagNumber": 2
+          "tagNumber": 3
         },
         "resolveURL": {
           "type": "string",
@@ -90,7 +100,7 @@
           ],
           "meta:xdmType": "string",
           "meta:xdmField": "repo:resolveURL",
-          "tagNumber": 3
+          "tagNumber": 4
         }
       },
       "tagNumber": 3
@@ -120,7 +130,7 @@
     "linkURL": {
       "type": "string",
       "format": "uri-reference",
-      "description": "An optional unique resource locator to link the content to. This URL is used to refer the end user to in a user agent and can be tracked.",
+      "description": "An optional unique resource locator for user interactions. This URL is used to refer the end user to in a user agent and can be tracked.",
       "examples": [
         "https://cdn.adobe.io/tracker?code=23432&redirect=/content/projectx/fragment/prod/static/1232324wd32.jpeg"
       ],

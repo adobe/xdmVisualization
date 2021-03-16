@@ -10,6 +10,19 @@
   "properties": {
     "order": {
       "properties": {
+        "orderEvaluationType": {
+          "type": "string",
+          "title": "Order Evaluation Type",
+          "enum": [
+            "static",
+            "scoringFunction",
+            "rankingStrategy"
+          ],
+          "description": "Specifies which order evaluation mechanism is used, static priority of the decision options, a scoring function that calculates a  numeric value for every option or a ranking strategy that receives a list to order it.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:orderEvaluationType",
+          "tagNumber": 1
+        },
         "function": {
           "type": "string",
           "format": "uri-reference",
@@ -17,7 +30,7 @@
           "description": "A reference to a function that computes a numerical score for this decision option. Decision options will then be ordered (ranked) by that score. The value of this property is the URI (@id) of the function to be invoked with on option at a time. See schema https://ns.adobe.com/experience/decisioning/function",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:function",
-          "tagNumber": 1
+          "tagNumber": 2
         },
         "rankingStrategy": {
           "type": "string",
@@ -26,7 +39,7 @@
           "description": "A reference to a strategy that ranks a list of decision option. Decision options will be returned in an ordered list. The value of this property is the URI (@id) of the function to be invoked with on option at a time. See schema https://ns.adobe.com/experience/decisioning/rankingStrategy",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:rankingStrategy",
-          "tagNumber": 2
+          "tagNumber": 3
         }
       },
       "meta:xdmField": "xdm:order",
