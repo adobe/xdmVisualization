@@ -464,74 +464,74 @@
           "meta:xdmField": "xdm:requestCreditScore",
           "tagNumber": 25
         },
-        "watchlistSteps": {
-          "title": "Watchlist Steps",
-          "$ref": "../datatypes/industry-verticals/tool-usage.schema.json",
-          "description": "Extension of toolUsage data type.",
-          "meta:xdmField": "xdm:watchlistSteps",
-          "tagNumber": 26
-        },
         "balanceTransfer": {
           "title": "Balance Transfer",
           "$ref": "../datatypes/industry-verticals/transaction.schema.json",
           "description": "Extension of transaction data type.",
           "meta:xdmField": "xdm:balanceTransfer",
-          "tagNumber": 27
+          "tagNumber": 26
         },
         "balanceTransferAccount": {
           "title": "Balance Transfer Account",
           "$ref": "../datatypes/industry-verticals/financial-account.schema.json",
           "description": "Extension of financialAccount data type.",
           "meta:xdmField": "xdm:balanceTransferAccount",
-          "tagNumber": 28
+          "tagNumber": 27
         },
         "billPay": {
           "title": "Bill Pay Steps",
           "$ref": "../datatypes/industry-verticals/tool-usage.schema.json",
           "description": "Extension of toolUsage data type.",
           "meta:xdmField": "xdm:billPay",
-          "tagNumber": 29
+          "tagNumber": 28
         },
         "billPayAccount": {
           "title": "Bill Pay Account",
           "$ref": "../datatypes/industry-verticals/financial-account.schema.json",
           "description": "Extension of financialAccount data type.",
           "meta:xdmField": "xdm:billPayAccount",
-          "tagNumber": 30
+          "tagNumber": 29
         },
         "cardApplicationComparisons": {
           "title": "Card Comparisons",
           "$ref": "../datatypes/industry-verticals/comparisons.schema.json",
           "description": "Extension of comparison data type.",
           "meta:xdmField": "xdm:cardApplicationComparisons",
-          "tagNumber": 31
+          "tagNumber": 30
         },
         "cardApplicationSteps": {
           "title": "Card Application Steps",
           "$ref": "../datatypes/industry-verticals/form-applications.schema.json",
           "description": "Extension of form application data type.",
           "meta:xdmField": "xdm:cardApplicationSteps",
-          "tagNumber": 32
+          "tagNumber": 31
         },
         "creditLimitIncrease": {
           "title": "Credit Limit Increase",
           "$ref": "../datatypes/industry-verticals/form-applications.schema.json",
           "description": "Extension of form application data type.",
           "meta:xdmField": "xdm:creditLimitIncrease",
-          "tagNumber": 33
+          "tagNumber": 32
         },
         "deposit": {
           "title": "Deposit",
           "$ref": "../datatypes/industry-verticals/transaction.schema.json",
           "description": "Extension of transaction data type.",
           "meta:xdmField": "xdm:deposit",
-          "tagNumber": 34
+          "tagNumber": 33
         },
         "depositAccount": {
           "title": "Deposit Account",
           "$ref": "../datatypes/industry-verticals/financial-account.schema.json",
           "description": "Extension of financialAccount data type.",
           "meta:xdmField": "xdm:depositAccount",
+          "tagNumber": 34
+        },
+        "watchlistSteps": {
+          "title": "Watchlist Steps",
+          "$ref": "../datatypes/industry-verticals/tool-usage.schema.json",
+          "description": "Extension of toolUsage data type.",
+          "meta:xdmField": "xdm:watchlistSteps",
           "tagNumber": 35
         }
       },
@@ -1340,19 +1340,26 @@
       "type": "object",
       "meta:xdmType": "object",
       "properties": {
+        "upgradeSteps": {
+          "title": "Upgrade Steps",
+          "$ref": "../datatypes/industry-verticals/tool-usage.schema.json",
+          "description": "Extension of toolUsage data type.",
+          "meta:xdmField": "xdm:upgradeSteps",
+          "tagNumber": 1
+        },
         "upgradeOffer": {
           "title": "Upgrade Offer",
           "$ref": "../mixins/experience-event/experienceevent-offer-impression-details.schema.json",
           "description": "Extension of offer details data type.",
           "meta:xdmField": "xdm:upgradeOffer",
-          "tagNumber": 1
+          "tagNumber": 2
         },
         "upgradeTransaction": {
           "title": "Upgrade Transaction",
           "$ref": "../datatypes/industry-verticals/transaction.schema.json",
           "description": "Extension of transaction data type.",
           "meta:xdmField": "xdm:upgradeTransaction",
-          "tagNumber": 2
+          "tagNumber": 3
         }
       },
       "meta:xdmField": "xdm:upgrade",
@@ -1362,19 +1369,26 @@
       "type": "object",
       "meta:xdmType": "object",
       "properties": {
+        "upsellSteps": {
+          "title": "Upsell Steps",
+          "$ref": "../datatypes/industry-verticals/tool-usage.schema.json",
+          "description": "Extension of toolUsage data type.",
+          "meta:xdmField": "xdm:upsellSteps",
+          "tagNumber": 1
+        },
         "upsellOffer": {
           "title": "Upsell Offer",
           "$ref": "../mixins/experience-event/experienceevent-offer-impression-details.schema.json",
           "description": "Extension of offer details data type.",
           "meta:xdmField": "xdm:upsellOffer",
-          "tagNumber": 1
+          "tagNumber": 2
         },
         "upsellTransaction": {
           "title": "Upsell Transaction",
           "$ref": "../datatypes/industry-verticals/transaction.schema.json",
           "description": "Extension of transaction data type.",
           "meta:xdmField": "xdm:upsellTransaction",
-          "tagNumber": 2
+          "tagNumber": 3
         }
       },
       "meta:xdmField": "xdm:upsell",

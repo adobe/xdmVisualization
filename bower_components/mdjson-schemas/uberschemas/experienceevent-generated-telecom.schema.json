@@ -856,19 +856,26 @@
       "type": "object",
       "meta:xdmType": "object",
       "properties": {
+        "upgradeSteps": {
+          "title": "Upgrade Steps",
+          "$ref": "../datatypes/industry-verticals/tool-usage.schema.json",
+          "description": "Extension of toolUsage data type.",
+          "meta:xdmField": "xdm:upgradeSteps",
+          "tagNumber": 1
+        },
         "upgradeOffer": {
           "title": "Upgrade Offer",
           "$ref": "../mixins/experience-event/experienceevent-offer-impression-details.schema.json",
           "description": "Extension of offer details data type.",
           "meta:xdmField": "xdm:upgradeOffer",
-          "tagNumber": 1
+          "tagNumber": 2
         },
         "upgradeTransaction": {
           "title": "Upgrade Transaction",
           "$ref": "../datatypes/industry-verticals/transaction.schema.json",
           "description": "Extension of transaction data type.",
           "meta:xdmField": "xdm:upgradeTransaction",
-          "tagNumber": 2
+          "tagNumber": 3
         }
       },
       "meta:xdmField": "xdm:upgrade",
@@ -878,19 +885,26 @@
       "type": "object",
       "meta:xdmType": "object",
       "properties": {
+        "upsellSteps": {
+          "title": "Upsell Steps",
+          "$ref": "../datatypes/industry-verticals/tool-usage.schema.json",
+          "description": "Extension of toolUsage data type.",
+          "meta:xdmField": "xdm:upsellSteps",
+          "tagNumber": 1
+        },
         "upsellOffer": {
           "title": "Upsell Offer",
           "$ref": "../mixins/experience-event/experienceevent-offer-impression-details.schema.json",
           "description": "Extension of offer details data type.",
           "meta:xdmField": "xdm:upsellOffer",
-          "tagNumber": 1
+          "tagNumber": 2
         },
         "upsellTransaction": {
           "title": "Upsell Transaction",
           "$ref": "../datatypes/industry-verticals/transaction.schema.json",
           "description": "Extension of transaction data type.",
           "meta:xdmField": "xdm:upsellTransaction",
-          "tagNumber": 2
+          "tagNumber": 3
         }
       },
       "meta:xdmField": "xdm:upsell",

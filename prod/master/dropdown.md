@@ -600,7 +600,6 @@
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.experienceevent-social-network-usage-details.html">experienceevent-social-network-usage-details</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.experienceevent-knowledge-base-details.html">experienceevent-knowledge-base-details</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.experienceevent-enduserids.html">experienceevent-enduserids</a></li>
-<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.experienceevent-watchlist-steps.html">experienceevent-watchlist-steps</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.experienceevent-service-payment-details.html">experienceevent-service-payment-details</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.experienceevent-pushtracking.html">experienceevent-pushtracking</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.experienceevent-offer-impression-details.html">experienceevent-offer-impression-details</a></li>
@@ -654,6 +653,7 @@
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.industry-verticals.experienceevent-lodging-reservation.html">experienceevent-lodging-reservation</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.industry-verticals.experienceevent-upsell-details.html">experienceevent-upsell-details</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.industry-verticals.experienceevent-flight-reservation.html">experienceevent-flight-reservation</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.industry-verticals.experienceevent-watchlist-steps.html">experienceevent-watchlist-steps</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.industry-verticals.experienceevent-dining-reservation.html">experienceevent-dining-reservation</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.industry-verticals.experienceevent-device-details.html">experienceevent-device-details</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.industry-verticals.experienceevent-appointment-request-steps.html">experienceevent-appointment-request-steps</a></li>
@@ -662,6 +662,7 @@
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.industry-verticals.experienceevent-bill-pay-steps.html">experienceevent-bill-pay-steps</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.industry-verticals.experienceevent-alert-setup-steps.html">experienceevent-alert-setup-steps</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.industry-verticals.experienceevent-claim-process.html">experienceevent-claim-process</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.industry-verticals.experienceevent-reservation-search.html">experienceevent-reservation-search</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.industry-verticals.experienceevent-vehicle-reservation.html">experienceevent-vehicle-reservation</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.industry-verticals.experienceevent-flight.html">experienceevent-flight</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.industry-verticals.experienceevent-autopay-enrollment-details.html">experienceevent-autopay-enrollment-details</a></li>

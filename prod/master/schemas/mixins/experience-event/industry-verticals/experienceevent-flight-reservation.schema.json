@@ -132,13 +132,21 @@
           "meta:xdmField": "xdm:cancellation",
           "tagNumber": 3
         },
+        "confirmationNumber": {
+          "title": "Confirmation Number",
+          "type": "string",
+          "description": "Tracks the reservation confirmation number/identifier.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:confirmationNumber",
+          "tagNumber": 4
+        },
         "created": {
           "title": "Created",
           "type": "integer",
           "description": "Tracked when a reservation has been created.",
           "meta:xdmType": "int",
           "meta:xdmField": "xdm:created",
-          "tagNumber": 4
+          "tagNumber": 5
         },
         "currencyCode": {
           "title": "Currency Code",
@@ -147,7 +155,7 @@
           "pattern": "^[A-Z]{3}$",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:currencyCode",
-          "tagNumber": 5
+          "tagNumber": 6
         },
         "endDate": {
           "title": "End Date",
@@ -156,7 +164,7 @@
           "description": "The end drop-off/return/check-out date of the reservation.",
           "meta:xdmType": "date-time",
           "meta:xdmField": "xdm:endDate",
-          "tagNumber": 6
+          "tagNumber": 7
         },
         "ID": {
           "title": "ID",
@@ -164,14 +172,14 @@
           "description": "Tracks the reservation number/identifier.",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:ID",
-          "tagNumber": 7
+          "tagNumber": 8
         },
         "itemComparison": {
           "title": "Item Comparison",
           "$ref": "../../../datatypes/industry-verticals/comparisons.schema.json",
           "description": "Used to track room, flight, vehicle, or restaurant comparisons on a site or an app.",
           "meta:xdmField": "xdm:itemComparison",
-          "tagNumber": 8
+          "tagNumber": 9
         },
         "length": {
           "title": "Length",
@@ -179,7 +187,7 @@
           "description": "Tracks the total number of days for a reservation.",
           "meta:xdmType": "int",
           "meta:xdmField": "xdm:length",
-          "tagNumber": 9
+          "tagNumber": 10
         },
         "modification": {
           "title": "Modification",
@@ -187,7 +195,7 @@
           "description": "Captured when a reservation has been modified.",
           "meta:xdmType": "int",
           "meta:xdmField": "xdm:modification",
-          "tagNumber": 10
+          "tagNumber": 11
         },
         "modificationDate": {
           "title": "Modification Date",
@@ -196,14 +204,14 @@
           "description": "Tracks when a reservation has been modified.",
           "meta:xdmType": "date-time",
           "meta:xdmField": "xdm:modificationDate",
-          "tagNumber": 11
+          "tagNumber": 12
         },
         "nonRefundableAmount": {
           "title": "Non-Refundable Amount",
           "$ref": "../../../datatypes/currency.schema.json",
           "description": "Amount of the reservation price that is marked as non-refundable.",
           "meta:xdmField": "xdm:nonRefundableAmount",
-          "tagNumber": 12
+          "tagNumber": 13
         },
         "numberOfAdults": {
           "title": "Number of Adults",
@@ -211,7 +219,7 @@
           "description": "Captures the number of adults associated with the reservation.",
           "meta:xdmType": "int",
           "meta:xdmField": "xdm:numberOfAdults",
-          "tagNumber": 13
+          "tagNumber": 14
         },
         "numberOfChildren": {
           "title": "Number of Children",
@@ -219,14 +227,14 @@
           "description": "Captures the number of children associated with the reservation.",
           "meta:xdmType": "int",
           "meta:xdmField": "xdm:numberOfChildren",
-          "tagNumber": 14
+          "tagNumber": 15
         },
         "processSteps": {
           "title": "Process Steps",
           "$ref": "../../../datatypes/industry-verticals/tool-usage.schema.json",
           "description": "Extension of toolUsage data type.",
           "meta:xdmField": "xdm:processSteps",
-          "tagNumber": 15
+          "tagNumber": 16
         },
         "purpose": {
           "title": "Purpose",
@@ -238,14 +246,14 @@
           "description": "Tracks the purpose of the reservation, typically either business or personal.",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:purpose",
-          "tagNumber": 16
+          "tagNumber": 17
         },
         "rackrate": {
           "title": "Rack Rate",
           "$ref": "../../../datatypes/currency.schema.json",
           "description": "Cost for the same day reservation without prior booking arrangements.",
           "meta:xdmField": "xdm:rackrate",
-          "tagNumber": 17
+          "tagNumber": 18
         },
         "startDate": {
           "title": "Start Date",
@@ -254,14 +262,14 @@
           "description": "The start pick-up/outbound/check-in date of the reservation.",
           "meta:xdmType": "date-time",
           "meta:xdmField": "xdm:startDate",
-          "tagNumber": 18
+          "tagNumber": 19
         },
         "transaction": {
           "title": "Transaction",
           "$ref": "../../../datatypes/industry-verticals/transaction.schema.json",
           "description": "Extension of transaction data type.",
           "meta:xdmField": "xdm:transaction",
-          "tagNumber": 19
+          "tagNumber": 20
         },
         "triptype": {
           "title": "Trip Type",
@@ -274,7 +282,7 @@
           "description": "Indicates if the reservation is for a one way, round trip, or multi-city.",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:triptype",
-          "tagNumber": 20
+          "tagNumber": 21
         },
         "type": {
           "title": "Type",
@@ -282,7 +290,7 @@
           "description": "Records the type of reservation being placed.",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:type",
-          "tagNumber": 21
+          "tagNumber": 22
         }
       },
       "meta:xdmField": "xdm:reservations",
