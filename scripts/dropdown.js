@@ -11,7 +11,7 @@ if (process.argv.length !=3) {
     throw err;
 }
 const branch = process.argv[2];
-const filename = "prod/"+branch+"/dropdown.md";
+const filename = "prod/"+branch+"/index.md";
 
 async function readLines(stream) {
     const rl = readline.createInterface({

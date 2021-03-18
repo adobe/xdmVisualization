@@ -50,8 +50,8 @@ grunt prod
 #generate xdm schema visualization pages
 cd prod/$repoBranch/
 rm index.html
-echo "# XDM Visualization" >> index.md
-echo "## Git Repo Branch: $repoBranch" >> index.md
+echo "# XDM Visualization" >> list.md
+echo "## Git Repo Branch: $repoBranch" >> list.md
 
 uberSchemas=()
 standardComponents=()
@@ -96,29 +96,29 @@ for i in ${standardComponents[@]}; do
   fi
 done
 
-echo "### Standard XDM Schemas" >> index.md
+echo "### Standard XDM Schemas" >> list.md
 for i in ${uberSchemas[@]}; do
   echo "Generating HTML:" $i
-  echo "[$i](http://opensource.adobe.com/xdmVisualization/prod/$repoBranch/$i.html)<br/>" >> index.md
+  echo "[$i](http://opensource.adobe.com/xdmVisualization/prod/$repoBranch/$i.html)<br/>" >> list.md
 done
 
-echo "### Standard Core Components" >> index.md
+echo "### Standard Core Components" >> list.md
 
 for h in ${standardCompGrp[@]}; do
-  echo "#### "$h >> index.md
+  echo "#### "$h >> list.md
   for i in ${standardComponents[@]}; do
     if [[ $i == $h.* ]]
     then
       echo "Generating HTML:" $i
-      echo "[$i](http://opensource.adobe.com/xdmVisualization/prod/$repoBranch/$i.html)<br/>" >> index.md
+      echo "[$i](http://opensource.adobe.com/xdmVisualization/prod/$repoBranch/$i.html)<br/>" >> list.md
     fi
   done
 done
 
-echo "### Extension Components" >> index.md
+echo "### Extension Components" >> list.md
 for i in ${extensionComponents[@]}; do
   echo "Generating HTML:" $i
-  echo "[$i](http://opensource.adobe.com/xdmVisualization/prod/$repoBranch/$i.html)<br/>" >> index.md
+  echo "[$i](http://opensource.adobe.com/xdmVisualization/prod/$repoBranch/$i.html)<br/>" >> list.md
 done
 
 cd ../../
