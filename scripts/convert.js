@@ -17,8 +17,7 @@ function process(o, file) {
             }
 
             if (o[i]["meta:status"] && (o[i]["meta:status"] == "deprecated") && !o[i].hasOwnProperty("$schema")) {
-                delete o[i];
-
+                delete o[i];//remove deprecated fields
             }
             if (o[i] !== null && typeof(o[i]) == 'object') {
                 //going one step down in the object tree!!

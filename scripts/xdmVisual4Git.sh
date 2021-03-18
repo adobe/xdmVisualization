@@ -127,4 +127,4 @@ node ./scripts/dropdown.js $repoBranch
 git add .
 git commit -m "merge xdm visualization for $repoBranch branch"
 git push origin
-grunt connect:server:keepalive
+#grunt connect:server:keepalive
