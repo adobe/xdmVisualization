@@ -6,6 +6,7 @@ const glob = require('glob');
 const masterSchemaFolder = 'bower_components/mdjson-schemas';
 
 let schemaFiles = glob.sync(masterSchemaFolder + '/**/*.schema.json');
+let deprecated = [];
 
 function process(o, file) {
     for (let i in o) {
@@ -44,8 +45,14 @@ function convertArrayItems(files) {
             throw('Invalid file for convertion!');
         }
         process(originalSchema, file);
+        if (originalSchema["meta:status"] && originalSchema["meta:status"] == "deprecated") {
+            deprecated.push(file)
+        }
         fs.writeFileSync(file, JSON.stringify(originalSchema,null, 2), 'utf8');
     });
 }
 
 convertArrayItems(schemaFiles);
+for (let i in deprecated) {//removed deprecated from treeview
+    fs.unlinkSync(deprecated[i]);
+}

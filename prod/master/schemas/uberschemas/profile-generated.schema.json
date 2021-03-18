@@ -144,7 +144,7 @@
     "consentsAndPreferences": {
       "title": "Global Privacy/Marketing Preference Values",
       "description": "Global (User/Profile-level) Privacy/Personalization/Marketing Preferences.",
-      "$ref": "../datatypes/deprecated-consentpreferences.schema.json",
+      "$ref": "../datatypes/consent-preferences.schema.json",
       "meta:xdmField": "xdm:consentsAndPreferences",
       "tagNumber": 9
     },
@@ -168,7 +168,7 @@
       "meta:xdmField": "xdm:personComponents",
       "tagNumber": 11,
       "items": {
-        "$ref": "obj8378528506221046.schema.json"
+        "$ref": "obj8655886539840301.schema.json"
       }
     },
     "b2b": {
@@ -1402,7 +1402,7 @@
           "meta:xdmField": "xdm:privacyOptOuts",
           "tagNumber": 1,
           "items": {
-            "$ref": "obj4984989631095036.schema.json"
+            "$ref": "obj25087300868595674.schema.json"
           }
         }
       },

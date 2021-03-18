@@ -39,7 +39,6 @@
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.adcloud.searchadvertising.adgroup.html">adgroup</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.adcloud.searchadvertising.portfolio.html">portfolio</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.adcloud.searchadvertising.campaign.html">campaign</a></li>
-<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.adcloud.searchadvertising.platform.html">platform</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.adcloud.searchadvertising.aggregateperformancebyadbykeyword.html">aggregateperformancebyadbykeyword</a></li>
 </ul>
 </details>
@@ -116,20 +115,17 @@
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.decisioning.activity-detail.html">activity-detail</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.decisioning.lifecycle-status.html">lifecycle-status</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.decisioning.proposition.html">proposition</a></li>
-<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.decisioning.proposition-details.html">proposition-details</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.decisioning.experienceevent-proposition-interaction.html">experienceevent-proposition-interaction</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.decisioning.option-detail.html">option-detail</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.decisioning.calendar-constraint-details.html">calendar-constraint-details</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.decisioning.calendar-constraints.html">calendar-constraints</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.decisioning.placement.html">placement</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.decisioning.tags.html">tags</a></li>
-<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.decisioning.decisionevent-details.html">decisionevent-details</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.decisioning.decisionevent-all.html">decisionevent-all</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.decisioning.scope-details.html">scope-details</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.decisioning.placement-detail.html">placement-detail</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.decisioning.contents.html">contents</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.decisioning.personalized-content-option.html">personalized-content-option</a></li>
-<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.decisioning.proposition-detail.html">proposition-detail</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.decisioning.fallback-content-option.html">fallback-content-option</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.decisioning.proposition-metric-profile.html">proposition-metric-profile</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.decisioning.option-selection-details.html">option-selection-details</a></li>
@@ -268,12 +264,6 @@
 </ul>
 </details>
 <details>
-<summary>common</summary>
-<ul>
-<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/common.identity.html">identity</a></li>
-</ul>
-</details>
-<details>
 <summary>airship</summary>
 <ul>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/airship.airship-event.html">airship-event</a></li>
@@ -370,15 +360,12 @@
 <ul>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.b2b.account-organization.html">account-organization</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.b2b.organization.html">organization</a></li>
-<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.b2b.b2b-source.html">b2b-source</a></li>
-<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.b2b.b2b-account.html">b2b-account</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.b2b.orgunit.html">orgunit</a></li>
 </ul>
 </details>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.player-state.html">player-state</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.namespace.html">namespace</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.search.html">search</a></li>
-<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.deprecated-consentpreferences.html">deprecated-consentpreferences</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.browserdetails.html">browserdetails</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.identity.html">identity</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.segmentidentity.html">segmentidentity</a></li>
@@ -523,8 +510,6 @@
 <summary>opportunity</summary>
 <ul>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.opportunity.opportunity-details.html">opportunity-details</a></li>
-<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.opportunity.opportunity-person-components.html">opportunity-person-components</a></li>
-<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.opportunity.opportunity-components.html">opportunity-components</a></li>
 </ul>
 </details>
 <details>
@@ -552,13 +537,6 @@
 </ul>
 </details>
 <details>
-<summary>marketing-list</summary>
-<ul>
-<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.marketing-list.marketing-list-member-components.html">marketing-list-member-components</a></li>
-<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.marketing-list.marketing-list-components.html">marketing-list-components</a></li>
-</ul>
-</details>
-<details>
 <summary>profile</summary>
 <ul>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.b2b-person-components.html">b2b-person-components</a></li>
@@ -577,7 +555,6 @@
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-subscriptions.html">profile-subscriptions</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.b2b-person-details.html">b2b-person-details</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-privacy.html">profile-privacy</a></li>
-<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-push-details.html">profile-push-details</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-other-work-details.html">profile-other-work-details</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-owning-entities.html">profile-owning-entities</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-person-details.html">profile-person-details</a></li>
@@ -687,14 +664,12 @@
 <details>
 <summary>campaign</summary>
 <ul>
-<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.campaign.campaign-components.html">campaign-components</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.campaign.campaign-details.html">campaign-details</a></li>
 </ul>
 </details>
 <details>
 <summary>campaign-member</summary>
 <ul>
-<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.campaign-member.campaign-member-components.html">campaign-member-components</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.campaign-member.campaign-member-details.html">campaign-member-details</a></li>
 </ul>
 </details>
@@ -709,18 +684,8 @@
 <details>
 <summary>account</summary>
 <ul>
-<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.account.account-person-components.html">account-person-components</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.account.account-details.html">account-details</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.account.related-accounts.html">related-accounts</a></li>
-<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.account.account-components.html">account-components</a></li>
-</ul>
-</details>
-<details>
-<summary>deprecated</summary>
-<ul>
-<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.deprecated.deprecated-profile-consent.html">deprecated-profile-consent</a></li>
-<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.deprecated.profile-identities-deprecated.html">profile-identities-deprecated</a></li>
-<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.deprecated.experienceevent-enduserids-deprecated.html">experienceevent-enduserids-deprecated</a></li>
 </ul>
 </details>
 </ul>

@@ -56,7 +56,7 @@
     },
     "decisionEventDetails": {
       "meta:status": "deprecated",
-      "$ref": "decisionevent-details.schema.json",
+      "$ref": "../../../adobe/experience/decisioning/decisionevent-details.schema.json",
       "title": "Decision Event Details (deprecated)",
       "description": "A snapshot of properties from the decision event when it occured. (deprecated)",
       "meta:xdmField": "xdm:decisionEventDetails",
