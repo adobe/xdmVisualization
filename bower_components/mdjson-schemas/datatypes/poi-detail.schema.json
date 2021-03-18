@@ -8,15 +8,6 @@
   "meta:status": "stable",
   "meta:xdmType": "object",
   "properties": {
-    "POIID": {
-      "title": "POI identity",
-      "type": "string",
-      "meta:status": "deprecated",
-      "description": "The unique identifier of the POI.",
-      "meta:xdmType": "string",
-      "meta:xdmField": "xdm:POIID",
-      "tagNumber": 1
-    },
     "poiID": {
       "title": "POI Identity",
       "type": "string",

@@ -96,19 +96,6 @@
       "meta:xdmField": "xdm:search",
       "tagNumber": 11
     },
-    "segmentMemberships": {
-      "title": "Segment Memberships",
-      "meta:status": "deprecated",
-      "description": "The segments associated with this ExperienceEvent. Deprecated, use `xdm:segmentMembership` instead.",
-      "type": "array",
-      "meta:xdmType": "array",
-      "items": {
-        "$ref": "../../datatypes/segmentmembershipitem.schema.json",
-        "tagNumber": 1
-      },
-      "meta:xdmField": "xdm:segmentMemberships",
-      "tagNumber": 12
-    },
     "segmentMembership": {
       "title": "Segment Membership Map",
       "type": "object",
@@ -10578,24 +10565,6 @@
               "title": "Environment",
               "meta:xdmType": "object",
               "properties": {
-                "browserID": {
-                  "title": "Browser ID",
-                  "meta:status": "deprecated",
-                  "type": "integer",
-                  "description": "The Adobe Analytics identifier for the browser used. Deprecated, use xdm:browserIDStr instead.",
-                  "meta:xdmType": "int",
-                  "meta:xdmField": "xdm:browserID",
-                  "tagNumber": 1
-                },
-                "operatingSystemID": {
-                  "title": "Operating System ID",
-                  "meta:status": "deprecated",
-                  "type": "integer",
-                  "description": "The Adobe Analytics identifier of the operating system used. Deprecated, use xdm:operatingSystemIDStr instead.",
-                  "meta:xdmType": "int",
-                  "meta:xdmField": "xdm:operatingSystemID",
-                  "tagNumber": 2
-                },
                 "browserIDStr": {
                   "title": "Browser ID",
                   "type": "string",

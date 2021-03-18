@@ -40,7 +40,7 @@
                 "meta:xdmType": "array",
                 "tagNumber": 1,
                 "items": {
-                  "$ref": "obj1213164083909668.schema.json"
+                  "$ref": "obj33145464781629475.schema.json"
                 }
               },
               "meta:xdmField": "https://ns.adobe.com/experience/profile/associatedIdentities",
@@ -79,18 +79,6 @@
       "meta:xdmField": "xdm:identityMap",
       "tagNumber": 3
     },
-    "segments": {
-      "title": "Segment membership",
-      "meta:status": "deprecated",
-      "type": "array",
-      "meta:xdmType": "array",
-      "items": {
-        "$ref": "../../../datatypes/segmentmembership.schema.json",
-        "tagNumber": 1
-      },
-      "meta:xdmField": "xdm:segments",
-      "tagNumber": 4
-    },
     "segmentMembership": {
       "title": "Segment membership map",
       "type": "object",
@@ -107,28 +95,6 @@
       },
       "meta:xdmField": "xdm:segmentMembership",
       "tagNumber": 5
-    },
-    "optOutConsentLevel": {
-      "type": "object",
-      "title": "Opt-out consent level (deprecated)",
-      "description": "Opt-out consent level (deprecated).",
-      "meta:status": "deprecated",
-      "meta:xdmType": "object",
-      "properties": {
-        "privacyOptOuts": {
-          "title": "Privacy opt-outs (deprecated)",
-          "description": "Encapsulates different opt-out types for data privacy (deprecated).",
-          "type": "array",
-          "meta:xdmType": "array",
-          "meta:xdmField": "xdm:privacyOptOuts",
-          "tagNumber": 1,
-          "items": {
-            "$ref": "obj5470755138802879.schema.json"
-          }
-        }
-      },
-      "meta:xdmField": "xdm:optOutConsentLevel",
-      "tagNumber": 6
     },
     "identityPrivacyInfo": {
       "title": "Identity level privacy information",

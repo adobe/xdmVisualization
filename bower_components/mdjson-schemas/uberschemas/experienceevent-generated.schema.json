@@ -261,14 +261,6 @@
       "meta:xdmField": "xdm:eventMergeId",
       "tagNumber": 5
     },
-    "endUserIDs": {
-      "meta:status": "deprecated",
-      "title": "End-User IDs",
-      "$ref": "../datatypes/enduserids.schema.json",
-      "description": "Condensed, normalized encapsulation of all end-user identifiers. Deprecated, use `xdm:identityMap` instead.",
-      "meta:xdmField": "xdm:endUserIDs",
-      "tagNumber": 6
-    },
     "listOperations": {
       "title": "List Operations",
       "type": "object",
@@ -323,7 +315,7 @@
           "meta:xdmField": "xdm:dataValueChanges",
           "tagNumber": 4,
           "items": {
-            "$ref": "obj134741726612841.schema.json"
+            "$ref": "obj7058680084881936.schema.json"
           }
         }
       },
@@ -1345,19 +1337,6 @@
       "description": "Media activity information related to the experience event.",
       "meta:xdmField": "xdm:media",
       "tagNumber": 23
-    },
-    "segmentMemberships": {
-      "title": "Segment Memberships",
-      "meta:status": "deprecated",
-      "description": "The segments associated with this ExperienceEvent. Deprecated, use `xdm:segmentMembership` instead.",
-      "type": "array",
-      "meta:xdmType": "array",
-      "items": {
-        "$ref": "../datatypes/segmentmembershipitem.schema.json",
-        "tagNumber": 1
-      },
-      "meta:xdmField": "xdm:segmentMemberships",
-      "tagNumber": 24
     },
     "segmentMembership": {
       "title": "Segment Membership Map",

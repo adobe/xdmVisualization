@@ -41,17 +41,7 @@
     "_schema": {
       "type": "object",
       "meta:xdmType": "object",
-      "properties": {
-        "description": {
-          "title": "Description",
-          "type": "string",
-          "description": "The localized description of the product.",
-          "meta:status": "deprecated",
-          "meta:xdmType": "string",
-          "meta:xdmField": "schema:description",
-          "tagNumber": 1
-        }
-      },
+      "properties": {},
       "tagNumber": 4
     },
     "productDescription": {
@@ -130,15 +120,6 @@
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:masterProductDescription",
       "tagNumber": 12
-    },
-    "fabrication": {
-      "title": "Fabrication",
-      "type": "string",
-      "description": "Primary material of the product construction.",
-      "meta:status": "deprecated",
-      "meta:xdmType": "string",
-      "meta:xdmField": "xdm:fabrication",
-      "tagNumber": 13
     },
     "material": {
       "title": "Material",

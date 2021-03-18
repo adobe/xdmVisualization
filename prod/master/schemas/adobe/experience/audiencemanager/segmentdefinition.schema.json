@@ -43,15 +43,6 @@
       "meta:xdmField": "xdm:segmentExpression",
       "tagNumber": 1
     },
-    "segmentFolderId": {
-      "title": "Folder Id",
-      "type": "string",
-      "description": "id of parent folder if present",
-      "meta:status": "deprecated",
-      "meta:xdmType": "string",
-      "meta:xdmField": "xdm:segmentFolderId",
-      "tagNumber": 2
-    },
     "segmentSubType": {
       "title": "Sub Type",
       "type": "string",

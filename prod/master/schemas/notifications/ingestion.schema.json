@@ -138,17 +138,6 @@
       "description": "Number of records failed to ingest.",
       "meta:xdmField": "xdm:failedRecords",
       "tagNumber": 14
-    },
-    "errors": {
-      "type": "array",
-      "description": "A list of problems encountered during this ingestion process.",
-      "meta:status": "deprecated",
-      "meta:xdmType": "array",
-      "meta:xdmField": "xdm:errors",
-      "tagNumber": 15,
-      "items": {
-        "$ref": "obj6476654990166528.schema.json"
-      }
     }
   },
   "meta:xdmId": "https://ns.adobe.com/xdm/common/notifications/ingestion",

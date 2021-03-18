@@ -8,14 +8,6 @@
   "meta:status": "stable",
   "meta:xdmType": "object",
   "properties": {
-    "POIDetail": {
-      "title": "POI detail",
-      "meta:status": "deprecated",
-      "description": "Detail of the POI that cause the event.",
-      "$ref": "../poi-detail.schema.json",
-      "meta:xdmField": "xdm:POIDetail",
-      "tagNumber": 1
-    },
     "poiDetail": {
       "title": "POI detail",
       "description": "Detail of the POI that cause the event.",

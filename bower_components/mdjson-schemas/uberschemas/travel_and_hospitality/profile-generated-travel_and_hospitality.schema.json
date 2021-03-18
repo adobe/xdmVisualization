@@ -241,28 +241,6 @@
       "meta:xdmField": "xdm:faxPhone",
       "tagNumber": 13
     },
-    "optOutConsentLevel": {
-      "type": "object",
-      "title": "Opt-out consent level (deprecated)",
-      "description": "Opt-out consent level (deprecated).",
-      "meta:status": "deprecated",
-      "meta:xdmType": "object",
-      "properties": {
-        "privacyOptOuts": {
-          "title": "Privacy opt-outs (deprecated)",
-          "description": "Encapsulates different opt-out types for data privacy (deprecated).",
-          "type": "array",
-          "meta:xdmType": "array",
-          "meta:xdmField": "xdm:privacyOptOuts",
-          "tagNumber": 1,
-          "items": {
-            "$ref": "obj6721375512663526.schema.json"
-          }
-        }
-      },
-      "meta:xdmField": "xdm:optOutConsentLevel",
-      "tagNumber": 14
-    },
     "identityPrivacyInfo": {
       "title": "Identity level privacy information",
       "description": "Captured privacy information for identities in profile.",

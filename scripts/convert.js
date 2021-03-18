@@ -15,6 +15,11 @@ function process(o, file) {
                 o.id = o['meta:altId'];
                 o.$id = o['meta:altId'];//it is ok ending up two same ids after conversion
             }
+
+            if (o[i]["meta:status"] && (o[i]["meta:status"] == "deprecated") && !o[i].hasOwnProperty("$schema")) {
+                delete o[i];
+
+            }
             if (o[i] !== null && typeof(o[i]) == 'object') {
                 //going one step down in the object tree!!
                 process(o[i], file);

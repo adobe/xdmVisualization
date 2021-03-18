@@ -43,40 +43,13 @@
     "_id3": {
       "type": "object",
       "meta:xdmType": "object",
-      "properties": {
-        "Audio": {
-          "title": "Audio",
-          "description": "Metadata specific to audio content (record label, radio station, etc.).",
-          "$ref": "../external/id3/audio.schema.json",
-          "meta:status": "deprecated",
-          "meta:xdmField": "id3:Audio",
-          "tagNumber": 1
-        }
-      },
+      "properties": {},
       "tagNumber": 3
     },
     "_xmpDM": {
       "type": "object",
       "meta:xdmType": "object",
       "properties": {
-        "artist": {
-          "title": "Artist",
-          "type": "string",
-          "description": "The name of the album artist or group performing the music recording or video.",
-          "meta:status": "deprecated",
-          "meta:xdmType": "string",
-          "meta:xdmField": "xmpDM:artist",
-          "tagNumber": 1
-        },
-        "album": {
-          "title": "Album",
-          "type": "string",
-          "description": "The name of the album that the music recording or video belongs to.",
-          "meta:status": "deprecated",
-          "meta:xdmType": "string",
-          "meta:xdmField": "xmpDM:album",
-          "tagNumber": 2
-        },
         "duration": {
           "title": "Media content length",
           "type": "integer",

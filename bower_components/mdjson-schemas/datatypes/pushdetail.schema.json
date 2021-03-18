@@ -24,24 +24,6 @@
       "meta:xdmField": "xdm:platform",
       "tagNumber": 2
     },
-    "blacklisted": {
-      "title": "Blacklist Flag",
-      "type": "boolean",
-      "meta:status": "deprecated",
-      "description": "Indicates whether the push token is blacklisted. Deprecated due to new guidance on key names, use blocklisted instead.",
-      "meta:xdmType": "boolean",
-      "meta:xdmField": "xdm:blacklisted",
-      "tagNumber": 3
-    },
-    "blocklisted": {
-      "title": "Blocklist Flag",
-      "type": "boolean",
-      "meta:status": "deprecated",
-      "description": "Indicates whether the push token is blocked by the push provider. Deprecated due to new guidance on key names, use denylisted instead.",
-      "meta:xdmType": "boolean",
-      "meta:xdmField": "xdm:blocklisted",
-      "tagNumber": 4
-    },
     "denylisted": {
       "title": "Denylist Flag",
       "type": "boolean",
@@ -57,14 +39,6 @@
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:appID",
       "tagNumber": 6
-    },
-    "identiy": {
-      "title": "Identity associated with this token",
-      "$ref": "identity.schema.json",
-      "meta:status": "deprecated",
-      "description": "The identity associated with this token before profile stitching. Deprecated due to typo, use xdm:identity instead.",
-      "meta:xdmField": "xdm:identiy",
-      "tagNumber": 7
     },
     "identity": {
       "title": "Identity associated with this token",

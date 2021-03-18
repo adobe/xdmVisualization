@@ -148,27 +148,13 @@
       "meta:xdmField": "xdm:consentsAndPreferences",
       "tagNumber": 9
     },
-    "identities": {
-      "meta:status": "deprecated",
-      "title": "All user identities (deprecated)",
-      "type": "array",
-      "minItems": 1,
-      "description": "Array of identities. Condensed, normalized encapsulation of all end-user identifiers.  Deprecated, use `xdm:identityMap` instead.",
-      "meta:xdmType": "array",
-      "items": {
-        "$ref": "../datatypes/identity.schema.json",
-        "tagNumber": 1
-      },
-      "meta:xdmField": "xdm:identities",
-      "tagNumber": 10
-    },
     "personComponents": {
       "type": "array",
       "meta:xdmType": "array",
       "meta:xdmField": "xdm:personComponents",
       "tagNumber": 11,
       "items": {
-        "$ref": "obj8903095419016458.schema.json"
+        "$ref": "obj24785719401874173.schema.json"
       }
     },
     "b2b": {
@@ -1387,28 +1373,6 @@
       "meta:xdmField": "xdm:optInOut",
       "tagNumber": 39
     },
-    "optOutConsentLevel": {
-      "type": "object",
-      "title": "Opt-out consent level (deprecated)",
-      "description": "Opt-out consent level (deprecated).",
-      "meta:status": "deprecated",
-      "meta:xdmType": "object",
-      "properties": {
-        "privacyOptOuts": {
-          "title": "Privacy opt-outs (deprecated)",
-          "description": "Encapsulates different opt-out types for data privacy (deprecated).",
-          "type": "array",
-          "meta:xdmType": "array",
-          "meta:xdmField": "xdm:privacyOptOuts",
-          "tagNumber": 1,
-          "items": {
-            "$ref": "obj5771390823502083.schema.json"
-          }
-        }
-      },
-      "meta:xdmField": "xdm:optOutConsentLevel",
-      "tagNumber": 40
-    },
     "identityPrivacyInfo": {
       "title": "Identity level privacy information",
       "description": "Captured privacy information for identities in profile.",
@@ -1483,18 +1447,6 @@
       },
       "meta:xdmField": "xdm:pushNotificationDetails",
       "tagNumber": 43
-    },
-    "segments": {
-      "title": "Segment membership",
-      "meta:status": "deprecated",
-      "type": "array",
-      "meta:xdmType": "array",
-      "items": {
-        "$ref": "../datatypes/segmentmembership.schema.json",
-        "tagNumber": 1
-      },
-      "meta:xdmField": "xdm:segments",
-      "tagNumber": 44
     },
     "segmentMembership": {
       "title": "Segment membership map",

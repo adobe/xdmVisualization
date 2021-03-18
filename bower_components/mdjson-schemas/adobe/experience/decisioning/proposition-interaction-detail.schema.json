@@ -44,40 +44,6 @@
       "description": "A snapshot of properties from the decision scope. This is the state of the scope entity that was used in the decision requst.",
       "meta:xdmField": "xdm:scopeDetails",
       "tagNumber": 4
-    },
-    "decisionEventID": {
-      "meta:status": "deprecated",
-      "type": "string",
-      "title": "Decision Event Identifier (deprecated)",
-      "description": "The unique identifier of the decision event that proposed the 'items' (options). For a given decision request and profile identity the output of the decision is a unique event. If a decision is requested again for the same profile and the output are the same options, it is still considered a different proposition with a unique event ID. Multiple propositions can be associated with the same decision event. See https://ns.adobe.com/experience/decisioning/proposition. (deprecated)",
-      "meta:xdmType": "string",
-      "meta:xdmField": "xdm:decisionEventID",
-      "tagNumber": 5
-    },
-    "decisionEventDetails": {
-      "meta:status": "deprecated",
-      "$ref": "../../../adobe/experience/decisioning/decisionevent-details.schema.json",
-      "title": "Decision Event Details (deprecated)",
-      "description": "A snapshot of properties from the decision event when it occured. (deprecated)",
-      "meta:xdmField": "xdm:decisionEventDetails",
-      "tagNumber": 6
-    },
-    "decisionScope": {
-      "meta:status": "deprecated",
-      "type": "string",
-      "title": "Decision Event Scope (deprecated)",
-      "description": "The scope that is associated with the decision. This is the name of the scope that was in the request when the decision was made. See https://ns.adobe.com/experience/decisioning/scope-details.(deprecated)",
-      "meta:xdmType": "string",
-      "meta:xdmField": "xdm:decisionScope",
-      "tagNumber": 7
-    },
-    "decisionScopeDetails": {
-      "meta:status": "deprecated",
-      "$ref": "scope-details.schema.json",
-      "title": "Decision Event Scope Details (deprecated)",
-      "description": "A snapshot of properties from the decision scope. This is the state of the scope entity that was used in the decision requst. (deprecated)",
-      "meta:xdmField": "xdm:decisionScopeDetails",
-      "tagNumber": 8
     }
   },
   "meta:xdmId": "https://ns.adobe.com/experience/decisioning/proposition-interaction-details",

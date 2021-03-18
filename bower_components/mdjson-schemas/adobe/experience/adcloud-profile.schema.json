@@ -9,18 +9,6 @@
   "meta:status": "stable",
   "meta:xdmType": "object",
   "properties": {
-    "segments": {
-      "title": "Segment membership",
-      "meta:status": "deprecated",
-      "type": "array",
-      "meta:xdmType": "array",
-      "items": {
-        "$ref": "../../datatypes/segmentmembership.schema.json",
-        "tagNumber": 1
-      },
-      "meta:xdmField": "xdm:segments",
-      "tagNumber": 1
-    },
     "segmentMembership": {
       "title": "Segment membership map",
       "type": "object",

@@ -71,14 +71,6 @@
       "meta:xdmField": "xdm:mediaSegmentViews",
       "tagNumber": 9
     },
-    "dropBeforeStarts": {
-      "title": "Drops before starts",
-      "$ref": "../data/measure.schema.json",
-      "description": "Indicates the user abandoned the media stream before the first frame for example, during the pre-roll ad break, or due to an error while loading the content from the CDN.",
-      "meta:status": "deprecated",
-      "meta:xdmField": "xdm:dropBeforeStarts",
-      "tagNumber": 10
-    },
     "totalTimePlayed": {
       "title": "Media Time Spent",
       "$ref": "../data/measure.schema.json",
