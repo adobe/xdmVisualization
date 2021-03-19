@@ -22,7 +22,7 @@ async function readLines(stream) {
         stream.once('error', _ => resolve(null));
         const lines = [];
         rl.on('line', line => lines.push(line.replace(",","")));
-        rl.on('close', _ => resolve(lines));
+        rl.on('close', _ => resolve(lines.sort()));
     });
 }
 
