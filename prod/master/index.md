@@ -1,6 +1,9 @@
 # XDM Visualization
 ## Git Repo Branch: master
 <details>
+<summary>extensions</summary>
+<ul>
+<details>
 <summary>adobe</summary>
 <ul>
 <details>
@@ -273,6 +276,8 @@
 <summary>airship</summary>
 <ul>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/airship.airship-event.html">airship-event</a></li>
+</ul>
+</details>
 </ul>
 </details>
 <details>

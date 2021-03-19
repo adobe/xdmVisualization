@@ -154,7 +154,7 @@
       "meta:xdmField": "xdm:personComponents",
       "tagNumber": 11,
       "items": {
-        "$ref": "obj16359689053250337.schema.json"
+        "$ref": "obj017278762256203395.schema.json"
       }
     },
     "b2b": {
@@ -1355,6 +1355,7 @@
                   "tagNumber": 5
                 }
               },
+              "type": "object",
               "tagNumber": 1
             },
             "tagNumber": 1
@@ -1374,6 +1375,7 @@
               "tagNumber": 1
             }
           },
+          "type": "object",
           "meta:xdmField": "xdm:metadata",
           "tagNumber": 7
         }

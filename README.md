@@ -2,7 +2,7 @@
 
 This repository is for the visualization of xdms in [XDM Public Repo](https://github.com/adobe/xdm). All schema design and discussions should happen there.
 
-See [visualization of XDM Public Repo's master branch](https://opensource.adobe.com/xdmVisualization/prod/master/), which is refreshed every 12 hours.
+See [visualization of XDM Public Repo's master branch](https://opensource.adobe.com/xdmVisualization/prod/master/), which is refreshed everyday.
 
 ### Usage
 To refresh the xdm visualization manually for a specific git branch, please follow the steps below.<br/><br/> ![here](images/xdmVisualization.png)

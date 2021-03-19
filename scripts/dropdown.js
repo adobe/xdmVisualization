@@ -29,7 +29,12 @@ async function readLines(stream) {
 readLines(fs.createReadStream("listOfXdms.txt")).then(result => {
     let obj = {};
     for (let i = 0; i < result.length; i++) {
-        dotProp.set(obj, result[i], result[i]);
+        if ((result[i].indexOf("adobe.") == 0) || ((result[i].indexOf("airship.") == 0))) {
+            //special handling to put these xdms under extension folder
+            dotProp.set(obj, "extensions." + result[i], result[i]);
+        } else {
+            dotProp.set(obj, result[i], result[i]);
+        }
         //console.log(result[i])
     }
     fs.appendFileSync(filename, "# XDM Visualization\n", 'utf8');
