@@ -58,7 +58,7 @@ standardComponents=()
 extensionComponents=()
 standardCompGrp=()
 
-folders=(adobe behaviors common airship classes datatypes mixins uberschemas)
+folders=(adobe behaviors airship classes datatypes mixins uberschemas)
 
 rm ../../listOfXdms.txt
 for folder in ${folders[@]}; do
