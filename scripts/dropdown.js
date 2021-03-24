@@ -1,4 +1,4 @@
-//This script generate the schema location map.
+//This script generates the index.md with dropdowns.
 'use strict';
 const readline = require('readline');
 const fs = require('fs');
