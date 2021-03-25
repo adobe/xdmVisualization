@@ -291,54 +291,6 @@
           "description": "Extension of toolUsage data type.",
           "meta:xdmField": "xdm:offerSteps",
           "tagNumber": 4
-        },
-        "socialContent": {
-          "title": "Social Share Content",
-          "type": "string",
-          "description": "Tracks the page/content/value of the item being shared.",
-          "meta:xdmType": "string",
-          "meta:xdmField": "xdm:socialContent",
-          "tagNumber": 5
-        },
-        "socialFollow": {
-          "title": "Social Follow",
-          "type": "integer",
-          "description": "Tracks when a social follow event has occurred.",
-          "meta:xdmType": "int",
-          "meta:xdmField": "xdm:socialFollow",
-          "tagNumber": 6
-        },
-        "socialMessage": {
-          "title": "Social Share Message",
-          "type": "string",
-          "description": "Message that the sender sent",
-          "meta:xdmType": "string",
-          "meta:xdmField": "xdm:socialMessage",
-          "tagNumber": 7
-        },
-        "socialNetwork": {
-          "title": "Social Share Network",
-          "type": "string",
-          "description": "Tracks the social sharing network in use, i.e. Facebook, Twitter, Instagram, etc.",
-          "meta:xdmType": "string",
-          "meta:xdmField": "xdm:socialNetwork",
-          "tagNumber": 8
-        },
-        "socialRecipient": {
-          "title": "Social Share Recipient",
-          "type": "string",
-          "description": "Recipient of the sharing",
-          "meta:xdmType": "string",
-          "meta:xdmField": "xdm:socialRecipient",
-          "tagNumber": 9
-        },
-        "socialShare": {
-          "title": "Social Share Event",
-          "type": "integer",
-          "description": "Tracks when a social sharing event has occurred.",
-          "meta:xdmType": "int",
-          "meta:xdmField": "xdm:socialShare",
-          "tagNumber": 10
         }
       },
       "meta:xdmField": "xdm:marketing ",
@@ -361,6 +313,78 @@
       },
       "meta:xdmField": "xdm:web",
       "tagNumber": 18
+    },
+    "socialMarketing ": {
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "sharedContent": {
+          "title": "Shared Content",
+          "type": "string",
+          "description": "Tracks the page/url/content/value of the item being shared.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:sharedContent",
+          "tagNumber": 1
+        },
+        "follow": {
+          "title": "Follow",
+          "type": "integer",
+          "description": "Tracks when a social follow event has occurred.",
+          "meta:xdmType": "int",
+          "meta:xdmField": "xdm:follow",
+          "tagNumber": 2
+        },
+        "sharedMessage": {
+          "title": "Shared Message",
+          "type": "string",
+          "description": "Message that the sender sent",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:sharedMessage",
+          "tagNumber": 3
+        },
+        "interactions": {
+          "title": "Interactions",
+          "type": "integer",
+          "description": "The total number of social interactions.",
+          "meta:xdmType": "int",
+          "meta:xdmField": "xdm:interactions",
+          "tagNumber": 4
+        },
+        "network": {
+          "title": "Network",
+          "type": "string",
+          "description": "Tracks the social sharing network in use, i.e. Facebook, Twitter, Instagram, etc.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:network",
+          "tagNumber": 5
+        },
+        "target": {
+          "title": "Target",
+          "type": "string",
+          "description": "For social interactions, this is the URL (or resource) which receives the social network action.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:target",
+          "tagNumber": 6
+        },
+        "recipient": {
+          "title": "Recipient",
+          "type": "string",
+          "description": "Recipient of the shared content",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:recipient",
+          "tagNumber": 7
+        },
+        "share": {
+          "title": "Share",
+          "type": "integer",
+          "description": "Tracks when a social sharing event has occurred.",
+          "meta:xdmType": "int",
+          "meta:xdmField": "xdm:share",
+          "tagNumber": 8
+        }
+      },
+      "meta:xdmField": "xdm:socialMarketing ",
+      "tagNumber": 19
     },
     "surveyResponse": {
       "type": "object",
@@ -409,7 +433,7 @@
         }
       },
       "meta:xdmField": "xdm:surveyResponse",
-      "tagNumber": 19
+      "tagNumber": 20
     },
     "userAccount": {
       "type": "object",
@@ -569,7 +593,7 @@
         }
       },
       "meta:xdmField": "xdm:userAccount",
-      "tagNumber": 20
+      "tagNumber": 21
     },
     "alerts": {
       "type": "object",
@@ -612,7 +636,7 @@
         }
       },
       "meta:xdmField": "xdm:alerts",
-      "tagNumber": 21
+      "tagNumber": 22
     },
     "autopayEnrollment": {
       "type": "object",
@@ -635,7 +659,7 @@
         }
       },
       "meta:xdmField": "xdm:autopayEnrollment",
-      "tagNumber": 22
+      "tagNumber": 23
     },
     "customerFeedback": {
       "type": "object",
@@ -737,7 +761,7 @@
         }
       },
       "meta:xdmField": "xdm:customerFeedback",
-      "tagNumber": 23
+      "tagNumber": 24
     },
     "upgrade": {
       "type": "object",
@@ -766,7 +790,7 @@
         }
       },
       "meta:xdmField": "xdm:upgrade",
-      "tagNumber": 24
+      "tagNumber": 25
     },
     "upsell": {
       "type": "object",
@@ -795,7 +819,7 @@
         }
       },
       "meta:xdmField": "xdm:upsell",
-      "tagNumber": 25
+      "tagNumber": 26
     }
   },
   "meta:xdmId": "https://ns.adobe.com/xdm/context/experienceevent-generated-retail",

@@ -23,13 +23,6 @@
       "type": "object",
       "meta:xdmType": "object",
       "properties": {
-        "accountCreationStep": {
-          "title": "Account Creation Steps",
-          "$ref": "../../datatypes/industry-verticals/tool-usage.schema.json",
-          "description": "Loyalty account creation steps.",
-          "meta:xdmField": "xdm:accountCreationStep",
-          "tagNumber": 1
-        },
         "joinDate": {
           "title": "Program Join Date",
           "type": "string",
@@ -37,7 +30,7 @@
           "description": "Date which the visitor registered for the loyalty program.",
           "meta:xdmType": "date-time",
           "meta:xdmField": "xdm:joinDate",
-          "tagNumber": 2
+          "tagNumber": 1
         },
         "loyaltyID": {
           "title": "Program ID",
@@ -50,7 +43,7 @@
             "tagNumber": 1
           },
           "meta:xdmField": "xdm:loyaltyID",
-          "tagNumber": 3
+          "tagNumber": 2
         },
         "points": {
           "title": "Program Points Balance",
@@ -58,16 +51,17 @@
           "description": "Current balance of the loyalty points/awards in a visitor's loyalty account.",
           "meta:xdmType": "number",
           "meta:xdmField": "xdm:points",
-          "tagNumber": 4
+          "tagNumber": 3
         },
         "pointsExpiration": {
           "title": "Points Expiration",
-          "type": "string",
-          "format": "date-time",
-          "description": "Date on which the loyalty points expire.",
-          "meta:xdmType": "date-time",
+          "type": "array",
+          "meta:xdmType": "array",
           "meta:xdmField": "xdm:pointsExpiration",
-          "tagNumber": 5
+          "tagNumber": 4,
+          "items": {
+            "$ref": "obj9939144571827137.schema.json"
+          }
         },
         "pointsRedeemed": {
           "title": "Points Redeemed",
@@ -75,15 +69,7 @@
           "description": "Amount of points applied toward a purchase or otherwise redeemed.",
           "meta:xdmType": "number",
           "meta:xdmField": "xdm:pointsRedeemed",
-          "tagNumber": 6
-        },
-        "pointsAsOfDate": {
-          "title": "Points as of date",
-          "type": "number",
-          "description": "Point balance on the current date",
-          "meta:xdmType": "number",
-          "meta:xdmField": "xdm:pointsAsOfDate",
-          "tagNumber": 7
+          "tagNumber": 5
         },
         "program": {
           "title": "Program Name",
@@ -91,7 +77,31 @@
           "description": "This should define the loyalty progam in which a visitor is enrolled.",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:program",
+          "tagNumber": 6
+        },
+        "upgradeDate": {
+          "title": "Program Name",
+          "type": "string",
+          "description": "Date which the customer was upgraded to the next tier level.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:upgradeDate",
+          "tagNumber": 7
+        },
+        "status": {
+          "title": "Status",
+          "type": "string",
+          "description": "Captures the visitor's loyalty progam status, such as active, disabled, or suspended.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:status",
           "tagNumber": 8
+        },
+        "tier": {
+          "title": "Tier",
+          "type": "string",
+          "description": "Captures the loyalty progam tier in which a visitor is enrolled.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:tier",
+          "tagNumber": 9
         }
       },
       "meta:xdmField": "xdm:loyalty",

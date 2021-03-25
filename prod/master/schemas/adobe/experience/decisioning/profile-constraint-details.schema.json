@@ -21,9 +21,10 @@
       "title": "Profile Constraint Type",
       "enum": [
         "none",
-        "rules",
+        "eligibilityRule",
         "anySegments",
-        "allSegments"
+        "allSegments",
+        "rules"
       ],
       "default": "none",
       "description": "Determines if any constraints are currently set and how the contraints are expressed. It could be though a rule or through one or more segment memberships.",

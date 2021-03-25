@@ -8,44 +8,44 @@
   "meta:status": "experimental",
   "meta:xdmType": "object",
   "properties": {
-    "formApplicationApproved": {
+    "approved": {
       "title": "Form Application Approved",
       "$ref": "../data/measure.schema.json",
       "description": "Captured when a visitor application has been approved.",
-      "meta:xdmField": "xdm:formApplicationApproved",
+      "meta:xdmField": "xdm:approved",
       "tagNumber": 1
     },
-    "formApplicationDeclined": {
+    "declined": {
       "title": "Form Application Declined",
       "$ref": "../data/measure.schema.json",
       "description": "Captured when a visitor application has been declined.",
-      "meta:xdmField": "xdm:formApplicationDeclined",
+      "meta:xdmField": "xdm:declined",
       "tagNumber": 2
     },
-    "formApplicationFee": {
-      "title": "Form Application Fee",
+    "applicationFee": {
+      "title": "Application Fee",
       "$ref": "transaction.schema.json",
       "description": "Extension of Transaction Data Type",
-      "meta:xdmField": "xdm:formApplicationFee",
+      "meta:xdmField": "xdm:applicationFee",
       "tagNumber": 3
     },
-    "formApplicationID": {
-      "title": "Form Application ID",
+    "ID": {
+      "title": "ID",
       "type": "string",
       "description": "Identifier used during an application process.",
       "meta:xdmType": "string",
-      "meta:xdmField": "xdm:formApplicationID",
+      "meta:xdmField": "xdm:ID",
       "tagNumber": 4
     },
-    "formApplicationRequestedAmount": {
-      "title": "Form Application Requested Amount",
+    "requestedAmount": {
+      "title": "Requested Amount",
       "$ref": "../currency.schema.json",
       "description": "Tracks the monetary value of the application.",
-      "meta:xdmField": "xdm:formApplicationRequestedAmount",
+      "meta:xdmField": "xdm:requestedAmount",
       "tagNumber": 5
     },
-    "formApplicationStatus": {
-      "title": "Form Application Status",
+    "status": {
+      "title": "Status",
       "type": "string",
       "enum": [
         "initiated",
@@ -55,36 +55,36 @@
       ],
       "description": "Captures the status of the application for any given point in the application process.",
       "meta:xdmType": "string",
-      "meta:xdmField": "xdm:formApplicationStatus",
+      "meta:xdmField": "xdm:status",
       "tagNumber": 6
     },
-    "formApplicationStatusUpdate": {
-      "title": "Form Application Status Update",
+    "statusUpdate": {
+      "title": "Status Update",
       "$ref": "../data/measure.schema.json",
       "description": "Captured when the status for an application changes, either from an online or offline update.",
-      "meta:xdmField": "xdm:formApplicationStatusUpdate",
+      "meta:xdmField": "xdm:statusUpdate",
       "tagNumber": 7
     },
-    "formApplicationType": {
-      "title": "Form Application Type",
+    "type": {
+      "title": "Type",
       "type": "string",
       "description": "Type of the application process.",
       "meta:xdmType": "string",
-      "meta:xdmField": "xdm:formApplicationType",
+      "meta:xdmField": "xdm:type",
       "tagNumber": 8
     },
-    "formApplicationUnderReview": {
-      "title": "Form Application Under Review",
+    "underReview": {
+      "title": "Under Review",
       "$ref": "../data/measure.schema.json",
       "description": "Captured when a visitor application has been placed under review.",
-      "meta:xdmField": "xdm:formApplicationUnderReview",
+      "meta:xdmField": "xdm:underReview",
       "tagNumber": 9
     },
-    "formApplicationUsage": {
-      "title": "Form Application Usage",
+    "steps": {
+      "title": "steps",
       "$ref": "tool-usage.schema.json",
       "description": "Extension of toolUsage data type.",
-      "meta:xdmField": "xdm:formApplicationUsage",
+      "meta:xdmField": "xdm:steps",
       "tagNumber": 10
     }
   },

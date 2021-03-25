@@ -28,32 +28,32 @@
       "type": "object",
       "meta:xdmType": "object",
       "properties": {
-        "userAccountID": {
-          "title": "User Account ID",
+        "ID": {
+          "title": "ID",
           "type": "string",
           "description": "Captures the user account ID.",
           "meta:xdmType": "string",
-          "meta:xdmField": "xdm:userAccountID",
+          "meta:xdmField": "xdm:ID",
           "tagNumber": 1
         },
-        "userAccountPersonalDetails": {
-          "title": "User Account Personal Details",
+        "contactDetails": {
+          "title": "Contact Details",
           "$ref": "profile-personal-details.schema.json",
           "description": "Extension of the Personal Profile data type.",
-          "meta:xdmField": "xdm:userAccountPersonalDetails",
+          "meta:xdmField": "xdm:contactDetails",
           "tagNumber": 2
         },
-        "userAccountStart": {
-          "title": "User Account Start Date",
+        "startDate": {
+          "title": "Start Date",
           "type": "string",
           "format": "date-time",
           "description": "Date when the account was opened.",
           "meta:xdmType": "date-time",
-          "meta:xdmField": "xdm:userAccountStart",
+          "meta:xdmField": "xdm:startDate",
           "tagNumber": 3
         },
-        "userAccountStatus": {
-          "title": "User Account Status",
+        "status": {
+          "title": "Status",
           "type": "string",
           "enum": [
             "active",
@@ -63,26 +63,19 @@
           ],
           "description": "This should describe the current status of the account",
           "meta:xdmType": "string",
-          "meta:xdmField": "xdm:userAccountStatus",
+          "meta:xdmField": "xdm:status",
           "tagNumber": 4
         },
-        "userAccountType": {
-          "title": "User Account Type",
+        "accountType": {
+          "title": "Account Type",
           "type": "string",
           "description": "Captures the user account type, if applicable.",
           "meta:xdmType": "string",
-          "meta:xdmField": "xdm:userAccountType",
+          "meta:xdmField": "xdm:accountType",
           "tagNumber": 5
         },
-        "userAccountRegistration": {
-          "title": "User Account Registration",
-          "$ref": "../../datatypes/industry-verticals/tool-usage.schema.json",
-          "description": "Extension of toolUsage data type.",
-          "meta:xdmField": "xdm:userAccountRegistration",
-          "tagNumber": 6
-        },
-        "userAccountPreferences": {
-          "title": "User Account Preferences",
+        "preferences": {
+          "title": "Preferences",
           "type": "array",
           "description": "M/F, other shopping preferences. Preferences in personal profile is already captured- things like perferred method of contact, not shopping prefs. ",
           "meta:xdmType": "array",
@@ -91,8 +84,8 @@
             "meta:xdmType": "string",
             "tagNumber": 1
           },
-          "meta:xdmField": "xdm:userAccountPreferences",
-          "tagNumber": 7
+          "meta:xdmField": "xdm:preferences",
+          "tagNumber": 6
         }
       },
       "meta:xdmField": "xdm:userAccount",
