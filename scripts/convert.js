@@ -19,6 +19,7 @@ function process(o, file) {
             if (o[i]["meta:status"] && (o[i]["meta:status"] == "deprecated") && !o[i].hasOwnProperty("$schema")) {
                 delete o[i];//remove deprecated fields
             }
+
             if (o[i] !== null && typeof(o[i]) == 'object') {
                 //going one step down in the object tree!!
                 process(o[i], file);
@@ -34,6 +35,15 @@ function process(o, file) {
                 o[i].items = {};
                 o[i].items.$ref = newSchema.id;
                 fs.writeFileSync(newFile.join('/')+'/'+newSchema.id, JSON.stringify(newSchema,null, 2), 'utf8');
+            }
+
+            if ((i == "additionalProperties") && o["meta:xdmType"] == "map") {//convert map fields
+                if (!o.hasOwnProperty("properties")) {
+                    o.properties = {};
+                }
+                o.properties.mapObj = o[i];
+                process(o.properties.mapObj, file)
+                delete(o[i]);
             }
 
         }
