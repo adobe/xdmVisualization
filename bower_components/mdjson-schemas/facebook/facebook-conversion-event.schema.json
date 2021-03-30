@@ -52,6 +52,9 @@
                   "title": "Facebook Content Category",
                   "type": "string",
                   "description": "The category of the content associated with the event.",
+                  "examples": [
+                    "grocery"
+                  ],
                   "meta:xdmType": "string",
                   "meta:xdmField": "https://ns.facebook.com/contentCategory",
                   "tagNumber": 1
@@ -60,6 +63,9 @@
                   "title": "Facebook Content Type",
                   "type": "string",
                   "description": "It should be set to product or product_group.Use product, if the keys you send represent products. Sent keys could be content_ids or contents.Use product_group, if the keys you send in content_ids represent product groups. Product groups are used to distinguish products that are identical but have variations such as color, material, size or pattern.",
+                  "examples": [
+                    "product"
+                  ],
                   "meta:xdmType": "string",
                   "meta:xdmField": "https://ns.facebook.com/contentType",
                   "tagNumber": 2
@@ -68,6 +74,9 @@
                   "title": "Number Of Items in Cart",
                   "type": "string",
                   "description": "Use only with InitiateCheckout events. The number of items that a user tries to buy during checkout.",
+                  "examples": [
+                    "4"
+                  ],
                   "meta:xdmType": "string",
                   "meta:xdmField": "https://ns.facebook.com/numItems",
                   "tagNumber": 3
@@ -76,6 +85,9 @@
                   "title": "Delivery Category",
                   "type": "string",
                   "description": "Type of delivery for a purchase event. Supported values are.",
+                  "examples": [
+                    "in_store"
+                  ],
                   "enum": [
                     "in_store",
                     "curbside",
@@ -89,6 +101,9 @@
                   "title": "Registration Event Status",
                   "type": "string",
                   "description": "Use only with CompleteRegistration events. The status of the registration event.",
+                  "examples": [
+                    "registered"
+                  ],
                   "meta:xdmType": "string",
                   "meta:xdmField": "https://ns.facebook.com/status",
                   "tagNumber": 5
@@ -97,6 +112,9 @@
                   "title": "Value",
                   "type": "number",
                   "description": "A numeric value associated with this event. This could be a monetary value or a value in some other metric.",
+                  "examples": [
+                    142.54
+                  ],
                   "meta:xdmType": "number",
                   "meta:xdmField": "https://ns.facebook.com/value",
                   "tagNumber": 6
@@ -105,6 +123,9 @@
                   "title": "Facebook Conversion Browser Id",
                   "type": "string",
                   "description": "When the Facebook pixel is installed on a website, and the pixel uses first-party cookies, the pixel automatically saves a unique identifier to an _fbp cookie for the website domain if one does not already exist. The fbp event parameter value must be of the form version.subdomainIndex.creationTime.randomnumber.",
+                  "examples": [
+                    "fb.1.1596403881668.1116446470"
+                  ],
                   "meta:xdmType": "string",
                   "meta:xdmField": "https://ns.facebook.com/fbp",
                   "tagNumber": 7
@@ -113,6 +134,9 @@
                   "title": "Facebook Conversion Click Id",
                   "type": "string",
                   "description": "When a user clicks on an ad on Facebook, the link sometimes includes a fbclid query parameter. When the user lands on the target website, if the website has a Facebook pixel that uses first-party cookies, the pixel automatically saves the fbclid query parameter to an _fbc cookie for that website domain. The fbc event parameter value must be of the form version.subdomainIndex.creationTime.fbclid",
+                  "examples": [
+                    "fb.1.1554763741205.AbCdEfGhIjKlMnOpQrStUvWxYz1234567890"
+                  ],
                   "meta:xdmType": "string",
                   "meta:xdmField": "https://ns.facebook.com/fbc",
                   "tagNumber": 8
@@ -134,6 +158,9 @@
           "title": "Predicted Lifetime Value",
           "type": "number",
           "description": "The predicted lifetime value of a conversion event.",
+          "examples": [
+            432.12
+          ],
           "meta:xdmType": "number",
           "meta:xdmField": "facebook:predicted_ltv",
           "tagNumber": 1
