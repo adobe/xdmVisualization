@@ -1,0 +1,73 @@
+{
+  "id": "_xdm.classes.marketing-list-generated",
+  "title": "Uber schema for https://ns.adobe.com/xdm/classes/marketing-list",
+  "description": "Uber schema for https://ns.adobe.com/xdm/classes/marketing-list",
+  "type": "object",
+  "meta:xdmType": "object",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:status": [
+    "experimental",
+    "stable",
+    "deprecated"
+  ],
+  "auditable": true,
+  "properties": {
+    "_id": {
+      "title": "Identifier",
+      "type": "string",
+      "format": "uri-reference",
+      "description": "A unique identifier for the record.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "@id",
+      "tagNumber": 1
+    },
+    "marketingListID": {
+      "title": "Marketing List ID",
+      "description": "Unique ID of the marketing list.",
+      "type": "string",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:marketingListID",
+      "tagNumber": 2
+    },
+    "marketingListName": {
+      "title": "Marketing List Name",
+      "description": "Name of the marketing list.",
+      "type": "string",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:marketingListName",
+      "tagNumber": 3
+    },
+    "marketingListDescription": {
+      "title": "Marketing List Description",
+      "description": "Description of the marketing list.",
+      "type": "string",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:marketingListDescription",
+      "tagNumber": 4
+    },
+    "extSourceSystemAudit": {
+      "title": "External Source System Audit Properties",
+      "$ref": "../datatypes/auditing/external-source-system-audit.schema.json",
+      "description": "Audit attributes for external sources.",
+      "meta:xdmField": "xdm:extSourceSystemAudit",
+      "tagNumber": 5
+    },
+    "marketingListComponents": {
+      "type": "array",
+      "meta:xdmType": "array",
+      "meta:xdmField": "xdm:marketingListComponents",
+      "tagNumber": 6,
+      "items": {
+        "$ref": "obj38877549821602075.schema.json"
+      }
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/classes/marketing-list-generated",
+  "meta:altId": "_xdm.classes.marketing-list-generated",
+  "required": [
+    "marketingListID"
+  ],
+  "id": "_xdm.classes.marketing-list-generated"
+}

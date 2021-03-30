@@ -1,0 +1,48 @@
+{
+  "id": "_experience.decisioning.strategy-details",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Decision Strategy Details",
+  "type": "object",
+  "meta:extensible": true,
+  "description": "Decision strategy details capture data values for a particular step that will be or was taken during the decision process.",
+  "meta:status": "stable",
+  "meta:xdmType": "object",
+  "properties": {
+    "step": {
+      "type": "string",
+      "title": "Execution Step",
+      "description": "Indicator for the step type in the overall decision strategy",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:step",
+      "tagNumber": 1
+    },
+    "strategyID": {
+      "type": "string",
+      "title": "Step's Strategy Identifier",
+      "description": "The unique identifier of the step's strategy. When executing a decision various steps are performed. Each step is performed according to a strategy or policy and the chosen idetifier is recorded to measure its performance. This identifier could be the URI of a profile merge policy, an eligibility rule, a ML ranking strategy, a function that calculates the rank, a capping threshold or any object that signficantly contributes to the decision result.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:strategyID",
+      "tagNumber": 2
+    },
+    "algorithmID": {
+      "title": "Algorithm Identifier",
+      "type": "string",
+      "format": "uri-reference",
+      "description": "Unique identifier for the algorithm used to make the decision, if applicable.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:algorithmID",
+      "tagNumber": 3
+    },
+    "trafficType": {
+      "title": "Traffic Type",
+      "type": "string",
+      "description": "The class of algorithm/policy that was used to compute this decision. 'Contextual Traffic' indicates that event and profile context were used in deciding what to show. Noncontextual means that the decision was not made based on any contextual data. Random indicates that the decision was made by some pseudo-random process.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:trafficType",
+      "tagNumber": 4
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/experience/decisioning/strategy-details",
+  "meta:altId": "_experience.decisioning.strategy-details",
+  "id": "_experience.decisioning.strategy-details"
+}

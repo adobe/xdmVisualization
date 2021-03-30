@@ -1,0 +1,76 @@
+{
+  "id": "_xdm.data.metrics.placecontext.poi-exits",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Point of Interest (POI) Exits",
+  "type": "object",
+  "meta:extensible": true,
+  "description": "The place context metric `poi-exits` describes the number of times a person has left a point of interest (POI).",
+  "meta:status": "stable",
+  "meta:xdmType": "object",
+  "properties": {
+    "_id": {
+      "type": "string",
+      "const": "xdm:poiExits",
+      "description": "The unique identifier of this metric.",
+      "meta:xdmType": "string",
+      "format": "uri-reference",
+      "meta:xdmField": "@id",
+      "tagNumber": 1
+    },
+    "_schema": {
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "const": "placecontext: poiExits",
+          "description": "The human-readable name of the metric. The name can be used in user interfaces and does not have to be unique.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "schema:name",
+          "tagNumber": 1
+        }
+      },
+      "required": [
+        "name"
+      ],
+      "tagNumber": 2
+    },
+    "measurement": {
+      "type": "string",
+      "description": "How to take measures of this metric.",
+      "const": "count",
+      "meta:xdmType": "string",
+      "examples": [
+        "distance",
+        "time",
+        "price",
+        "count"
+      ],
+      "meta:xdmField": "xdm:measurement",
+      "tagNumber": 3
+    },
+    "unit": {
+      "const": "",
+      "type": "string",
+      "description": "The unit that this metric is measured in. Whenever possible, metrics should follow the [SI base units](https://www.bipm.org/en/measurement-units/) or be [ISO 4217 currency codes](https://www.iso.org/iso-4217-currency-codes.html).For metric that are counts, the `xdm:unit` must be empty string (equivalent to null)",
+      "examples": [
+        "m",
+        "kg",
+        "s",
+        "USD"
+      ],
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:unit",
+      "tagNumber": 4
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/data/metrics/placecontext/poi-exits",
+  "meta:altId": "_xdm.data.metrics.placecontext.poi-exits",
+  "required": [
+    "_id",
+    "_schema",
+    "measurement",
+    "unit"
+  ],
+  "id": "_xdm.data.metrics.placecontext.poi-exits"
+}
