@@ -16,7 +16,27 @@
             "all"
         ]
     },
+    "$ref": "https://ns.adobe.com/experience/experienceevent-search.schema.json",
     "properties": {
+        "productListItems": {
+            "title": "Product list items",
+            "type": "array",
+            "description": "A list of items representing a product selected by a customer with specific options and pricing that are for that usage context at a specific point of time and may differ from the product record.",
+            "meta:xdmType": "array",
+            "items": {
+                "$ref": "content/productlistitem.schema.json",
+                "tagNumber": 1
+            },
+            "meta:xdmField": "xdm:productListItems",
+            "tagNumber": 1
+        },
+        "commerce": {
+            "title": "Commerce",
+            "$ref": "context/commerce.schema.json",
+            "description": "Commerce specific data related to this event.",
+            "meta:xdmField": "xdm:commerce",
+            "tagNumber": 2
+        },
         "_ns": {
             "type": "object",
             "meta:xdmType": "object",
@@ -36,6 +56,67 @@
                                     "meta:xdmType": "string",
                                     "meta:xdmField": "https://ns.facebook.com/contentCategory",
                                     "tagNumber": 1
+                                },
+                                "contentType": {
+                                    "title": "Facebook Content Type",
+                                    "type": "string",
+                                    "description": "It should be set to product or product_group.Use product, if the keys you send represent products. Sent keys could be content_ids or contents.Use product_group, if the keys you send in content_ids represent product groups. Product groups are used to distinguish products that are identical but have variations such as color, material, size or pattern.",
+                                    "meta:xdmType": "string",
+                                    "meta:xdmField": "https://ns.facebook.com/contentType",
+                                    "tagNumber": 2
+                                },
+                                "numItems": {
+                                    "title": "Number Of Items in Cart",
+                                    "type": "string",
+                                    "description": "Use only with InitiateCheckout events. The number of items that a user tries to buy during checkout.",
+                                    "meta:xdmType": "string",
+                                    "meta:xdmField": "https://ns.facebook.com/numItems",
+                                    "tagNumber": 3
+                                },
+                                "deliveryCategory": {
+                                    "title": "Delivery Category",
+                                    "type": "string",
+                                    "description": "Type of delivery for a purchase event. Supported values are.",
+                                    "enum": [
+                                        "in_store",
+                                        "curbside",
+                                        "home_delivery"
+                                    ],
+                                    "meta:xdmType": "string",
+                                    "meta:xdmField": "https://ns.facebook.com/deliveryCategory",
+                                    "tagNumber": 4
+                                },
+                                "status": {
+                                    "title": "Registration Event Status",
+                                    "type": "string",
+                                    "description": "Use only with CompleteRegistration events. The status of the registration event.",
+                                    "meta:xdmType": "string",
+                                    "meta:xdmField": "https://ns.facebook.com/status",
+                                    "tagNumber": 5
+                                },
+                                "value": {
+                                    "title": "Value",
+                                    "type": "number",
+                                    "description": "A numeric value associated with this event. This could be a monetary value or a value in some other metric.",
+                                    "meta:xdmType": "number",
+                                    "meta:xdmField": "https://ns.facebook.com/value",
+                                    "tagNumber": 6
+                                },
+                                "fbp": {
+                                    "title": "Facebook Conversion Browser Id",
+                                    "type": "string",
+                                    "description": "When the Facebook pixel is installed on a website, and the pixel uses first-party cookies, the pixel automatically saves a unique identifier to an _fbp cookie for the website domain if one does not already exist. The fbp event parameter value must be of the form version.subdomainIndex.creationTime.randomnumber.",
+                                    "meta:xdmType": "string",
+                                    "meta:xdmField": "https://ns.facebook.com/fbp",
+                                    "tagNumber": 7
+                                },
+                                "fbc": {
+                                    "title": "Facebook Conversion Click Id",
+                                    "type": "string",
+                                    "description": "When a user clicks on an ad on Facebook, the link sometimes includes a fbclid query parameter. When the user lands on the target website, if the website has a Facebook pixel that uses first-party cookies, the pixel automatically saves the fbclid query parameter to an _fbc cookie for that website domain. The fbc event parameter value must be of the form version.subdomainIndex.creationTime.fbclid",
+                                    "meta:xdmType": "string",
+                                    "meta:xdmField": "https://ns.facebook.com/fbc",
+                                    "tagNumber": 8
                                 }
                             },
                             "tagNumber": 1
@@ -45,6 +126,21 @@
                 }
             },
             "tagNumber": 3
+        },
+        "_facebook": {
+            "type": "object",
+            "meta:xdmType": "object",
+            "properties": {
+                "predicted_ltv": {
+                    "title": "Predicted Lifetime Value",
+                    "type": "number",
+                    "description": "The predicted lifetime value of a conversion event.",
+                    "meta:xdmType": "number",
+                    "meta:xdmField": "facebook:predicted_ltv",
+                    "tagNumber": 1
+                }
+            },
+            "tagNumber": 4
         }
     },
     "meta:xdmId": "https://ns.facebook.com/facebook-conversion-event",
