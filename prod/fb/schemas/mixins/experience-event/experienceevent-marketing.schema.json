@@ -1,0 +1,28 @@
+{
+  "id": "_xdm.context.experienceevent-marketing",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Campaign Marketing Details",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:tags": {
+    "industry": [
+      "all"
+    ]
+  },
+  "description": "Marketing campaign information such as campaign group, name, and tracking code.",
+  "meta:status": "stable",
+  "meta:xdmType": "object",
+  "properties": {
+    "marketing": {
+      "title": "Marketing",
+      "$ref": "../../datatypes/marketing/marketing.schema.json",
+      "description": "The information related to marketing activities that are active with the touchpoint.",
+      "meta:xdmField": "xdm:marketing",
+      "tagNumber": 1
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/context/experienceevent-marketing",
+  "meta:altId": "_xdm.context.experienceevent-marketing",
+  "id": "_xdm.context.experienceevent-marketing"
+}

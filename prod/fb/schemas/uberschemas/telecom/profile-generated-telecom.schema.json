@@ -1,0 +1,282 @@
+{
+  "id": "_xdm.context.profile-generated-telecom",
+  "title": "Uber schema for https://ns.adobe.com/xdm/context/profile",
+  "description": "Uber schema for https://ns.adobe.com/xdm/context/profile",
+  "type": "object",
+  "meta:xdmType": "object",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "auditable": true,
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:status": [
+    "stable",
+    "experimental"
+  ],
+  "meta:tags": [
+    {
+      "industry": [
+        "all"
+      ]
+    },
+    {
+      "industry": [
+        "retail",
+        "financial_services",
+        "travel_and_hospitality",
+        "telecom",
+        "automotive",
+        "education",
+        "health_and_life_sciences",
+        "high_tech",
+        "manufacturing",
+        "media_and_entertainment",
+        "public_sector"
+      ]
+    }
+  ],
+  "properties": {
+    "repositoryCreatedBy": {
+      "title": "Created by user identifier",
+      "type": "string",
+      "description": "User ID of who created the record.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:repositoryCreatedBy",
+      "tagNumber": 1
+    },
+    "repositoryLastModifiedBy": {
+      "title": "Modified by user identifier",
+      "type": "string",
+      "description": "User ID of who last modified the record. At creation time, `modifiedByUser` is set as `createdByUser`.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:repositoryLastModifiedBy",
+      "tagNumber": 2
+    },
+    "createdByBatchID": {
+      "title": "Created by batch identifier",
+      "type": "string",
+      "format": "uri-reference",
+      "description": "The dataset files in Catalog which has been originating the creation of the record.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:createdByBatchID",
+      "tagNumber": 3
+    },
+    "modifiedByBatchID": {
+      "title": "Modified by batch identifier",
+      "type": "string",
+      "format": "uri-reference",
+      "description": "The last dataset files in Catalog which has modified the record. At creation time, `modifiedByBatchID` is set as `createdByBatchID`.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:modifiedByBatchID",
+      "tagNumber": 4
+    },
+    "_repo": {
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "createDate": {
+          "type": "string",
+          "format": "date-time",
+          "meta:immutable": true,
+          "meta:usereditable": false,
+          "examples": [
+            "2004-10-23T12:00:00-06:00"
+          ],
+          "description": "The server date and time when the resource was created in the repository, such as when an asset file is first uploaded or a directory is created by the server as the parent of a new asset. The date time property should conform to ISO 8601 standard. An example form is \"2004-10-23T12:00:00-06:00\".",
+          "meta:xdmType": "date-time",
+          "meta:xdmField": "repo:createDate",
+          "tagNumber": 1
+        },
+        "modifyDate": {
+          "type": "string",
+          "format": "date-time",
+          "meta:usereditable": false,
+          "examples": [
+            "2004-10-23T12:00:00-06:00"
+          ],
+          "description": "The server date and time when the resource was last modified in the repository, such as when a new version of an asset is uploaded or a directory's child resource is added or removed. The date time property should conform to ISO 8601 standard. An example form is \"2004-10-23T12:00:00-06:00\".",
+          "meta:xdmType": "date-time",
+          "meta:xdmField": "repo:modifyDate",
+          "tagNumber": 2
+        }
+      },
+      "tagNumber": 5
+    },
+    "_id": {
+      "title": "Identifier",
+      "type": "string",
+      "format": "uri-reference",
+      "description": "A unique identifier for the record.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "@id",
+      "tagNumber": 6
+    },
+    "personID": {
+      "title": "Person ID",
+      "description": "Unique identifier of Person/Profile fragment.",
+      "type": "string",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:personID",
+      "tagNumber": 7
+    },
+    "homeAddress": {
+      "title": "Home address",
+      "$ref": "../../datatypes/demographic/address.schema.json",
+      "description": "A home postal address.",
+      "meta:xdmField": "xdm:homeAddress",
+      "tagNumber": 8
+    },
+    "personalEmail": {
+      "title": "Personal email",
+      "$ref": "../../datatypes/demographic/emailaddress.schema.json",
+      "description": "A personal email address.",
+      "meta:xdmField": "xdm:personalEmail",
+      "tagNumber": 9
+    },
+    "homePhone": {
+      "title": "Home phone",
+      "$ref": "../../datatypes/demographic/phonenumber.schema.json",
+      "description": "Home phone number.",
+      "meta:xdmField": "xdm:homePhone",
+      "tagNumber": 10
+    },
+    "mobilePhone": {
+      "title": "Mobile phone",
+      "$ref": "../../datatypes/demographic/phonenumber.schema.json",
+      "description": "Mobile phone number.",
+      "meta:xdmField": "xdm:mobilePhone",
+      "tagNumber": 11
+    },
+    "faxPhone": {
+      "title": "Fax phone",
+      "$ref": "../../datatypes/demographic/phonenumber.schema.json",
+      "description": "Fax phone number.",
+      "meta:xdmField": "xdm:faxPhone",
+      "tagNumber": 12
+    },
+    "identityPrivacyInfo": {
+      "title": "Identity level privacy information",
+      "description": "Captured privacy information for identities in profile.",
+      "type": "object",
+      "meta:xdmType": "map",
+      "meta:xdmField": "xdm:identityPrivacyInfo",
+      "tagNumber": 14,
+      "properties": {
+        "mapObj": {
+          "title": "User namespace",
+          "type": "object",
+          "meta:xdmType": "map",
+          "tagNumber": 1,
+          "properties": {
+            "mapObj": {
+              "type": "object",
+              "title": "User Identity",
+              "meta:xdmType": "object",
+              "properties": {
+                "identityIABConsent": {
+                  "type": "object",
+                  "title": "Identity level consent information",
+                  "description": "Consent collected for an identity via consent management services.",
+                  "meta:xdmType": "object",
+                  "properties": {
+                    "consentTimestamp": {
+                      "title": "Timestamp of consent",
+                      "description": "Timestamp (RFC3339) when this identity presented consent information",
+                      "type": "string",
+                      "format": "date-time",
+                      "meta:xdmType": "date-time",
+                      "meta:xdmField": "xdm:consentTimestamp",
+                      "tagNumber": 1
+                    },
+                    "consentString": {
+                      "title": "Captured consent information",
+                      "description": "Consent string and its specification. This can help reading application to use appropriate library.",
+                      "$ref": "../../datatypes/consent/consentstring.schema.json",
+                      "meta:xdmField": "xdm:consentString",
+                      "tagNumber": 2
+                    }
+                  },
+                  "meta:xdmField": "xdm:identityIABConsent",
+                  "required": [
+                    "consentTimestamp"
+                  ],
+                  "tagNumber": 1
+                }
+              },
+              "tagNumber": 1
+            }
+          }
+        }
+      }
+    },
+    "userAccount": {
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "ID": {
+          "title": "ID",
+          "type": "string",
+          "description": "Captures the user account ID.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:ID",
+          "tagNumber": 1
+        },
+        "contactDetails": {
+          "title": "Contact Details",
+          "$ref": "../../mixins/profile/profile-personal-details.schema.json",
+          "description": "Extension of the Personal Profile data type.",
+          "meta:xdmField": "xdm:contactDetails",
+          "tagNumber": 2
+        },
+        "startDate": {
+          "title": "Start Date",
+          "type": "string",
+          "format": "date-time",
+          "description": "Date when the account was opened.",
+          "meta:xdmType": "date-time",
+          "meta:xdmField": "xdm:startDate",
+          "tagNumber": 3
+        },
+        "status": {
+          "title": "Status",
+          "type": "string",
+          "enum": [
+            "active",
+            "inactive",
+            "disabled",
+            "other"
+          ],
+          "description": "This should describe the current status of the account",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:status",
+          "tagNumber": 4
+        },
+        "accountType": {
+          "title": "Account Type",
+          "type": "string",
+          "description": "Captures the user account type, if applicable.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:accountType",
+          "tagNumber": 5
+        },
+        "preferences": {
+          "title": "Preferences",
+          "type": "array",
+          "description": "M/F, other shopping preferences. Preferences in personal profile is already captured- things like perferred method of contact, not shopping prefs. ",
+          "meta:xdmType": "array",
+          "items": {
+            "type": "string",
+            "meta:xdmType": "string",
+            "tagNumber": 1
+          },
+          "meta:xdmField": "xdm:preferences",
+          "tagNumber": 6
+        }
+      },
+      "meta:xdmField": "xdm:userAccount",
+      "tagNumber": 15
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/context/profile-generated-telecom",
+  "meta:altId": "_xdm.context.profile-generated-telecom",
+  "id": "_xdm.context.profile-generated-telecom"
+}
