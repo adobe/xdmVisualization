@@ -17,6 +17,18 @@
     ]
   },
   "properties": {
+    "productListItems": {
+      "title": "Product list items",
+      "type": "array",
+      "description": "A list of items representing a product selected by a customer with specific options and pricing that are for that usage context at a specific point of time and may differ from the product record.",
+      "meta:xdmType": "array",
+      "items": {
+        "$ref": "../datatypes/productlistitem.schema.json",
+        "tagNumber": 1
+      },
+      "meta:xdmField": "xdm:productListItems",
+      "tagNumber": 1
+    },
     "commerce": {
       "title": "Commerce",
       "$ref": "../datatypes/marketing/commerce.schema.json",
