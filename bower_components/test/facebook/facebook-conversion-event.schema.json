@@ -106,6 +106,21 @@
                 }
             },
             "tagNumber": 3
+        },
+        "_facebook": {
+            "type": "object",
+            "meta:xdmType": "object",
+            "properties": {
+                "predicted_ltv": {
+                    "title": "Predicted Lifetime Value",
+                    "type": "number",
+                    "description": "The predicted lifetime value of a conversion event.",
+                    "meta:xdmType": "number",
+                    "meta:xdmField": "facebook:predicted_ltv",
+                    "tagNumber": 1
+                }
+            },
+            "tagNumber": 4
         }
     },
     "meta:xdmId": "https://ns.facebook.com/facebook-conversion-event",
