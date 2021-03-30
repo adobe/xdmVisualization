@@ -30,7 +30,7 @@ async function readLines(stream) {
 readLines(fs.createReadStream("listOfXdms.txt")).then(result => {
     let obj = {};
     for (let i = 0; i < result.length; i++) {
-        if ((result[i].indexOf("adobe.") == 0) || ((result[i].indexOf("airship.") == 0))) {
+        if ((result[i].indexOf("adobe.") == 0) || (result[i].indexOf("airship.") == 0) || (result[i].indexOf("facebook.") == 0)) {
             //special handling to put these xdms under extension folder
             dotProp.set(obj, "extensions." + result[i], result[i]);
         } else {

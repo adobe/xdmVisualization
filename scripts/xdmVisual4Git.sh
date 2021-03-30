@@ -22,6 +22,7 @@ fi
 (rm -rf publicXdm; git clone -b $1 $2 publicXdm)
 (cd publicXdm; npm install; npm run xed-validation)
 (rm -rf bower_components/mdjson-schemas/*; cp -r ./publicXdm/bin/xed-validation/xed/* ./bower_components/mdjson-schemas/; rm -rf publicXdm)
+(cp -r ./bower_components/test/* ./bower_components/mdjson-schemas/)
 node ./scripts/convert.js
 node ./scripts/fixRef.js
 node ./scripts/removeDeprecated.js
@@ -59,7 +60,7 @@ standardComponents=()
 extensionComponents=()
 standardCompGrp=()
 
-folders=(adobe behaviors airship classes datatypes mixins uberschemas)
+folders=(adobe behaviors airship facebook classes datatypes mixins uberschemas)
 
 rm ../../listOfXdms.txt
 for folder in ${folders[@]}; do
@@ -72,7 +73,7 @@ for folder in ${folders[@]}; do
     if [[ $filename != *.obj[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]* ]] # not showing generated objs
     then
         echo "$filename," >> ../../listOfXdms.txt
-        if [[ $filename == adobe.* || $filename == airship.* ]]
+        if [[ $filename == adobe.* || $filename == airship.* || $filename == facebook.* ]]
         then
           extensionComponents+=( ${filename} )
         elif [[ $filename == uberschemas.* ]];

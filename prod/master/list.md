@@ -462,3 +462,4 @@
 [adobe.b2b.bizible.bizible-person-details](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.b2b.bizible.bizible-person-details.html)<br/>
 [adobe.b2b.marketo.marketo-web-url](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.b2b.marketo.marketo-web-url.html)<br/>
 [airship.airship-event](http://opensource.adobe.com/xdmVisualization/prod/master/airship.airship-event.html)<br/>
+[facebook.facebook-conversion-event](http://opensource.adobe.com/xdmVisualization/prod/master/facebook.facebook-conversion-event.html)<br/>
