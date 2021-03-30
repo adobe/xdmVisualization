@@ -1,0 +1,39 @@
+{
+  "id": "_xdm.mixins.experienceevent-support-request",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Support Request",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:tags": {
+    "industry": [
+      "financial_services",
+      "telecom",
+      "high_tech",
+      "public_sector"
+    ]
+  },
+  "description": "Included for any type of support request initiated by the customer.",
+  "meta:status": "experimental",
+  "meta:xdmType": "object",
+  "properties": {
+    "supportRequest": {
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "supportRequestSteps": {
+          "title": "Support Request Steps",
+          "$ref": "../../datatypes/industry-verticals/tool-usage.schema.json",
+          "description": "Extension of toolUsage data type.",
+          "meta:xdmField": "xdm:supportRequestSteps",
+          "tagNumber": 1
+        }
+      },
+      "meta:xdmField": "xdm:supportRequest",
+      "tagNumber": 1
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/mixins/experienceevent-support-request",
+  "meta:altId": "_xdm.mixins.experienceevent-support-request",
+  "id": "_xdm.mixins.experienceevent-support-request"
+}

@@ -1,0 +1,44 @@
+{
+  "id": "_xdm.mixins.events.opportunityupdated",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Opportunity Updated",
+  "type": "object",
+  "meta:conditionalField": "xdm:eventType",
+  "meta:conditionalValue": "opportunityEvent.opportunityUpdated",
+  "description": "Use to capture details when the fields on a sales opportunity are updated.",
+  "meta:status": "experimental",
+  "meta:xdmType": "object",
+  "properties": {
+    "opportunityEvent": {
+      "title": "Opportunity Event",
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "opportunityID": {
+          "title": "Opportunity ID",
+          "type": "string",
+          "description": "Unique ID of the Opportunity",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:opportunityID",
+          "tagNumber": 1
+        },
+        "dataValueChanges": {
+          "title": "Data Value Changes",
+          "description": "Full record of data values updated",
+          "type": "array",
+          "meta:xdmType": "array",
+          "meta:xdmField": "xdm:dataValueChanges",
+          "tagNumber": 2,
+          "items": {
+            "$ref": "obj17148749037803657.schema.json"
+          }
+        }
+      },
+      "meta:xdmField": "xdm:opportunityEvent",
+      "tagNumber": 1
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/mixins/events/opportunityupdated",
+  "meta:altId": "_xdm.mixins.events.opportunityupdated",
+  "id": "_xdm.mixins.events.opportunityupdated"
+}
