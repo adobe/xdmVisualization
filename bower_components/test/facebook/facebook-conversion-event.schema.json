@@ -18,13 +18,6 @@
     },
     "$ref": "https://ns.adobe.com/experience/experienceevent-search.schema.json",
     "properties": {
-        "commerce": {
-            "title": "Commerce",
-            "$ref": "context/commerce.schema.json",
-            "description": "Commerce specific data related to this event.",
-            "meta:xdmField": "xdm:commerce",
-            "tagNumber": 2
-        },
         "_ns": {
             "type": "object",
             "meta:xdmType": "object",
