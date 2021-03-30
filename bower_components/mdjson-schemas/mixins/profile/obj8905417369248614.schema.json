@@ -1,0 +1,87 @@
+{
+  "type": "object",
+  "meta:xdmType": "object",
+  "properties": {
+    "sourcePersonID": {
+      "title": "Source Person ID",
+      "description": "Source person ID.",
+      "type": "string",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:sourcePersonID",
+      "tagNumber": 1
+    },
+    "sourceAccountID": {
+      "title": "Source Account ID",
+      "description": "Source account ID.",
+      "type": "string",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:sourceAccountID",
+      "tagNumber": 2
+    },
+    "sourceConvertedContactID": {
+      "title": "Source Converted Contact ID",
+      "description": "Source converted contact ID.",
+      "type": "string",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:sourceConvertedContactID",
+      "tagNumber": 3
+    },
+    "sourceExternalID": {
+      "title": "Source External ID",
+      "description": "External source unique identifier at the source.",
+      "type": "string",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:sourceExternalID",
+      "tagNumber": 4
+    },
+    "workEmail": {
+      "title": "Work Email ID of B2B Person",
+      "$ref": "../../datatypes/demographic/emailaddress.schema.json",
+      "meta:xdmField": "xdm:workEmail",
+      "tagNumber": 5
+    },
+    "personType": {
+      "title": "Person Type",
+      "description": "Type of the B2B person.",
+      "type": "string",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:personType",
+      "tagNumber": 6
+    },
+    "personStatus": {
+      "title": "Person Status",
+      "description": "Field recording the current marketing/sales status of the Person.",
+      "type": "string",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:personStatus",
+      "tagNumber": 7
+    },
+    "personSource": {
+      "title": "Person Source",
+      "description": "Source from where the information regarding the person was received.",
+      "type": "string",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:personSource",
+      "tagNumber": 8
+    },
+    "personScore": {
+      "title": "Person Score",
+      "description": "A Score generated for a person by the CRM system.",
+      "type": "number",
+      "meta:xdmType": "number",
+      "meta:xdmField": "xdm:personScore",
+      "tagNumber": 9
+    },
+    "personGroupID": {
+      "title": "Person Group ID",
+      "description": "Group identifier for the person.",
+      "type": "string",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:personGroupID",
+      "tagNumber": 10
+    }
+  },
+  "tagNumber": 1,
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "id": "obj8905417369248614.schema.json"
+}
