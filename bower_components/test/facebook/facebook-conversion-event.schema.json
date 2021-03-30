@@ -33,9 +33,6 @@
                                     "title": "Facebook Content Category",
                                     "type": "string",
                                     "description": "The category of the content associated with the event.",
-                                    "examples": [
-                                        "grocery"
-                                    ],
                                     "meta:xdmType": "string",
                                     "meta:xdmField": "https://ns.facebook.com/contentCategory",
                                     "tagNumber": 1
