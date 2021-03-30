@@ -4,6 +4,7 @@
 const fs = require('fs');
 const glob = require('glob');
 const masterSchemaFolder = 'bower_components/mdjson-schemas';
+const deprecatedXdms = "deprecatedXdms.json";
 
 let schemaFiles = glob.sync(masterSchemaFolder + '/**/*.schema.json');
 let deprecated = [];
@@ -66,7 +67,18 @@ function convertArrayItems(files) {
     });
 }
 
-convertArrayItems(schemaFiles);
-for (let i in deprecated) {//removed deprecated from treeview
-    fs.unlinkSync(deprecated[i]);
+function saveDeprecated() {
+    for (let i in deprecated) {//Generate list of deprecated xdms
+        deprecated[i] = deprecated[i].replace("bower_components/mdjson-schemas/","")
+    }
+    if (fs.existsSync(deprecatedXdms)) {
+        fs.unlinkSync(deprecatedXdms);
+    }
+    fs.writeFileSync(deprecatedXdms, JSON.stringify(deprecated,null,2));
+
 }
+
+convertArrayItems(schemaFiles);
+saveDeprecated();
+
+

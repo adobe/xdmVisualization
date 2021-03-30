@@ -141,20 +141,13 @@
       "meta:xdmField": "xdm:timeSeriesEvents",
       "tagNumber": 8
     },
-    "consentsAndPreferences": {
-      "title": "Global Privacy/Marketing Preference Values",
-      "description": "Global (User/Profile-level) Privacy/Personalization/Marketing Preferences.",
-      "$ref": "../datatypes/consent-preferences.schema.json",
-      "meta:xdmField": "xdm:consentsAndPreferences",
-      "tagNumber": 9
-    },
     "personComponents": {
       "type": "array",
       "meta:xdmType": "array",
       "meta:xdmField": "xdm:personComponents",
       "tagNumber": 11,
       "items": {
-        "$ref": "obj5627107812691516.schema.json"
+        "$ref": "obj8895618103801952.schema.json"
       }
     },
     "b2b": {
@@ -1497,7 +1490,7 @@
           "meta:xdmField": "xdm:pointsExpiration",
           "tagNumber": 4,
           "items": {
-            "$ref": "obj37605725278020596.schema.json"
+            "$ref": "obj40624571451155145.schema.json"
           }
         },
         "pointsRedeemed": {

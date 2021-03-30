@@ -23,7 +23,8 @@ fi
 (cd publicXdm; npm install; npm run xed-validation)
 (rm -rf bower_components/mdjson-schemas/*; cp -r ./publicXdm/bin/xed-validation/xed/* ./bower_components/mdjson-schemas/; rm -rf publicXdm)
 node ./scripts/convert.js
-(node ./scripts/fixref.js; rm schemaLoc.json)
+node ./scripts/fixRef.js
+node ./scripts/removeDeprecated.js
 retVal=$?
 if [ "${retVal}" -ne 0 ]; then
   exit "${retVal}"

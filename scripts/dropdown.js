@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 //This script generates the index.md with dropdowns.
 'use strict';
 const readline = require('readline');
@@ -57,5 +58,4 @@ function dropDownGen(o) {
             fs.appendFileSync(filename, "<li><a href=\"http://opensource.adobe.com/xdmVisualization/prod/"+branch+"/"+o[i]+".html\">"+i+"</a></li>\n", 'utf8');
         }
     }
-
 }
