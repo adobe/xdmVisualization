@@ -203,6 +203,7 @@
 </ul>
 </details>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/fb/adobe.experience.experienceevent-edgeregion.html">experienceevent-edgeregion</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/fb/adobe.experience.facebook-conversion-event.html">facebook-conversion-event</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/fb/adobe.experience.implementations.html">implementations</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/fb/adobe.experience.implementations-ext.html">implementations-ext</a></li>
 <details>

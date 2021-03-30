@@ -311,6 +311,7 @@
 [adobe.experience.offer-management.proposition-response-detail](http://opensource.adobe.com/xdmVisualization/prod/fb/adobe.experience.offer-management.proposition-response-detail.html)<br/>
 [adobe.experience.offer-management.offer-activity-detail](http://opensource.adobe.com/xdmVisualization/prod/fb/adobe.experience.offer-management.offer-activity-detail.html)<br/>
 [adobe.experience.offer-management.offer-detail](http://opensource.adobe.com/xdmVisualization/prod/fb/adobe.experience.offer-management.offer-detail.html)<br/>
+[adobe.experience.facebook-conversion-event](http://opensource.adobe.com/xdmVisualization/prod/fb/adobe.experience.facebook-conversion-event.html)<br/>
 [adobe.experience.target.experienceevent-all](http://opensource.adobe.com/xdmVisualization/prod/fb/adobe.experience.target.experienceevent-all.html)<br/>
 [adobe.experience.target.activity.preview](http://opensource.adobe.com/xdmVisualization/prod/fb/adobe.experience.target.activity.preview.html)<br/>
 [adobe.experience.target.activity.activityevent](http://opensource.adobe.com/xdmVisualization/prod/fb/adobe.experience.target.activity.activityevent.html)<br/>
