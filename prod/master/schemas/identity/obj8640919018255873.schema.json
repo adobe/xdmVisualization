@@ -1,0 +1,52 @@
+{
+  "type": "object",
+  "meta:xdmType": "object",
+  "properties": {
+    "startTimestamp": {
+      "title": "Start Timestamp",
+      "type": "string",
+      "format": "date-time",
+      "description": "Start Timestamp.",
+      "meta:xdmType": "date-time",
+      "meta:xdmField": "xdm:startTimestamp",
+      "tagNumber": 1
+    },
+    "endTimestamp": {
+      "title": "End Timestamp",
+      "type": "string",
+      "format": "date-time",
+      "description": "End Timestamp.",
+      "meta:xdmType": "date-time",
+      "meta:xdmField": "xdm:endTimestamp",
+      "tagNumber": 2
+    },
+    "graphID": {
+      "title": "Person Graph ID",
+      "type": "string",
+      "description": "Person level Graph Identifier.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:graphID",
+      "tagNumber": 3
+    },
+    "identityMap": {
+      "type": "object",
+      "meta:xdmType": "map",
+      "meta:xdmField": "xdm:identityMap",
+      "tagNumber": 4,
+      "properties": {
+        "mapObj": {
+          "type": "array",
+          "meta:xdmType": "array",
+          "items": {
+            "$ref": "../datatypes/identityitem.schema.json",
+            "tagNumber": 1
+          },
+          "tagNumber": 1
+        }
+      }
+    }
+  },
+  "tagNumber": 1,
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "id": "obj8640919018255873.schema.json"
+}
