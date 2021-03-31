@@ -36,6 +36,13 @@
       "meta:xdmField": "xdm:commerce",
       "tagNumber": 2
     },
+    "search": {
+      "title": "Search",
+      "$ref": "../datatypes/search.schema.json",
+      "description": "The information related to web or mobile search.",
+      "meta:xdmField": "xdm:search",
+      "tagNumber": 3
+    },
     "_ns": {
       "type": "object",
       "meta:xdmType": "object",
@@ -148,7 +155,7 @@
           "tagNumber": 1
         }
       },
-      "tagNumber": 3
+      "tagNumber": 4
     },
     "_facebook": {
       "type": "object",
@@ -166,7 +173,7 @@
           "tagNumber": 1
         }
       },
-      "tagNumber": 4
+      "tagNumber": 5
     }
   },
   "meta:xdmId": "https://ns.facebook.com/facebook-conversion-event",
