@@ -147,7 +147,11 @@
       "meta:xdmField": "xdm:personComponents",
       "tagNumber": 11,
       "items": {
+<<<<<<< HEAD
         "$ref": "obj3656146882135236.schema.json"
+=======
+        "$ref": "obj041111091168061.schema.json"
+>>>>>>> 5a5b55fb618358dd2803c00597a0ebc9c67be3a0
       }
     },
     "b2b": {
@@ -1490,7 +1494,11 @@
           "meta:xdmField": "xdm:pointsExpiration",
           "tagNumber": 4,
           "items": {
+<<<<<<< HEAD
             "$ref": "obj5070858689265505.schema.json"
+=======
+            "$ref": "obj48563045173448405.schema.json"
+>>>>>>> 5a5b55fb618358dd2803c00597a0ebc9c67be3a0
           }
         },
         "pointsRedeemed": {
