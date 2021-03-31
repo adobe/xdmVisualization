@@ -358,6 +358,54 @@
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:type",
           "tagNumber": 22
+        },
+        "flightReservations": {
+          "title": "Flight Reservations",
+          "type": "array",
+          "description": "Array of flight reservations under the main trip reservation.",
+          "meta:xdmType": "array",
+          "items": {
+            "$ref": "experienceevent-flight-reservation.schema.json",
+            "tagNumber": 1
+          },
+          "meta:xdmField": "xdm:flightReservations",
+          "tagNumber": 23
+        },
+        "lodgingReservations": {
+          "title": "Lodging Reservations",
+          "type": "array",
+          "description": "Array of lodging reservations under the main trip reservation.",
+          "meta:xdmType": "array",
+          "items": {
+            "$ref": "experienceevent-lodging-reservation.schema.json",
+            "tagNumber": 1
+          },
+          "meta:xdmField": "xdm:lodgingReservations",
+          "tagNumber": 24
+        },
+        "vehicleReservations": {
+          "title": "Vehicle Reservations",
+          "type": "array",
+          "description": "Array of vehicle reservations under the main trip reservation.",
+          "meta:xdmType": "array",
+          "items": {
+            "$ref": "experienceevent-vehicle-reservation.schema.json",
+            "tagNumber": 1
+          },
+          "meta:xdmField": "xdm:vehicleReservations",
+          "tagNumber": 25
+        },
+        "diningReservations": {
+          "title": "Dining Reservations",
+          "type": "array",
+          "description": "Array of dining reservations under the main trip reservation.",
+          "meta:xdmType": "array",
+          "items": {
+            "$ref": "experienceevent-dining-reservation.schema.json",
+            "tagNumber": 1
+          },
+          "meta:xdmField": "xdm:diningReservations",
+          "tagNumber": 26
         }
       },
       "meta:xdmField": "xdm:reservations",

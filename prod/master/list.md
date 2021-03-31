@@ -202,6 +202,7 @@
 [mixins.profile.profile-segmentation](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-segmentation.html)<br/>
 [mixins.profile.profile-test-profile](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-test-profile.html)<br/>
 [mixins.profile.profile-work-details](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-work-details.html)<br/>
+[mixins.profile.profile-personal-finance-details](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-personal-finance-details.html)<br/>
 [mixins.profile.profile-consents](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-consents.html)<br/>
 [mixins.profile.profile-preferences-details](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-preferences-details.html)<br/>
 [mixins.profile.profile-directmarketing](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-directmarketing.html)<br/>
@@ -270,7 +271,6 @@
 [mixins.experience-event.events.emaildelivered](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.events.emaildelivered.html)<br/>
 [mixins.experience-event.experienceevent-card-actions](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.experienceevent-card-actions.html)<br/>
 [mixins.experience-event.experienceevent-support-request](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.experienceevent-support-request.html)<br/>
-[mixins.experience-event.experienceevent-personal-finance-details](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.experienceevent-personal-finance-details.html)<br/>
 [mixins.experience-event.industry-verticals.experienceevent-contact-request-details](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.industry-verticals.experienceevent-contact-request-details.html)<br/>
 [mixins.experience-event.industry-verticals.experienceevent-lodging-reservation](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.industry-verticals.experienceevent-lodging-reservation.html)<br/>
 [mixins.experience-event.industry-verticals.experienceevent-upsell-details](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.industry-verticals.experienceevent-upsell-details.html)<br/>
@@ -279,6 +279,7 @@
 [mixins.experience-event.industry-verticals.experienceevent-dining-reservation](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.industry-verticals.experienceevent-dining-reservation.html)<br/>
 [mixins.experience-event.industry-verticals.experienceevent-device-details](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.industry-verticals.experienceevent-device-details.html)<br/>
 [mixins.experience-event.industry-verticals.experienceevent-appointment-request-steps](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.industry-verticals.experienceevent-appointment-request-steps.html)<br/>
+[mixins.experience-event.industry-verticals.experienceevent-flight-check-in-details](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.industry-verticals.experienceevent-flight-check-in-details.html)<br/>
 [mixins.experience-event.industry-verticals.experienceevent-credit-limit-increase-details](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.industry-verticals.experienceevent-credit-limit-increase-details.html)<br/>
 [mixins.experience-event.industry-verticals.experienceevent-upgrade-details](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.industry-verticals.experienceevent-upgrade-details.html)<br/>
 [mixins.experience-event.industry-verticals.experienceevent-bill-pay-steps](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.industry-verticals.experienceevent-bill-pay-steps.html)<br/>
@@ -289,6 +290,7 @@
 [mixins.experience-event.industry-verticals.experienceevent-flight](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.industry-verticals.experienceevent-flight.html)<br/>
 [mixins.experience-event.industry-verticals.experienceevent-autopay-enrollment-details](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.industry-verticals.experienceevent-autopay-enrollment-details.html)<br/>
 [mixins.experience-event.industry-verticals.experienceevent-reservation-details](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.industry-verticals.experienceevent-reservation-details.html)<br/>
+[mixins.experience-event.industry-verticals.experienceevent-lodging-check-in-details](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.industry-verticals.experienceevent-lodging-check-in-details.html)<br/>
 [mixins.experience-event.industry-verticals.experienceevent-dispute-steps](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.industry-verticals.experienceevent-dispute-steps.html)<br/>
 [mixins.experience-event.industry-verticals.experienceevent-card-application-process](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.industry-verticals.experienceevent-card-application-process.html)<br/>
 [mixins.experience-event.industry-verticals.experienceevent-alert-impressions](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.industry-verticals.experienceevent-alert-impressions.html)<br/>

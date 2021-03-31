@@ -8,11 +8,6 @@
   "auditable": true,
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:status": [
-    "stable",
-    "deprecated",
-    "experimental"
-  ],
   "meta:tags": [
     {
       "industry": [
@@ -31,6 +26,11 @@
     },
     {
       "industry": [
+        "financial_services"
+      ]
+    },
+    {
+      "industry": [
         "retail",
         "financial_services",
         "travel_and_hospitality",
@@ -44,6 +44,11 @@
         "public_sector"
       ]
     }
+  ],
+  "meta:status": [
+    "stable",
+    "deprecated",
+    "experimental"
   ],
   "properties": {
     "repositoryCreatedBy": {
@@ -147,7 +152,7 @@
       "meta:xdmField": "xdm:personComponents",
       "tagNumber": 11,
       "items": {
-        "$ref": "obj30366764256142775.schema.json"
+        "$ref": "obj30759681400186434.schema.json"
       }
     },
     "b2b": {
@@ -1490,7 +1495,7 @@
           "meta:xdmField": "xdm:pointsExpiration",
           "tagNumber": 4,
           "items": {
-            "$ref": "obj08389996299212088.schema.json"
+            "$ref": "obj8026448315217614.schema.json"
           }
         },
         "pointsRedeemed": {
@@ -1551,6 +1556,125 @@
       "meta:xdmField": "xdm:geoUnit",
       "tagNumber": 40
     },
+    "personalFinances": {
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "accountCardsTotal": {
+          "title": "Account Cards Total",
+          "type": "integer",
+          "description": "Total number of account (financial) cards assigned to a user.",
+          "meta:xdmType": "int",
+          "meta:xdmField": "xdm:accountCardsTotal",
+          "tagNumber": 1
+        },
+        "assignedBeneficiary": {
+          "title": "Assigned Beneficiaries",
+          "type": "array",
+          "description": "Captures the beneficiary(s) assigned to the account.",
+          "meta:xdmType": "array",
+          "items": {
+            "$ref": "../mixins/profile/profile-person-details.schema.json",
+            "tagNumber": 1
+          },
+          "meta:xdmField": "xdm:assignedBeneficiary",
+          "tagNumber": 2
+        },
+        "creditScore": {
+          "title": "Credit Score",
+          "type": "integer",
+          "description": "Refers to a number between 300-850 that depicts a consumer's creditworthiness. ",
+          "meta:xdmType": "int",
+          "meta:xdmField": "xdm:creditScore",
+          "tagNumber": 3
+        },
+        "employmentStatus": {
+          "title": "Employment Status",
+          "type": "string",
+          "enum": [
+            "full time",
+            "part time",
+            "temporary",
+            "self employed",
+            "retired",
+            "unemployed"
+          ],
+          "description": "Tracks the employment status of the user.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:employmentStatus",
+          "tagNumber": 4
+        },
+        "filingJointly": {
+          "title": "Filing Jointly",
+          "type": "boolean",
+          "description": "Refers to a filing status for married couples that have wed before the end of the tax year.",
+          "meta:xdmType": "boolean",
+          "meta:xdmField": "xdm:filingJointly",
+          "tagNumber": 5
+        },
+        "filingSeparately": {
+          "title": "Filing Separately",
+          "type": "boolean",
+          "description": "Refers to married couples who choose to record their respective incomes, exemptions, and deductions on separate tax returns.",
+          "meta:xdmType": "boolean",
+          "meta:xdmField": "xdm:filingSeparately",
+          "tagNumber": 6
+        },
+        "financialAccount": {
+          "title": "financeAccountId",
+          "type": "array",
+          "description": "Financial account IDs assigned to the user, and array of Financial Account Details data type.",
+          "meta:xdmType": "array",
+          "items": {
+            "$ref": "../datatypes/industry-verticals/financial-account.schema.json",
+            "tagNumber": 1
+          },
+          "meta:xdmField": "xdm:financialAccount",
+          "tagNumber": 7
+        },
+        "hasAssignedBeneficiary": {
+          "title": "Has Assigned Beneficiary",
+          "type": "boolean",
+          "description": "Flag determining if the account has a beneficiary assigned.",
+          "meta:xdmType": "boolean",
+          "meta:xdmField": "xdm:hasAssignedBeneficiary",
+          "tagNumber": 8
+        },
+        "isHeadOfHousehold": {
+          "title": "Head of Household",
+          "type": "boolean",
+          "description": "Users designed as head of household if they pay more than half the cost of supporting and housing a qualifying person.",
+          "meta:xdmType": "boolean",
+          "meta:xdmField": "xdm:isHeadOfHousehold",
+          "tagNumber": 9
+        },
+        "householdIncome": {
+          "title": "Household Income",
+          "$ref": "../datatypes/currency.schema.json",
+          "description": "Refers to the combined gross income of all members of a household.",
+          "meta:xdmField": "xdm:householdIncome",
+          "tagNumber": 10
+        },
+        "singleFiler": {
+          "title": "Single Filer",
+          "type": "boolean",
+          "description": "Refers to a taxpayer who is unmarried and does not qualify for any other filing status.",
+          "meta:xdmType": "boolean",
+          "meta:xdmField": "xdm:singleFiler",
+          "tagNumber": 11
+        },
+        "taxBracket": {
+          "title": "Tax Bracket",
+          "type": "string",
+          "description": "Refers to a range of incomes subject to a certain income tax rate.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:taxBracket",
+          "tagNumber": 12
+        }
+      },
+      "meta:xdmField": "xdm:personalFinances",
+      "tagNumber": 41
+    },
     "preferredLanguage": {
       "title": "Preferred language",
       "type": "string",
@@ -1563,7 +1687,7 @@
       "description": "Describes the preferred system of communication used by the profile. Language codes are expressed in BCP 47 format.",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:preferredLanguage",
-      "tagNumber": 41
+      "tagNumber": 42
     },
     "profilePictureLink": {
       "title": "Profile picture link",
@@ -1571,7 +1695,7 @@
       "description": "Link to profile's picture.",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:profilePictureLink",
-      "tagNumber": 42
+      "tagNumber": 43
     },
     "emailFormat": {
       "title": "Email format",
@@ -1579,7 +1703,7 @@
       "description": "Email format preferred by the profile. This can be rich text or plain text.",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:emailFormat",
-      "tagNumber": 43
+      "tagNumber": 44
     },
     "timeZone": {
       "title": "Time zone",
@@ -1592,14 +1716,14 @@
       "description": "Describes which time zone the profile is present in, most frequently the time zone preferred by the profile. Time zones are expressed according to the IETF tz database: https://www.ietf.org/timezones/tzdb-2016i/tz-link.htm",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:timeZone",
-      "tagNumber": 44
+      "tagNumber": 45
     },
     "optInOut": {
       "title": "OptInOut",
       "$ref": "../datatypes/optinout.schema.json",
       "description": "Describes a users opting in and out preferences for communication by medium and communication type.",
       "meta:xdmField": "xdm:optInOut",
-      "tagNumber": 45
+      "tagNumber": 46
     },
     "identityPrivacyInfo": {
       "title": "Identity level privacy information",
@@ -1607,7 +1731,7 @@
       "type": "object",
       "meta:xdmType": "map",
       "meta:xdmField": "xdm:identityPrivacyInfo",
-      "tagNumber": 47,
+      "tagNumber": 48,
       "properties": {
         "mapObj": {
           "title": "User namespace",
@@ -1666,7 +1790,7 @@
         "tagNumber": 1
       },
       "meta:xdmField": "xdm:pushNotificationTokens",
-      "tagNumber": 48
+      "tagNumber": 49
     },
     "pushNotificationDetails": {
       "title": "Push details",
@@ -1678,14 +1802,14 @@
         "tagNumber": 1
       },
       "meta:xdmField": "xdm:pushNotificationDetails",
-      "tagNumber": 49
+      "tagNumber": 50
     },
     "segmentMembership": {
       "title": "Segment membership map",
       "type": "object",
       "meta:xdmType": "map",
       "meta:xdmField": "xdm:segmentMembership",
-      "tagNumber": 51,
+      "tagNumber": 52,
       "properties": {
         "mapObj": {
           "title": "Segment membership per namespace",
@@ -1711,7 +1835,7 @@
         "tagNumber": 1
       },
       "meta:xdmField": "xdm:subscriptions",
-      "tagNumber": 52
+      "tagNumber": 53
     },
     "testProfile": {
       "title": "Test profile",
@@ -1720,7 +1844,7 @@
       "default": false,
       "meta:xdmType": "boolean",
       "meta:xdmField": "xdm:testProfile",
-      "tagNumber": 53
+      "tagNumber": 54
     },
     "userAccount": {
       "type": "object",
@@ -1787,7 +1911,7 @@
         }
       },
       "meta:xdmField": "xdm:userAccount",
-      "tagNumber": 54
+      "tagNumber": 55
     }
   },
   "meta:xdmId": "https://ns.adobe.com/xdm/context/profile-generated",

@@ -7,10 +7,6 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:status": [
-    "stable",
-    "experimental"
-  ],
   "meta:tags": [
     {
       "industry": [
@@ -105,6 +101,10 @@
         "health_and_life_sciences"
       ]
     }
+  ],
+  "meta:status": [
+    "stable",
+    "experimental"
   ],
   "properties": {
     "identityMap": {

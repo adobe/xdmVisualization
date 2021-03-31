@@ -7,10 +7,6 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:status": [
-    "stable",
-    "experimental"
-  ],
   "meta:tags": [
     {
       "industry": [
@@ -172,6 +168,10 @@
         "high_tech"
       ]
     }
+  ],
+  "meta:status": [
+    "stable",
+    "experimental"
   ],
   "properties": {
     "identityMap": {
@@ -337,12 +337,6 @@
           "title": "Financial Account",
           "$ref": "../../datatypes/industry-verticals/tool-usage.schema.json",
           "description": "Extension of toolUsage data type.",
-          "type": "array",
-          "meta:xdmType": "array",
-          "items": {
-            "$ref": "../../datatypes/industry-verticals/financial-account.schema.json",
-            "tagNumber": 1
-          },
           "meta:xdmField": "xdm:financialAccount",
           "tagNumber": 11
         },
@@ -360,181 +354,82 @@
           "meta:xdmField": "xdm:loan",
           "tagNumber": 13
         },
-        "accountCardsTotal": {
-          "title": "Account Cards Total",
-          "type": "integer",
-          "description": "Total number of account (financial) cards assigned to a user.",
-          "meta:xdmType": "int",
-          "meta:xdmField": "xdm:accountCardsTotal",
-          "tagNumber": 14
-        },
-        "assignedBeneficiary": {
-          "title": "Assigned Beneficiaries",
-          "type": "array",
-          "description": "Captures the beneficiary(s) assigned to the account.",
-          "meta:xdmType": "array",
-          "items": {
-            "$ref": "../../mixins/profile/profile-person-details.schema.json",
-            "tagNumber": 1
-          },
-          "meta:xdmField": "xdm:assignedBeneficiary",
-          "tagNumber": 15
-        },
-        "creditScore": {
-          "title": "Credit Score",
-          "type": "integer",
-          "description": "Refers to a number between 300-850 that depicts a consumer's creditworthiness. ",
-          "meta:xdmType": "int",
-          "meta:xdmField": "xdm:creditScore",
-          "tagNumber": 16
-        },
-        "employmentStatus": {
-          "title": "Employment Status",
-          "type": "string",
-          "enum": [
-            "full time",
-            "part time",
-            "temporary",
-            "self employed",
-            "retired",
-            "unemployed"
-          ],
-          "description": "Tracks the employment status of the user.",
-          "meta:xdmType": "string",
-          "meta:xdmField": "xdm:employmentStatus",
-          "tagNumber": 17
-        },
-        "filingJointly": {
-          "title": "Filing Jointly",
-          "type": "boolean",
-          "description": "Refers to a filing status for married couples that have wed before the end of the tax year.",
-          "meta:xdmType": "boolean",
-          "meta:xdmField": "xdm:filingJointly",
-          "tagNumber": 18
-        },
-        "filingSeparately": {
-          "title": "Filing Separately",
-          "type": "boolean",
-          "description": "Refers to married couples who choose to record their respective incomes, exemptions, and deductions on separate tax returns.",
-          "meta:xdmType": "boolean",
-          "meta:xdmField": "xdm:filingSeparately",
-          "tagNumber": 19
-        },
-        "hasAssignedBeneficiary": {
-          "title": "Has Assigned Beneficiary",
-          "type": "boolean",
-          "description": "Flag determining if the account has a beneficiary assigned.",
-          "meta:xdmType": "boolean",
-          "meta:xdmField": "xdm:hasAssignedBeneficiary",
-          "tagNumber": 20
-        },
-        "isHeadOfHousehold": {
-          "title": "Head of Household",
-          "type": "boolean",
-          "description": "Users designed as head of household if they pay more than half the cost of supporting and housing a qualifying person.",
-          "meta:xdmType": "boolean",
-          "meta:xdmField": "xdm:isHeadOfHousehold",
-          "tagNumber": 21
-        },
-        "householdIncome": {
-          "title": "Household Income",
-          "$ref": "../../datatypes/currency.schema.json",
-          "description": "Refers to the combined gross income of all members of a household.",
-          "meta:xdmField": "xdm:householdIncome",
-          "tagNumber": 22
-        },
-        "singleFiler": {
-          "title": "Single Filer",
-          "type": "boolean",
-          "description": "Refers to a taxpayer who is unmarried and does not qualify for any other filing status.",
-          "meta:xdmType": "boolean",
-          "meta:xdmField": "xdm:singleFiler",
-          "tagNumber": 23
-        },
-        "taxBracket": {
-          "title": "Tax Bracket",
-          "type": "string",
-          "description": "Refers to a range of incomes subject to a certain income tax rate.",
-          "meta:xdmType": "string",
-          "meta:xdmField": "xdm:taxBracket",
-          "tagNumber": 24
-        },
         "requestCreditScore": {
           "title": "Request Credit Score",
           "$ref": "../../datatypes/industry-verticals/tool-usage.schema.json",
           "description": "Extension of toolUsage data type.",
           "meta:xdmField": "xdm:requestCreditScore",
-          "tagNumber": 25
+          "tagNumber": 14
         },
         "balanceTransfer": {
           "title": "Balance Transfer",
           "$ref": "../../datatypes/industry-verticals/transaction.schema.json",
           "description": "Extension of transaction data type.",
           "meta:xdmField": "xdm:balanceTransfer",
-          "tagNumber": 26
+          "tagNumber": 15
         },
         "balanceTransferAccount": {
           "title": "Balance Transfer Account",
           "$ref": "../../datatypes/industry-verticals/financial-account.schema.json",
           "description": "Extension of financialAccount data type.",
           "meta:xdmField": "xdm:balanceTransferAccount",
-          "tagNumber": 27
+          "tagNumber": 16
         },
         "billPay": {
           "title": "Bill Pay Steps",
           "$ref": "../../datatypes/industry-verticals/tool-usage.schema.json",
           "description": "Extension of toolUsage data type.",
           "meta:xdmField": "xdm:billPay",
-          "tagNumber": 28
+          "tagNumber": 17
         },
         "billPayAccount": {
           "title": "Bill Pay Account",
           "$ref": "../../datatypes/industry-verticals/financial-account.schema.json",
           "description": "Extension of financialAccount data type.",
           "meta:xdmField": "xdm:billPayAccount",
-          "tagNumber": 29
+          "tagNumber": 18
         },
         "cardApplicationComparisons": {
           "title": "Card Comparisons",
           "$ref": "../../datatypes/industry-verticals/comparisons.schema.json",
           "description": "Extension of comparison data type.",
           "meta:xdmField": "xdm:cardApplicationComparisons",
-          "tagNumber": 30
+          "tagNumber": 19
         },
         "cardApplicationSteps": {
           "title": "Card Application Steps",
           "$ref": "../../datatypes/industry-verticals/form-applications.schema.json",
           "description": "Extension of form application data type.",
           "meta:xdmField": "xdm:cardApplicationSteps",
-          "tagNumber": 31
+          "tagNumber": 20
         },
         "creditLimitIncrease": {
           "title": "Credit Limit Increase",
           "$ref": "../../datatypes/industry-verticals/form-applications.schema.json",
           "description": "Extension of form application data type.",
           "meta:xdmField": "xdm:creditLimitIncrease",
-          "tagNumber": 32
+          "tagNumber": 21
         },
         "deposit": {
           "title": "Deposit",
           "$ref": "../../datatypes/industry-verticals/transaction.schema.json",
           "description": "Extension of transaction data type.",
           "meta:xdmField": "xdm:deposit",
-          "tagNumber": 33
+          "tagNumber": 22
         },
         "depositAccount": {
           "title": "Deposit Account",
           "$ref": "../../datatypes/industry-verticals/financial-account.schema.json",
           "description": "Extension of financialAccount data type.",
           "meta:xdmField": "xdm:depositAccount",
-          "tagNumber": 34
+          "tagNumber": 23
         },
         "watchlistSteps": {
           "title": "Watchlist Steps",
           "$ref": "../../datatypes/industry-verticals/tool-usage.schema.json",
           "description": "Extension of toolUsage data type.",
           "meta:xdmField": "xdm:watchlistSteps",
-          "tagNumber": 35
+          "tagNumber": 24
         }
       },
       "meta:xdmField": "xdm:personalFinances",

@@ -8,11 +8,12 @@
   "auditable": true,
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:status": [
-    "stable",
-    "experimental"
-  ],
   "meta:tags": [
+    {
+      "industry": [
+        "all"
+      ]
+    },
     {
       "industry": [
         "retail",
@@ -21,11 +22,6 @@
         "health_and_life_sciences",
         "high_tech",
         "manufacturing"
-      ]
-    },
-    {
-      "industry": [
-        "all"
       ]
     },
     {
@@ -43,6 +39,10 @@
         "public_sector"
       ]
     }
+  ],
+  "meta:status": [
+    "stable",
+    "experimental"
   ],
   "properties": {
     "repositoryCreatedBy": {
@@ -128,6 +128,309 @@
       "meta:xdmField": "xdm:personID",
       "tagNumber": 7
     },
+    "b2b": {
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "accountID": {
+          "title": "Contact Account id",
+          "description": "ID of the account that’s the parent of this person.",
+          "type": "string",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:accountID",
+          "tagNumber": 1
+        },
+        "isBlocked": {
+          "title": "Blocked Indicator",
+          "description": "Indicator if the person is blocked or not.",
+          "type": "boolean",
+          "meta:xdmType": "boolean",
+          "meta:xdmField": "xdm:isBlocked",
+          "tagNumber": 2
+        },
+        "blockedCause": {
+          "title": "Blocked Cause",
+          "description": "Reason why the person is blocked.",
+          "type": "string",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:blockedCause",
+          "tagNumber": 3
+        },
+        "isMarketingSuspended": {
+          "title": "Marketing Suspended Indicator",
+          "description": "Marketing suspended flag.",
+          "type": "boolean",
+          "meta:xdmType": "boolean",
+          "meta:xdmField": "xdm:isMarketingSuspended",
+          "tagNumber": 4
+        },
+        "marketingSuspendedCause": {
+          "title": "Marketing Suspended Cause",
+          "description": "Reason why the person is suspended for any marketing purposes.",
+          "type": "string",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:marketingSuspendedCause",
+          "tagNumber": 5
+        },
+        "isConverted": {
+          "title": "Converted Indicator",
+          "description": "Indicates whether the Lead was successfully converted or not.",
+          "type": "boolean",
+          "meta:xdmType": "boolean",
+          "meta:xdmField": "xdm:isConverted",
+          "tagNumber": 6
+        },
+        "convertedDate": {
+          "title": "Converted Date",
+          "description": "Date of conversion if the lead was successfully converted.",
+          "type": "string",
+          "format": "date-time",
+          "meta:xdmType": "date-time",
+          "meta:xdmField": "xdm:convertedDate",
+          "tagNumber": 7
+        },
+        "convertedContactID": {
+          "title": "Converted Contact ID",
+          "description": "Contact Id if the lead was successfully converted.",
+          "type": "string",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:convertedContactID",
+          "tagNumber": 8
+        },
+        "personOptInOut": {
+          "title": "Person Preferences",
+          "description": "Holds opt out values for different channels as selected by the person.",
+          "$ref": "../../datatypes/optinout.schema.json",
+          "meta:xdmField": "xdm:personOptInOut",
+          "tagNumber": 9
+        },
+        "personType": {
+          "title": "Person Type",
+          "description": "Type of the B2B person.",
+          "type": "string",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:personType",
+          "tagNumber": 10
+        },
+        "personStatus": {
+          "title": "Person Status",
+          "description": "Field recording the current marketing/sales status of the Person.",
+          "type": "string",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:personStatus",
+          "tagNumber": 11
+        },
+        "personSource": {
+          "title": "Person Source",
+          "description": "Source from where the information regarding the person was received.",
+          "type": "string",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:personSource",
+          "tagNumber": 12
+        },
+        "personScore": {
+          "title": "Person Score",
+          "description": "A Score generated for a person by the CRM system.",
+          "type": "number",
+          "meta:xdmType": "number",
+          "meta:xdmField": "xdm:personScore",
+          "tagNumber": 13
+        },
+        "personGroupID": {
+          "title": "Person Group ID",
+          "description": "Group identifier for the person.",
+          "type": "string",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:personGroupID",
+          "tagNumber": 14
+        }
+      },
+      "meta:xdmField": "xdm:b2b",
+      "tagNumber": 8
+    },
+    "homeAddress": {
+      "title": "Home address",
+      "$ref": "../../datatypes/demographic/address.schema.json",
+      "description": "A home postal address.",
+      "meta:xdmField": "xdm:homeAddress",
+      "tagNumber": 9
+    },
+    "personalEmail": {
+      "title": "Personal email",
+      "$ref": "../../datatypes/demographic/emailaddress.schema.json",
+      "description": "A personal email address.",
+      "meta:xdmField": "xdm:personalEmail",
+      "tagNumber": 10
+    },
+    "homePhone": {
+      "title": "Home phone",
+      "$ref": "../../datatypes/demographic/phonenumber.schema.json",
+      "description": "Home phone number.",
+      "meta:xdmField": "xdm:homePhone",
+      "tagNumber": 11
+    },
+    "mobilePhone": {
+      "title": "Mobile phone",
+      "$ref": "../../datatypes/demographic/phonenumber.schema.json",
+      "description": "Mobile phone number.",
+      "meta:xdmField": "xdm:mobilePhone",
+      "tagNumber": 12
+    },
+    "faxPhone": {
+      "title": "Fax phone",
+      "$ref": "../../datatypes/demographic/phonenumber.schema.json",
+      "description": "Fax phone number.",
+      "meta:xdmField": "xdm:faxPhone",
+      "tagNumber": 13
+    },
+    "person": {
+      "title": "Person",
+      "$ref": "../../datatypes/person/person.schema.json",
+      "description": "An individual actor, contact, or owner.",
+      "meta:xdmField": "xdm:person",
+      "tagNumber": 14
+    },
+    "otherAddress": {
+      "title": "Other Address",
+      "$ref": "../../datatypes/demographic/address.schema.json",
+      "description": "Other/Alternate postal address of the person.",
+      "meta:xdmField": "xdm:otherAddress",
+      "tagNumber": 15
+    },
+    "otherPhone": {
+      "title": "Other Phone",
+      "$ref": "../../datatypes/demographic/phonenumber.schema.json",
+      "description": "Other/Alternate phone number of the person.",
+      "meta:xdmField": "xdm:otherPhone",
+      "tagNumber": 16
+    },
+    "extendedWorkDetails": {
+      "type": "object",
+      "title": "Some Additional Person Work Details",
+      "meta:xdmType": "object",
+      "properties": {
+        "assistantDetails": {
+          "type": "object",
+          "title": "Assitant Details",
+          "meta:xdmType": "object",
+          "properties": {
+            "name": {
+              "title": "Assistant Name",
+              "$ref": "../../datatypes/person/person-name.schema.json",
+              "description": "Person's assistant full name.",
+              "meta:xdmField": "xdm:name",
+              "tagNumber": 1
+            },
+            "phone": {
+              "title": "Assistant Phone",
+              "$ref": "../../datatypes/demographic/phonenumber.schema.json",
+              "description": "Person's assistant phone number.",
+              "meta:xdmField": "xdm:phone",
+              "tagNumber": 2
+            }
+          },
+          "meta:xdmField": "xdm:assistantDetails",
+          "tagNumber": 1
+        },
+        "reportsToID": {
+          "title": "Reports To Id",
+          "description": "Identifier of the Reporting Manager.",
+          "type": "string",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:reportsToID",
+          "tagNumber": 2
+        },
+        "departments": {
+          "title": "Department Name",
+          "description": "Department name where the person works.",
+          "type": "array",
+          "meta:xdmType": "array",
+          "items": {
+            "type": "string",
+            "meta:xdmType": "string",
+            "tagNumber": 1
+          },
+          "meta:xdmField": "xdm:departments",
+          "tagNumber": 3
+        },
+        "jobTitle": {
+          "title": "Job Title",
+          "description": "Job title of the person.",
+          "type": "string",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:jobTitle",
+          "tagNumber": 4
+        },
+        "photoUrl": {
+          "title": "Photo Url",
+          "description": "Photo url of the person.",
+          "type": "string",
+          "format": "uri",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:photoUrl",
+          "tagNumber": 5
+        }
+      },
+      "meta:xdmField": "xdm:extendedWorkDetails",
+      "tagNumber": 17
+    },
+    "workAddress": {
+      "title": "Work Address",
+      "$ref": "../../datatypes/demographic/address.schema.json",
+      "description": "A work postal address.",
+      "meta:xdmField": "xdm:workAddress",
+      "tagNumber": 18
+    },
+    "workEmail": {
+      "title": "Work Email",
+      "$ref": "../../datatypes/demographic/emailaddress.schema.json",
+      "description": "A work email address.",
+      "meta:xdmField": "xdm:workEmail",
+      "tagNumber": 19
+    },
+    "workPhone": {
+      "title": "Work Phone",
+      "$ref": "../../datatypes/demographic/phonenumber.schema.json",
+      "description": "Work phone number.",
+      "meta:xdmField": "xdm:workPhone",
+      "tagNumber": 20
+    },
+    "organizations": {
+      "title": "Organizations",
+      "type": "array",
+      "meta:xdmType": "array",
+      "items": {
+        "type": "string",
+        "meta:xdmType": "string",
+        "tagNumber": 1
+      },
+      "meta:xdmField": "xdm:organizations",
+      "tagNumber": 21
+    },
+    "identityMap": {
+      "type": "object",
+      "meta:xdmType": "map",
+      "meta:xdmField": "xdm:identityMap",
+      "tagNumber": 22,
+      "properties": {
+        "mapObj": {
+          "type": "array",
+          "meta:xdmType": "array",
+          "items": {
+            "$ref": "../../datatypes/identityitem.schema.json",
+            "tagNumber": 1
+          },
+          "tagNumber": 1
+        }
+      }
+    },
+    "extSourceSystemAudit": {
+      "title": "External Source System Audit Properties",
+      "$ref": "../../datatypes/auditing/external-source-system-audit.schema.json",
+      "description": "Audit attributes for external sources.",
+      "meta:xdmField": "xdm:extSourceSystemAudit",
+      "tagNumber": 23
+    },
     "loyalty": {
       "type": "object",
       "meta:xdmType": "object",
@@ -169,7 +472,7 @@
           "meta:xdmField": "xdm:pointsExpiration",
           "tagNumber": 4,
           "items": {
-            "$ref": "obj30805208962441366.schema.json"
+            "$ref": "obj20403346094368624.schema.json"
           }
         },
         "pointsRedeemed": {
@@ -214,42 +517,7 @@
         }
       },
       "meta:xdmField": "xdm:loyalty",
-      "tagNumber": 8
-    },
-    "homeAddress": {
-      "title": "Home address",
-      "$ref": "../../datatypes/demographic/address.schema.json",
-      "description": "A home postal address.",
-      "meta:xdmField": "xdm:homeAddress",
-      "tagNumber": 9
-    },
-    "personalEmail": {
-      "title": "Personal email",
-      "$ref": "../../datatypes/demographic/emailaddress.schema.json",
-      "description": "A personal email address.",
-      "meta:xdmField": "xdm:personalEmail",
-      "tagNumber": 10
-    },
-    "homePhone": {
-      "title": "Home phone",
-      "$ref": "../../datatypes/demographic/phonenumber.schema.json",
-      "description": "Home phone number.",
-      "meta:xdmField": "xdm:homePhone",
-      "tagNumber": 11
-    },
-    "mobilePhone": {
-      "title": "Mobile phone",
-      "$ref": "../../datatypes/demographic/phonenumber.schema.json",
-      "description": "Mobile phone number.",
-      "meta:xdmField": "xdm:mobilePhone",
-      "tagNumber": 12
-    },
-    "faxPhone": {
-      "title": "Fax phone",
-      "$ref": "../../datatypes/demographic/phonenumber.schema.json",
-      "description": "Fax phone number.",
-      "meta:xdmField": "xdm:faxPhone",
-      "tagNumber": 13
+      "tagNumber": 24
     },
     "identityPrivacyInfo": {
       "title": "Identity level privacy information",
@@ -257,7 +525,7 @@
       "type": "object",
       "meta:xdmType": "map",
       "meta:xdmField": "xdm:identityPrivacyInfo",
-      "tagNumber": 15,
+      "tagNumber": 26,
       "properties": {
         "mapObj": {
           "title": "User namespace",
@@ -371,7 +639,7 @@
         }
       },
       "meta:xdmField": "xdm:userAccount",
-      "tagNumber": 16
+      "tagNumber": 27
     }
   },
   "meta:xdmId": "https://ns.adobe.com/xdm/context/profile-generated-automotive",

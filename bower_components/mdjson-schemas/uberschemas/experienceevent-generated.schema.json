@@ -7,11 +7,6 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:status": [
-    "stable",
-    "deprecated",
-    "experimental"
-  ],
   "meta:tags": [
     {
       "industry": [
@@ -189,6 +184,11 @@
       ]
     }
   ],
+  "meta:status": [
+    "stable",
+    "deprecated",
+    "experimental"
+  ],
   "meta:conditionalField": "xdm:eventType",
   "meta:conditionalValue": [
     "listOperation.addToList",
@@ -317,7 +317,7 @@
           "meta:xdmField": "xdm:dataValueChanges",
           "tagNumber": 4,
           "items": {
-            "$ref": "obj507576804459285.schema.json"
+            "$ref": "obj40229420758365664.schema.json"
           }
         }
       },
@@ -1090,12 +1090,6 @@
           "title": "Financial Account",
           "$ref": "../datatypes/industry-verticals/tool-usage.schema.json",
           "description": "Extension of toolUsage data type.",
-          "type": "array",
-          "meta:xdmType": "array",
-          "items": {
-            "$ref": "../datatypes/industry-verticals/financial-account.schema.json",
-            "tagNumber": 1
-          },
           "meta:xdmField": "xdm:financialAccount",
           "tagNumber": 11
         },
@@ -1113,181 +1107,82 @@
           "meta:xdmField": "xdm:loan",
           "tagNumber": 13
         },
-        "accountCardsTotal": {
-          "title": "Account Cards Total",
-          "type": "integer",
-          "description": "Total number of account (financial) cards assigned to a user.",
-          "meta:xdmType": "int",
-          "meta:xdmField": "xdm:accountCardsTotal",
-          "tagNumber": 14
-        },
-        "assignedBeneficiary": {
-          "title": "Assigned Beneficiaries",
-          "type": "array",
-          "description": "Captures the beneficiary(s) assigned to the account.",
-          "meta:xdmType": "array",
-          "items": {
-            "$ref": "../mixins/profile/profile-person-details.schema.json",
-            "tagNumber": 1
-          },
-          "meta:xdmField": "xdm:assignedBeneficiary",
-          "tagNumber": 15
-        },
-        "creditScore": {
-          "title": "Credit Score",
-          "type": "integer",
-          "description": "Refers to a number between 300-850 that depicts a consumer's creditworthiness. ",
-          "meta:xdmType": "int",
-          "meta:xdmField": "xdm:creditScore",
-          "tagNumber": 16
-        },
-        "employmentStatus": {
-          "title": "Employment Status",
-          "type": "string",
-          "enum": [
-            "full time",
-            "part time",
-            "temporary",
-            "self employed",
-            "retired",
-            "unemployed"
-          ],
-          "description": "Tracks the employment status of the user.",
-          "meta:xdmType": "string",
-          "meta:xdmField": "xdm:employmentStatus",
-          "tagNumber": 17
-        },
-        "filingJointly": {
-          "title": "Filing Jointly",
-          "type": "boolean",
-          "description": "Refers to a filing status for married couples that have wed before the end of the tax year.",
-          "meta:xdmType": "boolean",
-          "meta:xdmField": "xdm:filingJointly",
-          "tagNumber": 18
-        },
-        "filingSeparately": {
-          "title": "Filing Separately",
-          "type": "boolean",
-          "description": "Refers to married couples who choose to record their respective incomes, exemptions, and deductions on separate tax returns.",
-          "meta:xdmType": "boolean",
-          "meta:xdmField": "xdm:filingSeparately",
-          "tagNumber": 19
-        },
-        "hasAssignedBeneficiary": {
-          "title": "Has Assigned Beneficiary",
-          "type": "boolean",
-          "description": "Flag determining if the account has a beneficiary assigned.",
-          "meta:xdmType": "boolean",
-          "meta:xdmField": "xdm:hasAssignedBeneficiary",
-          "tagNumber": 20
-        },
-        "isHeadOfHousehold": {
-          "title": "Head of Household",
-          "type": "boolean",
-          "description": "Users designed as head of household if they pay more than half the cost of supporting and housing a qualifying person.",
-          "meta:xdmType": "boolean",
-          "meta:xdmField": "xdm:isHeadOfHousehold",
-          "tagNumber": 21
-        },
-        "householdIncome": {
-          "title": "Household Income",
-          "$ref": "../datatypes/currency.schema.json",
-          "description": "Refers to the combined gross income of all members of a household.",
-          "meta:xdmField": "xdm:householdIncome",
-          "tagNumber": 22
-        },
-        "singleFiler": {
-          "title": "Single Filer",
-          "type": "boolean",
-          "description": "Refers to a taxpayer who is unmarried and does not qualify for any other filing status.",
-          "meta:xdmType": "boolean",
-          "meta:xdmField": "xdm:singleFiler",
-          "tagNumber": 23
-        },
-        "taxBracket": {
-          "title": "Tax Bracket",
-          "type": "string",
-          "description": "Refers to a range of incomes subject to a certain income tax rate.",
-          "meta:xdmType": "string",
-          "meta:xdmField": "xdm:taxBracket",
-          "tagNumber": 24
-        },
         "requestCreditScore": {
           "title": "Request Credit Score",
           "$ref": "../datatypes/industry-verticals/tool-usage.schema.json",
           "description": "Extension of toolUsage data type.",
           "meta:xdmField": "xdm:requestCreditScore",
-          "tagNumber": 25
+          "tagNumber": 14
         },
         "balanceTransfer": {
           "title": "Balance Transfer",
           "$ref": "../datatypes/industry-verticals/transaction.schema.json",
           "description": "Extension of transaction data type.",
           "meta:xdmField": "xdm:balanceTransfer",
-          "tagNumber": 26
+          "tagNumber": 15
         },
         "balanceTransferAccount": {
           "title": "Balance Transfer Account",
           "$ref": "../datatypes/industry-verticals/financial-account.schema.json",
           "description": "Extension of financialAccount data type.",
           "meta:xdmField": "xdm:balanceTransferAccount",
-          "tagNumber": 27
+          "tagNumber": 16
         },
         "billPay": {
           "title": "Bill Pay Steps",
           "$ref": "../datatypes/industry-verticals/tool-usage.schema.json",
           "description": "Extension of toolUsage data type.",
           "meta:xdmField": "xdm:billPay",
-          "tagNumber": 28
+          "tagNumber": 17
         },
         "billPayAccount": {
           "title": "Bill Pay Account",
           "$ref": "../datatypes/industry-verticals/financial-account.schema.json",
           "description": "Extension of financialAccount data type.",
           "meta:xdmField": "xdm:billPayAccount",
-          "tagNumber": 29
+          "tagNumber": 18
         },
         "cardApplicationComparisons": {
           "title": "Card Comparisons",
           "$ref": "../datatypes/industry-verticals/comparisons.schema.json",
           "description": "Extension of comparison data type.",
           "meta:xdmField": "xdm:cardApplicationComparisons",
-          "tagNumber": 30
+          "tagNumber": 19
         },
         "cardApplicationSteps": {
           "title": "Card Application Steps",
           "$ref": "../datatypes/industry-verticals/form-applications.schema.json",
           "description": "Extension of form application data type.",
           "meta:xdmField": "xdm:cardApplicationSteps",
-          "tagNumber": 31
+          "tagNumber": 20
         },
         "creditLimitIncrease": {
           "title": "Credit Limit Increase",
           "$ref": "../datatypes/industry-verticals/form-applications.schema.json",
           "description": "Extension of form application data type.",
           "meta:xdmField": "xdm:creditLimitIncrease",
-          "tagNumber": 32
+          "tagNumber": 21
         },
         "deposit": {
           "title": "Deposit",
           "$ref": "../datatypes/industry-verticals/transaction.schema.json",
           "description": "Extension of transaction data type.",
           "meta:xdmField": "xdm:deposit",
-          "tagNumber": 33
+          "tagNumber": 22
         },
         "depositAccount": {
           "title": "Deposit Account",
           "$ref": "../datatypes/industry-verticals/financial-account.schema.json",
           "description": "Extension of financialAccount data type.",
           "meta:xdmField": "xdm:depositAccount",
-          "tagNumber": 34
+          "tagNumber": 23
         },
         "watchlistSteps": {
           "title": "Watchlist Steps",
           "$ref": "../datatypes/industry-verticals/tool-usage.schema.json",
           "description": "Extension of toolUsage data type.",
           "meta:xdmField": "xdm:watchlistSteps",
-          "tagNumber": 35
+          "tagNumber": 24
         }
       },
       "meta:xdmField": "xdm:personalFinances",
@@ -2554,6 +2449,54 @@
           "meta:xdmField": "xdm:type",
           "tagNumber": 22
         },
+        "flightReservations": {
+          "title": "Flight Reservations",
+          "type": "array",
+          "description": "Array of flight reservations under the main trip reservation.",
+          "meta:xdmType": "array",
+          "items": {
+            "$ref": "../mixins/experience-event/industry-verticals/experienceevent-flight-reservation.schema.json",
+            "tagNumber": 1
+          },
+          "meta:xdmField": "xdm:flightReservations",
+          "tagNumber": 23
+        },
+        "lodgingReservations": {
+          "title": "Lodging Reservations",
+          "type": "array",
+          "description": "Array of lodging reservations under the main trip reservation.",
+          "meta:xdmType": "array",
+          "items": {
+            "$ref": "../mixins/experience-event/industry-verticals/experienceevent-lodging-reservation.schema.json",
+            "tagNumber": 1
+          },
+          "meta:xdmField": "xdm:lodgingReservations",
+          "tagNumber": 24
+        },
+        "vehicleReservations": {
+          "title": "Vehicle Reservations",
+          "type": "array",
+          "description": "Array of vehicle reservations under the main trip reservation.",
+          "meta:xdmType": "array",
+          "items": {
+            "$ref": "../mixins/experience-event/industry-verticals/experienceevent-vehicle-reservation.schema.json",
+            "tagNumber": 1
+          },
+          "meta:xdmField": "xdm:vehicleReservations",
+          "tagNumber": 25
+        },
+        "diningReservations": {
+          "title": "Dining Reservations",
+          "type": "array",
+          "description": "Array of dining reservations under the main trip reservation.",
+          "meta:xdmType": "array",
+          "items": {
+            "$ref": "../mixins/experience-event/industry-verticals/experienceevent-dining-reservation.schema.json",
+            "tagNumber": 1
+          },
+          "meta:xdmField": "xdm:diningReservations",
+          "tagNumber": 26
+        },
         "flightReservation": {
           "type": "object",
           "meta:xdmType": "object",
@@ -2651,7 +2594,7 @@
             }
           },
           "meta:xdmField": "xdm:flightReservation",
-          "tagNumber": 23
+          "tagNumber": 27
         },
         "lodgingReservation": {
           "type": "object",
@@ -2840,7 +2783,7 @@
             }
           },
           "meta:xdmField": "xdm:lodgingReservation",
-          "tagNumber": 24
+          "tagNumber": 28
         },
         "vehicleReservation": {
           "type": "object",
@@ -3006,11 +2949,80 @@
             }
           },
           "meta:xdmField": "xdm:vehicleReservation",
-          "tagNumber": 25
+          "tagNumber": 29
         }
       },
       "meta:xdmField": "xdm:reservations",
       "tagNumber": 48
+    },
+    "flightCheckIn": {
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "boardingGroup": {
+          "title": "Boarding Group",
+          "type": "string",
+          "description": "The airline specific indicator of boarding order.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:boardingGroup",
+          "tagNumber": 1
+        },
+        "checkedBags": {
+          "title": "Checked Bags",
+          "type": "integer",
+          "description": "Tracks the number of bags checked for a flight.",
+          "meta:xdmType": "int",
+          "meta:xdmField": "xdm:checkedBags",
+          "tagNumber": 2
+        },
+        "checkedPassengers": {
+          "title": "Checked Passengers",
+          "type": "integer",
+          "description": "Tracks the number of passengers checked in for a flight, if multiple passengers exist for the same reservation number.",
+          "meta:xdmType": "int",
+          "meta:xdmField": "xdm:checkedPassengers",
+          "tagNumber": 3
+        },
+        "checkInMethod": {
+          "title": "Check In Method",
+          "type": "string",
+          "enum": [
+            "counter",
+            "mobile",
+            "web",
+            "kiosk"
+          ],
+          "description": "Tracks the method used to check in i.e. counter, online, kiosk, or self-service.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:checkInMethod",
+          "tagNumber": 4
+        },
+        "checkInProcess": {
+          "title": "Check In Process",
+          "$ref": "../datatypes/industry-verticals/tool-usage.schema.json",
+          "description": "Extension of toolUsage data type.",
+          "meta:xdmField": "xdm:checkInProcess",
+          "tagNumber": 5
+        },
+        "destinationAirportCode": {
+          "title": "Destination Airport Code",
+          "type": "string",
+          "description": "Three letter airport code indicating the destination city of the flight.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:destinationAirportCode",
+          "tagNumber": 6
+        },
+        "flightNumber": {
+          "title": "Flight Number",
+          "type": "string",
+          "description": "The flight number for the flight being reserved.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:flightNumber",
+          "tagNumber": 7
+        }
+      },
+      "meta:xdmField": "xdm:flightCheckIn",
+      "tagNumber": 49
     },
     "checkIn": {
       "type": "object",
@@ -3055,7 +3067,7 @@
         }
       },
       "meta:xdmField": "xdm:checkIn",
-      "tagNumber": 49
+      "tagNumber": 50
     },
     "statusSearch": {
       "type": "object",
@@ -3103,14 +3115,85 @@
         }
       },
       "meta:xdmField": "xdm:statusSearch",
-      "tagNumber": 50
+      "tagNumber": 51
     },
     "seatMapProcess": {
       "title": "Seat Map Process",
       "$ref": "../datatypes/industry-verticals/tool-usage.schema.json",
       "description": "Extension of toolUsage data type.",
       "meta:xdmField": "xdm:seatMapProcess",
-      "tagNumber": 51
+      "tagNumber": 52
+    },
+    "lodgingCheckIn": {
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "checkInSteps": {
+          "title": "Check In Steps",
+          "$ref": "../datatypes/industry-verticals/tool-usage.schema.json",
+          "description": "Extension of toolUsage data type.",
+          "meta:xdmField": "xdm:checkInSteps",
+          "tagNumber": 1
+        },
+        "userSelectedRoom": {
+          "title": "Guest Selected Room",
+          "type": "boolean",
+          "description": "Captures if the guest selected their room at check in.",
+          "meta:xdmType": "boolean",
+          "meta:xdmField": "xdm:userSelectedRoom",
+          "tagNumber": 2
+        },
+        "oneRoomCheckIn": {
+          "title": "One Room Check In",
+          "type": "integer",
+          "description": "Captured upon completion of check in when there is only one room available at that time.",
+          "meta:xdmType": "int",
+          "meta:xdmField": "xdm:oneRoomCheckIn",
+          "tagNumber": 3
+        },
+        "noRoomCheckIn": {
+          "title": "No Room Check In",
+          "type": "integer",
+          "description": "Captured upon completion of check in when there is only one room available at that time.",
+          "meta:xdmType": "int",
+          "meta:xdmField": "xdm:noRoomCheckIn",
+          "tagNumber": 4
+        },
+        "digitalKey": {
+          "title": "Digital Key Selected",
+          "type": "integer",
+          "description": "Tracks when a user selects the use of a digital key upon check in.",
+          "meta:xdmType": "int",
+          "meta:xdmField": "xdm:digitalKey",
+          "tagNumber": 5
+        },
+        "lateCheckInRequested": {
+          "title": "Late Check In Requested",
+          "type": "integer",
+          "description": "Tracks when a user requests a check in later than normal check in hours.",
+          "meta:xdmType": "int",
+          "meta:xdmField": "xdm:lateCheckInRequested",
+          "tagNumber": 6
+        },
+        "earlyCheckInRequested": {
+          "title": "Early Check In Requested",
+          "type": "integer",
+          "description": "Tracks when a user requests a check in earlier than normal check in hours.",
+          "meta:xdmType": "int",
+          "meta:xdmField": "xdm:earlyCheckInRequested",
+          "tagNumber": 7
+        },
+        "roomKeys": {
+          "title": "Room Keys",
+          "type": "integer",
+          "description": "Captures the number of standard room keys provided at check in.",
+          "meta:xdmType": "int",
+          "meta:xdmField": "xdm:roomKeys",
+          "tagNumber": 8
+        }
+      },
+      "meta:xdmField": "xdm:lodgingCheckIn",
+      "tagNumber": 53
     },
     "prescription": {
       "type": "object",
@@ -3164,7 +3247,7 @@
         }
       },
       "meta:xdmField": "xdm:prescription",
-      "tagNumber": 52
+      "tagNumber": 54
     },
     "reservationSearch": {
       "type": "object",
@@ -3244,7 +3327,7 @@
         }
       },
       "meta:xdmField": "xdm:reservationSearch",
-      "tagNumber": 53
+      "tagNumber": 55
     },
     "upgrade": {
       "type": "object",
@@ -3273,7 +3356,7 @@
         }
       },
       "meta:xdmField": "xdm:upgrade",
-      "tagNumber": 54
+      "tagNumber": 56
     },
     "upsell": {
       "type": "object",
@@ -3302,7 +3385,7 @@
         }
       },
       "meta:xdmField": "xdm:upsell",
-      "tagNumber": 55
+      "tagNumber": 57
     }
   },
   "meta:xdmId": "https://ns.adobe.com/xdm/context/experienceevent-generated",

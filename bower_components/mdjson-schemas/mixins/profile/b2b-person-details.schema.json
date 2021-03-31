@@ -5,17 +5,17 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
+  "meta:tags": {
+    "industry": [
+      "all"
+    ]
+  },
   "description": "This mixin is used to capture B2B Person specific attributes. A B2B Person could be a contact/lead etc.",
   "meta:status": [
     "experimental",
     "stable"
   ],
   "meta:xdmType": "object",
-  "meta:tags": {
-    "industry": [
-      "all"
-    ]
-  },
   "properties": {
     "b2b": {
       "type": "object",

@@ -4,7 +4,7 @@
   "title": "External Source System Audit Details Mixin",
   "type": "object",
   "meta:extensible": true,
-  "description": "Mixin which defines a set a audit properties for extenal sources.",
+  "description": "Mixin which defines a set a audit properties for extenal sources. It's strongly encouraged to use this mixin given the asynchronous nature of profile ingestion.",
   "meta:status": "stable",
   "meta:xdmType": "object",
   "properties": {

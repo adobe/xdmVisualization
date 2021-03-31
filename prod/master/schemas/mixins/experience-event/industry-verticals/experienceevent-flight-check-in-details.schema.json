@@ -1,0 +1,90 @@
+{
+  "id": "_xdm.mixins.industry-verticals.experienceevent-flight-check-in-details",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Flight Check In Details",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:tags": {
+    "industry": [
+      "travel_and_hospitality"
+    ]
+  },
+  "description": "Flight check in details such as passengers, bags, as well as start, save, failure and complete of check in.",
+  "meta:status": "experimental",
+  "meta:xdmType": "object",
+  "properties": {
+    "flightCheckIn": {
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "boardingGroup": {
+          "title": "Boarding Group",
+          "type": "string",
+          "description": "The airline specific indicator of boarding order.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:boardingGroup",
+          "tagNumber": 1
+        },
+        "checkedBags": {
+          "title": "Checked Bags",
+          "type": "integer",
+          "description": "Tracks the number of bags checked for a flight.",
+          "meta:xdmType": "int",
+          "meta:xdmField": "xdm:checkedBags",
+          "tagNumber": 2
+        },
+        "checkedPassengers": {
+          "title": "Checked Passengers",
+          "type": "integer",
+          "description": "Tracks the number of passengers checked in for a flight, if multiple passengers exist for the same reservation number.",
+          "meta:xdmType": "int",
+          "meta:xdmField": "xdm:checkedPassengers",
+          "tagNumber": 3
+        },
+        "checkInMethod": {
+          "title": "Check In Method",
+          "type": "string",
+          "enum": [
+            "counter",
+            "mobile",
+            "web",
+            "kiosk"
+          ],
+          "description": "Tracks the method used to check in i.e. counter, online, kiosk, or self-service.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:checkInMethod",
+          "tagNumber": 4
+        },
+        "checkInProcess": {
+          "title": "Check In Process",
+          "$ref": "../../../datatypes/industry-verticals/tool-usage.schema.json",
+          "description": "Extension of toolUsage data type.",
+          "meta:xdmField": "xdm:checkInProcess",
+          "tagNumber": 5
+        },
+        "destinationAirportCode": {
+          "title": "Destination Airport Code",
+          "type": "string",
+          "description": "Three letter airport code indicating the destination city of the flight.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:destinationAirportCode",
+          "tagNumber": 6
+        },
+        "flightNumber": {
+          "title": "Flight Number",
+          "type": "string",
+          "description": "The flight number for the flight being reserved.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:flightNumber",
+          "tagNumber": 7
+        }
+      },
+      "meta:xdmField": "xdm:flightCheckIn",
+      "tagNumber": 1
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/mixins/industry-verticals/experienceevent-flight-check-in-details",
+  "meta:altId": "_xdm.mixins.industry-verticals.experienceevent-flight-check-in-details",
+  "id": "_xdm.mixins.industry-verticals.experienceevent-flight-check-in-details"
+}

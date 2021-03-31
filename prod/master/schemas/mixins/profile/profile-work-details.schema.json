@@ -5,6 +5,11 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
+  "meta:tags": {
+    "industry": [
+      "all"
+    ]
+  },
   "description": "Work-related details of a person such as work address, work email, work phone number, and organizations to which the person belongs.",
   "meta:status": "stable",
   "meta:xdmType": "object",

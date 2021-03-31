@@ -1,0 +1,92 @@
+{
+  "id": "_xdm.mixins.industry-verticals.experienceevent-lodging-check-in-details",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Lodging Check In Details",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:tags": {
+    "industry": [
+      "travel_and_hospitality"
+    ]
+  },
+  "description": "Lodging check in details such as room selection as well as start, save, failure and complete of check in.",
+  "meta:status": "experimental",
+  "meta:xdmType": "object",
+  "properties": {
+    "lodgingCheckIn": {
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "checkInSteps": {
+          "title": "Check In Steps",
+          "$ref": "../../../datatypes/industry-verticals/tool-usage.schema.json",
+          "description": "Extension of toolUsage data type.",
+          "meta:xdmField": "xdm:checkInSteps",
+          "tagNumber": 1
+        },
+        "userSelectedRoom": {
+          "title": "Guest Selected Room",
+          "type": "boolean",
+          "description": "Captures if the guest selected their room at check in.",
+          "meta:xdmType": "boolean",
+          "meta:xdmField": "xdm:userSelectedRoom",
+          "tagNumber": 2
+        },
+        "oneRoomCheckIn": {
+          "title": "One Room Check In",
+          "type": "integer",
+          "description": "Captured upon completion of check in when there is only one room available at that time.",
+          "meta:xdmType": "int",
+          "meta:xdmField": "xdm:oneRoomCheckIn",
+          "tagNumber": 3
+        },
+        "noRoomCheckIn": {
+          "title": "No Room Check In",
+          "type": "integer",
+          "description": "Captured upon completion of check in when there is only one room available at that time.",
+          "meta:xdmType": "int",
+          "meta:xdmField": "xdm:noRoomCheckIn",
+          "tagNumber": 4
+        },
+        "digitalKey": {
+          "title": "Digital Key Selected",
+          "type": "integer",
+          "description": "Tracks when a user selects the use of a digital key upon check in.",
+          "meta:xdmType": "int",
+          "meta:xdmField": "xdm:digitalKey",
+          "tagNumber": 5
+        },
+        "lateCheckInRequested": {
+          "title": "Late Check In Requested",
+          "type": "integer",
+          "description": "Tracks when a user requests a check in later than normal check in hours.",
+          "meta:xdmType": "int",
+          "meta:xdmField": "xdm:lateCheckInRequested",
+          "tagNumber": 6
+        },
+        "earlyCheckInRequested": {
+          "title": "Early Check In Requested",
+          "type": "integer",
+          "description": "Tracks when a user requests a check in earlier than normal check in hours.",
+          "meta:xdmType": "int",
+          "meta:xdmField": "xdm:earlyCheckInRequested",
+          "tagNumber": 7
+        },
+        "roomKeys": {
+          "title": "Room Keys",
+          "type": "integer",
+          "description": "Captures the number of standard room keys provided at check in.",
+          "meta:xdmType": "int",
+          "meta:xdmField": "xdm:roomKeys",
+          "tagNumber": 8
+        }
+      },
+      "meta:xdmField": "xdm:lodgingCheckIn",
+      "tagNumber": 1
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/mixins/industry-verticals/experienceevent-lodging-check-in-details",
+  "meta:altId": "_xdm.mixins.industry-verticals.experienceevent-lodging-check-in-details",
+  "id": "_xdm.mixins.industry-verticals.experienceevent-lodging-check-in-details"
+}

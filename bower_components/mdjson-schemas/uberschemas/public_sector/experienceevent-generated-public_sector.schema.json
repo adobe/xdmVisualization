@@ -7,10 +7,6 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:status": [
-    "stable",
-    "experimental"
-  ],
   "meta:tags": [
     {
       "industry": [
@@ -68,6 +64,10 @@
         "public_sector"
       ]
     }
+  ],
+  "meta:status": [
+    "stable",
+    "experimental"
   ],
   "properties": {
     "identityMap": {
