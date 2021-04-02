@@ -1,0 +1,33 @@
+{
+  "type": "object",
+  "meta:xdmType": "object",
+  "properties": {
+    "attributeName": {
+      "title": "Attribute Name",
+      "type": "string",
+      "description": "Attribute that was updated",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:attributeName",
+      "tagNumber": 1
+    },
+    "newValue": {
+      "title": "New Value",
+      "type": "string",
+      "description": "New value of updated attribute",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:newValue",
+      "tagNumber": 2
+    },
+    "oldValue": {
+      "title": "Old Value",
+      "type": "string",
+      "description": "Previous value of updated attribute",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:oldValue",
+      "tagNumber": 3
+    }
+  },
+  "tagNumber": 1,
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "id": "obj9603474821958222.schema.json"
+}
