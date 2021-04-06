@@ -8,29 +8,37 @@
   "meta:status": "experimental",
   "meta:xdmType": "object",
   "properties": {
-    "impressionDisplays": {
-      "title": "Impression Displays",
+    "displays": {
+      "title": "Displays",
       "type": "integer",
       "description": "Counts the number of times an impression item has been displayed to a visitor.",
       "meta:xdmType": "int",
-      "meta:xdmField": "xdm:impressionDisplays",
+      "meta:xdmField": "xdm:displays",
       "tagNumber": 1
     },
-    "impressionID": {
-      "title": "Impression ID",
+    "ID": {
+      "title": "ID",
       "type": "string",
       "description": "Tracks the ID of an item in an impression array.",
       "meta:xdmType": "string",
-      "meta:xdmField": "xdm:impressionID",
+      "meta:xdmField": "xdm:ID",
       "tagNumber": 2
     },
-    "impressionType": {
-      "title": "Impression Type",
+    "type": {
+      "title": "Type",
       "type": "string",
       "description": "Tracks the type of impression in an impression array.",
       "meta:xdmType": "string",
-      "meta:xdmField": "xdm:impressionType",
+      "meta:xdmField": "xdm:type",
       "tagNumber": 3
+    },
+    "selected": {
+      "title": "Selected",
+      "type": "integer",
+      "description": "Tracks when a given item in an impression array has been selected or clicked.",
+      "meta:xdmType": "int",
+      "meta:xdmField": "xdm:selected",
+      "tagNumber": 4
     }
   },
   "meta:xdmId": "https://ns.adobe.com/xdm/datatypes/impressions",

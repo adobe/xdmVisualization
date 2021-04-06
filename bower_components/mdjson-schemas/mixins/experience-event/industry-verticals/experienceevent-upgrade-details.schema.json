@@ -25,13 +25,6 @@
       "type": "object",
       "meta:xdmType": "object",
       "properties": {
-        "upgradeSteps": {
-          "title": "Upgrade Steps",
-          "$ref": "../../../datatypes/industry-verticals/tool-usage.schema.json",
-          "description": "Extension of toolUsage data type.",
-          "meta:xdmField": "xdm:upgradeSteps",
-          "tagNumber": 1
-        },
         "upgradeOffer": {
           "title": "Upgrade Offer",
           "$ref": "../experienceevent-offer-impression-details.schema.json",

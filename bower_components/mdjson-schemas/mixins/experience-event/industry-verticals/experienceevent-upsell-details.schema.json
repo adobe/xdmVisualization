@@ -24,13 +24,6 @@
       "type": "object",
       "meta:xdmType": "object",
       "properties": {
-        "upsellSteps": {
-          "title": "Upsell Steps",
-          "$ref": "../../../datatypes/industry-verticals/tool-usage.schema.json",
-          "description": "Extension of toolUsage data type.",
-          "meta:xdmField": "xdm:upsellSteps",
-          "tagNumber": 1
-        },
         "upsellOffer": {
           "title": "Upsell Offer",
           "$ref": "../experienceevent-offer-impression-details.schema.json",

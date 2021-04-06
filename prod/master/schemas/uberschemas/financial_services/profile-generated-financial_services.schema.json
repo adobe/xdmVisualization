@@ -662,6 +662,22 @@
           },
           "meta:xdmField": "xdm:preferences",
           "tagNumber": 6
+        },
+        "alertStatus": {
+          "title": "Alert Status",
+          "type": "boolean",
+          "description": "Captures whether or not alerts have been enabled for the account.",
+          "meta:xdmType": "boolean",
+          "meta:xdmField": "xdm:alertStatus",
+          "tagNumber": 7
+        },
+        "autopayStatus": {
+          "title": "Autopay Status",
+          "type": "boolean",
+          "description": "Captures whether or not the account has been enrolled in autopay.",
+          "meta:xdmType": "boolean",
+          "meta:xdmField": "xdm:autopayStatus",
+          "tagNumber": 8
         }
       },
       "meta:xdmField": "xdm:userAccount",

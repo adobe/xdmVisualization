@@ -24,12 +24,12 @@
       "type": "object",
       "meta:xdmType": "object",
       "properties": {
-        "knowledgeBaseArticeID": {
+        "knowledgeBaseArticleID": {
           "title": "Knowledge Base Article ID",
           "type": "string",
           "description": "Tracks the knowledge base article ID when it has been viewed.",
           "meta:xdmType": "string",
-          "meta:xdmField": "xdm:knowledgeBaseArticeID",
+          "meta:xdmField": "xdm:knowledgeBaseArticleID",
           "tagNumber": 1
         },
         "knowledgeBaseArticleType": {

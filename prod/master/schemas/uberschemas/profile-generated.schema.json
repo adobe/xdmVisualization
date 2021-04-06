@@ -152,7 +152,7 @@
       "meta:xdmField": "xdm:personComponents",
       "tagNumber": 11,
       "items": {
-        "$ref": "obj37024544509183444.schema.json"
+        "$ref": "obj7102697755842571.schema.json"
       }
     },
     "b2b": {
@@ -1495,7 +1495,7 @@
           "meta:xdmField": "xdm:pointsExpiration",
           "tagNumber": 4,
           "items": {
-            "$ref": "obj8699012170220877.schema.json"
+            "$ref": "obj037064938718642804.schema.json"
           }
         },
         "pointsRedeemed": {
@@ -1908,6 +1908,22 @@
           },
           "meta:xdmField": "xdm:preferences",
           "tagNumber": 6
+        },
+        "alertStatus": {
+          "title": "Alert Status",
+          "type": "boolean",
+          "description": "Captures whether or not alerts have been enabled for the account.",
+          "meta:xdmType": "boolean",
+          "meta:xdmField": "xdm:alertStatus",
+          "tagNumber": 7
+        },
+        "autopayStatus": {
+          "title": "Autopay Status",
+          "type": "boolean",
+          "description": "Captures whether or not the account has been enrolled in autopay.",
+          "meta:xdmType": "boolean",
+          "meta:xdmField": "xdm:autopayStatus",
+          "tagNumber": 8
         }
       },
       "meta:xdmField": "xdm:userAccount",

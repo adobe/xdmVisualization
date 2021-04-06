@@ -58,6 +58,7 @@
           "title": "Offer Steps",
           "$ref": "../../datatypes/industry-verticals/tool-usage.schema.json",
           "description": "Extension of toolUsage data type.",
+          "meta:status": "experimental",
           "meta:xdmField": "xdm:offerSteps",
           "tagNumber": 4
         }

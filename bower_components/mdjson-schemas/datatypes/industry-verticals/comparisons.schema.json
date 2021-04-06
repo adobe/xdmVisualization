@@ -8,24 +8,24 @@
   "meta:status": "experimental",
   "meta:xdmType": "object",
   "properties": {
-    "comparisonAddition": {
-      "title": "Comparison Addition",
+    "addition": {
+      "title": "Addition",
       "type": "integer",
       "description": "Tracked when an item is added to a comparison.",
       "meta:xdmType": "int",
-      "meta:xdmField": "xdm:comparisonAddition",
+      "meta:xdmField": "xdm:addition",
       "tagNumber": 1
     },
-    "comparisonCount": {
-      "title": "Comparison Count",
+    "count": {
+      "title": "Count",
       "type": "integer",
       "description": "Count of the total number of items being compared.",
       "meta:xdmType": "int",
-      "meta:xdmField": "xdm:comparisonCount",
+      "meta:xdmField": "xdm:count",
       "tagNumber": 2
     },
-    "comparisonItems": {
-      "title": "Comparison List Items",
+    "items": {
+      "title": "Items",
       "type": "array",
       "description": "An array of all item IDs/SKUs in the list of products.  ",
       "meta:xdmType": "array",
@@ -34,38 +34,38 @@
         "meta:xdmType": "string",
         "tagNumber": 1
       },
-      "meta:xdmField": "xdm:comparisonItems",
+      "meta:xdmField": "xdm:items",
       "tagNumber": 3
     },
-    "comparisonRemoval": {
-      "title": "Comparison Removal",
+    "removal": {
+      "title": "Removal",
       "type": "integer",
       "description": "Tracked when an item is removed from a comparison.",
       "meta:xdmType": "int",
-      "meta:xdmField": "xdm:comparisonRemoval",
+      "meta:xdmField": "xdm:removal",
       "tagNumber": 4
     },
-    "comparisonType": {
-      "title": "Comparison Type",
+    "type": {
+      "title": "Type",
       "type": "string",
       "description": "Type of comparison tool in use.",
       "meta:xdmType": "string",
-      "meta:xdmField": "xdm:comparisonType",
+      "meta:xdmField": "xdm:type",
       "tagNumber": 5
     },
-    "comparisonView": {
-      "title": "Comparison View",
+    "view": {
+      "title": "View",
       "type": "integer",
       "description": "Tracked when a comparison page is viewed.",
       "meta:xdmType": "int",
-      "meta:xdmField": "xdm:comparisonView",
+      "meta:xdmField": "xdm:view",
       "tagNumber": 6
     },
-    "comparisonImpressions": {
-      "title": "Comparison Impressions",
+    "impressions": {
+      "title": "Impressions",
       "$ref": "impressions.schema.json",
       "description": "Extension of the impressions data type.",
-      "meta:xdmField": "xdm:comparisonImpressions",
+      "meta:xdmField": "xdm:impressions",
       "tagNumber": 7
     }
   },

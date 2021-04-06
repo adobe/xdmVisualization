@@ -50,13 +50,6 @@
           "meta:xdmField": "xdm:refillsRemaining",
           "tagNumber": 4
         },
-        "steps": {
-          "title": "Steps",
-          "$ref": "../../../datatypes/industry-verticals/tool-usage.schema.json",
-          "description": "Extension of toolUsage data type.",
-          "meta:xdmField": "xdm:steps",
-          "tagNumber": 5
-        },
         "upload": {
           "title": "Upload",
           "$ref": "../../../datatypes/industry-verticals/file-transfer.schema.json",

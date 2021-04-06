@@ -14,24 +14,10 @@
   "meta:status": "experimental",
   "meta:xdmType": "object",
   "properties": {
-    "deviceConfiguration": {
-      "title": "Device Configuration",
-      "$ref": "../../../datatypes/industry-verticals/tool-usage.schema.json",
-      "description": "Extension of toolUsage data type.",
-      "meta:xdmField": "xdm:deviceConfiguration",
-      "tagNumber": 1
-    },
     "deviceTradeInDetails": {
       "type": "object",
       "meta:xdmType": "object",
       "properties": {
-        "deviceTradeIn": {
-          "title": "Steps",
-          "$ref": "../../../datatypes/industry-verticals/tool-usage.schema.json",
-          "description": "Extension of toolUsage data type.",
-          "meta:xdmField": "xdm:deviceTradeIn",
-          "tagNumber": 1
-        },
         "deviceTradeInManufacturer": {
           "title": "Manufacturer",
           "type": "string",
@@ -58,13 +44,6 @@
       },
       "meta:xdmField": "xdm:deviceTradeInDetails",
       "tagNumber": 2
-    },
-    "deviceActivation": {
-      "title": "Device Activation",
-      "$ref": "../../../datatypes/industry-verticals/tool-usage.schema.json",
-      "description": "Extension of toolUsage data type.",
-      "meta:xdmField": "xdm:deviceActivation",
-      "tagNumber": 3
     }
   },
   "meta:xdmId": "https://ns.adobe.com/xdm/mixins/industry-verticals/experienceevent-device-details",

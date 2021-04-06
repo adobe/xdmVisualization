@@ -1,0 +1,70 @@
+{
+  "id": "_xdm.mixins.experienceevent-quote-request-details",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Quote Request Details",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:tags": {
+    "industry": [
+      "financial_services",
+      "automotive",
+      "health_and_life_sciences",
+      "high_tech",
+      "manufacturing"
+    ]
+  },
+  "description": "Captures different details of a quote request process for various types of quotes - including insurance policies, healthcare, manufacturing orders, or high tech orders.",
+  "meta:status": "experimental",
+  "meta:xdmType": "object",
+  "properties": {
+    "quoteRequestDetails": {
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "discount": {
+          "title": "Discount",
+          "$ref": "../../datatypes/currency.schema.json",
+          "description": "Records the discount amount for a quote displayed to a visitor.",
+          "meta:xdmField": "xdm:discount",
+          "tagNumber": 1
+        },
+        "premium": {
+          "title": "Premium",
+          "$ref": "../../datatypes/currency.schema.json",
+          "description": "Records the premium amount for a quote displayed to a visitor.",
+          "meta:xdmField": "xdm:premium",
+          "tagNumber": 2
+        },
+        "location": {
+          "title": "Location",
+          "type": "string",
+          "description": "Captures the postal code used for finding retailers near the visitor's location.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:location",
+          "tagNumber": 3
+        },
+        "personalDetails": {
+          "title": "Personal Details",
+          "$ref": "../profile/profile-person-details.schema.json",
+          "description": "Extension of the Personal Profile data type.",
+          "meta:xdmField": "xdm:personalDetails",
+          "tagNumber": 4
+        },
+        "selectedRetailer": {
+          "title": "Selected Retailer",
+          "type": "string",
+          "description": "Captures the selected retailer for a quote request, if applicable. ",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:selectedRetailer",
+          "tagNumber": 5
+        }
+      },
+      "meta:xdmField": "xdm:quoteRequestDetails",
+      "tagNumber": 1
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/mixins/experienceevent-quote-request-details",
+  "meta:altId": "_xdm.mixins.experienceevent-quote-request-details",
+  "id": "_xdm.mixins.experienceevent-quote-request-details"
+}

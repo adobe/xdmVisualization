@@ -79,13 +79,6 @@
       "description": "Captured when a visitor application has been placed under review.",
       "meta:xdmField": "xdm:underReview",
       "tagNumber": 9
-    },
-    "steps": {
-      "title": "steps",
-      "$ref": "tool-usage.schema.json",
-      "description": "Extension of toolUsage data type.",
-      "meta:xdmField": "xdm:steps",
-      "tagNumber": 10
     }
   },
   "meta:xdmId": "https://ns.adobe.com/xdm/datatypes/form-applications",

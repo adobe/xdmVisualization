@@ -28,156 +28,156 @@
       "type": "object",
       "meta:xdmType": "object",
       "properties": {
-        "userAccountSwitch": {
+        "accountSwitch": {
           "title": "Switch User Accounts",
           "type": "integer",
           "description": "Captures when a visitor switches their account during a visit.",
           "meta:xdmType": "int",
-          "meta:xdmField": "xdm:userAccountSwitch",
+          "meta:xdmField": "xdm:accountSwitch",
           "tagNumber": 1
         },
-        "userCookieConsentAccepted": {
+        "cookieConsentAccepted": {
           "title": "Cookie Consent Accepted",
           "type": "boolean",
           "description": "Tracked when a visitor opts-in to allowing cookies to be set within their browser.",
           "meta:xdmType": "boolean",
-          "meta:xdmField": "xdm:userCookieConsentAccepted",
+          "meta:xdmField": "xdm:cookieConsentAccepted",
           "tagNumber": 2
         },
-        "userCookieConsentViewed": {
+        "cookieConsentViewed": {
           "title": "Cookie Consent Viewed",
           "type": "integer",
           "description": "Tracked when a visitor views the cookie consent information.",
           "meta:xdmType": "int",
-          "meta:xdmField": "xdm:userCookieConsentViewed",
+          "meta:xdmField": "xdm:cookieConsentViewed",
           "tagNumber": 3
         },
-        "userForgotPassword": {
+        "forgotPassword": {
           "title": "Forgot Password",
           "type": "integer",
           "description": "Counter event when a visitor begins the forgot password process.",
           "meta:xdmType": "int",
-          "meta:xdmField": "xdm:userForgotPassword",
+          "meta:xdmField": "xdm:forgotPassword",
           "tagNumber": 4
         },
-        "userForgotUsername": {
+        "forgotUsername": {
           "title": "Forgot Username",
           "type": "integer",
           "description": "Counter event when a visitor begins the forgot username process.",
           "meta:xdmType": "int",
-          "meta:xdmField": "xdm:userForgotUsername",
+          "meta:xdmField": "xdm:forgotUsername",
           "tagNumber": 5
         },
-        "userLogin": {
+        "login": {
           "title": "Visitor Login",
           "type": "integer",
           "description": "Counter event indicating a successful visitor login.",
           "meta:xdmType": "int",
-          "meta:xdmField": "xdm:userLogin",
+          "meta:xdmField": "xdm:login",
           "tagNumber": 6
         },
-        "userLoginBiometric": {
+        "loginBiometric": {
           "title": "Biometric Authentication",
           "type": "boolean",
           "description": "Flag determining if the user has used a biometric authentication process to login.",
           "meta:xdmType": "boolean",
-          "meta:xdmField": "xdm:userLoginBiometric",
+          "meta:xdmField": "xdm:loginBiometric",
           "tagNumber": 7
         },
-        "userLoginFailure": {
+        "loginFailure": {
           "title": "Visitor Login Failure",
           "type": "integer",
           "description": "Counter event indicating a failed visitor login attempt.",
           "meta:xdmType": "int",
-          "meta:xdmField": "xdm:userLoginFailure",
+          "meta:xdmField": "xdm:loginFailure",
           "tagNumber": 8
         },
-        "userLoginLocation": {
+        "loginLocation": {
           "title": "Login Page Location",
           "type": "string",
           "description": "When multiple login locations exist on the page, this value should be used to identify the specific location the user used for login",
           "meta:xdmType": "string",
-          "meta:xdmField": "xdm:userLoginLocation",
+          "meta:xdmField": "xdm:loginLocation",
           "tagNumber": 9
         },
-        "userLoginKeychain": {
+        "loginKeychain": {
           "title": "Keychain ",
           "type": "boolean",
           "description": "Flag determining if the user has used a keychain authentication process to login.",
           "meta:xdmType": "boolean",
-          "meta:xdmField": "xdm:userLoginKeychain",
+          "meta:xdmField": "xdm:loginKeychain",
           "tagNumber": 10
         },
-        "userLoginMultiFactor": {
+        "loginMultiFactor": {
           "title": "Multi-Factor Authentication",
           "type": "boolean",
           "description": "Flag determining if the user has used a multi-factor authentication process to login.",
           "meta:xdmType": "boolean",
-          "meta:xdmField": "xdm:userLoginMultiFactor",
+          "meta:xdmField": "xdm:loginMultiFactor",
           "tagNumber": 11
         },
-        "userLoginStatus": {
+        "loginStatus": {
           "title": "Login Status",
           "type": "string",
           "description": "Used to track the current login status for site visitors, regardless of whether login occurred as a result of a login during the current session or a previous session as identified by a cookie value. ",
           "meta:xdmType": "string",
-          "meta:xdmField": "xdm:userLoginStatus",
+          "meta:xdmField": "xdm:loginStatus",
           "tagNumber": 12
         },
-        "userLoginThirdParty": {
+        "loginThirdParty": {
           "title": "Login with Third Party",
           "type": "integer",
           "description": "Counter event that is incremented when a visitor has used another login network to authenticate, such as Apple, Facebook, or Google.",
           "meta:xdmType": "int",
-          "meta:xdmField": "xdm:userLoginThirdParty",
+          "meta:xdmField": "xdm:loginThirdParty",
           "tagNumber": 13
         },
-        "userLoginThirdPartySite": {
+        "loginThirdPartySite": {
           "title": "Third Party Login Site",
           "type": "string",
           "description": "Tracks the site used to authetnicate when a third-party sign-in event is tracked.",
           "meta:xdmType": "string",
-          "meta:xdmField": "xdm:userLoginThirdPartySite",
+          "meta:xdmField": "xdm:loginThirdPartySite",
           "tagNumber": 14
         },
-        "userLoginType": {
+        "loginType": {
           "title": "User Login Type",
           "type": "string",
           "description": "Email address vs social login",
           "meta:xdmType": "string",
-          "meta:xdmField": "xdm:userLoginType",
+          "meta:xdmField": "xdm:loginType",
           "tagNumber": 15
         },
-        "userLogout": {
+        "logout": {
           "title": "Visitor Logout",
           "type": "integer",
           "description": "Counter event indicating a successful visitor logout.",
           "meta:xdmType": "int",
-          "meta:xdmField": "xdm:userLogout",
+          "meta:xdmField": "xdm:logout",
           "tagNumber": 16
         },
-        "userResetPassword": {
+        "resetPassword": {
           "title": "Reset Password",
           "type": "integer",
           "description": "Counter event when a visitor begins the reset password process.",
           "meta:xdmType": "int",
-          "meta:xdmField": "xdm:userResetPassword",
+          "meta:xdmField": "xdm:resetPassword",
           "tagNumber": 17
         },
-        "userSessionTimeout": {
+        "sessionTimeout": {
           "title": "Session Timeout",
           "type": "integer",
           "description": "Tracked when a visitor has an authenticated session that is automatically logged out after a predetermined amount of time.",
           "meta:xdmType": "int",
-          "meta:xdmField": "xdm:userSessionTimeout",
+          "meta:xdmField": "xdm:sessionTimeout",
           "tagNumber": 18
         },
-        "userUpdate": {
+        "updateProfile": {
           "title": "Account Profile Update",
           "type": "integer",
           "description": "Counter event indicating a user has updated their account profile.",
           "meta:xdmType": "int",
-          "meta:xdmField": "xdm:userUpdate",
+          "meta:xdmField": "xdm:updateProfile",
           "tagNumber": 19
         }
       },

@@ -18,19 +18,26 @@
       "type": "object",
       "meta:xdmType": "object",
       "properties": {
-        "balanceTransfer": {
-          "title": "Balance Transfer",
+        "transaction": {
+          "title": "Transaction",
           "$ref": "../../../datatypes/industry-verticals/transaction.schema.json",
           "description": "Extension of transaction data type.",
-          "meta:xdmField": "xdm:balanceTransfer",
+          "meta:xdmField": "xdm:transaction",
           "tagNumber": 1
         },
-        "balanceTransferAccount": {
-          "title": "Balance Transfer Account",
+        "accountTo": {
+          "title": "Account To",
           "$ref": "../../../datatypes/industry-verticals/financial-account.schema.json",
-          "description": "Extension of financialAccount data type.",
-          "meta:xdmField": "xdm:balanceTransferAccount",
+          "description": "Extension of financialAccount data type.  Details the account to which the balance is being transferred.",
+          "meta:xdmField": "xdm:accountTo",
           "tagNumber": 2
+        },
+        "accountFrom": {
+          "title": "Account From",
+          "$ref": "../../../datatypes/industry-verticals/financial-account.schema.json",
+          "description": "Extension of financialAccount data type.  Details the account fr which the balance is being transferred.",
+          "meta:xdmField": "xdm:accountFrom",
+          "tagNumber": 3
         }
       },
       "meta:xdmField": "xdm:personalFinances",

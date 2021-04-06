@@ -20,25 +20,25 @@
       "type": "object",
       "meta:xdmType": "object",
       "properties": {
-        "claimID": {
-          "title": "Claim ID",
+        "ID": {
+          "title": " ID",
           "type": "string",
           "description": "ID of the claim being submitted.",
           "meta:xdmType": "string",
-          "meta:xdmField": "xdm:claimID",
+          "meta:xdmField": "xdm:ID",
           "tagNumber": 1
         },
-        "claimStartDate": {
-          "title": "Claim Start Date",
+        "startDate": {
+          "title": "Start Date",
           "type": "string",
           "format": "date-time",
           "description": "Date the claim was successfully submitted.",
           "meta:xdmType": "date-time",
-          "meta:xdmField": "xdm:claimStartDate",
+          "meta:xdmField": "xdm:startDate",
           "tagNumber": 2
         },
-        "claimStatus": {
-          "title": "Claim Status",
+        "status": {
+          "title": "Status",
           "type": "string",
           "enum": [
             "initiated",
@@ -48,18 +48,11 @@
           ],
           "description": "Captures the status of the claim for any given point in the application process.",
           "meta:xdmType": "string",
-          "meta:xdmField": "xdm:claimStatus",
+          "meta:xdmField": "xdm:status",
           "tagNumber": 3
         },
-        "claimSteps": {
-          "title": "Claim Steps",
-          "$ref": "../../../datatypes/industry-verticals/tool-usage.schema.json",
-          "description": "Extension of toolUsage data type.",
-          "meta:xdmField": "xdm:claimSteps",
-          "tagNumber": 4
-        },
-        "claimType": {
-          "title": "Claim Type",
+        "type": {
+          "title": "Type",
           "type": "string",
           "enum": [
             "homeowners",
@@ -75,15 +68,15 @@
           ],
           "description": "Type of claim submitted.",
           "meta:xdmType": "string",
-          "meta:xdmField": "xdm:claimType",
-          "tagNumber": 5
+          "meta:xdmField": "xdm:type",
+          "tagNumber": 4
         },
         "policy": {
           "title": "Policy",
           "$ref": "../../../datatypes/industry-verticals/policy-details.schema.json",
           "description": "Extension of Policy data type.",
           "meta:xdmField": "xdm:policy",
-          "tagNumber": 6
+          "tagNumber": 5
         }
       },
       "meta:xdmField": "xdm:disputes",

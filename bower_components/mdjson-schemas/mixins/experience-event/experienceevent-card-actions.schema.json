@@ -18,13 +18,21 @@
       "type": "object",
       "meta:xdmType": "object",
       "properties": {
+        "cardID": {
+          "title": "Card ID",
+          "type": "string",
+          "description": "Tracks the identifier for the card being activated.  This might be different from the card number.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:cardID",
+          "tagNumber": 1
+        },
         "cardActivated": {
           "title": "Card Activated Success",
           "type": "integer",
           "description": "Tracks when a card has been successfully activated.",
           "meta:xdmType": "int",
           "meta:xdmField": "xdm:cardActivated",
-          "tagNumber": 1
+          "tagNumber": 2
         },
         "cardActivationStart": {
           "title": "Card Activation Started",
@@ -32,7 +40,7 @@
           "description": "Tracks when a card activation process has been started.",
           "meta:xdmType": "int",
           "meta:xdmField": "xdm:cardActivationStart",
-          "tagNumber": 2
+          "tagNumber": 3
         },
         "cardCancelled": {
           "title": "Card Cancelled",
@@ -40,7 +48,7 @@
           "description": "Tracks when a card has been cancelled.",
           "meta:xdmType": "int",
           "meta:xdmField": "xdm:cardCancelled",
-          "tagNumber": 3
+          "tagNumber": 4
         },
         "cardControlsLocked": {
           "title": "Card Controls Locked",
@@ -48,7 +56,7 @@
           "description": "Tracks when a card controls have been locked.",
           "meta:xdmType": "int",
           "meta:xdmField": "xdm:cardControlsLocked",
-          "tagNumber": 4
+          "tagNumber": 5
         },
         "cardControlsUnlocked": {
           "title": "Card Controls Unlocked",
@@ -56,7 +64,7 @@
           "description": "Tracks when a card controls have been unlocked.",
           "meta:xdmType": "int",
           "meta:xdmField": "xdm:cardControlsUnlocked",
-          "tagNumber": 5
+          "tagNumber": 6
         },
         "cardLocked": {
           "title": "Card Locked",
@@ -64,7 +72,7 @@
           "description": "Tracks when a card has been locked.",
           "meta:xdmType": "int",
           "meta:xdmField": "xdm:cardLocked",
-          "tagNumber": 6
+          "tagNumber": 7
         },
         "cardOrderNew": {
           "title": "Order New Card",
@@ -72,7 +80,7 @@
           "description": "Tracks when a card has been requested.",
           "meta:xdmType": "int",
           "meta:xdmField": "xdm:cardOrderNew",
-          "tagNumber": 7
+          "tagNumber": 8
         },
         "cardOrderType": {
           "title": "Card Order Type",
@@ -87,7 +95,7 @@
           "description": "Tracks the type of card order associated with a card order event.",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:cardOrderType",
-          "tagNumber": 8
+          "tagNumber": 9
         },
         "cardType": {
           "title": "Card Type",
@@ -105,7 +113,7 @@
           "description": "Tracks the type of card associated with an event.",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:cardType",
-          "tagNumber": 9
+          "tagNumber": 10
         },
         "cardUnlocked": {
           "title": "Card Unlocked",
@@ -113,7 +121,7 @@
           "description": "Tracks when a card has been unlocked.",
           "meta:xdmType": "int",
           "meta:xdmField": "xdm:cardUnlocked",
-          "tagNumber": 10
+          "tagNumber": 11
         }
       },
       "meta:xdmField": "xdm:personalFinances",

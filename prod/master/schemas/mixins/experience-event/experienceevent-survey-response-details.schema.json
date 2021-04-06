@@ -61,13 +61,6 @@
           },
           "meta:xdmField": "xdm:surveyQuestions",
           "tagNumber": 3
-        },
-        "surveySteps": {
-          "title": "Survey Steps",
-          "$ref": "../../datatypes/industry-verticals/tool-usage.schema.json",
-          "description": "Extension of toolUsage data type.",
-          "meta:xdmField": "xdm:surveySteps",
-          "tagNumber": 4
         }
       },
       "meta:xdmField": "xdm:surveyResponse",

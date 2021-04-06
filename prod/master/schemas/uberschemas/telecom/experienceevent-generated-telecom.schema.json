@@ -17,6 +17,42 @@
       "industry": [
         "retail",
         "financial_services",
+        "telecom",
+        "automotive",
+        "education",
+        "health_and_life_sciences",
+        "media_and_entertainment"
+      ]
+    },
+    {
+      "industry": [
+        "financial_services",
+        "travel_and_hospitality",
+        "telecom"
+      ]
+    },
+    {
+      "industry": [
+        "retail",
+        "financial_services",
+        "travel_and_hospitality",
+        "telecom",
+        "automotive",
+        "media_and_entertainment"
+      ]
+    },
+    {
+      "industry": [
+        "financial_services",
+        "telecom",
+        "high_tech",
+        "public_sector"
+      ]
+    },
+    {
+      "industry": [
+        "retail",
+        "financial_services",
         "travel_and_hospitality",
         "telecom",
         "automotive",
@@ -55,43 +91,7 @@
     {
       "industry": [
         "financial_services",
-        "travel_and_hospitality",
         "telecom"
-      ]
-    },
-    {
-      "industry": [
-        "retail",
-        "financial_services",
-        "travel_and_hospitality",
-        "telecom",
-        "automotive",
-        "media_and_entertainment"
-      ]
-    },
-    {
-      "industry": [
-        "financial_services",
-        "telecom"
-      ]
-    },
-    {
-      "industry": [
-        "financial_services",
-        "telecom",
-        "high_tech",
-        "public_sector"
-      ]
-    },
-    {
-      "industry": [
-        "retail",
-        "financial_services",
-        "telecom",
-        "automotive",
-        "education",
-        "health_and_life_sciences",
-        "media_and_entertainment"
       ]
     },
     {
@@ -125,6 +125,7 @@
   ],
   "meta:status": [
     "stable",
+    "deprecated",
     "experimental"
   ],
   "properties": {
@@ -179,12 +180,235 @@
       "meta:xdmField": "xdm:eventMergeId",
       "tagNumber": 5
     },
+    "autopayEnrollment": {
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "autoPayEnrollment": {
+          "title": "Autopay Enrollment",
+          "$ref": "../../datatypes/industry-verticals/tool-usage.schema.json",
+          "description": "Extension of toolUsage data type.",
+          "meta:xdmField": "xdm:autoPayEnrollment",
+          "tagNumber": 1
+        },
+        "autoPayEnrollmentStatus": {
+          "title": "Autopay Status",
+          "type": "boolean",
+          "description": "Tracks the visitor's autopay enrollment status.",
+          "meta:xdmType": "boolean",
+          "meta:xdmField": "xdm:autoPayEnrollmentStatus",
+          "tagNumber": 2
+        }
+      },
+      "meta:xdmField": "xdm:autopayEnrollment",
+      "tagNumber": 6
+    },
+    "userAccount": {
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "paperlessEnrollment": {
+          "title": "Paperless Enrollment",
+          "$ref": "../../datatypes/industry-verticals/tool-usage.schema.json",
+          "description": "Extension of toolUsage data type.",
+          "meta:xdmField": "xdm:paperlessEnrollment",
+          "tagNumber": 1
+        },
+        "accountSwitch": {
+          "title": "Switch User Accounts",
+          "type": "integer",
+          "description": "Captures when a visitor switches their account during a visit.",
+          "meta:xdmType": "int",
+          "meta:xdmField": "xdm:accountSwitch",
+          "tagNumber": 2
+        },
+        "cookieConsentAccepted": {
+          "title": "Cookie Consent Accepted",
+          "type": "boolean",
+          "description": "Tracked when a visitor opts-in to allowing cookies to be set within their browser.",
+          "meta:xdmType": "boolean",
+          "meta:xdmField": "xdm:cookieConsentAccepted",
+          "tagNumber": 3
+        },
+        "cookieConsentViewed": {
+          "title": "Cookie Consent Viewed",
+          "type": "integer",
+          "description": "Tracked when a visitor views the cookie consent information.",
+          "meta:xdmType": "int",
+          "meta:xdmField": "xdm:cookieConsentViewed",
+          "tagNumber": 4
+        },
+        "forgotPassword": {
+          "title": "Forgot Password",
+          "type": "integer",
+          "description": "Counter event when a visitor begins the forgot password process.",
+          "meta:xdmType": "int",
+          "meta:xdmField": "xdm:forgotPassword",
+          "tagNumber": 5
+        },
+        "forgotUsername": {
+          "title": "Forgot Username",
+          "type": "integer",
+          "description": "Counter event when a visitor begins the forgot username process.",
+          "meta:xdmType": "int",
+          "meta:xdmField": "xdm:forgotUsername",
+          "tagNumber": 6
+        },
+        "login": {
+          "title": "Visitor Login",
+          "type": "integer",
+          "description": "Counter event indicating a successful visitor login.",
+          "meta:xdmType": "int",
+          "meta:xdmField": "xdm:login",
+          "tagNumber": 7
+        },
+        "loginBiometric": {
+          "title": "Biometric Authentication",
+          "type": "boolean",
+          "description": "Flag determining if the user has used a biometric authentication process to login.",
+          "meta:xdmType": "boolean",
+          "meta:xdmField": "xdm:loginBiometric",
+          "tagNumber": 8
+        },
+        "loginFailure": {
+          "title": "Visitor Login Failure",
+          "type": "integer",
+          "description": "Counter event indicating a failed visitor login attempt.",
+          "meta:xdmType": "int",
+          "meta:xdmField": "xdm:loginFailure",
+          "tagNumber": 9
+        },
+        "loginLocation": {
+          "title": "Login Page Location",
+          "type": "string",
+          "description": "When multiple login locations exist on the page, this value should be used to identify the specific location the user used for login",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:loginLocation",
+          "tagNumber": 10
+        },
+        "loginKeychain": {
+          "title": "Keychain ",
+          "type": "boolean",
+          "description": "Flag determining if the user has used a keychain authentication process to login.",
+          "meta:xdmType": "boolean",
+          "meta:xdmField": "xdm:loginKeychain",
+          "tagNumber": 11
+        },
+        "loginMultiFactor": {
+          "title": "Multi-Factor Authentication",
+          "type": "boolean",
+          "description": "Flag determining if the user has used a multi-factor authentication process to login.",
+          "meta:xdmType": "boolean",
+          "meta:xdmField": "xdm:loginMultiFactor",
+          "tagNumber": 12
+        },
+        "loginStatus": {
+          "title": "Login Status",
+          "type": "string",
+          "description": "Used to track the current login status for site visitors, regardless of whether login occurred as a result of a login during the current session or a previous session as identified by a cookie value. ",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:loginStatus",
+          "tagNumber": 13
+        },
+        "loginThirdParty": {
+          "title": "Login with Third Party",
+          "type": "integer",
+          "description": "Counter event that is incremented when a visitor has used another login network to authenticate, such as Apple, Facebook, or Google.",
+          "meta:xdmType": "int",
+          "meta:xdmField": "xdm:loginThirdParty",
+          "tagNumber": 14
+        },
+        "loginThirdPartySite": {
+          "title": "Third Party Login Site",
+          "type": "string",
+          "description": "Tracks the site used to authetnicate when a third-party sign-in event is tracked.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:loginThirdPartySite",
+          "tagNumber": 15
+        },
+        "loginType": {
+          "title": "User Login Type",
+          "type": "string",
+          "description": "Email address vs social login",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:loginType",
+          "tagNumber": 16
+        },
+        "logout": {
+          "title": "Visitor Logout",
+          "type": "integer",
+          "description": "Counter event indicating a successful visitor logout.",
+          "meta:xdmType": "int",
+          "meta:xdmField": "xdm:logout",
+          "tagNumber": 17
+        },
+        "resetPassword": {
+          "title": "Reset Password",
+          "type": "integer",
+          "description": "Counter event when a visitor begins the reset password process.",
+          "meta:xdmType": "int",
+          "meta:xdmField": "xdm:resetPassword",
+          "tagNumber": 18
+        },
+        "sessionTimeout": {
+          "title": "Session Timeout",
+          "type": "integer",
+          "description": "Tracked when a visitor has an authenticated session that is automatically logged out after a predetermined amount of time.",
+          "meta:xdmType": "int",
+          "meta:xdmField": "xdm:sessionTimeout",
+          "tagNumber": 19
+        },
+        "updateProfile": {
+          "title": "Account Profile Update",
+          "type": "integer",
+          "description": "Counter event indicating a user has updated their account profile.",
+          "meta:xdmType": "int",
+          "meta:xdmField": "xdm:updateProfile",
+          "tagNumber": 20
+        }
+      },
+      "meta:xdmField": "xdm:userAccount",
+      "tagNumber": 7
+    },
+    "web": {
+      "type": "object",
+      "meta:xdmType": "object",
+      "title": "Web",
+      "$ref": "../../datatypes/web/webinfo.schema.json",
+      "description": "The information related to web page and link of the ExperienceEvent.",
+      "properties": {
+        "referral": {
+          "title": "Referral",
+          "$ref": "../../datatypes/industry-verticals/tool-usage.schema.json",
+          "description": "Extension of toolUsage data type.",
+          "meta:xdmField": "xdm:referral",
+          "tagNumber": 1
+        }
+      },
+      "meta:xdmField": "xdm:web",
+      "tagNumber": 8
+    },
+    "supportRequest": {
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "supportRequestSteps": {
+          "title": "Support Request Steps",
+          "$ref": "../../datatypes/industry-verticals/tool-usage.schema.json",
+          "description": "Extension of toolUsage data type.",
+          "meta:xdmField": "xdm:supportRequestSteps",
+          "tagNumber": 1
+        }
+      },
+      "meta:xdmField": "xdm:supportRequest",
+      "tagNumber": 9
+    },
     "advertising": {
       "title": "Advertising",
       "$ref": "../../datatypes/marketing/advertising.schema.json",
       "description": "Information related to advertising activity in ExperienceEvents.",
       "meta:xdmField": "xdm:advertising",
-      "tagNumber": 6
+      "tagNumber": 10
     },
     "productListItems": {
       "title": "Product list items",
@@ -196,42 +420,42 @@
         "tagNumber": 1
       },
       "meta:xdmField": "xdm:productListItems",
-      "tagNumber": 7
+      "tagNumber": 11
     },
     "commerce": {
       "title": "Commerce",
       "$ref": "../../datatypes/marketing/commerce.schema.json",
       "description": "Commerce specific data related to this event.",
       "meta:xdmField": "xdm:commerce",
-      "tagNumber": 8
+      "tagNumber": 12
     },
     "directMarketing": {
       "title": "Direct marketing",
       "$ref": "../../datatypes/marketing/direct-marketing.schema.json",
       "description": "Events and properties related to direct and outbound marketing such as email, direct mail, texts, and in-app notifications.",
       "meta:xdmField": "xdm:directMarketing",
-      "tagNumber": 9
+      "tagNumber": 13
     },
     "environment": {
       "title": "Environment",
       "$ref": "../../datatypes/environment.schema.json",
       "description": "Information about the surrounding situation the event observation occurred in, specifically detailing transitory information such as the network or software versions.",
       "meta:xdmField": "xdm:environment",
-      "tagNumber": 10
+      "tagNumber": 14
     },
     "device": {
       "title": "Device",
       "$ref": "../../datatypes/device.schema.json",
       "description": "An identified device, application or device browser instance that is trackable across sessions, normally by cookies.",
       "meta:xdmField": "xdm:device",
-      "tagNumber": 11
+      "tagNumber": 15
     },
     "placeContext": {
       "title": "Place context",
       "$ref": "../../datatypes/placecontext.schema.json",
       "description": "The transient circumstances related to the observation. Examples include locale specific information such as weather, local time, traffic, day of the week, workday vs. holiday, and working hours.",
       "meta:xdmField": "xdm:placeContext",
-      "tagNumber": 12
+      "tagNumber": 16
     },
     "fileTransfer": {
       "type": "object",
@@ -253,25 +477,25 @@
         }
       },
       "meta:xdmField": "xdm:fileTransfer",
-      "tagNumber": 13
+      "tagNumber": 17
     },
     "implementationDetails": {
       "title": "Implementation details",
       "$ref": "../../datatypes/industry-verticals/implementationdetails.schema.json",
       "description": "The details of the software used to collect the ExperienceEvent.",
       "meta:xdmField": "xdm:implementationDetails",
-      "tagNumber": 14
+      "tagNumber": 18
     },
     "siteKnowledge": {
       "type": "object",
       "meta:xdmType": "object",
       "properties": {
-        "knowledgeBaseArticeID": {
+        "knowledgeBaseArticleID": {
           "title": "Knowledge Base Article ID",
           "type": "string",
           "description": "Tracks the knowledge base article ID when it has been viewed.",
           "meta:xdmType": "string",
-          "meta:xdmField": "xdm:knowledgeBaseArticeID",
+          "meta:xdmField": "xdm:knowledgeBaseArticleID",
           "tagNumber": 1
         },
         "knowledgeBaseArticleType": {
@@ -306,21 +530,21 @@
         }
       },
       "meta:xdmField": "xdm:siteKnowledge",
-      "tagNumber": 15
+      "tagNumber": 19
     },
     "marketing": {
       "title": "Marketing",
       "$ref": "../../datatypes/marketing/marketing.schema.json",
       "description": "The information related to marketing activities that are active with the touchpoint.",
       "meta:xdmField": "xdm:marketing",
-      "tagNumber": 16
+      "tagNumber": 20
     },
     "media": {
       "title": "Media",
       "$ref": "../../datatypes/media/media.schema.json",
       "description": "Media activity information related to the experience event.",
       "meta:xdmField": "xdm:media",
-      "tagNumber": 17
+      "tagNumber": 21
     },
     "marketing ": {
       "type": "object",
@@ -358,197 +582,13 @@
           "title": "Offer Steps",
           "$ref": "../../datatypes/industry-verticals/tool-usage.schema.json",
           "description": "Extension of toolUsage data type.",
+          "meta:status": "experimental",
           "meta:xdmField": "xdm:offerSteps",
           "tagNumber": 4
         }
       },
       "meta:xdmField": "xdm:marketing ",
-      "tagNumber": 18
-    },
-    "userAccount": {
-      "type": "object",
-      "meta:xdmType": "object",
-      "properties": {
-        "paperlessEnrollment": {
-          "title": "Paperless Enrollment",
-          "$ref": "../../datatypes/industry-verticals/tool-usage.schema.json",
-          "description": "Extension of toolUsage data type.",
-          "meta:xdmField": "xdm:paperlessEnrollment",
-          "tagNumber": 1
-        },
-        "userAccountSwitch": {
-          "title": "Switch User Accounts",
-          "type": "integer",
-          "description": "Captures when a visitor switches their account during a visit.",
-          "meta:xdmType": "int",
-          "meta:xdmField": "xdm:userAccountSwitch",
-          "tagNumber": 2
-        },
-        "userCookieConsentAccepted": {
-          "title": "Cookie Consent Accepted",
-          "type": "boolean",
-          "description": "Tracked when a visitor opts-in to allowing cookies to be set within their browser.",
-          "meta:xdmType": "boolean",
-          "meta:xdmField": "xdm:userCookieConsentAccepted",
-          "tagNumber": 3
-        },
-        "userCookieConsentViewed": {
-          "title": "Cookie Consent Viewed",
-          "type": "integer",
-          "description": "Tracked when a visitor views the cookie consent information.",
-          "meta:xdmType": "int",
-          "meta:xdmField": "xdm:userCookieConsentViewed",
-          "tagNumber": 4
-        },
-        "userForgotPassword": {
-          "title": "Forgot Password",
-          "type": "integer",
-          "description": "Counter event when a visitor begins the forgot password process.",
-          "meta:xdmType": "int",
-          "meta:xdmField": "xdm:userForgotPassword",
-          "tagNumber": 5
-        },
-        "userForgotUsername": {
-          "title": "Forgot Username",
-          "type": "integer",
-          "description": "Counter event when a visitor begins the forgot username process.",
-          "meta:xdmType": "int",
-          "meta:xdmField": "xdm:userForgotUsername",
-          "tagNumber": 6
-        },
-        "userLogin": {
-          "title": "Visitor Login",
-          "type": "integer",
-          "description": "Counter event indicating a successful visitor login.",
-          "meta:xdmType": "int",
-          "meta:xdmField": "xdm:userLogin",
-          "tagNumber": 7
-        },
-        "userLoginBiometric": {
-          "title": "Biometric Authentication",
-          "type": "boolean",
-          "description": "Flag determining if the user has used a biometric authentication process to login.",
-          "meta:xdmType": "boolean",
-          "meta:xdmField": "xdm:userLoginBiometric",
-          "tagNumber": 8
-        },
-        "userLoginFailure": {
-          "title": "Visitor Login Failure",
-          "type": "integer",
-          "description": "Counter event indicating a failed visitor login attempt.",
-          "meta:xdmType": "int",
-          "meta:xdmField": "xdm:userLoginFailure",
-          "tagNumber": 9
-        },
-        "userLoginLocation": {
-          "title": "Login Page Location",
-          "type": "string",
-          "description": "When multiple login locations exist on the page, this value should be used to identify the specific location the user used for login",
-          "meta:xdmType": "string",
-          "meta:xdmField": "xdm:userLoginLocation",
-          "tagNumber": 10
-        },
-        "userLoginKeychain": {
-          "title": "Keychain ",
-          "type": "boolean",
-          "description": "Flag determining if the user has used a keychain authentication process to login.",
-          "meta:xdmType": "boolean",
-          "meta:xdmField": "xdm:userLoginKeychain",
-          "tagNumber": 11
-        },
-        "userLoginMultiFactor": {
-          "title": "Multi-Factor Authentication",
-          "type": "boolean",
-          "description": "Flag determining if the user has used a multi-factor authentication process to login.",
-          "meta:xdmType": "boolean",
-          "meta:xdmField": "xdm:userLoginMultiFactor",
-          "tagNumber": 12
-        },
-        "userLoginStatus": {
-          "title": "Login Status",
-          "type": "string",
-          "description": "Used to track the current login status for site visitors, regardless of whether login occurred as a result of a login during the current session or a previous session as identified by a cookie value. ",
-          "meta:xdmType": "string",
-          "meta:xdmField": "xdm:userLoginStatus",
-          "tagNumber": 13
-        },
-        "userLoginThirdParty": {
-          "title": "Login with Third Party",
-          "type": "integer",
-          "description": "Counter event that is incremented when a visitor has used another login network to authenticate, such as Apple, Facebook, or Google.",
-          "meta:xdmType": "int",
-          "meta:xdmField": "xdm:userLoginThirdParty",
-          "tagNumber": 14
-        },
-        "userLoginThirdPartySite": {
-          "title": "Third Party Login Site",
-          "type": "string",
-          "description": "Tracks the site used to authetnicate when a third-party sign-in event is tracked.",
-          "meta:xdmType": "string",
-          "meta:xdmField": "xdm:userLoginThirdPartySite",
-          "tagNumber": 15
-        },
-        "userLoginType": {
-          "title": "User Login Type",
-          "type": "string",
-          "description": "Email address vs social login",
-          "meta:xdmType": "string",
-          "meta:xdmField": "xdm:userLoginType",
-          "tagNumber": 16
-        },
-        "userLogout": {
-          "title": "Visitor Logout",
-          "type": "integer",
-          "description": "Counter event indicating a successful visitor logout.",
-          "meta:xdmType": "int",
-          "meta:xdmField": "xdm:userLogout",
-          "tagNumber": 17
-        },
-        "userResetPassword": {
-          "title": "Reset Password",
-          "type": "integer",
-          "description": "Counter event when a visitor begins the reset password process.",
-          "meta:xdmType": "int",
-          "meta:xdmField": "xdm:userResetPassword",
-          "tagNumber": 18
-        },
-        "userSessionTimeout": {
-          "title": "Session Timeout",
-          "type": "integer",
-          "description": "Tracked when a visitor has an authenticated session that is automatically logged out after a predetermined amount of time.",
-          "meta:xdmType": "int",
-          "meta:xdmField": "xdm:userSessionTimeout",
-          "tagNumber": 19
-        },
-        "userUpdate": {
-          "title": "Account Profile Update",
-          "type": "integer",
-          "description": "Counter event indicating a user has updated their account profile.",
-          "meta:xdmType": "int",
-          "meta:xdmField": "xdm:userUpdate",
-          "tagNumber": 20
-        }
-      },
-      "meta:xdmField": "xdm:userAccount",
-      "tagNumber": 19
-    },
-    "web": {
-      "type": "object",
-      "meta:xdmType": "object",
-      "title": "Web",
-      "$ref": "../../datatypes/web/webinfo.schema.json",
-      "description": "The information related to web page and link of the ExperienceEvent.",
-      "properties": {
-        "referral": {
-          "title": "Referral",
-          "$ref": "../../datatypes/industry-verticals/tool-usage.schema.json",
-          "description": "Extension of toolUsage data type.",
-          "meta:xdmField": "xdm:referral",
-          "tagNumber": 1
-        }
-      },
-      "meta:xdmField": "xdm:web",
-      "tagNumber": 20
+      "tagNumber": 22
     },
     "servicePaymentDetails": {
       "type": "object",
@@ -563,7 +603,7 @@
         }
       },
       "meta:xdmField": "xdm:service-payment-details",
-      "tagNumber": 21
+      "tagNumber": 23
     },
     "socialMarketing ": {
       "type": "object",
@@ -635,22 +675,7 @@
         }
       },
       "meta:xdmField": "xdm:socialMarketing ",
-      "tagNumber": 22
-    },
-    "supportRequest": {
-      "type": "object",
-      "meta:xdmType": "object",
-      "properties": {
-        "supportRequestSteps": {
-          "title": "Support Request Steps",
-          "$ref": "../../datatypes/industry-verticals/tool-usage.schema.json",
-          "description": "Extension of toolUsage data type.",
-          "meta:xdmField": "xdm:supportRequestSteps",
-          "tagNumber": 1
-        }
-      },
-      "meta:xdmField": "xdm:supportRequest",
-      "tagNumber": 23
+      "tagNumber": 24
     },
     "surveyResponse": {
       "type": "object",
@@ -689,39 +714,9 @@
           },
           "meta:xdmField": "xdm:surveyQuestions",
           "tagNumber": 3
-        },
-        "surveySteps": {
-          "title": "Survey Steps",
-          "$ref": "../../datatypes/industry-verticals/tool-usage.schema.json",
-          "description": "Extension of toolUsage data type.",
-          "meta:xdmField": "xdm:surveySteps",
-          "tagNumber": 4
         }
       },
       "meta:xdmField": "xdm:surveyResponse",
-      "tagNumber": 24
-    },
-    "autopayEnrollment": {
-      "type": "object",
-      "meta:xdmType": "object",
-      "properties": {
-        "autoPayEnrollment": {
-          "title": "Autopay Enrollment",
-          "$ref": "../../datatypes/industry-verticals/tool-usage.schema.json",
-          "description": "Extension of toolUsage data type.",
-          "meta:xdmField": "xdm:autoPayEnrollment",
-          "tagNumber": 1
-        },
-        "autoPayEnrollmentStatus": {
-          "title": "Autopay Status",
-          "type": "boolean",
-          "description": "Tracks the visitor's autopay enrollment status.",
-          "meta:xdmType": "boolean",
-          "meta:xdmField": "xdm:autoPayEnrollmentStatus",
-          "tagNumber": 2
-        }
-      },
-      "meta:xdmField": "xdm:autopayEnrollment",
       "tagNumber": 25
     },
     "customerFeedback": {
@@ -826,24 +821,10 @@
       "meta:xdmField": "xdm:customerFeedback",
       "tagNumber": 26
     },
-    "deviceConfiguration": {
-      "title": "Device Configuration",
-      "$ref": "../../datatypes/industry-verticals/tool-usage.schema.json",
-      "description": "Extension of toolUsage data type.",
-      "meta:xdmField": "xdm:deviceConfiguration",
-      "tagNumber": 27
-    },
     "deviceTradeInDetails": {
       "type": "object",
       "meta:xdmType": "object",
       "properties": {
-        "deviceTradeIn": {
-          "title": "Steps",
-          "$ref": "../../datatypes/industry-verticals/tool-usage.schema.json",
-          "description": "Extension of toolUsage data type.",
-          "meta:xdmField": "xdm:deviceTradeIn",
-          "tagNumber": 1
-        },
         "deviceTradeInManufacturer": {
           "title": "Manufacturer",
           "type": "string",
@@ -871,24 +852,10 @@
       "meta:xdmField": "xdm:deviceTradeInDetails",
       "tagNumber": 28
     },
-    "deviceActivation": {
-      "title": "Device Activation",
-      "$ref": "../../datatypes/industry-verticals/tool-usage.schema.json",
-      "description": "Extension of toolUsage data type.",
-      "meta:xdmField": "xdm:deviceActivation",
-      "tagNumber": 29
-    },
     "upgrade": {
       "type": "object",
       "meta:xdmType": "object",
       "properties": {
-        "upgradeSteps": {
-          "title": "Upgrade Steps",
-          "$ref": "../../datatypes/industry-verticals/tool-usage.schema.json",
-          "description": "Extension of toolUsage data type.",
-          "meta:xdmField": "xdm:upgradeSteps",
-          "tagNumber": 1
-        },
         "upgradeOffer": {
           "title": "Upgrade Offer",
           "$ref": "../../mixins/experience-event/experienceevent-offer-impression-details.schema.json",
@@ -911,13 +878,6 @@
       "type": "object",
       "meta:xdmType": "object",
       "properties": {
-        "upsellSteps": {
-          "title": "Upsell Steps",
-          "$ref": "../../datatypes/industry-verticals/tool-usage.schema.json",
-          "description": "Extension of toolUsage data type.",
-          "meta:xdmField": "xdm:upsellSteps",
-          "tagNumber": 1
-        },
         "upsellOffer": {
           "title": "Upsell Offer",
           "$ref": "../../mixins/experience-event/experienceevent-offer-impression-details.schema.json",
