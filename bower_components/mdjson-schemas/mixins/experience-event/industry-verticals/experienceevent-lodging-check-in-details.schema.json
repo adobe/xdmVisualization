@@ -18,13 +18,6 @@
       "type": "object",
       "meta:xdmType": "object",
       "properties": {
-        "checkInSteps": {
-          "title": "Check In Steps",
-          "$ref": "../../../datatypes/industry-verticals/tool-usage.schema.json",
-          "description": "Extension of toolUsage data type.",
-          "meta:xdmField": "xdm:checkInSteps",
-          "tagNumber": 1
-        },
         "userSelectedRoom": {
           "title": "Guest Selected Room",
           "type": "boolean",

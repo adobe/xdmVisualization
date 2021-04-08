@@ -44,6 +44,7 @@
 #### classes
 [classes.experienceevent](http://opensource.adobe.com/xdmVisualization/prod/master/classes.experienceevent.html)<br/>
 [classes.profile](http://opensource.adobe.com/xdmVisualization/prod/master/classes.profile.html)<br/>
+[classes.vehicle-product](http://opensource.adobe.com/xdmVisualization/prod/master/classes.vehicle-product.html)<br/>
 [classes.graphs](http://opensource.adobe.com/xdmVisualization/prod/master/classes.graphs.html)<br/>
 [classes.product](http://opensource.adobe.com/xdmVisualization/prod/master/classes.product.html)<br/>
 [classes.campaign](http://opensource.adobe.com/xdmVisualization/prod/master/classes.campaign.html)<br/>
@@ -54,6 +55,7 @@
 [classes.b2b.opportunity-contact-role](http://opensource.adobe.com/xdmVisualization/prod/master/classes.b2b.opportunity-contact-role.html)<br/>
 [classes.b2b.marketing-list](http://opensource.adobe.com/xdmVisualization/prod/master/classes.b2b.marketing-list.html)<br/>
 [classes.b2b.opportunity-person](http://opensource.adobe.com/xdmVisualization/prod/master/classes.b2b.opportunity-person.html)<br/>
+[classes.lodging-product](http://opensource.adobe.com/xdmVisualization/prod/master/classes.lodging-product.html)<br/>
 [classes.campaign-member](http://opensource.adobe.com/xdmVisualization/prod/master/classes.campaign-member.html)<br/>
 [classes.segmentdefinition](http://opensource.adobe.com/xdmVisualization/prod/master/classes.segmentdefinition.html)<br/>
 [classes.promotion](http://opensource.adobe.com/xdmVisualization/prod/master/classes.promotion.html)<br/>
@@ -278,7 +280,6 @@
 [mixins.experience-event.industry-verticals.experienceevent-claim-process](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.industry-verticals.experienceevent-claim-process.html)<br/>
 [mixins.experience-event.industry-verticals.experienceevent-reservation-search](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.industry-verticals.experienceevent-reservation-search.html)<br/>
 [mixins.experience-event.industry-verticals.experienceevent-vehicle-reservation](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.industry-verticals.experienceevent-vehicle-reservation.html)<br/>
-[mixins.experience-event.industry-verticals.experienceevent-flight](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.industry-verticals.experienceevent-flight.html)<br/>
 [mixins.experience-event.industry-verticals.experienceevent-reservation-details](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.industry-verticals.experienceevent-reservation-details.html)<br/>
 [mixins.experience-event.industry-verticals.experienceevent-lodging-check-in-details](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.industry-verticals.experienceevent-lodging-check-in-details.html)<br/>
 [mixins.experience-event.industry-verticals.experienceevent-card-application-process](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.industry-verticals.experienceevent-card-application-process.html)<br/>

@@ -319,10 +319,12 @@
 </ul>
 </details>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/classes.graphs.html">graphs</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/classes.lodging-product.html">lodging-product</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/classes.product.html">product</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/classes.profile.html">profile</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/classes.promotion.html">promotion</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/classes.segmentdefinition.html">segmentdefinition</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/classes.vehicle-product.html">vehicle-product</a></li>
 </ul>
 </details>
 <details>
@@ -627,7 +629,6 @@
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.industry-verticals.experienceevent-deposit-details.html">experienceevent-deposit-details</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.industry-verticals.experienceevent-device-details.html">experienceevent-device-details</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.industry-verticals.experienceevent-dining-reservation.html">experienceevent-dining-reservation</a></li>
-<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.industry-verticals.experienceevent-flight.html">experienceevent-flight</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.industry-verticals.experienceevent-flight-check-in-details.html">experienceevent-flight-check-in-details</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.industry-verticals.experienceevent-flight-reservation.html">experienceevent-flight-reservation</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.industry-verticals.experienceevent-loan-application-details.html">experienceevent-loan-application-details</a></li>

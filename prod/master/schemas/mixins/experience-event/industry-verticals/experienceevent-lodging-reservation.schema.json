@@ -71,20 +71,13 @@
               "meta:xdmField": "xdm:checkOutDate",
               "tagNumber": 6
             },
-            "itemComparison": {
-              "title": "Item Comparison",
-              "$ref": "../../../datatypes/industry-verticals/comparisons.schema.json",
-              "description": "Used to track lodging comparisons on a site or an app.",
-              "meta:xdmField": "xdm:itemComparison",
-              "tagNumber": 7
-            },
             "couponCode": {
               "title": "Coupon Code",
               "type": "string",
               "description": "Coupon code associated with the hotel booking.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:couponCode",
-              "tagNumber": 8
+              "tagNumber": 7
             },
             "discountPercent": {
               "title": "Discount Percent",
@@ -92,7 +85,7 @@
               "description": "Discount percentage associated with the booking.",
               "meta:xdmType": "number",
               "meta:xdmField": "xdm:discountPercent",
-              "tagNumber": 9
+              "tagNumber": 8
             },
             "freeCancelation": {
               "title": "Free Cancelation",
@@ -100,7 +93,7 @@
               "description": "Yes/no if the room has a free cancellation.",
               "meta:xdmType": "boolean",
               "meta:xdmField": "xdm:freeCancelation",
-              "tagNumber": 10
+              "tagNumber": 9
             },
             "guestID": {
               "title": "Guest ID",
@@ -108,7 +101,7 @@
               "description": "Guest ID associated with the hotel booking.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:guestID",
-              "tagNumber": 11
+              "tagNumber": 10
             },
             "loyaltyID": {
               "title": "Loyalty ID",
@@ -116,7 +109,7 @@
               "description": "Includes the loyalty/rewards program ID for the passenger listed in the reservation.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:loyaltyID",
-              "tagNumber": 12
+              "tagNumber": 11
             },
             "numberOfRooms": {
               "title": "Number of Rooms",
@@ -124,7 +117,7 @@
               "description": "Captures the number of rooms associated with the reservation.",
               "meta:xdmType": "int",
               "meta:xdmField": "xdm:numberOfRooms",
-              "tagNumber": 13
+              "tagNumber": 12
             },
             "propertyID": {
               "title": "Property ID",
@@ -132,7 +125,7 @@
               "description": "Identifier of the hotel/resort for the reservation.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:propertyID",
-              "tagNumber": 14
+              "tagNumber": 13
             },
             "propertyName": {
               "title": "Property Name",
@@ -140,7 +133,7 @@
               "description": "Name of the hotel/resort for the reservation.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:propertyName",
-              "tagNumber": 15
+              "tagNumber": 14
             },
             "ratePlan": {
               "title": "Rate Plan",
@@ -148,7 +141,7 @@
               "description": "The rate deal on which the room was sold.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:ratePlan",
-              "tagNumber": 16
+              "tagNumber": 15
             },
             "refundable": {
               "title": "Refundable",
@@ -156,7 +149,7 @@
               "description": "Yes/no if the room is refundable.",
               "meta:xdmType": "boolean",
               "meta:xdmField": "xdm:refundable",
-              "tagNumber": 17
+              "tagNumber": 16
             },
             "reservationStatus": {
               "title": "Reservation Status",
@@ -164,7 +157,7 @@
               "description": "update",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:reservationStatus",
-              "tagNumber": 18
+              "tagNumber": 17
             },
             "roomAccessibilityType": {
               "title": "Room Accessibility Type",
@@ -177,7 +170,7 @@
               "description": "Type of accessible room, such as mobility, hearing, or other.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:roomAccessibilityType",
-              "tagNumber": 19
+              "tagNumber": 18
             },
             "roomCapacity": {
               "title": "Room Capacity",
@@ -185,7 +178,7 @@
               "description": "Number of people the hotel room holds.",
               "meta:xdmType": "int",
               "meta:xdmField": "xdm:roomCapacity",
-              "tagNumber": 20
+              "tagNumber": 19
             },
             "roomType": {
               "title": "Room Type",
@@ -200,7 +193,7 @@
               "description": "Captures the type of room being reserved.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:roomType",
-              "tagNumber": 21
+              "tagNumber": 20
             },
             "smoking": {
               "title": "Smoking",
@@ -208,7 +201,7 @@
               "description": "Yes/no if the room allows smoking.",
               "meta:xdmType": "boolean",
               "meta:xdmField": "xdm:smoking",
-              "tagNumber": 22
+              "tagNumber": 21
             }
           },
           "meta:xdmField": "xdm:lodgingReservation",

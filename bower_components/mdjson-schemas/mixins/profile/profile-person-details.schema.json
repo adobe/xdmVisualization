@@ -5,6 +5,11 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
+  "meta:tags": {
+    "industry": [
+      "all"
+    ]
+  },
   "description": "Demographic information such as name, gender, and birth date of an individual.",
   "meta:status": "stable",
   "meta:xdmType": "object",

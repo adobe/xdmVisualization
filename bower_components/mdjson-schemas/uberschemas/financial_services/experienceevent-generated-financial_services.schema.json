@@ -237,23 +237,31 @@
           "meta:xdmField": "xdm:alertSetup",
           "tagNumber": 1
         },
-        "alertClicks": {
+        "ID": {
+          "title": "Alert ID",
+          "type": "string",
+          "description": "Alert identifier.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:ID",
+          "tagNumber": 2
+        },
+        "clicks": {
           "title": "Alert Clicks",
           "type": "integer",
           "description": "Counts the number of times an alert has been clicked.",
           "meta:xdmType": "int",
-          "meta:xdmField": "xdm:alertClicks",
-          "tagNumber": 2
+          "meta:xdmField": "xdm:clicks",
+          "tagNumber": 3
         },
-        "alertDismissals": {
+        "dismissals": {
           "title": "Alert Dismissals",
           "type": "integer",
           "description": "Counts the number of times an alert has been dismissed.",
           "meta:xdmType": "int",
-          "meta:xdmField": "xdm:alertDismissals",
-          "tagNumber": 3
+          "meta:xdmField": "xdm:dismissals",
+          "tagNumber": 4
         },
-        "alertImpressions": {
+        "impressions": {
           "title": "Alert Impression Details",
           "type": "array",
           "description": "An array of alerts that have been displayed to a customer.",
@@ -262,8 +270,8 @@
             "$ref": "../../datatypes/industry-verticals/impressions.schema.json",
             "tagNumber": 1
           },
-          "meta:xdmField": "xdm:alertImpressions",
-          "tagNumber": 4
+          "meta:xdmField": "xdm:impressions",
+          "tagNumber": 5
         }
       },
       "meta:xdmField": "xdm:alerts",
@@ -476,64 +484,6 @@
           "description": "Extension of toolUsage data type.",
           "meta:xdmField": "xdm:dispute",
           "tagNumber": 1
-        },
-        "ID": {
-          "title": " ID",
-          "type": "string",
-          "description": "ID of the claim being submitted.",
-          "meta:xdmType": "string",
-          "meta:xdmField": "xdm:ID",
-          "tagNumber": 2
-        },
-        "startDate": {
-          "title": "Start Date",
-          "type": "string",
-          "format": "date-time",
-          "description": "Date the claim was successfully submitted.",
-          "meta:xdmType": "date-time",
-          "meta:xdmField": "xdm:startDate",
-          "tagNumber": 3
-        },
-        "status": {
-          "title": "Status",
-          "type": "string",
-          "enum": [
-            "initiated",
-            "in progress",
-            "approved",
-            "declined"
-          ],
-          "description": "Captures the status of the claim for any given point in the application process.",
-          "meta:xdmType": "string",
-          "meta:xdmField": "xdm:status",
-          "tagNumber": 4
-        },
-        "type": {
-          "title": "Type",
-          "type": "string",
-          "enum": [
-            "homeowners",
-            "automobile",
-            "renters",
-            "third party automobile",
-            "third party home",
-            "life",
-            "health",
-            "dental",
-            "flood",
-            "earthquake"
-          ],
-          "description": "Type of claim submitted.",
-          "meta:xdmType": "string",
-          "meta:xdmField": "xdm:type",
-          "tagNumber": 5
-        },
-        "policy": {
-          "title": "Policy",
-          "$ref": "../../datatypes/industry-verticals/policy-details.schema.json",
-          "description": "Extension of Policy data type.",
-          "meta:xdmField": "xdm:policy",
-          "tagNumber": 6
         }
       },
       "meta:xdmField": "xdm:disputes",
@@ -708,11 +658,11 @@
               "meta:xdmField": "xdm:transaction",
               "tagNumber": 2
             },
-            "account": {
-              "title": "Account",
+            "financialAccount": {
+              "title": "Financial Account",
               "$ref": "../../datatypes/industry-verticals/financial-account.schema.json",
-              "description": "Account from which the bill is being paid.",
-              "meta:xdmField": "xdm:account",
+              "description": "Extension of financialAccount data type.  Details the account to which the balance is being transferred.",
+              "meta:xdmField": "xdm:financialAccount",
               "tagNumber": 3
             },
             "scheduledTransactionDate": {
@@ -737,20 +687,13 @@
                   "meta:xdmField": "xdm:name",
                   "tagNumber": 1
                 },
-                "address": {
-                  "title": "Service Provider Address",
-                  "$ref": "../../datatypes/demographic/address.schema.json",
-                  "description": "Service provider address",
-                  "meta:xdmField": "xdm:address",
-                  "tagNumber": 2
-                },
                 "userAccountID": {
                   "title": "User Account ID",
                   "type": "string",
                   "description": "The user account ID for the service provider.",
                   "meta:xdmType": "string",
                   "meta:xdmField": "xdm:userAccountID",
-                  "tagNumber": 3
+                  "tagNumber": 2
                 }
               },
               "meta:xdmField": "xdm:serviceProvider",
@@ -782,17 +725,33 @@
           "tagNumber": 22
         },
         "deposit": {
-          "title": "Deposit",
-          "$ref": "../../datatypes/industry-verticals/transaction.schema.json",
-          "description": "Extension of transaction data type.",
+          "type": "object",
+          "meta:xdmType": "object",
+          "properties": {
+            "transaction": {
+              "title": "Deposit Transaction",
+              "$ref": "../../datatypes/industry-verticals/transaction.schema.json",
+              "description": "Extension of transaction data type.",
+              "meta:xdmField": "xdm:transaction",
+              "tagNumber": 1
+            },
+            "account": {
+              "title": "Deposit Account",
+              "$ref": "../../datatypes/industry-verticals/financial-account.schema.json",
+              "description": "Extension of financialAccount data type. Details of the account and transactions associated with the deposit.",
+              "meta:xdmField": "xdm:account",
+              "tagNumber": 2
+            }
+          },
           "meta:xdmField": "xdm:deposit",
           "tagNumber": 23
         },
-        "depositAccount": {
-          "title": "Deposit Account",
-          "$ref": "../../datatypes/industry-verticals/financial-account.schema.json",
-          "description": "Extension of financialAccount data type.",
-          "meta:xdmField": "xdm:depositAccount",
+        "mobileDeposit": {
+          "title": "Mobile Deposit",
+          "type": "boolean",
+          "description": "Indicator for whether the deposit was done through mobile or not.",
+          "meta:xdmType": "boolean",
+          "meta:xdmField": "xdm:mobileDeposit",
           "tagNumber": 24
         },
         "loanApplicationDetails": {
@@ -1047,27 +1006,35 @@
       "meta:xdmField": "xdm:media",
       "tagNumber": 24
     },
-    "marketing ": {
+    "offers ": {
       "type": "object",
       "meta:xdmType": "object",
       "properties": {
-        "offerClicks": {
+        "ID": {
+          "title": "Offer ID",
+          "type": "string",
+          "description": "Offer Identifier.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:ID",
+          "tagNumber": 1
+        },
+        "clicks": {
           "title": "Offer Clicks",
           "type": "integer",
           "description": "Counts the number of times an offer has been clicked.",
           "meta:xdmType": "int",
-          "meta:xdmField": "xdm:offerClicks",
-          "tagNumber": 1
+          "meta:xdmField": "xdm:clicks",
+          "tagNumber": 2
         },
-        "offerDismissals": {
+        "dismissals": {
           "title": "Offer Dismissals",
           "type": "integer",
           "description": "Counts the number of times an offer has been dismissed.",
           "meta:xdmType": "int",
-          "meta:xdmField": "xdm:offerDismissals",
-          "tagNumber": 2
+          "meta:xdmField": "xdm:dismissals",
+          "tagNumber": 3
         },
-        "offerImpressions": {
+        "impressions": {
           "title": "Offer Impression Details",
           "type": "array",
           "description": "An array of advertisements that have been displayed to a customer.",
@@ -1076,38 +1043,38 @@
             "$ref": "../../datatypes/industry-verticals/impressions.schema.json",
             "tagNumber": 1
           },
-          "meta:xdmField": "xdm:offerImpressions",
-          "tagNumber": 3
-        },
-        "offerSteps": {
-          "title": "Offer Steps",
-          "$ref": "../../datatypes/industry-verticals/tool-usage.schema.json",
-          "description": "Extension of toolUsage data type.",
-          "meta:status": "experimental",
-          "meta:xdmField": "xdm:offerSteps",
+          "meta:xdmField": "xdm:impressions",
           "tagNumber": 4
         }
       },
-      "meta:xdmField": "xdm:marketing ",
+      "meta:xdmField": "xdm:offers ",
       "tagNumber": 25
     },
-    "quoteRequestDetails": {
+    "quotes": {
       "type": "object",
       "meta:xdmType": "object",
       "properties": {
+        "requestID": {
+          "title": "Quote Request ID",
+          "type": "string",
+          "description": "Unique identifier for the quote request.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:requestID",
+          "tagNumber": 1
+        },
         "discount": {
           "title": "Discount",
           "$ref": "../../datatypes/currency.schema.json",
           "description": "Records the discount amount for a quote displayed to a visitor.",
           "meta:xdmField": "xdm:discount",
-          "tagNumber": 1
+          "tagNumber": 2
         },
         "premium": {
           "title": "Premium",
           "$ref": "../../datatypes/currency.schema.json",
           "description": "Records the premium amount for a quote displayed to a visitor.",
           "meta:xdmField": "xdm:premium",
-          "tagNumber": 2
+          "tagNumber": 3
         },
         "location": {
           "title": "Location",
@@ -1115,13 +1082,6 @@
           "description": "Captures the postal code used for finding retailers near the visitor's location.",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:location",
-          "tagNumber": 3
-        },
-        "personalDetails": {
-          "title": "Personal Details",
-          "$ref": "../../mixins/profile/profile-person-details.schema.json",
-          "description": "Extension of the Personal Profile data type.",
-          "meta:xdmField": "xdm:personalDetails",
           "tagNumber": 4
         },
         "selectedRetailer": {
@@ -1133,7 +1093,7 @@
           "tagNumber": 5
         }
       },
-      "meta:xdmField": "xdm:quoteRequestDetails",
+      "meta:xdmField": "xdm:quotes",
       "tagNumber": 26
     },
     "servicePaymentDetails": {
@@ -1265,6 +1225,80 @@
       "meta:xdmField": "xdm:surveyResponse",
       "tagNumber": 29
     },
+    "claims": {
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "ID": {
+          "title": "Claims ID",
+          "type": "string",
+          "description": "Unique identifier for the claim.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:ID",
+          "tagNumber": 1
+        },
+        "startDate": {
+          "title": "Start Date",
+          "type": "string",
+          "format": "date-time",
+          "description": "Date the claim was successfully submitted.",
+          "meta:xdmType": "date-time",
+          "meta:xdmField": "xdm:startDate",
+          "tagNumber": 2
+        },
+        "status": {
+          "title": "Status",
+          "type": "string",
+          "enum": [
+            "initiated",
+            "in progress",
+            "approved",
+            "declined"
+          ],
+          "description": "Captures the status of the claim for any given point in the application process.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:status",
+          "tagNumber": 3
+        },
+        "type": {
+          "title": "Type",
+          "type": "string",
+          "enum": [
+            "homeowners",
+            "automobile",
+            "renters",
+            "third party automobile",
+            "third party home",
+            "life",
+            "health",
+            "dental",
+            "flood",
+            "earthquake"
+          ],
+          "description": "Type of claim submitted.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:type",
+          "tagNumber": 4
+        },
+        "policyID": {
+          "title": "Policy ID",
+          "type": "string",
+          "description": "Policy Identifier.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:policyID",
+          "tagNumber": 5
+        },
+        "benefitAmount": {
+          "title": "Benefit Amount",
+          "$ref": "../../datatypes/currency.schema.json",
+          "description": "Captures the benefit amount.",
+          "meta:xdmField": "xdm:benefitAmount",
+          "tagNumber": 6
+        }
+      },
+      "meta:xdmField": "xdm:claims",
+      "tagNumber": 30
+    },
     "customerFeedback": {
       "type": "object",
       "meta:xdmType": "object",
@@ -1365,7 +1399,7 @@
         }
       },
       "meta:xdmField": "xdm:customerFeedback",
-      "tagNumber": 30
+      "tagNumber": 31
     },
     "upgrade": {
       "type": "object",
@@ -1387,7 +1421,7 @@
         }
       },
       "meta:xdmField": "xdm:upgrade",
-      "tagNumber": 31
+      "tagNumber": 32
     },
     "upsell": {
       "type": "object",
@@ -1409,7 +1443,7 @@
         }
       },
       "meta:xdmField": "xdm:upsell",
-      "tagNumber": 32
+      "tagNumber": 33
     }
   },
   "meta:xdmId": "https://ns.adobe.com/xdm/context/experienceevent-generated-financial_services",

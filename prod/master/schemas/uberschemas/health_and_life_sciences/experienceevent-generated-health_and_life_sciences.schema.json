@@ -492,27 +492,35 @@
       "meta:xdmField": "xdm:media",
       "tagNumber": 19
     },
-    "marketing ": {
+    "offers ": {
       "type": "object",
       "meta:xdmType": "object",
       "properties": {
-        "offerClicks": {
+        "ID": {
+          "title": "Offer ID",
+          "type": "string",
+          "description": "Offer Identifier.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:ID",
+          "tagNumber": 1
+        },
+        "clicks": {
           "title": "Offer Clicks",
           "type": "integer",
           "description": "Counts the number of times an offer has been clicked.",
           "meta:xdmType": "int",
-          "meta:xdmField": "xdm:offerClicks",
-          "tagNumber": 1
+          "meta:xdmField": "xdm:clicks",
+          "tagNumber": 2
         },
-        "offerDismissals": {
+        "dismissals": {
           "title": "Offer Dismissals",
           "type": "integer",
           "description": "Counts the number of times an offer has been dismissed.",
           "meta:xdmType": "int",
-          "meta:xdmField": "xdm:offerDismissals",
-          "tagNumber": 2
+          "meta:xdmField": "xdm:dismissals",
+          "tagNumber": 3
         },
-        "offerImpressions": {
+        "impressions": {
           "title": "Offer Impression Details",
           "type": "array",
           "description": "An array of advertisements that have been displayed to a customer.",
@@ -521,38 +529,38 @@
             "$ref": "../../datatypes/industry-verticals/impressions.schema.json",
             "tagNumber": 1
           },
-          "meta:xdmField": "xdm:offerImpressions",
-          "tagNumber": 3
-        },
-        "offerSteps": {
-          "title": "Offer Steps",
-          "$ref": "../../datatypes/industry-verticals/tool-usage.schema.json",
-          "description": "Extension of toolUsage data type.",
-          "meta:status": "experimental",
-          "meta:xdmField": "xdm:offerSteps",
+          "meta:xdmField": "xdm:impressions",
           "tagNumber": 4
         }
       },
-      "meta:xdmField": "xdm:marketing ",
+      "meta:xdmField": "xdm:offers ",
       "tagNumber": 20
     },
-    "quoteRequestDetails": {
+    "quotes": {
       "type": "object",
       "meta:xdmType": "object",
       "properties": {
+        "requestID": {
+          "title": "Quote Request ID",
+          "type": "string",
+          "description": "Unique identifier for the quote request.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:requestID",
+          "tagNumber": 1
+        },
         "discount": {
           "title": "Discount",
           "$ref": "../../datatypes/currency.schema.json",
           "description": "Records the discount amount for a quote displayed to a visitor.",
           "meta:xdmField": "xdm:discount",
-          "tagNumber": 1
+          "tagNumber": 2
         },
         "premium": {
           "title": "Premium",
           "$ref": "../../datatypes/currency.schema.json",
           "description": "Records the premium amount for a quote displayed to a visitor.",
           "meta:xdmField": "xdm:premium",
-          "tagNumber": 2
+          "tagNumber": 3
         },
         "location": {
           "title": "Location",
@@ -560,13 +568,6 @@
           "description": "Captures the postal code used for finding retailers near the visitor's location.",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:location",
-          "tagNumber": 3
-        },
-        "personalDetails": {
-          "title": "Personal Details",
-          "$ref": "../../mixins/profile/profile-person-details.schema.json",
-          "description": "Extension of the Personal Profile data type.",
-          "meta:xdmField": "xdm:personalDetails",
           "tagNumber": 4
         },
         "selectedRetailer": {
@@ -578,7 +579,7 @@
           "tagNumber": 5
         }
       },
-      "meta:xdmField": "xdm:quoteRequestDetails",
+      "meta:xdmField": "xdm:quotes",
       "tagNumber": 21
     },
     "socialMarketing ": {
@@ -706,23 +707,31 @@
       "type": "object",
       "meta:xdmType": "object",
       "properties": {
-        "alertClicks": {
+        "ID": {
+          "title": "Alert ID",
+          "type": "string",
+          "description": "Alert identifier.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:ID",
+          "tagNumber": 1
+        },
+        "clicks": {
           "title": "Alert Clicks",
           "type": "integer",
           "description": "Counts the number of times an alert has been clicked.",
           "meta:xdmType": "int",
-          "meta:xdmField": "xdm:alertClicks",
-          "tagNumber": 1
+          "meta:xdmField": "xdm:clicks",
+          "tagNumber": 2
         },
-        "alertDismissals": {
+        "dismissals": {
           "title": "Alert Dismissals",
           "type": "integer",
           "description": "Counts the number of times an alert has been dismissed.",
           "meta:xdmType": "int",
-          "meta:xdmField": "xdm:alertDismissals",
-          "tagNumber": 2
+          "meta:xdmField": "xdm:dismissals",
+          "tagNumber": 3
         },
-        "alertImpressions": {
+        "impressions": {
           "title": "Alert Impression Details",
           "type": "array",
           "description": "An array of alerts that have been displayed to a customer.",
@@ -731,21 +740,21 @@
             "$ref": "../../datatypes/industry-verticals/impressions.schema.json",
             "tagNumber": 1
           },
-          "meta:xdmField": "xdm:alertImpressions",
-          "tagNumber": 3
+          "meta:xdmField": "xdm:impressions",
+          "tagNumber": 4
         }
       },
       "meta:xdmField": "xdm:alerts",
       "tagNumber": 25
     },
-    "disputes": {
+    "claims": {
       "type": "object",
       "meta:xdmType": "object",
       "properties": {
         "ID": {
-          "title": " ID",
+          "title": "Claims ID",
           "type": "string",
-          "description": "ID of the claim being submitted.",
+          "description": "Unique identifier for the claim.",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:ID",
           "tagNumber": 1
@@ -793,15 +802,23 @@
           "meta:xdmField": "xdm:type",
           "tagNumber": 4
         },
-        "policy": {
-          "title": "Policy",
-          "$ref": "../../datatypes/industry-verticals/policy-details.schema.json",
-          "description": "Extension of Policy data type.",
-          "meta:xdmField": "xdm:policy",
+        "policyID": {
+          "title": "Policy ID",
+          "type": "string",
+          "description": "Policy Identifier.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:policyID",
           "tagNumber": 5
+        },
+        "benefitAmount": {
+          "title": "Benefit Amount",
+          "$ref": "../../datatypes/currency.schema.json",
+          "description": "Captures the benefit amount.",
+          "meta:xdmField": "xdm:benefitAmount",
+          "tagNumber": 6
         }
       },
-      "meta:xdmField": "xdm:disputes",
+      "meta:xdmField": "xdm:claims",
       "tagNumber": 26
     },
     "customerFeedback": {

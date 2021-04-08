@@ -31,20 +31,13 @@
               "meta:xdmField": "xdm:agentID",
               "tagNumber": 1
             },
-            "itemComparison": {
-              "title": "Item Comparison",
-              "$ref": "../../../datatypes/industry-verticals/comparisons.schema.json",
-              "description": "Used to track vehicle comparisons on a site or an app.",
-              "meta:xdmField": "xdm:itemComparison",
-              "tagNumber": 2
-            },
             "couponCode": {
               "title": "Coupon Code",
               "type": "string",
               "description": "Coupon code associated with the vehicle booking.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:couponCode",
-              "tagNumber": 3
+              "tagNumber": 2
             },
             "vehicleDifferentDropoffLocation": {
               "title": "Different Drop-off Location",
@@ -52,7 +45,7 @@
               "description": "Indicates if a vehicle reservation has a different drop-off location than the pick-up location.",
               "meta:xdmType": "boolean",
               "meta:xdmField": "xdm:vehicleDifferentDropoffLocation",
-              "tagNumber": 4
+              "tagNumber": 3
             },
             "discountPercent": {
               "title": "Discount Percent",
@@ -60,7 +53,7 @@
               "description": "Discount percentage associated with the booking.",
               "meta:xdmType": "number",
               "meta:xdmField": "xdm:discountPercent",
-              "tagNumber": 5
+              "tagNumber": 4
             },
             "dropOffDateTime": {
               "title": "Drop-off Date & Time",
@@ -69,7 +62,7 @@
               "description": "The drop-off date & time of the for the vehicle reservation.",
               "meta:xdmType": "date-time",
               "meta:xdmField": "xdm:dropOffDateTime",
-              "tagNumber": 6
+              "tagNumber": 5
             },
             "vehicleDropOffLocation": {
               "title": "Drop-off Location",
@@ -77,7 +70,7 @@
               "description": "Drop-off location of the vehicle.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:vehicleDropOffLocation",
-              "tagNumber": 7
+              "tagNumber": 6
             },
             "vehicleDropOffLocationCode": {
               "title": "Drop-off Location Code",
@@ -86,7 +79,7 @@
               "pattern": "^[A-Z]{3}$",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:vehicleDropOffLocationCode",
-              "tagNumber": 8
+              "tagNumber": 7
             },
             "freeCancelation": {
               "title": "Free Cancelation",
@@ -94,7 +87,7 @@
               "description": "Yes/no if the car booking has a free cancellation.",
               "meta:xdmType": "boolean",
               "meta:xdmField": "xdm:freeCancelation",
-              "tagNumber": 9
+              "tagNumber": 8
             },
             "guestID": {
               "title": "Guest ID",
@@ -102,7 +95,7 @@
               "description": "Guest ID associated with the vehicle booking.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:guestID",
-              "tagNumber": 10
+              "tagNumber": 9
             },
             "loyaltyID": {
               "title": "Loyalty ID",
@@ -110,7 +103,7 @@
               "description": "Includes the loyalty/rewards program ID for the passenger listed in the reservation.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:loyaltyID",
-              "tagNumber": 11
+              "tagNumber": 10
             },
             "payLaterEligible": {
               "title": "Pay Later Eligible",
@@ -118,7 +111,7 @@
               "description": "Yes/no if the booking is eligible to be paid later.",
               "meta:xdmType": "boolean",
               "meta:xdmField": "xdm:payLaterEligible",
-              "tagNumber": 12
+              "tagNumber": 11
             },
             "pickUpDateTime": {
               "title": "Pick-up Date & Time",
@@ -127,7 +120,7 @@
               "description": "The pick-up date & time of the for the vehicle reservation.",
               "meta:xdmType": "date-time",
               "meta:xdmField": "xdm:pickUpDateTime",
-              "tagNumber": 13
+              "tagNumber": 12
             },
             "vehiclePickUpLocation": {
               "title": "Pick-up Location",
@@ -135,7 +128,7 @@
               "description": "Pick-up location of the vehicle.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:vehiclePickUpLocation",
-              "tagNumber": 14
+              "tagNumber": 13
             },
             "vehiclePickUpLocationCode": {
               "title": "Pick-up Location Code",
@@ -144,7 +137,7 @@
               "pattern": "^[A-Z]{3}$",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:vehiclePickUpLocationCode",
-              "tagNumber": 15
+              "tagNumber": 14
             },
             "prePaid": {
               "title": "Pre Paid",
@@ -152,7 +145,7 @@
               "description": "Yes/no if the booking is pre-paid",
               "meta:xdmType": "boolean",
               "meta:xdmField": "xdm:prePaid",
-              "tagNumber": 16
+              "tagNumber": 15
             },
             "productID": {
               "title": "Product ID",
@@ -160,7 +153,7 @@
               "description": "The product ID associated with the booking.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:productID",
-              "tagNumber": 17
+              "tagNumber": 16
             },
             "refundable": {
               "title": "Refundable",
@@ -168,7 +161,7 @@
               "description": "Yes/no if the car booking is refundable.",
               "meta:xdmType": "boolean",
               "meta:xdmField": "xdm:refundable",
-              "tagNumber": 18
+              "tagNumber": 17
             },
             "rentersAge": {
               "title": "Renter's Age",
@@ -176,7 +169,7 @@
               "description": "Age of the renter on the vehicle reservation.",
               "meta:xdmType": "int",
               "meta:xdmField": "xdm:rentersAge",
-              "tagNumber": 19
+              "tagNumber": 18
             },
             "salesChannel": {
               "title": "Sales Channel",
@@ -192,7 +185,7 @@
               "description": "Sales channel from which the reservation was booked.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:salesChannel",
-              "tagNumber": 20
+              "tagNumber": 19
             },
             "status": {
               "title": "Status",
@@ -206,7 +199,7 @@
               "description": "The status of the vehicle reservation.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:status",
-              "tagNumber": 21
+              "tagNumber": 20
             },
             "vehicleClass": {
               "title": "Vehicle Class",
@@ -224,7 +217,7 @@
               "description": "The class/category of vehicle being reserved.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:vehicleClass",
-              "tagNumber": 22
+              "tagNumber": 21
             }
           },
           "meta:xdmField": "xdm:vehicleReservation",

@@ -19,17 +19,33 @@
       "meta:xdmType": "object",
       "properties": {
         "deposit": {
-          "title": "Deposit",
-          "$ref": "../../../datatypes/industry-verticals/transaction.schema.json",
-          "description": "Extension of transaction data type.",
+          "type": "object",
+          "meta:xdmType": "object",
+          "properties": {
+            "transaction": {
+              "title": "Deposit Transaction",
+              "$ref": "../../../datatypes/industry-verticals/transaction.schema.json",
+              "description": "Extension of transaction data type.",
+              "meta:xdmField": "xdm:transaction",
+              "tagNumber": 1
+            },
+            "account": {
+              "title": "Deposit Account",
+              "$ref": "../../../datatypes/industry-verticals/financial-account.schema.json",
+              "description": "Extension of financialAccount data type. Details of the account and transactions associated with the deposit.",
+              "meta:xdmField": "xdm:account",
+              "tagNumber": 2
+            }
+          },
           "meta:xdmField": "xdm:deposit",
           "tagNumber": 1
         },
-        "depositAccount": {
-          "title": "Deposit Account",
-          "$ref": "../../../datatypes/industry-verticals/financial-account.schema.json",
-          "description": "Extension of financialAccount data type.",
-          "meta:xdmField": "xdm:depositAccount",
+        "mobileDeposit": {
+          "title": "Mobile Deposit",
+          "type": "boolean",
+          "description": "Indicator for whether the deposit was done through mobile or not.",
+          "meta:xdmType": "boolean",
+          "meta:xdmField": "xdm:mobileDeposit",
           "tagNumber": 2
         }
       },

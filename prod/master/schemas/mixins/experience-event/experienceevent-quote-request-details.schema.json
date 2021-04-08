@@ -18,23 +18,31 @@
   "meta:status": "experimental",
   "meta:xdmType": "object",
   "properties": {
-    "quoteRequestDetails": {
+    "quotes": {
       "type": "object",
       "meta:xdmType": "object",
       "properties": {
+        "requestID": {
+          "title": "Quote Request ID",
+          "type": "string",
+          "description": "Unique identifier for the quote request.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:requestID",
+          "tagNumber": 1
+        },
         "discount": {
           "title": "Discount",
           "$ref": "../../datatypes/currency.schema.json",
           "description": "Records the discount amount for a quote displayed to a visitor.",
           "meta:xdmField": "xdm:discount",
-          "tagNumber": 1
+          "tagNumber": 2
         },
         "premium": {
           "title": "Premium",
           "$ref": "../../datatypes/currency.schema.json",
           "description": "Records the premium amount for a quote displayed to a visitor.",
           "meta:xdmField": "xdm:premium",
-          "tagNumber": 2
+          "tagNumber": 3
         },
         "location": {
           "title": "Location",
@@ -42,13 +50,6 @@
           "description": "Captures the postal code used for finding retailers near the visitor's location.",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:location",
-          "tagNumber": 3
-        },
-        "personalDetails": {
-          "title": "Personal Details",
-          "$ref": "../profile/profile-person-details.schema.json",
-          "description": "Extension of the Personal Profile data type.",
-          "meta:xdmField": "xdm:personalDetails",
           "tagNumber": 4
         },
         "selectedRetailer": {
@@ -60,7 +61,7 @@
           "tagNumber": 5
         }
       },
-      "meta:xdmField": "xdm:quoteRequestDetails",
+      "meta:xdmField": "xdm:quotes",
       "tagNumber": 1
     }
   },

@@ -16,14 +16,14 @@
   "meta:status": "experimental",
   "meta:xdmType": "object",
   "properties": {
-    "disputes": {
+    "claims": {
       "type": "object",
       "meta:xdmType": "object",
       "properties": {
         "ID": {
-          "title": " ID",
+          "title": "Claims ID",
           "type": "string",
-          "description": "ID of the claim being submitted.",
+          "description": "Unique identifier for the claim.",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:ID",
           "tagNumber": 1
@@ -71,15 +71,23 @@
           "meta:xdmField": "xdm:type",
           "tagNumber": 4
         },
-        "policy": {
-          "title": "Policy",
-          "$ref": "../../../datatypes/industry-verticals/policy-details.schema.json",
-          "description": "Extension of Policy data type.",
-          "meta:xdmField": "xdm:policy",
+        "policyID": {
+          "title": "Policy ID",
+          "type": "string",
+          "description": "Policy Identifier.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:policyID",
           "tagNumber": 5
+        },
+        "benefitAmount": {
+          "title": "Benefit Amount",
+          "$ref": "../../../datatypes/currency.schema.json",
+          "description": "Captures the benefit amount.",
+          "meta:xdmField": "xdm:benefitAmount",
+          "tagNumber": 6
         }
       },
-      "meta:xdmField": "xdm:disputes",
+      "meta:xdmField": "xdm:claims",
       "tagNumber": 1
     }
   },

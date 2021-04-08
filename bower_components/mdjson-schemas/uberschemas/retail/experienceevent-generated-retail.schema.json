@@ -170,23 +170,31 @@
           "meta:xdmField": "xdm:alertSetup",
           "tagNumber": 1
         },
-        "alertClicks": {
+        "ID": {
+          "title": "Alert ID",
+          "type": "string",
+          "description": "Alert identifier.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:ID",
+          "tagNumber": 2
+        },
+        "clicks": {
           "title": "Alert Clicks",
           "type": "integer",
           "description": "Counts the number of times an alert has been clicked.",
           "meta:xdmType": "int",
-          "meta:xdmField": "xdm:alertClicks",
-          "tagNumber": 2
+          "meta:xdmField": "xdm:clicks",
+          "tagNumber": 3
         },
-        "alertDismissals": {
+        "dismissals": {
           "title": "Alert Dismissals",
           "type": "integer",
           "description": "Counts the number of times an alert has been dismissed.",
           "meta:xdmType": "int",
-          "meta:xdmField": "xdm:alertDismissals",
-          "tagNumber": 3
+          "meta:xdmField": "xdm:dismissals",
+          "tagNumber": 4
         },
-        "alertImpressions": {
+        "impressions": {
           "title": "Alert Impression Details",
           "type": "array",
           "description": "An array of alerts that have been displayed to a customer.",
@@ -195,8 +203,8 @@
             "$ref": "../../datatypes/industry-verticals/impressions.schema.json",
             "tagNumber": 1
           },
-          "meta:xdmField": "xdm:alertImpressions",
-          "tagNumber": 4
+          "meta:xdmField": "xdm:impressions",
+          "tagNumber": 5
         }
       },
       "meta:xdmField": "xdm:alerts",
@@ -340,27 +348,35 @@
       "meta:xdmField": "xdm:media",
       "tagNumber": 19
     },
-    "marketing ": {
+    "offers ": {
       "type": "object",
       "meta:xdmType": "object",
       "properties": {
-        "offerClicks": {
+        "ID": {
+          "title": "Offer ID",
+          "type": "string",
+          "description": "Offer Identifier.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:ID",
+          "tagNumber": 1
+        },
+        "clicks": {
           "title": "Offer Clicks",
           "type": "integer",
           "description": "Counts the number of times an offer has been clicked.",
           "meta:xdmType": "int",
-          "meta:xdmField": "xdm:offerClicks",
-          "tagNumber": 1
+          "meta:xdmField": "xdm:clicks",
+          "tagNumber": 2
         },
-        "offerDismissals": {
+        "dismissals": {
           "title": "Offer Dismissals",
           "type": "integer",
           "description": "Counts the number of times an offer has been dismissed.",
           "meta:xdmType": "int",
-          "meta:xdmField": "xdm:offerDismissals",
-          "tagNumber": 2
+          "meta:xdmField": "xdm:dismissals",
+          "tagNumber": 3
         },
-        "offerImpressions": {
+        "impressions": {
           "title": "Offer Impression Details",
           "type": "array",
           "description": "An array of advertisements that have been displayed to a customer.",
@@ -369,19 +385,11 @@
             "$ref": "../../datatypes/industry-verticals/impressions.schema.json",
             "tagNumber": 1
           },
-          "meta:xdmField": "xdm:offerImpressions",
-          "tagNumber": 3
-        },
-        "offerSteps": {
-          "title": "Offer Steps",
-          "$ref": "../../datatypes/industry-verticals/tool-usage.schema.json",
-          "description": "Extension of toolUsage data type.",
-          "meta:status": "experimental",
-          "meta:xdmField": "xdm:offerSteps",
+          "meta:xdmField": "xdm:impressions",
           "tagNumber": 4
         }
       },
-      "meta:xdmField": "xdm:marketing ",
+      "meta:xdmField": "xdm:offers ",
       "tagNumber": 20
     },
     "socialMarketing ": {

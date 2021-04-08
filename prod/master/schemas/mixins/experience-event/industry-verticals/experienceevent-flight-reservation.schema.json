@@ -40,13 +40,6 @@
               "meta:xdmField": "xdm:arrivalAirportCode",
               "tagNumber": 2
             },
-            "itemComparison": {
-              "title": "Item Comparison",
-              "$ref": "../../../datatypes/industry-verticals/comparisons.schema.json",
-              "description": "Used to track flight comparisons on a site or an app.",
-              "meta:xdmField": "xdm:itemComparison",
-              "tagNumber": 3
-            },
             "departureAirportCode": {
               "title": "Departure Airport Code",
               "type": "string",
@@ -54,7 +47,7 @@
               "pattern": "^[A-Z]{3}$",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:departureAirportCode",
-              "tagNumber": 4
+              "tagNumber": 3
             },
             "fareClass": {
               "title": "Fare Class",
@@ -68,7 +61,7 @@
               "description": "The fare class of the flight being reserved.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:fareClass",
-              "tagNumber": 5
+              "tagNumber": 4
             },
             "departureDate": {
               "title": "Departure Date",
@@ -77,7 +70,7 @@
               "description": "The departure date of the flight being reserved.",
               "meta:xdmType": "date-time",
               "meta:xdmField": "xdm:departureDate",
-              "tagNumber": 6
+              "tagNumber": 5
             },
             "arrivalDate": {
               "title": "Arrival Date",
@@ -86,7 +79,7 @@
               "description": "The arrival date of the flight being reserved.",
               "meta:xdmType": "date-time",
               "meta:xdmField": "xdm:arrivalDate",
-              "tagNumber": 7
+              "tagNumber": 6
             },
             "flightNumber": {
               "title": "Flight Number",
@@ -94,7 +87,7 @@
               "description": "Tracks the flight number.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:flightNumber",
-              "tagNumber": 8
+              "tagNumber": 7
             },
             "loyaltyID": {
               "title": "Loyalty ID",
@@ -102,14 +95,15 @@
               "description": "Includes the loyalty/rewards program ID for the passenger listed in the reservation.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:loyaltyID",
-              "tagNumber": 9
+              "tagNumber": 8
             },
-            "passenger": {
-              "title": "Passenger",
-              "$ref": "../../../datatypes/person/person.schema.json",
+            "passengerID": {
+              "title": "Passenger ID",
+              "type": "string",
               "description": "Passenger info associated with the reservation.",
-              "meta:xdmField": "xdm:passenger",
-              "tagNumber": 10
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:passengerID",
+              "tagNumber": 9
             },
             "reservationID": {
               "title": "Reservation ID",
@@ -117,7 +111,7 @@
               "description": "",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:reservationID",
-              "tagNumber": 11
+              "tagNumber": 10
             },
             "salesChannel": {
               "title": "Sales Channel",
@@ -133,7 +127,7 @@
               "description": "Sales channel from which the reservation was booked.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:salesChannel",
-              "tagNumber": 12
+              "tagNumber": 11
             },
             "securityScreening": {
               "title": "Security Screening",
@@ -145,7 +139,7 @@
               "description": "Type of security screening the passenger is subject to.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:securityScreening",
-              "tagNumber": 13
+              "tagNumber": 12
             },
             "status": {
               "title": "Status",
@@ -159,7 +153,7 @@
               "description": "The status of the flight reservation.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:status",
-              "tagNumber": 14
+              "tagNumber": 13
             }
           },
           "meta:xdmField": "xdm:flightReservation",

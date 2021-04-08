@@ -10,7 +10,7 @@
       "financial_services"
     ]
   },
-  "description": "Bill pay steps such as start, save, failure, and complete.",
+  "description": "Bill pay details such as transaction information, service account ID, and balance.",
   "meta:status": "experimental",
   "meta:xdmType": "object",
   "properties": {
@@ -29,11 +29,11 @@
               "meta:xdmField": "xdm:transaction",
               "tagNumber": 2
             },
-            "account": {
-              "title": "Account",
+            "financialAccount": {
+              "title": "Financial Account",
               "$ref": "../../../datatypes/industry-verticals/financial-account.schema.json",
-              "description": "Account from which the bill is being paid.",
-              "meta:xdmField": "xdm:account",
+              "description": "Extension of financialAccount data type.  Details the account to which the balance is being transferred.",
+              "meta:xdmField": "xdm:financialAccount",
               "tagNumber": 3
             },
             "scheduledTransactionDate": {
@@ -58,20 +58,13 @@
                   "meta:xdmField": "xdm:name",
                   "tagNumber": 1
                 },
-                "address": {
-                  "title": "Service Provider Address",
-                  "$ref": "../../../datatypes/demographic/address.schema.json",
-                  "description": "Service provider address",
-                  "meta:xdmField": "xdm:address",
-                  "tagNumber": 2
-                },
                 "userAccountID": {
                   "title": "User Account ID",
                   "type": "string",
                   "description": "The user account ID for the service provider.",
                   "meta:xdmType": "string",
                   "meta:xdmField": "xdm:userAccountID",
-                  "tagNumber": 3
+                  "tagNumber": 2
                 }
               },
               "meta:xdmField": "xdm:serviceProvider",
