@@ -825,32 +825,32 @@
       "type": "object",
       "meta:xdmType": "object",
       "properties": {
-        "deviceTradeInManufacturer": {
-          "title": "Manufacturer",
+        "originalDeviceID": {
+          "title": "Original Device ID",
           "type": "string",
-          "description": "Manufacturer of the device being traded.",
+          "description": "ID for the device being traded.",
           "meta:xdmType": "string",
-          "meta:xdmField": "xdm:deviceTradeInManufacturer",
+          "meta:xdmField": "xdm:originalDeviceID",
           "tagNumber": 2
         },
-        "deviceTradeInModel": {
-          "title": "Model",
+        "newDeviceID": {
+          "title": "New Device ID",
           "type": "string",
-          "description": "Model of the device being traded.",
+          "description": "ID for the new device being traded for.",
           "meta:xdmType": "string",
-          "meta:xdmField": "xdm:deviceTradeInModel",
+          "meta:xdmField": "xdm:newDeviceID",
           "tagNumber": 3
         },
-        "deviceTradeInValue": {
-          "title": "Value",
+        "tradeInValue": {
+          "title": "Trade In Value",
           "$ref": "../../datatypes/currency.schema.json",
           "description": "Value of the device being traded.",
-          "meta:xdmField": "xdm:deviceTradeInValue",
+          "meta:xdmField": "xdm:tradeInValue",
           "tagNumber": 4
         }
       },
       "meta:xdmField": "xdm:deviceTradeInDetails",
-      "tagNumber": 28
+      "tagNumber": 27
     },
     "upgrade": {
       "type": "object",
@@ -872,7 +872,7 @@
         }
       },
       "meta:xdmField": "xdm:upgrade",
-      "tagNumber": 30
+      "tagNumber": 29
     },
     "upsell": {
       "type": "object",
@@ -894,7 +894,7 @@
         }
       },
       "meta:xdmField": "xdm:upsell",
-      "tagNumber": 31
+      "tagNumber": 30
     }
   },
   "meta:xdmId": "https://ns.adobe.com/xdm/context/experienceevent-generated-telecom",

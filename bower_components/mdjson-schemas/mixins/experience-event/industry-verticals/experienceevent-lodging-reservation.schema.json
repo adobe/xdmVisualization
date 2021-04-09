@@ -162,11 +162,6 @@
             "roomAccessibilityType": {
               "title": "Room Accessibility Type",
               "type": "string",
-              "enum": [
-                "mobility",
-                "hearing",
-                "n/a"
-              ],
               "description": "Type of accessible room, such as mobility, hearing, or other.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:roomAccessibilityType",
@@ -183,13 +178,6 @@
             "roomType": {
               "title": "Room Type",
               "type": "string",
-              "enum": [
-                "queen",
-                "king",
-                "double",
-                "meeting room",
-                "other"
-              ],
               "description": "Captures the type of room being reserved.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:roomType",
@@ -202,6 +190,177 @@
               "meta:xdmType": "boolean",
               "meta:xdmField": "xdm:smoking",
               "tagNumber": 21
+            },
+            "cancellation": {
+              "title": "Cancellation",
+              "type": "integer",
+              "description": "Tracked when a reservation has been cancelled.",
+              "meta:xdmType": "int",
+              "meta:xdmField": "xdm:cancellation",
+              "tagNumber": 22
+            },
+            "confirmationNumber": {
+              "title": "Confirmation Number",
+              "type": "string",
+              "description": "Tracks the reservation confirmation number/identifier.",
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:confirmationNumber",
+              "tagNumber": 23
+            },
+            "created": {
+              "title": "Created",
+              "type": "integer",
+              "description": "Tracked when a reservation has been created.",
+              "meta:xdmType": "int",
+              "meta:xdmField": "xdm:created",
+              "tagNumber": 24
+            },
+            "currencyCode": {
+              "title": "Currency Code",
+              "type": "string",
+              "description": "Currency code used to make the purchase. ISO 4217 currency code.",
+              "pattern": "^[A-Z]{3}$",
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:currencyCode",
+              "tagNumber": 25
+            },
+            "ID": {
+              "title": "ID",
+              "type": "string",
+              "description": "Tracks the reservation number/identifier.",
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:ID",
+              "tagNumber": 26
+            },
+            "length": {
+              "title": "Length",
+              "type": "integer",
+              "description": "Tracks the total number of days for a reservation.",
+              "meta:xdmType": "int",
+              "meta:xdmField": "xdm:length",
+              "tagNumber": 27
+            },
+            "modification": {
+              "title": "Modification",
+              "type": "integer",
+              "description": "Captured when a reservation has been modified.",
+              "meta:xdmType": "int",
+              "meta:xdmField": "xdm:modification",
+              "tagNumber": 28
+            },
+            "modificationDate": {
+              "title": "Modification Date",
+              "type": "string",
+              "format": "date-time",
+              "description": "Tracks when a reservation has been modified.",
+              "meta:xdmType": "date-time",
+              "meta:xdmField": "xdm:modificationDate",
+              "tagNumber": 29
+            },
+            "numberOfAdults": {
+              "title": "Number of Adults",
+              "type": "integer",
+              "description": "Captures the number of adults associated with the reservation.",
+              "meta:xdmType": "int",
+              "meta:xdmField": "xdm:numberOfAdults",
+              "tagNumber": 30
+            },
+            "numberOfChildren": {
+              "title": "Number of Children",
+              "type": "integer",
+              "description": "Captures the number of children associated with the reservation.",
+              "meta:xdmType": "int",
+              "meta:xdmField": "xdm:numberOfChildren",
+              "tagNumber": 31
+            },
+            "purpose": {
+              "title": "Purpose",
+              "type": "string",
+              "description": "Tracks the purpose of the reservation, typically either business or personal.",
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:purpose",
+              "tagNumber": 32
+            },
+            "tripType": {
+              "title": "Trip Type",
+              "type": "string",
+              "description": "Indicates if the reservation is for a one way, round trip, or multi-city.",
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:tripType",
+              "tagNumber": 33
+            },
+            "type": {
+              "title": "Type",
+              "type": "string",
+              "description": "Records the type of reservation being placed.",
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:type",
+              "tagNumber": 34
+            },
+            "lodgingCheckIn": {
+              "type": "object",
+              "description": "Lodging check in details such as room selection as well as start, save, failure and complete of check in.",
+              "meta:xdmType": "object",
+              "properties": {
+                "userSelectedRoom": {
+                  "title": "Guest Selected Room",
+                  "type": "boolean",
+                  "description": "Captures if the guest selected their room at check in.",
+                  "meta:xdmType": "boolean",
+                  "meta:xdmField": "xdm:userSelectedRoom",
+                  "tagNumber": 2
+                },
+                "oneRoomCheckIn": {
+                  "title": "One Room Check In",
+                  "type": "integer",
+                  "description": "Captured upon completion of check in when there is only one room available at that time.",
+                  "meta:xdmType": "int",
+                  "meta:xdmField": "xdm:oneRoomCheckIn",
+                  "tagNumber": 3
+                },
+                "noRoomCheckIn": {
+                  "title": "No Room Check In",
+                  "type": "integer",
+                  "description": "Captured upon completion of check in when there is only one room available at that time.",
+                  "meta:xdmType": "int",
+                  "meta:xdmField": "xdm:noRoomCheckIn",
+                  "tagNumber": 4
+                },
+                "digitalKey": {
+                  "title": "Digital Key Selected",
+                  "type": "integer",
+                  "description": "Tracks when a user selects the use of a digital key upon check in.",
+                  "meta:xdmType": "int",
+                  "meta:xdmField": "xdm:digitalKey",
+                  "tagNumber": 5
+                },
+                "lateCheckInRequested": {
+                  "title": "Late Check In Requested",
+                  "type": "integer",
+                  "description": "Tracks when a user requests a check in later than normal check in hours.",
+                  "meta:xdmType": "int",
+                  "meta:xdmField": "xdm:lateCheckInRequested",
+                  "tagNumber": 6
+                },
+                "earlyCheckInRequested": {
+                  "title": "Early Check In Requested",
+                  "type": "integer",
+                  "description": "Tracks when a user requests a check in earlier than normal check in hours.",
+                  "meta:xdmType": "int",
+                  "meta:xdmField": "xdm:earlyCheckInRequested",
+                  "tagNumber": 7
+                },
+                "roomKeys": {
+                  "title": "Room Keys",
+                  "type": "integer",
+                  "description": "Captures the number of standard room keys provided at check in.",
+                  "meta:xdmType": "int",
+                  "meta:xdmField": "xdm:roomKeys",
+                  "tagNumber": 8
+                }
+              },
+              "meta:xdmField": "xdm:lodgingCheckIn",
+              "tagNumber": 35
             }
           },
           "meta:xdmField": "xdm:lodgingReservation",

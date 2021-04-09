@@ -38,57 +38,35 @@
           "meta:xdmField": "xdm:assignedBeneficiary",
           "tagNumber": 2
         },
-        "creditScore": {
-          "title": "Credit Score",
-          "type": "integer",
-          "description": "Refers to a number between 300-850 that depicts a consumer's creditworthiness. ",
-          "meta:xdmType": "int",
-          "meta:xdmField": "xdm:creditScore",
-          "tagNumber": 3
+        "creditScores": {
+          "type": "array",
+          "meta:xdmType": "array",
+          "meta:xdmField": "xdm:creditScores",
+          "tagNumber": 3,
+          "items": {
+            "$ref": "obj48028525029597735.schema.json"
+          }
         },
         "employmentStatus": {
           "title": "Employment Status",
           "type": "string",
-          "enum": [
-            "full time",
-            "part time",
-            "temporary",
-            "self employed",
-            "retired",
-            "unemployed"
-          ],
           "description": "Tracks the employment status of the user.",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:employmentStatus",
           "tagNumber": 4
         },
-        "filingJointly": {
-          "title": "Filing Jointly",
-          "type": "boolean",
-          "description": "Refers to a filing status for married couples that have wed before the end of the tax year.",
-          "meta:xdmType": "boolean",
-          "meta:xdmField": "xdm:filingJointly",
-          "tagNumber": 5
-        },
-        "filingSeparately": {
-          "title": "Filing Separately",
-          "type": "boolean",
-          "description": "Refers to married couples who choose to record their respective incomes, exemptions, and deductions on separate tax returns.",
-          "meta:xdmType": "boolean",
-          "meta:xdmField": "xdm:filingSeparately",
-          "tagNumber": 6
-        },
-        "financialAccount": {
-          "title": "financeAccountId",
+        "ID": {
+          "title": "ID",
           "type": "array",
-          "description": "Financial account IDs assigned to the user, and array of Financial Account Details data type.",
+          "description": "Array of financial account IDs assigned to the user.",
           "meta:xdmType": "array",
           "items": {
-            "$ref": "../../datatypes/industry-verticals/financial-account.schema.json",
+            "type": "string",
+            "meta:xdmType": "string",
             "tagNumber": 1
           },
-          "meta:xdmField": "xdm:financialAccount",
-          "tagNumber": 7
+          "meta:xdmField": "xdm:ID",
+          "tagNumber": 5
         },
         "hasAssignedBeneficiary": {
           "title": "Has Assigned Beneficiary",
@@ -96,38 +74,7 @@
           "description": "Flag determining if the account has a beneficiary assigned.",
           "meta:xdmType": "boolean",
           "meta:xdmField": "xdm:hasAssignedBeneficiary",
-          "tagNumber": 8
-        },
-        "isHeadOfHousehold": {
-          "title": "Head of Household",
-          "type": "boolean",
-          "description": "Users designed as head of household if they pay more than half the cost of supporting and housing a qualifying person.",
-          "meta:xdmType": "boolean",
-          "meta:xdmField": "xdm:isHeadOfHousehold",
-          "tagNumber": 9
-        },
-        "householdIncome": {
-          "title": "Household Income",
-          "$ref": "../../datatypes/currency.schema.json",
-          "description": "Refers to the combined gross income of all members of a household.",
-          "meta:xdmField": "xdm:householdIncome",
-          "tagNumber": 10
-        },
-        "singleFiler": {
-          "title": "Single Filer",
-          "type": "boolean",
-          "description": "Refers to a taxpayer who is unmarried and does not qualify for any other filing status.",
-          "meta:xdmType": "boolean",
-          "meta:xdmField": "xdm:singleFiler",
-          "tagNumber": 11
-        },
-        "taxBracket": {
-          "title": "Tax Bracket",
-          "type": "string",
-          "description": "Refers to a range of incomes subject to a certain income tax rate.",
-          "meta:xdmType": "string",
-          "meta:xdmField": "xdm:taxBracket",
-          "tagNumber": 12
+          "tagNumber": 6
         }
       },
       "meta:xdmField": "xdm:personalFinances",

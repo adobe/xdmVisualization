@@ -26,12 +26,20 @@
       "meta:xdmField": "@id",
       "tagNumber": 1
     },
+    "propertyID": {
+      "title": "Property ID",
+      "type": "string",
+      "description": "Identifier for the lodging property.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:propertyID",
+      "tagNumber": 2
+    },
     "location": {
       "title": "Location",
       "$ref": "../datatypes/demographic/address.schema.json",
       "description": "Lodging property location.",
       "meta:xdmField": "xdm:location",
-      "tagNumber": 2
+      "tagNumber": 3
     },
     "ownership": {
       "title": "Ownership",
@@ -39,7 +47,7 @@
       "description": "Parent company of the lodging property.",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:ownership",
-      "tagNumber": 3
+      "tagNumber": 4
     },
     "serviceLevel": {
       "title": "Service Level",
@@ -47,7 +55,7 @@
       "description": "Service level associated with the lodging property such as luxury, budget, mid-range, etc.",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:serviceLevel",
-      "tagNumber": 4
+      "tagNumber": 5
     },
     "starRating": {
       "title": "Star Rating",
@@ -55,7 +63,7 @@
       "description": "Star rating associated with the lodging property.",
       "meta:xdmType": "int",
       "meta:xdmField": "xdm:starRating",
-      "tagNumber": 5
+      "tagNumber": 6
     },
     "totalRooms": {
       "title": "Total Rooms",
@@ -63,7 +71,7 @@
       "description": "Total rooms in the lodging property.",
       "meta:xdmType": "int",
       "meta:xdmField": "xdm:totalRooms",
-      "tagNumber": 6
+      "tagNumber": 7
     },
     "type": {
       "title": "Type",
@@ -71,7 +79,7 @@
       "description": "Type of lodging property such as homestay, resort, capsule, lodge, service apartment, boathouse, etc.",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:type",
-      "tagNumber": 7
+      "tagNumber": 8
     }
   },
   "meta:xdmId": "https://ns.adobe.com/xdm/classes/lodging-product",

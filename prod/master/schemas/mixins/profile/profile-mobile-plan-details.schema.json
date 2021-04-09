@@ -1,0 +1,48 @@
+{
+  "id": "_xdm.mixins.profile.profile-mobile-plan-details",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Mobile Plan Details",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:tags": {
+    "industry": [
+      "telecom"
+    ]
+  },
+  "description": "Mobile plan details including number of lines, data rates, cost, etc.",
+  "meta:status": "experimental",
+  "meta:xdmType": "object",
+  "properties": {
+    "mobilePlanDetails": {
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "accountID": {
+          "title": "Account ID",
+          "type": "string",
+          "description": "Account ID for the plan.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:accountID",
+          "tagNumber": 1
+        },
+        "devices": {
+          "title": "Devices",
+          "description": "Array of line details and their associated devices.",
+          "type": "array",
+          "meta:xdmType": "array",
+          "meta:xdmField": "xdm:devices",
+          "tagNumber": 2,
+          "items": {
+            "$ref": "obj8357636608676569.schema.json"
+          }
+        }
+      },
+      "meta:xdmField": "xdm:mobilePlanDetails",
+      "tagNumber": 1
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/mixins/profile/profile-mobile-plan-details",
+  "meta:altId": "_xdm.mixins.profile.profile-mobile-plan-details",
+  "id": "_xdm.mixins.profile.profile-mobile-plan-details"
+}

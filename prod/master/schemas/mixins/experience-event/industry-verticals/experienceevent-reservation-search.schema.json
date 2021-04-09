@@ -84,7 +84,7 @@
           "tagNumber": 7
         },
         "reservationSearch": {
-          "title": "Reservation Search",
+          "title": "Site Search",
           "$ref": "../../../datatypes/industry-verticals/internal-site-search.schema.json",
           "description": "Extension of internalSearch data type.",
           "meta:xdmField": "xdm:reservationSearch",

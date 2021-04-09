@@ -1,0 +1,52 @@
+{
+  "id": "_xdm.mixins.industry-verticals.experienceevent-device-trade-in-details",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Device Details",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:tags": {
+    "industry": [
+      "telecom"
+    ]
+  },
+  "description": "Device trade-in details including trade-in value, original device ID, and new device ID.",
+  "meta:status": "experimental",
+  "meta:xdmType": "object",
+  "properties": {
+    "deviceTradeInDetails": {
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "originalDeviceID": {
+          "title": "Original Device ID",
+          "type": "string",
+          "description": "ID for the device being traded.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:originalDeviceID",
+          "tagNumber": 2
+        },
+        "newDeviceID": {
+          "title": "New Device ID",
+          "type": "string",
+          "description": "ID for the new device being traded for.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:newDeviceID",
+          "tagNumber": 3
+        },
+        "tradeInValue": {
+          "title": "Trade In Value",
+          "$ref": "../../../datatypes/currency.schema.json",
+          "description": "Value of the device being traded.",
+          "meta:xdmField": "xdm:tradeInValue",
+          "tagNumber": 4
+        }
+      },
+      "meta:xdmField": "xdm:deviceTradeInDetails",
+      "tagNumber": 1
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/mixins/industry-verticals/experienceevent-device-trade-in-details",
+  "meta:altId": "_xdm.mixins.industry-verticals.experienceevent-device-trade-in-details",
+  "id": "_xdm.mixins.industry-verticals.experienceevent-device-trade-in-details"
+}

@@ -128,6 +128,934 @@
       "meta:xdmField": "xdm:personID",
       "tagNumber": 7
     },
+    "consents": {
+      "title": "Consents and Preferences",
+      "description": "Specific Consent and Preference Options",
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "collect": {
+          "type": "object",
+          "meta:xdmType": "object",
+          "properties": {
+            "val": {
+              "title": "Choice Value",
+              "description": "The value specified by the user as their preference or the basis of processing that precludes the need for user consent",
+              "type": "string",
+              "enum": [
+                "y",
+                "n",
+                "p",
+                "u",
+                "LI",
+                "CT",
+                "CP",
+                "VI",
+                "PI"
+              ],
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:val",
+              "tagNumber": 1
+            }
+          },
+          "meta:xdmField": "xdm:collect",
+          "required": [
+            "val"
+          ],
+          "tagNumber": 1
+        },
+        "share": {
+          "type": "object",
+          "meta:xdmType": "object",
+          "properties": {
+            "val": {
+              "title": "Choice Value",
+              "description": "The value specified by the user as their preference or the basis of processing that precludes the need for user consent",
+              "type": "string",
+              "enum": [
+                "y",
+                "n",
+                "p",
+                "u",
+                "LI",
+                "CT",
+                "CP",
+                "VI",
+                "PI"
+              ],
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:val",
+              "tagNumber": 1
+            }
+          },
+          "meta:xdmField": "xdm:share",
+          "required": [
+            "val"
+          ],
+          "tagNumber": 2
+        },
+        "personalize": {
+          "title": "Personalization Preferences",
+          "description": "User's Personalization Preferences",
+          "type": "object",
+          "meta:xdmType": "object",
+          "properties": {
+            "content": {
+              "type": "object",
+              "meta:xdmType": "object",
+              "properties": {
+                "val": {
+                  "title": "Choice Value",
+                  "description": "The value specified by the user as their preference or the basis of processing that precludes the need for user consent",
+                  "type": "string",
+                  "enum": [
+                    "y",
+                    "n",
+                    "p",
+                    "u",
+                    "LI",
+                    "CT",
+                    "CP",
+                    "VI",
+                    "PI"
+                  ],
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:val",
+                  "tagNumber": 1
+                }
+              },
+              "meta:xdmField": "xdm:content",
+              "required": [
+                "val"
+              ],
+              "tagNumber": 1
+            }
+          },
+          "meta:xdmField": "xdm:personalize",
+          "tagNumber": 3
+        },
+        "marketing": {
+          "title": "Marketing Preferences",
+          "description": "User's Direct Marketing Preferences",
+          "type": "object",
+          "meta:xdmType": "object",
+          "properties": {
+            "preferred": {
+              "title": "Preferred Channel",
+              "description": "User's preferred channel for receiving communications",
+              "type": "string",
+              "enum": [
+                "email",
+                "push",
+                "inApp",
+                "sms",
+                "phone",
+                "phyMail",
+                "inVehicle",
+                "inHome",
+                "iot",
+                "social",
+                "other",
+                "none",
+                "unknown"
+              ],
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:preferred",
+              "tagNumber": 1
+            },
+            "any": {
+              "type": "object",
+              "meta:xdmType": "object",
+              "properties": {
+                "val": {
+                  "title": "Choice Value",
+                  "description": "The value specified by the user as their preference or the basis of processing that precludes the need for user consent",
+                  "type": "string",
+                  "enum": [
+                    "y",
+                    "n",
+                    "p",
+                    "u",
+                    "LI",
+                    "CT",
+                    "CP",
+                    "VI",
+                    "PI"
+                  ],
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:val",
+                  "tagNumber": 1
+                },
+                "time": {
+                  "title": "Preference timestamp",
+                  "description": "Date and time this specific preference was collected. This value should conform to ISO 8601 standard. An example form is \"2004-10-23T12:00:00-06:00\".",
+                  "type": "string",
+                  "format": "date-time",
+                  "meta:xdmType": "date-time",
+                  "meta:xdmField": "xdm:time",
+                  "tagNumber": 2
+                },
+                "reason": {
+                  "title": "Opt-out reason",
+                  "type": "string",
+                  "description": "Reason for opting out",
+                  "maxLength": 16,
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:reason",
+                  "tagNumber": 3
+                }
+              },
+              "meta:xdmField": "xdm:any",
+              "required": [
+                "val"
+              ],
+              "tagNumber": 2
+            },
+            "email": {
+              "type": "object",
+              "meta:xdmType": "object",
+              "properties": {
+                "val": {
+                  "title": "Choice Value",
+                  "description": "The value specified by the user as their preference or the basis of processing that precludes the need for user consent",
+                  "type": "string",
+                  "enum": [
+                    "y",
+                    "n",
+                    "p",
+                    "u",
+                    "LI",
+                    "CT",
+                    "CP",
+                    "VI",
+                    "PI"
+                  ],
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:val",
+                  "tagNumber": 1
+                },
+                "time": {
+                  "title": "Preference timestamp",
+                  "description": "Date and time this specific preference was collected. This value should conform to ISO 8601 standard. An example form is \"2004-10-23T12:00:00-06:00\".",
+                  "type": "string",
+                  "format": "date-time",
+                  "meta:xdmType": "date-time",
+                  "meta:xdmField": "xdm:time",
+                  "tagNumber": 2
+                },
+                "reason": {
+                  "title": "Opt-out reason",
+                  "type": "string",
+                  "description": "Reason for opting out",
+                  "maxLength": 16,
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:reason",
+                  "tagNumber": 3
+                },
+                "subscriptions": {
+                  "title": "Subscriptions",
+                  "description": "A set of notifications, newsletters, etc. to which the user subscribes",
+                  "type": "object",
+                  "meta:xdmType": "map",
+                  "meta:xdmField": "xdm:subscriptions",
+                  "tagNumber": 4,
+                  "properties": {
+                    "mapObj": {
+                      "type": "object",
+                      "title": "Subscription",
+                      "description": "The name or identifier of the specific subscription",
+                      "meta:xdmType": "object",
+                      "properties": {
+                        "val": {
+                          "title": "Choice Value",
+                          "description": "The value specified by the user as their preference or the basis of processing that precludes the need for user consent",
+                          "type": "string",
+                          "enum": [
+                            "y",
+                            "n",
+                            "p",
+                            "u",
+                            "LI",
+                            "CT",
+                            "CP",
+                            "VI",
+                            "PI"
+                          ],
+                          "meta:xdmType": "string",
+                          "meta:xdmField": "xdm:val",
+                          "tagNumber": 1
+                        },
+                        "type": {
+                          "title": "Subscription Type",
+                          "description": "The type of subscription",
+                          "type": "string",
+                          "maxLength": 15,
+                          "meta:xdmType": "string",
+                          "meta:xdmField": "xdm:type",
+                          "tagNumber": 2
+                        },
+                        "subscribers": {
+                          "title": "Subscribers",
+                          "description": "The set of identifiers (email addresses, phone numbers, etc.) for this user who have subscribed",
+                          "type": "object",
+                          "meta:xdmType": "map",
+                          "meta:xdmField": "xdm:subscribers",
+                          "tagNumber": 3,
+                          "properties": {
+                            "mapObj": {
+                              "type": "object",
+                              "title": "Subscriber",
+                              "description": "The specific identifier (email addresses, phone numbers, etc.) for this subscriber",
+                              "meta:xdmType": "object",
+                              "properties": {
+                                "time": {
+                                  "title": "Preference timestamp",
+                                  "description": "Date and time this specific preference was collected. This value should conform to ISO 8601 standard. An example form is \"2004-10-23T12:00:00-06:00\".",
+                                  "type": "string",
+                                  "format": "date-time",
+                                  "meta:xdmType": "date-time",
+                                  "meta:xdmField": "xdm:time",
+                                  "tagNumber": 1
+                                },
+                                "source": {
+                                  "title": "Preference Source",
+                                  "description": "Through which interface did the user provide this preference value",
+                                  "type": "string",
+                                  "maxLength": 15,
+                                  "meta:xdmType": "string",
+                                  "meta:xdmField": "xdm:source",
+                                  "tagNumber": 2
+                                }
+                              },
+                              "tagNumber": 1
+                            }
+                          }
+                        }
+                      },
+                      "tagNumber": 1
+                    }
+                  }
+                }
+              },
+              "meta:xdmField": "xdm:email",
+              "required": [
+                "val"
+              ],
+              "tagNumber": 3
+            },
+            "push": {
+              "type": "object",
+              "meta:xdmType": "object",
+              "properties": {
+                "val": {
+                  "title": "Choice Value",
+                  "description": "The value specified by the user as their preference or the basis of processing that precludes the need for user consent",
+                  "type": "string",
+                  "enum": [
+                    "y",
+                    "n",
+                    "p",
+                    "u",
+                    "LI",
+                    "CT",
+                    "CP",
+                    "VI",
+                    "PI"
+                  ],
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:val",
+                  "tagNumber": 1
+                },
+                "time": {
+                  "title": "Preference timestamp",
+                  "description": "Date and time this specific preference was collected. This value should conform to ISO 8601 standard. An example form is \"2004-10-23T12:00:00-06:00\".",
+                  "type": "string",
+                  "format": "date-time",
+                  "meta:xdmType": "date-time",
+                  "meta:xdmField": "xdm:time",
+                  "tagNumber": 2
+                },
+                "reason": {
+                  "title": "Opt-out reason",
+                  "type": "string",
+                  "description": "Reason for opting out",
+                  "maxLength": 16,
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:reason",
+                  "tagNumber": 3
+                },
+                "subscriptions": {
+                  "title": "Subscriptions",
+                  "description": "A set of notifications, newsletters, etc. to which the user subscribes",
+                  "type": "object",
+                  "meta:xdmType": "map",
+                  "meta:xdmField": "xdm:subscriptions",
+                  "tagNumber": 4,
+                  "properties": {
+                    "mapObj": {
+                      "type": "object",
+                      "title": "Subscription",
+                      "description": "The name or identifier of the specific subscription",
+                      "meta:xdmType": "object",
+                      "properties": {
+                        "val": {
+                          "title": "Choice Value",
+                          "description": "The value specified by the user as their preference or the basis of processing that precludes the need for user consent",
+                          "type": "string",
+                          "enum": [
+                            "y",
+                            "n",
+                            "p",
+                            "u",
+                            "LI",
+                            "CT",
+                            "CP",
+                            "VI",
+                            "PI"
+                          ],
+                          "meta:xdmType": "string",
+                          "meta:xdmField": "xdm:val",
+                          "tagNumber": 1
+                        },
+                        "type": {
+                          "title": "Subscription Type",
+                          "description": "The type of subscription",
+                          "type": "string",
+                          "maxLength": 15,
+                          "meta:xdmType": "string",
+                          "meta:xdmField": "xdm:type",
+                          "tagNumber": 2
+                        },
+                        "subscribers": {
+                          "title": "Subscribers",
+                          "description": "The set of identifiers (email addresses, phone numbers, etc.) for this user who have subscribed",
+                          "type": "object",
+                          "meta:xdmType": "map",
+                          "meta:xdmField": "xdm:subscribers",
+                          "tagNumber": 3,
+                          "properties": {
+                            "mapObj": {
+                              "type": "object",
+                              "title": "Subscriber",
+                              "description": "The specific identifier (email addresses, phone numbers, etc.) for this subscriber",
+                              "meta:xdmType": "object",
+                              "properties": {
+                                "time": {
+                                  "title": "Preference timestamp",
+                                  "description": "Date and time this specific preference was collected. This value should conform to ISO 8601 standard. An example form is \"2004-10-23T12:00:00-06:00\".",
+                                  "type": "string",
+                                  "format": "date-time",
+                                  "meta:xdmType": "date-time",
+                                  "meta:xdmField": "xdm:time",
+                                  "tagNumber": 1
+                                },
+                                "source": {
+                                  "title": "Preference Source",
+                                  "description": "Through which interface did the user provide this preference value",
+                                  "type": "string",
+                                  "maxLength": 15,
+                                  "meta:xdmType": "string",
+                                  "meta:xdmField": "xdm:source",
+                                  "tagNumber": 2
+                                }
+                              },
+                              "tagNumber": 1
+                            }
+                          }
+                        }
+                      },
+                      "tagNumber": 1
+                    }
+                  }
+                }
+              },
+              "meta:xdmField": "xdm:push",
+              "required": [
+                "val"
+              ],
+              "tagNumber": 4
+            },
+            "sms": {
+              "type": "object",
+              "meta:xdmType": "object",
+              "properties": {
+                "val": {
+                  "title": "Choice Value",
+                  "description": "The value specified by the user as their preference or the basis of processing that precludes the need for user consent",
+                  "type": "string",
+                  "enum": [
+                    "y",
+                    "n",
+                    "p",
+                    "u",
+                    "LI",
+                    "CT",
+                    "CP",
+                    "VI",
+                    "PI"
+                  ],
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:val",
+                  "tagNumber": 1
+                },
+                "time": {
+                  "title": "Preference timestamp",
+                  "description": "Date and time this specific preference was collected. This value should conform to ISO 8601 standard. An example form is \"2004-10-23T12:00:00-06:00\".",
+                  "type": "string",
+                  "format": "date-time",
+                  "meta:xdmType": "date-time",
+                  "meta:xdmField": "xdm:time",
+                  "tagNumber": 2
+                },
+                "reason": {
+                  "title": "Opt-out reason",
+                  "type": "string",
+                  "description": "Reason for opting out",
+                  "maxLength": 16,
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:reason",
+                  "tagNumber": 3
+                },
+                "subscriptions": {
+                  "title": "Subscriptions",
+                  "description": "A set of notifications, newsletters, etc. to which the user subscribes",
+                  "type": "object",
+                  "meta:xdmType": "map",
+                  "meta:xdmField": "xdm:subscriptions",
+                  "tagNumber": 4,
+                  "properties": {
+                    "mapObj": {
+                      "type": "object",
+                      "title": "Subscription",
+                      "description": "The name or identifier of the specific subscription",
+                      "meta:xdmType": "object",
+                      "properties": {
+                        "val": {
+                          "title": "Choice Value",
+                          "description": "The value specified by the user as their preference or the basis of processing that precludes the need for user consent",
+                          "type": "string",
+                          "enum": [
+                            "y",
+                            "n",
+                            "p",
+                            "u",
+                            "LI",
+                            "CT",
+                            "CP",
+                            "VI",
+                            "PI"
+                          ],
+                          "meta:xdmType": "string",
+                          "meta:xdmField": "xdm:val",
+                          "tagNumber": 1
+                        },
+                        "type": {
+                          "title": "Subscription Type",
+                          "description": "The type of subscription",
+                          "type": "string",
+                          "maxLength": 15,
+                          "meta:xdmType": "string",
+                          "meta:xdmField": "xdm:type",
+                          "tagNumber": 2
+                        },
+                        "subscribers": {
+                          "title": "Subscribers",
+                          "description": "The set of identifiers (email addresses, phone numbers, etc.) for this user who have subscribed",
+                          "type": "object",
+                          "meta:xdmType": "map",
+                          "meta:xdmField": "xdm:subscribers",
+                          "tagNumber": 3,
+                          "properties": {
+                            "mapObj": {
+                              "type": "object",
+                              "title": "Subscriber",
+                              "description": "The specific identifier (email addresses, phone numbers, etc.) for this subscriber",
+                              "meta:xdmType": "object",
+                              "properties": {
+                                "time": {
+                                  "title": "Preference timestamp",
+                                  "description": "Date and time this specific preference was collected. This value should conform to ISO 8601 standard. An example form is \"2004-10-23T12:00:00-06:00\".",
+                                  "type": "string",
+                                  "format": "date-time",
+                                  "meta:xdmType": "date-time",
+                                  "meta:xdmField": "xdm:time",
+                                  "tagNumber": 1
+                                },
+                                "source": {
+                                  "title": "Preference Source",
+                                  "description": "Through which interface did the user provide this preference value",
+                                  "type": "string",
+                                  "maxLength": 15,
+                                  "meta:xdmType": "string",
+                                  "meta:xdmField": "xdm:source",
+                                  "tagNumber": 2
+                                }
+                              },
+                              "tagNumber": 1
+                            }
+                          }
+                        }
+                      },
+                      "tagNumber": 1
+                    }
+                  }
+                }
+              },
+              "meta:xdmField": "xdm:sms",
+              "required": [
+                "val"
+              ],
+              "tagNumber": 5
+            }
+          },
+          "meta:xdmField": "xdm:marketing",
+          "tagNumber": 4
+        },
+        "idSpecific": {
+          "title": "Identifier specific",
+          "description": "Identifier specific consents and preferences",
+          "type": "object",
+          "meta:xdmType": "map",
+          "xdm:metadata": {
+            "properties": {
+              "time": {
+                "title": "Consent/Preferences timestamp",
+                "description": "Timestamp of this complete set of user consents and preferences. This value should conform to ISO 8601 standard. An example form is \"2004-10-23T12:00:00-06:00\".",
+                "type": "string",
+                "format": "date-time",
+                "meta:xdmType": "date-time",
+                "meta:xdmField": "xdm:time",
+                "tagNumber": 1
+              }
+            },
+            "type": "object",
+            "tagNumber": 1
+          },
+          "meta:xdmField": "xdm:idSpecific",
+          "tagNumber": 5,
+          "properties": {
+            "mapObj": {
+              "title": "Identifier Type",
+              "type": "object",
+              "meta:xdmType": "map",
+              "tagNumber": 2,
+              "properties": {
+                "mapObj": {
+                  "type": "object",
+                  "title": "Identifier",
+                  "meta:xdmType": "object",
+                  "properties": {
+                    "collect": {
+                      "type": "object",
+                      "meta:xdmType": "object",
+                      "properties": {
+                        "val": {
+                          "title": "Choice Value",
+                          "description": "The value specified by the user as their preference or the basis of processing that precludes the need for user consent",
+                          "type": "string",
+                          "enum": [
+                            "y",
+                            "n",
+                            "p",
+                            "u",
+                            "LI",
+                            "CT",
+                            "CP",
+                            "VI",
+                            "PI"
+                          ],
+                          "meta:xdmType": "string",
+                          "meta:xdmField": "xdm:val",
+                          "tagNumber": 1
+                        }
+                      },
+                      "meta:xdmField": "xdm:collect",
+                      "required": [
+                        "val"
+                      ],
+                      "tagNumber": 1
+                    },
+                    "share": {
+                      "type": "object",
+                      "meta:xdmType": "object",
+                      "properties": {
+                        "val": {
+                          "title": "Choice Value",
+                          "description": "The value specified by the user as their preference or the basis of processing that precludes the need for user consent",
+                          "type": "string",
+                          "enum": [
+                            "y",
+                            "n",
+                            "p",
+                            "u",
+                            "LI",
+                            "CT",
+                            "CP",
+                            "VI",
+                            "PI"
+                          ],
+                          "meta:xdmType": "string",
+                          "meta:xdmField": "xdm:val",
+                          "tagNumber": 1
+                        }
+                      },
+                      "meta:xdmField": "xdm:share",
+                      "required": [
+                        "val"
+                      ],
+                      "tagNumber": 2
+                    },
+                    "adID": {
+                      "type": "object",
+                      "meta:xdmType": "object",
+                      "properties": {
+                        "val": {
+                          "title": "Choice Value",
+                          "description": "The value specified by the user as their preference or the basis of processing that precludes the need for user consent",
+                          "type": "string",
+                          "enum": [
+                            "y",
+                            "n",
+                            "p",
+                            "u",
+                            "LI",
+                            "CT",
+                            "CP",
+                            "VI",
+                            "PI"
+                          ],
+                          "meta:xdmType": "string",
+                          "meta:xdmField": "xdm:val",
+                          "tagNumber": 1
+                        }
+                      },
+                      "meta:xdmField": "xdm:adID",
+                      "required": [
+                        "val"
+                      ],
+                      "tagNumber": 3
+                    },
+                    "personalize": {
+                      "title": "Personalization Preferences",
+                      "description": "User's Personalization Preferences",
+                      "type": "object",
+                      "meta:xdmType": "object",
+                      "properties": {
+                        "content": {
+                          "type": "object",
+                          "meta:xdmType": "object",
+                          "properties": {
+                            "val": {
+                              "title": "Choice Value",
+                              "description": "The value specified by the user as their preference or the basis of processing that precludes the need for user consent",
+                              "type": "string",
+                              "enum": [
+                                "y",
+                                "n",
+                                "p",
+                                "u",
+                                "LI",
+                                "CT",
+                                "CP",
+                                "VI",
+                                "PI"
+                              ],
+                              "meta:xdmType": "string",
+                              "meta:xdmField": "xdm:val",
+                              "tagNumber": 1
+                            }
+                          },
+                          "meta:xdmField": "xdm:content",
+                          "required": [
+                            "val"
+                          ],
+                          "tagNumber": 1
+                        }
+                      },
+                      "meta:xdmField": "xdm:personalize",
+                      "tagNumber": 4
+                    },
+                    "marketing": {
+                      "title": "Marketing Preferences",
+                      "description": "User's Direct Marketing Preferences",
+                      "type": "object",
+                      "meta:xdmType": "object",
+                      "properties": {
+                        "email": {
+                          "type": "object",
+                          "meta:xdmType": "object",
+                          "properties": {
+                            "val": {
+                              "title": "Choice Value",
+                              "description": "The value specified by the user as their preference or the basis of processing that precludes the need for user consent",
+                              "type": "string",
+                              "enum": [
+                                "y",
+                                "n",
+                                "p",
+                                "u",
+                                "LI",
+                                "CT",
+                                "CP",
+                                "VI",
+                                "PI"
+                              ],
+                              "meta:xdmType": "string",
+                              "meta:xdmField": "xdm:val",
+                              "tagNumber": 1
+                            },
+                            "time": {
+                              "title": "Preference timestamp",
+                              "description": "Date and time this specific preference was collected. This value should conform to ISO 8601 standard. An example form is \"2004-10-23T12:00:00-06:00\".",
+                              "type": "string",
+                              "format": "date-time",
+                              "meta:xdmType": "date-time",
+                              "meta:xdmField": "xdm:time",
+                              "tagNumber": 2
+                            },
+                            "reason": {
+                              "title": "Opt-out reason",
+                              "type": "string",
+                              "description": "Reason for opting out",
+                              "maxLength": 16,
+                              "meta:xdmType": "string",
+                              "meta:xdmField": "xdm:reason",
+                              "tagNumber": 3
+                            }
+                          },
+                          "meta:xdmField": "xdm:email",
+                          "required": [
+                            "val"
+                          ],
+                          "tagNumber": 1
+                        },
+                        "push": {
+                          "type": "object",
+                          "meta:xdmType": "object",
+                          "properties": {
+                            "val": {
+                              "title": "Choice Value",
+                              "description": "The value specified by the user as their preference or the basis of processing that precludes the need for user consent",
+                              "type": "string",
+                              "enum": [
+                                "y",
+                                "n",
+                                "p",
+                                "u",
+                                "LI",
+                                "CT",
+                                "CP",
+                                "VI",
+                                "PI"
+                              ],
+                              "meta:xdmType": "string",
+                              "meta:xdmField": "xdm:val",
+                              "tagNumber": 1
+                            },
+                            "time": {
+                              "title": "Preference timestamp",
+                              "description": "Date and time this specific preference was collected. This value should conform to ISO 8601 standard. An example form is \"2004-10-23T12:00:00-06:00\".",
+                              "type": "string",
+                              "format": "date-time",
+                              "meta:xdmType": "date-time",
+                              "meta:xdmField": "xdm:time",
+                              "tagNumber": 2
+                            },
+                            "reason": {
+                              "title": "Opt-out reason",
+                              "type": "string",
+                              "description": "Reason for opting out",
+                              "maxLength": 16,
+                              "meta:xdmType": "string",
+                              "meta:xdmField": "xdm:reason",
+                              "tagNumber": 3
+                            }
+                          },
+                          "meta:xdmField": "xdm:push",
+                          "required": [
+                            "val"
+                          ],
+                          "tagNumber": 2
+                        },
+                        "sms": {
+                          "type": "object",
+                          "meta:xdmType": "object",
+                          "properties": {
+                            "val": {
+                              "title": "Choice Value",
+                              "description": "The value specified by the user as their preference or the basis of processing that precludes the need for user consent",
+                              "type": "string",
+                              "enum": [
+                                "y",
+                                "n",
+                                "p",
+                                "u",
+                                "LI",
+                                "CT",
+                                "CP",
+                                "VI",
+                                "PI"
+                              ],
+                              "meta:xdmType": "string",
+                              "meta:xdmField": "xdm:val",
+                              "tagNumber": 1
+                            },
+                            "time": {
+                              "title": "Preference timestamp",
+                              "description": "Date and time this specific preference was collected. This value should conform to ISO 8601 standard. An example form is \"2004-10-23T12:00:00-06:00\".",
+                              "type": "string",
+                              "format": "date-time",
+                              "meta:xdmType": "date-time",
+                              "meta:xdmField": "xdm:time",
+                              "tagNumber": 2
+                            },
+                            "reason": {
+                              "title": "Opt-out reason",
+                              "type": "string",
+                              "description": "Reason for opting out",
+                              "maxLength": 16,
+                              "meta:xdmType": "string",
+                              "meta:xdmField": "xdm:reason",
+                              "tagNumber": 3
+                            }
+                          },
+                          "meta:xdmField": "xdm:sms",
+                          "required": [
+                            "val"
+                          ],
+                          "tagNumber": 3
+                        }
+                      },
+                      "meta:xdmField": "xdm:marketing",
+                      "tagNumber": 5
+                    }
+                  },
+                  "tagNumber": 1
+                }
+              }
+            }
+          }
+        },
+        "metadata": {
+          "properties": {
+            "time": {
+              "title": "Consent/Preferences timestamp",
+              "description": "Timestamp of this complete set of user consents and preferences. This value should conform to ISO 8601 standard. An example form is \"2004-10-23T12:00:00-06:00\".",
+              "type": "string",
+              "format": "date-time",
+              "meta:xdmType": "date-time",
+              "meta:xdmField": "xdm:time",
+              "tagNumber": 1
+            }
+          },
+          "type": "object",
+          "meta:xdmField": "xdm:metadata",
+          "tagNumber": 6
+        }
+      },
+      "meta:xdmField": "xdm:consents",
+      "tagNumber": 8
+    },
     "loyalty": {
       "type": "object",
       "meta:xdmType": "object",
@@ -169,7 +1097,7 @@
           "meta:xdmField": "xdm:pointsExpiration",
           "tagNumber": 4,
           "items": {
-            "$ref": "obj6190935226625605.schema.json"
+            "$ref": "obj11236280937091414.schema.json"
           }
         },
         "pointsRedeemed": {
@@ -214,104 +1142,49 @@
         }
       },
       "meta:xdmField": "xdm:loyalty",
-      "tagNumber": 8
+      "tagNumber": 9
     },
     "person": {
       "title": "Person",
       "$ref": "../../datatypes/person/person.schema.json",
       "description": "An individual actor, contact, or owner.",
       "meta:xdmField": "xdm:person",
-      "tagNumber": 9
+      "tagNumber": 10
     },
     "homeAddress": {
       "title": "Home address",
       "$ref": "../../datatypes/demographic/address.schema.json",
       "description": "A home postal address.",
       "meta:xdmField": "xdm:homeAddress",
-      "tagNumber": 10
+      "tagNumber": 11
     },
     "personalEmail": {
       "title": "Personal email",
       "$ref": "../../datatypes/demographic/emailaddress.schema.json",
       "description": "A personal email address.",
       "meta:xdmField": "xdm:personalEmail",
-      "tagNumber": 11
+      "tagNumber": 12
     },
     "homePhone": {
       "title": "Home phone",
       "$ref": "../../datatypes/demographic/phonenumber.schema.json",
       "description": "Home phone number.",
       "meta:xdmField": "xdm:homePhone",
-      "tagNumber": 12
+      "tagNumber": 13
     },
     "mobilePhone": {
       "title": "Mobile phone",
       "$ref": "../../datatypes/demographic/phonenumber.schema.json",
       "description": "Mobile phone number.",
       "meta:xdmField": "xdm:mobilePhone",
-      "tagNumber": 13
+      "tagNumber": 14
     },
     "faxPhone": {
       "title": "Fax phone",
       "$ref": "../../datatypes/demographic/phonenumber.schema.json",
       "description": "Fax phone number.",
       "meta:xdmField": "xdm:faxPhone",
-      "tagNumber": 14
-    },
-    "identityPrivacyInfo": {
-      "title": "Identity level privacy information",
-      "description": "Captured privacy information for identities in profile.",
-      "type": "object",
-      "meta:xdmType": "map",
-      "meta:xdmField": "xdm:identityPrivacyInfo",
-      "tagNumber": 16,
-      "properties": {
-        "mapObj": {
-          "title": "User namespace",
-          "type": "object",
-          "meta:xdmType": "map",
-          "tagNumber": 1,
-          "properties": {
-            "mapObj": {
-              "type": "object",
-              "title": "User Identity",
-              "meta:xdmType": "object",
-              "properties": {
-                "identityIABConsent": {
-                  "type": "object",
-                  "title": "Identity level consent information",
-                  "description": "Consent collected for an identity via consent management services.",
-                  "meta:xdmType": "object",
-                  "properties": {
-                    "consentTimestamp": {
-                      "title": "Timestamp of consent",
-                      "description": "Timestamp (RFC3339) when this identity presented consent information",
-                      "type": "string",
-                      "format": "date-time",
-                      "meta:xdmType": "date-time",
-                      "meta:xdmField": "xdm:consentTimestamp",
-                      "tagNumber": 1
-                    },
-                    "consentString": {
-                      "title": "Captured consent information",
-                      "description": "Consent string and its specification. This can help reading application to use appropriate library.",
-                      "$ref": "../../datatypes/consent/consentstring.schema.json",
-                      "meta:xdmField": "xdm:consentString",
-                      "tagNumber": 2
-                    }
-                  },
-                  "meta:xdmField": "xdm:identityIABConsent",
-                  "required": [
-                    "consentTimestamp"
-                  ],
-                  "tagNumber": 1
-                }
-              },
-              "tagNumber": 1
-            }
-          }
-        }
-      }
+      "tagNumber": 15
     },
     "userAccount": {
       "type": "object",
@@ -363,17 +1236,17 @@
           "meta:xdmField": "xdm:accountType",
           "tagNumber": 5
         },
-        "preferences": {
-          "title": "Preferences",
+        "productPreferences": {
+          "title": "Product Preferences",
           "type": "array",
-          "description": "M/F, other shopping preferences. Preferences in personal profile is already captured- things like perferred method of contact, not shopping prefs. ",
+          "description": "Product, shopping, or experience preferences such as M/F, color pref, seat/aisle, king/double bed, etc.",
           "meta:xdmType": "array",
           "items": {
             "type": "string",
             "meta:xdmType": "string",
             "tagNumber": 1
           },
-          "meta:xdmField": "xdm:preferences",
+          "meta:xdmField": "xdm:productPreferences",
           "tagNumber": 6
         },
         "alertStatus": {
@@ -394,28 +1267,28 @@
         }
       },
       "meta:xdmField": "xdm:userAccount",
-      "tagNumber": 17
+      "tagNumber": 16
     },
     "workAddress": {
       "title": "Work Address",
       "$ref": "../../datatypes/demographic/address.schema.json",
       "description": "A work postal address.",
       "meta:xdmField": "xdm:workAddress",
-      "tagNumber": 18
+      "tagNumber": 17
     },
     "workEmail": {
       "title": "Work Email",
       "$ref": "../../datatypes/demographic/emailaddress.schema.json",
       "description": "A work email address.",
       "meta:xdmField": "xdm:workEmail",
-      "tagNumber": 19
+      "tagNumber": 18
     },
     "workPhone": {
       "title": "Work Phone",
       "$ref": "../../datatypes/demographic/phonenumber.schema.json",
       "description": "Work phone number.",
       "meta:xdmField": "xdm:workPhone",
-      "tagNumber": 20
+      "tagNumber": 19
     },
     "organizations": {
       "title": "Organizations",
@@ -427,7 +1300,7 @@
         "tagNumber": 1
       },
       "meta:xdmField": "xdm:organizations",
-      "tagNumber": 21
+      "tagNumber": 20
     }
   },
   "meta:xdmId": "https://ns.adobe.com/xdm/context/profile-generated-manufacturing",
