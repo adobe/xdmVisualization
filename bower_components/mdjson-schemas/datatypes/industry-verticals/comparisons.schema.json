@@ -8,42 +8,23 @@
   "meta:status": "experimental",
   "meta:xdmType": "object",
   "properties": {
-    "addition": {
-      "title": "Addition",
-      "type": "integer",
-      "description": "Tracked when an item is added to a comparison.",
-      "meta:xdmType": "int",
-      "meta:xdmField": "xdm:addition",
-      "tagNumber": 1
-    },
     "count": {
       "title": "Count",
       "type": "integer",
       "description": "Count of the total number of items being compared.",
       "meta:xdmType": "int",
       "meta:xdmField": "xdm:count",
-      "tagNumber": 2
+      "tagNumber": 1
     },
     "items": {
       "title": "Items",
       "type": "array",
-      "description": "An array of all item IDs/SKUs in the list of products.  ",
       "meta:xdmType": "array",
-      "items": {
-        "type": "string",
-        "meta:xdmType": "string",
-        "tagNumber": 1
-      },
       "meta:xdmField": "xdm:items",
-      "tagNumber": 3
-    },
-    "removal": {
-      "title": "Removal",
-      "type": "integer",
-      "description": "Tracked when an item is removed from a comparison.",
-      "meta:xdmType": "int",
-      "meta:xdmField": "xdm:removal",
-      "tagNumber": 4
+      "tagNumber": 2,
+      "items": {
+        "$ref": "obj12868489073536526.schema.json"
+      }
     },
     "type": {
       "title": "Type",
@@ -51,7 +32,7 @@
       "description": "Type of comparison tool in use.",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:type",
-      "tagNumber": 5
+      "tagNumber": 3
     },
     "view": {
       "title": "View",
@@ -59,14 +40,14 @@
       "description": "Tracked when a comparison page is viewed.",
       "meta:xdmType": "int",
       "meta:xdmField": "xdm:view",
-      "tagNumber": 6
+      "tagNumber": 4
     },
     "impressions": {
       "title": "Impressions",
       "$ref": "impressions.schema.json",
       "description": "Extension of the impressions data type.",
       "meta:xdmField": "xdm:impressions",
-      "tagNumber": 7
+      "tagNumber": 5
     }
   },
   "meta:xdmId": "https://ns.adobe.com/xdm/datatypes/comparisons",

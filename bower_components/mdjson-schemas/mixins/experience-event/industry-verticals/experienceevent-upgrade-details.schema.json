@@ -21,7 +21,7 @@
   "meta:status": "experimental",
   "meta:xdmType": "object",
   "properties": {
-    "upgrade": {
+    "upgrades": {
       "type": "object",
       "meta:xdmType": "object",
       "properties": {
@@ -40,7 +40,7 @@
           "tagNumber": 3
         }
       },
-      "meta:xdmField": "xdm:upgrade",
+      "meta:xdmField": "xdm:upgrades",
       "tagNumber": 1
     }
   },

@@ -60,8 +60,9 @@
     },
     "statusUpdate": {
       "title": "Status Update",
-      "$ref": "../data/measure.schema.json",
+      "type": "string",
       "description": "Captured when the status for an application changes, either from an online or offline update.",
+      "meta:xdmType": "string",
       "meta:xdmField": "xdm:statusUpdate",
       "tagNumber": 7
     },
@@ -75,8 +76,9 @@
     },
     "underReview": {
       "title": "Under Review",
-      "$ref": "../data/measure.schema.json",
+      "type": "boolean",
       "description": "Captured when a visitor application has been placed under review.",
+      "meta:xdmType": "boolean",
       "meta:xdmField": "xdm:underReview",
       "tagNumber": 9
     }

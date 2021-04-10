@@ -1035,7 +1035,9 @@
             },
             "salesChannel": {
               "title": "Sales Channel",
+              "type": "string",
               "description": "Sales channel from which the reservation was booked.",
+              "meta:xdmType": "string",
               "meta:xdmField": "xdm:salesChannel",
               "tagNumber": 20
             },

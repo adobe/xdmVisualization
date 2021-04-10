@@ -852,7 +852,7 @@
       "meta:xdmField": "xdm:deviceTradeInDetails",
       "tagNumber": 27
     },
-    "upgrade": {
+    "upgrades": {
       "type": "object",
       "meta:xdmType": "object",
       "properties": {
@@ -871,10 +871,10 @@
           "tagNumber": 3
         }
       },
-      "meta:xdmField": "xdm:upgrade",
+      "meta:xdmField": "xdm:upgrades",
       "tagNumber": 29
     },
-    "upsell": {
+    "upsells": {
       "type": "object",
       "meta:xdmType": "object",
       "properties": {
@@ -893,7 +893,7 @@
           "tagNumber": 3
         }
       },
-      "meta:xdmField": "xdm:upsell",
+      "meta:xdmField": "xdm:upsells",
       "tagNumber": 30
     }
   },

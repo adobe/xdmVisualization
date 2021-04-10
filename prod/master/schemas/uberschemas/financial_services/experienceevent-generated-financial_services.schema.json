@@ -521,131 +521,148 @@
           "meta:xdmField": "xdm:watchlistSteps",
           "tagNumber": 4
         },
-        "cardID": {
-          "title": "Card ID",
-          "type": "string",
-          "description": "Tracks the identifier for the card being activated.  This might be different from the card number.",
-          "meta:xdmType": "string",
-          "meta:xdmField": "xdm:cardID",
+        "cardActions": {
+          "type": "object",
+          "meta:xdmType": "object",
+          "properties": {
+            "cardID": {
+              "title": "Card ID",
+              "type": "string",
+              "description": "Tracks the identifier for the card being activated.  This might be different from the card number.",
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:cardID",
+              "tagNumber": 1
+            },
+            "cardActivated": {
+              "title": "Card Activated Success",
+              "type": "integer",
+              "description": "Tracks when a card has been successfully activated.",
+              "meta:xdmType": "int",
+              "meta:xdmField": "xdm:cardActivated",
+              "tagNumber": 2
+            },
+            "cardActivationStart": {
+              "title": "Card Activation Started",
+              "type": "integer",
+              "description": "Tracks when a card activation process has been started.",
+              "meta:xdmType": "int",
+              "meta:xdmField": "xdm:cardActivationStart",
+              "tagNumber": 3
+            },
+            "cardCancelled": {
+              "title": "Card Cancelled",
+              "type": "integer",
+              "description": "Tracks when a card has been cancelled.",
+              "meta:xdmType": "int",
+              "meta:xdmField": "xdm:cardCancelled",
+              "tagNumber": 4
+            },
+            "cardControlsLocked": {
+              "title": "Card Controls Locked",
+              "type": "integer",
+              "description": "Tracks when a card controls have been locked.",
+              "meta:xdmType": "int",
+              "meta:xdmField": "xdm:cardControlsLocked",
+              "tagNumber": 5
+            },
+            "cardControlsUnlocked": {
+              "title": "Card Controls Unlocked",
+              "type": "integer",
+              "description": "Tracks when a card controls have been unlocked.",
+              "meta:xdmType": "int",
+              "meta:xdmField": "xdm:cardControlsUnlocked",
+              "tagNumber": 6
+            },
+            "cardLocked": {
+              "title": "Card Locked",
+              "type": "integer",
+              "description": "Tracks when a card has been locked.",
+              "meta:xdmType": "int",
+              "meta:xdmField": "xdm:cardLocked",
+              "tagNumber": 7
+            },
+            "cardOrderNew": {
+              "title": "Order New Card",
+              "type": "integer",
+              "description": "Tracks when a card has been requested.",
+              "meta:xdmType": "int",
+              "meta:xdmField": "xdm:cardOrderNew",
+              "tagNumber": 8
+            },
+            "cardOrderType": {
+              "title": "Card Order Type",
+              "type": "string",
+              "enum": [
+                "new",
+                "lost",
+                "stolen",
+                "never received",
+                "damaged"
+              ],
+              "description": "Tracks the type of card order associated with a card order event.",
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:cardOrderType",
+              "tagNumber": 9
+            },
+            "cardType": {
+              "title": "Card Type",
+              "type": "string",
+              "enum": [
+                "credit",
+                "debit",
+                "prepaid",
+                "paypal",
+                "atm",
+                "virtual",
+                "hsa",
+                "fsa"
+              ],
+              "description": "Tracks the type of card associated with an event.",
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:cardType",
+              "tagNumber": 10
+            },
+            "cardUnlocked": {
+              "title": "Card Unlocked",
+              "type": "integer",
+              "description": "Tracks when a card has been unlocked.",
+              "meta:xdmType": "int",
+              "meta:xdmField": "xdm:cardUnlocked",
+              "tagNumber": 11
+            }
+          },
+          "meta:xdmField": "xdm:cardActions",
           "tagNumber": 5
         },
-        "cardActivated": {
-          "title": "Card Activated Success",
-          "type": "integer",
-          "description": "Tracks when a card has been successfully activated.",
-          "meta:xdmType": "int",
-          "meta:xdmField": "xdm:cardActivated",
+        "balanceTransfers": {
+          "type": "object",
+          "description": "Captures the details of balance transfers between accounts.",
+          "meta:xdmType": "object",
+          "properties": {
+            "transaction": {
+              "title": "Transaction",
+              "$ref": "../../datatypes/industry-verticals/transaction.schema.json",
+              "description": "Extension of transaction data type.",
+              "meta:xdmField": "xdm:transaction",
+              "tagNumber": 1
+            },
+            "accountTo": {
+              "title": "Account To",
+              "$ref": "../../datatypes/industry-verticals/financial-account.schema.json",
+              "description": "Extension of financialAccount data type.  Details the account to which the balance is being transferred.",
+              "meta:xdmField": "xdm:accountTo",
+              "tagNumber": 2
+            },
+            "accountFrom": {
+              "title": "Account From",
+              "$ref": "../../datatypes/industry-verticals/financial-account.schema.json",
+              "description": "Extension of financialAccount data type.  Details the account fr which the balance is being transferred.",
+              "meta:xdmField": "xdm:accountFrom",
+              "tagNumber": 3
+            }
+          },
+          "meta:xdmField": "xdm:balanceTransfers",
           "tagNumber": 6
-        },
-        "cardActivationStart": {
-          "title": "Card Activation Started",
-          "type": "integer",
-          "description": "Tracks when a card activation process has been started.",
-          "meta:xdmType": "int",
-          "meta:xdmField": "xdm:cardActivationStart",
-          "tagNumber": 7
-        },
-        "cardCancelled": {
-          "title": "Card Cancelled",
-          "type": "integer",
-          "description": "Tracks when a card has been cancelled.",
-          "meta:xdmType": "int",
-          "meta:xdmField": "xdm:cardCancelled",
-          "tagNumber": 8
-        },
-        "cardControlsLocked": {
-          "title": "Card Controls Locked",
-          "type": "integer",
-          "description": "Tracks when a card controls have been locked.",
-          "meta:xdmType": "int",
-          "meta:xdmField": "xdm:cardControlsLocked",
-          "tagNumber": 9
-        },
-        "cardControlsUnlocked": {
-          "title": "Card Controls Unlocked",
-          "type": "integer",
-          "description": "Tracks when a card controls have been unlocked.",
-          "meta:xdmType": "int",
-          "meta:xdmField": "xdm:cardControlsUnlocked",
-          "tagNumber": 10
-        },
-        "cardLocked": {
-          "title": "Card Locked",
-          "type": "integer",
-          "description": "Tracks when a card has been locked.",
-          "meta:xdmType": "int",
-          "meta:xdmField": "xdm:cardLocked",
-          "tagNumber": 11
-        },
-        "cardOrderNew": {
-          "title": "Order New Card",
-          "type": "integer",
-          "description": "Tracks when a card has been requested.",
-          "meta:xdmType": "int",
-          "meta:xdmField": "xdm:cardOrderNew",
-          "tagNumber": 12
-        },
-        "cardOrderType": {
-          "title": "Card Order Type",
-          "type": "string",
-          "enum": [
-            "new",
-            "lost",
-            "stolen",
-            "never received",
-            "damaged"
-          ],
-          "description": "Tracks the type of card order associated with a card order event.",
-          "meta:xdmType": "string",
-          "meta:xdmField": "xdm:cardOrderType",
-          "tagNumber": 13
-        },
-        "cardType": {
-          "title": "Card Type",
-          "type": "string",
-          "enum": [
-            "credit",
-            "debit",
-            "prepaid",
-            "paypal",
-            "atm",
-            "virtual",
-            "hsa",
-            "fsa"
-          ],
-          "description": "Tracks the type of card associated with an event.",
-          "meta:xdmType": "string",
-          "meta:xdmField": "xdm:cardType",
-          "tagNumber": 14
-        },
-        "cardUnlocked": {
-          "title": "Card Unlocked",
-          "type": "integer",
-          "description": "Tracks when a card has been unlocked.",
-          "meta:xdmType": "int",
-          "meta:xdmField": "xdm:cardUnlocked",
-          "tagNumber": 15
-        },
-        "transaction": {
-          "title": "Transaction",
-          "$ref": "../../datatypes/industry-verticals/transaction.schema.json",
-          "description": "Extension of transaction data type.",
-          "meta:xdmField": "xdm:transaction",
-          "tagNumber": 16
-        },
-        "accountTo": {
-          "title": "Account To",
-          "$ref": "../../datatypes/industry-verticals/financial-account.schema.json",
-          "description": "Extension of financialAccount data type.  Details the account to which the balance is being transferred.",
-          "meta:xdmField": "xdm:accountTo",
-          "tagNumber": 17
-        },
-        "accountFrom": {
-          "title": "Account From",
-          "$ref": "../../datatypes/industry-verticals/financial-account.schema.json",
-          "description": "Extension of financialAccount data type.  Details the account fr which the balance is being transferred.",
-          "meta:xdmField": "xdm:accountFrom",
-          "tagNumber": 18
         },
         "billPayDetails": {
           "type": "object",
@@ -701,30 +718,30 @@
             }
           },
           "meta:xdmField": "xdm:billPayDetails",
-          "tagNumber": 19
+          "tagNumber": 7
         },
         "cardApplicationComparisons": {
           "title": "Card Comparisons",
           "$ref": "../../datatypes/industry-verticals/comparisons.schema.json",
           "description": "Extension of comparison data type.",
           "meta:xdmField": "xdm:cardApplicationComparisons",
-          "tagNumber": 20
+          "tagNumber": 8
         },
         "cardApplicationSteps": {
           "title": "Card Application Steps",
           "$ref": "../../datatypes/industry-verticals/form-applications.schema.json",
           "description": "Extension of form application data type.",
           "meta:xdmField": "xdm:cardApplicationSteps",
-          "tagNumber": 21
+          "tagNumber": 9
         },
         "creditLimitIncrease": {
           "title": "Credit Limit Increase",
           "$ref": "../../datatypes/industry-verticals/form-applications.schema.json",
           "description": "Extension of form application data type.",
           "meta:xdmField": "xdm:creditLimitIncrease",
-          "tagNumber": 22
+          "tagNumber": 10
         },
-        "deposit": {
+        "deposits": {
           "type": "object",
           "meta:xdmType": "object",
           "properties": {
@@ -743,8 +760,8 @@
               "tagNumber": 2
             }
           },
-          "meta:xdmField": "xdm:deposit",
-          "tagNumber": 23
+          "meta:xdmField": "xdm:deposits",
+          "tagNumber": 11
         },
         "mobileDeposit": {
           "title": "Mobile Deposit",
@@ -752,10 +769,60 @@
           "description": "Indicator for whether the deposit was done through mobile or not.",
           "meta:xdmType": "boolean",
           "meta:xdmField": "xdm:mobileDeposit",
-          "tagNumber": 24
+          "tagNumber": 12
         },
         "loanApplicationDetails": {
           "type": "object",
+          "xdm:annualPercentageRate": {
+            "title": "Annual Percentage Rate",
+            "type": "number",
+            "description": "Records the annual percentage rate of the loan.",
+            "meta:xdmType": "number",
+            "tagNumber": 1
+          },
+          "xdm:downpayment": {
+            "title": "Downpayment",
+            "$ref": "../../datatypes/currency.schema.json",
+            "description": "Captures the downpayment amount of loan.",
+            "tagNumber": 2
+          },
+          "xdm:startDate": {
+            "title": "Start Date",
+            "type": "string",
+            "format": "date-time",
+            "description": "Records the anticipated start date of the loan.",
+            "meta:xdmType": "date-time",
+            "tagNumber": 3
+          },
+          "xdm:endDate": {
+            "title": "End Date",
+            "type": "string",
+            "format": "date-time",
+            "description": "Records the anticipated end date of the loan.",
+            "meta:xdmType": "date-time",
+            "tagNumber": 4
+          },
+          "xdm:interestRate": {
+            "title": "Interest Rate",
+            "type": "number",
+            "description": "Records the interest rate of the loan.",
+            "meta:xdmType": "number",
+            "tagNumber": 5
+          },
+          "xdm:interestType": {
+            "title": "Interest Type",
+            "type": "string",
+            "description": "Records the type interest rate of the loan, i.e. fixed or variable.",
+            "meta:xdmType": "string",
+            "tagNumber": 6
+          },
+          "xdm:term": {
+            "title": "Term",
+            "type": "integer",
+            "description": "Records the duration of the loan, in months.",
+            "meta:xdmType": "int",
+            "tagNumber": 7
+          },
           "meta:xdmType": "object",
           "properties": {
             "loan": {
@@ -767,64 +834,7 @@
             }
           },
           "meta:xdmField": "xdm:loanApplicationDetails",
-          "tagNumber": 25
-        },
-        "annualPercentageRate": {
-          "title": "Annual Percentage Rate",
-          "type": "number",
-          "description": "Records the annual percentage rate of the loan.",
-          "meta:xdmType": "number",
-          "meta:xdmField": "xdm:annualPercentageRate",
-          "tagNumber": 26
-        },
-        "downpayment": {
-          "title": "Downpayment",
-          "$ref": "../../datatypes/currency.schema.json",
-          "description": "Captures the downpayment amount of loan.",
-          "meta:xdmField": "xdm:downpayment",
-          "tagNumber": 27
-        },
-        "startDate": {
-          "title": "Start Date",
-          "type": "string",
-          "format": "date-time",
-          "description": "Records the anticipated start date of the loan.",
-          "meta:xdmType": "date-time",
-          "meta:xdmField": "xdm:startDate",
-          "tagNumber": 28
-        },
-        "endDate": {
-          "title": "End Date",
-          "type": "string",
-          "format": "date-time",
-          "description": "Records the anticipated end date of the loan.",
-          "meta:xdmType": "date-time",
-          "meta:xdmField": "xdm:endDate",
-          "tagNumber": 29
-        },
-        "interestRate": {
-          "title": "Interest Rate",
-          "type": "number",
-          "description": "Records the interest rate of the loan.",
-          "meta:xdmType": "number",
-          "meta:xdmField": "xdm:interestRate",
-          "tagNumber": 30
-        },
-        "interestType": {
-          "title": "Interest Type",
-          "type": "string",
-          "description": "Records the type interest rate of the loan, i.e. fixed or variable.",
-          "meta:xdmType": "string",
-          "meta:xdmField": "xdm:interestType",
-          "tagNumber": 31
-        },
-        "term": {
-          "title": "Term",
-          "type": "integer",
-          "description": "Records the duration of the loan, in months.",
-          "meta:xdmType": "int",
-          "meta:xdmField": "xdm:term",
-          "tagNumber": 32
+          "tagNumber": 13
         }
       },
       "meta:xdmField": "xdm:personalFinances",
@@ -1401,7 +1411,7 @@
       "meta:xdmField": "xdm:customerFeedback",
       "tagNumber": 31
     },
-    "upgrade": {
+    "upgrades": {
       "type": "object",
       "meta:xdmType": "object",
       "properties": {
@@ -1420,10 +1430,10 @@
           "tagNumber": 3
         }
       },
-      "meta:xdmField": "xdm:upgrade",
+      "meta:xdmField": "xdm:upgrades",
       "tagNumber": 32
     },
-    "upsell": {
+    "upsells": {
       "type": "object",
       "meta:xdmType": "object",
       "properties": {
@@ -1442,7 +1452,7 @@
           "tagNumber": 3
         }
       },
-      "meta:xdmField": "xdm:upsell",
+      "meta:xdmField": "xdm:upsells",
       "tagNumber": 33
     }
   },

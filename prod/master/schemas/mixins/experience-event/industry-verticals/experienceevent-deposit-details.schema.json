@@ -18,7 +18,7 @@
       "type": "object",
       "meta:xdmType": "object",
       "properties": {
-        "deposit": {
+        "deposits": {
           "type": "object",
           "meta:xdmType": "object",
           "properties": {
@@ -37,7 +37,7 @@
               "tagNumber": 2
             }
           },
-          "meta:xdmField": "xdm:deposit",
+          "meta:xdmField": "xdm:deposits",
           "tagNumber": 1
         },
         "mobileDeposit": {

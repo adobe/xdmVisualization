@@ -668,7 +668,7 @@
       "meta:xdmField": "xdm:customerFeedback",
       "tagNumber": 23
     },
-    "upsell": {
+    "upsells": {
       "type": "object",
       "meta:xdmType": "object",
       "properties": {
@@ -687,7 +687,7 @@
           "tagNumber": 3
         }
       },
-      "meta:xdmField": "xdm:upsell",
+      "meta:xdmField": "xdm:upsells",
       "tagNumber": 24
     }
   },

@@ -18,26 +18,35 @@
       "type": "object",
       "meta:xdmType": "object",
       "properties": {
-        "transaction": {
-          "title": "Transaction",
-          "$ref": "../../../datatypes/industry-verticals/transaction.schema.json",
-          "description": "Extension of transaction data type.",
-          "meta:xdmField": "xdm:transaction",
+        "balanceTransfers": {
+          "type": "object",
+          "description": "Captures the details of balance transfers between accounts.",
+          "meta:xdmType": "object",
+          "properties": {
+            "transaction": {
+              "title": "Transaction",
+              "$ref": "../../../datatypes/industry-verticals/transaction.schema.json",
+              "description": "Extension of transaction data type.",
+              "meta:xdmField": "xdm:transaction",
+              "tagNumber": 1
+            },
+            "accountTo": {
+              "title": "Account To",
+              "$ref": "../../../datatypes/industry-verticals/financial-account.schema.json",
+              "description": "Extension of financialAccount data type.  Details the account to which the balance is being transferred.",
+              "meta:xdmField": "xdm:accountTo",
+              "tagNumber": 2
+            },
+            "accountFrom": {
+              "title": "Account From",
+              "$ref": "../../../datatypes/industry-verticals/financial-account.schema.json",
+              "description": "Extension of financialAccount data type.  Details the account fr which the balance is being transferred.",
+              "meta:xdmField": "xdm:accountFrom",
+              "tagNumber": 3
+            }
+          },
+          "meta:xdmField": "xdm:balanceTransfers",
           "tagNumber": 1
-        },
-        "accountTo": {
-          "title": "Account To",
-          "$ref": "../../../datatypes/industry-verticals/financial-account.schema.json",
-          "description": "Extension of financialAccount data type.  Details the account to which the balance is being transferred.",
-          "meta:xdmField": "xdm:accountTo",
-          "tagNumber": 2
-        },
-        "accountFrom": {
-          "title": "Account From",
-          "$ref": "../../../datatypes/industry-verticals/financial-account.schema.json",
-          "description": "Extension of financialAccount data type.  Details the account fr which the balance is being transferred.",
-          "meta:xdmField": "xdm:accountFrom",
-          "tagNumber": 3
         }
       },
       "meta:xdmField": "xdm:personalFinances",

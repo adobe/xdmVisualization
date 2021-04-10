@@ -1969,7 +1969,9 @@
             },
             "salesChannel": {
               "title": "Sales Channel",
+              "type": "string",
               "description": "Sales channel from which the reservation was booked.",
+              "meta:xdmType": "string",
               "meta:xdmField": "xdm:salesChannel",
               "tagNumber": 20
             },
@@ -2175,7 +2177,7 @@
       "meta:xdmField": "xdm:reservationSearch",
       "tagNumber": 25
     },
-    "upgrade": {
+    "upgrades": {
       "type": "object",
       "meta:xdmType": "object",
       "properties": {
@@ -2194,10 +2196,10 @@
           "tagNumber": 3
         }
       },
-      "meta:xdmField": "xdm:upgrade",
+      "meta:xdmField": "xdm:upgrades",
       "tagNumber": 26
     },
-    "upsell": {
+    "upsells": {
       "type": "object",
       "meta:xdmType": "object",
       "properties": {
@@ -2216,7 +2218,7 @@
           "tagNumber": 3
         }
       },
-      "meta:xdmField": "xdm:upsell",
+      "meta:xdmField": "xdm:upsells",
       "tagNumber": 27
     }
   },

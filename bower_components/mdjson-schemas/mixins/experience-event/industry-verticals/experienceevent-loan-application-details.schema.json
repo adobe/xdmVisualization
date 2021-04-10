@@ -21,6 +21,56 @@
       "properties": {
         "loanApplicationDetails": {
           "type": "object",
+          "xdm:annualPercentageRate": {
+            "title": "Annual Percentage Rate",
+            "type": "number",
+            "description": "Records the annual percentage rate of the loan.",
+            "meta:xdmType": "number",
+            "tagNumber": 1
+          },
+          "xdm:downpayment": {
+            "title": "Downpayment",
+            "$ref": "../../../datatypes/currency.schema.json",
+            "description": "Captures the downpayment amount of loan.",
+            "tagNumber": 2
+          },
+          "xdm:startDate": {
+            "title": "Start Date",
+            "type": "string",
+            "format": "date-time",
+            "description": "Records the anticipated start date of the loan.",
+            "meta:xdmType": "date-time",
+            "tagNumber": 3
+          },
+          "xdm:endDate": {
+            "title": "End Date",
+            "type": "string",
+            "format": "date-time",
+            "description": "Records the anticipated end date of the loan.",
+            "meta:xdmType": "date-time",
+            "tagNumber": 4
+          },
+          "xdm:interestRate": {
+            "title": "Interest Rate",
+            "type": "number",
+            "description": "Records the interest rate of the loan.",
+            "meta:xdmType": "number",
+            "tagNumber": 5
+          },
+          "xdm:interestType": {
+            "title": "Interest Type",
+            "type": "string",
+            "description": "Records the type interest rate of the loan, i.e. fixed or variable.",
+            "meta:xdmType": "string",
+            "tagNumber": 6
+          },
+          "xdm:term": {
+            "title": "Term",
+            "type": "integer",
+            "description": "Records the duration of the loan, in months.",
+            "meta:xdmType": "int",
+            "tagNumber": 7
+          },
           "meta:xdmType": "object",
           "properties": {
             "loan": {
@@ -33,63 +83,6 @@
           },
           "meta:xdmField": "xdm:loanApplicationDetails",
           "tagNumber": 1
-        },
-        "annualPercentageRate": {
-          "title": "Annual Percentage Rate",
-          "type": "number",
-          "description": "Records the annual percentage rate of the loan.",
-          "meta:xdmType": "number",
-          "meta:xdmField": "xdm:annualPercentageRate",
-          "tagNumber": 2
-        },
-        "downpayment": {
-          "title": "Downpayment",
-          "$ref": "../../../datatypes/currency.schema.json",
-          "description": "Captures the downpayment amount of loan.",
-          "meta:xdmField": "xdm:downpayment",
-          "tagNumber": 3
-        },
-        "startDate": {
-          "title": "Start Date",
-          "type": "string",
-          "format": "date-time",
-          "description": "Records the anticipated start date of the loan.",
-          "meta:xdmType": "date-time",
-          "meta:xdmField": "xdm:startDate",
-          "tagNumber": 4
-        },
-        "endDate": {
-          "title": "End Date",
-          "type": "string",
-          "format": "date-time",
-          "description": "Records the anticipated end date of the loan.",
-          "meta:xdmType": "date-time",
-          "meta:xdmField": "xdm:endDate",
-          "tagNumber": 5
-        },
-        "interestRate": {
-          "title": "Interest Rate",
-          "type": "number",
-          "description": "Records the interest rate of the loan.",
-          "meta:xdmType": "number",
-          "meta:xdmField": "xdm:interestRate",
-          "tagNumber": 6
-        },
-        "interestType": {
-          "title": "Interest Type",
-          "type": "string",
-          "description": "Records the type interest rate of the loan, i.e. fixed or variable.",
-          "meta:xdmType": "string",
-          "meta:xdmField": "xdm:interestType",
-          "tagNumber": 7
-        },
-        "term": {
-          "title": "Term",
-          "type": "integer",
-          "description": "Records the duration of the loan, in months.",
-          "meta:xdmType": "int",
-          "meta:xdmField": "xdm:term",
-          "tagNumber": 8
         }
       },
       "meta:xdmField": "xdm:personalFinances",

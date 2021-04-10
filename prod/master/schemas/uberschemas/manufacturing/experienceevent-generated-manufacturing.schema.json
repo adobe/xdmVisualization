@@ -762,7 +762,7 @@
       "meta:xdmField": "xdm:customerFeedback",
       "tagNumber": 24
     },
-    "upgrade": {
+    "upgrades": {
       "type": "object",
       "meta:xdmType": "object",
       "properties": {
@@ -781,7 +781,7 @@
           "tagNumber": 3
         }
       },
-      "meta:xdmField": "xdm:upgrade",
+      "meta:xdmField": "xdm:upgrades",
       "tagNumber": 25
     }
   },
