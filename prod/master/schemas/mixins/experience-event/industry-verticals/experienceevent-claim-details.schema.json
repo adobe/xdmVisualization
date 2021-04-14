@@ -1,0 +1,97 @@
+{
+  "id": "_xdm.mixins.experienceevent-claim-details",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Claim Process",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:tags": {
+    "industry": [
+      "financial_services",
+      "health_and_life_sciences",
+      "high_tech"
+    ]
+  },
+  "description": "Claim details such as claim policy ID and claim creation steps.",
+  "meta:status": "stable",
+  "meta:xdmType": "object",
+  "properties": {
+    "claims": {
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "ID": {
+          "title": "Claims ID",
+          "type": "string",
+          "description": "Unique identifier for the claim.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:ID",
+          "tagNumber": 1
+        },
+        "startDate": {
+          "title": "Start Date",
+          "type": "string",
+          "format": "date-time",
+          "description": "Date the claim was successfully submitted.",
+          "meta:xdmType": "date-time",
+          "meta:xdmField": "xdm:startDate",
+          "tagNumber": 2
+        },
+        "status": {
+          "title": "Status",
+          "type": "string",
+          "enum": [
+            "initiated",
+            "in progress",
+            "approved",
+            "declined"
+          ],
+          "description": "Captures the status of the claim for any given point in the application process.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:status",
+          "tagNumber": 3
+        },
+        "type": {
+          "title": "Type",
+          "type": "string",
+          "enum": [
+            "homeowners",
+            "automobile",
+            "renters",
+            "third party automobile",
+            "third party home",
+            "life",
+            "health",
+            "dental",
+            "flood",
+            "earthquake"
+          ],
+          "description": "Type of claim submitted.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:type",
+          "tagNumber": 4
+        },
+        "policyID": {
+          "title": "Policy ID",
+          "type": "string",
+          "description": "Policy Identifier.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:policyID",
+          "tagNumber": 5
+        },
+        "benefitAmount": {
+          "title": "Benefit Amount",
+          "$ref": "../../../datatypes/currency.schema.json",
+          "description": "Captures the benefit amount.",
+          "meta:xdmField": "xdm:benefitAmount",
+          "tagNumber": 6
+        }
+      },
+      "meta:xdmField": "xdm:claims",
+      "tagNumber": 1
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/mixins/experienceevent-claim-details",
+  "meta:altId": "_xdm.mixins.experienceevent-claim-details",
+  "id": "_xdm.mixins.experienceevent-claim-details"
+}

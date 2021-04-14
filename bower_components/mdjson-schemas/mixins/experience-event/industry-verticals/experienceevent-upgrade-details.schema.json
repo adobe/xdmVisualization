@@ -18,18 +18,23 @@
     ]
   },
   "description": "Upgrade details such as offer name, type, and ID, as well as transaction details such as type and amount.",
-  "meta:status": "experimental",
+  "meta:status": "stable",
   "meta:xdmType": "object",
   "properties": {
     "upgrades": {
       "type": "object",
       "meta:xdmType": "object",
       "properties": {
-        "upgradeOffer": {
-          "title": "Upgrade Offer",
-          "$ref": "../experienceevent-offer-impression-details.schema.json",
-          "description": "Extension of offer details data type.",
-          "meta:xdmField": "xdm:upgradeOffer",
+        "upgradeImpressions": {
+          "title": "Upgrade Impressions",
+          "type": "array",
+          "description": "Array of the impressions data type.",
+          "meta:xdmType": "array",
+          "items": {
+            "$ref": "../../../datatypes/industry-verticals/impressions.schema.json",
+            "tagNumber": 1
+          },
+          "meta:xdmField": "xdm:upgradeImpressions",
           "tagNumber": 2
         },
         "upgradeTransaction": {

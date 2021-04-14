@@ -17,18 +17,23 @@
     ]
   },
   "description": "Upsell details such as offer name, type, and ID, as well as transaction details such as type and amount.",
-  "meta:status": "experimental",
+  "meta:status": "stable",
   "meta:xdmType": "object",
   "properties": {
     "upsells": {
       "type": "object",
       "meta:xdmType": "object",
       "properties": {
-        "upsellOffer": {
-          "title": "Upsell Offer",
-          "$ref": "../experienceevent-offer-impression-details.schema.json",
-          "description": "Extension of offer details data type.",
-          "meta:xdmField": "xdm:upsellOffer",
+        "upsellImpressions": {
+          "title": "Upsell Impressions",
+          "type": "array",
+          "description": "Array of the impressions data type.",
+          "meta:xdmType": "array",
+          "items": {
+            "$ref": "../../../datatypes/industry-verticals/impressions.schema.json",
+            "tagNumber": 1
+          },
+          "meta:xdmField": "xdm:upsellImpressions",
           "tagNumber": 2
         },
         "upsellTransaction": {

@@ -316,6 +316,7 @@
 <ul>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/classes.fsi.atm.html">atm</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/classes.fsi.branch.html">branch</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/classes.fsi.policy.html">policy</a></li>
 </ul>
 </details>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/classes.graphs.html">graphs</a></li>
@@ -457,7 +458,6 @@
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.industry-verticals.implementationdetails.html">implementationdetails</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.industry-verticals.impressions.html">impressions</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.industry-verticals.internal-site-search.html">internal-site-search</a></li>
-<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.industry-verticals.policy-details.html">policy-details</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.industry-verticals.selfservice.html">selfservice</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.industry-verticals.subscription.html">subscription</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.industry-verticals.tool-usage.html">tool-usage</a></li>
@@ -614,7 +614,7 @@
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.experienceevent-support-site-search.html">experienceevent-support-site-search</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.experienceevent-survey-response-details.html">experienceevent-survey-response-details</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.experienceevent-technical-details.html">experienceevent-technical-details</a></li>
-<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.experienceevent-user-login-process.html">experienceevent-user-login-process</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.experienceevent-user-login-details.html">experienceevent-user-login-details</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.experienceevent-web.html">experienceevent-web</a></li>
 <details>
 <summary>industry-verticals</summary>
@@ -622,8 +622,8 @@
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.industry-verticals.experienceevent-alert-impressions.html">experienceevent-alert-impressions</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.industry-verticals.experienceevent-balance-transfers.html">experienceevent-balance-transfers</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.industry-verticals.experienceevent-bill-pay-details.html">experienceevent-bill-pay-details</a></li>
-<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.industry-verticals.experienceevent-card-application-process.html">experienceevent-card-application-process</a></li>
-<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.industry-verticals.experienceevent-claim-process.html">experienceevent-claim-process</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.industry-verticals.experienceevent-card-application-details.html">experienceevent-card-application-details</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.industry-verticals.experienceevent-claim-details.html">experienceevent-claim-details</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.industry-verticals.experienceevent-contact-request-details.html">experienceevent-contact-request-details</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.industry-verticals.experienceevent-credit-limit-increase-details.html">experienceevent-credit-limit-increase-details</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.industry-verticals.experienceevent-deposit-details.html">experienceevent-deposit-details</a></li>

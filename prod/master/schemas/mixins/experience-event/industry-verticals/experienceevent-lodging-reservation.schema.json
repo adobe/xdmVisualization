@@ -11,360 +11,151 @@
     ]
   },
   "description": "Collects all details specific to a lodging reservation.",
-  "meta:status": "experimental",
+  "meta:status": "stable",
   "meta:xdmType": "object",
   "properties": {
     "reservations": {
       "type": "object",
       "meta:xdmType": "object",
       "properties": {
-        "lodgingReservation": {
-          "type": "object",
-          "meta:xdmType": "object",
-          "properties": {
-            "agentID": {
-              "title": "Agent ID",
-              "type": "string",
-              "description": "Agent ID associated with the hotel booking.",
-              "meta:xdmType": "string",
-              "meta:xdmField": "xdm:agentID",
-              "tagNumber": 1
-            },
-            "averageDailyPrice": {
-              "title": "Average Daily Price",
-              "$ref": "../../../datatypes/currency.schema.json",
-              "description": "Average daily price of the hotel room.",
-              "meta:xdmField": "xdm:averageDailyPrice",
-              "tagNumber": 2
-            },
-            "basePrice": {
-              "title": "Base Price",
-              "type": "string",
-              "description": "Base price before any discounts are added. ",
-              "meta:xdmType": "string",
-              "meta:xdmField": "xdm:basePrice",
-              "tagNumber": 3
-            },
-            "bookingID": {
-              "title": "Booking ID",
-              "type": "string",
-              "description": "Booking ID associated with the hotel booking. ",
-              "meta:xdmType": "string",
-              "meta:xdmField": "xdm:bookingID",
-              "tagNumber": 4
-            },
-            "checkInDate": {
-              "title": "Check-In Date",
-              "type": "string",
-              "format": "date-time",
-              "description": "The check-in date of the for the room reservation.",
-              "meta:xdmType": "date-time",
-              "meta:xdmField": "xdm:checkInDate",
-              "tagNumber": 5
-            },
-            "checkOutDate": {
-              "title": "Check-Out Date",
-              "type": "string",
-              "format": "date-time",
-              "description": "The check-out date of the for the room reservation.",
-              "meta:xdmType": "date-time",
-              "meta:xdmField": "xdm:checkOutDate",
-              "tagNumber": 6
-            },
-            "couponCode": {
-              "title": "Coupon Code",
-              "type": "string",
-              "description": "Coupon code associated with the hotel booking.",
-              "meta:xdmType": "string",
-              "meta:xdmField": "xdm:couponCode",
-              "tagNumber": 7
-            },
-            "discountPercent": {
-              "title": "Discount Percent",
-              "type": "number",
-              "description": "Discount percentage associated with the booking.",
-              "meta:xdmType": "number",
-              "meta:xdmField": "xdm:discountPercent",
-              "tagNumber": 8
-            },
-            "freeCancelation": {
-              "title": "Free Cancelation",
-              "type": "boolean",
-              "description": "Yes/no if the room has a free cancellation.",
-              "meta:xdmType": "boolean",
-              "meta:xdmField": "xdm:freeCancelation",
-              "tagNumber": 9
-            },
-            "guestID": {
-              "title": "Guest ID",
-              "type": "string",
-              "description": "Guest ID associated with the hotel booking.",
-              "meta:xdmType": "string",
-              "meta:xdmField": "xdm:guestID",
-              "tagNumber": 10
-            },
-            "loyaltyID": {
-              "title": "Loyalty ID",
-              "type": "string",
-              "description": "Includes the loyalty/rewards program ID for the passenger listed in the reservation.",
-              "meta:xdmType": "string",
-              "meta:xdmField": "xdm:loyaltyID",
-              "tagNumber": 11
-            },
-            "numberOfRooms": {
-              "title": "Number of Rooms",
-              "type": "integer",
-              "description": "Captures the number of rooms associated with the reservation.",
-              "meta:xdmType": "int",
-              "meta:xdmField": "xdm:numberOfRooms",
-              "tagNumber": 12
-            },
-            "propertyID": {
-              "title": "Property ID",
-              "type": "string",
-              "description": "Identifier of the hotel/resort for the reservation.",
-              "meta:xdmType": "string",
-              "meta:xdmField": "xdm:propertyID",
-              "tagNumber": 13
-            },
-            "propertyName": {
-              "title": "Property Name",
-              "type": "string",
-              "description": "Name of the hotel/resort for the reservation.",
-              "meta:xdmType": "string",
-              "meta:xdmField": "xdm:propertyName",
-              "tagNumber": 14
-            },
-            "ratePlan": {
-              "title": "Rate Plan",
-              "type": "string",
-              "description": "The rate deal on which the room was sold.",
-              "meta:xdmType": "string",
-              "meta:xdmField": "xdm:ratePlan",
-              "tagNumber": 15
-            },
-            "refundable": {
-              "title": "Refundable",
-              "type": "boolean",
-              "description": "Yes/no if the room is refundable.",
-              "meta:xdmType": "boolean",
-              "meta:xdmField": "xdm:refundable",
-              "tagNumber": 16
-            },
-            "reservationStatus": {
-              "title": "Reservation Status",
-              "type": "string",
-              "description": "update",
-              "meta:xdmType": "string",
-              "meta:xdmField": "xdm:reservationStatus",
-              "tagNumber": 17
-            },
-            "roomAccessibilityType": {
-              "title": "Room Accessibility Type",
-              "type": "string",
-              "description": "Type of accessible room, such as mobility, hearing, or other.",
-              "meta:xdmType": "string",
-              "meta:xdmField": "xdm:roomAccessibilityType",
-              "tagNumber": 18
-            },
-            "roomCapacity": {
-              "title": "Room Capacity",
-              "type": "integer",
-              "description": "Number of people the hotel room holds.",
-              "meta:xdmType": "int",
-              "meta:xdmField": "xdm:roomCapacity",
-              "tagNumber": 19
-            },
-            "roomType": {
-              "title": "Room Type",
-              "type": "string",
-              "description": "Captures the type of room being reserved.",
-              "meta:xdmType": "string",
-              "meta:xdmField": "xdm:roomType",
-              "tagNumber": 20
-            },
-            "smoking": {
-              "title": "Smoking",
-              "type": "boolean",
-              "description": "Yes/no if the room allows smoking.",
-              "meta:xdmType": "boolean",
-              "meta:xdmField": "xdm:smoking",
-              "tagNumber": 21
-            },
-            "cancellation": {
-              "title": "Cancellation",
-              "type": "integer",
-              "description": "Tracked when a reservation has been cancelled.",
-              "meta:xdmType": "int",
-              "meta:xdmField": "xdm:cancellation",
-              "tagNumber": 22
-            },
-            "confirmationNumber": {
-              "title": "Confirmation Number",
-              "type": "string",
-              "description": "Tracks the reservation confirmation number/identifier.",
-              "meta:xdmType": "string",
-              "meta:xdmField": "xdm:confirmationNumber",
-              "tagNumber": 23
-            },
-            "created": {
-              "title": "Created",
-              "type": "integer",
-              "description": "Tracked when a reservation has been created.",
-              "meta:xdmType": "int",
-              "meta:xdmField": "xdm:created",
-              "tagNumber": 24
-            },
-            "currencyCode": {
-              "title": "Currency Code",
-              "type": "string",
-              "description": "Currency code used to make the purchase. ISO 4217 currency code.",
-              "pattern": "^[A-Z]{3}$",
-              "meta:xdmType": "string",
-              "meta:xdmField": "xdm:currencyCode",
-              "tagNumber": 25
-            },
-            "ID": {
-              "title": "ID",
-              "type": "string",
-              "description": "Tracks the reservation number/identifier.",
-              "meta:xdmType": "string",
-              "meta:xdmField": "xdm:ID",
-              "tagNumber": 26
-            },
-            "length": {
-              "title": "Length",
-              "type": "integer",
-              "description": "Tracks the total number of days for a reservation.",
-              "meta:xdmType": "int",
-              "meta:xdmField": "xdm:length",
-              "tagNumber": 27
-            },
-            "modification": {
-              "title": "Modification",
-              "type": "integer",
-              "description": "Captured when a reservation has been modified.",
-              "meta:xdmType": "int",
-              "meta:xdmField": "xdm:modification",
-              "tagNumber": 28
-            },
-            "modificationDate": {
-              "title": "Modification Date",
-              "type": "string",
-              "format": "date-time",
-              "description": "Tracks when a reservation has been modified.",
-              "meta:xdmType": "date-time",
-              "meta:xdmField": "xdm:modificationDate",
-              "tagNumber": 29
-            },
-            "numberOfAdults": {
-              "title": "Number of Adults",
-              "type": "integer",
-              "description": "Captures the number of adults associated with the reservation.",
-              "meta:xdmType": "int",
-              "meta:xdmField": "xdm:numberOfAdults",
-              "tagNumber": 30
-            },
-            "numberOfChildren": {
-              "title": "Number of Children",
-              "type": "integer",
-              "description": "Captures the number of children associated with the reservation.",
-              "meta:xdmType": "int",
-              "meta:xdmField": "xdm:numberOfChildren",
-              "tagNumber": 31
-            },
-            "purpose": {
-              "title": "Purpose",
-              "type": "string",
-              "description": "Tracks the purpose of the reservation, typically either business or personal.",
-              "meta:xdmType": "string",
-              "meta:xdmField": "xdm:purpose",
-              "tagNumber": 32
-            },
-            "tripType": {
-              "title": "Trip Type",
-              "type": "string",
-              "description": "Indicates if the reservation is for a one way, round trip, or multi-city.",
-              "meta:xdmType": "string",
-              "meta:xdmField": "xdm:tripType",
-              "tagNumber": 33
-            },
-            "type": {
-              "title": "Type",
-              "type": "string",
-              "description": "Records the type of reservation being placed.",
-              "meta:xdmType": "string",
-              "meta:xdmField": "xdm:type",
-              "tagNumber": 34
-            },
-            "lodgingCheckIn": {
-              "type": "object",
-              "description": "Lodging check in details such as room selection as well as start, save, failure and complete of check in.",
-              "meta:xdmType": "object",
-              "properties": {
-                "userSelectedRoom": {
-                  "title": "Guest Selected Room",
-                  "type": "boolean",
-                  "description": "Captures if the guest selected their room at check in.",
-                  "meta:xdmType": "boolean",
-                  "meta:xdmField": "xdm:userSelectedRoom",
-                  "tagNumber": 2
-                },
-                "oneRoomCheckIn": {
-                  "title": "One Room Check In",
-                  "type": "integer",
-                  "description": "Captured upon completion of check in when there is only one room available at that time.",
-                  "meta:xdmType": "int",
-                  "meta:xdmField": "xdm:oneRoomCheckIn",
-                  "tagNumber": 3
-                },
-                "noRoomCheckIn": {
-                  "title": "No Room Check In",
-                  "type": "integer",
-                  "description": "Captured upon completion of check in when there is only one room available at that time.",
-                  "meta:xdmType": "int",
-                  "meta:xdmField": "xdm:noRoomCheckIn",
-                  "tagNumber": 4
-                },
-                "digitalKey": {
-                  "title": "Digital Key Selected",
-                  "type": "integer",
-                  "description": "Tracks when a user selects the use of a digital key upon check in.",
-                  "meta:xdmType": "int",
-                  "meta:xdmField": "xdm:digitalKey",
-                  "tagNumber": 5
-                },
-                "lateCheckInRequested": {
-                  "title": "Late Check In Requested",
-                  "type": "integer",
-                  "description": "Tracks when a user requests a check in later than normal check in hours.",
-                  "meta:xdmType": "int",
-                  "meta:xdmField": "xdm:lateCheckInRequested",
-                  "tagNumber": 6
-                },
-                "earlyCheckInRequested": {
-                  "title": "Early Check In Requested",
-                  "type": "integer",
-                  "description": "Tracks when a user requests a check in earlier than normal check in hours.",
-                  "meta:xdmType": "int",
-                  "meta:xdmField": "xdm:earlyCheckInRequested",
-                  "tagNumber": 7
-                },
-                "roomKeys": {
-                  "title": "Room Keys",
-                  "type": "integer",
-                  "description": "Captures the number of standard room keys provided at check in.",
-                  "meta:xdmType": "int",
-                  "meta:xdmField": "xdm:roomKeys",
-                  "tagNumber": 8
-                }
-              },
-              "meta:xdmField": "xdm:lodgingCheckIn",
-              "tagNumber": 35
-            }
-          },
-          "meta:xdmField": "xdm:lodgingReservation",
-          "tagNumber": 1
+        "lodgingReservations": {
+          "type": "array",
+          "meta:xdmType": "array",
+          "meta:xdmField": "xdm:lodgingReservations",
+          "tagNumber": 1,
+          "items": {
+            "$ref": "obj015676385630245537.schema.json"
+          }
+        },
+        "cancellation": {
+          "title": "Cancellation",
+          "type": "integer",
+          "description": "Tracked when a reservation has been cancelled.",
+          "meta:xdmType": "int",
+          "meta:xdmField": "xdm:cancellation",
+          "tagNumber": 2
+        },
+        "confirmationNumber": {
+          "title": "Confirmation Number",
+          "type": "string",
+          "description": "Tracks the reservation confirmation number/identifier.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:confirmationNumber",
+          "tagNumber": 3
+        },
+        "created": {
+          "title": "Created",
+          "type": "integer",
+          "description": "Tracked when a reservation has been created.",
+          "meta:xdmType": "int",
+          "meta:xdmField": "xdm:created",
+          "tagNumber": 4
+        },
+        "currencyCode": {
+          "title": "Currency Code",
+          "type": "string",
+          "description": "Currency code used to make the purchase. ISO 4217 currency code.",
+          "pattern": "^[A-Z]{3}$",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:currencyCode",
+          "tagNumber": 5
+        },
+        "endDate": {
+          "title": "End Date",
+          "type": "string",
+          "format": "date-time",
+          "description": "The end drop-off/return/check-out date of the reservation.",
+          "meta:xdmType": "date-time",
+          "meta:xdmField": "xdm:endDate",
+          "tagNumber": 6
+        },
+        "ID": {
+          "title": "ID",
+          "type": "string",
+          "description": "Tracks the reservation number/identifier.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:ID",
+          "tagNumber": 7
+        },
+        "length": {
+          "title": "Length",
+          "type": "integer",
+          "description": "Tracks the total number of days for a reservation.",
+          "meta:xdmType": "int",
+          "meta:xdmField": "xdm:length",
+          "tagNumber": 8
+        },
+        "modification": {
+          "title": "Modification",
+          "type": "integer",
+          "description": "Captured when a reservation has been modified.",
+          "meta:xdmType": "int",
+          "meta:xdmField": "xdm:modification",
+          "tagNumber": 9
+        },
+        "modificationDate": {
+          "title": "Modification Date",
+          "type": "string",
+          "format": "date-time",
+          "description": "Tracks when a reservation has been modified.",
+          "meta:xdmType": "date-time",
+          "meta:xdmField": "xdm:modificationDate",
+          "tagNumber": 10
+        },
+        "nonRefundableAmount": {
+          "title": "Non-Refundable Amount",
+          "$ref": "../../../datatypes/currency.schema.json",
+          "description": "Amount of the reservation price that is marked as non-refundable.",
+          "meta:xdmField": "xdm:nonRefundableAmount",
+          "tagNumber": 11
+        },
+        "numberOfAdults": {
+          "title": "Number of Adults",
+          "type": "integer",
+          "description": "Captures the number of adults associated with the reservation.",
+          "meta:xdmType": "int",
+          "meta:xdmField": "xdm:numberOfAdults",
+          "tagNumber": 12
+        },
+        "numberOfChildren": {
+          "title": "Number of Children",
+          "type": "integer",
+          "description": "Captures the number of children associated with the reservation.",
+          "meta:xdmType": "int",
+          "meta:xdmField": "xdm:numberOfChildren",
+          "tagNumber": 13
+        },
+        "purpose": {
+          "title": "Purpose",
+          "type": "string",
+          "description": "Tracks the purpose of the reservation, typically either business or personal.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:purpose",
+          "tagNumber": 15
+        },
+        "startDate": {
+          "title": "Start Date",
+          "type": "string",
+          "format": "date-time",
+          "description": "The start pick-up/outbound/check-in date of the reservation.",
+          "meta:xdmType": "date-time",
+          "meta:xdmField": "xdm:startDate",
+          "tagNumber": 16
+        },
+        "transaction": {
+          "title": "Transaction",
+          "$ref": "../../../datatypes/industry-verticals/transaction.schema.json",
+          "description": "Extension of transaction data type.",
+          "meta:xdmField": "xdm:transaction",
+          "tagNumber": 17
+        },
+        "triptype": {
+          "title": "Trip Type",
+          "type": "string",
+          "description": "Indicates if the reservation is for a one way, round trip, or multi-city.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:triptype",
+          "tagNumber": 18
         }
       },
       "meta:xdmField": "xdm:reservations",

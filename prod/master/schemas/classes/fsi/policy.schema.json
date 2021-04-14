@@ -1,0 +1,119 @@
+{
+  "id": "_xdm.classes.fsi.policy",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Policy",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:tags": {
+    "industry": [
+      "financial_services"
+    ]
+  },
+  "description": "Details for the insurance policy such as type, start date, and ID.",
+  "meta:status": "stable",
+  "meta:xdmType": "object",
+  "meta:abstract": true,
+  "properties": {
+    "_id": {
+      "title": "Identifier",
+      "type": "string",
+      "format": "uri-reference",
+      "description": "A unique identifier for the record.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "@id",
+      "tagNumber": 1
+    },
+    "endDate": {
+      "title": "End Date",
+      "type": "string",
+      "format": "date-time",
+      "description": "Date which the insurance policy coverage ended.",
+      "meta:xdmType": "date-time",
+      "meta:xdmField": "xdm:endDate",
+      "tagNumber": 2
+    },
+    "ID": {
+      "title": "ID",
+      "type": "string",
+      "description": "Unique insurance policy identifier.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:ID",
+      "tagNumber": 3
+    },
+    "name": {
+      "title": "Name",
+      "type": "string",
+      "description": "Insurance policy name.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:name",
+      "tagNumber": 4
+    },
+    "startDate": {
+      "title": "Start Date",
+      "type": "string",
+      "format": "date-time",
+      "description": "Date which the insurance policy coverage started.",
+      "meta:xdmType": "date-time",
+      "meta:xdmField": "xdm:startDate",
+      "tagNumber": 5
+    },
+    "location": {
+      "title": "Location",
+      "$ref": "../../datatypes/demographic/address.schema.json",
+      "description": "Location in which the insurance policy is issued.",
+      "meta:xdmField": "xdm:location",
+      "tagNumber": 6
+    },
+    "type": {
+      "title": "Type",
+      "type": "string",
+      "enum": [
+        "home",
+        "automobile",
+        "renter",
+        "boat"
+      ],
+      "description": "Type of insurance policy, such as home, automobile, renter, or boat.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:type",
+      "tagNumber": 7
+    },
+    "assignedBeneficiary": {
+      "title": "Assigned Beneficiaries",
+      "type": "array",
+      "description": "Captures the beneficiary(s) assigned to the policy.",
+      "meta:xdmType": "array",
+      "items": {
+        "$ref": "../../mixins/profile/profile-person-details.schema.json",
+        "tagNumber": 1
+      },
+      "meta:xdmField": "xdm:assignedBeneficiary",
+      "tagNumber": 8
+    },
+    "hasAssignedBeneficiary": {
+      "title": "Has Assigned Beneficiary",
+      "type": "boolean",
+      "description": "Flag determining if the account has a beneficiary assigned.",
+      "meta:xdmType": "boolean",
+      "meta:xdmField": "xdm:hasAssignedBeneficiary",
+      "tagNumber": 9
+    },
+    "owner": {
+      "title": "Owner",
+      "$ref": "../../mixins/profile/profile-personal-details.schema.json",
+      "description": "Stores the policyholder's profile information. Extension of the personal profile details data type.",
+      "meta:xdmField": "xdm:owner",
+      "tagNumber": 10
+    },
+    "benefitAmount": {
+      "title": "Benefit Amount",
+      "$ref": "../../datatypes/currency.schema.json",
+      "description": "The amount to be paid per the policy terms.",
+      "meta:xdmField": "xdm:benefitAmount",
+      "tagNumber": 11
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/classes/fsi/policy",
+  "meta:altId": "_xdm.classes.fsi.policy",
+  "id": "_xdm.classes.fsi.policy"
+}

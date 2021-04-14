@@ -5,7 +5,7 @@
   "type": "object",
   "meta:extensible": true,
   "description": "Tracks when impressions are presented on a site, along with names, types, and counts.",
-  "meta:status": "experimental",
+  "meta:status": "stable",
   "meta:xdmType": "object",
   "properties": {
     "displays": {

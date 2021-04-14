@@ -5,7 +5,7 @@
   "type": "object",
   "meta:extensible": true,
   "description": "Used for site comparisons, such as products, cards, rooms, flights, etc.",
-  "meta:status": "experimental",
+  "meta:status": "stable",
   "meta:xdmType": "object",
   "properties": {
     "count": {
@@ -23,7 +23,7 @@
       "meta:xdmField": "xdm:items",
       "tagNumber": 2,
       "items": {
-        "$ref": "obj6938275485371832.schema.json"
+        "$ref": "obj07657610075568333.schema.json"
       }
     },
     "type": {
@@ -41,13 +41,6 @@
       "meta:xdmType": "int",
       "meta:xdmField": "xdm:view",
       "tagNumber": 4
-    },
-    "impressions": {
-      "title": "Impressions",
-      "$ref": "impressions.schema.json",
-      "description": "Extension of the impressions data type.",
-      "meta:xdmField": "xdm:impressions",
-      "tagNumber": 5
     }
   },
   "meta:xdmId": "https://ns.adobe.com/xdm/datatypes/comparisons",

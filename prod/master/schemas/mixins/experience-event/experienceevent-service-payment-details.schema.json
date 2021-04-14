@@ -12,7 +12,7 @@
     ]
   },
   "description": "Service Payment Details such as ID, type, and amount.",
-  "meta:status": "experimental",
+  "meta:status": "stable",
   "meta:xdmType": "object",
   "properties": {
     "servicePaymentDetails": {

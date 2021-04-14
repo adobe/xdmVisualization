@@ -11,7 +11,7 @@
     ]
   },
   "description": "Reservation search details such as flexibility, product code, rate type, and internal search information.",
-  "meta:status": "experimental",
+  "meta:status": "stable",
   "meta:xdmType": "object",
   "properties": {
     "reservationSearch": {

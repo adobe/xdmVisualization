@@ -11,7 +11,7 @@
     ]
   },
   "description": "Deposit details such as ID, type, and amount.",
-  "meta:status": "experimental",
+  "meta:status": "stable",
   "meta:xdmType": "object",
   "properties": {
     "personalFinances": {
@@ -35,18 +35,18 @@
               "description": "Extension of financialAccount data type. Details of the account and transactions associated with the deposit.",
               "meta:xdmField": "xdm:account",
               "tagNumber": 2
+            },
+            "mobileDeposit": {
+              "title": "Mobile Deposit",
+              "type": "boolean",
+              "description": "Indicator for whether the deposit was done through mobile or not.",
+              "meta:xdmType": "boolean",
+              "meta:xdmField": "xdm:mobileDeposit",
+              "tagNumber": 3
             }
           },
           "meta:xdmField": "xdm:deposits",
           "tagNumber": 1
-        },
-        "mobileDeposit": {
-          "title": "Mobile Deposit",
-          "type": "boolean",
-          "description": "Indicator for whether the deposit was done through mobile or not.",
-          "meta:xdmType": "boolean",
-          "meta:xdmField": "xdm:mobileDeposit",
-          "tagNumber": 2
         }
       },
       "meta:xdmField": "xdm:personalFinances",

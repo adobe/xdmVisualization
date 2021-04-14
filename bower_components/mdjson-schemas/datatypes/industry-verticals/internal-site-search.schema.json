@@ -5,7 +5,7 @@
   "type": "object",
   "meta:extensible": true,
   "description": "Used for internal site searches and includes all related search behaviors and details.",
-  "meta:status": "experimental",
+  "meta:status": "stable",
   "meta:xdmType": "object",
   "properties": {
     "numberOfResults": {

@@ -171,8 +171,7 @@
   ],
   "meta:status": [
     "stable",
-    "deprecated",
-    "experimental"
+    "deprecated"
   ],
   "properties": {
     "identityMap": {
@@ -758,18 +757,18 @@
               "description": "Extension of financialAccount data type. Details of the account and transactions associated with the deposit.",
               "meta:xdmField": "xdm:account",
               "tagNumber": 2
+            },
+            "mobileDeposit": {
+              "title": "Mobile Deposit",
+              "type": "boolean",
+              "description": "Indicator for whether the deposit was done through mobile or not.",
+              "meta:xdmType": "boolean",
+              "meta:xdmField": "xdm:mobileDeposit",
+              "tagNumber": 3
             }
           },
           "meta:xdmField": "xdm:deposits",
           "tagNumber": 11
-        },
-        "mobileDeposit": {
-          "title": "Mobile Deposit",
-          "type": "boolean",
-          "description": "Indicator for whether the deposit was done through mobile or not.",
-          "meta:xdmType": "boolean",
-          "meta:xdmField": "xdm:mobileDeposit",
-          "tagNumber": 12
         },
         "loanApplicationDetails": {
           "type": "object",
@@ -834,7 +833,7 @@
             }
           },
           "meta:xdmField": "xdm:loanApplicationDetails",
-          "tagNumber": 13
+          "tagNumber": 12
         }
       },
       "meta:xdmField": "xdm:personalFinances",
@@ -1415,11 +1414,16 @@
       "type": "object",
       "meta:xdmType": "object",
       "properties": {
-        "upgradeOffer": {
-          "title": "Upgrade Offer",
-          "$ref": "../../mixins/experience-event/experienceevent-offer-impression-details.schema.json",
-          "description": "Extension of offer details data type.",
-          "meta:xdmField": "xdm:upgradeOffer",
+        "upgradeImpressions": {
+          "title": "Upgrade Impressions",
+          "type": "array",
+          "description": "Array of the impressions data type.",
+          "meta:xdmType": "array",
+          "items": {
+            "$ref": "../../datatypes/industry-verticals/impressions.schema.json",
+            "tagNumber": 1
+          },
+          "meta:xdmField": "xdm:upgradeImpressions",
           "tagNumber": 2
         },
         "upgradeTransaction": {
@@ -1437,11 +1441,16 @@
       "type": "object",
       "meta:xdmType": "object",
       "properties": {
-        "upsellOffer": {
-          "title": "Upsell Offer",
-          "$ref": "../../mixins/experience-event/experienceevent-offer-impression-details.schema.json",
-          "description": "Extension of offer details data type.",
-          "meta:xdmField": "xdm:upsellOffer",
+        "upsellImpressions": {
+          "title": "Upsell Impressions",
+          "type": "array",
+          "description": "Array of the impressions data type.",
+          "meta:xdmType": "array",
+          "items": {
+            "$ref": "../../datatypes/industry-verticals/impressions.schema.json",
+            "tagNumber": 1
+          },
+          "meta:xdmField": "xdm:upsellImpressions",
           "tagNumber": 2
         },
         "upsellTransaction": {

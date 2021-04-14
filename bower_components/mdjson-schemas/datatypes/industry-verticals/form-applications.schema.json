@@ -5,7 +5,7 @@
   "type": "object",
   "meta:extensible": true,
   "description": "Used when any application process is started, such as financing, limit changes, or educational programs.",
-  "meta:status": "experimental",
+  "meta:status": "stable",
   "meta:xdmType": "object",
   "properties": {
     "approved": {

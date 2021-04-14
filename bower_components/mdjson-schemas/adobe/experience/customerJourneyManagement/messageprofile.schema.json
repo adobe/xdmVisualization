@@ -62,6 +62,14 @@
                   "meta:xdmType": "string",
                   "meta:xdmField": "https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/address",
                   "tagNumber": 1
+                },
+                "namespace": {
+                  "title": "Email Namespace",
+                  "type": "string",
+                  "description": "Email namespace associated with the email address in the consent preferences in the Profile, e.g. email or Email",
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/namespace",
+                  "tagNumber": 2
                 }
               },
               "tagNumber": 2

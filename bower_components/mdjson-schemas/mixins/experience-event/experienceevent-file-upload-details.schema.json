@@ -21,7 +21,7 @@
     ]
   },
   "description": "File upload details such as file name, size, and transfer status.",
-  "meta:status": "experimental",
+  "meta:status": "stable",
   "meta:xdmType": "object",
   "properties": {
     "fileTransfer": {

@@ -11,10 +11,7 @@
     ]
   },
   "description": "For branch information such as ID, name, and open and close times.",
-  "meta:status": [
-    "experimental",
-    "stable"
-  ],
+  "meta:status": "stable",
   "meta:xdmType": "object",
   "properties": {
     "_id": {

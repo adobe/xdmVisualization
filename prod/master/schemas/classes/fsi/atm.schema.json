@@ -11,10 +11,7 @@
     ]
   },
   "description": "For ATM information such as active status, addrerss, ID and name. ",
-  "meta:status": [
-    "experimental",
-    "stable"
-  ],
+  "meta:status": "stable",
   "meta:xdmType": "object",
   "properties": {
     "_id": {

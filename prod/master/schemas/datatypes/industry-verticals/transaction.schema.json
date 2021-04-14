@@ -5,7 +5,7 @@
   "type": "object",
   "meta:extensible": true,
   "description": "Transactions capture when non-order transactions occur, such as balance transfers or applied payments.",
-  "meta:status": "experimental",
+  "meta:status": "stable",
   "meta:xdmType": "object",
   "properties": {
     "transactionAmount": {

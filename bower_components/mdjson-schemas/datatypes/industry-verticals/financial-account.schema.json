@@ -5,7 +5,7 @@
   "type": "object",
   "meta:extensible": true,
   "description": "Financial account details, such as owners, balances, and types.",
-  "meta:status": "experimental",
+  "meta:status": "stable",
   "meta:xdmType": "object",
   "properties": {
     "currentAccountBalance": {

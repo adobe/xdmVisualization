@@ -60,6 +60,7 @@
 [classes.segmentdefinition](http://opensource.adobe.com/xdmVisualization/prod/master/classes.segmentdefinition.html)<br/>
 [classes.promotion](http://opensource.adobe.com/xdmVisualization/prod/master/classes.promotion.html)<br/>
 [classes.fsi.atm](http://opensource.adobe.com/xdmVisualization/prod/master/classes.fsi.atm.html)<br/>
+[classes.fsi.policy](http://opensource.adobe.com/xdmVisualization/prod/master/classes.fsi.policy.html)<br/>
 [classes.fsi.branch](http://opensource.adobe.com/xdmVisualization/prod/master/classes.fsi.branch.html)<br/>
 #### datatypes
 [datatypes.device](http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.device.html)<br/>
@@ -163,7 +164,6 @@
 [datatypes.industry-verticals.comparisons](http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.industry-verticals.comparisons.html)<br/>
 [datatypes.industry-verticals.implementationdetails](http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.industry-verticals.implementationdetails.html)<br/>
 [datatypes.industry-verticals.tool-usage](http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.industry-verticals.tool-usage.html)<br/>
-[datatypes.industry-verticals.policy-details](http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.industry-verticals.policy-details.html)<br/>
 [datatypes.industry-verticals.impressions](http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.industry-verticals.impressions.html)<br/>
 [datatypes.industry-verticals.form-applications](http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.industry-verticals.form-applications.html)<br/>
 [datatypes.industry-verticals.transaction](http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.industry-verticals.transaction.html)<br/>
@@ -226,7 +226,6 @@
 [mixins.experience-event.experienceevent-directmarketing](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.experienceevent-directmarketing.html)<br/>
 [mixins.experience-event.experienceevent-profile-stitch](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.experienceevent-profile-stitch.html)<br/>
 [mixins.experience-event.experienceevent-consumer](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.experienceevent-consumer.html)<br/>
-[mixins.experience-event.experienceevent-user-login-process](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.experienceevent-user-login-process.html)<br/>
 [mixins.experience-event.experienceevent-commerce](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.experienceevent-commerce.html)<br/>
 [mixins.experience-event.experienceevent-marketing](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.experienceevent-marketing.html)<br/>
 [mixins.experience-event.experienceevent-technical-details](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.experienceevent-technical-details.html)<br/>
@@ -275,18 +274,19 @@
 [mixins.experience-event.industry-verticals.experienceevent-flight-reservation](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.industry-verticals.experienceevent-flight-reservation.html)<br/>
 [mixins.experience-event.industry-verticals.experienceevent-bill-pay-details](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.industry-verticals.experienceevent-bill-pay-details.html)<br/>
 [mixins.experience-event.industry-verticals.experienceevent-dining-reservation](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.industry-verticals.experienceevent-dining-reservation.html)<br/>
+[mixins.experience-event.industry-verticals.experienceevent-card-application-details](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.industry-verticals.experienceevent-card-application-details.html)<br/>
 [mixins.experience-event.industry-verticals.experienceevent-loan-application-details](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.industry-verticals.experienceevent-loan-application-details.html)<br/>
+[mixins.experience-event.industry-verticals.experienceevent-claim-details](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.industry-verticals.experienceevent-claim-details.html)<br/>
 [mixins.experience-event.industry-verticals.experienceevent-credit-limit-increase-details](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.industry-verticals.experienceevent-credit-limit-increase-details.html)<br/>
 [mixins.experience-event.industry-verticals.experienceevent-upgrade-details](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.industry-verticals.experienceevent-upgrade-details.html)<br/>
-[mixins.experience-event.industry-verticals.experienceevent-claim-process](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.industry-verticals.experienceevent-claim-process.html)<br/>
 [mixins.experience-event.industry-verticals.experienceevent-reservation-search](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.industry-verticals.experienceevent-reservation-search.html)<br/>
 [mixins.experience-event.industry-verticals.experienceevent-vehicle-reservation](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.industry-verticals.experienceevent-vehicle-reservation.html)<br/>
 [mixins.experience-event.industry-verticals.experienceevent-reservation-details](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.industry-verticals.experienceevent-reservation-details.html)<br/>
-[mixins.experience-event.industry-verticals.experienceevent-card-application-process](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.industry-verticals.experienceevent-card-application-process.html)<br/>
 [mixins.experience-event.industry-verticals.experienceevent-alert-impressions](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.industry-verticals.experienceevent-alert-impressions.html)<br/>
 [mixins.experience-event.industry-verticals.experienceevent-deposit-details](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.industry-verticals.experienceevent-deposit-details.html)<br/>
 [mixins.experience-event.industry-verticals.experienceevent-prescription-details](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.industry-verticals.experienceevent-prescription-details.html)<br/>
 [mixins.experience-event.industry-verticals.experienceevent-balance-transfers](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.industry-verticals.experienceevent-balance-transfers.html)<br/>
+[mixins.experience-event.experienceevent-user-login-details](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.experienceevent-user-login-details.html)<br/>
 [mixins.experience-event.experienceevent-quote-request-details](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.experienceevent-quote-request-details.html)<br/>
 [mixins.opportunity-contact-role.opportunity-contact-role-details](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.opportunity-contact-role.opportunity-contact-role-details.html)<br/>
 [mixins.campaign.campaign-details](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.campaign.campaign-details.html)<br/>

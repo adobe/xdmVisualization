@@ -40,10 +40,7 @@
       ]
     }
   ],
-  "meta:status": [
-    "stable",
-    "experimental"
-  ],
+  "meta:status": "stable",
   "properties": {
     "repositoryCreatedBy": {
       "title": "Created by user identifier",
@@ -1097,7 +1094,7 @@
           "meta:xdmField": "xdm:pointsExpiration",
           "tagNumber": 4,
           "items": {
-            "$ref": "obj39159639080681297.schema.json"
+            "$ref": "obj35858413707448.schema.json"
           }
         },
         "pointsRedeemed": {
@@ -1239,7 +1236,7 @@
         "productPreferences": {
           "title": "Product Preferences",
           "type": "array",
-          "description": "Product, shopping, or experience preferences such as M/F, color pref, seat/aisle, king/double bed, etc.",
+          "description": "Product, shopping, or experience preferences such as gender, color pref, seat/aisle, king/double bed, etc.",
           "meta:xdmType": "array",
           "items": {
             "type": "string",

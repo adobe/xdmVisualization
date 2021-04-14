@@ -11,7 +11,7 @@
     ]
   },
   "description": "Bill pay details such as transaction information, service account ID, and balance.",
-  "meta:status": "experimental",
+  "meta:status": "stable",
   "meta:xdmType": "object",
   "properties": {
     "personalFinances": {
