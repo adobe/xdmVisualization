@@ -21,10 +21,7 @@
     ]
   },
   "description": "For promition information such as details, and start and end date.",
-  "meta:status": [
-    "experimental",
-    "stable"
-  ],
+  "meta:status": "stable",
   "meta:xdmType": "object",
   "properties": {
     "_id": {

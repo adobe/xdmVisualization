@@ -11,10 +11,7 @@
     ]
   },
   "description": "For hotel product information such as ID, rooms, ownership, and type.",
-  "meta:status": [
-    "experimental",
-    "stable"
-  ],
+  "meta:status": "stable",
   "meta:xdmType": "object",
   "properties": {
     "_id": {

@@ -12,10 +12,7 @@
     ]
   },
   "description": "For vehicle product information such as category, number of doors, capacity, and ownership. ",
-  "meta:status": [
-    "experimental",
-    "stable"
-  ],
+  "meta:status": "stable",
   "meta:xdmType": "object",
   "properties": {
     "_id": {
