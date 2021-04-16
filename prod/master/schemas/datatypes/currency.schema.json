@@ -5,7 +5,7 @@
   "type": "object",
   "meta:extensible": true,
   "description": "This datatype is used where ever you want to store any kind of amount in combination of currency code.",
-  "meta:status": "experimental",
+  "meta:status": "stable",
   "meta:xdmType": "object",
   "properties": {
     "amount": {
