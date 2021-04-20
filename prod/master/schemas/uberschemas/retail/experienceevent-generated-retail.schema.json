@@ -152,11 +152,20 @@
     },
     "eventMergeId": {
       "title": "ExperienceEvent merge ID",
-      "type": "string",
       "description": "An ID to correlate or merge multiple Experience events together that are essentially the same event or should be merged. This is intended to be populated by the data producer prior to ingestion.",
+      "type": "string",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:eventMergeId",
       "tagNumber": 5
+    },
+    "producedBy": {
+      "title": "Produced By",
+      "description": "Value that describes the producer of the event - suggested values would be 'self', 'system', 'salesRep', etc. Can be used to filter out certain producers if needed.",
+      "type": "string",
+      "default": "self",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:producedBy",
+      "tagNumber": 6
     },
     "alerts": {
       "type": "object",
@@ -207,7 +216,7 @@
         }
       },
       "meta:xdmField": "xdm:alerts",
-      "tagNumber": 6
+      "tagNumber": 7
     },
     "autopayEnrollment": {
       "type": "object",
@@ -230,7 +239,7 @@
         }
       },
       "meta:xdmField": "xdm:autopayEnrollment",
-      "tagNumber": 7
+      "tagNumber": 8
     },
     "web": {
       "type": "object",
@@ -248,14 +257,14 @@
         }
       },
       "meta:xdmField": "xdm:web",
-      "tagNumber": 8
+      "tagNumber": 9
     },
     "advertising": {
       "title": "Advertising",
       "$ref": "../../datatypes/marketing/advertising.schema.json",
       "description": "Information related to advertising activity in ExperienceEvents.",
       "meta:xdmField": "xdm:advertising",
-      "tagNumber": 9
+      "tagNumber": 10
     },
     "productListItems": {
       "title": "Product list items",
@@ -267,42 +276,42 @@
         "tagNumber": 1
       },
       "meta:xdmField": "xdm:productListItems",
-      "tagNumber": 10
+      "tagNumber": 11
     },
     "commerce": {
       "title": "Commerce",
       "$ref": "../../datatypes/marketing/commerce.schema.json",
       "description": "Commerce specific data related to this event.",
       "meta:xdmField": "xdm:commerce",
-      "tagNumber": 11
+      "tagNumber": 12
     },
     "directMarketing": {
       "title": "Direct marketing",
       "$ref": "../../datatypes/marketing/direct-marketing.schema.json",
       "description": "Events and properties related to direct and outbound marketing such as email, direct mail, texts, and in-app notifications.",
       "meta:xdmField": "xdm:directMarketing",
-      "tagNumber": 12
+      "tagNumber": 13
     },
     "environment": {
       "title": "Environment",
       "$ref": "../../datatypes/environment.schema.json",
       "description": "Information about the surrounding situation the event observation occurred in, specifically detailing transitory information such as the network or software versions.",
       "meta:xdmField": "xdm:environment",
-      "tagNumber": 13
+      "tagNumber": 14
     },
     "device": {
       "title": "Device",
       "$ref": "../../datatypes/device.schema.json",
       "description": "An identified device, application or device browser instance that is trackable across sessions, normally by cookies.",
       "meta:xdmField": "xdm:device",
-      "tagNumber": 14
+      "tagNumber": 15
     },
     "placeContext": {
       "title": "Place context",
       "$ref": "../../datatypes/placecontext.schema.json",
       "description": "The transient circumstances related to the observation. Examples include locale specific information such as weather, local time, traffic, day of the week, workday vs. holiday, and working hours.",
       "meta:xdmField": "xdm:placeContext",
-      "tagNumber": 15
+      "tagNumber": 16
     },
     "fileTransfer": {
       "type": "object",
@@ -324,28 +333,28 @@
         }
       },
       "meta:xdmField": "xdm:fileTransfer",
-      "tagNumber": 16
+      "tagNumber": 17
     },
     "implementationDetails": {
       "title": "Implementation details",
       "$ref": "../../datatypes/industry-verticals/implementationdetails.schema.json",
       "description": "The details of the software used to collect the ExperienceEvent.",
       "meta:xdmField": "xdm:implementationDetails",
-      "tagNumber": 17
+      "tagNumber": 18
     },
     "marketing": {
       "title": "Marketing",
       "$ref": "../../datatypes/marketing/marketing.schema.json",
       "description": "The information related to marketing activities that are active with the touchpoint.",
       "meta:xdmField": "xdm:marketing",
-      "tagNumber": 18
+      "tagNumber": 19
     },
     "media": {
       "title": "Media",
       "$ref": "../../datatypes/media/media.schema.json",
       "description": "Media activity information related to the experience event.",
       "meta:xdmField": "xdm:media",
-      "tagNumber": 19
+      "tagNumber": 20
     },
     "offers ": {
       "type": "object",
@@ -389,7 +398,7 @@
         }
       },
       "meta:xdmField": "xdm:offers ",
-      "tagNumber": 20
+      "tagNumber": 21
     },
     "socialMarketing ": {
       "type": "object",
@@ -461,7 +470,7 @@
         }
       },
       "meta:xdmField": "xdm:socialMarketing ",
-      "tagNumber": 21
+      "tagNumber": 22
     },
     "surveyResponse": {
       "type": "object",
@@ -503,7 +512,7 @@
         }
       },
       "meta:xdmField": "xdm:surveyResponse",
-      "tagNumber": 22
+      "tagNumber": 23
     },
     "userAccount": {
       "type": "object",
@@ -663,7 +672,7 @@
         }
       },
       "meta:xdmField": "xdm:userAccount",
-      "tagNumber": 23
+      "tagNumber": 24
     },
     "customerFeedback": {
       "type": "object",
@@ -765,7 +774,7 @@
         }
       },
       "meta:xdmField": "xdm:customerFeedback",
-      "tagNumber": 24
+      "tagNumber": 25
     },
     "upgrades": {
       "type": "object",
@@ -792,7 +801,7 @@
         }
       },
       "meta:xdmField": "xdm:upgrades",
-      "tagNumber": 25
+      "tagNumber": 26
     },
     "upsells": {
       "type": "object",
@@ -819,7 +828,7 @@
         }
       },
       "meta:xdmField": "xdm:upsells",
-      "tagNumber": 26
+      "tagNumber": 27
     }
   },
   "meta:xdmId": "https://ns.adobe.com/xdm/context/experienceevent-generated-retail",

@@ -331,6 +331,7 @@
 [adobe.experience.adcloud.creative-event](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.adcloud.creative-event.html)<br/>
 [adobe.experience.adcloud.inventory](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.adcloud.inventory.html)<br/>
 [adobe.experience.adcloud.conversiondetails](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.adcloud.conversiondetails.html)<br/>
+[adobe.experience.adcloud.stitch](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.adcloud.stitch.html)<br/>
 [adobe.experience.adcloud.addeliverydetails](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.adcloud.addeliverydetails.html)<br/>
 [adobe.experience.adcloud.searchads.account](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.adcloud.searchads.account.html)<br/>
 [adobe.experience.adcloud.searchads.aggregateperformancebykeyword](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.adcloud.searchads.aggregateperformancebykeyword.html)<br/>

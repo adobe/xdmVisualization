@@ -88,6 +88,7 @@
 </ul>
 </details>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.adcloud.segment.html">segment</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.adcloud.stitch.html">stitch</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.adcloud.syncedremarketingaudience.html">syncedremarketingaudience</a></li>
 </ul>
 </details>

@@ -257,11 +257,20 @@
     },
     "eventMergeId": {
       "title": "ExperienceEvent merge ID",
-      "type": "string",
       "description": "An ID to correlate or merge multiple Experience events together that are essentially the same event or should be merged. This is intended to be populated by the data producer prior to ingestion.",
+      "type": "string",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:eventMergeId",
       "tagNumber": 5
+    },
+    "producedBy": {
+      "title": "Produced By",
+      "description": "Value that describes the producer of the event - suggested values would be 'self', 'system', 'salesRep', etc. Can be used to filter out certain producers if needed.",
+      "type": "string",
+      "default": "self",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:producedBy",
+      "tagNumber": 6
     },
     "alerts": {
       "type": "object",
@@ -312,7 +321,7 @@
         }
       },
       "meta:xdmField": "xdm:alerts",
-      "tagNumber": 6
+      "tagNumber": 7
     },
     "userAccount": {
       "type": "object",
@@ -486,7 +495,7 @@
         }
       },
       "meta:xdmField": "xdm:userAccount",
-      "tagNumber": 7
+      "tagNumber": 8
     },
     "autopayEnrollment": {
       "type": "object",
@@ -509,7 +518,7 @@
         }
       },
       "meta:xdmField": "xdm:autopayEnrollment",
-      "tagNumber": 8
+      "tagNumber": 9
     },
     "disputes": {
       "type": "object",
@@ -524,7 +533,7 @@
         }
       },
       "meta:xdmField": "xdm:disputes",
-      "tagNumber": 9
+      "tagNumber": 10
     },
     "personalFinances": {
       "type": "object",
@@ -875,7 +884,7 @@
         }
       },
       "meta:xdmField": "xdm:personalFinances",
-      "tagNumber": 11
+      "tagNumber": 12
     },
     "web": {
       "type": "object",
@@ -1043,7 +1052,7 @@
         }
       },
       "meta:xdmField": "xdm:web",
-      "tagNumber": 12
+      "tagNumber": 13
     },
     "supportRequest": {
       "type": "object",
@@ -1058,7 +1067,7 @@
         }
       },
       "meta:xdmField": "xdm:supportRequest",
-      "tagNumber": 13
+      "tagNumber": 14
     },
     "listOperations": {
       "title": "List Operations",
@@ -1075,7 +1084,7 @@
         }
       },
       "meta:xdmField": "xdm:listOperations",
-      "tagNumber": 14
+      "tagNumber": 15
     },
     "opportunityEvent": {
       "title": "Opportunity Event",
@@ -1114,12 +1123,12 @@
           "meta:xdmField": "xdm:dataValueChanges",
           "tagNumber": 4,
           "items": {
-            "$ref": "obj41279462463194005.schema.json"
+            "$ref": "obj48356660452283373.schema.json"
           }
         }
       },
       "meta:xdmField": "xdm:opportunityEvent",
-      "tagNumber": 15
+      "tagNumber": 16
     },
     "leadOperation": {
       "title": "Lead Operation",
@@ -1423,7 +1432,7 @@
         }
       },
       "meta:xdmField": "xdm:leadOperation",
-      "tagNumber": 16
+      "tagNumber": 17
     },
     "directMarketing": {
       "title": "Direct marketing",
@@ -1498,7 +1507,7 @@
         }
       },
       "meta:xdmField": "xdm:directMarketing",
-      "tagNumber": 17
+      "tagNumber": 18
     },
     "environment": {
       "title": "Environment",
@@ -1544,7 +1553,7 @@
         }
       },
       "meta:xdmField": "xdm:environment",
-      "tagNumber": 18
+      "tagNumber": 19
     },
     "device": {
       "title": "Device",
@@ -1571,7 +1580,7 @@
         }
       },
       "meta:xdmField": "xdm:device",
-      "tagNumber": 19
+      "tagNumber": 20
     },
     "search": {
       "title": "Search",
@@ -1598,28 +1607,28 @@
         }
       },
       "meta:xdmField": "xdm:search",
-      "tagNumber": 20
+      "tagNumber": 21
     },
     "advertising": {
       "title": "Advertising",
       "$ref": "../datatypes/marketing/advertising.schema.json",
       "description": "Information related to advertising activity in ExperienceEvents.",
       "meta:xdmField": "xdm:advertising",
-      "tagNumber": 21
+      "tagNumber": 22
     },
     "application": {
       "title": "Application",
       "$ref": "../datatypes/application.schema.json",
       "description": "This mixin is used to capture application information related to an ExperienceEvent, including the name of the application, app version, installs, launches, crashes, and closures. It could be either the application targeted by the event like the send of a push notification or the application originating the event such as a click, or a login.",
       "meta:xdmField": "xdm:application",
-      "tagNumber": 22
+      "tagNumber": 23
     },
     "channel": {
       "title": "Experience channel",
       "description": "Experience channel related to the ExperienceEvent.",
       "$ref": "../datatypes/channels/channel.schema.json",
       "meta:xdmField": "xdm:channel",
-      "tagNumber": 23
+      "tagNumber": 24
     },
     "productListItems": {
       "title": "Product list items",
@@ -1631,42 +1640,42 @@
         "tagNumber": 1
       },
       "meta:xdmField": "xdm:productListItems",
-      "tagNumber": 24
+      "tagNumber": 25
     },
     "commerce": {
       "title": "Commerce",
       "$ref": "../datatypes/marketing/commerce.schema.json",
       "description": "Commerce specific data related to this event.",
       "meta:xdmField": "xdm:commerce",
-      "tagNumber": 25
+      "tagNumber": 26
     },
     "placeContext": {
       "title": "Place context",
       "$ref": "../datatypes/placecontext.schema.json",
       "description": "The transient circumstances related to the observation. Examples include locale specific information such as weather, local time, traffic, day of the week, workday vs. holiday, and working hours.",
       "meta:xdmField": "xdm:placeContext",
-      "tagNumber": 26
+      "tagNumber": 27
     },
     "marketing": {
       "title": "Marketing",
       "$ref": "../datatypes/marketing/marketing.schema.json",
       "description": "The information related to marketing activities that are active with the touchpoint.",
       "meta:xdmField": "xdm:marketing",
-      "tagNumber": 27
+      "tagNumber": 28
     },
     "media": {
       "title": "Media",
       "$ref": "../datatypes/media/media.schema.json",
       "description": "Media activity information related to the experience event.",
       "meta:xdmField": "xdm:media",
-      "tagNumber": 28
+      "tagNumber": 29
     },
     "segmentMembership": {
       "title": "Segment Membership Map",
       "type": "object",
       "meta:xdmType": "map",
       "meta:xdmField": "xdm:segmentMembership",
-      "tagNumber": 30,
+      "tagNumber": 31,
       "properties": {
         "mapObj": {
           "title": "Segment Membership per Namespace",
@@ -1687,7 +1696,7 @@
       "$ref": "../datatypes/data/datasource.schema.json",
       "description": "Globally unique identification of a data source.",
       "meta:xdmField": "xdm:dataSource",
-      "tagNumber": 31
+      "tagNumber": 32
     },
     "receivedTimestamp": {
       "title": "Received time stamp",
@@ -1696,7 +1705,7 @@
       "description": "The time at which this interaction was received by a server.",
       "meta:xdmType": "date-time",
       "meta:xdmField": "xdm:receivedTimestamp",
-      "tagNumber": 32
+      "tagNumber": 33
     },
     "fileTransfer": {
       "type": "object",
@@ -1718,14 +1727,14 @@
         }
       },
       "meta:xdmField": "xdm:fileTransfer",
-      "tagNumber": 33
+      "tagNumber": 34
     },
     "implementationDetails": {
       "title": "Implementation details",
       "$ref": "../datatypes/industry-verticals/implementationdetails.schema.json",
       "description": "The details of the software used to collect the ExperienceEvent.",
       "meta:xdmField": "xdm:implementationDetails",
-      "tagNumber": 34
+      "tagNumber": 35
     },
     "siteKnowledge": {
       "type": "object",
@@ -1771,7 +1780,7 @@
         }
       },
       "meta:xdmField": "xdm:siteKnowledge",
-      "tagNumber": 35
+      "tagNumber": 36
     },
     "offers ": {
       "type": "object",
@@ -1815,7 +1824,7 @@
         }
       },
       "meta:xdmField": "xdm:offers ",
-      "tagNumber": 36
+      "tagNumber": 37
     },
     "consentStrings": {
       "title": "Identity level consent information",
@@ -1826,7 +1835,7 @@
         "tagNumber": 1
       },
       "meta:xdmField": "xdm:consentStrings",
-      "tagNumber": 37
+      "tagNumber": 38
     },
     "profileStitch": {
       "title": "Profile stitch",
@@ -1838,7 +1847,7 @@
         "tagNumber": 1
       },
       "meta:xdmField": "xdm:profileStitch",
-      "tagNumber": 38
+      "tagNumber": 39
     },
     "pushNotificationTracking": {
       "title": "push notification tracking details",
@@ -1890,7 +1899,7 @@
         }
       },
       "meta:xdmField": "xdm:pushNotificationTracking",
-      "tagNumber": 39
+      "tagNumber": 40
     },
     "quotes": {
       "type": "object",
@@ -1936,7 +1945,7 @@
         }
       },
       "meta:xdmField": "xdm:quotes",
-      "tagNumber": 40
+      "tagNumber": 41
     },
     "servicePaymentDetails": {
       "type": "object",
@@ -1951,7 +1960,7 @@
         }
       },
       "meta:xdmField": "xdm:service-payment-details",
-      "tagNumber": 41
+      "tagNumber": 42
     },
     "socialMarketing ": {
       "type": "object",
@@ -2023,7 +2032,7 @@
         }
       },
       "meta:xdmField": "xdm:socialMarketing ",
-      "tagNumber": 42
+      "tagNumber": 43
     },
     "surveyResponse": {
       "type": "object",
@@ -2065,7 +2074,7 @@
         }
       },
       "meta:xdmField": "xdm:surveyResponse",
-      "tagNumber": 43
+      "tagNumber": 44
     },
     "claims": {
       "type": "object",
@@ -2139,7 +2148,7 @@
         }
       },
       "meta:xdmField": "xdm:claims",
-      "tagNumber": 44
+      "tagNumber": 45
     },
     "customerFeedback": {
       "type": "object",
@@ -2241,7 +2250,7 @@
         }
       },
       "meta:xdmField": "xdm:customerFeedback",
-      "tagNumber": 45
+      "tagNumber": 46
     },
     "deviceTradeInDetails": {
       "type": "object",
@@ -2272,7 +2281,7 @@
         }
       },
       "meta:xdmField": "xdm:deviceTradeInDetails",
-      "tagNumber": 46
+      "tagNumber": 47
     },
     "reservations": {
       "type": "object",
@@ -2284,7 +2293,7 @@
           "meta:xdmField": "xdm:diningReservations",
           "tagNumber": 1,
           "items": {
-            "$ref": "obj03598186474153042.schema.json"
+            "$ref": "obj2220619941956381.schema.json"
           }
         },
         "cancellation": {
@@ -2475,7 +2484,7 @@
           "meta:xdmField": "xdm:flightReservations",
           "tagNumber": 19,
           "items": {
-            "$ref": "obj2669863872069631.schema.json"
+            "$ref": "obj629381404282022.schema.json"
           }
         },
         "lodgingReservations": {
@@ -2484,7 +2493,7 @@
           "meta:xdmField": "xdm:lodgingReservations",
           "tagNumber": 20,
           "items": {
-            "$ref": "obj5522834956890883.schema.json"
+            "$ref": "obj8644495329553019.schema.json"
           }
         },
         "vehicleReservations": {
@@ -2493,12 +2502,12 @@
           "meta:xdmField": "xdm:vehicleReservations",
           "tagNumber": 21,
           "items": {
-            "$ref": "obj3687163104170732.schema.json"
+            "$ref": "obj8869354274897774.schema.json"
           }
         }
       },
       "meta:xdmField": "xdm:reservations",
-      "tagNumber": 48
+      "tagNumber": 49
     },
     "prescription": {
       "type": "object",
@@ -2545,7 +2554,7 @@
         }
       },
       "meta:xdmField": "xdm:prescription",
-      "tagNumber": 49
+      "tagNumber": 50
     },
     "reservationSearch": {
       "type": "object",
@@ -2625,7 +2634,7 @@
         }
       },
       "meta:xdmField": "xdm:reservationSearch",
-      "tagNumber": 50
+      "tagNumber": 51
     },
     "upgrades": {
       "type": "object",
@@ -2652,7 +2661,7 @@
         }
       },
       "meta:xdmField": "xdm:upgrades",
-      "tagNumber": 51
+      "tagNumber": 52
     },
     "upsells": {
       "type": "object",
@@ -2679,7 +2688,7 @@
         }
       },
       "meta:xdmField": "xdm:upsells",
-      "tagNumber": 52
+      "tagNumber": 53
     }
   },
   "meta:xdmId": "https://ns.adobe.com/xdm/context/experienceevent-generated",
