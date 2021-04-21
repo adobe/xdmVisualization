@@ -13,6 +13,10 @@
     "stable",
     "deprecated"
   ],
+  "meta:createdDate": [
+    "2020-08-10",
+    "2020-09-09"
+  ],
   "properties": {
     "_id": {
       "title": "Identifier",
@@ -84,7 +88,7 @@
       "meta:xdmField": "xdm:opportunityComponents",
       "tagNumber": 9,
       "items": {
-        "$ref": "obj15896019456558852.schema.json"
+        "$ref": "obj6262347461946716.schema.json"
       }
     },
     "campaignID": {

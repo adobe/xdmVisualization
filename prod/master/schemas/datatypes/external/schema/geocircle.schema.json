@@ -5,6 +5,7 @@
   "type": "object",
   "description": "A circular region of a particular radius centered on a GeoCoordinate. Based on [schema.org](http://schema.org/GeoCircle)",
   "meta:status": "stable",
+  "meta:createdDate": "2020-08-10",
   "meta:xdmType": "object",
   "properties": {
     "_id": {

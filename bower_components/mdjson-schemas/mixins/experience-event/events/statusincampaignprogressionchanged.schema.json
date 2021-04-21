@@ -7,6 +7,7 @@
   "meta:conditionalValue": "leadOperation.statusInCampaignProgressionChanged",
   "description": "Use to capture details when a lead's status in a campaign changes.",
   "meta:status": "experimental",
+  "meta:createdDate": "2021-01-14",
   "meta:xdmType": "object",
   "properties": {
     "leadOperation": {

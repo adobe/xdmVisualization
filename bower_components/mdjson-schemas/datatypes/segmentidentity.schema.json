@@ -5,6 +5,7 @@
   "type": "object",
   "description": "Segment identity is used to clearly distinguish segments from multiple sources. Segment identity is established by an segment identity provider, which itself is referenced in the `namespace` attribute. Within each `namespace`, the segment identity is unique.",
   "meta:status": "stable",
+  "meta:createdDate": "2020-08-10",
   "meta:xdmType": "object",
   "properties": {
     "_id": {

@@ -6,6 +6,7 @@
   "meta:extensible": true,
   "description": "Transactions capture when non-order transactions occur, such as balance transfers or applied payments.",
   "meta:status": "stable",
+  "meta:createdDate": "2021-02-19",
   "meta:xdmType": "object",
   "properties": {
     "transactionAmount": {

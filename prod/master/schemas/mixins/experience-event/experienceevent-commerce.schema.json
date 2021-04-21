@@ -12,6 +12,7 @@
   },
   "description": "Commerce data such as product information (SKU, name, quantity), and standard cart operations (order, checkout, abandon).",
   "meta:status": "stable",
+  "meta:createdDate": "2020-08-10",
   "meta:xdmType": "object",
   "properties": {
     "productListItems": {

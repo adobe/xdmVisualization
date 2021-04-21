@@ -8,6 +8,10 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:status": "stable",
+  "meta:createdDate": [
+    "2020-08-10",
+    "2021-02-19"
+  ],
   "meta:auditable": true,
   "auditable": true,
   "properties": {
@@ -94,7 +98,7 @@
       "meta:xdmField": "xdm:edges",
       "tagNumber": 7,
       "items": {
-        "$ref": "obj12374337198135721.schema.json"
+        "$ref": "obj7188573866087078.schema.json"
       }
     },
     "nodes": {
@@ -105,7 +109,7 @@
       "meta:xdmField": "xdm:nodes",
       "tagNumber": 8,
       "items": {
-        "$ref": "obj974102403347348.schema.json"
+        "$ref": "obj11527990305752955.schema.json"
       }
     },
     "graphId": {

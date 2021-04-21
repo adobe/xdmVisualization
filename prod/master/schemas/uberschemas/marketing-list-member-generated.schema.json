@@ -12,6 +12,10 @@
     "stable",
     "deprecated"
   ],
+  "meta:createdDate": [
+    "2020-08-10",
+    "2020-09-14"
+  ],
   "auditable": true,
   "properties": {
     "_id": {
@@ -60,7 +64,7 @@
       "meta:xdmField": "xdm:marketingListMemberComponents",
       "tagNumber": 6,
       "items": {
-        "$ref": "obj9363644493782999.schema.json"
+        "$ref": "obj85686137146219.schema.json"
       }
     }
   },

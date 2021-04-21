@@ -12,6 +12,7 @@
   },
   "description": "Environment details such as device details, browser info, local time, and other geographical information.",
   "meta:status": "stable",
+  "meta:createdDate": "2020-08-10",
   "meta:xdmType": "object",
   "properties": {
     "environment": {

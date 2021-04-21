@@ -5,6 +5,7 @@
   "type": "object",
   "description": "Describes user communication preferences by channel. For each channel individually, which is a property of this object, a user's preference such as opt-in, opt-out, or pending can be recorded. In addition, a global override opt-out is possible. Each property of this schema must be a valid and known URI for an XDM Channel.",
   "meta:status": "stable",
+  "meta:createdDate": "2020-08-10",
   "meta:xdmType": "object",
   "properties": {
     "_channels": {

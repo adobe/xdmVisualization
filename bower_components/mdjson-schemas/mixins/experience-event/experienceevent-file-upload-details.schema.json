@@ -22,6 +22,7 @@
   },
   "description": "File upload details such as file name, size, and transfer status.",
   "meta:status": "stable",
+  "meta:createdDate": "2021-01-13",
   "meta:xdmType": "object",
   "properties": {
     "fileTransfer": {

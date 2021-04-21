@@ -8,6 +8,7 @@
   "meta:abstract": true,
   "meta:status": "stable",
   "meta:xdmType": "object",
+  "meta:createdDate": "2020-08-10",
   "meta:tags": {
     "industry": [
       "all"
@@ -45,7 +46,7 @@
                   "meta:xdmType": "array",
                   "tagNumber": 1,
                   "items": {
-                    "$ref": "obj6187447517807299.schema.json"
+                    "$ref": "obj4031285720123372.schema.json"
                   }
                 }
               }

@@ -13,6 +13,11 @@
     "stable",
     "deprecated"
   ],
+  "meta:createdDate": [
+    "2020-08-18",
+    "2020-08-10",
+    "2020-09-29"
+  ],
   "properties": {
     "_id": {
       "title": "Identifier",
@@ -60,7 +65,7 @@
       "meta:xdmField": "xdm:campaignMemberComponents",
       "tagNumber": 6,
       "items": {
-        "$ref": "obj27518511519903655.schema.json"
+        "$ref": "obj02320321832978056.schema.json"
       }
     },
     "memberStatus": {

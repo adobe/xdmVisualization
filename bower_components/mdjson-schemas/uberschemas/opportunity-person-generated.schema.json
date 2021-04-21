@@ -13,6 +13,10 @@
     "stable",
     "deprecated"
   ],
+  "meta:createdDate": [
+    "2020-08-10",
+    "2020-09-09"
+  ],
   "properties": {
     "_id": {
       "title": "Identifier",
@@ -76,7 +80,7 @@
       "meta:xdmField": "xdm:opportunityPersonComponents",
       "tagNumber": 8,
       "items": {
-        "$ref": "obj2777909636954914.schema.json"
+        "$ref": "obj9925766610869249.schema.json"
       }
     }
   },

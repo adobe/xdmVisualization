@@ -41,6 +41,11 @@
     }
   ],
   "meta:status": "stable",
+  "meta:createdDate": [
+    "2020-08-10",
+    "2021-02-19",
+    "2020-11-04"
+  ],
   "properties": {
     "repositoryCreatedBy": {
       "title": "Created by user identifier",
@@ -1094,7 +1099,7 @@
           "meta:xdmField": "xdm:pointsExpiration",
           "tagNumber": 4,
           "items": {
-            "$ref": "obj14745954437267095.schema.json"
+            "$ref": "obj47139786843910647.schema.json"
           }
         },
         "pointsRedeemed": {

@@ -5,6 +5,7 @@
   "type": "object",
   "description": "Commonly used organizational attributes for a B2B account such as number of employees, market segment, industry, rating, tickersymbol etc.",
   "meta:status": "experimental",
+  "meta:createdDate": "2021-02-19",
   "meta:xdmType": "object",
   "properties": {
     "organizationType": {

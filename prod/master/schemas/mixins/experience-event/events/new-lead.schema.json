@@ -7,6 +7,7 @@
   "meta:conditionalValue": "leadOperation.newLead",
   "description": "Use to record the creation and details of a new marketing lead.",
   "meta:status": "experimental",
+  "meta:createdDate": "2021-02-19",
   "meta:xdmType": "object",
   "properties": {
     "leadOperation": {
@@ -30,7 +31,7 @@
             "formName": {
               "title": "Form Name",
               "type": "string",
-              "description": "Friendly name to form.",
+              "description": "Name of the form.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:formName",
               "tagNumber": 2

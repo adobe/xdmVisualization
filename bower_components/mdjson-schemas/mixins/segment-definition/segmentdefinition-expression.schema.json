@@ -7,6 +7,7 @@
   "meta:abstract": true,
   "description": "Segment expression data such as expression type, mime type, and expression value.",
   "meta:status": "stable",
+  "meta:createdDate": "2020-08-10",
   "meta:xdmType": "object",
   "properties": {
     "segmentExpression": {

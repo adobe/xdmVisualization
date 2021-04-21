@@ -19,6 +19,7 @@
   },
   "description": "Upgrade details such as offer name, type, and ID, as well as transaction details such as type and amount.",
   "meta:status": "stable",
+  "meta:createdDate": "2021-02-02",
   "meta:xdmType": "object",
   "properties": {
     "upgrades": {

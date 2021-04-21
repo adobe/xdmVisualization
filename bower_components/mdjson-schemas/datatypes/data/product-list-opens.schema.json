@@ -6,6 +6,7 @@
   "meta:extensible": true,
   "description": "The commerce metric `product-list-opens` describes how many new product lists have been created. The most common case is the creation of a new shopping cart by putting the first item into the shopping cart.",
   "meta:status": "stable",
+  "meta:createdDate": "2020-08-10",
   "meta:xdmType": "object",
   "properties": {
     "_id": {

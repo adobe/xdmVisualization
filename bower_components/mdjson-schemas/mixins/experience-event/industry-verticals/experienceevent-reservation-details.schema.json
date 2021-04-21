@@ -12,6 +12,7 @@
   },
   "description": "Reservation details such as length, modification, refundable status, and number of rooms.",
   "meta:status": "stable",
+  "meta:createdDate": "2021-02-10",
   "meta:xdmType": "object",
   "properties": {
     "reservations": {

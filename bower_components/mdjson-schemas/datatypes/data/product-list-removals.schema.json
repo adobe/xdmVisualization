@@ -6,6 +6,7 @@
   "meta:extensible": true,
   "description": "The commerce metric `productListRemovals` describes the number of times a product has been removed from a product list. The most common use case is the removal of a product from the shopping cart.",
   "meta:status": "stable",
+  "meta:createdDate": "2020-08-10",
   "meta:xdmType": "object",
   "properties": {
     "_id": {

@@ -5,6 +5,7 @@
   "type": "object",
   "description": "The geographic shape of a place. Based on [schema.org](http://schema.org/GeoShape).",
   "meta:status": "stable",
+  "meta:createdDate": "2020-08-10",
   "meta:xdmType": "object",
   "properties": {
     "_id": {

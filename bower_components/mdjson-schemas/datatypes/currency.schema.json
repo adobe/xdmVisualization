@@ -6,6 +6,7 @@
   "meta:extensible": true,
   "description": "This datatype is used where ever you want to store any kind of amount in combination of currency code.",
   "meta:status": "stable",
+  "meta:createdDate": "2020-09-29",
   "meta:xdmType": "object",
   "properties": {
     "amount": {

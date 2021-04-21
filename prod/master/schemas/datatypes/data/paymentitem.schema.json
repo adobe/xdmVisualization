@@ -5,6 +5,7 @@
   "type": "object",
   "description": "A payment associated with an order that defines the type of payment, the amount and the associated currency.",
   "meta:status": "stable",
+  "meta:createdDate": "2020-08-10",
   "meta:xdmType": "object",
   "properties": {
     "transactionID": {

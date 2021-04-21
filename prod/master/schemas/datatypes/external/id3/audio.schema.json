@@ -5,6 +5,7 @@
   "type": "object",
   "description": "Audio metadata based on [ID3 V2.4](https://id3.org/id3v2.4.0-frames)",
   "meta:status": "stable",
+  "meta:createdDate": "2020-08-10",
   "meta:xdmType": "object",
   "properties": {
     "_id3": {

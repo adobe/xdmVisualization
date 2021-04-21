@@ -7,6 +7,7 @@
   "meta:abstract": true,
   "description": "This Mixin is used to capture B2B Person specific relationship attributes and other attributes which are required for person segmentation.",
   "meta:status": "experimental",
+  "meta:createdDate": "2020-09-09",
   "meta:xdmType": "object",
   "properties": {
     "personComponents": {
@@ -15,7 +16,7 @@
       "meta:xdmField": "xdm:personComponents",
       "tagNumber": 1,
       "items": {
-        "$ref": "obj3982719164008113.schema.json"
+        "$ref": "obj49928593354842343.schema.json"
       }
     }
   },

@@ -6,6 +6,10 @@
   "title": "Geo",
   "description": "The geographic related data where an event was observed.",
   "meta:status": "stable",
+  "meta:createdDate": [
+    "2021-02-19",
+    "2020-08-10"
+  ],
   "meta:xdmType": "object",
   "properties": {
     "_id": {

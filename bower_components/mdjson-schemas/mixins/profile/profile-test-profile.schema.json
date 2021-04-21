@@ -7,6 +7,7 @@
   "meta:abstract": true,
   "description": "Use to indicate that the profile record is in use for testing, verification, and should not be automatically included in normal operations.",
   "meta:status": "stable",
+  "meta:createdDate": "2020-08-10",
   "meta:xdmType": "object",
   "properties": {
     "testProfile": {

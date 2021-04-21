@@ -17,6 +17,7 @@
   },
   "description": "Loyalty details such as ID, points, join date, program, and status. ",
   "meta:status": "stable",
+  "meta:createdDate": "2021-02-19",
   "meta:xdmType": "object",
   "properties": {
     "loyalty": {
@@ -60,7 +61,7 @@
           "meta:xdmField": "xdm:pointsExpiration",
           "tagNumber": 4,
           "items": {
-            "$ref": "obj4305813453680227.schema.json"
+            "$ref": "obj873464331811991.schema.json"
           }
         },
         "pointsRedeemed": {

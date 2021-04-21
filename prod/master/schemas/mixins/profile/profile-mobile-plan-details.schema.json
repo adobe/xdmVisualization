@@ -12,6 +12,7 @@
   },
   "description": "Mobile plan details including number of lines, data rates, cost, etc.",
   "meta:status": "experimental",
+  "meta:createdDate": "2021-04-07",
   "meta:xdmType": "object",
   "properties": {
     "mobilePlanDetails": {
@@ -34,7 +35,7 @@
           "meta:xdmField": "xdm:devices",
           "tagNumber": 2,
           "items": {
-            "$ref": "obj8310324994113183.schema.json"
+            "$ref": "obj3390020087880272.schema.json"
           }
         }
       },

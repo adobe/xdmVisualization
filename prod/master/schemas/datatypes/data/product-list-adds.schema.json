@@ -6,6 +6,7 @@
   "meta:extensible": true,
   "description": "The commerce metric `productListAdds` describes the number of times a product has been added to a product list. The most common case is adding an item to the shopping cart.",
   "meta:status": "stable",
+  "meta:createdDate": "2020-08-10",
   "meta:xdmType": "object",
   "properties": {
     "_id": {

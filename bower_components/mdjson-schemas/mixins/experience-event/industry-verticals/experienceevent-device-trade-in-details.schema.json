@@ -12,6 +12,7 @@
   },
   "description": "Device trade-in details including trade-in value, original device ID, and new device ID.",
   "meta:status": "experimental",
+  "meta:createdDate": "2021-02-02",
   "meta:xdmType": "object",
   "properties": {
     "deviceTradeInDetails": {

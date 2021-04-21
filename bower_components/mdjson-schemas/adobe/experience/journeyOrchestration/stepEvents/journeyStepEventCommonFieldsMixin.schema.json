@@ -26,7 +26,7 @@
                   "journeyOrchestration": {
                     "entrance": {
                       "title": "entrance",
-                      "description": "Indicate if the user has entered the journey. If not present, assuming that the value is false.",
+                      "description": "True if the step event was an entrance event for a profile(s). E.g: A step event corresponding to the first event trigger for a unitary journey and scheduled/business event trigger for a batch flow will have this field set to true.",
                       "type": "boolean",
                       "meta:xdmType": "boolean",
                       "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/entrance",
@@ -34,7 +34,7 @@
                     },
                     "reentrance": {
                       "title": "reentrance",
-                      "description": "Indicate if the user has reentered the journey with the same instance. If not present, assuming that the value is false.",
+                      "description": "Set to true of the initial step event for this journey entrance has been triggered by a profile that has already finished one journey instance and is re-entering new journey instance.",
                       "type": "boolean",
                       "meta:xdmType": "boolean",
                       "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/reentrance",
@@ -42,7 +42,7 @@
                     },
                     "instanceEnded": {
                       "title": "instanceEnded",
-                      "description": "Indicate if the instance is ended (sucessfully or not).",
+                      "description": "True if the current step led to ending an instance of the journey, that is the last step in a journey for a given profile was executed successfully.",
                       "type": "boolean",
                       "meta:xdmType": "boolean",
                       "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/instanceEnded",
@@ -50,7 +50,7 @@
                     },
                     "eventID": {
                       "title": "eventID",
-                      "description": "Event ID in processing, for the step processing.",
+                      "description": "If the step was triggered by an external event, this field will contain the eventID used by journey runtime to identify the event.",
                       "type": "string",
                       "meta:xdmType": "string",
                       "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/eventID",
@@ -58,7 +58,7 @@
                     },
                     "nodeID": {
                       "title": "nodeID",
-                      "description": "client node ID.",
+                      "description": "GUID of the node as generated on the journey canvas corresponding to this step(multiple steps can map to the same node).",
                       "type": "string",
                       "meta:xdmType": "string",
                       "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/nodeID",
@@ -66,7 +66,7 @@
                     },
                     "stepID": {
                       "title": "stepID",
-                      "description": "Unique id of the step that is currently in processing.",
+                      "description": "GUID corresponding to each step generated. Unique across all steps.",
                       "type": "string",
                       "meta:xdmType": "string",
                       "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/stepID",
@@ -74,7 +74,7 @@
                     },
                     "stepName": {
                       "title": "stepName",
-                      "description": "Name of the step that is currently in processing.",
+                      "description": "Name of the step as represented internally in Journey Runtime.",
                       "type": "string",
                       "meta:xdmType": "string",
                       "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/stepName",
@@ -82,7 +82,7 @@
                     },
                     "stepType": {
                       "title": "stepType",
-                      "description": "Type of the step.",
+                      "description": "Defines different types of steps as represented internally by Journey Runtime. Possible Values: ActionStep(Default Step Type),ConditionalRouterStep(If step involved evaluating a condition),SegmentTriggerReadStartStep(If the current step started the segmentTriggeredRead).",
                       "type": "string",
                       "meta:xdmType": "string",
                       "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/stepType",
@@ -90,7 +90,7 @@
                     },
                     "stepStatus": {
                       "title": "stepStatus",
-                      "description": "Status of the journey step, representing in which shape the step is, when its processing has been done.",
+                      "description": "Gives the current state of the step that has finished executing. Possible Values: Transitions(Next step will occur on an event transition),EndStep(The last step in this journey instance has executed),Error(This step encountered an error condition, ending the current journey instance), TimedOut(The current step has ended because of a timeout on a fetch or on an action.)",
                       "type": "string",
                       "meta:xdmType": "string",
                       "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/stepStatus",
@@ -98,7 +98,7 @@
                     },
                     "journeyID": {
                       "title": "journeyID",
-                      "description": "ID of the journey.",
+                      "description": "GUID generated to uniquely identify an authored journey inside the JO Runtime.",
                       "type": "string",
                       "meta:xdmType": "string",
                       "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/journeyID",
@@ -106,7 +106,7 @@
                     },
                     "journeyVersionID": {
                       "title": "journeyVersionID",
-                      "description": "ID of the journey version. This id represents the identity reference to the journey, in case of the journeyStepEvent.",
+                      "description": "GUID generated to uniquely identify a journey on the authored UI. A new journey version ID is generated if a journey is duplicated or its new version is published.",
                       "type": "string",
                       "meta:xdmType": "string",
                       "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/journeyVersionID",
@@ -114,7 +114,7 @@
                     },
                     "journeyVersionName": {
                       "title": "journeyVersionName",
-                      "description": "Name of the journey version.",
+                      "description": "Name of the journey as shown on the authoring UI.",
                       "type": "string",
                       "meta:xdmType": "string",
                       "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/journeyVersionName",
@@ -122,7 +122,7 @@
                     },
                     "journeyVersion": {
                       "title": "journeyVersion",
-                      "description": "Version of the journey version.",
+                      "description": "The authored version of the journey. E.g: 1.0, 2.0.",
                       "type": "string",
                       "meta:xdmType": "string",
                       "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/journeyVersion",
@@ -130,7 +130,7 @@
                     },
                     "instanceID": {
                       "title": "instanceID",
-                      "description": "Internal ID of the journey instance.",
+                      "description": "GUID for each instance of the journey. For each profile entering a journey, a new instance is created.",
                       "type": "string",
                       "meta:xdmType": "string",
                       "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/instanceID",
@@ -138,7 +138,7 @@
                     },
                     "externalKey": {
                       "title": "externalKey",
-                      "description": "External key extracted from the event to process it.",
+                      "description": "Contains the profileID of the profile the current unitary journey instance is executing for. This field was added to support ID’s other than AEP Profile.",
                       "type": "string",
                       "meta:xdmType": "string",
                       "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/externalKey",
@@ -146,7 +146,7 @@
                     },
                     "parentStepID": {
                       "title": "parentStepID",
-                      "description": "Step ID of the parent of the current processed step in the instance.",
+                      "description": "stepID of the previous step in the current journey instance.",
                       "type": "string",
                       "meta:xdmType": "string",
                       "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/parentStepID",
@@ -154,7 +154,7 @@
                     },
                     "parentStepName": {
                       "title": "parentStepName",
-                      "description": "Step name of the parent of the current step.",
+                      "description": "stepName of the previous step in the current journey instance.",
                       "type": "string",
                       "meta:xdmType": "string",
                       "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/parentStepName",
@@ -162,7 +162,7 @@
                     },
                     "parentTransitionID": {
                       "title": "parentTransitionID",
-                      "description": "Id of the transition which has brought the instance to the processed step.",
+                      "description": "Contains the transitionID of the transition that led to the current step. Set to “on-error” if the transition to the current step was because of an error.",
                       "type": "string",
                       "meta:xdmType": "string",
                       "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/parentTransitionID",
@@ -178,7 +178,7 @@
                     },
                     "inTest": {
                       "title": "inTest",
-                      "description": "Whether this journey is in test mode or not.",
+                      "description": "True if the journey instance was executed in test mode. ",
                       "type": "boolean",
                       "meta:xdmType": "boolean",
                       "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/inTest",
@@ -186,7 +186,7 @@
                     },
                     "processingTime": {
                       "title": "processingTime",
-                      "description": "Total time in milliseconds from the instance step entrance to the end of the processing.",
+                      "description": "Time(ms) taken to complete the processing of this step.",
                       "type": "integer",
                       "meta:xdmType": "int",
                       "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/processingTime",
@@ -194,7 +194,7 @@
                     },
                     "instanceType": {
                       "title": "instanceType",
-                      "description": "indicate the instance type, if it is batch or unitary.",
+                      "description": "Specifies if the journey instance corresponds Unitary(a single profile) or Batch(a journey instance executes a batch of profiles, E.g: Read Segment Journey).",
                       "type": "string",
                       "meta:xdmType": "string",
                       "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/instanceType",
@@ -202,23 +202,15 @@
                     },
                     "batchRecurrenceIndex": {
                       "title": "batchRecurrenceIndex",
-                      "description": "Index of the recurrence if the journey is batch and recurring (first run has batchRecurrenceIndex = 1).",
+                      "description": "A counter that increases by 1 each time a batch journey is invoked. Likewise in case of business events, it will show the E.g: If a freshly authored scheduled journey runs at 8.00am,then batchRecurrenceIndex=1 and then at 10.00am, then batchRecurrenceIndex=2.",
                       "type": "integer",
                       "meta:xdmType": "int",
                       "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/batchRecurrenceIndex",
                       "tagNumber": 23
                     },
-                    "batchToUnitary": {
-                      "title": "batchToUnitary",
-                      "description": "Indicates if this unitary instance has been triggered from a batch instance.",
-                      "type": "boolean",
-                      "meta:xdmType": "boolean",
-                      "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/batchToUnitary",
-                      "tagNumber": 24
-                    },
                     "batchExternalKey": {
                       "title": "batchExternalKey",
-                      "description": " External Key for batch event.",
+                      "description": "Journey Version ID in case of scheduled, business key in case of the business event journey (productId in case of a journey triggered by a business event). This field is only available in the context of the unitary step.",
                       "type": "string",
                       "meta:xdmType": "string",
                       "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/batchExternalKey",
@@ -226,23 +218,15 @@
                     },
                     "batchInstanceID": {
                       "title": "batchInstanceID",
-                      "description": " this is the batch instance ID.",
+                      "description": "GUID created at invocation of each new batch instance for a journey. E.g: If a scheduled journey runs at 8.00am and 10.00am, there will be two separate different batchInstanceID’s.",
                       "type": "string",
                       "meta:xdmType": "string",
                       "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/batchInstanceID",
                       "tagNumber": 26
                     },
-                    "batchUnitaryBranchID": {
-                      "title": "batchUnitaryBranchID",
-                      "description": "If the instance has been triggered from a batch instance, unitary branch ID.",
-                      "type": "string",
-                      "meta:xdmType": "string",
-                      "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/batchUnitaryBranchID",
-                      "tagNumber": 27
-                    },
                     "nodeName": {
                       "title": "nodeName",
-                      "description": "Name of the Journey Step Node being processed.",
+                      "description": "Name of the node corresponding to this step as visible on the Canvas. ",
                       "type": "string",
                       "meta:xdmType": "string",
                       "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/nodeName",
@@ -250,7 +234,7 @@
                     },
                     "journeyNodeProcessed": {
                       "title": "journeyNodeProcessed",
-                      "description": "Field describes if the journeyNode is processed.",
+                      "description": "A node authored on the journey canvas can be expanded to multiple nodes inside the JO Runtime. This field is set to True when all the steps related to a journey node on canvas have been successfully processed inside the JO Runtime.",
                       "type": "boolean",
                       "meta:xdmType": "boolean",
                       "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/journeyNodeProcessed",
@@ -258,7 +242,7 @@
                     },
                     "eventProcessed": {
                       "title": "eventProcessed",
-                      "description": "Boolean field describes if the event has been Processed. ",
+                      "description": "Set to true when the step event corresponding to the external event has been processed fully. The presence of this field denotes that the event node in the journey canvas has been processed fully.",
                       "type": "boolean",
                       "meta:xdmType": "boolean",
                       "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/eventProcessed",
@@ -266,7 +250,7 @@
                     },
                     "originJumpJourneyID": {
                       "title": "originJumpJourneyID",
-                      "description": "Journey ID of the initial journey in a journey jump scenario. ",
+                      "description": "JourneyID of the first journey instance that had a jump action that led to the current journey instance. Only present if this journey was triggered by a journey jump action.",
                       "type": "string",
                       "meta:xdmType": "string",
                       "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/originJumpJourneyID",
@@ -274,7 +258,7 @@
                     },
                     "originJumpJourneyVersionID": {
                       "title": "originJumpJourneyVersionID",
-                      "description": "Journey version ID of the initial journey in a journey jump scenario. ",
+                      "description": "JourneyVersionID of the first journey instance that had a jump action that led to the current journey instance. Only present if this journey was triggered by a journey jump action.",
                       "type": "string",
                       "meta:xdmType": "string",
                       "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/originJumpJourneyVersionID",
@@ -282,7 +266,7 @@
                     },
                     "originJumpJourneyInstanceID": {
                       "title": "originJumpJourneyInstanceID",
-                      "description": "Journey instance ID of the initial journey in a journey jump scenario. ",
+                      "description": "JourneyInstanceID of the first journey instance that had a jump action that led to the current journey instance. Only present if this journey was triggered by a journey jump action.",
                       "type": "string",
                       "meta:xdmType": "string",
                       "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/originJumpJourneyInstanceID",
@@ -290,7 +274,7 @@
                     },
                     "previousJumpJourneyID": {
                       "title": "previousJumpJourneyID",
-                      "description": "Journey ID of the previous journey in a journey jump scenario. ",
+                      "description": "JourneyID of the previous journey instance that had the jump action that led to the current journey instance. Only present if this journey was triggered by a journey jump action.",
                       "type": "string",
                       "meta:xdmType": "string",
                       "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/previousJumpJourneyID",
@@ -298,7 +282,7 @@
                     },
                     "previousJumpJourneyVersionID": {
                       "title": "previousJumpJourneyVersionID",
-                      "description": "Journey version ID of the previous journey in a journey jump scenario. ",
+                      "description": "JourneyVersionID of the previous journey instance that had the jump action that led to the current journey instance. Only present if this journey was triggered by a journey jump action.",
                       "type": "string",
                       "meta:xdmType": "string",
                       "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/previousJumpJourneyVersionID",
@@ -306,7 +290,7 @@
                     },
                     "previousJumpJourneyInstanceID": {
                       "title": "previousJumpJourneyInstanceID",
-                      "description": "Journey instance ID of the previous journey in a journey jump scenario. ",
+                      "description": "JourneyInstanceID of the previous journey instance that had the jump action that led to the current journey instance. Only present if this journey was triggered by a journey jump action.",
                       "type": "string",
                       "meta:xdmType": "string",
                       "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/previousJumpJourneyInstanceID",
@@ -314,7 +298,7 @@
                     },
                     "reactionActionID": {
                       "title": "reactionActionID",
-                      "description": "Message action ID referenced by the reaction in a journey. ",
+                      "description": "actionID of corresponding action to which the reaction occurred. Present if the current step is triggered as a result of a reaction.",
                       "type": "string",
                       "meta:xdmType": "string",
                       "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/reactionActionID",
@@ -322,7 +306,7 @@
                     },
                     "reactionChannel": {
                       "title": "reactionChannel",
-                      "description": "Message channel referenced by the reaction (email, push) in a journey. ",
+                      "description": "Channel of the corresponding reaction. E.g: Email, Push",
                       "type": "string",
                       "meta:xdmType": "string",
                       "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/reactionChannel",
@@ -330,7 +314,7 @@
                     },
                     "reactionInteractionType": {
                       "title": "reactionInteractionType",
-                      "description": "Message interaction type referenced by the reaction (click, open, sent, error...) in a journey. ",
+                      "description": "The user interaction that led to this reaction. E.g: Open, Click.",
                       "type": "string",
                       "meta:xdmType": "string",
                       "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/reactionInteractionType",
@@ -338,7 +322,7 @@
                     },
                     "parentTransitionType": {
                       "title": "parentTransitionType",
-                      "description": "Type of the transition which has brought the instance to the processed step.",
+                      "description": "Whether the transition to current step occurred because of an event, action or normal flow. Possible Values:Event Triggered(if an event trigger led to the current step),Condition Triggered (if a condition evaluation led to the current step),Basic(if the current step occurred normallly as the next step in the journey).",
                       "type": "string",
                       "meta:xdmType": "string",
                       "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/parentTransitionType",
@@ -346,7 +330,7 @@
                     },
                     "nodeType": {
                       "title": "nodeType",
-                      "description": "Type of the Journey Step Node being processed.",
+                      "description": "Type of the node as authored on the canvas. E.g: action, segmentTrigger, end. There is a sentinel node before the initial node of the authored journey for which nodeType=start.",
                       "type": "string",
                       "meta:xdmType": "string",
                       "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/nodeType",
@@ -354,7 +338,7 @@
                     },
                     "parentNodeID": {
                       "title": "parentNodeID",
-                      "description": "Node ID of the parent of the current processed node in the instance.",
+                      "description": "nodeID of the previous step in the current journey instance.",
                       "type": "string",
                       "meta:xdmType": "string",
                       "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/parentNodeID",
@@ -362,7 +346,7 @@
                     },
                     "parentNodeType": {
                       "title": "parentNodeType",
-                      "description": "Node Type of the parent of the current processed node in the instance.",
+                      "description": "nodeType of the previous step in the current journey instance.",
                       "type": "string",
                       "meta:xdmType": "string",
                       "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/parentNodeType",
@@ -370,7 +354,7 @@
                     },
                     "parentNodeName": {
                       "title": "parentNodeName",
-                      "description": "Node Name of the parent of the current processed node in the instance.",
+                      "description": "nodeName of the previous step in the current journey instance.",
                       "type": "string",
                       "meta:xdmType": "string",
                       "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/parentNodeName",
@@ -378,7 +362,7 @@
                     },
                     "isExternalEvent": {
                       "title": "isExternalEvent",
-                      "description": "Whether the Event being processed, is an external event or not.",
+                      "description": "Set to true when the event that triggered this step was external to JO.",
                       "type": "boolean",
                       "meta:xdmType": "boolean",
                       "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/isExternalEvent",
@@ -386,7 +370,7 @@
                     },
                     "eventName": {
                       "title": "eventName",
-                      "description": "Event Name in processing, for the step processing.",
+                      "description": "If the step was triggered by an external event, this field will contain the name of the event authored on Journey Canvas.",
                       "type": "string",
                       "meta:xdmType": "string",
                       "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/eventName",

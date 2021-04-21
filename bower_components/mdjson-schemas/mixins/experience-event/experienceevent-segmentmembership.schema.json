@@ -7,6 +7,7 @@
   "meta:abstract": true,
   "description": "Segment membership data such as which segments an individual belongs to, last qualification time, and membership valid until date.",
   "meta:status": "stable",
+  "meta:createdDate": "2020-08-10",
   "meta:xdmType": "object",
   "properties": {
     "segmentMembership": {

@@ -8,6 +8,7 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:status": "stable",
+  "meta:createdDate": "2020-08-10",
   "meta:xdmType": "object",
   "properties": {
     "nodes": {
@@ -18,7 +19,7 @@
       "meta:xdmField": "xdm:nodes",
       "tagNumber": 1,
       "items": {
-        "$ref": "obj49663930111227406.schema.json"
+        "$ref": "obj7882404568419095.schema.json"
       }
     }
   },

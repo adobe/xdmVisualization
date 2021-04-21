@@ -36,6 +36,12 @@
     }
   ],
   "meta:status": "stable",
+  "meta:createdDate": [
+    "2020-08-10",
+    "2021-02-19",
+    "2020-11-04",
+    "2021-03-23"
+  ],
   "properties": {
     "repositoryCreatedBy": {
       "title": "Created by user identifier",
@@ -1120,7 +1126,7 @@
           "meta:xdmField": "xdm:creditScores",
           "tagNumber": 3,
           "items": {
-            "$ref": "obj4221858169601236.schema.json"
+            "$ref": "obj14740942905004584.schema.json"
           }
         },
         "employmentStatus": {

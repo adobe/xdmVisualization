@@ -13,6 +13,10 @@
     "stable",
     "deprecated"
   ],
+  "meta:createdDate": [
+    "2020-09-29",
+    "2020-08-10"
+  ],
   "properties": {
     "extSourceSystemAudit": {
       "title": "External Source System Audit Properties",
@@ -68,7 +72,7 @@
       "meta:xdmField": "xdm:campaignComponents",
       "tagNumber": 7,
       "items": {
-        "$ref": "obj5716461285750205.schema.json"
+        "$ref": "obj10224913002934044.schema.json"
       }
     },
     "parentCampaignID": {

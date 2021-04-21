@@ -7,6 +7,7 @@
   "meta:conditionalValue": "directMarketing.emailDelivered",
   "description": "Use to capture details when an email is successfully delivered to a person.",
   "meta:status": "experimental",
+  "meta:createdDate": "2020-12-02",
   "meta:xdmType": "object",
   "properties": {
     "directMarketing": {
@@ -25,7 +26,7 @@
         "mailingName": {
           "title": "Mailing Name",
           "type": "string",
-          "description": "Friendly name of the email asset.",
+          "description": "Name of the email asset.",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:mailingName",
           "tagNumber": 2

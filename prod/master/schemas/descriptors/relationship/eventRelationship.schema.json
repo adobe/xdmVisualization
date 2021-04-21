@@ -7,6 +7,7 @@
   "type": "object",
   "description": "Used by the UPS system to assign the specific schema that will used for the timeSeriesEvents field which is part of the union view of a class. If not supplied, the system today will default to the unified ExperienceEvent.",
   "meta:status": "stable",
+  "meta:createdDate": "2020-08-10",
   "meta:xdmType": "object",
   "properties": {
     "_id": {

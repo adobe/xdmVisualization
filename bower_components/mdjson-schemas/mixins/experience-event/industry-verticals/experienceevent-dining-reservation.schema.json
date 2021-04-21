@@ -12,6 +12,7 @@
   },
   "description": "Collects all details specific to a dining reservation.",
   "meta:status": "stable",
+  "meta:createdDate": "2021-02-10",
   "meta:xdmType": "object",
   "properties": {
     "reservations": {
@@ -24,7 +25,7 @@
           "meta:xdmField": "xdm:diningReservations",
           "tagNumber": 1,
           "items": {
-            "$ref": "obj7736665205088147.schema.json"
+            "$ref": "obj7864611771241405.schema.json"
           }
         },
         "cancellation": {

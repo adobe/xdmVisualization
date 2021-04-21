@@ -7,6 +7,7 @@
   "type": "string",
   "description": "Allows to modify the \"title\" and \"description\" values of the core library schema fields. UI can use these to show a more friendly name for a standard field or to only show fields that have friendly names.",
   "meta:status": "stable",
+  "meta:createdDate": "2020-08-10",
   "meta:xdmType": "string",
   "properties": {
     "_id": {

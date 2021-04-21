@@ -6,6 +6,7 @@
   "meta:extensible": true,
   "description": "Mixin which defines a set a audit properties for extenal sources. It's strongly encouraged to use this mixin given the asynchronous nature of profile ingestion.",
   "meta:status": "stable",
+  "meta:createdDate": "2020-08-10",
   "meta:xdmType": "object",
   "properties": {
     "extSourceSystemAudit": {

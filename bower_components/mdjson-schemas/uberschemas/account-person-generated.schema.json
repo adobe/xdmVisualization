@@ -12,6 +12,10 @@
     "stable",
     "deprecated"
   ],
+  "meta:createdDate": [
+    "2020-08-10",
+    "2020-09-21"
+  ],
   "properties": {
     "_id": {
       "title": "Identifier",
@@ -122,7 +126,7 @@
       "meta:xdmField": "xdm:accountPersonComponents",
       "tagNumber": 13,
       "items": {
-        "$ref": "obj003607875504229474.schema.json"
+        "$ref": "obj40923637960473225.schema.json"
       }
     }
   },

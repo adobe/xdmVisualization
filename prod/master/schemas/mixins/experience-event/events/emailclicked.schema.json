@@ -7,6 +7,7 @@
   "meta:conditionalValue": "directMarketing.emailClicked",
   "description": "Use to capture details when a person clicks a link in a marketing email.",
   "meta:status": "experimental",
+  "meta:createdDate": "2021-02-19",
   "meta:xdmType": "object",
   "properties": {
     "directMarketing": {
@@ -136,14 +137,6 @@
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:linkID",
               "tagNumber": 1
-            },
-            "linkName": {
-              "title": "Link Name",
-              "type": "string",
-              "description": "Friendly name to link",
-              "meta:xdmType": "string",
-              "meta:xdmField": "xdm:linkName",
-              "tagNumber": 2
             }
           },
           "meta:xdmField": "xdm:webInteraction",

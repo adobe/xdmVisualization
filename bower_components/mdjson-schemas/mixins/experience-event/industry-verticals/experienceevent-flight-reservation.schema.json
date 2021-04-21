@@ -12,6 +12,7 @@
   },
   "description": "Collects all details specific to a flight reservation.",
   "meta:status": "stable",
+  "meta:createdDate": "2021-02-10",
   "meta:xdmType": "object",
   "properties": {
     "reservations": {
@@ -76,7 +77,7 @@
           "meta:xdmField": "xdm:flightReservations",
           "tagNumber": 1,
           "items": {
-            "$ref": "obj2883308592079943.schema.json"
+            "$ref": "obj9919033539355295.schema.json"
           }
         },
         "cancellation": {

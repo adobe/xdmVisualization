@@ -6,6 +6,7 @@
   "meta:extensible": true,
   "description": "Used for site comparisons, such as products, cards, rooms, flights, etc.",
   "meta:status": "stable",
+  "meta:createdDate": "2021-02-19",
   "meta:xdmType": "object",
   "properties": {
     "count": {
@@ -23,7 +24,7 @@
       "meta:xdmField": "xdm:items",
       "tagNumber": 2,
       "items": {
-        "$ref": "obj6441326988709748.schema.json"
+        "$ref": "obj9385161350038587.schema.json"
       }
     },
     "type": {

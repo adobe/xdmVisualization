@@ -8,6 +8,7 @@
   "description": "This class is used to capture minimum properties that are required to define the concept of a decision option. A decision option represents one of the possible selections or choices for a decision.",
   "meta:status": "stable",
   "meta:xdmType": "object",
+  "meta:createdDate": "2020-08-10",
   "properties": {
     "_id": {
       "title": "Identifier",

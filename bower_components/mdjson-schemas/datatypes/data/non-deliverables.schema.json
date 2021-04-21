@@ -6,6 +6,7 @@
   "meta:extensible": true,
   "description": "The direct-marketing metric `non-deliverables` describes the umber of asynchronous messages that failed to deliver in a way that indicates that no future messages will be deliverable either to this address.",
   "meta:status": "stable",
+  "meta:createdDate": "2020-08-10",
   "meta:xdmType": "object",
   "properties": {
     "_id": {

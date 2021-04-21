@@ -39,6 +39,12 @@
     "stable",
     "experimental"
   ],
+  "meta:createdDate": [
+    "2020-08-10",
+    "2021-02-19",
+    "2020-11-04",
+    "2021-04-07"
+  ],
   "properties": {
     "repositoryCreatedBy": {
       "title": "Created by user identifier",
@@ -1071,7 +1077,7 @@
           "meta:xdmField": "xdm:devices",
           "tagNumber": 2,
           "items": {
-            "$ref": "obj9761494700147806.schema.json"
+            "$ref": "obj6945500743222233.schema.json"
           }
         }
       },

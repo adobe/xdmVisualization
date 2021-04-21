@@ -7,6 +7,7 @@
   "meta:conditionalValue": "listOperation.removeFromList",
   "description": "Use to track when a person is removed from a specific list.",
   "meta:status": "experimental",
+  "meta:createdDate": "2021-02-19",
   "meta:xdmType": "object",
   "properties": {
     "listOperations": {

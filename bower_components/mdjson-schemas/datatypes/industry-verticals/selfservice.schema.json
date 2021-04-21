@@ -5,6 +5,7 @@
   "description": "A customer managed environment is an environment that allows a system integration or deployer to manage applications. This is also known as self service.",
   "type": "object",
   "meta:status": "stable",
+  "meta:createdDate": "2021-02-19",
   "meta:xdmType": "object",
   "properties": {
     "tenant": {

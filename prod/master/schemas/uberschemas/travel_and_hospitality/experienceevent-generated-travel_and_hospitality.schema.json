@@ -107,6 +107,15 @@
     "stable",
     "deprecated"
   ],
+  "meta:createdDate": [
+    "2020-08-10",
+    "2021-02-19",
+    "2021-01-13",
+    "2021-01-15",
+    "2021-02-10",
+    "2021-03-15",
+    "2021-02-02"
+  ],
   "properties": {
     "identityMap": {
       "type": "object",
@@ -771,7 +780,7 @@
           "meta:xdmField": "xdm:diningReservations",
           "tagNumber": 1,
           "items": {
-            "$ref": "obj5381914261030183.schema.json"
+            "$ref": "obj5018965774073514.schema.json"
           }
         },
         "cancellation": {
@@ -962,7 +971,7 @@
           "meta:xdmField": "xdm:flightReservations",
           "tagNumber": 19,
           "items": {
-            "$ref": "obj8558561407178058.schema.json"
+            "$ref": "obj8700568597092864.schema.json"
           }
         },
         "lodgingReservations": {
@@ -971,7 +980,7 @@
           "meta:xdmField": "xdm:lodgingReservations",
           "tagNumber": 20,
           "items": {
-            "$ref": "obj7940738916364505.schema.json"
+            "$ref": "obj4827938253730475.schema.json"
           }
         },
         "vehicleReservations": {
@@ -980,7 +989,7 @@
           "meta:xdmField": "xdm:vehicleReservations",
           "tagNumber": 21,
           "items": {
-            "$ref": "obj44361154816852433.schema.json"
+            "$ref": "obj6025188263057926.schema.json"
           }
         }
       },

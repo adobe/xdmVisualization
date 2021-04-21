@@ -12,6 +12,7 @@
   },
   "description": "Collects all details specific to a lodging reservation.",
   "meta:status": "stable",
+  "meta:createdDate": "2021-02-10",
   "meta:xdmType": "object",
   "properties": {
     "reservations": {
@@ -24,7 +25,7 @@
           "meta:xdmField": "xdm:lodgingReservations",
           "tagNumber": 1,
           "items": {
-            "$ref": "obj7870363326010066.schema.json"
+            "$ref": "obj779085153617191.schema.json"
           }
         },
         "cancellation": {

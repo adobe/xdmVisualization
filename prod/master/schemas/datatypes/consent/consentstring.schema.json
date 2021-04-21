@@ -6,6 +6,7 @@
   "meta:extensible": true,
   "description": "Consent String as presented by user along with standard information to help consent enforcer to parse the String.",
   "meta:status": "stable",
+  "meta:createdDate": "2021-02-19",
   "meta:xdmType": "object",
   "properties": {
     "consentStandard": {

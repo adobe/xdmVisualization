@@ -12,6 +12,7 @@
   },
   "description": "Personal finance details such as financial account details, credit score, and tax bracket.",
   "meta:status": "stable",
+  "meta:createdDate": "2021-03-23",
   "meta:xdmType": "object",
   "properties": {
     "personalFinances": {
@@ -44,7 +45,7 @@
           "meta:xdmField": "xdm:creditScores",
           "tagNumber": 3,
           "items": {
-            "$ref": "obj857492015232951.schema.json"
+            "$ref": "obj006502692110895936.schema.json"
           }
         },
         "employmentStatus": {

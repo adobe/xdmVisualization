@@ -7,6 +7,7 @@
   "meta:abstract": true,
   "description": "An array of all related accounts linked to the primary account.",
   "meta:status": "experimental",
+  "meta:createdDate": "2021-01-19",
   "meta:xdmType": "object",
   "properties": {
     "relatedAccounts": {

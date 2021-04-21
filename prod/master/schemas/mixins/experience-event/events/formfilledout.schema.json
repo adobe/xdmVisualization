@@ -7,6 +7,7 @@
   "meta:conditionalValue": "web.formFilledOut",
   "description": "Use to capture details when a person fills out a form on a web page.",
   "meta:status": "experimental",
+  "meta:createdDate": "2021-02-19",
   "meta:xdmType": "object",
   "properties": {
     "web": {
@@ -30,7 +31,7 @@
             "webFormName": {
               "title": "Web Form Name",
               "type": "string",
-              "description": "Friendly name of the form.",
+              "description": "Name of the form.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:webFormName",
               "tagNumber": 2

@@ -7,6 +7,7 @@
   "meta:conditionalValue": "leadOperation.scoreChanged",
   "description": "Use to capture details when the lead score of a person changes.",
   "meta:status": "experimental",
+  "meta:createdDate": "2021-02-19",
   "meta:xdmType": "object",
   "properties": {
     "leadOperation": {
