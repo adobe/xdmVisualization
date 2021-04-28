@@ -13,6 +13,8 @@
   ],
   "description": "Identity Namespace Schema.",
   "meta:status": "stable",
+  "meta:titleId": "identity-namespace##title",
+  "meta:descriptionId": "identity-namespace##description",
   "meta:xdmType": "object",
   "meta:createdDate": "2020-08-10",
   "properties": {
@@ -29,6 +31,8 @@
       "title": "Unique Namespace ID",
       "type": "integer",
       "description": "Unique Identifier for namespace",
+      "meta:titleId": "identity-namespace##xdm:namespaceID##title",
+      "meta:descriptionId": "identity-namespace##xdm:namespaceID##description",
       "meta:xdmType": "int",
       "meta:xdmField": "xdm:namespaceID",
       "tagNumber": 2
@@ -37,6 +41,8 @@
       "title": "Namespace Name",
       "type": "string",
       "description": "This is human readable name for the namespace",
+      "meta:titleId": "identity-namespace##xdm:namespaceName##title",
+      "meta:descriptionId": "identity-namespace##xdm:namespaceName##description",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:namespaceName",
       "tagNumber": 3
@@ -45,6 +51,8 @@
       "title": "Namespace Code",
       "type": "string",
       "description": "This code is a human readable identifier for the namespace",
+      "meta:titleId": "identity-namespace##xdm:namespaceCode##title",
+      "meta:descriptionId": "identity-namespace##xdm:namespaceCode##description",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:namespaceCode",
       "tagNumber": 4
@@ -53,6 +61,8 @@
       "title": "Namespace Description",
       "type": "string",
       "description": "Description for the namespace",
+      "meta:titleId": "identity-namespace##xdm:namespaceDescription##title",
+      "meta:descriptionId": "identity-namespace##xdm:namespaceDescription##description",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:namespaceDescription",
       "tagNumber": 5
@@ -69,6 +79,8 @@
         "CROSS_DEVICE",
         "NON_PEOPLE"
       ],
+      "meta:titleId": "identity-namespace##xdm:namespaceIdType##title",
+      "meta:descriptionId": "identity-namespace##xdm:namespaceIdType##description",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:namespaceIdType",
       "tagNumber": 6
@@ -81,6 +93,8 @@
         "An example form is \"2004-10-23T12:00:00-06:00\"."
       ],
       "description": "The date and time when the namespace was created in ISO 8601 format",
+      "meta:titleId": "identity-namespace##xdm:createDate##title",
+      "meta:descriptionId": "identity-namespace##xdm:createDate##description",
       "meta:xdmType": "date-time",
       "meta:xdmField": "xdm:createDate",
       "tagNumber": 7
@@ -93,6 +107,8 @@
         "An example form is \"2004-10-23T12:00:00-06:00\"."
       ],
       "description": "The date and time when the namespace was updated in ISO 8601 format",
+      "meta:titleId": "identity-namespace##xdm:modifyDate##title",
+      "meta:descriptionId": "identity-namespace##xdm:modifyDate##description",
       "meta:xdmType": "date-time",
       "meta:xdmField": "xdm:modifyDate",
       "tagNumber": 8
