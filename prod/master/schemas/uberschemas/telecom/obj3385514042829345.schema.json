@@ -1,0 +1,80 @@
+{
+  "type": "object",
+  "meta:xdmType": "object",
+  "properties": {
+    "ID": {
+      "title": "ID",
+      "type": "string",
+      "description": "Captures the ID for the device.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:ID",
+      "tagNumber": 1
+    },
+    "manufacturer": {
+      "title": "Manufacturer",
+      "type": "string",
+      "description": "Captures the device manufacturer.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:manufacturer",
+      "tagNumber": 2
+    },
+    "model": {
+      "title": "Model",
+      "type": "string",
+      "description": "Captures the device model.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:model",
+      "tagNumber": 3
+    },
+    "storageCapacity": {
+      "title": "Storage Capacity",
+      "type": "string",
+      "description": "Captures the device storage capacity.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:storageCapacity",
+      "tagNumber": 4
+    },
+    "pricingOptions": {
+      "title": "Pricing Options",
+      "type": "string",
+      "description": "Captures if the device will be paid for in installments or full retail price.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:pricingOptions",
+      "tagNumber": 5
+    },
+    "earlyUpgradeEnrollment": {
+      "title": "Early Upgrade Enrollment",
+      "type": "boolean",
+      "description": "Captures if the customer opts into early upgrades.",
+      "meta:xdmType": "boolean",
+      "meta:xdmField": "xdm:earlyUpgradeEnrollment",
+      "tagNumber": 6
+    },
+    "insuranceEnrollment": {
+      "title": "Insurance Enrollment",
+      "type": "boolean",
+      "description": "Captures if the customer opts into device insurance.",
+      "meta:xdmType": "boolean",
+      "meta:xdmField": "xdm:insuranceEnrollment",
+      "tagNumber": 7
+    },
+    "planLevel": {
+      "title": "Plan Level",
+      "type": "string",
+      "description": "Captures the name of the mobile plan assigned to this device.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:planLevel",
+      "tagNumber": 8
+    },
+    "phoneNumber": {
+      "title": "Phone Number",
+      "$ref": "../../datatypes/demographic/phonenumber.schema.json",
+      "description": "Captures the phone number assigned to this device.",
+      "meta:xdmField": "xdm:phoneNumber",
+      "tagNumber": 9
+    }
+  },
+  "tagNumber": 1,
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "id": "obj3385514042829345.schema.json"
+}
