@@ -5,7 +5,7 @@ This repository is for the visualization of xdms in [XDM Public Repo](https://gi
 See [visualization of XDM Public Repo's master branch](https://opensource.adobe.com/xdmVisualization/prod/master/), which is refreshed everyday.
 
 ### Usage
-To refresh the xdm visualization manually for a specific git branch, please follow the steps below.<br/><br/> ![here](images/xdmVisualization.png)
+To refresh the xdm visualization manually for a specific git branch, please get write permission for the repo and follow the steps below.<br/><br/> ![here](images/xdmVisualization.png)
 
 1\. Click `Actions` from github web interface.
 
