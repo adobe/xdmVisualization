@@ -168,7 +168,7 @@
       "meta:xdmField": "xdm:personComponents",
       "tagNumber": 11,
       "items": {
-        "$ref": "obj9984918592128826.schema.json"
+        "$ref": "obj1611577876203305.schema.json"
       }
     },
     "b2b": {
@@ -239,13 +239,6 @@
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:convertedContactID",
           "tagNumber": 8
-        },
-        "personOptInOut": {
-          "title": "Person Preferences",
-          "description": "Holds opt out values for different channels as selected by the person.",
-          "$ref": "../datatypes/optinout.schema.json",
-          "meta:xdmField": "xdm:personOptInOut",
-          "tagNumber": 9
         },
         "personType": {
           "title": "Person Type",
@@ -1511,7 +1504,7 @@
           "meta:xdmField": "xdm:pointsExpiration",
           "tagNumber": 4,
           "items": {
-            "$ref": "obj6109240304288266.schema.json"
+            "$ref": "obj08817779322625396.schema.json"
           }
         },
         "pointsRedeemed": {
@@ -1570,15 +1563,41 @@
           "meta:xdmField": "xdm:accountID",
           "tagNumber": 1
         },
+        "name": {
+          "title": "Name",
+          "type": "string",
+          "description": "Name for the plan.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:name",
+          "tagNumber": 2
+        },
+        "rate": {
+          "title": "Rate",
+          "$ref": "../datatypes/currency.schema.json",
+          "description": "Rate for the plan.",
+          "meta:xdmField": "xdm:rate",
+          "tagNumber": 3
+        },
         "devices": {
           "title": "Devices",
           "description": "Array of line details and their associated devices.",
           "type": "array",
           "meta:xdmType": "array",
           "meta:xdmField": "xdm:devices",
-          "tagNumber": 2,
+          "tagNumber": 4,
           "items": {
-            "$ref": "obj8566376830931925.schema.json"
+            "$ref": "obj4076974799639972.schema.json"
+          }
+        },
+        "accessories": {
+          "title": "Accessories",
+          "description": "Array of accessories associated with the plan.",
+          "type": "array",
+          "meta:xdmType": "array",
+          "meta:xdmField": "xdm:accessories",
+          "tagNumber": 5,
+          "items": {
+            "$ref": "obj3844398393531778.schema.json"
           }
         }
       },
@@ -1629,7 +1648,7 @@
           "meta:xdmField": "xdm:creditScores",
           "tagNumber": 3,
           "items": {
-            "$ref": "obj5063346357603193.schema.json"
+            "$ref": "obj9091403347139555.schema.json"
           }
         },
         "employmentStatus": {
@@ -1771,13 +1790,6 @@
       "meta:xdmField": "xdm:timeZone",
       "tagNumber": 46
     },
-    "optInOut": {
-      "title": "OptInOut",
-      "$ref": "../datatypes/optinout.schema.json",
-      "description": "Describes a users opting in and out preferences for communication by medium and communication type.",
-      "meta:xdmField": "xdm:optInOut",
-      "tagNumber": 47
-    },
     "identityPrivacyInfo": {
       "title": "Identity level privacy information",
       "description": "Captured privacy information for identities in profile.",
@@ -1850,12 +1862,11 @@
       "type": "array",
       "description": "Push details array containing notification info required to send mobile push notification to a specific mobile application on a given device.",
       "meta:xdmType": "array",
-      "items": {
-        "$ref": "../datatypes/pushdetail.schema.json",
-        "tagNumber": 1
-      },
       "meta:xdmField": "xdm:pushNotificationDetails",
-      "tagNumber": 51
+      "tagNumber": 51,
+      "items": {
+        "$ref": "obj976807527607024.schema.json"
+      }
     },
     "segmentMembership": {
       "title": "Segment membership map",

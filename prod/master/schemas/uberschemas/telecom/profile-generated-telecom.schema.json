@@ -1069,15 +1069,41 @@
           "meta:xdmField": "xdm:accountID",
           "tagNumber": 1
         },
+        "name": {
+          "title": "Name",
+          "type": "string",
+          "description": "Name for the plan.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:name",
+          "tagNumber": 2
+        },
+        "rate": {
+          "title": "Rate",
+          "$ref": "../../datatypes/currency.schema.json",
+          "description": "Rate for the plan.",
+          "meta:xdmField": "xdm:rate",
+          "tagNumber": 3
+        },
         "devices": {
           "title": "Devices",
           "description": "Array of line details and their associated devices.",
           "type": "array",
           "meta:xdmType": "array",
           "meta:xdmField": "xdm:devices",
-          "tagNumber": 2,
+          "tagNumber": 4,
           "items": {
-            "$ref": "obj5405917540337273.schema.json"
+            "$ref": "obj9337610401954137.schema.json"
+          }
+        },
+        "accessories": {
+          "title": "Accessories",
+          "description": "Array of accessories associated with the plan.",
+          "type": "array",
+          "meta:xdmType": "array",
+          "meta:xdmField": "xdm:accessories",
+          "tagNumber": 5,
+          "items": {
+            "$ref": "obj3739135197197827.schema.json"
           }
         }
       },

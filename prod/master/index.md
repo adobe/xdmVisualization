@@ -372,35 +372,15 @@
 <details>
 <summary>data</summary>
 <ul>
-<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.data.bounces.html">bounces</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.data.cart-abandons.html">cart-abandons</a></li>
-<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.data.checkouts.html">checkouts</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.data.datasource.html">datasource</a></li>
-<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.data.impressions.html">impressions</a></li>
-<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.data.linkclicks.html">linkclicks</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.data.measure.html">measure</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.data.metricdefinition.html">metricdefinition</a></li>
-<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.data.mirror-pages.html">mirror-pages</a></li>
-<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.data.non-deliverables.html">non-deliverables</a></li>
-<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.data.not-sent.html">not-sent</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.data.opens.html">opens</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.data.order.html">order</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.data.pageviews.html">pageviews</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.data.paymentitem.html">paymentitem</a></li>
-<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.data.poi-entries.html">poi-entries</a></li>
-<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.data.poi-exits.html">poi-exits</a></li>
-<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.data.product-list-adds.html">product-list-adds</a></li>
-<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.data.product-list-opens.html">product-list-opens</a></li>
-<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.data.product-list-removals.html">product-list-removals</a></li>
-<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.data.product-list-reopens.html">product-list-reopens</a></li>
-<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.data.product-list-views.html">product-list-views</a></li>
-<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.data.product-views.html">product-views</a></li>
-<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.data.purchases.html">purchases</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.data.record-timeseries-events.html">record-timeseries-events</a></li>
-<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.data.save-for-laters.html">save-for-laters</a></li>
-<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.data.sends.html">sends</a></li>
-<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.data.unsubscriptions.html">unsubscriptions</a></li>
-<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.data.user-complaints.html">user-complaints</a></li>
 </ul>
 </details>
 <details>
@@ -412,6 +392,31 @@
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.demographic.geounit.html">geounit</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.demographic.phonenumber.html">phonenumber</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.demographic.place.html">place</a></li>
+</ul>
+</details>
+<details>
+<summary>deprecated</summary>
+<ul>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.deprecated.bounces.html">bounces</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.deprecated.checkouts.html">checkouts</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.deprecated.impressions.html">impressions</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.deprecated.linkclicks.html">linkclicks</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.deprecated.mirror-pages.html">mirror-pages</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.deprecated.non-deliverables.html">non-deliverables</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.deprecated.not-sent.html">not-sent</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.deprecated.poi-entries.html">poi-entries</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.deprecated.poi-exits.html">poi-exits</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.deprecated.product-list-adds.html">product-list-adds</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.deprecated.product-list-opens.html">product-list-opens</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.deprecated.product-list-removals.html">product-list-removals</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.deprecated.product-list-reopens.html">product-list-reopens</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.deprecated.product-list-views.html">product-list-views</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.deprecated.product-views.html">product-views</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.deprecated.purchases.html">purchases</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.deprecated.save-for-laters.html">save-for-laters</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.deprecated.sends.html">sends</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.deprecated.unsubscriptions.html">unsubscriptions</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.deprecated.user-complaints.html">user-complaints</a></li>
 </ul>
 </details>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.device.html">device</a></li>
@@ -446,7 +451,6 @@
 </details>
 </ul>
 </details>
-<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.geo-interaction-details.html">geo-interaction-details</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.identity.html">identity</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.identityitem.html">identityitem</a></li>
 <details>
@@ -466,23 +470,10 @@
 </ul>
 </details>
 <details>
-<summary>interactions</summary>
-<ul>
-<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.interactions.beacon-interaction-details.html">beacon-interaction-details</a></li>
-<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.interactions.email-interaction.html">email-interaction</a></li>
-<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.interactions.meeting-interaction.html">meeting-interaction</a></li>
-<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.interactions.phone-interaction.html">phone-interaction</a></li>
-<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.interactions.poi-interaction.html">poi-interaction</a></li>
-</ul>
-</details>
-<details>
 <summary>marketing</summary>
 <ul>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.marketing.advertising.html">advertising</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.marketing.advertising-break.html">advertising-break</a></li>
-<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.marketing.advertising-timed-asset-reference.html">advertising-timed-asset-reference</a></li>
-<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.marketing.advertising-timed-asset-view-details.html">advertising-timed-asset-view-details</a></li>
-<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.marketing.adviewability.html">adviewability</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.marketing.commerce.html">commerce</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.marketing.direct-marketing.html">direct-marketing</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.marketing.directmarketing-address.html">directmarketing-address</a></li>
@@ -495,18 +486,9 @@
 <summary>media</summary>
 <ul>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.media.media.html">media</a></li>
-<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.media.media-timed.html">media-timed</a></li>
-<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.media.media-timed-asset-reference.html">media-timed-asset-reference</a></li>
-<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.media.media-timed-asset-view-details.html">media-timed-asset-view-details</a></li>
-<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.media.media-timed-audio.html">media-timed-audio</a></li>
-<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.media.media-timed-chapter.html">media-timed-chapter</a></li>
-<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.media.media-timed-chapter-asset-reference.html">media-timed-chapter-asset-reference</a></li>
-<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.media.media-timed-chapter-view-details.html">media-timed-chapter-view-details</a></li>
-<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.media.media-timed-qoe.html">media-timed-qoe</a></li>
 </ul>
 </details>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.namespace.html">namespace</a></li>
-<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.optinout.html">optinout</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.optinout-additional-details.html">optinout-additional-details</a></li>
 <details>
 <summary>person</summary>
@@ -516,13 +498,11 @@
 </ul>
 </details>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.placecontext.html">placecontext</a></li>
-<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.player-state.html">player-state</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.poi-detail.html">poi-detail</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.product.html">product</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.productlistitem.html">productlistitem</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.profilestitch.html">profilestitch</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.profilestitchidentity.html">profilestitchidentity</a></li>
-<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.pushdetail.html">pushdetail</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.pushnotificationtoken.html">pushnotificationtoken</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.search.html">search</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.segmentidentity.html">segmentidentity</a></li>
@@ -532,9 +512,6 @@
 <summary>web</summary>
 <ul>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.web.webinfo.html">webinfo</a></li>
-<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.web.webinteraction.html">webinteraction</a></li>
-<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.web.webpagedetails.html">webpagedetails</a></li>
-<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.web.webreferrer.html">webreferrer</a></li>
 </ul>
 </details>
 </ul>

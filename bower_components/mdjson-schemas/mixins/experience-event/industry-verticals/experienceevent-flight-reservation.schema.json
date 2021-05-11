@@ -22,62 +22,11 @@
         "flightReservations": {
           "type": "array",
           "description": "Captures all details specific to an individual flight reservation",
-          "xdm:flightStatusSearch": {
-            "type": "object",
-            "description": "Flight status search such as arrival and departure location, date, flight number, and search information.",
-            "properties": {
-              "searchCount": {
-                "title": "Search Count",
-                "type": "integer",
-                "description": "Incremented when a flight status search occurs.",
-                "meta:xdmType": "int",
-                "meta:xdmField": "xdm:searchCount",
-                "tagNumber": 1
-              },
-              "flightNumber": {
-                "title": "Flight Number",
-                "type": "string",
-                "description": "Captures the flight status search flight number.",
-                "meta:xdmType": "string",
-                "meta:xdmField": "xdm:flightNumber",
-                "tagNumber": 2
-              },
-              "arrivalAirportCode": {
-                "title": "Arrival Airport Code",
-                "type": "string",
-                "description": "Tracks the arrival city airport code.",
-                "pattern": "^[A-Z]{3}$",
-                "meta:xdmType": "string",
-                "meta:xdmField": "xdm:arrivalAirportCode",
-                "tagNumber": 3
-              },
-              "departureAirportCode": {
-                "title": "Departure Airport Code",
-                "type": "string",
-                "description": "Tracks the departure city airport code.",
-                "pattern": "^[A-Z]{3}$",
-                "meta:xdmType": "string",
-                "meta:xdmField": "xdm:departureAirportCode",
-                "tagNumber": 4
-              },
-              "departureDate": {
-                "title": "Departure Date",
-                "type": "string",
-                "format": "date-time",
-                "description": "The departure date of the flight being reserved.",
-                "meta:xdmType": "date-time",
-                "meta:xdmField": "xdm:departureDate",
-                "tagNumber": 5
-              }
-            },
-            "meta:xdmType": "object",
-            "tagNumber": 1
-          },
           "meta:xdmType": "array",
           "meta:xdmField": "xdm:flightReservations",
           "tagNumber": 1,
           "items": {
-            "$ref": "obj5097795353997179.schema.json"
+            "$ref": "obj19832425380082186.schema.json"
           }
         },
         "cancellation": {

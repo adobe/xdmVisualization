@@ -45,7 +45,29 @@
       "title": "POI interaction",
       "description": "The point of interest (POI) interaction details.",
       "meta:status": "experimental",
-      "$ref": "interactions/poi-interaction.schema.json",
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "poiDetail": {
+          "title": "POI detail",
+          "description": "Detail of the POI that cause the event.",
+          "$ref": "poi-detail.schema.json",
+          "meta:xdmField": "xdm:poiDetail",
+          "tagNumber": 2
+        },
+        "poiEntries": {
+          "$ref": "data/measure.schema.json",
+          "description": "The number of times a person has entered the point of interest (POI).",
+          "meta:xdmField": "xdm:poiEntries",
+          "tagNumber": 3
+        },
+        "poiExits": {
+          "$ref": "data/measure.schema.json",
+          "description": "The number of times a person has exited the point of interest (POI).",
+          "meta:xdmField": "xdm:poiExits",
+          "tagNumber": 4
+        }
+      },
       "meta:xdmField": "xdm:POIinteraction",
       "tagNumber": 5
     },

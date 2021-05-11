@@ -167,13 +167,17 @@
       "meta:xdmType": "object",
       "properties": {
         "_unqualified": {
-          "*Pass": {
-            "type": "boolean",
-            "name": "*Pass",
-            "description": "A quality gate test, false means it failed, true means it passed.",
-            "meta:xdmType": "boolean",
-            "meta:xdmField": "*Pass",
-            "tagNumber": 1
+          "type": "object",
+          "meta:xdmType": "object",
+          "properties": {
+            "*Pass": {
+              "type": "boolean",
+              "name": "*Pass",
+              "description": "A quality gate test, false means it failed, true means it passed.",
+              "meta:xdmType": "boolean",
+              "meta:xdmField": "*Pass",
+              "tagNumber": 1
+            }
           },
           "tagNumber": 1
         }

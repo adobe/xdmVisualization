@@ -70,13 +70,6 @@
                       "meta:xdmType": "string",
                       "meta:xdmField": "xdm:timeZone",
                       "tagNumber": 4
-                    },
-                    "optInOut": {
-                      "title": "OptInOut",
-                      "$ref": "../../../datatypes/optinout.schema.json",
-                      "description": "Describes a users opting in and out preferences for communication by medium and communication type.",
-                      "meta:xdmField": "xdm:optInOut",
-                      "tagNumber": 5
                     }
                   },
                   "meta:xdmField": "xdm:profileSnapshot",

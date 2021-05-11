@@ -23,24 +23,32 @@
               "meta:xdmType": "object",
               "properties": {
                 "_experience": {
-                  "journeyOrchestration": {
-                    "profileID": {
-                      "title": "Profile ID",
-                      "type": "string",
-                      "description": "Profile identifier identifies the profile sent/used in a journey.Present if the current step is running in the context of a unitary journey. E.g: foo@adobe.com.",
-                      "meta:xdmType": "string",
-                      "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/profileID",
+                  "type": "object",
+                  "meta:xdmType": "object",
+                  "properties": {
+                    "journeyOrchestration": {
+                      "type": "object",
+                      "meta:xdmType": "object",
+                      "properties": {
+                        "profileID": {
+                          "title": "Profile ID",
+                          "type": "string",
+                          "description": "Profile identifier identifies the profile sent/used in a journey.Present if the current step is running in the context of a unitary journey. E.g: foo@adobe.com.",
+                          "meta:xdmType": "string",
+                          "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/profileID",
+                          "tagNumber": 1
+                        },
+                        "profileNamespace": {
+                          "title": "Profile Namespace",
+                          "type": "string",
+                          "description": "This field describes the Namespace referenced by the Profile used in the Journey. Present if the current step is running in the context of a unitary journey. E.g: Email, ECID ",
+                          "meta:xdmType": "string",
+                          "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/profileNamespace",
+                          "tagNumber": 2
+                        }
+                      },
                       "tagNumber": 1
-                    },
-                    "profileNamespace": {
-                      "title": "Profile Namespace",
-                      "type": "string",
-                      "description": "This field describes the Namespace referenced by the Profile used in the Journey. Present if the current step is running in the context of a unitary journey. E.g: Email, ECID ",
-                      "meta:xdmType": "string",
-                      "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/profileNamespace",
-                      "tagNumber": 2
-                    },
-                    "tagNumber": 1
+                    }
                   },
                   "tagNumber": 1
                 }

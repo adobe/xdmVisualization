@@ -15,12 +15,11 @@
       "type": "array",
       "description": "Push details array containing notification info required to send mobile push notification to a specific mobile application on a given device.",
       "meta:xdmType": "array",
-      "items": {
-        "$ref": "../../datatypes/pushdetail.schema.json",
-        "tagNumber": 1
-      },
       "meta:xdmField": "xdm:pushNotificationDetails",
-      "tagNumber": 1
+      "tagNumber": 1,
+      "items": {
+        "$ref": "obj20445267432394676.schema.json"
+      }
     }
   },
   "meta:xdmId": "https://ns.adobe.com/xdm/context/profile-push-notification-details",

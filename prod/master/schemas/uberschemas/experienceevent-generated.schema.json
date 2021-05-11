@@ -835,56 +835,6 @@
         },
         "loanApplicationDetails": {
           "type": "object",
-          "xdm:annualPercentageRate": {
-            "title": "Annual Percentage Rate",
-            "type": "number",
-            "description": "Records the annual percentage rate of the loan.",
-            "meta:xdmType": "number",
-            "tagNumber": 1
-          },
-          "xdm:downpayment": {
-            "title": "Downpayment",
-            "$ref": "../datatypes/currency.schema.json",
-            "description": "Captures the downpayment amount of loan.",
-            "tagNumber": 2
-          },
-          "xdm:startDate": {
-            "title": "Start Date",
-            "type": "string",
-            "format": "date-time",
-            "description": "Records the anticipated start date of the loan.",
-            "meta:xdmType": "date-time",
-            "tagNumber": 3
-          },
-          "xdm:endDate": {
-            "title": "End Date",
-            "type": "string",
-            "format": "date-time",
-            "description": "Records the anticipated end date of the loan.",
-            "meta:xdmType": "date-time",
-            "tagNumber": 4
-          },
-          "xdm:interestRate": {
-            "title": "Interest Rate",
-            "type": "number",
-            "description": "Records the interest rate of the loan.",
-            "meta:xdmType": "number",
-            "tagNumber": 5
-          },
-          "xdm:interestType": {
-            "title": "Interest Type",
-            "type": "string",
-            "description": "Records the type interest rate of the loan, i.e. fixed or variable.",
-            "meta:xdmType": "string",
-            "tagNumber": 6
-          },
-          "xdm:term": {
-            "title": "Term",
-            "type": "integer",
-            "description": "Records the duration of the loan, in months.",
-            "meta:xdmType": "int",
-            "tagNumber": 7
-          },
           "meta:xdmType": "object",
           "properties": {
             "loan": {
@@ -893,6 +843,56 @@
               "description": "Extension of form application data type.",
               "meta:xdmField": "xdm:loan",
               "tagNumber": 1
+            },
+            "xdm:annualPercentageRate": {
+              "title": "Annual Percentage Rate",
+              "type": "number",
+              "description": "Records the annual percentage rate of the loan.",
+              "meta:xdmType": "number",
+              "tagNumber": 2
+            },
+            "xdm:downpayment": {
+              "title": "Downpayment",
+              "$ref": "../datatypes/currency.schema.json",
+              "description": "Captures the downpayment amount of loan.",
+              "tagNumber": 3
+            },
+            "xdm:startDate": {
+              "title": "Start Date",
+              "type": "string",
+              "format": "date-time",
+              "description": "Records the anticipated start date of the loan.",
+              "meta:xdmType": "date-time",
+              "tagNumber": 4
+            },
+            "xdm:endDate": {
+              "title": "End Date",
+              "type": "string",
+              "format": "date-time",
+              "description": "Records the anticipated end date of the loan.",
+              "meta:xdmType": "date-time",
+              "tagNumber": 5
+            },
+            "xdm:interestRate": {
+              "title": "Interest Rate",
+              "type": "number",
+              "description": "Records the interest rate of the loan.",
+              "meta:xdmType": "number",
+              "tagNumber": 6
+            },
+            "xdm:interestType": {
+              "title": "Interest Type",
+              "type": "string",
+              "description": "Records the type interest rate of the loan, i.e. fixed or variable.",
+              "meta:xdmType": "string",
+              "tagNumber": 7
+            },
+            "xdm:term": {
+              "title": "Term",
+              "type": "integer",
+              "description": "Records the duration of the loan, in months.",
+              "meta:xdmType": "int",
+              "tagNumber": 8
             }
           },
           "meta:xdmField": "xdm:loanApplicationDetails",
@@ -1106,7 +1106,7 @@
           "meta:xdmField": "xdm:dataValueChanges",
           "tagNumber": 4,
           "items": {
-            "$ref": "obj1641812207127673.schema.json"
+            "$ref": "obj15513321777165934.schema.json"
           }
         }
       },
@@ -2276,7 +2276,7 @@
           "meta:xdmField": "xdm:diningReservations",
           "tagNumber": 1,
           "items": {
-            "$ref": "obj17250355548339136.schema.json"
+            "$ref": "obj46275380499084906.schema.json"
           }
         },
         "cancellation": {
@@ -2412,62 +2412,11 @@
         "flightReservations": {
           "type": "array",
           "description": "Captures all details specific to an individual flight reservation",
-          "xdm:flightStatusSearch": {
-            "type": "object",
-            "description": "Flight status search such as arrival and departure location, date, flight number, and search information.",
-            "properties": {
-              "searchCount": {
-                "title": "Search Count",
-                "type": "integer",
-                "description": "Incremented when a flight status search occurs.",
-                "meta:xdmType": "int",
-                "meta:xdmField": "xdm:searchCount",
-                "tagNumber": 1
-              },
-              "flightNumber": {
-                "title": "Flight Number",
-                "type": "string",
-                "description": "Captures the flight status search flight number.",
-                "meta:xdmType": "string",
-                "meta:xdmField": "xdm:flightNumber",
-                "tagNumber": 2
-              },
-              "arrivalAirportCode": {
-                "title": "Arrival Airport Code",
-                "type": "string",
-                "description": "Tracks the arrival city airport code.",
-                "pattern": "^[A-Z]{3}$",
-                "meta:xdmType": "string",
-                "meta:xdmField": "xdm:arrivalAirportCode",
-                "tagNumber": 3
-              },
-              "departureAirportCode": {
-                "title": "Departure Airport Code",
-                "type": "string",
-                "description": "Tracks the departure city airport code.",
-                "pattern": "^[A-Z]{3}$",
-                "meta:xdmType": "string",
-                "meta:xdmField": "xdm:departureAirportCode",
-                "tagNumber": 4
-              },
-              "departureDate": {
-                "title": "Departure Date",
-                "type": "string",
-                "format": "date-time",
-                "description": "The departure date of the flight being reserved.",
-                "meta:xdmType": "date-time",
-                "meta:xdmField": "xdm:departureDate",
-                "tagNumber": 5
-              }
-            },
-            "meta:xdmType": "object",
-            "tagNumber": 1
-          },
           "meta:xdmType": "array",
           "meta:xdmField": "xdm:flightReservations",
           "tagNumber": 19,
           "items": {
-            "$ref": "obj7189516714493234.schema.json"
+            "$ref": "obj8376492893762657.schema.json"
           }
         },
         "lodgingReservations": {
@@ -2476,7 +2425,7 @@
           "meta:xdmField": "xdm:lodgingReservations",
           "tagNumber": 20,
           "items": {
-            "$ref": "obj502887377794579.schema.json"
+            "$ref": "obj13103276563227473.schema.json"
           }
         },
         "vehicleReservations": {
@@ -2485,7 +2434,7 @@
           "meta:xdmField": "xdm:vehicleReservations",
           "tagNumber": 21,
           "items": {
-            "$ref": "obj7681547385106513.schema.json"
+            "$ref": "obj8007272756794885.schema.json"
           }
         }
       },

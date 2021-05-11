@@ -20,13 +20,17 @@
           "meta:xdmType": "object",
           "properties": {
             "_marketo": {
-              "URL": {
-                "title": "URL",
-                "type": "string",
-                "description": "The normative or usual URL of the web page.  This may or may not be confined to URI format",
-                "meta:xdmType": "string",
-                "meta:xdmField": "marketo:URL",
-                "tagNumber": 1
+              "type": "object",
+              "meta:xdmType": "object",
+              "properties": {
+                "URL": {
+                  "title": "URL",
+                  "type": "string",
+                  "description": "The normative or usual URL of the web page.  This may or may not be confined to URI format",
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "marketo:URL",
+                  "tagNumber": 1
+                }
               },
               "tagNumber": 1
             }
