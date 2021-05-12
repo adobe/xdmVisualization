@@ -53,7 +53,7 @@
     "advertising": {
       "title": "Advertising",
       "$ref": "../../datatypes/marketing/advertising.schema.json",
-      "description": "Information related to advertising activity in ExperienceEvents.",
+      "description": "Information related to advertising impressions, clickthroughs, and attribution.",
       "meta:xdmField": "xdm:advertising",
       "tagNumber": 4
     },
@@ -102,7 +102,7 @@
     "marketing": {
       "title": "Marketing",
       "$ref": "../../datatypes/marketing/marketing.schema.json",
-      "description": "The information related to marketing activities that are active with the touchpoint.",
+      "description": "Tracks offer impression and social network interactions.",
       "meta:xdmField": "xdm:marketing",
       "tagNumber": 11
     },
@@ -172,7 +172,7 @@
     "web": {
       "title": "Web",
       "$ref": "../../datatypes/web/webinfo.schema.json",
-      "description": "The information related to web page and link of the ExperienceEvent.",
+      "description": "Link clicks, web page details, referrer information, and browser details.",
       "meta:xdmField": "xdm:web",
       "tagNumber": 19
     },
@@ -225,7 +225,7 @@
                 "web": {
                   "title": "Session Entry Web",
                   "$ref": "../../datatypes/web/webinfo.schema.json",
-                  "description": "The information related to web page, link, and referrer at the entry of this session.",
+                  "description": "Link clicks, web page details, referrer information, and browser details.",
                   "meta:xdmField": "xdm:web",
                   "tagNumber": 5
                 }
@@ -10716,7 +10716,7 @@
     "commerce": {
       "title": "Commerce",
       "$ref": "../../datatypes/marketing/commerce.schema.json",
-      "description": "Commerce specific data related to this event.",
+      "description": "Product returns, warranty registration, and shopping cart/order process.",
       "meta:xdmField": "xdm:commerce",
       "tagNumber": 24
     }

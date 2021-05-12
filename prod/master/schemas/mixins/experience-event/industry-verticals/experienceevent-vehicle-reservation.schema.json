@@ -17,6 +17,7 @@
   "properties": {
     "reservations": {
       "type": "object",
+      "description": "Interaction tracking for flights, lodging, vehicles, and dining reservations.",
       "meta:xdmType": "object",
       "properties": {
         "vehicleReservations": {
@@ -25,7 +26,7 @@
           "meta:xdmField": "xdm:vehicleReservations",
           "tagNumber": 1,
           "items": {
-            "$ref": "obj5716449542294657.schema.json"
+            "$ref": "obj2152936438948252.schema.json"
           }
         },
         "cancellation": {

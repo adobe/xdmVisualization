@@ -17,6 +17,7 @@
   "properties": {
     "deviceTradeInDetails": {
       "type": "object",
+      "description": "Device activation, configuration, and trade-in details.",
       "meta:xdmType": "object",
       "properties": {
         "originalDeviceID": {

@@ -19,7 +19,7 @@
     "web": {
       "title": "Web",
       "$ref": "../../../datatypes/web/webinfo.schema.json",
-      "description": "The information related to web page and link of the ExperienceEvent.",
+      "description": "Link clicks, web page details, referrer information, and browser details.",
       "meta:xdmField": "xdm:web",
       "tagNumber": 2
     },

@@ -21,6 +21,7 @@
   "properties": {
     "quotes": {
       "type": "object",
+      "description": "Quotes information including discount, premium, and request ID.",
       "meta:xdmType": "object",
       "properties": {
         "requestID": {

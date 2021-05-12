@@ -247,6 +247,7 @@
     "alerts": {
       "type": "object",
       "meta:xdmType": "object",
+      "description": "Alert information including alert impressions and clickthroughs as well as alert setups.",
       "properties": {
         "alertSetup": {
           "title": "Alert Setup",
@@ -298,6 +299,7 @@
     "userAccount": {
       "type": "object",
       "meta:xdmType": "object",
+      "description": "Loyalty details, preferences, login processes, and other account preferences.",
       "properties": {
         "appointmentRequestSteps": {
           "title": "Appointment Request Steps",
@@ -510,6 +512,7 @@
     "personalFinances": {
       "type": "object",
       "meta:xdmType": "object",
+      "description": "Financial details including transactions, accounts, and applications.",
       "properties": {
         "financialAccount": {
           "title": "Financial Account",
@@ -863,7 +866,7 @@
       "meta:xdmType": "object",
       "title": "Web",
       "$ref": "../../datatypes/web/webinfo.schema.json",
-      "description": "The information related to web page and link of the ExperienceEvent.",
+      "description": "Link clicks, web page details, referrer information, and browser details.",
       "properties": {
         "referral": {
           "title": "Referral",
@@ -894,7 +897,7 @@
     "advertising": {
       "title": "Advertising",
       "$ref": "../../datatypes/marketing/advertising.schema.json",
-      "description": "Information related to advertising activity in ExperienceEvents.",
+      "description": "Information related to advertising impressions, clickthroughs, and attribution.",
       "meta:xdmField": "xdm:advertising",
       "tagNumber": 14
     },
@@ -913,7 +916,7 @@
     "commerce": {
       "title": "Commerce",
       "$ref": "../../datatypes/marketing/commerce.schema.json",
-      "description": "Commerce specific data related to this event.",
+      "description": "Product returns, warranty registration, and shopping cart/order process.",
       "meta:xdmField": "xdm:commerce",
       "tagNumber": 16
     },
@@ -947,6 +950,7 @@
     },
     "fileTransfer": {
       "type": "object",
+      "description": "Information for file download or file upload activities.",
       "meta:xdmType": "object",
       "properties": {
         "fileDownload": {
@@ -970,12 +974,13 @@
     "implementationDetails": {
       "title": "Implementation details",
       "$ref": "../../datatypes/industry-verticals/implementationdetails.schema.json",
-      "description": "The details of the software used to collect the ExperienceEvent.",
+      "description": "Accomodates tracking versioning details for the Adobe Experience Cloud solutions deployed.",
       "meta:xdmField": "xdm:implementationDetails",
       "tagNumber": 22
     },
     "siteKnowledge": {
       "type": "object",
+      "description": "Knowledge base tracking, support site searches and forum interaction details.",
       "meta:xdmType": "object",
       "properties": {
         "knowledgeBaseArticleID": {
@@ -1023,7 +1028,7 @@
     "marketing": {
       "title": "Marketing",
       "$ref": "../../datatypes/marketing/marketing.schema.json",
-      "description": "The information related to marketing activities that are active with the touchpoint.",
+      "description": "Tracks offer impression and social network interactions.",
       "meta:xdmField": "xdm:marketing",
       "tagNumber": 24
     },
@@ -1036,6 +1041,7 @@
     },
     "offers ": {
       "type": "object",
+      "description": "Offer tracking, including offer impressions and clickthroughs.",
       "meta:xdmType": "object",
       "properties": {
         "ID": {
@@ -1080,6 +1086,7 @@
     },
     "quotes": {
       "type": "object",
+      "description": "Quotes information including discount, premium, and request ID.",
       "meta:xdmType": "object",
       "properties": {
         "requestID": {
@@ -1126,6 +1133,7 @@
     },
     "servicePaymentDetails": {
       "type": "object",
+      "description": "Payments that are not be considered part of a typical commerce transaction, such as when a customer pays a bill or initiates a recurring payment.",
       "meta:xdmType": "object",
       "properties": {
         "servicePayment": {
@@ -1141,6 +1149,7 @@
     },
     "socialMarketing ": {
       "type": "object",
+      "description": "Tracks interactions related to social marketing sites, such as shares and follows.",
       "meta:xdmType": "object",
       "properties": {
         "sharedContent": {
@@ -1213,6 +1222,7 @@
     },
     "surveyResponse": {
       "type": "object",
+      "description": "Stores details related to a survey that has been completed by a user.",
       "meta:xdmType": "object",
       "properties": {
         "surveyAnswers": {
@@ -1255,6 +1265,7 @@
     },
     "claims": {
       "type": "object",
+      "description": "Captures fields related to a claim when initated by a customer.",
       "meta:xdmType": "object",
       "properties": {
         "ID": {
@@ -1329,6 +1340,7 @@
     },
     "customerFeedback": {
       "type": "object",
+      "description": "Customer interaction information such as chat, click to call, email and survey questions/answers.",
       "meta:xdmType": "object",
       "properties": {
         "chatDeclined": {
@@ -1431,6 +1443,7 @@
     },
     "upgrades": {
       "type": "object",
+      "description": "Upgrade information including impressions and transactions associated with upgrades.",
       "meta:xdmType": "object",
       "properties": {
         "upgradeImpressions": {
@@ -1458,6 +1471,7 @@
     },
     "upsells": {
       "type": "object",
+      "description": "Upsell information including impressions and transactions associated with upsells.",
       "meta:xdmType": "object",
       "properties": {
         "upsellImpressions": {

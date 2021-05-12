@@ -27,6 +27,7 @@
   "properties": {
     "userAccount": {
       "type": "object",
+      "description": "Loyalty details, preferences, login processes, and other account preferences.",
       "meta:xdmType": "object",
       "properties": {
         "accountSwitch": {

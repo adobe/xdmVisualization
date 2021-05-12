@@ -19,6 +19,7 @@
   "properties": {
     "claims": {
       "type": "object",
+      "description": "Captures fields related to a claim when initated by a customer.",
       "meta:xdmType": "object",
       "properties": {
         "ID": {

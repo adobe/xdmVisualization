@@ -17,6 +17,7 @@
   "properties": {
     "personalFinances": {
       "type": "object",
+      "description": "Financial details including transactions, accounts, and applications.",
       "meta:xdmType": "object",
       "properties": {
         "accountCardsTotal": {
@@ -45,7 +46,7 @@
           "meta:xdmField": "xdm:creditScores",
           "tagNumber": 3,
           "items": {
-            "$ref": "obj05304616258081363.schema.json"
+            "$ref": "obj8718357731349473.schema.json"
           }
         },
         "employmentStatus": {

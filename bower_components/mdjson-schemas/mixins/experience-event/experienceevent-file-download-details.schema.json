@@ -27,6 +27,7 @@
   "properties": {
     "fileTransfer": {
       "type": "object",
+      "description": "Information for file download or file upload activities.",
       "meta:xdmType": "object",
       "properties": {
         "fileDownload": {

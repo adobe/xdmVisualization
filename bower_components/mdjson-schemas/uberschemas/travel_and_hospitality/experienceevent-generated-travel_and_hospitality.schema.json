@@ -180,6 +180,7 @@
     "alerts": {
       "type": "object",
       "meta:xdmType": "object",
+      "description": "Alert information including alert impressions and clickthroughs as well as alert setups.",
       "properties": {
         "alertSetup": {
           "title": "Alert Setup",
@@ -231,6 +232,7 @@
     "userAccount": {
       "type": "object",
       "meta:xdmType": "object",
+      "description": "Loyalty details, preferences, login processes, and other account preferences.",
       "properties": {
         "paperlessEnrollment": {
           "title": "Paperless Enrollment",
@@ -400,7 +402,7 @@
       "meta:xdmType": "object",
       "title": "Web",
       "$ref": "../../datatypes/web/webinfo.schema.json",
-      "description": "The information related to web page and link of the ExperienceEvent.",
+      "description": "Link clicks, web page details, referrer information, and browser details.",
       "properties": {
         "referral": {
           "title": "Referral",
@@ -416,7 +418,7 @@
     "advertising": {
       "title": "Advertising",
       "$ref": "../../datatypes/marketing/advertising.schema.json",
-      "description": "Information related to advertising activity in ExperienceEvents.",
+      "description": "Information related to advertising impressions, clickthroughs, and attribution.",
       "meta:xdmField": "xdm:advertising",
       "tagNumber": 10
     },
@@ -435,7 +437,7 @@
     "commerce": {
       "title": "Commerce",
       "$ref": "../../datatypes/marketing/commerce.schema.json",
-      "description": "Commerce specific data related to this event.",
+      "description": "Product returns, warranty registration, and shopping cart/order process.",
       "meta:xdmField": "xdm:commerce",
       "tagNumber": 12
     },
@@ -469,6 +471,7 @@
     },
     "fileTransfer": {
       "type": "object",
+      "description": "Information for file download or file upload activities.",
       "meta:xdmType": "object",
       "properties": {
         "fileDownload": {
@@ -492,14 +495,14 @@
     "implementationDetails": {
       "title": "Implementation details",
       "$ref": "../../datatypes/industry-verticals/implementationdetails.schema.json",
-      "description": "The details of the software used to collect the ExperienceEvent.",
+      "description": "Accomodates tracking versioning details for the Adobe Experience Cloud solutions deployed.",
       "meta:xdmField": "xdm:implementationDetails",
       "tagNumber": 18
     },
     "marketing": {
       "title": "Marketing",
       "$ref": "../../datatypes/marketing/marketing.schema.json",
-      "description": "The information related to marketing activities that are active with the touchpoint.",
+      "description": "Tracks offer impression and social network interactions.",
       "meta:xdmField": "xdm:marketing",
       "tagNumber": 19
     },
@@ -512,6 +515,7 @@
     },
     "offers ": {
       "type": "object",
+      "description": "Offer tracking, including offer impressions and clickthroughs.",
       "meta:xdmType": "object",
       "properties": {
         "ID": {
@@ -556,6 +560,7 @@
     },
     "socialMarketing ": {
       "type": "object",
+      "description": "Tracks interactions related to social marketing sites, such as shares and follows.",
       "meta:xdmType": "object",
       "properties": {
         "sharedContent": {
@@ -628,6 +633,7 @@
     },
     "surveyResponse": {
       "type": "object",
+      "description": "Stores details related to a survey that has been completed by a user.",
       "meta:xdmType": "object",
       "properties": {
         "surveyAnswers": {
@@ -670,6 +676,7 @@
     },
     "customerFeedback": {
       "type": "object",
+      "description": "Customer interaction information such as chat, click to call, email and survey questions/answers.",
       "meta:xdmType": "object",
       "properties": {
         "chatDeclined": {
@@ -773,6 +780,7 @@
     "reservations": {
       "type": "object",
       "meta:xdmType": "object",
+      "description": "Interaction tracking for flights, lodging, vehicles, and dining reservations.",
       "properties": {
         "diningReservations": {
           "type": "array",
@@ -780,7 +788,7 @@
           "meta:xdmField": "xdm:diningReservations",
           "tagNumber": 1,
           "items": {
-            "$ref": "obj9336005894912753.schema.json"
+            "$ref": "obj37594051902616843.schema.json"
           }
         },
         "cancellation": {
@@ -920,7 +928,7 @@
           "meta:xdmField": "xdm:flightReservations",
           "tagNumber": 19,
           "items": {
-            "$ref": "obj7680960242161192.schema.json"
+            "$ref": "obj2925047873648867.schema.json"
           }
         },
         "lodgingReservations": {
@@ -929,7 +937,7 @@
           "meta:xdmField": "xdm:lodgingReservations",
           "tagNumber": 20,
           "items": {
-            "$ref": "obj3583715469552964.schema.json"
+            "$ref": "obj305647519694231.schema.json"
           }
         },
         "vehicleReservations": {
@@ -938,7 +946,7 @@
           "meta:xdmField": "xdm:vehicleReservations",
           "tagNumber": 21,
           "items": {
-            "$ref": "obj38131727581450603.schema.json"
+            "$ref": "obj35109183352683826.schema.json"
           }
         }
       },
@@ -1027,6 +1035,7 @@
     },
     "upgrades": {
       "type": "object",
+      "description": "Upgrade information including impressions and transactions associated with upgrades.",
       "meta:xdmType": "object",
       "properties": {
         "upgradeImpressions": {
@@ -1054,6 +1063,7 @@
     },
     "upsells": {
       "type": "object",
+      "description": "Upsell information including impressions and transactions associated with upsells.",
       "meta:xdmType": "object",
       "properties": {
         "upsellImpressions": {

@@ -123,6 +123,7 @@
     "web": {
       "title": "Web",
       "type": "object",
+      "description": "Link clicks, web page details, referrer information, and browser details.",
       "meta:xdmType": "object",
       "properties": {
         "webInteraction": {

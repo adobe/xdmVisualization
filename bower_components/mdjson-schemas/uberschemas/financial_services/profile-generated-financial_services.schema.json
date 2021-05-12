@@ -1098,6 +1098,7 @@
     },
     "personalFinances": {
       "type": "object",
+      "description": "Financial details including transactions, accounts, and applications.",
       "meta:xdmType": "object",
       "properties": {
         "accountCardsTotal": {
@@ -1126,7 +1127,7 @@
           "meta:xdmField": "xdm:creditScores",
           "tagNumber": 3,
           "items": {
-            "$ref": "obj3578830617068758.schema.json"
+            "$ref": "obj7931198680460207.schema.json"
           }
         },
         "employmentStatus": {
@@ -1227,6 +1228,7 @@
     },
     "userAccount": {
       "type": "object",
+      "description": "Loyalty details, preferences, login processes, and other account preferences.",
       "meta:xdmType": "object",
       "properties": {
         "ID": {

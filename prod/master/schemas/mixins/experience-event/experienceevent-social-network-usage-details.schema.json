@@ -20,13 +20,14 @@
       "public_sector"
     ]
   },
-  "description": "Social network usage information such as share, content, and network. ",
+  "description": "Social network usage information such as share, content, and network.",
   "meta:status": "stable",
   "meta:createdDate": "2021-01-15",
   "meta:xdmType": "object",
   "properties": {
     "socialMarketing ": {
       "type": "object",
+      "description": "Tracks interactions related to social marketing sites, such as shares and follows.",
       "meta:xdmType": "object",
       "properties": {
         "sharedContent": {

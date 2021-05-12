@@ -23,6 +23,7 @@
   "properties": {
     "siteKnowledge": {
       "type": "object",
+      "description": "Knowledge base tracking, support site searches and forum interaction details.",
       "meta:xdmType": "object",
       "properties": {
         "knowledgeBaseArticleID": {

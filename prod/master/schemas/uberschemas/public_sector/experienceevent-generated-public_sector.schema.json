@@ -139,6 +139,7 @@
     "userAccount": {
       "type": "object",
       "meta:xdmType": "object",
+      "description": "Loyalty details, preferences, login processes, and other account preferences.",
       "properties": {
         "appointmentRequestSteps": {
           "title": "Appointment Request Steps",
@@ -321,7 +322,7 @@
     "advertising": {
       "title": "Advertising",
       "$ref": "../../datatypes/marketing/advertising.schema.json",
-      "description": "Information related to advertising activity in ExperienceEvents.",
+      "description": "Information related to advertising impressions, clickthroughs, and attribution.",
       "meta:xdmField": "xdm:advertising",
       "tagNumber": 9
     },
@@ -340,7 +341,7 @@
     "commerce": {
       "title": "Commerce",
       "$ref": "../../datatypes/marketing/commerce.schema.json",
-      "description": "Commerce specific data related to this event.",
+      "description": "Product returns, warranty registration, and shopping cart/order process.",
       "meta:xdmField": "xdm:commerce",
       "tagNumber": 11
     },
@@ -374,6 +375,7 @@
     },
     "fileTransfer": {
       "type": "object",
+      "description": "Information for file download or file upload activities.",
       "meta:xdmType": "object",
       "properties": {
         "fileDownload": {
@@ -397,12 +399,13 @@
     "implementationDetails": {
       "title": "Implementation details",
       "$ref": "../../datatypes/industry-verticals/implementationdetails.schema.json",
-      "description": "The details of the software used to collect the ExperienceEvent.",
+      "description": "Accomodates tracking versioning details for the Adobe Experience Cloud solutions deployed.",
       "meta:xdmField": "xdm:implementationDetails",
       "tagNumber": 17
     },
     "siteKnowledge": {
       "type": "object",
+      "description": "Knowledge base tracking, support site searches and forum interaction details.",
       "meta:xdmType": "object",
       "properties": {
         "knowledgeBaseArticleID": {
@@ -450,7 +453,7 @@
     "marketing": {
       "title": "Marketing",
       "$ref": "../../datatypes/marketing/marketing.schema.json",
-      "description": "The information related to marketing activities that are active with the touchpoint.",
+      "description": "Tracks offer impression and social network interactions.",
       "meta:xdmField": "xdm:marketing",
       "tagNumber": 19
     },
@@ -463,6 +466,7 @@
     },
     "socialMarketing ": {
       "type": "object",
+      "description": "Tracks interactions related to social marketing sites, such as shares and follows.",
       "meta:xdmType": "object",
       "properties": {
         "sharedContent": {
@@ -535,6 +539,7 @@
     },
     "surveyResponse": {
       "type": "object",
+      "description": "Stores details related to a survey that has been completed by a user.",
       "meta:xdmType": "object",
       "properties": {
         "surveyAnswers": {
@@ -578,12 +583,13 @@
     "web": {
       "title": "Web",
       "$ref": "../../datatypes/web/webinfo.schema.json",
-      "description": "The information related to web page and link of the ExperienceEvent.",
+      "description": "Link clicks, web page details, referrer information, and browser details.",
       "meta:xdmField": "xdm:web",
       "tagNumber": 23
     },
     "alerts": {
       "type": "object",
+      "description": "Alert information including alert impressions and clickthroughs as well as alert setups.",
       "meta:xdmType": "object",
       "properties": {
         "ID": {
@@ -628,6 +634,7 @@
     },
     "customerFeedback": {
       "type": "object",
+      "description": "Customer interaction information such as chat, click to call, email and survey questions/answers.",
       "meta:xdmType": "object",
       "properties": {
         "chatDeclined": {

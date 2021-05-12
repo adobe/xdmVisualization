@@ -27,6 +27,7 @@
   "properties": {
     "surveyResponse": {
       "type": "object",
+      "description": "Stores details related to a survey that has been completed by a user.",
       "meta:xdmType": "object",
       "properties": {
         "surveyAnswers": {

@@ -23,6 +23,7 @@
   "properties": {
     "upsells": {
       "type": "object",
+      "description": "Upsell information including impressions and transactions associated with upsells.",
       "meta:xdmType": "object",
       "properties": {
         "upsellImpressions": {

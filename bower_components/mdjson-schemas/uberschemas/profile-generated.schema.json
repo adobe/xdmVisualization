@@ -168,7 +168,7 @@
       "meta:xdmField": "xdm:personComponents",
       "tagNumber": 11,
       "items": {
-        "$ref": "obj1611577876203305.schema.json"
+        "$ref": "obj4587073749511743.schema.json"
       }
     },
     "b2b": {
@@ -1465,6 +1465,7 @@
     },
     "loyalty": {
       "type": "object",
+      "description": "Captures details related to the customer's loyalty rewards.",
       "meta:xdmType": "object",
       "properties": {
         "joinDate": {
@@ -1504,7 +1505,7 @@
           "meta:xdmField": "xdm:pointsExpiration",
           "tagNumber": 4,
           "items": {
-            "$ref": "obj08817779322625396.schema.json"
+            "$ref": "obj7882169949056177.schema.json"
           }
         },
         "pointsRedeemed": {
@@ -1586,7 +1587,7 @@
           "meta:xdmField": "xdm:devices",
           "tagNumber": 4,
           "items": {
-            "$ref": "obj4076974799639972.schema.json"
+            "$ref": "obj9078256286490125.schema.json"
           }
         },
         "accessories": {
@@ -1597,7 +1598,7 @@
           "meta:xdmField": "xdm:accessories",
           "tagNumber": 5,
           "items": {
-            "$ref": "obj3844398393531778.schema.json"
+            "$ref": "obj9498624589867513.schema.json"
           }
         }
       },
@@ -1620,6 +1621,7 @@
     },
     "personalFinances": {
       "type": "object",
+      "description": "Financial details including transactions, accounts, and applications.",
       "meta:xdmType": "object",
       "properties": {
         "accountCardsTotal": {
@@ -1648,7 +1650,7 @@
           "meta:xdmField": "xdm:creditScores",
           "tagNumber": 3,
           "items": {
-            "$ref": "obj9091403347139555.schema.json"
+            "$ref": "obj7274318493247862.schema.json"
           }
         },
         "employmentStatus": {
@@ -1865,7 +1867,7 @@
       "meta:xdmField": "xdm:pushNotificationDetails",
       "tagNumber": 51,
       "items": {
-        "$ref": "obj976807527607024.schema.json"
+        "$ref": "obj5268449558893582.schema.json"
       }
     },
     "segmentMembership": {
@@ -1912,6 +1914,7 @@
     },
     "userAccount": {
       "type": "object",
+      "description": "Loyalty details, preferences, login processes, and other account preferences.",
       "meta:xdmType": "object",
       "properties": {
         "ID": {

@@ -1060,6 +1060,7 @@
     },
     "loyalty": {
       "type": "object",
+      "description": "Captures details related to the customer's loyalty rewards.",
       "meta:xdmType": "object",
       "properties": {
         "joinDate": {
@@ -1099,7 +1100,7 @@
           "meta:xdmField": "xdm:pointsExpiration",
           "tagNumber": 4,
           "items": {
-            "$ref": "obj7119262244176501.schema.json"
+            "$ref": "obj8965526254780178.schema.json"
           }
         },
         "pointsRedeemed": {
@@ -1190,6 +1191,7 @@
     },
     "userAccount": {
       "type": "object",
+      "description": "Loyalty details, preferences, login processes, and other account preferences.",
       "meta:xdmType": "object",
       "properties": {
         "ID": {

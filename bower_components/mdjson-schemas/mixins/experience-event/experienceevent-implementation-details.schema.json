@@ -18,7 +18,7 @@
     "implementationDetails": {
       "title": "Implementation details",
       "$ref": "../../datatypes/industry-verticals/implementationdetails.schema.json",
-      "description": "The details of the software used to collect the ExperienceEvent.",
+      "description": "Accomodates tracking versioning details for the Adobe Experience Cloud solutions deployed.",
       "meta:xdmField": "xdm:implementationDetails",
       "tagNumber": 1
     }
