@@ -468,7 +468,7 @@
       "meta:xdmField": "xdm:media",
       "tagNumber": 19
     },
-    "offers ": {
+    "offers": {
       "type": "object",
       "description": "Offer tracking, including offer impressions and clickthroughs.",
       "meta:xdmType": "object",
@@ -510,7 +510,7 @@
           "tagNumber": 4
         }
       },
-      "meta:xdmField": "xdm:offers ",
+      "meta:xdmField": "xdm:offers",
       "tagNumber": 20
     },
     "quotes": {

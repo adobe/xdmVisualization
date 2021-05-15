@@ -168,7 +168,7 @@
       "meta:xdmField": "xdm:personComponents",
       "tagNumber": 11,
       "items": {
-        "$ref": "obj7462271264907143.schema.json"
+        "$ref": "obj22450379410562937.schema.json"
       }
     },
     "b2b": {
@@ -486,6 +486,8 @@
                 "n",
                 "p",
                 "u",
+                "dy",
+                "dn",
                 "LI",
                 "CT",
                 "CP",
@@ -516,6 +518,8 @@
                 "n",
                 "p",
                 "u",
+                "dy",
+                "dn",
                 "LI",
                 "CT",
                 "CP",
@@ -552,6 +556,8 @@
                     "n",
                     "p",
                     "u",
+                    "dy",
+                    "dn",
                     "LI",
                     "CT",
                     "CP",
@@ -615,6 +621,8 @@
                     "n",
                     "p",
                     "u",
+                    "dy",
+                    "dn",
                     "LI",
                     "CT",
                     "CP",
@@ -663,6 +671,8 @@
                     "n",
                     "p",
                     "u",
+                    "dy",
+                    "dn",
                     "LI",
                     "CT",
                     "CP",
@@ -714,6 +724,8 @@
                             "n",
                             "p",
                             "u",
+                            "dy",
+                            "dn",
                             "LI",
                             "CT",
                             "CP",
@@ -795,6 +807,8 @@
                     "n",
                     "p",
                     "u",
+                    "dy",
+                    "dn",
                     "LI",
                     "CT",
                     "CP",
@@ -846,6 +860,8 @@
                             "n",
                             "p",
                             "u",
+                            "dy",
+                            "dn",
                             "LI",
                             "CT",
                             "CP",
@@ -927,6 +943,8 @@
                     "n",
                     "p",
                     "u",
+                    "dy",
+                    "dn",
                     "LI",
                     "CT",
                     "CP",
@@ -978,6 +996,8 @@
                             "n",
                             "p",
                             "u",
+                            "dy",
+                            "dn",
                             "LI",
                             "CT",
                             "CP",
@@ -1097,6 +1117,8 @@
                             "n",
                             "p",
                             "u",
+                            "dy",
+                            "dn",
                             "LI",
                             "CT",
                             "CP",
@@ -1127,6 +1149,8 @@
                             "n",
                             "p",
                             "u",
+                            "dy",
+                            "dn",
                             "LI",
                             "CT",
                             "CP",
@@ -1157,6 +1181,8 @@
                             "n",
                             "p",
                             "u",
+                            "dy",
+                            "dn",
                             "LI",
                             "CT",
                             "CP",
@@ -1193,6 +1219,8 @@
                                 "n",
                                 "p",
                                 "u",
+                                "dy",
+                                "dn",
                                 "LI",
                                 "CT",
                                 "CP",
@@ -1233,6 +1261,8 @@
                                 "n",
                                 "p",
                                 "u",
+                                "dy",
+                                "dn",
                                 "LI",
                                 "CT",
                                 "CP",
@@ -1281,6 +1311,8 @@
                                 "n",
                                 "p",
                                 "u",
+                                "dy",
+                                "dn",
                                 "LI",
                                 "CT",
                                 "CP",
@@ -1329,6 +1361,8 @@
                                 "n",
                                 "p",
                                 "u",
+                                "dy",
+                                "dn",
                                 "LI",
                                 "CT",
                                 "CP",
@@ -1505,7 +1539,7 @@
           "meta:xdmField": "xdm:pointsExpiration",
           "tagNumber": 4,
           "items": {
-            "$ref": "obj7515802297006866.schema.json"
+            "$ref": "obj8659081274769818.schema.json"
           }
         },
         "pointsRedeemed": {
@@ -1587,7 +1621,7 @@
           "meta:xdmField": "xdm:devices",
           "tagNumber": 4,
           "items": {
-            "$ref": "obj8417291231826498.schema.json"
+            "$ref": "obj09781241317883405.schema.json"
           }
         },
         "accessories": {
@@ -1598,7 +1632,7 @@
           "meta:xdmField": "xdm:accessories",
           "tagNumber": 5,
           "items": {
-            "$ref": "obj5993203588023175.schema.json"
+            "$ref": "obj13240550703481668.schema.json"
           }
         }
       },
@@ -1650,7 +1684,7 @@
           "meta:xdmField": "xdm:creditScores",
           "tagNumber": 3,
           "items": {
-            "$ref": "obj4404387766667177.schema.json"
+            "$ref": "obj3109146912892031.schema.json"
           }
         },
         "employmentStatus": {
@@ -1867,7 +1901,7 @@
       "meta:xdmField": "xdm:pushNotificationDetails",
       "tagNumber": 51,
       "items": {
-        "$ref": "obj32248887193283937.schema.json"
+        "$ref": "obj3456838382476404.schema.json"
       }
     },
     "segmentMembership": {
