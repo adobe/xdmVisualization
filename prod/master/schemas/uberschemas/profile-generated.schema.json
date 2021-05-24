@@ -168,7 +168,7 @@
       "meta:xdmField": "xdm:personComponents",
       "tagNumber": 11,
       "items": {
-        "$ref": "obj8988227419117747.schema.json"
+        "$ref": "obj19164316609429144.schema.json"
       }
     },
     "b2b": {
@@ -1539,7 +1539,7 @@
           "meta:xdmField": "xdm:pointsExpiration",
           "tagNumber": 4,
           "items": {
-            "$ref": "obj45091642646297303.schema.json"
+            "$ref": "obj21197282868118128.schema.json"
           }
         },
         "pointsRedeemed": {
@@ -1621,7 +1621,7 @@
           "meta:xdmField": "xdm:devices",
           "tagNumber": 4,
           "items": {
-            "$ref": "obj9896569737104488.schema.json"
+            "$ref": "obj19827618708659767.schema.json"
           }
         },
         "accessories": {
@@ -1632,7 +1632,7 @@
           "meta:xdmField": "xdm:accessories",
           "tagNumber": 5,
           "items": {
-            "$ref": "obj6811183841944908.schema.json"
+            "$ref": "obj8640395224507562.schema.json"
           }
         }
       },
@@ -1684,7 +1684,7 @@
           "meta:xdmField": "xdm:creditScores",
           "tagNumber": 3,
           "items": {
-            "$ref": "obj9415400782873069.schema.json"
+            "$ref": "obj41157108856581526.schema.json"
           }
         },
         "employmentStatus": {
@@ -1901,7 +1901,7 @@
       "meta:xdmField": "xdm:pushNotificationDetails",
       "tagNumber": 51,
       "items": {
-        "$ref": "obj7569690489282668.schema.json"
+        "$ref": "obj5212204684574355.schema.json"
       }
     },
     "segmentMembership": {
