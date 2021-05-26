@@ -1,0 +1,72 @@
+{
+  "id": "_experience.edge-autofilled-environment-details",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Adobe Experience Edge Autofilled Environment Details",
+  "type": "object",
+  "description": "Information automatically collected by the AEP Edge Orchestration Service to enrich each received XDM Experience event.",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:status": "experimental",
+  "meta:xdmType": "object",
+  "properties": {
+    "environment": {
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "ipV4": {
+          "title": "IPv4",
+          "type": "string",
+          "format": "ipv4",
+          "description": "The numerical label assigned to a device participating in a computer network that uses the Internet Protocol for communication. ",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:ipV4",
+          "tagNumber": 1
+        },
+        "ipV6": {
+          "title": "IPv6",
+          "type": "string",
+          "format": "ipv6",
+          "description": "The numerical label assigned to a device participating in a computer network that uses the Internet Protocol for communication. ",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:ipV6",
+          "tagNumber": 2
+        },
+        "browserDetails": {
+          "properties": {
+            "userAgent": {
+              "title": "User agent",
+              "type": "string",
+              "description": "The HTTP user-agent string from the client request.",
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:userAgent",
+              "tagNumber": 1
+            }
+          },
+          "type": "object",
+          "meta:xdmField": "xdm:browserDetails",
+          "tagNumber": 3
+        }
+      },
+      "meta:xdmField": "xdm:environment",
+      "tagNumber": 1
+    },
+    "placeContext": {
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "geo": {
+          "title": "Geo",
+          "$ref": "../../datatypes/demographic/geo.schema.json",
+          "description": "The geographic location where the experience was delivered based on the IP address from the client request.",
+          "meta:xdmField": "xdm:geo",
+          "tagNumber": 1
+        }
+      },
+      "meta:xdmField": "xdm:placeContext",
+      "tagNumber": 2
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/experience/edge-autofilled-environment-details",
+  "meta:altId": "_experience.edge-autofilled-environment-details",
+  "id": "_experience.edge-autofilled-environment-details"
+}

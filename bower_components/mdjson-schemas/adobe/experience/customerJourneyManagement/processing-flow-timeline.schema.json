@@ -1,0 +1,43 @@
+{
+  "id": "_experience.customerjourneymanagement.processing-flow-timeline",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Adobe CJM ExperienceEvent - Processing Flow Timeline",
+  "description": "Captures an array of time-profiling info, for every component of processing flow.",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:status": "stable",
+  "meta:xdmType": "object",
+  "properties": {
+    "processingFlowTimeline": {
+      "title": "processingFlowTimeline",
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "flowName": {
+          "title": "flowName",
+          "type": "string",
+          "description": "Name of the processing flow.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:flowName",
+          "tagNumber": 1
+        },
+        "processingNodes": {
+          "title": "processingNodes",
+          "type": "array",
+          "meta:xdmType": "array",
+          "meta:xdmField": "xdm:processingNodes",
+          "tagNumber": 2,
+          "items": {
+            "$ref": "obj46628509890271874.schema.json"
+          }
+        }
+      },
+      "meta:xdmField": "xdm:processingFlowTimeline",
+      "tagNumber": 1
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/experience/customerJourneyManagement/processing-flow-timeline",
+  "meta:altId": "_experience.customerjourneymanagement.processing-flow-timeline",
+  "id": "_experience.customerjourneymanagement.processing-flow-timeline"
+}
