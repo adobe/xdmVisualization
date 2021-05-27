@@ -70,6 +70,14 @@
                   "meta:xdmType": "string",
                   "meta:xdmField": "https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/namespace",
                   "tagNumber": 2
+                },
+                "outboundIP": {
+                  "title": "IP Address",
+                  "type": "string",
+                  "description": "Outbound IP address of the customer used to deliver the message.",
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/outboundIP",
+                  "tagNumber": 3
                 }
               },
               "tagNumber": 2
