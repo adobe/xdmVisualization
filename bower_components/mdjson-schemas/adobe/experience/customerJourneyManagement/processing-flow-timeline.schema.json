@@ -6,34 +6,48 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "meta:status": "stable",
+  "meta:status": "experimental",
   "meta:xdmType": "object",
   "properties": {
-    "processingFlowTimeline": {
-      "title": "processingFlowTimeline",
+    "_experience": {
       "type": "object",
       "meta:xdmType": "object",
       "properties": {
-        "flowName": {
-          "title": "flowName",
-          "type": "string",
-          "description": "Name of the processing flow.",
-          "meta:xdmType": "string",
-          "meta:xdmField": "xdm:flowName",
+        "customerJourneyManagement": {
+          "type": "object",
+          "meta:xdmType": "object",
+          "properties": {
+            "processingFlowTimeline": {
+              "title": "processingFlowTimeline",
+              "type": "object",
+              "meta:xdmType": "object",
+              "properties": {
+                "flowName": {
+                  "title": "flowName",
+                  "type": "string",
+                  "description": "Name of the processing flow.",
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:flowName",
+                  "tagNumber": 1
+                },
+                "processingNodes": {
+                  "title": "processingNodes",
+                  "type": "array",
+                  "meta:xdmType": "array",
+                  "meta:xdmField": "xdm:processingNodes",
+                  "tagNumber": 2,
+                  "items": {
+                    "$ref": "obj6625955975410671.schema.json"
+                  }
+                }
+              },
+              "meta:xdmField": "https://ns.adobe.com/experience/customerJourneyManagement/processingFlowTimeline",
+              "tagNumber": 1
+            }
+          },
           "tagNumber": 1
-        },
-        "processingNodes": {
-          "title": "processingNodes",
-          "type": "array",
-          "meta:xdmType": "array",
-          "meta:xdmField": "xdm:processingNodes",
-          "tagNumber": 2,
-          "items": {
-            "$ref": "obj9382754368593149.schema.json"
-          }
         }
       },
-      "meta:xdmField": "xdm:processingFlowTimeline",
       "tagNumber": 1
     }
   },
