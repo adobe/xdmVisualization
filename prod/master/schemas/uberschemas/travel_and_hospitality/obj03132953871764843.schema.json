@@ -1,0 +1,188 @@
+{
+  "type": "object",
+  "meta:xdmType": "object",
+  "properties": {
+    "cuisine": {
+      "title": "Cuisine",
+      "type": "string",
+      "description": "Type of restaurant cuisine.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:cuisine",
+      "tagNumber": 1
+    },
+    "restaurantID": {
+      "title": "Restaurant ID",
+      "type": "string",
+      "description": "Identifier for the restaurant/dining location.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:restaurantID",
+      "tagNumber": 2
+    },
+    "deliveryPartners": {
+      "title": "Delivery Partners",
+      "type": "string",
+      "description": "Delivery partners available from the restaurant.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:deliveryPartners",
+      "tagNumber": 3
+    },
+    "diningOptions": {
+      "title": "Dining Options",
+      "type": "string",
+      "description": "Delivery and dining options available from the restaurant.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:diningOptions",
+      "tagNumber": 4
+    },
+    "groupReservation": {
+      "title": "Group Reservation",
+      "type": "boolean",
+      "description": "Indicates if the reservation is being made for a group.",
+      "meta:xdmType": "boolean",
+      "meta:xdmField": "xdm:groupReservation",
+      "tagNumber": 5
+    },
+    "loyaltyID": {
+      "title": "Loyalty ID",
+      "type": "string",
+      "description": "Includes the loyalty/rewards program ID for the party listed in the reservation.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:loyaltyID",
+      "tagNumber": 6
+    },
+    "partySize": {
+      "title": "Party Size",
+      "type": "integer",
+      "description": "Number of individuals in the dining party.",
+      "meta:xdmType": "int",
+      "meta:xdmField": "xdm:partySize",
+      "tagNumber": 7
+    },
+    "priceCategory": {
+      "title": "Price Category",
+      "type": "string",
+      "description": "Price category for the reservation being made.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:priceCategory",
+      "tagNumber": 8
+    },
+    "reservationTime": {
+      "title": "Reservation Time",
+      "type": "string",
+      "format": "date-time",
+      "description": "The time for which the dining reservation is booked.",
+      "meta:xdmType": "date-time",
+      "meta:xdmField": "xdm:reservationTime",
+      "tagNumber": 9
+    },
+    "specialOccasion": {
+      "title": "Special Occasion",
+      "type": "boolean",
+      "description": "Indicates if the reservation is being made for a special occasion.",
+      "meta:xdmType": "boolean",
+      "meta:xdmField": "xdm:specialOccasion",
+      "tagNumber": 10
+    },
+    "status": {
+      "title": "Status",
+      "type": "string",
+      "description": "The status of the dining reservation.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:status",
+      "tagNumber": 11
+    },
+    "cancellation": {
+      "title": "Cancellation",
+      "type": "integer",
+      "description": "Tracked when a reservation has been cancelled.",
+      "meta:xdmType": "int",
+      "meta:xdmField": "xdm:cancellation",
+      "tagNumber": 12
+    },
+    "confirmationNumber": {
+      "title": "Confirmation Number",
+      "type": "string",
+      "description": "Tracks the reservation confirmation number/identifier.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:confirmationNumber",
+      "tagNumber": 13
+    },
+    "created": {
+      "title": "Created",
+      "type": "integer",
+      "description": "Tracked when a reservation has been created.",
+      "meta:xdmType": "int",
+      "meta:xdmField": "xdm:created",
+      "tagNumber": 14
+    },
+    "currencyCode": {
+      "title": "Currency Code",
+      "type": "string",
+      "description": "Currency code used to make the purchase. ISO 4217 currency code.",
+      "pattern": "^[A-Z]{3}$",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:currencyCode",
+      "tagNumber": 15
+    },
+    "ID": {
+      "title": "ID",
+      "type": "string",
+      "description": "Tracks the reservation number/identifier.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:ID",
+      "tagNumber": 16
+    },
+    "length": {
+      "title": "Length",
+      "type": "integer",
+      "description": "Tracks the total number of days for a reservation.",
+      "meta:xdmType": "int",
+      "meta:xdmField": "xdm:length",
+      "tagNumber": 17
+    },
+    "modification": {
+      "title": "Modification",
+      "type": "integer",
+      "description": "Captured when a reservation has been modified.",
+      "meta:xdmType": "int",
+      "meta:xdmField": "xdm:modification",
+      "tagNumber": 18
+    },
+    "modificationDate": {
+      "title": "Modification Date",
+      "type": "string",
+      "format": "date-time",
+      "description": "Tracks when a reservation has been modified.",
+      "meta:xdmType": "date-time",
+      "meta:xdmField": "xdm:modificationDate",
+      "tagNumber": 19
+    },
+    "numberOfAdults": {
+      "title": "Number of Adults",
+      "type": "integer",
+      "description": "Captures the number of adults associated with the reservation.",
+      "meta:xdmType": "int",
+      "meta:xdmField": "xdm:numberOfAdults",
+      "tagNumber": 20
+    },
+    "numberOfChildren": {
+      "title": "Number of Children",
+      "type": "integer",
+      "description": "Captures the number of children associated with the reservation.",
+      "meta:xdmType": "int",
+      "meta:xdmField": "xdm:numberOfChildren",
+      "tagNumber": 21
+    },
+    "purpose": {
+      "title": "Purpose",
+      "type": "string",
+      "description": "Tracks the purpose of the reservation, typically either business or personal.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:purpose",
+      "tagNumber": 22
+    }
+  },
+  "tagNumber": 1,
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "id": "obj03132953871764843.schema.json"
+}

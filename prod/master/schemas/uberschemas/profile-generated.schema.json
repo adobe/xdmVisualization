@@ -16,17 +16,17 @@
     },
     {
       "industry": [
+        "telecom"
+      ]
+    },
+    {
+      "industry": [
         "retail",
         "travel_and_hospitality",
         "automotive",
         "health_and_life_sciences",
         "high_tech",
         "manufacturing"
-      ]
-    },
-    {
-      "industry": [
-        "telecom"
       ]
     },
     {
@@ -168,7 +168,7 @@
       "meta:xdmField": "xdm:personComponents",
       "tagNumber": 11,
       "items": {
-        "$ref": "obj6121098906517781.schema.json"
+        "$ref": "obj7068794542775512.schema.json"
       }
     },
     "b2b": {
@@ -1497,6 +1497,234 @@
       "meta:xdmField": "xdm:inferredPhoneAreaCode",
       "tagNumber": 37
     },
+    "internetSubscription": {
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "dataCap": {
+          "title": "Data Cap",
+          "type": "integer",
+          "description": "Captures the data cap limit for the account, in megabytes (MB).",
+          "meta:xdmType": "int",
+          "meta:xdmField": "xdm:dataCap",
+          "tagNumber": 1
+        },
+        "connectionType": {
+          "title": "Connection Type",
+          "type": "string",
+          "enum": [
+            "cable",
+            "dsl",
+            "fiber",
+            "mobile",
+            "satellite"
+          ],
+          "description": "Tracks the type of connection type for the subscription.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:connectionType",
+          "tagNumber": 2
+        },
+        "downloadSpeed": {
+          "title": "Download Speed",
+          "type": "integer",
+          "description": "Records the maximum download speed available for the subscription, in megabytes (MB).",
+          "meta:xdmType": "int",
+          "meta:xdmField": "xdm:downloadSpeed",
+          "tagNumber": 3
+        },
+        "uploadSpeed": {
+          "title": "Upload Speed",
+          "type": "integer",
+          "description": "Records the maximum upload speed available for the subscription, in megabytes (MB).",
+          "meta:xdmType": "int",
+          "meta:xdmField": "xdm:uploadSpeed",
+          "tagNumber": 4
+        },
+        "selfSetup": {
+          "title": "Self-Setup",
+          "type": "boolean",
+          "description": "Flags if a customer is eligible for internet setup without a technican visit.",
+          "meta:xdmType": "boolean",
+          "meta:xdmField": "xdm:selfSetup",
+          "tagNumber": 5
+        }
+      },
+      "meta:xdmField": "xdm:internetSubscription",
+      "tagNumber": 38
+    },
+    "telecomSubscription": {
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "subscriptionID": {
+          "title": "Subscription ID",
+          "type": "string",
+          "description": "Identifier for subscription.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:subscriptionID",
+          "tagNumber": 1
+        },
+        "responsiblePartyID": {
+          "title": "Responsible Party ID",
+          "type": "string",
+          "description": "Identifier for the person responsible for the subscription, which typically could be their device phone number.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:responsiblePartyID",
+          "tagNumber": 2
+        },
+        "subscriptionType": {
+          "title": "Subscription Type",
+          "type": "string",
+          "enum": [
+            "individual",
+            "household",
+            "business"
+          ],
+          "description": "Indicates the type of telecom subscription in which the customer is enrolled.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:subscriptionType",
+          "tagNumber": 3
+        },
+        "bundleName": {
+          "title": "Bundle Name",
+          "type": "string",
+          "description": "Captures the name of any type of subscription bundle in which the customer is enrolled, such as 'Internet + TV'.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:bundleName",
+          "tagNumber": 4
+        },
+        "subscriptionDetails": {
+          "title": "Subscription Details",
+          "$ref": "../datatypes/industry-verticals/subscription.schema.json",
+          "description": "Extension of the subscription data type to include subscription length, fees, status, etc.",
+          "meta:xdmField": "xdm:subscriptionDetails",
+          "tagNumber": 5
+        },
+        "activationDate": {
+          "title": "Activation Date",
+          "type": "string",
+          "format": "date-time",
+          "description": "Tracks the date in which the telecom subscription was activated.",
+          "meta:xdmType": "date-time",
+          "meta:xdmField": "xdm:activationDate",
+          "tagNumber": 6
+        },
+        "deactivationDate": {
+          "title": "Deactivation Date",
+          "type": "string",
+          "format": "date-time",
+          "description": "Tracks the date in which the telecom subscription was deactivated.",
+          "meta:xdmType": "date-time",
+          "meta:xdmField": "xdm:deactivationDate",
+          "tagNumber": 7
+        },
+        "equipmentFees": {
+          "title": "Equipment Fees",
+          "$ref": "../datatypes/currency.schema.json",
+          "description": "Captures any equipment fees for items such as routers, modems, recievers, etc.",
+          "meta:xdmField": "xdm:equipmentFees",
+          "tagNumber": 8
+        },
+        "equipmentInsurance": {
+          "title": "Equipment Insurance",
+          "type": "boolean",
+          "description": "Tracks if a customer has opted-in to equipment insurance for the subscription.",
+          "meta:xdmType": "boolean",
+          "meta:xdmField": "xdm:equipmentInsurance",
+          "tagNumber": 9
+        }
+      },
+      "meta:xdmField": "xdm:telecomSubscription",
+      "tagNumber": 39
+    },
+    "landlineSubscription": {
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "minutes": {
+          "title": "Minutes",
+          "type": "integer",
+          "description": "Number of monthly minutes available within the subscription.",
+          "meta:xdmType": "int",
+          "meta:xdmField": "xdm:minutes",
+          "tagNumber": 1
+        },
+        "voicemail": {
+          "title": "Voicemail",
+          "type": "boolean",
+          "description": "Flags if the landline subscription features include Voicemail.",
+          "meta:xdmType": "boolean",
+          "meta:xdmField": "xdm:voicemail",
+          "tagNumber": 2
+        },
+        "callForwarding": {
+          "title": "Call Forwarding",
+          "type": "boolean",
+          "description": "Flags if the landline subscription features include Call Forwarding.",
+          "meta:xdmType": "boolean",
+          "meta:xdmField": "xdm:callForwarding",
+          "tagNumber": 3
+        },
+        "callerID": {
+          "title": "Caller ID",
+          "type": "boolean",
+          "description": "Flags if the landline subscription features include Caller ID.",
+          "meta:xdmType": "boolean",
+          "meta:xdmField": "xdm:callerID",
+          "tagNumber": 4
+        },
+        "callBlocking": {
+          "title": "Call Blocking",
+          "type": "boolean",
+          "description": "Flags if the landline subscription features include Call Blocking.",
+          "meta:xdmType": "boolean",
+          "meta:xdmField": "xdm:callBlocking",
+          "tagNumber": 5
+        },
+        "callWaiting": {
+          "title": "Call Waiting",
+          "type": "boolean",
+          "description": "Flags if the landline subscription features include Call Waiting.",
+          "meta:xdmType": "boolean",
+          "meta:xdmField": "xdm:callWaiting",
+          "tagNumber": 6
+        },
+        "threeWayCalling": {
+          "title": "Three-Way Dialing",
+          "type": "boolean",
+          "description": "Flags if the landline subscription features include Three-Way Dialing.",
+          "meta:xdmType": "boolean",
+          "meta:xdmField": "xdm:threeWayCalling",
+          "tagNumber": 7
+        },
+        "internationalCalling": {
+          "title": "International Calling",
+          "type": "boolean",
+          "description": "Flags if the landline subscription features include International Calling.",
+          "meta:xdmType": "boolean",
+          "meta:xdmField": "xdm:internationalCalling",
+          "tagNumber": 8
+        },
+        "unlimitedLocalCalling": {
+          "title": "Unlimited Local Calling",
+          "type": "boolean",
+          "description": "Flags if the landline subscription features include Unlimited Local Calling.",
+          "meta:xdmType": "boolean",
+          "meta:xdmField": "xdm:unlimitedLocalCalling",
+          "tagNumber": 9
+        },
+        "unlimitedDomesticLongDistance": {
+          "title": "Unlimited Domestic Long Distance",
+          "type": "boolean",
+          "description": "Flags if the landline subscription features include Unlimited Domestic Long Distance.",
+          "meta:xdmType": "boolean",
+          "meta:xdmField": "xdm:unlimitedDomesticLongDistance",
+          "tagNumber": 10
+        }
+      },
+      "meta:xdmField": "xdm:landlineSubscription",
+      "tagNumber": 40
+    },
     "loyalty": {
       "type": "object",
       "description": "Captures details related to the customer's loyalty rewards.",
@@ -1539,7 +1767,7 @@
           "meta:xdmField": "xdm:pointsExpiration",
           "tagNumber": 4,
           "items": {
-            "$ref": "obj34982951741133506.schema.json"
+            "$ref": "obj27928422586571.schema.json"
           }
         },
         "pointsRedeemed": {
@@ -1584,7 +1812,34 @@
         }
       },
       "meta:xdmField": "xdm:loyalty",
-      "tagNumber": 38
+      "tagNumber": 41
+    },
+    "mediaSubscription": {
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "channels": {
+          "title": "Channels",
+          "type": "integer",
+          "description": "Records the number of channels included with the media subscription.",
+          "meta:xdmType": "int",
+          "meta:xdmField": "xdm:channels",
+          "tagNumber": 1
+        },
+        "streamingServices": {
+          "title": "Streaming Services",
+          "description": "Array of all streaming services included with the subscription.",
+          "type": "array",
+          "meta:xdmType": "array",
+          "meta:xdmField": "xdm:streamingServices",
+          "tagNumber": 2,
+          "items": {
+            "$ref": "obj6486131351027635.schema.json"
+          }
+        }
+      },
+      "meta:xdmField": "xdm:mediaSubscription",
+      "tagNumber": 42
     },
     "mobilePlanDetails": {
       "type": "object",
@@ -1621,7 +1876,7 @@
           "meta:xdmField": "xdm:devices",
           "tagNumber": 4,
           "items": {
-            "$ref": "obj11746023370673342.schema.json"
+            "$ref": "obj7880541276121251.schema.json"
           }
         },
         "accessories": {
@@ -1632,26 +1887,26 @@
           "meta:xdmField": "xdm:accessories",
           "tagNumber": 5,
           "items": {
-            "$ref": "obj8574107423789039.schema.json"
+            "$ref": "obj0900273885242191.schema.json"
           }
         }
       },
       "meta:xdmField": "xdm:mobilePlanDetails",
-      "tagNumber": 39
+      "tagNumber": 43
     },
     "orgUnit": {
       "title": "Organizational unit",
       "$ref": "../datatypes/b2b/orgunit.schema.json",
       "description": "The unit within the organization owning the profile. This can be used to reference the organization details maintained in another dataset.",
       "meta:xdmField": "xdm:orgUnit",
-      "tagNumber": 40
+      "tagNumber": 44
     },
     "geoUnit": {
       "title": "Geographical unit",
       "$ref": "../datatypes/demographic/geounit.schema.json",
       "description": "The geographical unit within the organization owning the profile. This can be used to reference the geographical information maintained in another dataset.",
       "meta:xdmField": "xdm:geoUnit",
-      "tagNumber": 41
+      "tagNumber": 45
     },
     "personalFinances": {
       "type": "object",
@@ -1684,7 +1939,7 @@
           "meta:xdmField": "xdm:creditScores",
           "tagNumber": 3,
           "items": {
-            "$ref": "obj5266788321215794.schema.json"
+            "$ref": "obj19891499558726.schema.json"
           }
         },
         "employmentStatus": {
@@ -1781,7 +2036,7 @@
         }
       },
       "meta:xdmField": "xdm:personalFinances",
-      "tagNumber": 42
+      "tagNumber": 46
     },
     "preferredLanguage": {
       "title": "Preferred language",
@@ -1795,7 +2050,7 @@
       "description": "Describes the preferred system of communication used by the profile. Language codes are expressed in BCP 47 format.",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:preferredLanguage",
-      "tagNumber": 43
+      "tagNumber": 47
     },
     "profilePictureLink": {
       "title": "Profile picture link",
@@ -1803,7 +2058,7 @@
       "description": "Link to profile's picture.",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:profilePictureLink",
-      "tagNumber": 44
+      "tagNumber": 48
     },
     "emailFormat": {
       "title": "Email format",
@@ -1811,7 +2066,7 @@
       "description": "Email format preferred by the profile. This can be rich text or plain text.",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:emailFormat",
-      "tagNumber": 45
+      "tagNumber": 49
     },
     "timeZone": {
       "title": "Time zone",
@@ -1824,7 +2079,7 @@
       "description": "Describes which time zone the profile is present in, most frequently the time zone preferred by the profile. Time zones are expressed according to the IETF tz database: https://www.ietf.org/timezones/tzdb-2016i/tz-link.htm",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:timeZone",
-      "tagNumber": 46
+      "tagNumber": 50
     },
     "identityPrivacyInfo": {
       "title": "Identity level privacy information",
@@ -1832,7 +2087,7 @@
       "type": "object",
       "meta:xdmType": "map",
       "meta:xdmField": "xdm:identityPrivacyInfo",
-      "tagNumber": 49,
+      "tagNumber": 53,
       "properties": {
         "mapObj": {
           "title": "User namespace",
@@ -1891,7 +2146,7 @@
         "tagNumber": 1
       },
       "meta:xdmField": "xdm:pushNotificationTokens",
-      "tagNumber": 50
+      "tagNumber": 54
     },
     "pushNotificationDetails": {
       "title": "Push details",
@@ -1899,9 +2154,9 @@
       "description": "Push details array containing notification info required to send mobile push notification to a specific mobile application on a given device.",
       "meta:xdmType": "array",
       "meta:xdmField": "xdm:pushNotificationDetails",
-      "tagNumber": 51,
+      "tagNumber": 55,
       "items": {
-        "$ref": "obj217485000390522.schema.json"
+        "$ref": "obj9975886170322665.schema.json"
       }
     },
     "segmentMembership": {
@@ -1909,7 +2164,7 @@
       "type": "object",
       "meta:xdmType": "map",
       "meta:xdmField": "xdm:segmentMembership",
-      "tagNumber": 53,
+      "tagNumber": 57,
       "properties": {
         "mapObj": {
           "title": "Segment membership per namespace",
@@ -1935,7 +2190,7 @@
         "tagNumber": 1
       },
       "meta:xdmField": "xdm:subscriptions",
-      "tagNumber": 54
+      "tagNumber": 58
     },
     "testProfile": {
       "title": "Test profile",
@@ -1944,7 +2199,7 @@
       "default": false,
       "meta:xdmType": "boolean",
       "meta:xdmField": "xdm:testProfile",
-      "tagNumber": 55
+      "tagNumber": 59
     },
     "userAccount": {
       "type": "object",
@@ -2028,7 +2283,7 @@
         }
       },
       "meta:xdmField": "xdm:userAccount",
-      "tagNumber": 56
+      "tagNumber": 60
     }
   },
   "meta:xdmId": "https://ns.adobe.com/xdm/context/profile-generated",

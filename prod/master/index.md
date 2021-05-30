@@ -659,7 +659,10 @@
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.b2b-person-details.html">b2b-person-details</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-consents.html">profile-consents</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-directmarketing.html">profile-directmarketing</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-internet-subscription.html">profile-internet-subscription</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-landline-subscription.html">profile-landline-subscription</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-loyalty-details.html">profile-loyalty-details</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-media-subscription.html">profile-media-subscription</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-mobile-plan-details.html">profile-mobile-plan-details</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-other-work-details.html">profile-other-work-details</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-owning-entities.html">profile-owning-entities</a></li>
@@ -674,6 +677,7 @@
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-push-notification-details.html">profile-push-notification-details</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-segmentation.html">profile-segmentation</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-subscriptions.html">profile-subscriptions</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-telecom-subscription.html">profile-telecom-subscription</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-test-profile.html">profile-test-profile</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-user-account-details.html">profile-user-account-details</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-work-details.html">profile-work-details</a></li>

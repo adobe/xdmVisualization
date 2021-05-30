@@ -1,0 +1,194 @@
+{
+  "id": "_xdm.mixins.profile.profile-landline-subscription",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Landline Subscription",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:tags": {
+    "industry": [
+      "telecom"
+    ]
+  },
+  "description": "Landline subscription plan details including selected features, minutes, and dialing plans.",
+  "meta:status": "experimental",
+  "meta:xdmType": "object",
+  "properties": {
+    "landlineSubscription": {
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "minutes": {
+          "title": "Minutes",
+          "type": "integer",
+          "description": "Number of monthly minutes available within the subscription.",
+          "meta:xdmType": "int",
+          "meta:xdmField": "xdm:minutes",
+          "tagNumber": 1
+        },
+        "voicemail": {
+          "title": "Voicemail",
+          "type": "boolean",
+          "description": "Flags if the landline subscription features include Voicemail.",
+          "meta:xdmType": "boolean",
+          "meta:xdmField": "xdm:voicemail",
+          "tagNumber": 2
+        },
+        "callForwarding": {
+          "title": "Call Forwarding",
+          "type": "boolean",
+          "description": "Flags if the landline subscription features include Call Forwarding.",
+          "meta:xdmType": "boolean",
+          "meta:xdmField": "xdm:callForwarding",
+          "tagNumber": 3
+        },
+        "callerID": {
+          "title": "Caller ID",
+          "type": "boolean",
+          "description": "Flags if the landline subscription features include Caller ID.",
+          "meta:xdmType": "boolean",
+          "meta:xdmField": "xdm:callerID",
+          "tagNumber": 4
+        },
+        "callBlocking": {
+          "title": "Call Blocking",
+          "type": "boolean",
+          "description": "Flags if the landline subscription features include Call Blocking.",
+          "meta:xdmType": "boolean",
+          "meta:xdmField": "xdm:callBlocking",
+          "tagNumber": 5
+        },
+        "callWaiting": {
+          "title": "Call Waiting",
+          "type": "boolean",
+          "description": "Flags if the landline subscription features include Call Waiting.",
+          "meta:xdmType": "boolean",
+          "meta:xdmField": "xdm:callWaiting",
+          "tagNumber": 6
+        },
+        "threeWayCalling": {
+          "title": "Three-Way Dialing",
+          "type": "boolean",
+          "description": "Flags if the landline subscription features include Three-Way Dialing.",
+          "meta:xdmType": "boolean",
+          "meta:xdmField": "xdm:threeWayCalling",
+          "tagNumber": 7
+        },
+        "internationalCalling": {
+          "title": "International Calling",
+          "type": "boolean",
+          "description": "Flags if the landline subscription features include International Calling.",
+          "meta:xdmType": "boolean",
+          "meta:xdmField": "xdm:internationalCalling",
+          "tagNumber": 8
+        },
+        "unlimitedLocalCalling": {
+          "title": "Unlimited Local Calling",
+          "type": "boolean",
+          "description": "Flags if the landline subscription features include Unlimited Local Calling.",
+          "meta:xdmType": "boolean",
+          "meta:xdmField": "xdm:unlimitedLocalCalling",
+          "tagNumber": 9
+        },
+        "unlimitedDomesticLongDistance": {
+          "title": "Unlimited Domestic Long Distance",
+          "type": "boolean",
+          "description": "Flags if the landline subscription features include Unlimited Domestic Long Distance.",
+          "meta:xdmType": "boolean",
+          "meta:xdmField": "xdm:unlimitedDomesticLongDistance",
+          "tagNumber": 10
+        }
+      },
+      "meta:xdmField": "xdm:landlineSubscription",
+      "tagNumber": 1
+    },
+    "telecomSubscription": {
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "subscriptionID": {
+          "title": "Subscription ID",
+          "type": "string",
+          "description": "Identifier for subscription.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:subscriptionID",
+          "tagNumber": 1
+        },
+        "responsiblePartyID": {
+          "title": "Responsible Party ID",
+          "type": "string",
+          "description": "Identifier for the person responsible for the subscription, which typically could be their device phone number.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:responsiblePartyID",
+          "tagNumber": 2
+        },
+        "subscriptionType": {
+          "title": "Subscription Type",
+          "type": "string",
+          "enum": [
+            "individual",
+            "household",
+            "business"
+          ],
+          "description": "Indicates the type of telecom subscription in which the customer is enrolled.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:subscriptionType",
+          "tagNumber": 3
+        },
+        "bundleName": {
+          "title": "Bundle Name",
+          "type": "string",
+          "description": "Captures the name of any type of subscription bundle in which the customer is enrolled, such as 'Internet + TV'.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:bundleName",
+          "tagNumber": 4
+        },
+        "subscriptionDetails": {
+          "title": "Subscription Details",
+          "$ref": "../../datatypes/industry-verticals/subscription.schema.json",
+          "description": "Extension of the subscription data type to include subscription length, fees, status, etc.",
+          "meta:xdmField": "xdm:subscriptionDetails",
+          "tagNumber": 5
+        },
+        "activationDate": {
+          "title": "Activation Date",
+          "type": "string",
+          "format": "date-time",
+          "description": "Tracks the date in which the telecom subscription was activated.",
+          "meta:xdmType": "date-time",
+          "meta:xdmField": "xdm:activationDate",
+          "tagNumber": 6
+        },
+        "deactivationDate": {
+          "title": "Deactivation Date",
+          "type": "string",
+          "format": "date-time",
+          "description": "Tracks the date in which the telecom subscription was deactivated.",
+          "meta:xdmType": "date-time",
+          "meta:xdmField": "xdm:deactivationDate",
+          "tagNumber": 7
+        },
+        "equipmentFees": {
+          "title": "Equipment Fees",
+          "$ref": "../../datatypes/currency.schema.json",
+          "description": "Captures any equipment fees for items such as routers, modems, recievers, etc.",
+          "meta:xdmField": "xdm:equipmentFees",
+          "tagNumber": 8
+        },
+        "equipmentInsurance": {
+          "title": "Equipment Insurance",
+          "type": "boolean",
+          "description": "Tracks if a customer has opted-in to equipment insurance for the subscription.",
+          "meta:xdmType": "boolean",
+          "meta:xdmField": "xdm:equipmentInsurance",
+          "tagNumber": 9
+        }
+      },
+      "meta:xdmField": "xdm:telecomSubscription",
+      "tagNumber": 2
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/mixins/profile/profile-landline-subscription",
+  "meta:altId": "_xdm.mixins.profile.profile-landline-subscription",
+  "id": "_xdm.mixins.profile.profile-landline-subscription"
+}

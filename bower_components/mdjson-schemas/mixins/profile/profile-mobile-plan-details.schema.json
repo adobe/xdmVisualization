@@ -50,7 +50,7 @@
           "meta:xdmField": "xdm:devices",
           "tagNumber": 4,
           "items": {
-            "$ref": "obj5040104725887973.schema.json"
+            "$ref": "obj6198281335459426.schema.json"
           }
         },
         "accessories": {
@@ -61,12 +61,97 @@
           "meta:xdmField": "xdm:accessories",
           "tagNumber": 5,
           "items": {
-            "$ref": "obj23934392152290207.schema.json"
+            "$ref": "obj8974417157924017.schema.json"
           }
         }
       },
       "meta:xdmField": "xdm:mobilePlanDetails",
       "tagNumber": 1
+    },
+    "telecomSubscription": {
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "subscriptionID": {
+          "title": "Subscription ID",
+          "type": "string",
+          "description": "Identifier for subscription.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:subscriptionID",
+          "tagNumber": 1
+        },
+        "responsiblePartyID": {
+          "title": "Responsible Party ID",
+          "type": "string",
+          "description": "Identifier for the person responsible for the subscription, which typically could be their device phone number.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:responsiblePartyID",
+          "tagNumber": 2
+        },
+        "subscriptionType": {
+          "title": "Subscription Type",
+          "type": "string",
+          "enum": [
+            "individual",
+            "household",
+            "business"
+          ],
+          "description": "Indicates the type of telecom subscription in which the customer is enrolled.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:subscriptionType",
+          "tagNumber": 3
+        },
+        "bundleName": {
+          "title": "Bundle Name",
+          "type": "string",
+          "description": "Captures the name of any type of subscription bundle in which the customer is enrolled, such as 'Internet + TV'.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:bundleName",
+          "tagNumber": 4
+        },
+        "subscriptionDetails": {
+          "title": "Subscription Details",
+          "$ref": "../../datatypes/industry-verticals/subscription.schema.json",
+          "description": "Extension of the subscription data type to include subscription length, fees, status, etc.",
+          "meta:xdmField": "xdm:subscriptionDetails",
+          "tagNumber": 5
+        },
+        "activationDate": {
+          "title": "Activation Date",
+          "type": "string",
+          "format": "date-time",
+          "description": "Tracks the date in which the telecom subscription was activated.",
+          "meta:xdmType": "date-time",
+          "meta:xdmField": "xdm:activationDate",
+          "tagNumber": 6
+        },
+        "deactivationDate": {
+          "title": "Deactivation Date",
+          "type": "string",
+          "format": "date-time",
+          "description": "Tracks the date in which the telecom subscription was deactivated.",
+          "meta:xdmType": "date-time",
+          "meta:xdmField": "xdm:deactivationDate",
+          "tagNumber": 7
+        },
+        "equipmentFees": {
+          "title": "Equipment Fees",
+          "$ref": "../../datatypes/currency.schema.json",
+          "description": "Captures any equipment fees for items such as routers, modems, recievers, etc.",
+          "meta:xdmField": "xdm:equipmentFees",
+          "tagNumber": 8
+        },
+        "equipmentInsurance": {
+          "title": "Equipment Insurance",
+          "type": "boolean",
+          "description": "Tracks if a customer has opted-in to equipment insurance for the subscription.",
+          "meta:xdmType": "boolean",
+          "meta:xdmField": "xdm:equipmentInsurance",
+          "tagNumber": 9
+        }
+      },
+      "meta:xdmField": "xdm:telecomSubscription",
+      "tagNumber": 2
     }
   },
   "meta:xdmId": "https://ns.adobe.com/xdm/mixins/profile/profile-mobile-plan-details",

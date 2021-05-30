@@ -10629,6 +10629,25 @@
           "$ref": "implementations.schema.json",
           "meta:xdmField": "https://ns.adobe.com/experience/implementations",
           "tagNumber": 4
+        },
+        "decisioning": {
+          "type": "object",
+          "meta:xdmType": "object",
+          "properties": {
+            "propositions": {
+              "title": "Involved Propositions",
+              "type": "array",
+              "description": "An array of decision propositions that contributed to the experience event. The experience event is attributed (at least partially) to those prior decisions/propositions. An individual profile's proposition-response history is maintained with these decision identifiers.",
+              "meta:xdmType": "array",
+              "items": {
+                "$ref": "decisioning/proposition-interaction-detail.schema.json",
+                "tagNumber": 1
+              },
+              "meta:xdmField": "https://ns.adobe.com/experience/decisioning/propositions",
+              "tagNumber": 1
+            }
+          },
+          "tagNumber": 5
         }
       },
       "tagNumber": 17
@@ -10684,6 +10703,23 @@
       "description": "Product returns, warranty registration, and shopping cart/order process.",
       "meta:xdmField": "xdm:commerce",
       "tagNumber": 21
+    },
+    "identityMap": {
+      "type": "object",
+      "meta:xdmType": "map",
+      "meta:xdmField": "xdm:identityMap",
+      "tagNumber": 22,
+      "properties": {
+        "mapObj": {
+          "type": "array",
+          "meta:xdmType": "array",
+          "items": {
+            "$ref": "../../datatypes/identityitem.schema.json",
+            "tagNumber": 1
+          },
+          "tagNumber": 1
+        }
+      }
     }
   },
   "meta:xdmId": "https://ns.adobe.com/experience/analytics-experienceevent",

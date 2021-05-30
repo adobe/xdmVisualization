@@ -182,11 +182,14 @@
 [mixins.profile.profile-segmentation](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-segmentation.html)<br/>
 [mixins.profile.profile-test-profile](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-test-profile.html)<br/>
 [mixins.profile.profile-work-details](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-work-details.html)<br/>
+[mixins.profile.profile-landline-subscription](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-landline-subscription.html)<br/>
 [mixins.profile.profile-personal-finance-details](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-personal-finance-details.html)<br/>
+[mixins.profile.profile-media-subscription](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-media-subscription.html)<br/>
 [mixins.profile.profile-mobile-plan-details](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-mobile-plan-details.html)<br/>
 [mixins.profile.profile-consents](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-consents.html)<br/>
 [mixins.profile.profile-preferences-details](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-preferences-details.html)<br/>
 [mixins.profile.profile-directmarketing](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-directmarketing.html)<br/>
+[mixins.profile.profile-internet-subscription](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-internet-subscription.html)<br/>
 [mixins.profile.profile-loyalty-details](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-loyalty-details.html)<br/>
 [mixins.profile.profile-personal-details](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-personal-details.html)<br/>
 [mixins.profile.profile-phones](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-phones.html)<br/>
@@ -194,6 +197,7 @@
 [mixins.profile.profile-push-notification-details](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-push-notification-details.html)<br/>
 [mixins.profile.profile-subscriptions](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-subscriptions.html)<br/>
 [mixins.profile.b2b-person-details](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.b2b-person-details.html)<br/>
+[mixins.profile.profile-telecom-subscription](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-telecom-subscription.html)<br/>
 [mixins.profile.profile-privacy](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-privacy.html)<br/>
 [mixins.profile.profile-other-work-details](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-other-work-details.html)<br/>
 [mixins.profile.profile-owning-entities](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-owning-entities.html)<br/>
