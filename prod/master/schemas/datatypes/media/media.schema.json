@@ -562,34 +562,6 @@
               },
               "meta:xdmField": "xdm:fullScreen",
               "tagNumber": 15
-            },
-            "mute": {
-              "title": "Mute",
-              "$ref": "../player-state.schema.json",
-              "description": "Timed media properties related to mute player state.",
-              "meta:xdmField": "xdm:mute",
-              "tagNumber": 16
-            },
-            "closeCaption": {
-              "title": "Close caption",
-              "$ref": "../player-state.schema.json",
-              "description": "Timed media properties related to close caption player state.",
-              "meta:xdmField": "xdm:closeCaption",
-              "tagNumber": 17
-            },
-            "pictureInPicture": {
-              "title": "Picture in picture",
-              "$ref": "../player-state.schema.json",
-              "description": "Timed media properties related to picture in picture player state.",
-              "meta:xdmField": "xdm:pictureInPicture",
-              "tagNumber": 18
-            },
-            "inFocus": {
-              "title": "In focus",
-              "$ref": "../player-state.schema.json",
-              "description": "Timed media properties related to in focus player state.",
-              "meta:xdmField": "xdm:inFocus",
-              "tagNumber": 19
             }
           },
           "meta:xdmField": "xdm:primaryAssetViewDetails",

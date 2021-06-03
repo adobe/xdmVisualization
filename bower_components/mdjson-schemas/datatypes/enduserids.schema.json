@@ -23,64 +23,7 @@
     "_experience": {
       "type": "object",
       "meta:xdmType": "object",
-      "properties": {
-        "mcid": {
-          "title": "Adobe Marketing Cloud ID",
-          "$ref": "identity.schema.json",
-          "description": "A unique identifier from Adobe Marketing Cloud.",
-          "meta:xdmField": "https://ns.adobe.com/experience/mcid",
-          "tagNumber": 1
-        },
-        "aaid": {
-          "title": "Adobe Analytics Cloud end user IDs",
-          "$ref": "identity.schema.json",
-          "description": "Adobe Analytics Cloud extension to end user IDs.",
-          "meta:xdmField": "https://ns.adobe.com/experience/aaid",
-          "tagNumber": 2
-        },
-        "aacustomid": {
-          "title": "Adobe Analytics Cloud Custom end user IDs",
-          "$ref": "identity.schema.json",
-          "description": "An Adobe Analytics custom identifier passed in on a hit.",
-          "meta:xdmField": "https://ns.adobe.com/experience/aacustomid",
-          "tagNumber": 3
-        },
-        "acid": {
-          "title": "Adobe Campaign end user IDs",
-          "$ref": "identity.schema.json",
-          "description": "Adobe Campaign extension to end user IDs.",
-          "meta:xdmField": "https://ns.adobe.com/experience/acid",
-          "tagNumber": 4
-        },
-        "tntid": {
-          "title": "Adobe Target end user IDs",
-          "$ref": "identity.schema.json",
-          "description": "Adobe Target extension to end user IDs.",
-          "meta:xdmField": "https://ns.adobe.com/experience/tntid",
-          "tagNumber": 5
-        },
-        "adcloud": {
-          "title": "Adobe Advertising Cloud end user IDs",
-          "$ref": "identity.schema.json",
-          "description": "Adobe Advertising Cloud extension to end user IDs.",
-          "meta:xdmField": "https://ns.adobe.com/experience/adcloud",
-          "tagNumber": 6
-        },
-        "emailid": {
-          "title": "Email address IDs",
-          "$ref": "identity.schema.json",
-          "description": "Email addresses used as IDs.",
-          "meta:xdmField": "https://ns.adobe.com/experience/emailid",
-          "tagNumber": 7
-        },
-        "phonenumberid": {
-          "title": "Phone number IDs",
-          "$ref": "identity.schema.json",
-          "description": "Phone numbers used as IDs.",
-          "meta:xdmField": "https://ns.adobe.com/experience/phonenumberid",
-          "tagNumber": 8
-        }
-      },
+      "properties": {},
       "tagNumber": 1
     }
   },

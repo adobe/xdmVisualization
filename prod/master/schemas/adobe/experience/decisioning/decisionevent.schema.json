@@ -83,10 +83,6 @@
               "type": "array",
               "description": "Details about the results of the decision. An array providing the output of a single decision event, one proposition per activity parameter in the request.",
               "meta:xdmType": "array",
-              "items": {
-                "$ref": "proposition-detail.schema.json",
-                "tagNumber": 1
-              },
               "meta:xdmField": "https://ns.adobe.com/experience/decisioning/propositionDetails",
               "tagNumber": 2
             },
@@ -114,7 +110,7 @@
               "meta:xdmField": "https://ns.adobe.com/experience/decisioning/propositions",
               "tagNumber": 5,
               "items": {
-                "$ref": "obj36971202902684186.schema.json"
+                "$ref": "obj22861856239671496.schema.json"
               }
             }
           },

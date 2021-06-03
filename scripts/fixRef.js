@@ -11,7 +11,7 @@ const schemaLoc = "schemaLoc.json"
 //build id-file map
 let idLoc = {};
 let schemaFiles = glob.sync(schemaFolder + '/**/*.schema.json');
-let deprecated = JSON.parse(fs.readFileSync(deprecatedXdms).toString());
+let deprecated = JSON.parse(fs.readFileSync(deprecatedXdms).toString()).toString();
 
 function buildMap(files) {
     files.forEach(function(file) {
