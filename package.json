@@ -45,6 +45,9 @@
     "grunt-env": "^1.0.1",
     "grunt-gh-pages": "^4.0.0",
     "grunt-jsdoc": "^2.4.1",
-    "grunt-preprocess": "^4.2.0"
+    "grunt-preprocess": "^4.2.0",
+    "hosted-git-info": ">=2.8.9",
+    "lodash": ">=4.17.21",
+    "underscore": ">=1.12.1"
   }
 }
