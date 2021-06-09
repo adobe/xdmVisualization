@@ -15,6 +15,9 @@
       ]
     },
     {
+      "b2bSchema": true
+    },
+    {
       "industry": [
         "telecom"
       ]
@@ -168,7 +171,7 @@
       "meta:xdmField": "xdm:personComponents",
       "tagNumber": 11,
       "items": {
-        "$ref": "obj9028374459512316.schema.json"
+        "$ref": "obj5547128389451683.schema.json"
       }
     },
     "b2b": {
@@ -1767,7 +1770,7 @@
           "meta:xdmField": "xdm:pointsExpiration",
           "tagNumber": 4,
           "items": {
-            "$ref": "obj7627685578871519.schema.json"
+            "$ref": "obj25299748624573404.schema.json"
           }
         },
         "pointsRedeemed": {
@@ -1834,7 +1837,7 @@
           "meta:xdmField": "xdm:streamingServices",
           "tagNumber": 2,
           "items": {
-            "$ref": "obj3922925293623829.schema.json"
+            "$ref": "obj9599645412627309.schema.json"
           }
         }
       },
@@ -1876,7 +1879,7 @@
           "meta:xdmField": "xdm:devices",
           "tagNumber": 4,
           "items": {
-            "$ref": "obj8711039387444339.schema.json"
+            "$ref": "obj2302071526260978.schema.json"
           }
         },
         "accessories": {
@@ -1887,7 +1890,7 @@
           "meta:xdmField": "xdm:accessories",
           "tagNumber": 5,
           "items": {
-            "$ref": "obj07596059521819587.schema.json"
+            "$ref": "obj8972687919702524.schema.json"
           }
         }
       },
@@ -1939,7 +1942,7 @@
           "meta:xdmField": "xdm:creditScores",
           "tagNumber": 3,
           "items": {
-            "$ref": "obj04760250466147009.schema.json"
+            "$ref": "obj6104871347001672.schema.json"
           }
         },
         "employmentStatus": {
@@ -2156,7 +2159,7 @@
       "meta:xdmField": "xdm:pushNotificationDetails",
       "tagNumber": 55,
       "items": {
-        "$ref": "obj5561934193814604.schema.json"
+        "$ref": "obj0675582181152723.schema.json"
       }
     },
     "segmentMembership": {

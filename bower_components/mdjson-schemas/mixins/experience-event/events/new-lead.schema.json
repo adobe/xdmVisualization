@@ -3,6 +3,9 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "New Lead",
   "type": "object",
+  "meta:tags": {
+    "b2bSchema": true
+  },
   "meta:conditionalField": "xdm:eventType",
   "meta:conditionalValue": "leadOperation.newLead",
   "description": "Use to record the creation and details of a new marketing lead.",

@@ -113,6 +113,13 @@
         }
       }
     },
+    "segmentIdentity": {
+      "title": "Segment identity",
+      "$ref": "../../../datatypes/segmentidentity.schema.json",
+      "description": "Identity of the segment.",
+      "meta:xdmField": "xdm:segmentIdentity",
+      "tagNumber": 8
+    },
     "segmentName": {
       "title": "Segment name",
       "type": "string",
@@ -172,7 +179,6 @@
   "meta:xdmId": "https://ns.adobe.com/experience/adcloud/adcloudsegment",
   "meta:altId": "_experience.adcloud.adcloudsegment",
   "required": [
-    "identityMap",
     "segmentName"
   ],
   "id": "_experience.adcloud.adcloudsegment"

@@ -3,6 +3,9 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "XDM Business Marketing List Members",
   "type": "object",
+  "meta:tags": {
+    "b2bSchema": true
+  },
   "meta:extensible": true,
   "meta:abstract": true,
   "description": "Members/Persons/Contacts etc. associated with a marketing list.",

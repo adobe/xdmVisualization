@@ -3,6 +3,9 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "XDM Business Opportunity Details",
   "type": "object",
+  "meta:tags": {
+    "b2bSchema": true
+  },
   "meta:extensible": true,
   "meta:abstract": true,
   "description": "This mixin is used to capture and maintain additional opportunity attributes that are used by industry crm systems.",

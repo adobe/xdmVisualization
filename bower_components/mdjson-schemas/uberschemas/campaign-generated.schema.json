@@ -17,6 +17,9 @@
     "2020-09-29",
     "2020-08-10"
   ],
+  "meta:tags": {
+    "b2bSchema": true
+  },
   "properties": {
     "extSourceSystemAudit": {
       "title": "External Source System Audit Properties",
@@ -72,7 +75,7 @@
       "meta:xdmField": "xdm:campaignComponents",
       "tagNumber": 7,
       "items": {
-        "$ref": "obj6577651645297682.schema.json"
+        "$ref": "obj1614559004153977.schema.json"
       }
     },
     "parentCampaignID": {

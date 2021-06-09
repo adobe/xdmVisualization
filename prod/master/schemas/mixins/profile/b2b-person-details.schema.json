@@ -3,6 +3,16 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "XDM Business Person Details",
   "type": "object",
+  "meta:tags": [
+    {
+      "b2bSchema": true
+    },
+    {
+      "industry": [
+        "all"
+      ]
+    }
+  ],
   "meta:extensible": true,
   "meta:abstract": true,
   "description": "This mixin is used to capture B2B Person specific attributes. A B2B Person could be a contact/lead etc.",
@@ -16,11 +26,6 @@
     "2020-08-18"
   ],
   "meta:xdmType": "object",
-  "meta:tags": {
-    "industry": [
-      "all"
-    ]
-  },
   "properties": {
     "b2b": {
       "type": "object",

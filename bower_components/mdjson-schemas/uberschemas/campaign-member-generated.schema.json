@@ -18,6 +18,9 @@
     "2020-08-10",
     "2020-09-29"
   ],
+  "meta:tags": {
+    "b2bSchema": true
+  },
   "properties": {
     "_id": {
       "title": "Identifier",
@@ -65,7 +68,7 @@
       "meta:xdmField": "xdm:campaignMemberComponents",
       "tagNumber": 6,
       "items": {
-        "$ref": "obj890621716255086.schema.json"
+        "$ref": "obj06652244932347262.schema.json"
       }
     },
     "memberStatus": {

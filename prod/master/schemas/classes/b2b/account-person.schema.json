@@ -3,6 +3,9 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "XDM Business Account Person Relation",
   "type": "object",
+  "meta:tags": {
+    "b2bSchema": true
+  },
   "meta:extensible": true,
   "meta:abstract": true,
   "description": "This class is used to capture XDM business account person relationship attributes.",

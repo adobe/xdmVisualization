@@ -5,6 +5,9 @@
   "type": "object",
   "meta:xdmType": "object",
   "$schema": "http://json-schema.org/draft-06/schema#",
+  "meta:tags": {
+    "b2bSchema": true
+  },
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:status": [
@@ -64,7 +67,7 @@
       "meta:xdmField": "xdm:marketingListComponents",
       "tagNumber": 6,
       "items": {
-        "$ref": "obj8588712110114665.schema.json"
+        "$ref": "obj5252317530941704.schema.json"
       }
     }
   },

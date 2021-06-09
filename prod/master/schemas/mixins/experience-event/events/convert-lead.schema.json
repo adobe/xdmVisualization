@@ -3,6 +3,9 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Convert Lead",
   "type": "object",
+  "meta:tags": {
+    "b2bSchema": true
+  },
   "meta:conditionalField": "xdm:eventType",
   "meta:conditionalValue": "leadOperation.convertLead",
   "description": "Use when a marketing lead is converted into a sales-qualified contact that is assigned to a sales user.",

@@ -3,6 +3,9 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "XDM Business Marketing List",
   "type": "object",
+  "meta:tags": {
+    "b2bSchema": true
+  },
   "meta:extensible": true,
   "meta:abstract": true,
   "description": "Marketing list allows you to prioritize on prospect clients who are most likely to buy your product.",

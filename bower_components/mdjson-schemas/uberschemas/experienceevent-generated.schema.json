@@ -76,6 +76,9 @@
       ]
     },
     {
+      "b2bSchema": true
+    },
+    {
       "industry": [
         "retail",
         "financial_services",
@@ -1109,7 +1112,7 @@
           "meta:xdmField": "xdm:dataValueChanges",
           "tagNumber": 4,
           "items": {
-            "$ref": "obj18484167978279165.schema.json"
+            "$ref": "obj7905474836952406.schema.json"
           }
         }
       },
@@ -2290,7 +2293,7 @@
           "meta:xdmField": "xdm:diningReservations",
           "tagNumber": 1,
           "items": {
-            "$ref": "obj1136482738482687.schema.json"
+            "$ref": "obj9850106422364437.schema.json"
           }
         },
         "cancellation": {
@@ -2430,7 +2433,7 @@
           "meta:xdmField": "xdm:flightReservations",
           "tagNumber": 19,
           "items": {
-            "$ref": "obj9864967832160247.schema.json"
+            "$ref": "obj4105271544843563.schema.json"
           }
         },
         "lodgingReservations": {
@@ -2439,7 +2442,7 @@
           "meta:xdmField": "xdm:lodgingReservations",
           "tagNumber": 20,
           "items": {
-            "$ref": "obj3412452595233164.schema.json"
+            "$ref": "obj7511728207999855.schema.json"
           }
         },
         "vehicleReservations": {
@@ -2448,7 +2451,7 @@
           "meta:xdmField": "xdm:vehicleReservations",
           "tagNumber": 21,
           "items": {
-            "$ref": "obj19928367102102285.schema.json"
+            "$ref": "obj5397435591883435.schema.json"
           }
         }
       },

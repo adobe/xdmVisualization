@@ -5,6 +5,9 @@
   "type": "object",
   "meta:xdmType": "object",
   "$schema": "http://json-schema.org/draft-06/schema#",
+  "meta:tags": {
+    "b2bSchema": true
+  },
   "auditable": true,
   "meta:extensible": true,
   "meta:abstract": true,
@@ -80,7 +83,7 @@
       "meta:xdmField": "xdm:opportunityPersonComponents",
       "tagNumber": 8,
       "items": {
-        "$ref": "obj28567006226503877.schema.json"
+        "$ref": "obj4471284282411905.schema.json"
       }
     }
   },

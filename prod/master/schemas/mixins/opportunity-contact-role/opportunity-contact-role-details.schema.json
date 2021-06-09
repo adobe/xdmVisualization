@@ -3,6 +3,9 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "XDM Buying Group Additional Properties",
   "type": "object",
+  "meta:tags": {
+    "b2bSchema": true
+  },
   "meta:extensible": true,
   "description": "Opportunity Contact Role additional properties",
   "meta:status": "experimental",

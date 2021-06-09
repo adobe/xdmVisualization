@@ -110,6 +110,13 @@
       "meta:xdmField": "@id",
       "tagNumber": 7
     },
+    "segmentIdentity": {
+      "title": "Segment identity",
+      "$ref": "../datatypes/segmentidentity.schema.json",
+      "description": "Identity of the segment.",
+      "meta:xdmField": "xdm:segmentIdentity",
+      "tagNumber": 8
+    },
     "segmentName": {
       "title": "Segment name",
       "type": "string",
@@ -187,7 +194,6 @@
   "meta:xdmId": "https://ns.adobe.com/xdm/context/segmentdefinition-generated",
   "meta:altId": "_xdm.context.segmentdefinition-generated",
   "required": [
-    "identityMap",
     "segmentName"
   ],
   "id": "_xdm.context.segmentdefinition-generated"

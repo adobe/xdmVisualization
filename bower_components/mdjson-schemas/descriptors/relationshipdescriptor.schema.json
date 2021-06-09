@@ -109,6 +109,8 @@
       "title": "Source to Destination Title",
       "type": "string",
       "description": "Provides a user friendly title for the source->destination edge",
+      "maxLength": 35,
+      "pattern": "^[A-Za-z0-9_]*$",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:sourceToDestinationTitle",
       "tagNumber": 14
@@ -117,6 +119,8 @@
       "title": "Destination to Source Title",
       "type": "string",
       "description": "Provides a user friendly title for the destination->source edge",
+      "maxLength": 35,
+      "pattern": "^[A-Za-z0-9_]*$",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:destinationToSourceTitle",
       "tagNumber": 15
@@ -126,8 +130,7 @@
       "type": "string",
       "description": "Source to Destination cardinality",
       "enum": [
-        "M:1",
-        "1:1"
+        "M:1"
       ],
       "default": "M:1",
       "meta:xdmType": "string",

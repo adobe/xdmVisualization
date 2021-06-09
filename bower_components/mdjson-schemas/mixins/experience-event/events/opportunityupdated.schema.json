@@ -3,6 +3,9 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Opportunity Updated",
   "type": "object",
+  "meta:tags": {
+    "b2bSchema": true
+  },
   "meta:conditionalField": "xdm:eventType",
   "meta:conditionalValue": "opportunityEvent.opportunityUpdated",
   "description": "Use to capture details when the fields on a sales opportunity are updated.",
@@ -31,7 +34,7 @@
           "meta:xdmField": "xdm:dataValueChanges",
           "tagNumber": 2,
           "items": {
-            "$ref": "obj2826256717904776.schema.json"
+            "$ref": "obj5194702387736263.schema.json"
           }
         }
       },

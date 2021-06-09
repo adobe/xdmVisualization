@@ -5,6 +5,9 @@
   "type": "object",
   "meta:xdmType": "object",
   "$schema": "http://json-schema.org/draft-06/schema#",
+  "meta:tags": {
+    "b2bSchema": true
+  },
   "auditable": true,
   "meta:extensible": true,
   "meta:abstract": true,
@@ -88,7 +91,7 @@
       "meta:xdmField": "xdm:opportunityComponents",
       "tagNumber": 9,
       "items": {
-        "$ref": "obj7733580738143586.schema.json"
+        "$ref": "obj44749115789975047.schema.json"
       }
     },
     "campaignID": {

@@ -5,6 +5,9 @@
   "type": "object",
   "meta:xdmType": "object",
   "$schema": "http://json-schema.org/draft-06/schema#",
+  "meta:tags": {
+    "b2bSchema": true
+  },
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:status": [
@@ -126,7 +129,7 @@
       "meta:xdmField": "xdm:accountPersonComponents",
       "tagNumber": 13,
       "items": {
-        "$ref": "obj5342521882363769.schema.json"
+        "$ref": "obj5747302560365002.schema.json"
       }
     }
   },

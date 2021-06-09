@@ -3,6 +3,9 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "XDM Business Person Components",
   "type": "object",
+  "meta:tags": {
+    "b2bSchema": true
+  },
   "meta:extensible": true,
   "meta:abstract": true,
   "description": "This Mixin is used to capture B2B Person specific relationship attributes and other attributes which are required for person segmentation.",
@@ -16,7 +19,7 @@
       "meta:xdmField": "xdm:personComponents",
       "tagNumber": 1,
       "items": {
-        "$ref": "obj8517572106176052.schema.json"
+        "$ref": "obj27824395272333646.schema.json"
       }
     }
   },
