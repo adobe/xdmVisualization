@@ -678,6 +678,7 @@
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-segmentation.html">profile-segmentation</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-subscriptions.html">profile-subscriptions</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-telecom-subscription.html">profile-telecom-subscription</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-telecom-subscription-details.html">profile-telecom-subscription-details</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-test-profile.html">profile-test-profile</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-user-account-details.html">profile-user-account-details</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-work-details.html">profile-work-details</a></li>

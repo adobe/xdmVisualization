@@ -1226,6 +1226,46 @@
           "meta:xdmType": "boolean",
           "meta:xdmField": "xdm:equipmentInsurance",
           "tagNumber": 9
+        },
+        "internetSubscriptionDetails": {
+          "type": "array",
+          "description": "Internet subscription plan details such as data cap, connection type, and speed details.",
+          "meta:xdmType": "array",
+          "meta:xdmField": "xdm:internetSubscriptionDetails",
+          "tagNumber": 10,
+          "items": {
+            "$ref": "obj9303351455005109.schema.json"
+          }
+        },
+        "landlineSubscriptionDetails": {
+          "type": "array",
+          "description": "Landline subscription plan details including selected features, minutes, and dialing plans.",
+          "meta:xdmType": "array",
+          "meta:xdmField": "xdm:landlineSubscriptionDetails",
+          "tagNumber": 11,
+          "items": {
+            "$ref": "obj5076323983519488.schema.json"
+          }
+        },
+        "mediaSubscriptionDetails": {
+          "type": "array",
+          "description": "media subscription plan details including number of channels & included streaming services.",
+          "meta:xdmType": "array",
+          "meta:xdmField": "xdm:mediaSubscriptionDetails",
+          "tagNumber": 12,
+          "items": {
+            "$ref": "obj6343850143418424.schema.json"
+          }
+        },
+        "mobileSubscriptionDetails": {
+          "type": "array",
+          "description": "Mobile plan details including number of lines, data rates, cost, etc.",
+          "meta:xdmType": "array",
+          "meta:xdmField": "xdm:mobileSubscriptionDetails",
+          "tagNumber": 13,
+          "items": {
+            "$ref": "obj2374098965536613.schema.json"
+          }
         }
       },
       "meta:xdmField": "xdm:telecomSubscription",
@@ -1339,7 +1379,7 @@
           "meta:xdmField": "xdm:streamingServices",
           "tagNumber": 2,
           "items": {
-            "$ref": "obj5820743526907777.schema.json"
+            "$ref": "obj8145849290794849.schema.json"
           }
         }
       },
@@ -1381,7 +1421,7 @@
           "meta:xdmField": "xdm:devices",
           "tagNumber": 4,
           "items": {
-            "$ref": "obj2865500865324937.schema.json"
+            "$ref": "obj4126189378718357.schema.json"
           }
         },
         "accessories": {
@@ -1392,7 +1432,7 @@
           "meta:xdmField": "xdm:accessories",
           "tagNumber": 5,
           "items": {
-            "$ref": "obj5780586258183609.schema.json"
+            "$ref": "obj603922622138658.schema.json"
           }
         }
       },

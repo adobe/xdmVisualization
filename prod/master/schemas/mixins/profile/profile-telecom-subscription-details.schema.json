@@ -1,0 +1,115 @@
+{
+  "id": "_xdm.mixins.profile.profile-telecom-subscription-details",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Telecom Subscription",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:tags": {
+    "industry": [
+      "telecom"
+    ]
+  },
+  "description": "Collects all generic details related to a customer's telecom subscription plan, including pricing, packages, and individual product subscriptions.",
+  "meta:status": "experimental",
+  "meta:xdmType": "object",
+  "properties": {
+    "telecomSubscription": {
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "subscriptionID": {
+          "title": "Subscription ID",
+          "type": "string",
+          "description": "Identifier for subscription.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:subscriptionID",
+          "tagNumber": 1
+        },
+        "subscriptionDetails": {
+          "title": "Subscription Details",
+          "$ref": "../../datatypes/industry-verticals/subscription.schema.json",
+          "description": "Extension of the subscription data type to include subscription length, fees, status, etc.",
+          "meta:xdmField": "xdm:subscriptionDetails",
+          "tagNumber": 2
+        },
+        "equipmentFees": {
+          "title": "Equipment Fees",
+          "$ref": "../../datatypes/currency.schema.json",
+          "description": "Captures any equipment fees for items such as routers, modems, recievers, etc.",
+          "meta:xdmField": "xdm:equipmentFees",
+          "tagNumber": 3
+        },
+        "equipmentInsurance": {
+          "title": "Equipment Insurance",
+          "type": "boolean",
+          "description": "Tracks if a customer has opted-in to equipment insurance for the subscription.",
+          "meta:xdmType": "boolean",
+          "meta:xdmField": "xdm:equipmentInsurance",
+          "tagNumber": 4
+        },
+        "responsiblePartyID": {
+          "title": "Responsible Party ID",
+          "type": "string",
+          "description": "Identifier for the person responsible for the subscription, which typically could be their device phone number.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:responsiblePartyID",
+          "tagNumber": 5
+        },
+        "bundleName": {
+          "title": "Bundle Name",
+          "type": "string",
+          "description": "Captures the name of any type of subscription bundle in which the customer is enrolled, such as 'Internet + Media'.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:bundleName",
+          "tagNumber": 6
+        },
+        "internetSubscriptionDetails": {
+          "type": "array",
+          "description": "Internet subscription plan details such as data cap, connection type, and speed details.",
+          "meta:xdmType": "array",
+          "meta:xdmField": "xdm:internetSubscriptionDetails",
+          "tagNumber": 7,
+          "items": {
+            "$ref": "obj8493592934425165.schema.json"
+          }
+        },
+        "landlineSubscriptionDetails": {
+          "type": "array",
+          "description": "Landline subscription plan details including selected features, minutes, and dialing plans.",
+          "meta:xdmType": "array",
+          "meta:xdmField": "xdm:landlineSubscriptionDetails",
+          "tagNumber": 8,
+          "items": {
+            "$ref": "obj8291126708598631.schema.json"
+          }
+        },
+        "mediaSubscriptionDetails": {
+          "type": "array",
+          "description": "media subscription plan details including number of channels & included streaming services.",
+          "meta:xdmType": "array",
+          "meta:xdmField": "xdm:mediaSubscriptionDetails",
+          "tagNumber": 9,
+          "items": {
+            "$ref": "obj4363192615531477.schema.json"
+          }
+        },
+        "mobileSubscriptionDetails": {
+          "type": "array",
+          "description": "Mobile plan details including number of lines, data rates, cost, etc.",
+          "meta:xdmType": "array",
+          "meta:xdmField": "xdm:mobileSubscriptionDetails",
+          "tagNumber": 10,
+          "items": {
+            "$ref": "obj01924080426266106.schema.json"
+          }
+        }
+      },
+      "meta:xdmField": "xdm:telecomSubscription",
+      "tagNumber": 1
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/mixins/profile/profile-telecom-subscription-details",
+  "meta:altId": "_xdm.mixins.profile.profile-telecom-subscription-details",
+  "id": "_xdm.mixins.profile.profile-telecom-subscription-details"
+}

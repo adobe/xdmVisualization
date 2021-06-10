@@ -192,6 +192,7 @@
 [mixins.profile.profile-internet-subscription](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-internet-subscription.html)<br/>
 [mixins.profile.profile-loyalty-details](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-loyalty-details.html)<br/>
 [mixins.profile.profile-personal-details](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-personal-details.html)<br/>
+[mixins.profile.profile-telecom-subscription-details](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-telecom-subscription-details.html)<br/>
 [mixins.profile.profile-phones](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-phones.html)<br/>
 [mixins.profile.profile-user-account-details](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-user-account-details.html)<br/>
 [mixins.profile.profile-push-notification-details](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-push-notification-details.html)<br/>

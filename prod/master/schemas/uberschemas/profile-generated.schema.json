@@ -171,7 +171,7 @@
       "meta:xdmField": "xdm:personComponents",
       "tagNumber": 11,
       "items": {
-        "$ref": "obj5547128389451683.schema.json"
+        "$ref": "obj8557778697157836.schema.json"
       }
     },
     "b2b": {
@@ -1635,6 +1635,46 @@
           "meta:xdmType": "boolean",
           "meta:xdmField": "xdm:equipmentInsurance",
           "tagNumber": 9
+        },
+        "internetSubscriptionDetails": {
+          "type": "array",
+          "description": "Internet subscription plan details such as data cap, connection type, and speed details.",
+          "meta:xdmType": "array",
+          "meta:xdmField": "xdm:internetSubscriptionDetails",
+          "tagNumber": 10,
+          "items": {
+            "$ref": "obj39663823814410537.schema.json"
+          }
+        },
+        "landlineSubscriptionDetails": {
+          "type": "array",
+          "description": "Landline subscription plan details including selected features, minutes, and dialing plans.",
+          "meta:xdmType": "array",
+          "meta:xdmField": "xdm:landlineSubscriptionDetails",
+          "tagNumber": 11,
+          "items": {
+            "$ref": "obj9917072177783701.schema.json"
+          }
+        },
+        "mediaSubscriptionDetails": {
+          "type": "array",
+          "description": "media subscription plan details including number of channels & included streaming services.",
+          "meta:xdmType": "array",
+          "meta:xdmField": "xdm:mediaSubscriptionDetails",
+          "tagNumber": 12,
+          "items": {
+            "$ref": "obj5648310096729299.schema.json"
+          }
+        },
+        "mobileSubscriptionDetails": {
+          "type": "array",
+          "description": "Mobile plan details including number of lines, data rates, cost, etc.",
+          "meta:xdmType": "array",
+          "meta:xdmField": "xdm:mobileSubscriptionDetails",
+          "tagNumber": 13,
+          "items": {
+            "$ref": "obj19534831483959092.schema.json"
+          }
         }
       },
       "meta:xdmField": "xdm:telecomSubscription",
@@ -1770,7 +1810,7 @@
           "meta:xdmField": "xdm:pointsExpiration",
           "tagNumber": 4,
           "items": {
-            "$ref": "obj25299748624573404.schema.json"
+            "$ref": "obj1336083947974147.schema.json"
           }
         },
         "pointsRedeemed": {
@@ -1837,7 +1877,7 @@
           "meta:xdmField": "xdm:streamingServices",
           "tagNumber": 2,
           "items": {
-            "$ref": "obj9599645412627309.schema.json"
+            "$ref": "obj6560803315416681.schema.json"
           }
         }
       },
@@ -1879,7 +1919,7 @@
           "meta:xdmField": "xdm:devices",
           "tagNumber": 4,
           "items": {
-            "$ref": "obj2302071526260978.schema.json"
+            "$ref": "obj0488510770974977.schema.json"
           }
         },
         "accessories": {
@@ -1890,7 +1930,7 @@
           "meta:xdmField": "xdm:accessories",
           "tagNumber": 5,
           "items": {
-            "$ref": "obj8972687919702524.schema.json"
+            "$ref": "obj266523830272164.schema.json"
           }
         }
       },
@@ -1942,7 +1982,7 @@
           "meta:xdmField": "xdm:creditScores",
           "tagNumber": 3,
           "items": {
-            "$ref": "obj6104871347001672.schema.json"
+            "$ref": "obj27777708305646764.schema.json"
           }
         },
         "employmentStatus": {
@@ -2159,7 +2199,7 @@
       "meta:xdmField": "xdm:pushNotificationDetails",
       "tagNumber": 55,
       "items": {
-        "$ref": "obj0675582181152723.schema.json"
+        "$ref": "obj419138599380251.schema.json"
       }
     },
     "segmentMembership": {
