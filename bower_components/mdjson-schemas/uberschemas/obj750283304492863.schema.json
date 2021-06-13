@@ -1,0 +1,61 @@
+{
+  "type": "object",
+  "meta:xdmType": "object",
+  "properties": {
+    "subscriptionID": {
+      "title": "Subscription ID",
+      "type": "string",
+      "description": "Identifier for subscription.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:subscriptionID",
+      "tagNumber": 1
+    },
+    "subscriptionDetails": {
+      "title": "Subscription Details",
+      "$ref": "../datatypes/industry-verticals/subscription.schema.json",
+      "description": "Extension of the subscription data type to include subscription length, fees, status, etc.",
+      "meta:xdmField": "xdm:subscriptionDetails",
+      "tagNumber": 2
+    },
+    "equipmentFees": {
+      "title": "Equipment Fees",
+      "$ref": "../datatypes/currency.schema.json",
+      "description": "Captures any equipment fees for items such as routers, modems, recievers, etc.",
+      "meta:xdmField": "xdm:equipmentFees",
+      "tagNumber": 3
+    },
+    "equipmentInsurance": {
+      "title": "Equipment Insurance",
+      "type": "boolean",
+      "description": "Tracks if a customer has opted-in to equipment insurance for the subscription.",
+      "meta:xdmType": "boolean",
+      "meta:xdmField": "xdm:equipmentInsurance",
+      "tagNumber": 4
+    },
+    "devices": {
+      "title": "Devices",
+      "description": "Array of line details and their associated devices.",
+      "type": "array",
+      "meta:xdmType": "array",
+      "meta:xdmField": "xdm:devices",
+      "tagNumber": 5,
+      "items": {
+        "$ref": "obj6504255732792319.schema.json"
+      }
+    },
+    "accessories": {
+      "title": "Accessories",
+      "description": "Array of accessories associated with the plan.",
+      "type": "array",
+      "meta:xdmType": "array",
+      "meta:xdmField": "xdm:accessories",
+      "tagNumber": 6,
+      "items": {
+        "$ref": "obj8802026421707672.schema.json"
+      }
+    }
+  },
+  "tagNumber": 1,
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "id": "obj750283304492863.schema.json"
+}

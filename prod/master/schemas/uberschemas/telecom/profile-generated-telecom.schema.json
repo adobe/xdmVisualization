@@ -1234,7 +1234,7 @@
           "meta:xdmField": "xdm:internetSubscriptionDetails",
           "tagNumber": 10,
           "items": {
-            "$ref": "obj06936813970239752.schema.json"
+            "$ref": "obj6077219875415363.schema.json"
           }
         },
         "landlineSubscriptionDetails": {
@@ -1244,7 +1244,7 @@
           "meta:xdmField": "xdm:landlineSubscriptionDetails",
           "tagNumber": 11,
           "items": {
-            "$ref": "obj1418908342942906.schema.json"
+            "$ref": "obj8129242543782025.schema.json"
           }
         },
         "mediaSubscriptionDetails": {
@@ -1254,7 +1254,7 @@
           "meta:xdmField": "xdm:mediaSubscriptionDetails",
           "tagNumber": 12,
           "items": {
-            "$ref": "obj9791857643725241.schema.json"
+            "$ref": "obj18661958690673663.schema.json"
           }
         },
         "mobileSubscriptionDetails": {
@@ -1264,7 +1264,7 @@
           "meta:xdmField": "xdm:mobileSubscriptionDetails",
           "tagNumber": 13,
           "items": {
-            "$ref": "obj8289997908102162.schema.json"
+            "$ref": "obj04467229563373398.schema.json"
           }
         }
       },
@@ -1379,7 +1379,7 @@
           "meta:xdmField": "xdm:streamingServices",
           "tagNumber": 2,
           "items": {
-            "$ref": "obj3922811832410622.schema.json"
+            "$ref": "obj7481458549731312.schema.json"
           }
         }
       },
@@ -1421,7 +1421,7 @@
           "meta:xdmField": "xdm:devices",
           "tagNumber": 4,
           "items": {
-            "$ref": "obj6885609627062095.schema.json"
+            "$ref": "obj7418477577161728.schema.json"
           }
         },
         "accessories": {
@@ -1432,7 +1432,7 @@
           "meta:xdmField": "xdm:accessories",
           "tagNumber": 5,
           "items": {
-            "$ref": "obj2288315215807568.schema.json"
+            "$ref": "obj8443758312037213.schema.json"
           }
         }
       },
