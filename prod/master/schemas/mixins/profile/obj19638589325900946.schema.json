@@ -1,0 +1,119 @@
+{
+  "type": "object",
+  "meta:xdmType": "object",
+  "properties": {
+    "subscriptionID": {
+      "title": "Subscription ID",
+      "type": "string",
+      "description": "Identifier for subscription.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:subscriptionID",
+      "tagNumber": 1
+    },
+    "subscriptionDetails": {
+      "title": "Subscription Details",
+      "$ref": "../../datatypes/industry-verticals/subscription.schema.json",
+      "description": "Extension of the subscription data type to include subscription length, fees, status, etc.",
+      "meta:xdmField": "xdm:subscriptionDetails",
+      "tagNumber": 2
+    },
+    "equipmentFees": {
+      "title": "Equipment Fees",
+      "$ref": "../../datatypes/currency.schema.json",
+      "description": "Captures any equipment fees for items such as routers, modems, recievers, etc.",
+      "meta:xdmField": "xdm:equipmentFees",
+      "tagNumber": 3
+    },
+    "equipmentInsurance": {
+      "title": "Equipment Insurance",
+      "type": "boolean",
+      "description": "Tracks if a customer has opted-in to equipment insurance for the subscription.",
+      "meta:xdmType": "boolean",
+      "meta:xdmField": "xdm:equipmentInsurance",
+      "tagNumber": 4
+    },
+    "minutes": {
+      "title": "Minutes",
+      "type": "integer",
+      "description": "Number of monthly minutes available within the subscription.",
+      "meta:xdmType": "int",
+      "meta:xdmField": "xdm:minutes",
+      "tagNumber": 5
+    },
+    "voicemail": {
+      "title": "Voicemail",
+      "type": "boolean",
+      "description": "Flags if the landline subscription features include Voicemail.",
+      "meta:xdmType": "boolean",
+      "meta:xdmField": "xdm:voicemail",
+      "tagNumber": 6
+    },
+    "callForwarding": {
+      "title": "Call Forwarding",
+      "type": "boolean",
+      "description": "Flags if the landline subscription features include Call Forwarding.",
+      "meta:xdmType": "boolean",
+      "meta:xdmField": "xdm:callForwarding",
+      "tagNumber": 7
+    },
+    "callerID": {
+      "title": "Caller ID",
+      "type": "boolean",
+      "description": "Flags if the landline subscription features include Caller ID.",
+      "meta:xdmType": "boolean",
+      "meta:xdmField": "xdm:callerID",
+      "tagNumber": 8
+    },
+    "callBlocking": {
+      "title": "Call Blocking",
+      "type": "boolean",
+      "description": "Flags if the landline subscription features include Call Blocking.",
+      "meta:xdmType": "boolean",
+      "meta:xdmField": "xdm:callBlocking",
+      "tagNumber": 9
+    },
+    "callWaiting": {
+      "title": "Call Waiting",
+      "type": "boolean",
+      "description": "Flags if the landline subscription features include Call Waiting.",
+      "meta:xdmType": "boolean",
+      "meta:xdmField": "xdm:callWaiting",
+      "tagNumber": 10
+    },
+    "threeWayCalling": {
+      "title": "Three-Way Dialing",
+      "type": "boolean",
+      "description": "Flags if the landline subscription features include Three-Way Dialing.",
+      "meta:xdmType": "boolean",
+      "meta:xdmField": "xdm:threeWayCalling",
+      "tagNumber": 11
+    },
+    "internationalCalling": {
+      "title": "International Calling",
+      "type": "boolean",
+      "description": "Flags if the landline subscription features include International Calling.",
+      "meta:xdmType": "boolean",
+      "meta:xdmField": "xdm:internationalCalling",
+      "tagNumber": 12
+    },
+    "unlimitedLocalCalling": {
+      "title": "Unlimited Local Calling",
+      "type": "boolean",
+      "description": "Flags if the landline subscription features include Unlimited Local Calling.",
+      "meta:xdmType": "boolean",
+      "meta:xdmField": "xdm:unlimitedLocalCalling",
+      "tagNumber": 13
+    },
+    "unlimitedDomesticLongDistance": {
+      "title": "Unlimited Domestic Long Distance",
+      "type": "boolean",
+      "description": "Flags if the landline subscription features include Unlimited Domestic Long Distance.",
+      "meta:xdmType": "boolean",
+      "meta:xdmField": "xdm:unlimitedDomesticLongDistance",
+      "tagNumber": 14
+    }
+  },
+  "tagNumber": 1,
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "id": "obj19638589325900946.schema.json"
+}
