@@ -458,6 +458,7 @@
 <details>
 <summary>industry-verticals</summary>
 <ul>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.industry-verticals.claim.html">claim</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.industry-verticals.comparisons.html">comparisons</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.industry-verticals.file-transfer.html">file-transfer</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.industry-verticals.financial-account.html">financial-account</a></li>
@@ -610,6 +611,7 @@
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.industry-verticals.experienceevent-device-trade-in-details.html">experienceevent-device-trade-in-details</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.industry-verticals.experienceevent-dining-reservation.html">experienceevent-dining-reservation</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.industry-verticals.experienceevent-flight-reservation.html">experienceevent-flight-reservation</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.industry-verticals.experienceevent-insurance-claim-process.html">experienceevent-insurance-claim-process</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.industry-verticals.experienceevent-loan-application-details.html">experienceevent-loan-application-details</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.industry-verticals.experienceevent-lodging-reservation.html">experienceevent-lodging-reservation</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.industry-verticals.experienceevent-prescription-details.html">experienceevent-prescription-details</a></li>
@@ -618,6 +620,7 @@
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.industry-verticals.experienceevent-upgrade-details.html">experienceevent-upgrade-details</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.industry-verticals.experienceevent-upsell-details.html">experienceevent-upsell-details</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.industry-verticals.experienceevent-vehicle-reservation.html">experienceevent-vehicle-reservation</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.industry-verticals.experienceevent-warranty-claim-process.html">experienceevent-warranty-claim-process</a></li>
 </ul>
 </details>
 </ul>

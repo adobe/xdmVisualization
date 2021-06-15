@@ -171,7 +171,7 @@
       "meta:xdmField": "xdm:personComponents",
       "tagNumber": 11,
       "items": {
-        "$ref": "obj4145744645242351.schema.json"
+        "$ref": "obj032143464791940524.schema.json"
       }
     },
     "b2b": {
@@ -1643,7 +1643,7 @@
           "meta:xdmField": "xdm:internetSubscriptionDetails",
           "tagNumber": 10,
           "items": {
-            "$ref": "obj9769992751261494.schema.json"
+            "$ref": "obj09127387279966936.schema.json"
           }
         },
         "landlineSubscriptionDetails": {
@@ -1653,7 +1653,7 @@
           "meta:xdmField": "xdm:landlineSubscriptionDetails",
           "tagNumber": 11,
           "items": {
-            "$ref": "obj9365207295931031.schema.json"
+            "$ref": "obj7961047267257584.schema.json"
           }
         },
         "mediaSubscriptionDetails": {
@@ -1663,7 +1663,7 @@
           "meta:xdmField": "xdm:mediaSubscriptionDetails",
           "tagNumber": 12,
           "items": {
-            "$ref": "obj9798267468406334.schema.json"
+            "$ref": "obj6043134996423303.schema.json"
           }
         },
         "mobileSubscriptionDetails": {
@@ -1673,7 +1673,7 @@
           "meta:xdmField": "xdm:mobileSubscriptionDetails",
           "tagNumber": 13,
           "items": {
-            "$ref": "obj05217831000585371.schema.json"
+            "$ref": "obj940356940070916.schema.json"
           }
         }
       },
@@ -1810,7 +1810,7 @@
           "meta:xdmField": "xdm:pointsExpiration",
           "tagNumber": 4,
           "items": {
-            "$ref": "obj6811822452773693.schema.json"
+            "$ref": "obj9079758569452354.schema.json"
           }
         },
         "pointsRedeemed": {
@@ -1877,7 +1877,7 @@
           "meta:xdmField": "xdm:streamingServices",
           "tagNumber": 2,
           "items": {
-            "$ref": "obj855200824248372.schema.json"
+            "$ref": "obj9887583133921609.schema.json"
           }
         }
       },
@@ -1919,7 +1919,7 @@
           "meta:xdmField": "xdm:devices",
           "tagNumber": 4,
           "items": {
-            "$ref": "obj09765832757624038.schema.json"
+            "$ref": "obj10633588504883762.schema.json"
           }
         },
         "accessories": {
@@ -1930,7 +1930,7 @@
           "meta:xdmField": "xdm:accessories",
           "tagNumber": 5,
           "items": {
-            "$ref": "obj8226627192711218.schema.json"
+            "$ref": "obj14235159863667413.schema.json"
           }
         }
       },
@@ -1982,7 +1982,7 @@
           "meta:xdmField": "xdm:creditScores",
           "tagNumber": 3,
           "items": {
-            "$ref": "obj13974248262167643.schema.json"
+            "$ref": "obj3975105707262152.schema.json"
           }
         },
         "employmentStatus": {
@@ -2199,7 +2199,7 @@
       "meta:xdmField": "xdm:pushNotificationDetails",
       "tagNumber": 55,
       "items": {
-        "$ref": "obj7603470329091606.schema.json"
+        "$ref": "obj4232938503532442.schema.json"
       }
     },
     "segmentMembership": {

@@ -185,6 +185,15 @@
         "education",
         "high_tech"
       ]
+    },
+    {
+      "industry": [
+        "retail",
+        "telecom",
+        "automotive",
+        "high_tech",
+        "manufacturing"
+      ]
     }
   ],
   "meta:status": [
@@ -1112,7 +1121,7 @@
           "meta:xdmField": "xdm:dataValueChanges",
           "tagNumber": 4,
           "items": {
-            "$ref": "obj5092075875105035.schema.json"
+            "$ref": "obj7460739613956802.schema.json"
           }
         }
       },
@@ -2293,7 +2302,7 @@
           "meta:xdmField": "xdm:diningReservations",
           "tagNumber": 1,
           "items": {
-            "$ref": "obj7302013938636607.schema.json"
+            "$ref": "obj4077434518766234.schema.json"
           }
         },
         "cancellation": {
@@ -2433,7 +2442,7 @@
           "meta:xdmField": "xdm:flightReservations",
           "tagNumber": 19,
           "items": {
-            "$ref": "obj5747519338473952.schema.json"
+            "$ref": "obj24346195571073848.schema.json"
           }
         },
         "lodgingReservations": {
@@ -2442,7 +2451,7 @@
           "meta:xdmField": "xdm:lodgingReservations",
           "tagNumber": 20,
           "items": {
-            "$ref": "obj8669675533838797.schema.json"
+            "$ref": "obj8411087400174195.schema.json"
           }
         },
         "vehicleReservations": {
@@ -2451,12 +2460,81 @@
           "meta:xdmField": "xdm:vehicleReservations",
           "tagNumber": 21,
           "items": {
-            "$ref": "obj6616550570788189.schema.json"
+            "$ref": "obj7906837628312795.schema.json"
           }
         }
       },
       "meta:xdmField": "xdm:reservations",
       "tagNumber": 49
+    },
+    "insuranceClaim": {
+      "type": "object",
+      "description": "Captures fields related to a claim when initated by a customer.",
+      "meta:xdmType": "object",
+      "properties": {
+        "claim": {
+          "title": "Claim",
+          "$ref": "../datatypes/industry-verticals/claim.schema.json",
+          "description": "Extension of claim data type.",
+          "meta:xdmField": "xdm:claim",
+          "tagNumber": 1
+        },
+        "adjustorID": {
+          "title": "Adjustor ID",
+          "type": "string",
+          "description": "Unique identifier for adjustor assigned to the claim.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:adjustorID",
+          "tagNumber": 2
+        },
+        "policeReport": {
+          "title": "Police Report",
+          "type": "boolean",
+          "description": "Flags whether or not a police report is available for the claim.",
+          "meta:xdmType": "boolean",
+          "meta:xdmField": "xdm:policeReport",
+          "tagNumber": 3
+        },
+        "incidentDate": {
+          "title": "Incident Date",
+          "type": "string",
+          "format": "date-time",
+          "description": "Date the claim incident occurred.",
+          "meta:xdmType": "date-time",
+          "meta:xdmField": "xdm:incidentDate",
+          "tagNumber": 4
+        },
+        "incidentLocation": {
+          "title": "Incident Location",
+          "$ref": "../datatypes/demographic/address.schema.json",
+          "description": "Location where the claim incident occurred.",
+          "meta:xdmField": "xdm:incidentLocation",
+          "tagNumber": 5
+        },
+        "type": {
+          "title": "Type",
+          "type": "string",
+          "enum": [
+            "product",
+            "automobile",
+            "renters",
+            "thirdPartyAutomobile",
+            "thirdPartyHome",
+            "life",
+            "dental",
+            "vision",
+            "flood",
+            "earthquake",
+            "pet"
+          ],
+          "description": "Type of claim submitted.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:type",
+          "tagNumber": 6
+        }
+      },
+      "meta:xdmField": "xdm:insuranceClaim",
+      "tagNumber": 50
     },
     "prescription": {
       "type": "object",
@@ -2503,7 +2581,7 @@
         }
       },
       "meta:xdmField": "xdm:prescription",
-      "tagNumber": 50
+      "tagNumber": 51
     },
     "reservationSearch": {
       "type": "object",
@@ -2583,7 +2661,7 @@
         }
       },
       "meta:xdmField": "xdm:reservationSearch",
-      "tagNumber": 51
+      "tagNumber": 52
     },
     "upgrades": {
       "type": "object",
@@ -2611,7 +2689,7 @@
         }
       },
       "meta:xdmField": "xdm:upgrades",
-      "tagNumber": 52
+      "tagNumber": 53
     },
     "upsells": {
       "type": "object",
@@ -2639,7 +2717,46 @@
         }
       },
       "meta:xdmField": "xdm:upsells",
-      "tagNumber": 53
+      "tagNumber": 54
+    },
+    "warrantyClaim": {
+      "type": "object",
+      "description": "Captures fields related to a claim when initated by a customer.",
+      "meta:xdmType": "object",
+      "properties": {
+        "claim": {
+          "title": "Claim",
+          "$ref": "../datatypes/industry-verticals/claim.schema.json",
+          "description": "Extension of claim data type.",
+          "meta:xdmField": "xdm:claim",
+          "tagNumber": 1
+        },
+        "length": {
+          "title": "Length",
+          "type": "integer",
+          "description": "Records the length of the warranty, in months.",
+          "meta:xdmType": "int",
+          "meta:xdmField": "xdm:length",
+          "tagNumber": 2
+        },
+        "type": {
+          "title": "Type",
+          "type": "string",
+          "description": "Type of warranty claim submitted.",
+          "enum": [
+            "product",
+            "recall",
+            "service",
+            "home",
+            "automobile"
+          ],
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:type",
+          "tagNumber": 3
+        }
+      },
+      "meta:xdmField": "xdm:warrantyClaim",
+      "tagNumber": 55
     }
   },
   "meta:xdmId": "https://ns.adobe.com/xdm/context/experienceevent-generated",

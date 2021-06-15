@@ -171,7 +171,8 @@
   ],
   "meta:status": [
     "stable",
-    "deprecated"
+    "deprecated",
+    "experimental"
   ],
   "meta:createdDate": [
     "2020-08-10",
@@ -1441,6 +1442,75 @@
       "meta:xdmField": "xdm:customerFeedback",
       "tagNumber": 32
     },
+    "insuranceClaim": {
+      "type": "object",
+      "description": "Captures fields related to a claim when initated by a customer.",
+      "meta:xdmType": "object",
+      "properties": {
+        "claim": {
+          "title": "Claim",
+          "$ref": "../../datatypes/industry-verticals/claim.schema.json",
+          "description": "Extension of claim data type.",
+          "meta:xdmField": "xdm:claim",
+          "tagNumber": 1
+        },
+        "adjustorID": {
+          "title": "Adjustor ID",
+          "type": "string",
+          "description": "Unique identifier for adjustor assigned to the claim.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:adjustorID",
+          "tagNumber": 2
+        },
+        "policeReport": {
+          "title": "Police Report",
+          "type": "boolean",
+          "description": "Flags whether or not a police report is available for the claim.",
+          "meta:xdmType": "boolean",
+          "meta:xdmField": "xdm:policeReport",
+          "tagNumber": 3
+        },
+        "incidentDate": {
+          "title": "Incident Date",
+          "type": "string",
+          "format": "date-time",
+          "description": "Date the claim incident occurred.",
+          "meta:xdmType": "date-time",
+          "meta:xdmField": "xdm:incidentDate",
+          "tagNumber": 4
+        },
+        "incidentLocation": {
+          "title": "Incident Location",
+          "$ref": "../../datatypes/demographic/address.schema.json",
+          "description": "Location where the claim incident occurred.",
+          "meta:xdmField": "xdm:incidentLocation",
+          "tagNumber": 5
+        },
+        "type": {
+          "title": "Type",
+          "type": "string",
+          "enum": [
+            "product",
+            "automobile",
+            "renters",
+            "thirdPartyAutomobile",
+            "thirdPartyHome",
+            "life",
+            "dental",
+            "vision",
+            "flood",
+            "earthquake",
+            "pet"
+          ],
+          "description": "Type of claim submitted.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:type",
+          "tagNumber": 6
+        }
+      },
+      "meta:xdmField": "xdm:insuranceClaim",
+      "tagNumber": 33
+    },
     "upgrades": {
       "type": "object",
       "description": "Upgrade information including impressions and transactions associated with upgrades.",
@@ -1467,7 +1537,7 @@
         }
       },
       "meta:xdmField": "xdm:upgrades",
-      "tagNumber": 33
+      "tagNumber": 34
     },
     "upsells": {
       "type": "object",
@@ -1495,7 +1565,7 @@
         }
       },
       "meta:xdmField": "xdm:upsells",
-      "tagNumber": 34
+      "tagNumber": 35
     }
   },
   "meta:xdmId": "https://ns.adobe.com/xdm/context/experienceevent-generated-financial_services",

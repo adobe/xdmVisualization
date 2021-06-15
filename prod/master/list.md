@@ -127,6 +127,7 @@
 [datatypes.data.opens](http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.data.opens.html)<br/>
 [datatypes.data.cart-abandons](http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.data.cart-abandons.html)<br/>
 [datatypes.industry-verticals.comparisons](http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.industry-verticals.comparisons.html)<br/>
+[datatypes.industry-verticals.claim](http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.industry-verticals.claim.html)<br/>
 [datatypes.industry-verticals.implementationdetails](http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.industry-verticals.implementationdetails.html)<br/>
 [datatypes.industry-verticals.tool-usage](http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.industry-verticals.tool-usage.html)<br/>
 [datatypes.industry-verticals.impressions](http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.industry-verticals.impressions.html)<br/>
@@ -259,9 +260,11 @@
 [mixins.experience-event.industry-verticals.experienceevent-card-application-details](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.industry-verticals.experienceevent-card-application-details.html)<br/>
 [mixins.experience-event.industry-verticals.experienceevent-loan-application-details](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.industry-verticals.experienceevent-loan-application-details.html)<br/>
 [mixins.experience-event.industry-verticals.experienceevent-claim-details](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.industry-verticals.experienceevent-claim-details.html)<br/>
+[mixins.experience-event.industry-verticals.experienceevent-insurance-claim-process](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.industry-verticals.experienceevent-insurance-claim-process.html)<br/>
 [mixins.experience-event.industry-verticals.experienceevent-credit-limit-increase-details](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.industry-verticals.experienceevent-credit-limit-increase-details.html)<br/>
 [mixins.experience-event.industry-verticals.experienceevent-upgrade-details](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.industry-verticals.experienceevent-upgrade-details.html)<br/>
 [mixins.experience-event.industry-verticals.experienceevent-reservation-search](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.industry-verticals.experienceevent-reservation-search.html)<br/>
+[mixins.experience-event.industry-verticals.experienceevent-warranty-claim-process](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.industry-verticals.experienceevent-warranty-claim-process.html)<br/>
 [mixins.experience-event.industry-verticals.experienceevent-vehicle-reservation](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.industry-verticals.experienceevent-vehicle-reservation.html)<br/>
 [mixins.experience-event.industry-verticals.experienceevent-reservation-details](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.industry-verticals.experienceevent-reservation-details.html)<br/>
 [mixins.experience-event.industry-verticals.experienceevent-alert-impressions](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.experience-event.industry-verticals.experienceevent-alert-impressions.html)<br/>

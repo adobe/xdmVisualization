@@ -99,11 +99,21 @@
         "education",
         "high_tech"
       ]
+    },
+    {
+      "industry": [
+        "retail",
+        "telecom",
+        "automotive",
+        "high_tech",
+        "manufacturing"
+      ]
     }
   ],
   "meta:status": [
     "stable",
-    "deprecated"
+    "deprecated",
+    "experimental"
   ],
   "meta:createdDate": [
     "2020-08-10",
@@ -921,6 +931,45 @@
       },
       "meta:xdmField": "xdm:upsells",
       "tagNumber": 28
+    },
+    "warrantyClaim": {
+      "type": "object",
+      "description": "Captures fields related to a claim when initated by a customer.",
+      "meta:xdmType": "object",
+      "properties": {
+        "claim": {
+          "title": "Claim",
+          "$ref": "../../datatypes/industry-verticals/claim.schema.json",
+          "description": "Extension of claim data type.",
+          "meta:xdmField": "xdm:claim",
+          "tagNumber": 1
+        },
+        "length": {
+          "title": "Length",
+          "type": "integer",
+          "description": "Records the length of the warranty, in months.",
+          "meta:xdmType": "int",
+          "meta:xdmField": "xdm:length",
+          "tagNumber": 2
+        },
+        "type": {
+          "title": "Type",
+          "type": "string",
+          "description": "Type of warranty claim submitted.",
+          "enum": [
+            "product",
+            "recall",
+            "service",
+            "home",
+            "automobile"
+          ],
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:type",
+          "tagNumber": 3
+        }
+      },
+      "meta:xdmField": "xdm:warrantyClaim",
+      "tagNumber": 29
     }
   },
   "meta:xdmId": "https://ns.adobe.com/xdm/context/experienceevent-generated-automotive",
