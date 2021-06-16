@@ -46,6 +46,8 @@
 [classes.profile](http://opensource.adobe.com/xdmVisualization/prod/master/classes.profile.html)<br/>
 [classes.vehicle-product](http://opensource.adobe.com/xdmVisualization/prod/master/classes.vehicle-product.html)<br/>
 [classes.graphs](http://opensource.adobe.com/xdmVisualization/prod/master/classes.graphs.html)<br/>
+[classes.aircraft](http://opensource.adobe.com/xdmVisualization/prod/master/classes.aircraft.html)<br/>
+[classes.loan](http://opensource.adobe.com/xdmVisualization/prod/master/classes.loan.html)<br/>
 [classes.product](http://opensource.adobe.com/xdmVisualization/prod/master/classes.product.html)<br/>
 [classes.campaign](http://opensource.adobe.com/xdmVisualization/prod/master/classes.campaign.html)<br/>
 [classes.b2b.account](http://opensource.adobe.com/xdmVisualization/prod/master/classes.b2b.account.html)<br/>
@@ -59,6 +61,7 @@
 [classes.campaign-member](http://opensource.adobe.com/xdmVisualization/prod/master/classes.campaign-member.html)<br/>
 [classes.segmentdefinition](http://opensource.adobe.com/xdmVisualization/prod/master/classes.segmentdefinition.html)<br/>
 [classes.promotion](http://opensource.adobe.com/xdmVisualization/prod/master/classes.promotion.html)<br/>
+[classes.restaurant](http://opensource.adobe.com/xdmVisualization/prod/master/classes.restaurant.html)<br/>
 [classes.fsi.atm](http://opensource.adobe.com/xdmVisualization/prod/master/classes.fsi.atm.html)<br/>
 [classes.fsi.policy](http://opensource.adobe.com/xdmVisualization/prod/master/classes.fsi.policy.html)<br/>
 [classes.fsi.branch](http://opensource.adobe.com/xdmVisualization/prod/master/classes.fsi.branch.html)<br/>
@@ -131,6 +134,7 @@
 [datatypes.industry-verticals.implementationdetails](http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.industry-verticals.implementationdetails.html)<br/>
 [datatypes.industry-verticals.tool-usage](http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.industry-verticals.tool-usage.html)<br/>
 [datatypes.industry-verticals.impressions](http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.industry-verticals.impressions.html)<br/>
+[datatypes.industry-verticals.telecom-subscription](http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.industry-verticals.telecom-subscription.html)<br/>
 [datatypes.industry-verticals.form-applications](http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.industry-verticals.form-applications.html)<br/>
 [datatypes.industry-verticals.transaction](http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.industry-verticals.transaction.html)<br/>
 [datatypes.industry-verticals.file-transfer](http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.industry-verticals.file-transfer.html)<br/>
@@ -179,21 +183,17 @@
 [mixins.product.product-measurement](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.product.product-measurement.html)<br/>
 [mixins.profile.b2b-person-components](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.b2b-person-components.html)<br/>
 [mixins.profile.profile-personal-tax-profile-details](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-personal-tax-profile-details.html)<br/>
+[mixins.profile.profile-travel-preferences](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-travel-preferences.html)<br/>
 [mixins.profile.profile-person-details-v2](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-person-details-v2.html)<br/>
 [mixins.profile.profile-segmentation](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-segmentation.html)<br/>
 [mixins.profile.profile-test-profile](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-test-profile.html)<br/>
 [mixins.profile.profile-work-details](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-work-details.html)<br/>
-[mixins.profile.profile-landline-subscription](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-landline-subscription.html)<br/>
 [mixins.profile.profile-personal-finance-details](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-personal-finance-details.html)<br/>
-[mixins.profile.profile-media-subscription](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-media-subscription.html)<br/>
-[mixins.profile.profile-mobile-plan-details](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-mobile-plan-details.html)<br/>
 [mixins.profile.profile-consents](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-consents.html)<br/>
 [mixins.profile.profile-preferences-details](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-preferences-details.html)<br/>
 [mixins.profile.profile-directmarketing](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-directmarketing.html)<br/>
-[mixins.profile.profile-internet-subscription](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-internet-subscription.html)<br/>
 [mixins.profile.profile-loyalty-details](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-loyalty-details.html)<br/>
 [mixins.profile.profile-personal-details](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-personal-details.html)<br/>
-[mixins.profile.profile-telecom-subscription-details](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-telecom-subscription-details.html)<br/>
 [mixins.profile.profile-phones](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-phones.html)<br/>
 [mixins.profile.profile-user-account-details](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-user-account-details.html)<br/>
 [mixins.profile.profile-push-notification-details](http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-push-notification-details.html)<br/>

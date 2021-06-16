@@ -1,0 +1,204 @@
+{
+  "id": "_xdm.context.telecom-subscription",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Subscription",
+  "type": "object",
+  "meta:extensible": true,
+  "description": "Contain details for the specific subscription types, such as internet, mobile, media, or landline.",
+  "meta:status": "stable",
+  "meta:createdDate": "2021-02-19",
+  "meta:xdmType": "object",
+  "properties": {
+    "subscriber": {
+      "title": "Subscriber",
+      "$ref": "../person/person.schema.json",
+      "description": "The owner of the subscription.",
+      "meta:xdmField": "xdm:subscriber",
+      "tagNumber": 1
+    },
+    "subscriptionSKU": {
+      "title": "Subscription SKU",
+      "type": "string",
+      "description": "Stock keeping unit (SKU), a generally unique identifier for a product.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:subscriptionSKU",
+      "tagNumber": 2
+    },
+    "planName": {
+      "title": "Plan name",
+      "type": "string",
+      "description": "The human readable name for the subscription.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:planName",
+      "tagNumber": 3
+    },
+    "type": {
+      "title": "Type",
+      "type": "string",
+      "description": "The scope of entitlement in relation to how many people are covered by the subscription.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:type",
+      "tagNumber": 4
+    },
+    "country": {
+      "title": "Country",
+      "type": "string",
+      "description": "The country that the subscription contractual and agreement terms are rooted in.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:country",
+      "tagNumber": 5
+    },
+    "startDate": {
+      "title": "Start date",
+      "type": "string",
+      "format": "date",
+      "description": "The date the subscription begins.",
+      "meta:xdmType": "date",
+      "meta:xdmField": "xdm:startDate",
+      "tagNumber": 6
+    },
+    "endDate": {
+      "title": "End date",
+      "type": "string",
+      "format": "date",
+      "description": "The date the current subscription term ends.",
+      "meta:xdmType": "date",
+      "meta:xdmField": "xdm:endDate",
+      "tagNumber": 7
+    },
+    "term": {
+      "title": "Term",
+      "type": "integer",
+      "description": "The numeric value of the term.",
+      "meta:xdmType": "int",
+      "meta:xdmField": "xdm:term",
+      "tagNumber": 8
+    },
+    "termUnitOfTime": {
+      "title": "Term unit of time",
+      "type": "string",
+      "description": "The unit of time for the term period.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:termUnitOfTime",
+      "tagNumber": 9
+    },
+    "renew": {
+      "title": "Renew",
+      "type": "string",
+      "description": "The agreed way that the subscription may continue after the end date.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:renew",
+      "tagNumber": 10
+    },
+    "topUp": {
+      "title": "Top up",
+      "type": "string",
+      "description": "Agreed terms for how consumable aspects of a subscription are repurchased during a billing period.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:topUp",
+      "tagNumber": 11
+    },
+    "status": {
+      "title": "Status",
+      "type": "string",
+      "description": "The current status of the subscription.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:status",
+      "tagNumber": 12
+    },
+    "contractID": {
+      "title": "Contract ID",
+      "type": "string",
+      "description": "Unique ID for the contract that governs this subscription.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:contractID",
+      "tagNumber": 13
+    },
+    "paymentMethod": {
+      "title": "Payment method",
+      "type": "string",
+      "description": "The payment method for recurring payments.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:paymentMethod",
+      "tagNumber": 14
+    },
+    "billingPeriod": {
+      "title": "Billing period",
+      "type": "string",
+      "description": "The duration between billings.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:billingPeriod",
+      "tagNumber": 15
+    },
+    "billingStartDate": {
+      "title": "Billing start date",
+      "type": "string",
+      "format": "date",
+      "description": "The date when the first bill is due.",
+      "meta:xdmType": "date",
+      "meta:xdmField": "xdm:billingStartDate",
+      "tagNumber": 16
+    },
+    "chargeMethod": {
+      "title": "Charge method",
+      "type": "string",
+      "description": "The way the billing is setup to charge the customer.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:chargeMethod",
+      "tagNumber": 17
+    },
+    "paymentStatus": {
+      "title": "Payment status",
+      "type": "string",
+      "description": "The standing of the account.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:paymentStatus",
+      "tagNumber": 18
+    },
+    "subscriptionCategory": {
+      "title": "Subscription Category",
+      "type": "string",
+      "description": "The main, top level categorization of this type of subscription.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:subscriptionCategory",
+      "tagNumber": 19
+    },
+    "subscriptionSubCategory": {
+      "title": "Subscription Sub-category",
+      "type": "string",
+      "description": "The specific sub categorization of the subscription.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:subscriptionSubCategory",
+      "tagNumber": 20
+    },
+    "devices": {
+      "title": "Devices",
+      "description": "Array of devices and/or accessories associated with the plan.",
+      "type": "array",
+      "meta:xdmType": "array",
+      "meta:xdmField": "xdm:devices",
+      "tagNumber": 21,
+      "items": {
+        "$ref": "obj5795052443671018.schema.json"
+      }
+    },
+    "_unqualified": {
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "ID": {
+          "title": "Identifier",
+          "type": "string",
+          "description": "Unique identifier for the subscription instance.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "ID",
+          "tagNumber": 1
+        }
+      },
+      "tagNumber": 22
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/context/telecom-subscription",
+  "meta:altId": "_xdm.context.telecom-subscription",
+  "id": "_xdm.context.telecom-subscription"
+}

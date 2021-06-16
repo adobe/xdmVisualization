@@ -299,6 +299,7 @@
 <details>
 <summary>classes</summary>
 <ul>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/classes.aircraft.html">aircraft</a></li>
 <details>
 <summary>b2b</summary>
 <ul>
@@ -323,10 +324,12 @@
 </ul>
 </details>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/classes.graphs.html">graphs</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/classes.loan.html">loan</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/classes.lodging-product.html">lodging-product</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/classes.product.html">product</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/classes.profile.html">profile</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/classes.promotion.html">promotion</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/classes.restaurant.html">restaurant</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/classes.segmentdefinition.html">segmentdefinition</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/classes.vehicle-product.html">vehicle-product</a></li>
 </ul>
@@ -468,6 +471,7 @@
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.industry-verticals.internal-site-search.html">internal-site-search</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.industry-verticals.selfservice.html">selfservice</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.industry-verticals.subscription.html">subscription</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.industry-verticals.telecom-subscription.html">telecom-subscription</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.industry-verticals.tool-usage.html">tool-usage</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.industry-verticals.transaction.html">transaction</a></li>
 </ul>
@@ -662,11 +666,7 @@
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.b2b-person-details.html">b2b-person-details</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-consents.html">profile-consents</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-directmarketing.html">profile-directmarketing</a></li>
-<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-internet-subscription.html">profile-internet-subscription</a></li>
-<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-landline-subscription.html">profile-landline-subscription</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-loyalty-details.html">profile-loyalty-details</a></li>
-<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-media-subscription.html">profile-media-subscription</a></li>
-<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-mobile-plan-details.html">profile-mobile-plan-details</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-other-work-details.html">profile-other-work-details</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-owning-entities.html">profile-owning-entities</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-person-details.html">profile-person-details</a></li>
@@ -681,8 +681,8 @@
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-segmentation.html">profile-segmentation</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-subscriptions.html">profile-subscriptions</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-telecom-subscription.html">profile-telecom-subscription</a></li>
-<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-telecom-subscription-details.html">profile-telecom-subscription-details</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-test-profile.html">profile-test-profile</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-travel-preferences.html">profile-travel-preferences</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-user-account-details.html">profile-user-account-details</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/mixins.profile.profile-work-details.html">profile-work-details</a></li>
 </ul>
