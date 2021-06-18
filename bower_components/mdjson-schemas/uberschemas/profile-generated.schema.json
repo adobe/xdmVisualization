@@ -175,7 +175,7 @@
       "meta:xdmField": "xdm:personComponents",
       "tagNumber": 11,
       "items": {
-        "$ref": "obj03919085942679845.schema.json"
+        "$ref": "obj7837307204674209.schema.json"
       }
     },
     "b2b": {
@@ -1546,7 +1546,7 @@
           "meta:xdmField": "xdm:pointsExpiration",
           "tagNumber": 4,
           "items": {
-            "$ref": "obj2447712789454517.schema.json"
+            "$ref": "obj59491995730012.schema.json"
           }
         },
         "pointsRedeemed": {
@@ -1638,7 +1638,7 @@
           "meta:xdmField": "xdm:creditScores",
           "tagNumber": 3,
           "items": {
-            "$ref": "obj5192210303112867.schema.json"
+            "$ref": "obj39456548817572235.schema.json"
           }
         },
         "employmentStatus": {
@@ -1855,7 +1855,7 @@
       "meta:xdmField": "xdm:pushNotificationDetails",
       "tagNumber": 50,
       "items": {
-        "$ref": "obj6115601243465583.schema.json"
+        "$ref": "obj8867856405168928.schema.json"
       }
     },
     "segmentMembership": {
@@ -1895,19 +1895,19 @@
       "type": "object",
       "meta:xdmType": "object",
       "properties": {
-        "subscriptionDetails": {
-          "title": "Subscription Details",
-          "$ref": "../datatypes/industry-verticals/subscription.schema.json",
-          "description": "Extension of the subscription data type to include subscription length, fees, status, etc.",
-          "meta:xdmField": "xdm:subscriptionDetails",
+        "primarySubscriber": {
+          "title": "Primary Subscriber",
+          "$ref": "../datatypes/person/person.schema.json",
+          "description": "The owner of the subscription.",
+          "meta:xdmField": "xdm:primarySubscriber",
           "tagNumber": 1
         },
-        "responsiblePartyID": {
-          "title": "Responsible Party ID",
+        "primaryPartyID": {
+          "title": "Primary Party ID",
           "type": "string",
-          "description": "Identifier for the person responsible for the subscription, which typically could be their device phone number.",
+          "description": "Identifier for the primary person responsible for the subscription, which typically could be their device phone number.",
           "meta:xdmType": "string",
-          "meta:xdmField": "xdm:responsiblePartyID",
+          "meta:xdmField": "xdm:primaryPartyID",
           "tagNumber": 2
         },
         "bundleName": {
@@ -1925,7 +1925,7 @@
           "meta:xdmField": "xdm:internetSubscription",
           "tagNumber": 4,
           "items": {
-            "$ref": "obj5180989041813433.schema.json"
+            "$ref": "obj1271466792289866.schema.json"
           }
         },
         "landlineSubscription": {
@@ -1935,7 +1935,7 @@
           "meta:xdmField": "xdm:landlineSubscription",
           "tagNumber": 5,
           "items": {
-            "$ref": "obj8507548002315171.schema.json"
+            "$ref": "obj9229347738088409.schema.json"
           }
         },
         "mediaSubscription": {
@@ -1945,7 +1945,7 @@
           "meta:xdmField": "xdm:mediaSubscription",
           "tagNumber": 6,
           "items": {
-            "$ref": "obj8646347564997674.schema.json"
+            "$ref": "obj4099568386993837.schema.json"
           }
         },
         "mobileSubscription": {
@@ -1955,7 +1955,7 @@
           "meta:xdmField": "xdm:mobileSubscription",
           "tagNumber": 7,
           "items": {
-            "$ref": "obj9562653471179832.schema.json"
+            "$ref": "obj778227461507397.schema.json"
           }
         }
       },

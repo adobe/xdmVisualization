@@ -1136,19 +1136,19 @@
       "type": "object",
       "meta:xdmType": "object",
       "properties": {
-        "subscriptionDetails": {
-          "title": "Subscription Details",
-          "$ref": "../../datatypes/industry-verticals/subscription.schema.json",
-          "description": "Extension of the subscription data type to include subscription length, fees, status, etc.",
-          "meta:xdmField": "xdm:subscriptionDetails",
+        "primarySubscriber": {
+          "title": "Primary Subscriber",
+          "$ref": "../../datatypes/person/person.schema.json",
+          "description": "The owner of the subscription.",
+          "meta:xdmField": "xdm:primarySubscriber",
           "tagNumber": 1
         },
-        "responsiblePartyID": {
-          "title": "Responsible Party ID",
+        "primaryPartyID": {
+          "title": "Primary Party ID",
           "type": "string",
-          "description": "Identifier for the person responsible for the subscription, which typically could be their device phone number.",
+          "description": "Identifier for the primary person responsible for the subscription, which typically could be their device phone number.",
           "meta:xdmType": "string",
-          "meta:xdmField": "xdm:responsiblePartyID",
+          "meta:xdmField": "xdm:primaryPartyID",
           "tagNumber": 2
         },
         "bundleName": {
@@ -1166,7 +1166,7 @@
           "meta:xdmField": "xdm:internetSubscription",
           "tagNumber": 4,
           "items": {
-            "$ref": "obj26683330789319215.schema.json"
+            "$ref": "obj9710144461544554.schema.json"
           }
         },
         "landlineSubscription": {
@@ -1176,7 +1176,7 @@
           "meta:xdmField": "xdm:landlineSubscription",
           "tagNumber": 5,
           "items": {
-            "$ref": "obj5476227391294017.schema.json"
+            "$ref": "obj19354218041674875.schema.json"
           }
         },
         "mediaSubscription": {
@@ -1186,7 +1186,7 @@
           "meta:xdmField": "xdm:mediaSubscription",
           "tagNumber": 6,
           "items": {
-            "$ref": "obj659160290515187.schema.json"
+            "$ref": "obj6292815335485591.schema.json"
           }
         },
         "mobileSubscription": {
@@ -1196,7 +1196,7 @@
           "meta:xdmField": "xdm:mobileSubscription",
           "tagNumber": 7,
           "items": {
-            "$ref": "obj23547529857724725.schema.json"
+            "$ref": "obj3601067619982463.schema.json"
           }
         }
       },

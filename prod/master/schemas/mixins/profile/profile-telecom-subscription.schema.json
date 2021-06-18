@@ -18,19 +18,19 @@
       "type": "object",
       "meta:xdmType": "object",
       "properties": {
-        "subscriptionDetails": {
-          "title": "Subscription Details",
-          "$ref": "../../datatypes/industry-verticals/subscription.schema.json",
-          "description": "Extension of the subscription data type to include subscription length, fees, status, etc.",
-          "meta:xdmField": "xdm:subscriptionDetails",
+        "primarySubscriber": {
+          "title": "Primary Subscriber",
+          "$ref": "../../datatypes/person/person.schema.json",
+          "description": "The owner of the subscription.",
+          "meta:xdmField": "xdm:primarySubscriber",
           "tagNumber": 1
         },
-        "responsiblePartyID": {
-          "title": "Responsible Party ID",
+        "primaryPartyID": {
+          "title": "Primary Party ID",
           "type": "string",
-          "description": "Identifier for the person responsible for the subscription, which typically could be their device phone number.",
+          "description": "Identifier for the primary person responsible for the subscription, which typically could be their device phone number.",
           "meta:xdmType": "string",
-          "meta:xdmField": "xdm:responsiblePartyID",
+          "meta:xdmField": "xdm:primaryPartyID",
           "tagNumber": 2
         },
         "bundleName": {
@@ -48,7 +48,7 @@
           "meta:xdmField": "xdm:internetSubscription",
           "tagNumber": 4,
           "items": {
-            "$ref": "obj6281528671915144.schema.json"
+            "$ref": "obj061055832703538204.schema.json"
           }
         },
         "landlineSubscription": {
@@ -58,7 +58,7 @@
           "meta:xdmField": "xdm:landlineSubscription",
           "tagNumber": 5,
           "items": {
-            "$ref": "obj6702819868529937.schema.json"
+            "$ref": "obj525492074087371.schema.json"
           }
         },
         "mediaSubscription": {
@@ -68,7 +68,7 @@
           "meta:xdmField": "xdm:mediaSubscription",
           "tagNumber": 6,
           "items": {
-            "$ref": "obj3926863573797148.schema.json"
+            "$ref": "obj8324654788691013.schema.json"
           }
         },
         "mobileSubscription": {
@@ -78,7 +78,7 @@
           "meta:xdmField": "xdm:mobileSubscription",
           "tagNumber": 7,
           "items": {
-            "$ref": "obj2550950057810295.schema.json"
+            "$ref": "obj9842117941418185.schema.json"
           }
         }
       },
