@@ -1,0 +1,42 @@
+{
+  "type": "object",
+  "description": "Array of all items and add/remove/select actions in a comparison.",
+  "meta:xdmType": "object",
+  "properties": {
+    "ID": {
+      "title": "ID",
+      "type": "string",
+      "description": "Identifier for the item included within a comparison.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:ID",
+      "tagNumber": 1
+    },
+    "removal": {
+      "title": "Removal",
+      "type": "integer",
+      "description": "Tracked when an item is removed from a comparison.",
+      "meta:xdmType": "int",
+      "meta:xdmField": "xdm:removal",
+      "tagNumber": 2
+    },
+    "addition": {
+      "title": "Addition",
+      "type": "integer",
+      "description": "Tracked when an item is added to a comparison.",
+      "meta:xdmType": "int",
+      "meta:xdmField": "xdm:addition",
+      "tagNumber": 3
+    },
+    "selected": {
+      "title": "Selected",
+      "type": "integer",
+      "description": "Tracked when an item is selected/clicked-through upon to view more details.",
+      "meta:xdmType": "int",
+      "meta:xdmField": "xdm:selected",
+      "tagNumber": 4
+    }
+  },
+  "tagNumber": 1,
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "id": "obj16880837519523606.schema.json"
+}
