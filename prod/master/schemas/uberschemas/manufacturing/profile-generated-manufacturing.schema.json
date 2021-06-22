@@ -1134,7 +1134,7 @@
           "meta:xdmField": "xdm:pointsExpiration",
           "tagNumber": 4,
           "items": {
-            "$ref": "obj4567089983899515.schema.json"
+            "$ref": "obj10822780407486765.schema.json"
           }
         },
         "pointsRedeemed": {
@@ -1238,7 +1238,7 @@
         },
         "contactDetails": {
           "title": "Contact Details",
-          "$ref": "../../mixins/profile/profile-personal-details.schema.json",
+          "$ref": "../../fieldgroups/profile/profile-personal-details.schema.json",
           "description": "Extension of the Personal Profile data type.",
           "meta:xdmField": "xdm:contactDetails",
           "tagNumber": 2

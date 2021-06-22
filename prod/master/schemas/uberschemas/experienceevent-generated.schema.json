@@ -922,7 +922,7 @@
       "meta:xdmType": "object",
       "title": "Web",
       "description": "Link clicks, web page details, referrer information, and browser details.",
-      "$ref": "../datatypes/web/webinfo.schema.json",
+      "$ref": "../datatypes/webinfo.schema.json",
       "properties": {
         "referral": {
           "title": "Referral",
@@ -1121,7 +1121,7 @@
           "meta:xdmField": "xdm:dataValueChanges",
           "tagNumber": 4,
           "items": {
-            "$ref": "obj30289412083101586.schema.json"
+            "$ref": "obj6440481001202274.schema.json"
           }
         }
       },
@@ -1663,7 +1663,7 @@
     },
     "media": {
       "title": "Media",
-      "$ref": "../datatypes/media/media.schema.json",
+      "$ref": "../datatypes/media.schema.json",
       "description": "Media activity information related to the experience event.",
       "meta:xdmField": "xdm:media",
       "tagNumber": 29
@@ -2302,7 +2302,7 @@
           "meta:xdmField": "xdm:diningReservations",
           "tagNumber": 1,
           "items": {
-            "$ref": "obj1942108771995974.schema.json"
+            "$ref": "obj8294080318557366.schema.json"
           }
         },
         "cancellation": {
@@ -2442,7 +2442,7 @@
           "meta:xdmField": "xdm:flightReservations",
           "tagNumber": 19,
           "items": {
-            "$ref": "obj22509542369938162.schema.json"
+            "$ref": "obj26270761525067354.schema.json"
           }
         },
         "lodgingReservations": {
@@ -2451,7 +2451,7 @@
           "meta:xdmField": "xdm:lodgingReservations",
           "tagNumber": 20,
           "items": {
-            "$ref": "obj4828975739496828.schema.json"
+            "$ref": "obj45405911056451154.schema.json"
           }
         },
         "vehicleReservations": {
@@ -2460,7 +2460,7 @@
           "meta:xdmField": "xdm:vehicleReservations",
           "tagNumber": 21,
           "items": {
-            "$ref": "obj11590199157052283.schema.json"
+            "$ref": "obj06565226973080684.schema.json"
           }
         }
       },

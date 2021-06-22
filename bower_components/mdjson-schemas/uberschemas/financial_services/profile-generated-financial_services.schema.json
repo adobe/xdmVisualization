@@ -1149,7 +1149,7 @@
           "description": "Captures the beneficiary(s) assigned to the account.",
           "meta:xdmType": "array",
           "items": {
-            "$ref": "../../mixins/profile/profile-person-details.schema.json",
+            "$ref": "../../fieldgroups/profile/profile-person-details.schema.json",
             "tagNumber": 1
           },
           "meta:xdmField": "xdm:assignedBeneficiary",
@@ -1161,7 +1161,7 @@
           "meta:xdmField": "xdm:creditScores",
           "tagNumber": 3,
           "items": {
-            "$ref": "obj367822554015683.schema.json"
+            "$ref": "obj5056676741241704.schema.json"
           }
         },
         "employmentStatus": {
@@ -1275,7 +1275,7 @@
         },
         "contactDetails": {
           "title": "Contact Details",
-          "$ref": "../../mixins/profile/profile-personal-details.schema.json",
+          "$ref": "../../fieldgroups/profile/profile-personal-details.schema.json",
           "description": "Extension of the Personal Profile data type.",
           "meta:xdmField": "xdm:contactDetails",
           "tagNumber": 2

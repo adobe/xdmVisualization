@@ -1,0 +1,28 @@
+{
+  "id": "_xdm.context.profile-push-notification-details",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Push Notification Details",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "description": "Information regarding push notifications, such as mobile application and device details.",
+  "meta:status": "stable",
+  "meta:createdDate": "2020-08-10",
+  "meta:xdmType": "object",
+  "properties": {
+    "pushNotificationDetails": {
+      "title": "Push details",
+      "type": "array",
+      "description": "Push details array containing notification info required to send mobile push notification to a specific mobile application on a given device.",
+      "meta:xdmType": "array",
+      "meta:xdmField": "xdm:pushNotificationDetails",
+      "tagNumber": 1,
+      "items": {
+        "$ref": "obj02646488104336231.schema.json"
+      }
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/context/profile-push-notification-details",
+  "meta:altId": "_xdm.context.profile-push-notification-details",
+  "id": "_xdm.context.profile-push-notification-details"
+}

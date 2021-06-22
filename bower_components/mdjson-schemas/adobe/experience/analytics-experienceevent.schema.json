@@ -73,7 +73,7 @@
     },
     "media": {
       "title": "Media",
-      "$ref": "../../datatypes/media/media.schema.json",
+      "$ref": "../../datatypes/media.schema.json",
       "description": "Media activity information related to the experience event.",
       "meta:xdmField": "xdm:media",
       "tagNumber": 9
@@ -136,7 +136,7 @@
     },
     "web": {
       "title": "Web",
-      "$ref": "../../datatypes/web/webinfo.schema.json",
+      "$ref": "../../datatypes/webinfo.schema.json",
       "description": "Link clicks, web page details, referrer information, and browser details.",
       "meta:xdmField": "xdm:web",
       "tagNumber": 16
@@ -189,7 +189,7 @@
                 },
                 "web": {
                   "title": "Session Entry Web",
-                  "$ref": "../../datatypes/web/webinfo.schema.json",
+                  "$ref": "../../datatypes/webinfo.schema.json",
                   "description": "Link clicks, web page details, referrer information, and browser details.",
                   "meta:xdmField": "xdm:web",
                   "tagNumber": 5
@@ -215,7 +215,7 @@
                 },
                 "firstWeb": {
                   "title": "End-User First Web Details",
-                  "$ref": "../../datatypes/web/webinfo.schema.json",
+                  "$ref": "../../datatypes/webinfo.schema.json",
                   "description": "The information related to web page, link, and referrer from the first ExperienceEvent for this end-user.",
                   "meta:xdmField": "xdm:firstWeb",
                   "tagNumber": 2

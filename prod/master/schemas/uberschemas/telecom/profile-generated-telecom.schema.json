@@ -35,10 +35,7 @@
       ]
     }
   ],
-  "meta:status": [
-    "stable",
-    "experimental"
-  ],
+  "meta:status": "stable",
   "meta:createdDate": [
     "2020-08-10",
     "2021-02-19",
@@ -1166,7 +1163,7 @@
           "meta:xdmField": "xdm:internetSubscription",
           "tagNumber": 4,
           "items": {
-            "$ref": "obj7574950842444397.schema.json"
+            "$ref": "obj8725412812485129.schema.json"
           }
         },
         "landlineSubscription": {
@@ -1176,7 +1173,7 @@
           "meta:xdmField": "xdm:landlineSubscription",
           "tagNumber": 5,
           "items": {
-            "$ref": "obj6541305846954995.schema.json"
+            "$ref": "obj8223022793569277.schema.json"
           }
         },
         "mediaSubscription": {
@@ -1186,7 +1183,7 @@
           "meta:xdmField": "xdm:mediaSubscription",
           "tagNumber": 6,
           "items": {
-            "$ref": "obj9885198965071456.schema.json"
+            "$ref": "obj8503864164471211.schema.json"
           }
         },
         "mobileSubscription": {
@@ -1196,7 +1193,7 @@
           "meta:xdmField": "xdm:mobileSubscription",
           "tagNumber": 7,
           "items": {
-            "$ref": "obj8673667386288768.schema.json"
+            "$ref": "obj9083867602808231.schema.json"
           }
         }
       },
@@ -1218,7 +1215,7 @@
         },
         "contactDetails": {
           "title": "Contact Details",
-          "$ref": "../../mixins/profile/profile-personal-details.schema.json",
+          "$ref": "../../fieldgroups/profile/profile-personal-details.schema.json",
           "description": "Extension of the Personal Profile data type.",
           "meta:xdmField": "xdm:contactDetails",
           "tagNumber": 2

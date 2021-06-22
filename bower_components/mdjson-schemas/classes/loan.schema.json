@@ -110,7 +110,7 @@
     },
     "borrower": {
       "title": "Borrower",
-      "$ref": "../mixins/profile/profile-personal-details.schema.json",
+      "$ref": "../fieldgroups/profile/profile-personal-details.schema.json",
       "description": "Records the details for the borrower.",
       "meta:xdmField": "xdm:borrower",
       "tagNumber": 11

@@ -175,7 +175,7 @@
       "meta:xdmField": "xdm:personComponents",
       "tagNumber": 11,
       "items": {
-        "$ref": "obj9420284932361631.schema.json"
+        "$ref": "obj4211967301918884.schema.json"
       }
     },
     "b2b": {
@@ -1546,7 +1546,7 @@
           "meta:xdmField": "xdm:pointsExpiration",
           "tagNumber": 4,
           "items": {
-            "$ref": "obj17672605695406363.schema.json"
+            "$ref": "obj8599525454852894.schema.json"
           }
         },
         "pointsRedeemed": {
@@ -1626,7 +1626,7 @@
           "description": "Captures the beneficiary(s) assigned to the account.",
           "meta:xdmType": "array",
           "items": {
-            "$ref": "../mixins/profile/profile-person-details.schema.json",
+            "$ref": "../fieldgroups/profile/profile-person-details.schema.json",
             "tagNumber": 1
           },
           "meta:xdmField": "xdm:assignedBeneficiary",
@@ -1638,7 +1638,7 @@
           "meta:xdmField": "xdm:creditScores",
           "tagNumber": 3,
           "items": {
-            "$ref": "obj03543982889066699.schema.json"
+            "$ref": "obj9280820313738785.schema.json"
           }
         },
         "employmentStatus": {
@@ -1855,7 +1855,7 @@
       "meta:xdmField": "xdm:pushNotificationDetails",
       "tagNumber": 50,
       "items": {
-        "$ref": "obj8675799342870181.schema.json"
+        "$ref": "obj7301248960911753.schema.json"
       }
     },
     "segmentMembership": {
@@ -1925,7 +1925,7 @@
           "meta:xdmField": "xdm:internetSubscription",
           "tagNumber": 4,
           "items": {
-            "$ref": "obj9039540516146298.schema.json"
+            "$ref": "obj00660030115814858.schema.json"
           }
         },
         "landlineSubscription": {
@@ -1935,7 +1935,7 @@
           "meta:xdmField": "xdm:landlineSubscription",
           "tagNumber": 5,
           "items": {
-            "$ref": "obj7330340383361151.schema.json"
+            "$ref": "obj6697731281816439.schema.json"
           }
         },
         "mediaSubscription": {
@@ -1945,7 +1945,7 @@
           "meta:xdmField": "xdm:mediaSubscription",
           "tagNumber": 6,
           "items": {
-            "$ref": "obj978151647874165.schema.json"
+            "$ref": "obj06378989747520625.schema.json"
           }
         },
         "mobileSubscription": {
@@ -1955,7 +1955,7 @@
           "meta:xdmField": "xdm:mobileSubscription",
           "tagNumber": 7,
           "items": {
-            "$ref": "obj9839744555637415.schema.json"
+            "$ref": "obj4279219765558566.schema.json"
           }
         }
       },
@@ -2297,7 +2297,7 @@
         },
         "contactDetails": {
           "title": "Contact Details",
-          "$ref": "../mixins/profile/profile-personal-details.schema.json",
+          "$ref": "../fieldgroups/profile/profile-personal-details.schema.json",
           "description": "Extension of the Personal Profile data type.",
           "meta:xdmField": "xdm:contactDetails",
           "tagNumber": 2

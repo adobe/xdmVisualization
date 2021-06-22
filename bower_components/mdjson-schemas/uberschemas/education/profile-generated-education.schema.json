@@ -1139,7 +1139,7 @@
         },
         "contactDetails": {
           "title": "Contact Details",
-          "$ref": "../../mixins/profile/profile-personal-details.schema.json",
+          "$ref": "../../fieldgroups/profile/profile-personal-details.schema.json",
           "description": "Extension of the Personal Profile data type.",
           "meta:xdmField": "xdm:contactDetails",
           "tagNumber": 2

@@ -401,7 +401,7 @@
       "type": "object",
       "meta:xdmType": "object",
       "title": "Web",
-      "$ref": "../../datatypes/web/webinfo.schema.json",
+      "$ref": "../../datatypes/webinfo.schema.json",
       "description": "Link clicks, web page details, referrer information, and browser details.",
       "properties": {
         "referral": {
@@ -508,7 +508,7 @@
     },
     "media": {
       "title": "Media",
-      "$ref": "../../datatypes/media/media.schema.json",
+      "$ref": "../../datatypes/media.schema.json",
       "description": "Media activity information related to the experience event.",
       "meta:xdmField": "xdm:media",
       "tagNumber": 20
@@ -788,7 +788,7 @@
           "meta:xdmField": "xdm:diningReservations",
           "tagNumber": 1,
           "items": {
-            "$ref": "obj5809843203741007.schema.json"
+            "$ref": "obj17177404220205172.schema.json"
           }
         },
         "cancellation": {
@@ -928,7 +928,7 @@
           "meta:xdmField": "xdm:flightReservations",
           "tagNumber": 19,
           "items": {
-            "$ref": "obj5211751236843345.schema.json"
+            "$ref": "obj8161947818138007.schema.json"
           }
         },
         "lodgingReservations": {
@@ -937,7 +937,7 @@
           "meta:xdmField": "xdm:lodgingReservations",
           "tagNumber": 20,
           "items": {
-            "$ref": "obj7863009984645652.schema.json"
+            "$ref": "obj8680099422324326.schema.json"
           }
         },
         "vehicleReservations": {
@@ -946,7 +946,7 @@
           "meta:xdmField": "xdm:vehicleReservations",
           "tagNumber": 21,
           "items": {
-            "$ref": "obj06318549627841241.schema.json"
+            "$ref": "obj505840606858329.schema.json"
           }
         }
       },

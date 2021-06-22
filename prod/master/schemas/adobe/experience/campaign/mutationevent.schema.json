@@ -18,7 +18,7 @@
     },
     "web": {
       "title": "Web",
-      "$ref": "../../../datatypes/web/webinfo.schema.json",
+      "$ref": "../../../datatypes/webinfo.schema.json",
       "description": "Link clicks, web page details, referrer information, and browser details.",
       "meta:xdmField": "xdm:web",
       "tagNumber": 2

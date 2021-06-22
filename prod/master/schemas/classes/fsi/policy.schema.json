@@ -88,7 +88,7 @@
       "description": "Captures the beneficiary(s) assigned to the policy.",
       "meta:xdmType": "array",
       "items": {
-        "$ref": "../../mixins/profile/profile-person-details.schema.json",
+        "$ref": "../../fieldgroups/profile/profile-person-details.schema.json",
         "tagNumber": 1
       },
       "meta:xdmField": "xdm:assignedBeneficiary",
@@ -104,7 +104,7 @@
     },
     "owner": {
       "title": "Owner",
-      "$ref": "../../mixins/profile/profile-personal-details.schema.json",
+      "$ref": "../../fieldgroups/profile/profile-personal-details.schema.json",
       "description": "Stores the policyholder's profile information. Extension of the personal profile details data type.",
       "meta:xdmField": "xdm:owner",
       "tagNumber": 10
