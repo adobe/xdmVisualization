@@ -60,7 +60,7 @@ standardComponents=()
 extensionComponents=()
 standardCompGrp=()
 
-folders=(adobe behaviors airship facebook classes datatypes mixins uberschemas)
+folders=(adobe behaviors airship facebook classes datatypes fieldgroups uberschemas)
 
 rm ../../listOfXdms.txt
 for folder in ${folders[@]}; do

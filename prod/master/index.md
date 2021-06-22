@@ -514,6 +514,186 @@
 </ul>
 </details>
 <details>
+<summary>fieldgroups</summary>
+<ul>
+<details>
+<summary>account</summary>
+<ul>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.account.account-details.html">account-details</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.account.related-accounts.html">related-accounts</a></li>
+</ul>
+</details>
+<details>
+<summary>campaign-member</summary>
+<ul>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.campaign-member.campaign-member-details.html">campaign-member-details</a></li>
+</ul>
+</details>
+<details>
+<summary>campaign</summary>
+<ul>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.campaign.campaign-details.html">campaign-details</a></li>
+</ul>
+</details>
+<details>
+<summary>experience-event</summary>
+<ul>
+<details>
+<summary>events</summary>
+<ul>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.events.add-to-list.html">add-to-list</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.events.add-to-opportunity.html">add-to-opportunity</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.events.convert-lead.html">convert-lead</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.events.emailbounced.html">emailbounced</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.events.emailbouncedsoft.html">emailbouncedsoft</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.events.emailclicked.html">emailclicked</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.events.emaildelivered.html">emaildelivered</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.events.emailopened.html">emailopened</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.events.emailunsubscribed.html">emailunsubscribed</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.events.formfilledout.html">formfilledout</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.events.interesting-moment.html">interesting-moment</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.events.linkclicks.html">linkclicks</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.events.new-lead.html">new-lead</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.events.opportunityupdated.html">opportunityupdated</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.events.remove-from-list.html">remove-from-list</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.events.remove-from-opportunity.html">remove-from-opportunity</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.events.scorechanged.html">scorechanged</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.events.statusincampaignprogressionchanged.html">statusincampaignprogressionchanged</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.events.visit-webpage.html">visit-webpage</a></li>
+</ul>
+</details>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.experienceevent-advertising.html">experienceevent-advertising</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.experienceevent-application.html">experienceevent-application</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.experienceevent-card-actions.html">experienceevent-card-actions</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.experienceevent-channel.html">experienceevent-channel</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.experienceevent-commerce.html">experienceevent-commerce</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.experienceevent-consumer.html">experienceevent-consumer</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.experienceevent-directmarketing.html">experienceevent-directmarketing</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.experienceevent-enduserids.html">experienceevent-enduserids</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.experienceevent-environment-details.html">experienceevent-environment-details</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.experienceevent-file-download-details.html">experienceevent-file-download-details</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.experienceevent-file-upload-details.html">experienceevent-file-upload-details</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.experienceevent-implementation-details.html">experienceevent-implementation-details</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.experienceevent-knowledge-base-details.html">experienceevent-knowledge-base-details</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.experienceevent-marketing.html">experienceevent-marketing</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.experienceevent-media.html">experienceevent-media</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.experienceevent-offer-impression-details.html">experienceevent-offer-impression-details</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.experienceevent-privacy.html">experienceevent-privacy</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.experienceevent-profile-stitch.html">experienceevent-profile-stitch</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.experienceevent-pushtracking.html">experienceevent-pushtracking</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.experienceevent-quote-request-details.html">experienceevent-quote-request-details</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.experienceevent-search.html">experienceevent-search</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.experienceevent-segmentmembership.html">experienceevent-segmentmembership</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.experienceevent-service-payment-details.html">experienceevent-service-payment-details</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.experienceevent-social-network-usage-details.html">experienceevent-social-network-usage-details</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.experienceevent-support-site-search.html">experienceevent-support-site-search</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.experienceevent-survey-response-details.html">experienceevent-survey-response-details</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.experienceevent-technical-details.html">experienceevent-technical-details</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.experienceevent-user-login-details.html">experienceevent-user-login-details</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.experienceevent-web.html">experienceevent-web</a></li>
+<details>
+<summary>industry-verticals</summary>
+<ul>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.industry-verticals.experienceevent-alert-impressions.html">experienceevent-alert-impressions</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.industry-verticals.experienceevent-balance-transfers.html">experienceevent-balance-transfers</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.industry-verticals.experienceevent-bill-pay-details.html">experienceevent-bill-pay-details</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.industry-verticals.experienceevent-card-application-details.html">experienceevent-card-application-details</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.industry-verticals.experienceevent-claim-details.html">experienceevent-claim-details</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.industry-verticals.experienceevent-contact-request-details.html">experienceevent-contact-request-details</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.industry-verticals.experienceevent-credit-limit-increase-details.html">experienceevent-credit-limit-increase-details</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.industry-verticals.experienceevent-deposit-details.html">experienceevent-deposit-details</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.industry-verticals.experienceevent-device-trade-in-details.html">experienceevent-device-trade-in-details</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.industry-verticals.experienceevent-dining-reservation.html">experienceevent-dining-reservation</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.industry-verticals.experienceevent-flight-reservation.html">experienceevent-flight-reservation</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.industry-verticals.experienceevent-insurance-claim-process.html">experienceevent-insurance-claim-process</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.industry-verticals.experienceevent-loan-application-details.html">experienceevent-loan-application-details</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.industry-verticals.experienceevent-lodging-reservation.html">experienceevent-lodging-reservation</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.industry-verticals.experienceevent-prescription-details.html">experienceevent-prescription-details</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.industry-verticals.experienceevent-reservation-details.html">experienceevent-reservation-details</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.industry-verticals.experienceevent-reservation-search.html">experienceevent-reservation-search</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.industry-verticals.experienceevent-upgrade-details.html">experienceevent-upgrade-details</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.industry-verticals.experienceevent-upsell-details.html">experienceevent-upsell-details</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.industry-verticals.experienceevent-vehicle-reservation.html">experienceevent-vehicle-reservation</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.industry-verticals.experienceevent-warranty-claim-process.html">experienceevent-warranty-claim-process</a></li>
+</ul>
+</details>
+</ul>
+</details>
+<details>
+<summary>graphs</summary>
+<ul>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.graphs.graph.html">graph</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.graphs.graph-edge.html">graph-edge</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.graphs.graph-node.html">graph-node</a></li>
+</ul>
+</details>
+<details>
+<summary>opportunity-contact-role</summary>
+<ul>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.opportunity-contact-role.opportunity-contact-role-details.html">opportunity-contact-role-details</a></li>
+</ul>
+</details>
+<details>
+<summary>opportunity</summary>
+<ul>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.opportunity.opportunity-details.html">opportunity-details</a></li>
+</ul>
+</details>
+<details>
+<summary>product</summary>
+<ul>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.product.product-catalog.html">product-catalog</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.product.product-catalog-category.html">product-catalog-category</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.product.product-category.html">product-category</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.product.product-identifiers.html">product-identifiers</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.product.product-measurement.html">product-measurement</a></li>
+</ul>
+</details>
+<details>
+<summary>profile</summary>
+<ul>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.profile.b2b-person-components.html">b2b-person-components</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.profile.b2b-person-details.html">b2b-person-details</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.profile.profile-consents.html">profile-consents</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.profile.profile-directmarketing.html">profile-directmarketing</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.profile.profile-loyalty-details.html">profile-loyalty-details</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.profile.profile-other-work-details.html">profile-other-work-details</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.profile.profile-owning-entities.html">profile-owning-entities</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.profile.profile-person-details.html">profile-person-details</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.profile.profile-person-details-v2.html">profile-person-details-v2</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.profile.profile-personal-details.html">profile-personal-details</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.profile.profile-personal-finance-details.html">profile-personal-finance-details</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.profile.profile-personal-tax-profile-details.html">profile-personal-tax-profile-details</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.profile.profile-phones.html">profile-phones</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.profile.profile-preferences-details.html">profile-preferences-details</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.profile.profile-privacy.html">profile-privacy</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.profile.profile-push-notification-details.html">profile-push-notification-details</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.profile.profile-segmentation.html">profile-segmentation</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.profile.profile-subscriptions.html">profile-subscriptions</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.profile.profile-telecom-subscription.html">profile-telecom-subscription</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.profile.profile-test-profile.html">profile-test-profile</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.profile.profile-travel-preferences.html">profile-travel-preferences</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.profile.profile-user-account-details.html">profile-user-account-details</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.profile.profile-work-details.html">profile-work-details</a></li>
+</ul>
+</details>
+<details>
+<summary>segment-definition</summary>
+<ul>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.segment-definition.segmentdefinition-expression.html">segmentdefinition-expression</a></li>
+</ul>
+</details>
+<details>
+<summary>shared</summary>
+<ul>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.shared.external-source-system-audit-details.html">external-source-system-audit-details</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.shared.identitymap.html">identitymap</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.shared.person-identifier.html">person-identifier</a></li>
+</ul>
+</details>
+</ul>
+</details>
+<details>
 <summary>uberschemas</summary>
 <ul>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.account-generated.html">account-generated</a></li>
