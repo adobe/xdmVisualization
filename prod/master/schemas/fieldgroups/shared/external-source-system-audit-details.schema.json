@@ -1,10 +1,10 @@
 {
   "id": "_xdm.common.external-source-system-audit-details",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "External Source System Audit Details Mixin",
+  "title": "External Source System Audit Details",
   "type": "object",
   "meta:extensible": true,
-  "description": "Mixin which defines a set a audit properties for extenal sources. It's strongly encouraged to use this mixin given the asynchronous nature of profile ingestion.",
+  "description": "Defines a set of audit properties for extenal sources. It's strongly encouraged to use this fieldgroup given the asynchronous nature of profile ingestion.",
   "meta:status": "stable",
   "meta:createdDate": "2020-08-10",
   "meta:xdmType": "object",
