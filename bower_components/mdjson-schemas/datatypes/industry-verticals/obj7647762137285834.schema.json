@@ -1,0 +1,111 @@
+{
+  "type": "object",
+  "meta:xdmType": "object",
+  "properties": {
+    "ID": {
+      "title": "ID",
+      "type": "string",
+      "description": "Captures the ID for the device.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:ID",
+      "tagNumber": 1
+    },
+    "manufacturer": {
+      "title": "Manufacturer",
+      "type": "string",
+      "description": "Captures the device manufacturer.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:manufacturer",
+      "tagNumber": 2
+    },
+    "name": {
+      "title": "Name",
+      "type": "string",
+      "description": "Captures the device name.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:name",
+      "tagNumber": 3
+    },
+    "serialNumber": {
+      "title": "Serial Number",
+      "type": "string",
+      "description": "Captures the device serial number.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:serialNumber",
+      "tagNumber": 4
+    },
+    "type": {
+      "title": "Type",
+      "type": "string",
+      "description": "Captures the device type.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:type",
+      "tagNumber": 5
+    },
+    "deviceFees": {
+      "title": "Device Fees",
+      "$ref": "../currency.schema.json",
+      "description": "Captures any device fees for items such as routers, modems, recievers, etc.",
+      "meta:xdmField": "xdm:deviceFees",
+      "tagNumber": 6
+    },
+    "deviceInsurance": {
+      "title": "Device Insurance",
+      "type": "boolean",
+      "description": "Tracks if a customer has opted-in to insurance for the device.",
+      "meta:xdmType": "boolean",
+      "meta:xdmField": "xdm:deviceInsurance",
+      "tagNumber": 7
+    },
+    "OS": {
+      "title": "OS",
+      "type": "string",
+      "enum": [
+        "android",
+        "ios",
+        "windows",
+        "blackberry",
+        "symbian"
+      ],
+      "description": "Captures the device operating system.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:OS",
+      "tagNumber": 8
+    },
+    "status": {
+      "title": "Status",
+      "type": "string",
+      "enum": [
+        "active",
+        "inactive"
+      ],
+      "description": "Captures the device status.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:status",
+      "tagNumber": 9
+    },
+    "storageCapacity": {
+      "title": "Storage Capacity",
+      "type": "string",
+      "description": "Captures the device storage capacity.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:storageCapacity",
+      "tagNumber": 10
+    },
+    "paymentOptions": {
+      "title": "Payment Options",
+      "type": "string",
+      "enum": [
+        "installmentPlan",
+        "retailPrice"
+      ],
+      "description": "Captures if the device will be paid for in installments or full retail price.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:paymentOptions",
+      "tagNumber": 11
+    }
+  },
+  "tagNumber": 1,
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "id": "obj7647762137285834.schema.json"
+}

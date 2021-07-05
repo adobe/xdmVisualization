@@ -1,0 +1,38 @@
+{
+  "type": "object",
+  "meta:xdmType": "object",
+  "properties": {
+    "_unqualified": {
+      "labelType": {
+        "type": "string",
+        "meta:xdmType": "string",
+        "meta:xdmField": "labelType",
+        "tagNumber": 1
+      },
+      "labelName": {
+        "type": "string",
+        "meta:xdmType": "string",
+        "meta:xdmField": "labelName",
+        "tagNumber": 2
+      },
+      "labelValue": {
+        "type": "string",
+        "meta:xdmType": "string",
+        "meta:xdmField": "labelValue",
+        "tagNumber": 3
+      },
+      "required": [
+        "labelType",
+        "labelName",
+        "labelValue"
+      ],
+      "tagNumber": 1
+    }
+  },
+  "required": [
+    "_unqualified"
+  ],
+  "tagNumber": 1,
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "id": "obj9598101977613525.schema.json"
+}
