@@ -122,8 +122,18 @@
                                   "meta:xdmType": "string",
                                   "meta:xdmField": "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/type",
                                   "tagNumber": 3
+                                },
+                                "category": {
+                                  "title": "Failure Category",
+                                  "type": "string",
+                                  "description": "Classifies whether it is a sync bounce or async bounce.",
+                                  "meta:xdmType": "string",
+                                  "meta:xdmField": "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/category",
+                                  "tagNumber": 4
                                 }
                               },
+                              "type": "object",
+                              "meta:xdmType": "object",
                               "tagNumber": 1
                             }
                           },
