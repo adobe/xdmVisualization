@@ -6,10 +6,7 @@
   "meta:abstract": true,
   "meta:extensible": true,
   "description": "A decision event is used to capture observations about the outcome and context of a decision activity. The decision event captures information about how the decision made, when it was occurring, what options were proposed (chosen) and what contextual state existed that either influenced the decision or could be observed during the decision process. The decision event also captures the proposition ID, a globally unique identifier that can be used to correlate the decision to other events. DecisionEvents are not only relatable to Experience Events that impacted a decision but also to ExperienceEvents that are a direct response to a proposition. It is the expectation that applications reference the proposition ID in every experience event that was influenced by the propositions. A user profile's proposition-response history is maintained with these proposition IDs.",
-  "meta:status": [
-    "stable",
-    "deprecated"
-  ],
+  "meta:status": "stable",
   "meta:xdmType": "object",
   "meta:createdDate": "2020-08-10",
   "meta:tags": {
@@ -83,6 +80,10 @@
               "type": "array",
               "description": "Details about the results of the decision. An array providing the output of a single decision event, one proposition per activity parameter in the request.",
               "meta:xdmType": "array",
+              "items": {
+                "$ref": "proposition-detail.schema.json",
+                "tagNumber": 1
+              },
               "meta:xdmField": "https://ns.adobe.com/experience/decisioning/propositionDetails",
               "tagNumber": 2
             },
@@ -110,7 +111,7 @@
               "meta:xdmField": "https://ns.adobe.com/experience/decisioning/propositions",
               "tagNumber": 5,
               "items": {
-                "$ref": "obj17715067482056357.schema.json"
+                "$ref": "obj9575959275166566.schema.json"
               }
             }
           },

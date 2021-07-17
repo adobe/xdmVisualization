@@ -17,13 +17,24 @@
       "meta:xdmField": "xdm:primary",
       "tagNumber": 1
     },
+    "countryCode": {
+      "title": "Country Calling Code",
+      "type": "string",
+      "description": "Country calling code (CC) as defined by E.164.",
+      "minLength": 1,
+      "maxLength": 3,
+      "pattern": "^[0-9]{1,3}?$",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:countryCode",
+      "tagNumber": 2
+    },
     "number": {
       "title": "Number",
       "type": "string",
       "description": "The phone number. Note the phone number is a string and may include meaningful characters such as brackets '()', hyphens '-', or characters to indicate sub-dialing identifiers like extensions 'x' for example,  1-353(0)18391111 or +613 9403600x1234.",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:number",
-      "tagNumber": 2
+      "tagNumber": 3
     },
     "extension": {
       "title": "Extension",
@@ -31,7 +42,7 @@
       "description": "The internal dialing number used to call from a private exchange, operator, or switchboard.",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:extension",
-      "tagNumber": 3
+      "tagNumber": 4
     },
     "status": {
       "title": "Status",
@@ -40,7 +51,7 @@
       "default": "active",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:status",
-      "tagNumber": 4
+      "tagNumber": 5
     },
     "statusReason": {
       "title": "Status reason",
@@ -48,7 +59,7 @@
       "description": "A description of the current status.",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:statusReason",
-      "tagNumber": 5
+      "tagNumber": 6
     },
     "validity": {
       "title": "Validity",
@@ -56,7 +67,7 @@
       "description": "A level of technical correctness of the phone number.",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:validity",
-      "tagNumber": 6
+      "tagNumber": 7
     }
   },
   "meta:xdmId": "https://ns.adobe.com/xdm/context/phonenumber",

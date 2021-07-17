@@ -193,6 +193,8 @@
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.decisioning.profile-constraint-details.html">profile-constraint-details</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.decisioning.profile-constraints.html">profile-constraints</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.decisioning.proposition.html">proposition</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.decisioning.proposition-detail.html">proposition-detail</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.decisioning.proposition-details.html">proposition-details</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.decisioning.proposition-interaction-detail.html">proposition-interaction-detail</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.decisioning.proposition-metric-profile.html">proposition-metric-profile</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.decisioning.proposition-metric-total.html">proposition-metric-total</a></li>

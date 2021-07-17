@@ -355,6 +355,7 @@
 [adobe.experience.decisioning.activity-detail](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.decisioning.activity-detail.html)<br/>
 [adobe.experience.decisioning.lifecycle-status](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.decisioning.lifecycle-status.html)<br/>
 [adobe.experience.decisioning.proposition](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.decisioning.proposition.html)<br/>
+[adobe.experience.decisioning.proposition-details](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.decisioning.proposition-details.html)<br/>
 [adobe.experience.decisioning.experienceevent-proposition-interaction](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.decisioning.experienceevent-proposition-interaction.html)<br/>
 [adobe.experience.decisioning.option-detail](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.decisioning.option-detail.html)<br/>
 [adobe.experience.decisioning.calendar-constraint-details](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.decisioning.calendar-constraint-details.html)<br/>
@@ -366,6 +367,7 @@
 [adobe.experience.decisioning.placement-detail](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.decisioning.placement-detail.html)<br/>
 [adobe.experience.decisioning.contents](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.decisioning.contents.html)<br/>
 [adobe.experience.decisioning.personalized-content-option](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.decisioning.personalized-content-option.html)<br/>
+[adobe.experience.decisioning.proposition-detail](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.decisioning.proposition-detail.html)<br/>
 [adobe.experience.decisioning.fallback-content-option](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.decisioning.fallback-content-option.html)<br/>
 [adobe.experience.decisioning.proposition-metric-profile](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.decisioning.proposition-metric-profile.html)<br/>
 [adobe.experience.decisioning.option-selection-details](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.decisioning.option-selection-details.html)<br/>
