@@ -1,7 +1,7 @@
 {
   "id": "_xdm.mixins.profile-consents",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Consents and Preferences",
+  "title": "Consent and Preference Details",
   "description": "This schema captures privacy, personalization and marketing preferences (consents).",
   "type": "object",
   "meta:extensible": true,

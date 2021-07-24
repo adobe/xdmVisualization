@@ -1,7 +1,7 @@
 {
   "id": "_xdm.context.profile-privacy",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "IAB TCF 2.0 Consent",
+  "title": "IAB TCF 2.0 Consent Details",
   "description": "Record the IAB TCF 2.0 string in a user's profile.",
   "type": "object",
   "meta:extensible": true,
