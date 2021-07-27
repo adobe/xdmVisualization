@@ -1,0 +1,25 @@
+{
+  "type": "object",
+  "meta:xdmType": "object",
+  "properties": {
+    "pointsExpiring": {
+      "title": "Points Expiring",
+      "type": "number",
+      "description": "Point balance expiring as of the associated expiration date.",
+      "meta:xdmType": "number",
+      "meta:xdmField": "xdm:pointsExpiring",
+      "tagNumber": 1
+    },
+    "pointsExpirationDate": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Date on which the given portion of the loyalty points expire.",
+      "meta:xdmType": "date-time",
+      "meta:xdmField": "xdm:pointsExpirationDate",
+      "tagNumber": 2
+    }
+  },
+  "tagNumber": 1,
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "id": "obj7833566755622756.schema.json"
+}
