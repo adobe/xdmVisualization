@@ -5,7 +5,7 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "description": "This mixin contains JourneyAI Send Time Optimization scores, which provides the time preferences for message deliveries.",
+  "description": "Contains JourneyAI Send Time Optimization scores, which provides the time preferences for message deliveries.",
   "meta:status": "stable",
   "meta:xdmType": "object",
   "properties": {

@@ -210,20 +210,20 @@
       "meta:xdmField": "xdm:productSize",
       "tagNumber": 21
     },
-    "unitOfMeasureCode": {
-      "title": "Product Unit Of Measure Code",
-      "type": "string",
-      "description": "Standard unit of measure of the product and or variation and relates the units for the size measurement.",
-      "meta:xdmType": "string",
-      "meta:xdmField": "xdm:unitOfMeasureCode",
-      "tagNumber": 22
-    },
     "unitOfMeasureName": {
       "title": "Product Unit Of Measure Name",
       "type": "string",
       "description": "Friendly name for product unit of measure.",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:unitOfMeasureName",
+      "tagNumber": 22
+    },
+    "unitOfMeasureCode": {
+      "title": "Product Unit Of Measure Code",
+      "type": "string",
+      "description": "Standard unit of measure of the product and or variation and relates the units for the size measurement.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:unitOfMeasureCode",
       "tagNumber": 23
     }
   },

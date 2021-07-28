@@ -3,7 +3,7 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Adobe Advertising Cloud ExperienceEvent Template Mixin",
   "type": "object",
-  "description": "Adobe Advertising Cloud ExperienceEvent mixin for use with schemas for Solution data ingestion. Includes the core and standard ExperienceEvent as well as the required Adobe Advertising Cloud ExperienceEvent mixins.",
+  "description": "Adobe Advertising Cloud ExperienceEvent field group for use with schemas for Solution data ingestion. Includes the core and standard ExperienceEvent as well as the required Adobe Advertising Cloud ExperienceEvent field groups.",
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:status": "stable",
@@ -25,7 +25,7 @@
     "application": {
       "title": "Application",
       "$ref": "../../datatypes/application.schema.json",
-      "description": "This mixin is used to capture application information related to an ExperienceEvent, including the name of the application, app version, installs, launches, crashes, and closures. It could be either the application targeted by the event like the send of a push notification or the application originating the event such as a click, or a login.",
+      "description": "Captures application information including the name of the application, app version, installs, launches, crashes, and closures. It could be either the application targeted by the event like the send of a push notification or the application originating the event such as a click, or a login.",
       "meta:xdmField": "xdm:application",
       "tagNumber": 2
     },

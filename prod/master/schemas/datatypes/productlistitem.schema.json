@@ -78,6 +78,14 @@
       "meta:xdmType": "number",
       "meta:xdmField": "xdm:priceTotal",
       "tagNumber": 8
+    },
+    "unitOfMeasureCode": {
+      "title": "Product Unit Of Measure Code",
+      "type": "string",
+      "description": "Standard unit of measure of the product and or variation and relates the units for the size measurement.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:unitOfMeasureCode",
+      "tagNumber": 9
     }
   },
   "meta:xdmId": "https://ns.adobe.com/xdm/content/productlistitem",

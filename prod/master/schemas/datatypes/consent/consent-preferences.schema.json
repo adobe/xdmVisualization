@@ -2,7 +2,7 @@
   "id": "_xdm.datatypes.consents-and-preferences",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Consent for Privacy, Personalization and Marketing Preferences",
-  "description": "This mixin captures consumer consent for collection and use of data related to privacy, personalization and marketing preferences.",
+  "description": "Captures consumer consent for collection and use of data related to privacy, personalization and marketing preferences.",
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,

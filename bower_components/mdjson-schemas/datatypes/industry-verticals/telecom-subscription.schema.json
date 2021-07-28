@@ -1,7 +1,7 @@
 {
   "id": "_xdm.datatypes.telecom-subscription",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Subscription",
+  "title": "Telecom Subscription",
   "type": "object",
   "meta:extensible": true,
   "description": "Contain details for the specific subscription types, such as internet, mobile, media, or landline.",
@@ -188,7 +188,7 @@
       "meta:xdmField": "xdm:devices",
       "tagNumber": 22,
       "items": {
-        "$ref": "obj7141414637073908.schema.json"
+        "$ref": "obj9038905089822347.schema.json"
       }
     },
     "_unqualified": {

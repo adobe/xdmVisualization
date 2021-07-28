@@ -67,10 +67,88 @@
                 "label": {
                   "title": "Tracker URL Label",
                   "type": "string",
-                  "description": "Human-Friendly label",
+                  "description": "Human-Friendly label.",
                   "meta:xdmType": "string",
                   "meta:xdmField": "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/label",
                   "tagNumber": 5
+                },
+                "offers": {
+                  "title": "Offer details",
+                  "type": "object",
+                  "description": "Describes offer(s) involved in a message interaction.",
+                  "meta:xdmType": "object",
+                  "properties": {
+                    "_experience": {
+                      "type": "object",
+                      "meta:xdmType": "object",
+                      "properties": {
+                        "customerJourneyManagement": {
+                          "type": "object",
+                          "meta:xdmType": "object",
+                          "properties": {
+                            "messageInteraction": {
+                              "type": "object",
+                              "meta:xdmType": "object",
+                              "properties": {
+                                "offers": {
+                                  "type": "object",
+                                  "meta:xdmType": "object",
+                                  "properties": {
+                                    "offerID": {
+                                      "title": "Offer ID",
+                                      "type": "string",
+                                      "description": "Unique Identifier for Offer.",
+                                      "meta:xdmType": "string",
+                                      "meta:xdmField": "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/offers/offerID",
+                                      "tagNumber": 1
+                                    },
+                                    "placementID": {
+                                      "title": "Placement ID",
+                                      "type": "string",
+                                      "description": "Unique Identifier for Offer Placement.",
+                                      "meta:xdmType": "string",
+                                      "meta:xdmField": "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/offers/placementID",
+                                      "tagNumber": 2
+                                    },
+                                    "propositionID": {
+                                      "title": "Proposition ID",
+                                      "type": "string",
+                                      "description": "Unique Identifier for Offer Proposition.",
+                                      "meta:xdmType": "string",
+                                      "meta:xdmField": "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/offers/propositionID",
+                                      "tagNumber": 3
+                                    },
+                                    "propositionTime": {
+                                      "title": "Proposition Time",
+                                      "type": "string",
+                                      "description": "Time at which the Offer proposition was generated.",
+                                      "meta:xdmType": "string",
+                                      "meta:xdmField": "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/offers/propositionTime",
+                                      "tagNumber": 4
+                                    },
+                                    "offerCount": {
+                                      "title": "Offer Count",
+                                      "type": "integer",
+                                      "description": "Count of offers included in the offer proposition.",
+                                      "meta:xdmType": "int",
+                                      "meta:xdmField": "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/offers/offerCount",
+                                      "tagNumber": 5
+                                    }
+                                  },
+                                  "tagNumber": 1
+                                }
+                              },
+                              "tagNumber": 1
+                            }
+                          },
+                          "tagNumber": 1
+                        }
+                      },
+                      "tagNumber": 1
+                    }
+                  },
+                  "meta:xdmField": "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/offers",
+                  "tagNumber": 6
                 }
               },
               "tagNumber": 1
