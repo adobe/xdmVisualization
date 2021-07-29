@@ -1,0 +1,63 @@
+{
+  "type": "object",
+  "meta:xdmType": "object",
+  "properties": {
+    "subscriptionDetails": {
+      "title": "Subscription Details",
+      "$ref": "../../datatypes/industry-verticals/telecom-subscription.schema.json",
+      "description": "Extension of the subscription data type to include subscription length, fees, status, etc.",
+      "meta:xdmField": "xdm:subscriptionDetails",
+      "tagNumber": 1
+    },
+    "dataCap": {
+      "title": "Data Cap",
+      "type": "integer",
+      "description": "Captures the data cap limit for the account, in megabytes (MB).",
+      "meta:xdmType": "int",
+      "meta:xdmField": "xdm:dataCap",
+      "tagNumber": 2
+    },
+    "connectionType": {
+      "title": "Connection Type",
+      "type": "string",
+      "enum": [
+        "cable",
+        "dsl",
+        "fiber",
+        "mobile",
+        "satellite"
+      ],
+      "description": "Tracks the type of connection type for the subscription.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:connectionType",
+      "tagNumber": 3
+    },
+    "downloadSpeed": {
+      "title": "Download Speed",
+      "type": "integer",
+      "description": "Records the maximum download speed available for the subscription, in megabytes (MB).",
+      "meta:xdmType": "int",
+      "meta:xdmField": "xdm:downloadSpeed",
+      "tagNumber": 4
+    },
+    "uploadSpeed": {
+      "title": "Upload Speed",
+      "type": "integer",
+      "description": "Records the maximum upload speed available for the subscription, in megabytes (MB).",
+      "meta:xdmType": "int",
+      "meta:xdmField": "xdm:uploadSpeed",
+      "tagNumber": 5
+    },
+    "selfSetup": {
+      "title": "Self-Setup",
+      "type": "boolean",
+      "description": "Flags if a customer is eligible for internet setup without a technican visit.",
+      "meta:xdmType": "boolean",
+      "meta:xdmField": "xdm:selfSetup",
+      "tagNumber": 6
+    }
+  },
+  "tagNumber": 1,
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "id": "obj19456437573343544.schema.json"
+}
