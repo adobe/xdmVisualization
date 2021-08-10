@@ -48,7 +48,7 @@
           "meta:xdmField": "xdm:internetSubscription",
           "tagNumber": 4,
           "items": {
-            "$ref": "obj07085386158346707.schema.json"
+            "$ref": "obj088183025355425.schema.json"
           }
         },
         "landlineSubscription": {
@@ -58,7 +58,7 @@
           "meta:xdmField": "xdm:landlineSubscription",
           "tagNumber": 5,
           "items": {
-            "$ref": "obj3754484840261132.schema.json"
+            "$ref": "obj13588926838646853.schema.json"
           }
         },
         "mediaSubscription": {
@@ -68,7 +68,7 @@
           "meta:xdmField": "xdm:mediaSubscription",
           "tagNumber": 6,
           "items": {
-            "$ref": "obj2910577765398039.schema.json"
+            "$ref": "obj18537008113815556.schema.json"
           }
         },
         "mobileSubscription": {
@@ -78,7 +78,7 @@
           "meta:xdmField": "xdm:mobileSubscription",
           "tagNumber": 7,
           "items": {
-            "$ref": "obj24863490835908575.schema.json"
+            "$ref": "obj5285309961018123.schema.json"
           }
         }
       },
