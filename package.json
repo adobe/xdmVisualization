@@ -24,7 +24,6 @@
     "grunt-contrib-concat": "~1",
     "grunt-contrib-copy": "~1",
     "grunt-contrib-jshint": "~1",
-    "grunt-contrib-uglify": "~2",
     "grunt-preprocess": "~4",
     "superagent": "^6.0.0"
   },
@@ -40,7 +39,7 @@
     "grunt-contrib-copy": "^1.0.0",
     "grunt-contrib-jshint": "^1.1.0",
     "grunt-contrib-sass": "^1.0.0",
-    "grunt-contrib-uglify": "^2.3.0",
+    "grunt-contrib-uglify": "^5.0.1",
     "grunt-contrib-watch": "^1.1.0",
     "grunt-env": "^1.0.1",
     "grunt-gh-pages": "^4.0.0",
@@ -48,7 +47,8 @@
     "grunt-preprocess": "^4.2.0",
     "hosted-git-info": ">=2.8.9",
     "lodash": ">=4.17.21",
-    "underscore": ">=1.12.1",
-    "trim-newlines": ">=3.0.1"
+    "path-parse": ">=1.0.7",
+    "trim-newlines": ">=3.0.1",
+    "underscore": ">=1.12.1"
   }
 }
