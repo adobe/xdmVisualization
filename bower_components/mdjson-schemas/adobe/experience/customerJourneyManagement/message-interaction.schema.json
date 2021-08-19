@@ -118,14 +118,6 @@
                                       "meta:xdmField": "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/offers/propositionID",
                                       "tagNumber": 3
                                     },
-                                    "propositionTime": {
-                                      "title": "Proposition Time",
-                                      "type": "string",
-                                      "description": "Time at which the Offer proposition was generated.",
-                                      "meta:xdmType": "string",
-                                      "meta:xdmField": "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/offers/propositionTime",
-                                      "tagNumber": 4
-                                    },
                                     "offerCount": {
                                       "title": "Offer Count",
                                       "type": "integer",
