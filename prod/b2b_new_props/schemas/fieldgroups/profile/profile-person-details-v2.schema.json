@@ -1,0 +1,24 @@
+{
+  "id": "_xdm.mixins.profile-person-details-v2",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Demographic Details v2",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "description": "Demographic information such as name, gender, and birth date of an individual.",
+  "meta:status": "experimental",
+  "meta:createdDate": "2020-11-10",
+  "meta:xdmType": "object",
+  "properties": {
+    "person": {
+      "title": "Person",
+      "$ref": "../../datatypes/person/person.schema.json",
+      "description": "An individual actor, contact, or owner.",
+      "meta:xdmField": "xdm:person",
+      "tagNumber": 1
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/mixins/profile-person-details-v2",
+  "meta:altId": "_xdm.mixins.profile-person-details-v2",
+  "id": "_xdm.mixins.profile-person-details-v2"
+}

@@ -1,0 +1,24 @@
+{
+  "id": "_xdm.context.experienceevent-channel",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Channel Details",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "description": "Channel information such as ID, channel type, media type, and location type.",
+  "meta:status": "stable",
+  "meta:createdDate": "2020-08-10",
+  "meta:xdmType": "object",
+  "properties": {
+    "channel": {
+      "title": "Experience channel",
+      "description": "Experience channel related to the ExperienceEvent.",
+      "$ref": "../../datatypes/channels/channel.schema.json",
+      "meta:xdmField": "xdm:channel",
+      "tagNumber": 1
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/context/experienceevent-channel",
+  "meta:altId": "_xdm.context.experienceevent-channel",
+  "id": "_xdm.context.experienceevent-channel"
+}

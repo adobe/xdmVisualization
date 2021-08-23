@@ -1,0 +1,93 @@
+{
+  "id": "_experience.journeyorchestration.stepevents.journeyfields",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Journey Orchestration common Journey Fields",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "description": "This Mixin will have Common Journey Metadata Fields",
+  "meta:status": "stable",
+  "meta:xdmType": "object",
+  "properties": {
+    "_experience": {
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "journeyOrchestration": {
+          "type": "object",
+          "meta:xdmType": "object",
+          "properties": {
+            "stepEvents": {
+              "title": "Journey Orchestration common Journey Fields",
+              "type": "object",
+              "meta:xdmType": "object",
+              "properties": {
+                "_experience": {
+                  "type": "object",
+                  "meta:xdmType": "object",
+                  "properties": {
+                    "journeyOrchestration": {
+                      "type": "object",
+                      "meta:xdmType": "object",
+                      "properties": {
+                        "journeyID": {
+                          "title": "journeyID",
+                          "description": "Identifier for the given Journey.",
+                          "type": "string",
+                          "meta:xdmType": "string",
+                          "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/journeyID",
+                          "tagNumber": 1
+                        },
+                        "journeyVersionID": {
+                          "title": "journeyVersionID",
+                          "description": "Id of the journey version. This id represents the identity of a journey.",
+                          "type": "string",
+                          "meta:xdmType": "string",
+                          "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/journeyVersionID",
+                          "tagNumber": 2
+                        },
+                        "name": {
+                          "title": "name",
+                          "description": "Name of the Journey.",
+                          "type": "string",
+                          "meta:xdmType": "string",
+                          "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/name",
+                          "tagNumber": 3
+                        },
+                        "description": {
+                          "title": "description",
+                          "description": "Description of the Journey.",
+                          "type": "string",
+                          "meta:xdmType": "string",
+                          "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/description",
+                          "tagNumber": 4
+                        },
+                        "version": {
+                          "title": "version",
+                          "description": "Describes the Journey Version.",
+                          "type": "string",
+                          "meta:xdmType": "string",
+                          "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/version",
+                          "tagNumber": 5
+                        }
+                      },
+                      "tagNumber": 1
+                    }
+                  },
+                  "tagNumber": 1
+                }
+              },
+              "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/stepEvents",
+              "tagNumber": 1
+            }
+          },
+          "tagNumber": 1
+        }
+      },
+      "tagNumber": 1
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/experience/journeyOrchestration/stepEvents/journeyFields",
+  "meta:altId": "_experience.journeyorchestration.stepevents.journeyfields",
+  "id": "_experience.journeyorchestration.stepevents.journeyfields"
+}

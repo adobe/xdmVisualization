@@ -1,0 +1,145 @@
+{
+  "id": "_xdm.context.poi-detail",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Point of interest details",
+  "type": "object",
+  "meta:extensible": true,
+  "description": "A point or place of interest (POI) Details. Used to capture the technical and metadata information for a POI.",
+  "meta:status": "stable",
+  "meta:createdDate": "2020-08-10",
+  "meta:xdmType": "object",
+  "properties": {
+    "poiID": {
+      "title": "POI Identity",
+      "type": "string",
+      "description": "The unique identifier of the POI.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:poiID",
+      "tagNumber": 2
+    },
+    "name": {
+      "title": "POI name",
+      "type": "string",
+      "description": "The name given to the POI.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:name",
+      "tagNumber": 3
+    },
+    "category": {
+      "title": "POI category",
+      "type": "string",
+      "description": "General category assigned for organizing the POIs by the administrator of POI definitions.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:category",
+      "tagNumber": 4
+    },
+    "type": {
+      "title": "POI type",
+      "type": "string",
+      "description": "The general type of the POI using a typing schema selected by the administrator of the POI definitions.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:type",
+      "tagNumber": 5
+    },
+    "distanceToPOICenter": {
+      "title": "Distance to POI center",
+      "type": "number",
+      "description": "Estimated distance from the POI center in meters.",
+      "meta:xdmType": "number",
+      "meta:xdmField": "xdm:distanceToPOICenter",
+      "tagNumber": 6
+    },
+    "locatingType": {
+      "title": "Locating type",
+      "type": "string",
+      "description": "Mechanism used to determine location.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:locatingType",
+      "tagNumber": 7
+    },
+    "beaconInteractionDetails": {
+      "title": "Beacon interaction details",
+      "type": "object",
+      "description": "Beacon details active for the POI interaction.",
+      "meta:xdmType": "object",
+      "properties": {
+        "proximityUUID": {
+          "title": "Proximity UUID",
+          "type": "string",
+          "description": "A proximity UUID (Universally Unique IDentifier) is a special type of identifier used to distinguish beacons in your network from all other beacons in networks outside your control. The proximity UUID is configured into a beacon, to be transmitted to mobile devices in range to identify an organizations beacons.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:proximityUUID",
+          "tagNumber": 1
+        },
+        "beaconMajor": {
+          "title": "Beacon major",
+          "type": "number",
+          "description": "Major values identify and distinguish a group and unsigned integer values between 1 and 65,535.",
+          "meta:xdmType": "number",
+          "meta:xdmField": "xdm:beaconMajor",
+          "tagNumber": 2
+        },
+        "beaconMinor": {
+          "title": "Beacon Minor",
+          "type": "number",
+          "description": "Minor values identify and distinguish an individual and unsigned integer values between 1 and 65,535.",
+          "meta:xdmType": "number",
+          "meta:xdmField": "xdm:beaconMinor",
+          "tagNumber": 3
+        },
+        "proximity": {
+          "title": "Proximity to beacon",
+          "type": "string",
+          "description": "Estimated distance from the beacon.",
+          "enum": [
+            "immediate",
+            "near",
+            "far",
+            "unknown"
+          ],
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:proximity",
+          "tagNumber": 4
+        }
+      },
+      "meta:xdmField": "xdm:beaconInteractionDetails",
+      "tagNumber": 8
+    },
+    "geoInteractionDetails": {
+      "title": "Geo interaction details",
+      "type": "object",
+      "description": "Geo details active for the POI interaction.",
+      "meta:xdmType": "object",
+      "properties": {
+        "distanceToCenter": {
+          "title": "Distance to center",
+          "type": "number",
+          "description": "Distance to center of geo in, case of a geo circle, measured in meters.",
+          "meta:xdmType": "number",
+          "meta:xdmField": "xdm:distanceToCenter",
+          "tagNumber": 1
+        },
+        "deviceGeoAccuracy": {
+          "title": "Geo device accuracy",
+          "type": "number",
+          "description": "The accuracy of the geo measuring device or mechanism, measured in meters.",
+          "meta:xdmType": "number",
+          "meta:xdmField": "xdm:deviceGeoAccuracy",
+          "tagNumber": 2
+        },
+        "geoShape": {
+          "title": "Geo shape",
+          "$ref": "external/schema/geoshape.schema.json",
+          "description": "Geo shape of the geo being interacted with.",
+          "meta:xdmField": "xdm:geoShape",
+          "tagNumber": 3
+        }
+      },
+      "meta:xdmField": "xdm:geoInteractionDetails",
+      "tagNumber": 9
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/context/poi-detail",
+  "meta:altId": "_xdm.context.poi-detail",
+  "id": "_xdm.context.poi-detail"
+}

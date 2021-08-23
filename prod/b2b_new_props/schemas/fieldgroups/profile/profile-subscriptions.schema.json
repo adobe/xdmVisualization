@@ -1,0 +1,29 @@
+{
+  "id": "_xdm.context.profile-subscriptions",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Subscription Details",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "description": "Subscription information such as device, environment, and subscriber data.",
+  "meta:status": "stable",
+  "meta:createdDate": "2020-08-10",
+  "meta:xdmType": "object",
+  "properties": {
+    "subscriptions": {
+      "title": "Subscriptions",
+      "type": "array",
+      "description": "Subscriptions that the profile is entitled to including terminated, expired, or exhausted subscriptions.",
+      "meta:xdmType": "array",
+      "items": {
+        "$ref": "../../datatypes/industry-verticals/subscription.schema.json",
+        "tagNumber": 1
+      },
+      "meta:xdmField": "xdm:subscriptions",
+      "tagNumber": 1
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/context/profile-subscriptions",
+  "meta:altId": "_xdm.context.profile-subscriptions",
+  "id": "_xdm.context.profile-subscriptions"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "_xdm.context.experienceevent-implementation-details",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Implementation Details",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:tags": {
+    "industry": [
+      "all"
+    ]
+  },
+  "description": "Information related to the software used to collect an ExperienceEvent such as environment, name, and version.",
+  "meta:status": "stable",
+  "meta:createdDate": "2020-08-10",
+  "meta:xdmType": "object",
+  "properties": {
+    "implementationDetails": {
+      "title": "Implementation details",
+      "$ref": "../../datatypes/industry-verticals/implementationdetails.schema.json",
+      "description": "Accomodates tracking versioning details for the Adobe Experience Cloud solutions deployed.",
+      "meta:xdmField": "xdm:implementationDetails",
+      "tagNumber": 1
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/context/experienceevent-implementation-details",
+  "meta:altId": "_xdm.context.experienceevent-implementation-details",
+  "id": "_xdm.context.experienceevent-implementation-details"
+}
