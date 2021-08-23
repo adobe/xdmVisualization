@@ -32,27 +32,48 @@
     },
     "opportunityPersonID": {
       "title": "Opportunity Person ID",
-      "description": "Unique ID for the relationship between the opportunity and the person.",
+      "description": "Unique identifier for the relationship between the opportunity and the person.",
       "type": "string",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:opportunityPersonID",
       "tagNumber": 2
     },
+    "opportunityPersonKey": {
+      "title": "Opportunity Person Key",
+      "description": "Unique composite identifier of the relationship between the Opportunity and the Person.",
+      "$ref": "../datatypes/b2b/b2b-source.schema.json",
+      "meta:xdmField": "xdm:opportunityPersonKey",
+      "tagNumber": 3
+    },
     "opportunityID": {
       "title": "Opportunity ID",
-      "description": "Unique ID for the opportunity in this opportunity person relationship.",
+      "description": "Unique identifier for the opportunity in this opportunity person relationship.",
       "type": "string",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:opportunityID",
-      "tagNumber": 3
+      "tagNumber": 4
+    },
+    "opportunityKey": {
+      "title": "Opportunity Key",
+      "description": "Unique composite identifier of the Opportunity in this opportunity person relationship.",
+      "$ref": "../datatypes/b2b/b2b-source.schema.json",
+      "meta:xdmField": "xdm:opportunityKey",
+      "tagNumber": 5
     },
     "personID": {
       "title": "Person ID",
-      "description": "Unique ID for the person in this opportunity person relationship.",
+      "description": "Unique identifier for the person in this opportunity person relationship.",
       "type": "string",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:personID",
-      "tagNumber": 4
+      "tagNumber": 6
+    },
+    "personKey": {
+      "title": "Person Key",
+      "description": "Unique composite identifier of the Person related to the Opportunity.",
+      "$ref": "../datatypes/b2b/b2b-source.schema.json",
+      "meta:xdmField": "xdm:personKey",
+      "tagNumber": 7
     },
     "personRole": {
       "title": "Person Role",
@@ -60,7 +81,7 @@
       "type": "string",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:personRole",
-      "tagNumber": 5
+      "tagNumber": 8
     },
     "isPrimary": {
       "title": "Primary Flag",
@@ -68,22 +89,22 @@
       "type": "boolean",
       "meta:xdmType": "boolean",
       "meta:xdmField": "xdm:isPrimary",
-      "tagNumber": 6
+      "tagNumber": 9
     },
     "extSourceSystemAudit": {
       "title": "External Source System Audit Properties",
       "$ref": "../datatypes/auditing/external-source-system-audit.schema.json",
       "description": "Audit attributes for external sources.",
       "meta:xdmField": "xdm:extSourceSystemAudit",
-      "tagNumber": 7
+      "tagNumber": 10
     },
     "opportunityPersonComponents": {
       "type": "array",
       "meta:xdmType": "array",
       "meta:xdmField": "xdm:opportunityPersonComponents",
-      "tagNumber": 8,
+      "tagNumber": 11,
       "items": {
-        "$ref": "obj95265176141311.schema.json"
+        "$ref": "obj5986009449607008.schema.json"
       }
     }
   },
