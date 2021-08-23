@@ -25,6 +25,13 @@
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:listID",
           "tagNumber": 1
+        },
+        "listKey": {
+          "title": "List Key",
+          "description": "Unique composite identifier of the Marketing List.",
+          "$ref": "../../../datatypes/b2b/b2b-source.schema.json",
+          "meta:xdmField": "xdm:listKey",
+          "tagNumber": 2
         }
       },
       "meta:xdmField": "xdm:listOperations",

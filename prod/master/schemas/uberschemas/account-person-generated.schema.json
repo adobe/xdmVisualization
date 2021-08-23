@@ -31,27 +31,48 @@
     },
     "accountPersonID": {
       "title": "Account Person ID",
-      "description": "Unique ID for this relationship between an account and a person.",
+      "description": "Unique identifier for this relationship between an account and a person.",
       "type": "string",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:accountPersonID",
       "tagNumber": 2
     },
+    "accountPersonKey": {
+      "title": "Account Person Key",
+      "description": "Unique composite identifier for this relationship between an account and a person.",
+      "$ref": "../datatypes/b2b/b2b-source.schema.json",
+      "meta:xdmField": "xdm:accountPersonKey",
+      "tagNumber": 3
+    },
     "accountID": {
       "title": "Account ID",
-      "description": "Unique ID for the account in this account person relationship.",
+      "description": "Unique identifier for the account in this account person relationship.",
       "type": "string",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:accountID",
-      "tagNumber": 3
+      "tagNumber": 4
+    },
+    "accountKey": {
+      "title": "Account Key",
+      "description": "Unique composite identifier for the account in this account person relationship.",
+      "$ref": "../datatypes/b2b/b2b-source.schema.json",
+      "meta:xdmField": "xdm:accountKey",
+      "tagNumber": 5
     },
     "personID": {
       "title": "Person ID",
-      "description": "Unique ID for the person in this account person relationship.",
+      "description": "Unique identifier for the person in this account person relationship.",
       "type": "string",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:personID",
-      "tagNumber": 4
+      "tagNumber": 6
+    },
+    "personKey": {
+      "title": "Person Key",
+      "description": "Unique composite identifier for the person in this account person relationship.",
+      "$ref": "../datatypes/b2b/b2b-source.schema.json",
+      "meta:xdmField": "xdm:personKey",
+      "tagNumber": 7
     },
     "personRole": {
       "title": "Person Role",
@@ -59,7 +80,7 @@
       "type": "string",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:personRole",
-      "tagNumber": 5
+      "tagNumber": 8
     },
     "isDirect": {
       "title": "Direct Flag",
@@ -67,7 +88,7 @@
       "type": "boolean",
       "meta:xdmType": "boolean",
       "meta:xdmField": "xdm:isDirect",
-      "tagNumber": 6
+      "tagNumber": 9
     },
     "isActive": {
       "title": "Active Flag",
@@ -75,7 +96,7 @@
       "type": "boolean",
       "meta:xdmType": "boolean",
       "meta:xdmField": "xdm:isActive",
-      "tagNumber": 7
+      "tagNumber": 10
     },
     "isPrimary": {
       "title": "Primary Flag",
@@ -83,7 +104,7 @@
       "type": "boolean",
       "meta:xdmType": "boolean",
       "meta:xdmField": "xdm:isPrimary",
-      "tagNumber": 8
+      "tagNumber": 11
     },
     "relationStartDate": {
       "title": "Relationship Start Date",
@@ -92,7 +113,7 @@
       "format": "date-time",
       "meta:xdmType": "date-time",
       "meta:xdmField": "xdm:relationStartDate",
-      "tagNumber": 9
+      "tagNumber": 12
     },
     "relationEndDate": {
       "title": "Relationship End Date",
@@ -101,7 +122,7 @@
       "format": "date-time",
       "meta:xdmType": "date-time",
       "meta:xdmField": "xdm:relationEndDate",
-      "tagNumber": 10
+      "tagNumber": 13
     },
     "currencyCode": {
       "title": "Currency Code",
@@ -114,22 +135,22 @@
       "description": "The ISO 4217 currency code used for the relationship between the account and the person.",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:currencyCode",
-      "tagNumber": 11
+      "tagNumber": 14
     },
     "extSourceSystemAudit": {
       "title": "External Source System Audit Properties",
       "$ref": "../datatypes/auditing/external-source-system-audit.schema.json",
       "description": "Audit attributes for external sources.",
       "meta:xdmField": "xdm:extSourceSystemAudit",
-      "tagNumber": 12
+      "tagNumber": 15
     },
     "accountPersonComponents": {
       "type": "array",
       "meta:xdmType": "array",
       "meta:xdmField": "xdm:accountPersonComponents",
-      "tagNumber": 13,
+      "tagNumber": 16,
       "items": {
-        "$ref": "obj6342732523161623.schema.json"
+        "$ref": "obj10986567113900803.schema.json"
       }
     }
   },

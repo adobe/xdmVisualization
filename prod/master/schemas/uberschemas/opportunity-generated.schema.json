@@ -38,13 +38,20 @@
       "meta:xdmField": "xdm:opportunityID",
       "tagNumber": 2
     },
+    "opportunityKey": {
+      "title": "Opportunity Key",
+      "description": "Unique composite identifier for the Opportunity.",
+      "$ref": "../datatypes/b2b/b2b-source.schema.json",
+      "meta:xdmField": "xdm:opportunityKey",
+      "tagNumber": 3
+    },
     "opportunityName": {
       "title": "Opportunity Name",
       "description": "Name of the opportunity.",
       "type": "string",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:opportunityName",
-      "tagNumber": 3
+      "tagNumber": 4
     },
     "opportunityDescription": {
       "title": "Opportunity Description",
@@ -52,7 +59,7 @@
       "type": "string",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:opportunityDescription",
-      "tagNumber": 4
+      "tagNumber": 5
     },
     "opportunityType": {
       "title": "Opportunity Type",
@@ -60,7 +67,7 @@
       "type": "string",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:opportunityType",
-      "tagNumber": 5
+      "tagNumber": 6
     },
     "opportunityStage": {
       "title": "Opportunity Stage",
@@ -68,7 +75,7 @@
       "type": "string",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:opportunityStage",
-      "tagNumber": 6
+      "tagNumber": 7
     },
     "accountID": {
       "title": "Account ID",
@@ -76,22 +83,29 @@
       "type": "string",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:accountID",
-      "tagNumber": 7
+      "tagNumber": 8
+    },
+    "accountKey": {
+      "title": "Account Key",
+      "description": "Unique composite identifier of the account this opportunity is associated with.",
+      "$ref": "../datatypes/b2b/b2b-source.schema.json",
+      "meta:xdmField": "xdm:accountKey",
+      "tagNumber": 9
     },
     "extSourceSystemAudit": {
       "title": "External Source System Audit Properties",
       "$ref": "../datatypes/auditing/external-source-system-audit.schema.json",
       "description": "Audit attributes for external sources.",
       "meta:xdmField": "xdm:extSourceSystemAudit",
-      "tagNumber": 8
+      "tagNumber": 10
     },
     "opportunityComponents": {
       "type": "array",
       "meta:xdmType": "array",
       "meta:xdmField": "xdm:opportunityComponents",
-      "tagNumber": 9,
+      "tagNumber": 11,
       "items": {
-        "$ref": "obj9777457986038409.schema.json"
+        "$ref": "obj5592443882705684.schema.json"
       }
     },
     "campaignID": {
@@ -100,7 +114,14 @@
       "type": "string",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:campaignID",
-      "tagNumber": 10
+      "tagNumber": 12
+    },
+    "campaignKey": {
+      "title": "Campaign Key",
+      "description": "Unique composite identifier of the Campaign.",
+      "$ref": "../datatypes/b2b/b2b-source.schema.json",
+      "meta:xdmField": "xdm:campaignKey",
+      "tagNumber": 13
     },
     "fiscalYear": {
       "title": "Fiscal Year",
@@ -109,7 +130,7 @@
       "pattern": "^([0-9]{4})$",
       "meta:xdmType": "int",
       "meta:xdmField": "xdm:fiscalYear",
-      "tagNumber": 11
+      "tagNumber": 14
     },
     "fiscalQuarter": {
       "title": "Fiscal Quarter",
@@ -118,7 +139,7 @@
       "pattern": "^([1-4]{1})$|^([Qq][1-4]{1})$",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:fiscalQuarter",
-      "tagNumber": 12
+      "tagNumber": 15
     },
     "forecastCategory": {
       "title": "Forecast Category",
@@ -126,7 +147,7 @@
       "type": "string",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:forecastCategory",
-      "tagNumber": 13
+      "tagNumber": 16
     },
     "forecastCategoryName": {
       "title": "Forecast Category Name",
@@ -134,7 +155,7 @@
       "type": "string",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:forecastCategoryName",
-      "tagNumber": 14
+      "tagNumber": 17
     },
     "isClosed": {
       "title": "Closed Flag",
@@ -142,7 +163,7 @@
       "type": "boolean",
       "meta:xdmType": "boolean",
       "meta:xdmField": "xdm:isClosed",
-      "tagNumber": 15
+      "tagNumber": 18
     },
     "isWon": {
       "title": "Won Flag",
@@ -150,7 +171,7 @@
       "type": "boolean",
       "meta:xdmType": "boolean",
       "meta:xdmField": "xdm:isWon",
-      "tagNumber": 16
+      "tagNumber": 19
     },
     "probabilityPercentage": {
       "title": "Probability Percentage",
@@ -160,21 +181,21 @@
       "maximum": 100,
       "meta:xdmType": "number",
       "meta:xdmField": "xdm:probabilityPercentage",
-      "tagNumber": 17
+      "tagNumber": 20
     },
     "opportunityAmount": {
       "title": "Opportunity Amount",
       "description": "Estimated total sale amount.",
       "$ref": "../datatypes/currency.schema.json",
       "meta:xdmField": "xdm:opportunityAmount",
-      "tagNumber": 18
+      "tagNumber": 21
     },
     "expectedRevenue": {
       "title": "Expected Revenue",
       "description": "Calculated revenue based on the Amount and Probability.",
       "$ref": "../datatypes/currency.schema.json",
       "meta:xdmField": "xdm:expectedRevenue",
-      "tagNumber": 19
+      "tagNumber": 22
     },
     "opportunityQuantity": {
       "title": "Opportunity Quantity",
@@ -184,7 +205,7 @@
       "default": 0,
       "meta:xdmType": "int",
       "meta:xdmField": "xdm:opportunityQuantity",
-      "tagNumber": 20
+      "tagNumber": 23
     },
     "expectedCloseDate": {
       "title": "Expected Close Date",
@@ -193,7 +214,7 @@
       "format": "date",
       "meta:xdmType": "date",
       "meta:xdmField": "xdm:expectedCloseDate",
-      "tagNumber": 21
+      "tagNumber": 24
     },
     "actualCloseDate": {
       "title": "Actual Close Date",
@@ -202,7 +223,7 @@
       "format": "date-time",
       "meta:xdmType": "date-time",
       "meta:xdmField": "xdm:actualCloseDate",
-      "tagNumber": 22
+      "tagNumber": 25
     },
     "lastActivityDate": {
       "title": "Last Activity Date",
@@ -211,7 +232,7 @@
       "format": "date-time",
       "meta:xdmType": "date-time",
       "meta:xdmField": "xdm:lastActivityDate",
-      "tagNumber": 23
+      "tagNumber": 26
     },
     "leadSource": {
       "title": "Lead Source",
@@ -219,7 +240,7 @@
       "type": "string",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:leadSource",
-      "tagNumber": 24
+      "tagNumber": 27
     },
     "nextStep": {
       "title": "Next Step",
@@ -227,7 +248,7 @@
       "type": "string",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:nextStep",
-      "tagNumber": 25
+      "tagNumber": 28
     }
   },
   "meta:xdmId": "https://ns.adobe.com/xdm/context/opportunity-generated",

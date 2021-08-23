@@ -34,12 +34,19 @@
       "meta:xdmField": "xdm:accountID",
       "tagNumber": 2
     },
+    "accountKey": {
+      "title": "Account Key",
+      "description": "Unique composite key identifier for the Account.",
+      "$ref": "../../datatypes/b2b/b2b-source.schema.json",
+      "meta:xdmField": "xdm:accountKey",
+      "tagNumber": 3
+    },
     "extSourceSystemAudit": {
       "title": "External Source System Audit Properties",
       "$ref": "../../datatypes/auditing/external-source-system-audit.schema.json",
       "description": "Audit attributes for external sources.",
       "meta:xdmField": "xdm:extSourceSystemAudit",
-      "tagNumber": 3
+      "tagNumber": 4
     }
   },
   "meta:xdmId": "https://ns.adobe.com/xdm/context/account",

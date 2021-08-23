@@ -21,10 +21,17 @@
         "opportunityID": {
           "title": "Opportunity ID",
           "type": "string",
-          "description": "Unique ID of the Opportunity.",
+          "description": "Unique identifier of the Opportunity.",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:opportunityID",
           "tagNumber": 1
+        },
+        "opportunityKey": {
+          "title": "Opportunity Key",
+          "description": "Unique composite identifier of the Opportunity.",
+          "$ref": "../../../datatypes/b2b/b2b-source.schema.json",
+          "meta:xdmField": "xdm:opportunityKey",
+          "tagNumber": 2
         },
         "isPrimary": {
           "title": "Is Primary",
@@ -32,7 +39,7 @@
           "description": "Boolean indicating if person is the primary contact on the Opportunity.",
           "meta:xdmType": "boolean",
           "meta:xdmField": "xdm:isPrimary",
-          "tagNumber": 2
+          "tagNumber": 3
         },
         "role": {
           "title": "Role",
@@ -40,7 +47,7 @@
           "description": "Role of the person on the Opportunity.",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:role",
-          "tagNumber": 3
+          "tagNumber": 4
         }
       },
       "meta:xdmField": "xdm:opportunityEvent",

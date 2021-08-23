@@ -39,13 +39,20 @@
           "meta:xdmField": "xdm:accountID",
           "tagNumber": 1
         },
+        "accountKey": {
+          "title": "Account Key",
+          "description": "Unique identifier of the Account related to the person.",
+          "$ref": "../../datatypes/b2b/b2b-source.schema.json",
+          "meta:xdmField": "xdm:accountKey",
+          "tagNumber": 2
+        },
         "isBlocked": {
           "title": "Blocked Indicator",
           "description": "Indicator if the person is blocked or not.",
           "type": "boolean",
           "meta:xdmType": "boolean",
           "meta:xdmField": "xdm:isBlocked",
-          "tagNumber": 2
+          "tagNumber": 3
         },
         "blockedCause": {
           "title": "Blocked Cause",
@@ -53,7 +60,7 @@
           "type": "string",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:blockedCause",
-          "tagNumber": 3
+          "tagNumber": 4
         },
         "isMarketingSuspended": {
           "title": "Marketing Suspended Indicator",
@@ -61,7 +68,7 @@
           "type": "boolean",
           "meta:xdmType": "boolean",
           "meta:xdmField": "xdm:isMarketingSuspended",
-          "tagNumber": 4
+          "tagNumber": 5
         },
         "marketingSuspendedCause": {
           "title": "Marketing Suspended Cause",
@@ -69,7 +76,7 @@
           "type": "string",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:marketingSuspendedCause",
-          "tagNumber": 5
+          "tagNumber": 6
         },
         "isConverted": {
           "title": "Converted Indicator",
@@ -77,7 +84,7 @@
           "type": "boolean",
           "meta:xdmType": "boolean",
           "meta:xdmField": "xdm:isConverted",
-          "tagNumber": 6
+          "tagNumber": 7
         },
         "convertedDate": {
           "title": "Converted Date",
@@ -86,7 +93,7 @@
           "format": "date-time",
           "meta:xdmType": "date-time",
           "meta:xdmField": "xdm:convertedDate",
-          "tagNumber": 7
+          "tagNumber": 8
         },
         "convertedContactID": {
           "title": "Converted Contact ID",
@@ -94,34 +101,20 @@
           "type": "string",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:convertedContactID",
-          "tagNumber": 8
-        },
-        "personOptInOut": {
-          "title": "Person Preferences",
-          "description": "Holds opt out values for different channels as selected by the person.",
-          "$ref": "../../datatypes/b2b/b2b-source.schema.json",
-          "meta:xdmField": "xdm:personOptInOut",
           "tagNumber": 9
-        },
-        "personKey": {
-          "title": "Person Key",
-          "description": "Unique identifier of Person/Profile fragment.",
-          "$ref": "../../datatypes/b2b/b2b-source.schema.json",
-          "meta:xdmField": "xdm:personKey",
-          "tagNumber": 10
-        },
-        "accountKey": {
-          "title": "Account Key",
-          "description": "Unique identifier of the Account related to the person.",
-          "$ref": "../../datatypes/b2b/b2b-source.schema.json",
-          "meta:xdmField": "xdm:accountKey",
-          "tagNumber": 11
         },
         "convertedContactKey": {
           "title": "Converted Contact Key",
           "description": "Unique identifier of the Contact if the lead was converted.",
           "$ref": "../../datatypes/b2b/b2b-source.schema.json",
           "meta:xdmField": "xdm:convertedContactKey",
+          "tagNumber": 10
+        },
+        "personKey": {
+          "title": "Person Key",
+          "description": "Unique identifier of Person/Profile fragment.",
+          "$ref": "../../datatypes/b2b/b2b-source.schema.json",
+          "meta:xdmField": "xdm:personKey",
           "tagNumber": 12
         },
         "personType": {

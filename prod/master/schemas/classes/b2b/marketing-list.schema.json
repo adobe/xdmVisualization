@@ -33,13 +33,20 @@
       "meta:xdmField": "xdm:marketingListID",
       "tagNumber": 2
     },
+    "marketingListKey": {
+      "title": "Marketing List Key",
+      "description": "Unique composite identifier of the Marketing List.",
+      "$ref": "../../datatypes/b2b/b2b-source.schema.json",
+      "meta:xdmField": "xdm:marketingListKey",
+      "tagNumber": 3
+    },
     "marketingListName": {
       "title": "Marketing List Name",
       "description": "Name of the marketing list.",
       "type": "string",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:marketingListName",
-      "tagNumber": 3
+      "tagNumber": 4
     },
     "marketingListDescription": {
       "title": "Marketing List Description",
@@ -47,14 +54,14 @@
       "type": "string",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:marketingListDescription",
-      "tagNumber": 4
+      "tagNumber": 5
     },
     "extSourceSystemAudit": {
       "title": "External Source System Audit Properties",
       "$ref": "../../datatypes/auditing/external-source-system-audit.schema.json",
       "description": "Audit attributes for external sources.",
       "meta:xdmField": "xdm:extSourceSystemAudit",
-      "tagNumber": 5
+      "tagNumber": 6
     }
   },
   "meta:xdmId": "https://ns.adobe.com/xdm/classes/marketing-list",

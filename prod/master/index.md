@@ -351,6 +351,7 @@
 <summary>b2b</summary>
 <ul>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.b2b.account-organization.html">account-organization</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.b2b.b2b-source.html">b2b-source</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.b2b.organization.html">organization</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.b2b.orgunit.html">orgunit</a></li>
 </ul>

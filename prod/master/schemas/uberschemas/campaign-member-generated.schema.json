@@ -46,13 +46,27 @@
       "meta:xdmField": "xdm:campaignMemberID",
       "tagNumber": 3
     },
+    "campaignMemberKey": {
+      "title": "Campaign Member Key",
+      "description": "Unique composite identifer of the campaign member.",
+      "$ref": "../datatypes/b2b/b2b-source.schema.json",
+      "meta:xdmField": "xdm:campaignMemberKey",
+      "tagNumber": 4
+    },
     "campaignID": {
       "title": "Campaign ID",
       "description": "Campaign Unique Identifer.",
       "type": "string",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:campaignID",
-      "tagNumber": 4
+      "tagNumber": 5
+    },
+    "campaignKey": {
+      "title": "Campaign Key",
+      "description": "Unique composite identifer of the campaign.",
+      "$ref": "../datatypes/b2b/b2b-source.schema.json",
+      "meta:xdmField": "xdm:campaignKey",
+      "tagNumber": 6
     },
     "personID": {
       "title": "Person ID",
@@ -60,15 +74,22 @@
       "type": "string",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:personID",
-      "tagNumber": 5
+      "tagNumber": 7
+    },
+    "personKey": {
+      "title": "Person Key",
+      "description": "Unique composite identifier of the person.",
+      "$ref": "../datatypes/b2b/b2b-source.schema.json",
+      "meta:xdmField": "xdm:personKey",
+      "tagNumber": 8
     },
     "campaignMemberComponents": {
       "type": "array",
       "meta:xdmType": "array",
       "meta:xdmField": "xdm:campaignMemberComponents",
-      "tagNumber": 6,
+      "tagNumber": 9,
       "items": {
-        "$ref": "obj5409428967296404.schema.json"
+        "$ref": "obj30692387683532774.schema.json"
       }
     },
     "memberStatus": {
@@ -77,7 +98,7 @@
       "type": "string",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:memberStatus",
-      "tagNumber": 7
+      "tagNumber": 10
     },
     "memberStatusReason": {
       "title": "Campaign Member Status Reason",
@@ -85,7 +106,7 @@
       "type": "string",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:memberStatusReason",
-      "tagNumber": 8
+      "tagNumber": 11
     },
     "nurtureTrackName": {
       "title": "Nurture Track Name",
@@ -93,7 +114,7 @@
       "type": "string",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:nurtureTrackName",
-      "tagNumber": 9
+      "tagNumber": 12
     },
     "nurtureCadence": {
       "title": "Nurture Cadence",
@@ -101,7 +122,7 @@
       "type": "string",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:nurtureCadence",
-      "tagNumber": 10
+      "tagNumber": 13
     },
     "isExhausted": {
       "title": "isExhausted",
@@ -109,7 +130,7 @@
       "type": "boolean",
       "meta:xdmType": "boolean",
       "meta:xdmField": "xdm:isExhausted",
-      "tagNumber": 11
+      "tagNumber": 14
     },
     "webinarRegistrationID": {
       "title": "Webinar Registration ID",
@@ -117,7 +138,7 @@
       "type": "string",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:webinarRegistrationID",
-      "tagNumber": 12
+      "tagNumber": 15
     },
     "webinarConfirmationUrl": {
       "title": "Webinar Confirmation Url",
@@ -125,7 +146,7 @@
       "type": "string",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:webinarConfirmationUrl",
-      "tagNumber": 13
+      "tagNumber": 16
     },
     "acquiredByCampaignID": {
       "title": "Acquired By CampaignID",
@@ -133,7 +154,14 @@
       "type": "string",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:acquiredByCampaignID",
-      "tagNumber": 14
+      "tagNumber": 17
+    },
+    "acquiredByCampaignKey": {
+      "title": "Acquired By Campaign Key",
+      "description": "Unique composite identifier of the campaign where the person became a member",
+      "$ref": "../datatypes/b2b/b2b-source.schema.json",
+      "meta:xdmField": "xdm:acquiredByCampaignKey",
+      "tagNumber": 18
     },
     "hasReachedSuccess": {
       "title": "Has Reached Success",
@@ -141,7 +169,7 @@
       "type": "boolean",
       "meta:xdmType": "boolean",
       "meta:xdmField": "xdm:hasReachedSuccess",
-      "tagNumber": 15
+      "tagNumber": 19
     },
     "reachedSuccessDate": {
       "title": "Reached Success Date",
@@ -150,7 +178,7 @@
       "format": "date-time",
       "meta:xdmType": "date-time",
       "meta:xdmField": "xdm:reachedSuccessDate",
-      "tagNumber": 16
+      "tagNumber": 20
     },
     "membershipDate": {
       "title": "Membership Date",
@@ -159,7 +187,7 @@
       "format": "date-time",
       "meta:xdmType": "date-time",
       "meta:xdmField": "xdm:membershipDate",
-      "tagNumber": 17
+      "tagNumber": 21
     },
     "lastStatus": {
       "title": "Last Status",
@@ -167,7 +195,7 @@
       "type": "string",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:lastStatus",
-      "tagNumber": 18
+      "tagNumber": 22
     },
     "hasResponded": {
       "title": "Has Responded",
@@ -175,7 +203,7 @@
       "type": "boolean",
       "meta:xdmType": "boolean",
       "meta:xdmField": "xdm:hasResponded",
-      "tagNumber": 19
+      "tagNumber": 23
     },
     "firstRespondedDate": {
       "title": "First Responded Date",
@@ -184,7 +212,7 @@
       "format": "date-time",
       "meta:xdmType": "date-time",
       "meta:xdmField": "xdm:firstRespondedDate",
-      "tagNumber": 20
+      "tagNumber": 24
     }
   },
   "meta:xdmId": "https://ns.adobe.com/xdm/context/campaign-member-generated",

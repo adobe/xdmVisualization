@@ -76,6 +76,18 @@
                   "meta:xdmType": "string",
                   "meta:xdmField": "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/journeyActionID",
                   "tagNumber": 7
+                },
+                "messageType": {
+                  "title": "Message Type",
+                  "type": "string",
+                  "description": "Message Type, whether it's marketing or transactional message",
+                  "enum": [
+                    "marketing",
+                    "transactional"
+                  ],
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/messageType",
+                  "tagNumber": 8
                 }
               },
               "required": [

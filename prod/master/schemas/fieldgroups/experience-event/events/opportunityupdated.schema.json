@@ -21,10 +21,17 @@
         "opportunityID": {
           "title": "Opportunity ID",
           "type": "string",
-          "description": "Unique ID of the Opportunity",
+          "description": "Unique identifier of the Opportunity",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:opportunityID",
           "tagNumber": 1
+        },
+        "opportunityKey": {
+          "title": "Opportunity Key",
+          "description": "Unique composite identifier of the Opportunity.",
+          "$ref": "../../../datatypes/b2b/b2b-source.schema.json",
+          "meta:xdmField": "xdm:opportunityKey",
+          "tagNumber": 2
         },
         "dataValueChanges": {
           "title": "Data Value Changes",
@@ -32,9 +39,9 @@
           "type": "array",
           "meta:xdmType": "array",
           "meta:xdmField": "xdm:dataValueChanges",
-          "tagNumber": 2,
+          "tagNumber": 3,
           "items": {
-            "$ref": "obj5334366758464149.schema.json"
+            "$ref": "obj2350733351864851.schema.json"
           }
         }
       },

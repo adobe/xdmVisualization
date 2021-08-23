@@ -35,7 +35,7 @@
     },
     "accountPersonKey": {
       "title": "Account Person Key",
-      "description": "UUnique composite identifier for this relationship between an account and a person..",
+      "description": "Unique composite identifier for this relationship between an account and a person.",
       "$ref": "../../datatypes/b2b/b2b-source.schema.json",
       "meta:xdmField": "xdm:accountPersonKey",
       "tagNumber": 3

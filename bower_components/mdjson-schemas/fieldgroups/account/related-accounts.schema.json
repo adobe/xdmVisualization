@@ -16,7 +16,7 @@
       "type": "array",
       "xdm:relatedAccountKeys": {
         "title": "Related Account Keys",
-        "description": "RAn array of unique identifiers to any related accounts.",
+        "description": "An array of unique identifiers to any related accounts.",
         "type": "array",
         "items": {
           "$ref": "../../datatypes/b2b/b2b-source.schema.json",

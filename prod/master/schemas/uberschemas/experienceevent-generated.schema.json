@@ -1079,6 +1079,13 @@
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:listID",
           "tagNumber": 1
+        },
+        "listKey": {
+          "title": "List Key",
+          "description": "Unique composite identifier of the Marketing List.",
+          "$ref": "../datatypes/b2b/b2b-source.schema.json",
+          "meta:xdmField": "xdm:listKey",
+          "tagNumber": 2
         }
       },
       "meta:xdmField": "xdm:listOperations",
@@ -1092,10 +1099,17 @@
         "opportunityID": {
           "title": "Opportunity ID",
           "type": "string",
-          "description": "Unique ID of the Opportunity.",
+          "description": "Unique identifier of the Opportunity.",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:opportunityID",
           "tagNumber": 1
+        },
+        "opportunityKey": {
+          "title": "Opportunity Key",
+          "description": "Unique composite identifier of the Opportunity.",
+          "$ref": "../datatypes/b2b/b2b-source.schema.json",
+          "meta:xdmField": "xdm:opportunityKey",
+          "tagNumber": 2
         },
         "isPrimary": {
           "title": "Is Primary",
@@ -1103,7 +1117,7 @@
           "description": "Boolean indicating if person is the primary contact on the Opportunity.",
           "meta:xdmType": "boolean",
           "meta:xdmField": "xdm:isPrimary",
-          "tagNumber": 2
+          "tagNumber": 3
         },
         "role": {
           "title": "Role",
@@ -1111,7 +1125,7 @@
           "description": "Role of the person on the Opportunity.",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:role",
-          "tagNumber": 3
+          "tagNumber": 4
         },
         "dataValueChanges": {
           "title": "Data Value Changes",
@@ -1119,9 +1133,9 @@
           "type": "array",
           "meta:xdmType": "array",
           "meta:xdmField": "xdm:dataValueChanges",
-          "tagNumber": 4,
+          "tagNumber": 5,
           "items": {
-            "$ref": "obj8855056406223407.schema.json"
+            "$ref": "obj1319964447459785.schema.json"
           }
         }
       },
@@ -1363,10 +1377,17 @@
             "campaignID": {
               "title": "Campaign ID",
               "type": "string",
-              "description": "Unique ID of the Campaign.",
+              "description": "Unique identifier of the Campaign.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:campaignID",
               "tagNumber": 1
+            },
+            "campaignKey": {
+              "title": "Campaign Key",
+              "description": "Unique composite identifier of the Campaign.",
+              "$ref": "../datatypes/b2b/b2b-source.schema.json",
+              "meta:xdmField": "xdm:campaignKey",
+              "tagNumber": 2
             },
             "newStatusID": {
               "title": "New Status ID",
@@ -1374,7 +1395,7 @@
               "description": "ID of the lead's new status in the campaign.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:newStatusID",
-              "tagNumber": 2
+              "tagNumber": 3
             },
             "newStatusName": {
               "title": "New Status Name",
@@ -1382,7 +1403,7 @@
               "description": "Friendly name of the lead's new status in the campaign.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:newStatusName",
-              "tagNumber": 3
+              "tagNumber": 4
             },
             "oldStatusID": {
               "title": "Old Status ID",
@@ -1390,7 +1411,7 @@
               "description": "ID of the lead's previous status in the campaign.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:oldStatusID",
-              "tagNumber": 4
+              "tagNumber": 5
             },
             "oldStatusName": {
               "title": "Old Status Name",
@@ -1398,7 +1419,7 @@
               "description": "Friendly name of the lead's previous status in the campaign.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:oldStatusName",
-              "tagNumber": 5
+              "tagNumber": 6
             },
             "reason": {
               "title": "Reason",
@@ -1406,7 +1427,7 @@
               "description": "Reason for the change in the lead's status.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:reason",
-              "tagNumber": 6
+              "tagNumber": 7
             },
             "isAcquiredBy": {
               "title": "Is Acquired By",
@@ -1414,7 +1435,7 @@
               "description": "Boolean indicating if lead was acquired by the campaign.",
               "meta:xdmType": "boolean",
               "meta:xdmField": "xdm:isAcquiredBy",
-              "tagNumber": 7
+              "tagNumber": 8
             },
             "isSuccessful": {
               "title": "Is Successful",
@@ -1422,7 +1443,7 @@
               "description": "Boolean indicating if there was a change in the lead's status.",
               "meta:xdmType": "boolean",
               "meta:xdmField": "xdm:isSuccessful",
-              "tagNumber": 8
+              "tagNumber": 9
             }
           },
           "meta:xdmField": "xdm:campaignProgression",
@@ -2302,7 +2323,7 @@
           "meta:xdmField": "xdm:diningReservations",
           "tagNumber": 1,
           "items": {
-            "$ref": "obj7079689344209563.schema.json"
+            "$ref": "obj8792728848059446.schema.json"
           }
         },
         "cancellation": {
@@ -2442,7 +2463,7 @@
           "meta:xdmField": "xdm:flightReservations",
           "tagNumber": 19,
           "items": {
-            "$ref": "obj4939532475520947.schema.json"
+            "$ref": "obj6738514212545772.schema.json"
           }
         },
         "lodgingReservations": {
@@ -2451,7 +2472,7 @@
           "meta:xdmField": "xdm:lodgingReservations",
           "tagNumber": 20,
           "items": {
-            "$ref": "obj4019099090605709.schema.json"
+            "$ref": "obj29298961469789586.schema.json"
           }
         },
         "vehicleReservations": {
@@ -2460,7 +2481,7 @@
           "meta:xdmField": "xdm:vehicleReservations",
           "tagNumber": 21,
           "items": {
-            "$ref": "obj7161579950589214.schema.json"
+            "$ref": "obj3431719170670702.schema.json"
           }
         }
       },

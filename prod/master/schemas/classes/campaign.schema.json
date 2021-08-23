@@ -41,13 +41,20 @@
       "meta:xdmField": "xdm:campaignID",
       "tagNumber": 3
     },
+    "campaignKey": {
+      "title": "Campaign Key",
+      "description": "Unique composite identifier of the Campaign.",
+      "$ref": "../datatypes/b2b/b2b-source.schema.json",
+      "meta:xdmField": "xdm:campaignKey",
+      "tagNumber": 4
+    },
     "campaignName": {
       "title": "Campaign Name",
       "description": "Friendly name for campaign.",
       "type": "string",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:campaignName",
-      "tagNumber": 4
+      "tagNumber": 5
     },
     "campaignType": {
       "title": "Campaign Type",
@@ -55,7 +62,7 @@
       "type": "string",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:campaignType",
-      "tagNumber": 5
+      "tagNumber": 6
     },
     "campaignDescription": {
       "title": "Campaign Description",
@@ -63,7 +70,7 @@
       "type": "string",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:campaignDescription",
-      "tagNumber": 6
+      "tagNumber": 7
     }
   },
   "meta:xdmId": "https://ns.adobe.com/xdm/classes/campaign",

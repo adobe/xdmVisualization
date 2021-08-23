@@ -77,6 +77,13 @@
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:externalID",
       "tagNumber": 8
+    },
+    "externalKey": {
+      "title": "External Key",
+      "description": "External unique identifier to the source used for auditing.",
+      "$ref": "../b2b/b2b-source.schema.json",
+      "meta:xdmField": "xdm:externalKey",
+      "tagNumber": 9
     }
   },
   "meta:xdmId": "https://ns.adobe.com/xdm/common/external-source-system-audit",

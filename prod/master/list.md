@@ -86,6 +86,7 @@
 [datatypes.pushnotificationtoken](http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.pushnotificationtoken.html)<br/>
 [datatypes.b2b.account-organization](http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.b2b.account-organization.html)<br/>
 [datatypes.b2b.organization](http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.b2b.organization.html)<br/>
+[datatypes.b2b.b2b-source](http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.b2b.b2b-source.html)<br/>
 [datatypes.b2b.orgunit](http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.b2b.orgunit.html)<br/>
 [datatypes.namespace](http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.namespace.html)<br/>
 [datatypes.search](http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.search.html)<br/>
