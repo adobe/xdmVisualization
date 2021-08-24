@@ -78,6 +78,22 @@
       "type": "object",
       "meta:xdmField": "xdm:experience",
       "tagNumber": 7
+    },
+    "characteristics": {
+      "title": "Scope Details Characteristics",
+      "description": "Additional properties or attributes belonging to this particular scope details.",
+      "type": "object",
+      "meta:xdmType": "map",
+      "meta:xdmField": "xdm:characteristics",
+      "tagNumber": 8,
+      "properties": {
+        "mapObj": {
+          "type": "string",
+          "description": "Value of the property.",
+          "meta:xdmType": "string",
+          "tagNumber": 1
+        }
+      }
     }
   },
   "meta:xdmId": "https://ns.adobe.com/experience/decisioning/scope-details",
