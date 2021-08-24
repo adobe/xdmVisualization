@@ -175,7 +175,7 @@
       "meta:xdmField": "xdm:personComponents",
       "tagNumber": 11,
       "items": {
-        "$ref": "obj8124836746689037.schema.json"
+        "$ref": "obj02925474240306536.schema.json"
       }
     },
     "b2b": {
@@ -190,13 +190,20 @@
           "meta:xdmField": "xdm:accountID",
           "tagNumber": 1
         },
+        "accountKey": {
+          "title": "Account Key",
+          "description": "Unique identifier of the Account related to the person.",
+          "$ref": "../datatypes/b2b/b2b-source.schema.json",
+          "meta:xdmField": "xdm:accountKey",
+          "tagNumber": 2
+        },
         "isBlocked": {
           "title": "Blocked Indicator",
           "description": "Indicator if the person is blocked or not.",
           "type": "boolean",
           "meta:xdmType": "boolean",
           "meta:xdmField": "xdm:isBlocked",
-          "tagNumber": 2
+          "tagNumber": 3
         },
         "blockedCause": {
           "title": "Blocked Cause",
@@ -204,7 +211,7 @@
           "type": "string",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:blockedCause",
-          "tagNumber": 3
+          "tagNumber": 4
         },
         "isMarketingSuspended": {
           "title": "Marketing Suspended Indicator",
@@ -212,7 +219,7 @@
           "type": "boolean",
           "meta:xdmType": "boolean",
           "meta:xdmField": "xdm:isMarketingSuspended",
-          "tagNumber": 4
+          "tagNumber": 5
         },
         "marketingSuspendedCause": {
           "title": "Marketing Suspended Cause",
@@ -220,7 +227,7 @@
           "type": "string",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:marketingSuspendedCause",
-          "tagNumber": 5
+          "tagNumber": 6
         },
         "isConverted": {
           "title": "Converted Indicator",
@@ -228,7 +235,7 @@
           "type": "boolean",
           "meta:xdmType": "boolean",
           "meta:xdmField": "xdm:isConverted",
-          "tagNumber": 6
+          "tagNumber": 7
         },
         "convertedDate": {
           "title": "Converted Date",
@@ -237,7 +244,7 @@
           "format": "date-time",
           "meta:xdmType": "date-time",
           "meta:xdmField": "xdm:convertedDate",
-          "tagNumber": 7
+          "tagNumber": 8
         },
         "convertedContactID": {
           "title": "Converted Contact ID",
@@ -245,34 +252,20 @@
           "type": "string",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:convertedContactID",
-          "tagNumber": 8
-        },
-        "personOptInOut": {
-          "title": "Person Preferences",
-          "description": "Holds opt out values for different channels as selected by the person.",
-          "$ref": "../datatypes/b2b/b2b-source.schema.json",
-          "meta:xdmField": "xdm:personOptInOut",
           "tagNumber": 9
-        },
-        "personKey": {
-          "title": "Person Key",
-          "description": "Unique identifier of Person/Profile fragment.",
-          "$ref": "../datatypes/b2b/b2b-source.schema.json",
-          "meta:xdmField": "xdm:personKey",
-          "tagNumber": 10
-        },
-        "accountKey": {
-          "title": "Account Key",
-          "description": "Unique identifier of the Account related to the person.",
-          "$ref": "../datatypes/b2b/b2b-source.schema.json",
-          "meta:xdmField": "xdm:accountKey",
-          "tagNumber": 11
         },
         "convertedContactKey": {
           "title": "Converted Contact Key",
           "description": "Unique identifier of the Contact if the lead was converted.",
           "$ref": "../datatypes/b2b/b2b-source.schema.json",
           "meta:xdmField": "xdm:convertedContactKey",
+          "tagNumber": 10
+        },
+        "personKey": {
+          "title": "Person Key",
+          "description": "Unique identifier of Person/Profile fragment.",
+          "$ref": "../datatypes/b2b/b2b-source.schema.json",
+          "meta:xdmField": "xdm:personKey",
           "tagNumber": 12
         },
         "personType": {
@@ -1574,7 +1567,7 @@
           "meta:xdmField": "xdm:pointsExpiration",
           "tagNumber": 4,
           "items": {
-            "$ref": "obj6792199589007728.schema.json"
+            "$ref": "obj5038123472762912.schema.json"
           }
         },
         "pointsRedeemed": {
@@ -1666,7 +1659,7 @@
           "meta:xdmField": "xdm:creditScores",
           "tagNumber": 3,
           "items": {
-            "$ref": "obj0464817779024862.schema.json"
+            "$ref": "obj05406350378278013.schema.json"
           }
         },
         "employmentStatus": {
@@ -1883,7 +1876,7 @@
       "meta:xdmField": "xdm:pushNotificationDetails",
       "tagNumber": 50,
       "items": {
-        "$ref": "obj49159179435769973.schema.json"
+        "$ref": "obj620764503148004.schema.json"
       }
     },
     "segmentMembership": {
@@ -1953,7 +1946,7 @@
           "meta:xdmField": "xdm:internetSubscription",
           "tagNumber": 4,
           "items": {
-            "$ref": "obj3274847445591018.schema.json"
+            "$ref": "obj4264034023908283.schema.json"
           }
         },
         "landlineSubscription": {
@@ -1963,7 +1956,7 @@
           "meta:xdmField": "xdm:landlineSubscription",
           "tagNumber": 5,
           "items": {
-            "$ref": "obj16041993772186403.schema.json"
+            "$ref": "obj2181308902874881.schema.json"
           }
         },
         "mediaSubscription": {
@@ -1973,7 +1966,7 @@
           "meta:xdmField": "xdm:mediaSubscription",
           "tagNumber": 6,
           "items": {
-            "$ref": "obj49260757562722635.schema.json"
+            "$ref": "obj4093274378266114.schema.json"
           }
         },
         "mobileSubscription": {
@@ -1983,7 +1976,7 @@
           "meta:xdmField": "xdm:mobileSubscription",
           "tagNumber": 7,
           "items": {
-            "$ref": "obj8701634622851997.schema.json"
+            "$ref": "obj8071829760988813.schema.json"
           }
         }
       },
