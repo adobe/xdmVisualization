@@ -1,0 +1,144 @@
+{
+  "id": "_xdm.mixins.experienceevent-card-actions",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Card Actions",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:tags": {
+    "industry": [
+      "financial_services"
+    ]
+  },
+  "description": "Card action details such as card type as well as activation and lock status.",
+  "meta:status": "stable",
+  "meta:createdDate": "2021-01-07",
+  "meta:xdmType": "object",
+  "properties": {
+    "personalFinances": {
+      "type": "object",
+      "description": "Financial details including transactions, accounts, and applications.",
+      "meta:xdmType": "object",
+      "properties": {
+        "cardActions": {
+          "type": "object",
+          "meta:xdmType": "object",
+          "properties": {
+            "cardID": {
+              "title": "Card ID",
+              "type": "string",
+              "description": "Tracks the identifier for the card being activated.  This might be different from the card number.",
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:cardID",
+              "tagNumber": 1
+            },
+            "cardActivated": {
+              "title": "Card Activated Success",
+              "type": "integer",
+              "description": "Tracks when a card has been successfully activated.",
+              "meta:xdmType": "int",
+              "meta:xdmField": "xdm:cardActivated",
+              "tagNumber": 2
+            },
+            "cardActivationStart": {
+              "title": "Card Activation Started",
+              "type": "integer",
+              "description": "Tracks when a card activation process has been started.",
+              "meta:xdmType": "int",
+              "meta:xdmField": "xdm:cardActivationStart",
+              "tagNumber": 3
+            },
+            "cardCancelled": {
+              "title": "Card Cancelled",
+              "type": "integer",
+              "description": "Tracks when a card has been cancelled.",
+              "meta:xdmType": "int",
+              "meta:xdmField": "xdm:cardCancelled",
+              "tagNumber": 4
+            },
+            "cardControlsLocked": {
+              "title": "Card Controls Locked",
+              "type": "integer",
+              "description": "Tracks when a card controls have been locked.",
+              "meta:xdmType": "int",
+              "meta:xdmField": "xdm:cardControlsLocked",
+              "tagNumber": 5
+            },
+            "cardControlsUnlocked": {
+              "title": "Card Controls Unlocked",
+              "type": "integer",
+              "description": "Tracks when a card controls have been unlocked.",
+              "meta:xdmType": "int",
+              "meta:xdmField": "xdm:cardControlsUnlocked",
+              "tagNumber": 6
+            },
+            "cardLocked": {
+              "title": "Card Locked",
+              "type": "integer",
+              "description": "Tracks when a card has been locked.",
+              "meta:xdmType": "int",
+              "meta:xdmField": "xdm:cardLocked",
+              "tagNumber": 7
+            },
+            "cardOrderNew": {
+              "title": "Order New Card",
+              "type": "integer",
+              "description": "Tracks when a card has been requested.",
+              "meta:xdmType": "int",
+              "meta:xdmField": "xdm:cardOrderNew",
+              "tagNumber": 8
+            },
+            "cardOrderType": {
+              "title": "Card Order Type",
+              "type": "string",
+              "enum": [
+                "new",
+                "lost",
+                "stolen",
+                "never received",
+                "damaged"
+              ],
+              "description": "Tracks the type of card order associated with a card order event.",
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:cardOrderType",
+              "tagNumber": 9
+            },
+            "cardType": {
+              "title": "Card Type",
+              "type": "string",
+              "enum": [
+                "credit",
+                "debit",
+                "prepaid",
+                "paypal",
+                "atm",
+                "virtual",
+                "hsa",
+                "fsa"
+              ],
+              "description": "Tracks the type of card associated with an event.",
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:cardType",
+              "tagNumber": 10
+            },
+            "cardUnlocked": {
+              "title": "Card Unlocked",
+              "type": "integer",
+              "description": "Tracks when a card has been unlocked.",
+              "meta:xdmType": "int",
+              "meta:xdmField": "xdm:cardUnlocked",
+              "tagNumber": 11
+            }
+          },
+          "meta:xdmField": "xdm:cardActions",
+          "tagNumber": 1
+        }
+      },
+      "meta:xdmField": "xdm:personalFinances",
+      "tagNumber": 1
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/mixins/experienceevent-card-actions",
+  "meta:altId": "_xdm.mixins.experienceevent-card-actions",
+  "id": "_xdm.mixins.experienceevent-card-actions"
+}

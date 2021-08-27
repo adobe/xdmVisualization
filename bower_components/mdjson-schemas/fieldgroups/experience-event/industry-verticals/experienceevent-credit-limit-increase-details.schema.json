@@ -1,0 +1,38 @@
+{
+  "id": "_xdm.mixins.experienceevent-credit-limit-increase-details",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Credit Limit Increase Details",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:tags": {
+    "industry": [
+      "financial_services"
+    ]
+  },
+  "description": "Credit limit increase application details such as ID, type, approval, and status.",
+  "meta:status": "stable",
+  "meta:createdDate": "2021-02-19",
+  "meta:xdmType": "object",
+  "properties": {
+    "personalFinances": {
+      "type": "object",
+      "description": "Financial details including transactions, accounts, and applications.",
+      "meta:xdmType": "object",
+      "properties": {
+        "creditLimitIncrease": {
+          "title": "Credit Limit Increase",
+          "$ref": "../../../datatypes/industry-verticals/form-applications.schema.json",
+          "description": "Extension of form application data type.",
+          "meta:xdmField": "xdm:creditLimitIncrease",
+          "tagNumber": 1
+        }
+      },
+      "meta:xdmField": "xdm:personalFinances",
+      "tagNumber": 1
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/mixins/experienceevent-credit-limit-increase-details",
+  "meta:altId": "_xdm.mixins.experienceevent-credit-limit-increase-details",
+  "id": "_xdm.mixins.experienceevent-credit-limit-increase-details"
+}

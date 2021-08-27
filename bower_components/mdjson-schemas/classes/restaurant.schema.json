@@ -1,0 +1,319 @@
+{
+  "id": "_xdm.classes.restaurant",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Restaurant",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:tags": {
+    "industry": [
+      "travel_and_hospitality"
+    ]
+  },
+  "description": "For restaurant information such as address, cuisine, ID and name.",
+  "meta:status": "stable",
+  "meta:createdDate": [
+    "2020-11-19",
+    "2020-08-10"
+  ],
+  "meta:xdmType": "object",
+  "properties": {
+    "_id": {
+      "title": "Identifier",
+      "type": "string",
+      "format": "uri-reference",
+      "description": "A unique identifier for the record.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "@id",
+      "tagNumber": 1
+    },
+    "address": {
+      "title": "Address",
+      "$ref": "../datatypes/demographic/address.schema.json",
+      "description": "Physicial address where the restaurant is located.",
+      "meta:xdmField": "xdm:address",
+      "tagNumber": 2
+    },
+    "restaurantID": {
+      "title": "Restaurant ID",
+      "type": "string",
+      "description": "ID associated with the restaurant.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:restaurantID",
+      "tagNumber": 3
+    },
+    "restaurantName": {
+      "title": "Restaurant Name",
+      "type": "string",
+      "description": "Name associated with the restaurant.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:restaurantName",
+      "tagNumber": 4
+    },
+    "acceptsReservations": {
+      "title": "Accepts Reservations",
+      "type": "boolean",
+      "description": "Flags if the restaurant accepts reservations.",
+      "meta:xdmType": "boolean",
+      "meta:xdmField": "xdm:acceptsReservations",
+      "tagNumber": 5
+    },
+    "cuisine": {
+      "title": "Cuisine",
+      "type": "array",
+      "description": "Type of restaurant cuisine(s).",
+      "meta:xdmType": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "chinese",
+          "steak",
+          "sushi",
+          "asian",
+          "vietnamese",
+          "european",
+          "french",
+          "italian",
+          "burgers",
+          "japanese",
+          "barbecue",
+          "mediterranean",
+          "indian",
+          "grill",
+          "seafood",
+          "steakhouse",
+          "mexican",
+          "greek",
+          "american",
+          "thai"
+        ],
+        "meta:xdmType": "string",
+        "tagNumber": 1,
+        "enumValues": [
+          {
+            "chinese": {
+              "title": "Chinese",
+              "tagNumber": 0
+            }
+          },
+          {
+            "steak": {
+              "title": "Steak",
+              "tagNumber": 1
+            }
+          },
+          {
+            "sushi": {
+              "title": "Sushi",
+              "tagNumber": 2
+            }
+          },
+          {
+            "asian": {
+              "title": "Asian",
+              "tagNumber": 3
+            }
+          },
+          {
+            "vietnamese": {
+              "title": "Vietnamese",
+              "tagNumber": 4
+            }
+          },
+          {
+            "european": {
+              "title": "European",
+              "tagNumber": 5
+            }
+          },
+          {
+            "french": {
+              "title": "French",
+              "tagNumber": 6
+            }
+          },
+          {
+            "italian": {
+              "title": "Italian",
+              "tagNumber": 7
+            }
+          },
+          {
+            "burgers": {
+              "title": "Burgers",
+              "tagNumber": 8
+            }
+          },
+          {
+            "japanese": {
+              "title": "Japanese",
+              "tagNumber": 9
+            }
+          },
+          {
+            "barbecue": {
+              "title": "Barbecue",
+              "tagNumber": 10
+            }
+          },
+          {
+            "mediterranean": {
+              "title": "Mediterranean",
+              "tagNumber": 11
+            }
+          },
+          {
+            "indian": {
+              "title": "Indian",
+              "tagNumber": 12
+            }
+          },
+          {
+            "grill": {
+              "title": "Grill",
+              "tagNumber": 13
+            }
+          },
+          {
+            "seafood": {
+              "title": "Seafood",
+              "tagNumber": 14
+            }
+          },
+          {
+            "steakhouse": {
+              "title": "Steakhouse",
+              "tagNumber": 15
+            }
+          },
+          {
+            "mexican": {
+              "title": "Mexican",
+              "tagNumber": 16
+            }
+          },
+          {
+            "greek": {
+              "title": "Greek",
+              "tagNumber": 17
+            }
+          },
+          {
+            "american": {
+              "title": "American",
+              "tagNumber": 18
+            }
+          },
+          {
+            "thai": {
+              "title": "Thai",
+              "tagNumber": 19
+            }
+          }
+        ]
+      },
+      "meta:xdmField": "xdm:cuisine",
+      "tagNumber": 6
+    },
+    "deliveryPartners": {
+      "title": "Delivery Partners",
+      "type": "array",
+      "description": "Delivery partners available from the restaurant.",
+      "meta:xdmType": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "grubhub",
+          "ubereats",
+          "doordash",
+          "other"
+        ],
+        "meta:xdmType": "string",
+        "tagNumber": 1,
+        "enumValues": [
+          {
+            "grubhub": {
+              "title": "GrubHub",
+              "tagNumber": 0
+            }
+          },
+          {
+            "ubereats": {
+              "title": "UberEats",
+              "tagNumber": 1
+            }
+          },
+          {
+            "doordash": {
+              "title": "DoorDash",
+              "tagNumber": 2
+            }
+          },
+          {
+            "other": {
+              "title": "Other",
+              "tagNumber": 3
+            }
+          }
+        ]
+      },
+      "meta:xdmField": "xdm:deliveryPartners",
+      "tagNumber": 7
+    },
+    "diningOptions": {
+      "title": "Dining Options",
+      "type": "array",
+      "description": "Delivery and dining options available from the restaurant.",
+      "meta:xdmType": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "outdoorSeating",
+          "delivery",
+          "curbside",
+          "takeout",
+          "dogFriendly"
+        ],
+        "meta:xdmType": "string",
+        "tagNumber": 1,
+        "enumValues": [
+          {
+            "outdoorSeating": {
+              "title": "Outdoor Seating",
+              "tagNumber": 0
+            }
+          },
+          {
+            "delivery": {
+              "title": "Delivery",
+              "tagNumber": 1
+            }
+          },
+          {
+            "curbside": {
+              "title": "Curbside",
+              "tagNumber": 2
+            }
+          },
+          {
+            "takeout": {
+              "title": "Takeout",
+              "tagNumber": 3
+            }
+          },
+          {
+            "dogFriendly": {
+              "title": "Dog Friendly",
+              "tagNumber": 4
+            }
+          }
+        ]
+      },
+      "meta:xdmField": "xdm:diningOptions",
+      "tagNumber": 8
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/classes/restaurant",
+  "meta:altId": "_xdm.classes.restaurant",
+  "id": "_xdm.classes.restaurant"
+}

@@ -1,0 +1,170 @@
+{
+  "id": "_experience.customerjourneymanagement.message-delivery-feedback",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Adobe CJM ExperienceEvent - Message Delivery Feedback Details",
+  "description": "Provide details for the delivery feedback for a single message in the Message Execution.",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:status": "stable",
+  "meta:xdmType": "object",
+  "properties": {
+    "_experience": {
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "customerJourneyManagement": {
+          "type": "object",
+          "meta:xdmType": "object",
+          "properties": {
+            "messageDeliveryfeedback": {
+              "type": "object",
+              "meta:xdmType": "object",
+              "properties": {
+                "feedbackStatus": {
+                  "title": "Feedback Status",
+                  "type": "string",
+                  "description": "Provide status of a delivery attempt.",
+                  "enum": [
+                    "error",
+                    "exclude",
+                    "sent",
+                    "bounce",
+                    "delay",
+                    "duplicate",
+                    "denylist"
+                  ],
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/feedbackStatus",
+                  "tagNumber": 1
+                },
+                "messageExclusion": {
+                  "title": "Message Exclusion",
+                  "type": "object",
+                  "meta:xdmType": "object",
+                  "properties": {
+                    "_experience": {
+                      "type": "object",
+                      "meta:xdmType": "object",
+                      "properties": {
+                        "customerJourneyManagement": {
+                          "type": "object",
+                          "meta:xdmType": "object",
+                          "properties": {
+                            "messageDeliveryfeedback": {
+                              "type": "object",
+                              "meta:xdmType": "object",
+                              "properties": {
+                                "code": {
+                                  "title": "Exclude Code",
+                                  "type": "string",
+                                  "description": "Provide top level exclusion reason, like typology rule, mandatory parameter missing.",
+                                  "meta:xdmType": "string",
+                                  "meta:xdmField": "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/code",
+                                  "tagNumber": 1
+                                },
+                                "reason": {
+                                  "title": "Exclude Reason",
+                                  "type": "string",
+                                  "description": "Provide exclusion subcode, like exact typology rule-id.",
+                                  "meta:xdmType": "string",
+                                  "meta:xdmField": "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/reason",
+                                  "tagNumber": 2
+                                }
+                              },
+                              "tagNumber": 1
+                            }
+                          },
+                          "tagNumber": 1
+                        }
+                      },
+                      "tagNumber": 1
+                    }
+                  },
+                  "meta:xdmField": "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/messageExclusion",
+                  "tagNumber": 2
+                },
+                "messageFailure": {
+                  "title": "Message Failure",
+                  "type": "object",
+                  "meta:xdmType": "object",
+                  "properties": {
+                    "_experience": {
+                      "type": "object",
+                      "meta:xdmType": "object",
+                      "properties": {
+                        "customerJourneyManagement": {
+                          "type": "object",
+                          "meta:xdmType": "object",
+                          "properties": {
+                            "messageDeliveryfeedback": {
+                              "properties": {
+                                "reason": {
+                                  "title": "Failure Reason",
+                                  "type": "string",
+                                  "description": "Failure reason for a failed delivery attempt.",
+                                  "meta:xdmType": "string",
+                                  "meta:xdmField": "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/reason",
+                                  "tagNumber": 1
+                                },
+                                "code": {
+                                  "title": "Failure Code",
+                                  "type": "string",
+                                  "description": "Failure code for a failed delivery attempt.",
+                                  "meta:xdmType": "string",
+                                  "meta:xdmField": "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/code",
+                                  "tagNumber": 2
+                                },
+                                "type": {
+                                  "title": "Failure Type",
+                                  "type": "string",
+                                  "description": "Classifies whether it is a soft bounce or hard bounce.",
+                                  "meta:xdmType": "string",
+                                  "meta:xdmField": "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/type",
+                                  "tagNumber": 3
+                                },
+                                "category": {
+                                  "title": "Failure Category",
+                                  "type": "string",
+                                  "description": "Classifies whether it is a sync bounce or async bounce.",
+                                  "meta:xdmType": "string",
+                                  "meta:xdmField": "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/category",
+                                  "tagNumber": 4
+                                }
+                              },
+                              "type": "object",
+                              "meta:xdmType": "object",
+                              "tagNumber": 1
+                            }
+                          },
+                          "tagNumber": 1
+                        }
+                      },
+                      "tagNumber": 1
+                    }
+                  },
+                  "meta:xdmField": "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/messageFailure",
+                  "tagNumber": 3
+                },
+                "retryCount": {
+                  "title": "Retry Count",
+                  "type": "integer",
+                  "description": "Number of failed attempts before the current event. The retryCount starts with '0', for message which is sent in first attempt will have 'retryCount' as 0.",
+                  "meta:xdmType": "int",
+                  "meta:xdmField": "https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/retryCount",
+                  "tagNumber": 4
+                }
+              },
+              "tagNumber": 1
+            }
+          },
+          "tagNumber": 1
+        }
+      },
+      "tagNumber": 1
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/experience/customerJourneyManagement/message-delivery-feedback",
+  "meta:altId": "_experience.customerjourneymanagement.message-delivery-feedback",
+  "id": "_experience.customerjourneymanagement.message-delivery-feedback"
+}

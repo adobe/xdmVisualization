@@ -1,0 +1,93 @@
+{
+  "id": "_xdm.mixins.profile.profile-personal-tax-profile-details",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Personal Tax Profile Details",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:tags": {
+    "industry": [
+      "financial_services"
+    ]
+  },
+  "description": "Personal tax details such as filing statuses and tax bracket.",
+  "meta:status": "stable",
+  "meta:xdmType": "object",
+  "properties": {
+    "personalFinances": {
+      "type": "object",
+      "description": "Financial details including transactions, accounts, and applications.",
+      "meta:xdmType": "object",
+      "properties": {
+        "personalTaxProfile": {
+          "type": "object",
+          "meta:xdmType": "object",
+          "properties": {
+            "filingJointly": {
+              "title": "Filing Jointly",
+              "type": "boolean",
+              "description": "Refers to a filing status for married couples that have wed before the end of the tax year.",
+              "meta:xdmType": "boolean",
+              "meta:xdmField": "xdm:filingJointly",
+              "tagNumber": 1
+            },
+            "filingSeparately": {
+              "title": "Filing Separately",
+              "type": "boolean",
+              "description": "Refers to married couples who choose to record their respective incomes, exemptions, and deductions on separate tax returns.",
+              "meta:xdmType": "boolean",
+              "meta:xdmField": "xdm:filingSeparately",
+              "tagNumber": 2
+            },
+            "isHeadOfHousehold": {
+              "title": "Head of Household",
+              "type": "boolean",
+              "description": "Users designed as head of household if they pay more than half the cost of supporting and housing a qualifying person.",
+              "meta:xdmType": "boolean",
+              "meta:xdmField": "xdm:isHeadOfHousehold",
+              "tagNumber": 3
+            },
+            "householdIncome": {
+              "title": "Household Income",
+              "$ref": "../../datatypes/currency.schema.json",
+              "description": "Refers to the combined gross income of all members of a household.",
+              "meta:xdmField": "xdm:householdIncome",
+              "tagNumber": 4
+            },
+            "singleFiler": {
+              "title": "Single Filer",
+              "type": "boolean",
+              "description": "Refers to a taxpayer who is unmarried and does not qualify for any other filing status.",
+              "meta:xdmType": "boolean",
+              "meta:xdmField": "xdm:singleFiler",
+              "tagNumber": 5
+            },
+            "taxBracket": {
+              "title": "Tax Bracket",
+              "type": "string",
+              "description": "Refers to a range of incomes subject to a certain income tax rate.",
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:taxBracket",
+              "tagNumber": 6
+            },
+            "taxID": {
+              "title": "Tax ID",
+              "type": "string",
+              "description": "Tax identifier for the individual.",
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:taxID",
+              "tagNumber": 7
+            }
+          },
+          "meta:xdmField": "xdm:personalTaxProfile",
+          "tagNumber": 1
+        }
+      },
+      "meta:xdmField": "xdm:personalFinances",
+      "tagNumber": 1
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/mixins/profile/profile-personal-tax-profile-details",
+  "meta:altId": "_xdm.mixins.profile.profile-personal-tax-profile-details",
+  "id": "_xdm.mixins.profile.profile-personal-tax-profile-details"
+}

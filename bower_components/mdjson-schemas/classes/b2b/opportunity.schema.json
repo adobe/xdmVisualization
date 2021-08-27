@@ -1,0 +1,105 @@
+{
+  "id": "_xdm.context.opportunity",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "XDM Business Opportunity",
+  "type": "object",
+  "meta:tags": {
+    "b2bSchema": true
+  },
+  "auditable": true,
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "description": "This class is used to capture minimum set of properties that define business opportunity.",
+  "meta:status": [
+    "experimental",
+    "stable"
+  ],
+  "meta:xdmType": "object",
+  "meta:createdDate": "2020-08-10",
+  "properties": {
+    "_id": {
+      "title": "Identifier",
+      "type": "string",
+      "format": "uri-reference",
+      "description": "A unique identifier for the record.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "@id",
+      "tagNumber": 1
+    },
+    "opportunityID": {
+      "title": "Opportunity ID",
+      "description": "Unique ID of the opportunity.",
+      "type": "string",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:opportunityID",
+      "tagNumber": 2
+    },
+    "opportunityKey": {
+      "title": "Opportunity Key",
+      "description": "Unique composite identifier for the Opportunity.",
+      "$ref": "../../datatypes/b2b/b2b-source.schema.json",
+      "meta:xdmField": "xdm:opportunityKey",
+      "tagNumber": 3
+    },
+    "opportunityName": {
+      "title": "Opportunity Name",
+      "description": "Name of the opportunity.",
+      "type": "string",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:opportunityName",
+      "tagNumber": 4
+    },
+    "opportunityDescription": {
+      "title": "Opportunity Description",
+      "description": "Description of the opportunity.",
+      "type": "string",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:opportunityDescription",
+      "tagNumber": 5
+    },
+    "opportunityType": {
+      "title": "Opportunity Type",
+      "description": "Type of the opportunity.",
+      "type": "string",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:opportunityType",
+      "tagNumber": 6
+    },
+    "opportunityStage": {
+      "title": "Opportunity Stage",
+      "description": "Sales stage of the opportunity.",
+      "type": "string",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:opportunityStage",
+      "tagNumber": 7
+    },
+    "accountID": {
+      "title": "Account ID",
+      "description": "Unique ID of the account this opportunity is associated with.",
+      "type": "string",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:accountID",
+      "tagNumber": 8
+    },
+    "accountKey": {
+      "title": "Account Key",
+      "description": "Unique composite identifier of the account this opportunity is associated with.",
+      "$ref": "../../datatypes/b2b/b2b-source.schema.json",
+      "meta:xdmField": "xdm:accountKey",
+      "tagNumber": 9
+    },
+    "extSourceSystemAudit": {
+      "title": "External Source System Audit Properties",
+      "$ref": "../../datatypes/auditing/external-source-system-audit.schema.json",
+      "description": "Audit attributes for external sources.",
+      "meta:xdmField": "xdm:extSourceSystemAudit",
+      "tagNumber": 10
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/context/opportunity",
+  "meta:altId": "_xdm.context.opportunity",
+  "required": [
+    "opportunityID"
+  ],
+  "id": "_xdm.context.opportunity"
+}

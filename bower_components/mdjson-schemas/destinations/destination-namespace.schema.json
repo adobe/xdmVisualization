@@ -1,0 +1,81 @@
+{
+  "id": "_xdm.context.destination-namespace",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Destinations Namespace Mapping",
+  "type": "object",
+  "meta:extensible": [
+    false,
+    true
+  ],
+  "meta:abstract": [
+    false,
+    true
+  ],
+  "description": "Destinations Namespace Mapping Schema.",
+  "meta:status": "stable",
+  "meta:xdmType": "object",
+  "meta:createdDate": "2020-08-10",
+  "properties": {
+    "_id": {
+      "title": "Identifier",
+      "type": "string",
+      "format": "uri-reference",
+      "description": "A unique identifier for the record.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "@id",
+      "tagNumber": 1
+    },
+    "destinationID": {
+      "title": "Destination ID",
+      "type": "string",
+      "description": "Unique Identifier for a destination instance",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:destinationID",
+      "tagNumber": 2
+    },
+    "sourceNamespace": {
+      "title": "Source Namespace",
+      "type": "string",
+      "description": "This is a human readable identifier for the source namespace and can be used to request the technical namespace id which is used for identity graph processing.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:sourceNamespace",
+      "tagNumber": 5
+    },
+    "targetNamespace": {
+      "title": "Target Namespace",
+      "type": "string",
+      "description": "This is a human readable identifier for the target namespace.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:targetNamespace",
+      "tagNumber": 7
+    },
+    "isMapped": {
+      "title": "Is Mapped",
+      "type": "boolean",
+      "description": "This field specifies if the destination has the target namespace mapped.",
+      "meta:xdmType": "boolean",
+      "meta:xdmField": "xdm:isMapped",
+      "tagNumber": 8
+    },
+    "createTime": {
+      "title": "Create Time",
+      "type": "string",
+      "format": "date-time",
+      "description": "The date and UTC time when the activation flow to the destination-namespace mapping was createdByID",
+      "meta:xdmType": "date-time",
+      "meta:xdmField": "xdm:createTime",
+      "tagNumber": 9
+    },
+    "createdByID": {
+      "title": "Created User ID",
+      "type": "string",
+      "description": "ID of user who created the destination flow",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:createdByID",
+      "tagNumber": 10
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/context/destination-namespace",
+  "meta:altId": "_xdm.context.destination-namespace",
+  "id": "_xdm.context.destination-namespace"
+}

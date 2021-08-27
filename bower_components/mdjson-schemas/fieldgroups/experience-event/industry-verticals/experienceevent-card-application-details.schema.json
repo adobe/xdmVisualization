@@ -1,0 +1,45 @@
+{
+  "id": "_xdm.mixins.experienceevent-card-application-details",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Card Application Process",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:tags": {
+    "industry": [
+      "financial_services"
+    ]
+  },
+  "description": "Card comparison details such as count, addition, removal, and view.",
+  "meta:status": "stable",
+  "meta:createdDate": "2021-02-19",
+  "meta:xdmType": "object",
+  "properties": {
+    "personalFinances": {
+      "type": "object",
+      "description": "Financial details including transactions, accounts, and applications.",
+      "meta:xdmType": "object",
+      "properties": {
+        "cardApplicationComparisons": {
+          "title": "Card Comparisons",
+          "$ref": "../../../datatypes/industry-verticals/comparisons.schema.json",
+          "description": "Extension of comparison data type.",
+          "meta:xdmField": "xdm:cardApplicationComparisons",
+          "tagNumber": 1
+        },
+        "cardApplicationSteps": {
+          "title": "Card Application Steps",
+          "$ref": "../../../datatypes/industry-verticals/form-applications.schema.json",
+          "description": "Extension of form application data type.",
+          "meta:xdmField": "xdm:cardApplicationSteps",
+          "tagNumber": 2
+        }
+      },
+      "meta:xdmField": "xdm:personalFinances",
+      "tagNumber": 1
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/mixins/experienceevent-card-application-details",
+  "meta:altId": "_xdm.mixins.experienceevent-card-application-details",
+  "id": "_xdm.mixins.experienceevent-card-application-details"
+}

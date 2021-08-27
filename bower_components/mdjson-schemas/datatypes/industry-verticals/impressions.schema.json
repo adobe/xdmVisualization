@@ -1,0 +1,48 @@
+{
+  "id": "_xdm.datatypes.impressions",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Impressions",
+  "type": "object",
+  "meta:extensible": true,
+  "description": "Tracks when impressions are presented on a site, along with names, types, and counts.",
+  "meta:status": "stable",
+  "meta:createdDate": "2021-02-19",
+  "meta:xdmType": "object",
+  "properties": {
+    "displays": {
+      "title": "Displays",
+      "type": "integer",
+      "description": "Counts the number of times an impression item has been displayed to a visitor.",
+      "meta:xdmType": "int",
+      "meta:xdmField": "xdm:displays",
+      "tagNumber": 1
+    },
+    "ID": {
+      "title": "ID",
+      "type": "string",
+      "description": "Tracks the ID of an item in an impression array.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:ID",
+      "tagNumber": 2
+    },
+    "type": {
+      "title": "Type",
+      "type": "string",
+      "description": "Tracks the type of impression in an impression array.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:type",
+      "tagNumber": 3
+    },
+    "selected": {
+      "title": "Selected",
+      "type": "integer",
+      "description": "Tracks when a given item in an impression array has been selected or clicked.",
+      "meta:xdmType": "int",
+      "meta:xdmField": "xdm:selected",
+      "tagNumber": 4
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/datatypes/impressions",
+  "meta:altId": "_xdm.datatypes.impressions",
+  "id": "_xdm.datatypes.impressions"
+}

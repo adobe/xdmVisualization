@@ -1,0 +1,109 @@
+{
+  "id": "_xdm.mixins.events.statusincampaignprogressionchanged",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Status In Campaign Progression Changed",
+  "type": "object",
+  "meta:tags": {
+    "b2bSchema": true
+  },
+  "meta:conditionalField": "xdm:eventType",
+  "meta:conditionalValue": "leadOperation.statusInCampaignProgressionChanged",
+  "description": "Use to capture details when a lead's status in a campaign changes.",
+  "meta:status": "experimental",
+  "meta:createdDate": "2021-01-14",
+  "meta:xdmType": "object",
+  "properties": {
+    "leadOperation": {
+      "title": "Lead Operation",
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "campaignProgression": {
+          "title": "Campaign Progression",
+          "type": "object",
+          "meta:xdmType": "object",
+          "properties": {
+            "campaignID": {
+              "title": "Campaign ID",
+              "type": "string",
+              "description": "Unique identifier of the Campaign.",
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:campaignID",
+              "tagNumber": 1
+            },
+            "campaignKey": {
+              "title": "Campaign Key",
+              "description": "Unique composite identifier of the Campaign.",
+              "$ref": "../../../datatypes/b2b/b2b-source.schema.json",
+              "meta:xdmField": "xdm:campaignKey",
+              "tagNumber": 2
+            },
+            "newStatusID": {
+              "title": "New Status ID",
+              "type": "string",
+              "description": "ID of the lead's new status in the campaign.",
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:newStatusID",
+              "tagNumber": 3
+            },
+            "newStatusName": {
+              "title": "New Status Name",
+              "type": "string",
+              "description": "Friendly name of the lead's new status in the campaign.",
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:newStatusName",
+              "tagNumber": 4
+            },
+            "oldStatusID": {
+              "title": "Old Status ID",
+              "type": "string",
+              "description": "ID of the lead's previous status in the campaign.",
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:oldStatusID",
+              "tagNumber": 5
+            },
+            "oldStatusName": {
+              "title": "Old Status Name",
+              "type": "string",
+              "description": "Friendly name of the lead's previous status in the campaign.",
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:oldStatusName",
+              "tagNumber": 6
+            },
+            "reason": {
+              "title": "Reason",
+              "type": "string",
+              "description": "Reason for the change in the lead's status.",
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:reason",
+              "tagNumber": 7
+            },
+            "isAcquiredBy": {
+              "title": "Is Acquired By",
+              "type": "boolean",
+              "description": "Boolean indicating if lead was acquired by the campaign.",
+              "meta:xdmType": "boolean",
+              "meta:xdmField": "xdm:isAcquiredBy",
+              "tagNumber": 8
+            },
+            "isSuccessful": {
+              "title": "Is Successful",
+              "type": "boolean",
+              "description": "Boolean indicating if there was a change in the lead's status.",
+              "meta:xdmType": "boolean",
+              "meta:xdmField": "xdm:isSuccessful",
+              "tagNumber": 9
+            }
+          },
+          "meta:xdmField": "xdm:campaignProgression",
+          "tagNumber": 1
+        }
+      },
+      "meta:xdmField": "xdm:leadOperation",
+      "tagNumber": 1
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/mixins/events/statusincampaignprogressionchanged",
+  "meta:altId": "_xdm.mixins.events.statusincampaignprogressionchanged",
+  "id": "_xdm.mixins.events.statusincampaignprogressionchanged"
+}

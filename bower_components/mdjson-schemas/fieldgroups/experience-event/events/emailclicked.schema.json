@@ -1,0 +1,157 @@
+{
+  "id": "_xdm.mixins.events.emailclicked",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Email Clicked",
+  "type": "object",
+  "meta:tags": {
+    "b2bSchema": true
+  },
+  "meta:conditionalField": "xdm:eventType",
+  "meta:conditionalValue": "directMarketing.emailClicked",
+  "description": "Use to capture details when a person clicks a link in a marketing email.",
+  "meta:status": "experimental",
+  "meta:createdDate": "2021-02-19",
+  "meta:xdmType": "object",
+  "properties": {
+    "directMarketing": {
+      "title": "Direct marketing",
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "mailingID": {
+          "title": "Mailing ID",
+          "type": "string",
+          "description": "Unique ID of the email asset.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:mailingID",
+          "tagNumber": 1
+        },
+        "mailingName": {
+          "title": "Mailing Name",
+          "type": "string",
+          "description": "Friendly name of the email asset.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:mailingName",
+          "tagNumber": 2
+        },
+        "linkURL": {
+          "title": "Link URL",
+          "type": "string",
+          "description": "URL of the link clicked.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:linkURL",
+          "tagNumber": 3
+        },
+        "testVariantID": {
+          "title": "Test Variant ID",
+          "type": "string",
+          "description": "Unique ID of the test variant of the email asset.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:testVariantID",
+          "tagNumber": 4
+        },
+        "testVariantName": {
+          "title": "Test Variant Name",
+          "type": "string",
+          "description": "Friendly name of the test variant of the email asset.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:testVariantName",
+          "tagNumber": 5
+        }
+      },
+      "meta:xdmField": "xdm:directMarketing",
+      "tagNumber": 1
+    },
+    "environment": {
+      "title": "Environment",
+      "type": "object",
+      "description": "The information related to web page and link of the ExperienceEvent.",
+      "meta:xdmType": "object",
+      "properties": {
+        "operatingSystem": {
+          "title": "Operating system",
+          "type": "string",
+          "description": "The name of the operating system used when the observation was made. The attribute should not contain any version information such as '10.5.3', but instead contain 'edition' designations such as 'Ultimate' or 'Professional'.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:operatingSystem",
+          "tagNumber": 1
+        },
+        "browserDetails": {
+          "title": "Browser details",
+          "type": "object",
+          "description": "The browser specific details such as browser name, version, javascript version, user agent string, and accept language.",
+          "meta:xdmType": "object",
+          "properties": {
+            "userAgent": {
+              "title": "User agent",
+              "type": "string",
+              "description": "The HTTP user-agent string from the client request.",
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:userAgent",
+              "tagNumber": 1
+            }
+          },
+          "meta:xdmField": "xdm:browserDetails",
+          "tagNumber": 2
+        }
+      },
+      "meta:xdmField": "xdm:environment",
+      "tagNumber": 2
+    },
+    "device": {
+      "title": "Device",
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "isMobileDevice": {
+          "title": "Is Mobile Device",
+          "type": "boolean",
+          "description": "Boolean that indicates if device used was a mobile device.",
+          "meta:xdmType": "boolean",
+          "meta:xdmField": "xdm:isMobileDevice",
+          "tagNumber": 1
+        },
+        "model": {
+          "title": "Model",
+          "type": "string",
+          "description": "The name of the model for the device. This is the common, human-readable, or marketing name for the device. For example, the 'iPhone 6S' is a particular model of mobile phone.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:model",
+          "tagNumber": 2
+        }
+      },
+      "meta:xdmField": "xdm:device",
+      "tagNumber": 3
+    },
+    "web": {
+      "title": "Web",
+      "type": "object",
+      "description": "Link clicks, web page details, referrer information, and browser details.",
+      "meta:xdmType": "object",
+      "properties": {
+        "webInteraction": {
+          "title": "Web Interaction",
+          "type": "object",
+          "meta:xdmType": "object",
+          "properties": {
+            "linkID": {
+              "title": "Link ID",
+              "type": "string",
+              "description": "Optional user-entered value as the `id`  of the link element in the HTML of the email.",
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:linkID",
+              "tagNumber": 1
+            }
+          },
+          "meta:xdmField": "xdm:webInteraction",
+          "tagNumber": 1
+        }
+      },
+      "meta:xdmField": "xdm:web",
+      "tagNumber": 4
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/mixins/events/emailclicked",
+  "meta:altId": "_xdm.mixins.events.emailclicked",
+  "id": "_xdm.mixins.events.emailclicked"
+}

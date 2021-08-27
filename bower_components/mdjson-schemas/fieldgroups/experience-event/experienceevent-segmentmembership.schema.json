@@ -1,0 +1,38 @@
+{
+  "id": "_xdm.context.experienceevent-segmentmembership",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Segment Membership Details",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "description": "Segment membership data such as which segments an individual belongs to, last qualification time, and membership valid until date.",
+  "meta:status": "stable",
+  "meta:createdDate": "2020-08-10",
+  "meta:xdmType": "object",
+  "properties": {
+    "segmentMembership": {
+      "title": "Segment Membership Map",
+      "type": "object",
+      "meta:xdmType": "map",
+      "meta:xdmField": "xdm:segmentMembership",
+      "tagNumber": 2,
+      "properties": {
+        "mapObj": {
+          "title": "Segment Membership per Namespace",
+          "type": "object",
+          "meta:xdmType": "map",
+          "tagNumber": 1,
+          "properties": {
+            "mapObj": {
+              "$ref": "../../datatypes/segmentmembership.schema.json",
+              "tagNumber": 1
+            }
+          }
+        }
+      }
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/context/experienceevent-segmentmembership",
+  "meta:altId": "_xdm.context.experienceevent-segmentmembership",
+  "id": "_xdm.context.experienceevent-segmentmembership"
+}

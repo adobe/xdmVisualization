@@ -1,0 +1,29 @@
+{
+  "id": "_xdm.context.profile-person-details",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Demographic Details",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:tags": {
+    "industry": [
+      "all"
+    ]
+  },
+  "description": "Demographic information such as name, gender, and birth date of an individual.",
+  "meta:status": "stable",
+  "meta:createdDate": "2020-08-10",
+  "meta:xdmType": "object",
+  "properties": {
+    "person": {
+      "title": "Person",
+      "$ref": "../../datatypes/person/person.schema.json",
+      "description": "An individual actor, contact, or owner.",
+      "meta:xdmField": "xdm:person",
+      "tagNumber": 1
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/context/profile-person-details",
+  "meta:altId": "_xdm.context.profile-person-details",
+  "id": "_xdm.context.profile-person-details"
+}

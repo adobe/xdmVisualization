@@ -1,0 +1,62 @@
+{
+  "id": "_xdm.mixins.events.convert-lead",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Convert Lead",
+  "type": "object",
+  "meta:tags": {
+    "b2bSchema": true
+  },
+  "meta:conditionalField": "xdm:eventType",
+  "meta:conditionalValue": "leadOperation.convertLead",
+  "description": "Use when a marketing lead is converted into a sales-qualified contact that is assigned to a sales user.",
+  "meta:status": "experimental",
+  "meta:createdDate": "2021-02-19",
+  "meta:xdmType": "object",
+  "properties": {
+    "leadOperation": {
+      "title": "Lead Operation",
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "convertLead": {
+          "title": "Convert Lead",
+          "type": "object",
+          "meta:xdmType": "object",
+          "properties": {
+            "assignTo": {
+              "title": "Assign To",
+              "type": "string",
+              "description": "Sales user converted lead is assigned to.",
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:assignTo",
+              "tagNumber": 1
+            },
+            "isSentNotificationEmail": {
+              "title": "Is Sent Notification Email",
+              "type": "boolean",
+              "description": "Indicates whether assigned sales user received email notification of the converted lead.",
+              "meta:xdmType": "boolean",
+              "meta:xdmField": "xdm:isSentNotificationEmail",
+              "tagNumber": 2
+            },
+            "convertedStatus": {
+              "title": "Converted Status",
+              "type": "string",
+              "description": "Converted status of lead.",
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:convertedStatus",
+              "tagNumber": 3
+            }
+          },
+          "meta:xdmField": "xdm:convertLead",
+          "tagNumber": 1
+        }
+      },
+      "meta:xdmField": "xdm:leadOperation",
+      "tagNumber": 1
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/mixins/events/convert-lead",
+  "meta:altId": "_xdm.mixins.events.convert-lead",
+  "id": "_xdm.mixins.events.convert-lead"
+}

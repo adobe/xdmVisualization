@@ -1,0 +1,143 @@
+{
+  "id": "_xdm.context.campaign-member-details",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "XDM Business Campaign Member Details",
+  "type": "object",
+  "meta:tags": {
+    "b2bSchema": true
+  },
+  "auditable": true,
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "description": "An XDM Business Campaign Member.",
+  "meta:status": "experimental",
+  "meta:createdDate": "2020-08-18",
+  "meta:xdmType": "object",
+  "properties": {
+    "memberStatus": {
+      "title": "Campaign Member Status",
+      "description": "",
+      "type": "string",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:memberStatus",
+      "tagNumber": 1
+    },
+    "memberStatusReason": {
+      "title": "Campaign Member Status Reason",
+      "description": "",
+      "type": "string",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:memberStatusReason",
+      "tagNumber": 2
+    },
+    "nurtureTrackName": {
+      "title": "Nurture Track Name",
+      "description": "",
+      "type": "string",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:nurtureTrackName",
+      "tagNumber": 3
+    },
+    "nurtureCadence": {
+      "title": "Nurture Cadence",
+      "description": "",
+      "type": "string",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:nurtureCadence",
+      "tagNumber": 4
+    },
+    "isExhausted": {
+      "title": "isExhausted",
+      "description": "",
+      "type": "boolean",
+      "meta:xdmType": "boolean",
+      "meta:xdmField": "xdm:isExhausted",
+      "tagNumber": 5
+    },
+    "webinarRegistrationID": {
+      "title": "Webinar Registration ID",
+      "description": "",
+      "type": "string",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:webinarRegistrationID",
+      "tagNumber": 6
+    },
+    "webinarConfirmationUrl": {
+      "title": "Webinar Confirmation Url",
+      "description": "",
+      "type": "string",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:webinarConfirmationUrl",
+      "tagNumber": 7
+    },
+    "acquiredByCampaignID": {
+      "title": "Acquired By CampaignID",
+      "description": "",
+      "type": "string",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:acquiredByCampaignID",
+      "tagNumber": 8
+    },
+    "acquiredByCampaignKey": {
+      "title": "Acquired By Campaign Key",
+      "description": "Unique composite identifier of the campaign where the person became a member",
+      "$ref": "../../datatypes/b2b/b2b-source.schema.json",
+      "meta:xdmField": "xdm:acquiredByCampaignKey",
+      "tagNumber": 9
+    },
+    "hasReachedSuccess": {
+      "title": "Has Reached Success",
+      "description": "",
+      "type": "boolean",
+      "meta:xdmType": "boolean",
+      "meta:xdmField": "xdm:hasReachedSuccess",
+      "tagNumber": 10
+    },
+    "reachedSuccessDate": {
+      "title": "Reached Success Date",
+      "description": "",
+      "type": "string",
+      "format": "date-time",
+      "meta:xdmType": "date-time",
+      "meta:xdmField": "xdm:reachedSuccessDate",
+      "tagNumber": 11
+    },
+    "membershipDate": {
+      "title": "Membership Date",
+      "description": "",
+      "type": "string",
+      "format": "date-time",
+      "meta:xdmType": "date-time",
+      "meta:xdmField": "xdm:membershipDate",
+      "tagNumber": 12
+    },
+    "lastStatus": {
+      "title": "Last Status",
+      "description": "",
+      "type": "string",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:lastStatus",
+      "tagNumber": 13
+    },
+    "hasResponded": {
+      "title": "Has Responded",
+      "description": "Record whether the member has responded to the workflow stage",
+      "type": "boolean",
+      "meta:xdmType": "boolean",
+      "meta:xdmField": "xdm:hasResponded",
+      "tagNumber": 14
+    },
+    "firstRespondedDate": {
+      "title": "First Responded Date",
+      "description": "Date captured on which response was submitted",
+      "type": "string",
+      "format": "date-time",
+      "meta:xdmType": "date-time",
+      "meta:xdmField": "xdm:firstRespondedDate",
+      "tagNumber": 15
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/context/campaign-member-details",
+  "meta:altId": "_xdm.context.campaign-member-details",
+  "id": "_xdm.context.campaign-member-details"
+}

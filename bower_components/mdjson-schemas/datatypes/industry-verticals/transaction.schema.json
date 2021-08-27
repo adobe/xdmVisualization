@@ -1,0 +1,48 @@
+{
+  "id": "_xdm.datatypes.transaction",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Transaction",
+  "type": "object",
+  "meta:extensible": true,
+  "description": "Transactions capture when non-order transactions occur, such as balance transfers or applied payments.",
+  "meta:status": "stable",
+  "meta:createdDate": "2021-02-19",
+  "meta:xdmType": "object",
+  "properties": {
+    "transactionAmount": {
+      "title": "Transaction Amount",
+      "$ref": "../currency.schema.json",
+      "description": "Captures the amount of the transaction.",
+      "meta:xdmField": "xdm:transactionAmount",
+      "tagNumber": 1
+    },
+    "transactionID": {
+      "title": "Transaction ID",
+      "type": "string",
+      "description": "Identifier for the transaction.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:transactionID",
+      "tagNumber": 2
+    },
+    "transactionDate": {
+      "title": "Transaction Date",
+      "type": "string",
+      "format": "date-time",
+      "description": "Records the date/time of the transaction.",
+      "meta:xdmType": "date-time",
+      "meta:xdmField": "xdm:transactionDate",
+      "tagNumber": 3
+    },
+    "transactionType": {
+      "title": "Transaction Type",
+      "type": "string",
+      "description": "Records the type of transaction utilized by the visitor.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:transactionType",
+      "tagNumber": 4
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/datatypes/transaction",
+  "meta:altId": "_xdm.datatypes.transaction",
+  "id": "_xdm.datatypes.transaction"
+}
