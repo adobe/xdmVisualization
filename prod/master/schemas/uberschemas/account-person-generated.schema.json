@@ -150,14 +150,11 @@
       "meta:xdmField": "xdm:accountPersonComponents",
       "tagNumber": 16,
       "items": {
-        "$ref": "obj17301334872497076.schema.json"
+        "$ref": "obj40546220967587.schema.json"
       }
     }
   },
   "meta:xdmId": "https://ns.adobe.com/xdm/classes/account-person-generated",
   "meta:altId": "_xdm.classes.account-person-generated",
-  "required": [
-    "accountPersonID"
-  ],
   "id": "_xdm.classes.account-person-generated"
 }

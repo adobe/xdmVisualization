@@ -60,7 +60,7 @@
       "meta:xdmField": "xdm:accountComponents",
       "tagNumber": 5,
       "items": {
-        "$ref": "obj6989676050551032.schema.json"
+        "$ref": "obj41170663233375704.schema.json"
       }
     },
     "accountName": {
@@ -245,8 +245,5 @@
   },
   "meta:xdmId": "https://ns.adobe.com/xdm/context/account-generated",
   "meta:altId": "_xdm.context.account-generated",
-  "required": [
-    "accountID"
-  ],
   "id": "_xdm.context.account-generated"
 }

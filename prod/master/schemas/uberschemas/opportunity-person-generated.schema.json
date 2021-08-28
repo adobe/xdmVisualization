@@ -104,14 +104,11 @@
       "meta:xdmField": "xdm:opportunityPersonComponents",
       "tagNumber": 11,
       "items": {
-        "$ref": "obj46634845815882175.schema.json"
+        "$ref": "obj5981327988212826.schema.json"
       }
     }
   },
   "meta:xdmId": "https://ns.adobe.com/xdm/classes/opportunity-person-generated",
   "meta:altId": "_xdm.classes.opportunity-person-generated",
-  "required": [
-    "opportunityPersonID"
-  ],
   "id": "_xdm.classes.opportunity-person-generated"
 }

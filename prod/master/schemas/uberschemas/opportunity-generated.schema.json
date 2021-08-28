@@ -105,7 +105,7 @@
       "meta:xdmField": "xdm:opportunityComponents",
       "tagNumber": 11,
       "items": {
-        "$ref": "obj32044860017222976.schema.json"
+        "$ref": "obj8199257625504246.schema.json"
       }
     },
     "campaignID": {
@@ -253,8 +253,5 @@
   },
   "meta:xdmId": "https://ns.adobe.com/xdm/context/opportunity-generated",
   "meta:altId": "_xdm.context.opportunity-generated",
-  "required": [
-    "opportunityID"
-  ],
   "id": "_xdm.context.opportunity-generated"
 }

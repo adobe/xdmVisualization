@@ -74,14 +74,11 @@
       "meta:xdmField": "xdm:marketingListComponents",
       "tagNumber": 7,
       "items": {
-        "$ref": "obj68622696457927.schema.json"
+        "$ref": "obj7595909350903267.schema.json"
       }
     }
   },
   "meta:xdmId": "https://ns.adobe.com/xdm/classes/marketing-list-generated",
   "meta:altId": "_xdm.classes.marketing-list-generated",
-  "required": [
-    "marketingListID"
-  ],
   "id": "_xdm.classes.marketing-list-generated"
 }
