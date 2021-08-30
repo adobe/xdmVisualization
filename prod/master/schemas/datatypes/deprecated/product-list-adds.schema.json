@@ -10,12 +10,24 @@
     "stable"
   ],
   "meta:createdDate": "2020-08-10",
+  "meta:titleId": [
+    "product-list-adds##title##86051",
+    "metricdefinition##title##1451"
+  ],
+  "meta:descriptionId": [
+    "product-list-adds##description##35551",
+    "metricdefinition##description##34591"
+  ],
   "meta:xdmType": "object",
   "properties": {
     "_id": {
       "type": "string",
       "const": "xdm:productListAdds",
       "description": "The unique identifier of this metric.",
+      "meta:descriptionId": [
+        "product-list-adds##@id##description##84191",
+        "metricdefinition##@id##description##54541"
+      ],
       "meta:xdmType": "string",
       "format": "uri-reference",
       "meta:xdmField": "@id",
@@ -29,6 +41,10 @@
           "type": "string",
           "const": "commerce metric: productListAdds",
           "description": "The human-readable name of the metric. The name can be used in user interfaces and does not have to be unique.",
+          "meta:descriptionId": [
+            "product-list-adds##schema:name##description##51951",
+            "metricdefinition##schema:name##description##81811"
+          ],
           "meta:xdmType": "string",
           "meta:xdmField": "schema:name",
           "tagNumber": 1
@@ -43,6 +59,10 @@
       "type": "string",
       "description": "How to take measures of this metric.",
       "const": "count",
+      "meta:descriptionId": [
+        "product-list-adds##xdm:measurement##description##88701",
+        "metricdefinition##xdm:measurement##description##90861"
+      ],
       "meta:xdmType": "string",
       "examples": [
         "distance",
@@ -63,6 +83,7 @@
         "s",
         "USD"
       ],
+      "meta:descriptionId": "metricdefinition##xdm:unit##description##50321",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:unit",
       "tagNumber": 4

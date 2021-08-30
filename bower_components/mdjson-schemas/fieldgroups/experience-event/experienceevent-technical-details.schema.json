@@ -8,12 +8,16 @@
   "description": "Technical details including data source code, tags, and timestamps.",
   "meta:status": "stable",
   "meta:createdDate": "2020-08-10",
+  "meta:titleId": "experienceevent-technical-details##title##6281",
+  "meta:descriptionId": "experienceevent-technical-details##description##17661",
   "meta:xdmType": "object",
   "properties": {
     "dataSource": {
       "title": "Data source",
       "$ref": "../../datatypes/data/datasource.schema.json",
       "description": "Globally unique identification of a data source.",
+      "meta:titleId": "experienceevent-technical-details##xdm:dataSource##title##89521",
+      "meta:descriptionId": "experienceevent-technical-details##xdm:dataSource##description##65371",
       "meta:xdmField": "xdm:dataSource",
       "tagNumber": 1
     },
@@ -22,6 +26,8 @@
       "type": "string",
       "format": "date-time",
       "description": "The time at which this interaction was received by a server.",
+      "meta:titleId": "experienceevent-technical-details##xdm:receivedTimestamp##title##62121",
+      "meta:descriptionId": "experienceevent-technical-details##xdm:receivedTimestamp##description##69531",
       "meta:xdmType": "date-time",
       "meta:xdmField": "xdm:receivedTimestamp",
       "tagNumber": 2

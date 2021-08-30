@@ -15,6 +15,18 @@
     "stable",
     "deprecated"
   ],
+  "meta:titleId": [
+    "marketing-list-member##title##71521",
+    "record##title##92641",
+    "external-source-system-audit-details##title##25871",
+    "marketing-list-member-components##title##15481"
+  ],
+  "meta:descriptionId": [
+    "marketing-list-member##description##99421",
+    "record##description##41201",
+    "external-source-system-audit-details##description##77561",
+    "marketing-list-member-components##description##33731"
+  ],
   "meta:createdDate": [
     "2020-08-10",
     "2020-09-14"
@@ -26,6 +38,8 @@
       "type": "string",
       "format": "uri-reference",
       "description": "A unique identifier for the record.",
+      "meta:titleId": "record##@id##title##80061",
+      "meta:descriptionId": "record##@id##description##41711",
       "meta:xdmType": "string",
       "meta:xdmField": "@id",
       "tagNumber": 1
@@ -34,6 +48,8 @@
       "title": "Marketing List Member ID",
       "description": "Unique ID for the membership of this person to this marketing list.",
       "type": "string",
+      "meta:titleId": "marketing-list-member##xdm:marketingListMemberID##title##5321",
+      "meta:descriptionId": "marketing-list-member##xdm:marketingListMemberID##description##83541",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:marketingListMemberID",
       "tagNumber": 2
@@ -42,6 +58,8 @@
       "title": "Marketing List Member Key",
       "description": "Unique composite identifier of the membership of this person from the marketing list.",
       "$ref": "../datatypes/b2b/b2b-source.schema.json",
+      "meta:titleId": "marketing-list-member##xdm:marketingListMemberKey##title##31771",
+      "meta:descriptionId": "marketing-list-member##xdm:marketingListMemberKey##description##52381",
       "meta:xdmField": "xdm:marketingListMemberKey",
       "tagNumber": 3
     },
@@ -49,6 +67,8 @@
       "title": "Person Identifier",
       "description": "Unique ID for the person who is a member of this marketing list.",
       "type": "string",
+      "meta:titleId": "marketing-list-member##xdm:personID##title##18461",
+      "meta:descriptionId": "marketing-list-member##xdm:personID##description##36361",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:personID",
       "tagNumber": 4
@@ -57,6 +77,8 @@
       "title": "Person Key",
       "description": "Unique composite identifier of the Person from the marketing list.",
       "$ref": "../datatypes/b2b/b2b-source.schema.json",
+      "meta:titleId": "marketing-list-member##xdm:personKey##title##3831",
+      "meta:descriptionId": "marketing-list-member##xdm:personKey##description##79331",
       "meta:xdmField": "xdm:personKey",
       "tagNumber": 5
     },
@@ -64,6 +86,8 @@
       "title": "Marketing List Identifier",
       "description": "Unique ID for the marketing list this person is a member of.",
       "type": "string",
+      "meta:titleId": "marketing-list-member##xdm:marketingListID##title##78061",
+      "meta:descriptionId": "marketing-list-member##xdm:marketingListID##description##31391",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:marketingListID",
       "tagNumber": 6
@@ -72,6 +96,8 @@
       "title": "Marketing List Key",
       "description": "Unique composite identifier of the Marketing List this person is a member of.",
       "$ref": "../datatypes/b2b/b2b-source.schema.json",
+      "meta:titleId": "marketing-list-member##xdm:marketingListKey##title##59911",
+      "meta:descriptionId": "marketing-list-member##xdm:marketingListKey##description##44301",
       "meta:xdmField": "xdm:marketingListKey",
       "tagNumber": 7
     },
@@ -79,6 +105,8 @@
       "title": "External Source System Audit Properties",
       "$ref": "../datatypes/auditing/external-source-system-audit.schema.json",
       "description": "Audit attributes for external sources.",
+      "meta:titleId": "external-source-system-audit-details##xdm:extSourceSystemAudit##title##65301",
+      "meta:descriptionId": "external-source-system-audit-details##xdm:extSourceSystemAudit##description##99451",
       "meta:xdmField": "xdm:extSourceSystemAudit",
       "tagNumber": 8
     },
@@ -88,7 +116,7 @@
       "meta:xdmField": "xdm:marketingListMemberComponents",
       "tagNumber": 9,
       "items": {
-        "$ref": "obj3272362870674408.schema.json"
+        "$ref": "obj3037664053356317.schema.json"
       }
     }
   },

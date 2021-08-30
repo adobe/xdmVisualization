@@ -17,17 +17,22 @@
   "description": "Alert information such as ad impressions and ad clicks. ",
   "meta:status": "stable",
   "meta:createdDate": "2021-02-19",
+  "meta:titleId": "experienceevent-alert-impressions##title##34661",
+  "meta:descriptionId": "experienceevent-alert-impressions##description##92931",
   "meta:xdmType": "object",
   "properties": {
     "alerts": {
       "type": "object",
       "description": "Alert information including alert impressions and clickthroughs as well as alert setups.",
+      "meta:descriptionId": "experienceevent-alert-impressions##xdm:alerts##description##48621",
       "meta:xdmType": "object",
       "properties": {
         "ID": {
           "title": "Alert ID",
           "type": "string",
           "description": "Alert identifier.",
+          "meta:titleId": "experienceevent-alert-impressions##xdm:ID##title##71321",
+          "meta:descriptionId": "experienceevent-alert-impressions##xdm:ID##description##19851",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:ID",
           "tagNumber": 1
@@ -36,6 +41,8 @@
           "title": "Alert Clicks",
           "type": "integer",
           "description": "Counts the number of times an alert has been clicked.",
+          "meta:titleId": "experienceevent-alert-impressions##xdm:clicks##title##52431",
+          "meta:descriptionId": "experienceevent-alert-impressions##xdm:clicks##description##25931",
           "meta:xdmType": "int",
           "meta:xdmField": "xdm:clicks",
           "tagNumber": 2
@@ -44,6 +51,8 @@
           "title": "Alert Dismissals",
           "type": "integer",
           "description": "Counts the number of times an alert has been dismissed.",
+          "meta:titleId": "experienceevent-alert-impressions##xdm:dismissals##title##21301",
+          "meta:descriptionId": "experienceevent-alert-impressions##xdm:dismissals##description##51141",
           "meta:xdmType": "int",
           "meta:xdmField": "xdm:dismissals",
           "tagNumber": 3
@@ -52,6 +61,8 @@
           "title": "Alert Impression Details",
           "type": "array",
           "description": "An array of alerts that have been displayed to a customer.",
+          "meta:titleId": "experienceevent-alert-impressions##xdm:impressions##title##11741",
+          "meta:descriptionId": "experienceevent-alert-impressions##xdm:impressions##description##40841",
           "meta:xdmType": "array",
           "items": {
             "$ref": "../../../datatypes/industry-verticals/impressions.schema.json",

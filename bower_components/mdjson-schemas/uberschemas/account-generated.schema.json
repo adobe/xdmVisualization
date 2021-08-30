@@ -16,6 +16,22 @@
     "stable",
     "deprecated"
   ],
+  "meta:titleId": [
+    "account##title##15371",
+    "record##title##92641",
+    "external-source-system-audit-details##title##25871",
+    "account-components##title##49951",
+    "account-details##title##74051",
+    "related-accounts##title##90641"
+  ],
+  "meta:descriptionId": [
+    "account##description##31521",
+    "record##description##41201",
+    "external-source-system-audit-details##description##77561",
+    "account-components##description##25571",
+    "account-details##description##73811",
+    "related-accounts##description##5801"
+  ],
   "meta:createdDate": [
     "2020-08-10",
     "2020-09-02",
@@ -28,6 +44,8 @@
       "type": "string",
       "format": "uri-reference",
       "description": "A unique identifier for the record.",
+      "meta:titleId": "record##@id##title##80061",
+      "meta:descriptionId": "record##@id##description##41711",
       "meta:xdmType": "string",
       "meta:xdmField": "@id",
       "tagNumber": 1
@@ -36,6 +54,8 @@
       "title": "Account Identifier",
       "description": "Unique ID for the account.",
       "type": "string",
+      "meta:titleId": "account##xdm:accountID##title##74841",
+      "meta:descriptionId": "account##xdm:accountID##description##70711",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:accountID",
       "tagNumber": 2
@@ -44,6 +64,8 @@
       "title": "Account Key",
       "description": "Unique composite key identifier for the Account.",
       "$ref": "../datatypes/b2b/b2b-source.schema.json",
+      "meta:titleId": "account##xdm:accountKey##title##76911",
+      "meta:descriptionId": "account##xdm:accountKey##description##47311",
       "meta:xdmField": "xdm:accountKey",
       "tagNumber": 3
     },
@@ -51,6 +73,8 @@
       "title": "External Source System Audit Properties",
       "$ref": "../datatypes/auditing/external-source-system-audit.schema.json",
       "description": "Audit attributes for external sources.",
+      "meta:titleId": "external-source-system-audit-details##xdm:extSourceSystemAudit##title##65301",
+      "meta:descriptionId": "external-source-system-audit-details##xdm:extSourceSystemAudit##description##99451",
       "meta:xdmField": "xdm:extSourceSystemAudit",
       "tagNumber": 4
     },
@@ -60,13 +84,15 @@
       "meta:xdmField": "xdm:accountComponents",
       "tagNumber": 5,
       "items": {
-        "$ref": "obj01947612677065802.schema.json"
+        "$ref": "obj8013040051018787.schema.json"
       }
     },
     "accountName": {
       "title": "Account Name",
       "description": "name of company. Up to 255 characters are allowed in this field.",
       "type": "string",
+      "meta:titleId": "account-details##xdm:accountName##title##45221",
+      "meta:descriptionId": "account-details##xdm:accountName##description##74861",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:accountName",
       "tagNumber": 6
@@ -75,6 +101,8 @@
       "title": "Account Territory Id",
       "description": "The territory to which the account has been assigned.",
       "type": "string",
+      "meta:titleId": "account-details##xdm:accountTerritoryID##title##8121",
+      "meta:descriptionId": "account-details##xdm:accountTerritoryID##description##74601",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:accountTerritoryID",
       "tagNumber": 7
@@ -82,6 +110,7 @@
     "accountScore": {
       "title": "Account Score",
       "type": "number",
+      "meta:titleId": "account-details##xdm:accountScore##title##30881",
       "meta:xdmType": "number",
       "meta:xdmField": "xdm:accountScore",
       "tagNumber": 8
@@ -89,12 +118,14 @@
     "accountBillingAddress": {
       "title": "Account Billing Address",
       "$ref": "../datatypes/demographic/address.schema.json",
+      "meta:titleId": "account-details##xdm:accountBillingAddress##title##241",
       "meta:xdmField": "xdm:accountBillingAddress",
       "tagNumber": 9
     },
     "accountShippingAddress": {
       "title": "Account Shipping Address",
       "$ref": "../datatypes/demographic/address.schema.json",
+      "meta:titleId": "account-details##xdm:accountShippingAddress##title##99011",
       "meta:xdmField": "xdm:accountShippingAddress",
       "tagNumber": 10
     },
@@ -102,12 +133,15 @@
       "title": "Account Physical Address",
       "description": "Actual physical address of the account. Could be the HQ address or any preffered business address for communication.",
       "$ref": "../datatypes/demographic/address.schema.json",
+      "meta:titleId": "account-details##xdm:accountPhysicalAddress##title##33351",
+      "meta:descriptionId": "account-details##xdm:accountPhysicalAddress##description##48671",
       "meta:xdmField": "xdm:accountPhysicalAddress",
       "tagNumber": 11
     },
     "accountOrganization": {
       "title": "Account Organization",
       "$ref": "../datatypes/b2b/account-organization.schema.json",
+      "meta:titleId": "account-details##xdm:accountOrganization##title##40891",
       "meta:xdmField": "xdm:accountOrganization",
       "tagNumber": 12
     },
@@ -115,6 +149,8 @@
       "title": "Parent Account",
       "description": "Parent company for companies that are subsidiaries of a larger company or organization. The parent account must be an existing account in salesforce. You can enter the account name, or select (or optionally, create) the account using the lookup icon.",
       "type": "string",
+      "meta:titleId": "account-details##xdm:accountParentID##title##96621",
+      "meta:descriptionId": "account-details##xdm:accountParentID##description##23471",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:accountParentID",
       "tagNumber": 13
@@ -123,6 +159,8 @@
       "title": "Parent Account Key",
       "description": "Unique identifier of the Parent Account of the account, used to show hierarchies or subsidiaries.",
       "$ref": "../datatypes/b2b/b2b-source.schema.json",
+      "meta:titleId": "account-details##xdm:accountParentKey##title##43181",
+      "meta:descriptionId": "account-details##xdm:accountParentKey##description##7731",
       "meta:xdmField": "xdm:accountParentKey",
       "tagNumber": 14
     },
@@ -130,6 +168,8 @@
       "title": "Partner Account Id",
       "description": "Partner accounts are accounts that a channel manager uses to manage partner organizations, partner users, and activities when using a partner community or partner portal.",
       "type": "string",
+      "meta:titleId": "account-details##xdm:partnerAccountID##title##2721",
+      "meta:descriptionId": "account-details##xdm:partnerAccountID##description##96561",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:partnerAccountID",
       "tagNumber": 15
@@ -138,6 +178,8 @@
       "title": "Account Number",
       "description": "Tracking or reference number for account. Up to 40 characters are allowed in this field.",
       "type": "string",
+      "meta:titleId": "account-details##xdm:accountNumber##title##16911",
+      "meta:descriptionId": "account-details##xdm:accountNumber##description##74211",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:accountNumber",
       "tagNumber": 16
@@ -146,6 +188,8 @@
       "title": "Account Description",
       "description": "Text description of the account.",
       "type": "string",
+      "meta:titleId": "account-details##xdm:accountDescription##title##56141",
+      "meta:descriptionId": "account-details##xdm:accountDescription##description##5511",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:accountDescription",
       "tagNumber": 17
@@ -154,6 +198,8 @@
       "title": "Account Site Details",
       "description": "Information about the account’s location, such as single location, headquarters, or branch. Up to 80 characters are allowed in this field.",
       "type": "string",
+      "meta:titleId": "account-details##xdm:accountSite##title##79461",
+      "meta:descriptionId": "account-details##xdm:accountSite##description##63731",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:accountSite",
       "tagNumber": 18
@@ -162,6 +208,8 @@
       "title": "Account Type",
       "description": "Account Type.",
       "type": "string",
+      "meta:titleId": "account-details##xdm:accountType##title##68211",
+      "meta:descriptionId": "account-details##xdm:accountType##description##20851",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:accountType",
       "tagNumber": 19
@@ -170,6 +218,8 @@
       "title": "Account Source Type",
       "description": "Source type for the account.",
       "type": "string",
+      "meta:titleId": "account-details##xdm:accountSourceType##title##46561",
+      "meta:descriptionId": "account-details##xdm:accountSourceType##description##63181",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:accountSourceType",
       "tagNumber": 20
@@ -183,6 +233,8 @@
       ],
       "pattern": "^[A-Z]{3}$",
       "description": "The ISO 4217 currency code.",
+      "meta:titleId": "account-details##xdm:defaultCurrencyCode##title##72191",
+      "meta:descriptionId": "account-details##xdm:defaultCurrencyCode##description##91831",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:defaultCurrencyCode",
       "tagNumber": 21
@@ -191,6 +243,8 @@
       "title": "Ownership",
       "description": "Ownership of company, for example, public or private. Entry is selected from a picklist of available values, which a salesforce admin sets. Each picklist value can have up to 40 characters.",
       "type": "string",
+      "meta:titleId": "account-details##xdm:accountOwnership##title##19171",
+      "meta:descriptionId": "account-details##xdm:accountOwnership##description##26971",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:accountOwnership",
       "tagNumber": 22
@@ -199,6 +253,8 @@
       "title": "Account Trade Style",
       "description": "A name, different from its legal name, that an organization may use for conducting business. Similar to (Doing business as) or (DBA).",
       "type": "string",
+      "meta:titleId": "account-details##xdm:accountTradeStyle##title##66321",
+      "meta:descriptionId": "account-details##xdm:accountTradeStyle##description##36641",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:accountTradeStyle",
       "tagNumber": 23
@@ -207,6 +263,8 @@
       "title": "Account Phone Number",
       "description": "Phone number for the account.",
       "$ref": "../datatypes/demographic/phonenumber.schema.json",
+      "meta:titleId": "account-details##xdm:accountPhone##title##9271",
+      "meta:descriptionId": "account-details##xdm:accountPhone##description##71451",
       "meta:xdmField": "xdm:accountPhone",
       "tagNumber": 24
     },
@@ -214,6 +272,8 @@
       "title": "Account Fax Number",
       "description": "Fax number for the account.",
       "$ref": "../datatypes/demographic/phonenumber.schema.json",
+      "meta:titleId": "account-details##xdm:accountFax##title##24311",
+      "meta:descriptionId": "account-details##xdm:accountFax##description##97141",
       "meta:xdmField": "xdm:accountFax",
       "tagNumber": 25
     },
@@ -221,6 +281,8 @@
       "title": "Related Accounts",
       "description": "Related accounts which are linked to a primary Business Account. This is an array of Account IDs.",
       "type": "array",
+      "meta:titleId": "related-accounts##xdm:relatedAccounts##title##20161",
+      "meta:descriptionId": "related-accounts##xdm:relatedAccounts##description##69601",
       "meta:xdmType": "array",
       "items": {
         "type": "string",
@@ -234,6 +296,8 @@
       "title": "Related Account Keys",
       "description": "An array of unique identifiers to any related accounts.",
       "type": "array",
+      "meta:titleId": "related-accounts##xdm:relatedAccountKeys##title##80101",
+      "meta:descriptionId": "related-accounts##xdm:relatedAccountKeys##description##40201",
       "meta:xdmType": "array",
       "items": {
         "$ref": "../datatypes/b2b/b2b-source.schema.json",

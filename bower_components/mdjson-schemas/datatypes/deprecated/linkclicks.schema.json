@@ -10,6 +10,14 @@
     "stable"
   ],
   "meta:createdDate": "2020-08-10",
+  "meta:titleId": [
+    "linkclicks##title##8311",
+    "metricdefinition##title##1451"
+  ],
+  "meta:descriptionId": [
+    "linkclicks##description##64691",
+    "metricdefinition##description##34591"
+  ],
   "meta:xdmType": "object",
   "properties": {
     "_id": {
@@ -17,6 +25,10 @@
       "format": "uri-reference",
       "const": "xdm:linkClicks",
       "description": "The unique identifier of this metric.",
+      "meta:descriptionId": [
+        "linkclicks##@id##description##16551",
+        "metricdefinition##@id##description##54541"
+      ],
       "meta:xdmType": "string",
       "meta:xdmField": "@id",
       "tagNumber": 1
@@ -29,6 +41,10 @@
           "type": "string",
           "const": "web metric: linkClicks",
           "description": "The web metric `link-clicks` describes the number of clicks on a link on a web page.",
+          "meta:descriptionId": [
+            "linkclicks##schema:name##description##76701",
+            "metricdefinition##schema:name##description##81811"
+          ],
           "meta:xdmType": "string",
           "meta:xdmField": "schema:name",
           "tagNumber": 1
@@ -43,6 +59,10 @@
       "type": "string",
       "description": "How to take measures of this metric.",
       "const": "count",
+      "meta:descriptionId": [
+        "linkclicks##xdm:measurement##description##14551",
+        "metricdefinition##xdm:measurement##description##90861"
+      ],
       "meta:xdmType": "string",
       "examples": [
         "distance",
@@ -63,6 +83,7 @@
         "s",
         "USD"
       ],
+      "meta:descriptionId": "metricdefinition##xdm:unit##description##50321",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:unit",
       "tagNumber": 4

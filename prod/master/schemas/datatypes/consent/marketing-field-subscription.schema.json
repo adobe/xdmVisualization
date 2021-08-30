@@ -8,6 +8,8 @@
   "meta:abstract": true,
   "meta:status": "stable",
   "meta:createdDate": "2021-03-19",
+  "meta:titleId": "marketing-preference-with-subscriptions##title##44311",
+  "meta:descriptionId": "marketing-preference-with-subscriptions##description##58821",
   "meta:xdmType": "object",
   "properties": {
     "val": {
@@ -27,6 +29,8 @@
         "VI",
         "PI"
       ],
+      "meta:titleId": "consents-and-preferences##choice-value##title##90081",
+      "meta:descriptionId": "consents-and-preferences##choice-value##description##60451",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:val",
       "tagNumber": 1
@@ -36,6 +40,8 @@
       "description": "Date and time this specific preference was collected. This value should conform to ISO 8601 standard. An example form is \"2004-10-23T12:00:00-06:00\".",
       "type": "string",
       "format": "date-time",
+      "meta:titleId": "consents-and-preferences##timestamp##title##24101",
+      "meta:descriptionId": "consents-and-preferences##timestamp##description##75121",
       "meta:xdmType": "date-time",
       "meta:xdmField": "xdm:time",
       "tagNumber": 2
@@ -45,6 +51,8 @@
       "type": "string",
       "description": "Reason for opting out",
       "maxLength": 16,
+      "meta:titleId": "consents-and-preferences##reason##title##68311",
+      "meta:descriptionId": "consents-and-preferences##reason##description##82931",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:reason",
       "tagNumber": 3
@@ -54,6 +62,8 @@
       "description": "A set of notifications, newsletters, etc. to which the user subscribes",
       "type": "object",
       "meta:xdmType": "map",
+      "meta:titleId": "consents-and-preferences##subscriptions##title##6111",
+      "meta:descriptionId": "consents-and-preferences##subscriptions##description##94861",
       "meta:xdmField": "xdm:subscriptions",
       "tagNumber": 4,
       "properties": {
@@ -61,6 +71,8 @@
           "type": "object",
           "title": "Subscription",
           "description": "The name or identifier of the specific subscription",
+          "meta:titleId": "consents-and-preferences##additionalProperties##title##27621",
+          "meta:descriptionId": "consents-and-preferences##additionalProperties##description##23971",
           "meta:xdmType": "object",
           "properties": {
             "val": {
@@ -80,6 +92,8 @@
                 "VI",
                 "PI"
               ],
+              "meta:titleId": "consents-and-preferences##choice-value##title##90081",
+              "meta:descriptionId": "consents-and-preferences##choice-value##description##60451",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:val",
               "tagNumber": 1
@@ -89,6 +103,8 @@
               "description": "The type of subscription",
               "type": "string",
               "maxLength": 15,
+              "meta:titleId": "consents-and-preferences##xdm:type##title##38651",
+              "meta:descriptionId": "consents-and-preferences##xdm:type##description##33851",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:type",
               "tagNumber": 2
@@ -98,6 +114,8 @@
               "description": "The set of identifiers (email addresses, phone numbers, etc.) for this user who have subscribed",
               "type": "object",
               "meta:xdmType": "map",
+              "meta:titleId": "consents-and-preferences##xdm:subscribers##title##52041",
+              "meta:descriptionId": "consents-and-preferences##xdm:subscribers##description##53051",
               "meta:xdmField": "xdm:subscribers",
               "tagNumber": 3,
               "properties": {
@@ -105,6 +123,8 @@
                   "type": "object",
                   "title": "Subscriber",
                   "description": "The specific identifier (email addresses, phone numbers, etc.) for this subscriber",
+                  "meta:titleId": "consents-and-preferences##additionalProperties##title##4951",
+                  "meta:descriptionId": "consents-and-preferences##additionalProperties##description##12551",
                   "meta:xdmType": "object",
                   "properties": {
                     "time": {
@@ -112,6 +132,8 @@
                       "description": "Date and time this specific preference was collected. This value should conform to ISO 8601 standard. An example form is \"2004-10-23T12:00:00-06:00\".",
                       "type": "string",
                       "format": "date-time",
+                      "meta:titleId": "consents-and-preferences##timestamp##title##24101",
+                      "meta:descriptionId": "consents-and-preferences##timestamp##description##75121",
                       "meta:xdmType": "date-time",
                       "meta:xdmField": "xdm:time",
                       "tagNumber": 1
@@ -121,6 +143,8 @@
                       "description": "Through which interface did the user provide this preference value",
                       "type": "string",
                       "maxLength": 15,
+                      "meta:titleId": "consents-and-preferences##source##title##48791",
+                      "meta:descriptionId": "consents-and-preferences##source##description##65211",
                       "meta:xdmType": "string",
                       "meta:xdmField": "xdm:source",
                       "tagNumber": 2

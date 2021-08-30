@@ -15,6 +15,18 @@
     "stable",
     "experimental"
   ],
+  "meta:titleId": [
+    "opportunity-contact-role##title##24991",
+    "record##title##92641",
+    "external-source-system-audit-details##title##25871",
+    "opportunity-contact-role-details##title##35201"
+  ],
+  "meta:descriptionId": [
+    "opportunity-contact-role##description##90011",
+    "record##description##41201",
+    "external-source-system-audit-details##description##77561",
+    "opportunity-contact-role-details##description##92681"
+  ],
   "meta:createdDate": [
     "2020-08-10",
     "2020-08-18"
@@ -25,6 +37,8 @@
       "type": "string",
       "format": "uri-reference",
       "description": "A unique identifier for the record.",
+      "meta:titleId": "record##@id##title##80061",
+      "meta:descriptionId": "record##@id##description##41711",
       "meta:xdmType": "string",
       "meta:xdmField": "@id",
       "tagNumber": 1
@@ -33,6 +47,8 @@
       "title": "opportunity ContactID",
       "description": "A Unique Key describing a combination of OpportunityID and contactID.",
       "type": "string",
+      "meta:titleId": "opportunity-contact-role##xdm:opportunityContactID##title##87441",
+      "meta:descriptionId": "opportunity-contact-role##xdm:opportunityContactID##description##4871",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:opportunityContactID",
       "tagNumber": 2
@@ -41,6 +57,8 @@
       "title": "Opportunity ID",
       "description": "Opportunity ID unique identifier.",
       "type": "string",
+      "meta:titleId": "opportunity-contact-role##xdm:opportunityID##title##53351",
+      "meta:descriptionId": "opportunity-contact-role##xdm:opportunityID##description##30991",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:opportunityID",
       "tagNumber": 3
@@ -49,6 +67,8 @@
       "title": "Contact ID",
       "description": "Contact ID unique identifier.",
       "type": "string",
+      "meta:titleId": "opportunity-contact-role##xdm:contactID##title##53821",
+      "meta:descriptionId": "opportunity-contact-role##xdm:contactID##description##90501",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:contactID",
       "tagNumber": 4
@@ -57,6 +77,8 @@
       "title": "External Source System Audit Properties",
       "$ref": "../datatypes/auditing/external-source-system-audit.schema.json",
       "description": "Audit attributes for external sources.",
+      "meta:titleId": "external-source-system-audit-details##xdm:extSourceSystemAudit##title##65301",
+      "meta:descriptionId": "external-source-system-audit-details##xdm:extSourceSystemAudit##description##99451",
       "meta:xdmField": "xdm:extSourceSystemAudit",
       "tagNumber": 5
     },
@@ -64,6 +86,8 @@
       "title": "Contact Role ID",
       "description": "Contact role unique identifier.",
       "type": "string",
+      "meta:titleId": "opportunity-contact-role-details##xdm:roleID##title##87281",
+      "meta:descriptionId": "opportunity-contact-role-details##xdm:roleID##description##7741",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:roleID",
       "tagNumber": 6
@@ -72,6 +96,8 @@
       "title": "Opportunity Contact Role",
       "description": "Role of the opportunity contact like finance , sales .",
       "type": "string",
+      "meta:titleId": "opportunity-contact-role-details##xdm:opportunityContactRole##title##72451",
+      "meta:descriptionId": "opportunity-contact-role-details##xdm:opportunityContactRole##description##991",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:opportunityContactRole",
       "tagNumber": 7
@@ -80,6 +106,8 @@
       "title": "Primary Flag",
       "description": "A flag to signify that this is the primary opportunity contact",
       "type": "boolean",
+      "meta:titleId": "opportunity-contact-role-details##xdm:isPrimary##title##27681",
+      "meta:descriptionId": "opportunity-contact-role-details##xdm:isPrimary##description##25371",
       "meta:xdmType": "boolean",
       "meta:xdmField": "xdm:isPrimary",
       "tagNumber": 8
@@ -88,6 +116,8 @@
       "title": "Deleted Flag",
       "description": "A flag to signify that this opportunity is in deleted state.",
       "type": "boolean",
+      "meta:titleId": "opportunity-contact-role-details##xdm:isDeleted##title##99321",
+      "meta:descriptionId": "opportunity-contact-role-details##xdm:isDeleted##description##45571",
       "meta:xdmType": "boolean",
       "meta:xdmField": "xdm:isDeleted",
       "tagNumber": 9

@@ -7,12 +7,16 @@
   "description": "Used when any application process is started, such as financing, limit changes, or educational programs.",
   "meta:status": "stable",
   "meta:createdDate": "2021-02-19",
+  "meta:titleId": "form-applications##title##97791",
+  "meta:descriptionId": "form-applications##description##20691",
   "meta:xdmType": "object",
   "properties": {
     "approved": {
       "title": "Form Application Approved",
       "$ref": "../data/measure.schema.json",
       "description": "Captured when a visitor application has been approved.",
+      "meta:titleId": "form-applications##xdm:approved##title##5081",
+      "meta:descriptionId": "form-applications##xdm:approved##description##98311",
       "meta:xdmField": "xdm:approved",
       "tagNumber": 1
     },
@@ -20,6 +24,8 @@
       "title": "Form Application Declined",
       "$ref": "../data/measure.schema.json",
       "description": "Captured when a visitor application has been declined.",
+      "meta:titleId": "form-applications##xdm:declined##title##31021",
+      "meta:descriptionId": "form-applications##xdm:declined##description##59081",
       "meta:xdmField": "xdm:declined",
       "tagNumber": 2
     },
@@ -27,6 +33,8 @@
       "title": "Application Fee",
       "$ref": "transaction.schema.json",
       "description": "Extension of Transaction Data Type",
+      "meta:titleId": "form-applications##xdm:applicationFee##title##4031",
+      "meta:descriptionId": "form-applications##xdm:applicationFee##description##31971",
       "meta:xdmField": "xdm:applicationFee",
       "tagNumber": 3
     },
@@ -34,6 +42,8 @@
       "title": "ID",
       "type": "string",
       "description": "Identifier used during an application process.",
+      "meta:titleId": "form-applications##xdm:ID##title##9171",
+      "meta:descriptionId": "form-applications##xdm:ID##description##96761",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:ID",
       "tagNumber": 4
@@ -42,6 +52,8 @@
       "title": "Requested Amount",
       "$ref": "../currency.schema.json",
       "description": "Tracks the monetary value of the application.",
+      "meta:titleId": "form-applications##xdm:requestedAmount##title##61941",
+      "meta:descriptionId": "form-applications##xdm:requestedAmount##description##88441",
       "meta:xdmField": "xdm:requestedAmount",
       "tagNumber": 5
     },
@@ -55,6 +67,8 @@
         "declined"
       ],
       "description": "Captures the status of the application for any given point in the application process.",
+      "meta:titleId": "form-applications##xdm:status##title##64281",
+      "meta:descriptionId": "form-applications##xdm:status##description##61941",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:status",
       "tagNumber": 6
@@ -63,6 +77,8 @@
       "title": "Status Update",
       "type": "string",
       "description": "Captured when the status for an application changes, either from an online or offline update.",
+      "meta:titleId": "form-applications##xdm:statusUpdate##title##64011",
+      "meta:descriptionId": "form-applications##xdm:statusUpdate##description##40361",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:statusUpdate",
       "tagNumber": 7
@@ -71,6 +87,8 @@
       "title": "Type",
       "type": "string",
       "description": "Type of the application process.",
+      "meta:titleId": "form-applications##xdm:type##title##61951",
+      "meta:descriptionId": "form-applications##xdm:type##description##48251",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:type",
       "tagNumber": 8
@@ -79,6 +97,8 @@
       "title": "Under Review",
       "type": "boolean",
       "description": "Captured when a visitor application has been placed under review.",
+      "meta:titleId": "form-applications##xdm:underReview##title##22181",
+      "meta:descriptionId": "form-applications##xdm:underReview##description##70601",
       "meta:xdmType": "boolean",
       "meta:xdmField": "xdm:underReview",
       "tagNumber": 9

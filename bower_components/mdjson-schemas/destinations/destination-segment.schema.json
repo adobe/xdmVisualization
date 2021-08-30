@@ -13,6 +13,14 @@
   ],
   "description": "Destinations Segment Mapping Schema.",
   "meta:status": "stable",
+  "meta:titleId": [
+    "destination-segment##title##7691",
+    "record##title##92641"
+  ],
+  "meta:descriptionId": [
+    "destination-segment##description##7881",
+    "record##description##41201"
+  ],
   "meta:xdmType": "object",
   "meta:createdDate": "2020-08-10",
   "properties": {
@@ -21,6 +29,8 @@
       "type": "string",
       "format": "uri-reference",
       "description": "A unique identifier for the record.",
+      "meta:titleId": "record##@id##title##80061",
+      "meta:descriptionId": "record##@id##description##41711",
       "meta:xdmType": "string",
       "meta:xdmField": "@id",
       "tagNumber": 1
@@ -29,6 +39,8 @@
       "title": "Destination ID",
       "type": "string",
       "description": "Unique Identifier for a destination instance",
+      "meta:titleId": "destination-segment##xdm:destinationID##title##59861",
+      "meta:descriptionId": "destination-segment##xdm:destinationID##description##95031",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:destinationID",
       "tagNumber": 2
@@ -37,6 +49,8 @@
       "title": "Segment ID",
       "type": "string",
       "description": "Identity of the segment in the related namespace",
+      "meta:titleId": "destination-segment##xdm:segmentID##title##46691",
+      "meta:descriptionId": "destination-segment##xdm:segmentID##description##50261",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:segmentID",
       "tagNumber": 3
@@ -45,6 +59,8 @@
       "title": "Segment Namespace",
       "type": "string",
       "description": "Namespace to which the segment belongs",
+      "meta:titleId": "destination-segment##xdm:segmentNamespace##title##82451",
+      "meta:descriptionId": "destination-segment##xdm:segmentNamespace##description##661",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:segmentNamespace",
       "tagNumber": 4
@@ -54,6 +70,8 @@
       "type": "string",
       "format": "date-time",
       "description": "The date and UTC time when the activation flow to the destination-segment mapping was createdByID",
+      "meta:titleId": "destination-segment##xdm:createTime##title##45221",
+      "meta:descriptionId": "destination-segment##xdm:createTime##description##90341",
       "meta:xdmType": "date-time",
       "meta:xdmField": "xdm:createTime",
       "tagNumber": 5
@@ -62,6 +80,8 @@
       "title": "Created User ID",
       "type": "string",
       "description": "ID of user who created the destination flow",
+      "meta:titleId": "destination-segment##xdm:createdByID##title##83021",
+      "meta:descriptionId": "destination-segment##xdm:createdByID##description##2691",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:createdByID",
       "tagNumber": 6

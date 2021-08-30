@@ -17,6 +17,20 @@
     "2020-09-29",
     "2020-08-10"
   ],
+  "meta:titleId": [
+    "campaign##title##74201",
+    "external-source-system-audit-details##title##25871",
+    "record##title##92641",
+    "campaign-components##title##42811",
+    "campaign-details##title##59651"
+  ],
+  "meta:descriptionId": [
+    "campaign##description##71341",
+    "external-source-system-audit-details##description##77561",
+    "record##description##41201",
+    "campaign-components##description##36571",
+    "campaign-details##description##29641"
+  ],
   "meta:tags": {
     "b2bSchema": true
   },
@@ -25,6 +39,8 @@
       "title": "External Source System Audit Properties",
       "$ref": "../datatypes/auditing/external-source-system-audit.schema.json",
       "description": "Audit attributes for external sources.",
+      "meta:titleId": "external-source-system-audit-details##xdm:extSourceSystemAudit##title##65301",
+      "meta:descriptionId": "external-source-system-audit-details##xdm:extSourceSystemAudit##description##99451",
       "meta:xdmField": "xdm:extSourceSystemAudit",
       "tagNumber": 1
     },
@@ -33,6 +49,8 @@
       "type": "string",
       "format": "uri-reference",
       "description": "A unique identifier for the record.",
+      "meta:titleId": "record##@id##title##80061",
+      "meta:descriptionId": "record##@id##description##41711",
       "meta:xdmType": "string",
       "meta:xdmField": "@id",
       "tagNumber": 2
@@ -41,6 +59,8 @@
       "title": "Campaign ID",
       "description": "Unique identifer for campaign.",
       "type": "string",
+      "meta:titleId": "campaign##xdm:campaignID##title##8671",
+      "meta:descriptionId": "campaign##xdm:campaignID##description##3621",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:campaignID",
       "tagNumber": 3
@@ -49,6 +69,8 @@
       "title": "Campaign Key",
       "description": "Unique composite identifier of the Campaign.",
       "$ref": "../datatypes/b2b/b2b-source.schema.json",
+      "meta:titleId": "campaign##xdm:campaignKey##title##84181",
+      "meta:descriptionId": "campaign##xdm:campaignKey##description##71261",
       "meta:xdmField": "xdm:campaignKey",
       "tagNumber": 4
     },
@@ -56,6 +78,8 @@
       "title": "Campaign Name",
       "description": "Friendly name for campaign.",
       "type": "string",
+      "meta:titleId": "campaign##xdm:campaignName##title##69701",
+      "meta:descriptionId": "campaign##xdm:campaignName##description##30651",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:campaignName",
       "tagNumber": 5
@@ -64,6 +88,8 @@
       "title": "Campaign Type",
       "description": "The type of campaign for which audience gets selected.",
       "type": "string",
+      "meta:titleId": "campaign##xdm:campaignType##title##85141",
+      "meta:descriptionId": "campaign##xdm:campaignType##description##99541",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:campaignType",
       "tagNumber": 6
@@ -72,6 +98,8 @@
       "title": "Campaign Description",
       "description": "Campaign description.",
       "type": "string",
+      "meta:titleId": "campaign##xdm:campaignDescription##title##30061",
+      "meta:descriptionId": "campaign##xdm:campaignDescription##description##45101",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:campaignDescription",
       "tagNumber": 7
@@ -82,13 +110,15 @@
       "meta:xdmField": "xdm:campaignComponents",
       "tagNumber": 8,
       "items": {
-        "$ref": "obj6977522538984942.schema.json"
+        "$ref": "obj486315539936349.schema.json"
       }
     },
     "parentCampaignID": {
       "title": "Parent Campaign ID",
       "description": "Member type and associated reference ID.",
       "type": "string",
+      "meta:titleId": "campaign-details##xdm:parentCampaignID##title##99081",
+      "meta:descriptionId": "campaign-details##xdm:parentCampaignID##description##19811",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:parentCampaignID",
       "tagNumber": 9
@@ -97,6 +127,8 @@
       "title": "Parent Campaign Key",
       "description": "Unique composite identifier of the Parent Campaign of the campaign, used to show hierarchies.",
       "$ref": "../datatypes/b2b/b2b-source.schema.json",
+      "meta:titleId": "campaign-details##xdm:parentCampaignKey##title##86551",
+      "meta:descriptionId": "campaign-details##xdm:parentCampaignKey##description##35571",
       "meta:xdmField": "xdm:parentCampaignKey",
       "tagNumber": 10
     },
@@ -104,6 +136,8 @@
       "title": "Campaign Status",
       "description": "",
       "type": "string",
+      "meta:titleId": "campaign-details##xdm:campaignStatus##title##90511",
+      "meta:descriptionId": "campaign-details##xdm:campaignStatus##description##66471",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:campaignStatus",
       "tagNumber": 11
@@ -112,6 +146,8 @@
       "title": "Campaign Progression Name",
       "description": "",
       "type": "string",
+      "meta:titleId": "campaign-details##xdm:campaignProgressionName##title##88361",
+      "meta:descriptionId": "campaign-details##xdm:campaignProgressionName##description##84981",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:campaignProgressionName",
       "tagNumber": 12
@@ -120,6 +156,8 @@
       "title": "Integration Partner Name",
       "description": "",
       "type": "string",
+      "meta:titleId": "campaign-details##xdm:integrationPartnerName##title##42061",
+      "meta:descriptionId": "campaign-details##xdm:integrationPartnerName##description##88461",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:integrationPartnerName",
       "tagNumber": 13
@@ -128,6 +166,8 @@
       "title": "Channel Name",
       "description": "",
       "type": "string",
+      "meta:titleId": "campaign-details##xdm:channelName##title##62921",
+      "meta:descriptionId": "campaign-details##xdm:channelName##description##23881",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:channelName",
       "tagNumber": 14
@@ -137,6 +177,8 @@
       "description": "",
       "type": "string",
       "format": "date-time",
+      "meta:titleId": "campaign-details##xdm:campaignStartDate##title##17301",
+      "meta:descriptionId": "campaign-details##xdm:campaignStartDate##description##90811",
       "meta:xdmType": "date-time",
       "meta:xdmField": "xdm:campaignStartDate",
       "tagNumber": 15
@@ -146,6 +188,8 @@
       "description": "",
       "type": "string",
       "format": "date-time",
+      "meta:titleId": "campaign-details##xdm:campaignEndDate##title##82141",
+      "meta:descriptionId": "campaign-details##xdm:campaignEndDate##description##63681",
       "meta:xdmType": "date-time",
       "meta:xdmField": "xdm:campaignEndDate",
       "tagNumber": 16
@@ -154,6 +198,8 @@
       "title": "Timezone",
       "description": "",
       "type": "string",
+      "meta:titleId": "campaign-details##xdm:timeZone##title##76541",
+      "meta:descriptionId": "campaign-details##xdm:timeZone##description##24781",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:timeZone",
       "tagNumber": 17
@@ -162,6 +208,8 @@
       "title": "Timezone Name",
       "description": "",
       "type": "string",
+      "meta:titleId": "campaign-details##xdm:timezoneName##title##17481",
+      "meta:descriptionId": "campaign-details##xdm:timezoneName##description##65901",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:timezoneName",
       "tagNumber": 18
@@ -170,6 +218,8 @@
       "title": "TimeZone Delivery",
       "description": "",
       "type": "string",
+      "meta:titleId": "campaign-details##xdm:timeZoneDelivery##title##13141",
+      "meta:descriptionId": "campaign-details##xdm:timeZoneDelivery##description##32581",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:timeZoneDelivery",
       "tagNumber": 19
@@ -178,6 +228,8 @@
       "title": "Webinar Session Name",
       "description": "",
       "type": "string",
+      "meta:titleId": "campaign-details##xdm:webinarSessionName##title##31651",
+      "meta:descriptionId": "campaign-details##xdm:webinarSessionName##description##59641",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:webinarSessionName",
       "tagNumber": 20
@@ -186,6 +238,8 @@
       "title": "Webinar Session Description",
       "description": "",
       "type": "string",
+      "meta:titleId": "campaign-details##xdm:webinarSessionDescription##title##20961",
+      "meta:descriptionId": "campaign-details##xdm:webinarSessionDescription##description##37541",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:webinarSessionDescription",
       "tagNumber": 21
@@ -194,6 +248,8 @@
       "title": "Webinar History Sync Status",
       "description": "",
       "type": "string",
+      "meta:titleId": "campaign-details##xdm:webinarHistorySyncStatus##title##26291",
+      "meta:descriptionId": "campaign-details##xdm:webinarHistorySyncStatus##description##8891",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:webinarHistorySyncStatus",
       "tagNumber": 22
@@ -203,6 +259,8 @@
       "description": "",
       "type": "string",
       "format": "date-time",
+      "meta:titleId": "campaign-details##xdm:webinarHistorySyncDate##title##10731",
+      "meta:descriptionId": "campaign-details##xdm:webinarHistorySyncDate##description##78291",
       "meta:xdmType": "date-time",
       "meta:xdmField": "xdm:webinarHistorySyncDate",
       "tagNumber": 23
@@ -211,6 +269,8 @@
       "title": "Is Active",
       "description": "",
       "type": "boolean",
+      "meta:titleId": "campaign-details##xdm:isActive##title##71571",
+      "meta:descriptionId": "campaign-details##xdm:isActive##description##17631",
       "meta:xdmType": "boolean",
       "meta:xdmField": "xdm:isActive",
       "tagNumber": 24
@@ -220,6 +280,8 @@
       "description": "",
       "type": "string",
       "format": "date-time",
+      "meta:titleId": "campaign-details##xdm:lastActivityDate##title##61621",
+      "meta:descriptionId": "campaign-details##xdm:lastActivityDate##description##45971",
       "meta:xdmType": "date-time",
       "meta:xdmField": "xdm:lastActivityDate",
       "tagNumber": 25
@@ -228,6 +290,8 @@
       "title": "Expected Response",
       "description": "",
       "type": "string",
+      "meta:titleId": "campaign-details##xdm:expectedResponse##title##8871",
+      "meta:descriptionId": "campaign-details##xdm:expectedResponse##description##17661",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:expectedResponse",
       "tagNumber": 26
@@ -236,6 +300,8 @@
       "title": "Expected Revenue",
       "description": "",
       "$ref": "../datatypes/currency.schema.json",
+      "meta:titleId": "campaign-details##xdm:expectedRevenue##title##13461",
+      "meta:descriptionId": "campaign-details##xdm:expectedRevenue##description##63431",
       "meta:xdmField": "xdm:expectedRevenue",
       "tagNumber": 27
     },
@@ -243,6 +309,8 @@
       "title": "Budgeted Cost",
       "description": "",
       "$ref": "../datatypes/currency.schema.json",
+      "meta:titleId": "campaign-details##xdm:budgetedCost##title##75541",
+      "meta:descriptionId": "campaign-details##xdm:budgetedCost##description##36371",
       "meta:xdmField": "xdm:budgetedCost",
       "tagNumber": 28
     },
@@ -250,6 +318,8 @@
       "title": "Actual Cost",
       "description": "",
       "$ref": "../datatypes/currency.schema.json",
+      "meta:titleId": "campaign-details##xdm:actualCost##title##65611",
+      "meta:descriptionId": "campaign-details##xdm:actualCost##description##67921",
       "meta:xdmField": "xdm:actualCost",
       "tagNumber": 29
     }

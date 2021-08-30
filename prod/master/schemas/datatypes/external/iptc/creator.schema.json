@@ -6,6 +6,8 @@
   "description": "The creator of the show. Based on [www.iptc.org](https://www.iptc.org/std/videometadatahub/recommendation/pre-versions/IPTC-VideoMetadataHub-props-Rec_1.1.html)",
   "meta:status": "stable",
   "meta:createdDate": "2020-08-10",
+  "meta:titleId": "creator##title##87881",
+  "meta:descriptionId": "creator##description##6201",
   "meta:xdmType": "object",
   "properties": {
     "_iptc4xmpExt": {
@@ -16,6 +18,8 @@
           "title": "Creator Name",
           "type": "string",
           "description": "Full name of the Creator.",
+          "meta:titleId": "creator##iptc4xmpExt:Name##title##35641",
+          "meta:descriptionId": "creator##iptc4xmpExt:Name##description##4271",
           "meta:xdmType": "string",
           "meta:xdmField": "iptc4xmpExt:Name",
           "tagNumber": 1

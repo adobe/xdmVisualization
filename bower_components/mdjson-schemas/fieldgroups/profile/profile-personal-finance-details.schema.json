@@ -13,17 +13,22 @@
   "description": "Personal finance details such as financial account details, credit score, and tax bracket.",
   "meta:status": "stable",
   "meta:createdDate": "2021-03-23",
+  "meta:titleId": "profile-personal-finance-details##title##20221",
+  "meta:descriptionId": "profile-personal-finance-details##description##87231",
   "meta:xdmType": "object",
   "properties": {
     "personalFinances": {
       "type": "object",
       "description": "Financial details including transactions, accounts, and applications.",
+      "meta:descriptionId": "profile-personal-finance-details##xdm:personalFinances##description##25341",
       "meta:xdmType": "object",
       "properties": {
         "accountCardsTotal": {
           "title": "Account Cards Total",
           "type": "integer",
           "description": "Total number of account (financial) cards assigned to a user.",
+          "meta:titleId": "profile-personal-finance-details##xdm:accountCardsTotal##title##51671",
+          "meta:descriptionId": "profile-personal-finance-details##xdm:accountCardsTotal##description##56921",
           "meta:xdmType": "int",
           "meta:xdmField": "xdm:accountCardsTotal",
           "tagNumber": 1
@@ -32,6 +37,8 @@
           "title": "Assigned Beneficiaries",
           "type": "array",
           "description": "Captures the beneficiary(s) assigned to the account.",
+          "meta:titleId": "profile-personal-finance-details##xdm:assignedBeneficiary##title##94741",
+          "meta:descriptionId": "profile-personal-finance-details##xdm:assignedBeneficiary##description##5111",
           "meta:xdmType": "array",
           "items": {
             "$ref": "profile-person-details.schema.json",
@@ -46,13 +53,15 @@
           "meta:xdmField": "xdm:creditScores",
           "tagNumber": 3,
           "items": {
-            "$ref": "obj04457239290895121.schema.json"
+            "$ref": "obj9019726155095864.schema.json"
           }
         },
         "employmentStatus": {
           "title": "Employment Status",
           "type": "string",
           "description": "Tracks the employment status of the user.",
+          "meta:titleId": "profile-personal-finance-details##xdm:employmentStatus##title##17531",
+          "meta:descriptionId": "profile-personal-finance-details##xdm:employmentStatus##description##64991",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:employmentStatus",
           "tagNumber": 4
@@ -61,6 +70,8 @@
           "title": "ID",
           "type": "array",
           "description": "Array of financial account IDs assigned to the user.",
+          "meta:titleId": "profile-personal-finance-details##xdm:ID##title##16091",
+          "meta:descriptionId": "profile-personal-finance-details##xdm:ID##description##52031",
           "meta:xdmType": "array",
           "items": {
             "type": "string",
@@ -74,6 +85,8 @@
           "title": "Has Assigned Beneficiary",
           "type": "boolean",
           "description": "Flag determining if the account has a beneficiary assigned.",
+          "meta:titleId": "profile-personal-finance-details##xdm:hasAssignedBeneficiary##title##34681",
+          "meta:descriptionId": "profile-personal-finance-details##xdm:hasAssignedBeneficiary##description##93121",
           "meta:xdmType": "boolean",
           "meta:xdmField": "xdm:hasAssignedBeneficiary",
           "tagNumber": 6

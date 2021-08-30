@@ -14,6 +14,14 @@
     ]
   },
   "meta:createdDate": "2020-08-10",
+  "meta:titleId": [
+    "identitymap##title##68521",
+    "record##title##92641"
+  ],
+  "meta:descriptionId": [
+    "identitymap##description##9091",
+    "record##description##41201"
+  ],
   "properties": {
     "_experience": {
       "type": "object",
@@ -80,6 +88,8 @@
       "type": "string",
       "format": "uri-reference",
       "description": "A unique identifier for the record.",
+      "meta:titleId": "record##@id##title##80061",
+      "meta:descriptionId": "record##@id##description##41711",
       "meta:xdmType": "string",
       "meta:xdmField": "@id",
       "tagNumber": 3

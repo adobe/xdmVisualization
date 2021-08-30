@@ -8,12 +8,16 @@
   "description": "Phone number such as fax, mobile, home, and work.",
   "meta:status": "experimental",
   "meta:createdDate": "2020-08-10",
+  "meta:titleId": "profile-phones##title##98711",
+  "meta:descriptionId": "profile-phones##description##94091",
   "meta:xdmType": "object",
   "properties": {
     "homePhone": {
       "title": "Home Phone",
       "$ref": "../../datatypes/demographic/phonenumber.schema.json",
       "description": "Home phone number.",
+      "meta:titleId": "profile-phones##xdm:homePhone##title##39041",
+      "meta:descriptionId": "profile-phones##xdm:homePhone##description##17311",
       "meta:xdmField": "xdm:homePhone",
       "tagNumber": 1
     },
@@ -21,6 +25,8 @@
       "title": "Mobile Phone",
       "$ref": "../../datatypes/demographic/phonenumber.schema.json",
       "description": "Mobile phone number.",
+      "meta:titleId": "profile-phones##xdm:mobilePhone##title##38131",
+      "meta:descriptionId": "profile-phones##xdm:mobilePhone##description##47751",
       "meta:xdmField": "xdm:mobilePhone",
       "tagNumber": 2
     },
@@ -28,6 +34,8 @@
       "title": "Work Phone",
       "$ref": "../../datatypes/demographic/phonenumber.schema.json",
       "description": "Work phone number.",
+      "meta:titleId": "profile-phones##xdm:workPhone##title##73271",
+      "meta:descriptionId": "profile-phones##xdm:workPhone##description##68171",
       "meta:xdmField": "xdm:workPhone",
       "tagNumber": 3
     },
@@ -35,6 +43,8 @@
       "title": "Fax Phone",
       "$ref": "../../datatypes/demographic/phonenumber.schema.json",
       "description": "Fax phone number.",
+      "meta:titleId": "profile-phones##xdm:faxPhone##title##1481",
+      "meta:descriptionId": "profile-phones##xdm:faxPhone##description##81301",
       "meta:xdmField": "xdm:faxPhone",
       "tagNumber": 4
     }

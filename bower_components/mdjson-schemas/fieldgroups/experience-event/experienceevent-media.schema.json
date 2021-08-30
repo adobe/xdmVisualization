@@ -13,12 +13,16 @@
   "description": "Track interactions with media such as progress (how much was consumed), total time played, timing of any pauses, and number of media completions.",
   "meta:status": "stable",
   "meta:createdDate": "2020-08-10",
+  "meta:titleId": "experienceevent-media##title##33101",
+  "meta:descriptionId": "experienceevent-media##description##62331",
   "meta:xdmType": "object",
   "properties": {
     "media": {
       "title": "Media",
       "$ref": "../../datatypes/media.schema.json",
       "description": "Media activity information related to the experience event.",
+      "meta:titleId": "experienceevent-media##xdm:media##title##121",
+      "meta:descriptionId": "experienceevent-media##xdm:media##description##53531",
       "meta:xdmField": "xdm:media",
       "tagNumber": 1
     }

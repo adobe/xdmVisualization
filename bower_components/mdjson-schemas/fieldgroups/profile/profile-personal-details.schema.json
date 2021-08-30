@@ -13,12 +13,16 @@
   "description": "Contact information for an individual person such as home address, phone number, fax, and email.",
   "meta:status": "stable",
   "meta:createdDate": "2020-08-10",
+  "meta:titleId": "profile-personal-details##title##33531",
+  "meta:descriptionId": "profile-personal-details##description##98991",
   "meta:xdmType": "object",
   "properties": {
     "homeAddress": {
       "title": "Home address",
       "$ref": "../../datatypes/demographic/address.schema.json",
       "description": "A home postal address.",
+      "meta:titleId": "profile-personal-details##xdm:homeAddress##title##49571",
+      "meta:descriptionId": "profile-personal-details##xdm:homeAddress##description##66611",
       "meta:xdmField": "xdm:homeAddress",
       "tagNumber": 1
     },
@@ -26,6 +30,8 @@
       "title": "Personal email",
       "$ref": "../../datatypes/demographic/emailaddress.schema.json",
       "description": "A personal email address.",
+      "meta:titleId": "profile-personal-details##xdm:personalEmail##title##64121",
+      "meta:descriptionId": "profile-personal-details##xdm:personalEmail##description##25801",
       "meta:xdmField": "xdm:personalEmail",
       "tagNumber": 2
     },
@@ -33,6 +39,8 @@
       "title": "Home phone",
       "$ref": "../../datatypes/demographic/phonenumber.schema.json",
       "description": "Home phone number.",
+      "meta:titleId": "profile-personal-details##xdm:homePhone##title##21671",
+      "meta:descriptionId": "profile-personal-details##xdm:homePhone##description##23281",
       "meta:xdmField": "xdm:homePhone",
       "tagNumber": 3
     },
@@ -40,6 +48,8 @@
       "title": "Mobile phone",
       "$ref": "../../datatypes/demographic/phonenumber.schema.json",
       "description": "Mobile phone number.",
+      "meta:titleId": "profile-personal-details##xdm:mobilePhone##title##12351",
+      "meta:descriptionId": "profile-personal-details##xdm:mobilePhone##description##89701",
       "meta:xdmField": "xdm:mobilePhone",
       "tagNumber": 4
     },
@@ -47,6 +57,8 @@
       "title": "Fax phone",
       "$ref": "../../datatypes/demographic/phonenumber.schema.json",
       "description": "Fax phone number.",
+      "meta:titleId": "profile-personal-details##xdm:faxPhone##title##96951",
+      "meta:descriptionId": "profile-personal-details##xdm:faxPhone##description##46911",
       "meta:xdmField": "xdm:faxPhone",
       "tagNumber": 5
     }

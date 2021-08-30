@@ -17,11 +17,15 @@
     ]
   },
   "meta:createdDate": "2020-08-10",
+  "meta:titleId": "experienceevent-environment-details##title##14621",
+  "meta:descriptionId": "experienceevent-environment-details##description##15021",
   "properties": {
     "environment": {
       "title": "Environment",
       "$ref": "../../datatypes/environment.schema.json",
       "description": "Information about the surrounding situation the event observation occurred in, specifically detailing transitory information such as the network or software versions.",
+      "meta:titleId": "experienceevent-environment-details##xdm:environment##title##57511",
+      "meta:descriptionId": "experienceevent-environment-details##xdm:environment##description##42621",
       "meta:xdmField": "xdm:environment",
       "tagNumber": 1
     },
@@ -29,6 +33,8 @@
       "title": "Device",
       "$ref": "../../datatypes/device.schema.json",
       "description": "An identified device, application or device browser instance that is trackable across sessions, normally by cookies.",
+      "meta:titleId": "experienceevent-environment-details##xdm:device##title##31301",
+      "meta:descriptionId": "experienceevent-environment-details##xdm:device##description##51671",
       "meta:xdmField": "xdm:device",
       "tagNumber": 2
     },
@@ -36,6 +42,8 @@
       "title": "Place context",
       "$ref": "../../datatypes/placecontext.schema.json",
       "description": "The transient circumstances related to the observation. Examples include locale specific information such as weather, local time, traffic, day of the week, workday vs. holiday, and working hours.",
+      "meta:titleId": "experienceevent-environment-details##xdm:placeContext##title##87021",
+      "meta:descriptionId": "experienceevent-environment-details##xdm:placeContext##description##71741",
       "meta:xdmField": "xdm:placeContext",
       "tagNumber": 3
     },

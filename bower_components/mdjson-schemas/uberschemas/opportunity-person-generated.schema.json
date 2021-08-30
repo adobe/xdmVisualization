@@ -16,6 +16,18 @@
     "stable",
     "deprecated"
   ],
+  "meta:titleId": [
+    "opportunity-person##title##6291",
+    "record##title##92641",
+    "external-source-system-audit-details##title##25871",
+    "opportunity-person-components##title##83201"
+  ],
+  "meta:descriptionId": [
+    "opportunity-person##description##37411",
+    "record##description##41201",
+    "external-source-system-audit-details##description##77561",
+    "opportunity-person-components##description##29871"
+  ],
   "meta:createdDate": [
     "2020-08-10",
     "2020-09-09"
@@ -26,6 +38,8 @@
       "type": "string",
       "format": "uri-reference",
       "description": "A unique identifier for the record.",
+      "meta:titleId": "record##@id##title##80061",
+      "meta:descriptionId": "record##@id##description##41711",
       "meta:xdmType": "string",
       "meta:xdmField": "@id",
       "tagNumber": 1
@@ -34,6 +48,8 @@
       "title": "Opportunity Person ID",
       "description": "Unique identifier for the relationship between the opportunity and the person.",
       "type": "string",
+      "meta:titleId": "opportunity-person##xdm:opportunityPersonID##title##97661",
+      "meta:descriptionId": "opportunity-person##xdm:opportunityPersonID##description##92931",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:opportunityPersonID",
       "tagNumber": 2
@@ -42,6 +58,8 @@
       "title": "Opportunity Person Key",
       "description": "Unique composite identifier of the relationship between the Opportunity and the Person.",
       "$ref": "../datatypes/b2b/b2b-source.schema.json",
+      "meta:titleId": "opportunity-person##xdm:opportunityPersonKey##title##78921",
+      "meta:descriptionId": "opportunity-person##xdm:opportunityPersonKey##description##44901",
       "meta:xdmField": "xdm:opportunityPersonKey",
       "tagNumber": 3
     },
@@ -49,6 +67,8 @@
       "title": "Opportunity ID",
       "description": "Unique identifier for the opportunity in this opportunity person relationship.",
       "type": "string",
+      "meta:titleId": "opportunity-person##xdm:opportunityID##title##32821",
+      "meta:descriptionId": "opportunity-person##xdm:opportunityID##description##6391",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:opportunityID",
       "tagNumber": 4
@@ -57,6 +77,8 @@
       "title": "Opportunity Key",
       "description": "Unique composite identifier of the Opportunity in this opportunity person relationship.",
       "$ref": "../datatypes/b2b/b2b-source.schema.json",
+      "meta:titleId": "opportunity-person##xdm:opportunityKey##title##56041",
+      "meta:descriptionId": "opportunity-person##xdm:opportunityKey##description##36281",
       "meta:xdmField": "xdm:opportunityKey",
       "tagNumber": 5
     },
@@ -64,6 +86,8 @@
       "title": "Person ID",
       "description": "Unique identifier for the person in this opportunity person relationship.",
       "type": "string",
+      "meta:titleId": "opportunity-person##xdm:personID##title##59911",
+      "meta:descriptionId": "opportunity-person##xdm:personID##description##64531",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:personID",
       "tagNumber": 6
@@ -72,6 +96,8 @@
       "title": "Person Key",
       "description": "Unique composite identifier of the Person related to the Opportunity.",
       "$ref": "../datatypes/b2b/b2b-source.schema.json",
+      "meta:titleId": "opportunity-person##xdm:personKey##title##70011",
+      "meta:descriptionId": "opportunity-person##xdm:personKey##description##78081",
       "meta:xdmField": "xdm:personKey",
       "tagNumber": 7
     },
@@ -79,6 +105,8 @@
       "title": "Person Role",
       "description": "Role of the person on this opportunity.",
       "type": "string",
+      "meta:titleId": "opportunity-person##xdm:personRole##title##48341",
+      "meta:descriptionId": "opportunity-person##xdm:personRole##description##10071",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:personRole",
       "tagNumber": 8
@@ -87,6 +115,8 @@
       "title": "Primary Flag",
       "description": "Boolean indicating if the person is the primary contact on this opportunity.",
       "type": "boolean",
+      "meta:titleId": "opportunity-person##xdm:isPrimary##title##30651",
+      "meta:descriptionId": "opportunity-person##xdm:isPrimary##description##53641",
       "meta:xdmType": "boolean",
       "meta:xdmField": "xdm:isPrimary",
       "tagNumber": 9
@@ -95,6 +125,8 @@
       "title": "External Source System Audit Properties",
       "$ref": "../datatypes/auditing/external-source-system-audit.schema.json",
       "description": "Audit attributes for external sources.",
+      "meta:titleId": "external-source-system-audit-details##xdm:extSourceSystemAudit##title##65301",
+      "meta:descriptionId": "external-source-system-audit-details##xdm:extSourceSystemAudit##description##99451",
       "meta:xdmField": "xdm:extSourceSystemAudit",
       "tagNumber": 10
     },
@@ -104,7 +136,7 @@
       "meta:xdmField": "xdm:opportunityPersonComponents",
       "tagNumber": 11,
       "items": {
-        "$ref": "obj9050786961163813.schema.json"
+        "$ref": "obj7791341374492509.schema.json"
       }
     }
   },

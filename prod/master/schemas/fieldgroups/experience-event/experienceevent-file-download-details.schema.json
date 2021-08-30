@@ -23,17 +23,22 @@
   "description": "File download details such as file name, size, and transfer status.",
   "meta:status": "stable",
   "meta:createdDate": "2021-01-13",
+  "meta:titleId": "experienceevent-file-download-details##title##91241",
+  "meta:descriptionId": "experienceevent-file-download-details##description##52631",
   "meta:xdmType": "object",
   "properties": {
     "fileTransfer": {
       "type": "object",
       "description": "Information for file download or file upload activities.",
+      "meta:descriptionId": "experienceevent-file-download-details##xdm:fileTransfer##description##13821",
       "meta:xdmType": "object",
       "properties": {
         "fileDownload": {
           "title": "File Download",
           "$ref": "../../datatypes/industry-verticals/file-transfer.schema.json",
           "description": "Tracks all details of a file download. Extension of file transfer data type.",
+          "meta:titleId": "experienceevent-file-download-details##xdm:fileDownload##title##22131",
+          "meta:descriptionId": "experienceevent-file-download-details##xdm:fileDownload##description##2801",
           "meta:xdmField": "xdm:fileDownload",
           "tagNumber": 1
         }

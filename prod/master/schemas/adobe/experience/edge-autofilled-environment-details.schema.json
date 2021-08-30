@@ -18,6 +18,8 @@
           "type": "string",
           "format": "ipv4",
           "description": "The numerical label assigned to a device participating in a computer network that uses the Internet Protocol for communication. ",
+          "meta:titleId": "environment##xdm:ipV4##title##64201",
+          "meta:descriptionId": "environment##xdm:ipV4##description##36591",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:ipV4",
           "tagNumber": 1
@@ -27,6 +29,8 @@
           "type": "string",
           "format": "ipv6",
           "description": "The numerical label assigned to a device participating in a computer network that uses the Internet Protocol for communication. ",
+          "meta:titleId": "environment##xdm:ipV6##title##11931",
+          "meta:descriptionId": "environment##xdm:ipV6##description##50921",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:ipV6",
           "tagNumber": 2
@@ -37,6 +41,8 @@
               "title": "User agent",
               "type": "string",
               "description": "The HTTP user-agent string from the client request.",
+              "meta:titleId": "browserdetails##xdm:userAgent##title##32821",
+              "meta:descriptionId": "browserdetails##xdm:userAgent##description##17621",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:userAgent",
               "tagNumber": 1
@@ -61,6 +67,8 @@
               "type": "string",
               "pattern": "^[A-Z]{2}$",
               "description": "The two-character [ISO 3166-1 alpha-2](https://datahub.io/core/country-list) code for the country.",
+              "meta:titleId": "geo##xdm:countryCode##title##78101",
+              "meta:descriptionId": "geo##xdm:countryCode##description##01",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:countryCode",
               "tagNumber": 1
@@ -75,6 +83,8 @@
                 "JP-13"
               ],
               "pattern": "([A-Z]{2}-[A-Z0-9]{1,3}|)",
+              "meta:titleId": "geo##xdm:stateProvince##title##58741",
+              "meta:descriptionId": "geo##xdm:stateProvince##description##49971",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:stateProvince",
               "tagNumber": 2
@@ -89,6 +99,8 @@
                   "minimum": -90,
                   "maximum": 90,
                   "description": "The signed vertical coordinate of a geographic point.",
+                  "meta:titleId": "GeoCoordinates##schema:latitude##title##12441",
+                  "meta:descriptionId": "GeoCoordinates##schema:latitude##description##77311",
                   "meta:xdmType": "number",
                   "meta:xdmField": "schema:latitude",
                   "tagNumber": 1
@@ -99,6 +111,8 @@
                   "minimum": -180,
                   "maximum": 180,
                   "description": "The signed horizontal coordinate of a geographic point.",
+                  "meta:titleId": "GeoCoordinates##schema:longitude##title##31911",
+                  "meta:descriptionId": "GeoCoordinates##schema:longitude##description##16551",
                   "meta:xdmType": "number",
                   "meta:xdmField": "schema:longitude",
                   "tagNumber": 2

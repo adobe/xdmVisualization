@@ -7,12 +7,24 @@
   "description": "Number of cart abandons for which a product list has been identified as no longer purchasable or accessible by the user without the user re-creating the product list from scratch.",
   "meta:status": "stable",
   "meta:createdDate": "2020-08-10",
+  "meta:titleId": [
+    "cart-abandons##title##69711",
+    "metricdefinition##title##1451"
+  ],
+  "meta:descriptionId": [
+    "cart-abandons##description##59261",
+    "metricdefinition##description##34591"
+  ],
   "meta:xdmType": "object",
   "properties": {
     "_id": {
       "type": "string",
       "const": "xdm:cartAbandons",
       "description": "The unique identifier of this metric.",
+      "meta:descriptionId": [
+        "cart-abandons##@id##description##53561",
+        "metricdefinition##@id##description##54541"
+      ],
       "meta:xdmType": "string",
       "format": "uri-reference",
       "meta:xdmField": "@id",
@@ -26,6 +38,10 @@
           "type": "string",
           "const": "commerce metric: cartAbandons",
           "description": "The human-readable name of the metric. The name can be used in user interfaces and does not have to be unique.",
+          "meta:descriptionId": [
+            "cart-abandons##schema:name##description##20961",
+            "metricdefinition##schema:name##description##81811"
+          ],
           "meta:xdmType": "string",
           "meta:xdmField": "schema:name",
           "tagNumber": 1
@@ -40,6 +56,10 @@
       "type": "string",
       "description": "How to take measures of this metric.",
       "const": "count",
+      "meta:descriptionId": [
+        "cart-abandons##xdm:measurement##description##35941",
+        "metricdefinition##xdm:measurement##description##90861"
+      ],
       "meta:xdmType": "string",
       "examples": [
         "distance",
@@ -60,6 +80,7 @@
         "s",
         "USD"
       ],
+      "meta:descriptionId": "metricdefinition##xdm:unit##description##50321",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:unit",
       "tagNumber": 4

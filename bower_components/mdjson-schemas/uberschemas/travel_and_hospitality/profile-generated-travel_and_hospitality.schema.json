@@ -54,11 +54,37 @@
     "2021-02-19",
     "2020-11-04"
   ],
+  "meta:titleId": [
+    "profile##title##50051",
+    "auditable##title##48381",
+    "record##title##92641",
+    "profile-consents##title##62311",
+    "profile-loyalty-details##title##84831",
+    "profile-person-details##title##98391",
+    "profile-personal-details##title##33531",
+    "travel-preferences##title##12971",
+    "profile-user-account-details##title##38351",
+    "profile-work-details##title##54111"
+  ],
+  "meta:descriptionId": [
+    "profile##description##93821",
+    "auditable##description##60421",
+    "record##description##41201",
+    "profile-consents##description##82591",
+    "profile-loyalty-details##description##63561",
+    "profile-person-details##description##18041",
+    "profile-personal-details##description##98991",
+    "travel-preferences##description##14591",
+    "profile-user-account-details##description##17031",
+    "profile-work-details##description##52361"
+  ],
   "properties": {
     "repositoryCreatedBy": {
       "title": "Created by user identifier",
       "type": "string",
       "description": "User ID of who created the record.",
+      "meta:titleId": "auditable##xdm:repositoryCreatedBy##title##16641",
+      "meta:descriptionId": "auditable##xdm:repositoryCreatedBy##description##29041",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:repositoryCreatedBy",
       "tagNumber": 1
@@ -67,6 +93,8 @@
       "title": "Modified by user identifier",
       "type": "string",
       "description": "User ID of who last modified the record. At creation time, `modifiedByUser` is set as `createdByUser`.",
+      "meta:titleId": "auditable##xdm:repositoryLastModifiedBy##title##63651",
+      "meta:descriptionId": "auditable##xdm:repositoryLastModifiedBy##description##68141",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:repositoryLastModifiedBy",
       "tagNumber": 2
@@ -76,6 +104,8 @@
       "type": "string",
       "format": "uri-reference",
       "description": "The dataset files in Catalog which has been originating the creation of the record.",
+      "meta:titleId": "auditable##xdm:createdByBatchID##title##49401",
+      "meta:descriptionId": "auditable##xdm:createdByBatchID##description##94781",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:createdByBatchID",
       "tagNumber": 3
@@ -85,6 +115,8 @@
       "type": "string",
       "format": "uri-reference",
       "description": "The last dataset files in Catalog which has modified the record. At creation time, `modifiedByBatchID` is set as `createdByBatchID`.",
+      "meta:titleId": "auditable##xdm:modifiedByBatchID##title##98681",
+      "meta:descriptionId": "auditable##xdm:modifiedByBatchID##description##92221",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:modifiedByBatchID",
       "tagNumber": 4
@@ -102,6 +134,7 @@
             "2004-10-23T12:00:00-06:00"
           ],
           "description": "The server date and time when the resource was created in the repository, such as when an asset file is first uploaded or a directory is created by the server as the parent of a new asset. The date time property should conform to ISO 8601 standard. An example form is \"2004-10-23T12:00:00-06:00\".",
+          "meta:descriptionId": "1.0##repo:createDate##description##6511",
           "meta:xdmType": "date-time",
           "meta:xdmField": "repo:createDate",
           "tagNumber": 1
@@ -114,6 +147,7 @@
             "2004-10-23T12:00:00-06:00"
           ],
           "description": "The server date and time when the resource was last modified in the repository, such as when a new version of an asset is uploaded or a directory's child resource is added or removed. The date time property should conform to ISO 8601 standard. An example form is \"2004-10-23T12:00:00-06:00\".",
+          "meta:descriptionId": "1.0##repo:modifyDate##description##13061",
           "meta:xdmType": "date-time",
           "meta:xdmField": "repo:modifyDate",
           "tagNumber": 2
@@ -126,6 +160,8 @@
       "type": "string",
       "format": "uri-reference",
       "description": "A unique identifier for the record.",
+      "meta:titleId": "record##@id##title##80061",
+      "meta:descriptionId": "record##@id##description##41711",
       "meta:xdmType": "string",
       "meta:xdmField": "@id",
       "tagNumber": 6
@@ -134,6 +170,8 @@
       "title": "Person ID",
       "description": "Unique identifier of Person/Profile fragment.",
       "type": "string",
+      "meta:titleId": "profile##xdm:personID##title##86011",
+      "meta:descriptionId": "profile##xdm:personID##description##63351",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:personID",
       "tagNumber": 7
@@ -142,6 +180,8 @@
       "title": "Consents and Preferences",
       "description": "Specific Consent and Preference Options",
       "type": "object",
+      "meta:titleId": "consents-and-preferences##xdm:consents##title##23411",
+      "meta:descriptionId": "consents-and-preferences##xdm:consents##description##25941",
       "meta:xdmType": "object",
       "properties": {
         "collect": {
@@ -165,6 +205,8 @@
                 "VI",
                 "PI"
               ],
+              "meta:titleId": "consents-and-preferences##choice-value##title##90081",
+              "meta:descriptionId": "consents-and-preferences##choice-value##description##60451",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:val",
               "tagNumber": 1
@@ -197,6 +239,8 @@
                 "VI",
                 "PI"
               ],
+              "meta:titleId": "consents-and-preferences##choice-value##title##90081",
+              "meta:descriptionId": "consents-and-preferences##choice-value##description##60451",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:val",
               "tagNumber": 1
@@ -212,6 +256,8 @@
           "title": "Personalization Preferences",
           "description": "User's Personalization Preferences",
           "type": "object",
+          "meta:titleId": "consents-and-preferences##base-personalization##title##90811",
+          "meta:descriptionId": "consents-and-preferences##base-personalization##description##38301",
           "meta:xdmType": "object",
           "properties": {
             "content": {
@@ -235,6 +281,8 @@
                     "VI",
                     "PI"
                   ],
+                  "meta:titleId": "consents-and-preferences##choice-value##title##90081",
+                  "meta:descriptionId": "consents-and-preferences##choice-value##description##60451",
                   "meta:xdmType": "string",
                   "meta:xdmField": "xdm:val",
                   "tagNumber": 1
@@ -254,6 +302,8 @@
           "title": "Marketing Preferences",
           "description": "User's Direct Marketing Preferences",
           "type": "object",
+          "meta:titleId": "consents-and-preferences##base-marketing-with-subscriptions##title##94101",
+          "meta:descriptionId": "consents-and-preferences##base-marketing-with-subscriptions##description##25731",
           "meta:xdmType": "object",
           "properties": {
             "preferred": {
@@ -275,6 +325,8 @@
                 "none",
                 "unknown"
               ],
+              "meta:titleId": "consents-and-preferences##xdm:preferred##title##90841",
+              "meta:descriptionId": "consents-and-preferences##xdm:preferred##description##55711",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:preferred",
               "tagNumber": 1
@@ -300,6 +352,8 @@
                     "VI",
                     "PI"
                   ],
+                  "meta:titleId": "consents-and-preferences##choice-value##title##90081",
+                  "meta:descriptionId": "consents-and-preferences##choice-value##description##60451",
                   "meta:xdmType": "string",
                   "meta:xdmField": "xdm:val",
                   "tagNumber": 1
@@ -309,6 +363,8 @@
                   "description": "Date and time this specific preference was collected. This value should conform to ISO 8601 standard. An example form is \"2004-10-23T12:00:00-06:00\".",
                   "type": "string",
                   "format": "date-time",
+                  "meta:titleId": "consents-and-preferences##timestamp##title##24101",
+                  "meta:descriptionId": "consents-and-preferences##timestamp##description##75121",
                   "meta:xdmType": "date-time",
                   "meta:xdmField": "xdm:time",
                   "tagNumber": 2
@@ -318,6 +374,8 @@
                   "type": "string",
                   "description": "Reason for opting out",
                   "maxLength": 16,
+                  "meta:titleId": "consents-and-preferences##reason##title##68311",
+                  "meta:descriptionId": "consents-and-preferences##reason##description##82931",
                   "meta:xdmType": "string",
                   "meta:xdmField": "xdm:reason",
                   "tagNumber": 3
@@ -350,6 +408,8 @@
                     "VI",
                     "PI"
                   ],
+                  "meta:titleId": "consents-and-preferences##choice-value##title##90081",
+                  "meta:descriptionId": "consents-and-preferences##choice-value##description##60451",
                   "meta:xdmType": "string",
                   "meta:xdmField": "xdm:val",
                   "tagNumber": 1
@@ -359,6 +419,8 @@
                   "description": "Date and time this specific preference was collected. This value should conform to ISO 8601 standard. An example form is \"2004-10-23T12:00:00-06:00\".",
                   "type": "string",
                   "format": "date-time",
+                  "meta:titleId": "consents-and-preferences##timestamp##title##24101",
+                  "meta:descriptionId": "consents-and-preferences##timestamp##description##75121",
                   "meta:xdmType": "date-time",
                   "meta:xdmField": "xdm:time",
                   "tagNumber": 2
@@ -368,6 +430,8 @@
                   "type": "string",
                   "description": "Reason for opting out",
                   "maxLength": 16,
+                  "meta:titleId": "consents-and-preferences##reason##title##68311",
+                  "meta:descriptionId": "consents-and-preferences##reason##description##82931",
                   "meta:xdmType": "string",
                   "meta:xdmField": "xdm:reason",
                   "tagNumber": 3
@@ -377,6 +441,8 @@
                   "description": "A set of notifications, newsletters, etc. to which the user subscribes",
                   "type": "object",
                   "meta:xdmType": "map",
+                  "meta:titleId": "consents-and-preferences##subscriptions##title##6111",
+                  "meta:descriptionId": "consents-and-preferences##subscriptions##description##94861",
                   "meta:xdmField": "xdm:subscriptions",
                   "tagNumber": 4,
                   "properties": {
@@ -384,6 +450,8 @@
                       "type": "object",
                       "title": "Subscription",
                       "description": "The name or identifier of the specific subscription",
+                      "meta:titleId": "consents-and-preferences##additionalProperties##title##27621",
+                      "meta:descriptionId": "consents-and-preferences##additionalProperties##description##23971",
                       "meta:xdmType": "object",
                       "properties": {
                         "val": {
@@ -403,6 +471,8 @@
                             "VI",
                             "PI"
                           ],
+                          "meta:titleId": "consents-and-preferences##choice-value##title##90081",
+                          "meta:descriptionId": "consents-and-preferences##choice-value##description##60451",
                           "meta:xdmType": "string",
                           "meta:xdmField": "xdm:val",
                           "tagNumber": 1
@@ -412,6 +482,8 @@
                           "description": "The type of subscription",
                           "type": "string",
                           "maxLength": 15,
+                          "meta:titleId": "consents-and-preferences##xdm:type##title##38651",
+                          "meta:descriptionId": "consents-and-preferences##xdm:type##description##33851",
                           "meta:xdmType": "string",
                           "meta:xdmField": "xdm:type",
                           "tagNumber": 2
@@ -421,6 +493,8 @@
                           "description": "The set of identifiers (email addresses, phone numbers, etc.) for this user who have subscribed",
                           "type": "object",
                           "meta:xdmType": "map",
+                          "meta:titleId": "consents-and-preferences##xdm:subscribers##title##52041",
+                          "meta:descriptionId": "consents-and-preferences##xdm:subscribers##description##53051",
                           "meta:xdmField": "xdm:subscribers",
                           "tagNumber": 3,
                           "properties": {
@@ -428,6 +502,8 @@
                               "type": "object",
                               "title": "Subscriber",
                               "description": "The specific identifier (email addresses, phone numbers, etc.) for this subscriber",
+                              "meta:titleId": "consents-and-preferences##additionalProperties##title##4951",
+                              "meta:descriptionId": "consents-and-preferences##additionalProperties##description##12551",
                               "meta:xdmType": "object",
                               "properties": {
                                 "time": {
@@ -435,6 +511,8 @@
                                   "description": "Date and time this specific preference was collected. This value should conform to ISO 8601 standard. An example form is \"2004-10-23T12:00:00-06:00\".",
                                   "type": "string",
                                   "format": "date-time",
+                                  "meta:titleId": "consents-and-preferences##timestamp##title##24101",
+                                  "meta:descriptionId": "consents-and-preferences##timestamp##description##75121",
                                   "meta:xdmType": "date-time",
                                   "meta:xdmField": "xdm:time",
                                   "tagNumber": 1
@@ -444,6 +522,8 @@
                                   "description": "Through which interface did the user provide this preference value",
                                   "type": "string",
                                   "maxLength": 15,
+                                  "meta:titleId": "consents-and-preferences##source##title##48791",
+                                  "meta:descriptionId": "consents-and-preferences##source##description##65211",
                                   "meta:xdmType": "string",
                                   "meta:xdmField": "xdm:source",
                                   "tagNumber": 2
@@ -486,6 +566,8 @@
                     "VI",
                     "PI"
                   ],
+                  "meta:titleId": "consents-and-preferences##choice-value##title##90081",
+                  "meta:descriptionId": "consents-and-preferences##choice-value##description##60451",
                   "meta:xdmType": "string",
                   "meta:xdmField": "xdm:val",
                   "tagNumber": 1
@@ -495,6 +577,8 @@
                   "description": "Date and time this specific preference was collected. This value should conform to ISO 8601 standard. An example form is \"2004-10-23T12:00:00-06:00\".",
                   "type": "string",
                   "format": "date-time",
+                  "meta:titleId": "consents-and-preferences##timestamp##title##24101",
+                  "meta:descriptionId": "consents-and-preferences##timestamp##description##75121",
                   "meta:xdmType": "date-time",
                   "meta:xdmField": "xdm:time",
                   "tagNumber": 2
@@ -504,6 +588,8 @@
                   "type": "string",
                   "description": "Reason for opting out",
                   "maxLength": 16,
+                  "meta:titleId": "consents-and-preferences##reason##title##68311",
+                  "meta:descriptionId": "consents-and-preferences##reason##description##82931",
                   "meta:xdmType": "string",
                   "meta:xdmField": "xdm:reason",
                   "tagNumber": 3
@@ -513,6 +599,8 @@
                   "description": "A set of notifications, newsletters, etc. to which the user subscribes",
                   "type": "object",
                   "meta:xdmType": "map",
+                  "meta:titleId": "consents-and-preferences##subscriptions##title##6111",
+                  "meta:descriptionId": "consents-and-preferences##subscriptions##description##94861",
                   "meta:xdmField": "xdm:subscriptions",
                   "tagNumber": 4,
                   "properties": {
@@ -520,6 +608,8 @@
                       "type": "object",
                       "title": "Subscription",
                       "description": "The name or identifier of the specific subscription",
+                      "meta:titleId": "consents-and-preferences##additionalProperties##title##27621",
+                      "meta:descriptionId": "consents-and-preferences##additionalProperties##description##23971",
                       "meta:xdmType": "object",
                       "properties": {
                         "val": {
@@ -539,6 +629,8 @@
                             "VI",
                             "PI"
                           ],
+                          "meta:titleId": "consents-and-preferences##choice-value##title##90081",
+                          "meta:descriptionId": "consents-and-preferences##choice-value##description##60451",
                           "meta:xdmType": "string",
                           "meta:xdmField": "xdm:val",
                           "tagNumber": 1
@@ -548,6 +640,8 @@
                           "description": "The type of subscription",
                           "type": "string",
                           "maxLength": 15,
+                          "meta:titleId": "consents-and-preferences##xdm:type##title##38651",
+                          "meta:descriptionId": "consents-and-preferences##xdm:type##description##33851",
                           "meta:xdmType": "string",
                           "meta:xdmField": "xdm:type",
                           "tagNumber": 2
@@ -557,6 +651,8 @@
                           "description": "The set of identifiers (email addresses, phone numbers, etc.) for this user who have subscribed",
                           "type": "object",
                           "meta:xdmType": "map",
+                          "meta:titleId": "consents-and-preferences##xdm:subscribers##title##52041",
+                          "meta:descriptionId": "consents-and-preferences##xdm:subscribers##description##53051",
                           "meta:xdmField": "xdm:subscribers",
                           "tagNumber": 3,
                           "properties": {
@@ -564,6 +660,8 @@
                               "type": "object",
                               "title": "Subscriber",
                               "description": "The specific identifier (email addresses, phone numbers, etc.) for this subscriber",
+                              "meta:titleId": "consents-and-preferences##additionalProperties##title##4951",
+                              "meta:descriptionId": "consents-and-preferences##additionalProperties##description##12551",
                               "meta:xdmType": "object",
                               "properties": {
                                 "time": {
@@ -571,6 +669,8 @@
                                   "description": "Date and time this specific preference was collected. This value should conform to ISO 8601 standard. An example form is \"2004-10-23T12:00:00-06:00\".",
                                   "type": "string",
                                   "format": "date-time",
+                                  "meta:titleId": "consents-and-preferences##timestamp##title##24101",
+                                  "meta:descriptionId": "consents-and-preferences##timestamp##description##75121",
                                   "meta:xdmType": "date-time",
                                   "meta:xdmField": "xdm:time",
                                   "tagNumber": 1
@@ -580,6 +680,8 @@
                                   "description": "Through which interface did the user provide this preference value",
                                   "type": "string",
                                   "maxLength": 15,
+                                  "meta:titleId": "consents-and-preferences##source##title##48791",
+                                  "meta:descriptionId": "consents-and-preferences##source##description##65211",
                                   "meta:xdmType": "string",
                                   "meta:xdmField": "xdm:source",
                                   "tagNumber": 2
@@ -622,6 +724,8 @@
                     "VI",
                     "PI"
                   ],
+                  "meta:titleId": "consents-and-preferences##choice-value##title##90081",
+                  "meta:descriptionId": "consents-and-preferences##choice-value##description##60451",
                   "meta:xdmType": "string",
                   "meta:xdmField": "xdm:val",
                   "tagNumber": 1
@@ -631,6 +735,8 @@
                   "description": "Date and time this specific preference was collected. This value should conform to ISO 8601 standard. An example form is \"2004-10-23T12:00:00-06:00\".",
                   "type": "string",
                   "format": "date-time",
+                  "meta:titleId": "consents-and-preferences##timestamp##title##24101",
+                  "meta:descriptionId": "consents-and-preferences##timestamp##description##75121",
                   "meta:xdmType": "date-time",
                   "meta:xdmField": "xdm:time",
                   "tagNumber": 2
@@ -640,6 +746,8 @@
                   "type": "string",
                   "description": "Reason for opting out",
                   "maxLength": 16,
+                  "meta:titleId": "consents-and-preferences##reason##title##68311",
+                  "meta:descriptionId": "consents-and-preferences##reason##description##82931",
                   "meta:xdmType": "string",
                   "meta:xdmField": "xdm:reason",
                   "tagNumber": 3
@@ -649,6 +757,8 @@
                   "description": "A set of notifications, newsletters, etc. to which the user subscribes",
                   "type": "object",
                   "meta:xdmType": "map",
+                  "meta:titleId": "consents-and-preferences##subscriptions##title##6111",
+                  "meta:descriptionId": "consents-and-preferences##subscriptions##description##94861",
                   "meta:xdmField": "xdm:subscriptions",
                   "tagNumber": 4,
                   "properties": {
@@ -656,6 +766,8 @@
                       "type": "object",
                       "title": "Subscription",
                       "description": "The name or identifier of the specific subscription",
+                      "meta:titleId": "consents-and-preferences##additionalProperties##title##27621",
+                      "meta:descriptionId": "consents-and-preferences##additionalProperties##description##23971",
                       "meta:xdmType": "object",
                       "properties": {
                         "val": {
@@ -675,6 +787,8 @@
                             "VI",
                             "PI"
                           ],
+                          "meta:titleId": "consents-and-preferences##choice-value##title##90081",
+                          "meta:descriptionId": "consents-and-preferences##choice-value##description##60451",
                           "meta:xdmType": "string",
                           "meta:xdmField": "xdm:val",
                           "tagNumber": 1
@@ -684,6 +798,8 @@
                           "description": "The type of subscription",
                           "type": "string",
                           "maxLength": 15,
+                          "meta:titleId": "consents-and-preferences##xdm:type##title##38651",
+                          "meta:descriptionId": "consents-and-preferences##xdm:type##description##33851",
                           "meta:xdmType": "string",
                           "meta:xdmField": "xdm:type",
                           "tagNumber": 2
@@ -693,6 +809,8 @@
                           "description": "The set of identifiers (email addresses, phone numbers, etc.) for this user who have subscribed",
                           "type": "object",
                           "meta:xdmType": "map",
+                          "meta:titleId": "consents-and-preferences##xdm:subscribers##title##52041",
+                          "meta:descriptionId": "consents-and-preferences##xdm:subscribers##description##53051",
                           "meta:xdmField": "xdm:subscribers",
                           "tagNumber": 3,
                           "properties": {
@@ -700,6 +818,8 @@
                               "type": "object",
                               "title": "Subscriber",
                               "description": "The specific identifier (email addresses, phone numbers, etc.) for this subscriber",
+                              "meta:titleId": "consents-and-preferences##additionalProperties##title##4951",
+                              "meta:descriptionId": "consents-and-preferences##additionalProperties##description##12551",
                               "meta:xdmType": "object",
                               "properties": {
                                 "time": {
@@ -707,6 +827,8 @@
                                   "description": "Date and time this specific preference was collected. This value should conform to ISO 8601 standard. An example form is \"2004-10-23T12:00:00-06:00\".",
                                   "type": "string",
                                   "format": "date-time",
+                                  "meta:titleId": "consents-and-preferences##timestamp##title##24101",
+                                  "meta:descriptionId": "consents-and-preferences##timestamp##description##75121",
                                   "meta:xdmType": "date-time",
                                   "meta:xdmField": "xdm:time",
                                   "tagNumber": 1
@@ -716,6 +838,8 @@
                                   "description": "Through which interface did the user provide this preference value",
                                   "type": "string",
                                   "maxLength": 15,
+                                  "meta:titleId": "consents-and-preferences##source##title##48791",
+                                  "meta:descriptionId": "consents-and-preferences##source##description##65211",
                                   "meta:xdmType": "string",
                                   "meta:xdmField": "xdm:source",
                                   "tagNumber": 2
@@ -753,6 +877,8 @@
                 "description": "Timestamp of this complete set of user consents and preferences. This value should conform to ISO 8601 standard. An example form is \"2004-10-23T12:00:00-06:00\".",
                 "type": "string",
                 "format": "date-time",
+                "meta:titleId": "consents-and-preferences##xdm:time##title##10071",
+                "meta:descriptionId": "consents-and-preferences##xdm:time##description##92301",
                 "meta:xdmType": "date-time",
                 "meta:xdmField": "xdm:time",
                 "tagNumber": 1
@@ -761,6 +887,8 @@
             "type": "object",
             "tagNumber": 1
           },
+          "meta:titleId": "consents-and-preferences##xdm:idSpecific##title##26791",
+          "meta:descriptionId": "consents-and-preferences##xdm:idSpecific##description##62351",
           "meta:xdmField": "xdm:idSpecific",
           "tagNumber": 5,
           "properties": {
@@ -768,11 +896,13 @@
               "title": "Identifier Type",
               "type": "object",
               "meta:xdmType": "map",
+              "meta:titleId": "consents-and-preferences##additionalProperties##title##34811",
               "tagNumber": 2,
               "properties": {
                 "mapObj": {
                   "type": "object",
                   "title": "Identifier",
+                  "meta:titleId": "consents-and-preferences##additionalProperties##title##7721",
                   "meta:xdmType": "object",
                   "properties": {
                     "collect": {
@@ -796,6 +926,8 @@
                             "VI",
                             "PI"
                           ],
+                          "meta:titleId": "consents-and-preferences##choice-value##title##90081",
+                          "meta:descriptionId": "consents-and-preferences##choice-value##description##60451",
                           "meta:xdmType": "string",
                           "meta:xdmField": "xdm:val",
                           "tagNumber": 1
@@ -828,6 +960,8 @@
                             "VI",
                             "PI"
                           ],
+                          "meta:titleId": "consents-and-preferences##choice-value##title##90081",
+                          "meta:descriptionId": "consents-and-preferences##choice-value##description##60451",
                           "meta:xdmType": "string",
                           "meta:xdmField": "xdm:val",
                           "tagNumber": 1
@@ -860,6 +994,8 @@
                             "VI",
                             "PI"
                           ],
+                          "meta:titleId": "consents-and-preferences##choice-value##title##90081",
+                          "meta:descriptionId": "consents-and-preferences##choice-value##description##60451",
                           "meta:xdmType": "string",
                           "meta:xdmField": "xdm:val",
                           "tagNumber": 1
@@ -875,6 +1011,8 @@
                       "title": "Personalization Preferences",
                       "description": "User's Personalization Preferences",
                       "type": "object",
+                      "meta:titleId": "consents-and-preferences##base-personalization##title##90811",
+                      "meta:descriptionId": "consents-and-preferences##base-personalization##description##38301",
                       "meta:xdmType": "object",
                       "properties": {
                         "content": {
@@ -898,6 +1036,8 @@
                                 "VI",
                                 "PI"
                               ],
+                              "meta:titleId": "consents-and-preferences##choice-value##title##90081",
+                              "meta:descriptionId": "consents-and-preferences##choice-value##description##60451",
                               "meta:xdmType": "string",
                               "meta:xdmField": "xdm:val",
                               "tagNumber": 1
@@ -917,6 +1057,8 @@
                       "title": "Marketing Preferences",
                       "description": "User's Direct Marketing Preferences",
                       "type": "object",
+                      "meta:titleId": "consents-and-preferences##idSpecific-marketing##title##29721",
+                      "meta:descriptionId": "consents-and-preferences##idSpecific-marketing##description##58641",
                       "meta:xdmType": "object",
                       "properties": {
                         "email": {
@@ -940,6 +1082,8 @@
                                 "VI",
                                 "PI"
                               ],
+                              "meta:titleId": "consents-and-preferences##choice-value##title##90081",
+                              "meta:descriptionId": "consents-and-preferences##choice-value##description##60451",
                               "meta:xdmType": "string",
                               "meta:xdmField": "xdm:val",
                               "tagNumber": 1
@@ -949,6 +1093,8 @@
                               "description": "Date and time this specific preference was collected. This value should conform to ISO 8601 standard. An example form is \"2004-10-23T12:00:00-06:00\".",
                               "type": "string",
                               "format": "date-time",
+                              "meta:titleId": "consents-and-preferences##timestamp##title##24101",
+                              "meta:descriptionId": "consents-and-preferences##timestamp##description##75121",
                               "meta:xdmType": "date-time",
                               "meta:xdmField": "xdm:time",
                               "tagNumber": 2
@@ -958,6 +1104,8 @@
                               "type": "string",
                               "description": "Reason for opting out",
                               "maxLength": 16,
+                              "meta:titleId": "consents-and-preferences##reason##title##68311",
+                              "meta:descriptionId": "consents-and-preferences##reason##description##82931",
                               "meta:xdmType": "string",
                               "meta:xdmField": "xdm:reason",
                               "tagNumber": 3
@@ -990,6 +1138,8 @@
                                 "VI",
                                 "PI"
                               ],
+                              "meta:titleId": "consents-and-preferences##choice-value##title##90081",
+                              "meta:descriptionId": "consents-and-preferences##choice-value##description##60451",
                               "meta:xdmType": "string",
                               "meta:xdmField": "xdm:val",
                               "tagNumber": 1
@@ -999,6 +1149,8 @@
                               "description": "Date and time this specific preference was collected. This value should conform to ISO 8601 standard. An example form is \"2004-10-23T12:00:00-06:00\".",
                               "type": "string",
                               "format": "date-time",
+                              "meta:titleId": "consents-and-preferences##timestamp##title##24101",
+                              "meta:descriptionId": "consents-and-preferences##timestamp##description##75121",
                               "meta:xdmType": "date-time",
                               "meta:xdmField": "xdm:time",
                               "tagNumber": 2
@@ -1008,6 +1160,8 @@
                               "type": "string",
                               "description": "Reason for opting out",
                               "maxLength": 16,
+                              "meta:titleId": "consents-and-preferences##reason##title##68311",
+                              "meta:descriptionId": "consents-and-preferences##reason##description##82931",
                               "meta:xdmType": "string",
                               "meta:xdmField": "xdm:reason",
                               "tagNumber": 3
@@ -1040,6 +1194,8 @@
                                 "VI",
                                 "PI"
                               ],
+                              "meta:titleId": "consents-and-preferences##choice-value##title##90081",
+                              "meta:descriptionId": "consents-and-preferences##choice-value##description##60451",
                               "meta:xdmType": "string",
                               "meta:xdmField": "xdm:val",
                               "tagNumber": 1
@@ -1049,6 +1205,8 @@
                               "description": "Date and time this specific preference was collected. This value should conform to ISO 8601 standard. An example form is \"2004-10-23T12:00:00-06:00\".",
                               "type": "string",
                               "format": "date-time",
+                              "meta:titleId": "consents-and-preferences##timestamp##title##24101",
+                              "meta:descriptionId": "consents-and-preferences##timestamp##description##75121",
                               "meta:xdmType": "date-time",
                               "meta:xdmField": "xdm:time",
                               "tagNumber": 2
@@ -1058,6 +1216,8 @@
                               "type": "string",
                               "description": "Reason for opting out",
                               "maxLength": 16,
+                              "meta:titleId": "consents-and-preferences##reason##title##68311",
+                              "meta:descriptionId": "consents-and-preferences##reason##description##82931",
                               "meta:xdmType": "string",
                               "meta:xdmField": "xdm:reason",
                               "tagNumber": 3
@@ -1087,6 +1247,8 @@
               "description": "Timestamp of this complete set of user consents and preferences. This value should conform to ISO 8601 standard. An example form is \"2004-10-23T12:00:00-06:00\".",
               "type": "string",
               "format": "date-time",
+              "meta:titleId": "consents-and-preferences##xdm:time##title##10071",
+              "meta:descriptionId": "consents-and-preferences##xdm:time##description##92301",
               "meta:xdmType": "date-time",
               "meta:xdmField": "xdm:time",
               "tagNumber": 1
@@ -1103,6 +1265,7 @@
     "loyalty": {
       "type": "object",
       "description": "Captures details related to the customer's loyalty rewards.",
+      "meta:descriptionId": "profile-loyalty-details##xdm:loyalty##description##13591",
       "meta:xdmType": "object",
       "properties": {
         "joinDate": {
@@ -1110,6 +1273,8 @@
           "type": "string",
           "format": "date-time",
           "description": "Date which the visitor registered for the loyalty program.",
+          "meta:titleId": "profile-loyalty-details##xdm:joinDate##title##80521",
+          "meta:descriptionId": "profile-loyalty-details##xdm:joinDate##description##45221",
           "meta:xdmType": "date-time",
           "meta:xdmField": "xdm:joinDate",
           "tagNumber": 1
@@ -1118,6 +1283,8 @@
           "title": "Program ID",
           "type": "array",
           "description": "The loyalty program ID(s) associated with a specific user, if they are enrolled in the client's loyalty program.",
+          "meta:titleId": "profile-loyalty-details##xdm:loyaltyID##title##45371",
+          "meta:descriptionId": "profile-loyalty-details##xdm:loyaltyID##description##48021",
           "meta:xdmType": "array",
           "items": {
             "type": "string",
@@ -1131,6 +1298,8 @@
           "title": "Program Points Balance",
           "type": "number",
           "description": "Current balance of the loyalty points/awards in a visitor's loyalty account.",
+          "meta:titleId": "profile-loyalty-details##xdm:points##title##64191",
+          "meta:descriptionId": "profile-loyalty-details##xdm:points##description##63321",
           "meta:xdmType": "number",
           "meta:xdmField": "xdm:points",
           "tagNumber": 3
@@ -1138,17 +1307,20 @@
         "pointsExpiration": {
           "title": "Points Expiration",
           "type": "array",
+          "meta:titleId": "profile-loyalty-details##xdm:pointsExpiration##title##19661",
           "meta:xdmType": "array",
           "meta:xdmField": "xdm:pointsExpiration",
           "tagNumber": 4,
           "items": {
-            "$ref": "obj10386191722354066.schema.json"
+            "$ref": "obj20153018061667471.schema.json"
           }
         },
         "pointsRedeemed": {
           "title": "Points Redeemed",
           "type": "number",
           "description": "Amount of points applied toward a purchase or otherwise redeemed.",
+          "meta:titleId": "profile-loyalty-details##xdm:pointsRedeemed##title##88051",
+          "meta:descriptionId": "profile-loyalty-details##xdm:pointsRedeemed##description##59961",
           "meta:xdmType": "number",
           "meta:xdmField": "xdm:pointsRedeemed",
           "tagNumber": 5
@@ -1157,6 +1329,8 @@
           "title": "Program Name",
           "type": "string",
           "description": "This should define the loyalty progam in which a visitor is enrolled.",
+          "meta:titleId": "profile-loyalty-details##xdm:program##title##82341",
+          "meta:descriptionId": "profile-loyalty-details##xdm:program##description##83761",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:program",
           "tagNumber": 6
@@ -1165,6 +1339,8 @@
           "title": "Program Name",
           "type": "string",
           "description": "Date which the customer was upgraded to the next tier level.",
+          "meta:titleId": "profile-loyalty-details##xdm:upgradeDate##title##7701",
+          "meta:descriptionId": "profile-loyalty-details##xdm:upgradeDate##description##70561",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:upgradeDate",
           "tagNumber": 7
@@ -1173,6 +1349,8 @@
           "title": "Status",
           "type": "string",
           "description": "Captures the visitor's loyalty progam status, such as active, disabled, or suspended.",
+          "meta:titleId": "profile-loyalty-details##xdm:status##title##37281",
+          "meta:descriptionId": "profile-loyalty-details##xdm:status##description##97401",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:status",
           "tagNumber": 8
@@ -1181,6 +1359,8 @@
           "title": "Tier",
           "type": "string",
           "description": "Captures the loyalty progam tier in which a visitor is enrolled.",
+          "meta:titleId": "profile-loyalty-details##xdm:tier##title##99231",
+          "meta:descriptionId": "profile-loyalty-details##xdm:tier##description##35031",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:tier",
           "tagNumber": 9
@@ -1193,6 +1373,8 @@
       "title": "Person",
       "$ref": "../../datatypes/person/person.schema.json",
       "description": "An individual actor, contact, or owner.",
+      "meta:titleId": "profile-person-details##xdm:person##title##40891",
+      "meta:descriptionId": "profile-person-details##xdm:person##description##39921",
       "meta:xdmField": "xdm:person",
       "tagNumber": 10
     },
@@ -1200,6 +1382,8 @@
       "title": "Home address",
       "$ref": "../../datatypes/demographic/address.schema.json",
       "description": "A home postal address.",
+      "meta:titleId": "profile-personal-details##xdm:homeAddress##title##49571",
+      "meta:descriptionId": "profile-personal-details##xdm:homeAddress##description##66611",
       "meta:xdmField": "xdm:homeAddress",
       "tagNumber": 11
     },
@@ -1207,6 +1391,8 @@
       "title": "Personal email",
       "$ref": "../../datatypes/demographic/emailaddress.schema.json",
       "description": "A personal email address.",
+      "meta:titleId": "profile-personal-details##xdm:personalEmail##title##64121",
+      "meta:descriptionId": "profile-personal-details##xdm:personalEmail##description##25801",
       "meta:xdmField": "xdm:personalEmail",
       "tagNumber": 12
     },
@@ -1214,6 +1400,8 @@
       "title": "Home phone",
       "$ref": "../../datatypes/demographic/phonenumber.schema.json",
       "description": "Home phone number.",
+      "meta:titleId": "profile-personal-details##xdm:homePhone##title##21671",
+      "meta:descriptionId": "profile-personal-details##xdm:homePhone##description##23281",
       "meta:xdmField": "xdm:homePhone",
       "tagNumber": 13
     },
@@ -1221,6 +1409,8 @@
       "title": "Mobile phone",
       "$ref": "../../datatypes/demographic/phonenumber.schema.json",
       "description": "Mobile phone number.",
+      "meta:titleId": "profile-personal-details##xdm:mobilePhone##title##12351",
+      "meta:descriptionId": "profile-personal-details##xdm:mobilePhone##description##89701",
       "meta:xdmField": "xdm:mobilePhone",
       "tagNumber": 14
     },
@@ -1228,12 +1418,15 @@
       "title": "Fax phone",
       "$ref": "../../datatypes/demographic/phonenumber.schema.json",
       "description": "Fax phone number.",
+      "meta:titleId": "profile-personal-details##xdm:faxPhone##title##96951",
+      "meta:descriptionId": "profile-personal-details##xdm:faxPhone##description##46911",
       "meta:xdmField": "xdm:faxPhone",
       "tagNumber": 15
     },
     "travelPreferences": {
       "type": "object",
       "description": "Captures details related to the users's travel preferences.",
+      "meta:descriptionId": "travel-preferences##xdm:travelPreferences##description##76261",
       "meta:xdmType": "object",
       "properties": {
         "seat": {
@@ -1253,6 +1446,8 @@
             "tagNumber": 1
           },
           "description": "Captures the user's preferred seat type for flights.",
+          "meta:titleId": "travel-preferences##xdm:seat##title##4711",
+          "meta:descriptionId": "travel-preferences##xdm:seat##description##7301",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:seat",
           "tagNumber": 1
@@ -1276,6 +1471,8 @@
             "tagNumber": 1
           },
           "description": "Captures the user's preferred seat sectionfor flights.",
+          "meta:titleId": "travel-preferences##xdm:seatSection ##title##65981",
+          "meta:descriptionId": "travel-preferences##xdm:seatSection ##description##42031",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:seatSection ",
           "tagNumber": 2
@@ -1327,6 +1524,8 @@
             "tagNumber": 1
           },
           "description": "Tracks the user's meal preference, if provided.",
+          "meta:titleId": "travel-preferences##xdm:meal##title##29121",
+          "meta:descriptionId": "travel-preferences##xdm:meal##description##6971",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:meal",
           "tagNumber": 3
@@ -1336,6 +1535,8 @@
           "type": "string",
           "description": "Records the user's preferred home/departure airport code.",
           "pattern": "^[A-Z]{3}$",
+          "meta:titleId": "travel-preferences##xdm:preferredDepartureAirportCode##title##56561",
+          "meta:descriptionId": "travel-preferences##xdm:preferredDepartureAirportCode##description##25221",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:preferredDepartureAirportCode",
           "tagNumber": 4
@@ -1353,6 +1554,8 @@
             "tagNumber": 1
           },
           "description": "Defines the user's preferred ticket delivery method.",
+          "meta:titleId": "travel-preferences##xdm:ticketDelivery##title##49641",
+          "meta:descriptionId": "travel-preferences##xdm:ticketDelivery##description##5981",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:ticketDelivery",
           "tagNumber": 5
@@ -1361,6 +1564,8 @@
           "title": "Medical Alerts",
           "type": "string",
           "description": "Captures any medical alerts for the user.",
+          "meta:titleId": "travel-preferences##xdm:medicalAlerts##title##80881",
+          "meta:descriptionId": "travel-preferences##xdm:medicalAlerts##description##52731",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:medicalAlerts",
           "tagNumber": 6
@@ -1388,6 +1593,8 @@
             "tagNumber": 1
           },
           "description": "Tracks the user's preferred room type.",
+          "meta:titleId": "travel-preferences##xdm:roomType##title##26901",
+          "meta:descriptionId": "travel-preferences##xdm:roomType##description##77351",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:roomType",
           "tagNumber": 7
@@ -1396,6 +1603,8 @@
           "title": "Smoking Room",
           "type": "boolean",
           "description": "Flags if the user prefers a smoking room.",
+          "meta:titleId": "travel-preferences##xdm:smokingRoom##title##48771",
+          "meta:descriptionId": "travel-preferences##xdm:smokingRoom##description##63841",
           "meta:xdmType": "boolean",
           "meta:xdmField": "xdm:smokingRoom",
           "tagNumber": 8
@@ -1404,6 +1613,8 @@
           "title": "Foam Pillows",
           "type": "boolean",
           "description": "Captures if the user prefers foam pillows.",
+          "meta:titleId": "travel-preferences##xdm:foamPillows##title##33271",
+          "meta:descriptionId": "travel-preferences##xdm:foamPillows##description##47161",
           "meta:xdmType": "boolean",
           "meta:xdmField": "xdm:foamPillows",
           "tagNumber": 9
@@ -1412,6 +1623,8 @@
           "title": "Roll Away Bed",
           "type": "boolean",
           "description": "Captures if the user requires a rollaway bed.",
+          "meta:titleId": "travel-preferences##xdm:rollAwayBed##title##76901",
+          "meta:descriptionId": "travel-preferences##xdm:rollAwayBed##description##78001",
           "meta:xdmType": "boolean",
           "meta:xdmField": "xdm:rollAwayBed",
           "tagNumber": 10
@@ -1420,6 +1633,8 @@
           "title": "Crib",
           "type": "boolean",
           "description": "Captures if the user requires a crib.",
+          "meta:titleId": "travel-preferences##xdm:crib##title##42891",
+          "meta:descriptionId": "travel-preferences##xdm:crib##description##93881",
           "meta:xdmType": "boolean",
           "meta:xdmField": "xdm:crib",
           "tagNumber": 11
@@ -1428,6 +1643,8 @@
           "title": "Early Check-In",
           "type": "boolean",
           "description": "Flags if the user prefers a lodging property with early check-in available.",
+          "meta:titleId": "travel-preferences##xdm:earlyCheckIn##title##93541",
+          "meta:descriptionId": "travel-preferences##xdm:earlyCheckIn##description##75571",
           "meta:xdmType": "boolean",
           "meta:xdmField": "xdm:earlyCheckIn",
           "tagNumber": 12
@@ -1436,6 +1653,8 @@
           "title": "Gym",
           "type": "boolean",
           "description": "Flags if the user prefers a lodging property with a gym/fitness room.",
+          "meta:titleId": "travel-preferences##xdm:gym##title##21431",
+          "meta:descriptionId": "travel-preferences##xdm:gym##description##9371",
           "meta:xdmType": "boolean",
           "meta:xdmField": "xdm:gym",
           "tagNumber": 13
@@ -1444,6 +1663,8 @@
           "title": "Pool",
           "type": "boolean",
           "description": "Flags if the user prefers a lodging property with a swimming pool.",
+          "meta:titleId": "travel-preferences##xdm:pool##title##34491",
+          "meta:descriptionId": "travel-preferences##xdm:pool##description##78591",
           "meta:xdmType": "boolean",
           "meta:xdmField": "xdm:pool",
           "tagNumber": 14
@@ -1452,6 +1673,8 @@
           "title": "Has Restaurant",
           "type": "boolean",
           "description": "Flags if the user prefers a lodging property with a restaurant.",
+          "meta:titleId": "travel-preferences##xdm:hasRestaurant##title##12021",
+          "meta:descriptionId": "travel-preferences##xdm:hasRestaurant##description##72361",
           "meta:xdmType": "boolean",
           "meta:xdmField": "xdm:hasRestaurant",
           "tagNumber": 15
@@ -1460,6 +1683,8 @@
           "title": "Room Service",
           "type": "boolean",
           "description": "Flags if the user prefers a lodging property with room service available.",
+          "meta:titleId": "travel-preferences##xdm:roomService##title##47561",
+          "meta:descriptionId": "travel-preferences##xdm:roomService##description##51181",
           "meta:xdmType": "boolean",
           "meta:xdmField": "xdm:roomService",
           "tagNumber": 16
@@ -1468,6 +1693,8 @@
           "title": "Wheelchair Accessible",
           "type": "boolean",
           "description": "Tracks if the user requres a wheelchair accessible room.",
+          "meta:titleId": "travel-preferences##xdm:wheelchairAccessible##title##18601",
+          "meta:descriptionId": "travel-preferences##xdm:wheelchairAccessible##description##70591",
           "meta:xdmType": "boolean",
           "meta:xdmField": "xdm:wheelchairAccessible",
           "tagNumber": 17
@@ -1476,6 +1703,8 @@
           "title": "Visually Impaired Accessible",
           "type": "boolean",
           "description": "Tracks if the user requres a visually impaired accessible room.",
+          "meta:titleId": "travel-preferences##xdm:visuallyImpairedAccessible##title##49391",
+          "meta:descriptionId": "travel-preferences##xdm:visuallyImpairedAccessible##description##34871",
           "meta:xdmType": "boolean",
           "meta:xdmField": "xdm:visuallyImpairedAccessible",
           "tagNumber": 18
@@ -1527,6 +1756,8 @@
             "tagNumber": 1
           },
           "description": "Records the user's vehicle type preference.",
+          "meta:titleId": "travel-preferences##xdm:vehicleType##title##73971",
+          "meta:descriptionId": "travel-preferences##xdm:vehicleType##description##50501",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:vehicleType",
           "tagNumber": 19
@@ -1535,6 +1766,8 @@
           "title": "Smoking Vehicle",
           "type": "boolean",
           "description": "Flags if the user prefers a smoking vehicle.",
+          "meta:titleId": "travel-preferences##xdm:smokingVehicle##title##9991",
+          "meta:descriptionId": "travel-preferences##xdm:smokingVehicle##description##6641",
           "meta:xdmType": "boolean",
           "meta:xdmField": "xdm:smokingVehicle",
           "tagNumber": 20
@@ -1543,6 +1776,8 @@
           "title": "Manual Transmission",
           "type": "boolean",
           "description": "Records if a user prefers a manual transmission instead of an automatic transmission.",
+          "meta:titleId": "travel-preferences##xdm:manualTransmission##title##6761",
+          "meta:descriptionId": "travel-preferences##xdm:manualTransmission##description##69501",
           "meta:xdmType": "boolean",
           "meta:xdmField": "xdm:manualTransmission",
           "tagNumber": 21
@@ -1554,12 +1789,15 @@
     "userAccount": {
       "type": "object",
       "description": "Loyalty details, preferences, login processes, and other account preferences.",
+      "meta:descriptionId": "profile-user-account-details##xdm:userAccount##description##79801",
       "meta:xdmType": "object",
       "properties": {
         "ID": {
           "title": "ID",
           "type": "string",
           "description": "Captures the user account ID.",
+          "meta:titleId": "profile-user-account-details##xdm:ID##title##3991",
+          "meta:descriptionId": "profile-user-account-details##xdm:ID##description##97041",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:ID",
           "tagNumber": 1
@@ -1568,6 +1806,8 @@
           "title": "Contact Details",
           "$ref": "../../fieldgroups/profile/profile-personal-details.schema.json",
           "description": "Extension of the Personal Profile data type.",
+          "meta:titleId": "profile-user-account-details##xdm:contactDetails##title##59471",
+          "meta:descriptionId": "profile-user-account-details##xdm:contactDetails##description##93871",
           "meta:xdmField": "xdm:contactDetails",
           "tagNumber": 2
         },
@@ -1576,6 +1816,8 @@
           "type": "string",
           "format": "date-time",
           "description": "Date when the account was opened.",
+          "meta:titleId": "profile-user-account-details##xdm:startDate##title##5921",
+          "meta:descriptionId": "profile-user-account-details##xdm:startDate##description##65481",
           "meta:xdmType": "date-time",
           "meta:xdmField": "xdm:startDate",
           "tagNumber": 3
@@ -1590,6 +1832,8 @@
             "other"
           ],
           "description": "This should describe the current status of the account",
+          "meta:titleId": "profile-user-account-details##xdm:status##title##46661",
+          "meta:descriptionId": "profile-user-account-details##xdm:status##description##51591",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:status",
           "tagNumber": 4
@@ -1598,6 +1842,8 @@
           "title": "Account Type",
           "type": "string",
           "description": "Captures the user account type, if applicable.",
+          "meta:titleId": "profile-user-account-details##xdm:accountType##title##69581",
+          "meta:descriptionId": "profile-user-account-details##xdm:accountType##description##68241",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:accountType",
           "tagNumber": 5
@@ -1606,6 +1852,8 @@
           "title": "Product Preferences",
           "type": "array",
           "description": "Product, shopping, or experience preferences such as gender, color pref, seat/aisle, king/double bed, etc.",
+          "meta:titleId": "profile-user-account-details##xdm:productPreferences##title##66521",
+          "meta:descriptionId": "profile-user-account-details##xdm:productPreferences##description##15601",
           "meta:xdmType": "array",
           "items": {
             "type": "string",
@@ -1619,6 +1867,8 @@
           "title": "Alert Status",
           "type": "boolean",
           "description": "Captures whether or not alerts have been enabled for the account.",
+          "meta:titleId": "profile-user-account-details##xdm:alertStatus##title##23861",
+          "meta:descriptionId": "profile-user-account-details##xdm:alertStatus##description##21161",
           "meta:xdmType": "boolean",
           "meta:xdmField": "xdm:alertStatus",
           "tagNumber": 7
@@ -1627,6 +1877,8 @@
           "title": "Autopay Status",
           "type": "boolean",
           "description": "Captures whether or not the account has been enrolled in autopay.",
+          "meta:titleId": "profile-user-account-details##xdm:autopayStatus##title##12361",
+          "meta:descriptionId": "profile-user-account-details##xdm:autopayStatus##description##66011",
           "meta:xdmType": "boolean",
           "meta:xdmField": "xdm:autopayStatus",
           "tagNumber": 8
@@ -1639,6 +1891,8 @@
       "title": "Work Address",
       "$ref": "../../datatypes/demographic/address.schema.json",
       "description": "A work postal address.",
+      "meta:titleId": "profile-work-details##xdm:workAddress##title##85201",
+      "meta:descriptionId": "profile-work-details##xdm:workAddress##description##99171",
       "meta:xdmField": "xdm:workAddress",
       "tagNumber": 18
     },
@@ -1646,6 +1900,8 @@
       "title": "Work Email",
       "$ref": "../../datatypes/demographic/emailaddress.schema.json",
       "description": "A work email address.",
+      "meta:titleId": "profile-work-details##xdm:workEmail##title##59961",
+      "meta:descriptionId": "profile-work-details##xdm:workEmail##description##94441",
       "meta:xdmField": "xdm:workEmail",
       "tagNumber": 19
     },
@@ -1653,12 +1909,15 @@
       "title": "Work Phone",
       "$ref": "../../datatypes/demographic/phonenumber.schema.json",
       "description": "Work phone number.",
+      "meta:titleId": "profile-work-details##xdm:workPhone##title##84361",
+      "meta:descriptionId": "profile-work-details##xdm:workPhone##description##5831",
       "meta:xdmField": "xdm:workPhone",
       "tagNumber": 20
     },
     "organizations": {
       "title": "Organizations",
       "type": "array",
+      "meta:titleId": "profile-work-details##xdm:organizations##title##88581",
       "meta:xdmType": "array",
       "items": {
         "type": "string",

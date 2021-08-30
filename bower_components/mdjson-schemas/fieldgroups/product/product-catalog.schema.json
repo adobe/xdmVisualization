@@ -9,12 +9,16 @@
   "description": "Captures properties related to product catalog.",
   "meta:status": "experimental",
   "meta:createdDate": "2021-02-19",
+  "meta:titleId": "product-catalog##title##23931",
+  "meta:descriptionId": "product-catalog##description##15471",
   "meta:xdmType": "object",
   "properties": {
     "productCatalogName": {
       "title": "Product Catalog Name",
       "type": "string",
       "description": "friendly name of the product catalog.",
+      "meta:titleId": "product-catalog##xdm:productCatalogName##title##89811",
+      "meta:descriptionId": "product-catalog##xdm:productCatalogName##description##3561",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:productCatalogName",
       "tagNumber": 1
@@ -23,6 +27,8 @@
       "title": "Product Catalog Description",
       "type": "string",
       "description": "Catalog description of the product.",
+      "meta:titleId": "product-catalog##xdm:productCatalogDescription##title##31381",
+      "meta:descriptionId": "product-catalog##xdm:productCatalogDescription##description##41431",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:productCatalogDescription",
       "tagNumber": 2

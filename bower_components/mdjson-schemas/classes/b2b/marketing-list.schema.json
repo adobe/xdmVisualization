@@ -13,6 +13,16 @@
     "experimental",
     "stable"
   ],
+  "meta:titleId": [
+    "marketing-list##title##83091",
+    "record##title##92641",
+    "external-source-system-audit-details##title##25871"
+  ],
+  "meta:descriptionId": [
+    "marketing-list##description##801",
+    "record##description##41201",
+    "external-source-system-audit-details##description##77561"
+  ],
   "meta:xdmType": "object",
   "meta:createdDate": "2020-08-10",
   "properties": {
@@ -21,6 +31,8 @@
       "type": "string",
       "format": "uri-reference",
       "description": "A unique identifier for the record.",
+      "meta:titleId": "record##@id##title##80061",
+      "meta:descriptionId": "record##@id##description##41711",
       "meta:xdmType": "string",
       "meta:xdmField": "@id",
       "tagNumber": 1
@@ -29,6 +41,8 @@
       "title": "Marketing List ID",
       "description": "Unique ID of the marketing list.",
       "type": "string",
+      "meta:titleId": "marketing-list##xdm:marketingListID##title##14641",
+      "meta:descriptionId": "marketing-list##xdm:marketingListID##description##39981",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:marketingListID",
       "tagNumber": 2
@@ -37,6 +51,8 @@
       "title": "Marketing List Key",
       "description": "Unique composite identifier of the Marketing List.",
       "$ref": "../../datatypes/b2b/b2b-source.schema.json",
+      "meta:titleId": "marketing-list##xdm:marketingListKey##title##75021",
+      "meta:descriptionId": "marketing-list##xdm:marketingListKey##description##38201",
       "meta:xdmField": "xdm:marketingListKey",
       "tagNumber": 3
     },
@@ -44,6 +60,8 @@
       "title": "Marketing List Name",
       "description": "Name of the marketing list.",
       "type": "string",
+      "meta:titleId": "marketing-list##xdm:marketingListName##title##21631",
+      "meta:descriptionId": "marketing-list##xdm:marketingListName##description##88691",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:marketingListName",
       "tagNumber": 4
@@ -52,6 +70,8 @@
       "title": "Marketing List Description",
       "description": "Description of the marketing list.",
       "type": "string",
+      "meta:titleId": "marketing-list##xdm:marketingListDescription##title##49191",
+      "meta:descriptionId": "marketing-list##xdm:marketingListDescription##description##74451",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:marketingListDescription",
       "tagNumber": 5
@@ -60,6 +80,8 @@
       "title": "External Source System Audit Properties",
       "$ref": "../../datatypes/auditing/external-source-system-audit.schema.json",
       "description": "Audit attributes for external sources.",
+      "meta:titleId": "external-source-system-audit-details##xdm:extSourceSystemAudit##title##65301",
+      "meta:descriptionId": "external-source-system-audit-details##xdm:extSourceSystemAudit##description##99451",
       "meta:xdmField": "xdm:extSourceSystemAudit",
       "tagNumber": 6
     }

@@ -8,6 +8,8 @@
   "meta:abstract": true,
   "meta:status": "stable",
   "meta:createdDate": "2021-03-19",
+  "meta:titleId": "personalization-preference-field##title##59171",
+  "meta:descriptionId": "personalization-preference-field##description##85461",
   "meta:xdmType": "object",
   "properties": {
     "val": {
@@ -27,6 +29,8 @@
         "VI",
         "PI"
       ],
+      "meta:titleId": "consents-and-preferences##choice-value##title##90081",
+      "meta:descriptionId": "consents-and-preferences##choice-value##description##60451",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:val",
       "tagNumber": 1

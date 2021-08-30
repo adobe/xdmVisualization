@@ -122,6 +122,62 @@
     "2021-03-31",
     "2021-02-02"
   ],
+  "meta:titleId": [
+    "experienceevent##title##33791",
+    "identitymap##title##68521",
+    "time-series##title##64261",
+    "experienceevent-support-request##title##55961",
+    "experienceevent-advertising##title##7411",
+    "experienceevent-commerce##title##35671",
+    "experienceevent-directmarketing##title##30741",
+    "experienceevent-environment-details##title##14621",
+    "experienceevent-file-download-details##title##91241",
+    "experienceevent-file-upload-details##title##46931",
+    "experienceevent-implementation-details##title##44931",
+    "experienceevent-knowledge-base-details##title##37571",
+    "experienceevent-marketing##title##75301",
+    "experienceevent-media##title##33101",
+    "experienceevent-offer-impression-details##title##90831",
+    "experienceevent-quote-request-details##title##25141",
+    "experienceevent-social-network-usage-details##title##48201",
+    "experienceevent-support-site-search##title##23221",
+    "experienceevent-survey-response-details##title##4811",
+    "experienceevent-user-login-details##title##48041",
+    "experienceevent-web##title##90821",
+    "experienceevent-claim-details##title##64351",
+    "experienceevent-contact-request-details##title##38481",
+    "experienceevent-upgrade-details##title##97891",
+    "experienceevent-upsell-details##title##80151",
+    "experienceevent-warranty-claim-details##title##22651"
+  ],
+  "meta:descriptionId": [
+    "experienceevent##description##65231",
+    "identitymap##description##9091",
+    "time-series##description##30491",
+    "experienceevent-support-request##description##15091",
+    "experienceevent-advertising##description##12851",
+    "experienceevent-commerce##description##38961",
+    "experienceevent-directmarketing##description##76031",
+    "experienceevent-environment-details##description##15021",
+    "experienceevent-file-download-details##description##52631",
+    "experienceevent-file-upload-details##description##40461",
+    "experienceevent-implementation-details##description##33331",
+    "experienceevent-knowledge-base-details##description##89251",
+    "experienceevent-marketing##description##58061",
+    "experienceevent-media##description##62331",
+    "experienceevent-offer-impression-details##description##95841",
+    "experienceevent-quote-request-details##description##69801",
+    "experienceevent-social-network-usage-details##description##88891",
+    "experienceevent-support-site-search##description##57001",
+    "experienceevent-survey-response-details##description##7741",
+    "experienceevent-user-login-details##description##29331",
+    "experienceevent-web##description##55501",
+    "experienceevent-claim-details##description##46151",
+    "experienceevent-contact-request-details##description##35821",
+    "experienceevent-upgrade-details##description##41511",
+    "experienceevent-upsell-details##description##85031",
+    "experienceevent-warranty-claim-details##description##97381"
+  ],
   "properties": {
     "identityMap": {
       "type": "object",
@@ -145,6 +201,8 @@
       "type": "string",
       "format": "uri-reference",
       "description": "A unique identifier for the time-series event.",
+      "meta:titleId": "time-series##@id##title##99951",
+      "meta:descriptionId": "time-series##@id##description##96161",
       "meta:xdmType": "string",
       "meta:xdmField": "@id",
       "tagNumber": 2
@@ -154,6 +212,8 @@
       "type": "string",
       "format": "date-time",
       "description": "The time when an event or observation occurred.",
+      "meta:titleId": "time-series##xdm:timestamp##title##42821",
+      "meta:descriptionId": "time-series##xdm:timestamp##description##56081",
       "meta:xdmType": "date-time",
       "meta:xdmField": "xdm:timestamp",
       "tagNumber": 3
@@ -162,6 +222,8 @@
       "title": "Event Type",
       "type": "string",
       "description": "The primary event type for this time-series record.",
+      "meta:titleId": "time-series##xdm:eventType##title##29991",
+      "meta:descriptionId": "time-series##xdm:eventType##description##76551",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:eventType",
       "tagNumber": 4
@@ -170,6 +232,8 @@
       "title": "ExperienceEvent merge ID",
       "description": "An ID to correlate or merge multiple Experience events together that are essentially the same event or should be merged. This is intended to be populated by the data producer prior to ingestion.",
       "type": "string",
+      "meta:titleId": "experienceevent##xdm:eventMergeId##title##72591",
+      "meta:descriptionId": "experienceevent##xdm:eventMergeId##description##68301",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:eventMergeId",
       "tagNumber": 5
@@ -179,6 +243,8 @@
       "description": "Value that describes the producer of the event - suggested values would be 'self', 'system', 'salesRep', etc. Can be used to filter out certain producers if needed.",
       "type": "string",
       "default": "self",
+      "meta:titleId": "experienceevent##xdm:producedBy##title##59361",
+      "meta:descriptionId": "experienceevent##xdm:producedBy##description##34611",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:producedBy",
       "tagNumber": 6
@@ -191,6 +257,8 @@
           "title": "Support Request Steps",
           "$ref": "../../datatypes/industry-verticals/tool-usage.schema.json",
           "description": "Extension of toolUsage data type.",
+          "meta:titleId": "experienceevent-support-request##xdm:supportRequestSteps##title##9811",
+          "meta:descriptionId": "experienceevent-support-request##xdm:supportRequestSteps##description##57741",
           "meta:xdmField": "xdm:supportRequestSteps",
           "tagNumber": 1
         }
@@ -202,6 +270,8 @@
       "title": "Advertising",
       "$ref": "../../datatypes/marketing/advertising.schema.json",
       "description": "Information related to advertising impressions, clickthroughs, and attribution.",
+      "meta:titleId": "experienceevent-advertising##xdm:advertising##title##72541",
+      "meta:descriptionId": "experienceevent-advertising##xdm:advertising##description##17601",
       "meta:xdmField": "xdm:advertising",
       "tagNumber": 8
     },
@@ -209,6 +279,8 @@
       "title": "Product list items",
       "type": "array",
       "description": "A list of items representing a product selected by a customer with specific options and pricing that are for that usage context at a specific point of time and may differ from the product record.",
+      "meta:titleId": "experienceevent-commerce##xdm:productListItems##title##55181",
+      "meta:descriptionId": "experienceevent-commerce##xdm:productListItems##description##83861",
       "meta:xdmType": "array",
       "items": {
         "$ref": "../../datatypes/productlistitem.schema.json",
@@ -221,6 +293,8 @@
       "title": "Commerce",
       "$ref": "../../datatypes/marketing/commerce.schema.json",
       "description": "Product returns, warranty registration, and shopping cart/order process.",
+      "meta:titleId": "experienceevent-commerce##xdm:commerce##title##46211",
+      "meta:descriptionId": "experienceevent-commerce##xdm:commerce##description##59661",
       "meta:xdmField": "xdm:commerce",
       "tagNumber": 10
     },
@@ -228,6 +302,8 @@
       "title": "Direct marketing",
       "$ref": "../../datatypes/marketing/direct-marketing.schema.json",
       "description": "Events and properties related to direct and outbound marketing such as email, direct mail, texts, and in-app notifications.",
+      "meta:titleId": "experienceevent-directmarketing##xdm:directMarketing##title##4511",
+      "meta:descriptionId": "experienceevent-directmarketing##xdm:directMarketing##description##11971",
       "meta:xdmField": "xdm:directMarketing",
       "tagNumber": 11
     },
@@ -235,6 +311,8 @@
       "title": "Environment",
       "$ref": "../../datatypes/environment.schema.json",
       "description": "Information about the surrounding situation the event observation occurred in, specifically detailing transitory information such as the network or software versions.",
+      "meta:titleId": "experienceevent-environment-details##xdm:environment##title##57511",
+      "meta:descriptionId": "experienceevent-environment-details##xdm:environment##description##42621",
       "meta:xdmField": "xdm:environment",
       "tagNumber": 12
     },
@@ -242,6 +320,8 @@
       "title": "Device",
       "$ref": "../../datatypes/device.schema.json",
       "description": "An identified device, application or device browser instance that is trackable across sessions, normally by cookies.",
+      "meta:titleId": "experienceevent-environment-details##xdm:device##title##31301",
+      "meta:descriptionId": "experienceevent-environment-details##xdm:device##description##51671",
       "meta:xdmField": "xdm:device",
       "tagNumber": 13
     },
@@ -249,18 +329,26 @@
       "title": "Place context",
       "$ref": "../../datatypes/placecontext.schema.json",
       "description": "The transient circumstances related to the observation. Examples include locale specific information such as weather, local time, traffic, day of the week, workday vs. holiday, and working hours.",
+      "meta:titleId": "experienceevent-environment-details##xdm:placeContext##title##87021",
+      "meta:descriptionId": "experienceevent-environment-details##xdm:placeContext##description##71741",
       "meta:xdmField": "xdm:placeContext",
       "tagNumber": 14
     },
     "fileTransfer": {
       "type": "object",
       "description": "Information for file download or file upload activities.",
+      "meta:descriptionId": [
+        "experienceevent-file-download-details##xdm:fileTransfer##description##13821",
+        "experienceevent-file-upload-details##xdm:fileTransfer##description##9981"
+      ],
       "meta:xdmType": "object",
       "properties": {
         "fileDownload": {
           "title": "File Download",
           "$ref": "../../datatypes/industry-verticals/file-transfer.schema.json",
           "description": "Tracks all details of a file download. Extension of file transfer data type.",
+          "meta:titleId": "experienceevent-file-download-details##xdm:fileDownload##title##22131",
+          "meta:descriptionId": "experienceevent-file-download-details##xdm:fileDownload##description##2801",
           "meta:xdmField": "xdm:fileDownload",
           "tagNumber": 1
         },
@@ -268,6 +356,8 @@
           "title": "File Upload",
           "$ref": "../../datatypes/industry-verticals/file-transfer.schema.json",
           "description": "Tracks all details of a file upload. Extension of file transfer data type.",
+          "meta:titleId": "experienceevent-file-upload-details##xdm:fileUpload##title##42231",
+          "meta:descriptionId": "experienceevent-file-upload-details##xdm:fileUpload##description##11491",
           "meta:xdmField": "xdm:fileUpload",
           "tagNumber": 2
         }
@@ -279,18 +369,26 @@
       "title": "Implementation details",
       "$ref": "../../datatypes/industry-verticals/implementationdetails.schema.json",
       "description": "Accomodates tracking versioning details for the Adobe Experience Cloud solutions deployed.",
+      "meta:titleId": "experienceevent-implementation-details##xdm:implementationDetails##title##64221",
+      "meta:descriptionId": "experienceevent-implementation-details##xdm:implementationDetails##description##8781",
       "meta:xdmField": "xdm:implementationDetails",
       "tagNumber": 16
     },
     "siteKnowledge": {
       "type": "object",
       "description": "Knowledge base tracking, support site searches and forum interaction details.",
+      "meta:descriptionId": [
+        "experienceevent-knowledge-base-details##xdm:siteKnowledge##description##48851",
+        "experienceevent-support-site-search##xdm:siteKnowledge##description##98951"
+      ],
       "meta:xdmType": "object",
       "properties": {
         "knowledgeBaseArticleID": {
           "title": "Knowledge Base Article ID",
           "type": "string",
           "description": "Tracks the knowledge base article ID when it has been viewed.",
+          "meta:titleId": "experienceevent-knowledge-base-details##xdm:knowledgeBaseArticleID##title##93231",
+          "meta:descriptionId": "experienceevent-knowledge-base-details##xdm:knowledgeBaseArticleID##description##81531",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:knowledgeBaseArticleID",
           "tagNumber": 1
@@ -299,6 +397,8 @@
           "title": "Knowledge Base Article Type",
           "type": "string",
           "description": "Tracks the knowledge base article type when it has been viewed.",
+          "meta:titleId": "experienceevent-knowledge-base-details##xdm:knowledgeBaseArticleType##title##75631",
+          "meta:descriptionId": "experienceevent-knowledge-base-details##xdm:knowledgeBaseArticleType##description##14261",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:knowledgeBaseArticleType",
           "tagNumber": 2
@@ -307,6 +407,8 @@
           "title": "Knowledge Base Article View",
           "type": "integer",
           "description": "Tracked when a knowledge base article has been viewed.",
+          "meta:titleId": "experienceevent-knowledge-base-details##xdm:knowledgeBaseArticleView##title##37621",
+          "meta:descriptionId": "experienceevent-knowledge-base-details##xdm:knowledgeBaseArticleView##description##69311",
           "meta:xdmType": "int",
           "meta:xdmField": "xdm:knowledgeBaseArticleView",
           "tagNumber": 3
@@ -315,6 +417,8 @@
           "title": "Knowledge Base Search",
           "$ref": "../../datatypes/industry-verticals/internal-site-search.schema.json",
           "description": "Extension of internalSearch data type.",
+          "meta:titleId": "experienceevent-knowledge-base-details##xdm:knowledgeBaseSearch##title##67781",
+          "meta:descriptionId": "experienceevent-knowledge-base-details##xdm:knowledgeBaseSearch##description##54821",
           "meta:xdmField": "xdm:knowledgeBaseSearch",
           "tagNumber": 4
         },
@@ -322,6 +426,8 @@
           "title": "Support Site Search",
           "$ref": "../../datatypes/industry-verticals/internal-site-search.schema.json",
           "description": "Extension of internalSearch data type.",
+          "meta:titleId": "experienceevent-support-site-search##xdm:supportSiteSearch##title##29121",
+          "meta:descriptionId": "experienceevent-support-site-search##xdm:supportSiteSearch##description##85631",
           "meta:xdmField": "xdm:supportSiteSearch",
           "tagNumber": 5
         }
@@ -333,6 +439,8 @@
       "title": "Marketing",
       "$ref": "../../datatypes/marketing/marketing.schema.json",
       "description": "Tracks offer impression and social network interactions.",
+      "meta:titleId": "experienceevent-marketing##xdm:marketing##title##741",
+      "meta:descriptionId": "experienceevent-marketing##xdm:marketing##description##79761",
       "meta:xdmField": "xdm:marketing",
       "tagNumber": 18
     },
@@ -340,18 +448,23 @@
       "title": "Media",
       "$ref": "../../datatypes/media.schema.json",
       "description": "Media activity information related to the experience event.",
+      "meta:titleId": "experienceevent-media##xdm:media##title##121",
+      "meta:descriptionId": "experienceevent-media##xdm:media##description##53531",
       "meta:xdmField": "xdm:media",
       "tagNumber": 19
     },
     "offers": {
       "type": "object",
       "description": "Offer tracking, including offer impressions and clickthroughs.",
+      "meta:descriptionId": "experienceevent-offer-impression-details##xdm:offers##description##93931",
       "meta:xdmType": "object",
       "properties": {
         "ID": {
           "title": "Offer ID",
           "type": "string",
           "description": "Offer Identifier.",
+          "meta:titleId": "experienceevent-offer-impression-details##xdm:ID##title##54591",
+          "meta:descriptionId": "experienceevent-offer-impression-details##xdm:ID##description##741",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:ID",
           "tagNumber": 1
@@ -360,6 +473,8 @@
           "title": "Offer Clicks",
           "type": "integer",
           "description": "Counts the number of times an offer has been clicked.",
+          "meta:titleId": "experienceevent-offer-impression-details##xdm:clicks##title##79951",
+          "meta:descriptionId": "experienceevent-offer-impression-details##xdm:clicks##description##78471",
           "meta:xdmType": "int",
           "meta:xdmField": "xdm:clicks",
           "tagNumber": 2
@@ -368,6 +483,8 @@
           "title": "Offer Dismissals",
           "type": "integer",
           "description": "Counts the number of times an offer has been dismissed.",
+          "meta:titleId": "experienceevent-offer-impression-details##xdm:dismissals##title##95451",
+          "meta:descriptionId": "experienceevent-offer-impression-details##xdm:dismissals##description##81391",
           "meta:xdmType": "int",
           "meta:xdmField": "xdm:dismissals",
           "tagNumber": 3
@@ -376,6 +493,8 @@
           "title": "Offer Impression Details",
           "type": "array",
           "description": "An array of advertisements that have been displayed to a customer.",
+          "meta:titleId": "experienceevent-offer-impression-details##xdm:impressions##title##96241",
+          "meta:descriptionId": "experienceevent-offer-impression-details##xdm:impressions##description##37101",
           "meta:xdmType": "array",
           "items": {
             "$ref": "../../datatypes/industry-verticals/impressions.schema.json",
@@ -391,12 +510,15 @@
     "quotes": {
       "type": "object",
       "description": "Quotes information including discount, premium, and request ID.",
+      "meta:descriptionId": "experienceevent-quote-request-details##xdm:quotes##description##88461",
       "meta:xdmType": "object",
       "properties": {
         "requestID": {
           "title": "Quote Request ID",
           "type": "string",
           "description": "Unique identifier for the quote request.",
+          "meta:titleId": "experienceevent-quote-request-details##xdm:requestID##title##59131",
+          "meta:descriptionId": "experienceevent-quote-request-details##xdm:requestID##description##37451",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:requestID",
           "tagNumber": 1
@@ -405,6 +527,8 @@
           "title": "Discount",
           "$ref": "../../datatypes/currency.schema.json",
           "description": "Records the discount amount for a quote displayed to a visitor.",
+          "meta:titleId": "experienceevent-quote-request-details##xdm:discount##title##43791",
+          "meta:descriptionId": "experienceevent-quote-request-details##xdm:discount##description##54151",
           "meta:xdmField": "xdm:discount",
           "tagNumber": 2
         },
@@ -412,6 +536,8 @@
           "title": "Premium",
           "$ref": "../../datatypes/currency.schema.json",
           "description": "Records the premium amount for a quote displayed to a visitor.",
+          "meta:titleId": "experienceevent-quote-request-details##xdm:premium##title##27021",
+          "meta:descriptionId": "experienceevent-quote-request-details##xdm:premium##description##11621",
           "meta:xdmField": "xdm:premium",
           "tagNumber": 3
         },
@@ -419,6 +545,8 @@
           "title": "Location",
           "type": "string",
           "description": "Captures the postal code used for finding retailers near the visitor's location.",
+          "meta:titleId": "experienceevent-quote-request-details##xdm:location##title##80751",
+          "meta:descriptionId": "experienceevent-quote-request-details##xdm:location##description##26571",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:location",
           "tagNumber": 4
@@ -427,6 +555,8 @@
           "title": "Selected Retailer",
           "type": "string",
           "description": "Captures the selected retailer for a quote request, if applicable. ",
+          "meta:titleId": "experienceevent-quote-request-details##xdm:selectedRetailer##title##87741",
+          "meta:descriptionId": "experienceevent-quote-request-details##xdm:selectedRetailer##description##44921",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:selectedRetailer",
           "tagNumber": 5
@@ -438,12 +568,15 @@
     "socialMarketing ": {
       "type": "object",
       "description": "Tracks interactions related to social marketing sites, such as shares and follows.",
+      "meta:descriptionId": "experienceevent-social-network-usage-details##xdm:socialMarketing ##description##84711",
       "meta:xdmType": "object",
       "properties": {
         "sharedContent": {
           "title": "Shared Content",
           "type": "string",
           "description": "Tracks the page/url/content/value of the item being shared.",
+          "meta:titleId": "experienceevent-social-network-usage-details##xdm:sharedContent##title##70921",
+          "meta:descriptionId": "experienceevent-social-network-usage-details##xdm:sharedContent##description##29941",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:sharedContent",
           "tagNumber": 1
@@ -452,6 +585,8 @@
           "title": "Follow",
           "type": "integer",
           "description": "Tracks when a social follow event has occurred.",
+          "meta:titleId": "experienceevent-social-network-usage-details##xdm:follow##title##65971",
+          "meta:descriptionId": "experienceevent-social-network-usage-details##xdm:follow##description##25061",
           "meta:xdmType": "int",
           "meta:xdmField": "xdm:follow",
           "tagNumber": 2
@@ -460,6 +595,8 @@
           "title": "Shared Message",
           "type": "string",
           "description": "Message that the sender sent",
+          "meta:titleId": "experienceevent-social-network-usage-details##xdm:sharedMessage##title##87141",
+          "meta:descriptionId": "experienceevent-social-network-usage-details##xdm:sharedMessage##description##77681",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:sharedMessage",
           "tagNumber": 3
@@ -468,6 +605,8 @@
           "title": "Interactions",
           "type": "integer",
           "description": "The total number of social interactions.",
+          "meta:titleId": "experienceevent-social-network-usage-details##xdm:interactions##title##63951",
+          "meta:descriptionId": "experienceevent-social-network-usage-details##xdm:interactions##description##49611",
           "meta:xdmType": "int",
           "meta:xdmField": "xdm:interactions",
           "tagNumber": 4
@@ -476,6 +615,8 @@
           "title": "Network",
           "type": "string",
           "description": "Tracks the social sharing network in use, i.e. Facebook, Twitter, Instagram, etc.",
+          "meta:titleId": "experienceevent-social-network-usage-details##xdm:network##title##13881",
+          "meta:descriptionId": "experienceevent-social-network-usage-details##xdm:network##description##32281",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:network",
           "tagNumber": 5
@@ -484,6 +625,8 @@
           "title": "Target",
           "type": "string",
           "description": "For social interactions, this is the URL (or resource) which receives the social network action.",
+          "meta:titleId": "experienceevent-social-network-usage-details##xdm:target##title##51961",
+          "meta:descriptionId": "experienceevent-social-network-usage-details##xdm:target##description##90621",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:target",
           "tagNumber": 6
@@ -492,6 +635,8 @@
           "title": "Recipient",
           "type": "string",
           "description": "Recipient of the shared content",
+          "meta:titleId": "experienceevent-social-network-usage-details##xdm:recipient##title##68731",
+          "meta:descriptionId": "experienceevent-social-network-usage-details##xdm:recipient##description##59871",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:recipient",
           "tagNumber": 7
@@ -500,6 +645,8 @@
           "title": "Share",
           "type": "integer",
           "description": "Tracks when a social sharing event has occurred.",
+          "meta:titleId": "experienceevent-social-network-usage-details##xdm:share##title##49791",
+          "meta:descriptionId": "experienceevent-social-network-usage-details##xdm:share##description##31611",
           "meta:xdmType": "int",
           "meta:xdmField": "xdm:share",
           "tagNumber": 8
@@ -511,12 +658,15 @@
     "surveyResponse": {
       "type": "object",
       "description": "Stores details related to a survey that has been completed by a user.",
+      "meta:descriptionId": "experienceevent-survey-response-details##xdm:surveyResponse##description##72551",
       "meta:xdmType": "object",
       "properties": {
         "surveyAnswers": {
           "title": "Survey Answers",
           "type": "array",
           "description": "An array of the answers provided by the visitor within a survey.",
+          "meta:titleId": "experienceevent-survey-response-details##xdm:surveyAnswers##title##97831",
+          "meta:descriptionId": "experienceevent-survey-response-details##xdm:surveyAnswers##description##38241",
           "meta:xdmType": "array",
           "items": {
             "type": "string",
@@ -530,6 +680,8 @@
           "title": "Survey ID",
           "type": "string",
           "description": "ID for the specific survey taken.",
+          "meta:titleId": "experienceevent-survey-response-details##xdm:surveyID##title##52911",
+          "meta:descriptionId": "experienceevent-survey-response-details##xdm:surveyID##description##83071",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:surveyID",
           "tagNumber": 2
@@ -538,6 +690,8 @@
           "title": "Survey Questions",
           "type": "array",
           "description": "An array of the questions presented to the visitor within a survey.",
+          "meta:titleId": "experienceevent-survey-response-details##xdm:surveyQuestions##title##62711",
+          "meta:descriptionId": "experienceevent-survey-response-details##xdm:surveyQuestions##description##57371",
           "meta:xdmType": "array",
           "items": {
             "type": "string",
@@ -554,12 +708,15 @@
     "userAccount": {
       "type": "object",
       "description": "Loyalty details, preferences, login processes, and other account preferences.",
+      "meta:descriptionId": "experienceevent-user-login-details##xdm:userAccount##description##87971",
       "meta:xdmType": "object",
       "properties": {
         "accountSwitch": {
           "title": "Switch User Accounts",
           "type": "integer",
           "description": "Captures when a visitor switches their account during a visit.",
+          "meta:titleId": "experienceevent-user-login-details##xdm:accountSwitch##title##55681",
+          "meta:descriptionId": "experienceevent-user-login-details##xdm:accountSwitch##description##27921",
           "meta:xdmType": "int",
           "meta:xdmField": "xdm:accountSwitch",
           "tagNumber": 1
@@ -568,6 +725,8 @@
           "title": "Cookie Consent Accepted",
           "type": "boolean",
           "description": "Tracked when a visitor opts-in to allowing cookies to be set within their browser.",
+          "meta:titleId": "experienceevent-user-login-details##xdm:cookieConsentAccepted##title##91081",
+          "meta:descriptionId": "experienceevent-user-login-details##xdm:cookieConsentAccepted##description##52411",
           "meta:xdmType": "boolean",
           "meta:xdmField": "xdm:cookieConsentAccepted",
           "tagNumber": 2
@@ -576,6 +735,8 @@
           "title": "Cookie Consent Viewed",
           "type": "integer",
           "description": "Tracked when a visitor views the cookie consent information.",
+          "meta:titleId": "experienceevent-user-login-details##xdm:cookieConsentViewed##title##81371",
+          "meta:descriptionId": "experienceevent-user-login-details##xdm:cookieConsentViewed##description##65821",
           "meta:xdmType": "int",
           "meta:xdmField": "xdm:cookieConsentViewed",
           "tagNumber": 3
@@ -584,6 +745,8 @@
           "title": "Forgot Password",
           "type": "integer",
           "description": "Counter event when a visitor begins the forgot password process.",
+          "meta:titleId": "experienceevent-user-login-details##xdm:forgotPassword##title##73141",
+          "meta:descriptionId": "experienceevent-user-login-details##xdm:forgotPassword##description##1551",
           "meta:xdmType": "int",
           "meta:xdmField": "xdm:forgotPassword",
           "tagNumber": 4
@@ -592,6 +755,8 @@
           "title": "Forgot Username",
           "type": "integer",
           "description": "Counter event when a visitor begins the forgot username process.",
+          "meta:titleId": "experienceevent-user-login-details##xdm:forgotUsername##title##67181",
+          "meta:descriptionId": "experienceevent-user-login-details##xdm:forgotUsername##description##96461",
           "meta:xdmType": "int",
           "meta:xdmField": "xdm:forgotUsername",
           "tagNumber": 5
@@ -600,6 +765,8 @@
           "title": "Visitor Login",
           "type": "integer",
           "description": "Counter event indicating a successful visitor login.",
+          "meta:titleId": "experienceevent-user-login-details##xdm:login##title##23811",
+          "meta:descriptionId": "experienceevent-user-login-details##xdm:login##description##50761",
           "meta:xdmType": "int",
           "meta:xdmField": "xdm:login",
           "tagNumber": 6
@@ -608,6 +775,8 @@
           "title": "Biometric Authentication",
           "type": "boolean",
           "description": "Flag determining if the user has used a biometric authentication process to login.",
+          "meta:titleId": "experienceevent-user-login-details##xdm:loginBiometric##title##22211",
+          "meta:descriptionId": "experienceevent-user-login-details##xdm:loginBiometric##description##40741",
           "meta:xdmType": "boolean",
           "meta:xdmField": "xdm:loginBiometric",
           "tagNumber": 7
@@ -616,6 +785,8 @@
           "title": "Visitor Login Failure",
           "type": "integer",
           "description": "Counter event indicating a failed visitor login attempt.",
+          "meta:titleId": "experienceevent-user-login-details##xdm:loginFailure##title##51121",
+          "meta:descriptionId": "experienceevent-user-login-details##xdm:loginFailure##description##22451",
           "meta:xdmType": "int",
           "meta:xdmField": "xdm:loginFailure",
           "tagNumber": 8
@@ -624,6 +795,8 @@
           "title": "Login Page Location",
           "type": "string",
           "description": "When multiple login locations exist on the page, this value should be used to identify the specific location the user used for login",
+          "meta:titleId": "experienceevent-user-login-details##xdm:loginLocation##title##81381",
+          "meta:descriptionId": "experienceevent-user-login-details##xdm:loginLocation##description##51891",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:loginLocation",
           "tagNumber": 9
@@ -632,6 +805,8 @@
           "title": "Keychain ",
           "type": "boolean",
           "description": "Flag determining if the user has used a keychain authentication process to login.",
+          "meta:titleId": "experienceevent-user-login-details##xdm:loginKeychain##title##30151",
+          "meta:descriptionId": "experienceevent-user-login-details##xdm:loginKeychain##description##70171",
           "meta:xdmType": "boolean",
           "meta:xdmField": "xdm:loginKeychain",
           "tagNumber": 10
@@ -640,6 +815,8 @@
           "title": "Multi-Factor Authentication",
           "type": "boolean",
           "description": "Flag determining if the user has used a multi-factor authentication process to login.",
+          "meta:titleId": "experienceevent-user-login-details##xdm:loginMultiFactor##title##4381",
+          "meta:descriptionId": "experienceevent-user-login-details##xdm:loginMultiFactor##description##73741",
           "meta:xdmType": "boolean",
           "meta:xdmField": "xdm:loginMultiFactor",
           "tagNumber": 11
@@ -648,6 +825,8 @@
           "title": "Login Status",
           "type": "string",
           "description": "Used to track the current login status for site visitors, regardless of whether login occurred as a result of a login during the current session or a previous session as identified by a cookie value. ",
+          "meta:titleId": "experienceevent-user-login-details##xdm:loginStatus##title##47901",
+          "meta:descriptionId": "experienceevent-user-login-details##xdm:loginStatus##description##11191",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:loginStatus",
           "tagNumber": 12
@@ -656,6 +835,8 @@
           "title": "Login with Third Party",
           "type": "integer",
           "description": "Counter event that is incremented when a visitor has used another login network to authenticate, such as Apple, Facebook, or Google.",
+          "meta:titleId": "experienceevent-user-login-details##xdm:loginThirdParty##title##23501",
+          "meta:descriptionId": "experienceevent-user-login-details##xdm:loginThirdParty##description##7321",
           "meta:xdmType": "int",
           "meta:xdmField": "xdm:loginThirdParty",
           "tagNumber": 13
@@ -664,6 +845,8 @@
           "title": "Third Party Login Site",
           "type": "string",
           "description": "Tracks the site used to authetnicate when a third-party sign-in event is tracked.",
+          "meta:titleId": "experienceevent-user-login-details##xdm:loginThirdPartySite##title##17551",
+          "meta:descriptionId": "experienceevent-user-login-details##xdm:loginThirdPartySite##description##55281",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:loginThirdPartySite",
           "tagNumber": 14
@@ -672,6 +855,8 @@
           "title": "User Login Type",
           "type": "string",
           "description": "Email address vs social login",
+          "meta:titleId": "experienceevent-user-login-details##xdm:loginType##title##59321",
+          "meta:descriptionId": "experienceevent-user-login-details##xdm:loginType##description##15481",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:loginType",
           "tagNumber": 15
@@ -680,6 +865,8 @@
           "title": "Visitor Logout",
           "type": "integer",
           "description": "Counter event indicating a successful visitor logout.",
+          "meta:titleId": "experienceevent-user-login-details##xdm:logout##title##36031",
+          "meta:descriptionId": "experienceevent-user-login-details##xdm:logout##description##92581",
           "meta:xdmType": "int",
           "meta:xdmField": "xdm:logout",
           "tagNumber": 16
@@ -688,6 +875,8 @@
           "title": "Reset Password",
           "type": "integer",
           "description": "Counter event when a visitor begins the reset password process.",
+          "meta:titleId": "experienceevent-user-login-details##xdm:resetPassword##title##23441",
+          "meta:descriptionId": "experienceevent-user-login-details##xdm:resetPassword##description##48741",
           "meta:xdmType": "int",
           "meta:xdmField": "xdm:resetPassword",
           "tagNumber": 17
@@ -696,6 +885,8 @@
           "title": "Session Timeout",
           "type": "integer",
           "description": "Tracked when a visitor has an authenticated session that is automatically logged out after a predetermined amount of time.",
+          "meta:titleId": "experienceevent-user-login-details##xdm:sessionTimeout##title##84111",
+          "meta:descriptionId": "experienceevent-user-login-details##xdm:sessionTimeout##description##46521",
           "meta:xdmType": "int",
           "meta:xdmField": "xdm:sessionTimeout",
           "tagNumber": 18
@@ -704,6 +895,8 @@
           "title": "Account Profile Update",
           "type": "integer",
           "description": "Counter event indicating a user has updated their account profile.",
+          "meta:titleId": "experienceevent-user-login-details##xdm:updateProfile##title##62281",
+          "meta:descriptionId": "experienceevent-user-login-details##xdm:updateProfile##description##9481",
           "meta:xdmType": "int",
           "meta:xdmField": "xdm:updateProfile",
           "tagNumber": 19
@@ -716,18 +909,23 @@
       "title": "Web",
       "$ref": "../../datatypes/webinfo.schema.json",
       "description": "Link clicks, web page details, referrer information, and browser details.",
+      "meta:titleId": "experienceevent-web##xdm:web##title##81951",
+      "meta:descriptionId": "experienceevent-web##xdm:web##description##6711",
       "meta:xdmField": "xdm:web",
       "tagNumber": 25
     },
     "claims": {
       "type": "object",
       "description": "Captures fields related to a claim when initated by a customer.",
+      "meta:descriptionId": "experienceevent-claim-details##xdm:claims##description##85031",
       "meta:xdmType": "object",
       "properties": {
         "ID": {
           "title": "Claims ID",
           "type": "string",
           "description": "Unique identifier for the claim.",
+          "meta:titleId": "experienceevent-claim-details##xdm:ID##title##64111",
+          "meta:descriptionId": "experienceevent-claim-details##xdm:ID##description##49581",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:ID",
           "tagNumber": 1
@@ -737,6 +935,8 @@
           "type": "string",
           "format": "date-time",
           "description": "Date the claim was successfully submitted.",
+          "meta:titleId": "experienceevent-claim-details##xdm:startDate##title##37501",
+          "meta:descriptionId": "experienceevent-claim-details##xdm:startDate##description##49691",
           "meta:xdmType": "date-time",
           "meta:xdmField": "xdm:startDate",
           "tagNumber": 2
@@ -751,6 +951,8 @@
             "declined"
           ],
           "description": "Captures the status of the claim for any given point in the application process.",
+          "meta:titleId": "experienceevent-claim-details##xdm:status##title##44421",
+          "meta:descriptionId": "experienceevent-claim-details##xdm:status##description##75641",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:status",
           "tagNumber": 3
@@ -771,6 +973,8 @@
             "earthquake"
           ],
           "description": "Type of claim submitted.",
+          "meta:titleId": "experienceevent-claim-details##xdm:type##title##70451",
+          "meta:descriptionId": "experienceevent-claim-details##xdm:type##description##92531",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:type",
           "tagNumber": 4
@@ -779,6 +983,8 @@
           "title": "Policy ID",
           "type": "string",
           "description": "Policy Identifier.",
+          "meta:titleId": "experienceevent-claim-details##xdm:policyID##title##6081",
+          "meta:descriptionId": "experienceevent-claim-details##xdm:policyID##description##48631",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:policyID",
           "tagNumber": 5
@@ -787,6 +993,8 @@
           "title": "Benefit Amount",
           "$ref": "../../datatypes/currency.schema.json",
           "description": "Captures the benefit amount.",
+          "meta:titleId": "experienceevent-claim-details##xdm:benefitAmount##title##82011",
+          "meta:descriptionId": "experienceevent-claim-details##xdm:benefitAmount##description##64061",
           "meta:xdmField": "xdm:benefitAmount",
           "tagNumber": 6
         }
@@ -797,12 +1005,15 @@
     "customerFeedback": {
       "type": "object",
       "description": "Customer interaction information such as chat, click to call, email and survey questions/answers.",
+      "meta:descriptionId": "experienceevent-contact-request-details##xdm:customerFeedback##description##31401",
       "meta:xdmType": "object",
       "properties": {
         "chatDeclined": {
           "title": "Chat Declined",
           "type": "integer",
           "description": "Captured when an offered chat is declined by a visitor.",
+          "meta:titleId": "experienceevent-contact-request-details##xdm:chatDeclined##title##26041",
+          "meta:descriptionId": "experienceevent-contact-request-details##xdm:chatDeclined##description##28731",
           "meta:xdmType": "int",
           "meta:xdmField": "xdm:chatDeclined",
           "tagNumber": 1
@@ -811,6 +1022,8 @@
           "title": "Chat End",
           "type": "integer",
           "description": "Captured when a chat is ended with a visitor.",
+          "meta:titleId": "experienceevent-contact-request-details##xdm:chatEnd##title##21371",
+          "meta:descriptionId": "experienceevent-contact-request-details##xdm:chatEnd##description##23021",
           "meta:xdmType": "int",
           "meta:xdmField": "xdm:chatEnd",
           "tagNumber": 2
@@ -819,6 +1032,8 @@
           "title": "Chat Offered",
           "type": "integer",
           "description": "Captures the number of times a chat session has been offered to a visitor.",
+          "meta:titleId": "experienceevent-contact-request-details##xdm:chatOffered##title##7451",
+          "meta:descriptionId": "experienceevent-contact-request-details##xdm:chatOffered##description##18431",
           "meta:xdmType": "int",
           "meta:xdmField": "xdm:chatOffered",
           "tagNumber": 3
@@ -827,6 +1042,8 @@
           "title": "Chat Session ID",
           "type": "string",
           "description": "Captures the chat session identifier, if available.",
+          "meta:titleId": "experienceevent-contact-request-details##xdm:chatSessionID##title##97981",
+          "meta:descriptionId": "experienceevent-contact-request-details##xdm:chatSessionID##description##51351",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:chatSessionID",
           "tagNumber": 4
@@ -835,6 +1052,8 @@
           "title": "Chat Start",
           "type": "integer",
           "description": "Captured when a chat is initiated with a visitor.",
+          "meta:titleId": "experienceevent-contact-request-details##xdm:chatStart##title##3661",
+          "meta:descriptionId": "experienceevent-contact-request-details##xdm:chatStart##description##69571",
           "meta:xdmType": "int",
           "meta:xdmField": "xdm:chatStart",
           "tagNumber": 5
@@ -843,6 +1062,8 @@
           "title": "Click to Call",
           "type": "integer",
           "description": "Visitor initiates a call to the client from a telephone number link on the site/app.",
+          "meta:titleId": "experienceevent-contact-request-details##xdm:clickToCall##title##31491",
+          "meta:descriptionId": "experienceevent-contact-request-details##xdm:clickToCall##description##95751",
           "meta:xdmType": "int",
           "meta:xdmField": "xdm:clickToCall",
           "tagNumber": 6
@@ -851,6 +1072,8 @@
           "title": "Click to Direct Message",
           "type": "integer",
           "description": "Visitor initiates a direct message or feedback to the client from a direct message form on the site/app.",
+          "meta:titleId": "experienceevent-contact-request-details##xdm:clickToDirectMessage##title##9181",
+          "meta:descriptionId": "experienceevent-contact-request-details##xdm:clickToDirectMessage##description##75731",
           "meta:xdmType": "int",
           "meta:xdmField": "xdm:clickToDirectMessage",
           "tagNumber": 7
@@ -859,6 +1082,8 @@
           "title": "Click to Email",
           "type": "integer",
           "description": "Visitor initiates an email to the client from an email link on the site/app.",
+          "meta:titleId": "experienceevent-contact-request-details##xdm:clickToEmail##title##24461",
+          "meta:descriptionId": "experienceevent-contact-request-details##xdm:clickToEmail##description##81891",
           "meta:xdmType": "int",
           "meta:xdmField": "xdm:clickToEmail",
           "tagNumber": 8
@@ -867,6 +1092,8 @@
           "title": "Click to Text",
           "type": "integer",
           "description": "Visitor initiates a SMS/text message to the client from a SMS/text link on the site/app.",
+          "meta:titleId": "experienceevent-contact-request-details##xdm:clickToText##title##30931",
+          "meta:descriptionId": "experienceevent-contact-request-details##xdm:clickToText##description##54301",
           "meta:xdmType": "int",
           "meta:xdmField": "xdm:clickToText",
           "tagNumber": 9
@@ -875,6 +1102,8 @@
           "title": "Subject",
           "type": "string",
           "description": "Subject of contact requested by the visitor, such as in-store purchase support, online order support, credit customer service, etc.",
+          "meta:titleId": "experienceevent-contact-request-details##xdm:subject##title##94351",
+          "meta:descriptionId": "experienceevent-contact-request-details##xdm:subject##description##23511",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:subject",
           "tagNumber": 10
@@ -883,6 +1112,8 @@
           "title": "Call Back Contact Information",
           "$ref": "../../datatypes/demographic/phonenumber.schema.json",
           "description": "The contact phone number the visitor uses for responses to contact requests.",
+          "meta:titleId": "experienceevent-contact-request-details##xdm:callBackNumber##title##52551",
+          "meta:descriptionId": "experienceevent-contact-request-details##xdm:callBackNumber##description##23341",
           "meta:xdmField": "xdm:callBackNumber",
           "tagNumber": 11
         },
@@ -890,6 +1121,8 @@
           "title": "Reply to Email Address",
           "$ref": "../../datatypes/demographic/emailaddress.schema.json",
           "description": "The email address the visitor uses for responses to contact requests.",
+          "meta:titleId": "experienceevent-contact-request-details##xdm:replyToEmailAddress##title##99151",
+          "meta:descriptionId": "experienceevent-contact-request-details##xdm:replyToEmailAddress##description##42851",
           "meta:xdmField": "xdm:replyToEmailAddress",
           "tagNumber": 12
         }
@@ -900,12 +1133,15 @@
     "upgrades": {
       "type": "object",
       "description": "Upgrade information including impressions and transactions associated with upgrades.",
+      "meta:descriptionId": "experienceevent-upgrade-details##xdm:upgrades##description##80441",
       "meta:xdmType": "object",
       "properties": {
         "upgradeImpressions": {
           "title": "Upgrade Impressions",
           "type": "array",
           "description": "Array of the impressions data type.",
+          "meta:titleId": "experienceevent-upgrade-details##xdm:upgradeImpressions##title##39991",
+          "meta:descriptionId": "experienceevent-upgrade-details##xdm:upgradeImpressions##description##14801",
           "meta:xdmType": "array",
           "items": {
             "$ref": "../../datatypes/industry-verticals/impressions.schema.json",
@@ -918,6 +1154,8 @@
           "title": "Upgrade Transaction",
           "$ref": "../../datatypes/industry-verticals/transaction.schema.json",
           "description": "Extension of transaction data type.",
+          "meta:titleId": "experienceevent-upgrade-details##xdm:upgradeTransaction##title##95001",
+          "meta:descriptionId": "experienceevent-upgrade-details##xdm:upgradeTransaction##description##56751",
           "meta:xdmField": "xdm:upgradeTransaction",
           "tagNumber": 3
         }
@@ -928,12 +1166,15 @@
     "upsells": {
       "type": "object",
       "description": "Upsell information including impressions and transactions associated with upsells.",
+      "meta:descriptionId": "experienceevent-upsell-details##xdm:upsells##description##6001",
       "meta:xdmType": "object",
       "properties": {
         "upsellImpressions": {
           "title": "Upsell Impressions",
           "type": "array",
           "description": "Array of the impressions data type.",
+          "meta:titleId": "experienceevent-upsell-details##xdm:upsellImpressions##title##74141",
+          "meta:descriptionId": "experienceevent-upsell-details##xdm:upsellImpressions##description##941",
           "meta:xdmType": "array",
           "items": {
             "$ref": "../../datatypes/industry-verticals/impressions.schema.json",
@@ -946,6 +1187,8 @@
           "title": "Upsell Transaction",
           "$ref": "../../datatypes/industry-verticals/transaction.schema.json",
           "description": "Extension of transaction data type.",
+          "meta:titleId": "experienceevent-upsell-details##xdm:upsellTransaction##title##55571",
+          "meta:descriptionId": "experienceevent-upsell-details##xdm:upsellTransaction##description##971",
           "meta:xdmField": "xdm:upsellTransaction",
           "tagNumber": 3
         }
@@ -956,12 +1199,15 @@
     "warrantyClaim": {
       "type": "object",
       "description": "Captures fields related to a claim when initated by a customer.",
+      "meta:descriptionId": "experienceevent-warranty-claim-details##xdm:warrantyClaim##description##42091",
       "meta:xdmType": "object",
       "properties": {
         "claim": {
           "title": "Claim",
           "$ref": "../../datatypes/industry-verticals/claim.schema.json",
           "description": "Extension of claim data type.",
+          "meta:titleId": "experienceevent-warranty-claim-details##xdm:claim##title##94351",
+          "meta:descriptionId": "experienceevent-warranty-claim-details##xdm:claim##description##80531",
           "meta:xdmField": "xdm:claim",
           "tagNumber": 1
         },
@@ -969,6 +1215,8 @@
           "title": "Length",
           "type": "integer",
           "description": "Records the length of the warranty, in months.",
+          "meta:titleId": "experienceevent-warranty-claim-details##xdm:length##title##18691",
+          "meta:descriptionId": "experienceevent-warranty-claim-details##xdm:length##description##10281",
           "meta:xdmType": "int",
           "meta:xdmField": "xdm:length",
           "tagNumber": 2
@@ -984,6 +1232,8 @@
             "home",
             "automobile"
           ],
+          "meta:titleId": "experienceevent-warranty-claim-details##xdm:type##title##72791",
+          "meta:descriptionId": "experienceevent-warranty-claim-details##xdm:type##description##3661",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:type",
           "tagNumber": 3

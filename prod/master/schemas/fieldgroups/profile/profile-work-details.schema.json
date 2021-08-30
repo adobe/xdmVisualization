@@ -13,12 +13,16 @@
   "description": "Work-related details of a person such as work address, work email, work phone number, and organizations to which the person belongs.",
   "meta:status": "stable",
   "meta:createdDate": "2020-08-10",
+  "meta:titleId": "profile-work-details##title##54111",
+  "meta:descriptionId": "profile-work-details##description##52361",
   "meta:xdmType": "object",
   "properties": {
     "workAddress": {
       "title": "Work Address",
       "$ref": "../../datatypes/demographic/address.schema.json",
       "description": "A work postal address.",
+      "meta:titleId": "profile-work-details##xdm:workAddress##title##85201",
+      "meta:descriptionId": "profile-work-details##xdm:workAddress##description##99171",
       "meta:xdmField": "xdm:workAddress",
       "tagNumber": 1
     },
@@ -26,6 +30,8 @@
       "title": "Work Email",
       "$ref": "../../datatypes/demographic/emailaddress.schema.json",
       "description": "A work email address.",
+      "meta:titleId": "profile-work-details##xdm:workEmail##title##59961",
+      "meta:descriptionId": "profile-work-details##xdm:workEmail##description##94441",
       "meta:xdmField": "xdm:workEmail",
       "tagNumber": 2
     },
@@ -33,12 +39,15 @@
       "title": "Work Phone",
       "$ref": "../../datatypes/demographic/phonenumber.schema.json",
       "description": "Work phone number.",
+      "meta:titleId": "profile-work-details##xdm:workPhone##title##84361",
+      "meta:descriptionId": "profile-work-details##xdm:workPhone##description##5831",
       "meta:xdmField": "xdm:workPhone",
       "tagNumber": 3
     },
     "organizations": {
       "title": "Organizations",
       "type": "array",
+      "meta:titleId": "profile-work-details##xdm:organizations##title##88581",
       "meta:xdmType": "array",
       "items": {
         "type": "string",

@@ -13,17 +13,22 @@
   "description": "Card comparison details such as count, addition, removal, and view.",
   "meta:status": "stable",
   "meta:createdDate": "2021-02-19",
+  "meta:titleId": "experienceevent-card-application-details##title##89301",
+  "meta:descriptionId": "experienceevent-card-application-details##description##90311",
   "meta:xdmType": "object",
   "properties": {
     "personalFinances": {
       "type": "object",
       "description": "Financial details including transactions, accounts, and applications.",
+      "meta:descriptionId": "experienceevent-card-application-details##xdm:personalFinances##description##47531",
       "meta:xdmType": "object",
       "properties": {
         "cardApplicationComparisons": {
           "title": "Card Comparisons",
           "$ref": "../../../datatypes/industry-verticals/comparisons.schema.json",
           "description": "Extension of comparison data type.",
+          "meta:titleId": "experienceevent-card-application-details##xdm:cardApplicationComparisons##title##34611",
+          "meta:descriptionId": "experienceevent-card-application-details##xdm:cardApplicationComparisons##description##38571",
           "meta:xdmField": "xdm:cardApplicationComparisons",
           "tagNumber": 1
         },
@@ -31,6 +36,8 @@
           "title": "Card Application Steps",
           "$ref": "../../../datatypes/industry-verticals/form-applications.schema.json",
           "description": "Extension of form application data type.",
+          "meta:titleId": "experienceevent-card-application-details##xdm:cardApplicationSteps##title##3991",
+          "meta:descriptionId": "experienceevent-card-application-details##xdm:cardApplicationSteps##description##58501",
           "meta:xdmField": "xdm:cardApplicationSteps",
           "tagNumber": 2
         }

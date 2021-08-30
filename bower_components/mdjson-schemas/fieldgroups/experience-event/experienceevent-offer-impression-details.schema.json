@@ -21,17 +21,22 @@
   "description": "Offer details such as offer name, clicks, dismissals.",
   "meta:status": "stable",
   "meta:createdDate": "2021-01-15",
+  "meta:titleId": "experienceevent-offer-impression-details##title##90831",
+  "meta:descriptionId": "experienceevent-offer-impression-details##description##95841",
   "meta:xdmType": "object",
   "properties": {
     "offers": {
       "type": "object",
       "description": "Offer tracking, including offer impressions and clickthroughs.",
+      "meta:descriptionId": "experienceevent-offer-impression-details##xdm:offers##description##93931",
       "meta:xdmType": "object",
       "properties": {
         "ID": {
           "title": "Offer ID",
           "type": "string",
           "description": "Offer Identifier.",
+          "meta:titleId": "experienceevent-offer-impression-details##xdm:ID##title##54591",
+          "meta:descriptionId": "experienceevent-offer-impression-details##xdm:ID##description##741",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:ID",
           "tagNumber": 1
@@ -40,6 +45,8 @@
           "title": "Offer Clicks",
           "type": "integer",
           "description": "Counts the number of times an offer has been clicked.",
+          "meta:titleId": "experienceevent-offer-impression-details##xdm:clicks##title##79951",
+          "meta:descriptionId": "experienceevent-offer-impression-details##xdm:clicks##description##78471",
           "meta:xdmType": "int",
           "meta:xdmField": "xdm:clicks",
           "tagNumber": 2
@@ -48,6 +55,8 @@
           "title": "Offer Dismissals",
           "type": "integer",
           "description": "Counts the number of times an offer has been dismissed.",
+          "meta:titleId": "experienceevent-offer-impression-details##xdm:dismissals##title##95451",
+          "meta:descriptionId": "experienceevent-offer-impression-details##xdm:dismissals##description##81391",
           "meta:xdmType": "int",
           "meta:xdmField": "xdm:dismissals",
           "tagNumber": 3
@@ -56,6 +65,8 @@
           "title": "Offer Impression Details",
           "type": "array",
           "description": "An array of advertisements that have been displayed to a customer.",
+          "meta:titleId": "experienceevent-offer-impression-details##xdm:impressions##title##96241",
+          "meta:descriptionId": "experienceevent-offer-impression-details##xdm:impressions##description##37101",
           "meta:xdmType": "array",
           "items": {
             "$ref": "../../datatypes/industry-verticals/impressions.schema.json",

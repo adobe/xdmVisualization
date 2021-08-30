@@ -7,12 +7,16 @@
   "description": "Captures fields related to a claim when initated by a customer.",
   "meta:status": "experimental",
   "meta:createdDate": "2021-02-19",
+  "meta:titleId": "claim##title##68881",
+  "meta:descriptionId": "claim##description##84111",
   "meta:xdmType": "object",
   "properties": {
     "ID": {
       "title": "Claim ID",
       "type": "string",
       "description": "Unique identifier for the claim.",
+      "meta:titleId": "claim##xdm:ID##title##78321",
+      "meta:descriptionId": "claim##xdm:ID##description##92301",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:ID",
       "tagNumber": 1
@@ -22,6 +26,8 @@
       "type": "string",
       "format": "date-time",
       "description": "Date the claim was successfully submitted.",
+      "meta:titleId": "claim##xdm:startDate##title##50181",
+      "meta:descriptionId": "claim##xdm:startDate##description##78951",
       "meta:xdmType": "date-time",
       "meta:xdmField": "xdm:startDate",
       "tagNumber": 2
@@ -36,6 +42,8 @@
         "declined"
       ],
       "description": "Captures the status of the claim for any given point in the application process.",
+      "meta:titleId": "claim##xdm:status##title##42721",
+      "meta:descriptionId": "claim##xdm:status##description##85121",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:status",
       "tagNumber": 3
@@ -44,6 +52,8 @@
       "title": "Policy ID",
       "type": "string",
       "description": "Policy Identifier.",
+      "meta:titleId": "claim##xdm:policyID##title##22421",
+      "meta:descriptionId": "claim##xdm:policyID##description##64941",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:policyID",
       "tagNumber": 4
@@ -52,6 +62,8 @@
       "title": "Benefit Amount",
       "$ref": "../currency.schema.json",
       "description": "Captures the benefit amount.",
+      "meta:titleId": "claim##xdm:benefitAmount##title##24761",
+      "meta:descriptionId": "claim##xdm:benefitAmount##description##99261",
       "meta:xdmField": "xdm:benefitAmount",
       "tagNumber": 5
     }

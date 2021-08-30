@@ -13,8 +13,14 @@
   ],
   "description": "Identity Graph Flattened Export Schema.",
   "meta:status": "stable",
-  "meta:titleId": "identity-graph-flattened-export##title",
-  "meta:descriptionId": "identity-graph-flattened-export##description",
+  "meta:titleId": [
+    "identity-graph-flattened-export##title",
+    "record##title##92641"
+  ],
+  "meta:descriptionId": [
+    "identity-graph-flattened-export##description",
+    "record##description##41201"
+  ],
   "meta:xdmType": "object",
   "meta:createdDate": "2020-08-10",
   "properties": {
@@ -23,6 +29,8 @@
       "type": "string",
       "format": "uri-reference",
       "description": "A unique identifier for the record.",
+      "meta:titleId": "record##@id##title##80061",
+      "meta:descriptionId": "record##@id##description##41711",
       "meta:xdmType": "string",
       "meta:xdmField": "@id",
       "tagNumber": 1
@@ -78,7 +86,7 @@
       "meta:xdmField": "xdm:membersByTimeRange",
       "tagNumber": 6,
       "items": {
-        "$ref": "obj6729114166850265.schema.json"
+        "$ref": "obj8976416182286795.schema.json"
       }
     },
     "lastUpdatedTime": {

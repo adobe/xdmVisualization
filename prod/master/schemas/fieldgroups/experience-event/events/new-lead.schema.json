@@ -11,22 +11,28 @@
   "description": "Use to record the creation and details of a new marketing lead.",
   "meta:status": "experimental",
   "meta:createdDate": "2021-02-19",
+  "meta:titleId": "new-lead##title##39531",
+  "meta:descriptionId": "new-lead##description##83001",
   "meta:xdmType": "object",
   "properties": {
     "leadOperation": {
       "title": "Lead Operation",
       "type": "object",
+      "meta:titleId": "new-lead##xdm:leadOperation##title##7391",
       "meta:xdmType": "object",
       "properties": {
         "newLead": {
           "title": "New Lead",
           "type": "object",
+          "meta:titleId": "new-lead##xdm:newLead##title##8211",
           "meta:xdmType": "object",
           "properties": {
             "sourceType": {
               "title": "Source Type",
               "type": "string",
               "description": "Type of lead source.",
+              "meta:titleId": "new-lead##xdm:sourceType##title##13001",
+              "meta:descriptionId": "new-lead##xdm:sourceType##description##9481",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:sourceType",
               "tagNumber": 1
@@ -35,6 +41,8 @@
               "title": "Form Name",
               "type": "string",
               "description": "Name of the form.",
+              "meta:titleId": "new-lead##xdm:formName##title##99171",
+              "meta:descriptionId": "new-lead##xdm:formName##description##25271",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:formName",
               "tagNumber": 2
@@ -43,6 +51,8 @@
               "title": "List Name",
               "type": "string",
               "description": "Name of marketing list.",
+              "meta:titleId": "new-lead##xdm:listName##title##37381",
+              "meta:descriptionId": "new-lead##xdm:listName##description##84121",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:listName",
               "tagNumber": 3
@@ -51,6 +61,8 @@
               "title": "SFDC Type",
               "type": "string",
               "description": "Lead type in SFDC.",
+              "meta:titleId": "new-lead##xdm:sfdcType##title##8641",
+              "meta:descriptionId": "new-lead##xdm:sfdcType##description##1531",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:sfdcType",
               "tagNumber": 4
@@ -59,6 +71,8 @@
               "title": "Lead Source",
               "type": "string",
               "description": "Source of lead.",
+              "meta:titleId": "new-lead##xdm:leadSource##title##74411",
+              "meta:descriptionId": "new-lead##xdm:leadSource##description##54871",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:leadSource",
               "tagNumber": 5
@@ -68,6 +82,8 @@
               "type": "string",
               "format": "date-time",
               "description": "Lead creation date.",
+              "meta:titleId": "new-lead##xdm:createdDate##title##87241",
+              "meta:descriptionId": "new-lead##xdm:createdDate##description##14071",
               "meta:xdmType": "date-time",
               "meta:xdmField": "xdm:createdDate",
               "tagNumber": 6

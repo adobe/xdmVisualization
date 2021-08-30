@@ -15,6 +15,14 @@
     "2021-02-19",
     "2020-08-10"
   ],
+  "meta:titleId": [
+    "policy##title##85991",
+    "record##title##92641"
+  ],
+  "meta:descriptionId": [
+    "policy##description##99651",
+    "record##description##41201"
+  ],
   "meta:xdmType": "object",
   "meta:abstract": true,
   "properties": {
@@ -23,6 +31,8 @@
       "type": "string",
       "format": "uri-reference",
       "description": "A unique identifier for the record.",
+      "meta:titleId": "record##@id##title##80061",
+      "meta:descriptionId": "record##@id##description##41711",
       "meta:xdmType": "string",
       "meta:xdmField": "@id",
       "tagNumber": 1
@@ -32,6 +42,8 @@
       "type": "string",
       "format": "date-time",
       "description": "Date which the insurance policy coverage ended.",
+      "meta:titleId": "policy##xdm:endDate##title##12111",
+      "meta:descriptionId": "policy##xdm:endDate##description##47151",
       "meta:xdmType": "date-time",
       "meta:xdmField": "xdm:endDate",
       "tagNumber": 2
@@ -40,6 +52,8 @@
       "title": "ID",
       "type": "string",
       "description": "Unique insurance policy identifier.",
+      "meta:titleId": "policy##xdm:ID##title##96111",
+      "meta:descriptionId": "policy##xdm:ID##description##45621",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:ID",
       "tagNumber": 3
@@ -48,6 +62,8 @@
       "title": "Name",
       "type": "string",
       "description": "Insurance policy name.",
+      "meta:titleId": "policy##xdm:name##title##34451",
+      "meta:descriptionId": "policy##xdm:name##description##58631",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:name",
       "tagNumber": 4
@@ -57,6 +73,8 @@
       "type": "string",
       "format": "date-time",
       "description": "Date which the insurance policy coverage started.",
+      "meta:titleId": "policy##xdm:startDate##title##61781",
+      "meta:descriptionId": "policy##xdm:startDate##description##27701",
       "meta:xdmType": "date-time",
       "meta:xdmField": "xdm:startDate",
       "tagNumber": 5
@@ -65,6 +83,8 @@
       "title": "Location",
       "$ref": "../../datatypes/demographic/address.schema.json",
       "description": "Location in which the insurance policy is issued.",
+      "meta:titleId": "policy##xdm:location##title##35161",
+      "meta:descriptionId": "policy##xdm:location##description##21331",
       "meta:xdmField": "xdm:location",
       "tagNumber": 6
     },
@@ -78,6 +98,8 @@
         "boat"
       ],
       "description": "Type of insurance policy, such as home, automobile, renter, or boat.",
+      "meta:titleId": "policy##xdm:type##title##16981",
+      "meta:descriptionId": "policy##xdm:type##description##42521",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:type",
       "tagNumber": 7
@@ -86,6 +108,8 @@
       "title": "Assigned Beneficiaries",
       "type": "array",
       "description": "Captures the beneficiary(s) assigned to the policy.",
+      "meta:titleId": "policy##xdm:assignedBeneficiary##title##47821",
+      "meta:descriptionId": "policy##xdm:assignedBeneficiary##description##47091",
       "meta:xdmType": "array",
       "items": {
         "$ref": "../../fieldgroups/profile/profile-person-details.schema.json",
@@ -98,6 +122,8 @@
       "title": "Has Assigned Beneficiary",
       "type": "boolean",
       "description": "Flag determining if the account has a beneficiary assigned.",
+      "meta:titleId": "policy##xdm:hasAssignedBeneficiary##title##92751",
+      "meta:descriptionId": "policy##xdm:hasAssignedBeneficiary##description##41201",
       "meta:xdmType": "boolean",
       "meta:xdmField": "xdm:hasAssignedBeneficiary",
       "tagNumber": 9
@@ -106,6 +132,8 @@
       "title": "Owner",
       "$ref": "../../fieldgroups/profile/profile-personal-details.schema.json",
       "description": "Stores the policyholder's profile information. Extension of the personal profile details data type.",
+      "meta:titleId": "policy##xdm:owner##title##14841",
+      "meta:descriptionId": "policy##xdm:owner##description##57591",
       "meta:xdmField": "xdm:owner",
       "tagNumber": 10
     },
@@ -113,6 +141,8 @@
       "title": "Benefit Amount",
       "$ref": "../../datatypes/currency.schema.json",
       "description": "The amount to be paid per the policy terms.",
+      "meta:titleId": "policy##xdm:benefitAmount##title##6791",
+      "meta:descriptionId": "policy##xdm:benefitAmount##description##94871",
       "meta:xdmField": "xdm:benefitAmount",
       "tagNumber": 11
     }

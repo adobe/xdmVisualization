@@ -9,12 +9,16 @@
   "description": "Captures properties related to product category.",
   "meta:status": "experimental",
   "meta:createdDate": "2020-11-19",
+  "meta:titleId": "product-category##title##49151",
+  "meta:descriptionId": "product-category##description##67631",
   "meta:xdmType": "object",
   "properties": {
     "productCategoryName": {
       "title": "Product Category Name",
       "type": "string",
       "description": "friendly name of the product category.",
+      "meta:titleId": "product-category##xdm:productCategoryName##title##7531",
+      "meta:descriptionId": "product-category##xdm:productCategoryName##description##15991",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:productCategoryName",
       "tagNumber": 1
@@ -23,6 +27,8 @@
       "title": "Product Category Description",
       "type": "string",
       "description": "Friendly description of product category.",
+      "meta:titleId": "product-category##xdm:productCategoryDescription##title##86871",
+      "meta:descriptionId": "product-category##xdm:productCategoryDescription##description##56691",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:productCategoryDescription",
       "tagNumber": 2
@@ -31,6 +37,8 @@
       "title": "Product Subcategory Name",
       "type": "string",
       "description": "friendly name of the product subcategory.",
+      "meta:titleId": "product-category##xdm:productSubcategoryName##title##21801",
+      "meta:descriptionId": "product-category##xdm:productSubcategoryName##description##90251",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:productSubcategoryName",
       "tagNumber": 3
@@ -39,6 +47,8 @@
       "title": "Product Sub category Description",
       "type": "string",
       "description": "Friendly description of product subcategory.",
+      "meta:titleId": "product-category##xdm:productSubcategoryDescription##title##84511",
+      "meta:descriptionId": "product-category##xdm:productSubcategoryDescription##description##23511",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:productSubcategoryDescription",
       "tagNumber": 4

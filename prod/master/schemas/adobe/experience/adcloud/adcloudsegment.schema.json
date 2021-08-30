@@ -15,6 +15,18 @@
     "2021-02-19",
     "2020-08-10"
   ],
+  "meta:titleId": [
+    "auditable##title##48381",
+    "record##title##92641",
+    "segmentdefinition##title##41021",
+    "identitymap##title##68521"
+  ],
+  "meta:descriptionId": [
+    "auditable##description##60421",
+    "record##description##41201",
+    "segmentdefinition##description##4081",
+    "identitymap##description##9091"
+  ],
   "meta:tags": {
     "industry": [
       "all"
@@ -25,6 +37,8 @@
       "title": "Created by user identifier",
       "type": "string",
       "description": "User ID of who created the record.",
+      "meta:titleId": "auditable##xdm:repositoryCreatedBy##title##16641",
+      "meta:descriptionId": "auditable##xdm:repositoryCreatedBy##description##29041",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:repositoryCreatedBy",
       "tagNumber": 1
@@ -33,6 +47,8 @@
       "title": "Modified by user identifier",
       "type": "string",
       "description": "User ID of who last modified the record. At creation time, `modifiedByUser` is set as `createdByUser`.",
+      "meta:titleId": "auditable##xdm:repositoryLastModifiedBy##title##63651",
+      "meta:descriptionId": "auditable##xdm:repositoryLastModifiedBy##description##68141",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:repositoryLastModifiedBy",
       "tagNumber": 2
@@ -42,6 +58,8 @@
       "type": "string",
       "format": "uri-reference",
       "description": "The dataset files in Catalog which has been originating the creation of the record.",
+      "meta:titleId": "auditable##xdm:createdByBatchID##title##49401",
+      "meta:descriptionId": "auditable##xdm:createdByBatchID##description##94781",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:createdByBatchID",
       "tagNumber": 3
@@ -51,6 +69,8 @@
       "type": "string",
       "format": "uri-reference",
       "description": "The last dataset files in Catalog which has modified the record. At creation time, `modifiedByBatchID` is set as `createdByBatchID`.",
+      "meta:titleId": "auditable##xdm:modifiedByBatchID##title##98681",
+      "meta:descriptionId": "auditable##xdm:modifiedByBatchID##description##92221",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:modifiedByBatchID",
       "tagNumber": 4
@@ -68,6 +88,7 @@
             "2004-10-23T12:00:00-06:00"
           ],
           "description": "The server date and time when the resource was created in the repository, such as when an asset file is first uploaded or a directory is created by the server as the parent of a new asset. The date time property should conform to ISO 8601 standard. An example form is \"2004-10-23T12:00:00-06:00\".",
+          "meta:descriptionId": "1.0##repo:createDate##description##6511",
           "meta:xdmType": "date-time",
           "meta:xdmField": "repo:createDate",
           "tagNumber": 1
@@ -80,6 +101,7 @@
             "2004-10-23T12:00:00-06:00"
           ],
           "description": "The server date and time when the resource was last modified in the repository, such as when a new version of an asset is uploaded or a directory's child resource is added or removed. The date time property should conform to ISO 8601 standard. An example form is \"2004-10-23T12:00:00-06:00\".",
+          "meta:descriptionId": "1.0##repo:modifyDate##description##13061",
           "meta:xdmType": "date-time",
           "meta:xdmField": "repo:modifyDate",
           "tagNumber": 2
@@ -92,6 +114,8 @@
       "type": "string",
       "format": "uri-reference",
       "description": "A unique identifier for the record.",
+      "meta:titleId": "record##@id##title##80061",
+      "meta:descriptionId": "record##@id##description##41711",
       "meta:xdmType": "string",
       "meta:xdmField": "@id",
       "tagNumber": 6
@@ -117,6 +141,8 @@
       "title": "Segment identity",
       "$ref": "../../../datatypes/segmentidentity.schema.json",
       "description": "Identity of the segment.",
+      "meta:titleId": "segmentdefinition##xdm:segmentIdentity##title##67331",
+      "meta:descriptionId": "segmentdefinition##xdm:segmentIdentity##description##89251",
       "meta:xdmField": "xdm:segmentIdentity",
       "tagNumber": 8
     },
@@ -124,6 +150,8 @@
       "title": "Segment name",
       "type": "string",
       "description": "Name of the segment.",
+      "meta:titleId": "segmentdefinition##xdm:segmentName##title##28431",
+      "meta:descriptionId": "segmentdefinition##xdm:segmentName##description##83781",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:segmentName",
       "tagNumber": 9
@@ -132,6 +160,8 @@
       "title": "Segment description",
       "type": "string",
       "description": "Description of the segment.",
+      "meta:titleId": "segmentdefinition##xdm:description##title##44351",
+      "meta:descriptionId": "segmentdefinition##xdm:description##description##89731",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:description",
       "tagNumber": 10
@@ -140,6 +170,8 @@
       "title": "Segment version",
       "type": "string",
       "description": "Version of the segment.",
+      "meta:titleId": "segmentdefinition##xdm:version##title##9381",
+      "meta:descriptionId": "segmentdefinition##xdm:version##description##1551",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:version",
       "tagNumber": 11
@@ -155,6 +187,8 @@
         "DRAFT",
         "REVOKED"
       ],
+      "meta:titleId": "segmentdefinition##xdm:segmentStatus##title##92461",
+      "meta:descriptionId": "segmentdefinition##xdm:segmentStatus##description##67971",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:segmentStatus",
       "tagNumber": 12

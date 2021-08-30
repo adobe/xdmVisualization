@@ -7,6 +7,8 @@
   "description": "The geographic coordinates of a place. Based on [schema.org](http://schema.org/GeoCoordinates).",
   "meta:status": "stable",
   "meta:createdDate": "2020-08-10",
+  "meta:titleId": "GeoCoordinates##title##51341",
+  "meta:descriptionId": "GeoCoordinates##description##13501",
   "meta:xdmType": "object",
   "properties": {
     "_id": {
@@ -14,6 +16,8 @@
       "type": "string",
       "format": "uri-reference",
       "description": "The unique identifier of the coordinates.",
+      "meta:titleId": "GeoCoordinates##@id##title##85541",
+      "meta:descriptionId": "GeoCoordinates##@id##description##4571",
       "meta:xdmType": "string",
       "meta:xdmField": "@id",
       "tagNumber": 1
@@ -26,6 +30,8 @@
           "title": "Description",
           "type": "string",
           "description": "A description of what the coordinates identify.",
+          "meta:titleId": "GeoCoordinates##schema:description##title##12771",
+          "meta:descriptionId": "GeoCoordinates##schema:description##description##33431",
           "meta:xdmType": "string",
           "meta:xdmField": "schema:description",
           "tagNumber": 1
@@ -36,6 +42,8 @@
           "minimum": -90,
           "maximum": 90,
           "description": "The signed vertical coordinate of a geographic point.",
+          "meta:titleId": "GeoCoordinates##schema:latitude##title##12441",
+          "meta:descriptionId": "GeoCoordinates##schema:latitude##description##77311",
           "meta:xdmType": "number",
           "meta:xdmField": "schema:latitude",
           "tagNumber": 2
@@ -46,6 +54,8 @@
           "minimum": -180,
           "maximum": 180,
           "description": "The signed horizontal coordinate of a geographic point.",
+          "meta:titleId": "GeoCoordinates##schema:longitude##title##31911",
+          "meta:descriptionId": "GeoCoordinates##schema:longitude##description##16551",
           "meta:xdmType": "number",
           "meta:xdmField": "schema:longitude",
           "tagNumber": 3
@@ -54,6 +64,8 @@
           "title": "Elevation",
           "type": "number",
           "description": "The specific elevation of the defined coordinate. The value conforms to the [WGS84](http://gisgeography.com/wgs84-world-geodetic-system/) datum and is measured in meters.",
+          "meta:titleId": "GeoCoordinates##schema:elevation##title##10221",
+          "meta:descriptionId": "GeoCoordinates##schema:elevation##description##18741",
           "meta:xdmType": "number",
           "meta:xdmField": "schema:elevation",
           "tagNumber": 4

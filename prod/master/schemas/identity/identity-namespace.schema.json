@@ -13,8 +13,14 @@
   ],
   "description": "Identity Namespace Schema.",
   "meta:status": "stable",
-  "meta:titleId": "identity-namespace##title",
-  "meta:descriptionId": "identity-namespace##description",
+  "meta:titleId": [
+    "identity-namespace##title",
+    "record##title##92641"
+  ],
+  "meta:descriptionId": [
+    "identity-namespace##description",
+    "record##description##41201"
+  ],
   "meta:xdmType": "object",
   "meta:createdDate": "2020-08-10",
   "properties": {
@@ -23,6 +29,8 @@
       "type": "string",
       "format": "uri-reference",
       "description": "A unique identifier for the record.",
+      "meta:titleId": "record##@id##title##80061",
+      "meta:descriptionId": "record##@id##description##41711",
       "meta:xdmType": "string",
       "meta:xdmField": "@id",
       "tagNumber": 1

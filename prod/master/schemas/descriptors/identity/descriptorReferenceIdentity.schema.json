@@ -8,6 +8,8 @@
   "description": "Used to assign a namespace that will be used to derive a relationship.",
   "meta:status": "stable",
   "meta:createdDate": "2020-08-10",
+  "meta:titleId": "descriptorReferenceIdentity##title##87381",
+  "meta:descriptionId": "descriptorReferenceIdentity##description##9691",
   "meta:xdmType": "object",
   "properties": {
     "_id": {
@@ -15,6 +17,8 @@
       "type": "string",
       "format": "uri-reference",
       "description": "The unique identifier for the schema descriptor. This property is required when the descriptor is defined outside of the applicable schema, but is optional when applied via 'meta:descriptors'.",
+      "meta:titleId": "schemadescriptor##@id##title##5801",
+      "meta:descriptionId": "schemadescriptor##@id##description##83201",
       "meta:xdmType": "string",
       "meta:xdmField": "@id",
       "tagNumber": 1
@@ -23,6 +27,11 @@
       "title": "Type",
       "type": "string",
       "description": "The type of descriptor this object represents.",
+      "meta:titleId": [
+        "schemadescriptor##@type##title##53561",
+        "descriptorReferenceIdentity##@type##title##80311"
+      ],
+      "meta:descriptionId": "schemadescriptor##@type##description##49401",
       "meta:xdmType": "string",
       "const": "xdm:descriptorReferenceIdentity",
       "meta:xdmField": "@type",
@@ -33,6 +42,8 @@
       "type": "string",
       "format": "uri",
       "description": "The source schema this descriptor applies to. This property is required when the descriptor is defined outside of the applicable schema, but is optional when applied via 'meta:descriptors'",
+      "meta:titleId": "schemadescriptor##xdm:sourceSchema##title##67791",
+      "meta:descriptionId": "schemadescriptor##xdm:sourceSchema##description##83241",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:sourceSchema",
       "tagNumber": 3
@@ -40,6 +51,8 @@
     "sourceProperty": {
       "title": "Source Property",
       "description": "When present, the property of the source schema to which this descriptor applies. This value is a JSON Pointer, applied to an instance of an object described by `xdm:sourceSchema`.",
+      "meta:titleId": "schemadescriptor##xdm:sourceProperty##title##30881",
+      "meta:descriptionId": "schemadescriptor##xdm:sourceProperty##description##16331",
       "meta:xdmField": "xdm:sourceProperty",
       "tagNumber": 4
     },
@@ -47,6 +60,8 @@
       "title": "Source Version",
       "type": "number",
       "description": "Major version being referenced.",
+      "meta:titleId": "schemadescriptor##xdm:sourceVersion##title##76671",
+      "meta:descriptionId": "schemadescriptor##xdm:sourceVersion##description##5401",
       "meta:xdmType": "number",
       "meta:xdmField": "xdm:sourceVersion",
       "tagNumber": 5
@@ -59,6 +74,8 @@
       "title": "Identity Namespace",
       "type": "string",
       "description": "The namespace code defined in identity system.",
+      "meta:titleId": "descriptorReferenceIdentity##xdm:identityNamespace##title##38971",
+      "meta:descriptionId": "descriptorReferenceIdentity##xdm:identityNamespace##description##69311",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:identityNamespace",
       "tagNumber": 7

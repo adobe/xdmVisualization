@@ -10,12 +10,24 @@
     "stable"
   ],
   "meta:createdDate": "2020-08-10",
+  "meta:titleId": [
+    "mirror-pages##title##24131",
+    "metricdefinition##title##1451"
+  ],
+  "meta:descriptionId": [
+    "mirror-pages##description##59771",
+    "metricdefinition##description##34591"
+  ],
   "meta:xdmType": "object",
   "properties": {
     "_id": {
       "type": "string",
       "const": "xdm:mirrorPages",
       "description": "The unique identifier of this metric.",
+      "meta:descriptionId": [
+        "mirror-pages##@id##description##12281",
+        "metricdefinition##@id##description##54541"
+      ],
       "meta:xdmType": "string",
       "format": "uri-reference",
       "meta:xdmField": "@id",
@@ -29,6 +41,10 @@
           "type": "string",
           "const": "direct-marketing metric: mirrorPages",
           "description": "The human-readable name of the metric. The name can be used in user interfaces and does not have to be unique.",
+          "meta:descriptionId": [
+            "mirror-pages##schema:name##description##95861",
+            "metricdefinition##schema:name##description##81811"
+          ],
           "meta:xdmType": "string",
           "meta:xdmField": "schema:name",
           "tagNumber": 1
@@ -43,6 +59,10 @@
       "type": "string",
       "description": "How to take measures of this metric.",
       "const": "count",
+      "meta:descriptionId": [
+        "mirror-pages##xdm:measurement##description##91991",
+        "metricdefinition##xdm:measurement##description##90861"
+      ],
       "meta:xdmType": "string",
       "examples": [
         "distance",
@@ -63,6 +83,7 @@
         "s",
         "USD"
       ],
+      "meta:descriptionId": "metricdefinition##xdm:unit##description##50321",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:unit",
       "tagNumber": 4

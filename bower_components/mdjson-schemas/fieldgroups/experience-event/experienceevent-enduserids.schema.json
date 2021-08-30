@@ -8,12 +8,16 @@
   "description": "End user IDs such as AAID, ACID, MCIDs, email, and phone numbers.",
   "meta:status": "stable",
   "meta:createdDate": "2020-08-10",
+  "meta:titleId": "experienceevent-enduserids##title##17861",
+  "meta:descriptionId": "experienceevent-enduserids##description##50001",
   "meta:xdmType": "object",
   "properties": {
     "endUserIDs": {
       "title": "EndUserIDs",
       "$ref": "../../datatypes/enduserids.schema.json",
       "description": "Condensed, normalized encapsulation of end user identifiers asserted for this ExperienceEvent.",
+      "meta:titleId": "experienceevent-enduserids##xdm:endUserIDs##title##14191",
+      "meta:descriptionId": "experienceevent-enduserids##xdm:endUserIDs##description##971",
       "meta:xdmField": "xdm:endUserIDs",
       "tagNumber": 1
     }

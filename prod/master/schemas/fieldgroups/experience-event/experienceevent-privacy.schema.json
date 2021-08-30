@@ -8,11 +8,14 @@
   "meta:abstract": true,
   "meta:status": "stable",
   "meta:createdDate": "2020-08-10",
+  "meta:titleId": "experienceevent-privacy##title##28881",
+  "meta:descriptionId": "experienceevent-privacy##description##13481",
   "meta:xdmType": "object",
   "properties": {
     "consentStrings": {
       "title": "Identity level consent information",
       "type": "array",
+      "meta:titleId": "experienceevent-privacy##xdm:consentStrings##title##80471",
       "meta:xdmType": "array",
       "items": {
         "$ref": "../../datatypes/consent/consentstring.schema.json",

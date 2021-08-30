@@ -6,6 +6,8 @@
   "description": "The episode of the show. Based on [www.iptc.org](https://www.iptc.org/std/videometadatahub/recommendation/pre-versions/IPTC-VideoMetadataHub-props-Rec_1.1.html)",
   "meta:status": "stable",
   "meta:createdDate": "2020-08-10",
+  "meta:titleId": "episode##title##21631",
+  "meta:descriptionId": "episode##description##78731",
   "meta:xdmType": "object",
   "properties": {
     "_iptc4xmpExt": {
@@ -16,6 +18,8 @@
           "title": "Episode Name",
           "type": "string",
           "description": "Name of the episode.",
+          "meta:titleId": "episode##iptc4xmpExt:Name##title##76691",
+          "meta:descriptionId": "episode##iptc4xmpExt:Name##description##9061",
           "meta:xdmType": "string",
           "meta:xdmField": "iptc4xmpExt:Name",
           "tagNumber": 1
@@ -24,6 +28,8 @@
           "title": "Episode Number",
           "type": "number",
           "description": "Number of the episode.",
+          "meta:titleId": "episode##iptc4xmpExt:Number##title##90721",
+          "meta:descriptionId": "episode##iptc4xmpExt:Number##description##97661",
           "meta:xdmType": "number",
           "meta:xdmField": "iptc4xmpExt:Number",
           "tagNumber": 2
@@ -33,6 +39,8 @@
           "type": "string",
           "format": "uri",
           "description": "Identifier of the episode.",
+          "meta:titleId": "episode##iptc4xmpExt:Identifier##title##29651",
+          "meta:descriptionId": "episode##iptc4xmpExt:Identifier##description##78181",
           "meta:xdmType": "string",
           "meta:xdmField": "iptc4xmpExt:Identifier",
           "tagNumber": 3

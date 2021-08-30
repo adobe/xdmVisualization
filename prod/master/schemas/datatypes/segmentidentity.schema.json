@@ -6,6 +6,8 @@
   "description": "Segment identity is used to clearly distinguish segments from multiple sources. Segment identity is established by an segment identity provider, which itself is referenced in the `namespace` attribute. Within each `namespace`, the segment identity is unique.",
   "meta:status": "stable",
   "meta:createdDate": "2020-08-10",
+  "meta:titleId": "segmentidentity##title##96711",
+  "meta:descriptionId": "segmentidentity##description##1551",
   "meta:xdmType": "object",
   "properties": {
     "_id": {
@@ -13,6 +15,8 @@
       "type": "string",
       "format": "uri-reference",
       "description": "Identity of the segment in the related namespace.",
+      "meta:titleId": "segmentidentity##@id##title##69071",
+      "meta:descriptionId": "segmentidentity##@id##description##58031",
       "meta:xdmType": "string",
       "meta:xdmField": "@id",
       "tagNumber": 1
@@ -21,6 +25,8 @@
       "title": "Namespace",
       "$ref": "namespace.schema.json",
       "description": "The namespace associated with the `xid` attribute.",
+      "meta:titleId": "segmentidentity##xdm:namespace##title##44651",
+      "meta:descriptionId": "segmentidentity##xdm:namespace##description##16091",
       "meta:xdmField": "xdm:namespace",
       "tagNumber": 2
     },
@@ -28,6 +34,8 @@
       "title": "Experience identifier",
       "type": "string",
       "description": "When present, this value represents a cross-namespace identifier that is unique across all namespace-scoped identifiers in all namespaces.",
+      "meta:titleId": "segmentidentity##xdm:xid##title##70191",
+      "meta:descriptionId": "segmentidentity##xdm:xid##description##37991",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:xid",
       "tagNumber": 3

@@ -6,12 +6,16 @@
   "description": "The order placed for a product list.",
   "meta:status": "stable",
   "meta:createdDate": "2020-08-10",
+  "meta:titleId": "order##title##66121",
+  "meta:descriptionId": "order##description##96641",
   "meta:xdmType": "object",
   "properties": {
     "purchaseID": {
       "title": "Purchase ID",
       "type": "string",
       "description": "Unique identifier assigned by the seller for this purchase or contract. There is no guarantee that the ID is unique.",
+      "meta:titleId": "order##xdm:purchaseID##title##84151",
+      "meta:descriptionId": "order##xdm:purchaseID##description##77201",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:purchaseID",
       "tagNumber": 1
@@ -20,6 +24,8 @@
       "title": "Purchase Order Number",
       "type": "string",
       "description": "Unique identifier assigned by the purchaser for this purchase or contract.",
+      "meta:titleId": "order##xdm:purchaseOrderNumber##title##10541",
+      "meta:descriptionId": "order##xdm:purchaseOrderNumber##description##44981",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:purchaseOrderNumber",
       "tagNumber": 2
@@ -28,6 +34,8 @@
       "title": "Payment List",
       "type": "array",
       "description": "The list of payments for this order.",
+      "meta:titleId": "order##xdm:payments##title##87721",
+      "meta:descriptionId": "order##xdm:payments##description##70201",
       "meta:xdmType": "array",
       "items": {
         "$ref": "paymentitem.schema.json",
@@ -45,6 +53,8 @@
       ],
       "pattern": "^[A-Z]{3}$",
       "description": "The ISO 4217 currency code used for the order totals.",
+      "meta:titleId": "order##xdm:currencyCode##title##44601",
+      "meta:descriptionId": "order##xdm:currencyCode##description##11951",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:currencyCode",
       "tagNumber": 4
@@ -53,6 +63,8 @@
       "title": "Price Total",
       "type": "number",
       "description": "The total price of this order after all discounts and taxes have been applied.",
+      "meta:titleId": "order##xdm:priceTotal##title##18711",
+      "meta:descriptionId": "order##xdm:priceTotal##description##87481",
       "meta:xdmType": "number",
       "meta:xdmField": "xdm:priceTotal",
       "tagNumber": 5

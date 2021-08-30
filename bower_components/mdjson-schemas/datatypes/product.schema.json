@@ -6,6 +6,8 @@
   "description": "XDM product name or title, master product, and key attributes of product in the product catalog.",
   "meta:status": "stable",
   "meta:createdDate": "2021-02-19",
+  "meta:titleId": "product##title##60661",
+  "meta:descriptionId": "product##description##14331",
   "meta:xdmType": "object",
   "properties": {
     "_id": {
@@ -13,6 +15,8 @@
       "type": "string",
       "format": "uri-reference",
       "description": "The internal unique ID of the product in the commerce backend system.",
+      "meta:titleId": "product##@id##title##96091",
+      "meta:descriptionId": "product##@id##description##91381",
       "meta:xdmType": "string",
       "meta:xdmField": "@id",
       "tagNumber": 1
@@ -27,6 +31,8 @@
           "search:indexed": true
         }
       ],
+      "meta:titleId": "product##xdm:SKU##title##73551",
+      "meta:descriptionId": "product##xdm:SKU##description##66041",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:SKU",
       "tagNumber": 2
@@ -35,6 +41,8 @@
       "title": "Name",
       "type": "string",
       "description": "The name of the product.",
+      "meta:titleId": "product##xdm:name##title##23061",
+      "meta:descriptionId": "product##xdm:name##description##29911",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:name",
       "tagNumber": 3
@@ -55,6 +63,8 @@
           "search:indexed": true
         }
       ],
+      "meta:titleId": "product##xdm:productDescription##title##68001",
+      "meta:descriptionId": "product##xdm:productDescription##description##131",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:productDescription",
       "tagNumber": 5
@@ -63,6 +73,8 @@
       "title": "Category",
       "type": "string",
       "description": "Primary categorization or category name of the product.",
+      "meta:titleId": "product##xdm:category##title##66451",
+      "meta:descriptionId": "product##xdm:category##description##991",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:category",
       "tagNumber": 6
@@ -71,6 +83,8 @@
       "title": "Department",
       "type": "string",
       "description": "Primary department the product is associated with.",
+      "meta:titleId": "product##xdm:department##title##24401",
+      "meta:descriptionId": "product##xdm:department##description##34771",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:department",
       "tagNumber": 7
@@ -85,6 +99,8 @@
           "search:indexed": true
         }
       ],
+      "meta:titleId": "product##xdm:brand##title##68801",
+      "meta:descriptionId": "product##xdm:brand##description##14351",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:brand",
       "tagNumber": 8
@@ -94,6 +110,8 @@
       "type": "string",
       "format": "uri",
       "description": "The internal unique ID of the product in the commerce backend system.",
+      "meta:titleId": "product##xdm:masterProductID##title##12231",
+      "meta:descriptionId": "product##xdm:masterProductID##description##58281",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:masterProductID",
       "tagNumber": 9
@@ -102,6 +120,8 @@
       "title": "Master product SKU",
       "type": "string",
       "description": "The unique SKU (stock keeping unit) of the master product assigned by the vendor or manufacturer.",
+      "meta:titleId": "product##xdm:masterProductSKU##title##40841",
+      "meta:descriptionId": "product##xdm:masterProductSKU##description##83971",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:masterProductSKU",
       "tagNumber": 10
@@ -110,6 +130,8 @@
       "title": "Master product name",
       "type": "string",
       "description": "The localized name of the product.",
+      "meta:titleId": "product##xdm:masterProductName##title##12941",
+      "meta:descriptionId": "product##xdm:masterProductName##description##38961",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:masterProductName",
       "tagNumber": 11
@@ -118,6 +140,8 @@
       "title": "Master product description",
       "type": "string",
       "description": "The description of the product.",
+      "meta:titleId": "product##xdm:masterProductDescription##title##71931",
+      "meta:descriptionId": "product##xdm:masterProductDescription##description##60161",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:masterProductDescription",
       "tagNumber": 12
@@ -132,6 +156,8 @@
           "search:indexed": true
         }
       ],
+      "meta:titleId": "product##xdm:material##title##88871",
+      "meta:descriptionId": "product##xdm:material##description##55021",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:material",
       "tagNumber": 14
@@ -140,6 +166,8 @@
       "title": "Gender",
       "type": "string",
       "description": "Gender the product is marketed to.",
+      "meta:titleId": "product##xdm:gender##title##47381",
+      "meta:descriptionId": "product##xdm:gender##description##58681",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:gender",
       "tagNumber": 15
@@ -148,6 +176,8 @@
       "title": "Size",
       "type": "number",
       "description": "Standard product size for the product.",
+      "meta:titleId": "product##xdm:size##title##7241",
+      "meta:descriptionId": "product##xdm:size##description##50951",
       "meta:xdmType": "number",
       "meta:xdmField": "xdm:size",
       "tagNumber": 16
@@ -156,6 +186,8 @@
       "title": "Unit of measure",
       "type": "string",
       "description": "Standard unit of measure of the product and or variation and relates the units for the size measurement.",
+      "meta:titleId": "product##xdm:unitOfMeasure##title##39901",
+      "meta:descriptionId": "product##xdm:unitOfMeasure##description##14091",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:unitOfMeasure",
       "tagNumber": 17
@@ -165,6 +197,8 @@
       "type": "string",
       "pattern": "^[A-Z]{2}$",
       "description": "The two-character [ISO 3166-1 alpha-2](https://datahub.io/core/country-list) code for the country of origin of the product as defined by customs requirements.",
+      "meta:titleId": "product##xdm:countryOfOrigin##title##96401",
+      "meta:descriptionId": "product##xdm:countryOfOrigin##description##70581",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:countryOfOrigin",
       "tagNumber": 18
@@ -173,6 +207,8 @@
       "title": "Cost of good sold",
       "type": "number",
       "description": "Cost of good sold, in the `currencyCode` currency.",
+      "meta:titleId": "product##xdm:COGS##title##76031",
+      "meta:descriptionId": "product##xdm:COGS##description##99591",
       "meta:xdmType": "number",
       "meta:xdmField": "xdm:COGS",
       "tagNumber": 19
@@ -181,6 +217,8 @@
       "title": "List price",
       "type": "number",
       "description": "Default price of the product before sales and discounting, in the `currencyCode` currency.",
+      "meta:titleId": "product##xdm:listPrice##title##66501",
+      "meta:descriptionId": "product##xdm:listPrice##description##8401",
       "meta:xdmType": "number",
       "meta:xdmField": "xdm:listPrice",
       "tagNumber": 20
@@ -194,6 +232,8 @@
       ],
       "pattern": "^[A-Z]{3}$",
       "description": "The ISO 4217 alphabetic currency code used for cost and pricing, including `listPrice` and `COGS`.",
+      "meta:titleId": "product##xdm:currencyCode##title##33141",
+      "meta:descriptionId": "product##xdm:currencyCode##description##84111",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:currencyCode",
       "tagNumber": 21
@@ -203,6 +243,8 @@
       "type": "string",
       "format": "date",
       "description": "First date the product was made available for sale. The time using RFC3339 with a stated time zone offset such as \"2001-07-04T12:08:56-07:00\". An example formatting pattern is \"yyyy-MM-dd'T'HH:mm:ssXXX\".",
+      "meta:titleId": "product##xdm:originalSaleDate##title##40681",
+      "meta:descriptionId": "product##xdm:originalSaleDate##description##73471",
       "meta:xdmType": "date",
       "meta:xdmField": "xdm:originalSaleDate",
       "tagNumber": 22
@@ -212,6 +254,8 @@
       "format": "date",
       "type": "string",
       "description": "The date when this product was created. The time using RFC3339 with a stated time zone offset such as \"2001-07-04T12:08:56-07:00\". An example formatting pattern is \"yyyy-MM-dd'T'HH:mm:ssXXX\".",
+      "meta:titleId": "product##xdm:productCreateDate##title##50171",
+      "meta:descriptionId": "product##xdm:productCreateDate##description##57051",
       "meta:xdmType": "date",
       "meta:xdmField": "xdm:productCreateDate",
       "tagNumber": 23
@@ -221,6 +265,8 @@
       "format": "date",
       "type": "string",
       "description": "The date when this product was last modified. The time using RFC3339 with a stated time zone offset such as \"2001-07-04T12:08:56-07:00\". An example formatting pattern is \"yyyy-MM-dd'T'HH:mm:ssXXX\".",
+      "meta:titleId": "product##xdm:productLastModified##title##57381",
+      "meta:descriptionId": "product##xdm:productLastModified##description##47281",
       "meta:xdmType": "date",
       "meta:xdmField": "xdm:productLastModified",
       "tagNumber": 24
@@ -229,6 +275,8 @@
       "title": "Product URL",
       "type": "string",
       "description": "The URL for the primary product view of the product page.",
+      "meta:titleId": "product##xdm:productURL##title##59251",
+      "meta:descriptionId": "product##xdm:productURL##description##56301",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:productURL",
       "tagNumber": 25
@@ -237,6 +285,8 @@
       "title": "Manufacturer name",
       "type": "string",
       "description": "Manufacturer of the product.",
+      "meta:titleId": "product##xdm:manufacturerName##title##17191",
+      "meta:descriptionId": "product##xdm:manufacturerName##description##34571",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:manufacturerName",
       "tagNumber": 26
@@ -245,6 +295,8 @@
       "title": "Supplier name",
       "type": "string",
       "description": "The distributor of the product.",
+      "meta:titleId": "product##xdm:supplierName##title##77711",
+      "meta:descriptionId": "product##xdm:supplierName##description##87161",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:supplierName",
       "tagNumber": 27

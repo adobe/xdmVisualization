@@ -11,12 +11,16 @@
   "description": "Captures and maintains additional opportunity attributes that are used by industry crm systems.",
   "meta:status": "experimental",
   "meta:createdDate": "2020-09-09",
+  "meta:titleId": "opportunity-details##title##92021",
+  "meta:descriptionId": "opportunity-details##description##63581",
   "meta:xdmType": "object",
   "properties": {
     "campaignID": {
       "title": "Campaign ID",
       "description": "Campaign unique identifer reference.",
       "type": "string",
+      "meta:titleId": "opportunity-details##xdm:campaignID##title##5561",
+      "meta:descriptionId": "opportunity-details##xdm:campaignID##description##54791",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:campaignID",
       "tagNumber": 1
@@ -25,6 +29,8 @@
       "title": "Campaign Key",
       "description": "Unique composite identifier of the Campaign.",
       "$ref": "../../datatypes/b2b/b2b-source.schema.json",
+      "meta:titleId": "opportunity-details##xdm:campaignKey##title##27181",
+      "meta:descriptionId": "opportunity-details##xdm:campaignKey##description##65681",
       "meta:xdmField": "xdm:campaignKey",
       "tagNumber": 2
     },
@@ -33,6 +39,8 @@
       "description": "The fiscal year this opportunity is targeted.",
       "type": "integer",
       "pattern": "^([0-9]{4})$",
+      "meta:titleId": "opportunity-details##xdm:fiscalYear##title##69371",
+      "meta:descriptionId": "opportunity-details##xdm:fiscalYear##description##51991",
       "meta:xdmType": "int",
       "meta:xdmField": "xdm:fiscalYear",
       "tagNumber": 3
@@ -42,6 +50,8 @@
       "description": "The fiscal quarter this opportunity is targeted.",
       "type": "string",
       "pattern": "^([1-4]{1})$|^([Qq][1-4]{1})$",
+      "meta:titleId": "opportunity-details##xdm:fiscalQuarter##title##8041",
+      "meta:descriptionId": "opportunity-details##xdm:fiscalQuarter##description##49711",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:fiscalQuarter",
       "tagNumber": 4
@@ -50,6 +60,8 @@
       "title": "Forecast Category",
       "description": "Forecast Category determined by the opportunity Stage value eg: omitted,pipeline,bestcase,commit,closed.",
       "type": "string",
+      "meta:titleId": "opportunity-details##xdm:forecastCategory##title##29101",
+      "meta:descriptionId": "opportunity-details##xdm:forecastCategory##description##14411",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:forecastCategory",
       "tagNumber": 5
@@ -58,6 +70,8 @@
       "title": "Forecast Category Name",
       "description": "Forecast category name that is displayed in reports for a perticular forecast category.",
       "type": "string",
+      "meta:titleId": "opportunity-details##xdm:forecastCategoryName##title##89841",
+      "meta:descriptionId": "opportunity-details##xdm:forecastCategoryName##description##15451",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:forecastCategoryName",
       "tagNumber": 6
@@ -66,6 +80,8 @@
       "title": "Closed Flag",
       "description": "Flag indicating if this opportunity is closed.",
       "type": "boolean",
+      "meta:titleId": "opportunity-details##xdm:isClosed##title##75741",
+      "meta:descriptionId": "opportunity-details##xdm:isClosed##description##54241",
       "meta:xdmType": "boolean",
       "meta:xdmField": "xdm:isClosed",
       "tagNumber": 7
@@ -74,6 +90,8 @@
       "title": "Won Flag",
       "description": "Flag indicating if this opportunity is Won.",
       "type": "boolean",
+      "meta:titleId": "opportunity-details##xdm:isWon##title##34181",
+      "meta:descriptionId": "opportunity-details##xdm:isWon##description##32631",
       "meta:xdmType": "boolean",
       "meta:xdmField": "xdm:isWon",
       "tagNumber": 8
@@ -84,6 +102,8 @@
       "type": "number",
       "minimum": 0,
       "maximum": 100,
+      "meta:titleId": "opportunity-details##xdm:probabilityPercentage##title##11271",
+      "meta:descriptionId": "opportunity-details##xdm:probabilityPercentage##description##33281",
       "meta:xdmType": "number",
       "meta:xdmField": "xdm:probabilityPercentage",
       "tagNumber": 9
@@ -92,6 +112,8 @@
       "title": "Opportunity Amount",
       "description": "Estimated total sale amount.",
       "$ref": "../../datatypes/currency.schema.json",
+      "meta:titleId": "opportunity-details##xdm:opportunityAmount##title##82291",
+      "meta:descriptionId": "opportunity-details##xdm:opportunityAmount##description##30351",
       "meta:xdmField": "xdm:opportunityAmount",
       "tagNumber": 10
     },
@@ -99,6 +121,8 @@
       "title": "Expected Revenue",
       "description": "Calculated revenue based on the Amount and Probability.",
       "$ref": "../../datatypes/currency.schema.json",
+      "meta:titleId": "opportunity-details##xdm:expectedRevenue##title##53011",
+      "meta:descriptionId": "opportunity-details##xdm:expectedRevenue##description##74431",
       "meta:xdmField": "xdm:expectedRevenue",
       "tagNumber": 11
     },
@@ -108,6 +132,8 @@
       "type": "integer",
       "minimum": 0,
       "default": 0,
+      "meta:titleId": "opportunity-details##xdm:opportunityQuantity##title##16141",
+      "meta:descriptionId": "opportunity-details##xdm:opportunityQuantity##description##30901",
       "meta:xdmType": "int",
       "meta:xdmField": "xdm:opportunityQuantity",
       "tagNumber": 12
@@ -117,6 +143,8 @@
       "description": "Expected date of closure for this opportunity.",
       "type": "string",
       "format": "date",
+      "meta:titleId": "opportunity-details##xdm:expectedCloseDate##title##19671",
+      "meta:descriptionId": "opportunity-details##xdm:expectedCloseDate##description##8081",
       "meta:xdmType": "date",
       "meta:xdmField": "xdm:expectedCloseDate",
       "tagNumber": 13
@@ -126,6 +154,8 @@
       "description": "Actual date of closure for this opportunity.",
       "type": "string",
       "format": "date-time",
+      "meta:titleId": "opportunity-details##xdm:actualCloseDate##title##26561",
+      "meta:descriptionId": "opportunity-details##xdm:actualCloseDate##description##84391",
       "meta:xdmType": "date-time",
       "meta:xdmField": "xdm:actualCloseDate",
       "tagNumber": 14
@@ -135,6 +165,8 @@
       "description": "Last activity date for this opportunity.",
       "type": "string",
       "format": "date-time",
+      "meta:titleId": "opportunity-details##xdm:lastActivityDate##title##89291",
+      "meta:descriptionId": "opportunity-details##xdm:lastActivityDate##description##96071",
       "meta:xdmType": "date-time",
       "meta:xdmField": "xdm:lastActivityDate",
       "tagNumber": 15
@@ -143,6 +175,8 @@
       "title": "Lead Source",
       "description": "Source of the opportunity such as Advertisement, Partner, or Web.",
       "type": "string",
+      "meta:titleId": "opportunity-details##xdm:leadSource##title##20741",
+      "meta:descriptionId": "opportunity-details##xdm:leadSource##description##5571",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:leadSource",
       "tagNumber": 16
@@ -151,6 +185,8 @@
       "title": "Next Step",
       "description": "Description of next task in closing opportunity.",
       "type": "string",
+      "meta:titleId": "opportunity-details##xdm:nextStep##title##81731",
+      "meta:descriptionId": "opportunity-details##xdm:nextStep##description##75081",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:nextStep",
       "tagNumber": 17

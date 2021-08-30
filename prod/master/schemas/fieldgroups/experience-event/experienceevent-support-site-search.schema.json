@@ -19,17 +19,22 @@
   "description": "",
   "meta:status": "stable",
   "meta:createdDate": "2021-01-15",
+  "meta:titleId": "experienceevent-support-site-search##title##23221",
+  "meta:descriptionId": "experienceevent-support-site-search##description##57001",
   "meta:xdmType": "object",
   "properties": {
     "siteKnowledge": {
       "type": "object",
       "description": "Knowledge base tracking, support site searches and forum interaction details.",
+      "meta:descriptionId": "experienceevent-support-site-search##xdm:siteKnowledge##description##98951",
       "meta:xdmType": "object",
       "properties": {
         "supportSiteSearch": {
           "title": "Support Site Search",
           "$ref": "../../datatypes/industry-verticals/internal-site-search.schema.json",
           "description": "Extension of internalSearch data type.",
+          "meta:titleId": "experienceevent-support-site-search##xdm:supportSiteSearch##title##29121",
+          "meta:descriptionId": "experienceevent-support-site-search##xdm:supportSiteSearch##description##85631",
           "meta:xdmField": "xdm:supportSiteSearch",
           "tagNumber": 1
         }

@@ -13,6 +13,16 @@
     "deprecated",
     "stable"
   ],
+  "meta:titleId": [
+    "opportunity-contact-role##title##24991",
+    "record##title##92641",
+    "external-source-system-audit-details##title##25871"
+  ],
+  "meta:descriptionId": [
+    "opportunity-contact-role##description##90011",
+    "record##description##41201",
+    "external-source-system-audit-details##description##77561"
+  ],
   "meta:xdmType": "object",
   "meta:createdDate": "2020-08-10",
   "properties": {
@@ -21,6 +31,8 @@
       "type": "string",
       "format": "uri-reference",
       "description": "A unique identifier for the record.",
+      "meta:titleId": "record##@id##title##80061",
+      "meta:descriptionId": "record##@id##description##41711",
       "meta:xdmType": "string",
       "meta:xdmField": "@id",
       "tagNumber": 1
@@ -29,6 +41,8 @@
       "title": "opportunity ContactID",
       "description": "A Unique Key describing a combination of OpportunityID and contactID.",
       "type": "string",
+      "meta:titleId": "opportunity-contact-role##xdm:opportunityContactID##title##87441",
+      "meta:descriptionId": "opportunity-contact-role##xdm:opportunityContactID##description##4871",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:opportunityContactID",
       "tagNumber": 2
@@ -37,6 +51,8 @@
       "title": "Opportunity ID",
       "description": "Opportunity ID unique identifier.",
       "type": "string",
+      "meta:titleId": "opportunity-contact-role##xdm:opportunityID##title##53351",
+      "meta:descriptionId": "opportunity-contact-role##xdm:opportunityID##description##30991",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:opportunityID",
       "tagNumber": 3
@@ -45,6 +61,8 @@
       "title": "Contact ID",
       "description": "Contact ID unique identifier.",
       "type": "string",
+      "meta:titleId": "opportunity-contact-role##xdm:contactID##title##53821",
+      "meta:descriptionId": "opportunity-contact-role##xdm:contactID##description##90501",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:contactID",
       "tagNumber": 4
@@ -53,6 +71,8 @@
       "title": "External Source System Audit Properties",
       "$ref": "../../datatypes/auditing/external-source-system-audit.schema.json",
       "description": "Audit attributes for external sources.",
+      "meta:titleId": "external-source-system-audit-details##xdm:extSourceSystemAudit##title##65301",
+      "meta:descriptionId": "external-source-system-audit-details##xdm:extSourceSystemAudit##description##99451",
       "meta:xdmField": "xdm:extSourceSystemAudit",
       "tagNumber": 5
     }

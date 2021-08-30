@@ -15,6 +15,14 @@
     "experimental",
     "stable"
   ],
+  "meta:titleId": [
+    "aircraft##title##14491",
+    "record##title##92641"
+  ],
+  "meta:descriptionId": [
+    "aircraft##description##29181",
+    "record##description##41201"
+  ],
   "meta:xdmType": "object",
   "meta:createdDate": "2020-08-10",
   "properties": {
@@ -23,6 +31,8 @@
       "type": "string",
       "format": "uri-reference",
       "description": "A unique identifier for the record.",
+      "meta:titleId": "record##@id##title##80061",
+      "meta:descriptionId": "record##@id##description##41711",
       "meta:xdmType": "string",
       "meta:xdmField": "@id",
       "tagNumber": 1
@@ -31,6 +41,8 @@
       "title": "Tail Number",
       "type": "string",
       "description": "Captures the tail number (identification string) for the aircraft.",
+      "meta:titleId": "aircraft##xdm:tailNumber##title##19411",
+      "meta:descriptionId": "aircraft##xdm:tailNumber##description##68341",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:tailNumber",
       "tagNumber": 2
@@ -39,6 +51,8 @@
       "title": "Aircraft Type",
       "type": "string",
       "description": "Records the aircraft type.",
+      "meta:titleId": "aircraft##xdm:aircraftType##title##48881",
+      "meta:descriptionId": "aircraft##xdm:aircraftType##description##82021",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:aircraftType",
       "tagNumber": 3

@@ -13,17 +13,22 @@
   "description": "Device trade-in details including trade-in value, original device ID, and new device ID.",
   "meta:status": "stable",
   "meta:createdDate": "2021-02-02",
+  "meta:titleId": "experienceevent-device-trade-in-details##title##77841",
+  "meta:descriptionId": "experienceevent-device-trade-in-details##description##42461",
   "meta:xdmType": "object",
   "properties": {
     "deviceTradeInDetails": {
       "type": "object",
       "description": "Device activation, configuration, and trade-in details.",
+      "meta:descriptionId": "experienceevent-device-trade-in-details##xdm:deviceTradeInDetails##description##97211",
       "meta:xdmType": "object",
       "properties": {
         "originalDeviceID": {
           "title": "Original Device ID",
           "type": "string",
           "description": "ID for the device being traded.",
+          "meta:titleId": "experienceevent-device-trade-in-details##xdm:originalDeviceID##title##34481",
+          "meta:descriptionId": "experienceevent-device-trade-in-details##xdm:originalDeviceID##description##51821",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:originalDeviceID",
           "tagNumber": 2
@@ -32,6 +37,8 @@
           "title": "New Device ID",
           "type": "string",
           "description": "ID for the new device being traded for.",
+          "meta:titleId": "experienceevent-device-trade-in-details##xdm:newDeviceID##title##64771",
+          "meta:descriptionId": "experienceevent-device-trade-in-details##xdm:newDeviceID##description##93571",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:newDeviceID",
           "tagNumber": 3
@@ -40,6 +47,8 @@
           "title": "Trade In Value",
           "$ref": "../../../datatypes/currency.schema.json",
           "description": "Value of the device being traded.",
+          "meta:titleId": "experienceevent-device-trade-in-details##xdm:tradeInValue##title##89341",
+          "meta:descriptionId": "experienceevent-device-trade-in-details##xdm:tradeInValue##description##97491",
           "meta:xdmField": "xdm:tradeInValue",
           "tagNumber": 4
         }

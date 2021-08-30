@@ -9,6 +9,18 @@
   "meta:status": "stable",
   "meta:xdmType": "object",
   "meta:createdDate": "2020-08-10",
+  "meta:titleId": [
+    "experienceevent-segmentmembership##title##63141",
+    "experienceevent-environment-details##title##14621",
+    "experienceevent-profile-stitch##title##6751",
+    "experienceevent-privacy##title##28881"
+  ],
+  "meta:descriptionId": [
+    "experienceevent-segmentmembership##description##22131",
+    "experienceevent-environment-details##description##15021",
+    "experienceevent-profile-stitch##description##64001",
+    "experienceevent-privacy##description##13481"
+  ],
   "meta:tags": {
     "industry": [
       "all"
@@ -19,6 +31,7 @@
       "title": "Segment Membership Map",
       "type": "object",
       "meta:xdmType": "map",
+      "meta:titleId": "experienceevent-segmentmembership##xdm:segmentMembership##title##25141",
       "meta:xdmField": "xdm:segmentMembership",
       "tagNumber": 2,
       "properties": {
@@ -26,6 +39,7 @@
           "title": "Segment Membership per Namespace",
           "type": "object",
           "meta:xdmType": "map",
+          "meta:titleId": "experienceevent-segmentmembership##additionalProperties##title##76501",
           "tagNumber": 1,
           "properties": {
             "mapObj": {
@@ -40,6 +54,8 @@
       "title": "Environment",
       "$ref": "../../datatypes/environment.schema.json",
       "description": "Information about the surrounding situation the event observation occurred in, specifically detailing transitory information such as the network or software versions.",
+      "meta:titleId": "experienceevent-environment-details##xdm:environment##title##57511",
+      "meta:descriptionId": "experienceevent-environment-details##xdm:environment##description##42621",
       "meta:xdmField": "xdm:environment",
       "tagNumber": 3
     },
@@ -47,6 +63,8 @@
       "title": "Device",
       "$ref": "../../datatypes/device.schema.json",
       "description": "An identified device, application or device browser instance that is trackable across sessions, normally by cookies.",
+      "meta:titleId": "experienceevent-environment-details##xdm:device##title##31301",
+      "meta:descriptionId": "experienceevent-environment-details##xdm:device##description##51671",
       "meta:xdmField": "xdm:device",
       "tagNumber": 4
     },
@@ -54,6 +72,8 @@
       "title": "Place context",
       "$ref": "../../datatypes/placecontext.schema.json",
       "description": "The transient circumstances related to the observation. Examples include locale specific information such as weather, local time, traffic, day of the week, workday vs. holiday, and working hours.",
+      "meta:titleId": "experienceevent-environment-details##xdm:placeContext##title##87021",
+      "meta:descriptionId": "experienceevent-environment-details##xdm:placeContext##description##71741",
       "meta:xdmField": "xdm:placeContext",
       "tagNumber": 5
     },
@@ -61,6 +81,8 @@
       "title": "Profile stitch",
       "description": "Details about the IDs that were joined by profile stitching.",
       "type": "array",
+      "meta:titleId": "experienceevent-profile-stitch##xdm:profileStitch##title##87471",
+      "meta:descriptionId": "experienceevent-profile-stitch##xdm:profileStitch##description##95681",
       "meta:xdmType": "array",
       "items": {
         "$ref": "../../datatypes/profilestitch.schema.json",
@@ -98,6 +120,7 @@
     "consentStrings": {
       "title": "Identity level consent information",
       "type": "array",
+      "meta:titleId": "experienceevent-privacy##xdm:consentStrings##title##80471",
       "meta:xdmType": "array",
       "items": {
         "$ref": "../../datatypes/consent/consentstring.schema.json",

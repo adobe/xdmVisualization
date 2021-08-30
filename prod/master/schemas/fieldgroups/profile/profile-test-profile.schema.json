@@ -8,6 +8,8 @@
   "description": "Use to indicate that the profile record is in use for testing, verification, and should not be automatically included in normal operations.",
   "meta:status": "stable",
   "meta:createdDate": "2020-08-10",
+  "meta:titleId": "profile-test-profile##title##10891",
+  "meta:descriptionId": "profile-test-profile##description##151",
   "meta:xdmType": "object",
   "properties": {
     "testProfile": {
@@ -15,6 +17,8 @@
       "type": "boolean",
       "description": "Indicates the `profile` record is for use in testing and verification purposes and should not be automatically included in normal operations.",
       "default": false,
+      "meta:titleId": "profile-test-profile##xdm:testProfile##title##24031",
+      "meta:descriptionId": "profile-test-profile##xdm:testProfile##description##3801",
       "meta:xdmType": "boolean",
       "meta:xdmField": "xdm:testProfile",
       "tagNumber": 1

@@ -7,12 +7,16 @@
   "description": "External Source System Audit fields.",
   "meta:status": "stable",
   "meta:createdDate": "2021-02-19",
+  "meta:titleId": "external-source-system-audit##title##4451",
+  "meta:descriptionId": "external-source-system-audit##description##25441",
   "meta:xdmType": "object",
   "properties": {
     "createdBy": {
       "title": "Created By",
       "description": "Name of the user who created this record",
       "type": "string",
+      "meta:titleId": "external-source-system-audit##xdm:createdBy##title##47001",
+      "meta:descriptionId": "external-source-system-audit##xdm:createdBy##description##39161",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:createdBy",
       "tagNumber": 1
@@ -22,6 +26,8 @@
       "description": "Date when this record was created.",
       "type": "string",
       "format": "date-time",
+      "meta:titleId": "external-source-system-audit##xdm:createdDate##title##39871",
+      "meta:descriptionId": "external-source-system-audit##xdm:createdDate##description##77771",
       "meta:xdmType": "date-time",
       "meta:xdmField": "xdm:createdDate",
       "tagNumber": 2
@@ -30,6 +36,8 @@
       "title": "Last Updated By",
       "description": "User who last modified this record.",
       "type": "string",
+      "meta:titleId": "external-source-system-audit##xdm:lastUpdatedBy##title##69331",
+      "meta:descriptionId": "external-source-system-audit##xdm:lastUpdatedBy##description##42141",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:lastUpdatedBy",
       "tagNumber": 3
@@ -39,6 +47,8 @@
       "description": "Date when this record was last modofied.",
       "type": "string",
       "format": "date-time",
+      "meta:titleId": "external-source-system-audit##xdm:lastUpdatedDate##title##68651",
+      "meta:descriptionId": "external-source-system-audit##xdm:lastUpdatedDate##description##97231",
       "meta:xdmType": "date-time",
       "meta:xdmField": "xdm:lastUpdatedDate",
       "tagNumber": 4
@@ -48,6 +58,8 @@
       "description": "Last activity date.",
       "type": "string",
       "format": "date-time",
+      "meta:titleId": "external-source-system-audit##xdm:lastActivityDate##title##14831",
+      "meta:descriptionId": "external-source-system-audit##xdm:lastActivityDate##description##43191",
       "meta:xdmType": "date-time",
       "meta:xdmField": "xdm:lastActivityDate",
       "tagNumber": 5
@@ -57,6 +69,8 @@
       "description": "Last referenced date.",
       "type": "string",
       "format": "date-time",
+      "meta:titleId": "external-source-system-audit##xdm:lastReferencedDate##title##51511",
+      "meta:descriptionId": "external-source-system-audit##xdm:lastReferencedDate##description##84071",
       "meta:xdmType": "date-time",
       "meta:xdmField": "xdm:lastReferencedDate",
       "tagNumber": 6
@@ -66,6 +80,8 @@
       "description": "Last viewed date.",
       "type": "string",
       "format": "date-time",
+      "meta:titleId": "external-source-system-audit##xdm:lastViewedDate##title##37991",
+      "meta:descriptionId": "external-source-system-audit##xdm:lastViewedDate##description##4521",
       "meta:xdmType": "date-time",
       "meta:xdmField": "xdm:lastViewedDate",
       "tagNumber": 7
@@ -74,6 +90,8 @@
       "title": "External ID",
       "description": "External unique identifier reference to external source to help identify and deduplicate if and when needed.",
       "type": "string",
+      "meta:titleId": "external-source-system-audit##xdm:externalID##title##35911",
+      "meta:descriptionId": "external-source-system-audit##xdm:externalID##description##48521",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:externalID",
       "tagNumber": 8
@@ -82,6 +100,8 @@
       "title": "External Key",
       "description": "External unique identifier to the source used for auditing.",
       "$ref": "../b2b/b2b-source.schema.json",
+      "meta:titleId": "external-source-system-audit##xdm:externalKey##title##30201",
+      "meta:descriptionId": "external-source-system-audit##xdm:externalKey##description##57971",
       "meta:xdmField": "xdm:externalKey",
       "tagNumber": 9
     }

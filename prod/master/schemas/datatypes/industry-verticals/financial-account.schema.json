@@ -7,12 +7,16 @@
   "description": "Financial account details, such as owners, balances, and types.",
   "meta:status": "stable",
   "meta:createdDate": "2021-02-19",
+  "meta:titleId": "financial-account##title##91291",
+  "meta:descriptionId": "financial-account##description##28261",
   "meta:xdmType": "object",
   "properties": {
     "currentAccountBalance": {
       "title": "Current Financial Account Balance",
       "$ref": "../currency.schema.json",
       "description": "Balance in the account.",
+      "meta:titleId": "financial-account##xdm:currentAccountBalance##title##70971",
+      "meta:descriptionId": "financial-account##xdm:currentAccountBalance##description##40631",
       "meta:xdmField": "xdm:currentAccountBalance",
       "tagNumber": 1
     },
@@ -20,6 +24,8 @@
       "title": "Financial Account ID",
       "type": "string",
       "description": "Current account balance for a single user account.",
+      "meta:titleId": "financial-account##xdm:financialAccountID##title##92961",
+      "meta:descriptionId": "financial-account##xdm:financialAccountID##description##17081",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:financialAccountID",
       "tagNumber": 2
@@ -28,6 +34,8 @@
       "title": "Financial Account Name",
       "type": "string",
       "description": "Name assigned to the financial account.",
+      "meta:titleId": "financial-account##xdm:financialAccountName##title##44621",
+      "meta:descriptionId": "financial-account##xdm:financialAccountName##description##86051",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:financialAccountName",
       "tagNumber": 3
@@ -42,6 +50,8 @@
         "investment"
       ],
       "description": "Describes the type of finanical account, such as checking, savings, or retirement.",
+      "meta:titleId": "financial-account##xdm:financialAccountType##title##94521",
+      "meta:descriptionId": "financial-account##xdm:financialAccountType##description##53381",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:financialAccountType",
       "tagNumber": 4

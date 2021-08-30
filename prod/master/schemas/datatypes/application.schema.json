@@ -7,12 +7,16 @@
   "meta:extensible": true,
   "meta:status": "stable",
   "meta:createdDate": "2020-08-10",
+  "meta:titleId": "application##title##75911",
+  "meta:descriptionId": "application##description##28921",
   "meta:xdmType": "object",
   "properties": {
     "id": {
       "title": "Application identifier",
       "type": "string",
       "description": "Identifier of the application.",
+      "meta:titleId": "application##xdm:id##title##54371",
+      "meta:descriptionId": "application##xdm:id##description##26841",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:id",
       "tagNumber": 1
@@ -21,6 +25,8 @@
       "title": "Name",
       "type": "string",
       "description": "Name of the application.",
+      "meta:titleId": "application##xdm:name##title##15871",
+      "meta:descriptionId": "application##xdm:name##description##84341",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:name",
       "tagNumber": 2
@@ -29,6 +35,8 @@
       "title": "Version",
       "type": "string",
       "description": "Version of the application.",
+      "meta:titleId": "application##xdm:version##title##49321",
+      "meta:descriptionId": "application##xdm:version##description##52981",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:version",
       "tagNumber": 3
@@ -36,42 +44,49 @@
     "applicationCloses": {
       "$ref": "data/measure.schema.json",
       "description": "Graceful termination of an application.",
+      "meta:descriptionId": "application##xdm:applicationCloses##description##45211",
       "meta:xdmField": "xdm:applicationCloses",
       "tagNumber": 4
     },
     "crashes": {
       "$ref": "data/measure.schema.json",
       "description": "Triggered when the application does not exit gracefully. Event is sent on application launch after a crash.",
+      "meta:descriptionId": "application##xdm:crashes##description##98701",
       "meta:xdmField": "xdm:crashes",
       "tagNumber": 5
     },
     "featureUsages": {
       "$ref": "data/measure.schema.json",
       "description": "Activation of an application feature that is being measured.",
+      "meta:descriptionId": "application##xdm:featureUsages##description##72421",
       "meta:xdmField": "xdm:featureUsages",
       "tagNumber": 6
     },
     "installs": {
       "$ref": "data/measure.schema.json",
       "description": "Install of an application on a device where the specific install event is available.",
+      "meta:descriptionId": "application##xdm:installs##description##69761",
       "meta:xdmField": "xdm:installs",
       "tagNumber": 7
     },
     "firstLaunches": {
       "$ref": "data/measure.schema.json",
       "description": "Triggered on first launch after install.",
+      "meta:descriptionId": "application##xdm:firstLaunches##description##59261",
       "meta:xdmField": "xdm:firstLaunches",
       "tagNumber": 8
     },
     "launches": {
       "$ref": "data/measure.schema.json",
       "description": "Launch of an application. Triggered on every run, including crashes and installs. Also triggered on a resume from background when the session timeout has been exceeded.",
+      "meta:descriptionId": "application##xdm:launches##description##96611",
       "meta:xdmField": "xdm:launches",
       "tagNumber": 9
     },
     "upgrades": {
       "$ref": "data/measure.schema.json",
       "description": "Upgrade of an application that has previously been installed. Triggered on first launch after upgrade.",
+      "meta:descriptionId": "application##xdm:upgrades##description##30911",
       "meta:xdmField": "xdm:upgrades",
       "tagNumber": 10
     },
@@ -83,6 +98,7 @@
         "background",
         "detached"
       ],
+      "meta:descriptionId": "application##xdm:userPerspective##description##43841",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:userPerspective",
       "tagNumber": 11

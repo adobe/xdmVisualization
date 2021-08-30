@@ -7,6 +7,8 @@
   "description": "The geographical unit of a parent geographical unit.",
   "meta:status": "stable",
   "meta:createdDate": "2021-02-19",
+  "meta:titleId": "geounit##title##14981",
+  "meta:descriptionId": "geounit##description##60651",
   "meta:xdmType": "object",
   "properties": {
     "_id": {
@@ -14,6 +16,8 @@
       "type": "string",
       "format": "uri-reference",
       "description": "The ID associated with this geographical unit.",
+      "meta:titleId": "geounit##@id##title##51091",
+      "meta:descriptionId": "geounit##@id##description##65391",
       "meta:xdmType": "string",
       "meta:xdmField": "@id",
       "tagNumber": 1
@@ -22,6 +26,8 @@
       "title": "Label of the geographical unit.",
       "type": "string",
       "description": "The user-friendly name for the geographical unit.",
+      "meta:titleId": "geounit##xdm:label##title##59821",
+      "meta:descriptionId": "geounit##xdm:label##description##44081",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:label",
       "tagNumber": 2

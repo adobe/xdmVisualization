@@ -8,6 +8,8 @@
   "meta:status": "stable",
   "meta:xdmType": "object",
   "meta:createdDate": "2020-08-10",
+  "meta:titleId": "metricdefinition##title##1451",
+  "meta:descriptionId": "metricdefinition##description##34591",
   "properties": {
     "_id": {
       "type": "string",
@@ -15,6 +17,7 @@
       "description": "The unique identifier of this metric.",
       "meta:xdmType": "string",
       "format": "uri-reference",
+      "meta:descriptionId": "metricdefinition##@id##description##54541",
       "meta:xdmField": "@id",
       "tagNumber": 1
     },
@@ -27,6 +30,7 @@
           "const": "option metric: per profile propositions",
           "description": "The human-readable name of the metric. The name can be used in user interfaces and does not have to be unique.",
           "meta:xdmType": "string",
+          "meta:descriptionId": "metricdefinition##schema:name##description##81811",
           "meta:xdmField": "schema:name",
           "tagNumber": 1
         }
@@ -47,6 +51,7 @@
         "price",
         "count"
       ],
+      "meta:descriptionId": "metricdefinition##xdm:measurement##description##90861",
       "meta:xdmField": "xdm:measurement",
       "tagNumber": 3
     },
@@ -60,6 +65,7 @@
         "s",
         "USD"
       ],
+      "meta:descriptionId": "metricdefinition##xdm:unit##description##50321",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:unit",
       "tagNumber": 4

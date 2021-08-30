@@ -8,6 +8,8 @@
   "description": "Used to indicate the behavior of record data semantic when composed into data schemas.",
   "meta:status": "stable",
   "meta:createdDate": "2020-08-10",
+  "meta:titleId": "record##title##92641",
+  "meta:descriptionId": "record##description##41201",
   "meta:xdmType": "object",
   "properties": {
     "_id": {
@@ -15,6 +17,8 @@
       "type": "string",
       "format": "uri-reference",
       "description": "A unique identifier for the record.",
+      "meta:titleId": "record##@id##title##80061",
+      "meta:descriptionId": "record##@id##description##41711",
       "meta:xdmType": "string",
       "meta:xdmField": "@id",
       "tagNumber": 1

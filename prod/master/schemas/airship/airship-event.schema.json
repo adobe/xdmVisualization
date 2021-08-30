@@ -9,8 +9,24 @@
     "experimental",
     "stable"
   ],
-  "meta:titleId": "airship-event##title",
-  "meta:descriptionId": "airship-event##description",
+  "meta:titleId": [
+    "airship-event##title",
+    "identitymap##title##68521",
+    "external-source-system-audit-details##title##25871",
+    "experienceevent-channel##title##22641",
+    "experienceevent-environment-details##title##14621",
+    "experienceevent-application##title##45651",
+    "device##title##84311"
+  ],
+  "meta:descriptionId": [
+    "airship-event##description",
+    "identitymap##description##9091",
+    "external-source-system-audit-details##description##77561",
+    "experienceevent-channel##description##26591",
+    "experienceevent-environment-details##description##15021",
+    "experienceevent-application##description##84301",
+    "device##description##3031"
+  ],
   "meta:xdmType": "object",
   "meta:tags": {
     "industry": [
@@ -625,6 +641,8 @@
       "title": "External Source System Audit Properties",
       "$ref": "../datatypes/auditing/external-source-system-audit.schema.json",
       "description": "Audit attributes for external sources.",
+      "meta:titleId": "external-source-system-audit-details##xdm:extSourceSystemAudit##title##65301",
+      "meta:descriptionId": "external-source-system-audit-details##xdm:extSourceSystemAudit##description##99451",
       "meta:xdmField": "xdm:extSourceSystemAudit",
       "tagNumber": 3
     },
@@ -632,6 +650,8 @@
       "title": "Experience channel",
       "description": "Experience channel related to the ExperienceEvent.",
       "$ref": "../datatypes/channels/channel.schema.json",
+      "meta:titleId": "experienceevent-channel##xdm:channel##title##10301",
+      "meta:descriptionId": "experienceevent-channel##xdm:channel##description##87891",
       "meta:xdmField": "xdm:channel",
       "tagNumber": 4
     },
@@ -639,6 +659,8 @@
       "title": "Environment",
       "$ref": "../datatypes/environment.schema.json",
       "description": "Information about the surrounding situation the event observation occurred in, specifically detailing transitory information such as the network or software versions.",
+      "meta:titleId": "experienceevent-environment-details##xdm:environment##title##57511",
+      "meta:descriptionId": "experienceevent-environment-details##xdm:environment##description##42621",
       "meta:xdmField": "xdm:environment",
       "tagNumber": 5
     },
@@ -646,6 +668,8 @@
       "title": "Device",
       "$ref": "../datatypes/device.schema.json",
       "description": "An identified device, application or device browser instance that is trackable across sessions, normally by cookies.",
+      "meta:titleId": "experienceevent-environment-details##xdm:device##title##31301",
+      "meta:descriptionId": "experienceevent-environment-details##xdm:device##description##51671",
       "meta:xdmField": "xdm:device",
       "tagNumber": 6
     },
@@ -653,6 +677,8 @@
       "title": "Place context",
       "$ref": "../datatypes/placecontext.schema.json",
       "description": "The transient circumstances related to the observation. Examples include locale specific information such as weather, local time, traffic, day of the week, workday vs. holiday, and working hours.",
+      "meta:titleId": "experienceevent-environment-details##xdm:placeContext##title##87021",
+      "meta:descriptionId": "experienceevent-environment-details##xdm:placeContext##description##71741",
       "meta:xdmField": "xdm:placeContext",
       "tagNumber": 7
     },
@@ -660,6 +686,8 @@
       "title": "Application",
       "$ref": "../datatypes/application.schema.json",
       "description": "Captures application information including the name of the application, app version, installs, launches, crashes, and closures. It could be either the application targeted by the event like the send of a push notification or the application originating the event such as a click, or a login.",
+      "meta:titleId": "experienceevent-application##xdm:application##title##63341",
+      "meta:descriptionId": "experienceevent-application##xdm:application##description##14751",
       "meta:xdmField": "xdm:application",
       "tagNumber": 8
     },
@@ -667,6 +695,8 @@
       "title": "Type identifier",
       "type": "string",
       "description": "An identifier for the device. This may be an identifier from 'DeviceAtlas' or another service that identifies the hardware that is being used.",
+      "meta:titleId": "device##xdm:typeID##title##96801",
+      "meta:descriptionId": "device##xdm:typeID##description##26841",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:typeID",
       "tagNumber": 9
@@ -676,6 +706,8 @@
       "type": "string",
       "format": "uri",
       "description": "The namespace of the service that is used to identify the device type.",
+      "meta:titleId": "device##xdm:typeIDService##title##26251",
+      "meta:descriptionId": "device##xdm:typeIDService##description##40341",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:typeIDService",
       "tagNumber": 10
@@ -684,6 +716,8 @@
       "title": "Type",
       "type": "string",
       "description": "Type of device being tracked.",
+      "meta:titleId": "device##xdm:type##title##2841",
+      "meta:descriptionId": "device##xdm:type##description##31551",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:type",
       "tagNumber": 11
@@ -692,6 +726,8 @@
       "title": "Manufacturer",
       "type": "string",
       "description": "The name of the organization who owns the design and creation of the device, for example, 'Apple' is the manufacturer of the iPhone.",
+      "meta:titleId": "device##xdm:manufacturer##title##87061",
+      "meta:descriptionId": "device##xdm:manufacturer##description##2981",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:manufacturer",
       "tagNumber": 12
@@ -700,6 +736,8 @@
       "title": "Model",
       "type": "string",
       "description": "The name of the model for the device. This is the common, human-readable, or marketing name for the device. For example, the 'iPhone 6S' is a particular model of mobile phone.",
+      "meta:titleId": "device##xdm:model##title##9441",
+      "meta:descriptionId": "device##xdm:model##description##12951",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:model",
       "tagNumber": 13
@@ -708,6 +746,8 @@
       "title": "Model number",
       "type": "string",
       "description": "The unique model number designation assigned by the manufacturer for this device. Model numbers are not versions, but unique identifiers that identify a particular model configuration. While the model for a particular phone might be 'iPhone 6S' the model number would be 'A1633', or 'A1634' based on configuration at the time of sale.",
+      "meta:titleId": "device##xdm:modelNumber##title##15381",
+      "meta:descriptionId": "device##xdm:modelNumber##description##70421",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:modelNumber",
       "tagNumber": 14
@@ -716,6 +756,8 @@
       "title": "Screen height",
       "type": "integer",
       "description": "The number of vertical pixels of the device's active display in the default orientation.",
+      "meta:titleId": "device##xdm:screenHeight##title##28801",
+      "meta:descriptionId": "device##xdm:screenHeight##description##64291",
       "meta:xdmType": "int",
       "meta:xdmField": "xdm:screenHeight",
       "tagNumber": 15
@@ -724,6 +766,8 @@
       "title": "Screen width",
       "type": "integer",
       "description": "The number of horizontal pixels of the device's active display in the default orientation.",
+      "meta:titleId": "device##xdm:screenWidth##title##89961",
+      "meta:descriptionId": "device##xdm:screenWidth##description##43411",
       "meta:xdmType": "int",
       "meta:xdmField": "xdm:screenWidth",
       "tagNumber": 16
@@ -732,6 +776,8 @@
       "title": "Color depth",
       "type": "integer",
       "description": "The number of colors the display is able to represent.",
+      "meta:titleId": "device##xdm:colorDepth##title##72311",
+      "meta:descriptionId": "device##xdm:colorDepth##description##28511",
       "meta:xdmType": "int",
       "meta:xdmField": "xdm:colorDepth",
       "tagNumber": 17
@@ -744,6 +790,8 @@
         "portrait",
         "landscape"
       ],
+      "meta:titleId": "device##xdm:screenOrientation##title##12661",
+      "meta:descriptionId": "device##xdm:screenOrientation##description##45911",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:screenOrientation",
       "tagNumber": 18
@@ -752,6 +800,8 @@
       "title": "Background Push Enabled Flag",
       "type": "boolean",
       "description": "For devices like mobile , this tracks the system background push enabled permision status.",
+      "meta:titleId": "device##xdm:isBackgroundPushEnabled##title##29071",
+      "meta:descriptionId": "device##xdm:isBackgroundPushEnabled##description##45771",
       "meta:xdmType": "boolean",
       "meta:xdmField": "xdm:isBackgroundPushEnabled",
       "tagNumber": 19
@@ -760,6 +810,8 @@
       "title": "Location Enabled Flag",
       "type": "boolean",
       "description": "Indicates whether or not the device has location services enabled.",
+      "meta:titleId": "device##xdm:isLocationEnabled##title##73631",
+      "meta:descriptionId": "device##xdm:isLocationEnabled##description##2511",
       "meta:xdmType": "boolean",
       "meta:xdmField": "xdm:isLocationEnabled",
       "tagNumber": 20
@@ -775,6 +827,8 @@
         "FOREGROUND_ALLOWED",
         "UNPROMPTED"
       ],
+      "meta:titleId": "device##xdm:locationPermission##title##58011",
+      "meta:descriptionId": "device##xdm:locationPermission##description##70851",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:locationPermission",
       "tagNumber": 21
@@ -783,6 +837,8 @@
       "title": "Push Opt In Flag",
       "type": "boolean",
       "description": "Indicates whether or not the device opted-in to receive push notifications.",
+      "meta:titleId": "device##xdm:isPushOptIn##title##24681",
+      "meta:descriptionId": "device##xdm:isPushOptIn##description##17061",
       "meta:xdmType": "boolean",
       "meta:xdmField": "xdm:isPushOptIn",
       "tagNumber": 22

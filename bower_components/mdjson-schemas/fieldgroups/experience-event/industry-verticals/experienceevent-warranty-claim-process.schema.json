@@ -16,17 +16,22 @@
   },
   "description": "Claim details such as claim policy ID and claim creation steps.",
   "meta:status": "experimental",
+  "meta:titleId": "experienceevent-warranty-claim-details##title##22651",
+  "meta:descriptionId": "experienceevent-warranty-claim-details##description##97381",
   "meta:xdmType": "object",
   "properties": {
     "warrantyClaim": {
       "type": "object",
       "description": "Captures fields related to a claim when initated by a customer.",
+      "meta:descriptionId": "experienceevent-warranty-claim-details##xdm:warrantyClaim##description##42091",
       "meta:xdmType": "object",
       "properties": {
         "claim": {
           "title": "Claim",
           "$ref": "../../../datatypes/industry-verticals/claim.schema.json",
           "description": "Extension of claim data type.",
+          "meta:titleId": "experienceevent-warranty-claim-details##xdm:claim##title##94351",
+          "meta:descriptionId": "experienceevent-warranty-claim-details##xdm:claim##description##80531",
           "meta:xdmField": "xdm:claim",
           "tagNumber": 1
         },
@@ -34,6 +39,8 @@
           "title": "Length",
           "type": "integer",
           "description": "Records the length of the warranty, in months.",
+          "meta:titleId": "experienceevent-warranty-claim-details##xdm:length##title##18691",
+          "meta:descriptionId": "experienceevent-warranty-claim-details##xdm:length##description##10281",
           "meta:xdmType": "int",
           "meta:xdmField": "xdm:length",
           "tagNumber": 2
@@ -49,6 +56,8 @@
             "home",
             "automobile"
           ],
+          "meta:titleId": "experienceevent-warranty-claim-details##xdm:type##title##72791",
+          "meta:descriptionId": "experienceevent-warranty-claim-details##xdm:type##description##3661",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:type",
           "tagNumber": 3

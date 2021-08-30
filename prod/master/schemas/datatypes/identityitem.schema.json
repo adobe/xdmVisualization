@@ -7,12 +7,16 @@
   "description": "An end user identity item, to be included in an instance of `context/identitymap`.",
   "meta:status": "stable",
   "meta:createdDate": "2020-08-10",
+  "meta:titleId": "identityitem##title##39651",
+  "meta:descriptionId": "identityitem##description##8151",
   "meta:xdmType": "object",
   "properties": {
     "id": {
       "title": "Identifier",
       "type": "string",
       "description": "Identity of the consumer in the related namespace.",
+      "meta:titleId": "identityitem##xdm:id##title##10921",
+      "meta:descriptionId": "identityitem##xdm:id##description##8541",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:id",
       "tagNumber": 1
@@ -26,6 +30,7 @@
         "authenticated",
         "loggedOut"
       ],
+      "meta:descriptionId": "identityitem##xdm:authenticatedState##description##8261",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:authenticatedState",
       "tagNumber": 2
@@ -35,6 +40,8 @@
       "type": "boolean",
       "default": false,
       "description": "Indicates this identity is the preferred identity. Is used as a hint to help systems better organize how identities are queried.",
+      "meta:titleId": "identityitem##xdm:primary##title##66531",
+      "meta:descriptionId": "identityitem##xdm:primary##description##1311",
       "meta:xdmType": "boolean",
       "meta:xdmField": "xdm:primary",
       "tagNumber": 3
