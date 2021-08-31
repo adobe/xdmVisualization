@@ -1,0 +1,49 @@
+{
+  "id": "_xdm.adobe.b2b.marketo.marketo-web-url",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Marketo Web URL",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "description": "Captures web url, which need not be in URI format.",
+  "meta:status": "experimental",
+  "meta:xdmType": "object",
+  "properties": {
+    "web": {
+      "title": "Web",
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "webPageDetails": {
+          "title": "Web Page Details",
+          "type": "object",
+          "meta:xdmType": "object",
+          "properties": {
+            "_marketo": {
+              "type": "object",
+              "meta:xdmType": "object",
+              "properties": {
+                "URL": {
+                  "title": "URL",
+                  "type": "string",
+                  "description": "The normative or usual URL of the web page.  This may or may not be confined to URI format",
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "marketo:URL",
+                  "tagNumber": 1
+                }
+              },
+              "tagNumber": 1
+            }
+          },
+          "meta:xdmField": "xdm:webPageDetails",
+          "tagNumber": 1
+        }
+      },
+      "meta:xdmField": "xdm:web",
+      "tagNumber": 1
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/b2b/marketo/marketo-web-url",
+  "meta:altId": "_xdm.adobe.b2b.marketo.marketo-web-url",
+  "id": "_xdm.adobe.b2b.marketo.marketo-web-url"
+}

@@ -1,0 +1,125 @@
+{
+  "id": "_xdm.context.place",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Physical place",
+  "type": "object",
+  "meta:extensible": true,
+  "description": "A place in the real world with a physical location.",
+  "meta:status": "stable",
+  "meta:createdDate": "2021-02-19",
+  "meta:titleId": "place##title##76191",
+  "meta:descriptionId": "place##description##42561",
+  "meta:xdmType": "object",
+  "properties": {
+    "_id": {
+      "title": "Place ID",
+      "type": "string",
+      "format": "uri-reference",
+      "description": "The unique identifier of the place.",
+      "meta:titleId": "place##@id##title##35211",
+      "meta:descriptionId": "place##@id##description##54441",
+      "meta:xdmType": "string",
+      "meta:xdmField": "@id",
+      "tagNumber": 1
+    },
+    "_schema": {
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "description": {
+          "title": "Description",
+          "type": "string",
+          "description": "The description of the physical location.",
+          "meta:titleId": "place##schema:description##title##77311",
+          "meta:descriptionId": "place##schema:description##description##97061",
+          "meta:xdmType": "string",
+          "meta:xdmField": "schema:description",
+          "tagNumber": 1
+        },
+        "telephone": {
+          "title": "Phone number",
+          "type": "string",
+          "description": "The phone number.",
+          "meta:titleId": "place##schema:telephone##title##69581",
+          "meta:descriptionId": "place##schema:telephone##description##53751",
+          "meta:xdmType": "string",
+          "meta:xdmField": "schema:telephone",
+          "tagNumber": 2
+        },
+        "branchCode": {
+          "title": "Location code",
+          "type": "string",
+          "description": "A short textual code also called \"store code\" that uniquely identifies a place of business. The code is typically assigned by the parent organization and used in structured URLs. For example, in the URL `http://www.starbucks.co.uk/store-locator/etc/detail/3047` the code \"3047\" is a `branchCode` for a particular branch.",
+          "meta:titleId": "place##schema:branchCode##title##83371",
+          "meta:descriptionId": "place##schema:branchCode##description##81261",
+          "meta:xdmType": "string",
+          "meta:xdmField": "schema:branchCode",
+          "tagNumber": 3
+        }
+      },
+      "tagNumber": 2
+    },
+    "address": {
+      "title": "Address",
+      "$ref": "address.schema.json",
+      "description": "The physical address of the location.",
+      "meta:titleId": "place##xdm:address##title##9001",
+      "meta:descriptionId": "place##xdm:address##description##3761",
+      "meta:xdmField": "xdm:address",
+      "tagNumber": 3
+    },
+    "shape": {
+      "title": "Geo shape",
+      "$ref": "../external/schema/geoshape.schema.json",
+      "description": "The geographic shape of the physical location.",
+      "meta:titleId": "place##xdm:shape##title##87121",
+      "meta:descriptionId": "place##xdm:shape##description##60191",
+      "meta:xdmField": "xdm:shape",
+      "tagNumber": 4
+    },
+    "pointOfInterest": {
+      "title": "Point of interest",
+      "$ref": "../external/schema/geocoordinates.schema.json",
+      "description": "The coordinates of the point of interest for this location.",
+      "meta:titleId": "place##xdm:pointOfInterest##title##63511",
+      "meta:descriptionId": "place##xdm:pointOfInterest##description##58641",
+      "meta:xdmField": "xdm:pointOfInterest",
+      "tagNumber": 5
+    },
+    "containedInPlace": {
+      "title": "Contained by location",
+      "type": "string",
+      "format": "uri",
+      "description": "XDM URI of another `Place` that this place is contained in. This property is based on `schema:containedInPlace`, but is using URI references instead of embedding the containing place.",
+      "meta:titleId": "place##xdm:containedInPlace##title##57701",
+      "meta:descriptionId": "place##xdm:containedInPlace##description##76581",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:containedInPlace",
+      "tagNumber": 6
+    },
+    "containsPlaces": {
+      "title": "Contains locations",
+      "type": "array",
+      "description": "An array of XDM URIs of other `Place` instances that this place is containing. This property is based on `schema:containsPlace`, but is using URI references instead of embedding the containing place. In addition, it is an array, allowing one place to include multiple other places.",
+      "meta:titleId": "place##xdm:containsPlaces##title##6831",
+      "meta:descriptionId": "place##xdm:containsPlaces##description##38601",
+      "meta:xdmType": "array",
+      "items": {
+        "type": "string",
+        "format": "uri",
+        "description": "The XDM URI of another `Place` that this place contains.",
+        "meta:descriptionId": "place##items##description##16511",
+        "meta:xdmType": "string",
+        "tagNumber": 1
+      },
+      "meta:xdmField": "xdm:containsPlaces",
+      "tagNumber": 7
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/context/place",
+  "meta:altId": "_xdm.context.place",
+  "required": [
+    "_id"
+  ],
+  "id": "_xdm.context.place"
+}

@@ -1,0 +1,47 @@
+{
+  "id": "_xdm.context.experienceevent-commerce",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Commerce Details",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:tags": {
+    "industry": [
+      "all"
+    ]
+  },
+  "description": "Commerce data such as product information (SKU, name, quantity), and standard cart operations (order, checkout, abandon).",
+  "meta:status": "stable",
+  "meta:createdDate": "2020-08-10",
+  "meta:titleId": "experienceevent-commerce##title##35671",
+  "meta:descriptionId": "experienceevent-commerce##description##38961",
+  "meta:xdmType": "object",
+  "properties": {
+    "productListItems": {
+      "title": "Product list items",
+      "type": "array",
+      "description": "A list of items representing a product selected by a customer with specific options and pricing that are for that usage context at a specific point of time and may differ from the product record.",
+      "meta:titleId": "experienceevent-commerce##xdm:productListItems##title##55181",
+      "meta:descriptionId": "experienceevent-commerce##xdm:productListItems##description##83861",
+      "meta:xdmType": "array",
+      "items": {
+        "$ref": "../../datatypes/productlistitem.schema.json",
+        "tagNumber": 1
+      },
+      "meta:xdmField": "xdm:productListItems",
+      "tagNumber": 1
+    },
+    "commerce": {
+      "title": "Commerce",
+      "$ref": "../../datatypes/marketing/commerce.schema.json",
+      "description": "Product returns, warranty registration, and shopping cart/order process.",
+      "meta:titleId": "experienceevent-commerce##xdm:commerce##title##46211",
+      "meta:descriptionId": "experienceevent-commerce##xdm:commerce##description##59661",
+      "meta:xdmField": "xdm:commerce",
+      "tagNumber": 2
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/context/experienceevent-commerce",
+  "meta:altId": "_xdm.context.experienceevent-commerce",
+  "id": "_xdm.context.experienceevent-commerce"
+}

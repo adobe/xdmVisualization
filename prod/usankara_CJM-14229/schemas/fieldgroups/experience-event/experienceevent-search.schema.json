@@ -1,0 +1,28 @@
+{
+  "id": "_xdm.context.experienceevent-search",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Search Details",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "description": "Search related information such as search engine, paid search, keywords, and position.",
+  "meta:status": "stable",
+  "meta:createdDate": "2020-08-10",
+  "meta:titleId": "experienceevent-search##title##16611",
+  "meta:descriptionId": "experienceevent-search##description##87031",
+  "meta:xdmType": "object",
+  "properties": {
+    "search": {
+      "title": "Search",
+      "$ref": "../../datatypes/search.schema.json",
+      "description": "The information related to web or mobile search.",
+      "meta:titleId": "experienceevent-search##xdm:search##title##24741",
+      "meta:descriptionId": "experienceevent-search##xdm:search##description##10291",
+      "meta:xdmField": "xdm:search",
+      "tagNumber": 1
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/context/experienceevent-search",
+  "meta:altId": "_xdm.context.experienceevent-search",
+  "id": "_xdm.context.experienceevent-search"
+}

@@ -1,0 +1,214 @@
+{
+  "id": "_xdm.mixins.industry-verticals.experienceevent-lodging-reservation",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Lodging Reservation",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:tags": {
+    "industry": [
+      "travel_and_hospitality"
+    ]
+  },
+  "description": "Collects all details specific to a lodging reservation.",
+  "meta:status": "stable",
+  "meta:createdDate": "2021-02-10",
+  "meta:titleId": [
+    "experienceevent-lodging-reservation##title##15121",
+    "experienceevent-reservation-details##title##81811"
+  ],
+  "meta:descriptionId": [
+    "experienceevent-lodging-reservation##description##1131",
+    "experienceevent-reservation-details##description##13701"
+  ],
+  "meta:xdmType": "object",
+  "properties": {
+    "reservations": {
+      "type": "object",
+      "description": "Interaction tracking for flights, lodging, vehicles, and dining reservations.",
+      "meta:descriptionId": [
+        "experienceevent-lodging-reservation##xdm:reservations##description##35031",
+        "experienceevent-reservation-details##xdm:reservations##description##11171"
+      ],
+      "meta:xdmType": "object",
+      "properties": {
+        "lodgingReservations": {
+          "type": "array",
+          "meta:xdmType": "array",
+          "meta:xdmField": "xdm:lodgingReservations",
+          "tagNumber": 1,
+          "items": {
+            "$ref": "obj5581597282480852.schema.json"
+          }
+        },
+        "cancellation": {
+          "title": "Cancellation",
+          "type": "integer",
+          "description": "Tracked when a reservation has been cancelled.",
+          "meta:titleId": "experienceevent-reservation-details##xdm:cancellation##title##79241",
+          "meta:descriptionId": "experienceevent-reservation-details##xdm:cancellation##description##90061",
+          "meta:xdmType": "int",
+          "meta:xdmField": "xdm:cancellation",
+          "tagNumber": 2
+        },
+        "confirmationNumber": {
+          "title": "Confirmation Number",
+          "type": "string",
+          "description": "Tracks the reservation confirmation number/identifier.",
+          "meta:titleId": "experienceevent-reservation-details##xdm:confirmationNumber##title##79151",
+          "meta:descriptionId": "experienceevent-reservation-details##xdm:confirmationNumber##description##69051",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:confirmationNumber",
+          "tagNumber": 3
+        },
+        "created": {
+          "title": "Created",
+          "type": "integer",
+          "description": "Tracked when a reservation has been created.",
+          "meta:titleId": "experienceevent-reservation-details##xdm:created##title##90351",
+          "meta:descriptionId": "experienceevent-reservation-details##xdm:created##description##6851",
+          "meta:xdmType": "int",
+          "meta:xdmField": "xdm:created",
+          "tagNumber": 4
+        },
+        "currencyCode": {
+          "title": "Currency Code",
+          "type": "string",
+          "description": "Currency code used to make the purchase. ISO 4217 currency code.",
+          "pattern": "^[A-Z]{3}$",
+          "meta:titleId": "experienceevent-reservation-details##xdm:currencyCode##title##6951",
+          "meta:descriptionId": "experienceevent-reservation-details##xdm:currencyCode##description##26411",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:currencyCode",
+          "tagNumber": 5
+        },
+        "endDate": {
+          "title": "End Date",
+          "type": "string",
+          "format": "date-time",
+          "description": "The end drop-off/return/check-out date of the reservation.",
+          "meta:titleId": "experienceevent-reservation-details##xdm:endDate##title##13601",
+          "meta:descriptionId": "experienceevent-reservation-details##xdm:endDate##description##26001",
+          "meta:xdmType": "date-time",
+          "meta:xdmField": "xdm:endDate",
+          "tagNumber": 6
+        },
+        "ID": {
+          "title": "ID",
+          "type": "string",
+          "description": "Tracks the reservation number/identifier.",
+          "meta:titleId": "experienceevent-reservation-details##xdm:ID##title##32361",
+          "meta:descriptionId": "experienceevent-reservation-details##xdm:ID##description##34191",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:ID",
+          "tagNumber": 7
+        },
+        "length": {
+          "title": "Length",
+          "type": "integer",
+          "description": "Tracks the total number of days for a reservation.",
+          "meta:titleId": "experienceevent-reservation-details##xdm:length##title##50151",
+          "meta:descriptionId": "experienceevent-reservation-details##xdm:length##description##62381",
+          "meta:xdmType": "int",
+          "meta:xdmField": "xdm:length",
+          "tagNumber": 8
+        },
+        "modification": {
+          "title": "Modification",
+          "type": "integer",
+          "description": "Captured when a reservation has been modified.",
+          "meta:titleId": "experienceevent-reservation-details##xdm:modification##title##54681",
+          "meta:descriptionId": "experienceevent-reservation-details##xdm:modification##description##26801",
+          "meta:xdmType": "int",
+          "meta:xdmField": "xdm:modification",
+          "tagNumber": 9
+        },
+        "modificationDate": {
+          "title": "Modification Date",
+          "type": "string",
+          "format": "date-time",
+          "description": "Tracks when a reservation has been modified.",
+          "meta:titleId": "experienceevent-reservation-details##xdm:modificationDate##title##84251",
+          "meta:descriptionId": "experienceevent-reservation-details##xdm:modificationDate##description##37831",
+          "meta:xdmType": "date-time",
+          "meta:xdmField": "xdm:modificationDate",
+          "tagNumber": 10
+        },
+        "nonRefundableAmount": {
+          "title": "Non-Refundable Amount",
+          "$ref": "../../../datatypes/currency.schema.json",
+          "description": "Amount of the reservation price that is marked as non-refundable.",
+          "meta:titleId": "experienceevent-reservation-details##xdm:nonRefundableAmount##title##55661",
+          "meta:descriptionId": "experienceevent-reservation-details##xdm:nonRefundableAmount##description##54821",
+          "meta:xdmField": "xdm:nonRefundableAmount",
+          "tagNumber": 11
+        },
+        "numberOfAdults": {
+          "title": "Number of Adults",
+          "type": "integer",
+          "description": "Captures the number of adults associated with the reservation.",
+          "meta:titleId": "experienceevent-reservation-details##xdm:numberOfAdults##title##65601",
+          "meta:descriptionId": "experienceevent-reservation-details##xdm:numberOfAdults##description##3801",
+          "meta:xdmType": "int",
+          "meta:xdmField": "xdm:numberOfAdults",
+          "tagNumber": 12
+        },
+        "numberOfChildren": {
+          "title": "Number of Children",
+          "type": "integer",
+          "description": "Captures the number of children associated with the reservation.",
+          "meta:titleId": "experienceevent-reservation-details##xdm:numberOfChildren##title##51881",
+          "meta:descriptionId": "experienceevent-reservation-details##xdm:numberOfChildren##description##15821",
+          "meta:xdmType": "int",
+          "meta:xdmField": "xdm:numberOfChildren",
+          "tagNumber": 13
+        },
+        "purpose": {
+          "title": "Purpose",
+          "type": "string",
+          "description": "Tracks the purpose of the reservation, typically either business or personal.",
+          "meta:titleId": "experienceevent-reservation-details##xdm:purpose##title##30031",
+          "meta:descriptionId": "experienceevent-reservation-details##xdm:purpose##description##37771",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:purpose",
+          "tagNumber": 15
+        },
+        "startDate": {
+          "title": "Start Date",
+          "type": "string",
+          "format": "date-time",
+          "description": "The start pick-up/outbound/check-in date of the reservation.",
+          "meta:titleId": "experienceevent-reservation-details##xdm:startDate##title##69061",
+          "meta:descriptionId": "experienceevent-reservation-details##xdm:startDate##description##10351",
+          "meta:xdmType": "date-time",
+          "meta:xdmField": "xdm:startDate",
+          "tagNumber": 16
+        },
+        "transaction": {
+          "title": "Transaction",
+          "$ref": "../../../datatypes/industry-verticals/transaction.schema.json",
+          "description": "Extension of transaction data type.",
+          "meta:titleId": "experienceevent-reservation-details##xdm:transaction##title##8231",
+          "meta:descriptionId": "experienceevent-reservation-details##xdm:transaction##description##21241",
+          "meta:xdmField": "xdm:transaction",
+          "tagNumber": 17
+        },
+        "triptype": {
+          "title": "Trip Type",
+          "type": "string",
+          "description": "Indicates if the reservation is for a one way, round trip, or multi-city.",
+          "meta:titleId": "experienceevent-reservation-details##xdm:triptype##title##70051",
+          "meta:descriptionId": "experienceevent-reservation-details##xdm:triptype##description##93631",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:triptype",
+          "tagNumber": 18
+        }
+      },
+      "meta:xdmField": "xdm:reservations",
+      "tagNumber": 1
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/mixins/industry-verticals/experienceevent-lodging-reservation",
+  "meta:altId": "_xdm.mixins.industry-verticals.experienceevent-lodging-reservation",
+  "id": "_xdm.mixins.industry-verticals.experienceevent-lodging-reservation"
+}

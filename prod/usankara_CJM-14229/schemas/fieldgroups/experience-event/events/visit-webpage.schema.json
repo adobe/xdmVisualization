@@ -1,0 +1,192 @@
+{
+  "id": "_xdm.mixins.events.visit-webpage",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Visit Web Page",
+  "type": "object",
+  "meta:tags": {
+    "b2bSchema": true
+  },
+  "meta:conditionalField": "xdm:eventType",
+  "meta:conditionalValue": "web.webpagedetails.pageViews",
+  "description": "Use for tracking the details of a person's visit to a web page.",
+  "meta:status": "experimental",
+  "meta:createdDate": "2021-02-19",
+  "meta:titleId": "visit-webpage##title##55221",
+  "meta:descriptionId": "visit-webpage##description##55151",
+  "meta:xdmType": "object",
+  "properties": {
+    "web": {
+      "title": "Web",
+      "type": "object",
+      "description": "Link clicks, web page details, referrer information, and browser details.",
+      "meta:titleId": "visit-webpage##xdm:web##title##55961",
+      "meta:descriptionId": "visit-webpage##xdm:web##description##80051",
+      "meta:xdmType": "object",
+      "properties": {
+        "webPageDetails": {
+          "title": "Web Page Details",
+          "type": "object",
+          "meta:titleId": "visit-webpage##xdm:webPageDetails##title##28201",
+          "meta:xdmType": "object",
+          "properties": {
+            "webPageID": {
+              "title": "Web Page ID",
+              "type": "string",
+              "description": "Unique ID of the web page.",
+              "meta:titleId": "visit-webpage##xdm:webPageID##title##45021",
+              "meta:descriptionId": "visit-webpage##xdm:webPageID##description##94771",
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:webPageID",
+              "tagNumber": 1
+            },
+            "name": {
+              "title": "Name",
+              "type": "string",
+              "description": "The normative name of the web page. This name is not necessarily the page title or directly associate with page content, but is used to organize a site's pages for classification purposes.",
+              "meta:titleId": "visit-webpage##xdm:name##title##21231",
+              "meta:descriptionId": "visit-webpage##xdm:name##description##80931",
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:name",
+              "tagNumber": 2
+            },
+            "URL": {
+              "title": "URL",
+              "type": "string",
+              "format": "uri",
+              "description": "The normative or usual URL of the web page.  This may or may not be the actual URL used to reach the page, which would be recorded using `Web Link`.",
+              "meta:titleId": "visit-webpage##xdm:URL##title##84361",
+              "meta:descriptionId": "visit-webpage##xdm:URL##description##28161",
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:URL",
+              "tagNumber": 3
+            },
+            "queryParameters": {
+              "title": "Query Parameters",
+              "type": "string",
+              "description": "Query Parameters used for the web page. This is normally the value of a string after ? in the url.",
+              "meta:titleId": "visit-webpage##xdm:queryParameters##title##55151",
+              "meta:descriptionId": "visit-webpage##xdm:queryParameters##description##80861",
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:queryParameters",
+              "tagNumber": 4
+            },
+            "isPersonalizedURL": {
+              "title": "Is Personalized URL",
+              "type": "boolean",
+              "description": "Boolean indicating if person accessed the web page via a personalized URL.",
+              "meta:titleId": "visit-webpage##xdm:isPersonalizedURL##title##61871",
+              "meta:descriptionId": "visit-webpage##xdm:isPersonalizedURL##description##75361",
+              "meta:xdmType": "boolean",
+              "meta:xdmField": "xdm:isPersonalizedURL",
+              "tagNumber": 5
+            }
+          },
+          "meta:xdmField": "xdm:webPageDetails",
+          "tagNumber": 1
+        },
+        "webReferrer": {
+          "title": "Web Referrer",
+          "type": "object",
+          "meta:titleId": "visit-webpage##xdm:webReferrer##title##79211",
+          "meta:xdmType": "object",
+          "properties": {
+            "URL": {
+              "title": "URL",
+              "type": "string",
+              "description": "URL of the referring web page.",
+              "meta:titleId": "visit-webpage##xdm:URL##title##21741",
+              "meta:descriptionId": "visit-webpage##xdm:URL##description##46981",
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:URL",
+              "tagNumber": 1
+            }
+          },
+          "meta:xdmField": "xdm:webReferrer",
+          "tagNumber": 2
+        }
+      },
+      "meta:xdmField": "xdm:web",
+      "tagNumber": 1
+    },
+    "environment": {
+      "title": "Environment",
+      "type": "object",
+      "description": "The information related to web page and link of the ExperienceEvent.",
+      "meta:titleId": "visit-webpage##xdm:environment##title##51361",
+      "meta:descriptionId": "visit-webpage##xdm:environment##description##43091",
+      "meta:xdmType": "object",
+      "properties": {
+        "ipV4": {
+          "title": "IPv4",
+          "type": "string",
+          "format": "ipv4",
+          "description": "The numerical label assigned to a device participating in a computer network that uses the Internet Protocol for communication. ",
+          "meta:titleId": "visit-webpage##xdm:ipV4##title##871",
+          "meta:descriptionId": "visit-webpage##xdm:ipV4##description##45141",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:ipV4",
+          "tagNumber": 1
+        },
+        "browserDetails": {
+          "title": "Browser details",
+          "type": "object",
+          "description": "The browser specific details such as browser name, version, javascript version, user agent string, and accept language.",
+          "meta:titleId": "visit-webpage##xdm:browserDetails##title##21821",
+          "meta:descriptionId": "visit-webpage##xdm:browserDetails##description##68871",
+          "meta:xdmType": "object",
+          "properties": {
+            "userAgent": {
+              "title": "User agent",
+              "type": "string",
+              "description": "The HTTP user-agent string from the client request.",
+              "meta:titleId": "visit-webpage##xdm:userAgent##title##79171",
+              "meta:descriptionId": "visit-webpage##xdm:userAgent##description##89661",
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:userAgent",
+              "tagNumber": 1
+            }
+          },
+          "meta:xdmField": "xdm:browserDetails",
+          "tagNumber": 2
+        }
+      },
+      "meta:xdmField": "xdm:environment",
+      "tagNumber": 2
+    },
+    "search": {
+      "title": "Search",
+      "type": "object",
+      "description": "The information related to web or mobile search.",
+      "meta:titleId": "visit-webpage##xdm:search##title##58301",
+      "meta:descriptionId": "visit-webpage##xdm:search##description##74051",
+      "meta:xdmType": "object",
+      "properties": {
+        "searchEngine": {
+          "title": "Search engine",
+          "type": "string",
+          "description": "The search engine used by the search.",
+          "meta:titleId": "visit-webpage##xdm:searchEngine##title##71771",
+          "meta:descriptionId": "visit-webpage##xdm:searchEngine##description##52331",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:searchEngine",
+          "tagNumber": 1
+        },
+        "keywords": {
+          "title": "Keywords",
+          "type": "string",
+          "description": "Keywords for the search.",
+          "meta:titleId": "visit-webpage##xdm:keywords##title##83571",
+          "meta:descriptionId": "visit-webpage##xdm:keywords##description##50601",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:keywords",
+          "tagNumber": 2
+        }
+      },
+      "meta:xdmField": "xdm:search",
+      "tagNumber": 3
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/mixins/events/visit-webpage",
+  "meta:altId": "_xdm.mixins.events.visit-webpage",
+  "id": "_xdm.mixins.events.visit-webpage"
+}

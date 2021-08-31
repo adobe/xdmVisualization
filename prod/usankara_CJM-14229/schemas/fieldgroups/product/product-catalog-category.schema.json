@@ -1,0 +1,40 @@
+{
+  "id": "_xdm.mixins.product-catalog-category",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Product Catalog Category",
+  "type": "object",
+  "auditable": true,
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "description": "Captures properties related to product catalog category.",
+  "meta:status": "experimental",
+  "meta:createdDate": "2021-02-19",
+  "meta:titleId": "product-catalog-category##title##2081",
+  "meta:descriptionId": "product-catalog-category##description##75911",
+  "meta:xdmType": "object",
+  "properties": {
+    "productCatalogCategoryName": {
+      "title": "Product Category Name",
+      "type": "string",
+      "description": "friendly name of the product category.",
+      "meta:titleId": "product-catalog-category##xdm:productCatalogCategoryName##title##48231",
+      "meta:descriptionId": "product-catalog-category##xdm:productCatalogCategoryName##description##91841",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:productCatalogCategoryName",
+      "tagNumber": 1
+    },
+    "parentProductCatalogCategoryName": {
+      "title": "Parent Product Catalog Category Name",
+      "type": "string",
+      "description": "Parent product category name used to build hierarchy.",
+      "meta:titleId": "product-catalog-category##xdm:parentProductCatalogCategoryName##title##22411",
+      "meta:descriptionId": "product-catalog-category##xdm:parentProductCatalogCategoryName##description##87911",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:parentProductCatalogCategoryName",
+      "tagNumber": 2
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/mixins/product-catalog-category",
+  "meta:altId": "_xdm.mixins.product-catalog-category",
+  "id": "_xdm.mixins.product-catalog-category"
+}

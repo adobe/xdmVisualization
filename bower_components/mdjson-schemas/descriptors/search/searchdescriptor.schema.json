@@ -1,0 +1,159 @@
+{
+  "id": "_xdm.common.descriptors.searchdescriptor",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Search Descriptor",
+  "meta:extensible": false,
+  "meta:abstract": false,
+  "type": "object",
+  "description": "Describes search annotations for specific properties of the schemas.",
+  "meta:status": "stable",
+  "meta:createdDate": "2020-08-10",
+  "meta:titleId": "searchdescriptor##title##44631",
+  "meta:descriptionId": "searchdescriptor##description##44471",
+  "meta:xdmType": "object",
+  "properties": {
+    "_id": {
+      "title": "Identifier",
+      "type": "string",
+      "format": "uri-reference",
+      "description": "The unique identifier for the schema descriptor. This property is required when the descriptor is defined outside of the applicable schema, but is optional when applied via 'meta:descriptors'.",
+      "meta:titleId": "schemadescriptor##@id##title##5801",
+      "meta:descriptionId": "schemadescriptor##@id##description##83201",
+      "meta:xdmType": "string",
+      "meta:xdmField": "@id",
+      "tagNumber": 1
+    },
+    "_type": {
+      "title": "Type",
+      "type": "string",
+      "description": "The type of descriptor this object represents.",
+      "meta:titleId": "schemadescriptor##@type##title##53561",
+      "meta:descriptionId": "schemadescriptor##@type##description##49401",
+      "meta:xdmType": "string",
+      "meta:xdmField": "@type",
+      "tagNumber": 2
+    },
+    "sourceSchema": {
+      "title": "Source Schema",
+      "type": "string",
+      "format": "uri",
+      "description": "The source schema this descriptor applies to. This property is required when the descriptor is defined outside of the applicable schema, but is optional when applied via 'meta:descriptors'",
+      "meta:titleId": "schemadescriptor##xdm:sourceSchema##title##67791",
+      "meta:descriptionId": "schemadescriptor##xdm:sourceSchema##description##83241",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:sourceSchema",
+      "tagNumber": 3
+    },
+    "sourceProperty": {
+      "title": "Source Property",
+      "description": "When present, the property of the source schema to which this descriptor applies. This value is a JSON Pointer, applied to an instance of an object described by `xdm:sourceSchema`.",
+      "meta:titleId": "schemadescriptor##xdm:sourceProperty##title##30881",
+      "meta:descriptionId": "schemadescriptor##xdm:sourceProperty##description##16331",
+      "meta:xdmField": "xdm:sourceProperty",
+      "tagNumber": 4
+    },
+    "sourceVersion": {
+      "title": "Source Version",
+      "type": "number",
+      "description": "Major version being referenced.",
+      "meta:titleId": "schemadescriptor##xdm:sourceVersion##title##76671",
+      "meta:descriptionId": "schemadescriptor##xdm:sourceVersion##description##5401",
+      "meta:xdmType": "number",
+      "meta:xdmField": "xdm:sourceVersion",
+      "tagNumber": 5
+    },
+    "sourceItem": {
+      "meta:xdmField": "xdm:sourceItem",
+      "tagNumber": 6
+    },
+    "_search": {
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "indexed": {
+          "title": "Indexed",
+          "type": "boolean",
+          "description": "Whether the property is indexable and searchable.",
+          "default": false,
+          "meta:titleId": "searchdescriptor##search:indexed##title##66951",
+          "meta:descriptionId": "searchdescriptor##search:indexed##description##80521",
+          "meta:xdmType": "boolean",
+          "meta:xdmField": "search:indexed",
+          "tagNumber": 1
+        },
+        "filterable": {
+          "title": "Filterable",
+          "type": "boolean",
+          "description": "Whether the property can be used as a filter in search queries.",
+          "default": false,
+          "meta:titleId": "searchdescriptor##search:filterable##title##29631",
+          "meta:descriptionId": "searchdescriptor##search:filterable##description##33061",
+          "meta:xdmType": "boolean",
+          "meta:xdmField": "search:filterable",
+          "tagNumber": 2
+        },
+        "store": {
+          "title": "Stored",
+          "type": "string",
+          "description": "Whether the property value is stored in, and therefore can be retrieved from, the index.",
+          "default": "notStored",
+          "meta:titleId": "searchdescriptor##search:store##title##3391",
+          "meta:descriptionId": "searchdescriptor##search:store##description##35911",
+          "meta:xdmType": "string",
+          "meta:xdmField": "search:store",
+          "tagNumber": 3
+        },
+        "sort": {
+          "title": "Sort Type",
+          "type": "string",
+          "description": "Whether and how search results can be sorted on this property.",
+          "default": "notSortable",
+          "meta:titleId": "searchdescriptor##search:sort##title##82311",
+          "meta:descriptionId": "searchdescriptor##search:sort##description##79421",
+          "meta:xdmType": "string",
+          "meta:xdmField": "search:sort",
+          "tagNumber": 4
+        },
+        "analyzers": {
+          "title": "Analyzers",
+          "type": "array",
+          "description": "A set of analyzers to be applied when indexing this property.",
+          "default": "noAnalysis",
+          "meta:titleId": "searchdescriptor##search:analyzers##title##64961",
+          "meta:descriptionId": "searchdescriptor##search:analyzers##description##90461",
+          "meta:xdmType": "array",
+          "items": {
+            "type": "string",
+            "meta:xdmType": "string",
+            "tagNumber": 1
+          },
+          "meta:xdmField": "search:analyzers",
+          "tagNumber": 5
+        },
+        "defaultAnalyzer": {
+          "title": "Default analyzer",
+          "type": "string",
+          "description": "Default analyzer to be applied when search queries are made against this property.",
+          "default": "noAnalysis",
+          "meta:titleId": "searchdescriptor##search:defaultAnalyzer##title##50311",
+          "meta:descriptionId": "searchdescriptor##search:defaultAnalyzer##description##44311",
+          "meta:xdmType": "string",
+          "meta:xdmField": "search:defaultAnalyzer",
+          "tagNumber": 6
+        }
+      },
+      "required": [
+        "indexed"
+      ],
+      "tagNumber": 7
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/common/descriptors/searchdescriptor",
+  "meta:altId": "_xdm.common.descriptors.searchdescriptor",
+  "required": [
+    "_search",
+    "sourceSchema",
+    "sourceVersion"
+  ],
+  "id": "_xdm.common.descriptors.searchdescriptor"
+}

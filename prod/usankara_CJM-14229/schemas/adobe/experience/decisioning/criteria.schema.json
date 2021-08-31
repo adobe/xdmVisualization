@@ -1,0 +1,42 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "id": "_experience.decisioning.criteria",
+  "meta:abstract": true,
+  "meta:extensible": true,
+  "type": "object",
+  "title": "Decision Activity Criteria",
+  "description": "One or more constraints that evaluate to lists of \"top N best\" options in the context of a decision activity. Those options satisfy all constraints for a given placement and are ordered by some function.",
+  "meta:status": "stable",
+  "meta:xdmType": "object",
+  "properties": {
+    "_experience": {
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "decisioning": {
+          "type": "object",
+          "meta:xdmType": "object",
+          "properties": {
+            "criteria": {
+              "type": "array",
+              "title": "Criteria",
+              "description": "Defines a set of decision criteria where each contains a set of constraints.",
+              "meta:xdmType": "array",
+              "items": {
+                "$ref": "criterion-details.schema.json",
+                "tagNumber": 1
+              },
+              "meta:xdmField": "https://ns.adobe.com/experience/decisioning/criteria",
+              "tagNumber": 1
+            }
+          },
+          "tagNumber": 1
+        }
+      },
+      "tagNumber": 1
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/experience/decisioning/criteria",
+  "meta:altId": "_experience.decisioning.criteria",
+  "id": "_experience.decisioning.criteria"
+}

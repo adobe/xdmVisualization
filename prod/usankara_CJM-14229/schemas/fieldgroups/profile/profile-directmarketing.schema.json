@@ -1,0 +1,46 @@
+{
+  "id": "_xdm.context.profile-directmarketing",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Profile direct marketing",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "description": "Use for direct marketing activities such as addresses, emails, and phone numbers.",
+  "meta:status": "stable",
+  "meta:createdDate": "2020-08-10",
+  "meta:titleId": "profile-directmarketing##title##69661",
+  "meta:descriptionId": "profile-directmarketing##description##54361",
+  "meta:xdmType": "object",
+  "properties": {
+    "directMarketingAddress": {
+      "title": "Direct marketing address",
+      "$ref": "../../datatypes/marketing/directmarketing-address.schema.json",
+      "description": "Direct marketing postal address.",
+      "meta:titleId": "profile-directmarketing##xdm:directMarketingAddress##title##39581",
+      "meta:descriptionId": "profile-directmarketing##xdm:directMarketingAddress##description##70361",
+      "meta:xdmField": "xdm:directMarketingAddress",
+      "tagNumber": 1
+    },
+    "directMarketingEmail": {
+      "title": "Direct marketing email",
+      "$ref": "../../datatypes/marketing/directmarketing-emailaddress.schema.json",
+      "description": "Direct marketing email address.",
+      "meta:titleId": "profile-directmarketing##xdm:directMarketingEmail##title##74921",
+      "meta:descriptionId": "profile-directmarketing##xdm:directMarketingEmail##description##11601",
+      "meta:xdmField": "xdm:directMarketingEmail",
+      "tagNumber": 2
+    },
+    "directMarketingPhone": {
+      "title": "Direct marketing phone",
+      "$ref": "../../datatypes/marketing/directmarketing-phonenumber.schema.json",
+      "description": "Direct marketing phone number.",
+      "meta:titleId": "profile-directmarketing##xdm:directMarketingPhone##title##41081",
+      "meta:descriptionId": "profile-directmarketing##xdm:directMarketingPhone##description##9931",
+      "meta:xdmField": "xdm:directMarketingPhone",
+      "tagNumber": 3
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/context/profile-directmarketing",
+  "meta:altId": "_xdm.context.profile-directmarketing",
+  "id": "_xdm.context.profile-directmarketing"
+}

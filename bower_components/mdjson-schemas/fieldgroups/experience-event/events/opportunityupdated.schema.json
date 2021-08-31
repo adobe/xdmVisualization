@@ -1,0 +1,64 @@
+{
+  "id": "_xdm.mixins.events.opportunityupdated",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Opportunity Updated",
+  "type": "object",
+  "meta:tags": {
+    "b2bSchema": true
+  },
+  "meta:conditionalField": "xdm:eventType",
+  "meta:conditionalValue": "opportunityEvent.opportunityUpdated",
+  "description": "Use to capture details when the fields on a sales opportunity are updated.",
+  "meta:status": "experimental",
+  "meta:createdDate": "2021-02-19",
+  "meta:titleId": "opportunityupdated##title##50261",
+  "meta:descriptionId": "opportunityupdated##description##15121",
+  "meta:xdmType": "object",
+  "properties": {
+    "opportunityEvent": {
+      "title": "Opportunity Event",
+      "type": "object",
+      "meta:titleId": "opportunityupdated##xdm:opportunityEvent##title##46401",
+      "meta:xdmType": "object",
+      "properties": {
+        "opportunityID": {
+          "title": "Opportunity ID",
+          "type": "string",
+          "description": "Unique identifier of the Opportunity",
+          "meta:titleId": "opportunityupdated##xdm:opportunityID##title##50421",
+          "meta:descriptionId": "opportunityupdated##xdm:opportunityID##description##15111",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:opportunityID",
+          "tagNumber": 1
+        },
+        "opportunityKey": {
+          "title": "Opportunity Key",
+          "description": "Unique composite identifier of the Opportunity.",
+          "$ref": "../../../datatypes/b2b/b2b-source.schema.json",
+          "meta:titleId": "opportunityupdated##xdm:opportunityKey##title##46331",
+          "meta:descriptionId": "opportunityupdated##xdm:opportunityKey##description##82501",
+          "meta:xdmField": "xdm:opportunityKey",
+          "tagNumber": 2
+        },
+        "dataValueChanges": {
+          "title": "Data Value Changes",
+          "description": "Full record of data values updated",
+          "type": "array",
+          "meta:titleId": "opportunityupdated##xdm:dataValueChanges##title##40451",
+          "meta:descriptionId": "opportunityupdated##xdm:dataValueChanges##description##41561",
+          "meta:xdmType": "array",
+          "meta:xdmField": "xdm:dataValueChanges",
+          "tagNumber": 3,
+          "items": {
+            "$ref": "obj365023707681418.schema.json"
+          }
+        }
+      },
+      "meta:xdmField": "xdm:opportunityEvent",
+      "tagNumber": 1
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/mixins/events/opportunityupdated",
+  "meta:altId": "_xdm.mixins.events.opportunityupdated",
+  "id": "_xdm.mixins.events.opportunityupdated"
+}

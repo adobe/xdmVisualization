@@ -1,0 +1,113 @@
+{
+  "id": "_xdm.classes.lodging-product",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Lodging Product",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:tags": {
+    "industry": [
+      "travel_and_hospitality"
+    ]
+  },
+  "description": "For hotel product information such as ID, rooms, ownership, and type.",
+  "meta:status": "stable",
+  "meta:createdDate": [
+    "2021-04-06",
+    "2020-08-10"
+  ],
+  "meta:titleId": [
+    "lodging-product##title##20341",
+    "record##title##92641"
+  ],
+  "meta:descriptionId": [
+    "lodging-product##description##10671",
+    "record##description##41201"
+  ],
+  "meta:xdmType": "object",
+  "properties": {
+    "_id": {
+      "title": "Identifier",
+      "type": "string",
+      "format": "uri-reference",
+      "description": "A unique identifier for the record.",
+      "meta:titleId": "record##@id##title##80061",
+      "meta:descriptionId": "record##@id##description##41711",
+      "meta:xdmType": "string",
+      "meta:xdmField": "@id",
+      "tagNumber": 1
+    },
+    "propertyID": {
+      "title": "Property ID",
+      "type": "string",
+      "description": "Identifier for the lodging property.",
+      "meta:titleId": "lodging-product##xdm:propertyID##title##66451",
+      "meta:descriptionId": "lodging-product##xdm:propertyID##description##75581",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:propertyID",
+      "tagNumber": 2
+    },
+    "location": {
+      "title": "Location",
+      "$ref": "../datatypes/demographic/address.schema.json",
+      "description": "Lodging property location.",
+      "meta:titleId": "lodging-product##xdm:location##title##84521",
+      "meta:descriptionId": "lodging-product##xdm:location##description##9511",
+      "meta:xdmField": "xdm:location",
+      "tagNumber": 3
+    },
+    "ownership": {
+      "title": "Ownership",
+      "type": "string",
+      "description": "Parent company of the lodging property.",
+      "meta:titleId": "lodging-product##xdm:ownership##title##36671",
+      "meta:descriptionId": "lodging-product##xdm:ownership##description##921",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:ownership",
+      "tagNumber": 4
+    },
+    "serviceLevel": {
+      "title": "Service Level",
+      "type": "string",
+      "description": "Service level associated with the lodging property such as luxury, budget, mid-range, etc.",
+      "meta:titleId": "lodging-product##xdm:serviceLevel##title##45811",
+      "meta:descriptionId": "lodging-product##xdm:serviceLevel##description##37471",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:serviceLevel",
+      "tagNumber": 5
+    },
+    "starRating": {
+      "title": "Star Rating",
+      "type": "integer",
+      "description": "Star rating associated with the lodging property.",
+      "meta:titleId": "lodging-product##xdm:starRating##title##90641",
+      "meta:descriptionId": "lodging-product##xdm:starRating##description##12611",
+      "meta:xdmType": "int",
+      "meta:xdmField": "xdm:starRating",
+      "tagNumber": 6
+    },
+    "totalRooms": {
+      "title": "Total Rooms",
+      "type": "integer",
+      "description": "Total rooms in the lodging property.",
+      "meta:titleId": "lodging-product##xdm:totalRooms##title##75851",
+      "meta:descriptionId": "lodging-product##xdm:totalRooms##description##28201",
+      "meta:xdmType": "int",
+      "meta:xdmField": "xdm:totalRooms",
+      "tagNumber": 7
+    },
+    "type": {
+      "title": "Type",
+      "type": "string",
+      "description": "Type of lodging property such as homestay, resort, capsule, lodge, service apartment, boathouse, etc.",
+      "meta:titleId": "lodging-product##xdm:type##title##19761",
+      "meta:descriptionId": "lodging-product##xdm:type##description##76581",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:type",
+      "tagNumber": 8
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/classes/lodging-product",
+  "meta:altId": "_xdm.classes.lodging-product",
+  "id": "_xdm.classes.lodging-product"
+}

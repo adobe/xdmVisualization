@@ -1,0 +1,281 @@
+{
+  "id": "_xdm.context.campaign-member-generated",
+  "title": "Uber schema for https://ns.adobe.com/xdm/context/campaign-member",
+  "description": "Uber schema for https://ns.adobe.com/xdm/context/campaign-member",
+  "type": "object",
+  "meta:xdmType": "object",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "auditable": true,
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:status": [
+    "experimental",
+    "stable",
+    "deprecated"
+  ],
+  "meta:createdDate": [
+    "2020-08-18",
+    "2020-08-10",
+    "2020-09-29"
+  ],
+  "meta:titleId": [
+    "campaign-member##title##62621",
+    "record##title##92641",
+    "external-source-system-audit-details##title##25871",
+    "campaign-member-components##title##8691",
+    "campaign-member-details##title##68041"
+  ],
+  "meta:descriptionId": [
+    "campaign-member##description##61861",
+    "record##description##41201",
+    "external-source-system-audit-details##description##77561",
+    "campaign-member-components##description##49641",
+    "campaign-member-details##description##31061"
+  ],
+  "meta:tags": {
+    "b2bSchema": true
+  },
+  "properties": {
+    "_id": {
+      "title": "Identifier",
+      "type": "string",
+      "format": "uri-reference",
+      "description": "A unique identifier for the record.",
+      "meta:titleId": "record##@id##title##80061",
+      "meta:descriptionId": "record##@id##description##41711",
+      "meta:xdmType": "string",
+      "meta:xdmField": "@id",
+      "tagNumber": 1
+    },
+    "extSourceSystemAudit": {
+      "title": "External Source System Audit Properties",
+      "$ref": "../datatypes/auditing/external-source-system-audit.schema.json",
+      "description": "Audit attributes for external sources.",
+      "meta:titleId": "external-source-system-audit-details##xdm:extSourceSystemAudit##title##65301",
+      "meta:descriptionId": "external-source-system-audit-details##xdm:extSourceSystemAudit##description##99451",
+      "meta:xdmField": "xdm:extSourceSystemAudit",
+      "tagNumber": 2
+    },
+    "campaignMemberID": {
+      "title": "Campaign Member ID",
+      "description": "Campaign Member unique identifer.",
+      "type": "string",
+      "meta:titleId": "campaign-member##xdm:campaignMemberID##title##84371",
+      "meta:descriptionId": "campaign-member##xdm:campaignMemberID##description##63651",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:campaignMemberID",
+      "tagNumber": 3
+    },
+    "campaignMemberKey": {
+      "title": "Campaign Member Key",
+      "description": "Unique composite identifer of the campaign member.",
+      "$ref": "../datatypes/b2b/b2b-source.schema.json",
+      "meta:titleId": "campaign-member##xdm:campaignMemberKey##title##46511",
+      "meta:descriptionId": "campaign-member##xdm:campaignMemberKey##description##6921",
+      "meta:xdmField": "xdm:campaignMemberKey",
+      "tagNumber": 4
+    },
+    "campaignID": {
+      "title": "Campaign ID",
+      "description": "Campaign Unique Identifer.",
+      "type": "string",
+      "meta:titleId": "campaign-member##xdm:campaignID##title##88791",
+      "meta:descriptionId": "campaign-member##xdm:campaignID##description##71921",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:campaignID",
+      "tagNumber": 5
+    },
+    "campaignKey": {
+      "title": "Campaign Key",
+      "description": "Unique composite identifer of the campaign.",
+      "$ref": "../datatypes/b2b/b2b-source.schema.json",
+      "meta:titleId": "campaign-member##xdm:campaignKey##title##86721",
+      "meta:descriptionId": "campaign-member##xdm:campaignKey##description##65531",
+      "meta:xdmField": "xdm:campaignKey",
+      "tagNumber": 6
+    },
+    "personID": {
+      "title": "Person ID",
+      "description": "Person unique identifier.",
+      "type": "string",
+      "meta:titleId": "campaign-member##xdm:personID##title##48541",
+      "meta:descriptionId": "campaign-member##xdm:personID##description##88941",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:personID",
+      "tagNumber": 7
+    },
+    "personKey": {
+      "title": "Person Key",
+      "description": "Unique composite identifier of the person.",
+      "$ref": "../datatypes/b2b/b2b-source.schema.json",
+      "meta:titleId": "campaign-member##xdm:personKey##title##17441",
+      "meta:descriptionId": "campaign-member##xdm:personKey##description##78901",
+      "meta:xdmField": "xdm:personKey",
+      "tagNumber": 8
+    },
+    "campaignMemberComponents": {
+      "type": "array",
+      "meta:xdmType": "array",
+      "meta:xdmField": "xdm:campaignMemberComponents",
+      "tagNumber": 9,
+      "items": {
+        "$ref": "obj4744658933556021.schema.json"
+      }
+    },
+    "memberStatus": {
+      "title": "Campaign Member Status",
+      "description": "",
+      "type": "string",
+      "meta:titleId": "campaign-member-details##xdm:memberStatus##title##60731",
+      "meta:descriptionId": "campaign-member-details##xdm:memberStatus##description##61861",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:memberStatus",
+      "tagNumber": 10
+    },
+    "memberStatusReason": {
+      "title": "Campaign Member Status Reason",
+      "description": "",
+      "type": "string",
+      "meta:titleId": "campaign-member-details##xdm:memberStatusReason##title##66571",
+      "meta:descriptionId": "campaign-member-details##xdm:memberStatusReason##description##52781",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:memberStatusReason",
+      "tagNumber": 11
+    },
+    "nurtureTrackName": {
+      "title": "Nurture Track Name",
+      "description": "",
+      "type": "string",
+      "meta:titleId": "campaign-member-details##xdm:nurtureTrackName##title##14291",
+      "meta:descriptionId": "campaign-member-details##xdm:nurtureTrackName##description##63321",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:nurtureTrackName",
+      "tagNumber": 12
+    },
+    "nurtureCadence": {
+      "title": "Nurture Cadence",
+      "description": "",
+      "type": "string",
+      "meta:titleId": "campaign-member-details##xdm:nurtureCadence##title##92191",
+      "meta:descriptionId": "campaign-member-details##xdm:nurtureCadence##description##65851",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:nurtureCadence",
+      "tagNumber": 13
+    },
+    "isExhausted": {
+      "title": "isExhausted",
+      "description": "",
+      "type": "boolean",
+      "meta:titleId": "campaign-member-details##xdm:isExhausted##title##10081",
+      "meta:descriptionId": "campaign-member-details##xdm:isExhausted##description##27951",
+      "meta:xdmType": "boolean",
+      "meta:xdmField": "xdm:isExhausted",
+      "tagNumber": 14
+    },
+    "webinarRegistrationID": {
+      "title": "Webinar Registration ID",
+      "description": "",
+      "type": "string",
+      "meta:titleId": "campaign-member-details##xdm:webinarRegistrationID##title##62081",
+      "meta:descriptionId": "campaign-member-details##xdm:webinarRegistrationID##description##31681",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:webinarRegistrationID",
+      "tagNumber": 15
+    },
+    "webinarConfirmationUrl": {
+      "title": "Webinar Confirmation Url",
+      "description": "",
+      "type": "string",
+      "meta:titleId": "campaign-member-details##xdm:webinarConfirmationUrl##title##25111",
+      "meta:descriptionId": "campaign-member-details##xdm:webinarConfirmationUrl##description##26631",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:webinarConfirmationUrl",
+      "tagNumber": 16
+    },
+    "acquiredByCampaignID": {
+      "title": "Acquired By CampaignID",
+      "description": "",
+      "type": "string",
+      "meta:titleId": "campaign-member-details##xdm:acquiredByCampaignID##title##6431",
+      "meta:descriptionId": "campaign-member-details##xdm:acquiredByCampaignID##description##29051",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:acquiredByCampaignID",
+      "tagNumber": 17
+    },
+    "acquiredByCampaignKey": {
+      "title": "Acquired By Campaign Key",
+      "description": "Unique composite identifier of the campaign where the person became a member",
+      "$ref": "../datatypes/b2b/b2b-source.schema.json",
+      "meta:titleId": "campaign-member-details##xdm:acquiredByCampaignKey##title##7071",
+      "meta:descriptionId": "campaign-member-details##xdm:acquiredByCampaignKey##description##53591",
+      "meta:xdmField": "xdm:acquiredByCampaignKey",
+      "tagNumber": 18
+    },
+    "hasReachedSuccess": {
+      "title": "Has Reached Success",
+      "description": "",
+      "type": "boolean",
+      "meta:titleId": "campaign-member-details##xdm:hasReachedSuccess##title##90351",
+      "meta:descriptionId": "campaign-member-details##xdm:hasReachedSuccess##description##89661",
+      "meta:xdmType": "boolean",
+      "meta:xdmField": "xdm:hasReachedSuccess",
+      "tagNumber": 19
+    },
+    "reachedSuccessDate": {
+      "title": "Reached Success Date",
+      "description": "",
+      "type": "string",
+      "format": "date-time",
+      "meta:titleId": "campaign-member-details##xdm:reachedSuccessDate##title##84281",
+      "meta:descriptionId": "campaign-member-details##xdm:reachedSuccessDate##description##67911",
+      "meta:xdmType": "date-time",
+      "meta:xdmField": "xdm:reachedSuccessDate",
+      "tagNumber": 20
+    },
+    "membershipDate": {
+      "title": "Membership Date",
+      "description": "",
+      "type": "string",
+      "format": "date-time",
+      "meta:titleId": "campaign-member-details##xdm:membershipDate##title##59881",
+      "meta:descriptionId": "campaign-member-details##xdm:membershipDate##description##52411",
+      "meta:xdmType": "date-time",
+      "meta:xdmField": "xdm:membershipDate",
+      "tagNumber": 21
+    },
+    "lastStatus": {
+      "title": "Last Status",
+      "description": "",
+      "type": "string",
+      "meta:titleId": "campaign-member-details##xdm:lastStatus##title##25791",
+      "meta:descriptionId": "campaign-member-details##xdm:lastStatus##description##35671",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:lastStatus",
+      "tagNumber": 22
+    },
+    "hasResponded": {
+      "title": "Has Responded",
+      "description": "Record whether the member has responded to the workflow stage",
+      "type": "boolean",
+      "meta:titleId": "campaign-member-details##xdm:hasResponded##title##20631",
+      "meta:descriptionId": "campaign-member-details##xdm:hasResponded##description##59641",
+      "meta:xdmType": "boolean",
+      "meta:xdmField": "xdm:hasResponded",
+      "tagNumber": 23
+    },
+    "firstRespondedDate": {
+      "title": "First Responded Date",
+      "description": "Date captured on which response was submitted",
+      "type": "string",
+      "format": "date-time",
+      "meta:titleId": "campaign-member-details##xdm:firstRespondedDate##title##33141",
+      "meta:descriptionId": "campaign-member-details##xdm:firstRespondedDate##description##80991",
+      "meta:xdmType": "date-time",
+      "meta:xdmField": "xdm:firstRespondedDate",
+      "tagNumber": 24
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/context/campaign-member-generated",
+  "meta:altId": "_xdm.context.campaign-member-generated",
+  "id": "_xdm.context.campaign-member-generated"
+}

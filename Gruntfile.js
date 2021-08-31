@@ -218,7 +218,7 @@ module.exports = function(grunt) {
 
             prod : [
 
-                './prod/usankara_usankara_CJM-14229/**/*',
+                './prod/usankara_CJM-14229/**/*',
 
             ],
 
@@ -252,7 +252,7 @@ module.exports = function(grunt) {
 
                 files : {
 
-                    './prod/usankara_usankara_CJM-14229/<%= pkg.name %>.min.js' : [
+                    './prod/usankara_CJM-14229/<%= pkg.name %>.min.js' : [
                         //'./files/scripts/jquery.js',
                         //'./files/scripts/jquery.*.js',
                         './bower_components/uri.js/src/URI.js',
@@ -268,7 +268,7 @@ module.exports = function(grunt) {
                         './lib/example.js',
 
                     ],
-                    './prod/usankara_usankara_CJM-14229/lib/preinit.js' : [
+                    './prod/usankara_CJM-14229/lib/preinit.js' : [
                         './lib/preinit.js',
 
                     ],
@@ -328,7 +328,7 @@ module.exports = function(grunt) {
 
                 files : {
 
-                    './prod/usankara_usankara_CJM-14229/styles/<%= pkg.name %>.min.css' : './styles/sass/<%= pkg.name %>.scss',
+                    './prod/usankara_CJM-14229/styles/<%= pkg.name %>.min.css' : './styles/sass/<%= pkg.name %>.scss',
 
                 },
 
@@ -402,7 +402,7 @@ module.exports = function(grunt) {
                     {
 
                         src : './templates/index.html',
-                        dest : './prod/usankara_usankara_CJM-14229/index.html',
+                        dest : './prod/usankara_CJM-14229/index.html',
 
                     },
 
@@ -416,7 +416,7 @@ module.exports = function(grunt) {
                     {
 
                         src : './templates/basic.html',
-                        dest : './prod/usankara_usankara_CJM-14229/basic.html',
+                        dest : './prod/usankara_CJM-14229/basic.html',
 
                     },
 
@@ -451,7 +451,7 @@ module.exports = function(grunt) {
                             'images/**/*',
                             '!images/junk/**',
                         ],
-                        dest : './prod/usankara_usankara_CJM-14229/',
+                        dest : './prod/usankara_CJM-14229/',
 
                     },
                     {
@@ -462,7 +462,7 @@ module.exports = function(grunt) {
                             '**/*.json',
                             '!*bower.json',
                         ],
-                        dest : './prod/usankara_usankara_CJM-14229/schemas',
+                        dest : './prod/usankara_CJM-14229/schemas',
 
                     },
                     {
@@ -472,7 +472,7 @@ module.exports = function(grunt) {
                         src : [
                             '**/*',
                         ],
-                        dest : './prod/usankara_usankara_CJM-14229/docs',
+                        dest : './prod/usankara_CJM-14229/docs',
 
                     }
 
@@ -491,7 +491,7 @@ module.exports = function(grunt) {
 
       'gh-pages' : {
         options: {
-          base: './prod/usankara_usankara_CJM-14229/'
+          base: './prod/usankara_CJM-14229/'
         },
         src: ['**/*']
       },

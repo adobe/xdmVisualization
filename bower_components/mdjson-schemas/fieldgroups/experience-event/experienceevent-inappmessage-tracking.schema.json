@@ -1,0 +1,34 @@
+{
+  "id": "_xdm.context.experienceevent-inappmessage-tracking",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Inapp message tracking",
+  "type": "object",
+  "meta:extensible": true,
+  "description": "Inapp message interaction tracking details",
+  "meta:status": "stable",
+  "meta:createdDate": "2021-08-23",
+  "meta:xdmType": "object",
+  "properties": {
+    "inappMessageTracking": {
+      "title": "Inapp Message Interaction Tracking Details",
+      "type": "object",
+      "description": "Describes interaction with an inapp message.",
+      "meta:xdmType": "object",
+      "properties": {
+        "action": {
+          "title": "Custom Action",
+          "type": "string",
+          "description": "Identifier for custom action that the user triggered while interacting with the inapp message.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:action",
+          "tagNumber": 1
+        }
+      },
+      "meta:xdmField": "xdm:inappMessageTracking",
+      "tagNumber": 1
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/context/experienceevent-inappmessage-tracking",
+  "meta:altId": "_xdm.context.experienceevent-inappmessage-tracking",
+  "id": "_xdm.context.experienceevent-inappmessage-tracking"
+}

@@ -1,0 +1,63 @@
+{
+  "id": "_xdm.data.paymentitem",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Payment Item",
+  "type": "object",
+  "description": "A payment associated with an order that defines the type of payment, the amount and the associated currency.",
+  "meta:status": "stable",
+  "meta:createdDate": "2020-08-10",
+  "meta:titleId": "paymentitem##title##88171",
+  "meta:descriptionId": "paymentitem##description##55071",
+  "meta:xdmType": "object",
+  "properties": {
+    "transactionID": {
+      "title": "Transaction ID",
+      "type": "string",
+      "description": "The unique transaction identifier for this payment item.",
+      "meta:titleId": "paymentitem##xdm:transactionID##title##89511",
+      "meta:descriptionId": "paymentitem##xdm:transactionID##description##37091",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:transactionID",
+      "tagNumber": 1
+    },
+    "paymentAmount": {
+      "title": "Payment Amount",
+      "type": "number",
+      "description": "The value of the payment.",
+      "meta:titleId": "paymentitem##xdm:paymentAmount##title##64911",
+      "meta:descriptionId": "paymentitem##xdm:paymentAmount##description##91581",
+      "meta:xdmType": "number",
+      "meta:xdmField": "xdm:paymentAmount",
+      "tagNumber": 2
+    },
+    "paymentType": {
+      "title": "Payment Type",
+      "type": "string",
+      "description": "The method of payment for this order. Enumerated, custom values allowed.",
+      "default": "other",
+      "meta:titleId": "paymentitem##xdm:paymentType##title##79001",
+      "meta:descriptionId": "paymentitem##xdm:paymentType##description##31871",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:paymentType",
+      "tagNumber": 3
+    },
+    "currencyCode": {
+      "title": "Currency Code",
+      "type": "string",
+      "examples": [
+        "USD",
+        "EUR"
+      ],
+      "pattern": "^[A-Z]{3}$",
+      "description": "The ISO 4217 currency code used for this payment item.",
+      "meta:titleId": "paymentitem##xdm:currencyCode##title##12111",
+      "meta:descriptionId": "paymentitem##xdm:currencyCode##description##18981",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:currencyCode",
+      "tagNumber": 4
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/data/paymentitem",
+  "meta:altId": "_xdm.data.paymentitem",
+  "id": "_xdm.data.paymentitem"
+}

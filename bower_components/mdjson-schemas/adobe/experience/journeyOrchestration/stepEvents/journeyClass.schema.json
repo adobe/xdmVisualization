@@ -1,0 +1,31 @@
+{
+  "id": "_experience.journeyorchestration.stepevents.journey",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Journey Orchestration Class",
+  "type": "object",
+  "auditable": true,
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "description": "A Record based Journey class for Journey orchestration contains common journey fields",
+  "meta:status": "stable",
+  "meta:xdmType": "object",
+  "meta:createdDate": "2020-08-10",
+  "meta:titleId": "record##title##92641",
+  "meta:descriptionId": "record##description##41201",
+  "properties": {
+    "_id": {
+      "title": "Identifier",
+      "type": "string",
+      "format": "uri-reference",
+      "description": "A unique identifier for the record.",
+      "meta:titleId": "record##@id##title##80061",
+      "meta:descriptionId": "record##@id##description##41711",
+      "meta:xdmType": "string",
+      "meta:xdmField": "@id",
+      "tagNumber": 1
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/experience/journeyOrchestration/stepEvents/journey",
+  "meta:altId": "_experience.journeyorchestration.stepevents.journey",
+  "id": "_experience.journeyorchestration.stepevents.journey"
+}

@@ -1,0 +1,73 @@
+{
+  "id": "_xdm.context.account",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "XDM Business Account",
+  "type": "object",
+  "meta:tags": {
+    "b2bSchema": true
+  },
+  "auditable": true,
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "description": "An XDM Business Account.",
+  "meta:status": [
+    "experimental",
+    "stable"
+  ],
+  "meta:titleId": [
+    "account##title##15371",
+    "record##title##92641",
+    "external-source-system-audit-details##title##25871"
+  ],
+  "meta:descriptionId": [
+    "account##description##31521",
+    "record##description##41201",
+    "external-source-system-audit-details##description##77561"
+  ],
+  "meta:xdmType": "object",
+  "meta:createdDate": "2020-08-10",
+  "properties": {
+    "_id": {
+      "title": "Identifier",
+      "type": "string",
+      "format": "uri-reference",
+      "description": "A unique identifier for the record.",
+      "meta:titleId": "record##@id##title##80061",
+      "meta:descriptionId": "record##@id##description##41711",
+      "meta:xdmType": "string",
+      "meta:xdmField": "@id",
+      "tagNumber": 1
+    },
+    "accountID": {
+      "title": "Account Identifier",
+      "description": "Unique ID for the account.",
+      "type": "string",
+      "meta:titleId": "account##xdm:accountID##title##74841",
+      "meta:descriptionId": "account##xdm:accountID##description##70711",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:accountID",
+      "tagNumber": 2
+    },
+    "accountKey": {
+      "title": "Account Key",
+      "description": "Unique composite key identifier for the Account.",
+      "$ref": "../../datatypes/b2b/b2b-source.schema.json",
+      "meta:titleId": "account##xdm:accountKey##title##76911",
+      "meta:descriptionId": "account##xdm:accountKey##description##47311",
+      "meta:xdmField": "xdm:accountKey",
+      "tagNumber": 3
+    },
+    "extSourceSystemAudit": {
+      "title": "External Source System Audit Properties",
+      "$ref": "../../datatypes/auditing/external-source-system-audit.schema.json",
+      "description": "Audit attributes for external sources.",
+      "meta:titleId": "external-source-system-audit-details##xdm:extSourceSystemAudit##title##65301",
+      "meta:descriptionId": "external-source-system-audit-details##xdm:extSourceSystemAudit##description##99451",
+      "meta:xdmField": "xdm:extSourceSystemAudit",
+      "tagNumber": 4
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/context/account",
+  "meta:altId": "_xdm.context.account",
+  "id": "_xdm.context.account"
+}

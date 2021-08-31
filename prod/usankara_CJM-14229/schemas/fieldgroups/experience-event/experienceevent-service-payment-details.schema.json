@@ -1,0 +1,44 @@
+{
+  "id": "_xdm.mixins.experienceevent-service-payment-details",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Service Payment Details",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:tags": {
+    "industry": [
+      "financial_services",
+      "telecom"
+    ]
+  },
+  "description": "Service Payment Details such as ID, type, and amount.",
+  "meta:status": "stable",
+  "meta:createdDate": "2021-01-15",
+  "meta:titleId": "experienceevent-service-payment-details##title##98401",
+  "meta:descriptionId": "experienceevent-service-payment-details##description##17021",
+  "meta:xdmType": "object",
+  "properties": {
+    "servicePaymentDetails": {
+      "type": "object",
+      "description": "Payments that are not be considered part of a typical commerce transaction, such as when a customer pays a bill or initiates a recurring payment.",
+      "meta:descriptionId": "experienceevent-service-payment-details##xdm:service-payment-details##description##2131",
+      "meta:xdmType": "object",
+      "properties": {
+        "servicePayment": {
+          "title": "Service Payment",
+          "$ref": "../../datatypes/industry-verticals/transaction.schema.json",
+          "description": "Extension of transaction data type.",
+          "meta:titleId": "experienceevent-service-payment-details##xdm:servicePayment##title##26471",
+          "meta:descriptionId": "experienceevent-service-payment-details##xdm:servicePayment##description##61451",
+          "meta:xdmField": "xdm:servicePayment",
+          "tagNumber": 1
+        }
+      },
+      "meta:xdmField": "xdm:service-payment-details",
+      "tagNumber": 1
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/mixins/experienceevent-service-payment-details",
+  "meta:altId": "_xdm.mixins.experienceevent-service-payment-details",
+  "id": "_xdm.mixins.experienceevent-service-payment-details"
+}

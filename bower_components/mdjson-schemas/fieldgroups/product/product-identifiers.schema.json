@@ -1,0 +1,66 @@
+{
+  "id": "_xdm.mixins.product-identifiers",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Product Identifiers",
+  "type": "object",
+  "auditable": true,
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "description": "Captures properties related to product identifiers generic to all industries.",
+  "meta:status": "experimental",
+  "meta:createdDate": "2021-02-19",
+  "meta:titleId": "product-identifiers##title##19431",
+  "meta:descriptionId": "product-identifiers##description##43091",
+  "meta:xdmType": "object",
+  "properties": {
+    "productSKU": {
+      "title": "Product SKU",
+      "type": "string",
+      "description": "The unique SKU (stock keeping unit) of the product assigned by the vendor.",
+      "meta:titleId": "product-identifiers##xdm:productSKU##title##57771",
+      "meta:descriptionId": "product-identifiers##xdm:productSKU##description##47951",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:productSKU",
+      "tagNumber": 1
+    },
+    "productGTIN": {
+      "title": "Product GTIN",
+      "type": "string",
+      "description": "Global Trade Item Number of the product.",
+      "meta:titleId": "product-identifiers##xdm:productGTIN##title##401",
+      "meta:descriptionId": "product-identifiers##xdm:productGTIN##description##98641",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:productGTIN",
+      "tagNumber": 2
+    },
+    "productImageURL": {
+      "title": "Product Image URL",
+      "type": "string",
+      "format": "uri",
+      "description": "The URL for the primary product image of the product.",
+      "meta:titleId": "product-identifiers##xdm:productImageURL##title##96371",
+      "meta:descriptionId": "product-identifiers##xdm:productImageURL##description##64051",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:productImageURL",
+      "tagNumber": 3
+    },
+    "productSearchKeywords": {
+      "title": "Product Search Keywords",
+      "type": "array",
+      "description": "The search keywords associated with the product.",
+      "meta:titleId": "product-identifiers##xdm:productSearchKeywords##title##40691",
+      "meta:descriptionId": "product-identifiers##xdm:productSearchKeywords##description##56401",
+      "meta:xdmType": "array",
+      "items": {
+        "type": "string",
+        "meta:xdmType": "string",
+        "tagNumber": 1
+      },
+      "meta:xdmField": "xdm:productSearchKeywords",
+      "tagNumber": 4
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/mixins/product-identifiers",
+  "meta:altId": "_xdm.mixins.product-identifiers",
+  "id": "_xdm.mixins.product-identifiers"
+}

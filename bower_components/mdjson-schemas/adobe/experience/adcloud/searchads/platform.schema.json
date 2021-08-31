@@ -1,0 +1,153 @@
+{
+  "id": "_xdm.adcloud.searchads.platform",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Search Advertising Platform",
+  "type": "object",
+  "meta:extensible": [
+    false,
+    true
+  ],
+  "meta:abstract": [
+    false,
+    true
+  ],
+  "meta:auditable": true,
+  "description": "Information about Search Advertising Platform.",
+  "meta:status": "stable",
+  "meta:xdmType": "object",
+  "meta:createdDate": [
+    "2020-08-10",
+    "2021-02-19"
+  ],
+  "meta:titleId": [
+    "record##title##92641",
+    "auditable##title##48381"
+  ],
+  "meta:descriptionId": [
+    "record##description##41201",
+    "auditable##description##60421"
+  ],
+  "properties": {
+    "_id": {
+      "title": "Identifier",
+      "type": "string",
+      "format": "uri-reference",
+      "description": "A unique identifier for the record.",
+      "meta:titleId": "record##@id##title##80061",
+      "meta:descriptionId": "record##@id##description##41711",
+      "meta:xdmType": "string",
+      "meta:xdmField": "@id",
+      "tagNumber": 1
+    },
+    "repositoryCreatedBy": {
+      "title": "Created by user identifier",
+      "type": "string",
+      "description": "User ID of who created the record.",
+      "meta:titleId": "auditable##xdm:repositoryCreatedBy##title##16641",
+      "meta:descriptionId": "auditable##xdm:repositoryCreatedBy##description##29041",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:repositoryCreatedBy",
+      "tagNumber": 2
+    },
+    "repositoryLastModifiedBy": {
+      "title": "Modified by user identifier",
+      "type": "string",
+      "description": "User ID of who last modified the record. At creation time, `modifiedByUser` is set as `createdByUser`.",
+      "meta:titleId": "auditable##xdm:repositoryLastModifiedBy##title##63651",
+      "meta:descriptionId": "auditable##xdm:repositoryLastModifiedBy##description##68141",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:repositoryLastModifiedBy",
+      "tagNumber": 3
+    },
+    "createdByBatchID": {
+      "title": "Created by batch identifier",
+      "type": "string",
+      "format": "uri-reference",
+      "description": "The dataset files in Catalog which has been originating the creation of the record.",
+      "meta:titleId": "auditable##xdm:createdByBatchID##title##49401",
+      "meta:descriptionId": "auditable##xdm:createdByBatchID##description##94781",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:createdByBatchID",
+      "tagNumber": 4
+    },
+    "modifiedByBatchID": {
+      "title": "Modified by batch identifier",
+      "type": "string",
+      "format": "uri-reference",
+      "description": "The last dataset files in Catalog which has modified the record. At creation time, `modifiedByBatchID` is set as `createdByBatchID`.",
+      "meta:titleId": "auditable##xdm:modifiedByBatchID##title##98681",
+      "meta:descriptionId": "auditable##xdm:modifiedByBatchID##description##92221",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:modifiedByBatchID",
+      "tagNumber": 5
+    },
+    "_repo": {
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "createDate": {
+          "type": "string",
+          "format": "date-time",
+          "meta:immutable": true,
+          "meta:usereditable": false,
+          "examples": [
+            "2004-10-23T12:00:00-06:00"
+          ],
+          "description": "The server date and time when the resource was created in the repository, such as when an asset file is first uploaded or a directory is created by the server as the parent of a new asset. The date time property should conform to ISO 8601 standard. An example form is \"2004-10-23T12:00:00-06:00\".",
+          "meta:descriptionId": "1.0##repo:createDate##description##6511",
+          "meta:xdmType": "date-time",
+          "meta:xdmField": "repo:createDate",
+          "tagNumber": 1
+        },
+        "modifyDate": {
+          "type": "string",
+          "format": "date-time",
+          "meta:usereditable": false,
+          "examples": [
+            "2004-10-23T12:00:00-06:00"
+          ],
+          "description": "The server date and time when the resource was last modified in the repository, such as when a new version of an asset is uploaded or a directory's child resource is added or removed. The date time property should conform to ISO 8601 standard. An example form is \"2004-10-23T12:00:00-06:00\".",
+          "meta:descriptionId": "1.0##repo:modifyDate##description##13061",
+          "meta:xdmType": "date-time",
+          "meta:xdmField": "repo:modifyDate",
+          "tagNumber": 2
+        }
+      },
+      "tagNumber": 6
+    },
+    "_searchads": {
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "adPlatform": {
+          "title": "Search Advertising Platform",
+          "type": "string",
+          "description": "The Search Advertising Platform Name",
+          "meta:xdmType": "string",
+          "meta:xdmField": "searchads:adPlatform",
+          "tagNumber": 1
+        },
+        "searchEngineId": {
+          "title": "Search Engine Identifier",
+          "type": "integer",
+          "description": "The application-specified identifier used to identify the Search Advertising Platform Name.",
+          "meta:xdmType": "int",
+          "meta:xdmField": "searchads:searchEngineId",
+          "tagNumber": 2
+        },
+        "channelName": {
+          "title": "Search Engine Channel Name",
+          "type": "string",
+          "description": "The application-specified classification for the Search Engine Platform.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "searchads:channelName",
+          "tagNumber": 3
+        }
+      },
+      "tagNumber": 7
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/adcloud/searchads/platform",
+  "meta:altId": "_xdm.adcloud.searchads.platform",
+  "id": "_xdm.adcloud.searchads.platform"
+}

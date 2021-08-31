@@ -1,0 +1,36 @@
+{
+  "id": "_xdm.mixins.person-identifier",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Person Identifier",
+  "type": "object",
+  "description": "Used to store Person ID for an entity.",
+  "meta:status": "experimental",
+  "meta:createdDate": "2021-02-19",
+  "meta:titleId": "person-identifier##title##77111",
+  "meta:descriptionId": "person-identifier##description##5361",
+  "meta:xdmType": "object",
+  "properties": {
+    "personID": {
+      "title": "Person ID",
+      "description": "Person unique identifier.",
+      "type": "string",
+      "meta:titleId": "person-identifier##xdm:personID##title##92431",
+      "meta:descriptionId": "person-identifier##xdm:personID##description##96341",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:personID",
+      "tagNumber": 1
+    },
+    "personKey": {
+      "title": "Person Key",
+      "description": "Unique composite identifier of the Person.",
+      "$ref": "../../datatypes/b2b/b2b-source.schema.json",
+      "meta:titleId": "person-identifier##xdm:personKey##title##34821",
+      "meta:descriptionId": "person-identifier##xdm:personKey##description##12581",
+      "meta:xdmField": "xdm:personKey",
+      "tagNumber": 2
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/mixins/person-identifier",
+  "meta:altId": "_xdm.mixins.person-identifier",
+  "id": "_xdm.mixins.person-identifier"
+}

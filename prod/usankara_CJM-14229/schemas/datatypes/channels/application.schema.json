@@ -1,0 +1,48 @@
+{
+  "id": "_xdm.channels.application",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Application Channel",
+  "type": "object",
+  "meta:abstract": true,
+  "description": "An application channel identifies apps that accepts messages or transmit events to the channel.",
+  "meta:status": "stable",
+  "meta:createdDate": "2020-08-10",
+  "meta:titleId": "application##title##13911",
+  "meta:descriptionId": "application##description##17281",
+  "meta:xdmType": "object",
+  "properties": {
+    "_id": {
+      "title": "Application Identifier",
+      "type": "string",
+      "description": "Unique identifier of the app.",
+      "meta:titleId": "application##@id##title##27871",
+      "meta:descriptionId": "application##@id##description##27801",
+      "meta:xdmType": "string",
+      "meta:xdmField": "@id",
+      "tagNumber": 1
+    },
+    "name": {
+      "title": "Name",
+      "type": "string",
+      "description": "Name of the app.",
+      "meta:titleId": "application##xdm:name##title##9491",
+      "meta:descriptionId": "application##xdm:name##description##41721",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:name",
+      "tagNumber": 2
+    },
+    "version": {
+      "title": "Version",
+      "type": "string",
+      "description": "Version of the app.",
+      "meta:titleId": "application##xdm:version##title##65961",
+      "meta:descriptionId": "application##xdm:version##description##23401",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:version",
+      "tagNumber": 3
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/channels/application",
+  "meta:altId": "_xdm.channels.application",
+  "id": "_xdm.channels.application"
+}

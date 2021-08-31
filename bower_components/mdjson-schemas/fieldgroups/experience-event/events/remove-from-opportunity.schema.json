@@ -1,0 +1,71 @@
+{
+  "id": "_xdm.mixins.events.remove-from-opportunity",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Remove From Opportunity",
+  "type": "object",
+  "meta:tags": {
+    "b2bSchema": true
+  },
+  "meta:conditionalField": "xdm:eventType",
+  "meta:conditionalValue": "opportunityEvent.removeFromOpportunity",
+  "description": "Use to capture details when a person is removed as a point of contact on a sales opportunity.",
+  "meta:status": "experimental",
+  "meta:createdDate": "2021-02-19",
+  "meta:titleId": "remove-from-opportunity##title##32961",
+  "meta:descriptionId": "remove-from-opportunity##description##92771",
+  "meta:xdmType": "object",
+  "properties": {
+    "opportunityEvent": {
+      "title": "Opportunity Event",
+      "type": "object",
+      "meta:titleId": "remove-from-opportunity##xdm:opportunityEvent##title##30161",
+      "meta:xdmType": "object",
+      "properties": {
+        "opportunityID": {
+          "title": "Opportunity ID",
+          "type": "string",
+          "description": "Unique identifier of the Opportunity.",
+          "meta:titleId": "remove-from-opportunity##xdm:opportunityID##title##99271",
+          "meta:descriptionId": "remove-from-opportunity##xdm:opportunityID##description##18301",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:opportunityID",
+          "tagNumber": 1
+        },
+        "opportunityKey": {
+          "title": "Opportunity Key",
+          "description": "Unique composite identifier of the Opportunity.",
+          "$ref": "../../../datatypes/b2b/b2b-source.schema.json",
+          "meta:titleId": "remove-from-opportunity##xdm:opportunityKey##title##50901",
+          "meta:descriptionId": "remove-from-opportunity##xdm:opportunityKey##description##85241",
+          "meta:xdmField": "xdm:opportunityKey",
+          "tagNumber": 2
+        },
+        "isPrimary": {
+          "title": "Is Primary",
+          "type": "boolean",
+          "description": "Boolean indicating if the person was the primary contact on the Opportunity.",
+          "meta:titleId": "remove-from-opportunity##xdm:isPrimary##title##88421",
+          "meta:descriptionId": "remove-from-opportunity##xdm:isPrimary##description##31031",
+          "meta:xdmType": "boolean",
+          "meta:xdmField": "xdm:isPrimary",
+          "tagNumber": 3
+        },
+        "role": {
+          "title": "Role",
+          "type": "string",
+          "description": "Role of the person on the Opportunity.",
+          "meta:titleId": "remove-from-opportunity##xdm:role##title##8741",
+          "meta:descriptionId": "remove-from-opportunity##xdm:role##description##88621",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:role",
+          "tagNumber": 4
+        }
+      },
+      "meta:xdmField": "xdm:opportunityEvent",
+      "tagNumber": 1
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/mixins/events/remove-from-opportunity",
+  "meta:altId": "_xdm.mixins.events.remove-from-opportunity",
+  "id": "_xdm.mixins.events.remove-from-opportunity"
+}

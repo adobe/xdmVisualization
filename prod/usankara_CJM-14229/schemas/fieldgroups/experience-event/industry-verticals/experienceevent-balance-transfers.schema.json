@@ -1,0 +1,71 @@
+{
+  "id": "_xdm.mixins.experienceevent-balance-transfers",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Balance Transfers",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:tags": {
+    "industry": [
+      "financial_services"
+    ]
+  },
+  "description": "Used for financial account balance transfers between accounts.",
+  "meta:status": "stable",
+  "meta:createdDate": "2021-02-19",
+  "meta:titleId": "experienceevent-balance-transfers##title##64371",
+  "meta:descriptionId": "experienceevent-balance-transfers##description##46671",
+  "meta:xdmType": "object",
+  "properties": {
+    "personalFinances": {
+      "type": "object",
+      "description": "Financial details including transactions, accounts, and applications.",
+      "meta:descriptionId": "experienceevent-balance-transfers##xdm:personalFinances##description##89341",
+      "meta:xdmType": "object",
+      "properties": {
+        "balanceTransfers": {
+          "type": "object",
+          "description": "Captures the details of balance transfers between accounts.",
+          "meta:descriptionId": "experienceevent-balance-transfers##xdm:balanceTransfers##description##85571",
+          "meta:xdmType": "object",
+          "properties": {
+            "transaction": {
+              "title": "Transaction",
+              "$ref": "../../../datatypes/industry-verticals/transaction.schema.json",
+              "description": "Extension of transaction data type.",
+              "meta:titleId": "experienceevent-balance-transfers##xdm:transaction##title##34001",
+              "meta:descriptionId": "experienceevent-balance-transfers##xdm:transaction##description##58401",
+              "meta:xdmField": "xdm:transaction",
+              "tagNumber": 1
+            },
+            "accountTo": {
+              "title": "Account To",
+              "$ref": "../../../datatypes/industry-verticals/financial-account.schema.json",
+              "description": "Extension of financialAccount data type.  Details the account to which the balance is being transferred.",
+              "meta:titleId": "experienceevent-balance-transfers##xdm:accountTo##title##43831",
+              "meta:descriptionId": "experienceevent-balance-transfers##xdm:accountTo##description##79011",
+              "meta:xdmField": "xdm:accountTo",
+              "tagNumber": 2
+            },
+            "accountFrom": {
+              "title": "Account From",
+              "$ref": "../../../datatypes/industry-verticals/financial-account.schema.json",
+              "description": "Extension of financialAccount data type.  Details the account fr which the balance is being transferred.",
+              "meta:titleId": "experienceevent-balance-transfers##xdm:accountFrom##title##60331",
+              "meta:descriptionId": "experienceevent-balance-transfers##xdm:accountFrom##description##2901",
+              "meta:xdmField": "xdm:accountFrom",
+              "tagNumber": 3
+            }
+          },
+          "meta:xdmField": "xdm:balanceTransfers",
+          "tagNumber": 1
+        }
+      },
+      "meta:xdmField": "xdm:personalFinances",
+      "tagNumber": 1
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/mixins/experienceevent-balance-transfers",
+  "meta:altId": "_xdm.mixins.experienceevent-balance-transfers",
+  "id": "_xdm.mixins.experienceevent-balance-transfers"
+}
