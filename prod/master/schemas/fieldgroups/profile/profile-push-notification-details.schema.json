@@ -8,21 +8,21 @@
   "description": "Information regarding push notifications, such as mobile application and device details.",
   "meta:status": "stable",
   "meta:createdDate": "2020-08-10",
-  "meta:titleId": "profile-push-notification-details##title##16121",
-  "meta:descriptionId": "profile-push-notification-details##description##65391",
+  "meta:titleId": "profile-push-notification-details##title##65141",
+  "meta:descriptionId": "profile-push-notification-details##description##65501",
   "meta:xdmType": "object",
   "properties": {
     "pushNotificationDetails": {
       "title": "Push details",
       "type": "array",
       "description": "Push details array containing notification info required to send mobile push notification to a specific mobile application on a given device.",
-      "meta:titleId": "profile-push-notification-details##xdm:pushNotificationDetails##title##16871",
-      "meta:descriptionId": "profile-push-notification-details##xdm:pushNotificationDetails##description##32331",
+      "meta:titleId": "profile-push-notification-details##xdm:pushNotificationDetails##title##63081",
+      "meta:descriptionId": "profile-push-notification-details##xdm:pushNotificationDetails##description##88351",
       "meta:xdmType": "array",
       "meta:xdmField": "xdm:pushNotificationDetails",
       "tagNumber": 1,
       "items": {
-        "$ref": "obj2803985195985792.schema.json"
+        "$ref": "obj47164304477267605.schema.json"
       }
     }
   },

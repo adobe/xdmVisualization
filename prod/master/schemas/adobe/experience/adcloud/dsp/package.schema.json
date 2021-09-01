@@ -14,18 +14,20 @@
   "meta:auditable": true,
   "description": "Adobe Advertising Cloud DSP Package Details.",
   "meta:status": "stable",
+  "meta:titleId": [
+    "package##title##13871",
+    "record##title##65961",
+    "auditable##title##87231"
+  ],
+  "meta:descriptionId": [
+    "package##description##65121",
+    "record##description##3921",
+    "auditable##description##48551"
+  ],
   "meta:xdmType": "object",
   "meta:createdDate": [
     "2020-08-10",
     "2021-02-19"
-  ],
-  "meta:titleId": [
-    "record##title##92641",
-    "auditable##title##48381"
-  ],
-  "meta:descriptionId": [
-    "record##description##41201",
-    "auditable##description##60421"
   ],
   "properties": {
     "_id": {
@@ -33,8 +35,8 @@
       "type": "string",
       "format": "uri-reference",
       "description": "A unique identifier for the record.",
-      "meta:titleId": "record##@id##title##80061",
-      "meta:descriptionId": "record##@id##description##41711",
+      "meta:titleId": "record##@id##title##51271",
+      "meta:descriptionId": "record##@id##description##16181",
       "meta:xdmType": "string",
       "meta:xdmField": "@id",
       "tagNumber": 1
@@ -43,8 +45,8 @@
       "title": "Created by user identifier",
       "type": "string",
       "description": "User ID of who created the record.",
-      "meta:titleId": "auditable##xdm:repositoryCreatedBy##title##16641",
-      "meta:descriptionId": "auditable##xdm:repositoryCreatedBy##description##29041",
+      "meta:titleId": "auditable##xdm:repositoryCreatedBy##title##81581",
+      "meta:descriptionId": "auditable##xdm:repositoryCreatedBy##description##79871",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:repositoryCreatedBy",
       "tagNumber": 2
@@ -53,8 +55,8 @@
       "title": "Modified by user identifier",
       "type": "string",
       "description": "User ID of who last modified the record. At creation time, `modifiedByUser` is set as `createdByUser`.",
-      "meta:titleId": "auditable##xdm:repositoryLastModifiedBy##title##63651",
-      "meta:descriptionId": "auditable##xdm:repositoryLastModifiedBy##description##68141",
+      "meta:titleId": "auditable##xdm:repositoryLastModifiedBy##title##8121",
+      "meta:descriptionId": "auditable##xdm:repositoryLastModifiedBy##description##90771",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:repositoryLastModifiedBy",
       "tagNumber": 3
@@ -64,8 +66,8 @@
       "type": "string",
       "format": "uri-reference",
       "description": "The dataset files in Catalog which has been originating the creation of the record.",
-      "meta:titleId": "auditable##xdm:createdByBatchID##title##49401",
-      "meta:descriptionId": "auditable##xdm:createdByBatchID##description##94781",
+      "meta:titleId": "auditable##xdm:createdByBatchID##title##46121",
+      "meta:descriptionId": "auditable##xdm:createdByBatchID##description##60231",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:createdByBatchID",
       "tagNumber": 4
@@ -75,8 +77,8 @@
       "type": "string",
       "format": "uri-reference",
       "description": "The last dataset files in Catalog which has modified the record. At creation time, `modifiedByBatchID` is set as `createdByBatchID`.",
-      "meta:titleId": "auditable##xdm:modifiedByBatchID##title##98681",
-      "meta:descriptionId": "auditable##xdm:modifiedByBatchID##description##92221",
+      "meta:titleId": "auditable##xdm:modifiedByBatchID##title##45371",
+      "meta:descriptionId": "auditable##xdm:modifiedByBatchID##description##21001",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:modifiedByBatchID",
       "tagNumber": 5
@@ -94,7 +96,7 @@
             "2004-10-23T12:00:00-06:00"
           ],
           "description": "The server date and time when the resource was created in the repository, such as when an asset file is first uploaded or a directory is created by the server as the parent of a new asset. The date time property should conform to ISO 8601 standard. An example form is \"2004-10-23T12:00:00-06:00\".",
-          "meta:descriptionId": "1.0##repo:createDate##description##6511",
+          "meta:descriptionId": "1.0##repo:createDate##description##36201",
           "meta:xdmType": "date-time",
           "meta:xdmField": "repo:createDate",
           "tagNumber": 1
@@ -107,7 +109,7 @@
             "2004-10-23T12:00:00-06:00"
           ],
           "description": "The server date and time when the resource was last modified in the repository, such as when a new version of an asset is uploaded or a directory's child resource is added or removed. The date time property should conform to ISO 8601 standard. An example form is \"2004-10-23T12:00:00-06:00\".",
-          "meta:descriptionId": "1.0##repo:modifyDate##description##13061",
+          "meta:descriptionId": "1.0##repo:modifyDate##description##84751",
           "meta:xdmType": "date-time",
           "meta:xdmField": "repo:modifyDate",
           "tagNumber": 2
@@ -123,6 +125,8 @@
           "title": "Package Name",
           "type": "string",
           "description": "The name of the package.",
+          "meta:titleId": "package##dsp:packageName##title##56181",
+          "meta:descriptionId": "package##dsp:packageName##description##75791",
           "meta:xdmType": "string",
           "meta:xdmField": "dsp:packageName",
           "tagNumber": 1
@@ -131,6 +135,8 @@
           "title": "Package Description",
           "type": "string",
           "description": "The description of the package.",
+          "meta:titleId": "package##dsp:packageDescription##title##89981",
+          "meta:descriptionId": "package##dsp:packageDescription##description##66401",
           "meta:xdmType": "string",
           "meta:xdmField": "dsp:packageDescription",
           "tagNumber": 2
@@ -144,6 +150,8 @@
             "Inactive",
             "Deleted"
           ],
+          "meta:titleId": "package##dsp:packageStatus##title##54501",
+          "meta:descriptionId": "package##dsp:packageStatus##description##55561",
           "meta:xdmType": "string",
           "meta:xdmField": "dsp:packageStatus",
           "tagNumber": 3
@@ -152,6 +160,8 @@
           "title": "Units Purchased",
           "type": "number",
           "description": "The number of purchased units.",
+          "meta:titleId": "package##dsp:unitsPurchased##title##72231",
+          "meta:descriptionId": "package##dsp:unitsPurchased##description##18491",
           "meta:xdmType": "number",
           "meta:xdmField": "dsp:unitsPurchased",
           "tagNumber": 4
@@ -160,6 +170,8 @@
           "title": "Goal Metric",
           "type": "string",
           "description": "The metric on which the pacing occurs so that the campaign hits the desired metric value over the course of its lifetime. E.g. SPEND, IMPRESSIONS",
+          "meta:titleId": "package##dsp:goalMetric##title##53801",
+          "meta:descriptionId": "package##dsp:goalMetric##description##27081",
           "meta:xdmType": "string",
           "meta:xdmField": "dsp:goalMetric",
           "tagNumber": 5
@@ -168,6 +180,8 @@
           "title": "Goal Interval",
           "type": "integer",
           "description": "The maximum value allowed for the metric to reach in a certain interval.",
+          "meta:titleId": "package##dsp:goalMetricValue##title##80391",
+          "meta:descriptionId": "package##dsp:goalMetricValue##description##27111",
           "meta:xdmType": "int",
           "meta:xdmField": "dsp:goalMetricValue",
           "tagNumber": 6
@@ -180,6 +194,8 @@
             "CAP",
             "PACE"
           ],
+          "meta:titleId": "package##dsp:goalType##title##47391",
+          "meta:descriptionId": "package##dsp:goalType##description##15311",
           "meta:xdmType": "string",
           "meta:xdmField": "dsp:goalType",
           "tagNumber": 7
@@ -195,6 +211,8 @@
             "MONTH",
             "WEEK"
           ],
+          "meta:titleId": "package##dsp:goalInterval##title##11781",
+          "meta:descriptionId": "package##dsp:goalInterval##description##30631",
           "meta:xdmType": "string",
           "meta:xdmField": "dsp:goalInterval",
           "tagNumber": 8
@@ -214,6 +232,8 @@
             "GRP",
             "vCPCV"
           ],
+          "meta:titleId": "package##dsp:purchaseUom##title##9271",
+          "meta:descriptionId": "package##dsp:purchaseUom##description##2481",
           "meta:xdmType": "string",
           "meta:xdmField": "dsp:purchaseUom",
           "tagNumber": 9
@@ -222,6 +242,8 @@
           "title": "Price per Unit of Measure",
           "type": "number",
           "description": "The price per unit of measure.",
+          "meta:titleId": "package##dsp:pricePerUom##title##48381",
+          "meta:descriptionId": "package##dsp:pricePerUom##description##47761",
           "meta:xdmType": "number",
           "meta:xdmField": "dsp:pricePerUom",
           "tagNumber": 10
@@ -231,6 +253,8 @@
           "type": "string",
           "format": "date-time",
           "description": "The starting time of serving ads in placements linked to the campaign belonging to this package.",
+          "meta:titleId": "package##dsp:packageStartTime##title##801",
+          "meta:descriptionId": "package##dsp:packageStartTime##description##60441",
           "meta:xdmType": "date-time",
           "meta:xdmField": "dsp:packageStartTime",
           "tagNumber": 11
@@ -240,6 +264,8 @@
           "type": "string",
           "format": "date-time",
           "description": "The end time of serving ads in placements linked to the campaign belonging to this package.",
+          "meta:titleId": "package##dsp:packageEndTime##title##6261",
+          "meta:descriptionId": "package##dsp:packageEndTime##description##11111",
           "meta:xdmType": "date-time",
           "meta:xdmField": "dsp:packageEndTime",
           "tagNumber": 12
@@ -248,6 +274,8 @@
           "title": "Campaign Identifier",
           "type": "string",
           "description": "Campaign Identifier on the display advertising platform which has this package associated.",
+          "meta:titleId": "package##dsp:campaignId##title##76541",
+          "meta:descriptionId": "package##dsp:campaignId##description##88611",
           "meta:xdmType": "string",
           "meta:xdmField": "dsp:campaignId",
           "tagNumber": 13

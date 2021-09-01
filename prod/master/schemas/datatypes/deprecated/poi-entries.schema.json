@@ -11,12 +11,12 @@
   ],
   "meta:createdDate": "2020-08-10",
   "meta:titleId": [
-    "poi-entries##title##93561",
-    "metricdefinition##title##1451"
+    "poi-entries##title##30981",
+    "metricdefinition##title##28671"
   ],
   "meta:descriptionId": [
-    "poi-entries##description##67511",
-    "metricdefinition##description##34591"
+    "poi-entries##description##54941",
+    "metricdefinition##description##96461"
   ],
   "meta:xdmType": "object",
   "properties": {
@@ -26,8 +26,8 @@
       "const": "xdm:poiEntries",
       "description": "The unique identifier of this metric.",
       "meta:descriptionId": [
-        "poi-entries##@id##description##41481",
-        "metricdefinition##@id##description##54541"
+        "poi-entries##@id##description##60811",
+        "metricdefinition##@id##description##44171"
       ],
       "meta:xdmType": "string",
       "meta:xdmField": "@id",
@@ -42,8 +42,8 @@
           "const": "placecontext: poiEntries",
           "description": "The human-readable name of the metric. The name can be used in user interfaces and does not have to be unique.",
           "meta:descriptionId": [
-            "poi-entries##schema:name##description##45071",
-            "metricdefinition##schema:name##description##81811"
+            "poi-entries##schema:name##description##27651",
+            "metricdefinition##schema:name##description##52471"
           ],
           "meta:xdmType": "string",
           "meta:xdmField": "schema:name",
@@ -60,8 +60,8 @@
       "description": "How to take measures of this metric.",
       "const": "count",
       "meta:descriptionId": [
-        "poi-entries##xdm:measurement##description##68701",
-        "metricdefinition##xdm:measurement##description##90861"
+        "poi-entries##xdm:measurement##description##43311",
+        "metricdefinition##xdm:measurement##description##34121"
       ],
       "meta:xdmType": "string",
       "examples": [
@@ -83,7 +83,7 @@
         "s",
         "USD"
       ],
-      "meta:descriptionId": "metricdefinition##xdm:unit##description##50321",
+      "meta:descriptionId": "metricdefinition##xdm:unit##description##62961",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:unit",
       "tagNumber": 4

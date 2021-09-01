@@ -8,8 +8,8 @@
   "meta:abstract": true,
   "meta:status": "stable",
   "meta:createdDate": "2021-03-19",
-  "meta:titleId": "marketing-preference-field##title##29611",
-  "meta:descriptionId": "marketing-preference-field##description##81861",
+  "meta:titleId": "marketing-preference-field##title##58811",
+  "meta:descriptionId": "marketing-preference-field##description##42381",
   "meta:xdmType": "object",
   "properties": {
     "val": {
@@ -29,8 +29,8 @@
         "VI",
         "PI"
       ],
-      "meta:titleId": "consents-and-preferences##choice-value##title##90081",
-      "meta:descriptionId": "consents-and-preferences##choice-value##description##60451",
+      "meta:titleId": "consents-and-preferences##choice-value##title##22381",
+      "meta:descriptionId": "consents-and-preferences##choice-value##description##81411",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:val",
       "tagNumber": 1
@@ -40,8 +40,8 @@
       "description": "Date and time this specific preference was collected. This value should conform to ISO 8601 standard. An example form is \"2004-10-23T12:00:00-06:00\".",
       "type": "string",
       "format": "date-time",
-      "meta:titleId": "consents-and-preferences##timestamp##title##24101",
-      "meta:descriptionId": "consents-and-preferences##timestamp##description##75121",
+      "meta:titleId": "consents-and-preferences##timestamp##title##78891",
+      "meta:descriptionId": "consents-and-preferences##timestamp##description##62471",
       "meta:xdmType": "date-time",
       "meta:xdmField": "xdm:time",
       "tagNumber": 2
@@ -51,8 +51,8 @@
       "type": "string",
       "description": "Reason for opting out",
       "maxLength": 16,
-      "meta:titleId": "consents-and-preferences##reason##title##68311",
-      "meta:descriptionId": "consents-and-preferences##reason##description##82931",
+      "meta:titleId": "consents-and-preferences##reason##title##75301",
+      "meta:descriptionId": "consents-and-preferences##reason##description##49681",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:reason",
       "tagNumber": 3

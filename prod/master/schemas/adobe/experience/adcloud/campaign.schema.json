@@ -5,12 +5,16 @@
   "type": "object",
   "description": "Adobe Advertising Cloud ad campaign hierarchy details such as, account, package, advertiser, and campaign IDs.",
   "meta:status": "stable",
+  "meta:titleId": "campaign##title##86101",
+  "meta:descriptionId": "campaign##description##49681",
   "meta:xdmType": "object",
   "properties": {
     "accountId": {
       "title": "Account Identifier",
       "type": "string",
       "description": "Identifier for the account.",
+      "meta:titleId": "campaign##xdm:accountId##title##56061",
+      "meta:descriptionId": "campaign##xdm:accountId##description##5961",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:accountId",
       "tagNumber": 1
@@ -19,6 +23,8 @@
       "title": "Demand Side Platform(DSP) Identifier",
       "type": "string",
       "description": "Identifier for the Demand Side Platform where the campaign is defined. Usually, is the id of Adobe Advertising Cloud DSP.",
+      "meta:titleId": "campaign##xdm:dspId##title##41201",
+      "meta:descriptionId": "campaign##xdm:dspId##description##46441",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:dspId",
       "tagNumber": 2
@@ -27,6 +33,8 @@
       "title": "Campaign Identifier",
       "type": "string",
       "description": "Identifier for the campaign.",
+      "meta:titleId": "campaign##xdm:campaignId##title##55051",
+      "meta:descriptionId": "campaign##xdm:campaignId##description##70931",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:campaignId",
       "tagNumber": 3
@@ -35,6 +43,8 @@
       "title": "Placement Identifier",
       "type": "string",
       "description": "Identifier for the placement.",
+      "meta:titleId": "campaign##xdm:placementId##title##97191",
+      "meta:descriptionId": "campaign##xdm:placementId##description##36971",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:placementId",
       "tagNumber": 4
@@ -43,6 +53,8 @@
       "title": "Package Identifier",
       "type": "string",
       "description": "Identifier for the package.",
+      "meta:titleId": "campaign##xdm:packageId##title##76111",
+      "meta:descriptionId": "campaign##xdm:packageId##description##62431",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:packageId",
       "tagNumber": 5
@@ -51,6 +63,8 @@
       "title": "Advertiser Identifier",
       "type": "string",
       "description": "Identifier for the advertiser.",
+      "meta:titleId": "campaign##xdm:advertiserId##title##70651",
+      "meta:descriptionId": "campaign##xdm:advertiserId##description##67461",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:advertiserId",
       "tagNumber": 6
@@ -59,6 +73,8 @@
       "title": "Experiment Identifier",
       "type": "string",
       "description": "Identifier for the experiment.",
+      "meta:titleId": "campaign##xdm:experimentId##title##66681",
+      "meta:descriptionId": "campaign##xdm:experimentId##description##77161",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:experimentId",
       "tagNumber": 7
@@ -67,6 +83,8 @@
       "title": "Sample Group Identifier",
       "type": "string",
       "description": "Identifier for the sample group.",
+      "meta:titleId": "campaign##xdm:sampleGroupId##title##23931",
+      "meta:descriptionId": "campaign##xdm:sampleGroupId##description##5391",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:sampleGroupId",
       "tagNumber": 8
@@ -80,6 +98,8 @@
       ],
       "pattern": "^[A-Z]{3}$",
       "description": "The ISO 4217 billing currency code for the account.",
+      "meta:titleId": "campaign##xdm:currency##title##1551",
+      "meta:descriptionId": "campaign##xdm:currency##description##15541",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:currency",
       "tagNumber": 9

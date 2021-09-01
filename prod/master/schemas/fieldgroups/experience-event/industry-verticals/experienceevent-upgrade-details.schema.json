@@ -20,22 +20,22 @@
   "description": "Upgrade details such as offer name, type, and ID, as well as transaction details such as type and amount.",
   "meta:status": "stable",
   "meta:createdDate": "2021-02-02",
-  "meta:titleId": "experienceevent-upgrade-details##title##97891",
-  "meta:descriptionId": "experienceevent-upgrade-details##description##41511",
+  "meta:titleId": "experienceevent-upgrade-details##title##3091",
+  "meta:descriptionId": "experienceevent-upgrade-details##description##25701",
   "meta:xdmType": "object",
   "properties": {
     "upgrades": {
       "type": "object",
       "description": "Upgrade information including impressions and transactions associated with upgrades.",
-      "meta:descriptionId": "experienceevent-upgrade-details##xdm:upgrades##description##80441",
+      "meta:descriptionId": "experienceevent-upgrade-details##xdm:upgrades##description##1661",
       "meta:xdmType": "object",
       "properties": {
         "upgradeImpressions": {
           "title": "Upgrade Impressions",
           "type": "array",
           "description": "Array of the impressions data type.",
-          "meta:titleId": "experienceevent-upgrade-details##xdm:upgradeImpressions##title##39991",
-          "meta:descriptionId": "experienceevent-upgrade-details##xdm:upgradeImpressions##description##14801",
+          "meta:titleId": "experienceevent-upgrade-details##xdm:upgradeImpressions##title##88801",
+          "meta:descriptionId": "experienceevent-upgrade-details##xdm:upgradeImpressions##description##6181",
           "meta:xdmType": "array",
           "items": {
             "$ref": "../../../datatypes/industry-verticals/impressions.schema.json",
@@ -48,8 +48,8 @@
           "title": "Upgrade Transaction",
           "$ref": "../../../datatypes/industry-verticals/transaction.schema.json",
           "description": "Extension of transaction data type.",
-          "meta:titleId": "experienceevent-upgrade-details##xdm:upgradeTransaction##title##95001",
-          "meta:descriptionId": "experienceevent-upgrade-details##xdm:upgradeTransaction##description##56751",
+          "meta:titleId": "experienceevent-upgrade-details##xdm:upgradeTransaction##title##20921",
+          "meta:descriptionId": "experienceevent-upgrade-details##xdm:upgradeTransaction##description##80871",
           "meta:xdmField": "xdm:upgradeTransaction",
           "tagNumber": 3
         }

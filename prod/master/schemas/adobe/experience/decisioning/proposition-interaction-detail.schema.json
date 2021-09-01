@@ -7,12 +7,16 @@
   "meta:extensible": true,
   "description": "A proposition interaction is used to report an experience event that relates to a prior decision proposition. The decision proposition is assumed to have contributed to the experience and the unique decision ID is added to the experience event.",
   "meta:status": "stable",
+  "meta:titleId": "proposition-interaction-details##title##50231",
+  "meta:descriptionId": "proposition-interaction-details##description##80651",
   "meta:xdmType": "object",
   "properties": {
     "id": {
       "type": "string",
       "title": "Decision Proposition Identifier",
       "description": "The unique identifier of the proposition that originally contained the decision options that are being acted upon (see the corresponding 'items' field in this object). When this identifier is present, direct attribution is given to a unique proposition. If the identifier is missing, the action for the items could not be assiciated with a unique proposition.",
+      "meta:titleId": "proposition-interaction-details##xdm:id##title##39041",
+      "meta:descriptionId": "proposition-interaction-details##xdm:id##description##601",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:id",
       "tagNumber": 1
@@ -21,6 +25,8 @@
       "type": "string",
       "title": "Decision Scope",
       "description": "The scope that is associated with the decision. This is the name of the scope that was in the request when the decision was made.",
+      "meta:titleId": "proposition-interaction-details##xdm:scope##title##37661",
+      "meta:descriptionId": "proposition-interaction-details##xdm:scope##description##27021",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:scope",
       "tagNumber": 2
@@ -29,10 +35,13 @@
       "type": "array",
       "title": "Selected Options",
       "description": "One or more of the previously proposed options that this experience event is related to. Those items were returned as output of the decision for a requested scope and are now part of an interaction. For instance, if the decision returned five proposed videos to watch and the user selected two in a \"Save For Later\" interaction, then this experience event could record the user's reaction with an event type \"custom.savedToWatchLater\" and list the two selected videos in the 'items' array.",
+      "meta:titleId": "proposition-interaction-details##xdm:items##title##59961",
+      "meta:descriptionId": "proposition-interaction-details##xdm:items##description##42051",
       "meta:xdmType": "array",
       "items": {
         "$ref": "option-detail.schema.json",
         "description": "An item from the proposition's options. See 'selections' of the 'Decision Proposition Detail' mix-in.",
+        "meta:descriptionId": "proposition-interaction-details##items##description##99371",
         "tagNumber": 1
       },
       "meta:xdmField": "xdm:items",
@@ -42,6 +51,8 @@
       "$ref": "scope-details.schema.json",
       "title": "Decision Scope Snapshot",
       "description": "A snapshot of properties from the decision scope. This is the state of the scope entity that was used in the decision requst.",
+      "meta:titleId": "proposition-interaction-details##xdm:scopeDetails##title##49471",
+      "meta:descriptionId": "proposition-interaction-details##xdm:scopeDetails##description##14071",
       "meta:xdmField": "xdm:scopeDetails",
       "tagNumber": 4
     }

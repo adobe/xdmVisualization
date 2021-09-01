@@ -5,6 +5,8 @@
   "type": "object",
   "description": "Represents executed Adobe Target activity and activity events.",
   "meta:status": "stable",
+  "meta:titleId": "activityevent##title##8041",
+  "meta:descriptionId": "activityevent##description##41451",
   "meta:xdmType": "object",
   "properties": {
     "_experience": {
@@ -56,6 +58,8 @@
         "excludeDefaultContent",
         "experienceFrequencyCapping"
       ],
+      "meta:titleId": "activityevent##xdm:strategy##title##87551",
+      "meta:descriptionId": "activityevent##xdm:strategy##description##62271",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:strategy",
       "tagNumber": 2
@@ -64,6 +68,8 @@
       "title": "Engagement Metric Score",
       "$ref": "../../../../datatypes/data/measure.schema.json",
       "description": "The capture score engagement metric calculates an aggregated score based on the value assigned to pages visited on the site, from the point the visitor first sees the campaign's first display mbox.",
+      "meta:titleId": "activityevent##xdm:score##title##43461",
+      "meta:descriptionId": "activityevent##xdm:score##description##43941",
       "meta:xdmField": "xdm:score",
       "tagNumber": 3
     },

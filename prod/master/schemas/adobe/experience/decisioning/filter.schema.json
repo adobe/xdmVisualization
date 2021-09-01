@@ -10,18 +10,24 @@
   "title": "Decision Option Filter",
   "description": "Filters are used to specify criteria for option selection by topic or theme. The most common filter mechanism is by the tags that are associated with an option. In general the option filter selects a subset of option from the overall inventory.",
   "meta:status": "stable",
+  "meta:titleId": [
+    "filter##title##40361",
+    "record##title##65961"
+  ],
+  "meta:descriptionId": [
+    "filter##description##97611",
+    "record##description##3921"
+  ],
   "meta:xdmType": "object",
   "meta:createdDate": "2020-08-10",
-  "meta:titleId": "record##title##92641",
-  "meta:descriptionId": "record##description##41201",
   "properties": {
     "_id": {
       "title": "Identifier",
       "type": "string",
       "format": "uri-reference",
       "description": "A unique identifier for the record.",
-      "meta:titleId": "record##@id##title##80061",
-      "meta:descriptionId": "record##@id##description##41711",
+      "meta:titleId": "record##@id##title##51271",
+      "meta:descriptionId": "record##@id##description##16181",
       "meta:xdmType": "string",
       "meta:xdmField": "@id",
       "tagNumber": 1
@@ -38,6 +44,8 @@
               "type": "string",
               "title": "Name",
               "description": "Filter name. Property has the semantic of schema.org's 'name' property defined on http://schema.org/Thing",
+              "meta:titleId": "filter##https://ns.adobe.com/experience/decisioning/name##title##29251",
+              "meta:descriptionId": "filter##https://ns.adobe.com/experience/decisioning/name##description##36961",
               "meta:xdmType": "string",
               "meta:xdmField": "https://ns.adobe.com/experience/decisioning/name",
               "tagNumber": 1
@@ -46,6 +54,8 @@
               "type": "string",
               "title": "Decision Option Filter Type",
               "description": "An indicator to identify the handler of the filter expression to which any parameters will be provided. Parameters will be provided as additional properties in schemas that extend Decision Option Filter.",
+              "meta:titleId": "filter##https://ns.adobe.com/experience/decisioning/filterType##title##30311",
+              "meta:descriptionId": "filter##https://ns.adobe.com/experience/decisioning/filterType##description##33411",
               "meta:xdmType": "string",
               "meta:xdmField": "https://ns.adobe.com/experience/decisioning/filterType",
               "tagNumber": 2

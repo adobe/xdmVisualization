@@ -8,8 +8,8 @@
   "description": "Describes a general relationship between two schemas",
   "meta:status": "experimental",
   "meta:createdDate": "2021-02-19",
-  "meta:titleId": "descriptorRelationship##title##48941",
-  "meta:descriptionId": "descriptorRelationship##description##10001",
+  "meta:titleId": "descriptorRelationship##title##13091",
+  "meta:descriptionId": "descriptorRelationship##description##75561",
   "meta:xdmType": "object",
   "properties": {
     "_id": {
@@ -17,8 +17,8 @@
       "type": "string",
       "format": "uri-reference",
       "description": "The unique identifier for the schema descriptor. This property is required when the descriptor is defined outside of the applicable schema, but is optional when applied via 'meta:descriptors'.",
-      "meta:titleId": "schemadescriptor##@id##title##5801",
-      "meta:descriptionId": "schemadescriptor##@id##description##83201",
+      "meta:titleId": "schemadescriptor##@id##title##10581",
+      "meta:descriptionId": "schemadescriptor##@id##description##77541",
       "meta:xdmType": "string",
       "meta:xdmField": "@id",
       "tagNumber": 1
@@ -27,8 +27,8 @@
       "title": "Type",
       "type": "string",
       "description": "The type of descriptor this object represents.",
-      "meta:titleId": "schemadescriptor##@type##title##53561",
-      "meta:descriptionId": "schemadescriptor##@type##description##49401",
+      "meta:titleId": "schemadescriptor##@type##title##15981",
+      "meta:descriptionId": "schemadescriptor##@type##description##6141",
       "meta:xdmType": "string",
       "const": "xdm:descriptorRelationship",
       "meta:xdmField": "@type",
@@ -39,8 +39,8 @@
       "type": "string",
       "format": "uri",
       "description": "The source schema this descriptor applies to. This property is required when the descriptor is defined outside of the applicable schema, but is optional when applied via 'meta:descriptors'",
-      "meta:titleId": "schemadescriptor##xdm:sourceSchema##title##67791",
-      "meta:descriptionId": "schemadescriptor##xdm:sourceSchema##description##83241",
+      "meta:titleId": "schemadescriptor##xdm:sourceSchema##title##68671",
+      "meta:descriptionId": "schemadescriptor##xdm:sourceSchema##description##98211",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:sourceSchema",
       "tagNumber": 3
@@ -48,8 +48,8 @@
     "sourceProperty": {
       "title": "Source Property",
       "description": "When present, the property of the source schema to which this descriptor applies. This value is a JSON Pointer, applied to an instance of an object described by `xdm:sourceSchema`.",
-      "meta:titleId": "schemadescriptor##xdm:sourceProperty##title##30881",
-      "meta:descriptionId": "schemadescriptor##xdm:sourceProperty##description##16331",
+      "meta:titleId": "schemadescriptor##xdm:sourceProperty##title##2001",
+      "meta:descriptionId": "schemadescriptor##xdm:sourceProperty##description##85661",
       "meta:xdmField": "xdm:sourceProperty",
       "tagNumber": 4
     },
@@ -57,8 +57,8 @@
       "title": "Source Version",
       "type": "number",
       "description": "Major version being referenced.",
-      "meta:titleId": "schemadescriptor##xdm:sourceVersion##title##76671",
-      "meta:descriptionId": "schemadescriptor##xdm:sourceVersion##description##5401",
+      "meta:titleId": "schemadescriptor##xdm:sourceVersion##title##89331",
+      "meta:descriptionId": "schemadescriptor##xdm:sourceVersion##description##21461",
       "meta:xdmType": "number",
       "meta:xdmField": "xdm:sourceVersion",
       "tagNumber": 5
@@ -72,8 +72,8 @@
       "type": "string",
       "format": "uri",
       "description": "The destination schema this descriptor applies to",
-      "meta:titleId": "relationshipdescriptor##xdm:destinationSchema##title##60991",
-      "meta:descriptionId": "relationshipdescriptor##xdm:destinationSchema##description##48041",
+      "meta:titleId": "relationshipdescriptor##xdm:destinationSchema##title##58431",
+      "meta:descriptionId": "relationshipdescriptor##xdm:destinationSchema##description##36221",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:destinationSchema",
       "tagNumber": 7
@@ -81,8 +81,8 @@
     "destinationProperty": {
       "title": "Destination Property",
       "description": "When present, the property of the destination schema to which this descriptor applies. This value is a JSON Pointer, applied to an instance of an object described by 'xdm:destSchema'",
-      "meta:titleId": "relationshipdescriptor##xdm:destinationProperty##title##10001",
-      "meta:descriptionId": "relationshipdescriptor##xdm:destinationProperty##description##81261",
+      "meta:titleId": "relationshipdescriptor##xdm:destinationProperty##title##15611",
+      "meta:descriptionId": "relationshipdescriptor##xdm:destinationProperty##description##99361",
       "meta:xdmField": "xdm:destinationProperty",
       "tagNumber": 8
     },
@@ -94,8 +94,8 @@
       "title": "Destination Version",
       "type": "number",
       "description": "Major version being referenced.",
-      "meta:titleId": "relationshipdescriptor##xdm:destinationVersion##title##57311",
-      "meta:descriptionId": "relationshipdescriptor##xdm:destinationVersion##description##1961",
+      "meta:titleId": "relationshipdescriptor##xdm:destinationVersion##title##35951",
+      "meta:descriptionId": "relationshipdescriptor##xdm:destinationVersion##description##87961",
       "meta:xdmType": "number",
       "meta:xdmField": "xdm:destinationVersion",
       "tagNumber": 10
@@ -104,8 +104,8 @@
       "title": "Source Value",
       "type": "string",
       "description": "When present, provides additional information about the values in that field. Descriptor producer and consumer should coordinate on how to use this field, e.g. defining rules on formats, values, and operations.",
-      "meta:titleId": "relationshipdescriptor##xdm:sourceValue##title##57011",
-      "meta:descriptionId": "relationshipdescriptor##xdm:sourceValue##description##99021",
+      "meta:titleId": "relationshipdescriptor##xdm:sourceValue##title##21901",
+      "meta:descriptionId": "relationshipdescriptor##xdm:sourceValue##description##63251",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:sourceValue",
       "tagNumber": 11
@@ -114,8 +114,8 @@
       "title": "Source Property Namespace",
       "type": "string",
       "description": "Identity Service namespace associated with the source property",
-      "meta:titleId": "relationshipdescriptor##xdm:sourceNamespace##title##84921",
-      "meta:descriptionId": "relationshipdescriptor##xdm:sourceNamespace##description##43881",
+      "meta:titleId": "relationshipdescriptor##xdm:sourceNamespace##title##24051",
+      "meta:descriptionId": "relationshipdescriptor##xdm:sourceNamespace##description##87861",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:sourceNamespace",
       "tagNumber": 12
@@ -124,8 +124,8 @@
       "title": "Source Property Namespace",
       "type": "string",
       "description": "Identity Service namespace associated with the source property",
-      "meta:titleId": "relationshipdescriptor##xdm:destinationNamespace##title##30751",
-      "meta:descriptionId": "relationshipdescriptor##xdm:destinationNamespace##description##28981",
+      "meta:titleId": "relationshipdescriptor##xdm:destinationNamespace##title##75151",
+      "meta:descriptionId": "relationshipdescriptor##xdm:destinationNamespace##description##12461",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:destinationNamespace",
       "tagNumber": 13
@@ -135,8 +135,8 @@
       "type": "string",
       "description": "Provides a user friendly title for the source->destination edge",
       "maxLength": 35,
-      "meta:titleId": "relationshipdescriptor##xdm:sourceToDestinationTitle##title##36921",
-      "meta:descriptionId": "relationshipdescriptor##xdm:sourceToDestinationTitle##description##3091",
+      "meta:titleId": "relationshipdescriptor##xdm:sourceToDestinationTitle##title##7031",
+      "meta:descriptionId": "relationshipdescriptor##xdm:sourceToDestinationTitle##description##47291",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:sourceToDestinationTitle",
       "tagNumber": 14
@@ -146,8 +146,8 @@
       "type": "string",
       "description": "Provides a user friendly title for the destination->source edge",
       "maxLength": 35,
-      "meta:titleId": "relationshipdescriptor##xdm:destinationToSourceTitle##title##38891",
-      "meta:descriptionId": "relationshipdescriptor##xdm:destinationToSourceTitle##description##45391",
+      "meta:titleId": "relationshipdescriptor##xdm:destinationToSourceTitle##title##12871",
+      "meta:descriptionId": "relationshipdescriptor##xdm:destinationToSourceTitle##description##22641",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:destinationToSourceTitle",
       "tagNumber": 15
@@ -160,8 +160,8 @@
         "M:1"
       ],
       "default": "M:1",
-      "meta:titleId": "relationshipdescriptor##xdm:cardinality##title##16731",
-      "meta:descriptionId": "relationshipdescriptor##xdm:cardinality##description##7721",
+      "meta:titleId": "relationshipdescriptor##xdm:cardinality##title##16001",
+      "meta:descriptionId": "relationshipdescriptor##xdm:cardinality##description##17261",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:cardinality",
       "tagNumber": 16

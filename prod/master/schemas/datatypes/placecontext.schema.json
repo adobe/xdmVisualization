@@ -7,8 +7,8 @@
   "description": "",
   "meta:status": "stable",
   "meta:createdDate": "2020-08-10",
-  "meta:titleId": "placecontext##title##98701",
-  "meta:descriptionId": "placecontext##description##89341",
+  "meta:titleId": "placecontext##title##25391",
+  "meta:descriptionId": "placecontext##description##93771",
   "meta:xdmType": "object",
   "properties": {
     "localTime": {
@@ -16,8 +16,8 @@
       "type": "string",
       "format": "date-time",
       "description": "The local time using RFC3339 with a stated time zone offset such as \"2001-07-04T12:08:56-07:00\". An example formatting pattern is \"yyyy-MM-dd'T'HH:mm:ssXXX\".",
-      "meta:titleId": "placecontext##xdm:localTime##title##90791",
-      "meta:descriptionId": "placecontext##xdm:localTime##description##97891",
+      "meta:titleId": "placecontext##xdm:localTime##title##7021",
+      "meta:descriptionId": "placecontext##xdm:localTime##description##75591",
       "meta:xdmType": "date-time",
       "meta:xdmField": "xdm:localTime",
       "tagNumber": 1
@@ -26,8 +26,8 @@
       "title": "Iana Timezone",
       "type": "string",
       "description": "Timezone of the device represented as a standard timezone string. https://en.wikipedia.org/wiki/List_of_tz_database_time_zones.",
-      "meta:titleId": "placecontext##xdm:ianaTimezone##title##54761",
-      "meta:descriptionId": "placecontext##xdm:ianaTimezone##description##89281",
+      "meta:titleId": "placecontext##xdm:ianaTimezone##title##49031",
+      "meta:descriptionId": "placecontext##xdm:ianaTimezone##description##25561",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:ianaTimezone",
       "tagNumber": 2
@@ -36,8 +36,8 @@
       "title": "Local time zone offset",
       "type": "integer",
       "description": "The current, local time zone offset in minutes from UTC for the localTime in this object.  This will include the current DST offset if applicable.",
-      "meta:titleId": "placecontext##xdm:localTimezoneOffset##title##66751",
-      "meta:descriptionId": "placecontext##xdm:localTimezoneOffset##description##86981",
+      "meta:titleId": "placecontext##xdm:localTimezoneOffset##title##81451",
+      "meta:descriptionId": "placecontext##xdm:localTimezoneOffset##description##18031",
       "meta:xdmType": "int",
       "meta:xdmField": "xdm:localTimezoneOffset",
       "tagNumber": 3
@@ -46,8 +46,8 @@
       "title": "Geo",
       "$ref": "demographic/geo.schema.json",
       "description": "The geographic location where the experience was delivered.",
-      "meta:titleId": "placecontext##xdm:geo##title##97891",
-      "meta:descriptionId": "placecontext##xdm:geo##description##19461",
+      "meta:titleId": "placecontext##xdm:geo##title##97261",
+      "meta:descriptionId": "placecontext##xdm:geo##description##56411",
       "meta:xdmField": "xdm:geo",
       "tagNumber": 4
     },
@@ -56,30 +56,30 @@
       "description": "The point of interest (POI) interaction details.",
       "meta:status": "experimental",
       "type": "object",
-      "meta:titleId": "placecontext##xdm:POIinteraction##title##5291",
-      "meta:descriptionId": "placecontext##xdm:POIinteraction##description##49731",
+      "meta:titleId": "placecontext##xdm:POIinteraction##title##39801",
+      "meta:descriptionId": "placecontext##xdm:POIinteraction##description##80061",
       "meta:xdmType": "object",
       "properties": {
         "poiDetail": {
           "title": "POI detail",
           "description": "Detail of the POI that cause the event.",
           "$ref": "poi-detail.schema.json",
-          "meta:titleId": "placecontext##xdm:poiDetail##title##91251",
-          "meta:descriptionId": "placecontext##xdm:poiDetail##description##98251",
+          "meta:titleId": "placecontext##xdm:poiDetail##title##42911",
+          "meta:descriptionId": "placecontext##xdm:poiDetail##description##40461",
           "meta:xdmField": "xdm:poiDetail",
           "tagNumber": 2
         },
         "poiEntries": {
           "$ref": "data/measure.schema.json",
           "description": "The number of times a person has entered the point of interest (POI).",
-          "meta:descriptionId": "placecontext##xdm:poiEntries##description##90051",
+          "meta:descriptionId": "placecontext##xdm:poiEntries##description##74191",
           "meta:xdmField": "xdm:poiEntries",
           "tagNumber": 3
         },
         "poiExits": {
           "$ref": "data/measure.schema.json",
           "description": "The number of times a person has exited the point of interest (POI).",
-          "meta:descriptionId": "placecontext##xdm:poiExits##description##53471",
+          "meta:descriptionId": "placecontext##xdm:poiExits##description##50711",
           "meta:xdmField": "xdm:poiExits",
           "tagNumber": 4
         }
@@ -92,8 +92,8 @@
       "description": "Details of the points of interest (POIs) that cause the event.",
       "meta:status": "experimental",
       "type": "array",
-      "meta:titleId": "placecontext##xdm:activePOIs##title##87771",
-      "meta:descriptionId": "placecontext##xdm:activePOIs##description##78011",
+      "meta:titleId": "placecontext##xdm:activePOIs##title##42411",
+      "meta:descriptionId": "placecontext##xdm:activePOIs##description##13571",
       "meta:xdmType": "array",
       "items": {
         "$ref": "poi-detail.schema.json",

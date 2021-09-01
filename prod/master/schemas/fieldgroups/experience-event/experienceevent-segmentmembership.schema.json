@@ -8,15 +8,15 @@
   "description": "Segment membership data such as which segments an individual belongs to, last qualification time, and membership valid until date.",
   "meta:status": "stable",
   "meta:createdDate": "2020-08-10",
-  "meta:titleId": "experienceevent-segmentmembership##title##63141",
-  "meta:descriptionId": "experienceevent-segmentmembership##description##22131",
+  "meta:titleId": "experienceevent-segmentmembership##title##47831",
+  "meta:descriptionId": "experienceevent-segmentmembership##description##37041",
   "meta:xdmType": "object",
   "properties": {
     "segmentMembership": {
       "title": "Segment Membership Map",
       "type": "object",
       "meta:xdmType": "map",
-      "meta:titleId": "experienceevent-segmentmembership##xdm:segmentMembership##title##25141",
+      "meta:titleId": "experienceevent-segmentmembership##xdm:segmentMembership##title##48291",
       "meta:xdmField": "xdm:segmentMembership",
       "tagNumber": 2,
       "properties": {
@@ -24,7 +24,7 @@
           "title": "Segment Membership per Namespace",
           "type": "object",
           "meta:xdmType": "map",
-          "meta:titleId": "experienceevent-segmentmembership##additionalProperties##title##76501",
+          "meta:titleId": "experienceevent-segmentmembership##additionalProperties##title##75171",
           "tagNumber": 1,
           "properties": {
             "mapObj": {

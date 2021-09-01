@@ -7,6 +7,8 @@
   "meta:abstract": true,
   "description": "This event is in relation with journey and describe the profile Identifiers",
   "meta:status": "stable",
+  "meta:titleId": "journeyStepEventIdentityFields##title##77311",
+  "meta:descriptionId": "journeyStepEventIdentityFields##description##54921",
   "meta:xdmType": "object",
   "properties": {
     "_experience": {
@@ -20,6 +22,7 @@
             "stepEvents": {
               "title": "Journey Orchestration Step Event Identity Fields.",
               "type": "object",
+              "meta:titleId": "journeyStepEventIdentityFields##https://ns.adobe.com/experience/journeyOrchestration/stepEvents##title##92061",
               "meta:xdmType": "object",
               "properties": {
                 "_experience": {
@@ -34,6 +37,8 @@
                           "title": "Profile ID",
                           "type": "string",
                           "description": "Profile identifier identifies the profile sent/used in a journey.Present if the current step is running in the context of a unitary journey. E.g: foo@adobe.com.",
+                          "meta:titleId": "journeyStepEventIdentityFields##https://ns.adobe.com/experience/journeyOrchestration/profileID##title##19241",
+                          "meta:descriptionId": "journeyStepEventIdentityFields##https://ns.adobe.com/experience/journeyOrchestration/profileID##description##86781",
                           "meta:xdmType": "string",
                           "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/profileID",
                           "tagNumber": 1
@@ -42,6 +47,8 @@
                           "title": "Profile Namespace",
                           "type": "string",
                           "description": "This field describes the Namespace referenced by the Profile used in the Journey. Present if the current step is running in the context of a unitary journey. E.g: Email, ECID ",
+                          "meta:titleId": "journeyStepEventIdentityFields##https://ns.adobe.com/experience/journeyOrchestration/profileNamespace##title##17071",
+                          "meta:descriptionId": "journeyStepEventIdentityFields##https://ns.adobe.com/experience/journeyOrchestration/profileNamespace##description##39081",
                           "meta:xdmType": "string",
                           "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/profileNamespace",
                           "tagNumber": 2

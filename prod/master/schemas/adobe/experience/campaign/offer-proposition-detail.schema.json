@@ -7,12 +7,16 @@
   "meta:extensible": true,
   "description": "An offer proposition detail is used to capture the details about an offer proposition.",
   "meta:status": "stable",
+  "meta:titleId": "offer-proposition-detail##title##45831",
+  "meta:descriptionId": "offer-proposition-detail##description##25151",
   "meta:xdmType": "object",
   "properties": {
     "activity": {
       "title": "Offer Activity Detail",
       "description": "Snapshot of the Activity for which the proposition was made. The object contains at least the xdm:id property value which is the identifier of the decision activity.",
       "$ref": "../offer-management/offer-activity-detail.schema.json",
+      "meta:titleId": "offer-proposition-detail##xdm:activity##title##66041",
+      "meta:descriptionId": "offer-proposition-detail##xdm:activity##description##78601",
       "meta:xdmField": "xdm:activity",
       "tagNumber": 1
     },
@@ -20,6 +24,8 @@
       "title": "Campaign Offer Detail",
       "description": "Snapshot of the Offer that the recipient responded to. The object contains a at least the xdm:id property value which is the identifier of an Offer.",
       "$ref": "offer-detail.schema.json",
+      "meta:titleId": "offer-proposition-detail##xdm:offer##title##38101",
+      "meta:descriptionId": "offer-proposition-detail##xdm:offer##description##10551",
       "meta:xdmField": "xdm:offer",
       "tagNumber": 2
     }

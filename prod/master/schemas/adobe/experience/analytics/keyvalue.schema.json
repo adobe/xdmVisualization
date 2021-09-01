@@ -5,12 +5,16 @@
   "type": "object",
   "description": "Key value pair.",
   "meta:status": "stable",
+  "meta:titleId": "keyvalue##title##44171",
+  "meta:descriptionId": "keyvalue##description##5681",
   "meta:xdmType": "object",
   "properties": {
     "key": {
       "title": "Key",
       "description": "Key",
       "type": "string",
+      "meta:titleId": "keyvalue##xdm:key##title##65221",
+      "meta:descriptionId": "keyvalue##xdm:key##description##22901",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:key",
       "tagNumber": 1
@@ -19,6 +23,8 @@
       "title": "Value",
       "description": "Value",
       "type": "string",
+      "meta:titleId": "keyvalue##xdm:value##title##33611",
+      "meta:descriptionId": "keyvalue##xdm:value##description##45471",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:value",
       "tagNumber": 2

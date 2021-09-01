@@ -27,12 +27,12 @@
     "2020-08-10"
   ],
   "meta:titleId": [
-    "promotion##title##52481",
-    "record##title##92641"
+    "promotion##title##83301",
+    "record##title##65961"
   ],
   "meta:descriptionId": [
-    "promotion##description##11071",
-    "record##description##41201"
+    "promotion##description##51391",
+    "record##description##3921"
   ],
   "meta:xdmType": "object",
   "properties": {
@@ -41,8 +41,8 @@
       "type": "string",
       "format": "uri-reference",
       "description": "A unique identifier for the record.",
-      "meta:titleId": "record##@id##title##80061",
-      "meta:descriptionId": "record##@id##description##41711",
+      "meta:titleId": "record##@id##title##51271",
+      "meta:descriptionId": "record##@id##description##16181",
       "meta:xdmType": "string",
       "meta:xdmField": "@id",
       "tagNumber": 1
@@ -52,8 +52,8 @@
       "type": "string",
       "format": "date-time",
       "description": "Date on which the promotion ceases to be valid.",
-      "meta:titleId": "promotion##xdm:endDate##title##90961",
-      "meta:descriptionId": "promotion##xdm:endDate##description##5051",
+      "meta:titleId": "promotion##xdm:endDate##title##94911",
+      "meta:descriptionId": "promotion##xdm:endDate##description##62961",
       "meta:xdmType": "date-time",
       "meta:xdmField": "xdm:endDate",
       "tagNumber": 2
@@ -62,8 +62,8 @@
       "title": "Promotion Creative",
       "type": "string",
       "description": "The text or creative variation associated with the promotion.",
-      "meta:titleId": "promotion##xdm:promoCreative##title##40381",
-      "meta:descriptionId": "promotion##xdm:promoCreative##description##77071",
+      "meta:titleId": "promotion##xdm:promoCreative##title##5541",
+      "meta:descriptionId": "promotion##xdm:promoCreative##description##71091",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:promoCreative",
       "tagNumber": 3
@@ -72,8 +72,8 @@
       "title": "Promotion Details",
       "type": "string",
       "description": "Details of the promotion such as percentage off, or other restrictions.",
-      "meta:titleId": "promotion##xdm:promotionDetails##title##19981",
-      "meta:descriptionId": "promotion##xdm:promotionDetails##description##81971",
+      "meta:titleId": "promotion##xdm:promotionDetails##title##93381",
+      "meta:descriptionId": "promotion##xdm:promotionDetails##description##20201",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:promotionDetails",
       "tagNumber": 4
@@ -82,8 +82,8 @@
       "title": "Promotion ID",
       "type": "string",
       "description": "The ID associated with the promotion.",
-      "meta:titleId": "promotion##xdm:ID##title##50231",
-      "meta:descriptionId": "promotion##xdm:ID##description##58561",
+      "meta:titleId": "promotion##xdm:ID##title##53941",
+      "meta:descriptionId": "promotion##xdm:ID##description##31301",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:ID",
       "tagNumber": 5
@@ -92,8 +92,8 @@
       "title": "Promotion Name",
       "type": "string",
       "description": "Promotion name",
-      "meta:titleId": "promotion##xdm:promoName##title##61431",
-      "meta:descriptionId": "promotion##xdm:promoName##description##57991",
+      "meta:titleId": "promotion##xdm:promoName##title##67091",
+      "meta:descriptionId": "promotion##xdm:promoName##description##77381",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:promoName",
       "tagNumber": 6
@@ -102,8 +102,8 @@
       "title": "Promotion Position",
       "type": "string",
       "description": "Promotion position on site.",
-      "meta:titleId": "promotion##xdm:promoPosition##title##28851",
-      "meta:descriptionId": "promotion##xdm:promoPosition##description##58911",
+      "meta:titleId": "promotion##xdm:promoPosition##title##84961",
+      "meta:descriptionId": "promotion##xdm:promoPosition##description##95911",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:promoPosition",
       "tagNumber": 7
@@ -113,8 +113,8 @@
       "type": "string",
       "format": "date-time",
       "description": "Date on which the promotion is valid.",
-      "meta:titleId": "promotion##xdm:startDate##title##75371",
-      "meta:descriptionId": "promotion##xdm:startDate##description##41871",
+      "meta:titleId": "promotion##xdm:startDate##title##89761",
+      "meta:descriptionId": "promotion##xdm:startDate##description##24731",
       "meta:xdmType": "date-time",
       "meta:xdmField": "xdm:startDate",
       "tagNumber": 8

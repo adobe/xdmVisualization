@@ -6,18 +6,27 @@
   "meta:extensible": true,
   "description": "The total number a particular option was proposed so far across all profiles.",
   "meta:status": "stable",
+  "meta:titleId": [
+    "proposition-metric-total##title##21671",
+    "metricdefinition##title##28671"
+  ],
+  "meta:descriptionId": [
+    "proposition-metric-total##description##90611",
+    "metricdefinition##description##96461"
+  ],
   "meta:xdmType": "object",
   "meta:createdDate": "2020-08-10",
-  "meta:titleId": "metricdefinition##title##1451",
-  "meta:descriptionId": "metricdefinition##description##34591",
   "properties": {
     "_id": {
       "type": "string",
       "const": "https://ns.adobe.com/experience/decisioning/propositionsTotal",
       "description": "The unique identifier of this metric.",
+      "meta:descriptionId": [
+        "proposition-metric-total##@id##description##88781",
+        "metricdefinition##@id##description##44171"
+      ],
       "meta:xdmType": "string",
       "format": "uri-reference",
-      "meta:descriptionId": "metricdefinition##@id##description##54541",
       "meta:xdmField": "@id",
       "tagNumber": 1
     },
@@ -29,8 +38,11 @@
           "type": "string",
           "const": "option metric: total propositions",
           "description": "The human-readable name of the metric. The name can be used in user interfaces and does not have to be unique.",
+          "meta:descriptionId": [
+            "proposition-metric-total##schema:name##description##5551",
+            "metricdefinition##schema:name##description##52471"
+          ],
           "meta:xdmType": "string",
-          "meta:descriptionId": "metricdefinition##schema:name##description##81811",
           "meta:xdmField": "schema:name",
           "tagNumber": 1
         }
@@ -44,6 +56,10 @@
       "type": "string",
       "description": "How to take measures of this metric.",
       "const": "count",
+      "meta:descriptionId": [
+        "proposition-metric-total##xdm:measurement##description##96521",
+        "metricdefinition##xdm:measurement##description##34121"
+      ],
       "meta:xdmType": "string",
       "examples": [
         "distance",
@@ -51,7 +67,6 @@
         "price",
         "count"
       ],
-      "meta:descriptionId": "metricdefinition##xdm:measurement##description##90861",
       "meta:xdmField": "xdm:measurement",
       "tagNumber": 3
     },
@@ -65,7 +80,7 @@
         "s",
         "USD"
       ],
-      "meta:descriptionId": "metricdefinition##xdm:unit##description##50321",
+      "meta:descriptionId": "metricdefinition##xdm:unit##description##62961",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:unit",
       "tagNumber": 4

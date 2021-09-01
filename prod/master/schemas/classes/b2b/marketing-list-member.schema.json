@@ -14,14 +14,14 @@
     "stable"
   ],
   "meta:titleId": [
-    "marketing-list-member##title##71521",
-    "record##title##92641",
-    "external-source-system-audit-details##title##25871"
+    "marketing-list-member##title##46541",
+    "record##title##65961",
+    "external-source-system-audit-details##title##88991"
   ],
   "meta:descriptionId": [
-    "marketing-list-member##description##99421",
-    "record##description##41201",
-    "external-source-system-audit-details##description##77561"
+    "marketing-list-member##description##7641",
+    "record##description##3921",
+    "external-source-system-audit-details##description##98601"
   ],
   "meta:xdmType": "object",
   "meta:createdDate": "2020-08-10",
@@ -31,8 +31,8 @@
       "type": "string",
       "format": "uri-reference",
       "description": "A unique identifier for the record.",
-      "meta:titleId": "record##@id##title##80061",
-      "meta:descriptionId": "record##@id##description##41711",
+      "meta:titleId": "record##@id##title##51271",
+      "meta:descriptionId": "record##@id##description##16181",
       "meta:xdmType": "string",
       "meta:xdmField": "@id",
       "tagNumber": 1
@@ -41,8 +41,8 @@
       "title": "Marketing List Member ID",
       "description": "Unique ID for the membership of this person to this marketing list.",
       "type": "string",
-      "meta:titleId": "marketing-list-member##xdm:marketingListMemberID##title##5321",
-      "meta:descriptionId": "marketing-list-member##xdm:marketingListMemberID##description##83541",
+      "meta:titleId": "marketing-list-member##xdm:marketingListMemberID##title##85671",
+      "meta:descriptionId": "marketing-list-member##xdm:marketingListMemberID##description##52641",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:marketingListMemberID",
       "tagNumber": 2
@@ -60,8 +60,8 @@
       "title": "Person Identifier",
       "description": "Unique ID for the person who is a member of this marketing list.",
       "type": "string",
-      "meta:titleId": "marketing-list-member##xdm:personID##title##18461",
-      "meta:descriptionId": "marketing-list-member##xdm:personID##description##36361",
+      "meta:titleId": "marketing-list-member##xdm:personID##title##41781",
+      "meta:descriptionId": "marketing-list-member##xdm:personID##description##94281",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:personID",
       "tagNumber": 4
@@ -79,8 +79,8 @@
       "title": "Marketing List Identifier",
       "description": "Unique ID for the marketing list this person is a member of.",
       "type": "string",
-      "meta:titleId": "marketing-list-member##xdm:marketingListID##title##78061",
-      "meta:descriptionId": "marketing-list-member##xdm:marketingListID##description##31391",
+      "meta:titleId": "marketing-list-member##xdm:marketingListID##title##76661",
+      "meta:descriptionId": "marketing-list-member##xdm:marketingListID##description##78351",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:marketingListID",
       "tagNumber": 6
@@ -98,8 +98,8 @@
       "title": "External Source System Audit Properties",
       "$ref": "../../datatypes/auditing/external-source-system-audit.schema.json",
       "description": "Audit attributes for external sources.",
-      "meta:titleId": "external-source-system-audit-details##xdm:extSourceSystemAudit##title##65301",
-      "meta:descriptionId": "external-source-system-audit-details##xdm:extSourceSystemAudit##description##99451",
+      "meta:titleId": "external-source-system-audit-details##xdm:extSourceSystemAudit##title##88841",
+      "meta:descriptionId": "external-source-system-audit-details##xdm:extSourceSystemAudit##description##28131",
       "meta:xdmField": "xdm:extSourceSystemAudit",
       "tagNumber": 8
     }

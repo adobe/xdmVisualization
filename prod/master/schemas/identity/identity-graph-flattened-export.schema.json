@@ -14,12 +14,12 @@
   "description": "Identity Graph Flattened Export Schema.",
   "meta:status": "stable",
   "meta:titleId": [
-    "identity-graph-flattened-export##title",
-    "record##title##92641"
+    "identity-graph-flattened-export##title##87221",
+    "record##title##65961"
   ],
   "meta:descriptionId": [
-    "identity-graph-flattened-export##description",
-    "record##description##41201"
+    "identity-graph-flattened-export##description##29971",
+    "record##description##3921"
   ],
   "meta:xdmType": "object",
   "meta:createdDate": "2020-08-10",
@@ -29,8 +29,8 @@
       "type": "string",
       "format": "uri-reference",
       "description": "A unique identifier for the record.",
-      "meta:titleId": "record##@id##title##80061",
-      "meta:descriptionId": "record##@id##description##41711",
+      "meta:titleId": "record##@id##title##51271",
+      "meta:descriptionId": "record##@id##description##16181",
       "meta:xdmType": "string",
       "meta:xdmField": "@id",
       "tagNumber": 1
@@ -39,8 +39,8 @@
       "title": "Person ID",
       "type": "string",
       "description": "Person ID Like Email or ECID or phone.",
-      "meta:titleId": "identity-graph-flattened-export##xdm:identityID##title",
-      "meta:descriptionId": "identity-graph-flattened-export##xdm:identityID##description",
+      "meta:titleId": "identity-graph-flattened-export##xdm:identityID##title##42391",
+      "meta:descriptionId": "identity-graph-flattened-export##xdm:identityID##description##32021",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:identityID",
       "tagNumber": 2
@@ -49,8 +49,8 @@
       "title": "Namespace Id",
       "type": "integer",
       "description": "Id for the Identity Type.",
-      "meta:titleId": "identity-graph-flattened-export##xdm:namespaceID##title",
-      "meta:descriptionId": "identity-graph-flattened-export##xdm:namespaceID##description",
+      "meta:titleId": "identity-graph-flattened-export##xdm:namespaceID##title##19171",
+      "meta:descriptionId": "identity-graph-flattened-export##xdm:namespaceID##description##22221",
       "meta:xdmType": "int",
       "meta:xdmField": "xdm:namespaceID",
       "tagNumber": 3
@@ -59,8 +59,8 @@
       "title": "Namespace Code",
       "type": "string",
       "description": "Identity Type in human readable form.",
-      "meta:titleId": "identity-graph-flattened-export##xdm:namespaceCode##title",
-      "meta:descriptionId": "identity-graph-flattened-export##xdm:namespaceCode##description",
+      "meta:titleId": "identity-graph-flattened-export##xdm:namespaceCode##title##8311",
+      "meta:descriptionId": "identity-graph-flattened-export##xdm:namespaceCode##description##17601",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:namespaceCode",
       "tagNumber": 4
@@ -74,8 +74,8 @@
         "FREQ_RECENCY_BASED_SHARED_DEVICES",
         "DETERMINISTIC"
       ],
-      "meta:titleId": "identity-graph-flattened-export##xdm:algorithm##title",
-      "meta:descriptionId": "identity-graph-flattened-export##xdm:algorithm##description",
+      "meta:titleId": "identity-graph-flattened-export##xdm:algorithm##title##77061",
+      "meta:descriptionId": "identity-graph-flattened-export##xdm:algorithm##description##32801",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:algorithm",
       "tagNumber": 5
@@ -86,7 +86,7 @@
       "meta:xdmField": "xdm:membersByTimeRange",
       "tagNumber": 6,
       "items": {
-        "$ref": "obj6190735724722845.schema.json"
+        "$ref": "obj791570601270813.schema.json"
       }
     },
     "lastUpdatedTime": {
@@ -94,8 +94,8 @@
       "type": "string",
       "format": "date-time",
       "description": "Last updated time when this identity was updated.",
-      "meta:titleId": "identity-graph-flattened-export##xdm:lastUpdatedTime##title",
-      "meta:descriptionId": "identity-graph-flattened-export##xdm:lastUpdatedTime##description",
+      "meta:titleId": "identity-graph-flattened-export##xdm:lastUpdatedTime##title##19631",
+      "meta:descriptionId": "identity-graph-flattened-export##xdm:lastUpdatedTime##description##93481",
       "meta:xdmType": "date-time",
       "meta:xdmField": "xdm:lastUpdatedTime",
       "tagNumber": 7

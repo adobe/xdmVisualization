@@ -7,6 +7,8 @@
   "meta:abstract": true,
   "description": "This Mixin will have Common Journey Metadata Fields",
   "meta:status": "stable",
+  "meta:titleId": "journeyFields##title##45541",
+  "meta:descriptionId": "journeyFields##description##57181",
   "meta:xdmType": "object",
   "properties": {
     "_experience": {
@@ -20,6 +22,7 @@
             "stepEvents": {
               "title": "Journey Orchestration common Journey Fields",
               "type": "object",
+              "meta:titleId": "journeyFields##https://ns.adobe.com/experience/journeyOrchestration/stepEvents##title##16441",
               "meta:xdmType": "object",
               "properties": {
                 "_experience": {
@@ -34,6 +37,8 @@
                           "title": "journeyID",
                           "description": "Identifier for the given Journey.",
                           "type": "string",
+                          "meta:titleId": "journeyFields##https://ns.adobe.com/experience/journeyOrchestration/journeyID##title##34641",
+                          "meta:descriptionId": "journeyFields##https://ns.adobe.com/experience/journeyOrchestration/journeyID##description##86741",
                           "meta:xdmType": "string",
                           "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/journeyID",
                           "tagNumber": 1
@@ -42,6 +47,8 @@
                           "title": "journeyVersionID",
                           "description": "Id of the journey version. This id represents the identity of a journey.",
                           "type": "string",
+                          "meta:titleId": "journeyFields##https://ns.adobe.com/experience/journeyOrchestration/journeyVersionID##title##12751",
+                          "meta:descriptionId": "journeyFields##https://ns.adobe.com/experience/journeyOrchestration/journeyVersionID##description##1111",
                           "meta:xdmType": "string",
                           "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/journeyVersionID",
                           "tagNumber": 2
@@ -50,6 +57,8 @@
                           "title": "name",
                           "description": "Name of the Journey.",
                           "type": "string",
+                          "meta:titleId": "journeyFields##https://ns.adobe.com/experience/journeyOrchestration/name##title##62811",
+                          "meta:descriptionId": "journeyFields##https://ns.adobe.com/experience/journeyOrchestration/name##description##85481",
                           "meta:xdmType": "string",
                           "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/name",
                           "tagNumber": 3
@@ -58,6 +67,8 @@
                           "title": "description",
                           "description": "Description of the Journey.",
                           "type": "string",
+                          "meta:titleId": "journeyFields##https://ns.adobe.com/experience/journeyOrchestration/description##title##4611",
+                          "meta:descriptionId": "journeyFields##https://ns.adobe.com/experience/journeyOrchestration/description##description##41961",
                           "meta:xdmType": "string",
                           "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/description",
                           "tagNumber": 4
@@ -66,6 +77,8 @@
                           "title": "version",
                           "description": "Describes the Journey Version.",
                           "type": "string",
+                          "meta:titleId": "journeyFields##https://ns.adobe.com/experience/journeyOrchestration/version##title##96811",
+                          "meta:descriptionId": "journeyFields##https://ns.adobe.com/experience/journeyOrchestration/version##description##49381",
                           "meta:xdmType": "string",
                           "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/version",
                           "tagNumber": 5

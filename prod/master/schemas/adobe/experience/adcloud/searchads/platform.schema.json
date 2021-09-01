@@ -14,18 +14,20 @@
   "meta:auditable": true,
   "description": "Information about Search Advertising Platform.",
   "meta:status": "stable",
+  "meta:titleId": [
+    "platform##title##4201",
+    "record##title##65961",
+    "auditable##title##87231"
+  ],
+  "meta:descriptionId": [
+    "platform##description##44821",
+    "record##description##3921",
+    "auditable##description##48551"
+  ],
   "meta:xdmType": "object",
   "meta:createdDate": [
     "2020-08-10",
     "2021-02-19"
-  ],
-  "meta:titleId": [
-    "record##title##92641",
-    "auditable##title##48381"
-  ],
-  "meta:descriptionId": [
-    "record##description##41201",
-    "auditable##description##60421"
   ],
   "properties": {
     "_id": {
@@ -33,8 +35,8 @@
       "type": "string",
       "format": "uri-reference",
       "description": "A unique identifier for the record.",
-      "meta:titleId": "record##@id##title##80061",
-      "meta:descriptionId": "record##@id##description##41711",
+      "meta:titleId": "record##@id##title##51271",
+      "meta:descriptionId": "record##@id##description##16181",
       "meta:xdmType": "string",
       "meta:xdmField": "@id",
       "tagNumber": 1
@@ -43,8 +45,8 @@
       "title": "Created by user identifier",
       "type": "string",
       "description": "User ID of who created the record.",
-      "meta:titleId": "auditable##xdm:repositoryCreatedBy##title##16641",
-      "meta:descriptionId": "auditable##xdm:repositoryCreatedBy##description##29041",
+      "meta:titleId": "auditable##xdm:repositoryCreatedBy##title##81581",
+      "meta:descriptionId": "auditable##xdm:repositoryCreatedBy##description##79871",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:repositoryCreatedBy",
       "tagNumber": 2
@@ -53,8 +55,8 @@
       "title": "Modified by user identifier",
       "type": "string",
       "description": "User ID of who last modified the record. At creation time, `modifiedByUser` is set as `createdByUser`.",
-      "meta:titleId": "auditable##xdm:repositoryLastModifiedBy##title##63651",
-      "meta:descriptionId": "auditable##xdm:repositoryLastModifiedBy##description##68141",
+      "meta:titleId": "auditable##xdm:repositoryLastModifiedBy##title##8121",
+      "meta:descriptionId": "auditable##xdm:repositoryLastModifiedBy##description##90771",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:repositoryLastModifiedBy",
       "tagNumber": 3
@@ -64,8 +66,8 @@
       "type": "string",
       "format": "uri-reference",
       "description": "The dataset files in Catalog which has been originating the creation of the record.",
-      "meta:titleId": "auditable##xdm:createdByBatchID##title##49401",
-      "meta:descriptionId": "auditable##xdm:createdByBatchID##description##94781",
+      "meta:titleId": "auditable##xdm:createdByBatchID##title##46121",
+      "meta:descriptionId": "auditable##xdm:createdByBatchID##description##60231",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:createdByBatchID",
       "tagNumber": 4
@@ -75,8 +77,8 @@
       "type": "string",
       "format": "uri-reference",
       "description": "The last dataset files in Catalog which has modified the record. At creation time, `modifiedByBatchID` is set as `createdByBatchID`.",
-      "meta:titleId": "auditable##xdm:modifiedByBatchID##title##98681",
-      "meta:descriptionId": "auditable##xdm:modifiedByBatchID##description##92221",
+      "meta:titleId": "auditable##xdm:modifiedByBatchID##title##45371",
+      "meta:descriptionId": "auditable##xdm:modifiedByBatchID##description##21001",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:modifiedByBatchID",
       "tagNumber": 5
@@ -94,7 +96,7 @@
             "2004-10-23T12:00:00-06:00"
           ],
           "description": "The server date and time when the resource was created in the repository, such as when an asset file is first uploaded or a directory is created by the server as the parent of a new asset. The date time property should conform to ISO 8601 standard. An example form is \"2004-10-23T12:00:00-06:00\".",
-          "meta:descriptionId": "1.0##repo:createDate##description##6511",
+          "meta:descriptionId": "1.0##repo:createDate##description##36201",
           "meta:xdmType": "date-time",
           "meta:xdmField": "repo:createDate",
           "tagNumber": 1
@@ -107,7 +109,7 @@
             "2004-10-23T12:00:00-06:00"
           ],
           "description": "The server date and time when the resource was last modified in the repository, such as when a new version of an asset is uploaded or a directory's child resource is added or removed. The date time property should conform to ISO 8601 standard. An example form is \"2004-10-23T12:00:00-06:00\".",
-          "meta:descriptionId": "1.0##repo:modifyDate##description##13061",
+          "meta:descriptionId": "1.0##repo:modifyDate##description##84751",
           "meta:xdmType": "date-time",
           "meta:xdmField": "repo:modifyDate",
           "tagNumber": 2
@@ -123,6 +125,8 @@
           "title": "Search Advertising Platform",
           "type": "string",
           "description": "The Search Advertising Platform Name",
+          "meta:titleId": "platform##searchads:adPlatform##title##70931",
+          "meta:descriptionId": "platform##searchads:adPlatform##description##72021",
           "meta:xdmType": "string",
           "meta:xdmField": "searchads:adPlatform",
           "tagNumber": 1
@@ -131,6 +135,8 @@
           "title": "Search Engine Identifier",
           "type": "integer",
           "description": "The application-specified identifier used to identify the Search Advertising Platform Name.",
+          "meta:titleId": "platform##searchads:searchEngineId##title##24621",
+          "meta:descriptionId": "platform##searchads:searchEngineId##description##15501",
           "meta:xdmType": "int",
           "meta:xdmField": "searchads:searchEngineId",
           "tagNumber": 2
@@ -139,6 +145,8 @@
           "title": "Search Engine Channel Name",
           "type": "string",
           "description": "The application-specified classification for the Search Engine Platform.",
+          "meta:titleId": "platform##searchads:channelName##title##8651",
+          "meta:descriptionId": "platform##searchads:channelName##description##72051",
           "meta:xdmType": "string",
           "meta:xdmField": "searchads:channelName",
           "tagNumber": 3

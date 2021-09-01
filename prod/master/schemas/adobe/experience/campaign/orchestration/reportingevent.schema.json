@@ -5,6 +5,8 @@
   "type": "object",
   "description": "",
   "meta:status": "stable",
+  "meta:titleId": "reportingevent##title##26421",
+  "meta:descriptionId": "reportingevent##description##32521",
   "meta:xdmType": "object",
   "properties": {
     "timestamp": {
@@ -12,6 +14,8 @@
       "type": "string",
       "format": "date-time",
       "description": "Time of generation of reporting event",
+      "meta:titleId": "reportingevent##xdm:timestamp##title##26011",
+      "meta:descriptionId": "reportingevent##xdm:timestamp##description##23511",
       "meta:xdmType": "date-time",
       "meta:xdmField": "xdm:timestamp",
       "tagNumber": 1
@@ -20,6 +24,8 @@
       "title": "Data Source",
       "$ref": "../../../../datatypes/data/datasource.schema.json",
       "description": "Data source used for data enrichment",
+      "meta:titleId": "reportingevent##xdm:dataEnrichmentSource##title##53821",
+      "meta:descriptionId": "reportingevent##xdm:dataEnrichmentSource##description##49161",
       "meta:xdmField": "xdm:dataEnrichmentSource",
       "tagNumber": 2
     },
@@ -28,6 +34,8 @@
       "type": "string",
       "format": "uri",
       "description": "The identifier for the data entity used for data enrichment",
+      "meta:titleId": "reportingevent##xdm:dataEntityUID##title##68511",
+      "meta:descriptionId": "reportingevent##xdm:dataEntityUID##description##24391",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:dataEntityUID",
       "tagNumber": 3
@@ -36,6 +44,8 @@
       "title": "Organizational Unit",
       "$ref": "../../../../datatypes/b2b/orgunit.schema.json",
       "description": "The unit within the organization owning this journey version.",
+      "meta:titleId": "reportingevent##xdm:orgUnit##title##23281",
+      "meta:descriptionId": "reportingevent##xdm:orgUnit##description##26271",
       "meta:xdmField": "xdm:orgUnit",
       "tagNumber": 4
     },
@@ -49,6 +59,8 @@
         "timer",
         "condition"
       ],
+      "meta:titleId": "reportingevent##xdm:flowControlType##title##97351",
+      "meta:descriptionId": "reportingevent##xdm:flowControlType##description##56571",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:flowControlType",
       "tagNumber": 5
@@ -58,6 +70,8 @@
       "type": "string",
       "format": "uri",
       "description": "The identifier of the flow control in a journey version",
+      "meta:titleId": "reportingevent##xdm:flowControlID##title##25721",
+      "meta:descriptionId": "reportingevent##xdm:flowControlID##description##54581",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:flowControlID",
       "tagNumber": 6
@@ -66,6 +80,8 @@
       "title": "Metrics to be reported",
       "$ref": "reportingeventmetrics.schema.json",
       "description": "The metrics for actions performed during this observation.",
+      "meta:titleId": "reportingevent##xdm:eventMetrics##title##41511",
+      "meta:descriptionId": "reportingevent##xdm:eventMetrics##description##40411",
       "meta:xdmField": "xdm:eventMetrics",
       "tagNumber": 7
     },
@@ -81,6 +97,8 @@
               "title": "Action on step transition",
               "type": "object",
               "description": "Action taken during a step transition that happened for an entity in state machine",
+              "meta:titleId": "experienceevent##action##title##48241",
+              "meta:descriptionId": "experienceevent##action##description##77691",
               "meta:xdmType": "object",
               "properties": {
                 "actionID": {
@@ -88,6 +106,8 @@
                   "type": "string",
                   "format": "uri-reference",
                   "description": "Unique identifier denoting the associated action.",
+                  "meta:titleId": "experienceevent##xdm:actionID##title##64081",
+                  "meta:descriptionId": "experienceevent##xdm:actionID##description##20251",
                   "meta:xdmType": "string",
                   "meta:xdmField": "xdm:actionID",
                   "tagNumber": 1
@@ -96,6 +116,8 @@
                   "title": "Action Type",
                   "type": "string",
                   "description": "The type of action to be performed.",
+                  "meta:titleId": "experienceevent##xdm:actionType##title##57741",
+                  "meta:descriptionId": "experienceevent##xdm:actionType##description##53911",
                   "meta:xdmType": "string",
                   "meta:xdmField": "xdm:actionType",
                   "tagNumber": 2
@@ -108,6 +130,8 @@
               "title": "external event received",
               "$ref": "reportingexternalevent.schema.json",
               "description": "External event received, triggering the state transition",
+              "meta:titleId": "reportingevent##https://ns.adobe.com/experience/campaign/orchestrationExternalEvent##title##46131",
+              "meta:descriptionId": "reportingevent##https://ns.adobe.com/experience/campaign/orchestrationExternalEvent##description##65101",
               "meta:xdmField": "https://ns.adobe.com/experience/campaign/orchestrationExternalEvent",
               "tagNumber": 2
             },
@@ -115,6 +139,8 @@
               "title": "Journey of an entity",
               "type": "object",
               "description": "Journey created for an entity by marketer.",
+              "meta:titleId": "experienceevent##journey##title##79511",
+              "meta:descriptionId": "experienceevent##journey##description##18191",
               "meta:xdmType": "object",
               "properties": {
                 "_id": {
@@ -122,6 +148,8 @@
                   "type": "string",
                   "format": "uri-reference",
                   "description": "The unique identifier of the journey created by the marketer.",
+                  "meta:titleId": "experienceevent##@id##title##18171",
+                  "meta:descriptionId": "experienceevent##@id##description##96261",
                   "meta:xdmType": "string",
                   "meta:xdmField": "@id",
                   "tagNumber": 1
@@ -137,6 +165,8 @@
               "title": "Journey version",
               "type": "object",
               "description": "Schema for describing the version of a journey, where version holds the state machine",
+              "meta:titleId": "experienceevent##journeyVersion##title##64621",
+              "meta:descriptionId": "experienceevent##journeyVersion##description##31591",
               "meta:xdmType": "object",
               "properties": {
                 "_id": {
@@ -144,6 +174,8 @@
                   "type": "string",
                   "format": "uri-reference",
                   "description": "The unique identifier denoting the version of journey on which the entity is active.",
+                  "meta:titleId": "experienceevent##@id##title##18341",
+                  "meta:descriptionId": "experienceevent##@id##description##63321",
                   "meta:xdmType": "string",
                   "meta:xdmField": "@id",
                   "tagNumber": 1

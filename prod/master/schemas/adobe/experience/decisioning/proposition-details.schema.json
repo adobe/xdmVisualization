@@ -7,6 +7,8 @@
   "meta:extensible": true,
   "description": "Decision proposition is used to capture the results of a decisioning process.",
   "meta:status": "stable",
+  "meta:titleId": "proposition-details##title##47421",
+  "meta:descriptionId": "proposition-details##description##42091",
   "meta:xdmType": "object",
   "properties": {
     "_experience": {
@@ -21,6 +23,8 @@
               "title": "Proposition Details",
               "type": "array",
               "description": "Details about the results of the decision. An array providing the output of a single decision event, one proposition per activity parameter in the request.",
+              "meta:titleId": "proposition-details##https://ns.adobe.com/experience/decisioning/propositionDetails##title##45341",
+              "meta:descriptionId": "proposition-details##https://ns.adobe.com/experience/decisioning/propositionDetails##description##29401",
               "meta:xdmType": "array",
               "items": {
                 "$ref": "proposition-detail.schema.json",
@@ -33,6 +37,8 @@
               "title": "Experience Reference",
               "type": "string",
               "description": "Unique identifier for the proposition's content. Recipients of propositions with the same value will receive the same content experience in the targeted placements. Moreover, propositions with the same value to the same user mean that the content of the propositions has not changed. Propositions with values indicate that the decision selections are different and a different experience resulted from the decision. Note that adding a placement to the decision scope always changes the experience value.",
+              "meta:titleId": "proposition-details##https://ns.adobe.com/experience/decisioning/experienceID##title##40181",
+              "meta:descriptionId": "proposition-details##https://ns.adobe.com/experience/decisioning/experienceID##description##38331",
               "meta:xdmType": "string",
               "meta:xdmField": "https://ns.adobe.com/experience/decisioning/experienceID",
               "tagNumber": 2
@@ -41,6 +47,8 @@
               "title": "DEPRECATED: Proposition Content Key",
               "type": "string",
               "description": "DEPRECATED: Digest or unique hash key (generated automatically) for the proposition content. Recipients of propositions with the same value will receive the same content selections in the targeted placements. Moreover, propositions with the same value to the same user mean that the content of the propositions has not changed. Propositions with different digests or hash values indicate that the decision selections are different. Note that adding a placement to the decision always change digest value.",
+              "meta:titleId": "proposition-details##https://ns.adobe.com/experience/decisioning/propositionContentKey##title##85581",
+              "meta:descriptionId": "proposition-details##https://ns.adobe.com/experience/decisioning/propositionContentKey##description##74961",
               "meta:xdmType": "string",
               "meta:xdmField": "https://ns.adobe.com/experience/decisioning/propositionContentKey",
               "tagNumber": 3

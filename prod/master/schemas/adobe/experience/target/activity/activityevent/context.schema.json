@@ -5,12 +5,16 @@
   "title": "Event Context",
   "description": "Details about the context the event was processed in, activity that processed the request, the experience the user qualified for, etc..",
   "meta:status": "stable",
+  "meta:titleId": "context##title##53111",
+  "meta:descriptionId": "context##description##51521",
   "meta:xdmType": "object",
   "properties": {
     "experienceID": {
       "title": "Experience Identifier",
       "type": "string",
       "description": "Experience identifier denoting selected experience.",
+      "meta:titleId": "context##xdm:experienceID##title##52461",
+      "meta:descriptionId": "context##xdm:experienceID##description##40641",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:experienceID",
       "tagNumber": 1
@@ -19,6 +23,8 @@
       "title": "Algorithm Identifier",
       "type": "string",
       "description": "Algorithm identifier denoting used algorithm to select the experience.",
+      "meta:titleId": "context##xdm:algorithmID##title##39321",
+      "meta:descriptionId": "context##xdm:algorithmID##description##71861",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:algorithmID",
       "tagNumber": 2
@@ -31,6 +37,8 @@
         "testing",
         "targeted"
       ],
+      "meta:titleId": "context##xdm:trafficType##title##45631",
+      "meta:descriptionId": "context##xdm:trafficType##description##66451",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:trafficType",
       "tagNumber": 3
@@ -39,6 +47,8 @@
       "title": "Step Identifier",
       "type": "string",
       "description": "Denotes the identifier of the visited activity step.",
+      "meta:titleId": "context##xdm:stepID##title##97141",
+      "meta:descriptionId": "context##xdm:stepID##description##88541",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:stepID",
       "tagNumber": 4

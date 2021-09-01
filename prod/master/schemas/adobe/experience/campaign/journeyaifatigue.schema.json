@@ -5,6 +5,8 @@
   "type": "object",
   "description": "Fatigue score and fatigue level from Journey AI.",
   "meta:status": "stable",
+  "meta:titleId": "journeyaifatigue##title##70201",
+  "meta:descriptionId": "journeyaifatigue##description##51241",
   "meta:xdmType": "object",
   "properties": {
     "fatigueScore": {
@@ -13,6 +15,8 @@
       "type": "number",
       "exclusiveMinimum": 0,
       "maximum": 1,
+      "meta:titleId": "journeyaifatigue##xdm:fatigueScore##title##51571",
+      "meta:descriptionId": "journeyaifatigue##xdm:fatigueScore##description##62691",
       "meta:xdmType": "number",
       "meta:xdmField": "xdm:fatigueScore",
       "tagNumber": 1
@@ -26,6 +30,8 @@
         "medium",
         "high"
       ],
+      "meta:titleId": "journeyaifatigue##xdm:fatigueLevel##title##67781",
+      "meta:descriptionId": "journeyaifatigue##xdm:fatigueLevel##description##72591",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:fatigueLevel",
       "tagNumber": 2

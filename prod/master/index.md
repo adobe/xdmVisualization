@@ -92,6 +92,7 @@
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.adcloud.syncedremarketingaudience.html">syncedremarketingaudience</a></li>
 </ul>
 </details>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.aep-mobile-lifecycle-details.html">aep-mobile-lifecycle-details</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.aep-web-sdk-experienceevent.html">aep-web-sdk-experienceevent</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.analytics-experienceevent.html">analytics-experienceevent</a></li>
 <details>
@@ -162,6 +163,7 @@
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.customerJourneyManagement.message-interaction.html">message-interaction</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.customerJourneyManagement.messageexecution.html">messageexecution</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.customerJourneyManagement.messageprofile.html">messageprofile</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.customerJourneyManagement.offers.html">offers</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.customerJourneyManagement.processing-flow-timeline.html">processing-flow-timeline</a></li>
 </ul>
 </details>

@@ -7,6 +7,8 @@
   "meta:abstract": true,
   "description": "Adobe Campaign ExperienceEvent full extension. Contains all Solution added fields.",
   "meta:status": "stable",
+  "meta:titleId": "experienceevent-all##title##85301",
+  "meta:descriptionId": "experienceevent-all##description##53321",
   "meta:xdmType": "object",
   "properties": {
     "_experience": {
@@ -20,12 +22,15 @@
             "message": {
               "title": "A single message sent to a recipient.",
               "type": "object",
+              "meta:titleId": "experienceevent-all##https://ns.adobe.com/experience/campaign/message##title##80311",
               "meta:xdmType": "object",
               "properties": {
                 "id": {
                   "title": "Message Identifier",
                   "type": "number",
                   "description": "Identifier of the message.",
+                  "meta:titleId": "experienceevent-all##xdm:id##title##47811",
+                  "meta:descriptionId": "experienceevent-all##xdm:id##description##92231",
                   "meta:xdmType": "number",
                   "meta:xdmField": "xdm:id",
                   "tagNumber": 1
@@ -34,6 +39,8 @@
                   "title": "Profile Snapshot",
                   "$ref": "profile-snapshot.schema.json",
                   "description": "Profile Snapshot contains the recipient of the message. This property is primarily used to link the message to a Profile using the `IdentityMap` but it can also be used to freeze some properties of the profile at the time the message was sent.",
+                  "meta:titleId": "experienceevent-all##xdm:profileSnapshot##title##62171",
+                  "meta:descriptionId": "experienceevent-all##xdm:profileSnapshot##description##48361",
                   "meta:xdmField": "xdm:profileSnapshot",
                   "tagNumber": 2
                 },
@@ -41,6 +48,8 @@
                   "title": "Content Variant",
                   "type": "string",
                   "description": "A campaign activity can have multiple variants e.g. Multilingual (translated variants for the same content) or A/B testing (different content to test what works better) but a message delivered to a recipient always contains one of them.\n> IMPORTANT: In case of multilingual, the mirror page, the recipient can switch from one variant to another (ex: switch of the language).",
+                  "meta:titleId": "experienceevent-all##xdm:variant##title##87841",
+                  "meta:descriptionId": "experienceevent-all##xdm:variant##description##47811",
                   "meta:xdmType": "string",
                   "meta:xdmField": "xdm:variant",
                   "tagNumber": 3
@@ -50,6 +59,8 @@
                   "type": "boolean",
                   "default": false,
                   "description": "The recipient of this message is a member of a seed list for this campaign activity. Seed addresses are used to include recipients who do not match the defined target criteria. Seed members could be your marketing team or other stakeholders who are interested in tracking/measuring the quality of the campaign. SeedMembers get the actual message, at the same time with regular recipients, even when the seedMember does not qualify to be a regular recipient.",
+                  "meta:titleId": "experienceevent-all##xdm:seedMember##title##71681",
+                  "meta:descriptionId": "experienceevent-all##xdm:seedMember##description##93241",
                   "meta:xdmType": "boolean",
                   "meta:xdmField": "xdm:seedMember",
                   "tagNumber": 4
@@ -59,6 +70,8 @@
                   "type": "boolean",
                   "default": false,
                   "description": "Address moved to quarantine. The quarantine is set to `true` when the message failed to deliver in a way that indicates that no future messages will be deliverable either to this address.",
+                  "meta:titleId": "experienceevent-all##xdm:quarantine##title##97291",
+                  "meta:descriptionId": "experienceevent-all##xdm:quarantine##description##70061",
                   "meta:xdmType": "boolean",
                   "meta:xdmField": "xdm:quarantine",
                   "tagNumber": 5
@@ -68,6 +81,8 @@
                   "type": "boolean",
                   "description": "The recipient of this message is a member of the proof group for this campaign activity. The proof is a special message that lets you test a delivery before sending to the main target. Proof recipients are responsible for approving both the form and content of the message. It is a pre-delivery target.",
                   "default": false,
+                  "meta:titleId": "experienceevent-all##xdm:proofMember##title##80591",
+                  "meta:descriptionId": "experienceevent-all##xdm:proofMember##description##25701",
                   "meta:xdmType": "boolean",
                   "meta:xdmField": "xdm:proofMember",
                   "tagNumber": 6
@@ -77,6 +92,8 @@
                   "type": "boolean",
                   "description": "The recipient of this message is a member of a control group for this campaign activity. A control group is a population which will not receive the delivery; it is used to track post-delivery behavior and campaign impact by making a comparison between the control group (or hold out group) with the behavior of target population, which has received the delivery.",
                   "default": false,
+                  "meta:titleId": "experienceevent-all##xdm:controlGroupMember##title##19071",
+                  "meta:descriptionId": "experienceevent-all##xdm:controlGroupMember##description##80661",
                   "meta:xdmType": "boolean",
                   "meta:xdmField": "xdm:controlGroupMember",
                   "tagNumber": 7
@@ -86,6 +103,8 @@
                   "type": "boolean",
                   "description": "The recipient of this message is a member of a test group for this campaign activity. This is primarily used for identifying the initial population of an A/B Test. After sending different variants to the testMembers, the winner Variant is decided to be sent to the remaining population based on behavioral changes in testMembers.",
                   "default": false,
+                  "meta:titleId": "experienceevent-all##xdm:testMember##title##87781",
+                  "meta:descriptionId": "experienceevent-all##xdm:testMember##description##53911",
                   "meta:xdmType": "boolean",
                   "meta:xdmField": "xdm:testMember",
                   "tagNumber": 8
@@ -96,6 +115,8 @@
                   "description": "Size in bytes of the message.\n* For email, the `size` reflects the all MIME envelope of the message, including the encoded attachments if any.\n* For SMS, the `size` reflects the number of bytes necessary to deliver the message.\nIf that number is over 160 the message will be delivered over more than one SMS.",
                   "minimum": 0,
                   "maximum": 2147483647,
+                  "meta:titleId": "experienceevent-all##xdm:size##title##53591",
+                  "meta:descriptionId": "experienceevent-all##xdm:size##description##67821",
                   "meta:xdmType": "int",
                   "meta:xdmField": "xdm:size",
                   "tagNumber": 9
@@ -105,6 +126,8 @@
                   "type": "string",
                   "description": "The reason why the message could/would not be delivered.",
                   "default": "undefined",
+                  "meta:titleId": "experienceevent-all##xdm:reason##title##34331",
+                  "meta:descriptionId": "experienceevent-all##xdm:reason##description##2451",
                   "meta:xdmType": "string",
                   "meta:xdmField": "xdm:reason",
                   "tagNumber": 10
@@ -113,6 +136,8 @@
                   "title": "Reason Message",
                   "type": "string",
                   "description": "Reason of message delivery failure.",
+                  "meta:titleId": "experienceevent-all##xdm:reasonMessage##title##70741",
+                  "meta:descriptionId": "experienceevent-all##xdm:reasonMessage##description##53621",
                   "meta:xdmType": "string",
                   "meta:xdmField": "xdm:reasonMessage",
                   "tagNumber": 11
@@ -121,6 +146,8 @@
                   "title": "IP Address",
                   "type": "string",
                   "description": "Outbound IP address used to deliver the message.",
+                  "meta:titleId": "experienceevent-all##xdm:outboundIP##title##86201",
+                  "meta:descriptionId": "experienceevent-all##xdm:outboundIP##description##59221",
                   "meta:xdmType": "string",
                   "meta:xdmField": "xdm:outboundIP",
                   "tagNumber": 12
@@ -129,6 +156,8 @@
                   "title": "External ID",
                   "type": "string",
                   "description": "An ID generated by the parent activity invoking service to check later if the incoming experienceEvent was generated using this ID.",
+                  "meta:titleId": "experienceevent-all##xdm:externalID##title##85531",
+                  "meta:descriptionId": "experienceevent-all##xdm:externalID##description##54071",
                   "meta:xdmType": "string",
                   "meta:xdmField": "xdm:externalID",
                   "tagNumber": 13
@@ -137,6 +166,8 @@
                   "title": "Segment ID",
                   "type": "string",
                   "description": "A code or ID assigned to the segment population generated by a segmentation workflow. This can identify the population as part of a result set based on a criteria.",
+                  "meta:titleId": "experienceevent-all##xdm:segmentID##title##50831",
+                  "meta:descriptionId": "experienceevent-all##xdm:segmentID##description##2481",
                   "meta:xdmType": "string",
                   "meta:xdmField": "xdm:segmentID",
                   "tagNumber": 14
@@ -148,12 +179,15 @@
             "delivery": {
               "title": "The campaign activity originating a message to a recipient.",
               "type": "object",
+              "meta:titleId": "experienceevent-all##https://ns.adobe.com/experience/campaign/delivery##title##37871",
               "meta:xdmType": "object",
               "properties": {
                 "id": {
                   "title": "Delivery ID",
                   "type": "integer",
                   "description": "The campaign activity originating this message.",
+                  "meta:titleId": "experienceevent-all##xdm:id##title##47561",
+                  "meta:descriptionId": "experienceevent-all##xdm:id##description##86251",
                   "meta:xdmType": "int",
                   "meta:xdmField": "xdm:id",
                   "tagNumber": 1
@@ -162,6 +196,8 @@
                   "title": "From",
                   "type": "string",
                   "description": "Address used as a from/sender/caller address. Depending on the communication channel, the `address` has a different format.\n\n  * `email`: an email address.\n  * `textMessage` or `phone`: a shortcode or phone number.",
+                  "meta:titleId": "experienceevent-all##xdm:from##title##62461",
+                  "meta:descriptionId": "experienceevent-all##xdm:from##description##7591",
                   "meta:xdmType": "string",
                   "meta:xdmField": "xdm:from",
                   "tagNumber": 2
@@ -171,6 +207,8 @@
                   "type": "boolean",
                   "description": "Specify whether campaign activity is of type A/B testing.",
                   "default": false,
+                  "meta:titleId": "experienceevent-all##xdm:testEnabled##title##16851",
+                  "meta:descriptionId": "experienceevent-all##xdm:testEnabled##description##27301",
                   "meta:xdmType": "boolean",
                   "meta:xdmField": "xdm:testEnabled",
                   "tagNumber": 3
@@ -180,6 +218,8 @@
                   "type": "string",
                   "description": "Mode of delivery for the messages sent.\n",
                   "default": "one_time",
+                  "meta:titleId": "experienceevent-all##xdm:messageClass##title##99511",
+                  "meta:descriptionId": "experienceevent-all##xdm:messageClass##description##56471",
                   "meta:xdmType": "string",
                   "meta:xdmField": "xdm:messageClass",
                   "tagNumber": 4
@@ -188,6 +228,8 @@
                   "title": "Delivery Template's Internal Name",
                   "type": "string",
                   "description": "A human-friendly identifier of the the parent entity (in case of event_based or continuous message Class) of the campaign activity originating this message.",
+                  "meta:titleId": "experienceevent-all##xdm:templateName##title##18081",
+                  "meta:descriptionId": "experienceevent-all##xdm:templateName##description##39061",
                   "meta:xdmType": "string",
                   "meta:xdmField": "xdm:templateName",
                   "tagNumber": 5
@@ -196,6 +238,8 @@
                   "title": "Identifier of the Template",
                   "type": "integer",
                   "description": "The delivery template's ID used to initialize this delivery.\n\nThe type the template used in Adobe Campaign can be identified using the `messageClass`.\n\n* `messageClass` = `oneTime`: the template is standard delivery template.\n* `messageClass` = `continuous`: the template is a recurring delivery.\n* `messageClass` = `transactional`: the template is a transactional message template.\n",
+                  "meta:titleId": "experienceevent-all##xdm:templateID##title##82871",
+                  "meta:descriptionId": "experienceevent-all##xdm:templateID##description##40091",
                   "meta:xdmType": "int",
                   "meta:xdmField": "xdm:templateID",
                   "tagNumber": 6
@@ -204,6 +248,8 @@
                   "title": "Delivery Label",
                   "type": "string",
                   "description": "A human-friendly name of the campaign activity which is originating this message.",
+                  "meta:titleId": "experienceevent-all##xdm:deliveryLabel##title##59081",
+                  "meta:descriptionId": "experienceevent-all##xdm:deliveryLabel##description##11121",
                   "meta:xdmType": "string",
                   "meta:xdmField": "xdm:deliveryLabel",
                   "tagNumber": 7
@@ -212,6 +258,8 @@
                   "title": "Delivery Internal Name",
                   "type": "string",
                   "description": "A human-friendly identifier of the campaign activity which is originating this message.",
+                  "meta:titleId": "experienceevent-all##xdm:deliveryName##title##93021",
+                  "meta:descriptionId": "experienceevent-all##xdm:deliveryName##description##34981",
                   "meta:xdmType": "string",
                   "meta:xdmField": "xdm:deliveryName",
                   "tagNumber": 8
@@ -223,12 +271,15 @@
             "marketingCampaign": {
               "title": "The campaign activity originating a message to a recipient.",
               "type": "object",
+              "meta:titleId": "experienceevent-all##https://ns.adobe.com/experience/campaign/marketingCampaign##title##70861",
               "meta:xdmType": "object",
               "properties": {
                 "id": {
                   "title": "Campaign ID",
                   "type": "integer",
                   "description": "Identifier of the marketing campaign to which activity originating this message belongs to.",
+                  "meta:titleId": "experienceevent-all##xdm:id##title##85001",
+                  "meta:descriptionId": "experienceevent-all##xdm:id##description##14531",
                   "meta:xdmType": "int",
                   "meta:xdmField": "xdm:id",
                   "tagNumber": 1
@@ -237,6 +288,8 @@
                   "title": "Campaign Internal Name",
                   "type": "string",
                   "description": "A human-friendly identifier of the marketing campaign which is originating this message.",
+                  "meta:titleId": "experienceevent-all##xdm:campaignName##title##9021",
+                  "meta:descriptionId": "experienceevent-all##xdm:campaignName##description##38781",
                   "meta:xdmType": "string",
                   "meta:xdmField": "xdm:campaignName",
                   "tagNumber": 2
@@ -248,12 +301,15 @@
             "link": {
               "title": "The campaign activity originating a message to a recipient.",
               "type": "object",
+              "meta:titleId": "experienceevent-all##https://ns.adobe.com/experience/campaign/link##title##17511",
               "meta:xdmType": "object",
               "properties": {
                 "id": {
                   "title": "Tracking URL ID",
                   "type": "string",
                   "description": "Unique Identifier of the Link",
+                  "meta:titleId": "experienceevent-all##xdm:id##title##67931",
+                  "meta:descriptionId": "experienceevent-all##xdm:id##description##34001",
                   "meta:xdmType": "string",
                   "meta:xdmField": "xdm:id",
                   "tagNumber": 1
@@ -262,6 +318,8 @@
                   "title": "Tracking URL Description",
                   "type": "string",
                   "description": "A human-friendly description of the link.",
+                  "meta:titleId": "experienceevent-all##xdm:description##title##89741",
+                  "meta:descriptionId": "experienceevent-all##xdm:description##description##1971",
                   "meta:xdmType": "string",
                   "meta:xdmField": "xdm:description",
                   "tagNumber": 2
@@ -271,6 +329,8 @@
                   "format": "uri",
                   "type": "string",
                   "description": "URL of the Link.",
+                  "meta:titleId": "experienceevent-all##xdm:url##title##8501",
+                  "meta:descriptionId": "experienceevent-all##xdm:url##description##38091",
                   "meta:xdmType": "string",
                   "meta:xdmField": "xdm:url",
                   "tagNumber": 3
@@ -282,6 +342,8 @@
                   "default": 1,
                   "minimum": 1,
                   "maximum": 32767,
+                  "meta:titleId": "experienceevent-all##xdm:occurrence##title##90221",
+                  "meta:descriptionId": "experienceevent-all##xdm:occurrence##description##78441",
                   "meta:xdmType": "short",
                   "meta:xdmField": "xdm:occurrence",
                   "tagNumber": 4
@@ -290,6 +352,8 @@
                   "title": "URL Label",
                   "type": "string",
                   "description": "The user-friendly label clicking on which the link opens.",
+                  "meta:titleId": "experienceevent-all##xdm:label##title##42791",
+                  "meta:descriptionId": "experienceevent-all##xdm:label##description##58721",
                   "meta:xdmType": "string",
                   "meta:xdmField": "xdm:label",
                   "tagNumber": 5
@@ -298,6 +362,8 @@
                   "title": "URL Category",
                   "type": "string",
                   "description": "The category of the link. It may be `subscription`, or a user-defined category.",
+                  "meta:titleId": "experienceevent-all##xdm:category##title##91221",
+                  "meta:descriptionId": "experienceevent-all##xdm:category##description##13401",
                   "meta:xdmType": "string",
                   "meta:xdmField": "xdm:category",
                   "tagNumber": 6
@@ -306,6 +372,8 @@
                   "title": "In-App Message Action",
                   "type": "string",
                   "description": "Actions on the In-App message delivered, e.g. action on primary button, secondary button or close button.",
+                  "meta:titleId": "experienceevent-all##xdm:inAppMessageAction##title##80281",
+                  "meta:descriptionId": "experienceevent-all##xdm:inAppMessageAction##description##93151",
                   "meta:xdmType": "string",
                   "meta:xdmField": "xdm:inAppMessageAction",
                   "tagNumber": 7
@@ -314,6 +382,8 @@
                   "title": "In-App Message Button Text",
                   "type": "string",
                   "description": "The user-friendly text on the button.",
+                  "meta:titleId": "experienceevent-all##xdm:inAppMessageButtonText##title##15291",
+                  "meta:descriptionId": "experienceevent-all##xdm:inAppMessageButtonText##description##83261",
                   "meta:xdmType": "string",
                   "meta:xdmField": "xdm:inAppMessageButtonText",
                   "tagNumber": 8
@@ -325,12 +395,15 @@
             "orchestration": {
               "title": "Campaign Orchestration for creating user journey.",
               "type": "object",
+              "meta:titleId": "experienceevent-all##https://ns.adobe.com/experience/campaign/orchestration##title##73361",
               "meta:xdmType": "object",
               "properties": {
                 "eventID": {
                   "title": "Event ID",
                   "type": "string",
                   "description": "ID that identifies the event sent by the data source. This is used by Campaign orchestration to identify the event without inspecting its payload to determine which action should be triggered when the event is received. The value is automatically generated in Campaign at event creation time, it is globally unique across organizations.",
+                  "meta:titleId": "experienceevent-all##xdm:eventID##title##38721",
+                  "meta:descriptionId": "experienceevent-all##xdm:eventID##description##43551",
                   "meta:xdmType": "string",
                   "meta:xdmField": "xdm:eventID",
                   "tagNumber": 1
@@ -339,6 +412,8 @@
                   "title": "Orchestration Details",
                   "description": "Set of attributes that are associated with every orchestration.",
                   "$ref": "orchestration/orchestrationdetails.schema.json",
+                  "meta:titleId": "experienceevent-all##xdm:orchestrationDetails##title##11381",
+                  "meta:descriptionId": "experienceevent-all##xdm:orchestrationDetails##description##79741",
                   "meta:xdmField": "xdm:orchestrationDetails",
                   "tagNumber": 2
                 }
@@ -350,6 +425,8 @@
               "title": "Container Identifier",
               "type": "string",
               "description": "The identifier denoting the container with which Campaign ExperienceEvent is associated.",
+              "meta:titleId": "experienceevent-all##https://ns.adobe.com/experience/campaign/containerID##title##12871",
+              "meta:descriptionId": "experienceevent-all##https://ns.adobe.com/experience/campaign/containerID##description##22331",
               "meta:xdmType": "string",
               "meta:xdmField": "https://ns.adobe.com/experience/campaign/containerID",
               "tagNumber": 6
@@ -358,6 +435,8 @@
               "title": "Event Source",
               "type": "string",
               "description": "A human-friendly name of the campaign activity which is originating this message.",
+              "meta:titleId": "experienceevent-all##https://ns.adobe.com/experience/campaign/eventSource##title##11101",
+              "meta:descriptionId": "experienceevent-all##https://ns.adobe.com/experience/campaign/eventSource##description##30301",
               "meta:xdmType": "string",
               "meta:xdmField": "https://ns.adobe.com/experience/campaign/eventSource",
               "tagNumber": 7
@@ -366,6 +445,8 @@
               "title": "Offer Opened",
               "description": "The offer in the message for an 'offer opened' event.",
               "$ref": "offer-response-detail.schema.json",
+              "meta:titleId": "experienceevent-all##https://ns.adobe.com/experience/campaign/offerOpened##title##6611",
+              "meta:descriptionId": "experienceevent-all##https://ns.adobe.com/experience/campaign/offerOpened##description##41161",
               "meta:xdmField": "https://ns.adobe.com/experience/campaign/offerOpened",
               "tagNumber": 8
             },
@@ -373,6 +454,8 @@
               "title": "Offer Propositions",
               "description": "The offers in the message of a 'email-send' event.",
               "type": "array",
+              "meta:titleId": "experienceevent-all##https://ns.adobe.com/experience/campaign/offersProposed##title##1411",
+              "meta:descriptionId": "experienceevent-all##https://ns.adobe.com/experience/campaign/offersProposed##description##91571",
               "meta:xdmType": "array",
               "items": {
                 "$ref": "offer-proposition-detail.schema.json",
@@ -385,6 +468,8 @@
               "title": "Medium",
               "type": "string",
               "description": "The medium is a combination of the source of the event (message, web, ...) and its format if applicable.",
+              "meta:titleId": "experienceevent-all##https://ns.adobe.com/experience/campaign/medium##title##69711",
+              "meta:descriptionId": "experienceevent-all##https://ns.adobe.com/experience/campaign/medium##description##36751",
               "meta:xdmType": "string",
               "meta:xdmField": "https://ns.adobe.com/experience/campaign/medium",
               "tagNumber": 10
@@ -393,6 +478,8 @@
               "title": "Mutated Fields from Previous ExperienceEvent.",
               "description": "Information of the fields that have changed since the previous ExperienceEvent to keep track of the state changes across events. For e.g. if when an email gets sent, an ExperienceEvent with metric `sends` will be sent. This may get bounced and an ExperienceEvent with metric `bounces` will be sent then. It may be important for a downstream application to know that the previous ExperienceEvent with metric `sends` is now to be invalidated. This field will contain the values from the previous ExperienceEvent that have a different value in the current ExperienceEvent.",
               "$ref": "mutationevent.schema.json",
+              "meta:titleId": "experienceevent-all##https://ns.adobe.com/experience/campaign/mutation##title##59221",
+              "meta:descriptionId": "experienceevent-all##https://ns.adobe.com/experience/campaign/mutation##description##44981",
               "meta:xdmField": "https://ns.adobe.com/experience/campaign/mutation",
               "tagNumber": 11
             }

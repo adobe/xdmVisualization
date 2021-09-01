@@ -218,7 +218,7 @@ module.exports = function(grunt) {
 
             prod : [
 
-                './prod/kevinlind_lifecycle-field-group/**/*',
+                './prod/master/**/*',
 
             ],
 
@@ -252,7 +252,7 @@ module.exports = function(grunt) {
 
                 files : {
 
-                    './prod/kevinlind_lifecycle-field-group/<%= pkg.name %>.min.js' : [
+                    './prod/master/<%= pkg.name %>.min.js' : [
                         //'./files/scripts/jquery.js',
                         //'./files/scripts/jquery.*.js',
                         './bower_components/uri.js/src/URI.js',
@@ -268,7 +268,7 @@ module.exports = function(grunt) {
                         './lib/example.js',
 
                     ],
-                    './prod/kevinlind_lifecycle-field-group/lib/preinit.js' : [
+                    './prod/master/lib/preinit.js' : [
                         './lib/preinit.js',
 
                     ],
@@ -328,7 +328,7 @@ module.exports = function(grunt) {
 
                 files : {
 
-                    './prod/kevinlind_lifecycle-field-group/styles/<%= pkg.name %>.min.css' : './styles/sass/<%= pkg.name %>.scss',
+                    './prod/master/styles/<%= pkg.name %>.min.css' : './styles/sass/<%= pkg.name %>.scss',
 
                 },
 
@@ -402,7 +402,7 @@ module.exports = function(grunt) {
                     {
 
                         src : './templates/index.html',
-                        dest : './prod/kevinlind_lifecycle-field-group/index.html',
+                        dest : './prod/master/index.html',
 
                     },
 
@@ -416,7 +416,7 @@ module.exports = function(grunt) {
                     {
 
                         src : './templates/basic.html',
-                        dest : './prod/kevinlind_lifecycle-field-group/basic.html',
+                        dest : './prod/master/basic.html',
 
                     },
 
@@ -451,7 +451,7 @@ module.exports = function(grunt) {
                             'images/**/*',
                             '!images/junk/**',
                         ],
-                        dest : './prod/kevinlind_lifecycle-field-group/',
+                        dest : './prod/master/',
 
                     },
                     {
@@ -462,7 +462,7 @@ module.exports = function(grunt) {
                             '**/*.json',
                             '!*bower.json',
                         ],
-                        dest : './prod/kevinlind_lifecycle-field-group/schemas',
+                        dest : './prod/master/schemas',
 
                     },
                     {
@@ -472,7 +472,7 @@ module.exports = function(grunt) {
                         src : [
                             '**/*',
                         ],
-                        dest : './prod/kevinlind_lifecycle-field-group/docs',
+                        dest : './prod/master/docs',
 
                     }
 
@@ -491,7 +491,7 @@ module.exports = function(grunt) {
 
       'gh-pages' : {
         options: {
-          base: './prod/kevinlind_lifecycle-field-group/'
+          base: './prod/master/'
         },
         src: ['**/*']
       },

@@ -15,14 +15,14 @@
     "stable"
   ],
   "meta:titleId": [
-    "account##title##15371",
-    "record##title##92641",
-    "external-source-system-audit-details##title##25871"
+    "account##title##4841",
+    "record##title##65961",
+    "external-source-system-audit-details##title##88991"
   ],
   "meta:descriptionId": [
-    "account##description##31521",
-    "record##description##41201",
-    "external-source-system-audit-details##description##77561"
+    "account##description##65781",
+    "record##description##3921",
+    "external-source-system-audit-details##description##98601"
   ],
   "meta:xdmType": "object",
   "meta:createdDate": "2020-08-10",
@@ -32,8 +32,8 @@
       "type": "string",
       "format": "uri-reference",
       "description": "A unique identifier for the record.",
-      "meta:titleId": "record##@id##title##80061",
-      "meta:descriptionId": "record##@id##description##41711",
+      "meta:titleId": "record##@id##title##51271",
+      "meta:descriptionId": "record##@id##description##16181",
       "meta:xdmType": "string",
       "meta:xdmField": "@id",
       "tagNumber": 1
@@ -42,8 +42,8 @@
       "title": "Account Identifier",
       "description": "Unique ID for the account.",
       "type": "string",
-      "meta:titleId": "account##xdm:accountID##title##74841",
-      "meta:descriptionId": "account##xdm:accountID##description##70711",
+      "meta:titleId": "account##xdm:accountID##title##59121",
+      "meta:descriptionId": "account##xdm:accountID##description##27991",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:accountID",
       "tagNumber": 2
@@ -61,8 +61,8 @@
       "title": "External Source System Audit Properties",
       "$ref": "../../datatypes/auditing/external-source-system-audit.schema.json",
       "description": "Audit attributes for external sources.",
-      "meta:titleId": "external-source-system-audit-details##xdm:extSourceSystemAudit##title##65301",
-      "meta:descriptionId": "external-source-system-audit-details##xdm:extSourceSystemAudit##description##99451",
+      "meta:titleId": "external-source-system-audit-details##xdm:extSourceSystemAudit##title##88841",
+      "meta:descriptionId": "external-source-system-audit-details##xdm:extSourceSystemAudit##description##28131",
       "meta:xdmField": "xdm:extSourceSystemAudit",
       "tagNumber": 4
     }

@@ -10,18 +10,24 @@
   "title": "Decision Content Placement",
   "description": "A content placement describes a location or place where the content of a proposed decision option is rendered into. It is used to set technical constraints for content that the decision supplies.",
   "meta:status": "stable",
+  "meta:titleId": [
+    "placement##title##11031",
+    "record##title##65961"
+  ],
+  "meta:descriptionId": [
+    "placement##description##95441",
+    "record##description##3921"
+  ],
   "meta:xdmType": "object",
   "meta:createdDate": "2020-08-10",
-  "meta:titleId": "record##title##92641",
-  "meta:descriptionId": "record##description##41201",
   "properties": {
     "_id": {
       "title": "Identifier",
       "type": "string",
       "format": "uri-reference",
       "description": "A unique identifier for the record.",
-      "meta:titleId": "record##@id##title##80061",
-      "meta:descriptionId": "record##@id##description##41711",
+      "meta:titleId": "record##@id##title##51271",
+      "meta:descriptionId": "record##@id##description##16181",
       "meta:xdmType": "string",
       "meta:xdmField": "@id",
       "tagNumber": 1
@@ -34,6 +40,8 @@
           "title": "Placement ETag",
           "type": "string",
           "description": "The revision that the placement object was at when the snapshot was taken.",
+          "meta:titleId": "placement##repo:etag##title##65381",
+          "meta:descriptionId": "placement##repo:etag##description##66281",
           "meta:xdmType": "string",
           "meta:xdmField": "repo:etag",
           "tagNumber": 1
@@ -53,6 +61,8 @@
               "title": "Placement Name",
               "type": "string",
               "description": "An assigned name for the placement to refer to it in human interactions",
+              "meta:titleId": "placement##https://ns.adobe.com/experience/decisioning/name##title##65921",
+              "meta:descriptionId": "placement##https://ns.adobe.com/experience/decisioning/name##description##16601",
               "meta:xdmType": "string",
               "meta:xdmField": "https://ns.adobe.com/experience/decisioning/name",
               "tagNumber": 1
@@ -61,6 +71,8 @@
               "type": "string",
               "title": "Placement Description",
               "description": "Placement description. It is used to convey human readable intentions on how dynamic content is used in the overall message delivery. That a certain space is a \"Banner\" in a web page is often conveyed via the description and not by a formal method.",
+              "meta:titleId": "placement##https://ns.adobe.com/experience/decisioning/description##title##53581",
+              "meta:descriptionId": "placement##https://ns.adobe.com/experience/decisioning/description##description##53311",
               "meta:xdmType": "string",
               "meta:xdmField": "https://ns.adobe.com/experience/decisioning/description",
               "tagNumber": 2
@@ -70,6 +82,8 @@
               "type": "string",
               "format": "uri-reference",
               "description": "The channel in which proposition was made. The value is a valid Channel URI. See 'https://ns.adobe.com/xdm/channels/channel'",
+              "meta:titleId": "placement##https://ns.adobe.com/experience/decisioning/channelID##title##76931",
+              "meta:descriptionId": "placement##https://ns.adobe.com/experience/decisioning/channelID##description##89771",
               "meta:xdmType": "string",
               "meta:xdmField": "https://ns.adobe.com/experience/decisioning/channelID",
               "tagNumber": 3
@@ -79,6 +93,8 @@
               "format": "uri-reference",
               "title": "Content Component Type",
               "description": "Content Component Type. An enumerated set of URIs where each value maps to a type given to the content component. Some consumers of the content representations are expecting the @type value to be a reference to schema that describes additional properties of the content component.",
+              "meta:titleId": "content-component-details##content-component-type##title##24131",
+              "meta:descriptionId": "content-component-details##content-component-type##description##65041",
               "meta:xdmType": "string",
               "meta:xdmField": "https://ns.adobe.com/experience/decisioning/componentType",
               "tagNumber": 4
@@ -91,6 +107,8 @@
                 "title": "MIME Media Type",
                 "description": "A constraint for the media type of the components that is expected in that placement. There could be more than one media type possible for one component such as different image format.",
                 "pattern": "\\w+\\/[-.\\w]+(?:\\+[-.\\w]+)?",
+                "meta:titleId": "placement##items##title##92451",
+                "meta:descriptionId": "placement##items##description##47011",
                 "meta:xdmType": "string",
                 "tagNumber": 1
               },

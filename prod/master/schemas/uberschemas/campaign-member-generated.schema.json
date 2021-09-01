@@ -19,18 +19,18 @@
     "2020-09-29"
   ],
   "meta:titleId": [
-    "campaign-member##title##62621",
-    "record##title##92641",
-    "external-source-system-audit-details##title##25871",
-    "campaign-member-components##title##8691",
-    "campaign-member-details##title##68041"
+    "campaign-member##title##30961",
+    "record##title##65961",
+    "external-source-system-audit-details##title##88991",
+    "campaign-member-components##title##59761",
+    "campaign-member-details##title##66341"
   ],
   "meta:descriptionId": [
-    "campaign-member##description##61861",
-    "record##description##41201",
-    "external-source-system-audit-details##description##77561",
-    "campaign-member-components##description##49641",
-    "campaign-member-details##description##31061"
+    "campaign-member##description##56301",
+    "record##description##3921",
+    "external-source-system-audit-details##description##98601",
+    "campaign-member-components##description##93481",
+    "campaign-member-details##description##40731"
   ],
   "meta:tags": {
     "b2bSchema": true
@@ -41,8 +41,8 @@
       "type": "string",
       "format": "uri-reference",
       "description": "A unique identifier for the record.",
-      "meta:titleId": "record##@id##title##80061",
-      "meta:descriptionId": "record##@id##description##41711",
+      "meta:titleId": "record##@id##title##51271",
+      "meta:descriptionId": "record##@id##description##16181",
       "meta:xdmType": "string",
       "meta:xdmField": "@id",
       "tagNumber": 1
@@ -51,8 +51,8 @@
       "title": "External Source System Audit Properties",
       "$ref": "../datatypes/auditing/external-source-system-audit.schema.json",
       "description": "Audit attributes for external sources.",
-      "meta:titleId": "external-source-system-audit-details##xdm:extSourceSystemAudit##title##65301",
-      "meta:descriptionId": "external-source-system-audit-details##xdm:extSourceSystemAudit##description##99451",
+      "meta:titleId": "external-source-system-audit-details##xdm:extSourceSystemAudit##title##88841",
+      "meta:descriptionId": "external-source-system-audit-details##xdm:extSourceSystemAudit##description##28131",
       "meta:xdmField": "xdm:extSourceSystemAudit",
       "tagNumber": 2
     },
@@ -60,8 +60,8 @@
       "title": "Campaign Member ID",
       "description": "Campaign Member unique identifer.",
       "type": "string",
-      "meta:titleId": "campaign-member##xdm:campaignMemberID##title##84371",
-      "meta:descriptionId": "campaign-member##xdm:campaignMemberID##description##63651",
+      "meta:titleId": "campaign-member##xdm:campaignMemberID##title##6831",
+      "meta:descriptionId": "campaign-member##xdm:campaignMemberID##description##26351",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:campaignMemberID",
       "tagNumber": 3
@@ -79,8 +79,8 @@
       "title": "Campaign ID",
       "description": "Campaign Unique Identifer.",
       "type": "string",
-      "meta:titleId": "campaign-member##xdm:campaignID##title##88791",
-      "meta:descriptionId": "campaign-member##xdm:campaignID##description##71921",
+      "meta:titleId": "campaign-member##xdm:campaignID##title##26371",
+      "meta:descriptionId": "campaign-member##xdm:campaignID##description##86741",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:campaignID",
       "tagNumber": 5
@@ -98,8 +98,8 @@
       "title": "Person ID",
       "description": "Person unique identifier.",
       "type": "string",
-      "meta:titleId": "campaign-member##xdm:personID##title##48541",
-      "meta:descriptionId": "campaign-member##xdm:personID##description##88941",
+      "meta:titleId": "campaign-member##xdm:personID##title##80381",
+      "meta:descriptionId": "campaign-member##xdm:personID##description##74641",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:personID",
       "tagNumber": 7
@@ -119,15 +119,15 @@
       "meta:xdmField": "xdm:campaignMemberComponents",
       "tagNumber": 9,
       "items": {
-        "$ref": "obj0012358790060844616.schema.json"
+        "$ref": "obj6167192982564427.schema.json"
       }
     },
     "memberStatus": {
       "title": "Campaign Member Status",
       "description": "",
       "type": "string",
-      "meta:titleId": "campaign-member-details##xdm:memberStatus##title##60731",
-      "meta:descriptionId": "campaign-member-details##xdm:memberStatus##description##61861",
+      "meta:titleId": "campaign-member-details##xdm:memberStatus##title##14131",
+      "meta:descriptionId": "campaign-member-details##xdm:memberStatus##description##85891",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:memberStatus",
       "tagNumber": 10
@@ -136,8 +136,8 @@
       "title": "Campaign Member Status Reason",
       "description": "",
       "type": "string",
-      "meta:titleId": "campaign-member-details##xdm:memberStatusReason##title##66571",
-      "meta:descriptionId": "campaign-member-details##xdm:memberStatusReason##description##52781",
+      "meta:titleId": "campaign-member-details##xdm:memberStatusReason##title##5971",
+      "meta:descriptionId": "campaign-member-details##xdm:memberStatusReason##description##3251",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:memberStatusReason",
       "tagNumber": 11
@@ -146,8 +146,8 @@
       "title": "Nurture Track Name",
       "description": "",
       "type": "string",
-      "meta:titleId": "campaign-member-details##xdm:nurtureTrackName##title##14291",
-      "meta:descriptionId": "campaign-member-details##xdm:nurtureTrackName##description##63321",
+      "meta:titleId": "campaign-member-details##xdm:nurtureTrackName##title##33861",
+      "meta:descriptionId": "campaign-member-details##xdm:nurtureTrackName##description##11191",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:nurtureTrackName",
       "tagNumber": 12
@@ -156,8 +156,8 @@
       "title": "Nurture Cadence",
       "description": "",
       "type": "string",
-      "meta:titleId": "campaign-member-details##xdm:nurtureCadence##title##92191",
-      "meta:descriptionId": "campaign-member-details##xdm:nurtureCadence##description##65851",
+      "meta:titleId": "campaign-member-details##xdm:nurtureCadence##title##37871",
+      "meta:descriptionId": "campaign-member-details##xdm:nurtureCadence##description##7421",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:nurtureCadence",
       "tagNumber": 13
@@ -166,8 +166,8 @@
       "title": "isExhausted",
       "description": "",
       "type": "boolean",
-      "meta:titleId": "campaign-member-details##xdm:isExhausted##title##10081",
-      "meta:descriptionId": "campaign-member-details##xdm:isExhausted##description##27951",
+      "meta:titleId": "campaign-member-details##xdm:isExhausted##title##81641",
+      "meta:descriptionId": "campaign-member-details##xdm:isExhausted##description##28241",
       "meta:xdmType": "boolean",
       "meta:xdmField": "xdm:isExhausted",
       "tagNumber": 14
@@ -176,8 +176,8 @@
       "title": "Webinar Registration ID",
       "description": "",
       "type": "string",
-      "meta:titleId": "campaign-member-details##xdm:webinarRegistrationID##title##62081",
-      "meta:descriptionId": "campaign-member-details##xdm:webinarRegistrationID##description##31681",
+      "meta:titleId": "campaign-member-details##xdm:webinarRegistrationID##title##8271",
+      "meta:descriptionId": "campaign-member-details##xdm:webinarRegistrationID##description##76961",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:webinarRegistrationID",
       "tagNumber": 15
@@ -186,8 +186,8 @@
       "title": "Webinar Confirmation Url",
       "description": "",
       "type": "string",
-      "meta:titleId": "campaign-member-details##xdm:webinarConfirmationUrl##title##25111",
-      "meta:descriptionId": "campaign-member-details##xdm:webinarConfirmationUrl##description##26631",
+      "meta:titleId": "campaign-member-details##xdm:webinarConfirmationUrl##title##8871",
+      "meta:descriptionId": "campaign-member-details##xdm:webinarConfirmationUrl##description##86371",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:webinarConfirmationUrl",
       "tagNumber": 16
@@ -196,8 +196,8 @@
       "title": "Acquired By CampaignID",
       "description": "",
       "type": "string",
-      "meta:titleId": "campaign-member-details##xdm:acquiredByCampaignID##title##6431",
-      "meta:descriptionId": "campaign-member-details##xdm:acquiredByCampaignID##description##29051",
+      "meta:titleId": "campaign-member-details##xdm:acquiredByCampaignID##title##51731",
+      "meta:descriptionId": "campaign-member-details##xdm:acquiredByCampaignID##description##39701",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:acquiredByCampaignID",
       "tagNumber": 17
@@ -215,8 +215,8 @@
       "title": "Has Reached Success",
       "description": "",
       "type": "boolean",
-      "meta:titleId": "campaign-member-details##xdm:hasReachedSuccess##title##90351",
-      "meta:descriptionId": "campaign-member-details##xdm:hasReachedSuccess##description##89661",
+      "meta:titleId": "campaign-member-details##xdm:hasReachedSuccess##title##77731",
+      "meta:descriptionId": "campaign-member-details##xdm:hasReachedSuccess##description##41531",
       "meta:xdmType": "boolean",
       "meta:xdmField": "xdm:hasReachedSuccess",
       "tagNumber": 19
@@ -226,8 +226,8 @@
       "description": "",
       "type": "string",
       "format": "date-time",
-      "meta:titleId": "campaign-member-details##xdm:reachedSuccessDate##title##84281",
-      "meta:descriptionId": "campaign-member-details##xdm:reachedSuccessDate##description##67911",
+      "meta:titleId": "campaign-member-details##xdm:reachedSuccessDate##title##98411",
+      "meta:descriptionId": "campaign-member-details##xdm:reachedSuccessDate##description##18451",
       "meta:xdmType": "date-time",
       "meta:xdmField": "xdm:reachedSuccessDate",
       "tagNumber": 20
@@ -237,8 +237,8 @@
       "description": "",
       "type": "string",
       "format": "date-time",
-      "meta:titleId": "campaign-member-details##xdm:membershipDate##title##59881",
-      "meta:descriptionId": "campaign-member-details##xdm:membershipDate##description##52411",
+      "meta:titleId": "campaign-member-details##xdm:membershipDate##title##85571",
+      "meta:descriptionId": "campaign-member-details##xdm:membershipDate##description##70351",
       "meta:xdmType": "date-time",
       "meta:xdmField": "xdm:membershipDate",
       "tagNumber": 21
@@ -247,8 +247,8 @@
       "title": "Last Status",
       "description": "",
       "type": "string",
-      "meta:titleId": "campaign-member-details##xdm:lastStatus##title##25791",
-      "meta:descriptionId": "campaign-member-details##xdm:lastStatus##description##35671",
+      "meta:titleId": "campaign-member-details##xdm:lastStatus##title##14461",
+      "meta:descriptionId": "campaign-member-details##xdm:lastStatus##description##32081",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:lastStatus",
       "tagNumber": 22
@@ -257,8 +257,8 @@
       "title": "Has Responded",
       "description": "Record whether the member has responded to the workflow stage",
       "type": "boolean",
-      "meta:titleId": "campaign-member-details##xdm:hasResponded##title##20631",
-      "meta:descriptionId": "campaign-member-details##xdm:hasResponded##description##59641",
+      "meta:titleId": "campaign-member-details##xdm:hasResponded##title##26261",
+      "meta:descriptionId": "campaign-member-details##xdm:hasResponded##description##31341",
       "meta:xdmType": "boolean",
       "meta:xdmField": "xdm:hasResponded",
       "tagNumber": 23
@@ -268,8 +268,8 @@
       "description": "Date captured on which response was submitted",
       "type": "string",
       "format": "date-time",
-      "meta:titleId": "campaign-member-details##xdm:firstRespondedDate##title##33141",
-      "meta:descriptionId": "campaign-member-details##xdm:firstRespondedDate##description##80991",
+      "meta:titleId": "campaign-member-details##xdm:firstRespondedDate##title##46151",
+      "meta:descriptionId": "campaign-member-details##xdm:firstRespondedDate##description##81781",
       "meta:xdmType": "date-time",
       "meta:xdmField": "xdm:firstRespondedDate",
       "tagNumber": 24

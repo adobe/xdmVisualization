@@ -5,12 +5,16 @@
   "type": "object",
   "description": "Adobe Advertising Cloud Search Product Details.",
   "meta:status": "stable",
+  "meta:titleId": "productdetails##title##35481",
+  "meta:descriptionId": "productdetails##description##34871",
   "meta:xdmType": "object",
   "properties": {
     "productID": {
       "title": "Product Identifier",
       "type": "string",
       "description": "Identifier for the product featured in the clicked advertisement.",
+      "meta:titleId": "productdetails##xdm:productID##title##28181",
+      "meta:descriptionId": "productdetails##xdm:productID##description##64301",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:productID",
       "tagNumber": 1
@@ -19,6 +23,8 @@
       "title": "Product Country",
       "type": "string",
       "description": "The country of sale for the product in the clicked ad.",
+      "meta:titleId": "productdetails##xdm:country##title##4861",
+      "meta:descriptionId": "productdetails##xdm:country##description##11951",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:country",
       "tagNumber": 2
@@ -27,6 +33,8 @@
       "title": "Product Language",
       "type": "string",
       "description": "The language of your product information, as indicated in client's Merchant Center data feed.",
+      "meta:titleId": "productdetails##xdm:language##title##69211",
+      "meta:descriptionId": "productdetails##xdm:language##description##78661",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:language",
       "tagNumber": 3
@@ -35,6 +43,8 @@
       "title": "Product Partition Identifier",
       "type": "string",
       "description": "Identifier for the product group the clicked product advertisement belongs to.",
+      "meta:titleId": "productdetails##xdm:partitionID##title##32661",
+      "meta:descriptionId": "productdetails##xdm:partitionID##description##57091",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:partitionID",
       "tagNumber": 4
@@ -43,6 +53,8 @@
       "title": "Product Title",
       "type": "string",
       "description": "Product title value shown in the advertisement.",
+      "meta:titleId": "productdetails##xdm:title##title##86831",
+      "meta:descriptionId": "productdetails##xdm:title##description##52051",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:title",
       "tagNumber": 5
@@ -51,6 +63,8 @@
       "title": "Product Ad Type",
       "type": "string",
       "description": "Ad Type for Product used in Google Shopping Campaigns.",
+      "meta:titleId": "productdetails##xdm:adType##title##63521",
+      "meta:descriptionId": "productdetails##xdm:adType##description##40641",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:adType",
       "tagNumber": 6

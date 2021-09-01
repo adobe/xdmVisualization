@@ -7,6 +7,8 @@
   "meta:abstract": true,
   "description": "Captures and maintain additional Bizible opportunity attributes. They extend the ones used by industry crm systems.",
   "meta:status": "experimental",
+  "meta:titleId": "bizible-opportunity-details##title##5471",
+  "meta:descriptionId": "bizible-opportunity-details##description##99891",
   "meta:xdmType": "object",
   "properties": {
     "_bizible": {
@@ -17,6 +19,8 @@
           "title": "Opportunity Stage",
           "description": "Current stage of a business opportunity.",
           "type": "string",
+          "meta:titleId": "bizible-opportunity-details##bizible:stage##title##98761",
+          "meta:descriptionId": "bizible-opportunity-details##bizible:stage##description##71391",
           "meta:xdmType": "string",
           "meta:xdmField": "bizible:stage",
           "tagNumber": 1
@@ -25,6 +29,8 @@
           "title": "Opportunity Previous Stage",
           "description": "Previous stage of a business opportunity.",
           "type": "string",
+          "meta:titleId": "bizible-opportunity-details##bizible:stagePrevious##title##17121",
+          "meta:descriptionId": "bizible-opportunity-details##bizible:stagePrevious##description##37851",
           "meta:xdmType": "string",
           "meta:xdmField": "bizible:stagePrevious",
           "tagNumber": 2

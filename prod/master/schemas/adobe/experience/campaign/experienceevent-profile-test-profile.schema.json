@@ -7,6 +7,8 @@
   "meta:abstract": true,
   "description": "Adobe Campaign ExperienceEvent optional snapshot of profile personal details.",
   "meta:status": "stable",
+  "meta:titleId": "experienceevent-profile-test-profile##title##97301",
+  "meta:descriptionId": "experienceevent-profile-test-profile##description##67551",
   "meta:xdmType": "object",
   "properties": {
     "_experience": {
@@ -20,12 +22,15 @@
             "message": {
               "title": "A single message sent to a recipient.",
               "type": "object",
+              "meta:titleId": "experienceevent-profile-test-profile##https://ns.adobe.com/experience/campaign/message##title##48371",
               "meta:xdmType": "object",
               "properties": {
                 "profileSnapshot": {
                   "title": "Profile Snapshot",
                   "description": "Profile snapshot contains the recipient of the message. This property is primarily used to link the message to a Profile using the `IdentityMap` but it can also be used to freeze some properties of the profile at the time the message was sent.",
                   "type": "object",
+                  "meta:titleId": "experienceevent-profile-test-profile##xdm:profileSnapshot##title##76951",
+                  "meta:descriptionId": "experienceevent-profile-test-profile##xdm:profileSnapshot##description##60061",
                   "meta:xdmType": "object",
                   "properties": {
                     "testProfile": {
@@ -33,6 +38,8 @@
                       "type": "boolean",
                       "description": "Indicates the `profile` record is for use in testing/verification purposes and should not be automatically included in normal operation(s).",
                       "default": false,
+                      "meta:titleId": "experienceevent-profile-test-profile##xdm:testProfile##title##28661",
+                      "meta:descriptionId": "experienceevent-profile-test-profile##xdm:testProfile##description##79671",
                       "meta:xdmType": "boolean",
                       "meta:xdmField": "xdm:testProfile",
                       "tagNumber": 1

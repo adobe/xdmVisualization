@@ -7,8 +7,8 @@
   "meta:status": "stable",
   "description": "Details about the SDK, library, or service used in an application or web page implementation of a service.",
   "meta:createdDate": "2021-02-19",
-  "meta:titleId": "implementationdetails##title##73711",
-  "meta:descriptionId": "implementationdetails##description##8651",
+  "meta:titleId": "implementationdetails##title##36451",
+  "meta:descriptionId": "implementationdetails##description##67781",
   "meta:xdmType": "object",
   "properties": {
     "name": {
@@ -16,8 +16,8 @@
       "type": "string",
       "format": "uri",
       "description": "SDK or endpoint identifier. All SDKs or endpoints are identified through a URI, including extensions.",
-      "meta:titleId": "implementationdetails##xdm:name##title##13081",
-      "meta:descriptionId": "implementationdetails##xdm:name##description##33121",
+      "meta:titleId": "implementationdetails##xdm:name##title##32991",
+      "meta:descriptionId": "implementationdetails##xdm:name##description##3101",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:name",
       "tagNumber": 1
@@ -26,8 +26,8 @@
       "title": "Version",
       "type": "string",
       "description": "The version identifier of the API, e.g h.18.",
-      "meta:titleId": "implementationdetails##xdm:version##title##94391",
-      "meta:descriptionId": "implementationdetails##xdm:version##description##83641",
+      "meta:titleId": "implementationdetails##xdm:version##title##19361",
+      "meta:descriptionId": "implementationdetails##xdm:version##description##64991",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:version",
       "tagNumber": 2
@@ -42,8 +42,8 @@
         "server",
         "iot"
       ],
-      "meta:titleId": "implementationdetails##xdm:environment##title##47371",
-      "meta:descriptionId": "implementationdetails##xdm:environment##description##13251",
+      "meta:titleId": "implementationdetails##xdm:environment##title##39371",
+      "meta:descriptionId": "implementationdetails##xdm:environment##description##25981",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:environment",
       "tagNumber": 3

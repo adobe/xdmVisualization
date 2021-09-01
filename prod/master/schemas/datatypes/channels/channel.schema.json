@@ -8,15 +8,15 @@
   "description": "There are multiple experience channels, each with different constraints on how content is delivered and how customer interaction can be observed and data collected. Within a channel, experiences can be delivered to specific locations. The locations and types of locations that exist in a channel differ from channel to channel.",
   "meta:status": "stable",
   "meta:createdDate": "2020-08-10",
-  "meta:titleId": "channel##title##13931",
-  "meta:descriptionId": "channel##description##14701",
+  "meta:titleId": "channel##title##11001",
+  "meta:descriptionId": "channel##description##25891",
   "meta:xdmType": "object",
   "properties": {
     "_id": {
       "type": "string",
       "format": "uri-reference",
       "description": "The ID uniquely identifies the channel. Each specific experience channel defines a constant `@id`.",
-      "meta:descriptionId": "channel##@id##description##93431",
+      "meta:descriptionId": "channel##@id##description##68641",
       "meta:xdmType": "string",
       "meta:xdmField": "@id",
       "tagNumber": 1
@@ -24,7 +24,7 @@
     "typeAtSource": {
       "type": "string",
       "description": "Customer defined custom channel name",
-      "meta:descriptionId": "channel##xdm:typeAtSource##description##78871",
+      "meta:descriptionId": "channel##xdm:typeAtSource##description##84401",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:typeAtSource",
       "tagNumber": 2
@@ -37,7 +37,7 @@
         "bidirectional"
       ],
       "description": "How experiences are delivered in this channel.",
-      "meta:descriptionId": "channel##xdm:mode##description##30081",
+      "meta:descriptionId": "channel##xdm:mode##description##40711",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:mode",
       "tagNumber": 3
@@ -46,7 +46,7 @@
       "type": "string",
       "format": "uri",
       "description": "The `@type` property is used to provide a rough classification of channels with similar properties.",
-      "meta:descriptionId": "channel##@type##description##65651",
+      "meta:descriptionId": "channel##@type##description##71341",
       "meta:xdmType": "string",
       "meta:xdmField": "@type",
       "tagNumber": 4
@@ -54,7 +54,7 @@
     "mediaType": {
       "type": "string",
       "description": "Describes whether the media type is paid,owned or earned.",
-      "meta:descriptionId": "channel##xdm:mediaType##description##43001",
+      "meta:descriptionId": "channel##xdm:mediaType##description##84831",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:mediaType",
       "tagNumber": 5
@@ -62,7 +62,7 @@
     "mediaAction": {
       "type": "string",
       "description": "The `mediaAction` property is used to provide a type of experiance event media action .",
-      "meta:descriptionId": "channel##xdm:mediaAction##description##65821",
+      "meta:descriptionId": "channel##xdm:mediaAction##description##43291",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:mediaAction",
       "tagNumber": 6
@@ -70,13 +70,13 @@
     "contentTypes": {
       "type": "array",
       "description": "The content types that this channel can deliver.",
-      "meta:descriptionId": "channel##xdm:contentTypes##description##88151",
+      "meta:descriptionId": "channel##xdm:contentTypes##description##23231",
       "meta:xdmType": "array",
       "items": {
         "type": "string",
         "format": "uri",
         "description": "The `@type` of an XDM-defined content type that is supported by this channel.",
-        "meta:descriptionId": "channel##items##description##9141",
+        "meta:descriptionId": "channel##items##description##96921",
         "meta:xdmType": "string",
         "tagNumber": 1
       },
@@ -86,13 +86,13 @@
     "metricTypes": {
       "type": "array",
       "description": "The metrics that can be collected in this channel.",
-      "meta:descriptionId": "channel##xdm:metricTypes##description##69061",
+      "meta:descriptionId": "channel##xdm:metricTypes##description##81561",
       "meta:xdmType": "array",
       "items": {
         "type": "string",
         "format": "uri",
         "description": "The `@type` of an XDM-defined metric that is supported by this channel.",
-        "meta:descriptionId": "channel##items##description##23601",
+        "meta:descriptionId": "channel##items##description##33061",
         "meta:xdmType": "string",
         "tagNumber": 1
       },
@@ -102,13 +102,13 @@
     "locationTypes": {
       "type": "array",
       "description": "The types of locations (virtual places) that this channel consists of and can deliver content to.",
-      "meta:descriptionId": "channel##xdm:locationTypes##description##5991",
+      "meta:descriptionId": "channel##xdm:locationTypes##description##91781",
       "meta:xdmType": "array",
       "items": {
         "type": "string",
         "format": "uri",
         "description": "The `@type` of an XDM-defined location (virtual place) that this channel can contain.",
-        "meta:descriptionId": "channel##items##description##60741",
+        "meta:descriptionId": "channel##items##description##42011",
         "meta:xdmType": "string",
         "tagNumber": 1
       },

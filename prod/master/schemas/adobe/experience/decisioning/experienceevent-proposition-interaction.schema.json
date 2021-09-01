@@ -7,6 +7,14 @@
   "meta:extensible": true,
   "description": "Captures information regarding an action taken for one or more prior propositions. Each decision has a unique ID that is sent back with an experience event. The decision is assumed to have contributed to the experience event and is now associated with it.",
   "meta:status": "stable",
+  "meta:titleId": [
+    "proposition-interaction##title##38171",
+    "identitymap##title##90811"
+  ],
+  "meta:descriptionId": [
+    "proposition-interaction##description##45571",
+    "identitymap##description##41821"
+  ],
   "meta:xdmType": "object",
   "meta:tags": {
     "industry": [
@@ -14,8 +22,6 @@
     ]
   },
   "meta:createdDate": "2020-08-10",
-  "meta:titleId": "identitymap##title##68521",
-  "meta:descriptionId": "identitymap##description##9091",
   "properties": {
     "identityMap": {
       "type": "object",
@@ -46,6 +52,8 @@
               "title": "Involved Propositions",
               "type": "array",
               "description": "An array of decision propositions that contributed to the experience event. The experience event is attributed (at least partially) to those prior decisions/propositions. An individual profile's proposition-response history is maintained with these decision identifiers.",
+              "meta:titleId": "proposition-interaction##https://ns.adobe.com/experience/decisioning/propositions##title##37861",
+              "meta:descriptionId": "proposition-interaction##https://ns.adobe.com/experience/decisioning/propositions##description##42611",
               "meta:xdmType": "array",
               "items": {
                 "$ref": "proposition-interaction-detail.schema.json",

@@ -7,6 +7,8 @@
   "title": "Decision Option Contents",
   "description": "Content items to render the decision item in different contexts. A single decision option can have multiple contents variants. Content is information that is directed towards an audience for consumption in a (digital) experience. Content is delivered through channels into a particular placement.",
   "meta:status": "stable",
+  "meta:titleId": "contents##title##33361",
+  "meta:descriptionId": "contents##description##19301",
   "meta:xdmType": "object",
   "properties": {
     "_experience": {
@@ -21,6 +23,8 @@
               "type": "array",
               "title": "Content Details",
               "description": "Content items to render the decision item in different contexts. A single decision option can have multiple contents variants. Content is information that is directed towards an audience for consumption in a (digital) experience. Content is delivered through channels into a particular placement.",
+              "meta:titleId": "contents##https://ns.adobe.com/experience/decisioning/contents##title##31901",
+              "meta:descriptionId": "contents##https://ns.adobe.com/experience/decisioning/contents##description##96051",
               "meta:xdmType": "array",
               "items": {
                 "$ref": "content-details.schema.json",

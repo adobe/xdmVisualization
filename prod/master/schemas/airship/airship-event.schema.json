@@ -10,22 +10,22 @@
     "stable"
   ],
   "meta:titleId": [
-    "airship-event##title",
-    "identitymap##title##68521",
-    "external-source-system-audit-details##title##25871",
-    "experienceevent-channel##title##22641",
-    "experienceevent-environment-details##title##14621",
-    "experienceevent-application##title##45651",
-    "device##title##84311"
+    "airship-event##title##37921",
+    "identitymap##title##90811",
+    "external-source-system-audit-details##title##88991",
+    "experienceevent-channel##title##21951",
+    "experienceevent-environment-details##title##62031",
+    "experienceevent-application##title##36001",
+    "device##title##6881"
   ],
   "meta:descriptionId": [
-    "airship-event##description",
-    "identitymap##description##9091",
-    "external-source-system-audit-details##description##77561",
-    "experienceevent-channel##description##26591",
-    "experienceevent-environment-details##description##15021",
-    "experienceevent-application##description##84301",
-    "device##description##3031"
+    "airship-event##description##9741",
+    "identitymap##description##41821",
+    "external-source-system-audit-details##description##98601",
+    "experienceevent-channel##description##17431",
+    "experienceevent-environment-details##description##46401",
+    "experienceevent-application##description##93521",
+    "device##description##69951"
   ],
   "meta:xdmType": "object",
   "meta:tags": {
@@ -44,8 +44,8 @@
           "title": "Event Offset Id",
           "type": "string",
           "description": "An identifier that represents the events location in the Airship event stream and can be used for troubleshooting or handling duplicate events.",
-          "meta:titleId": "airship-event##airship:offsetID##title",
-          "meta:descriptionId": "airship-event##airship:offsetID##description",
+          "meta:titleId": "airship-event##airship:offsetID##title##20701",
+          "meta:descriptionId": "airship-event##airship:offsetID##description##17421",
           "meta:xdmType": "string",
           "meta:xdmField": "airship:offsetID",
           "tagNumber": 1
@@ -54,8 +54,8 @@
           "title": "Airship Device",
           "description": "Contains Airship specific device attributes.",
           "type": "object",
-          "meta:titleId": "airship-event##airship:device##title",
-          "meta:descriptionId": "airship-event##airship:device##description",
+          "meta:titleId": "airship-event##airship:device##title##16161",
+          "meta:descriptionId": "airship-event##airship:device##description##70801",
           "meta:xdmType": "object",
           "properties": {
             "_airship": {
@@ -66,8 +66,8 @@
                   "title": "Airship Device Attributes",
                   "description": "Attributes specific to devices in Airship.",
                   "type": "object",
-                  "meta:titleId": "airship-event##airship:attributes##title",
-                  "meta:descriptionId": "airship-event##airship:attributes##description",
+                  "meta:titleId": "airship-event##airship:attributes##title##22751",
+                  "meta:descriptionId": "airship-event##airship:attributes##description##99491",
                   "meta:xdmType": "object",
                   "properties": {
                     "_airship": {
@@ -78,8 +78,8 @@
                           "title": "Airship Locale Variant",
                           "description": "The language locale variant if one is reported for the device..",
                           "type": "string",
-                          "meta:titleId": "airship-event##airship:localeVariant##title",
-                          "meta:descriptionId": "airship-event##airship:localeVariant##description",
+                          "meta:titleId": "airship-event##airship:localeVariant##title##16871",
+                          "meta:descriptionId": "airship-event##airship:localeVariant##description##44721",
                           "meta:xdmType": "string",
                           "meta:xdmField": "airship:localeVariant",
                           "tagNumber": 1
@@ -88,8 +88,8 @@
                           "title": "Airship SDK Version",
                           "description": "The version of the Airship SDK used in the app.",
                           "type": "string",
-                          "meta:titleId": "airship-event##airship:uaSdkVersion##title",
-                          "meta:descriptionId": "airship-event##airship:uaSdkVersion##description",
+                          "meta:titleId": "airship-event##airship:uaSdkVersion##title##36071",
+                          "meta:descriptionId": "airship-event##airship:uaSdkVersion##description##60321",
                           "meta:xdmType": "string",
                           "meta:xdmField": "airship:uaSdkVersion",
                           "tagNumber": 2
@@ -112,8 +112,8 @@
           "title": "Airship Event Body",
           "description": "Contains Airship specific event body fields.",
           "type": "object",
-          "meta:titleId": "airship-event##airship:body##title",
-          "meta:descriptionId": "airship-event##airship:body##description",
+          "meta:titleId": "airship-event##airship:body##title##98991",
+          "meta:descriptionId": "airship-event##airship:body##description##60611",
           "meta:xdmType": "object",
           "properties": {
             "_airship": {
@@ -124,8 +124,8 @@
                   "title": "Push ID",
                   "description": "A unique identifier for a push operation.",
                   "type": "string",
-                  "meta:titleId": "airship-event##airship:pushID##title",
-                  "meta:descriptionId": "airship-event##airship:pushID##description",
+                  "meta:titleId": "airship-event##airship:pushID##title##11691",
+                  "meta:descriptionId": "airship-event##airship:pushID##description##2011",
                   "meta:xdmType": "string",
                   "meta:xdmField": "airship:pushID",
                   "tagNumber": 1
@@ -134,8 +134,8 @@
                   "title": "Airship Group ID",
                   "description": "Identifies a push delivered over an interval of time, e.g. multiple push_ids as part of the fulfillment of an automation or a push-to-local-time specification.",
                   "type": "string",
-                  "meta:titleId": "airship-event##airship:groupID##title",
-                  "meta:descriptionId": "airship-event##airship:groupID##description",
+                  "meta:titleId": "airship-event##airship:groupID##title##30291",
+                  "meta:descriptionId": "airship-event##airship:groupID##description##14101",
                   "meta:xdmType": "string",
                   "meta:xdmField": "airship:groupID",
                   "tagNumber": 2
@@ -144,8 +144,8 @@
                   "title": "Airship Variant ID",
                   "description": "The ID of the variant that a push is associated with, if the push was a part of an A/B test (experiment).",
                   "type": "string",
-                  "meta:titleId": "airship-event##airship:variantID##title",
-                  "meta:descriptionId": "airship-event##airship:variantID##description",
+                  "meta:titleId": "airship-event##airship:variantID##title##98791",
+                  "meta:descriptionId": "airship-event##airship:variantID##description##38901",
                   "meta:xdmType": "string",
                   "meta:xdmField": "airship:variantID",
                   "tagNumber": 3
@@ -154,8 +154,8 @@
                   "title": "Alerting Push",
                   "description": "If true, the send event was alerting. Alerting send event has notification text, badge, or sound.",
                   "type": "boolean",
-                  "meta:titleId": "airship-event##airship:alerting##title",
-                  "meta:descriptionId": "airship-event##airship:alerting##description",
+                  "meta:titleId": "airship-event##airship:alerting##title##37641",
+                  "meta:descriptionId": "airship-event##airship:alerting##description##28031",
                   "meta:xdmType": "boolean",
                   "meta:xdmField": "airship:alerting",
                   "tagNumber": 4
@@ -164,8 +164,8 @@
                   "title": "Triggering Push",
                   "description": "The specific push notification details associated with an event. An associated push helps you trace an event to the original notification or operation.An associated push object may specify a `time`, if the push was a singular operation sent at a defined time. Otherwise, the object will include a `group_id` if the push was sent at a relative time (`best_time` or `local_time`) an automation pipeline, or another operation resulting in multiple `push_id`s.",
                   "type": "object",
-                  "meta:titleId": "airship-event##airship:triggeringPush##title",
-                  "meta:descriptionId": "airship-event##airship:triggeringPush##description",
+                  "meta:titleId": "airship-event##airship:triggeringPush##title##55441",
+                  "meta:descriptionId": "airship-event##airship:triggeringPush##description##15141",
                   "meta:xdmType": "object",
                   "properties": {
                     "_airship": {
@@ -176,8 +176,8 @@
                           "title": "Airship Campaigns",
                           "description": "An object listing the campaigns a push specification is associated with. The campaigns object includes an array of categories that must have between 1 and 10 elements, each of which is a string with a 64-byte limit.",
                           "type": "object",
-                          "meta:titleId": "airship-event##airship:campaign##title",
-                          "meta:descriptionId": "airship-event##airship:campaign##description",
+                          "meta:titleId": "airship-event##airship:campaign##title##46711",
+                          "meta:descriptionId": "airship-event##airship:campaign##description##3761",
                           "meta:xdmType": "object",
                           "properties": {
                             "_airship": {
@@ -189,8 +189,8 @@
                                   "description": "An object listing the campaigns a push specification is associated with.",
                                   "type": "object",
                                   "isRequired": false,
-                                  "meta:titleId": "airship-event##airship:campaigns##title",
-                                  "meta:descriptionId": "airship-event##airship:campaigns##description",
+                                  "meta:titleId": "airship-event##airship:campaigns##title##73301",
+                                  "meta:descriptionId": "airship-event##airship:campaigns##description##28451",
                                   "meta:xdmType": "object",
                                   "properties": {
                                     "_airship": {
@@ -203,8 +203,8 @@
                                           "type": "array",
                                           "minItems": 1,
                                           "maxItems": 10,
-                                          "meta:titleId": "airship-event##airship:categories##title",
-                                          "meta:descriptionId": "airship-event##airship:categories##description",
+                                          "meta:titleId": "airship-event##airship:categories##title##46201",
+                                          "meta:descriptionId": "airship-event##airship:categories##description##92371",
                                           "meta:xdmType": "array",
                                           "items": {
                                             "type": "string",
@@ -233,8 +233,8 @@
                           "title": "Push ID",
                           "description": "A unique identifier for a push operation.",
                           "type": "string",
-                          "meta:titleId": "airship-event##airship:pushID##title",
-                          "meta:descriptionId": "airship-event##airship:pushID##description",
+                          "meta:titleId": "airship-event##airship:pushID##title##75051",
+                          "meta:descriptionId": "airship-event##airship:pushID##description##86151",
                           "meta:xdmType": "string",
                           "meta:xdmField": "airship:pushID",
                           "tagNumber": 2
@@ -243,8 +243,8 @@
                           "title": "Airship Group ID",
                           "description": "Identifies a push delivered over an interval of time, e.g. multiple push_ids as part of the fulfillment of an automation or a push-to-local-time specification.",
                           "type": "string",
-                          "meta:titleId": "airship-event##airship:groupID##title",
-                          "meta:descriptionId": "airship-event##airship:groupID##description",
+                          "meta:titleId": "airship-event##airship:groupID##title##44571",
+                          "meta:descriptionId": "airship-event##airship:groupID##description##16741",
                           "meta:xdmType": "string",
                           "meta:xdmField": "airship:groupID",
                           "tagNumber": 3
@@ -253,8 +253,8 @@
                           "title": "Airship Variant ID",
                           "description": "The ID of the variant that a push is associated with, if the push was a part of an A/B test (experiment).",
                           "type": "string",
-                          "meta:titleId": "airship-event##airship:variantID##title",
-                          "meta:descriptionId": "airship-event##airship:variantID##description",
+                          "meta:titleId": "airship-event##airship:variantID##title##39801",
+                          "meta:descriptionId": "airship-event##airship:variantID##description##47991",
                           "meta:xdmType": "string",
                           "meta:xdmField": "airship:variantID",
                           "tagNumber": 4
@@ -264,8 +264,8 @@
                           "description": "The UTC time when the push occurred.",
                           "type": "string",
                           "format": "date-time",
-                          "meta:titleId": "airship-event##airship:pushTime##title",
-                          "meta:descriptionId": "airship-event##airship:pushTime##description",
+                          "meta:titleId": "airship-event##airship:pushTime##title##75891",
+                          "meta:descriptionId": "airship-event##airship:pushTime##description##15231",
                           "meta:xdmType": "date-time",
                           "meta:xdmField": "airship:pushTime",
                           "tagNumber": 5
@@ -281,8 +281,8 @@
                   "title": "Last Delivered",
                   "description": "Identifies the last push notification the audience received before the event. Absent if the last push occurred more than 12 hours ago.",
                   "type": "object",
-                  "meta:titleId": "airship-event##airship:lastDelivered##title",
-                  "meta:descriptionId": "airship-event##airship:lastDelivered##description",
+                  "meta:titleId": "airship-event##airship:lastDelivered##title##56541",
+                  "meta:descriptionId": "airship-event##airship:lastDelivered##description##43141",
                   "meta:xdmType": "object",
                   "properties": {
                     "_airship": {
@@ -293,8 +293,8 @@
                           "title": "Airship Campaigns",
                           "description": "An object listing the campaigns a push specification is associated with. The campaigns object includes an array of categories that must have between 1 and 10 elements, each of which is a string with a 64-byte limit.",
                           "type": "object",
-                          "meta:titleId": "airship-event##airship:campaign##title",
-                          "meta:descriptionId": "airship-event##airship:campaign##description",
+                          "meta:titleId": "airship-event##airship:campaign##title##84011",
+                          "meta:descriptionId": "airship-event##airship:campaign##description##60871",
                           "meta:xdmType": "object",
                           "properties": {
                             "_airship": {
@@ -306,8 +306,8 @@
                                   "description": "An object listing the campaigns a push specification is associated with.",
                                   "type": "object",
                                   "isRequired": false,
-                                  "meta:titleId": "airship-event##airship:campaigns##title",
-                                  "meta:descriptionId": "airship-event##airship:campaigns##description",
+                                  "meta:titleId": "airship-event##airship:campaigns##title##57851",
+                                  "meta:descriptionId": "airship-event##airship:campaigns##description##72511",
                                   "meta:xdmType": "object",
                                   "properties": {
                                     "_airship": {
@@ -320,8 +320,8 @@
                                           "type": "array",
                                           "minItems": 1,
                                           "maxItems": 10,
-                                          "meta:titleId": "airship-event##airship:categories##title",
-                                          "meta:descriptionId": "airship-event##airship:categories##description",
+                                          "meta:titleId": "airship-event##airship:categories##title##78761",
+                                          "meta:descriptionId": "airship-event##airship:categories##description##60371",
                                           "meta:xdmType": "array",
                                           "items": {
                                             "type": "string",
@@ -350,8 +350,8 @@
                           "title": "Push ID",
                           "description": "A unique identifier for a push operation.",
                           "type": "string",
-                          "meta:titleId": "airship-event##airship:pushID##title",
-                          "meta:descriptionId": "airship-event##airship:pushID##description",
+                          "meta:titleId": "airship-event##airship:pushID##title##80961",
+                          "meta:descriptionId": "airship-event##airship:pushID##description##8521",
                           "meta:xdmType": "string",
                           "meta:xdmField": "airship:pushID",
                           "tagNumber": 2
@@ -360,8 +360,8 @@
                           "title": "Airship Group ID",
                           "description": "Identifies a push delivered over an interval of time, e.g. multiple push_ids as part of the fulfillment of an automation or a push-to-local-time specification.",
                           "type": "string",
-                          "meta:titleId": "airship-event##airship:groupID##title",
-                          "meta:descriptionId": "airship-event##airship:groupID##description",
+                          "meta:titleId": "airship-event##airship:groupID##title##901",
+                          "meta:descriptionId": "airship-event##airship:groupID##description##73991",
                           "meta:xdmType": "string",
                           "meta:xdmField": "airship:groupID",
                           "tagNumber": 3
@@ -370,8 +370,8 @@
                           "title": "Airship Variant ID",
                           "description": "The ID of the variant that a push is associated with, if the push was a part of an A/B test (experiment).",
                           "type": "string",
-                          "meta:titleId": "airship-event##airship:variantID##title",
-                          "meta:descriptionId": "airship-event##airship:variantID##description",
+                          "meta:titleId": "airship-event##airship:variantID##title##99741",
+                          "meta:descriptionId": "airship-event##airship:variantID##description##29781",
                           "meta:xdmType": "string",
                           "meta:xdmField": "airship:variantID",
                           "tagNumber": 4
@@ -381,8 +381,8 @@
                           "description": "The UTC time when the push occurred.",
                           "type": "string",
                           "format": "date-time",
-                          "meta:titleId": "airship-event##airship:pushTime##title",
-                          "meta:descriptionId": "airship-event##airship:pushTime##description",
+                          "meta:titleId": "airship-event##airship:pushTime##title##42441",
+                          "meta:descriptionId": "airship-event##airship:pushTime##description##57411",
                           "meta:xdmType": "date-time",
                           "meta:xdmField": "airship:pushTime",
                           "tagNumber": 5
@@ -398,8 +398,8 @@
                   "title": "Airship Campaigns",
                   "description": "An object listing the campaigns a push specification is associated with. The campaigns object includes an array of categories that must have between 1 and 10 elements, each of which is a string with a 64-byte limit.",
                   "type": "object",
-                  "meta:titleId": "airship-event##airship:campaign##title",
-                  "meta:descriptionId": "airship-event##airship:campaign##description",
+                  "meta:titleId": "airship-event##airship:campaign##title##73181",
+                  "meta:descriptionId": "airship-event##airship:campaign##description##72221",
                   "meta:xdmType": "object",
                   "properties": {
                     "_airship": {
@@ -411,8 +411,8 @@
                           "description": "An object listing the campaigns a push specification is associated with.",
                           "type": "object",
                           "isRequired": false,
-                          "meta:titleId": "airship-event##airship:campaigns##title",
-                          "meta:descriptionId": "airship-event##airship:campaigns##description",
+                          "meta:titleId": "airship-event##airship:campaigns##title##19011",
+                          "meta:descriptionId": "airship-event##airship:campaigns##description##78961",
                           "meta:xdmType": "object",
                           "properties": {
                             "_airship": {
@@ -425,8 +425,8 @@
                                   "type": "array",
                                   "minItems": 1,
                                   "maxItems": 10,
-                                  "meta:titleId": "airship-event##airship:categories##title",
-                                  "meta:descriptionId": "airship-event##airship:categories##description",
+                                  "meta:titleId": "airship-event##airship:categories##title##40711",
+                                  "meta:descriptionId": "airship-event##airship:categories##description##26861",
                                   "meta:xdmType": "array",
                                   "items": {
                                     "type": "string",
@@ -471,8 +471,8 @@
                     "opted_out",
                     "uninstall"
                   ],
-                  "meta:titleId": "airship-event##airship:complianceEventType##title",
-                  "meta:descriptionId": "airship-event##airship:complianceEventType##description",
+                  "meta:titleId": "airship-event##airship:complianceEventType##title##26101",
+                  "meta:descriptionId": "airship-event##airship:complianceEventType##description##56771",
                   "meta:xdmType": "string",
                   "meta:xdmField": "airship:complianceEventType",
                   "tagNumber": 8
@@ -481,8 +481,8 @@
                   "title": "Compliance Event Properties",
                   "description": "Additional properties for a compliance event.",
                   "type": "object",
-                  "meta:titleId": "airship-event##airship:complianceProperties##title",
-                  "meta:descriptionId": "airship-event##airship:complianceProperties##description",
+                  "meta:titleId": "airship-event##airship:complianceProperties##title##66911",
+                  "meta:descriptionId": "airship-event##airship:complianceProperties##description##28751",
                   "meta:xdmType": "object",
                   "properties": {
                     "_airship": {
@@ -497,8 +497,8 @@
                             "unsubscribe",
                             "commercial"
                           ],
-                          "meta:titleId": "airship-event##airship:messageType##title",
-                          "meta:descriptionId": "airship-event##airship:messageType##description",
+                          "meta:titleId": "airship-event##airship:messageType##title##79981",
+                          "meta:descriptionId": "airship-event##airship:messageType##description##49551",
                           "meta:xdmType": "string",
                           "meta:xdmField": "airship:messageType",
                           "tagNumber": 1
@@ -512,8 +512,8 @@
                             "update",
                             "unsubscribe"
                           ],
-                          "meta:titleId": "airship-event##airship:registrationType##title",
-                          "meta:descriptionId": "airship-event##airship:registrationType##description",
+                          "meta:titleId": "airship-event##airship:registrationType##title##4131",
+                          "meta:descriptionId": "airship-event##airship:registrationType##description##49101",
                           "meta:xdmType": "string",
                           "meta:xdmField": "airship:registrationType",
                           "tagNumber": 2
@@ -523,8 +523,8 @@
                           "description": "The date and time when the user opted into commercial email messages.",
                           "type": "string",
                           "format": "date-time",
-                          "meta:titleId": "airship-event##airship:commercialOptedIn##title",
-                          "meta:descriptionId": "airship-event##airship:commercialOptedIn##description",
+                          "meta:titleId": "airship-event##airship:commercialOptedIn##title##60001",
+                          "meta:descriptionId": "airship-event##airship:commercialOptedIn##description##92861",
                           "meta:xdmType": "date-time",
                           "meta:xdmField": "airship:commercialOptedIn",
                           "tagNumber": 3
@@ -533,8 +533,8 @@
                           "title": "Bounce Class",
                           "description": "The bounce classification as provided by Airship email partners.",
                           "type": "number",
-                          "meta:titleId": "airship-event##airship:bounceClass##title",
-                          "meta:descriptionId": "airship-event##airship:bounceClass##description",
+                          "meta:titleId": "airship-event##airship:bounceClass##title##34081",
+                          "meta:descriptionId": "airship-event##airship:bounceClass##description##43931",
                           "meta:xdmType": "number",
                           "meta:xdmField": "airship:bounceClass",
                           "tagNumber": 4
@@ -543,8 +543,8 @@
                           "title": "Bounce Email Address",
                           "description": "The email address that bounced.",
                           "type": "string",
-                          "meta:titleId": "airship-event##airship:bounceEmail##title",
-                          "meta:descriptionId": "airship-event##airship:bounceEmail##description",
+                          "meta:titleId": "airship-event##airship:bounceEmail##title##26371",
+                          "meta:descriptionId": "airship-event##airship:bounceEmail##description##17051",
                           "meta:xdmType": "string",
                           "meta:xdmField": "airship:bounceEmail",
                           "tagNumber": 5
@@ -553,8 +553,8 @@
                           "title": "Bounce Sender",
                           "description": "The address that the bounced email came from (typically the sender address for your project in Airship).",
                           "type": "string",
-                          "meta:titleId": "airship-event##airship:bounceSender##title",
-                          "meta:descriptionId": "airship-event##airship:bounceSender##description",
+                          "meta:titleId": "airship-event##airship:bounceSender##title##34361",
+                          "meta:descriptionId": "airship-event##airship:bounceSender##description##69861",
                           "meta:xdmType": "string",
                           "meta:xdmField": "airship:bounceSender",
                           "tagNumber": 6
@@ -563,8 +563,8 @@
                           "title": "Bounce Subject",
                           "description": "The subject line of the bounced email.",
                           "type": "string",
-                          "meta:titleId": "airship-event##airship:bounceSubject##title",
-                          "meta:descriptionId": "airship-event##airship:bounceSubject##description",
+                          "meta:titleId": "airship-event##airship:bounceSubject##title##38851",
+                          "meta:descriptionId": "airship-event##airship:bounceSubject##description##49491",
                           "meta:xdmType": "string",
                           "meta:xdmField": "airship:bounceSubject",
                           "tagNumber": 7
@@ -584,8 +584,8 @@
                     "enter",
                     "exit"
                   ],
-                  "meta:titleId": "airship-event##airship:regionAction##title",
-                  "meta:descriptionId": "airship-event##airship:regionAction##description",
+                  "meta:titleId": "airship-event##airship:regionAction##title##19401",
+                  "meta:descriptionId": "airship-event##airship:regionAction##description##32271",
                   "meta:xdmType": "string",
                   "meta:xdmField": "airship:regionAction",
                   "tagNumber": 10
@@ -594,8 +594,8 @@
                   "title": "Region/Geofence Name",
                   "description": "A friendly name for the region or geofence; may be provided from a third-party location partner.",
                   "type": "string",
-                  "meta:titleId": "airship-event##airship:regionName##title",
-                  "meta:descriptionId": "airship-event##airship:regionName##description",
+                  "meta:titleId": "airship-event##airship:regionName##title##25001",
+                  "meta:descriptionId": "airship-event##airship:regionName##description##41541",
                   "meta:xdmType": "string",
                   "meta:xdmField": "airship:regionName",
                   "tagNumber": 11
@@ -604,8 +604,8 @@
                   "title": "Region/Geofence Identifier",
                   "description": "The unique region identifier from the originating system or location partner.",
                   "type": "string",
-                  "meta:titleId": "airship-event##airship:regionID##title",
-                  "meta:descriptionId": "airship-event##airship:regionID##description",
+                  "meta:titleId": "airship-event##airship:regionID##title##96411",
+                  "meta:descriptionId": "airship-event##airship:regionID##description##47601",
                   "meta:xdmType": "string",
                   "meta:xdmField": "airship:regionID",
                   "tagNumber": 12
@@ -641,8 +641,8 @@
       "title": "External Source System Audit Properties",
       "$ref": "../datatypes/auditing/external-source-system-audit.schema.json",
       "description": "Audit attributes for external sources.",
-      "meta:titleId": "external-source-system-audit-details##xdm:extSourceSystemAudit##title##65301",
-      "meta:descriptionId": "external-source-system-audit-details##xdm:extSourceSystemAudit##description##99451",
+      "meta:titleId": "external-source-system-audit-details##xdm:extSourceSystemAudit##title##88841",
+      "meta:descriptionId": "external-source-system-audit-details##xdm:extSourceSystemAudit##description##28131",
       "meta:xdmField": "xdm:extSourceSystemAudit",
       "tagNumber": 3
     },
@@ -650,8 +650,8 @@
       "title": "Experience channel",
       "description": "Experience channel related to the ExperienceEvent.",
       "$ref": "../datatypes/channels/channel.schema.json",
-      "meta:titleId": "experienceevent-channel##xdm:channel##title##10301",
-      "meta:descriptionId": "experienceevent-channel##xdm:channel##description##87891",
+      "meta:titleId": "experienceevent-channel##xdm:channel##title##98461",
+      "meta:descriptionId": "experienceevent-channel##xdm:channel##description##29501",
       "meta:xdmField": "xdm:channel",
       "tagNumber": 4
     },
@@ -659,8 +659,8 @@
       "title": "Environment",
       "$ref": "../datatypes/environment.schema.json",
       "description": "Information about the surrounding situation the event observation occurred in, specifically detailing transitory information such as the network or software versions.",
-      "meta:titleId": "experienceevent-environment-details##xdm:environment##title##57511",
-      "meta:descriptionId": "experienceevent-environment-details##xdm:environment##description##42621",
+      "meta:titleId": "experienceevent-environment-details##xdm:environment##title##51051",
+      "meta:descriptionId": "experienceevent-environment-details##xdm:environment##description##68071",
       "meta:xdmField": "xdm:environment",
       "tagNumber": 5
     },
@@ -668,8 +668,8 @@
       "title": "Device",
       "$ref": "../datatypes/device.schema.json",
       "description": "An identified device, application or device browser instance that is trackable across sessions, normally by cookies.",
-      "meta:titleId": "experienceevent-environment-details##xdm:device##title##31301",
-      "meta:descriptionId": "experienceevent-environment-details##xdm:device##description##51671",
+      "meta:titleId": "experienceevent-environment-details##xdm:device##title##96081",
+      "meta:descriptionId": "experienceevent-environment-details##xdm:device##description##29621",
       "meta:xdmField": "xdm:device",
       "tagNumber": 6
     },
@@ -677,17 +677,17 @@
       "title": "Place context",
       "$ref": "../datatypes/placecontext.schema.json",
       "description": "The transient circumstances related to the observation. Examples include locale specific information such as weather, local time, traffic, day of the week, workday vs. holiday, and working hours.",
-      "meta:titleId": "experienceevent-environment-details##xdm:placeContext##title##87021",
-      "meta:descriptionId": "experienceevent-environment-details##xdm:placeContext##description##71741",
+      "meta:titleId": "experienceevent-environment-details##xdm:placeContext##title##83141",
+      "meta:descriptionId": "experienceevent-environment-details##xdm:placeContext##description##71761",
       "meta:xdmField": "xdm:placeContext",
       "tagNumber": 7
     },
     "application": {
       "title": "Application",
       "$ref": "../datatypes/application.schema.json",
-      "description": "Captures application information including the name of the application, app version, installs, launches, crashes, and closures. It could be either the application targeted by the event like the send of a push notification or the application originating the event such as a click, or a login.",
-      "meta:titleId": "experienceevent-application##xdm:application##title##63341",
-      "meta:descriptionId": "experienceevent-application##xdm:application##description##14751",
+      "description": "This mixin is used to capture application information related to an ExperienceEvent, including the name of the application, app version, installs, launches, crashes, and closures. It could be either the application targeted by the event like the send of a push notification or the application originating the event such as a click, or a login.",
+      "meta:titleId": "experienceevent-application##xdm:application##title##97651",
+      "meta:descriptionId": "experienceevent-application##xdm:application##description##28031",
       "meta:xdmField": "xdm:application",
       "tagNumber": 8
     },
@@ -695,8 +695,8 @@
       "title": "Type identifier",
       "type": "string",
       "description": "An identifier for the device. This may be an identifier from 'DeviceAtlas' or another service that identifies the hardware that is being used.",
-      "meta:titleId": "device##xdm:typeID##title##96801",
-      "meta:descriptionId": "device##xdm:typeID##description##26841",
+      "meta:titleId": "device##xdm:typeID##title##72541",
+      "meta:descriptionId": "device##xdm:typeID##description##38231",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:typeID",
       "tagNumber": 9
@@ -706,8 +706,8 @@
       "type": "string",
       "format": "uri",
       "description": "The namespace of the service that is used to identify the device type.",
-      "meta:titleId": "device##xdm:typeIDService##title##26251",
-      "meta:descriptionId": "device##xdm:typeIDService##description##40341",
+      "meta:titleId": "device##xdm:typeIDService##title##13371",
+      "meta:descriptionId": "device##xdm:typeIDService##description##9701",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:typeIDService",
       "tagNumber": 10
@@ -716,8 +716,8 @@
       "title": "Type",
       "type": "string",
       "description": "Type of device being tracked.",
-      "meta:titleId": "device##xdm:type##title##2841",
-      "meta:descriptionId": "device##xdm:type##description##31551",
+      "meta:titleId": "device##xdm:type##title##28851",
+      "meta:descriptionId": "device##xdm:type##description##29801",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:type",
       "tagNumber": 11
@@ -726,8 +726,8 @@
       "title": "Manufacturer",
       "type": "string",
       "description": "The name of the organization who owns the design and creation of the device, for example, 'Apple' is the manufacturer of the iPhone.",
-      "meta:titleId": "device##xdm:manufacturer##title##87061",
-      "meta:descriptionId": "device##xdm:manufacturer##description##2981",
+      "meta:titleId": "device##xdm:manufacturer##title##97881",
+      "meta:descriptionId": "device##xdm:manufacturer##description##5531",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:manufacturer",
       "tagNumber": 12
@@ -736,8 +736,8 @@
       "title": "Model",
       "type": "string",
       "description": "The name of the model for the device. This is the common, human-readable, or marketing name for the device. For example, the 'iPhone 6S' is a particular model of mobile phone.",
-      "meta:titleId": "device##xdm:model##title##9441",
-      "meta:descriptionId": "device##xdm:model##description##12951",
+      "meta:titleId": "device##xdm:model##title##21341",
+      "meta:descriptionId": "device##xdm:model##description##2541",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:model",
       "tagNumber": 13
@@ -746,8 +746,8 @@
       "title": "Model number",
       "type": "string",
       "description": "The unique model number designation assigned by the manufacturer for this device. Model numbers are not versions, but unique identifiers that identify a particular model configuration. While the model for a particular phone might be 'iPhone 6S' the model number would be 'A1633', or 'A1634' based on configuration at the time of sale.",
-      "meta:titleId": "device##xdm:modelNumber##title##15381",
-      "meta:descriptionId": "device##xdm:modelNumber##description##70421",
+      "meta:titleId": "device##xdm:modelNumber##title##12501",
+      "meta:descriptionId": "device##xdm:modelNumber##description##36441",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:modelNumber",
       "tagNumber": 14
@@ -756,8 +756,8 @@
       "title": "Screen height",
       "type": "integer",
       "description": "The number of vertical pixels of the device's active display in the default orientation.",
-      "meta:titleId": "device##xdm:screenHeight##title##28801",
-      "meta:descriptionId": "device##xdm:screenHeight##description##64291",
+      "meta:titleId": "device##xdm:screenHeight##title##17711",
+      "meta:descriptionId": "device##xdm:screenHeight##description##7571",
       "meta:xdmType": "int",
       "meta:xdmField": "xdm:screenHeight",
       "tagNumber": 15
@@ -766,8 +766,8 @@
       "title": "Screen width",
       "type": "integer",
       "description": "The number of horizontal pixels of the device's active display in the default orientation.",
-      "meta:titleId": "device##xdm:screenWidth##title##89961",
-      "meta:descriptionId": "device##xdm:screenWidth##description##43411",
+      "meta:titleId": "device##xdm:screenWidth##title##82981",
+      "meta:descriptionId": "device##xdm:screenWidth##description##43911",
       "meta:xdmType": "int",
       "meta:xdmField": "xdm:screenWidth",
       "tagNumber": 16
@@ -776,8 +776,8 @@
       "title": "Color depth",
       "type": "integer",
       "description": "The number of colors the display is able to represent.",
-      "meta:titleId": "device##xdm:colorDepth##title##72311",
-      "meta:descriptionId": "device##xdm:colorDepth##description##28511",
+      "meta:titleId": "device##xdm:colorDepth##title##63201",
+      "meta:descriptionId": "device##xdm:colorDepth##description##72471",
       "meta:xdmType": "int",
       "meta:xdmField": "xdm:colorDepth",
       "tagNumber": 17
@@ -790,8 +790,8 @@
         "portrait",
         "landscape"
       ],
-      "meta:titleId": "device##xdm:screenOrientation##title##12661",
-      "meta:descriptionId": "device##xdm:screenOrientation##description##45911",
+      "meta:titleId": "device##xdm:screenOrientation##title##87341",
+      "meta:descriptionId": "device##xdm:screenOrientation##description##5211",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:screenOrientation",
       "tagNumber": 18
@@ -800,8 +800,8 @@
       "title": "Background Push Enabled Flag",
       "type": "boolean",
       "description": "For devices like mobile , this tracks the system background push enabled permision status.",
-      "meta:titleId": "device##xdm:isBackgroundPushEnabled##title##29071",
-      "meta:descriptionId": "device##xdm:isBackgroundPushEnabled##description##45771",
+      "meta:titleId": "device##xdm:isBackgroundPushEnabled##title##34541",
+      "meta:descriptionId": "device##xdm:isBackgroundPushEnabled##description##63031",
       "meta:xdmType": "boolean",
       "meta:xdmField": "xdm:isBackgroundPushEnabled",
       "tagNumber": 19
@@ -810,8 +810,8 @@
       "title": "Location Enabled Flag",
       "type": "boolean",
       "description": "Indicates whether or not the device has location services enabled.",
-      "meta:titleId": "device##xdm:isLocationEnabled##title##73631",
-      "meta:descriptionId": "device##xdm:isLocationEnabled##description##2511",
+      "meta:titleId": "device##xdm:isLocationEnabled##title##88291",
+      "meta:descriptionId": "device##xdm:isLocationEnabled##description##89201",
       "meta:xdmType": "boolean",
       "meta:xdmField": "xdm:isLocationEnabled",
       "tagNumber": 20
@@ -827,8 +827,8 @@
         "FOREGROUND_ALLOWED",
         "UNPROMPTED"
       ],
-      "meta:titleId": "device##xdm:locationPermission##title##58011",
-      "meta:descriptionId": "device##xdm:locationPermission##description##70851",
+      "meta:titleId": "device##xdm:locationPermission##title##6511",
+      "meta:descriptionId": "device##xdm:locationPermission##description##36201",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:locationPermission",
       "tagNumber": 21
@@ -837,8 +837,8 @@
       "title": "Push Opt In Flag",
       "type": "boolean",
       "description": "Indicates whether or not the device opted-in to receive push notifications.",
-      "meta:titleId": "device##xdm:isPushOptIn##title##24681",
-      "meta:descriptionId": "device##xdm:isPushOptIn##description##17061",
+      "meta:titleId": "device##xdm:isPushOptIn##title##24411",
+      "meta:descriptionId": "device##xdm:isPushOptIn##description##33931",
       "meta:xdmType": "boolean",
       "meta:xdmField": "xdm:isPushOptIn",
       "tagNumber": 22

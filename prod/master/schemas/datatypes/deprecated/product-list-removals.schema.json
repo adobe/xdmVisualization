@@ -11,12 +11,12 @@
   ],
   "meta:createdDate": "2020-08-10",
   "meta:titleId": [
-    "product-list-removals##title##13491",
-    "metricdefinition##title##1451"
+    "product-list-removals##title##21321",
+    "metricdefinition##title##28671"
   ],
   "meta:descriptionId": [
-    "product-list-removals##description##5891",
-    "metricdefinition##description##34591"
+    "product-list-removals##description##20601",
+    "metricdefinition##description##96461"
   ],
   "meta:xdmType": "object",
   "properties": {
@@ -25,8 +25,8 @@
       "const": "xdm:productListRemovals",
       "description": "The unique identifier of this metric.",
       "meta:descriptionId": [
-        "product-list-removals##@id##description##46691",
-        "metricdefinition##@id##description##54541"
+        "product-list-removals##@id##description##89221",
+        "metricdefinition##@id##description##44171"
       ],
       "meta:xdmType": "string",
       "format": "uri-reference",
@@ -42,8 +42,8 @@
           "const": "commerce metric: productListRemovals",
           "description": "The human-readable name of the metric. The name can be used in user interfaces and does not have to be unique.",
           "meta:descriptionId": [
-            "product-list-removals##schema:name##description##18761",
-            "metricdefinition##schema:name##description##81811"
+            "product-list-removals##schema:name##description##58811",
+            "metricdefinition##schema:name##description##52471"
           ],
           "meta:xdmType": "string",
           "meta:xdmField": "schema:name",
@@ -60,8 +60,8 @@
       "description": "How to take measures of this metric.",
       "const": "count",
       "meta:descriptionId": [
-        "product-list-removals##xdm:measurement##description##20581",
-        "metricdefinition##xdm:measurement##description##90861"
+        "product-list-removals##xdm:measurement##description##11541",
+        "metricdefinition##xdm:measurement##description##34121"
       ],
       "meta:xdmType": "string",
       "examples": [
@@ -83,7 +83,7 @@
         "s",
         "USD"
       ],
-      "meta:descriptionId": "metricdefinition##xdm:unit##description##50321",
+      "meta:descriptionId": "metricdefinition##xdm:unit##description##62961",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:unit",
       "tagNumber": 4

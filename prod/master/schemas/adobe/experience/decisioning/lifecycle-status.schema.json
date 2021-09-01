@@ -7,6 +7,8 @@
   "title": "Decision Option Lifecycle Status",
   "description": "Lifecycle status allows user workflows to be conducted with offers. The status may affect where an offer is visible or considered relevant. Status changes are driven by the clients or services that use offers.",
   "meta:status": "stable",
+  "meta:titleId": "lifecycle-status##title##73401",
+  "meta:descriptionId": "lifecycle-status##description##67561",
   "meta:xdmType": "object",
   "properties": {
     "_experience": {
@@ -29,6 +31,8 @@
                 "archived"
               ],
               "default": "draft",
+              "meta:titleId": "lifecycle-status##https://ns.adobe.com/experience/decisioning/lifecycleStatus##title##11911",
+              "meta:descriptionId": "lifecycle-status##https://ns.adobe.com/experience/decisioning/lifecycleStatus##description##34741",
               "meta:xdmType": "string",
               "meta:xdmField": "https://ns.adobe.com/experience/decisioning/lifecycleStatus",
               "tagNumber": 1

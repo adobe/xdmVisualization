@@ -7,16 +7,24 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:status": "stable",
+  "meta:titleId": [
+    "adcloud-profile##title##39201",
+    "profile-segmentation##title##98301",
+    "profile-all##title##27501"
+  ],
+  "meta:descriptionId": [
+    "adcloud-profile##description##721",
+    "profile-segmentation##description##95051",
+    "profile-all##description##1861"
+  ],
   "meta:xdmType": "object",
   "meta:createdDate": "2020-08-10",
-  "meta:titleId": "profile-segmentation##title##80761",
-  "meta:descriptionId": "profile-segmentation##description##221",
   "properties": {
     "segmentMembership": {
       "title": "Segment membership map",
       "type": "object",
       "meta:xdmType": "map",
-      "meta:titleId": "profile-segmentation##xdm:segmentMembership##title##22441",
+      "meta:titleId": "profile-segmentation##xdm:segmentMembership##title##24061",
       "meta:xdmField": "xdm:segmentMembership",
       "tagNumber": 2,
       "properties": {
@@ -24,7 +32,7 @@
           "title": "Segment membership per namespace",
           "type": "object",
           "meta:xdmType": "map",
-          "meta:titleId": "profile-segmentation##additionalProperties##title##3791",
+          "meta:titleId": "profile-segmentation##additionalProperties##title##73981",
           "tagNumber": 1,
           "properties": {
             "mapObj": {
@@ -39,6 +47,8 @@
       "title": "Synchronized Segments",
       "type": "array",
       "description": "List of search retargeting entities that have been synced with the Adobe Advertising Cloud partner to build audiences on the platform, e.g. RLSA for Google, WCA for Facebook.",
+      "meta:titleId": "profile-all##xdm:syncedRemarketingAudiences##title##3761",
+      "meta:descriptionId": "profile-all##xdm:syncedRemarketingAudiences##description##69521",
       "meta:xdmType": "array",
       "items": {
         "$ref": "adcloud/syncedremarketingaudience.schema.json",

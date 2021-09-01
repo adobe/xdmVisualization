@@ -8,8 +8,8 @@
   "description": "Allows to modify the \"title\" and \"description\" values of the core library schema fields. UI can use these to show a more friendly name for a standard field or to only show fields that have friendly names.",
   "meta:status": "stable",
   "meta:createdDate": "2020-08-10",
-  "meta:titleId": "alternateDisplayInfo##title##31611",
-  "meta:descriptionId": "alternateDisplayInfo##description##11081",
+  "meta:titleId": "alternateDisplayInfo##title##66501",
+  "meta:descriptionId": "alternateDisplayInfo##description##60941",
   "meta:xdmType": "string",
   "properties": {
     "_id": {
@@ -17,8 +17,8 @@
       "type": "string",
       "format": "uri-reference",
       "description": "The unique identifier for the schema descriptor. This property is required when the descriptor is defined outside of the applicable schema, but is optional when applied via 'meta:descriptors'.",
-      "meta:titleId": "schemadescriptor##@id##title##5801",
-      "meta:descriptionId": "schemadescriptor##@id##description##83201",
+      "meta:titleId": "schemadescriptor##@id##title##10581",
+      "meta:descriptionId": "schemadescriptor##@id##description##77541",
       "meta:xdmType": "string",
       "meta:xdmField": "@id",
       "tagNumber": 1
@@ -28,10 +28,10 @@
       "type": "string",
       "description": "The type of descriptor this object represents.",
       "meta:titleId": [
-        "schemadescriptor##@type##title##53561",
-        "alternateDisplayInfo##@type##title##91231"
+        "schemadescriptor##@type##title##15981",
+        "alternateDisplayInfo##@type##title##71461"
       ],
-      "meta:descriptionId": "schemadescriptor##@type##description##49401",
+      "meta:descriptionId": "schemadescriptor##@type##description##6141",
       "meta:xdmType": "string",
       "const": "xdm:alternateDisplayInfo",
       "meta:xdmField": "@type",
@@ -42,8 +42,8 @@
       "type": "string",
       "format": "uri",
       "description": "The source schema this descriptor applies to. This property is required when the descriptor is defined outside of the applicable schema, but is optional when applied via 'meta:descriptors'",
-      "meta:titleId": "schemadescriptor##xdm:sourceSchema##title##67791",
-      "meta:descriptionId": "schemadescriptor##xdm:sourceSchema##description##83241",
+      "meta:titleId": "schemadescriptor##xdm:sourceSchema##title##68671",
+      "meta:descriptionId": "schemadescriptor##xdm:sourceSchema##description##98211",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:sourceSchema",
       "tagNumber": 3
@@ -51,8 +51,8 @@
     "sourceProperty": {
       "title": "Source Property",
       "description": "When present, the property of the source schema to which this descriptor applies. This value is a JSON Pointer, applied to an instance of an object described by `xdm:sourceSchema`.",
-      "meta:titleId": "schemadescriptor##xdm:sourceProperty##title##30881",
-      "meta:descriptionId": "schemadescriptor##xdm:sourceProperty##description##16331",
+      "meta:titleId": "schemadescriptor##xdm:sourceProperty##title##2001",
+      "meta:descriptionId": "schemadescriptor##xdm:sourceProperty##description##85661",
       "meta:xdmField": "xdm:sourceProperty",
       "tagNumber": 4
     },
@@ -60,8 +60,8 @@
       "title": "Source Version",
       "type": "number",
       "description": "Major version being referenced.",
-      "meta:titleId": "schemadescriptor##xdm:sourceVersion##title##76671",
-      "meta:descriptionId": "schemadescriptor##xdm:sourceVersion##description##5401",
+      "meta:titleId": "schemadescriptor##xdm:sourceVersion##title##89331",
+      "meta:descriptionId": "schemadescriptor##xdm:sourceVersion##description##21461",
       "meta:xdmType": "number",
       "meta:xdmField": "xdm:sourceVersion",
       "tagNumber": 5
@@ -74,8 +74,8 @@
       "title": "Title",
       "type": "object",
       "description": "When present, user friendly title to display.",
-      "meta:titleId": "alternateDisplayInfo##xdm:title##title##36411",
-      "meta:descriptionId": "alternateDisplayInfo##xdm:title##description##6571",
+      "meta:titleId": "alternateDisplayInfo##xdm:title##title##54161",
+      "meta:descriptionId": "alternateDisplayInfo##xdm:title##description##54841",
       "meta:xdmType": "object",
       "meta:xdmField": "xdm:title",
       "tagNumber": 7
@@ -84,8 +84,8 @@
       "title": "Description",
       "type": "object",
       "description": "When present, user friendly description to display.",
-      "meta:titleId": "alternateDisplayInfo##xdm:description##title##38411",
-      "meta:descriptionId": "alternateDisplayInfo##xdm:description##description##24891",
+      "meta:titleId": "alternateDisplayInfo##xdm:description##title##88041",
+      "meta:descriptionId": "alternateDisplayInfo##xdm:description##description##43961",
       "meta:xdmType": "object",
       "meta:xdmField": "xdm:description",
       "tagNumber": 8
@@ -94,8 +94,8 @@
       "title": "Note",
       "type": "object",
       "description": "When present, user friendly note to display. Similar to a description, but provides more details about the actual usage of the field.",
-      "meta:titleId": "alternateDisplayInfo##xdm:note##title##14851",
-      "meta:descriptionId": "alternateDisplayInfo##xdm:note##description##93701",
+      "meta:titleId": "alternateDisplayInfo##xdm:note##title##1791",
+      "meta:descriptionId": "alternateDisplayInfo##xdm:note##description##59021",
       "meta:xdmType": "object",
       "meta:xdmField": "xdm:note",
       "tagNumber": 9
@@ -107,7 +107,7 @@
         "enum": {
           "title": "Extended meta:enum values",
           "type": "object",
-          "meta:titleId": "alternateDisplayInfo##meta:enum##title##30171",
+          "meta:titleId": "alternateDisplayInfo##meta:enum##title##76551",
           "meta:xdmType": "object",
           "meta:xdmField": "meta:enum",
           "tagNumber": 1

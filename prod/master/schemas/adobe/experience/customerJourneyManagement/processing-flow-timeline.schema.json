@@ -7,6 +7,8 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:status": "experimental",
+  "meta:titleId": "processing-flow-timeline##title##7571",
+  "meta:descriptionId": "processing-flow-timeline##description##56331",
   "meta:xdmType": "object",
   "properties": {
     "_experience": {
@@ -20,12 +22,15 @@
             "processingFlowTimeline": {
               "title": "processingFlowTimeline",
               "type": "object",
+              "meta:titleId": "processing-flow-timeline##https://ns.adobe.com/experience/customerJourneyManagement/processingFlowTimeline##title##42791",
               "meta:xdmType": "object",
               "properties": {
                 "flowName": {
                   "title": "flowName",
                   "type": "string",
                   "description": "Name of the processing flow.",
+                  "meta:titleId": "processing-flow-timeline##xdm:flowName##title##55371",
+                  "meta:descriptionId": "processing-flow-timeline##xdm:flowName##description##51901",
                   "meta:xdmType": "string",
                   "meta:xdmField": "xdm:flowName",
                   "tagNumber": 1
@@ -33,11 +38,12 @@
                 "processingNodes": {
                   "title": "processingNodes",
                   "type": "array",
+                  "meta:titleId": "processing-flow-timeline##xdm:processingNodes##title##63221",
                   "meta:xdmType": "array",
                   "meta:xdmField": "xdm:processingNodes",
                   "tagNumber": 2,
                   "items": {
-                    "$ref": "obj26886118488790145.schema.json"
+                    "$ref": "obj8635650569368318.schema.json"
                   }
                 }
               },

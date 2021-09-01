@@ -11,12 +11,12 @@
   ],
   "meta:createdDate": "2020-08-10",
   "meta:titleId": [
-    "product-views##title##99831",
-    "metricdefinition##title##1451"
+    "product-views##title##65631",
+    "metricdefinition##title##28671"
   ],
   "meta:descriptionId": [
-    "product-views##description##43651",
-    "metricdefinition##description##34591"
+    "product-views##description##36651",
+    "metricdefinition##description##96461"
   ],
   "meta:xdmType": "object",
   "properties": {
@@ -25,8 +25,8 @@
       "const": "xdm:productViews",
       "description": "The unique identifier of this metric.",
       "meta:descriptionId": [
-        "product-views##@id##description##14221",
-        "metricdefinition##@id##description##54541"
+        "product-views##@id##description##99651",
+        "metricdefinition##@id##description##44171"
       ],
       "meta:xdmType": "string",
       "format": "uri-reference",
@@ -42,8 +42,8 @@
           "const": "commerce metric: productViews",
           "description": "The human-readable name of the metric. The name can be used in user interfaces and does not have to be unique.",
           "meta:descriptionId": [
-            "product-views##schema:name##description##21521",
-            "metricdefinition##schema:name##description##81811"
+            "product-views##schema:name##description##10351",
+            "metricdefinition##schema:name##description##52471"
           ],
           "meta:xdmType": "string",
           "meta:xdmField": "schema:name",
@@ -60,8 +60,8 @@
       "description": "How to take measures of this metric.",
       "const": "count",
       "meta:descriptionId": [
-        "product-views##xdm:measurement##description##49631",
-        "metricdefinition##xdm:measurement##description##90861"
+        "product-views##xdm:measurement##description##371",
+        "metricdefinition##xdm:measurement##description##34121"
       ],
       "meta:xdmType": "string",
       "examples": [
@@ -83,7 +83,7 @@
         "s",
         "USD"
       ],
-      "meta:descriptionId": "metricdefinition##xdm:unit##description##50321",
+      "meta:descriptionId": "metricdefinition##xdm:unit##description##62961",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:unit",
       "tagNumber": 4

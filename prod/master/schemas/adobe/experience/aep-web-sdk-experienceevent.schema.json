@@ -7,6 +7,24 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:status": "stable",
+  "meta:titleId": [
+    "aep-web-sdk-experienceevent##title##96831",
+    "experienceevent-implementation-details##title##73141",
+    "experienceevent-edgeregion##title##92251",
+    "experienceevent-environment-details##title##62031",
+    "experienceevent-web##title##4021",
+    "proposition-interaction##title##38171",
+    "identitymap##title##90811"
+  ],
+  "meta:descriptionId": [
+    "aep-web-sdk-experienceevent##description##98151",
+    "experienceevent-implementation-details##description##63811",
+    "experienceevent-edgeregion##description##69281",
+    "experienceevent-environment-details##description##46401",
+    "experienceevent-web##description##72121",
+    "proposition-interaction##description##45571",
+    "identitymap##description##41821"
+  ],
   "meta:xdmType": "object",
   "meta:tags": {
     "industry": [
@@ -14,25 +32,13 @@
     ]
   },
   "meta:createdDate": "2020-08-10",
-  "meta:titleId": [
-    "experienceevent-implementation-details##title##44931",
-    "experienceevent-environment-details##title##14621",
-    "experienceevent-web##title##90821",
-    "identitymap##title##68521"
-  ],
-  "meta:descriptionId": [
-    "experienceevent-implementation-details##description##33331",
-    "experienceevent-environment-details##description##15021",
-    "experienceevent-web##description##55501",
-    "identitymap##description##9091"
-  ],
   "properties": {
     "implementationDetails": {
       "title": "Implementation details",
       "$ref": "../../datatypes/industry-verticals/implementationdetails.schema.json",
       "description": "Accomodates tracking versioning details for the Adobe Experience Cloud solutions deployed.",
-      "meta:titleId": "experienceevent-implementation-details##xdm:implementationDetails##title##64221",
-      "meta:descriptionId": "experienceevent-implementation-details##xdm:implementationDetails##description##8781",
+      "meta:titleId": "experienceevent-implementation-details##xdm:implementationDetails##title##51731",
+      "meta:descriptionId": "experienceevent-implementation-details##xdm:implementationDetails##description##79571",
       "meta:xdmField": "xdm:implementationDetails",
       "tagNumber": 1
     },
@@ -40,11 +46,14 @@
       "title": "User activity region",
       "description": "Region info where event is captured.",
       "type": "object",
+      "meta:titleId": "experienceevent-edgeregion##xdm:userActivityRegion##title##8821",
+      "meta:descriptionId": "experienceevent-edgeregion##xdm:userActivityRegion##description##65461",
       "meta:xdmType": "object",
       "properties": {
         "dataCenterLocation": {
           "title": "Location of Data Center where data was captured",
           "type": "string",
+          "meta:titleId": "experienceevent-edgeregion##xdm:dataCenterLocation##title##68011",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:dataCenterLocation",
           "tagNumber": 1
@@ -54,6 +63,8 @@
           "type": "string",
           "format": "date-time",
           "description": "The time when data was captured on data center node.",
+          "meta:titleId": "experienceevent-edgeregion##xdm:captureTimestamp##title##82441",
+          "meta:descriptionId": "experienceevent-edgeregion##xdm:captureTimestamp##description##62901",
           "meta:xdmType": "date-time",
           "meta:xdmField": "xdm:captureTimestamp",
           "tagNumber": 2
@@ -66,8 +77,8 @@
       "title": "Environment",
       "$ref": "../../datatypes/environment.schema.json",
       "description": "Information about the surrounding situation the event observation occurred in, specifically detailing transitory information such as the network or software versions.",
-      "meta:titleId": "experienceevent-environment-details##xdm:environment##title##57511",
-      "meta:descriptionId": "experienceevent-environment-details##xdm:environment##description##42621",
+      "meta:titleId": "experienceevent-environment-details##xdm:environment##title##51051",
+      "meta:descriptionId": "experienceevent-environment-details##xdm:environment##description##68071",
       "meta:xdmField": "xdm:environment",
       "tagNumber": 3
     },
@@ -75,8 +86,8 @@
       "title": "Device",
       "$ref": "../../datatypes/device.schema.json",
       "description": "An identified device, application or device browser instance that is trackable across sessions, normally by cookies.",
-      "meta:titleId": "experienceevent-environment-details##xdm:device##title##31301",
-      "meta:descriptionId": "experienceevent-environment-details##xdm:device##description##51671",
+      "meta:titleId": "experienceevent-environment-details##xdm:device##title##96081",
+      "meta:descriptionId": "experienceevent-environment-details##xdm:device##description##29621",
       "meta:xdmField": "xdm:device",
       "tagNumber": 4
     },
@@ -84,8 +95,8 @@
       "title": "Place context",
       "$ref": "../../datatypes/placecontext.schema.json",
       "description": "The transient circumstances related to the observation. Examples include locale specific information such as weather, local time, traffic, day of the week, workday vs. holiday, and working hours.",
-      "meta:titleId": "experienceevent-environment-details##xdm:placeContext##title##87021",
-      "meta:descriptionId": "experienceevent-environment-details##xdm:placeContext##description##71741",
+      "meta:titleId": "experienceevent-environment-details##xdm:placeContext##title##83141",
+      "meta:descriptionId": "experienceevent-environment-details##xdm:placeContext##description##71761",
       "meta:xdmField": "xdm:placeContext",
       "tagNumber": 5
     },
@@ -93,8 +104,8 @@
       "title": "Web",
       "$ref": "../../datatypes/webinfo.schema.json",
       "description": "Link clicks, web page details, referrer information, and browser details.",
-      "meta:titleId": "experienceevent-web##xdm:web##title##81951",
-      "meta:descriptionId": "experienceevent-web##xdm:web##description##6711",
+      "meta:titleId": "experienceevent-web##xdm:web##title##43111",
+      "meta:descriptionId": "experienceevent-web##xdm:web##description##40241",
       "meta:xdmField": "xdm:web",
       "tagNumber": 6
     },
@@ -127,6 +138,8 @@
               "title": "Involved Propositions",
               "type": "array",
               "description": "An array of decision propositions that contributed to the experience event. The experience event is attributed (at least partially) to those prior decisions/propositions. An individual profile's proposition-response history is maintained with these decision identifiers.",
+              "meta:titleId": "proposition-interaction##https://ns.adobe.com/experience/decisioning/propositions##title##37861",
+              "meta:descriptionId": "proposition-interaction##https://ns.adobe.com/experience/decisioning/propositions##description##42611",
               "meta:xdmType": "array",
               "items": {
                 "$ref": "decisioning/proposition-interaction-detail.schema.json",

@@ -7,8 +7,16 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:status": [
-    "experimental",
+    "deprecated",
     "stable"
+  ],
+  "meta:titleId": [
+    "mobile-lifecycle-details-test##title##77451",
+    "experienceevent-environment-details##title##62031"
+  ],
+  "meta:descriptionId": [
+    "mobile-lifecycle-details-test##description##74501",
+    "experienceevent-environment-details##description##46401"
   ],
   "meta:xdmType": "object",
   "meta:tags": {
@@ -17,15 +25,13 @@
     ]
   },
   "meta:createdDate": "2020-08-10",
-  "meta:titleId": "experienceevent-environment-details##title##14621",
-  "meta:descriptionId": "experienceevent-environment-details##description##15021",
   "properties": {
     "environment": {
       "title": "Environment",
       "$ref": "../../datatypes/environment.schema.json",
       "description": "Information about the surrounding situation the event observation occurred in, specifically detailing transitory information such as the network or software versions.",
-      "meta:titleId": "experienceevent-environment-details##xdm:environment##title##57511",
-      "meta:descriptionId": "experienceevent-environment-details##xdm:environment##description##42621",
+      "meta:titleId": "experienceevent-environment-details##xdm:environment##title##51051",
+      "meta:descriptionId": "experienceevent-environment-details##xdm:environment##description##68071",
       "meta:xdmField": "xdm:environment",
       "tagNumber": 1
     },
@@ -33,8 +39,8 @@
       "title": "Device",
       "$ref": "../../datatypes/device.schema.json",
       "description": "An identified device, application or device browser instance that is trackable across sessions, normally by cookies.",
-      "meta:titleId": "experienceevent-environment-details##xdm:device##title##31301",
-      "meta:descriptionId": "experienceevent-environment-details##xdm:device##description##51671",
+      "meta:titleId": "experienceevent-environment-details##xdm:device##title##96081",
+      "meta:descriptionId": "experienceevent-environment-details##xdm:device##description##29621",
       "meta:xdmField": "xdm:device",
       "tagNumber": 2
     },
@@ -42,8 +48,8 @@
       "title": "Place context",
       "$ref": "../../datatypes/placecontext.schema.json",
       "description": "The transient circumstances related to the observation. Examples include locale specific information such as weather, local time, traffic, day of the week, workday vs. holiday, and working hours.",
-      "meta:titleId": "experienceevent-environment-details##xdm:placeContext##title##87021",
-      "meta:descriptionId": "experienceevent-environment-details##xdm:placeContext##description##71741",
+      "meta:titleId": "experienceevent-environment-details##xdm:placeContext##title##83141",
+      "meta:descriptionId": "experienceevent-environment-details##xdm:placeContext##description##71761",
       "meta:xdmField": "xdm:placeContext",
       "tagNumber": 3
     },
@@ -55,6 +61,8 @@
           "title": "Application identifier",
           "type": "string",
           "description": "Identifier of the application.",
+          "meta:titleId": "mobile-lifecycle-details-test##xdm:id##title##83291",
+          "meta:descriptionId": "mobile-lifecycle-details-test##xdm:id##description##83111",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:id",
           "tagNumber": 1
@@ -63,6 +71,8 @@
           "title": "Name",
           "type": "string",
           "description": "Name of the application.",
+          "meta:titleId": "mobile-lifecycle-details-test##xdm:name##title##4611",
+          "meta:descriptionId": "mobile-lifecycle-details-test##xdm:name##description##72151",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:name",
           "tagNumber": 2
@@ -71,6 +81,8 @@
           "title": "Version",
           "type": "string",
           "description": "Version of the application.",
+          "meta:titleId": "mobile-lifecycle-details-test##xdm:version##title##82181",
+          "meta:descriptionId": "mobile-lifecycle-details-test##xdm:version##description##57761",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:version",
           "tagNumber": 3
@@ -82,6 +94,7 @@
             "close",
             "unknown"
           ],
+          "meta:descriptionId": "mobile-lifecycle-details-test##xdm:closeType##description##64311",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:closeType",
           "tagNumber": 4
@@ -91,6 +104,8 @@
           "type": "string",
           "description": "Date of first launch after installation. Format: full-date without time (according to RFC 3339, section 5.6)",
           "format": "date",
+          "meta:titleId": "mobile-lifecycle-details-test##xdm:installDate##title##3551",
+          "meta:descriptionId": "mobile-lifecycle-details-test##xdm:installDate##description##30381",
           "meta:xdmType": "date",
           "meta:xdmField": "xdm:installDate",
           "tagNumber": 5
@@ -99,6 +114,8 @@
           "title": "Is Close",
           "type": "boolean",
           "description": "Indicates whether or not this is an application close event.",
+          "meta:titleId": "mobile-lifecycle-details-test##xdm:isClose##title##74431",
+          "meta:descriptionId": "mobile-lifecycle-details-test##xdm:isClose##description##95741",
           "meta:xdmType": "boolean",
           "meta:xdmField": "xdm:isClose",
           "tagNumber": 6
@@ -107,6 +124,8 @@
           "title": "Is Install",
           "type": "boolean",
           "description": "Indicates whether or not this is an application install event.",
+          "meta:titleId": "mobile-lifecycle-details-test##xdm:isInstall##title##66121",
+          "meta:descriptionId": "mobile-lifecycle-details-test##xdm:isInstall##description##86891",
           "meta:xdmType": "boolean",
           "meta:xdmField": "xdm:isInstall",
           "tagNumber": 7
@@ -115,6 +134,8 @@
           "title": "Is Launch",
           "type": "boolean",
           "description": "Indicates whether or not this is an application launch event.",
+          "meta:titleId": "mobile-lifecycle-details-test##xdm:isLaunch##title##36341",
+          "meta:descriptionId": "mobile-lifecycle-details-test##xdm:isLaunch##description##94061",
           "meta:xdmType": "boolean",
           "meta:xdmField": "xdm:isLaunch",
           "tagNumber": 8
@@ -123,6 +144,8 @@
           "title": "Is Upgrade",
           "type": "boolean",
           "description": "Indicates whether or not this is an application upgrade event.",
+          "meta:titleId": "mobile-lifecycle-details-test##xdm:isUpgrade##title##33331",
+          "meta:descriptionId": "mobile-lifecycle-details-test##xdm:isUpgrade##description##65291",
           "meta:xdmType": "boolean",
           "meta:xdmField": "xdm:isUpgrade",
           "tagNumber": 9
@@ -131,6 +154,8 @@
           "title": "Session Length",
           "type": "integer",
           "description": "Reports the number of seconds that a previous application session lasted based on how long the application was open and in the foreground. Session length is a positive value with no max bound (no max session length)",
+          "meta:titleId": "mobile-lifecycle-details-test##xdm:sessionLength##title##61091",
+          "meta:descriptionId": "mobile-lifecycle-details-test##xdm:sessionLength##description##42621",
           "meta:xdmType": "int",
           "meta:xdmField": "xdm:sessionLength",
           "tagNumber": 10
@@ -143,6 +168,7 @@
             "background",
             "detached"
           ],
+          "meta:descriptionId": "mobile-lifecycle-details-test##xdm:userPerspective##description##14511",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:userPerspective",
           "tagNumber": 11

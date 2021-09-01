@@ -11,12 +11,12 @@
   ],
   "meta:createdDate": "2020-08-10",
   "meta:titleId": [
-    "non-deliverables##title##1451",
-    "metricdefinition##title##1451"
+    "non-deliverables##title##33161",
+    "metricdefinition##title##28671"
   ],
   "meta:descriptionId": [
-    "non-deliverables##description##25831",
-    "metricdefinition##description##34591"
+    "non-deliverables##description##88841",
+    "metricdefinition##description##96461"
   ],
   "meta:xdmType": "object",
   "properties": {
@@ -25,8 +25,8 @@
       "const": "xdm:nonDeliverables",
       "description": "The unique identifier of this metric.",
       "meta:descriptionId": [
-        "non-deliverables##@id##description##51921",
-        "metricdefinition##@id##description##54541"
+        "non-deliverables##@id##description##37231",
+        "metricdefinition##@id##description##44171"
       ],
       "meta:xdmType": "string",
       "format": "uri-reference",
@@ -42,8 +42,8 @@
           "const": "direct-marketing metric: nonDeliverables",
           "description": "The human-readable name of the metric. The name can be used in user interfaces and does not have to be unique.",
           "meta:descriptionId": [
-            "non-deliverables##schema:name##description##89841",
-            "metricdefinition##schema:name##description##81811"
+            "non-deliverables##schema:name##description##98571",
+            "metricdefinition##schema:name##description##52471"
           ],
           "meta:xdmType": "string",
           "meta:xdmField": "schema:name",
@@ -60,8 +60,8 @@
       "description": "How to take measures of this metric.",
       "const": "count",
       "meta:descriptionId": [
-        "non-deliverables##xdm:measurement##description##50141",
-        "metricdefinition##xdm:measurement##description##90861"
+        "non-deliverables##xdm:measurement##description##49811",
+        "metricdefinition##xdm:measurement##description##34121"
       ],
       "meta:xdmType": "string",
       "examples": [
@@ -83,7 +83,7 @@
         "s",
         "USD"
       ],
-      "meta:descriptionId": "metricdefinition##xdm:unit##description##50321",
+      "meta:descriptionId": "metricdefinition##xdm:unit##description##62961",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:unit",
       "tagNumber": 4

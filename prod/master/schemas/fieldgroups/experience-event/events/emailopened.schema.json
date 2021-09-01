@@ -11,22 +11,22 @@
   "description": "Use to capture details when a person opens a marketing email.",
   "meta:status": "experimental",
   "meta:createdDate": "2021-02-19",
-  "meta:titleId": "emailopened##title##41971",
-  "meta:descriptionId": "emailopened##description##32771",
+  "meta:titleId": "emailopened##title##571",
+  "meta:descriptionId": "emailopened##description##29591",
   "meta:xdmType": "object",
   "properties": {
     "directMarketing": {
       "title": "Direct marketing",
       "type": "object",
-      "meta:titleId": "emailopened##xdm:directMarketing##title##33671",
+      "meta:titleId": "emailopened##xdm:directMarketing##title##64081",
       "meta:xdmType": "object",
       "properties": {
         "mailingID": {
           "title": "Mailing ID",
           "type": "string",
           "description": "Unique ID of the email asset.",
-          "meta:titleId": "emailopened##xdm:mailingID##title##45211",
-          "meta:descriptionId": "emailopened##xdm:mailingID##description##56001",
+          "meta:titleId": "emailopened##xdm:mailingID##title##77991",
+          "meta:descriptionId": "emailopened##xdm:mailingID##description##83901",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:mailingID",
           "tagNumber": 1
@@ -35,8 +35,8 @@
           "title": "Mailing Name",
           "type": "string",
           "description": "Friendly name of the email asset.",
-          "meta:titleId": "emailopened##xdm:mailingName##title##16261",
-          "meta:descriptionId": "emailopened##xdm:mailingName##description##72921",
+          "meta:titleId": "emailopened##xdm:mailingName##title##45391",
+          "meta:descriptionId": "emailopened##xdm:mailingName##description##16291",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:mailingName",
           "tagNumber": 2
@@ -45,8 +45,8 @@
           "title": "Test Variant ID",
           "type": "string",
           "description": "Unique ID of the test variant of the email asset.",
-          "meta:titleId": "emailopened##xdm:testVariantID##title##89361",
-          "meta:descriptionId": "emailopened##xdm:testVariantID##description##21381",
+          "meta:titleId": "emailopened##xdm:testVariantID##title##79191",
+          "meta:descriptionId": "emailopened##xdm:testVariantID##description##67911",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:testVariantID",
           "tagNumber": 3
@@ -55,8 +55,8 @@
           "title": "Test Variant Name",
           "type": "string",
           "description": "Friendly name of the test variant of the email asset.",
-          "meta:titleId": "emailopened##xdm:testVariantName##title##16981",
-          "meta:descriptionId": "emailopened##xdm:testVariantName##description##54421",
+          "meta:titleId": "emailopened##xdm:testVariantName##title##1951",
+          "meta:descriptionId": "emailopened##xdm:testVariantName##description##78731",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:testVariantName",
           "tagNumber": 4
@@ -69,16 +69,16 @@
       "title": "Environment",
       "type": "object",
       "description": "The information related to web page and link of the ExperienceEvent.",
-      "meta:titleId": "emailopened##xdm:environment##title##6491",
-      "meta:descriptionId": "emailopened##xdm:environment##description##47571",
+      "meta:titleId": "emailopened##xdm:environment##title##99601",
+      "meta:descriptionId": "emailopened##xdm:environment##description##64251",
       "meta:xdmType": "object",
       "properties": {
         "operatingSystem": {
           "title": "Operating system",
           "type": "string",
           "description": "The name of the operating system used when the observation was made. The attribute should not contain any version information such as '10.5.3', but instead contain 'edition' designations such as 'Ultimate' or 'Professional'.",
-          "meta:titleId": "emailopened##xdm:operatingSystem##title##97371",
-          "meta:descriptionId": "emailopened##xdm:operatingSystem##description##71141",
+          "meta:titleId": "emailopened##xdm:operatingSystem##title##43941",
+          "meta:descriptionId": "emailopened##xdm:operatingSystem##description##36471",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:operatingSystem",
           "tagNumber": 1
@@ -87,16 +87,16 @@
           "title": "Browser details",
           "type": "object",
           "description": "The browser specific details such as browser name, version, javascript version, user agent string, and accept language.",
-          "meta:titleId": "emailopened##xdm:browserDetails##title##3121",
-          "meta:descriptionId": "emailopened##xdm:browserDetails##description##25541",
+          "meta:titleId": "emailopened##xdm:browserDetails##title##9541",
+          "meta:descriptionId": "emailopened##xdm:browserDetails##description##45661",
           "meta:xdmType": "object",
           "properties": {
             "userAgent": {
               "title": "User agent",
               "type": "string",
               "description": "The HTTP user-agent string from the client request.",
-              "meta:titleId": "emailopened##xdm:userAgent##title##48311",
-              "meta:descriptionId": "emailopened##xdm:userAgent##description##61621",
+              "meta:titleId": "emailopened##xdm:userAgent##title##86861",
+              "meta:descriptionId": "emailopened##xdm:userAgent##description##3831",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:userAgent",
               "tagNumber": 1
@@ -112,15 +112,15 @@
     "device": {
       "title": "Device",
       "type": "object",
-      "meta:titleId": "emailopened##xdm:device##title##47281",
+      "meta:titleId": "emailopened##xdm:device##title##8791",
       "meta:xdmType": "object",
       "properties": {
         "isMobileDevice": {
           "title": "Is Mobile Device",
           "type": "boolean",
           "description": "Boolean that indicates if device used was a mobile device.",
-          "meta:titleId": "emailopened##xdm:isMobileDevice##title##43561",
-          "meta:descriptionId": "emailopened##xdm:isMobileDevice##description##69261",
+          "meta:titleId": "emailopened##xdm:isMobileDevice##title##39911",
+          "meta:descriptionId": "emailopened##xdm:isMobileDevice##description##81211",
           "meta:xdmType": "boolean",
           "meta:xdmField": "xdm:isMobileDevice",
           "tagNumber": 1
@@ -129,8 +129,8 @@
           "title": "Model",
           "type": "string",
           "description": "The name of the model for the device. This is the common, human-readable, or marketing name for the device. For example, the 'iPhone 6S' is a particular model of mobile phone.",
-          "meta:titleId": "emailopened##xdm:model##title##40251",
-          "meta:descriptionId": "emailopened##xdm:model##description##89691",
+          "meta:titleId": "emailopened##xdm:model##title##40341",
+          "meta:descriptionId": "emailopened##xdm:model##description##63461",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:model",
           "tagNumber": 2

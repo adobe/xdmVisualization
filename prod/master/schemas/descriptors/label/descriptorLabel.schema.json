@@ -8,8 +8,8 @@
   "description": "Describes a label at the field level for a given class/fieldgroup/schema",
   "meta:status": "stable",
   "meta:createdDate": "2021-06-10",
-  "meta:titleId": "descriptorLabel##title##74281",
-  "meta:descriptionId": "descriptorLabel##description##9621",
+  "meta:titleId": "descriptorLabel##title##45071",
+  "meta:descriptionId": "descriptorLabel##description##24931",
   "meta:xdmType": "object",
   "properties": {
     "_id": {
@@ -17,8 +17,8 @@
       "type": "string",
       "format": "uri-reference",
       "description": "The unique identifier for the schema descriptor. This property is required when the descriptor is defined outside of the applicable schema, but is optional when applied via 'meta:descriptors'.",
-      "meta:titleId": "schemadescriptor##@id##title##5801",
-      "meta:descriptionId": "schemadescriptor##@id##description##83201",
+      "meta:titleId": "schemadescriptor##@id##title##10581",
+      "meta:descriptionId": "schemadescriptor##@id##description##77541",
       "meta:xdmType": "string",
       "meta:xdmField": "@id",
       "tagNumber": 1
@@ -27,8 +27,8 @@
       "title": "Type",
       "type": "string",
       "description": "The type of descriptor this object represents.",
-      "meta:titleId": "schemadescriptor##@type##title##53561",
-      "meta:descriptionId": "schemadescriptor##@type##description##49401",
+      "meta:titleId": "schemadescriptor##@type##title##15981",
+      "meta:descriptionId": "schemadescriptor##@type##description##6141",
       "meta:xdmType": "string",
       "const": "xdm:descriptorLabel",
       "meta:xdmField": "@type",
@@ -39,8 +39,8 @@
       "type": "string",
       "format": "uri",
       "description": "The source schema this descriptor applies to. This property is required when the descriptor is defined outside of the applicable schema, but is optional when applied via 'meta:descriptors'",
-      "meta:titleId": "schemadescriptor##xdm:sourceSchema##title##67791",
-      "meta:descriptionId": "schemadescriptor##xdm:sourceSchema##description##83241",
+      "meta:titleId": "schemadescriptor##xdm:sourceSchema##title##68671",
+      "meta:descriptionId": "schemadescriptor##xdm:sourceSchema##description##98211",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:sourceSchema",
       "tagNumber": 3
@@ -48,8 +48,8 @@
     "sourceProperty": {
       "title": "Source Property",
       "description": "When present, the property of the source schema to which this descriptor applies. This value is a JSON Pointer, applied to an instance of an object described by `xdm:sourceSchema`.",
-      "meta:titleId": "schemadescriptor##xdm:sourceProperty##title##30881",
-      "meta:descriptionId": "schemadescriptor##xdm:sourceProperty##description##16331",
+      "meta:titleId": "schemadescriptor##xdm:sourceProperty##title##2001",
+      "meta:descriptionId": "schemadescriptor##xdm:sourceProperty##description##85661",
       "meta:xdmField": "xdm:sourceProperty",
       "tagNumber": 4
     },
@@ -57,8 +57,8 @@
       "title": "Source Version",
       "type": "number",
       "description": "Major version being referenced.",
-      "meta:titleId": "schemadescriptor##xdm:sourceVersion##title##76671",
-      "meta:descriptionId": "schemadescriptor##xdm:sourceVersion##description##5401",
+      "meta:titleId": "schemadescriptor##xdm:sourceVersion##title##89331",
+      "meta:descriptionId": "schemadescriptor##xdm:sourceVersion##description##21461",
       "meta:xdmType": "number",
       "meta:xdmField": "xdm:sourceVersion",
       "tagNumber": 5
@@ -72,12 +72,12 @@
       "description": "When present, it allows an array of objects with three properties such as labelType, labelName and labelValue",
       "type": "array",
       "meta:xdmType": "array",
-      "meta:titleId": "descriptorLabel##xdm:labels##title##19191",
-      "meta:descriptionId": "descriptorLabel##xdm:labels##description##23301",
+      "meta:titleId": "descriptorLabel##xdm:labels##title##11301",
+      "meta:descriptionId": "descriptorLabel##xdm:labels##description##40961",
       "meta:xdmField": "xdm:labels",
       "tagNumber": 7,
       "items": {
-        "$ref": "obj11620533292059876.schema.json"
+        "$ref": "obj9042860576361245.schema.json"
       }
     }
   },

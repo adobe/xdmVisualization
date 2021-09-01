@@ -7,20 +7,26 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:status": "stable",
-  "meta:xdmType": "object",
-  "meta:createdDate": "2020-08-10",
   "meta:titleId": [
-    "experienceevent-segmentmembership##title##63141",
-    "experienceevent-environment-details##title##14621",
-    "experienceevent-profile-stitch##title##6751",
-    "experienceevent-privacy##title##28881"
+    "aam-experienceevent##title##38061",
+    "experienceevent-segmentmembership##title##47831",
+    "experienceevent-environment-details##title##62031",
+    "experienceevent-profile-stitch##title##91271",
+    "experienceevent-edgeregion##title##92251",
+    "experienceevent-privacy##title##65871",
+    "experienceevent-all##title##71761"
   ],
   "meta:descriptionId": [
-    "experienceevent-segmentmembership##description##22131",
-    "experienceevent-environment-details##description##15021",
-    "experienceevent-profile-stitch##description##64001",
-    "experienceevent-privacy##description##13481"
+    "aam-experienceevent##description##90261",
+    "experienceevent-segmentmembership##description##37041",
+    "experienceevent-environment-details##description##46401",
+    "experienceevent-profile-stitch##description##1091",
+    "experienceevent-edgeregion##description##69281",
+    "experienceevent-privacy##description##4601",
+    "experienceevent-all##description##76451"
   ],
+  "meta:xdmType": "object",
+  "meta:createdDate": "2020-08-10",
   "meta:tags": {
     "industry": [
       "all"
@@ -31,7 +37,7 @@
       "title": "Segment Membership Map",
       "type": "object",
       "meta:xdmType": "map",
-      "meta:titleId": "experienceevent-segmentmembership##xdm:segmentMembership##title##25141",
+      "meta:titleId": "experienceevent-segmentmembership##xdm:segmentMembership##title##48291",
       "meta:xdmField": "xdm:segmentMembership",
       "tagNumber": 2,
       "properties": {
@@ -39,7 +45,7 @@
           "title": "Segment Membership per Namespace",
           "type": "object",
           "meta:xdmType": "map",
-          "meta:titleId": "experienceevent-segmentmembership##additionalProperties##title##76501",
+          "meta:titleId": "experienceevent-segmentmembership##additionalProperties##title##75171",
           "tagNumber": 1,
           "properties": {
             "mapObj": {
@@ -54,8 +60,8 @@
       "title": "Environment",
       "$ref": "../../datatypes/environment.schema.json",
       "description": "Information about the surrounding situation the event observation occurred in, specifically detailing transitory information such as the network or software versions.",
-      "meta:titleId": "experienceevent-environment-details##xdm:environment##title##57511",
-      "meta:descriptionId": "experienceevent-environment-details##xdm:environment##description##42621",
+      "meta:titleId": "experienceevent-environment-details##xdm:environment##title##51051",
+      "meta:descriptionId": "experienceevent-environment-details##xdm:environment##description##68071",
       "meta:xdmField": "xdm:environment",
       "tagNumber": 3
     },
@@ -63,8 +69,8 @@
       "title": "Device",
       "$ref": "../../datatypes/device.schema.json",
       "description": "An identified device, application or device browser instance that is trackable across sessions, normally by cookies.",
-      "meta:titleId": "experienceevent-environment-details##xdm:device##title##31301",
-      "meta:descriptionId": "experienceevent-environment-details##xdm:device##description##51671",
+      "meta:titleId": "experienceevent-environment-details##xdm:device##title##96081",
+      "meta:descriptionId": "experienceevent-environment-details##xdm:device##description##29621",
       "meta:xdmField": "xdm:device",
       "tagNumber": 4
     },
@@ -72,8 +78,8 @@
       "title": "Place context",
       "$ref": "../../datatypes/placecontext.schema.json",
       "description": "The transient circumstances related to the observation. Examples include locale specific information such as weather, local time, traffic, day of the week, workday vs. holiday, and working hours.",
-      "meta:titleId": "experienceevent-environment-details##xdm:placeContext##title##87021",
-      "meta:descriptionId": "experienceevent-environment-details##xdm:placeContext##description##71741",
+      "meta:titleId": "experienceevent-environment-details##xdm:placeContext##title##83141",
+      "meta:descriptionId": "experienceevent-environment-details##xdm:placeContext##description##71761",
       "meta:xdmField": "xdm:placeContext",
       "tagNumber": 5
     },
@@ -81,8 +87,8 @@
       "title": "Profile stitch",
       "description": "Details about the IDs that were joined by profile stitching.",
       "type": "array",
-      "meta:titleId": "experienceevent-profile-stitch##xdm:profileStitch##title##87471",
-      "meta:descriptionId": "experienceevent-profile-stitch##xdm:profileStitch##description##95681",
+      "meta:titleId": "experienceevent-profile-stitch##xdm:profileStitch##title##86001",
+      "meta:descriptionId": "experienceevent-profile-stitch##xdm:profileStitch##description##67401",
       "meta:xdmType": "array",
       "items": {
         "$ref": "../../datatypes/profilestitch.schema.json",
@@ -95,11 +101,14 @@
       "title": "User activity region",
       "description": "Region info where event is captured.",
       "type": "object",
+      "meta:titleId": "experienceevent-edgeregion##xdm:userActivityRegion##title##8821",
+      "meta:descriptionId": "experienceevent-edgeregion##xdm:userActivityRegion##description##65461",
       "meta:xdmType": "object",
       "properties": {
         "dataCenterLocation": {
           "title": "Location of Data Center where data was captured",
           "type": "string",
+          "meta:titleId": "experienceevent-edgeregion##xdm:dataCenterLocation##title##68011",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:dataCenterLocation",
           "tagNumber": 1
@@ -109,6 +118,8 @@
           "type": "string",
           "format": "date-time",
           "description": "The time when data was captured on data center node.",
+          "meta:titleId": "experienceevent-edgeregion##xdm:captureTimestamp##title##82441",
+          "meta:descriptionId": "experienceevent-edgeregion##xdm:captureTimestamp##description##62901",
           "meta:xdmType": "date-time",
           "meta:xdmField": "xdm:captureTimestamp",
           "tagNumber": 2
@@ -120,7 +131,7 @@
     "consentStrings": {
       "title": "Identity level consent information",
       "type": "array",
-      "meta:titleId": "experienceevent-privacy##xdm:consentStrings##title##80471",
+      "meta:titleId": "experienceevent-privacy##xdm:consentStrings##title##22441",
       "meta:xdmType": "array",
       "items": {
         "$ref": "../../datatypes/consent/consentstring.schema.json",
@@ -134,6 +145,8 @@
       "description": "Additional frequently changing properties captured with an event via request parameters or other means.",
       "type": "object",
       "meta:xdmType": "map",
+      "meta:titleId": "experienceevent-all##xdm:signals##title##54871",
+      "meta:descriptionId": "experienceevent-all##xdm:signals##description##37191",
       "meta:xdmField": "xdm:signals",
       "tagNumber": 9,
       "properties": {
@@ -143,6 +156,7 @@
           "items": {
             "type": "string",
             "description": "Value of the parameter",
+            "meta:descriptionId": "experienceevent-all##items##description##78661",
             "meta:xdmType": "string",
             "tagNumber": 1
           },
@@ -154,6 +168,8 @@
       "title": "Overwrite Traits",
       "type": "boolean",
       "description": "Flag highlighting that all the traits realized before this for this id and data source, need to be discarded.",
+      "meta:titleId": "experienceevent-all##xdm:overwriteTraits##title##50261",
+      "meta:descriptionId": "experienceevent-all##xdm:overwriteTraits##description##29581",
       "meta:xdmType": "boolean",
       "meta:xdmField": "xdm:overwriteTraits",
       "tagNumber": 10
@@ -163,6 +179,8 @@
       "description": "Derived properties from event data",
       "type": "object",
       "meta:xdmType": "map",
+      "meta:titleId": "experienceevent-all##xdm:derivedSignals##title##23491",
+      "meta:descriptionId": "experienceevent-all##xdm:derivedSignals##description##46751",
       "meta:xdmField": "xdm:derivedSignals",
       "tagNumber": 11,
       "properties": {
@@ -172,6 +190,7 @@
           "items": {
             "type": "string",
             "description": "Value of the parameter",
+            "meta:descriptionId": "experienceevent-all##items##description##25941",
             "meta:xdmType": "string",
             "tagNumber": 1
           },

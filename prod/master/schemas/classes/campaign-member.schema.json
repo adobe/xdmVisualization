@@ -16,14 +16,14 @@
     "2020-08-10"
   ],
   "meta:titleId": [
-    "campaign-member##title##62621",
-    "record##title##92641",
-    "external-source-system-audit-details##title##25871"
+    "campaign-member##title##30961",
+    "record##title##65961",
+    "external-source-system-audit-details##title##88991"
   ],
   "meta:descriptionId": [
-    "campaign-member##description##61861",
-    "record##description##41201",
-    "external-source-system-audit-details##description##77561"
+    "campaign-member##description##56301",
+    "record##description##3921",
+    "external-source-system-audit-details##description##98601"
   ],
   "meta:xdmType": "object",
   "properties": {
@@ -32,8 +32,8 @@
       "type": "string",
       "format": "uri-reference",
       "description": "A unique identifier for the record.",
-      "meta:titleId": "record##@id##title##80061",
-      "meta:descriptionId": "record##@id##description##41711",
+      "meta:titleId": "record##@id##title##51271",
+      "meta:descriptionId": "record##@id##description##16181",
       "meta:xdmType": "string",
       "meta:xdmField": "@id",
       "tagNumber": 1
@@ -42,8 +42,8 @@
       "title": "External Source System Audit Properties",
       "$ref": "../datatypes/auditing/external-source-system-audit.schema.json",
       "description": "Audit attributes for external sources.",
-      "meta:titleId": "external-source-system-audit-details##xdm:extSourceSystemAudit##title##65301",
-      "meta:descriptionId": "external-source-system-audit-details##xdm:extSourceSystemAudit##description##99451",
+      "meta:titleId": "external-source-system-audit-details##xdm:extSourceSystemAudit##title##88841",
+      "meta:descriptionId": "external-source-system-audit-details##xdm:extSourceSystemAudit##description##28131",
       "meta:xdmField": "xdm:extSourceSystemAudit",
       "tagNumber": 2
     },
@@ -51,8 +51,8 @@
       "title": "Campaign Member ID",
       "description": "Campaign Member unique identifer.",
       "type": "string",
-      "meta:titleId": "campaign-member##xdm:campaignMemberID##title##84371",
-      "meta:descriptionId": "campaign-member##xdm:campaignMemberID##description##63651",
+      "meta:titleId": "campaign-member##xdm:campaignMemberID##title##6831",
+      "meta:descriptionId": "campaign-member##xdm:campaignMemberID##description##26351",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:campaignMemberID",
       "tagNumber": 3
@@ -70,8 +70,8 @@
       "title": "Campaign ID",
       "description": "Campaign Unique Identifer.",
       "type": "string",
-      "meta:titleId": "campaign-member##xdm:campaignID##title##88791",
-      "meta:descriptionId": "campaign-member##xdm:campaignID##description##71921",
+      "meta:titleId": "campaign-member##xdm:campaignID##title##26371",
+      "meta:descriptionId": "campaign-member##xdm:campaignID##description##86741",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:campaignID",
       "tagNumber": 5
@@ -89,8 +89,8 @@
       "title": "Person ID",
       "description": "Person unique identifier.",
       "type": "string",
-      "meta:titleId": "campaign-member##xdm:personID##title##48541",
-      "meta:descriptionId": "campaign-member##xdm:personID##description##88941",
+      "meta:titleId": "campaign-member##xdm:personID##title##80381",
+      "meta:descriptionId": "campaign-member##xdm:personID##description##74641",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:personID",
       "tagNumber": 7

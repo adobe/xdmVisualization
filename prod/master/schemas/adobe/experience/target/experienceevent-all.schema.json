@@ -7,6 +7,14 @@
   "meta:abstract": true,
   "description": "Adobe Target ExperienceEvent full extension. Contains all Solution added fields.",
   "meta:status": "stable",
+  "meta:titleId": [
+    "experienceevent-all##title##17951",
+    "experienceevent-shared##title##34131"
+  ],
+  "meta:descriptionId": [
+    "experienceevent-all##description##37551",
+    "experienceevent-shared##description##68941"
+  ],
   "meta:xdmType": "object",
   "properties": {
     "_experience": {
@@ -21,6 +29,8 @@
               "title": "Adobe Target Client Code",
               "type": "string",
               "description": "Adobe Target client code.",
+              "meta:titleId": "experienceevent-all##https://ns.adobe.com/experience/target/clientcode##title##37401",
+              "meta:descriptionId": "experienceevent-all##https://ns.adobe.com/experience/target/clientcode##description##40821",
               "meta:xdmType": "string",
               "meta:xdmField": "https://ns.adobe.com/experience/target/clientcode",
               "tagNumber": 1
@@ -29,6 +39,8 @@
               "title": "Adobe Target Mbox Name",
               "type": "string",
               "description": "Adobe Target mbox name.",
+              "meta:titleId": "experienceevent-all##https://ns.adobe.com/experience/target/mboxname##title##85981",
+              "meta:descriptionId": "experienceevent-all##https://ns.adobe.com/experience/target/mboxname##description##75371",
               "meta:xdmType": "string",
               "meta:xdmField": "https://ns.adobe.com/experience/target/mboxname",
               "tagNumber": 2
@@ -37,6 +49,8 @@
               "title": "Adobe Target Mbox Version",
               "type": "string",
               "description": "Adobe Target mbox version.",
+              "meta:titleId": "experienceevent-all##https://ns.adobe.com/experience/target/mboxversion##title##99701",
+              "meta:descriptionId": "experienceevent-all##https://ns.adobe.com/experience/target/mboxversion##description##17201",
               "meta:xdmType": "string",
               "meta:xdmField": "https://ns.adobe.com/experience/target/mboxversion",
               "tagNumber": 3
@@ -45,6 +59,8 @@
               "title": "Adobe Target Session Identifier",
               "type": "string",
               "description": "Adobe Target session identifier.",
+              "meta:titleId": "experienceevent-all##https://ns.adobe.com/experience/target/sessionid##title##70101",
+              "meta:descriptionId": "experienceevent-all##https://ns.adobe.com/experience/target/sessionid##description##33681",
               "meta:xdmType": "string",
               "meta:xdmField": "https://ns.adobe.com/experience/target/sessionid",
               "tagNumber": 4
@@ -58,6 +74,8 @@
                   "type": "string",
                   "format": "uri",
                   "description": "Target generated page identifier for current event.",
+                  "meta:titleId": "experienceevent-all##https://ns.adobe.com/experience/target/pagedetail/pageid##title##891",
+                  "meta:descriptionId": "experienceevent-all##https://ns.adobe.com/experience/target/pagedetail/pageid##description##14851",
                   "meta:xdmType": "string",
                   "meta:xdmField": "https://ns.adobe.com/experience/target/pagedetail/pageid",
                   "tagNumber": 1
@@ -66,6 +84,8 @@
                   "title": "Page Score",
                   "type": "number",
                   "description": "Customer assigned score to visited page.",
+                  "meta:titleId": "experienceevent-all##https://ns.adobe.com/experience/target/pagedetail/pagescore##title##33951",
+                  "meta:descriptionId": "experienceevent-all##https://ns.adobe.com/experience/target/pagedetail/pagescore##description##8981",
                   "meta:xdmType": "number",
                   "meta:xdmField": "https://ns.adobe.com/experience/target/pagedetail/pagescore",
                   "tagNumber": 2
@@ -77,6 +97,8 @@
               "title": "Environment Identifier",
               "type": "string",
               "description": "Identifier of the environment on which the event was processed.",
+              "meta:titleId": "experienceevent-all##https://ns.adobe.com/experience/target/environmentID##title##28561",
+              "meta:descriptionId": "experienceevent-all##https://ns.adobe.com/experience/target/environmentID##description##44191",
               "meta:xdmType": "string",
               "meta:xdmField": "https://ns.adobe.com/experience/target/environmentID",
               "tagNumber": 6
@@ -85,6 +107,8 @@
               "title": "Activities",
               "type": "array",
               "description": "A list of items representing executed activities.",
+              "meta:titleId": "experienceevent-all##https://ns.adobe.com/experience/target/activities##title##52521",
+              "meta:descriptionId": "experienceevent-all##https://ns.adobe.com/experience/target/activities##description##2641",
               "meta:xdmType": "array",
               "items": {
                 "$ref": "activity.schema.json",
@@ -97,6 +121,8 @@
               "title": "Supplemental Data Identifier",
               "description": "Identifier used to stitch Target events with Analytics events",
               "type": "string",
+              "meta:titleId": "experienceevent-shared##https://ns.adobe.com/experience/target/supplementalDataID##title##55151",
+              "meta:descriptionId": "experienceevent-shared##https://ns.adobe.com/experience/target/supplementalDataID##description##31511",
               "meta:xdmType": "string",
               "meta:xdmField": "https://ns.adobe.com/experience/target/supplementalDataID",
               "tagNumber": 8

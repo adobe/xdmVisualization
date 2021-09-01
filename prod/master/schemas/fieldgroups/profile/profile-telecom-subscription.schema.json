@@ -12,8 +12,8 @@
   },
   "description": "Collects all generic details related to a customer's telecom subscription plan, including pricing, packages, and individual product subscriptions.",
   "meta:status": "stable",
-  "meta:titleId": "profile-telecom-subscription##title##1211",
-  "meta:descriptionId": "profile-telecom-subscription##description##24671",
+  "meta:titleId": "profile-telecom-subscription##title##34441",
+  "meta:descriptionId": "profile-telecom-subscription##description##98821",
   "meta:xdmType": "object",
   "properties": {
     "telecomSubscription": {
@@ -24,8 +24,8 @@
           "title": "Primary Subscriber",
           "$ref": "../../datatypes/person/person.schema.json",
           "description": "The owner of the subscription.",
-          "meta:titleId": "profile-telecom-subscription##xdm:primarySubscriber##title##17651",
-          "meta:descriptionId": "profile-telecom-subscription##xdm:primarySubscriber##description##49111",
+          "meta:titleId": "profile-telecom-subscription##xdm:primarySubscriber##title##85721",
+          "meta:descriptionId": "profile-telecom-subscription##xdm:primarySubscriber##description##37611",
           "meta:xdmField": "xdm:primarySubscriber",
           "tagNumber": 1
         },
@@ -33,8 +33,8 @@
           "title": "Primary Party ID",
           "type": "string",
           "description": "Identifier for the primary person responsible for the subscription, which typically could be their device phone number.",
-          "meta:titleId": "profile-telecom-subscription##xdm:primaryPartyID##title##26001",
-          "meta:descriptionId": "profile-telecom-subscription##xdm:primaryPartyID##description##84101",
+          "meta:titleId": "profile-telecom-subscription##xdm:primaryPartyID##title##20581",
+          "meta:descriptionId": "profile-telecom-subscription##xdm:primaryPartyID##description##87131",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:primaryPartyID",
           "tagNumber": 2
@@ -43,8 +43,8 @@
           "title": "Bundle Name",
           "type": "string",
           "description": "Captures the name of any type of subscription bundle in which the customer is enrolled, such as 'Internet + Media'.",
-          "meta:titleId": "profile-telecom-subscription##xdm:bundleName##title##27501",
-          "meta:descriptionId": "profile-telecom-subscription##xdm:bundleName##description##51081",
+          "meta:titleId": "profile-telecom-subscription##xdm:bundleName##title##58001",
+          "meta:descriptionId": "profile-telecom-subscription##xdm:bundleName##description##66971",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:bundleName",
           "tagNumber": 3
@@ -52,45 +52,45 @@
         "internetSubscription": {
           "type": "array",
           "description": "Internet subscription plan details such as data cap, connection type, and speed details.",
-          "meta:descriptionId": "profile-telecom-subscription##xdm:internetSubscription##description##67041",
+          "meta:descriptionId": "profile-telecom-subscription##xdm:internetSubscription##description##91581",
           "meta:xdmType": "array",
           "meta:xdmField": "xdm:internetSubscription",
           "tagNumber": 4,
           "items": {
-            "$ref": "obj6856133895905809.schema.json"
+            "$ref": "obj06693165217607544.schema.json"
           }
         },
         "landlineSubscription": {
           "type": "array",
           "description": "Landline subscription plan details including selected features, minutes, and dialing plans.",
-          "meta:descriptionId": "profile-telecom-subscription##xdm:landlineSubscription##description##74371",
+          "meta:descriptionId": "profile-telecom-subscription##xdm:landlineSubscription##description##96941",
           "meta:xdmType": "array",
           "meta:xdmField": "xdm:landlineSubscription",
           "tagNumber": 5,
           "items": {
-            "$ref": "obj6083797756343436.schema.json"
+            "$ref": "obj5093222763338396.schema.json"
           }
         },
         "mediaSubscription": {
           "type": "array",
           "description": "media subscription plan details including number of channels & included streaming services.",
-          "meta:descriptionId": "profile-telecom-subscription##xdm:mediaSubscription##description##69541",
+          "meta:descriptionId": "profile-telecom-subscription##xdm:mediaSubscription##description##20231",
           "meta:xdmType": "array",
           "meta:xdmField": "xdm:mediaSubscription",
           "tagNumber": 6,
           "items": {
-            "$ref": "obj3573742328418208.schema.json"
+            "$ref": "obj9376881894327125.schema.json"
           }
         },
         "mobileSubscription": {
           "type": "array",
           "description": "Mobile plan details including number of lines, data rates, cost, etc.",
-          "meta:descriptionId": "profile-telecom-subscription##xdm:mobileSubscription##description##91041",
+          "meta:descriptionId": "profile-telecom-subscription##xdm:mobileSubscription##description##381",
           "meta:xdmType": "array",
           "meta:xdmField": "xdm:mobileSubscription",
           "tagNumber": 7,
           "items": {
-            "$ref": "obj253120125410218.schema.json"
+            "$ref": "obj2534046652860329.schema.json"
           }
         }
       },

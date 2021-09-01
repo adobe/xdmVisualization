@@ -9,21 +9,21 @@
   "meta:abstract": true,
   "meta:status": "stable",
   "meta:createdDate": "2020-08-10",
-  "meta:titleId": "graph-node##title##64931",
-  "meta:descriptionId": "graph-node##description##26051",
+  "meta:titleId": "graph-node##title##16221",
+  "meta:descriptionId": "graph-node##description##8391",
   "meta:xdmType": "object",
   "properties": {
     "nodes": {
       "title": "Array Of Nodes",
       "description": "Array of nodes.",
       "type": "array",
-      "meta:titleId": "graph-node##xdm:nodes##title##19591",
-      "meta:descriptionId": "graph-node##xdm:nodes##description##52461",
+      "meta:titleId": "graph-node##xdm:nodes##title##22721",
+      "meta:descriptionId": "graph-node##xdm:nodes##description##98051",
       "meta:xdmType": "array",
       "meta:xdmField": "xdm:nodes",
       "tagNumber": 1,
       "items": {
-        "$ref": "obj7624996003184408.schema.json"
+        "$ref": "obj31105062205743406.schema.json"
       }
     }
   },

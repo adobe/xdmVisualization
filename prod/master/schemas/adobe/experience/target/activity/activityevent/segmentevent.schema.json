@@ -5,12 +5,16 @@
   "type": "object",
   "description": "Represents activity segment event.",
   "meta:status": "stable",
+  "meta:titleId": "segmentevent##title##38651",
+  "meta:descriptionId": "segmentevent##description##46071",
   "meta:xdmType": "object",
   "properties": {
     "segmentID": {
       "title": "Segment Identifier",
       "$ref": "../../../../../datatypes/segmentidentity.schema.json",
       "description": "Activity segment event.",
+      "meta:titleId": "segmentevent##xdm:segmentID##title##75601",
+      "meta:descriptionId": "segmentevent##xdm:segmentID##description##37001",
       "meta:xdmField": "xdm:segmentID",
       "tagNumber": 1
     },

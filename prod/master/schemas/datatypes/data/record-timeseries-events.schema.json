@@ -8,16 +8,16 @@
   "description": "Time-series extension for record data.",
   "meta:status": "stable",
   "meta:createdDate": "2020-08-10",
-  "meta:titleId": "record-timeseries-events##title##79221",
-  "meta:descriptionId": "record-timeseries-events##description##85951",
+  "meta:titleId": "record-timeseries-events##title##5771",
+  "meta:descriptionId": "record-timeseries-events##description##56861",
   "meta:xdmType": "object",
   "properties": {
     "timeSeriesEvents": {
       "title": "Time-series Events",
       "description": "List of time-series based events that relate to schemas based on record.",
       "type": "array",
-      "meta:titleId": "record-timeseries-events##xdm:timeSeriesEvents##title##19961",
-      "meta:descriptionId": "record-timeseries-events##xdm:timeSeriesEvents##description##98681",
+      "meta:titleId": "record-timeseries-events##xdm:timeSeriesEvents##title##24871",
+      "meta:descriptionId": "record-timeseries-events##xdm:timeSeriesEvents##description##28621",
       "meta:xdmType": "array",
       "items": {
         "$ref": "../../behaviors/time-series.schema.json",

@@ -6,16 +6,16 @@
   "description": "Describes user communication preferences by channel. For each channel individually, which is a property of this object, a user's preference such as opt-in, opt-out, or pending can be recorded. In addition, a global override opt-out is possible. Each property of this schema must be a valid and known URI for an XDM Channel.",
   "meta:status": "experimental",
   "meta:createdDate": "2020-08-18",
-  "meta:titleId": "optinout-additional-details##title##51551",
-  "meta:descriptionId": "optinout-additional-details##description##41621",
+  "meta:titleId": "optinout-additional-details##title##74591",
+  "meta:descriptionId": "optinout-additional-details##description##36111",
   "meta:xdmType": "object",
   "properties": {
     "optOutReason": {
       "title": "Opt Out Reason",
       "description": "Reason for opting out for a notification.",
       "type": "string",
-      "meta:titleId": "optinout-additional-details##xdm:optOutReason##title##99941",
-      "meta:descriptionId": "optinout-additional-details##xdm:optOutReason##description##80691",
+      "meta:titleId": "optinout-additional-details##xdm:optOutReason##title##60471",
+      "meta:descriptionId": "optinout-additional-details##xdm:optOutReason##description##89921",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:optOutReason",
       "tagNumber": 1
@@ -25,8 +25,8 @@
       "description": "Date of opting out for a notification.",
       "type": "string",
       "format": "date-time",
-      "meta:titleId": "optinout-additional-details##xdm:optOutDate##title##45581",
-      "meta:descriptionId": "optinout-additional-details##xdm:optOutDate##description##34711",
+      "meta:titleId": "optinout-additional-details##xdm:optOutDate##title##4141",
+      "meta:descriptionId": "optinout-additional-details##xdm:optOutDate##description##45701",
       "meta:xdmType": "date-time",
       "meta:xdmField": "xdm:optOutDate",
       "tagNumber": 2

@@ -7,6 +7,8 @@
   "title": "Decision Activity Criteria",
   "description": "One or more constraints that evaluate to lists of \"top N best\" options in the context of a decision activity. Those options satisfy all constraints for a given placement and are ordered by some function.",
   "meta:status": "stable",
+  "meta:titleId": "criteria##title##29641",
+  "meta:descriptionId": "criteria##description##91001",
   "meta:xdmType": "object",
   "properties": {
     "_experience": {
@@ -21,6 +23,8 @@
               "type": "array",
               "title": "Criteria",
               "description": "Defines a set of decision criteria where each contains a set of constraints.",
+              "meta:titleId": "criteria##https://ns.adobe.com/experience/decisioning/criteria##title##87411",
+              "meta:descriptionId": "criteria##https://ns.adobe.com/experience/decisioning/criteria##description##36681",
               "meta:xdmType": "array",
               "items": {
                 "$ref": "criterion-details.schema.json",

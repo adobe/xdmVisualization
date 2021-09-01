@@ -7,6 +7,8 @@
   "meta:abstract": true,
   "description": "Adobe Campaign ExperienceEvent optional snapshot of profile segmentation.",
   "meta:status": "stable",
+  "meta:titleId": "experienceevent-profile-segmentation##title##38791",
+  "meta:descriptionId": "experienceevent-profile-segmentation##description##83561",
   "meta:xdmType": "object",
   "properties": {
     "_experience": {
@@ -20,18 +22,22 @@
             "message": {
               "title": "A single message sent to a recipient.",
               "type": "object",
+              "meta:titleId": "experienceevent-profile-segmentation##https://ns.adobe.com/experience/campaign/message##title##85981",
               "meta:xdmType": "object",
               "properties": {
                 "profileSnapshot": {
                   "title": "Profile Snapshot",
                   "description": "Profile snapshot contains the recipient of the message. This property is primarily used to link the message to a profile using the `IdentityMap` but it can also be used to freeze some properties of the profile at the time the message was sent.",
                   "type": "object",
+                  "meta:titleId": "experienceevent-profile-segmentation##xdm:profileSnapshot##title##56621",
+                  "meta:descriptionId": "experienceevent-profile-segmentation##xdm:profileSnapshot##description##9651",
                   "meta:xdmType": "object",
                   "properties": {
                     "segmentMembership": {
                       "title": "Segment Membership Map",
                       "type": "object",
                       "meta:xdmType": "map",
+                      "meta:titleId": "experienceevent-profile-segmentation##xdm:segmentMembership##title##38711",
                       "meta:xdmField": "xdm:segmentMembership",
                       "tagNumber": 1,
                       "properties": {
@@ -39,6 +45,7 @@
                           "title": "Segment Membership per Namespace",
                           "type": "object",
                           "meta:xdmType": "map",
+                          "meta:titleId": "experienceevent-profile-segmentation##additionalProperties##title##52931",
                           "tagNumber": 1,
                           "properties": {
                             "mapObj": {

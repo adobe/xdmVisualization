@@ -11,18 +11,20 @@
     "deprecated",
     "stable"
   ],
+  "meta:titleId": [
+    "campaign##title##6761",
+    "record##title##65961",
+    "auditable##title##87231"
+  ],
+  "meta:descriptionId": [
+    "campaign##description##87171",
+    "record##description##3921",
+    "auditable##description##48551"
+  ],
   "meta:xdmType": "object",
   "meta:createdDate": [
     "2020-08-10",
     "2021-02-19"
-  ],
-  "meta:titleId": [
-    "record##title##92641",
-    "auditable##title##48381"
-  ],
-  "meta:descriptionId": [
-    "record##description##41201",
-    "auditable##description##60421"
   ],
   "properties": {
     "_id": {
@@ -30,8 +32,8 @@
       "type": "string",
       "format": "uri-reference",
       "description": "A unique identifier for the record.",
-      "meta:titleId": "record##@id##title##80061",
-      "meta:descriptionId": "record##@id##description##41711",
+      "meta:titleId": "record##@id##title##51271",
+      "meta:descriptionId": "record##@id##description##16181",
       "meta:xdmType": "string",
       "meta:xdmField": "@id",
       "tagNumber": 1
@@ -40,8 +42,8 @@
       "title": "Created by user identifier",
       "type": "string",
       "description": "User ID of who created the record.",
-      "meta:titleId": "auditable##xdm:repositoryCreatedBy##title##16641",
-      "meta:descriptionId": "auditable##xdm:repositoryCreatedBy##description##29041",
+      "meta:titleId": "auditable##xdm:repositoryCreatedBy##title##81581",
+      "meta:descriptionId": "auditable##xdm:repositoryCreatedBy##description##79871",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:repositoryCreatedBy",
       "tagNumber": 2
@@ -50,8 +52,8 @@
       "title": "Modified by user identifier",
       "type": "string",
       "description": "User ID of who last modified the record. At creation time, `modifiedByUser` is set as `createdByUser`.",
-      "meta:titleId": "auditable##xdm:repositoryLastModifiedBy##title##63651",
-      "meta:descriptionId": "auditable##xdm:repositoryLastModifiedBy##description##68141",
+      "meta:titleId": "auditable##xdm:repositoryLastModifiedBy##title##8121",
+      "meta:descriptionId": "auditable##xdm:repositoryLastModifiedBy##description##90771",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:repositoryLastModifiedBy",
       "tagNumber": 3
@@ -61,8 +63,8 @@
       "type": "string",
       "format": "uri-reference",
       "description": "The dataset files in Catalog which has been originating the creation of the record.",
-      "meta:titleId": "auditable##xdm:createdByBatchID##title##49401",
-      "meta:descriptionId": "auditable##xdm:createdByBatchID##description##94781",
+      "meta:titleId": "auditable##xdm:createdByBatchID##title##46121",
+      "meta:descriptionId": "auditable##xdm:createdByBatchID##description##60231",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:createdByBatchID",
       "tagNumber": 4
@@ -72,8 +74,8 @@
       "type": "string",
       "format": "uri-reference",
       "description": "The last dataset files in Catalog which has modified the record. At creation time, `modifiedByBatchID` is set as `createdByBatchID`.",
-      "meta:titleId": "auditable##xdm:modifiedByBatchID##title##98681",
-      "meta:descriptionId": "auditable##xdm:modifiedByBatchID##description##92221",
+      "meta:titleId": "auditable##xdm:modifiedByBatchID##title##45371",
+      "meta:descriptionId": "auditable##xdm:modifiedByBatchID##description##21001",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:modifiedByBatchID",
       "tagNumber": 5
@@ -91,7 +93,7 @@
             "2004-10-23T12:00:00-06:00"
           ],
           "description": "The server date and time when the resource was created in the repository, such as when an asset file is first uploaded or a directory is created by the server as the parent of a new asset. The date time property should conform to ISO 8601 standard. An example form is \"2004-10-23T12:00:00-06:00\".",
-          "meta:descriptionId": "1.0##repo:createDate##description##6511",
+          "meta:descriptionId": "1.0##repo:createDate##description##36201",
           "meta:xdmType": "date-time",
           "meta:xdmField": "repo:createDate",
           "tagNumber": 1
@@ -104,7 +106,7 @@
             "2004-10-23T12:00:00-06:00"
           ],
           "description": "The server date and time when the resource was last modified in the repository, such as when a new version of an asset is uploaded or a directory's child resource is added or removed. The date time property should conform to ISO 8601 standard. An example form is \"2004-10-23T12:00:00-06:00\".",
-          "meta:descriptionId": "1.0##repo:modifyDate##description##13061",
+          "meta:descriptionId": "1.0##repo:modifyDate##description##84751",
           "meta:xdmType": "date-time",
           "meta:xdmField": "repo:modifyDate",
           "tagNumber": 2
@@ -116,6 +118,8 @@
       "title": "Campaign Identifier",
       "type": "string",
       "description": "Campaign ID on the search advertising platform.",
+      "meta:titleId": "campaign##xdm:campaignId##title##44001",
+      "meta:descriptionId": "campaign##xdm:campaignId##description##57181",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:campaignId",
       "tagNumber": 7
@@ -124,6 +128,8 @@
       "title": "Campaign Name",
       "type": "string",
       "description": "Name of the Campaign.",
+      "meta:titleId": "campaign##xdm:campaignName##title##68821",
+      "meta:descriptionId": "campaign##xdm:campaignName##description##96411",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:campaignName",
       "tagNumber": 8
@@ -132,6 +138,8 @@
       "title": "Description",
       "type": "string",
       "description": "Description of the Campaign.",
+      "meta:titleId": "campaign##xdm:campaignDescription##title##84051",
+      "meta:descriptionId": "campaign##xdm:campaignDescription##description##82761",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:campaignDescription",
       "tagNumber": 9
@@ -159,6 +167,8 @@
         "Unknown",
         "Dummy"
       ],
+      "meta:titleId": "campaign##xdm:campaignStatus##title##43661",
+      "meta:descriptionId": "campaign##xdm:campaignStatus##description##70141",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:campaignStatus",
       "tagNumber": 10
@@ -167,6 +177,8 @@
       "title": "Channel Type",
       "type": "string",
       "description": "Channel Type for the Campaign",
+      "meta:titleId": "campaign##xdm:channelType##title##18761",
+      "meta:descriptionId": "campaign##xdm:channelType##description##46811",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:channelType",
       "tagNumber": 11
@@ -175,6 +187,8 @@
       "title": "Budget",
       "type": "number",
       "description": "Budget Allocated for the Campaign",
+      "meta:titleId": "campaign##xdm:budget##title##58031",
+      "meta:descriptionId": "campaign##xdm:budget##description##69371",
       "meta:xdmType": "number",
       "meta:xdmField": "xdm:budget",
       "tagNumber": 12
@@ -190,6 +204,8 @@
         "Daily Spend Until Depleted",
         "Day of Week"
       ],
+      "meta:titleId": "campaign##xdm:budgetType##title##76211",
+      "meta:descriptionId": "campaign##xdm:budgetType##description##19941",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:budgetType",
       "tagNumber": 13
@@ -202,6 +218,8 @@
         "Standard",
         "Accelerated"
       ],
+      "meta:titleId": "campaign##xdm:adDeliveryType##title##36091",
+      "meta:descriptionId": "campaign##xdm:adDeliveryType##description##68191",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:adDeliveryType",
       "tagNumber": 14
@@ -216,6 +234,8 @@
         "install_app",
         "visit_offer"
       ],
+      "meta:titleId": "campaign##xdm:objective##title##30961",
+      "meta:descriptionId": "campaign##xdm:objective##description##43641",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:objective",
       "tagNumber": 15
@@ -225,6 +245,8 @@
       "type": "string",
       "format": "date",
       "description": "Campaign Start Date",
+      "meta:titleId": "campaign##xdm:campaignStartDate##title##26061",
+      "meta:descriptionId": "campaign##xdm:campaignStartDate##description##42781",
       "meta:xdmType": "date",
       "meta:xdmField": "xdm:campaignStartDate",
       "tagNumber": 16
@@ -234,6 +256,8 @@
       "type": "string",
       "format": "date",
       "description": "Campaign End Date",
+      "meta:titleId": "campaign##xdm:campaignEndDate##title##84371",
+      "meta:descriptionId": "campaign##xdm:campaignEndDate##description##34181",
       "meta:xdmType": "date",
       "meta:xdmField": "xdm:campaignEndDate",
       "tagNumber": 17
@@ -242,6 +266,8 @@
       "title": "Portfolio Identifier",
       "type": "string",
       "description": "Identifier indicates if campaign has been assigned and managed via portfolio.",
+      "meta:titleId": "campaign##xdm:portfolioId##title##77901",
+      "meta:descriptionId": "campaign##xdm:portfolioId##description##35291",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:portfolioId",
       "tagNumber": 18
@@ -250,6 +276,8 @@
       "title": "Search Engine Identifier",
       "type": "integer",
       "description": "The application-specified identifier used to identify the Search Advertising Platform Name.",
+      "meta:titleId": "campaign##xdm:searchEngineId##title##16641",
+      "meta:descriptionId": "campaign##xdm:searchEngineId##description##38801",
       "meta:xdmType": "int",
       "meta:xdmField": "xdm:searchEngineId",
       "tagNumber": 19

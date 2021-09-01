@@ -7,6 +7,8 @@
   "meta:abstract": true,
   "description": "Captures Bizible B2B Person specific attributes. A B2B Person could be a contact/lead etc.",
   "meta:status": "experimental",
+  "meta:titleId": "bizible-person-details##title##54331",
+  "meta:descriptionId": "bizible-person-details##description##55861",
   "meta:xdmType": "object",
   "properties": {
     "_bizible": {
@@ -17,6 +19,8 @@
           "title": "Contact/Lead Stage",
           "description": "Current stage of a business Contact or Lead.",
           "type": "string",
+          "meta:titleId": "bizible-person-details##bizible:stage##title##54841",
+          "meta:descriptionId": "bizible-person-details##bizible:stage##description##42911",
           "meta:xdmType": "string",
           "meta:xdmField": "bizible:stage",
           "tagNumber": 1
@@ -25,6 +29,8 @@
           "title": "Contact/Lead Previous Stage",
           "description": "Previous stage of a business Contact or Lead.",
           "type": "string",
+          "meta:titleId": "bizible-person-details##bizible:stagePrevious##title##98791",
+          "meta:descriptionId": "bizible-person-details##bizible:stagePrevious##description##33431",
           "meta:xdmType": "string",
           "meta:xdmField": "bizible:stagePrevious",
           "tagNumber": 2

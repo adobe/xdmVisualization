@@ -6,6 +6,8 @@
   "meta:extensible": true,
   "description": "Target/destination for where to send/receive the notification.",
   "meta:status": "stable",
+  "meta:titleId": "notificationsubscriptiontarget##title##18301",
+  "meta:descriptionId": "notificationsubscriptiontarget##description##12591",
   "meta:xdmType": "object",
   "properties": {
     "emailAddress": {
@@ -13,6 +15,8 @@
       "type": "string",
       "format": "email",
       "description": "The technical address, e.g 'name@domain.com' as commonly defined in RFC2822 and subsequent standards.",
+      "meta:titleId": "notificationsubscriptiontarget##xdm:emailAddress##title##45561",
+      "meta:descriptionId": "notificationsubscriptiontarget##xdm:emailAddress##description##76781",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:emailAddress",
       "tagNumber": 1

@@ -31,12 +31,12 @@
     "2020-08-10"
   ],
   "meta:titleId": [
-    "product##title##78251",
-    "record##title##92641"
+    "product##title##63541",
+    "record##title##65961"
   ],
   "meta:descriptionId": [
-    "product##description##34291",
-    "record##description##41201"
+    "product##description##79091",
+    "record##description##3921"
   ],
   "meta:xdmType": "object",
   "properties": {
@@ -45,8 +45,8 @@
       "type": "string",
       "format": "uri-reference",
       "description": "A unique identifier for the record.",
-      "meta:titleId": "record##@id##title##80061",
-      "meta:descriptionId": "record##@id##description##41711",
+      "meta:titleId": "record##@id##title##51271",
+      "meta:descriptionId": "record##@id##description##16181",
       "meta:xdmType": "string",
       "meta:xdmField": "@id",
       "tagNumber": 1
@@ -55,8 +55,8 @@
       "title": "Product ID",
       "type": "string",
       "description": "Product unique identifer.",
-      "meta:titleId": "product##xdm:productID##title##92401",
-      "meta:descriptionId": "product##xdm:productID##description##27441",
+      "meta:titleId": "product##xdm:productID##title##56581",
+      "meta:descriptionId": "product##xdm:productID##description##83581",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:productID",
       "tagNumber": 2
@@ -65,8 +65,8 @@
       "title": "Product Name",
       "type": "string",
       "description": "Name of the product.",
-      "meta:titleId": "product##xdm:productName##title##90451",
-      "meta:descriptionId": "product##xdm:productName##description##87721",
+      "meta:titleId": "product##xdm:productName##title##3671",
+      "meta:descriptionId": "product##xdm:productName##description##34431",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:productName",
       "tagNumber": 3
@@ -75,8 +75,8 @@
       "title": "Product Description",
       "type": "string",
       "description": "Description of the product.",
-      "meta:titleId": "product##xdm:productDescription##title##99191",
-      "meta:descriptionId": "product##xdm:productDescription##description##90281",
+      "meta:titleId": "product##xdm:productDescription##title##99501",
+      "meta:descriptionId": "product##xdm:productDescription##description##51331",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:productDescription",
       "tagNumber": 4
@@ -85,8 +85,8 @@
       "title": "Product Rating",
       "type": "number",
       "description": "Customer review rating of the product.",
-      "meta:titleId": "product##xdm:productRating##title##86071",
-      "meta:descriptionId": "product##xdm:productRating##description##8571",
+      "meta:titleId": "product##xdm:productRating##title##91711",
+      "meta:descriptionId": "product##xdm:productRating##description##16431",
       "meta:xdmType": "number",
       "meta:xdmField": "xdm:productRating",
       "tagNumber": 5
@@ -95,8 +95,8 @@
       "title": "Product List price",
       "$ref": "../datatypes/currency.schema.json",
       "description": "Default price of the product before sales and discounting.",
-      "meta:titleId": "product##xdm:productListPrice##title##20351",
-      "meta:descriptionId": "product##xdm:productListPrice##description##52711",
+      "meta:titleId": "product##xdm:productListPrice##title##58801",
+      "meta:descriptionId": "product##xdm:productListPrice##description##77211",
       "meta:xdmField": "xdm:productListPrice",
       "tagNumber": 6
     },
@@ -105,8 +105,8 @@
       "type": "string",
       "format": "date-time",
       "description": "The date when this product was created. The time using RFC3339 with a stated time zone offset such as \"2001-07-04T12:08:56-07:00\". An example formatting pattern is \"yyyy-MM-dd'T'HH:mm:ssXXX\".",
-      "meta:titleId": "product##xdm:productManufacturedDate##title##61461",
-      "meta:descriptionId": "product##xdm:productManufacturedDate##description##9801",
+      "meta:titleId": "product##xdm:productManufacturedDate##title##98011",
+      "meta:descriptionId": "product##xdm:productManufacturedDate##description##30251",
       "meta:xdmType": "date-time",
       "meta:xdmField": "xdm:productManufacturedDate",
       "tagNumber": 7
@@ -116,8 +116,8 @@
       "type": "string",
       "format": "date-time",
       "description": "The date when this product was last modified for any updates. The time using RFC3339 with a stated time zone offset such as \"2001-07-04T12:08:56-07:00\". An example formatting pattern is \"yyyy-MM-dd'T'HH:mm:ssXXX\".",
-      "meta:titleId": "product##xdm:productLastModifiedDate##title##94071",
-      "meta:descriptionId": "product##xdm:productLastModifiedDate##description##2981",
+      "meta:titleId": "product##xdm:productLastModifiedDate##title##90801",
+      "meta:descriptionId": "product##xdm:productLastModifiedDate##description##1611",
       "meta:xdmType": "date-time",
       "meta:xdmField": "xdm:productLastModifiedDate",
       "tagNumber": 8

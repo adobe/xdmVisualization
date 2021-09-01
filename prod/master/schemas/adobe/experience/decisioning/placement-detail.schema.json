@@ -7,6 +7,8 @@
   "meta:abstract": true,
   "description": "Detail about the entity defining and controlling the decisioning process. Decisions are made in the context of a placement. At any given time, the best option is re-evaluated, or ranked, based on the most current set of context variables, rules and constraints applicable for this placement.",
   "meta:status": "stable",
+  "meta:titleId": "placement-detail##title##23001",
+  "meta:descriptionId": "placement-detail##description##50941",
   "meta:xdmType": "object",
   "properties": {
     "id": {
@@ -14,6 +16,8 @@
       "type": "string",
       "format": "uri-reference",
       "description": "A unique identifier for the decision placement.",
+      "meta:titleId": "placement-detail##xdm:id##title##4161",
+      "meta:descriptionId": "placement-detail##xdm:id##description##78561",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:id",
       "tagNumber": 1
@@ -26,6 +30,8 @@
           "title": "Placement ETag",
           "type": "string",
           "description": "The revision that the placement object was at when the snapshot was taken.",
+          "meta:titleId": "placement-detail##repo:etag##title##92641",
+          "meta:descriptionId": "placement-detail##repo:etag##description##4161",
           "meta:xdmType": "string",
           "meta:xdmField": "repo:etag",
           "tagNumber": 1
@@ -37,6 +43,8 @@
       "title": "Placement Name",
       "type": "string",
       "description": "Placement name. The name is displayed in various user interfaces.",
+      "meta:titleId": "placement-detail##xdm:name##title##65621",
+      "meta:descriptionId": "placement-detail##xdm:name##description##4551",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:name",
       "tagNumber": 3
@@ -46,6 +54,8 @@
       "type": "string",
       "format": "uri-reference",
       "description": "The channel in which proposition was made. The value is a valid Channel URI. See 'https://ns.adobe.com/xdm/channels/channel'",
+      "meta:titleId": "placement-detail##xdm:channelID##title##25541",
+      "meta:descriptionId": "placement-detail##xdm:channelID##description##9961",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:channelID",
       "tagNumber": 4

@@ -7,16 +7,16 @@
   "description": "Tracks when impressions are presented on a site, along with names, types, and counts.",
   "meta:status": "stable",
   "meta:createdDate": "2021-02-19",
-  "meta:titleId": "impressions##title##10111",
-  "meta:descriptionId": "impressions##description##62151",
+  "meta:titleId": "impressions##title##6591",
+  "meta:descriptionId": "impressions##description##53531",
   "meta:xdmType": "object",
   "properties": {
     "displays": {
       "title": "Displays",
       "type": "integer",
       "description": "Counts the number of times an impression item has been displayed to a visitor.",
-      "meta:titleId": "impressions##xdm:displays##title##83341",
-      "meta:descriptionId": "impressions##xdm:displays##description##48071",
+      "meta:titleId": "impressions##xdm:displays##title##3891",
+      "meta:descriptionId": "impressions##xdm:displays##description##70601",
       "meta:xdmType": "int",
       "meta:xdmField": "xdm:displays",
       "tagNumber": 1
@@ -25,8 +25,8 @@
       "title": "ID",
       "type": "string",
       "description": "Tracks the ID of an item in an impression array.",
-      "meta:titleId": "impressions##xdm:ID##title##39561",
-      "meta:descriptionId": "impressions##xdm:ID##description##63661",
+      "meta:titleId": "impressions##xdm:ID##title##13441",
+      "meta:descriptionId": "impressions##xdm:ID##description##62631",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:ID",
       "tagNumber": 2
@@ -35,8 +35,8 @@
       "title": "Type",
       "type": "string",
       "description": "Tracks the type of impression in an impression array.",
-      "meta:titleId": "impressions##xdm:type##title##16651",
-      "meta:descriptionId": "impressions##xdm:type##description##40731",
+      "meta:titleId": "impressions##xdm:type##title##37871",
+      "meta:descriptionId": "impressions##xdm:type##description##92761",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:type",
       "tagNumber": 3
@@ -45,8 +45,8 @@
       "title": "Selected",
       "type": "integer",
       "description": "Tracks when a given item in an impression array has been selected or clicked.",
-      "meta:titleId": "impressions##xdm:selected##title##3971",
-      "meta:descriptionId": "impressions##xdm:selected##description##62281",
+      "meta:titleId": "impressions##xdm:selected##title##59331",
+      "meta:descriptionId": "impressions##xdm:selected##description##95441",
       "meta:xdmType": "int",
       "meta:xdmField": "xdm:selected",
       "tagNumber": 4

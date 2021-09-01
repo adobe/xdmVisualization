@@ -7,6 +7,8 @@
   "meta:abstract": true,
   "description": "This Mixin will have Journey Action Metadata Fields.",
   "meta:status": "stable",
+  "meta:titleId": "journeyStepEventActionExecutionFields##title##971",
+  "meta:descriptionId": "journeyStepEventActionExecutionFields##description##36481",
   "meta:xdmType": "object",
   "properties": {
     "_experience": {
@@ -20,6 +22,7 @@
             "stepEvents": {
               "title": "Journey Orchestration Action Execution Fields.",
               "type": "object",
+              "meta:titleId": "journeyStepEventActionExecutionFields##https://ns.adobe.com/experience/journeyOrchestration/stepEvents##title##10491",
               "meta:xdmType": "object",
               "properties": {
                 "_experience": {
@@ -34,6 +37,8 @@
                           "title": "actionID",
                           "description": "GUID generated when the action is first authored on the JO canvas. Replicating the same action indirectly, by means of duplicating the journey or publishing a new version does not generate a new actionID.",
                           "type": "string",
+                          "meta:titleId": "journeyStepEventActionExecutionFields##https://ns.adobe.com/experience/journeyOrchestration/actionID##title##37991",
+                          "meta:descriptionId": "journeyStepEventActionExecutionFields##https://ns.adobe.com/experience/journeyOrchestration/actionID##description##89731",
                           "meta:xdmType": "string",
                           "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/actionID",
                           "tagNumber": 1
@@ -42,6 +47,8 @@
                           "title": "actionName",
                           "description": "Name of the action as it appears on the Journey Canvas, if the action is internal to JO Runtime, then action name is set to stepName field.",
                           "type": "string",
+                          "meta:titleId": "journeyStepEventActionExecutionFields##https://ns.adobe.com/experience/journeyOrchestration/actionName##title##68851",
+                          "meta:descriptionId": "journeyStepEventActionExecutionFields##https://ns.adobe.com/experience/journeyOrchestration/actionName##description##33941",
                           "meta:xdmType": "string",
                           "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/actionName",
                           "tagNumber": 2
@@ -50,6 +57,8 @@
                           "title": "actionType",
                           "description": "Denotes the action channel invoked. E.g: Email, SMS, customHttp",
                           "type": "string",
+                          "meta:titleId": "journeyStepEventActionExecutionFields##https://ns.adobe.com/experience/journeyOrchestration/actionType##title##93211",
+                          "meta:descriptionId": "journeyStepEventActionExecutionFields##https://ns.adobe.com/experience/journeyOrchestration/actionType##description##76821",
                           "meta:xdmType": "string",
                           "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/actionType",
                           "tagNumber": 3
@@ -58,6 +67,8 @@
                           "title": "actionParameterized",
                           "description": "True if the journey runtime passed in dynamic values retrieved at runtime to successfully execute the action. E.g: This field will be set to true, if a custom http action requires some values from external data sources for successful execution.",
                           "type": "boolean",
+                          "meta:titleId": "journeyStepEventActionExecutionFields##https://ns.adobe.com/experience/journeyOrchestration/actionParameterized##title##40271",
+                          "meta:descriptionId": "journeyStepEventActionExecutionFields##https://ns.adobe.com/experience/journeyOrchestration/actionParameterized##description##20151",
                           "meta:xdmType": "boolean",
                           "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/actionParameterized",
                           "tagNumber": 4
@@ -66,6 +77,8 @@
                           "title": "actionExecutionTime",
                           "description": "Time(ms) inside Journey Engine to call the necessary APIs to execute the action.",
                           "type": "integer",
+                          "meta:titleId": "journeyStepEventActionExecutionFields##https://ns.adobe.com/experience/journeyOrchestration/actionExecutionTime##title##68171",
+                          "meta:descriptionId": "journeyStepEventActionExecutionFields##https://ns.adobe.com/experience/journeyOrchestration/actionExecutionTime##description##9561",
                           "meta:xdmType": "int",
                           "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/actionExecutionTime",
                           "tagNumber": 5
@@ -74,6 +87,8 @@
                           "title": "actionExecutionError",
                           "description": "Error condition that prevented Journey Runtime from executing the action. E.g: timeout on the action step, capping on the action API etc, http error. ",
                           "type": "string",
+                          "meta:titleId": "journeyStepEventActionExecutionFields##https://ns.adobe.com/experience/journeyOrchestration/actionExecutionError##title##7681",
+                          "meta:descriptionId": "journeyStepEventActionExecutionFields##https://ns.adobe.com/experience/journeyOrchestration/actionExecutionError##description##7141",
                           "meta:xdmType": "string",
                           "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/actionExecutionError",
                           "tagNumber": 6
@@ -82,6 +97,8 @@
                           "title": "actionExecutionErrorCode",
                           "description": "Error code corresponding to actionExecutionError.",
                           "type": "string",
+                          "meta:titleId": "journeyStepEventActionExecutionFields##https://ns.adobe.com/experience/journeyOrchestration/actionExecutionErrorCode##title##56171",
+                          "meta:descriptionId": "journeyStepEventActionExecutionFields##https://ns.adobe.com/experience/journeyOrchestration/actionExecutionErrorCode##description##40131",
                           "meta:xdmType": "string",
                           "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/actionExecutionErrorCode",
                           "tagNumber": 7
@@ -90,6 +107,8 @@
                           "title": "actionExecutionOriginError",
                           "description": "In case of timeout or http error, the latest API response message. E.g: invalid payload, internal server error.",
                           "type": "string",
+                          "meta:titleId": "journeyStepEventActionExecutionFields##https://ns.adobe.com/experience/journeyOrchestration/actionExecutionOriginError##title##10661",
+                          "meta:descriptionId": "journeyStepEventActionExecutionFields##https://ns.adobe.com/experience/journeyOrchestration/actionExecutionOriginError##description##25771",
                           "meta:xdmType": "string",
                           "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/actionExecutionOriginError",
                           "tagNumber": 8
@@ -98,6 +117,8 @@
                           "title": "actionExecutionOriginCode",
                           "description": "Error code corresponding to actionExecutionOriginError.",
                           "type": "string",
+                          "meta:titleId": "journeyStepEventActionExecutionFields##https://ns.adobe.com/experience/journeyOrchestration/actionExecutionOriginCode##title##46141",
+                          "meta:descriptionId": "journeyStepEventActionExecutionFields##https://ns.adobe.com/experience/journeyOrchestration/actionExecutionOriginCode##description##28791",
                           "meta:xdmType": "string",
                           "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/actionExecutionOriginCode",
                           "tagNumber": 9
@@ -106,6 +127,8 @@
                           "title": "actionBusinessType",
                           "description": "The business solution powering the executed action. E.g: ACC, Epsilon. ",
                           "type": "string",
+                          "meta:titleId": "journeyStepEventActionExecutionFields##https://ns.adobe.com/experience/journeyOrchestration/actionBusinessType##title##72311",
+                          "meta:descriptionId": "journeyStepEventActionExecutionFields##https://ns.adobe.com/experience/journeyOrchestration/actionBusinessType##description##13741",
                           "meta:xdmType": "string",
                           "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/actionBusinessType",
                           "tagNumber": 10
@@ -114,6 +137,8 @@
                           "title": "actionSchedulerCount",
                           "description": "Number of times the Journey Runtime Scheduler was invoked to fulfil the given journey step. E.g for a Wait step, count of actionSchedulerCount=1",
                           "type": "integer",
+                          "meta:titleId": "journeyStepEventActionExecutionFields##https://ns.adobe.com/experience/journeyOrchestration/actionSchedulerCount##title##88741",
+                          "meta:descriptionId": "journeyStepEventActionExecutionFields##https://ns.adobe.com/experience/journeyOrchestration/actionSchedulerCount##description##46891",
                           "meta:xdmType": "int",
                           "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/actionSchedulerCount",
                           "tagNumber": 14

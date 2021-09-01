@@ -7,6 +7,14 @@
   "meta:extensible": true,
   "description": "Offer activity detail is used to capture the attributes of an offer activity in a proposition or response.",
   "meta:status": "stable",
+  "meta:titleId": [
+    "offer-activity-detail##title##42771",
+    "activity-detail##title##77021"
+  ],
+  "meta:descriptionId": [
+    "offer-activity-detail##description##27421",
+    "activity-detail##description##92581"
+  ],
   "meta:xdmType": "object",
   "properties": {
     "placement": {
@@ -14,6 +22,8 @@
       "type": "string",
       "format": "uri-reference",
       "description": "The reference to an offer placement instance. Offer placements are used by offer activities to limit the offer selection to those offers that have a representation that complies with the offer placement restrictions. The value is the URI (@id) of the offer placement that is referenced. See schema https://ns.adobe.com/experience/offer-management/offer-placement",
+      "meta:titleId": "offer-activity-detail##xdm:placement##title##73731",
+      "meta:descriptionId": "offer-activity-detail##xdm:placement##description##4771",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:placement",
       "tagNumber": 1
@@ -23,6 +33,8 @@
       "type": "string",
       "format": "uri-reference",
       "description": "The reference to a filter that is applied to the inventory when a decisioning is made the context of this activity. The value is the URI (@id) of the offer filter that is referenced. See schema https://ns.adobe.com/experience/offer-management/offer-filter",
+      "meta:titleId": "offer-activity-detail##xdm:filter##title##33541",
+      "meta:descriptionId": "offer-activity-detail##xdm:filter##description##16631",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:filter",
       "tagNumber": 2
@@ -32,6 +44,14 @@
       "type": "string",
       "format": "uri-reference",
       "description": "The reference to a fallback offer that is used when decisioning in the context of this activity does not qualify any of the offers specified in the fallback offer. The value is the URI (@id) of the fallback offer that is referenced.  See schema https://ns.adobe.com/experience/offer-management/fallback-offer",
+      "meta:titleId": [
+        "offer-activity-detail##xdm:fallback##title##55691",
+        "activity-detail##xdm:fallback##title##82451"
+      ],
+      "meta:descriptionId": [
+        "offer-activity-detail##xdm:fallback##description##53731",
+        "activity-detail##xdm:fallback##description##3941"
+      ],
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:fallback",
       "tagNumber": 3
@@ -41,6 +61,8 @@
       "type": "string",
       "format": "uri-reference",
       "description": "A unique, immutable identifier for the decision activity.",
+      "meta:titleId": "activity-detail##xdm:id##title##69851",
+      "meta:descriptionId": "activity-detail##xdm:id##description##18591",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:id",
       "tagNumber": 4
@@ -53,6 +75,8 @@
           "title": "Activity ETag",
           "type": "string",
           "description": "The revision that the decision activity object was at when the snapshot was taken.",
+          "meta:titleId": "activity-detail##repo:etag##title##93171",
+          "meta:descriptionId": "activity-detail##repo:etag##description##73231",
           "meta:xdmType": "string",
           "meta:xdmField": "repo:etag",
           "tagNumber": 1
@@ -64,6 +88,8 @@
       "title": "Activity Name",
       "type": "string",
       "description": "Activity name. The name is displayed in various user interfaces.",
+      "meta:titleId": "activity-detail##xdm:name##title##68831",
+      "meta:descriptionId": "activity-detail##xdm:name##description##14731",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:name",
       "tagNumber": 6
@@ -73,6 +99,8 @@
       "type": "string",
       "format": "date-time",
       "description": "Activity start date and end time. Property has the semantic of schema.org's 'startTime' property defined on http://schema.org/Action",
+      "meta:titleId": "activity-detail##xdm:startTime##title##24701",
+      "meta:descriptionId": "activity-detail##xdm:startTime##description##73361",
       "meta:xdmType": "date-time",
       "meta:xdmField": "xdm:startTime",
       "tagNumber": 7
@@ -82,6 +110,8 @@
       "type": "string",
       "format": "date-time",
       "description": "Activity end date and end time. Property has the semantic of schema.org's 'endTime' property defined on http://schema.org/Action",
+      "meta:titleId": "activity-detail##xdm:endTime##title##48821",
+      "meta:descriptionId": "activity-detail##xdm:endTime##description##85111",
       "meta:xdmType": "date-time",
       "meta:xdmField": "xdm:endTime",
       "tagNumber": 8

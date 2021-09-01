@@ -7,6 +7,8 @@
   "meta:abstract": true,
   "description": "Adobe Target shared extension. Contains Solution fields shared with other Solutions.",
   "meta:status": "stable",
+  "meta:titleId": "experienceevent-shared##title##34131",
+  "meta:descriptionId": "experienceevent-shared##description##68941",
   "meta:xdmType": "object",
   "properties": {
     "_experience": {
@@ -21,6 +23,8 @@
               "title": "Supplemental Data Identifier",
               "description": "Identifier used to stitch Target events with Analytics events",
               "type": "string",
+              "meta:titleId": "experienceevent-shared##https://ns.adobe.com/experience/target/supplementalDataID##title##55151",
+              "meta:descriptionId": "experienceevent-shared##https://ns.adobe.com/experience/target/supplementalDataID##description##31511",
               "meta:xdmType": "string",
               "meta:xdmField": "https://ns.adobe.com/experience/target/supplementalDataID",
               "tagNumber": 1

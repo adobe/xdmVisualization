@@ -8,8 +8,8 @@
   "meta:abstract": true,
   "meta:status": "stable",
   "meta:createdDate": "2020-08-10",
-  "meta:titleId": "profile-privacy##title##72101",
-  "meta:descriptionId": "profile-privacy##description##85111",
+  "meta:titleId": "profile-privacy##title##10921",
+  "meta:descriptionId": "profile-privacy##description##86951",
   "meta:xdmType": "object",
   "properties": {
     "identityPrivacyInfo": {
@@ -17,8 +17,8 @@
       "description": "Captured privacy information for identities in profile.",
       "type": "object",
       "meta:xdmType": "map",
-      "meta:titleId": "profile-privacy##xdm:identityPrivacyInfo##title##66931",
-      "meta:descriptionId": "profile-privacy##xdm:identityPrivacyInfo##description##13441",
+      "meta:titleId": "profile-privacy##xdm:identityPrivacyInfo##title##16881",
+      "meta:descriptionId": "profile-privacy##xdm:identityPrivacyInfo##description##50281",
       "meta:xdmField": "xdm:identityPrivacyInfo",
       "tagNumber": 2,
       "properties": {
@@ -26,21 +26,21 @@
           "title": "User namespace",
           "type": "object",
           "meta:xdmType": "map",
-          "meta:titleId": "profile-privacy##additionalProperties##title##67231",
+          "meta:titleId": "profile-privacy##additionalProperties##title##9011",
           "tagNumber": 1,
           "properties": {
             "mapObj": {
               "type": "object",
               "title": "User Identity",
-              "meta:titleId": "profile-privacy##additionalProperties##title##57281",
+              "meta:titleId": "profile-privacy##additionalProperties##title##84381",
               "meta:xdmType": "object",
               "properties": {
                 "identityIABConsent": {
                   "type": "object",
                   "title": "Identity level consent information",
                   "description": "Consent collected for an identity via consent management services.",
-                  "meta:titleId": "profile-privacy##xdm:identityIABConsent##title##19011",
-                  "meta:descriptionId": "profile-privacy##xdm:identityIABConsent##description##16461",
+                  "meta:titleId": "profile-privacy##xdm:identityIABConsent##title##40301",
+                  "meta:descriptionId": "profile-privacy##xdm:identityIABConsent##description##89931",
                   "meta:xdmType": "object",
                   "properties": {
                     "consentTimestamp": {
@@ -48,8 +48,8 @@
                       "description": "Timestamp (RFC3339) when this identity presented consent information",
                       "type": "string",
                       "format": "date-time",
-                      "meta:titleId": "profile-privacy##xdm:consentTimestamp##title##1401",
-                      "meta:descriptionId": "profile-privacy##xdm:consentTimestamp##description##63111",
+                      "meta:titleId": "profile-privacy##xdm:consentTimestamp##title##49691",
+                      "meta:descriptionId": "profile-privacy##xdm:consentTimestamp##description##13501",
                       "meta:xdmType": "date-time",
                       "meta:xdmField": "xdm:consentTimestamp",
                       "tagNumber": 1
@@ -58,8 +58,8 @@
                       "title": "Captured consent information",
                       "description": "Consent string and its specification. This can help reading application to use appropriate library.",
                       "$ref": "../../datatypes/consent/consentstring.schema.json",
-                      "meta:titleId": "profile-privacy##xdm:consentString##title##5161",
-                      "meta:descriptionId": "profile-privacy##xdm:consentString##description##85881",
+                      "meta:titleId": "profile-privacy##xdm:consentString##title##46461",
+                      "meta:descriptionId": "profile-privacy##xdm:consentString##description##6731",
                       "meta:xdmField": "xdm:consentString",
                       "tagNumber": 2
                     }

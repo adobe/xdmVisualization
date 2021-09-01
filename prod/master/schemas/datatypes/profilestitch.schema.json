@@ -7,12 +7,12 @@
   "meta:status": "stable",
   "meta:createdDate": "2020-08-10",
   "meta:titleId": [
-    "profileStitch##title##85491",
-    "identitymap##title##68521"
+    "profileStitch##title##30451",
+    "identitymap##title##90811"
   ],
   "meta:descriptionId": [
-    "profileStitch##description##20171",
-    "identitymap##description##9091"
+    "profileStitch##description##86971",
+    "identitymap##description##41821"
   ],
   "meta:xdmType": "object",
   "meta:extensible": true,
@@ -43,8 +43,8 @@
       "title": "Profile stitch ID",
       "$ref": "profilestitchidentity.schema.json",
       "description": "The identity of the segment or snapshot definition in with the domain of the specific system that processes that type of segment.",
-      "meta:titleId": "profileStitch##xdm:profileStitchID##title##23921",
-      "meta:descriptionId": "profileStitch##xdm:profileStitchID##description##44901",
+      "meta:titleId": "profileStitch##xdm:profileStitchID##title##58351",
+      "meta:descriptionId": "profileStitch##xdm:profileStitchID##description##21211",
       "meta:xdmField": "xdm:profileStitchID",
       "tagNumber": 2
     },
@@ -52,8 +52,8 @@
       "title": "Version",
       "type": "string",
       "description": "The version of the profile stitch definition used and is useful for debugging.",
-      "meta:titleId": "profileStitch##xdm:version##title##31261",
-      "meta:descriptionId": "profileStitch##xdm:version##description##56061",
+      "meta:titleId": "profileStitch##xdm:version##title##42511",
+      "meta:descriptionId": "profileStitch##xdm:version##description##64651",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:version",
       "tagNumber": 3

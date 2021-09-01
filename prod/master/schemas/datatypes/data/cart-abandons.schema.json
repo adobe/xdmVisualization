@@ -8,12 +8,12 @@
   "meta:status": "stable",
   "meta:createdDate": "2020-08-10",
   "meta:titleId": [
-    "cart-abandons##title##69711",
-    "metricdefinition##title##1451"
+    "cart-abandons##title##9591",
+    "metricdefinition##title##28671"
   ],
   "meta:descriptionId": [
-    "cart-abandons##description##59261",
-    "metricdefinition##description##34591"
+    "cart-abandons##description##52311",
+    "metricdefinition##description##96461"
   ],
   "meta:xdmType": "object",
   "properties": {
@@ -22,8 +22,8 @@
       "const": "xdm:cartAbandons",
       "description": "The unique identifier of this metric.",
       "meta:descriptionId": [
-        "cart-abandons##@id##description##53561",
-        "metricdefinition##@id##description##54541"
+        "cart-abandons##@id##description##90681",
+        "metricdefinition##@id##description##44171"
       ],
       "meta:xdmType": "string",
       "format": "uri-reference",
@@ -39,8 +39,8 @@
           "const": "commerce metric: cartAbandons",
           "description": "The human-readable name of the metric. The name can be used in user interfaces and does not have to be unique.",
           "meta:descriptionId": [
-            "cart-abandons##schema:name##description##20961",
-            "metricdefinition##schema:name##description##81811"
+            "cart-abandons##schema:name##description##49151",
+            "metricdefinition##schema:name##description##52471"
           ],
           "meta:xdmType": "string",
           "meta:xdmField": "schema:name",
@@ -57,8 +57,8 @@
       "description": "How to take measures of this metric.",
       "const": "count",
       "meta:descriptionId": [
-        "cart-abandons##xdm:measurement##description##35941",
-        "metricdefinition##xdm:measurement##description##90861"
+        "cart-abandons##xdm:measurement##description##91661",
+        "metricdefinition##xdm:measurement##description##34121"
       ],
       "meta:xdmType": "string",
       "examples": [
@@ -80,7 +80,7 @@
         "s",
         "USD"
       ],
-      "meta:descriptionId": "metricdefinition##xdm:unit##description##50321",
+      "meta:descriptionId": "metricdefinition##xdm:unit##description##62961",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:unit",
       "tagNumber": 4

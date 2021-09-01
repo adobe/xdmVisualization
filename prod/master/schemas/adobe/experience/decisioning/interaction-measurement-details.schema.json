@@ -6,12 +6,16 @@
   "meta:extensible": true,
   "description": "An interaction measurement determines how experience event properties are interpreted as outcomes. In some cases the outcome is provided directly with the event and no additional mapping is required, in other cases a calculation must be applied to test if the event is a measurable outcome and what the measured value should be.",
   "meta:status": "experimental",
+  "meta:titleId": "interaction-measurement##title##95021",
+  "meta:descriptionId": "interaction-measurement##description##23851",
   "meta:xdmType": "object",
   "properties": {
     "observation": {
       "type": "object",
       "title": "Event observation",
       "description": "A qualification that is evaluated against the experience event to test if a measurable outcome has been achieved. This mapping could check if the value of a property matches a given constant or could be a more complex evaluation. An outcome will be recorded with the event if and only if the implied condition evaluates to 'true'",
+      "meta:titleId": "interaction-measurement##xdm:observation##title##46181",
+      "meta:descriptionId": "interaction-measurement##xdm:observation##description##39861",
       "meta:xdmType": "object",
       "properties": {
         "mapping": {
@@ -25,6 +29,8 @@
             "predicate"
           ],
           "default": "direct",
+          "meta:titleId": "interaction-measurement##xdm:mapping##title##48401",
+          "meta:descriptionId": "interaction-measurement##xdm:mapping##description##25811",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:mapping",
           "tagNumber": 1
@@ -33,6 +39,8 @@
           "type": "string",
           "title": "Observation mapping",
           "description": "The expression or term that defines how the outcome is derived from the observation. The presence and interpretation of this 'value' is based on the 'mapping' type",
+          "meta:titleId": "interaction-measurement##xdm:value##title##32791",
+          "meta:descriptionId": "interaction-measurement##xdm:value##description##65711",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:value",
           "tagNumber": 2
@@ -42,6 +50,8 @@
           "title": "Field name",
           "description": "The field that contains the observed value.",
           "default": "xdm:eventType",
+          "meta:titleId": "interaction-measurement##xdm:field##title##35771",
+          "meta:descriptionId": "interaction-measurement##xdm:field##description##23541",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:field",
           "tagNumber": 3
@@ -54,12 +64,16 @@
       "type": "object",
       "title": "Interaction outcome measurement",
       "description": "The definition of a measurement for the outcome. A property path and value is specified where a measured outcome for the interaction is recorded.",
+      "meta:titleId": "interaction-measurement##xdm:outcome##title##78761",
+      "meta:descriptionId": "interaction-measurement##xdm:outcome##description##84551",
       "meta:xdmType": "object",
       "properties": {
         "_id": {
           "type": "string",
           "title": "Outcome identifier",
           "description": "Unique value that identifies the outcome of the interaction (nominal value).",
+          "meta:titleId": "interaction-measurement##@id##title##42291",
+          "meta:descriptionId": "interaction-measurement##@id##description##34741",
           "meta:xdmType": "string",
           "meta:xdmField": "@id",
           "tagNumber": 1
@@ -68,6 +82,8 @@
           "type": "string",
           "title": "Outcome property path",
           "description": "Property path where the outcome is inserted into the XDM event.",
+          "meta:titleId": "interaction-measurement##xdm:field##title##3821",
+          "meta:descriptionId": "interaction-measurement##xdm:field##description##98311",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:field",
           "tagNumber": 2

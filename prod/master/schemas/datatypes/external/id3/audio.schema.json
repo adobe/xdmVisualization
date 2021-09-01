@@ -6,8 +6,8 @@
   "description": "Audio metadata based on [ID3 V2.4](https://id3.org/id3v2.4.0-frames)",
   "meta:status": "stable",
   "meta:createdDate": "2020-08-10",
-  "meta:titleId": "audio##title##80411",
-  "meta:descriptionId": "audio##description##30461",
+  "meta:titleId": "audio##title##84441",
+  "meta:descriptionId": "audio##description##51871",
   "meta:xdmType": "object",
   "properties": {
     "_id3": {
@@ -18,8 +18,8 @@
           "title": "Record label",
           "type": "string",
           "description": "Name of the record label.",
-          "meta:titleId": "audio##id3:TPUB##title##96861",
-          "meta:descriptionId": "audio##id3:TPUB##description##21841",
+          "meta:titleId": "audio##id3:TPUB##title##24821",
+          "meta:descriptionId": "audio##id3:TPUB##description##47971",
           "meta:xdmType": "string",
           "meta:xdmField": "id3:TPUB",
           "tagNumber": 1
@@ -28,8 +28,8 @@
           "title": "InternetRadioStationName",
           "type": "string",
           "description": "The radio station name on which the audio is played.",
-          "meta:titleId": "audio##id3:TRSN##title##25251",
-          "meta:descriptionId": "audio##id3:TRSN##description##66591",
+          "meta:titleId": "audio##id3:TRSN##title##65721",
+          "meta:descriptionId": "audio##id3:TRSN##description##33091",
           "meta:xdmType": "string",
           "meta:xdmField": "id3:TRSN",
           "tagNumber": 2

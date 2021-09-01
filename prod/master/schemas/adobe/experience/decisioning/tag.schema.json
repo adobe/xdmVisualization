@@ -10,18 +10,24 @@
   "title": "Decision Category Tag",
   "description": "A keyword or term assigned to a decision option. Tags in this domain are reusable, searchable and identifiable keywords, i.e. their identity gets attached to other objects not simply the string that is used for human consumption. Therefore the same tag could have multiple, human readable representations. Tags can also be classified or arranged in an order that conveys additional semantics. This semantics is, however, not specified in this domain.",
   "meta:status": "stable",
+  "meta:titleId": [
+    "tag##title##25551",
+    "record##title##65961"
+  ],
+  "meta:descriptionId": [
+    "tag##description##95211",
+    "record##description##3921"
+  ],
   "meta:xdmType": "object",
   "meta:createdDate": "2020-08-10",
-  "meta:titleId": "record##title##92641",
-  "meta:descriptionId": "record##description##41201",
   "properties": {
     "_id": {
       "title": "Identifier",
       "type": "string",
       "format": "uri-reference",
       "description": "A unique identifier for the record.",
-      "meta:titleId": "record##@id##title##80061",
-      "meta:descriptionId": "record##@id##description##41711",
+      "meta:titleId": "record##@id##title##51271",
+      "meta:descriptionId": "record##@id##description##16181",
       "meta:xdmType": "string",
       "meta:xdmField": "@id",
       "tagNumber": 1
@@ -38,6 +44,8 @@
               "type": "string",
               "title": "Tag Name",
               "description": "The tag's external human-readable representation to the clients in the default language.",
+              "meta:titleId": "tag##https://ns.adobe.com/experience/decisioning/name##title##33031",
+              "meta:descriptionId": "tag##https://ns.adobe.com/experience/decisioning/name##description##37301",
               "meta:xdmType": "string",
               "meta:xdmField": "https://ns.adobe.com/experience/decisioning/name",
               "tagNumber": 1

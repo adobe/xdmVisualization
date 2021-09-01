@@ -18,12 +18,12 @@
     "2020-08-10"
   ],
   "meta:titleId": [
-    "vehicle-product##title##75981",
-    "record##title##92641"
+    "vehicle-product##title##12691",
+    "record##title##65961"
   ],
   "meta:descriptionId": [
-    "vehicle-product##description##39991",
-    "record##description##41201"
+    "vehicle-product##description##38481",
+    "record##description##3921"
   ],
   "meta:xdmType": "object",
   "properties": {
@@ -32,8 +32,8 @@
       "type": "string",
       "format": "uri-reference",
       "description": "A unique identifier for the record.",
-      "meta:titleId": "record##@id##title##80061",
-      "meta:descriptionId": "record##@id##description##41711",
+      "meta:titleId": "record##@id##title##51271",
+      "meta:descriptionId": "record##@id##description##16181",
       "meta:xdmType": "string",
       "meta:xdmField": "@id",
       "tagNumber": 1
@@ -42,8 +42,8 @@
       "title": "Color",
       "type": "string",
       "description": "Captures the color of the vehicle.",
-      "meta:titleId": "vehicle-product##xdm:color##title##94831",
-      "meta:descriptionId": "vehicle-product##xdm:color##description##45861",
+      "meta:titleId": "vehicle-product##xdm:color##title##251",
+      "meta:descriptionId": "vehicle-product##xdm:color##description##71321",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:color",
       "tagNumber": 2
@@ -56,8 +56,8 @@
         "certified preowned"
       ],
       "description": "Captures the inventory type of the vehicle.",
-      "meta:titleId": "vehicle-product##xdm:inventoryType##title##35721",
-      "meta:descriptionId": "vehicle-product##xdm:inventoryType##description##79001",
+      "meta:titleId": "vehicle-product##xdm:inventoryType##title##43331",
+      "meta:descriptionId": "vehicle-product##xdm:inventoryType##description##18621",
       "meta:xdmField": "xdm:inventoryType",
       "tagNumber": 3
     },
@@ -65,8 +65,8 @@
       "title": "Luggage Capacity",
       "type": "integer",
       "description": "Number of pieces of luggage that fit in the vehicle.",
-      "meta:titleId": "vehicle-product##xdm:luggageCapacity##title##87781",
-      "meta:descriptionId": "vehicle-product##xdm:luggageCapacity##description##52361",
+      "meta:titleId": "vehicle-product##xdm:luggageCapacity##title##79271",
+      "meta:descriptionId": "vehicle-product##xdm:luggageCapacity##description##79161",
       "meta:xdmType": "int",
       "meta:xdmField": "xdm:luggageCapacity",
       "tagNumber": 4
@@ -75,8 +75,8 @@
       "title": "Make",
       "type": "string",
       "description": "Captures the make of the vehicle.",
-      "meta:titleId": "vehicle-product##xdm:make##title##53621",
-      "meta:descriptionId": "vehicle-product##xdm:make##description##76391",
+      "meta:titleId": "vehicle-product##xdm:make##title##21851",
+      "meta:descriptionId": "vehicle-product##xdm:make##description##97311",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:make",
       "tagNumber": 5
@@ -85,8 +85,8 @@
       "title": "Mileage",
       "type": "integer",
       "description": "Captures the current mileage of a vehicle.",
-      "meta:titleId": "vehicle-product##xdm:mileage##title##46731",
-      "meta:descriptionId": "vehicle-product##xdm:mileage##description##73681",
+      "meta:titleId": "vehicle-product##xdm:mileage##title##5551",
+      "meta:descriptionId": "vehicle-product##xdm:mileage##description##32111",
       "meta:xdmType": "int",
       "meta:xdmField": "xdm:mileage",
       "tagNumber": 6
@@ -95,8 +95,8 @@
       "title": "Model",
       "type": "string",
       "description": "Captures the model of the vehicle.",
-      "meta:titleId": "vehicle-product##xdm:model##title##81601",
-      "meta:descriptionId": "vehicle-product##xdm:model##description##52261",
+      "meta:titleId": "vehicle-product##xdm:model##title##56321",
+      "meta:descriptionId": "vehicle-product##xdm:model##description##44851",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:model",
       "tagNumber": 7
@@ -105,8 +105,8 @@
       "title": "Number of Doors",
       "type": "integer",
       "description": "How many operating doors the vehicle has.",
-      "meta:titleId": "vehicle-product##xdm:numberOfDoors##title##50661",
-      "meta:descriptionId": "vehicle-product##xdm:numberOfDoors##description##53511",
+      "meta:titleId": "vehicle-product##xdm:numberOfDoors##title##97181",
+      "meta:descriptionId": "vehicle-product##xdm:numberOfDoors##description##24731",
       "meta:xdmType": "int",
       "meta:xdmField": "xdm:numberOfDoors",
       "tagNumber": 8
@@ -115,8 +115,8 @@
       "title": "Options",
       "type": "array",
       "description": "Captures an array of strings detailing vehicle options, such as heated seats, moonroof, navigation system, manual transmission, etc.",
-      "meta:titleId": "vehicle-product##xdm:options##title##78671",
-      "meta:descriptionId": "vehicle-product##xdm:options##description##43081",
+      "meta:titleId": "vehicle-product##xdm:options##title##18301",
+      "meta:descriptionId": "vehicle-product##xdm:options##description##38561",
       "meta:xdmType": "array",
       "items": {
         "type": "string",
@@ -130,8 +130,8 @@
       "title": "Ownership",
       "type": "string",
       "description": "Parent company of the vehicle.",
-      "meta:titleId": "vehicle-product##xdm:ownership##title##45861",
-      "meta:descriptionId": "vehicle-product##xdm:ownership##description##3461",
+      "meta:titleId": "vehicle-product##xdm:ownership##title##86181",
+      "meta:descriptionId": "vehicle-product##xdm:ownership##description##58151",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:ownership",
       "tagNumber": 10
@@ -140,8 +140,8 @@
       "title": "Passenger Capacity",
       "type": "integer",
       "description": "Number of passengers that fit in the vehicle.",
-      "meta:titleId": "vehicle-product##xdm:passengerCapacity##title##50471",
-      "meta:descriptionId": "vehicle-product##xdm:passengerCapacity##description##95361",
+      "meta:titleId": "vehicle-product##xdm:passengerCapacity##title##84121",
+      "meta:descriptionId": "vehicle-product##xdm:passengerCapacity##description##24891",
       "meta:xdmType": "int",
       "meta:xdmField": "xdm:passengerCapacity",
       "tagNumber": 11
@@ -150,8 +150,8 @@
       "title": "Postal Code",
       "type": "string",
       "description": "Captures the postal code where the vehicle resides.",
-      "meta:titleId": "vehicle-product##xdm:postalCode##title##79611",
-      "meta:descriptionId": "vehicle-product##xdm:postalCode##description##12071",
+      "meta:titleId": "vehicle-product##xdm:postalCode##title##54111",
+      "meta:descriptionId": "vehicle-product##xdm:postalCode##description##58341",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:postalCode",
       "tagNumber": 12
@@ -160,8 +160,8 @@
       "title": "Star Rating",
       "type": "integer",
       "description": "Star rating associated with the vehicle.",
-      "meta:titleId": "vehicle-product##xdm:starRating##title##15401",
-      "meta:descriptionId": "vehicle-product##xdm:starRating##description##15071",
+      "meta:titleId": "vehicle-product##xdm:starRating##title##79301",
+      "meta:descriptionId": "vehicle-product##xdm:starRating##description##73401",
       "meta:xdmType": "int",
       "meta:xdmField": "xdm:starRating",
       "tagNumber": 13
@@ -170,8 +170,8 @@
       "title": "Style",
       "type": "string",
       "description": "Captures the style of the vehicle, such as 2WD, 4WD, 2 Door Coupe, 4 Door Sedan, Convertible, etc.",
-      "meta:titleId": "vehicle-product##xdm:style##title##46011",
-      "meta:descriptionId": "vehicle-product##xdm:style##description##31281",
+      "meta:titleId": "vehicle-product##xdm:style##title##78931",
+      "meta:descriptionId": "vehicle-product##xdm:style##description##64631",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:style",
       "tagNumber": 14
@@ -180,8 +180,8 @@
       "title": "Trim",
       "type": "string",
       "description": "Captures the trim level or series of the vehicle.",
-      "meta:titleId": "vehicle-product##xdm:trim##title##89881",
-      "meta:descriptionId": "vehicle-product##xdm:trim##description##92911",
+      "meta:titleId": "vehicle-product##xdm:trim##title##51131",
+      "meta:descriptionId": "vehicle-product##xdm:trim##description##52261",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:trim",
       "tagNumber": 15
@@ -190,8 +190,8 @@
       "title": "Vehicle Category",
       "type": "string",
       "description": "Vehicle category such as sedan, coupe, sports, station wagon, hatchback, convertible, etc.",
-      "meta:titleId": "vehicle-product##xdm:vehicleCategory##title##52691",
-      "meta:descriptionId": "vehicle-product##xdm:vehicleCategory##description##51461",
+      "meta:titleId": "vehicle-product##xdm:vehicleCategory##title##67381",
+      "meta:descriptionId": "vehicle-product##xdm:vehicleCategory##description##7951",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:vehicleCategory",
       "tagNumber": 16
@@ -200,8 +200,8 @@
       "title": "Vehicle Identification Number",
       "type": "string",
       "description": "Captures the vehicle identification number (VIN) of the vehicle.",
-      "meta:titleId": "vehicle-product##xdm:vin##title##32811",
-      "meta:descriptionId": "vehicle-product##xdm:vin##description##56961",
+      "meta:titleId": "vehicle-product##xdm:vin##title##23691",
+      "meta:descriptionId": "vehicle-product##xdm:vin##description##39531",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:vin",
       "tagNumber": 17
@@ -210,8 +210,8 @@
       "title": "Year",
       "type": "integer",
       "description": "Captures the model year of the vehicle.",
-      "meta:titleId": "vehicle-product##xdm:year##title##93641",
-      "meta:descriptionId": "vehicle-product##xdm:year##description##39591",
+      "meta:titleId": "vehicle-product##xdm:year##title##53031",
+      "meta:descriptionId": "vehicle-product##xdm:year##description##92431",
       "meta:xdmType": "int",
       "meta:xdmField": "xdm:year",
       "tagNumber": 18

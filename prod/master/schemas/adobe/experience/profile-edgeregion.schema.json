@@ -7,6 +7,8 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:status": "stable",
+  "meta:titleId": "profile-edgeregion##title##57561",
+  "meta:descriptionId": "profile-edgeregion##description##39101",
   "meta:xdmType": "object",
   "properties": {
     "userActivityRegions": {
@@ -14,6 +16,8 @@
       "type": "object",
       "meta:xdmType": "map",
       "description": "Map of Location and timestamp of regions where this profile was captured.",
+      "meta:titleId": "profile-edgeregion##xdm:userActivityRegions##title##22631",
+      "meta:descriptionId": "profile-edgeregion##xdm:userActivityRegions##description##45901",
       "meta:xdmField": "xdm:userActivityRegions",
       "tagNumber": 1,
       "properties": {
@@ -26,6 +30,8 @@
               "type": "string",
               "format": "date-time",
               "description": "The time when data was captured on region node.",
+              "meta:titleId": "profile-edgeregion##xdm:captureTimestamp##title##591",
+              "meta:descriptionId": "profile-edgeregion##xdm:captureTimestamp##description##16881",
               "meta:xdmType": "date-time",
               "meta:xdmField": "xdm:captureTimestamp",
               "tagNumber": 1

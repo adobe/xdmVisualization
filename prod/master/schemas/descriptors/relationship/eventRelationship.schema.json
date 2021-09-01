@@ -8,8 +8,8 @@
   "description": "Used by the UPS system to assign the specific schema that will used for the timeSeriesEvents field which is part of the union view of a class. If not supplied, the system today will default to the unified ExperienceEvent.",
   "meta:status": "stable",
   "meta:createdDate": "2020-08-10",
-  "meta:titleId": "eventRelationship##title##7231",
-  "meta:descriptionId": "eventRelationship##description##38391",
+  "meta:titleId": "eventRelationship##title##8891",
+  "meta:descriptionId": "eventRelationship##description##70161",
   "meta:xdmType": "object",
   "properties": {
     "_id": {
@@ -17,8 +17,8 @@
       "type": "string",
       "format": "uri-reference",
       "description": "The unique identifier for the schema descriptor. This property is required when the descriptor is defined outside of the applicable schema, but is optional when applied via 'meta:descriptors'.",
-      "meta:titleId": "schemadescriptor##@id##title##5801",
-      "meta:descriptionId": "schemadescriptor##@id##description##83201",
+      "meta:titleId": "schemadescriptor##@id##title##10581",
+      "meta:descriptionId": "schemadescriptor##@id##description##77541",
       "meta:xdmType": "string",
       "meta:xdmField": "@id",
       "tagNumber": 1
@@ -27,8 +27,8 @@
       "title": "Type",
       "type": "string",
       "description": "The type of descriptor this object represents.",
-      "meta:titleId": "schemadescriptor##@type##title##53561",
-      "meta:descriptionId": "schemadescriptor##@type##description##49401",
+      "meta:titleId": "schemadescriptor##@type##title##15981",
+      "meta:descriptionId": "schemadescriptor##@type##description##6141",
       "meta:xdmType": "string",
       "const": "xdm:eventRelationship",
       "meta:xdmField": "@type",
@@ -39,8 +39,8 @@
       "type": "string",
       "format": "uri",
       "description": "The source schema this descriptor applies to. This property is required when the descriptor is defined outside of the applicable schema, but is optional when applied via 'meta:descriptors'",
-      "meta:titleId": "schemadescriptor##xdm:sourceSchema##title##67791",
-      "meta:descriptionId": "schemadescriptor##xdm:sourceSchema##description##83241",
+      "meta:titleId": "schemadescriptor##xdm:sourceSchema##title##68671",
+      "meta:descriptionId": "schemadescriptor##xdm:sourceSchema##description##98211",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:sourceSchema",
       "tagNumber": 3
@@ -48,8 +48,8 @@
     "sourceProperty": {
       "title": "Source Property",
       "description": "When present, the property of the source schema to which this descriptor applies. This value is a JSON Pointer, applied to an instance of an object described by `xdm:sourceSchema`.",
-      "meta:titleId": "schemadescriptor##xdm:sourceProperty##title##30881",
-      "meta:descriptionId": "schemadescriptor##xdm:sourceProperty##description##16331",
+      "meta:titleId": "schemadescriptor##xdm:sourceProperty##title##2001",
+      "meta:descriptionId": "schemadescriptor##xdm:sourceProperty##description##85661",
       "meta:xdmField": "xdm:sourceProperty",
       "tagNumber": 4
     },
@@ -57,8 +57,8 @@
       "title": "Source Version",
       "type": "number",
       "description": "Major version being referenced.",
-      "meta:titleId": "schemadescriptor##xdm:sourceVersion##title##76671",
-      "meta:descriptionId": "schemadescriptor##xdm:sourceVersion##description##5401",
+      "meta:titleId": "schemadescriptor##xdm:sourceVersion##title##89331",
+      "meta:descriptionId": "schemadescriptor##xdm:sourceVersion##description##21461",
       "meta:xdmType": "number",
       "meta:xdmField": "xdm:sourceVersion",
       "tagNumber": 5
@@ -72,8 +72,8 @@
       "type": "string",
       "format": "uri",
       "description": "The destination schema this descriptor applies to",
-      "meta:titleId": "eventRelationship##xdm:destinationSchema##title##51151",
-      "meta:descriptionId": "eventRelationship##xdm:destinationSchema##description##71691",
+      "meta:titleId": "eventRelationship##xdm:destinationSchema##title##24781",
+      "meta:descriptionId": "eventRelationship##xdm:destinationSchema##description##84431",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:destinationSchema",
       "tagNumber": 7
@@ -82,8 +82,8 @@
       "title": "Destination Version",
       "type": "number",
       "description": "When present, major version being referenced.",
-      "meta:titleId": "eventRelationship##xdm:destinationVersion##title##16841",
-      "meta:descriptionId": "eventRelationship##xdm:destinationVersion##description##51761",
+      "meta:titleId": "eventRelationship##xdm:destinationVersion##title##52051",
+      "meta:descriptionId": "eventRelationship##xdm:destinationVersion##description##87811",
       "meta:xdmType": "number",
       "meta:xdmField": "xdm:destinationVersion",
       "tagNumber": 8

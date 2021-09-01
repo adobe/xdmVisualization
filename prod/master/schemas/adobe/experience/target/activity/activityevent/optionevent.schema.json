@@ -5,6 +5,8 @@
   "type": "object",
   "description": "Represents the option and its that was displayed during the activity processing.",
   "meta:status": "stable",
+  "meta:titleId": "optionevent##title##94171",
+  "meta:descriptionId": "optionevent##description##79821",
   "meta:xdmType": "object",
   "properties": {
     "_experience": {
@@ -31,12 +33,16 @@
                           "title": "Activity Location",
                           "type": "object",
                           "description": "A location is a page on your website. It could also refer to a place in a mobile app, an email, or any other place where you run an optimization.",
+                          "meta:titleId": "optionevent##https://ns.adobe.com/experience/target/activity/activityevent/optionevent/activityLocation##title##44561",
+                          "meta:descriptionId": "optionevent##https://ns.adobe.com/experience/target/activity/activityevent/optionevent/activityLocation##description##52931",
                           "meta:xdmType": "object",
                           "properties": {
                             "locationID": {
                               "title": "Location Identifier",
                               "type": "string",
                               "description": "The local location identifier.",
+                              "meta:titleId": "optionevent##xdm:locationID##title##52931",
+                              "meta:descriptionId": "optionevent##xdm:locationID##description##63281",
                               "meta:xdmType": "string",
                               "meta:xdmField": "xdm:locationID",
                               "tagNumber": 1
@@ -45,6 +51,8 @@
                               "title": "Selector",
                               "type": "string",
                               "description": "A CSS selector in a html page.",
+                              "meta:titleId": "optionevent##xdm:selector##title##6211",
+                              "meta:descriptionId": "optionevent##xdm:selector##description##32521",
                               "meta:xdmType": "string",
                               "meta:xdmField": "xdm:selector",
                               "tagNumber": 2
@@ -60,12 +68,16 @@
                           "title": "Activity Option",
                           "type": "object",
                           "description": "An option is the displayed content on your web pages during activities.",
+                          "meta:titleId": "optionevent##https://ns.adobe.com/experience/target/activity/activityevent/optionevent/targetOption##title##44251",
+                          "meta:descriptionId": "optionevent##https://ns.adobe.com/experience/target/activity/activityevent/optionevent/targetOption##description##59181",
                           "meta:xdmType": "object",
                           "properties": {
                             "optionID": {
                               "title": "Option Identifier",
                               "type": "string",
                               "description": "Unique activity option identifier.",
+                              "meta:titleId": "optionevent##xdm:optionID##title##91631",
+                              "meta:descriptionId": "optionevent##xdm:optionID##description##6091",
                               "meta:xdmType": "string",
                               "meta:xdmField": "xdm:optionID",
                               "tagNumber": 1
@@ -74,6 +86,8 @@
                               "title": "Offer Identifier",
                               "type": "string",
                               "description": "An offer is the content displayed on your web pages during campaigns or activities.",
+                              "meta:titleId": "optionevent##xdm:offerID##title##83921",
+                              "meta:descriptionId": "optionevent##xdm:offerID##description##31651",
                               "meta:xdmType": "string",
                               "meta:xdmField": "xdm:offerID",
                               "tagNumber": 2
@@ -82,6 +96,8 @@
                               "title": "Offer Version",
                               "type": "string",
                               "description": "Version of the offer that was displayed.",
+                              "meta:titleId": "optionevent##xdm:version##title##58811",
+                              "meta:descriptionId": "optionevent##xdm:version##description##93031",
                               "meta:xdmType": "string",
                               "meta:xdmField": "xdm:version",
                               "tagNumber": 3

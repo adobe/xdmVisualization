@@ -7,6 +7,8 @@
   "meta:abstract": true,
   "description": "Snapshot of the properties of the decision activity. A decision activity is an entity that controls a decisioning process. Decisions are made in the context of an activity. See definition of decision activty for more details.",
   "meta:status": "stable",
+  "meta:titleId": "activity-detail##title##77021",
+  "meta:descriptionId": "activity-detail##description##92581",
   "meta:xdmType": "object",
   "properties": {
     "id": {
@@ -14,6 +16,8 @@
       "type": "string",
       "format": "uri-reference",
       "description": "A unique, immutable identifier for the decision activity.",
+      "meta:titleId": "activity-detail##xdm:id##title##69851",
+      "meta:descriptionId": "activity-detail##xdm:id##description##18591",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:id",
       "tagNumber": 1
@@ -26,6 +30,8 @@
           "title": "Activity ETag",
           "type": "string",
           "description": "The revision that the decision activity object was at when the snapshot was taken.",
+          "meta:titleId": "activity-detail##repo:etag##title##93171",
+          "meta:descriptionId": "activity-detail##repo:etag##description##73231",
           "meta:xdmType": "string",
           "meta:xdmField": "repo:etag",
           "tagNumber": 1
@@ -37,6 +43,8 @@
       "title": "Activity Name",
       "type": "string",
       "description": "Activity name. The name is displayed in various user interfaces.",
+      "meta:titleId": "activity-detail##xdm:name##title##68831",
+      "meta:descriptionId": "activity-detail##xdm:name##description##14731",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:name",
       "tagNumber": 3
@@ -46,6 +54,8 @@
       "type": "string",
       "format": "date-time",
       "description": "Activity start date and end time. Property has the semantic of schema.org's 'startTime' property defined on http://schema.org/Action",
+      "meta:titleId": "activity-detail##xdm:startTime##title##24701",
+      "meta:descriptionId": "activity-detail##xdm:startTime##description##73361",
       "meta:xdmType": "date-time",
       "meta:xdmField": "xdm:startTime",
       "tagNumber": 4
@@ -55,6 +65,8 @@
       "type": "string",
       "format": "date-time",
       "description": "Activity end date and end time. Property has the semantic of schema.org's 'endTime' property defined on http://schema.org/Action",
+      "meta:titleId": "activity-detail##xdm:endTime##title##48821",
+      "meta:descriptionId": "activity-detail##xdm:endTime##description##85111",
       "meta:xdmType": "date-time",
       "meta:xdmField": "xdm:endTime",
       "tagNumber": 5
@@ -64,6 +76,8 @@
       "type": "string",
       "format": "uri-reference",
       "description": "The reference to a fallback option that is used when decisioning in the context of this activity does not qualify any of the regular options (this typically happens when hard constraints are applied). The value is the URI (@id) of the fallback option that is referenced.",
+      "meta:titleId": "activity-detail##xdm:fallback##title##82451",
+      "meta:descriptionId": "activity-detail##xdm:fallback##description##3941",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:fallback",
       "tagNumber": 6

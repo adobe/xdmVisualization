@@ -5,12 +5,16 @@
   "type": "object",
   "description": "Adobe Advertising Cloud Ad Details.",
   "meta:status": "stable",
+  "meta:titleId": "advertisement##title##451",
+  "meta:descriptionId": "advertisement##description##55831",
   "meta:xdmType": "object",
   "properties": {
     "adId": {
       "title": "Ad Identifier",
       "type": "string",
       "description": "Identifier for the ad this event is associated with. Not related to the Ad-ID standard.",
+      "meta:titleId": "advertisement##xdm:adId##title##33851",
+      "meta:descriptionId": "advertisement##xdm:adId##description##35091",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:adId",
       "tagNumber": 1
@@ -19,6 +23,8 @@
       "title": "Runtime Type",
       "type": "string",
       "description": "Runtime of the ad unit itself. Not the runtime of the browser or the operating system.",
+      "meta:titleId": "advertisement##xdm:runtime##title##81141",
+      "meta:descriptionId": "advertisement##xdm:runtime##description##78311",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:runtime",
       "tagNumber": 2
@@ -27,6 +33,8 @@
       "title": "Ad Class",
       "type": "string",
       "description": "Ad class of driving event.",
+      "meta:titleId": "advertisement##xdm:adClass##title##37911",
+      "meta:descriptionId": "advertisement##xdm:adClass##description##1171",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:adClass",
       "tagNumber": 3
@@ -35,6 +43,8 @@
       "title": "Ad Unit Type",
       "type": "string",
       "description": "Identifier for the literal piece of code driving display of the ad in a browser/device.",
+      "meta:titleId": "advertisement##xdm:adUnitType##title##65021",
+      "meta:descriptionId": "advertisement##xdm:adUnitType##description##44401",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:adUnitType",
       "tagNumber": 4
@@ -43,6 +53,8 @@
       "title": "Promoted Asset Identifier",
       "type": "string",
       "description": "Identifier for the underlying asset being promoted in the ad which this event is associated with.",
+      "meta:titleId": "advertisement##xdm:promotedAssetId##title##63891",
+      "meta:descriptionId": "advertisement##xdm:promotedAssetId##description##73871",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:promotedAssetId",
       "tagNumber": 5
@@ -51,6 +63,8 @@
       "title": "Creative Identifier",
       "type": "string",
       "description": "Identifier for the creative which this event is associated with.",
+      "meta:titleId": "advertisement##xdm:creativeID##title##31601",
+      "meta:descriptionId": "advertisement##xdm:creativeID##description##9901",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:creativeID",
       "tagNumber": 6
@@ -59,6 +73,8 @@
       "title": "Keyword Identifier",
       "type": "string",
       "description": "Identifier for the keyword that the surfer used to search, which triggered this click event.",
+      "meta:titleId": "advertisement##xdm:keywordID##title##7221",
+      "meta:descriptionId": "advertisement##xdm:keywordID##description##78561",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:keywordID",
       "tagNumber": 7
@@ -67,6 +83,8 @@
       "title": "Keyword",
       "type": "string",
       "description": "Listing keyword for which customer is bidding ",
+      "meta:titleId": "advertisement##xdm:keyword##title##38981",
+      "meta:descriptionId": "advertisement##xdm:keyword##description##54891",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:keyword",
       "tagNumber": 8
@@ -75,6 +93,8 @@
       "title": "Is Dynamic Search Advertisement",
       "type": "boolean",
       "description": "Indicates if the click comes from a dynamic search advertisement.",
+      "meta:titleId": "advertisement##xdm:isDynamicSearchAd##title##73271",
+      "meta:descriptionId": "advertisement##xdm:isDynamicSearchAd##description##57191",
       "meta:xdmType": "boolean",
       "meta:xdmField": "xdm:isDynamicSearchAd",
       "tagNumber": 9
@@ -83,6 +103,8 @@
       "title": "Audience Identifier",
       "type": "string",
       "description": "Identifier for the audience segment for which the ad is targeted.",
+      "meta:titleId": "advertisement##xdm:audienceID##title##94221",
+      "meta:descriptionId": "advertisement##xdm:audienceID##description##39021",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:audienceID",
       "tagNumber": 10
@@ -91,6 +113,8 @@
       "title": "Ad Group Identifier",
       "type": "string",
       "description": "Identifier for the adGroup which ad is displayed and triggered this click event.",
+      "meta:titleId": "advertisement##xdm:adGroupID##title##87951",
+      "meta:descriptionId": "advertisement##xdm:adGroupID##description##29141",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:adGroupID",
       "tagNumber": 11
@@ -99,6 +123,8 @@
       "title": "Campaign Identifier",
       "type": "string",
       "description": "Identifier for the campaign that belongs to the current displayed advertisement which triggers this click event.",
+      "meta:titleId": "advertisement##xdm:campaignID##title##74831",
+      "meta:descriptionId": "advertisement##xdm:campaignID##description##82711",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:campaignID",
       "tagNumber": 12
@@ -107,6 +133,8 @@
       "title": "Network Type",
       "type": "string",
       "description": "Network type the click event came from a search advertisement or content advertisement.",
+      "meta:titleId": "advertisement##xdm:networkType##title##65261",
+      "meta:descriptionId": "advertisement##xdm:networkType##description##21951",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:networkType",
       "tagNumber": 13
@@ -115,6 +143,8 @@
       "title": "matchType",
       "type": "string",
       "description": "Match type used to match keyword.",
+      "meta:titleId": "advertisement##xdm:matchType##title##86241",
+      "meta:descriptionId": "advertisement##xdm:matchType##description##64851",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:matchType",
       "tagNumber": 14

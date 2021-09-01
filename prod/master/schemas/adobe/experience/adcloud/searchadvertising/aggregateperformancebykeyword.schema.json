@@ -10,18 +10,24 @@
     "deprecated",
     "stable"
   ],
+  "meta:titleId": [
+    "aggregateperformancebykeyword##title##50741",
+    "time-series##title##66611"
+  ],
+  "meta:descriptionId": [
+    "aggregateperformancebykeyword##description##40431",
+    "time-series##description##35031"
+  ],
   "meta:xdmType": "object",
   "meta:createdDate": "2020-08-10",
-  "meta:titleId": "time-series##title##64261",
-  "meta:descriptionId": "time-series##description##30491",
   "properties": {
     "_id": {
       "title": "Identifier",
       "type": "string",
       "format": "uri-reference",
       "description": "A unique identifier for the time-series event.",
-      "meta:titleId": "time-series##@id##title##99951",
-      "meta:descriptionId": "time-series##@id##description##96161",
+      "meta:titleId": "time-series##@id##title##97851",
+      "meta:descriptionId": "time-series##@id##description##91771",
       "meta:xdmType": "string",
       "meta:xdmField": "@id",
       "tagNumber": 1
@@ -31,8 +37,8 @@
       "type": "string",
       "format": "date-time",
       "description": "The time when an event or observation occurred.",
-      "meta:titleId": "time-series##xdm:timestamp##title##42821",
-      "meta:descriptionId": "time-series##xdm:timestamp##description##56081",
+      "meta:titleId": "time-series##xdm:timestamp##title##71321",
+      "meta:descriptionId": "time-series##xdm:timestamp##description##1861",
       "meta:xdmType": "date-time",
       "meta:xdmField": "xdm:timestamp",
       "tagNumber": 2
@@ -41,8 +47,8 @@
       "title": "Event Type",
       "type": "string",
       "description": "The primary event type for this time-series record.",
-      "meta:titleId": "time-series##xdm:eventType##title##29991",
-      "meta:descriptionId": "time-series##xdm:eventType##description##76551",
+      "meta:titleId": "time-series##xdm:eventType##title##79221",
+      "meta:descriptionId": "time-series##xdm:eventType##description##27681",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:eventType",
       "tagNumber": 3
@@ -51,6 +57,8 @@
       "title": "Account Identifier",
       "type": "string",
       "description": "Identifier that defines Customer/Client ID setup on the Search Advertising Platform.",
+      "meta:titleId": "aggregateperformancebykeyword##xdm:accountId##title##74291",
+      "meta:descriptionId": "aggregateperformancebykeyword##xdm:accountId##description##841",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:accountId",
       "tagNumber": 4
@@ -59,6 +67,8 @@
       "title": "Campaign Identifier",
       "type": "string",
       "description": "Campaign ID on the search advertising platform..",
+      "meta:titleId": "aggregateperformancebykeyword##xdm:campaignId##title##68821",
+      "meta:descriptionId": "aggregateperformancebykeyword##xdm:campaignId##description##43041",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:campaignId",
       "tagNumber": 5
@@ -67,6 +77,8 @@
       "title": "Ad Group Identifier",
       "type": "string",
       "description": "Ad Group ID on the search advertising platform.",
+      "meta:titleId": "aggregateperformancebykeyword##xdm:adgroupId##title##28111",
+      "meta:descriptionId": "aggregateperformancebykeyword##xdm:adgroupId##description##69891",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:adgroupId",
       "tagNumber": 6
@@ -75,6 +87,8 @@
       "title": "Search Term Identifier",
       "type": "string",
       "description": "Search Term ID on the search advertising platform.",
+      "meta:titleId": "aggregateperformancebykeyword##xdm:termId##title##75071",
+      "meta:descriptionId": "aggregateperformancebykeyword##xdm:termId##description##16741",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:termId",
       "tagNumber": 7
@@ -83,6 +97,8 @@
       "title": "Search Term",
       "type": "string",
       "description": "Search Term targeted for the Ad.",
+      "meta:titleId": "aggregateperformancebykeyword##xdm:term##title##89431",
+      "meta:descriptionId": "aggregateperformancebykeyword##xdm:term##description##31231",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:term",
       "tagNumber": 8
@@ -101,6 +117,8 @@
         "Product Target",
         "Product Group"
       ],
+      "meta:titleId": "aggregateperformancebykeyword##xdm:matchType##title##97291",
+      "meta:descriptionId": "aggregateperformancebykeyword##xdm:matchType##description##15751",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:matchType",
       "tagNumber": 9
@@ -109,6 +127,8 @@
       "title": "Search Engine Identifier",
       "type": "integer",
       "description": "The application-specified identifier used to identify the Search Advertising Platform Name.",
+      "meta:titleId": "aggregateperformancebykeyword##xdm:searchEngineId##title##89631",
+      "meta:descriptionId": "aggregateperformancebykeyword##xdm:searchEngineId##description##83001",
       "meta:xdmType": "int",
       "meta:xdmField": "xdm:searchEngineId",
       "tagNumber": 10
@@ -116,36 +136,42 @@
     "clicks": {
       "$ref": "../../../../datatypes/data/measure.schema.json",
       "description": "Count of Clicks for a given ad displayed on the network.",
+      "meta:descriptionId": "aggregateperformancebykeyword##xdm:clicks##description##20161",
       "meta:xdmField": "xdm:clicks",
       "tagNumber": 11
     },
     "impressions": {
       "$ref": "../../../../datatypes/data/measure.schema.json",
       "description": "Count of impressions for a given ad displayed on the network.",
+      "meta:descriptionId": "aggregateperformancebykeyword##xdm:impressions##description##90141",
       "meta:xdmField": "xdm:impressions",
       "tagNumber": 12
     },
     "totalCost": {
       "$ref": "../../../../datatypes/data/measure.schema.json",
       "description": "Total Advertising Spend for a given ad displayed on the network. The spend is in the account currency configured on the network.",
+      "meta:descriptionId": "aggregateperformancebykeyword##xdm:totalCost##description##59441",
       "meta:xdmField": "xdm:totalCost",
       "tagNumber": 13
     },
     "avgPosition": {
       "$ref": "../../../../datatypes/data/measure.schema.json",
       "description": "Average Position of the Ad displayed on the network.",
+      "meta:descriptionId": "aggregateperformancebykeyword##xdm:avgPosition##description##33271",
       "meta:xdmField": "xdm:avgPosition",
       "tagNumber": 14
     },
     "topPageBid": {
       "$ref": "../../../../datatypes/data/measure.schema.json",
       "description": "Top of the Page Bid Estimator. The measure is computed by the network and is not an additive measure.",
+      "meta:descriptionId": "aggregateperformancebykeyword##xdm:topPageBid##description##33571",
       "meta:xdmField": "xdm:topPageBid",
       "tagNumber": 15
     },
     "qualityScore": {
       "$ref": "../../../../datatypes/data/measure.schema.json",
       "description": "Quality Score of the Keyword assigned by the network - range 1 to 10. This is not an additive measure.",
+      "meta:descriptionId": "aggregateperformancebykeyword##xdm:qualityScore##description##6641",
       "meta:xdmField": "xdm:qualityScore",
       "tagNumber": 16
     },
@@ -153,6 +179,8 @@
       "title": "Device",
       "$ref": "../../../../datatypes/device.schema.json",
       "description": "The device from where the ad was displayed.",
+      "meta:titleId": "aggregateperformancebykeyword##xdm:device##title##81441",
+      "meta:descriptionId": "aggregateperformancebykeyword##xdm:device##description##4701",
       "meta:xdmField": "xdm:device",
       "tagNumber": 17
     }

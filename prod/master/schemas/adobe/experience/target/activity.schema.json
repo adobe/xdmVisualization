@@ -5,12 +5,16 @@
   "type": "object",
   "description": "An Adobe Target activity compares two or more experiences against the success metrics that are specified for choosing the experience that is most likely to provide the optimal results.",
   "meta:status": "stable",
+  "meta:titleId": "activity##title##5241",
+  "meta:descriptionId": "activity##description##18791",
   "meta:xdmType": "object",
   "properties": {
     "activityID": {
       "title": "Activity Identifier",
       "type": "string",
       "description": "Unique identity of an Adobe Target activity. This identifier can be used in activity APIs offered by Adobe Target.",
+      "meta:titleId": "activity##xdm:activityID##title##27421",
+      "meta:descriptionId": "activity##xdm:activityID##description##77051",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:activityID",
       "tagNumber": 1
@@ -19,6 +23,8 @@
       "title": "Activity Version",
       "type": "string",
       "description": "Version of the activity that processed this given experience event.",
+      "meta:titleId": "activity##xdm:version##title##4621",
+      "meta:descriptionId": "activity##xdm:version##description##35541",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:version",
       "tagNumber": 2

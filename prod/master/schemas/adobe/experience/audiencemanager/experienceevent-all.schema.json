@@ -7,6 +7,8 @@
   "meta:abstract": true,
   "description": "Adobe Audience Manager ExperienceEvent full extension. Contains all Solution added fields.",
   "meta:status": "stable",
+  "meta:titleId": "experienceevent-all##title##71761",
+  "meta:descriptionId": "experienceevent-all##description##76451",
   "meta:xdmType": "object",
   "properties": {
     "signals": {
@@ -14,6 +16,8 @@
       "description": "Additional frequently changing properties captured with an event via request parameters or other means.",
       "type": "object",
       "meta:xdmType": "map",
+      "meta:titleId": "experienceevent-all##xdm:signals##title##54871",
+      "meta:descriptionId": "experienceevent-all##xdm:signals##description##37191",
       "meta:xdmField": "xdm:signals",
       "tagNumber": 1,
       "properties": {
@@ -23,6 +27,7 @@
           "items": {
             "type": "string",
             "description": "Value of the parameter",
+            "meta:descriptionId": "experienceevent-all##items##description##78661",
             "meta:xdmType": "string",
             "tagNumber": 1
           },
@@ -34,6 +39,8 @@
       "title": "Overwrite Traits",
       "type": "boolean",
       "description": "Flag highlighting that all the traits realized before this for this id and data source, need to be discarded.",
+      "meta:titleId": "experienceevent-all##xdm:overwriteTraits##title##50261",
+      "meta:descriptionId": "experienceevent-all##xdm:overwriteTraits##description##29581",
       "meta:xdmType": "boolean",
       "meta:xdmField": "xdm:overwriteTraits",
       "tagNumber": 2
@@ -43,6 +50,8 @@
       "description": "Derived properties from event data",
       "type": "object",
       "meta:xdmType": "map",
+      "meta:titleId": "experienceevent-all##xdm:derivedSignals##title##23491",
+      "meta:descriptionId": "experienceevent-all##xdm:derivedSignals##description##46751",
       "meta:xdmField": "xdm:derivedSignals",
       "tagNumber": 3,
       "properties": {
@@ -52,6 +61,7 @@
           "items": {
             "type": "string",
             "description": "Value of the parameter",
+            "meta:descriptionId": "experienceevent-all##items##description##25941",
             "meta:xdmType": "string",
             "tagNumber": 1
           },

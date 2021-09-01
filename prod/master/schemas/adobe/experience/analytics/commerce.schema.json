@@ -7,12 +7,16 @@
   "meta:abstract": true,
   "description": "Adobe Analytics ExperienceEvent Commerce Mixin.",
   "meta:status": "stable",
+  "meta:titleId": "commerce##title##731",
+  "meta:descriptionId": "commerce##description##79871",
   "meta:xdmType": "object",
   "properties": {
     "productListItems": {
       "title": "Product List Items",
       "type": "array",
       "description": "A list of items representing a product selected by a customer with specific options and pricing that are for that usage context at a specific point of time and may differ from the product record.",
+      "meta:titleId": "commerce##xdm:productListItems##title##3321",
+      "meta:descriptionId": "commerce##xdm:productListItems##description##41791",
       "meta:xdmType": "array",
       "items": {
         "$ref": "productlistitem.schema.json",
@@ -25,6 +29,8 @@
       "title": "Commerce",
       "$ref": "../../../datatypes/marketing/commerce.schema.json",
       "description": "Product returns, warranty registration, and shopping cart/order process.",
+      "meta:titleId": "commerce##xdm:commerce##title##90751",
+      "meta:descriptionId": "commerce##xdm:commerce##description##54861",
       "meta:xdmField": "xdm:commerce",
       "tagNumber": 2
     }

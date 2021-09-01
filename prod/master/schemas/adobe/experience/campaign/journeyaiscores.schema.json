@@ -5,12 +5,16 @@
   "type": "object",
   "description": "Journey AI scores for one channel.",
   "meta:status": "stable",
+  "meta:titleId": "journeyaiscores##title##26921",
+  "meta:descriptionId": "journeyaiscores##description##7651",
   "meta:xdmType": "object",
   "properties": {
     "fatigue": {
       "title": "Fatigue",
       "description": "Fatigue score for the profile.",
       "$ref": "journeyaifatigue.schema.json",
+      "meta:titleId": "journeyaiscores##xdm:fatigue##title##96621",
+      "meta:descriptionId": "journeyaiscores##xdm:fatigue##description##21051",
       "meta:xdmField": "xdm:fatigue",
       "tagNumber": 1
     },
@@ -20,6 +24,8 @@
       "type": "array",
       "minItems": 168,
       "maxItems": 168,
+      "meta:titleId": "journeyaiscores##xdm:openScores##title##37531",
+      "meta:descriptionId": "journeyaiscores##xdm:openScores##description##31281",
       "meta:xdmType": "array",
       "items": {
         "type": "number",
@@ -35,6 +41,8 @@
       "type": "array",
       "minItems": 168,
       "maxItems": 168,
+      "meta:titleId": "journeyaiscores##xdm:clickScores##title##28471",
+      "meta:descriptionId": "journeyaiscores##xdm:clickScores##description##25651",
       "meta:xdmType": "array",
       "items": {
         "type": "number",

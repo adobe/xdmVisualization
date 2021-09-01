@@ -7,6 +7,8 @@
   "meta:abstract": true,
   "description": "Adobe Campaign ExperienceEvent optional snapshot of Profile preferences details.",
   "meta:status": "stable",
+  "meta:titleId": "experienceevent-profile-preferences-details##title##64321",
+  "meta:descriptionId": "experienceevent-profile-preferences-details##description##63631",
   "meta:xdmType": "object",
   "properties": {
     "_experience": {
@@ -20,12 +22,15 @@
             "message": {
               "title": "A single message sent to a recipient.",
               "type": "object",
+              "meta:titleId": "experienceevent-profile-preferences-details##https://ns.adobe.com/experience/campaign/message##title##35511",
               "meta:xdmType": "object",
               "properties": {
                 "profileSnapshot": {
                   "title": "Profile Snapshot",
                   "description": "Profile Snapshot contains the recipient of the message. This property is primarily used to link the message to a Profile using the `IdentityMap` but it can also be used to freeze some properties of the profile at the time the message was sent.",
                   "type": "object",
+                  "meta:titleId": "experienceevent-profile-preferences-details##xdm:profileSnapshot##title##26481",
+                  "meta:descriptionId": "experienceevent-profile-preferences-details##xdm:profileSnapshot##description##58351",
                   "meta:xdmType": "object",
                   "properties": {
                     "preferredLanguage": {
@@ -38,6 +43,8 @@
                         "yue-HK"
                       ],
                       "description": "Describes the preferred system of communication used by the profile. Language codes are expressed in BCP 47 format.",
+                      "meta:titleId": "experienceevent-profile-preferences-details##xdm:preferredLanguage##title##8331",
+                      "meta:descriptionId": "experienceevent-profile-preferences-details##xdm:preferredLanguage##description##641",
                       "meta:xdmType": "string",
                       "meta:xdmField": "xdm:preferredLanguage",
                       "tagNumber": 1
@@ -46,6 +53,8 @@
                       "title": "Profile Picture Link",
                       "type": "string",
                       "description": "Link to profile's picture",
+                      "meta:titleId": "experienceevent-profile-preferences-details##xdm:profilePictureLink##title##55251",
+                      "meta:descriptionId": "experienceevent-profile-preferences-details##xdm:profilePictureLink##description##56771",
                       "meta:xdmType": "string",
                       "meta:xdmField": "xdm:profilePictureLink",
                       "tagNumber": 2
@@ -54,6 +63,8 @@
                       "title": "Email Format",
                       "type": "string",
                       "description": "Email format preferred by the profile. This can be rich text/plain text",
+                      "meta:titleId": "experienceevent-profile-preferences-details##xdm:emailFormat##title##91701",
+                      "meta:descriptionId": "experienceevent-profile-preferences-details##xdm:emailFormat##description##70331",
                       "meta:xdmType": "string",
                       "meta:xdmField": "xdm:emailFormat",
                       "tagNumber": 3
@@ -67,6 +78,8 @@
                         "Asia/Calcutta"
                       ],
                       "description": "Describes which time zone the profile is present in, most frequently/the time zone preferred by the profile. Time zones are expressed according to the IETF tz database: https://www.ietf.org/timezones/tzdb-2016i/tz-link.htm",
+                      "meta:titleId": "experienceevent-profile-preferences-details##xdm:timeZone##title##32281",
+                      "meta:descriptionId": "experienceevent-profile-preferences-details##xdm:timeZone##description##42191",
                       "meta:xdmType": "string",
                       "meta:xdmField": "xdm:timeZone",
                       "tagNumber": 4

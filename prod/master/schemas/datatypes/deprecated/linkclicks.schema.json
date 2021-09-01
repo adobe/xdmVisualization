@@ -11,12 +11,12 @@
   ],
   "meta:createdDate": "2020-08-10",
   "meta:titleId": [
-    "linkclicks##title##8311",
-    "metricdefinition##title##1451"
+    "linkclicks##title##53141",
+    "metricdefinition##title##28671"
   ],
   "meta:descriptionId": [
-    "linkclicks##description##64691",
-    "metricdefinition##description##34591"
+    "linkclicks##description##82701",
+    "metricdefinition##description##96461"
   ],
   "meta:xdmType": "object",
   "properties": {
@@ -26,8 +26,8 @@
       "const": "xdm:linkClicks",
       "description": "The unique identifier of this metric.",
       "meta:descriptionId": [
-        "linkclicks##@id##description##16551",
-        "metricdefinition##@id##description##54541"
+        "linkclicks##@id##description##58821",
+        "metricdefinition##@id##description##44171"
       ],
       "meta:xdmType": "string",
       "meta:xdmField": "@id",
@@ -42,8 +42,8 @@
           "const": "web metric: linkClicks",
           "description": "The web metric `link-clicks` describes the number of clicks on a link on a web page.",
           "meta:descriptionId": [
-            "linkclicks##schema:name##description##76701",
-            "metricdefinition##schema:name##description##81811"
+            "linkclicks##schema:name##description##30941",
+            "metricdefinition##schema:name##description##52471"
           ],
           "meta:xdmType": "string",
           "meta:xdmField": "schema:name",
@@ -60,8 +60,8 @@
       "description": "How to take measures of this metric.",
       "const": "count",
       "meta:descriptionId": [
-        "linkclicks##xdm:measurement##description##14551",
-        "metricdefinition##xdm:measurement##description##90861"
+        "linkclicks##xdm:measurement##description##40391",
+        "metricdefinition##xdm:measurement##description##34121"
       ],
       "meta:xdmType": "string",
       "examples": [
@@ -83,7 +83,7 @@
         "s",
         "USD"
       ],
-      "meta:descriptionId": "metricdefinition##xdm:unit##description##50321",
+      "meta:descriptionId": "metricdefinition##xdm:unit##description##62961",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:unit",
       "tagNumber": 4

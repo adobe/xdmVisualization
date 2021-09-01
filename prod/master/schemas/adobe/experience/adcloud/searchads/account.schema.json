@@ -14,18 +14,20 @@
   "meta:auditable": true,
   "description": "Search Advertising Account defines Customer Configuration on Search Advertising Platform.",
   "meta:status": "stable",
+  "meta:titleId": [
+    "account##title##1551",
+    "record##title##65961",
+    "auditable##title##87231"
+  ],
+  "meta:descriptionId": [
+    "account##description##58171",
+    "record##description##3921",
+    "auditable##description##48551"
+  ],
   "meta:xdmType": "object",
   "meta:createdDate": [
     "2020-08-10",
     "2021-02-19"
-  ],
-  "meta:titleId": [
-    "record##title##92641",
-    "auditable##title##48381"
-  ],
-  "meta:descriptionId": [
-    "record##description##41201",
-    "auditable##description##60421"
   ],
   "properties": {
     "_id": {
@@ -33,8 +35,8 @@
       "type": "string",
       "format": "uri-reference",
       "description": "A unique identifier for the record.",
-      "meta:titleId": "record##@id##title##80061",
-      "meta:descriptionId": "record##@id##description##41711",
+      "meta:titleId": "record##@id##title##51271",
+      "meta:descriptionId": "record##@id##description##16181",
       "meta:xdmType": "string",
       "meta:xdmField": "@id",
       "tagNumber": 1
@@ -43,8 +45,8 @@
       "title": "Created by user identifier",
       "type": "string",
       "description": "User ID of who created the record.",
-      "meta:titleId": "auditable##xdm:repositoryCreatedBy##title##16641",
-      "meta:descriptionId": "auditable##xdm:repositoryCreatedBy##description##29041",
+      "meta:titleId": "auditable##xdm:repositoryCreatedBy##title##81581",
+      "meta:descriptionId": "auditable##xdm:repositoryCreatedBy##description##79871",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:repositoryCreatedBy",
       "tagNumber": 2
@@ -53,8 +55,8 @@
       "title": "Modified by user identifier",
       "type": "string",
       "description": "User ID of who last modified the record. At creation time, `modifiedByUser` is set as `createdByUser`.",
-      "meta:titleId": "auditable##xdm:repositoryLastModifiedBy##title##63651",
-      "meta:descriptionId": "auditable##xdm:repositoryLastModifiedBy##description##68141",
+      "meta:titleId": "auditable##xdm:repositoryLastModifiedBy##title##8121",
+      "meta:descriptionId": "auditable##xdm:repositoryLastModifiedBy##description##90771",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:repositoryLastModifiedBy",
       "tagNumber": 3
@@ -64,8 +66,8 @@
       "type": "string",
       "format": "uri-reference",
       "description": "The dataset files in Catalog which has been originating the creation of the record.",
-      "meta:titleId": "auditable##xdm:createdByBatchID##title##49401",
-      "meta:descriptionId": "auditable##xdm:createdByBatchID##description##94781",
+      "meta:titleId": "auditable##xdm:createdByBatchID##title##46121",
+      "meta:descriptionId": "auditable##xdm:createdByBatchID##description##60231",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:createdByBatchID",
       "tagNumber": 4
@@ -75,8 +77,8 @@
       "type": "string",
       "format": "uri-reference",
       "description": "The last dataset files in Catalog which has modified the record. At creation time, `modifiedByBatchID` is set as `createdByBatchID`.",
-      "meta:titleId": "auditable##xdm:modifiedByBatchID##title##98681",
-      "meta:descriptionId": "auditable##xdm:modifiedByBatchID##description##92221",
+      "meta:titleId": "auditable##xdm:modifiedByBatchID##title##45371",
+      "meta:descriptionId": "auditable##xdm:modifiedByBatchID##description##21001",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:modifiedByBatchID",
       "tagNumber": 5
@@ -94,7 +96,7 @@
             "2004-10-23T12:00:00-06:00"
           ],
           "description": "The server date and time when the resource was created in the repository, such as when an asset file is first uploaded or a directory is created by the server as the parent of a new asset. The date time property should conform to ISO 8601 standard. An example form is \"2004-10-23T12:00:00-06:00\".",
-          "meta:descriptionId": "1.0##repo:createDate##description##6511",
+          "meta:descriptionId": "1.0##repo:createDate##description##36201",
           "meta:xdmType": "date-time",
           "meta:xdmField": "repo:createDate",
           "tagNumber": 1
@@ -107,7 +109,7 @@
             "2004-10-23T12:00:00-06:00"
           ],
           "description": "The server date and time when the resource was last modified in the repository, such as when a new version of an asset is uploaded or a directory's child resource is added or removed. The date time property should conform to ISO 8601 standard. An example form is \"2004-10-23T12:00:00-06:00\".",
-          "meta:descriptionId": "1.0##repo:modifyDate##description##13061",
+          "meta:descriptionId": "1.0##repo:modifyDate##description##84751",
           "meta:xdmType": "date-time",
           "meta:xdmField": "repo:modifyDate",
           "tagNumber": 2
@@ -123,6 +125,8 @@
           "title": "Account Identifier",
           "type": "string",
           "description": "Identifier that defines Customer/Client ID setup on the Search Advertising Platform.",
+          "meta:titleId": "account##searchads:accountId##title##56941",
+          "meta:descriptionId": "account##searchads:accountId##description##99431",
           "meta:xdmType": "string",
           "meta:xdmField": "searchads:accountId",
           "tagNumber": 1
@@ -131,6 +135,8 @@
           "title": "Account Name",
           "type": "string",
           "description": "Name of the Account.",
+          "meta:titleId": "account##searchads:accountName##title##85821",
+          "meta:descriptionId": "account##searchads:accountName##description##30751",
           "meta:xdmType": "string",
           "meta:xdmField": "searchads:accountName",
           "tagNumber": 2
@@ -145,6 +151,8 @@
           ],
           "pattern": "^[A-Z]{3}$",
           "description": "Currency in which this account operates.",
+          "meta:titleId": "account##searchads:currencyCode##title##19401",
+          "meta:descriptionId": "account##searchads:currencyCode##description##26961",
           "meta:xdmType": "string",
           "meta:xdmField": "searchads:currencyCode",
           "tagNumber": 3
@@ -157,6 +165,8 @@
             "Enabled",
             "Disabled"
           ],
+          "meta:titleId": "account##searchads:accountStatus##title##80931",
+          "meta:descriptionId": "account##searchads:accountStatus##description##2981",
           "meta:xdmType": "string",
           "meta:xdmField": "searchads:accountStatus",
           "tagNumber": 4
@@ -165,6 +175,8 @@
           "title": "Budget",
           "type": "number",
           "description": "Budget Allocated to the Account acts only as a spend cap across all your campaigns.",
+          "meta:titleId": "account##searchads:budget##title##61511",
+          "meta:descriptionId": "account##searchads:budget##description##76221",
           "meta:xdmType": "number",
           "meta:xdmField": "searchads:budget",
           "tagNumber": 5
@@ -180,6 +192,8 @@
             "Daily Spend Until Depleted",
             "Day of Week"
           ],
+          "meta:titleId": "account##searchads:budgetType##title##3481",
+          "meta:descriptionId": "account##searchads:budgetType##description##33291",
           "meta:xdmType": "string",
           "meta:xdmField": "searchads:budgetType",
           "tagNumber": 6
@@ -188,6 +202,8 @@
           "title": "Search Engine Identifier",
           "type": "integer",
           "description": "The applicatio-specified identifier used to identify the Search Advertising Platform Name.",
+          "meta:titleId": "account##searchads:searchEngineId##title##85301",
+          "meta:descriptionId": "account##searchads:searchEngineId##description##70141",
           "meta:xdmType": "int",
           "meta:xdmField": "searchads:searchEngineId",
           "tagNumber": 7
@@ -199,6 +215,7 @@
             "2004-10-23T12:00:00-06:00"
           ],
           "description": "The date and time when the account was created. An example form is \"2004-10-23T12:00:00-06:00\".",
+          "meta:descriptionId": "account##searchads:createDate##description##21411",
           "meta:xdmType": "date-time",
           "meta:xdmField": "searchads:createDate",
           "tagNumber": 8
@@ -210,6 +227,7 @@
             "2004-10-23T12:00:00-06:00"
           ],
           "description": "The date and time when the account was last modified. An example form is \"2004-10-23T12:00:00-06:00\".",
+          "meta:descriptionId": "account##searchads:modifyDate##description##10111",
           "meta:xdmType": "date-time",
           "meta:xdmField": "searchads:modifyDate",
           "tagNumber": 9

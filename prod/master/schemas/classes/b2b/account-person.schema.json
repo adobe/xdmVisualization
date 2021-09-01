@@ -14,14 +14,14 @@
     "stable"
   ],
   "meta:titleId": [
-    "account-person##title##13501",
-    "record##title##92641",
-    "external-source-system-audit-details##title##25871"
+    "account-person##title##54851",
+    "record##title##65961",
+    "external-source-system-audit-details##title##88991"
   ],
   "meta:descriptionId": [
-    "account-person##description##67451",
-    "record##description##41201",
-    "external-source-system-audit-details##description##77561"
+    "account-person##description##46121",
+    "record##description##3921",
+    "external-source-system-audit-details##description##98601"
   ],
   "meta:xdmType": "object",
   "meta:createdDate": "2020-08-10",
@@ -31,8 +31,8 @@
       "type": "string",
       "format": "uri-reference",
       "description": "A unique identifier for the record.",
-      "meta:titleId": "record##@id##title##80061",
-      "meta:descriptionId": "record##@id##description##41711",
+      "meta:titleId": "record##@id##title##51271",
+      "meta:descriptionId": "record##@id##description##16181",
       "meta:xdmType": "string",
       "meta:xdmField": "@id",
       "tagNumber": 1
@@ -41,8 +41,8 @@
       "title": "Account Person ID",
       "description": "Unique identifier for this relationship between an account and a person.",
       "type": "string",
-      "meta:titleId": "account-person##xdm:accountPersonID##title##14431",
-      "meta:descriptionId": "account-person##xdm:accountPersonID##description##92761",
+      "meta:titleId": "account-person##xdm:accountPersonID##title##55901",
+      "meta:descriptionId": "account-person##xdm:accountPersonID##description##63171",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:accountPersonID",
       "tagNumber": 2
@@ -60,8 +60,8 @@
       "title": "Account ID",
       "description": "Unique identifier for the account in this account person relationship.",
       "type": "string",
-      "meta:titleId": "account-person##xdm:accountID##title##10671",
-      "meta:descriptionId": "account-person##xdm:accountID##description##27271",
+      "meta:titleId": "account-person##xdm:accountID##title##74971",
+      "meta:descriptionId": "account-person##xdm:accountID##description##96141",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:accountID",
       "tagNumber": 4
@@ -79,8 +79,8 @@
       "title": "Person ID",
       "description": "Unique identifier for the person in this account person relationship.",
       "type": "string",
-      "meta:titleId": "account-person##xdm:personID##title##39941",
-      "meta:descriptionId": "account-person##xdm:personID##description##281",
+      "meta:titleId": "account-person##xdm:personID##title##42991",
+      "meta:descriptionId": "account-person##xdm:personID##description##66421",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:personID",
       "tagNumber": 6
@@ -98,8 +98,8 @@
       "title": "Person Role",
       "description": "Role of the person on this account.",
       "type": "string",
-      "meta:titleId": "account-person##xdm:personRole##title##93871",
-      "meta:descriptionId": "account-person##xdm:personRole##description##45661",
+      "meta:titleId": "account-person##xdm:personRole##title##49191",
+      "meta:descriptionId": "account-person##xdm:personRole##description##22021",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:personRole",
       "tagNumber": 8
@@ -108,8 +108,8 @@
       "title": "Direct Flag",
       "description": "Boolean to indicate if this is a direct relationship between the account and the person.",
       "type": "boolean",
-      "meta:titleId": "account-person##xdm:isDirect##title##38041",
-      "meta:descriptionId": "account-person##xdm:isDirect##description##50461",
+      "meta:titleId": "account-person##xdm:isDirect##title##75251",
+      "meta:descriptionId": "account-person##xdm:isDirect##description##5791",
       "meta:xdmType": "boolean",
       "meta:xdmField": "xdm:isDirect",
       "tagNumber": 9
@@ -118,8 +118,8 @@
       "title": "Active Flag",
       "description": "Boolean to indicate if this relationship between the account and the person is active.",
       "type": "boolean",
-      "meta:titleId": "account-person##xdm:isActive##title##96881",
-      "meta:descriptionId": "account-person##xdm:isActive##description##77981",
+      "meta:titleId": "account-person##xdm:isActive##title##32451",
+      "meta:descriptionId": "account-person##xdm:isActive##description##46311",
       "meta:xdmType": "boolean",
       "meta:xdmField": "xdm:isActive",
       "tagNumber": 10
@@ -128,8 +128,8 @@
       "title": "Primary Flag",
       "description": "Boolean to indicate if the person is the primary contact on the account.",
       "type": "boolean",
-      "meta:titleId": "account-person##xdm:isPrimary##title##8611",
-      "meta:descriptionId": "account-person##xdm:isPrimary##description##60041",
+      "meta:titleId": "account-person##xdm:isPrimary##title##68351",
+      "meta:descriptionId": "account-person##xdm:isPrimary##description##31061",
       "meta:xdmType": "boolean",
       "meta:xdmField": "xdm:isPrimary",
       "tagNumber": 11
@@ -139,8 +139,8 @@
       "description": "The date when the relationship between the account and the person started.",
       "type": "string",
       "format": "date-time",
-      "meta:titleId": "account-person##xdm:relationStartDate##title##76051",
-      "meta:descriptionId": "account-person##xdm:relationStartDate##description##63241",
+      "meta:titleId": "account-person##xdm:relationStartDate##title##91141",
+      "meta:descriptionId": "account-person##xdm:relationStartDate##description##49381",
       "meta:xdmType": "date-time",
       "meta:xdmField": "xdm:relationStartDate",
       "tagNumber": 12
@@ -150,8 +150,8 @@
       "description": "The date when the relationship between the account and the person ended.",
       "type": "string",
       "format": "date-time",
-      "meta:titleId": "account-person##xdm:relationEndDate##title##95521",
-      "meta:descriptionId": "account-person##xdm:relationEndDate##description##77631",
+      "meta:titleId": "account-person##xdm:relationEndDate##title##35651",
+      "meta:descriptionId": "account-person##xdm:relationEndDate##description##37071",
       "meta:xdmType": "date-time",
       "meta:xdmField": "xdm:relationEndDate",
       "tagNumber": 13
@@ -165,8 +165,8 @@
       ],
       "pattern": "^[A-Z]{3}$",
       "description": "The ISO 4217 currency code used for the relationship between the account and the person.",
-      "meta:titleId": "account-person##xdm:currencyCode##title##58281",
-      "meta:descriptionId": "account-person##xdm:currencyCode##description##80021",
+      "meta:titleId": "account-person##xdm:currencyCode##title##72221",
+      "meta:descriptionId": "account-person##xdm:currencyCode##description##58201",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:currencyCode",
       "tagNumber": 14
@@ -175,8 +175,8 @@
       "title": "External Source System Audit Properties",
       "$ref": "../../datatypes/auditing/external-source-system-audit.schema.json",
       "description": "Audit attributes for external sources.",
-      "meta:titleId": "external-source-system-audit-details##xdm:extSourceSystemAudit##title##65301",
-      "meta:descriptionId": "external-source-system-audit-details##xdm:extSourceSystemAudit##description##99451",
+      "meta:titleId": "external-source-system-audit-details##xdm:extSourceSystemAudit##title##88841",
+      "meta:descriptionId": "external-source-system-audit-details##xdm:extSourceSystemAudit##description##28131",
       "meta:xdmField": "xdm:extSourceSystemAudit",
       "tagNumber": 15
     }

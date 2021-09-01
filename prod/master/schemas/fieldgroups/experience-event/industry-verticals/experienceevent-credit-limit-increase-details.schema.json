@@ -13,22 +13,22 @@
   "description": "Credit limit increase application details such as ID, type, approval, and status.",
   "meta:status": "stable",
   "meta:createdDate": "2021-02-19",
-  "meta:titleId": "experienceevent-credit-limit-increase-details##title##3791",
-  "meta:descriptionId": "experienceevent-credit-limit-increase-details##description##85011",
+  "meta:titleId": "experienceevent-credit-limit-increase-details##title##27621",
+  "meta:descriptionId": "experienceevent-credit-limit-increase-details##description##95671",
   "meta:xdmType": "object",
   "properties": {
     "personalFinances": {
       "type": "object",
       "description": "Financial details including transactions, accounts, and applications.",
-      "meta:descriptionId": "experienceevent-credit-limit-increase-details##xdm:personalFinances##description##56771",
+      "meta:descriptionId": "experienceevent-credit-limit-increase-details##xdm:personalFinances##description##93611",
       "meta:xdmType": "object",
       "properties": {
         "creditLimitIncrease": {
           "title": "Credit Limit Increase",
           "$ref": "../../../datatypes/industry-verticals/form-applications.schema.json",
           "description": "Extension of form application data type.",
-          "meta:titleId": "experienceevent-credit-limit-increase-details##xdm:creditLimitIncrease##title##49241",
-          "meta:descriptionId": "experienceevent-credit-limit-increase-details##xdm:creditLimitIncrease##description##74211",
+          "meta:titleId": "experienceevent-credit-limit-increase-details##xdm:creditLimitIncrease##title##84921",
+          "meta:descriptionId": "experienceevent-credit-limit-increase-details##xdm:creditLimitIncrease##description##85131",
           "meta:xdmField": "xdm:creditLimitIncrease",
           "tagNumber": 1
         }

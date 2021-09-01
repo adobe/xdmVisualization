@@ -7,32 +7,32 @@
   "description": "push notification tracking details",
   "meta:status": "stable",
   "meta:createdDate": "2020-09-28",
-  "meta:titleId": "experienceevent-pushtracking##title##50631",
-  "meta:descriptionId": "experienceevent-pushtracking##description##53001",
+  "meta:titleId": "experienceevent-pushtracking##title##95431",
+  "meta:descriptionId": "experienceevent-pushtracking##description##78191",
   "meta:xdmType": "object",
   "properties": {
     "pushNotificationTracking": {
       "title": "push notification tracking details",
       "type": "object",
       "description": "Describes interaction with a push notification.",
-      "meta:titleId": "experienceevent-pushtracking##xdm:pushNotificationTracking##title##94091",
-      "meta:descriptionId": "experienceevent-pushtracking##xdm:pushNotificationTracking##description##16681",
+      "meta:titleId": "experienceevent-pushtracking##xdm:pushNotificationTracking##title##4781",
+      "meta:descriptionId": "experienceevent-pushtracking##xdm:pushNotificationTracking##description##89081",
       "meta:xdmType": "object",
       "properties": {
         "customAction": {
           "title": "custom action",
           "type": "object",
           "description": "End user clicked custom action in the push notification",
-          "meta:titleId": "experienceevent-pushtracking##xdm:customAction##title##10871",
-          "meta:descriptionId": "experienceevent-pushtracking##xdm:customAction##description##46451",
+          "meta:titleId": "experienceevent-pushtracking##xdm:customAction##title##33441",
+          "meta:descriptionId": "experienceevent-pushtracking##xdm:customAction##description##96791",
           "meta:xdmType": "object",
           "properties": {
             "actionID": {
               "title": "action ID",
               "type": "string",
               "description": "user clicked custom action identifier",
-              "meta:titleId": "experienceevent-pushtracking##xdm:actionID##title##92501",
-              "meta:descriptionId": "experienceevent-pushtracking##xdm:actionID##description##26151",
+              "meta:titleId": "experienceevent-pushtracking##xdm:actionID##title##36211",
+              "meta:descriptionId": "experienceevent-pushtracking##xdm:actionID##description##39371",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:actionID",
               "tagNumber": 1
@@ -41,8 +41,8 @@
               "title": "value",
               "type": "number",
               "description": "value associated with the custom action, if any",
-              "meta:titleId": "experienceevent-pushtracking##xdm:value##title##84741",
-              "meta:descriptionId": "experienceevent-pushtracking##xdm:value##description##24851",
+              "meta:titleId": "experienceevent-pushtracking##xdm:value##title##83911",
+              "meta:descriptionId": "experienceevent-pushtracking##xdm:value##description##93721",
               "meta:xdmType": "number",
               "meta:xdmField": "xdm:value",
               "tagNumber": 2
@@ -55,8 +55,8 @@
           "title": "Push Provider message ID",
           "type": "string",
           "description": "ID assigned to this notification as assigned by the push provider",
-          "meta:titleId": "experienceevent-pushtracking##xdm:pushProviderMessageID##title##45131",
-          "meta:descriptionId": "experienceevent-pushtracking##xdm:pushProviderMessageID##description##86291",
+          "meta:titleId": "experienceevent-pushtracking##xdm:pushProviderMessageID##title##53941",
+          "meta:descriptionId": "experienceevent-pushtracking##xdm:pushProviderMessageID##description##97541",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:pushProviderMessageID",
           "tagNumber": 2
@@ -65,8 +65,8 @@
           "title": "Push Provider",
           "type": "string",
           "description": "Push provider, e.g. apns or fcm",
-          "meta:titleId": "experienceevent-pushtracking##xdm:pushProvider##title##20971",
-          "meta:descriptionId": "experienceevent-pushtracking##xdm:pushProvider##description##71711",
+          "meta:titleId": "experienceevent-pushtracking##xdm:pushProvider##title##90271",
+          "meta:descriptionId": "experienceevent-pushtracking##xdm:pushProvider##description##23691",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:pushProvider",
           "tagNumber": 3

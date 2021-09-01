@@ -6,6 +6,8 @@
   "title": "Content Component Details",
   "description": "Content components are the fragments associated with the a particular content representation. Those fragments are used to compose the end-user experience.",
   "meta:status": "stable",
+  "meta:titleId": "content-component-details##title##45771",
+  "meta:descriptionId": "content-component-details##description##86991",
   "meta:xdmType": "object",
   "properties": {
     "_type": {
@@ -13,6 +15,8 @@
       "format": "uri-reference",
       "title": "Content Component Type",
       "description": "Content Component Type. An enumerated set of URIs where each value maps to a type given to the content component. Some consumers of the content representations are expecting the @type value to be a reference to schema that describes additional properties of the content component.",
+      "meta:titleId": "content-component-details##content-component-type##title##24131",
+      "meta:descriptionId": "content-component-details##content-component-type##description##65041",
       "meta:xdmType": "string",
       "meta:xdmField": "@type",
       "tagNumber": 1
@@ -29,6 +33,8 @@
             "application/vnd.adobe.photoshop"
           ],
           "description": "The physical or digital manifestation of the resource. Typically, Format should include the media-type of the resource. Format may be used to determine the software, hardware or other equipment needed to display or operate the resource. Recommended best practice is to select a value from a controlled vocabulary (for example, the list of [Internet Media Types](http://www.iana.org/ assignments/media-types/) defining computer media formats).",
+          "meta:titleId": "content-component-details##dc:format##title##46811",
+          "meta:descriptionId": "content-component-details##dc:format##description##63771",
           "meta:xdmType": "string",
           "meta:xdmField": "dc:format",
           "tagNumber": 1
@@ -42,6 +48,8 @@
             "pt-BR",
             "es-ES"
           ],
+          "meta:titleId": "content-component-details##dc:language##title##68851",
+          "meta:descriptionId": "content-component-details##dc:language##description##69681",
           "meta:xdmType": "array",
           "items": {
             "type": "string",
@@ -65,6 +73,7 @@
         "name": {
           "type": "string",
           "description": "Some hint about where to locate the repository that stores the external asset by the \"repo:id\".",
+          "meta:descriptionId": "content-component-details##repo:name##description##8141",
           "meta:xdmType": "string",
           "meta:xdmField": "repo:name",
           "tagNumber": 1
@@ -75,6 +84,7 @@
           "examples": [
             "C87932A55B06F7070A49412D@AdobeOrg"
           ],
+          "meta:descriptionId": "content-component-details##repo:repositoryID##description##6791",
           "meta:xdmType": "string",
           "meta:xdmField": "repo:repositoryID",
           "tagNumber": 2
@@ -85,6 +95,7 @@
           "examples": [
             "urn:aaid:sc:US:6dc33479-13ca-4b19-b25d-c805eff8a69e"
           ],
+          "meta:descriptionId": "content-component-details##repo:id##description##61971",
           "meta:xdmType": "string",
           "meta:xdmField": "repo:id",
           "tagNumber": 3
@@ -98,6 +109,7 @@
           "examples": [
             "https://plaftform.adobe.io/resolveByPath?path=&quot;/mycorp/content/projectx/fragment/prod/herobanners/banner14.html3&quot;"
           ],
+          "meta:descriptionId": "content-component-details##repo:resolveURL##description##86231",
           "meta:xdmType": "string",
           "meta:xdmField": "repo:resolveURL",
           "tagNumber": 4
@@ -111,6 +123,7 @@
       "examples": [
         ""
       ],
+      "meta:descriptionId": "content-component-details##xdm:content##description##94191",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:content",
       "tagNumber": 4
@@ -123,6 +136,7 @@
       "examples": [
         "https://cdn.adobe.io/content/projectx/fragment/prod/static/1232324wd32.jpeg"
       ],
+      "meta:descriptionId": "content-component-details##xdm:deliveryURL##description##82731",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:deliveryURL",
       "tagNumber": 5
@@ -134,6 +148,7 @@
       "examples": [
         "https://cdn.adobe.io/tracker?code=23432&redirect=/content/projectx/fragment/prod/static/1232324wd32.jpeg"
       ],
+      "meta:descriptionId": "content-component-details##xdm:linkURL##description##5581",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:linkURL",
       "tagNumber": 6
