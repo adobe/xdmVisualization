@@ -397,7 +397,7 @@
           "tagNumber": 3
         },
         "implementations": {
-          "$ref": "../../adobe/experience/implementations.schema.json",
+          "$ref": "implementations.schema.json",
           "meta:xdmField": "https://ns.adobe.com/experience/implementations",
           "tagNumber": 4
         }

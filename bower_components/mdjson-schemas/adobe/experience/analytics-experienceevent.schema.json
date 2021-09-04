@@ -13565,7 +13565,7 @@
           "tagNumber": 3
         },
         "implementations": {
-          "$ref": "../../adobe/experience/implementations.schema.json",
+          "$ref": "implementations.schema.json",
           "meta:xdmField": "https://ns.adobe.com/experience/implementations",
           "tagNumber": 4
         },
@@ -13581,7 +13581,7 @@
               "meta:descriptionId": "proposition-interaction##https://ns.adobe.com/experience/decisioning/propositions##description##42611",
               "meta:xdmType": "array",
               "items": {
-                "$ref": "../../adobe/experience/decisioning/proposition-interaction-details.schema.json",
+                "$ref": "decisioning/proposition-interaction-detail.schema.json",
                 "tagNumber": 1
               },
               "meta:xdmField": "https://ns.adobe.com/experience/decisioning/propositions",

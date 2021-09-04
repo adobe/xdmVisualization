@@ -1,0 +1,41 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "id": "_experience.decisioning.calendar-constraints",
+  "meta:abstract": true,
+  "meta:extensible": true,
+  "type": "object",
+  "title": "Decision Option Calendar Constraints",
+  "description": "Calendar constraints decide if a decision option is valid given a date range. Outside that date range the option cannot be proposed.",
+  "meta:status": "stable",
+  "meta:titleId": "calendar-constraints##title##25611",
+  "meta:descriptionId": "calendar-constraints##description##91211",
+  "meta:xdmType": "object",
+  "properties": {
+    "_experience": {
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "decisioning": {
+          "type": "object",
+          "meta:xdmType": "object",
+          "properties": {
+            "calendarConstraints": {
+              "$ref": "calendar-constraint-details.schema.json",
+              "title": "Calendar Constraint Details",
+              "description": "Calendar constraints decide if a decision option is valid given a date range. Outside that date range the option cannot be proposed.",
+              "meta:titleId": "calendar-constraints##https://ns.adobe.com/experience/decisioning/calendarConstraints##title##76811",
+              "meta:descriptionId": "calendar-constraints##https://ns.adobe.com/experience/decisioning/calendarConstraints##description##75151",
+              "meta:xdmField": "https://ns.adobe.com/experience/decisioning/calendarConstraints",
+              "tagNumber": 1
+            }
+          },
+          "tagNumber": 1
+        }
+      },
+      "tagNumber": 1
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/experience/decisioning/calendar-constraints",
+  "meta:altId": "_experience.decisioning.calendar-constraints",
+  "id": "_experience.decisioning.calendar-constraints"
+}

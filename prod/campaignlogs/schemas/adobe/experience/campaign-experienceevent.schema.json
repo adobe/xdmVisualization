@@ -266,7 +266,7 @@
                 },
                 "profileSnapshot": {
                   "title": "Profile Snapshot",
-                  "$ref": "../../adobe/experience/campaign/profile-snapshot.schema.json",
+                  "$ref": "campaign/profile-snapshot.schema.json",
                   "description": "Profile Snapshot contains the recipient of the message. This property is primarily used to link the message to a Profile using the `IdentityMap` but it can also be used to freeze some properties of the profile at the time the message was sent.",
                   "meta:titleId": "experienceevent-all##xdm:profileSnapshot##title##62171",
                   "meta:descriptionId": "experienceevent-all##xdm:profileSnapshot##description##48361",
@@ -640,7 +640,7 @@
                 "orchestrationDetails": {
                   "title": "Orchestration Details",
                   "description": "Set of attributes that are associated with every orchestration.",
-                  "$ref": "../../adobe/experience/campaign/orchestration/orchestrationdetails.schema.json",
+                  "$ref": "campaign/orchestration/orchestrationdetails.schema.json",
                   "meta:titleId": "experienceevent-all##xdm:orchestrationDetails##title##11381",
                   "meta:descriptionId": "experienceevent-all##xdm:orchestrationDetails##description##79741",
                   "meta:xdmField": "xdm:orchestrationDetails",
@@ -673,7 +673,7 @@
             "offerOpened": {
               "title": "Offer Opened",
               "description": "The offer in the message for an 'offer opened' event.",
-              "$ref": "../../adobe/experience/campaign/offer-response-detail.schema.json",
+              "$ref": "campaign/offer-response-detail.schema.json",
               "meta:titleId": "experienceevent-all##https://ns.adobe.com/experience/campaign/offerOpened##title##6611",
               "meta:descriptionId": "experienceevent-all##https://ns.adobe.com/experience/campaign/offerOpened##description##41161",
               "meta:xdmField": "https://ns.adobe.com/experience/campaign/offerOpened",
@@ -687,7 +687,7 @@
               "meta:descriptionId": "experienceevent-all##https://ns.adobe.com/experience/campaign/offersProposed##description##91571",
               "meta:xdmType": "array",
               "items": {
-                "$ref": "../../adobe/experience/campaign/offer-proposition-detail.schema.json",
+                "$ref": "campaign/offer-proposition-detail.schema.json",
                 "tagNumber": 1
               },
               "meta:xdmField": "https://ns.adobe.com/experience/campaign/offersProposed",
@@ -706,7 +706,7 @@
             "mutation": {
               "title": "Mutated Fields from Previous ExperienceEvent.",
               "description": "Information of the fields that have changed since the previous ExperienceEvent to keep track of the state changes across events. For e.g. if when an email gets sent, an ExperienceEvent with metric `sends` will be sent. This may get bounced and an ExperienceEvent with metric `bounces` will be sent then. It may be important for a downstream application to know that the previous ExperienceEvent with metric `sends` is now to be invalidated. This field will contain the values from the previous ExperienceEvent that have a different value in the current ExperienceEvent.",
-              "$ref": "../../adobe/experience/campaign/mutationevent.schema.json",
+              "$ref": "campaign/mutationevent.schema.json",
               "meta:titleId": "experienceevent-all##https://ns.adobe.com/experience/campaign/mutation##title##59221",
               "meta:descriptionId": "experienceevent-all##https://ns.adobe.com/experience/campaign/mutation##description##44981",
               "meta:xdmField": "https://ns.adobe.com/experience/campaign/mutation",
@@ -768,7 +768,7 @@
           "tagNumber": 4
         },
         "implementations": {
-          "$ref": "../../adobe/experience/implementations.schema.json",
+          "$ref": "implementations.schema.json",
           "meta:xdmField": "https://ns.adobe.com/experience/implementations",
           "tagNumber": 5
         }
