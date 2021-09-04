@@ -1,0 +1,51 @@
+{
+  "id": "_xdm.mixins.events.add-to-list",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Add To List",
+  "type": "object",
+  "meta:tags": {
+    "b2bSchema": true
+  },
+  "meta:conditionalField": "xdm:eventType",
+  "meta:conditionalValue": "listOperation.addToList",
+  "description": "Use to track when a person is added to a specific list.",
+  "meta:status": "experimental",
+  "meta:createdDate": "2021-02-19",
+  "meta:titleId": "add-to-list##title##73091",
+  "meta:descriptionId": "add-to-list##description##75021",
+  "meta:xdmType": "object",
+  "properties": {
+    "listOperations": {
+      "title": "List Operations",
+      "type": "object",
+      "meta:titleId": "add-to-list##xdm:listOperations##title##56911",
+      "meta:xdmType": "object",
+      "properties": {
+        "listID": {
+          "title": "List ID",
+          "type": "string",
+          "description": "Unique ID of the Marketing List.",
+          "meta:titleId": "add-to-list##xdm:listID##title##63411",
+          "meta:descriptionId": "add-to-list##xdm:listID##description##49311",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:listID",
+          "tagNumber": 1
+        },
+        "listKey": {
+          "title": "List Key",
+          "description": "Unique composite identifier of the Marketing List.",
+          "$ref": "../../../datatypes/b2b/b2b-source.schema.json",
+          "meta:titleId": "add-to-list##xdm:listKey##title##5791",
+          "meta:descriptionId": "add-to-list##xdm:listKey##description##65431",
+          "meta:xdmField": "xdm:listKey",
+          "tagNumber": 2
+        }
+      },
+      "meta:xdmField": "xdm:listOperations",
+      "tagNumber": 1
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/mixins/events/add-to-list",
+  "meta:altId": "_xdm.mixins.events.add-to-list",
+  "id": "_xdm.mixins.events.add-to-list"
+}

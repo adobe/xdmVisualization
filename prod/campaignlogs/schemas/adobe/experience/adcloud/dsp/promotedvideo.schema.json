@@ -1,0 +1,191 @@
+{
+  "id": "_xdm.adcloud.dsp.promotedvideo",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "DSP Advertising Promoted Video",
+  "type": "object",
+  "meta:extensible": [
+    false,
+    true
+  ],
+  "meta:abstract": [
+    false,
+    true
+  ],
+  "meta:auditable": true,
+  "description": "Adobe Advertising Cloud DSP Promoted Video Details.",
+  "meta:status": "stable",
+  "meta:titleId": [
+    "promotedvideo##title##73141",
+    "record##title##65961",
+    "auditable##title##87231"
+  ],
+  "meta:descriptionId": [
+    "promotedvideo##description##84061",
+    "record##description##3921",
+    "auditable##description##48551"
+  ],
+  "meta:xdmType": "object",
+  "meta:createdDate": [
+    "2020-08-10",
+    "2021-02-19"
+  ],
+  "properties": {
+    "_id": {
+      "title": "Identifier",
+      "type": "string",
+      "format": "uri-reference",
+      "description": "A unique identifier for the record.",
+      "meta:titleId": "record##@id##title##51271",
+      "meta:descriptionId": "record##@id##description##16181",
+      "meta:xdmType": "string",
+      "meta:xdmField": "@id",
+      "tagNumber": 1
+    },
+    "repositoryCreatedBy": {
+      "title": "Created by user identifier",
+      "type": "string",
+      "description": "User ID of who created the record.",
+      "meta:titleId": "auditable##xdm:repositoryCreatedBy##title##81581",
+      "meta:descriptionId": "auditable##xdm:repositoryCreatedBy##description##79871",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:repositoryCreatedBy",
+      "tagNumber": 2
+    },
+    "repositoryLastModifiedBy": {
+      "title": "Modified by user identifier",
+      "type": "string",
+      "description": "User ID of who last modified the record. At creation time, `modifiedByUser` is set as `createdByUser`.",
+      "meta:titleId": "auditable##xdm:repositoryLastModifiedBy##title##8121",
+      "meta:descriptionId": "auditable##xdm:repositoryLastModifiedBy##description##90771",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:repositoryLastModifiedBy",
+      "tagNumber": 3
+    },
+    "createdByBatchID": {
+      "title": "Created by batch identifier",
+      "type": "string",
+      "format": "uri-reference",
+      "description": "The dataset files in Catalog which has been originating the creation of the record.",
+      "meta:titleId": "auditable##xdm:createdByBatchID##title##46121",
+      "meta:descriptionId": "auditable##xdm:createdByBatchID##description##60231",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:createdByBatchID",
+      "tagNumber": 4
+    },
+    "modifiedByBatchID": {
+      "title": "Modified by batch identifier",
+      "type": "string",
+      "format": "uri-reference",
+      "description": "The last dataset files in Catalog which has modified the record. At creation time, `modifiedByBatchID` is set as `createdByBatchID`.",
+      "meta:titleId": "auditable##xdm:modifiedByBatchID##title##45371",
+      "meta:descriptionId": "auditable##xdm:modifiedByBatchID##description##21001",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:modifiedByBatchID",
+      "tagNumber": 5
+    },
+    "_repo": {
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "createDate": {
+          "type": "string",
+          "format": "date-time",
+          "meta:immutable": true,
+          "meta:usereditable": false,
+          "examples": [
+            "2004-10-23T12:00:00-06:00"
+          ],
+          "description": "The server date and time when the resource was created in the repository, such as when an asset file is first uploaded or a directory is created by the server as the parent of a new asset. The date time property should conform to ISO 8601 standard. An example form is \"2004-10-23T12:00:00-06:00\".",
+          "meta:descriptionId": "1.0##repo:createDate##description##36201",
+          "meta:xdmType": "date-time",
+          "meta:xdmField": "repo:createDate",
+          "tagNumber": 1
+        },
+        "modifyDate": {
+          "type": "string",
+          "format": "date-time",
+          "meta:usereditable": false,
+          "examples": [
+            "2004-10-23T12:00:00-06:00"
+          ],
+          "description": "The server date and time when the resource was last modified in the repository, such as when a new version of an asset is uploaded or a directory's child resource is added or removed. The date time property should conform to ISO 8601 standard. An example form is \"2004-10-23T12:00:00-06:00\".",
+          "meta:descriptionId": "1.0##repo:modifyDate##description##84751",
+          "meta:xdmType": "date-time",
+          "meta:xdmField": "repo:modifyDate",
+          "tagNumber": 2
+        }
+      },
+      "tagNumber": 6
+    },
+    "_dsp": {
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "promotedVideoKey": {
+          "title": "promotedVideoKey",
+          "type": "string",
+          "description": "External unique identifier for a promoted video the ad is displaying.",
+          "meta:titleId": "promotedvideo##dsp:promotedVideoKey##title##38031",
+          "meta:descriptionId": "promotedvideo##dsp:promotedVideoKey##description##27841",
+          "meta:xdmType": "string",
+          "meta:xdmField": "dsp:promotedVideoKey",
+          "tagNumber": 1
+        },
+        "campaignKey": {
+          "title": "campaignKey",
+          "type": "string",
+          "description": "Identifier for the campaign that belongs to the displayed video.",
+          "meta:titleId": "promotedvideo##dsp:campaignKey##title##91161",
+          "meta:descriptionId": "promotedvideo##dsp:campaignKey##description##13281",
+          "meta:xdmType": "string",
+          "meta:xdmField": "dsp:campaignKey",
+          "tagNumber": 2
+        },
+        "promotedVideoName": {
+          "title": "promotedVideoName",
+          "type": "string",
+          "description": "A name that uniquely identifies the promoted video within the campaign.",
+          "meta:titleId": "promotedvideo##dsp:promotedVideoName##title##92071",
+          "meta:descriptionId": "promotedvideo##dsp:promotedVideoName##description##10971",
+          "meta:xdmType": "string",
+          "meta:xdmField": "dsp:promotedVideoName",
+          "tagNumber": 3
+        },
+        "promoteVideoDuration": {
+          "title": "promoteVideoDuration",
+          "type": "integer",
+          "description": "The duration of the video.",
+          "meta:titleId": "promotedvideo##dsp:promoteVideoDuration##title##36791",
+          "meta:descriptionId": "promotedvideo##dsp:promoteVideoDuration##description##3301",
+          "meta:xdmType": "int",
+          "meta:xdmField": "dsp:promoteVideoDuration",
+          "tagNumber": 4
+        },
+        "promotedVideoTags": {
+          "title": "Promoted Video Tags",
+          "type": "string",
+          "description": "Labels describing ad categories for this video.",
+          "meta:titleId": "promotedvideo##dsp:promotedVideoTags##title##9131",
+          "meta:descriptionId": "promotedvideo##dsp:promotedVideoTags##description##38591",
+          "meta:xdmType": "string",
+          "meta:xdmField": "dsp:promotedVideoTags",
+          "tagNumber": 5
+        },
+        "promotedVideoDescription": {
+          "title": "Promoted Video Description",
+          "type": "string",
+          "description": "Detailed description for this video.",
+          "meta:titleId": "promotedvideo##dsp:promotedVideoDescription##title##29321",
+          "meta:descriptionId": "promotedvideo##dsp:promotedVideoDescription##description##60501",
+          "meta:xdmType": "string",
+          "meta:xdmField": "dsp:promotedVideoDescription",
+          "tagNumber": 6
+        }
+      },
+      "tagNumber": 7
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/adcloud/dsp/promotedvideo",
+  "meta:altId": "_xdm.adcloud.dsp.promotedvideo",
+  "id": "_xdm.adcloud.dsp.promotedvideo"
+}

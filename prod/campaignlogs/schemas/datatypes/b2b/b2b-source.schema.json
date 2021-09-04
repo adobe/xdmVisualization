@@ -1,0 +1,59 @@
+{
+  "id": "_xdm.datatypes.b2b-source",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "B2B Source",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "description": "This Data Type is used to capture B2B/CRM Source identifiers.",
+  "meta:status": "experimental",
+  "meta:createdDate": "2021-02-19",
+  "meta:titleId": "b2b-source##title##53031",
+  "meta:descriptionId": "b2b-source##description##361",
+  "meta:xdmType": "object",
+  "properties": {
+    "sourceType": {
+      "title": "Source Type",
+      "type": "string",
+      "description": "Instance or Organization Id of the source data.",
+      "meta:titleId": "b2b-source##xdm:sourceType##title##56201",
+      "meta:descriptionId": "b2b-source##xdm:sourceType##description##31691",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:sourceType",
+      "tagNumber": 1
+    },
+    "sourceInstanceID": {
+      "title": "Source Instance ID",
+      "type": "string",
+      "description": "Name of the platform with the source data.",
+      "meta:titleId": "b2b-source##xdm:sourceInstanceID##title##36261",
+      "meta:descriptionId": "b2b-source##xdm:sourceInstanceID##description##99011",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:sourceInstanceID",
+      "tagNumber": 2
+    },
+    "sourceID": {
+      "title": "Source ID",
+      "type": "string",
+      "description": "Identifier of the record from the source data.",
+      "meta:titleId": "b2b-source##xdm:sourceID##title##93071",
+      "meta:descriptionId": "b2b-source##xdm:sourceID##description##33021",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:sourceID",
+      "tagNumber": 3
+    },
+    "sourceKey": {
+      "title": "Source Key",
+      "type": "string",
+      "description": "Unique identifier composed of the sourceType, sourceInstanceId, and sourceId.",
+      "meta:titleId": "b2b-source##xdm:sourceKey##title##17431",
+      "meta:descriptionId": "b2b-source##xdm:sourceKey##description##99891",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:sourceKey",
+      "tagNumber": 4
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/datatypes/b2b-source",
+  "meta:altId": "_xdm.datatypes.b2b-source",
+  "id": "_xdm.datatypes.b2b-source"
+}

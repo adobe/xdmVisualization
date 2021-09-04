@@ -1,0 +1,72 @@
+{
+  "id": "_experience.campaign.experienceevent-profile-owning-entities",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Adobe Campaign ExperienceEvent - Profile Snapshot Owning Entities",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "description": "Adobe Campaign ExperienceEvent optional snapshot of Profile owning entities.",
+  "meta:status": "stable",
+  "meta:titleId": "experienceevent-profile-owning-entities##title##44241",
+  "meta:descriptionId": "experienceevent-profile-owning-entities##description##67861",
+  "meta:xdmType": "object",
+  "properties": {
+    "_experience": {
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "campaign": {
+          "type": "object",
+          "meta:xdmType": "object",
+          "properties": {
+            "message": {
+              "title": "A single message sent to a recipient.",
+              "type": "object",
+              "meta:titleId": "experienceevent-profile-owning-entities##https://ns.adobe.com/experience/campaign/message##title##74191",
+              "meta:xdmType": "object",
+              "properties": {
+                "profileSnapshot": {
+                  "title": "Profile Snapshot",
+                  "description": "Profile Snapshot contains the recipient of the message. This property is primarily used to link the message to a Profile using the `IdentityMap` but it can also be used to freeze some properties of the profile at the time the message was sent.",
+                  "type": "object",
+                  "meta:titleId": "experienceevent-profile-owning-entities##xdm:profileSnapshot##title##53361",
+                  "meta:descriptionId": "experienceevent-profile-owning-entities##xdm:profileSnapshot##description##94161",
+                  "meta:xdmType": "object",
+                  "properties": {
+                    "orgUnit": {
+                      "title": "Organizational Unit",
+                      "$ref": "../../../datatypes/b2b/orgunit.schema.json",
+                      "description": "The unit within the organization owning the profile. This can be used to reference the organization details maintained in another dataset.",
+                      "meta:titleId": "experienceevent-profile-owning-entities##xdm:orgUnit##title##52901",
+                      "meta:descriptionId": "experienceevent-profile-owning-entities##xdm:orgUnit##description##38071",
+                      "meta:xdmField": "xdm:orgUnit",
+                      "tagNumber": 1
+                    },
+                    "geoUnit": {
+                      "title": "Geographical Unit",
+                      "$ref": "../../../datatypes/demographic/geounit.schema.json",
+                      "description": "The geographical unit within the organization owning the profile. This can be used to reference the geographical information maintained in another dataset.",
+                      "meta:titleId": "experienceevent-profile-owning-entities##xdm:geoUnit##title##90461",
+                      "meta:descriptionId": "experienceevent-profile-owning-entities##xdm:geoUnit##description##8841",
+                      "meta:xdmField": "xdm:geoUnit",
+                      "tagNumber": 2
+                    }
+                  },
+                  "meta:xdmField": "xdm:profileSnapshot",
+                  "tagNumber": 1
+                }
+              },
+              "meta:xdmField": "https://ns.adobe.com/experience/campaign/message",
+              "tagNumber": 1
+            }
+          },
+          "tagNumber": 1
+        }
+      },
+      "tagNumber": 1
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/experience/campaign/experienceevent-profile-owning-entities",
+  "meta:altId": "_experience.campaign.experienceevent-profile-owning-entities",
+  "id": "_experience.campaign.experienceevent-profile-owning-entities"
+}

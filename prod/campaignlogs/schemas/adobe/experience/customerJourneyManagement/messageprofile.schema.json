@@ -1,0 +1,135 @@
+{
+  "id": "_experience.customerjourneymanagement.messageprofile",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Adobe CJM ExperienceEvent - Message Profile Details",
+  "description": "Message Profile details for the Adobe CJM ExperienceEvent.",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:status": "stable",
+  "meta:titleId": "messageprofile##title##66431",
+  "meta:descriptionId": "messageprofile##description##41271",
+  "meta:xdmType": "object",
+  "properties": {
+    "_experience": {
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "customerJourneyManagement": {
+          "type": "object",
+          "meta:xdmType": "object",
+          "properties": {
+            "messageProfile": {
+              "type": "object",
+              "meta:xdmType": "object",
+              "properties": {
+                "messageProfileID": {
+                  "title": "MessageProfile ID",
+                  "type": "string",
+                  "description": "A unique id refers to every single message sent as part of a MessageExecution activity.",
+                  "meta:titleId": "messageprofile##https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/messageProfileID##title##31921",
+                  "meta:descriptionId": "messageprofile##https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/messageProfileID##description##94561",
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/messageProfileID",
+                  "tagNumber": 1
+                },
+                "channel": {
+                  "title": "Experience channel",
+                  "description": "Experience channel related to the ExperienceEvent.",
+                  "$ref": "../../../datatypes/channels/channel.schema.json",
+                  "meta:titleId": "messageprofile##https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/channel##title##5131",
+                  "meta:descriptionId": "messageprofile##https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/channel##description##30511",
+                  "meta:xdmField": "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/channel",
+                  "tagNumber": 2
+                },
+                "variant": {
+                  "title": "Content Variant",
+                  "type": "string",
+                  "description": "A message execution can have multiple variants e.g. Multilingual (translated variants for the same content) or A/B testing (different content to test what works better) but a message delivered to a recipient always contains one of them.",
+                  "meta:titleId": "messageprofile##https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/variant##title##71711",
+                  "meta:descriptionId": "messageprofile##https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/variant##description##28141",
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/variant",
+                  "tagNumber": 3
+                }
+              },
+              "required": [
+                "channel"
+              ],
+              "tagNumber": 1
+            },
+            "emailChannelContext": {
+              "type": "object",
+              "meta:xdmType": "object",
+              "properties": {
+                "address": {
+                  "title": "Address",
+                  "type": "string",
+                  "format": "email",
+                  "description": "The technical address, for example, 'name@domain.com' as commonly defined in RFC2822 and subsequent standards.",
+                  "meta:titleId": "messageprofile##https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/address##title##801",
+                  "meta:descriptionId": "messageprofile##https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/address##description##17861",
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/address",
+                  "tagNumber": 1
+                },
+                "namespace": {
+                  "title": "Email Namespace",
+                  "type": "string",
+                  "description": "Email namespace associated with the email address in the consent preferences in the Profile, e.g. email or Email",
+                  "meta:titleId": "messageprofile##https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/namespace##title##63731",
+                  "meta:descriptionId": "messageprofile##https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/namespace##description##34571",
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/namespace",
+                  "tagNumber": 2
+                },
+                "outboundIP": {
+                  "title": "IP Address",
+                  "type": "string",
+                  "description": "Outbound IP address of the customer used to deliver the message.",
+                  "meta:titleId": "messageprofile##https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/outboundIP##title##99731",
+                  "meta:descriptionId": "messageprofile##https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/outboundIP##description##75691",
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "https://ns.adobe.com/experience/customerJourneyManagement/emailChannelContext/outboundIP",
+                  "tagNumber": 3
+                }
+              },
+              "tagNumber": 2
+            },
+            "pushChannelContext": {
+              "type": "object",
+              "meta:xdmType": "object",
+              "properties": {
+                "platform": {
+                  "title": "Push Platform",
+                  "type": "string",
+                  "description": "Push provider service, e.g. apns or fcm",
+                  "meta:titleId": "messageprofile##https://ns.adobe.com/experience/customerJourneyManagement/pushChannelContext/platform##title##73351",
+                  "meta:descriptionId": "messageprofile##https://ns.adobe.com/experience/customerJourneyManagement/pushChannelContext/platform##description##33451",
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "https://ns.adobe.com/experience/customerJourneyManagement/pushChannelContext/platform",
+                  "tagNumber": 1
+                }
+              },
+              "tagNumber": 3
+            }
+          },
+          "required": [
+            "messageProfile"
+          ],
+          "tagNumber": 1
+        }
+      },
+      "required": [
+        "customerJourneyManagement"
+      ],
+      "tagNumber": 1
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/experience/customerJourneyManagement/messageprofile",
+  "meta:altId": "_experience.customerjourneymanagement.messageprofile",
+  "required": [
+    "_experience"
+  ],
+  "id": "_experience.customerjourneymanagement.messageprofile"
+}
