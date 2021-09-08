@@ -122,6 +122,8 @@
 <ul>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.campaign.address.html">address</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.campaign.experienceevent-all.html">experienceevent-all</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.campaign.experienceevent-campaign-delivery-log.html">experienceevent-campaign-delivery-log</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.campaign.experienceevent-campaign-tracking-log.html">experienceevent-campaign-tracking-log</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.campaign.experienceevent-profile-owning-entities.html">experienceevent-profile-owning-entities</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.campaign.experienceevent-profile-personal-details.html">experienceevent-profile-personal-details</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.campaign.experienceevent-profile-preferences-details.html">experienceevent-profile-preferences-details</a></li>

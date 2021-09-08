@@ -398,11 +398,13 @@
 [adobe.experience.campaign.experienceevent-profile-push-details](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.campaign.experienceevent-profile-push-details.html)<br/>
 [adobe.experience.campaign.notificationsubscriptiontarget](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.campaign.notificationsubscriptiontarget.html)<br/>
 [adobe.experience.campaign.mutationevent](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.campaign.mutationevent.html)<br/>
+[adobe.experience.campaign.experienceevent-campaign-delivery-log](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.campaign.experienceevent-campaign-delivery-log.html)<br/>
 [adobe.experience.campaign.experienceevent-profile-owning-entities](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.campaign.experienceevent-profile-owning-entities.html)<br/>
 [adobe.experience.campaign.offer-response-detail](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.campaign.offer-response-detail.html)<br/>
 [adobe.experience.campaign.feedbackevent](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.campaign.feedbackevent.html)<br/>
 [adobe.experience.campaign.journeyaifatigue](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.campaign.journeyaifatigue.html)<br/>
 [adobe.experience.campaign.experienceevent-profile-subscriptions](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.campaign.experienceevent-profile-subscriptions.html)<br/>
+[adobe.experience.campaign.experienceevent-campaign-tracking-log](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.campaign.experienceevent-campaign-tracking-log.html)<br/>
 [adobe.experience.campaign.offer-proposition-detail](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.campaign.offer-proposition-detail.html)<br/>
 [adobe.experience.campaign.experienceevent-profile-preferences-details](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.campaign.experienceevent-profile-preferences-details.html)<br/>
 [adobe.experience.campaign.journeyaiscores](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.campaign.journeyaiscores.html)<br/>
