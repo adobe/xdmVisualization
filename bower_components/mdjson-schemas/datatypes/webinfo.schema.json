@@ -145,6 +145,14 @@
           "meta:xdmField": "xdm:name",
           "tagNumber": 3
         },
+        "region": {
+          "title": "Region",
+          "type": "string",
+          "description": "The region name represents the region or area of a document that the web link belongs to such as header or footer.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:region",
+          "tagNumber": 4
+        },
         "linkClicks": {
           "title": "Link Clicks",
           "$ref": "data/measure.schema.json",
@@ -152,7 +160,7 @@
           "meta:titleId": "webinfo##xdm:linkClicks##title##2051",
           "meta:descriptionId": "webinfo##xdm:linkClicks##description##86871",
           "meta:xdmField": "xdm:linkClicks",
-          "tagNumber": 4
+          "tagNumber": 5
         }
       },
       "meta:xdmField": "xdm:webInteraction",

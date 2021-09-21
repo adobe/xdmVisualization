@@ -349,7 +349,6 @@
 [adobe.experience.aam-experienceevent](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.aam-experienceevent.html)<br/>
 [adobe.experience.aep-web-sdk-experienceevent](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.aep-web-sdk-experienceevent.html)<br/>
 [adobe.experience.analytics-experienceevent](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.analytics-experienceevent.html)<br/>
-[adobe.experience.intelligentServices.b2b-person-ml-extension](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.intelligentServices.b2b-person-ml-extension.html)<br/>
 [adobe.experience.intelligentServices.profile-journeyai-engagementscores](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.intelligentServices.profile-journeyai-engagementscores.html)<br/>
 [adobe.experience.intelligentServices.profile-journeyai-sendtimeoptimization](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.intelligentServices.profile-journeyai-sendtimeoptimization.html)<br/>
 [adobe.experience.decisioning.profile-constraint-details](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.decisioning.profile-constraint-details.html)<br/>

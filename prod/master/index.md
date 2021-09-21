@@ -217,7 +217,6 @@
 <details>
 <summary>intelligentServices</summary>
 <ul>
-<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.intelligentServices.b2b-person-ml-extension.html">b2b-person-ml-extension</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.intelligentServices.profile-journeyai-engagementscores.html">profile-journeyai-engagementscores</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.intelligentServices.profile-journeyai-sendtimeoptimization.html">profile-journeyai-sendtimeoptimization</a></li>
 </ul>

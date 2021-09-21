@@ -31,7 +31,8 @@
                     "click",
                     "open",
                     "unsubscribe",
-                    "spam_complaint"
+                    "spam_complaint",
+                    "subscription"
                   ],
                   "meta:titleId": "message-interaction##https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/interactionType##title##11711",
                   "meta:descriptionId": "message-interaction##https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/interactionType##description##67791",
@@ -85,11 +86,91 @@
                   "tagNumber": 5
                 },
                 "offers": {
-                  "title": "Offer details",
+                  "title": "Offer Details",
                   "$ref": "offers.schema.json",
                   "description": "Describes offer(s) involved in a message interaction.",
                   "meta:xdmField": "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/offers",
                   "tagNumber": 6
+                },
+                "subscription": {
+                  "title": "Subscription Details",
+                  "type": "object",
+                  "description": "Describes subscription involved in a message interaction.",
+                  "meta:xdmType": "object",
+                  "properties": {
+                    "_experience": {
+                      "type": "object",
+                      "meta:xdmType": "object",
+                      "properties": {
+                        "customerJourneyManagement": {
+                          "type": "object",
+                          "meta:xdmType": "object",
+                          "properties": {
+                            "messageInteraction": {
+                              "type": "object",
+                              "meta:xdmType": "object",
+                              "properties": {
+                                "subscription": {
+                                  "type": "object",
+                                  "meta:xdmType": "object",
+                                  "properties": {
+                                    "subscriptionListID": {
+                                      "title": "Subscription List ID",
+                                      "type": "string",
+                                      "description": "Unique Identifier for Subscription List.",
+                                      "meta:xdmType": "string",
+                                      "meta:xdmField": "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscription/subscriptionListID",
+                                      "tagNumber": 1
+                                    },
+                                    "source": {
+                                      "title": "Source",
+                                      "type": "string",
+                                      "description": "Source of the Subscription List.",
+                                      "meta:xdmType": "string",
+                                      "meta:xdmField": "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscription/source",
+                                      "tagNumber": 2
+                                    },
+                                    "sourceType": {
+                                      "title": "Source Type",
+                                      "type": "string",
+                                      "description": "Type of the Source of Subscription List.",
+                                      "enum": [
+                                        "internal",
+                                        "external"
+                                      ],
+                                      "meta:xdmType": "string",
+                                      "meta:xdmField": "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscription/sourceType",
+                                      "tagNumber": 3
+                                    },
+                                    "subscriptionChoice": {
+                                      "title": "Subscription Choice",
+                                      "type": "string",
+                                      "description": "Subscription Choice for the Subscription List.",
+                                      "enum": [
+                                        "yes",
+                                        "no",
+                                        "pending",
+                                        "unknown"
+                                      ],
+                                      "meta:xdmType": "string",
+                                      "meta:xdmField": "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscription/subscriptionChoice",
+                                      "tagNumber": 4
+                                    }
+                                  },
+                                  "tagNumber": 1
+                                }
+                              },
+                              "tagNumber": 1
+                            }
+                          },
+                          "tagNumber": 1
+                        }
+                      },
+                      "tagNumber": 1
+                    }
+                  },
+                  "meta:xdmField": "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscription",
+                  "tagNumber": 7
                 }
               },
               "tagNumber": 1

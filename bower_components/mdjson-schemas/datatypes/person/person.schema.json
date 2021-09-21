@@ -22,7 +22,7 @@
       "tagNumber": 1
     },
     "birthDate": {
-      "title": "Birth date",
+      "title": "Birth date(YYYY-MM-DD)",
       "type": "string",
       "format": "date",
       "description": "The full date a person was born.",
@@ -33,7 +33,7 @@
       "tagNumber": 2
     },
     "birthDayAndMonth": {
-      "title": "Birth date",
+      "title": "Birth date (MM-DD)",
       "type": "string",
       "pattern": "[0-1][0-9]-[0-9][0-9]",
       "description": "The day and month a person was born, in the format MM-DD. This field should be used when the day and month of a person's birth is known, but not the year.",
