@@ -1,0 +1,156 @@
+{
+  "id": "_xdm.common.geo",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "type": "object",
+  "meta:extensible": true,
+  "title": "Geo",
+  "description": "The geographic related data where an event was observed.",
+  "meta:status": "stable",
+  "meta:createdDate": [
+    "2021-02-19",
+    "2020-08-10"
+  ],
+  "meta:titleId": [
+    "geo##title##88671",
+    "GeoCoordinates##title##96701"
+  ],
+  "meta:descriptionId": [
+    "geo##description##75321",
+    "GeoCoordinates##description##92471"
+  ],
+  "meta:xdmType": "object",
+  "properties": {
+    "_id": {
+      "title": "Coordinates ID",
+      "type": "string",
+      "format": "uri-reference",
+      "description": "The unique identifier of the coordinates.",
+      "meta:titleId": "GeoCoordinates##@id##title##41111",
+      "meta:descriptionId": "GeoCoordinates##@id##description##11781",
+      "meta:xdmType": "string",
+      "meta:xdmField": "@id",
+      "tagNumber": 1
+    },
+    "_schema": {
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "description": {
+          "title": "Description",
+          "type": "string",
+          "description": "A description of what the coordinates identify.",
+          "meta:titleId": "GeoCoordinates##schema:description##title##86411",
+          "meta:descriptionId": "GeoCoordinates##schema:description##description##45861",
+          "meta:xdmType": "string",
+          "meta:xdmField": "schema:description",
+          "tagNumber": 1
+        },
+        "latitude": {
+          "title": "Latitude",
+          "type": "number",
+          "minimum": -90,
+          "maximum": 90,
+          "description": "The signed vertical coordinate of a geographic point.",
+          "meta:titleId": "GeoCoordinates##schema:latitude##title##31041",
+          "meta:descriptionId": "GeoCoordinates##schema:latitude##description##51981",
+          "meta:xdmType": "number",
+          "meta:xdmField": "schema:latitude",
+          "tagNumber": 2
+        },
+        "longitude": {
+          "title": "Longitude",
+          "type": "number",
+          "minimum": -180,
+          "maximum": 180,
+          "description": "The signed horizontal coordinate of a geographic point.",
+          "meta:titleId": "GeoCoordinates##schema:longitude##title##44041",
+          "meta:descriptionId": "GeoCoordinates##schema:longitude##description##34211",
+          "meta:xdmType": "number",
+          "meta:xdmField": "schema:longitude",
+          "tagNumber": 3
+        },
+        "elevation": {
+          "title": "Elevation",
+          "type": "number",
+          "description": "The specific elevation of the defined coordinate. The value conforms to the [WGS84](http://gisgeography.com/wgs84-world-geodetic-system/) datum and is measured in meters.",
+          "meta:titleId": "GeoCoordinates##schema:elevation##title##11381",
+          "meta:descriptionId": "GeoCoordinates##schema:elevation##description##38161",
+          "meta:xdmType": "number",
+          "meta:xdmField": "schema:elevation",
+          "tagNumber": 4
+        }
+      },
+      "tagNumber": 2
+    },
+    "countryCode": {
+      "title": "Country code",
+      "type": "string",
+      "pattern": "^[A-Z]{2}$",
+      "description": "The two-character [ISO 3166-1 alpha-2](https://datahub.io/core/country-list) code for the country.",
+      "meta:titleId": "geo##xdm:countryCode##title##58161",
+      "meta:descriptionId": "geo##xdm:countryCode##description##5121",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:countryCode",
+      "tagNumber": 3
+    },
+    "stateProvince": {
+      "title": "State or province",
+      "type": "string",
+      "description": "The state, or province portion of the observation. The format follows the [ISO 3166-2 (country and subdivision)][http://www.unece.org/cefact/locode/subdivisions.html] standard.",
+      "examples": [
+        "US-CA",
+        "DE-BB",
+        "JP-13"
+      ],
+      "pattern": "([A-Z]{2}-[A-Z0-9]{1,3}|)",
+      "meta:titleId": "geo##xdm:stateProvince##title##39821",
+      "meta:descriptionId": "geo##xdm:stateProvince##description##87801",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:stateProvince",
+      "tagNumber": 4
+    },
+    "city": {
+      "title": "City",
+      "type": "string",
+      "description": "The name of the city.",
+      "meta:titleId": "geo##xdm:city##title##87841",
+      "meta:descriptionId": "geo##xdm:city##description##10401",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:city",
+      "tagNumber": 5
+    },
+    "postalCode": {
+      "title": "Postal code",
+      "type": "string",
+      "description": "The postal code of the location. Postal codes are not available for all countries. In some countries, this will only contain part of the postal code.",
+      "meta:titleId": "geo##xdm:postalCode##title##7341",
+      "meta:descriptionId": "geo##xdm:postalCode##description##37131",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:postalCode",
+      "tagNumber": 6
+    },
+    "dmaID": {
+      "title": "Designated market area",
+      "type": "integer",
+      "description": "The Nielsen media research designated market area.",
+      "meta:titleId": "geo##xdm:dmaID##title##62681",
+      "meta:descriptionId": "geo##xdm:dmaID##description##1261",
+      "meta:xdmType": "int",
+      "meta:xdmField": "xdm:dmaID",
+      "tagNumber": 7
+    },
+    "msaID": {
+      "title": "Metropolitan statistical area",
+      "type": "integer",
+      "description": "The metropolitan statistical area in the United States where the observation occurred.",
+      "meta:titleId": "geo##xdm:msaID##title##82911",
+      "meta:descriptionId": "geo##xdm:msaID##description##83581",
+      "meta:xdmType": "int",
+      "meta:xdmField": "xdm:msaID",
+      "tagNumber": 8
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/common/geo",
+  "meta:altId": "_xdm.common.geo",
+  "id": "_xdm.common.geo"
+}

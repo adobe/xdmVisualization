@@ -1,0 +1,117 @@
+{
+  "id": "_xdm.content.productlistitem",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Product list item",
+  "type": "object",
+  "description": "The product list item represents a product selected by a customer with specific options, pricing, usage context for a specific point of time and may differ from the product record. For example the product record contains details from the product information system that are consistent for all customers, where the product list item has the actual price offered to the customer at that time which may vary due to sales campaigns or seasonal pricing.",
+  "meta:status": "stable",
+  "meta:createdDate": "2021-02-19",
+  "meta:titleId": "productlistitem##title##34691",
+  "meta:descriptionId": "productlistitem##description##62561",
+  "meta:xdmType": "object",
+  "properties": {
+    "SKU": {
+      "title": "SKU",
+      "type": "string",
+      "description": "Stock keeping unit (SKU), the unique identifier for a product defined by the vendor.",
+      "meta:titleId": "productlistitem##xdm:SKU##title##38501",
+      "meta:descriptionId": "productlistitem##xdm:SKU##description##16501",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:SKU",
+      "tagNumber": 1
+    },
+    "_id": {
+      "title": "Line item ID.",
+      "type": "string",
+      "format": "uri-reference",
+      "description": "The line item identifier for this product entry. The product itself is identified through `xdm:product`.",
+      "meta:titleId": "productlistitem##@id##title##31901",
+      "meta:descriptionId": "productlistitem##@id##description##66621",
+      "meta:xdmType": "string",
+      "meta:xdmField": "@id",
+      "tagNumber": 2
+    },
+    "product": {
+      "title": "Product",
+      "type": "string",
+      "format": "uri",
+      "description": "The XDM identifier of the product itself.",
+      "meta:titleId": "productlistitem##xdm:product##title##34221",
+      "meta:descriptionId": "productlistitem##xdm:product##description##71451",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:product",
+      "tagNumber": 3
+    },
+    "name": {
+      "title": "Name",
+      "type": "string",
+      "description": "The display name for the product as presented to the user for this product view.",
+      "meta:titleId": "productlistitem##xdm:name##title##6621",
+      "meta:descriptionId": "productlistitem##xdm:name##description##11111",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:name",
+      "tagNumber": 4
+    },
+    "productAddMethod": {
+      "title": "Product add method",
+      "type": "string",
+      "description": "The method that was used to add a product item to the list by the visitor. Set with product list add metrics.",
+      "meta:titleId": "productlistitem##xdm:productAddMethod##title##6321",
+      "meta:descriptionId": "productlistitem##xdm:productAddMethod##description##26061",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:productAddMethod",
+      "tagNumber": 5
+    },
+    "currencyCode": {
+      "title": "Currency code",
+      "type": "string",
+      "examples": [
+        "USD",
+        "EUR"
+      ],
+      "pattern": "^[A-Z]{3}$",
+      "description": "The ISO 4217 alphabetic currency code used for pricing the product.",
+      "meta:titleId": "productlistitem##xdm:currencyCode##title##77931",
+      "meta:descriptionId": "productlistitem##xdm:currencyCode##description##61431",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:currencyCode",
+      "tagNumber": 6
+    },
+    "quantity": {
+      "title": "Quantity",
+      "type": "integer",
+      "description": "The number of units the customer has indicated they require of the product.",
+      "meta:titleId": "productlistitem##xdm:quantity##title##31861",
+      "meta:descriptionId": "productlistitem##xdm:quantity##description##51001",
+      "meta:xdmType": "int",
+      "meta:xdmField": "xdm:quantity",
+      "tagNumber": 7
+    },
+    "priceTotal": {
+      "title": "Price total",
+      "type": "number",
+      "description": "The total price for the product line item.",
+      "meta:titleId": "productlistitem##xdm:priceTotal##title##85341",
+      "meta:descriptionId": "productlistitem##xdm:priceTotal##description##23221",
+      "meta:xdmType": "number",
+      "meta:xdmField": "xdm:priceTotal",
+      "tagNumber": 8
+    },
+    "unitOfMeasureCode": {
+      "title": "Product Unit Of Measure Code",
+      "type": "string",
+      "description": "Standard unit of measure of the product and or variation and relates the units for the size measurement.",
+      "meta:titleId": "product-measurement##xdm:unitOfMeasureCode##title##20391",
+      "meta:descriptionId": "product-measurement##xdm:unitOfMeasureCode##description##24871",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:unitOfMeasureCode",
+      "tagNumber": 9
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/content/productlistitem",
+  "meta:altId": "_xdm.content.productlistitem",
+  "required": [
+    "SKU"
+  ],
+  "id": "_xdm.content.productlistitem"
+}

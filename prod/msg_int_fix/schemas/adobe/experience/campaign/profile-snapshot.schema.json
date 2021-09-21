@@ -1,0 +1,66 @@
+{
+  "id": "_experience.campaign.profile-snapshot",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Adobe Campaign Profile Snapshot",
+  "type": "object",
+  "description": "Adobe Campaign Profile snapshot contains the recipient of the message. This property is primarily used to link the message to a Profile using the `IdentityMap` but it can also be used to freeze some properties of the profile at the time the message was sent.",
+  "meta:status": "stable",
+  "meta:titleId": "profile-snapshot##title##58281",
+  "meta:descriptionId": "profile-snapshot##description##64561",
+  "meta:xdmType": "object",
+  "properties": {
+    "person": {
+      "title": "Person",
+      "$ref": "../../../datatypes/person/person.schema.json",
+      "description": "An individual actor, contact, or owner.",
+      "meta:titleId": "profile-snapshot##xdm:person##title##92071",
+      "meta:descriptionId": "profile-snapshot##xdm:person##description##77591",
+      "meta:xdmField": "xdm:person",
+      "tagNumber": 1
+    },
+    "directMarketingAddress": {
+      "title": "Direct Marketing Address",
+      "$ref": "../../../datatypes/marketing/directmarketing-address.schema.json",
+      "description": "Direct Marketing postal address.",
+      "meta:titleId": "profile-snapshot##xdm:directMarketingAddress##title##14181",
+      "meta:descriptionId": "profile-snapshot##xdm:directMarketingAddress##description##50151",
+      "meta:xdmField": "xdm:directMarketingAddress",
+      "tagNumber": 2
+    },
+    "directMarketingEmail": {
+      "title": "Direct Marketing Email",
+      "$ref": "../../../datatypes/marketing/directmarketing-emailaddress.schema.json",
+      "description": "Direct Marketing email address.",
+      "meta:titleId": "profile-snapshot##xdm:directMarketingEmail##title##71211",
+      "meta:descriptionId": "profile-snapshot##xdm:directMarketingEmail##description##44491",
+      "meta:xdmField": "xdm:directMarketingEmail",
+      "tagNumber": 3
+    },
+    "directMarketingPhone": {
+      "title": "Direct Marketing Phone",
+      "$ref": "../../../datatypes/marketing/directmarketing-phonenumber.schema.json",
+      "description": "Direct Marketing phone number.",
+      "meta:titleId": "profile-snapshot##xdm:directMarketingPhone##title##85161",
+      "meta:descriptionId": "profile-snapshot##xdm:directMarketingPhone##description##76961",
+      "meta:xdmField": "xdm:directMarketingPhone",
+      "tagNumber": 4
+    },
+    "pushNotificationTokens": {
+      "title": "Push Notification Tokens",
+      "type": "array",
+      "description": "Push notification tokens are used to communicate with applications that are installed on devices or SaaS application accounts.",
+      "meta:titleId": "profile-snapshot##xdm:pushNotificationTokens##title##89531",
+      "meta:descriptionId": "profile-snapshot##xdm:pushNotificationTokens##description##89271",
+      "meta:xdmType": "array",
+      "items": {
+        "$ref": "../../../datatypes/pushnotificationtoken.schema.json",
+        "tagNumber": 1
+      },
+      "meta:xdmField": "xdm:pushNotificationTokens",
+      "tagNumber": 5
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/experience/campaign/profile-snapshot",
+  "meta:altId": "_experience.campaign.profile-snapshot",
+  "id": "_experience.campaign.profile-snapshot"
+}

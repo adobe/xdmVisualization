@@ -1,0 +1,109 @@
+{
+  "id": "_xdm.context.placecontext",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Place context",
+  "type": "object",
+  "meta:extensible": true,
+  "description": "",
+  "meta:status": "stable",
+  "meta:createdDate": "2020-08-10",
+  "meta:titleId": "placecontext##title##25391",
+  "meta:descriptionId": "placecontext##description##93771",
+  "meta:xdmType": "object",
+  "properties": {
+    "localTime": {
+      "title": "Local time",
+      "type": "string",
+      "format": "date-time",
+      "description": "The local time using RFC3339 with a stated time zone offset such as \"2001-07-04T12:08:56-07:00\". An example formatting pattern is \"yyyy-MM-dd'T'HH:mm:ssXXX\".",
+      "meta:titleId": "placecontext##xdm:localTime##title##7021",
+      "meta:descriptionId": "placecontext##xdm:localTime##description##75591",
+      "meta:xdmType": "date-time",
+      "meta:xdmField": "xdm:localTime",
+      "tagNumber": 1
+    },
+    "ianaTimezone": {
+      "title": "Iana Timezone",
+      "type": "string",
+      "description": "Timezone of the device represented as a standard timezone string. https://en.wikipedia.org/wiki/List_of_tz_database_time_zones.",
+      "meta:titleId": "placecontext##xdm:ianaTimezone##title##49031",
+      "meta:descriptionId": "placecontext##xdm:ianaTimezone##description##25561",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:ianaTimezone",
+      "tagNumber": 2
+    },
+    "localTimezoneOffset": {
+      "title": "Local time zone offset",
+      "type": "integer",
+      "description": "The current, local time zone offset in minutes from UTC for the localTime in this object.  This will include the current DST offset if applicable.",
+      "meta:titleId": "placecontext##xdm:localTimezoneOffset##title##81451",
+      "meta:descriptionId": "placecontext##xdm:localTimezoneOffset##description##18031",
+      "meta:xdmType": "int",
+      "meta:xdmField": "xdm:localTimezoneOffset",
+      "tagNumber": 3
+    },
+    "geo": {
+      "title": "Geo",
+      "$ref": "demographic/geo.schema.json",
+      "description": "The geographic location where the experience was delivered.",
+      "meta:titleId": "placecontext##xdm:geo##title##97261",
+      "meta:descriptionId": "placecontext##xdm:geo##description##56411",
+      "meta:xdmField": "xdm:geo",
+      "tagNumber": 4
+    },
+    "POIinteraction": {
+      "title": "POI interaction",
+      "description": "The point of interest (POI) interaction details.",
+      "meta:status": "experimental",
+      "type": "object",
+      "meta:titleId": "placecontext##xdm:POIinteraction##title##39801",
+      "meta:descriptionId": "placecontext##xdm:POIinteraction##description##80061",
+      "meta:xdmType": "object",
+      "properties": {
+        "poiDetail": {
+          "title": "POI detail",
+          "description": "Detail of the POI that cause the event.",
+          "$ref": "poi-detail.schema.json",
+          "meta:titleId": "placecontext##xdm:poiDetail##title##42911",
+          "meta:descriptionId": "placecontext##xdm:poiDetail##description##40461",
+          "meta:xdmField": "xdm:poiDetail",
+          "tagNumber": 2
+        },
+        "poiEntries": {
+          "$ref": "data/measure.schema.json",
+          "description": "The number of times a person has entered the point of interest (POI).",
+          "meta:descriptionId": "placecontext##xdm:poiEntries##description##74191",
+          "meta:xdmField": "xdm:poiEntries",
+          "tagNumber": 3
+        },
+        "poiExits": {
+          "$ref": "data/measure.schema.json",
+          "description": "The number of times a person has exited the point of interest (POI).",
+          "meta:descriptionId": "placecontext##xdm:poiExits##description##50711",
+          "meta:xdmField": "xdm:poiExits",
+          "tagNumber": 4
+        }
+      },
+      "meta:xdmField": "xdm:POIinteraction",
+      "tagNumber": 5
+    },
+    "activePOIs": {
+      "title": "POI detail",
+      "description": "Details of the points of interest (POIs) that cause the event.",
+      "meta:status": "experimental",
+      "type": "array",
+      "meta:titleId": "placecontext##xdm:activePOIs##title##42411",
+      "meta:descriptionId": "placecontext##xdm:activePOIs##description##13571",
+      "meta:xdmType": "array",
+      "items": {
+        "$ref": "poi-detail.schema.json",
+        "tagNumber": 1
+      },
+      "meta:xdmField": "xdm:activePOIs",
+      "tagNumber": 6
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/context/placecontext",
+  "meta:altId": "_xdm.context.placecontext",
+  "id": "_xdm.context.placecontext"
+}

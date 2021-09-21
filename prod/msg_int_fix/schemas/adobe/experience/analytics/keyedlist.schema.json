@@ -1,0 +1,30 @@
+{
+  "id": "_experience.analytics.keyedlist",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Keyed List",
+  "type": "object",
+  "description": "List of keyed values.",
+  "meta:status": "stable",
+  "meta:titleId": "keyedlist##title##37581",
+  "meta:descriptionId": "keyedlist##description##29171",
+  "meta:xdmType": "object",
+  "properties": {
+    "list": {
+      "title": "Keyed List",
+      "type": "array",
+      "description": "List of keyed values.",
+      "meta:titleId": "keyedlist##xdm:list##title##37531",
+      "meta:descriptionId": "keyedlist##xdm:list##description##75521",
+      "meta:xdmType": "array",
+      "items": {
+        "$ref": "keyvalue.schema.json",
+        "tagNumber": 1
+      },
+      "meta:xdmField": "xdm:list",
+      "tagNumber": 1
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/experience/analytics/keyedlist",
+  "meta:altId": "_experience.analytics.keyedlist",
+  "id": "_experience.analytics.keyedlist"
+}

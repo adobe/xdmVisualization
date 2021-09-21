@@ -1,0 +1,50 @@
+{
+  "id": "_xdm.mixins.product-measurement",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Product Measurement",
+  "type": "object",
+  "auditable": true,
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "description": "Captures properties related to product measurements.",
+  "meta:status": "experimental",
+  "meta:createdDate": "2021-02-19",
+  "meta:titleId": "product-measurement##title##42861",
+  "meta:descriptionId": "product-measurement##description##66341",
+  "meta:xdmType": "object",
+  "properties": {
+    "productSize": {
+      "title": "Product Size",
+      "type": "string",
+      "description": "Standard product size for the product.",
+      "meta:titleId": "product-measurement##xdm:productSize##title##83681",
+      "meta:descriptionId": "product-measurement##xdm:productSize##description##38041",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:productSize",
+      "tagNumber": 1
+    },
+    "unitOfMeasureName": {
+      "title": "Product Unit Of Measure Name",
+      "type": "string",
+      "description": "Friendly name for product unit of measure.",
+      "meta:titleId": "product-measurement##xdm:unitOfMeasureName##title##46101",
+      "meta:descriptionId": "product-measurement##xdm:unitOfMeasureName##description##14301",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:unitOfMeasureName",
+      "tagNumber": 2
+    },
+    "unitOfMeasureCode": {
+      "title": "Product Unit Of Measure Code",
+      "type": "string",
+      "description": "Standard unit of measure of the product and or variation and relates the units for the size measurement.",
+      "meta:titleId": "product-measurement##xdm:unitOfMeasureCode##title##20391",
+      "meta:descriptionId": "product-measurement##xdm:unitOfMeasureCode##description##24871",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:unitOfMeasureCode",
+      "tagNumber": 3
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/mixins/product-measurement",
+  "meta:altId": "_xdm.mixins.product-measurement",
+  "id": "_xdm.mixins.product-measurement"
+}

@@ -1,0 +1,101 @@
+{
+  "id": "_xdm.data.metrics.direct-marketing.unsubscriptions",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Unsubscriptions",
+  "type": "object",
+  "meta:extensible": true,
+  "description": "The direct-marketing metric `unsubscriptions` describes the number of times the recipients of direct marketing messages (email, newsletters, etc) have opted out from receiving them.",
+  "meta:status": [
+    "deprecated",
+    "stable"
+  ],
+  "meta:createdDate": "2020-08-10",
+  "meta:titleId": [
+    "unsubscriptions##title##17601",
+    "metricdefinition##title##28671"
+  ],
+  "meta:descriptionId": [
+    "unsubscriptions##description##30731",
+    "metricdefinition##description##96461"
+  ],
+  "meta:xdmType": "object",
+  "properties": {
+    "_id": {
+      "type": "string",
+      "const": "xdm:unsubscriptions",
+      "description": "The unique identifier of this metric.",
+      "meta:descriptionId": [
+        "unsubscriptions##@id##description##34441",
+        "metricdefinition##@id##description##44171"
+      ],
+      "meta:xdmType": "string",
+      "format": "uri-reference",
+      "meta:xdmField": "@id",
+      "tagNumber": 1
+    },
+    "_schema": {
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "const": "direct-marketing metric: unsubscriptions",
+          "description": "The human-readable name of the metric. The name can be used in user interfaces and does not have to be unique.",
+          "meta:descriptionId": [
+            "unsubscriptions##schema:name##description##33411",
+            "metricdefinition##schema:name##description##52471"
+          ],
+          "meta:xdmType": "string",
+          "meta:xdmField": "schema:name",
+          "tagNumber": 1
+        }
+      },
+      "required": [
+        "name"
+      ],
+      "tagNumber": 2
+    },
+    "measurement": {
+      "type": "string",
+      "description": "How to take measures of this metric.",
+      "const": "count",
+      "meta:descriptionId": [
+        "unsubscriptions##xdm:measurement##description##85681",
+        "metricdefinition##xdm:measurement##description##34121"
+      ],
+      "meta:xdmType": "string",
+      "examples": [
+        "distance",
+        "time",
+        "price",
+        "count"
+      ],
+      "meta:xdmField": "xdm:measurement",
+      "tagNumber": 3
+    },
+    "unit": {
+      "const": "",
+      "type": "string",
+      "description": "The unit that this metric is measured in. Whenever possible, metrics should follow the [SI base units](https://www.bipm.org/en/measurement-units/) or be [ISO 4217 currency codes](https://www.iso.org/iso-4217-currency-codes.html).For metric that are counts, the `xdm:unit` must be empty string (equivalent to null)",
+      "examples": [
+        "m",
+        "kg",
+        "s",
+        "USD"
+      ],
+      "meta:descriptionId": "metricdefinition##xdm:unit##description##62961",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:unit",
+      "tagNumber": 4
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/data/metrics/direct-marketing/unsubscriptions",
+  "meta:altId": "_xdm.data.metrics.direct-marketing.unsubscriptions",
+  "required": [
+    "_id",
+    "_schema",
+    "measurement",
+    "unit"
+  ],
+  "id": "_xdm.data.metrics.direct-marketing.unsubscriptions"
+}
