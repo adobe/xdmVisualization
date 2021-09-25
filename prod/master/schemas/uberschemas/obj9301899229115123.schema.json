@@ -1,0 +1,41 @@
+{
+  "type": "object",
+  "meta:xdmType": "object",
+  "properties": {
+    "subscriptionDetails": {
+      "title": "Subscription Details",
+      "$ref": "../datatypes/industry-verticals/telecom-subscription.schema.json",
+      "description": "Extension of the subscription data type to include subscription length, fees, status, etc.",
+      "meta:titleId": "profile-telecom-subscription##xdm:subscriptionDetails##title##52871",
+      "meta:descriptionId": "profile-telecom-subscription##xdm:subscriptionDetails##description##52681",
+      "meta:xdmField": "xdm:subscriptionDetails",
+      "tagNumber": 1
+    },
+    "channels": {
+      "title": "Channels",
+      "type": "integer",
+      "description": "Records the number of channels included with the media subscription.",
+      "meta:titleId": "profile-telecom-subscription##xdm:channels##title##79551",
+      "meta:descriptionId": "profile-telecom-subscription##xdm:channels##description##47431",
+      "meta:xdmType": "int",
+      "meta:xdmField": "xdm:channels",
+      "tagNumber": 2
+    },
+    "streamingServices": {
+      "title": "Streaming Services",
+      "description": "Array of all streaming services included with the subscription.",
+      "type": "array",
+      "meta:titleId": "profile-telecom-subscription##xdm:streamingServices##title##10361",
+      "meta:descriptionId": "profile-telecom-subscription##xdm:streamingServices##description##44721",
+      "meta:xdmType": "array",
+      "meta:xdmField": "xdm:streamingServices",
+      "tagNumber": 3,
+      "items": {
+        "$ref": "obj8501850486347076.schema.json"
+      }
+    }
+  },
+  "tagNumber": 1,
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "id": "obj9301899229115123.schema.json"
+}
