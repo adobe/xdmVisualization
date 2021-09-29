@@ -1,0 +1,99 @@
+{
+  "id": "_experience.journeyorchestration.serviceevents.dispatcher",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Journey Orchestration service Events: Dispatcher Fields",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "description": "This event is in relation with journey and dispatcher service event fields",
+  "meta:status": "experimental",
+  "meta:xdmType": "object",
+  "properties": {
+    "_experience": {
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "journeyOrchestration": {
+          "type": "object",
+          "meta:xdmType": "object",
+          "properties": {
+            "serviceEvents": {
+              "type": "object",
+              "meta:xdmType": "object",
+              "properties": {
+                "dispatcher": {
+                  "title": "Journey Orchestration dispatcher service event fields.",
+                  "type": "object",
+                  "meta:xdmType": "object",
+                  "properties": {
+                    "_experience": {
+                      "type": "object",
+                      "meta:xdmType": "object",
+                      "properties": {
+                        "journeyOrchestration": {
+                          "type": "object",
+                          "meta:xdmType": "object",
+                          "properties": {
+                            "serviceEvents": {
+                              "type": "object",
+                              "meta:xdmType": "object",
+                              "properties": {
+                                "eventID": {
+                                  "title": "Event ID",
+                                  "type": "string",
+                                  "description": "The Event ID to which this event was mapped inside the controller.",
+                                  "meta:xdmType": "string",
+                                  "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/eventID",
+                                  "tagNumber": 1
+                                },
+                                "projectionID": {
+                                  "title": "Projection ID",
+                                  "type": "string",
+                                  "description": "The projection id of the segment being used in journey",
+                                  "meta:xdmType": "string",
+                                  "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/projectionID",
+                                  "tagNumber": 2
+                                },
+                                "eventType": {
+                                  "title": "Event Type",
+                                  "type": "string",
+                                  "description": "The type of dispatcher service event like error, discard",
+                                  "meta:xdmType": "string",
+                                  "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/eventType",
+                                  "tagNumber": 3
+                                },
+                                "eventCode": {
+                                  "title": "Event Code",
+                                  "type": "string",
+                                  "description": "The error code indicating the reason for corresponding eventType",
+                                  "meta:xdmType": "string",
+                                  "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/eventCode",
+                                  "tagNumber": 4
+                                }
+                              },
+                              "tagNumber": 1
+                            }
+                          },
+                          "tagNumber": 1
+                        }
+                      },
+                      "tagNumber": 1
+                    }
+                  },
+                  "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/dispatcher",
+                  "tagNumber": 1
+                }
+              },
+              "tagNumber": 1
+            }
+          },
+          "tagNumber": 1
+        }
+      },
+      "tagNumber": 1
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/dispatcher",
+  "meta:altId": "_experience.journeyorchestration.serviceevents.dispatcher",
+  "id": "_experience.journeyorchestration.serviceevents.dispatcher"
+}

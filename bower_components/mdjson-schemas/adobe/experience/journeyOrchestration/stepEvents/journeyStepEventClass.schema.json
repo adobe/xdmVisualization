@@ -49,6 +49,28 @@
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:eventType",
       "tagNumber": 3
+    },
+    "_experience": {
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "journeyOrchestration": {
+          "type": "object",
+          "meta:xdmType": "object",
+          "properties": {
+            "serviceType": {
+              "title": "Service Type",
+              "type": "string",
+              "description": "This fields identifies the type of event.",
+              "meta:xdmType": "string",
+              "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/serviceType",
+              "tagNumber": 1
+            }
+          },
+          "tagNumber": 1
+        }
+      },
+      "tagNumber": 4
     }
   },
   "meta:xdmId": "https://ns.adobe.com/experience/journeyOrchestration/stepEvents/journeyStepEvent",

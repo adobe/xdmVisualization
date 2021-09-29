@@ -104,6 +104,22 @@
                   "meta:xdmType": "string",
                   "meta:xdmField": "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/messageType",
                   "tagNumber": 8
+                },
+                "ajoCampaignID": {
+                  "title": "AJO Campaign ID",
+                  "type": "string",
+                  "description": " Unique ID of the AJO Campaign that triggered this message execution.",
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/ajoCampaignID",
+                  "tagNumber": 9
+                },
+                "ajoCampaignVersionID": {
+                  "title": "AJO Campaign Version ID",
+                  "type": "string",
+                  "description": " Version ID of the AJO Campaign that triggered this message execution.",
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/ajoCampaignVersionID",
+                  "tagNumber": 10
                 }
               },
               "required": [

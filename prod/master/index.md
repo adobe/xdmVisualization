@@ -224,6 +224,11 @@
 <details>
 <summary>journeyOrchestration</summary>
 <ul>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.journeyOrchestration.journeyOrchestrationDebugInfo.html">journeyOrchestrationDebugInfo</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.journeyOrchestration.journeyOrchestrationIdentity.html">journeyOrchestrationIdentity</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.journeyOrchestration.journeyOrchestrationJourney.html">journeyOrchestrationJourney</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.journeyOrchestration.journeyOrchestrationServiceEventsDispatcher.html">journeyOrchestrationServiceEventsDispatcher</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.journeyOrchestration.journeyOrchestrationServiceEventsSegmentExportJob.html">journeyOrchestrationServiceEventsSegmentExportJob</a></li>
 <details>
 <summary>stepEvents</summary>
 <ul>
@@ -668,7 +673,6 @@
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.profile.profile-other-work-details.html">profile-other-work-details</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.profile.profile-owning-entities.html">profile-owning-entities</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.profile.profile-person-details.html">profile-person-details</a></li>
-<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.profile.profile-person-details-v2.html">profile-person-details-v2</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.profile.profile-personal-details.html">profile-personal-details</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.profile.profile-personal-finance-details.html">profile-personal-finance-details</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.profile.profile-personal-tax-profile-details.html">profile-personal-tax-profile-details</a></li>

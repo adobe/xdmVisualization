@@ -1435,7 +1435,6 @@
             "URL": {
               "title": "URL",
               "type": "string",
-              "format": "uri",
               "description": "The normative or usual URL of the web page.  This may or may not be the actual URL used to reach the page, which would be recorded using `Web Link`.",
               "meta:titleId": "visit-webpage##xdm:URL##title##56451",
               "meta:descriptionId": "visit-webpage##xdm:URL##description##36051",
@@ -1644,7 +1643,7 @@
           "meta:xdmField": "xdm:dataValueChanges",
           "tagNumber": 5,
           "items": {
-            "$ref": "obj602410587362096.schema.json"
+            "$ref": "obj2069465425373178.schema.json"
           }
         }
       },
@@ -3289,7 +3288,7 @@
           "meta:xdmField": "xdm:diningReservations",
           "tagNumber": 1,
           "items": {
-            "$ref": "obj15176803816580398.schema.json"
+            "$ref": "obj8322613915691501.schema.json"
           }
         },
         "cancellation": {
@@ -3462,7 +3461,7 @@
           "meta:xdmField": "xdm:flightReservations",
           "tagNumber": 19,
           "items": {
-            "$ref": "obj3607526871924598.schema.json"
+            "$ref": "obj24631462943840554.schema.json"
           }
         },
         "lodgingReservations": {
@@ -3471,7 +3470,7 @@
           "meta:xdmField": "xdm:lodgingReservations",
           "tagNumber": 20,
           "items": {
-            "$ref": "obj5035567257603353.schema.json"
+            "$ref": "obj835070878162113.schema.json"
           }
         },
         "vehicleReservations": {
@@ -3480,7 +3479,7 @@
           "meta:xdmField": "xdm:vehicleReservations",
           "tagNumber": 21,
           "items": {
-            "$ref": "obj17942630563233064.schema.json"
+            "$ref": "obj14655265924603378.schema.json"
           }
         }
       },
