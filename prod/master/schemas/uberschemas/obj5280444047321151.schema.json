@@ -1,0 +1,54 @@
+{
+  "type": "object",
+  "meta:xdmType": "object",
+  "properties": {
+    "sourceOpportunityID": {
+      "title": "Source Opportunity ID",
+      "description": "Opportunity unique identifier at source.",
+      "$ref": "../datatypes/b2b/b2b-source.schema.json",
+      "meta:titleId": "opportunity-components##xdm:sourceOpportunityID##title##37551",
+      "meta:descriptionId": "opportunity-components##xdm:sourceOpportunityID##description##71071",
+      "meta:xdmField": "xdm:sourceOpportunityID",
+      "tagNumber": 1
+    },
+    "sourceAccountID": {
+      "title": "Source Account ID",
+      "description": "Account unique identifier at the source.",
+      "$ref": "../datatypes/b2b/b2b-source.schema.json",
+      "meta:titleId": "opportunity-components##xdm:sourceAccountID##title##33691",
+      "meta:descriptionId": "opportunity-components##xdm:sourceAccountID##description##37761",
+      "meta:xdmField": "xdm:sourceAccountID",
+      "tagNumber": 2
+    },
+    "sourceExternalID": {
+      "title": "Source External ID",
+      "description": "External unique identifier at the source.",
+      "$ref": "../datatypes/b2b/b2b-source.schema.json",
+      "meta:titleId": "opportunity-components##xdm:sourceExternalID##title##77861",
+      "meta:descriptionId": "opportunity-components##xdm:sourceExternalID##description##25601",
+      "meta:xdmField": "xdm:sourceExternalID",
+      "tagNumber": 3
+    },
+    "sourceOpportunityOwnerID": {
+      "title": "Source Opportunity Owner ID",
+      "description": "Opportunity owner unique identifier at the source.",
+      "$ref": "../datatypes/b2b/b2b-source.schema.json",
+      "meta:titleId": "opportunity-components##xdm:sourceOpportunityOwnerID##title##36461",
+      "meta:descriptionId": "opportunity-components##xdm:sourceOpportunityOwnerID##description##79801",
+      "meta:xdmField": "xdm:sourceOpportunityOwnerID",
+      "tagNumber": 4
+    },
+    "sourceCampaignID": {
+      "title": "Source Campaign ID",
+      "description": "Campaign unique identifier at the source.",
+      "$ref": "../datatypes/b2b/b2b-source.schema.json",
+      "meta:titleId": "opportunity-components##xdm:sourceCampaignID##title##57131",
+      "meta:descriptionId": "opportunity-components##xdm:sourceCampaignID##description##25511",
+      "meta:xdmField": "xdm:sourceCampaignID",
+      "tagNumber": 5
+    }
+  },
+  "tagNumber": 1,
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "id": "obj5280444047321151.schema.json"
+}
