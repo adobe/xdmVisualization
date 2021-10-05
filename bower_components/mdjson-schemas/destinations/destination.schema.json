@@ -115,6 +115,14 @@
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:version",
       "tagNumber": 9
+    },
+    "connectionSpecID": {
+      "title": "Connection Spec ID",
+      "type": "string",
+      "description": "Unique identifier to connect and deliver segments to the destination",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:connectionSpecID",
+      "tagNumber": 10
     }
   },
   "meta:xdmId": "https://ns.adobe.com/xdm/context/destination",

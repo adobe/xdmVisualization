@@ -70,6 +70,14 @@
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:pushProvider",
           "tagNumber": 3
+        },
+        "isLaunch": {
+          "title": "Is Launch",
+          "type": "boolean",
+          "description": "Indicates whether this push notification interaction launched the application.",
+          "meta:xdmType": "boolean",
+          "meta:xdmField": "xdm:isLaunch",
+          "tagNumber": 4
         }
       },
       "meta:xdmField": "xdm:pushNotificationTracking",

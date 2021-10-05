@@ -422,6 +422,7 @@
 [adobe.experience.campaign.experienceevent-profile-segmentation](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.campaign.experienceevent-profile-segmentation.html)<br/>
 [adobe.experience.campaign-experienceevent](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.campaign-experienceevent.html)<br/>
 [adobe.experience.customerJourneyManagement.offers](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.customerJourneyManagement.offers.html)<br/>
+[adobe.experience.customerJourneyManagement.landingpage](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.customerJourneyManagement.landingpage.html)<br/>
 [adobe.experience.customerJourneyManagement.message-delivery-feedback](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.customerJourneyManagement.message-delivery-feedback.html)<br/>
 [adobe.experience.customerJourneyManagement.messageprofile](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.customerJourneyManagement.messageprofile.html)<br/>
 [adobe.experience.customerJourneyManagement.message-interaction](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.customerJourneyManagement.message-interaction.html)<br/>

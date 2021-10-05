@@ -1643,7 +1643,7 @@
           "meta:xdmField": "xdm:dataValueChanges",
           "tagNumber": 5,
           "items": {
-            "$ref": "obj44803444953905136.schema.json"
+            "$ref": "obj054337449381745895.schema.json"
           }
         }
       },
@@ -2794,6 +2794,14 @@
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:pushProvider",
           "tagNumber": 3
+        },
+        "isLaunch": {
+          "title": "Is Launch",
+          "type": "boolean",
+          "description": "Indicates whether this push notification interaction launched the application.",
+          "meta:xdmType": "boolean",
+          "meta:xdmField": "xdm:isLaunch",
+          "tagNumber": 4
         }
       },
       "meta:xdmField": "xdm:pushNotificationTracking",
@@ -3288,7 +3296,7 @@
           "meta:xdmField": "xdm:diningReservations",
           "tagNumber": 1,
           "items": {
-            "$ref": "obj3138070264037467.schema.json"
+            "$ref": "obj6760370386088319.schema.json"
           }
         },
         "cancellation": {
@@ -3461,7 +3469,7 @@
           "meta:xdmField": "xdm:flightReservations",
           "tagNumber": 19,
           "items": {
-            "$ref": "obj8498517253469402.schema.json"
+            "$ref": "obj7028447478446525.schema.json"
           }
         },
         "lodgingReservations": {
@@ -3470,7 +3478,7 @@
           "meta:xdmField": "xdm:lodgingReservations",
           "tagNumber": 20,
           "items": {
-            "$ref": "obj37715231317088693.schema.json"
+            "$ref": "obj635100810047514.schema.json"
           }
         },
         "vehicleReservations": {
@@ -3479,7 +3487,7 @@
           "meta:xdmField": "xdm:vehicleReservations",
           "tagNumber": 21,
           "items": {
-            "$ref": "obj9501650679098088.schema.json"
+            "$ref": "obj387088232849089.schema.json"
           }
         }
       },

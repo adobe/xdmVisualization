@@ -38,12 +38,12 @@
                           "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/ID",
                           "tagNumber": 1
                         },
-                        "Version ID": {
+                        "versionID": {
                           "title": "Version ID",
                           "description": "Identifier of the journey version. This id represents the identity of a journey.",
                           "type": "string",
                           "meta:xdmType": "string",
-                          "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/Version ID",
+                          "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/versionID",
                           "tagNumber": 2
                         },
                         "name": {

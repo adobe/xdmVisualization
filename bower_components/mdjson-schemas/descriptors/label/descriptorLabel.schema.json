@@ -69,16 +69,18 @@
     },
     "labels": {
       "title": "Labels",
-      "description": "When present, it allows an array of objects with three properties such as labelType, labelName and labelValue",
+      "description": "When present, it allows an array of labels. Values are resources IDs",
       "type": "array",
       "meta:xdmType": "array",
       "meta:titleId": "descriptorLabel##xdm:labels##title##11301",
       "meta:descriptionId": "descriptorLabel##xdm:labels##description##40961",
-      "meta:xdmField": "xdm:labels",
-      "tagNumber": 7,
       "items": {
-        "$ref": "obj13173539881275187.schema.json"
-      }
+        "type": "string",
+        "meta:xdmType": "string",
+        "tagNumber": 1
+      },
+      "meta:xdmField": "xdm:labels",
+      "tagNumber": 7
     }
   },
   "meta:xdmId": "https://ns.adobe.com/xdm/common/descriptors/descriptorLabel",
