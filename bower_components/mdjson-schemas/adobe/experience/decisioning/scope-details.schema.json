@@ -49,7 +49,6 @@
       "tagNumber": 4
     },
     "interactionMeasurements": {
-      "meta:status": "experimental",
       "type": "array",
       "title": "Interaction Measurements used in this Scope",
       "description": "The interaction measurements determine how inteaction event properties are interpreted (mapped) into outcomes for the propositions. Outcomes could be measured as the number of successes or failures or by a quantitative metric. An outcome can have a nominal value (e.g. success/failure), ordinal (rating value gathered) or numerical value (e.g. a measurable quantity).",

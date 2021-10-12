@@ -54,7 +54,6 @@
     "POIinteraction": {
       "title": "POI interaction",
       "description": "The point of interest (POI) interaction details.",
-      "meta:status": "experimental",
       "type": "object",
       "meta:titleId": "placecontext##xdm:POIinteraction##title##39801",
       "meta:descriptionId": "placecontext##xdm:POIinteraction##description##80061",
@@ -90,7 +89,6 @@
     "activePOIs": {
       "title": "POI detail",
       "description": "Details of the points of interest (POIs) that cause the event.",
-      "meta:status": "experimental",
       "type": "array",
       "meta:titleId": "placecontext##xdm:activePOIs##title##42411",
       "meta:descriptionId": "placecontext##xdm:activePOIs##description##13571",
