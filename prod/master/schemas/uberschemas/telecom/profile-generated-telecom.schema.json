@@ -358,7 +358,7 @@
                   "title": "Opt-out reason",
                   "type": "string",
                   "description": "Reason for opting out",
-                  "maxLength": 16,
+                  "maxLength": 255,
                   "meta:titleId": "consents-and-preferences##reason##title##75301",
                   "meta:descriptionId": "consents-and-preferences##reason##description##49681",
                   "meta:xdmType": "string",
@@ -414,7 +414,7 @@
                   "title": "Opt-out reason",
                   "type": "string",
                   "description": "Reason for opting out",
-                  "maxLength": 16,
+                  "maxLength": 255,
                   "meta:titleId": "consents-and-preferences##reason##title##75301",
                   "meta:descriptionId": "consents-and-preferences##reason##description##49681",
                   "meta:xdmType": "string",
@@ -572,7 +572,7 @@
                   "title": "Opt-out reason",
                   "type": "string",
                   "description": "Reason for opting out",
-                  "maxLength": 16,
+                  "maxLength": 255,
                   "meta:titleId": "consents-and-preferences##reason##title##75301",
                   "meta:descriptionId": "consents-and-preferences##reason##description##49681",
                   "meta:xdmType": "string",
@@ -730,7 +730,7 @@
                   "title": "Opt-out reason",
                   "type": "string",
                   "description": "Reason for opting out",
-                  "maxLength": 16,
+                  "maxLength": 255,
                   "meta:titleId": "consents-and-preferences##reason##title##75301",
                   "meta:descriptionId": "consents-and-preferences##reason##description##49681",
                   "meta:xdmType": "string",
@@ -1088,7 +1088,7 @@
                               "title": "Opt-out reason",
                               "type": "string",
                               "description": "Reason for opting out",
-                              "maxLength": 16,
+                              "maxLength": 255,
                               "meta:titleId": "consents-and-preferences##reason##title##75301",
                               "meta:descriptionId": "consents-and-preferences##reason##description##49681",
                               "meta:xdmType": "string",
@@ -1144,7 +1144,7 @@
                               "title": "Opt-out reason",
                               "type": "string",
                               "description": "Reason for opting out",
-                              "maxLength": 16,
+                              "maxLength": 255,
                               "meta:titleId": "consents-and-preferences##reason##title##75301",
                               "meta:descriptionId": "consents-and-preferences##reason##description##49681",
                               "meta:xdmType": "string",
@@ -1200,7 +1200,7 @@
                               "title": "Opt-out reason",
                               "type": "string",
                               "description": "Reason for opting out",
-                              "maxLength": 16,
+                              "maxLength": 255,
                               "meta:titleId": "consents-and-preferences##reason##title##75301",
                               "meta:descriptionId": "consents-and-preferences##reason##description##49681",
                               "meta:xdmType": "string",
@@ -1342,7 +1342,7 @@
           "meta:xdmField": "xdm:internetSubscription",
           "tagNumber": 4,
           "items": {
-            "$ref": "obj5577030514493844.schema.json"
+            "$ref": "obj12632874699586805.schema.json"
           }
         },
         "landlineSubscription": {
@@ -1353,7 +1353,7 @@
           "meta:xdmField": "xdm:landlineSubscription",
           "tagNumber": 5,
           "items": {
-            "$ref": "obj06204084044746394.schema.json"
+            "$ref": "obj2497683592546316.schema.json"
           }
         },
         "mediaSubscription": {
@@ -1364,7 +1364,7 @@
           "meta:xdmField": "xdm:mediaSubscription",
           "tagNumber": 6,
           "items": {
-            "$ref": "obj46478948456351676.schema.json"
+            "$ref": "obj41442238137376575.schema.json"
           }
         },
         "mobileSubscription": {
@@ -1375,7 +1375,7 @@
           "meta:xdmField": "xdm:mobileSubscription",
           "tagNumber": 7,
           "items": {
-            "$ref": "obj8388845999656724.schema.json"
+            "$ref": "obj8917273566572463.schema.json"
           }
         }
       },
