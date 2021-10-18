@@ -1,0 +1,53 @@
+{
+  "type": "object",
+  "description": "This datatype is used to store the time profiling information of any service or component.",
+  "meta:descriptionId": "processing-flow-timeline##time-profiling##description##86761",
+  "meta:xdmType": "object",
+  "properties": {
+    "componentName": {
+      "title": "componentName",
+      "description": "The name of the service/component, for which time information is captured.",
+      "type": "string",
+      "meta:titleId": "processing-flow-timeline##xdm:componentName##title##92171",
+      "meta:descriptionId": "processing-flow-timeline##xdm:componentName##description##75401",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:componentName",
+      "tagNumber": 1
+    },
+    "serviceGroup": {
+      "title": "serviceGroup",
+      "description": "An optional attribute, to capture the timeline of a service, at sub-tree level.",
+      "type": "string",
+      "meta:titleId": "processing-flow-timeline##xdm:serviceGroup##title##76201",
+      "meta:descriptionId": "processing-flow-timeline##xdm:serviceGroup##description##58341",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:serviceGroup",
+      "tagNumber": 2
+    },
+    "startTime": {
+      "title": "startTime",
+      "description": "Execution Start time in Date-Time format for the component.",
+      "type": "string",
+      "format": "date-time",
+      "meta:titleId": "processing-flow-timeline##xdm:startTime##title##6951",
+      "meta:descriptionId": "processing-flow-timeline##xdm:startTime##description##87321",
+      "meta:xdmType": "date-time",
+      "meta:xdmField": "xdm:startTime",
+      "tagNumber": 3
+    },
+    "endTime": {
+      "title": "endTime",
+      "description": "Execution End time in Date-Time format for the component.",
+      "type": "string",
+      "format": "date-time",
+      "meta:titleId": "processing-flow-timeline##xdm:endTime##title##74721",
+      "meta:descriptionId": "processing-flow-timeline##xdm:endTime##description##34321",
+      "meta:xdmType": "date-time",
+      "meta:xdmField": "xdm:endTime",
+      "tagNumber": 4
+    }
+  },
+  "tagNumber": 1,
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "id": "obj3560238161800282.schema.json"
+}
