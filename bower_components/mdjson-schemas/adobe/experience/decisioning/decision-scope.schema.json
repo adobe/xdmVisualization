@@ -1,0 +1,115 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "id": "_experience.decisioning.decision-scope",
+  "meta:abstract": [
+    false,
+    true
+  ],
+  "meta:extensible": true,
+  "type": "object",
+  "title": "Decision Scope",
+  "description": "A Scope is basically a pair consisting of an offer activity id and an offer placement id. They are used to encapsulate a specific decisioning request.",
+  "meta:status": "stable",
+  "meta:xdmType": "object",
+  "meta:createdDate": "2020-08-10",
+  "meta:titleId": "record##title##65961",
+  "meta:descriptionId": "record##description##3921",
+  "properties": {
+    "_id": {
+      "title": "Identifier",
+      "type": "string",
+      "format": "uri-reference",
+      "description": "A unique identifier for the record.",
+      "meta:titleId": "record##@id##title##51271",
+      "meta:descriptionId": "record##@id##description##16181",
+      "meta:xdmType": "string",
+      "meta:xdmField": "@id",
+      "tagNumber": 1
+    },
+    "_repo": {
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "etag": {
+          "title": "Decision Scope ETag",
+          "type": "string",
+          "description": "The revision that the decision scope object was at when the snapshot was taken.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "repo:etag",
+          "tagNumber": 1
+        }
+      },
+      "tagNumber": 2
+    },
+    "_experience": {
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "decisioning": {
+          "type": "object",
+          "meta:xdmType": "object",
+          "properties": {
+            "name": {
+              "type": "string",
+              "title": "Scope Name",
+              "description": "The Scope's external human-readable representation to clients. Property has the semantic of schema.org's 'name' property defined on http://schema.org/Thing",
+              "meta:xdmType": "string",
+              "meta:xdmField": "https://ns.adobe.com/experience/decisioning/name",
+              "tagNumber": 1
+            },
+            "description": {
+              "type": "string",
+              "title": "Scope Description",
+              "description": "Scope description. It is used to convey human readable intentions on the context of the decision being requested.",
+              "meta:xdmType": "string",
+              "meta:xdmField": "https://ns.adobe.com/experience/decisioning/description",
+              "tagNumber": 2
+            },
+            "activity": {
+              "type": "string",
+              "format": "uri-reference",
+              "title": "Activity Id",
+              "description": "@id of offer-activity (part of activity-placement pair defining scope).",
+              "meta:xdmType": "string",
+              "meta:xdmField": "https://ns.adobe.com/experience/decisioning/activity",
+              "tagNumber": 3
+            },
+            "placement": {
+              "type": "string",
+              "format": "uri-reference",
+              "title": "Placement Id",
+              "description": "@id of placement name (part of activity-placement pair defining scope).",
+              "meta:xdmType": "string",
+              "meta:xdmField": "https://ns.adobe.com/experience/decisioning/placement",
+              "tagNumber": 4
+            },
+            "itemCount": {
+              "type": "integer",
+              "title": "Item Count",
+              "description": "Count of max number of responses.",
+              "meta:xdmType": "int",
+              "meta:xdmField": "https://ns.adobe.com/experience/decisioning/itemCount",
+              "tagNumber": 5
+            }
+          },
+          "required": [
+            "name",
+            "activity",
+            "placement"
+          ],
+          "tagNumber": 1
+        }
+      },
+      "required": [
+        "decisioning"
+      ],
+      "tagNumber": 3
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/experience/decisioning/decision-scope",
+  "meta:altId": "_experience.decisioning.decision-scope",
+  "required": [
+    "_experience"
+  ],
+  "id": "_experience.decisioning.decision-scope"
+}

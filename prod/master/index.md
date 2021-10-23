@@ -168,6 +168,8 @@
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.customerJourneyManagement.messageprofile.html">messageprofile</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.customerJourneyManagement.offers.html">offers</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.customerJourneyManagement.processing-flow-timeline.html">processing-flow-timeline</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.customerJourneyManagement.profile-counters.html">profile-counters</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.customerJourneyManagement.profile-counters-v2.html">profile-counters-v2</a></li>
 </ul>
 </details>
 <details>
@@ -182,6 +184,7 @@
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.decisioning.contents.html">contents</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.decisioning.criteria.html">criteria</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.decisioning.criterion-details.html">criterion-details</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.decisioning.decision-scope.html">decision-scope</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.decisioning.decisionevent.html">decisionevent</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.decisioning.decisionevent-all.html">decisionevent-all</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.decisioning.experienceevent-proposition-interaction.html">experienceevent-proposition-interaction</a></li>

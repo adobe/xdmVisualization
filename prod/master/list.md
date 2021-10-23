@@ -364,6 +364,7 @@
 [adobe.experience.decisioning.placement](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.decisioning.placement.html)<br/>
 [adobe.experience.decisioning.tags](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.decisioning.tags.html)<br/>
 [adobe.experience.decisioning.decisionevent-all](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.decisioning.decisionevent-all.html)<br/>
+[adobe.experience.decisioning.decision-scope](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.decisioning.decision-scope.html)<br/>
 [adobe.experience.decisioning.scope-details](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.decisioning.scope-details.html)<br/>
 [adobe.experience.decisioning.placement-detail](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.decisioning.placement-detail.html)<br/>
 [adobe.experience.decisioning.contents](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.decisioning.contents.html)<br/>
@@ -422,8 +423,10 @@
 [adobe.experience.campaign.experienceevent-profile-segmentation](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.campaign.experienceevent-profile-segmentation.html)<br/>
 [adobe.experience.campaign-experienceevent](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.campaign-experienceevent.html)<br/>
 [adobe.experience.customerJourneyManagement.offers](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.customerJourneyManagement.offers.html)<br/>
+[adobe.experience.customerJourneyManagement.profile-counters](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.customerJourneyManagement.profile-counters.html)<br/>
 [adobe.experience.customerJourneyManagement.landingpage](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.customerJourneyManagement.landingpage.html)<br/>
 [adobe.experience.customerJourneyManagement.message-delivery-feedback](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.customerJourneyManagement.message-delivery-feedback.html)<br/>
+[adobe.experience.customerJourneyManagement.profile-counters-v2](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.customerJourneyManagement.profile-counters-v2.html)<br/>
 [adobe.experience.customerJourneyManagement.messageprofile](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.customerJourneyManagement.messageprofile.html)<br/>
 [adobe.experience.customerJourneyManagement.message-interaction](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.customerJourneyManagement.message-interaction.html)<br/>
 [adobe.experience.customerJourneyManagement.processing-flow-timeline](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.customerJourneyManagement.processing-flow-timeline.html)<br/>
