@@ -9,7 +9,7 @@
   "meta:conditionalField": "xdm:eventType",
   "meta:conditionalValue": "opportunityEvent.opportunityUpdated",
   "description": "Use to capture details when the fields on a sales opportunity are updated.",
-  "meta:status": "experimental",
+  "meta:status": "stable",
   "meta:createdDate": "2021-02-19",
   "meta:titleId": "opportunityupdated##title##36141",
   "meta:descriptionId": "opportunityupdated##description##17561",
@@ -25,6 +25,7 @@
           "title": "Opportunity ID",
           "type": "string",
           "description": "Unique identifier of the Opportunity",
+          "meta:status": "experimental",
           "meta:titleId": "opportunityupdated##xdm:opportunityID##title##98021",
           "meta:descriptionId": "opportunityupdated##xdm:opportunityID##description##64771",
           "meta:xdmType": "string",
@@ -50,7 +51,7 @@
           "meta:xdmField": "xdm:dataValueChanges",
           "tagNumber": 3,
           "items": {
-            "$ref": "obj4233930281323739.schema.json"
+            "$ref": "obj6095370229057995.schema.json"
           }
         }
       },

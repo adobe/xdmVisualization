@@ -776,7 +776,7 @@
       "meta:xdmField": "xdm:quotes",
       "tagNumber": 22
     },
-    "socialMarketing ": {
+    "socialMarketing": {
       "type": "object",
       "description": "Tracks interactions related to social marketing sites, such as shares and follows.",
       "meta:descriptionId": "experienceevent-social-network-usage-details##xdm:socialMarketing ##description##18151",
@@ -863,7 +863,7 @@
           "tagNumber": 8
         }
       },
-      "meta:xdmField": "xdm:socialMarketing ",
+      "meta:xdmField": "xdm:socialMarketing",
       "tagNumber": 23
     },
     "surveyResponse": {

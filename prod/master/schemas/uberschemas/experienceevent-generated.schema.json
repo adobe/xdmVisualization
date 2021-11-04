@@ -1525,6 +1525,7 @@
           "title": "List ID",
           "type": "string",
           "description": "Unique ID of the Marketing List.",
+          "meta:status": "experimental",
           "meta:titleId": [
             "add-to-list##xdm:listID##title##63411",
             "remove-from-list##xdm:listID##title##54211"
@@ -1570,6 +1571,7 @@
           "title": "Opportunity ID",
           "type": "string",
           "description": "Unique identifier of the Opportunity.",
+          "meta:status": "experimental",
           "meta:titleId": [
             "add-to-opportunity##xdm:opportunityID##title##63081",
             "opportunityupdated##xdm:opportunityID##title##98021",
@@ -1643,7 +1645,7 @@
           "meta:xdmField": "xdm:dataValueChanges",
           "tagNumber": 5,
           "items": {
-            "$ref": "obj06905246320538572.schema.json"
+            "$ref": "obj3623659523550773.schema.json"
           }
         }
       },
@@ -1944,6 +1946,7 @@
               "title": "Campaign ID",
               "type": "string",
               "description": "Unique identifier of the Campaign.",
+              "meta:status": "experimental",
               "meta:titleId": "statusincampaignprogressionchanged##xdm:campaignID##title##82611",
               "meta:descriptionId": "statusincampaignprogressionchanged##xdm:campaignID##description##92571",
               "meta:xdmType": "string",
@@ -2884,7 +2887,7 @@
       "meta:xdmField": "xdm:service-payment-details",
       "tagNumber": 43
     },
-    "socialMarketing ": {
+    "socialMarketing": {
       "type": "object",
       "description": "Tracks interactions related to social marketing sites, such as shares and follows.",
       "meta:descriptionId": "experienceevent-social-network-usage-details##xdm:socialMarketing ##description##18151",
@@ -2971,7 +2974,7 @@
           "tagNumber": 8
         }
       },
-      "meta:xdmField": "xdm:socialMarketing ",
+      "meta:xdmField": "xdm:socialMarketing",
       "tagNumber": 44
     },
     "surveyResponse": {
@@ -3296,7 +3299,7 @@
           "meta:xdmField": "xdm:diningReservations",
           "tagNumber": 1,
           "items": {
-            "$ref": "obj946846189134775.schema.json"
+            "$ref": "obj7720365794938002.schema.json"
           }
         },
         "cancellation": {
@@ -3469,7 +3472,7 @@
           "meta:xdmField": "xdm:flightReservations",
           "tagNumber": 19,
           "items": {
-            "$ref": "obj124058244771456.schema.json"
+            "$ref": "obj04900152511824274.schema.json"
           }
         },
         "lodgingReservations": {
@@ -3478,7 +3481,7 @@
           "meta:xdmField": "xdm:lodgingReservations",
           "tagNumber": 20,
           "items": {
-            "$ref": "obj5732594129650781.schema.json"
+            "$ref": "obj42064054426748876.schema.json"
           }
         },
         "vehicleReservations": {
@@ -3487,7 +3490,7 @@
           "meta:xdmField": "xdm:vehicleReservations",
           "tagNumber": 21,
           "items": {
-            "$ref": "obj8695701750094074.schema.json"
+            "$ref": "obj5215358597473037.schema.json"
           }
         }
       },

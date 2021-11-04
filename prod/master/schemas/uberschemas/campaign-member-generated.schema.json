@@ -9,7 +9,6 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:status": [
-    "experimental",
     "stable",
     "deprecated"
   ],
@@ -60,6 +59,7 @@
       "title": "Campaign Member ID",
       "description": "Campaign Member unique identifer.",
       "type": "string",
+      "meta:status": "experimental",
       "meta:titleId": "campaign-member##xdm:campaignMemberID##title##6831",
       "meta:descriptionId": "campaign-member##xdm:campaignMemberID##description##26351",
       "meta:xdmType": "string",
@@ -79,6 +79,7 @@
       "title": "Campaign ID",
       "description": "Campaign Unique Identifer.",
       "type": "string",
+      "meta:status": "experimental",
       "meta:titleId": "campaign-member##xdm:campaignID##title##26371",
       "meta:descriptionId": "campaign-member##xdm:campaignID##description##86741",
       "meta:xdmType": "string",
@@ -98,6 +99,7 @@
       "title": "Person ID",
       "description": "Person unique identifier.",
       "type": "string",
+      "meta:status": "experimental",
       "meta:titleId": "campaign-member##xdm:personID##title##80381",
       "meta:descriptionId": "campaign-member##xdm:personID##description##74641",
       "meta:xdmType": "string",
@@ -119,7 +121,7 @@
       "meta:xdmField": "xdm:campaignMemberComponents",
       "tagNumber": 9,
       "items": {
-        "$ref": "obj4047755068692189.schema.json"
+        "$ref": "obj6386513469070507.schema.json"
       }
     },
     "memberStatus": {
@@ -196,6 +198,7 @@
       "title": "Acquired By CampaignID",
       "description": "",
       "type": "string",
+      "meta:status": "experimental",
       "meta:titleId": "campaign-member-details##xdm:acquiredByCampaignID##title##51731",
       "meta:descriptionId": "campaign-member-details##xdm:acquiredByCampaignID##description##39701",
       "meta:xdmType": "string",

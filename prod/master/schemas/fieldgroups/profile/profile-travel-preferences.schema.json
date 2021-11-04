@@ -11,7 +11,7 @@
     ]
   },
   "description": "Tracks a user's travel preferences, including home airport code, meal preferences, seating preferences, etc.",
-  "meta:status": "experimental",
+  "meta:status": "stable",
   "meta:titleId": "travel-preferences##title##82371",
   "meta:descriptionId": "travel-preferences##description##2511",
   "meta:xdmType": "object",
@@ -45,7 +45,7 @@
           "meta:xdmField": "xdm:seat",
           "tagNumber": 1
         },
-        "seatSection ": {
+        "seatSection": {
           "title": "Seat Section",
           "type": "string",
           "enum": [
@@ -67,7 +67,7 @@
           "meta:titleId": "travel-preferences##xdm:seatSection ##title##18591",
           "meta:descriptionId": "travel-preferences##xdm:seatSection ##description##77291",
           "meta:xdmType": "string",
-          "meta:xdmField": "xdm:seatSection ",
+          "meta:xdmField": "xdm:seatSection",
           "tagNumber": 2
         },
         "meal": {

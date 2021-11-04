@@ -8,11 +8,8 @@
   },
   "meta:extensible": true,
   "meta:abstract": true,
-  "description": "Marketing list allows you to prioritize on prospect clients who are most likely to buy your product.",
-  "meta:status": [
-    "experimental",
-    "stable"
-  ],
+  "description": "Marketing list allows you to prioritize on prospect clients who are most likely to buy your product. Note that this XDM class can only be included in the profile for customers with the B2B or B2P Edition.",
+  "meta:status": "stable",
   "meta:titleId": [
     "marketing-list##title##32631",
     "record##title##65961",
@@ -41,6 +38,7 @@
       "title": "Marketing List ID",
       "description": "Unique ID of the marketing list.",
       "type": "string",
+      "meta:status": "experimental",
       "meta:titleId": "marketing-list##xdm:marketingListID##title##36091",
       "meta:descriptionId": "marketing-list##xdm:marketingListID##description##98891",
       "meta:xdmType": "string",

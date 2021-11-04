@@ -11,7 +11,6 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:status": [
-    "experimental",
     "stable",
     "deprecated"
   ],
@@ -48,6 +47,7 @@
       "title": "Marketing List ID",
       "description": "Unique ID of the marketing list.",
       "type": "string",
+      "meta:status": "experimental",
       "meta:titleId": "marketing-list##xdm:marketingListID##title##36091",
       "meta:descriptionId": "marketing-list##xdm:marketingListID##description##98891",
       "meta:xdmType": "string",
@@ -98,7 +98,7 @@
       "meta:xdmField": "xdm:marketingListComponents",
       "tagNumber": 7,
       "items": {
-        "$ref": "obj5959816188194211.schema.json"
+        "$ref": "obj029767962147841498.schema.json"
       }
     }
   },

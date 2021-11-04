@@ -17,8 +17,8 @@
   "meta:abstract": true,
   "description": "Captures B2B Person specific attributes. A B2B Person could be a contact/lead etc.",
   "meta:status": [
-    "experimental",
-    "stable"
+    "stable",
+    "experimental"
   ],
   "meta:createdDate": [
     "2020-09-09",
@@ -53,6 +53,7 @@
           "title": "Contact Account id",
           "description": "ID of the account that’s the parent of this person.",
           "type": "string",
+          "meta:status": "experimental",
           "meta:titleId": "b2b-person-details##xdm:accountID##title##64181",
           "meta:descriptionId": "b2b-person-details##xdm:accountID##description##71731",
           "meta:xdmType": "string",
@@ -133,6 +134,7 @@
           "title": "Converted Contact ID",
           "description": "Contact Id if the lead was successfully converted.",
           "type": "string",
+          "meta:status": "experimental",
           "meta:titleId": "b2b-person-details##xdm:convertedContactID##title##61351",
           "meta:descriptionId": "b2b-person-details##xdm:convertedContactID##description##27071",
           "meta:xdmType": "string",

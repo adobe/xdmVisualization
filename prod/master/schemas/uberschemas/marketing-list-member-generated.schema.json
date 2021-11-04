@@ -11,7 +11,6 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:status": [
-    "experimental",
     "stable",
     "deprecated"
   ],
@@ -48,6 +47,7 @@
       "title": "Marketing List Member ID",
       "description": "Unique ID for the membership of this person to this marketing list.",
       "type": "string",
+      "meta:status": "experimental",
       "meta:titleId": "marketing-list-member##xdm:marketingListMemberID##title##85671",
       "meta:descriptionId": "marketing-list-member##xdm:marketingListMemberID##description##52641",
       "meta:xdmType": "string",
@@ -67,6 +67,7 @@
       "title": "Person Identifier",
       "description": "Unique ID for the person who is a member of this marketing list.",
       "type": "string",
+      "meta:status": "experimental",
       "meta:titleId": "marketing-list-member##xdm:personID##title##41781",
       "meta:descriptionId": "marketing-list-member##xdm:personID##description##94281",
       "meta:xdmType": "string",
@@ -86,6 +87,7 @@
       "title": "Marketing List Identifier",
       "description": "Unique ID for the marketing list this person is a member of.",
       "type": "string",
+      "meta:status": "experimental",
       "meta:titleId": "marketing-list-member##xdm:marketingListID##title##76661",
       "meta:descriptionId": "marketing-list-member##xdm:marketingListID##description##78351",
       "meta:xdmType": "string",
@@ -116,7 +118,7 @@
       "meta:xdmField": "xdm:marketingListMemberComponents",
       "tagNumber": 9,
       "items": {
-        "$ref": "obj9577636549248796.schema.json"
+        "$ref": "obj3329270678664744.schema.json"
       }
     }
   },

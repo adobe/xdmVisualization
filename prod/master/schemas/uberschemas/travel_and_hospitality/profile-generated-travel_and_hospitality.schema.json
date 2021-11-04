@@ -45,10 +45,7 @@
       ]
     }
   ],
-  "meta:status": [
-    "stable",
-    "experimental"
-  ],
+  "meta:status": "stable",
   "meta:createdDate": [
     "2020-08-10",
     "2021-02-19",
@@ -1312,7 +1309,7 @@
           "meta:xdmField": "xdm:pointsExpiration",
           "tagNumber": 4,
           "items": {
-            "$ref": "obj4165609152498355.schema.json"
+            "$ref": "obj9263788339787988.schema.json"
           }
         },
         "pointsRedeemed": {
@@ -1452,7 +1449,7 @@
           "meta:xdmField": "xdm:seat",
           "tagNumber": 1
         },
-        "seatSection ": {
+        "seatSection": {
           "title": "Seat Section",
           "type": "string",
           "enum": [
@@ -1474,7 +1471,7 @@
           "meta:titleId": "travel-preferences##xdm:seatSection ##title##18591",
           "meta:descriptionId": "travel-preferences##xdm:seatSection ##description##77291",
           "meta:xdmType": "string",
-          "meta:xdmField": "xdm:seatSection ",
+          "meta:xdmField": "xdm:seatSection",
           "tagNumber": 2
         },
         "meal": {

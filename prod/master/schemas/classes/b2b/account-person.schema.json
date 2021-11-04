@@ -8,11 +8,8 @@
   },
   "meta:extensible": true,
   "meta:abstract": true,
-  "description": "This class is used to capture XDM business account person relationship attributes.",
-  "meta:status": [
-    "experimental",
-    "stable"
-  ],
+  "description": "This class is used to capture XDM business account person relationship attributes. Note that this XDM class can only be included in the profile for customers with the B2B or B2P Edition.",
+  "meta:status": "stable",
   "meta:titleId": [
     "account-person##title##54851",
     "record##title##65961",
@@ -41,6 +38,7 @@
       "title": "Account Person ID",
       "description": "Unique identifier for this relationship between an account and a person.",
       "type": "string",
+      "meta:status": "experimental",
       "meta:titleId": "account-person##xdm:accountPersonID##title##55901",
       "meta:descriptionId": "account-person##xdm:accountPersonID##description##63171",
       "meta:xdmType": "string",
@@ -60,6 +58,7 @@
       "title": "Account ID",
       "description": "Unique identifier for the account in this account person relationship.",
       "type": "string",
+      "meta:status": "experimental",
       "meta:titleId": "account-person##xdm:accountID##title##74971",
       "meta:descriptionId": "account-person##xdm:accountID##description##96141",
       "meta:xdmType": "string",
@@ -79,6 +78,7 @@
       "title": "Person ID",
       "description": "Unique identifier for the person in this account person relationship.",
       "type": "string",
+      "meta:status": "experimental",
       "meta:titleId": "account-person##xdm:personID##title##42991",
       "meta:descriptionId": "account-person##xdm:personID##description##66421",
       "meta:xdmType": "string",

@@ -9,11 +9,8 @@
   "auditable": true,
   "meta:extensible": true,
   "meta:abstract": true,
-  "description": "An XDM Business Account.",
-  "meta:status": [
-    "experimental",
-    "stable"
-  ],
+  "description": "An XDM Business Account. Note that this XDM class can only be included in the profile for customers with the B2B or B2P Edition.",
+  "meta:status": "stable",
   "meta:titleId": [
     "account##title##4841",
     "record##title##65961",
@@ -42,6 +39,7 @@
       "title": "Account Identifier",
       "description": "Unique ID for the account.",
       "type": "string",
+      "meta:status": "experimental",
       "meta:titleId": "account##xdm:accountID##title##59121",
       "meta:descriptionId": "account##xdm:accountID##description##27991",
       "meta:xdmType": "string",
