@@ -32,13 +32,27 @@
                     "open",
                     "unsubscribe",
                     "spam_complaint",
-                    "subscription"
+                    "subscription",
+                    "submit",
+                    "visit"
                   ],
                   "meta:titleId": "message-interaction##https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/interactionType##title##11711",
                   "meta:descriptionId": "message-interaction##https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/interactionType##description##67791",
                   "meta:xdmType": "string",
                   "meta:xdmField": "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/interactionType",
                   "tagNumber": 1
+                },
+                "entityType": {
+                  "title": "The entity in whose context this event is published",
+                  "type": "string",
+                  "description": "The entity in whose context this event is published",
+                  "enum": [
+                    "landing_page",
+                    "message"
+                  ],
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/entityType",
+                  "tagNumber": 2
                 },
                 "urlID": {
                   "title": "Tracker URL ID",
@@ -48,7 +62,7 @@
                   "meta:descriptionId": "message-interaction##https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/urlID##description##9381",
                   "meta:xdmType": "string",
                   "meta:xdmField": "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/urlID",
-                  "tagNumber": 2
+                  "tagNumber": 3
                 },
                 "trackingType": {
                   "title": "URL Tracking Type",
@@ -58,7 +72,7 @@
                   "meta:descriptionId": "message-interaction##https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/trackingType##description##86741",
                   "meta:xdmType": "string",
                   "meta:xdmField": "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/trackingType",
-                  "tagNumber": 3
+                  "tagNumber": 4
                 },
                 "tags": {
                   "title": "Link Tags",
@@ -73,7 +87,7 @@
                     "tagNumber": 1
                   },
                   "meta:xdmField": "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/tags",
-                  "tagNumber": 4
+                  "tagNumber": 5
                 },
                 "label": {
                   "title": "Tracker URL Label",
@@ -83,14 +97,81 @@
                   "meta:descriptionId": "message-interaction##https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/label##description##5891",
                   "meta:xdmType": "string",
                   "meta:xdmField": "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/label",
-                  "tagNumber": 5
+                  "tagNumber": 6
                 },
                 "offers": {
                   "title": "Offer Details",
                   "$ref": "offers.schema.json",
                   "description": "Describes offer(s) involved in a message interaction.",
                   "meta:xdmField": "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/offers",
-                  "tagNumber": 6
+                  "tagNumber": 7
+                },
+                "landingpage": {
+                  "title": "Landing Page Details",
+                  "type": "object",
+                  "description": "Describes landing pages involved in a message interaction.",
+                  "meta:xdmType": "object",
+                  "properties": {
+                    "_experience": {
+                      "type": "object",
+                      "meta:xdmType": "object",
+                      "properties": {
+                        "customerJourneyManagement": {
+                          "type": "object",
+                          "meta:xdmType": "object",
+                          "properties": {
+                            "messageInteraction": {
+                              "type": "object",
+                              "meta:xdmType": "object",
+                              "properties": {
+                                "landingPageID": {
+                                  "title": "Landing Page ID",
+                                  "type": "string",
+                                  "description": "Unique Identifier for Landing Page.",
+                                  "meta:xdmType": "string",
+                                  "meta:xdmField": "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/landingPageID",
+                                  "tagNumber": 1
+                                },
+                                "landingPageName": {
+                                  "title": "Landing Page Name",
+                                  "type": "string",
+                                  "description": "Human-Friendly name of landing page.",
+                                  "meta:xdmType": "string",
+                                  "meta:xdmField": "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/landingPageName",
+                                  "tagNumber": 2
+                                },
+                                "source": {
+                                  "title": "Source",
+                                  "type": "string",
+                                  "description": "Source of the Landing page.",
+                                  "meta:xdmType": "string",
+                                  "meta:xdmField": "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/source",
+                                  "tagNumber": 3
+                                },
+                                "sourceType": {
+                                  "title": "Source Type",
+                                  "type": "string",
+                                  "description": "Type of the Source of Landing Page.",
+                                  "enum": [
+                                    "internal",
+                                    "external"
+                                  ],
+                                  "meta:xdmType": "string",
+                                  "meta:xdmField": "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/sourceType",
+                                  "tagNumber": 4
+                                }
+                              },
+                              "tagNumber": 1
+                            }
+                          },
+                          "tagNumber": 1
+                        }
+                      },
+                      "tagNumber": 1
+                    }
+                  },
+                  "meta:xdmField": "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/landingpage",
+                  "tagNumber": 8
                 },
                 "subscription": {
                   "title": "Subscription Details",
@@ -163,7 +244,7 @@
                     }
                   },
                   "meta:xdmField": "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscription",
-                  "tagNumber": 7
+                  "tagNumber": 9
                 }
               },
               "tagNumber": 1

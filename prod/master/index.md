@@ -161,7 +161,6 @@
 <details>
 <summary>customerJourneyManagement</summary>
 <ul>
-<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.customerJourneyManagement.landingpage.html">landingpage</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.customerJourneyManagement.message-delivery-feedback.html">message-delivery-feedback</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.customerJourneyManagement.message-interaction.html">message-interaction</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.customerJourneyManagement.messageexecution.html">messageexecution</a></li>

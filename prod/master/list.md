@@ -424,7 +424,6 @@
 [adobe.experience.campaign-experienceevent](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.campaign-experienceevent.html)<br/>
 [adobe.experience.customerJourneyManagement.offers](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.customerJourneyManagement.offers.html)<br/>
 [adobe.experience.customerJourneyManagement.profile-counters](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.customerJourneyManagement.profile-counters.html)<br/>
-[adobe.experience.customerJourneyManagement.landingpage](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.customerJourneyManagement.landingpage.html)<br/>
 [adobe.experience.customerJourneyManagement.message-delivery-feedback](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.customerJourneyManagement.message-delivery-feedback.html)<br/>
 [adobe.experience.customerJourneyManagement.profile-counters-v2](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.customerJourneyManagement.profile-counters-v2.html)<br/>
 [adobe.experience.customerJourneyManagement.messageprofile](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.customerJourneyManagement.messageprofile.html)<br/>
