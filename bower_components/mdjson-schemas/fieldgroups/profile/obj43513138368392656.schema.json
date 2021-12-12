@@ -1,0 +1,75 @@
+{
+  "type": "object",
+  "meta:xdmType": "object",
+  "properties": {
+    "subscriptionDetails": {
+      "title": "Subscription Details",
+      "$ref": "../../datatypes/industry-verticals/telecom-subscription.schema.json",
+      "description": "Extension of the subscription data type to include subscription length, fees, status, etc.",
+      "meta:titleId": "profile-telecom-subscription##xdm:subscriptionDetails##title##45921",
+      "meta:descriptionId": "profile-telecom-subscription##xdm:subscriptionDetails##description##55081",
+      "meta:xdmField": "xdm:subscriptionDetails",
+      "tagNumber": 1
+    },
+    "dataCap": {
+      "title": "Data Cap",
+      "type": "integer",
+      "description": "Captures the data cap limit for the account, in megabytes (MB).",
+      "meta:titleId": "profile-telecom-subscription##xdm:dataCap##title##20171",
+      "meta:descriptionId": "profile-telecom-subscription##xdm:dataCap##description##77591",
+      "meta:xdmType": "int",
+      "meta:xdmField": "xdm:dataCap",
+      "tagNumber": 2
+    },
+    "connectionType": {
+      "title": "Connection Type",
+      "type": "string",
+      "enum": [
+        "cable",
+        "dsl",
+        "fiber",
+        "mobile",
+        "satellite"
+      ],
+      "description": "Tracks the type of connection type for the subscription.",
+      "meta:titleId": "profile-telecom-subscription##xdm:connectionType##title##41901",
+      "meta:descriptionId": "profile-telecom-subscription##xdm:connectionType##description##13601",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:connectionType",
+      "tagNumber": 3
+    },
+    "downloadSpeed": {
+      "title": "Download Speed",
+      "type": "integer",
+      "description": "Records the maximum download speed available for the subscription, in megabytes (MB).",
+      "meta:titleId": "profile-telecom-subscription##xdm:downloadSpeed##title##78141",
+      "meta:descriptionId": "profile-telecom-subscription##xdm:downloadSpeed##description##73941",
+      "meta:xdmType": "int",
+      "meta:xdmField": "xdm:downloadSpeed",
+      "tagNumber": 4
+    },
+    "uploadSpeed": {
+      "title": "Upload Speed",
+      "type": "integer",
+      "description": "Records the maximum upload speed available for the subscription, in megabytes (MB).",
+      "meta:titleId": "profile-telecom-subscription##xdm:uploadSpeed##title##76861",
+      "meta:descriptionId": "profile-telecom-subscription##xdm:uploadSpeed##description##52631",
+      "meta:xdmType": "int",
+      "meta:xdmField": "xdm:uploadSpeed",
+      "tagNumber": 5
+    },
+    "selfSetup": {
+      "title": "Self-Setup",
+      "type": "boolean",
+      "description": "Flags if a customer is eligible for internet setup without a technican visit.",
+      "meta:titleId": "profile-telecom-subscription##xdm:selfSetup##title##6331",
+      "meta:descriptionId": "profile-telecom-subscription##xdm:selfSetup##description##4941",
+      "meta:xdmType": "boolean",
+      "meta:xdmField": "xdm:selfSetup",
+      "tagNumber": 6
+    }
+  },
+  "tagNumber": 1,
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "id": "obj43513138368392656.schema.json"
+}
