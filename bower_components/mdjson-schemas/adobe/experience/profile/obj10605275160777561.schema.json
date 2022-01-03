@@ -1,0 +1,30 @@
+{
+  "type": "object",
+  "meta:xdmType": "object",
+  "properties": {
+    "id": {
+      "title": "Identifier",
+      "type": "string",
+      "description": "Identity of the consumer in the related namespace.",
+      "meta:titleId": "profile-all##xdm:id##title##64621",
+      "meta:descriptionId": "profile-all##xdm:id##description##5311",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:id",
+      "tagNumber": 1
+    },
+    "associatedTimeRanges": {
+      "type": "array",
+      "description": "The list of time ranges to determine association of the identities.",
+      "meta:descriptionId": "profile-all##xdm:associatedTimeRanges##description##63381",
+      "meta:xdmType": "array",
+      "meta:xdmField": "xdm:associatedTimeRanges",
+      "tagNumber": 2,
+      "items": {
+        "$ref": "obj7906240344284674.schema.json"
+      }
+    }
+  },
+  "tagNumber": 1,
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "id": "obj10605275160777561.schema.json"
+}
