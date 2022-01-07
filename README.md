@@ -18,3 +18,9 @@ To refresh the xdm visualization manually for a specific git branch, please get 
 5\. Click the green `Run workflow` button.
 
 6\. Go to `https://opensource.adobe.com/xdmVisualization/prod/yourGithubID_branchEnteredAbove/` to see XDM visualization in D3 if the branch is folked repo, if the branch is created directly from public repo, use `https://opensource.adobe.com/xdmVisualization/prod/branchEnteredAbove/`. 
+
+### Build process
+
+The xdm visualization build runs every 24 hours automatically through github actions by getting the latest xdm from the master branch of [XDM Public Repo](https://github.com/adobe/xdm). 
+
+Here are the [main build script](https://github.com/adobe/xdmVisualization/blob/master/scripts/xdmVisual4Git.sh) and [github action workflow cron job config](https://github.com/adobe/xdmVisualization/blob/master/.github/workflows/xdmVisualCron.yml).
