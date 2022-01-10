@@ -45,6 +45,8 @@
           "title": "Is Close",
           "type": "boolean",
           "description": "Close of an application.",
+          "meta:titleId": "application##xdm:isClose##title##38721",
+          "meta:descriptionId": "application##xdm:isClose##description##28741",
           "meta:xdmType": "boolean",
           "meta:xdmField": "xdm:isClose",
           "tagNumber": 4
@@ -57,6 +59,8 @@
             "close",
             "unknown"
           ],
+          "meta:titleId": "application##xdm:closeType##title##15961",
+          "meta:descriptionId": "application##xdm:closeType##description##55241",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:closeType",
           "tagNumber": 5
@@ -65,6 +69,8 @@
           "title": "Is Launch",
           "type": "boolean",
           "description": "Launch of an application.",
+          "meta:titleId": "application##xdm:isLaunch##title##41181",
+          "meta:descriptionId": "application##xdm:isLaunch##description##80981",
           "meta:xdmType": "boolean",
           "meta:xdmField": "xdm:isLaunch",
           "tagNumber": 6
@@ -73,6 +79,8 @@
           "title": "Is Install",
           "type": "boolean",
           "description": "Install of an application.",
+          "meta:titleId": "application##xdm:isInstall##title##85691",
+          "meta:descriptionId": "application##xdm:isInstall##description##36641",
           "meta:xdmType": "boolean",
           "meta:xdmField": "xdm:isInstall",
           "tagNumber": 7
@@ -81,6 +89,8 @@
           "title": "Is Upgrade",
           "type": "boolean",
           "description": "Upgrade of an application.",
+          "meta:titleId": "application##xdm:isUpgrade##title##621",
+          "meta:descriptionId": "application##xdm:isUpgrade##description##88461",
           "meta:xdmType": "boolean",
           "meta:xdmField": "xdm:isUpgrade",
           "tagNumber": 8
@@ -90,6 +100,8 @@
           "type": "integer",
           "minimum": 0,
           "description": "Length of the application session in seconds. Usually referred as the time the application was in foreground.",
+          "meta:titleId": "application##xdm:sessionLength##title##71421",
+          "meta:descriptionId": "application##xdm:sessionLength##description##20131",
           "meta:xdmType": "int",
           "meta:xdmField": "xdm:sessionLength",
           "tagNumber": 9

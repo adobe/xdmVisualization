@@ -984,6 +984,19 @@
                           "meta:xdmType": "string",
                           "meta:xdmField": "xdm:val",
                           "tagNumber": 1
+                        },
+                        "idType": {
+                          "title": "Ad ID Type",
+                          "description": "The ad ID type (IDFA or GAID)",
+                          "meta:descriptionId": "consents-and-preferences##xdm:itType##description##35561",
+                          "type": "string",
+                          "enum": [
+                            "IDFA",
+                            "GAID"
+                          ],
+                          "meta:xdmType": "string",
+                          "meta:xdmField": "xdm:idType",
+                          "tagNumber": 2
                         }
                       },
                       "meta:xdmField": "xdm:adID",
@@ -1342,7 +1355,7 @@
           "meta:xdmField": "xdm:internetSubscription",
           "tagNumber": 4,
           "items": {
-            "$ref": "obj5326380977693754.schema.json"
+            "$ref": "obj3891430566657481.schema.json"
           }
         },
         "landlineSubscription": {
@@ -1353,7 +1366,7 @@
           "meta:xdmField": "xdm:landlineSubscription",
           "tagNumber": 5,
           "items": {
-            "$ref": "obj88913243205475.schema.json"
+            "$ref": "obj981185737044743.schema.json"
           }
         },
         "mediaSubscription": {
@@ -1364,7 +1377,7 @@
           "meta:xdmField": "xdm:mediaSubscription",
           "tagNumber": 6,
           "items": {
-            "$ref": "obj45432843358125186.schema.json"
+            "$ref": "obj547922146275057.schema.json"
           }
         },
         "mobileSubscription": {
@@ -1375,7 +1388,7 @@
           "meta:xdmField": "xdm:mobileSubscription",
           "tagNumber": 7,
           "items": {
-            "$ref": "obj43865748598606813.schema.json"
+            "$ref": "obj12126612553624705.schema.json"
           }
         }
       },

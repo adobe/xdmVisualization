@@ -120,6 +120,8 @@
       "title": "Connection Spec ID",
       "type": "string",
       "description": "Unique identifier to connect and deliver segments to the destination",
+      "meta:titleId": "destination##xdm:connectionSpecID##title##40981",
+      "meta:descriptionId": "destination##xdm:connectionSpecID##description##44091",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:connectionSpecID",
       "tagNumber": 10

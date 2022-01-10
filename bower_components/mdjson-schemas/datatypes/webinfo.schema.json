@@ -149,6 +149,8 @@
           "title": "Region",
           "type": "string",
           "description": "The region name represents the region or area of a document that the web link belongs to such as header or footer.",
+          "meta:titleId": "webinfo##xdm:region##title##24931",
+          "meta:descriptionId": "webinfo##xdm:region##description##45421",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:region",
           "tagNumber": 4

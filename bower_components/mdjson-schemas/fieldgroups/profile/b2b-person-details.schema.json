@@ -163,6 +163,8 @@
           "title": "Company Name",
           "description": "Name of the company a business person is associated with.",
           "type": "string",
+          "meta:titleId": "b2b-person-details##xdm:companyName##title##78601",
+          "meta:descriptionId": "b2b-person-details##xdm:companyName##description##31101",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:companyName",
           "tagNumber": 13
@@ -171,6 +173,8 @@
           "title": "Company Website",
           "description": "Website of the company a business person is associated with.",
           "type": "string",
+          "meta:titleId": "b2b-person-details##xdm:companyWebsite##title##85671",
+          "meta:descriptionId": "b2b-person-details##xdm:companyWebsite##description##90521",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:companyWebsite",
           "tagNumber": 14

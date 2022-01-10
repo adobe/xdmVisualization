@@ -423,7 +423,6 @@
 [adobe.experience.campaign.experienceevent-profile-segmentation](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.campaign.experienceevent-profile-segmentation.html)<br/>
 [adobe.experience.campaign-experienceevent](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.campaign-experienceevent.html)<br/>
 [adobe.experience.customerJourneyManagement.offers](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.customerJourneyManagement.offers.html)<br/>
-[adobe.experience.customerJourneyManagement.profile-counters](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.customerJourneyManagement.profile-counters.html)<br/>
 [adobe.experience.customerJourneyManagement.message-delivery-feedback](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.customerJourneyManagement.message-delivery-feedback.html)<br/>
 [adobe.experience.customerJourneyManagement.profile-counters-v2](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.customerJourneyManagement.profile-counters-v2.html)<br/>
 [adobe.experience.customerJourneyManagement.messageprofile](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.customerJourneyManagement.messageprofile.html)<br/>
@@ -441,6 +440,7 @@
 [adobe.experience.journeyOrchestration.stepEvents.journeyStepEventCommonFieldsMixin](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.journeyOrchestration.stepEvents.journeyStepEventCommonFieldsMixin.html)<br/>
 [adobe.experience.journeyOrchestration.stepEvents.journeyStepEventActionExecutionFieldsMixin](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.journeyOrchestration.stepEvents.journeyStepEventActionExecutionFieldsMixin.html)<br/>
 [adobe.experience.journeyOrchestration.stepEvents.journeyStepEventJourneyFieldsMixin](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.journeyOrchestration.stepEvents.journeyStepEventJourneyFieldsMixin.html)<br/>
+[adobe.experience.journeyOrchestration.journeyOrchestrationServiceEventsStateMachine](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.journeyOrchestration.journeyOrchestrationServiceEventsStateMachine.html)<br/>
 [adobe.experience.journeyOrchestration.journeyOrchestrationJourney](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.journeyOrchestration.journeyOrchestrationJourney.html)<br/>
 [adobe.experience.journeyOrchestration.journeyOrchestrationServiceEventsDispatcher](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.journeyOrchestration.journeyOrchestrationServiceEventsDispatcher.html)<br/>
 [adobe.experience.journeyOrchestration.journeyOrchestrationServiceEventsSegmentExportJob](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.journeyOrchestration.journeyOrchestrationServiceEventsSegmentExportJob.html)<br/>

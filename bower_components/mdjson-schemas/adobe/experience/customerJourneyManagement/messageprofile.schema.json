@@ -51,6 +51,22 @@
                   "meta:xdmType": "string",
                   "meta:xdmField": "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/variant",
                   "tagNumber": 3
+                },
+                "isSendTimeOptimized": {
+                  "title": "isSendTimeOptimized",
+                  "type": "boolean",
+                  "description": "True if the message execution is send time optimized.",
+                  "meta:xdmType": "boolean",
+                  "meta:xdmField": "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/isSendTimeOptimized",
+                  "tagNumber": 4
+                },
+                "isTestExecution": {
+                  "title": "isTestExecution",
+                  "type": "boolean",
+                  "description": "True if the message is sent as Test Execution.",
+                  "meta:xdmType": "boolean",
+                  "meta:xdmField": "https://ns.adobe.com/experience/customerJourneyManagement/messageProfile/isTestExecution",
+                  "tagNumber": 5
                 }
               },
               "required": [

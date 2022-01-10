@@ -167,7 +167,6 @@
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.customerJourneyManagement.messageprofile.html">messageprofile</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.customerJourneyManagement.offers.html">offers</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.customerJourneyManagement.processing-flow-timeline.html">processing-flow-timeline</a></li>
-<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.customerJourneyManagement.profile-counters.html">profile-counters</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.customerJourneyManagement.profile-counters-v2.html">profile-counters-v2</a></li>
 </ul>
 </details>
@@ -232,6 +231,7 @@
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.journeyOrchestration.journeyOrchestrationJourney.html">journeyOrchestrationJourney</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.journeyOrchestration.journeyOrchestrationServiceEventsDispatcher.html">journeyOrchestrationServiceEventsDispatcher</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.journeyOrchestration.journeyOrchestrationServiceEventsSegmentExportJob.html">journeyOrchestrationServiceEventsSegmentExportJob</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.journeyOrchestration.journeyOrchestrationServiceEventsStateMachine.html">journeyOrchestrationServiceEventsStateMachine</a></li>
 <details>
 <summary>stepEvents</summary>
 <ul>

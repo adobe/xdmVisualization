@@ -112,6 +112,13 @@
       "meta:xdmField": "xdm:score",
       "tagNumber": 6
     },
+    "optionContent": {
+      "$ref": "../decisioning/content-component-details.schema.json",
+      "title": "Option Content",
+      "description": "Additional properties or attributes related to offer content",
+      "meta:xdmField": "xdm:optionContent",
+      "tagNumber": 7
+    },
     "_experience": {
       "type": "object",
       "meta:xdmType": "object",
@@ -138,7 +145,7 @@
           "tagNumber": 1
         }
       },
-      "tagNumber": 7
+      "tagNumber": 8
     }
   },
   "meta:xdmId": "https://ns.adobe.com/experience/offer-management/offer-detail",

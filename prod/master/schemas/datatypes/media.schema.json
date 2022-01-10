@@ -437,6 +437,41 @@
               "meta:descriptionId": "media##xdm:qoe##description##43461",
               "meta:xdmType": "object",
               "properties": {
+                "error": {
+                  "title": "Custom error object",
+                  "type": "object",
+                  "description": "Quality of experience (QoE) custom error information.",
+                  "meta:xdmType": "object",
+                  "properties": {
+                    "errorID": {
+                      "title": "Error ID",
+                      "type": "string",
+                      "description": "The error ID.",
+                      "minLength": 1,
+                      "meta:xdmType": "string",
+                      "meta:xdmField": "xdm:errorID",
+                      "tagNumber": 1
+                    },
+                    "errorSource": {
+                      "title": "Error source",
+                      "type": "string",
+                      "description": "The error source.",
+                      "enum": [
+                        "player",
+                        "external"
+                      ],
+                      "meta:xdmType": "string",
+                      "meta:xdmField": "xdm:errorSource",
+                      "tagNumber": 2
+                    }
+                  },
+                  "meta:xdmField": "xdm:error",
+                  "required": [
+                    "errorID",
+                    "errorSource"
+                  ],
+                  "tagNumber": 1
+                },
                 "errors": {
                   "title": "Errors",
                   "$ref": "data/measure.schema.json",
@@ -444,7 +479,7 @@
                   "meta:titleId": "media##xdm:errors##title##11231",
                   "meta:descriptionId": "media##xdm:errors##description##68361",
                   "meta:xdmField": "xdm:errors",
-                  "tagNumber": 1
+                  "tagNumber": 2
                 },
                 "buffers": {
                   "title": "Buffer events",
@@ -453,7 +488,7 @@
                   "meta:titleId": "media##xdm:buffers##title##17541",
                   "meta:descriptionId": "media##xdm:buffers##description##46941",
                   "meta:xdmField": "xdm:buffers",
-                  "tagNumber": 2
+                  "tagNumber": 3
                 },
                 "bufferTime": {
                   "title": "Total buffer duration",
@@ -462,7 +497,7 @@
                   "meta:titleId": "media##xdm:bufferTime##title##79481",
                   "meta:descriptionId": "media##xdm:bufferTime##description##14341",
                   "meta:xdmField": "xdm:bufferTime",
-                  "tagNumber": 3
+                  "tagNumber": 4
                 },
                 "bufferImpactedStreams": {
                   "title": "Buffer impacted streams",
@@ -471,7 +506,7 @@
                   "meta:titleId": "media##xdm:bufferImpactedStreams##title##20171",
                   "meta:descriptionId": "media##xdm:bufferImpactedStreams##description##18341",
                   "meta:xdmField": "xdm:bufferImpactedStreams",
-                  "tagNumber": 4
+                  "tagNumber": 5
                 },
                 "stalls": {
                   "title": "Stalling events",
@@ -480,7 +515,7 @@
                   "meta:titleId": "media##xdm:stalls##title##73001",
                   "meta:descriptionId": "media##xdm:stalls##description##98511",
                   "meta:xdmField": "xdm:stalls",
-                  "tagNumber": 5
+                  "tagNumber": 6
                 },
                 "stallTime": {
                   "title": "Total stalling duration",
@@ -489,7 +524,7 @@
                   "meta:titleId": "media##xdm:stallTime##title##76711",
                   "meta:descriptionId": "media##xdm:stallTime##description##77451",
                   "meta:xdmField": "xdm:stallTime",
-                  "tagNumber": 6
+                  "tagNumber": 7
                 },
                 "stallingImpactedStreams": {
                   "title": "Stalling impacted streams",
@@ -498,7 +533,7 @@
                   "meta:titleId": "media##xdm:stallingImpactedStreams##title##92281",
                   "meta:descriptionId": "media##xdm:stallingImpactedStreams##description##10631",
                   "meta:xdmField": "xdm:stallingImpactedStreams",
-                  "tagNumber": 7
+                  "tagNumber": 8
                 },
                 "bitrateChanges": {
                   "title": "Bitrate changes",
@@ -507,7 +542,7 @@
                   "meta:titleId": "media##xdm:bitrateChanges##title##47841",
                   "meta:descriptionId": "media##xdm:bitrateChanges##description##50781",
                   "meta:xdmField": "xdm:bitrateChanges",
-                  "tagNumber": 8
+                  "tagNumber": 9
                 },
                 "bitrateAverage": {
                   "title": "Average bitrate",
@@ -516,7 +551,7 @@
                   "meta:titleId": "media##xdm:bitrateAverage##title##23291",
                   "meta:descriptionId": "media##xdm:bitrateAverage##description##67161",
                   "meta:xdmField": "xdm:bitrateAverage",
-                  "tagNumber": 9
+                  "tagNumber": 10
                 },
                 "bitrateAverageBucket": {
                   "title": "Average bitrate bucket",
@@ -526,7 +561,7 @@
                   "meta:descriptionId": "media##xdm:bitrateAverageBucket##description##91131",
                   "meta:xdmType": "string",
                   "meta:xdmField": "xdm:bitrateAverageBucket",
-                  "tagNumber": 10
+                  "tagNumber": 11
                 },
                 "bitrateChangeImpactedStreams": {
                   "title": "Bitrate change impacted streams",
@@ -535,7 +570,7 @@
                   "meta:titleId": "media##xdm:bitrateChangeImpactedStreams##title##15121",
                   "meta:descriptionId": "media##xdm:bitrateChangeImpactedStreams##description##68551",
                   "meta:xdmField": "xdm:bitrateChangeImpactedStreams",
-                  "tagNumber": 11
+                  "tagNumber": 12
                 },
                 "droppedFrames": {
                   "title": "Dropped frames",
@@ -544,7 +579,7 @@
                   "meta:titleId": "media##xdm:droppedFrames##title##39471",
                   "meta:descriptionId": "media##xdm:droppedFrames##description##73421",
                   "meta:xdmField": "xdm:droppedFrames",
-                  "tagNumber": 12
+                  "tagNumber": 13
                 },
                 "droppedFrameImpactedStreams": {
                   "title": "Dropped frame impacted streams",
@@ -553,7 +588,7 @@
                   "meta:titleId": "media##xdm:droppedFrameImpactedStreams##title##75231",
                   "meta:descriptionId": "media##xdm:droppedFrameImpactedStreams##description##58251",
                   "meta:xdmField": "xdm:droppedFrameImpactedStreams",
-                  "tagNumber": 13
+                  "tagNumber": 14
                 },
                 "dropBeforeStarts": {
                   "title": "Drops before starts",
@@ -562,7 +597,7 @@
                   "meta:titleId": "media##xdm:dropBeforeStarts##title##27671",
                   "meta:descriptionId": "media##xdm:dropBeforeStarts##description##51351",
                   "meta:xdmField": "xdm:dropBeforeStarts",
-                  "tagNumber": 14
+                  "tagNumber": 15
                 },
                 "timeToStart": {
                   "title": "Time to start",
@@ -571,7 +606,7 @@
                   "meta:titleId": "media##xdm:timeToStart##title##15561",
                   "meta:descriptionId": "media##xdm:timeToStart##description##64531",
                   "meta:xdmField": "xdm:timeToStart",
-                  "tagNumber": 15
+                  "tagNumber": 16
                 },
                 "playerSdkErrors": {
                   "title": "Player SDK Error IDs",
@@ -586,7 +621,7 @@
                     "tagNumber": 1
                   },
                   "meta:xdmField": "xdm:playerSdkErrors",
-                  "tagNumber": 16
+                  "tagNumber": 17
                 },
                 "mediaSdkErrors": {
                   "title": "Media SDK Error IDs",
@@ -601,7 +636,7 @@
                     "tagNumber": 1
                   },
                   "meta:xdmField": "xdm:mediaSdkErrors",
-                  "tagNumber": 17
+                  "tagNumber": 18
                 },
                 "externalSdkErrors": {
                   "title": "External Error IDs",
@@ -616,7 +651,7 @@
                     "tagNumber": 1
                   },
                   "meta:xdmField": "xdm:externalSdkErrors",
-                  "tagNumber": 18
+                  "tagNumber": 19
                 },
                 "errorImpactedStreams": {
                   "title": "Error impacted streams",
@@ -625,7 +660,7 @@
                   "meta:titleId": "media##xdm:errorImpactedStreams##title##4371",
                   "meta:descriptionId": "media##xdm:errorImpactedStreams##description##41131",
                   "meta:xdmField": "xdm:errorImpactedStreams",
-                  "tagNumber": 19
+                  "tagNumber": 20
                 }
               },
               "meta:xdmField": "xdm:qoe",
@@ -1061,6 +1096,30 @@
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:dayPart",
           "tagNumber": 28
+        },
+        "recordLabel": {
+          "title": "Record label",
+          "type": "string",
+          "description": "Name of the record label.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:recordLabel",
+          "tagNumber": 29
+        },
+        "radioStation": {
+          "title": "Radio station",
+          "type": "string",
+          "description": "Name / ID of the radio station.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:radioStation",
+          "tagNumber": 30
+        },
+        "publisher": {
+          "title": "Audio content publisher",
+          "type": "string",
+          "description": "Name of the audio content publisher.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:publisher",
+          "tagNumber": 31
         }
       },
       "meta:xdmField": "xdm:mediaTimed",

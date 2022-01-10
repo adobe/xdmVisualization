@@ -271,6 +271,7 @@
     "experienceevent-file-download-details##title##36381",
     "experienceevent-file-upload-details##title##37901",
     "experienceevent-implementation-details##title##73141",
+    "experienceevent-inappmessage-tracking##title##60271",
     "experienceevent-knowledge-base-details##title##5561",
     "experienceevent-offer-impression-details##title##9821",
     "experienceevent-privacy##title##65871",
@@ -357,6 +358,7 @@
     "experienceevent-file-download-details##description##53101",
     "experienceevent-file-upload-details##description##93611",
     "experienceevent-implementation-details##description##63811",
+    "experienceevent-inappmessage-tracking##description##16261",
     "experienceevent-knowledge-base-details##description##52901",
     "experienceevent-offer-impression-details##description##99141",
     "experienceevent-privacy##description##4601",
@@ -1645,7 +1647,7 @@
           "meta:xdmField": "xdm:dataValueChanges",
           "tagNumber": 5,
           "items": {
-            "$ref": "obj7466897418823961.schema.json"
+            "$ref": "obj8919099581988326.schema.json"
           }
         }
       },
@@ -2583,12 +2585,16 @@
       "title": "Inapp Message Interaction Tracking Details",
       "type": "object",
       "description": "Describes interaction with an inapp message.",
+      "meta:titleId": "experienceevent-inappmessage-tracking##xdm:inappMessageTracking##title##8711",
+      "meta:descriptionId": "experienceevent-inappmessage-tracking##xdm:inappMessageTracking##description##73271",
       "meta:xdmType": "object",
       "properties": {
         "action": {
           "title": "Custom Action",
           "type": "string",
           "description": "Identifier for custom action that the user triggered while interacting with the inapp message.",
+          "meta:titleId": "experienceevent-inappmessage-tracking##xdm:action##title##71411",
+          "meta:descriptionId": "experienceevent-inappmessage-tracking##xdm:action##description##34821",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:action",
           "tagNumber": 1
@@ -2802,6 +2808,8 @@
           "title": "Is Launch",
           "type": "boolean",
           "description": "Indicates whether this push notification interaction launched the application.",
+          "meta:titleId": "experienceevent-pushtracking##xdm:isLaunch##title##3431",
+          "meta:descriptionId": "experienceevent-pushtracking##xdm:isLaunch##description##77671",
           "meta:xdmType": "boolean",
           "meta:xdmField": "xdm:isLaunch",
           "tagNumber": 4
@@ -3299,7 +3307,7 @@
           "meta:xdmField": "xdm:diningReservations",
           "tagNumber": 1,
           "items": {
-            "$ref": "obj15476445178099119.schema.json"
+            "$ref": "obj45759707507489056.schema.json"
           }
         },
         "cancellation": {
@@ -3472,7 +3480,7 @@
           "meta:xdmField": "xdm:flightReservations",
           "tagNumber": 19,
           "items": {
-            "$ref": "obj8580686166306277.schema.json"
+            "$ref": "obj039541674512388214.schema.json"
           }
         },
         "lodgingReservations": {
@@ -3481,7 +3489,7 @@
           "meta:xdmField": "xdm:lodgingReservations",
           "tagNumber": 20,
           "items": {
-            "$ref": "obj5626179483715732.schema.json"
+            "$ref": "obj9518380819679726.schema.json"
           }
         },
         "vehicleReservations": {
@@ -3490,7 +3498,7 @@
           "meta:xdmField": "xdm:vehicleReservations",
           "tagNumber": 21,
           "items": {
-            "$ref": "obj4902709974842008.schema.json"
+            "$ref": "obj2111223711266299.schema.json"
           }
         }
       },

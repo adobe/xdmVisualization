@@ -987,6 +987,19 @@
                           "meta:xdmType": "string",
                           "meta:xdmField": "xdm:val",
                           "tagNumber": 1
+                        },
+                        "idType": {
+                          "title": "Ad ID Type",
+                          "description": "The ad ID type (IDFA or GAID)",
+                          "meta:descriptionId": "consents-and-preferences##xdm:itType##description##35561",
+                          "type": "string",
+                          "enum": [
+                            "IDFA",
+                            "GAID"
+                          ],
+                          "meta:xdmType": "string",
+                          "meta:xdmField": "xdm:idType",
+                          "tagNumber": 2
                         }
                       },
                       "meta:xdmField": "xdm:adID",
@@ -1343,7 +1356,7 @@
           "meta:xdmField": "xdm:creditScores",
           "tagNumber": 3,
           "items": {
-            "$ref": "obj02495419043191105.schema.json"
+            "$ref": "obj21953260785926165.schema.json"
           }
         },
         "employmentStatus": {

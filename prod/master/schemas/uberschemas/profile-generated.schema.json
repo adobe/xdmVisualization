@@ -276,7 +276,7 @@
       "meta:xdmField": "xdm:personComponents",
       "tagNumber": 12,
       "items": {
-        "$ref": "obj5703924023295488.schema.json"
+        "$ref": "obj3357305138412656.schema.json"
       }
     },
     "b2b": {
@@ -397,6 +397,8 @@
           "title": "Company Name",
           "description": "Name of the company a business person is associated with.",
           "type": "string",
+          "meta:titleId": "b2b-person-details##xdm:companyName##title##78601",
+          "meta:descriptionId": "b2b-person-details##xdm:companyName##description##31101",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:companyName",
           "tagNumber": 13
@@ -405,6 +407,8 @@
           "title": "Company Website",
           "description": "Website of the company a business person is associated with.",
           "type": "string",
+          "meta:titleId": "b2b-person-details##xdm:companyWebsite##title##85671",
+          "meta:descriptionId": "b2b-person-details##xdm:companyWebsite##description##90521",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:companyWebsite",
           "tagNumber": 14
@@ -1523,6 +1527,19 @@
                           "meta:xdmType": "string",
                           "meta:xdmField": "xdm:val",
                           "tagNumber": 1
+                        },
+                        "idType": {
+                          "title": "Ad ID Type",
+                          "description": "The ad ID type (IDFA or GAID)",
+                          "meta:descriptionId": "consents-and-preferences##xdm:itType##description##35561",
+                          "type": "string",
+                          "enum": [
+                            "IDFA",
+                            "GAID"
+                          ],
+                          "meta:xdmType": "string",
+                          "meta:xdmField": "xdm:idType",
+                          "tagNumber": 2
                         }
                       },
                       "meta:xdmField": "xdm:adID",
@@ -1922,7 +1939,7 @@
           "meta:xdmField": "xdm:pointsExpiration",
           "tagNumber": 4,
           "items": {
-            "$ref": "obj1099174465838324.schema.json"
+            "$ref": "obj20049821455510863.schema.json"
           }
         },
         "pointsRedeemed": {
@@ -2036,7 +2053,7 @@
           "meta:xdmField": "xdm:creditScores",
           "tagNumber": 3,
           "items": {
-            "$ref": "obj3391089257368134.schema.json"
+            "$ref": "obj6146285515165897.schema.json"
           }
         },
         "employmentStatus": {
@@ -2295,7 +2312,7 @@
       "meta:xdmField": "xdm:pushNotificationDetails",
       "tagNumber": 50,
       "items": {
-        "$ref": "obj061722787623572195.schema.json"
+        "$ref": "obj6951573044026502.schema.json"
       }
     },
     "segmentMembership": {
@@ -2376,7 +2393,7 @@
           "meta:xdmField": "xdm:internetSubscription",
           "tagNumber": 4,
           "items": {
-            "$ref": "obj584990119916271.schema.json"
+            "$ref": "obj42577365055701355.schema.json"
           }
         },
         "landlineSubscription": {
@@ -2387,7 +2404,7 @@
           "meta:xdmField": "xdm:landlineSubscription",
           "tagNumber": 5,
           "items": {
-            "$ref": "obj3959032294030591.schema.json"
+            "$ref": "obj9199882999789699.schema.json"
           }
         },
         "mediaSubscription": {
@@ -2398,7 +2415,7 @@
           "meta:xdmField": "xdm:mediaSubscription",
           "tagNumber": 6,
           "items": {
-            "$ref": "obj31596687666583656.schema.json"
+            "$ref": "obj40234824731656427.schema.json"
           }
         },
         "mobileSubscription": {
@@ -2409,7 +2426,7 @@
           "meta:xdmField": "xdm:mobileSubscription",
           "tagNumber": 7,
           "items": {
-            "$ref": "obj7202564899121431.schema.json"
+            "$ref": "obj9383357040733336.schema.json"
           }
         }
       },
