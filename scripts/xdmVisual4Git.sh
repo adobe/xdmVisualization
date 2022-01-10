@@ -37,8 +37,8 @@ for xdm in $xdms; do
   echo "processing---> $xdm"
   oldid=${xdm:32}
   newid=$(echo $oldid|rev|cut -d'/' -f 1|rev)
-  #echo $oldid
-  #echo $newid
+  echo $oldid
+  echo $newid
   sed -i '' "s~${oldid}~${newid}~g" $xdm
   sed -i '' "s~\"\$id\":~\"id\":~g" $xdm
 done

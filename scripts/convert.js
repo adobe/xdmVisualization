@@ -9,7 +9,7 @@ const deprecatedXdms = "deprecatedXdms.json";
 let schemaFiles = glob.sync(masterSchemaFolder + '/**/*.schema.json');
 let deprecated = [];
 
-function process(o, file) {
+function process(o, file) {//process array items and maps object conversion
     for (let i in o) {
         if (o.hasOwnProperty(i)) {
             if (o['meta:altId'] != undefined) {
@@ -59,9 +59,9 @@ function convertArrayItems(files) {
             //console.log(JSON.stringify(originalSchema,null,2));
             throw('Invalid file for convertion!');
         }
-        process(originalSchema, file);
+        process(originalSchema, file);//conversion process
         if (originalSchema["meta:status"] && originalSchema["meta:status"] == "deprecated") {
-            deprecated.push(file)
+            deprecated.push(file) //generate deprecated xdm list for processing later
         }
         fs.writeFileSync(file, JSON.stringify(originalSchema,null, 2), 'utf8');
     });

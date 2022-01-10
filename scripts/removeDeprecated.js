@@ -35,7 +35,7 @@ function removeDeprecated(files) {
 }
 
 removeDeprecated(schemaFiles);//remove $ref fields to deprecated xdms
-for (let i in deprecated) {//remove deprecated xdms
+for (let i in deprecated) {//remove deprecated xdm files physically
     fs.unlinkSync("bower_components/mdjson-schemas/" + deprecated[i]);
 }
 

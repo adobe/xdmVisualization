@@ -51,7 +51,7 @@ function process(o, from) {
     }
 }
 
-function fixRef(files) {
+function fixRef(files) {//fix $ref by calling process()
     files.forEach(function (file) {
         let originalSchema = JSON.parse(fs.readFileSync(file).toString());
         let fromKey = originalSchema["id"].replace("_xdm.", "").replace("_experience.", "");
