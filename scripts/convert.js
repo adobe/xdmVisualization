@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-//This script fixes those can not be displayed in the visualization due to the open source code limitation
+//This script fixes those can not be displayed in the visualization due to the open source code limitation such as array items and map objects.
 
 const fs = require('fs');
 const glob = require('glob');
@@ -26,7 +26,7 @@ function process(o, file) {
                 process(o[i], file);
             }
 
-            if (o[i] && o[i].type && (o[i].type == 'array') && (o[i].items.type == 'object')) {
+            if (o[i] && o[i].type && (o[i].type == 'array') && (o[i].items.type == 'object')) {//generate a json file by using $ref for array object
                 let newSchema = o[i].items;
                 newSchema.$schema = 'http://json-schema.org/draft-06/schema#';
                 newSchema.id = Math.random().toString().replace('0.','obj') + '.schema.json';
@@ -38,7 +38,7 @@ function process(o, file) {
                 fs.writeFileSync(newFile.join('/')+'/'+newSchema.id, JSON.stringify(newSchema,null, 2), 'utf8');
             }
 
-            if ((i == "additionalProperties") && o["meta:xdmType"] == "map") {//convert map fields
+            if ((i == "additionalProperties") && o["meta:xdmType"] == "map") {//convert map fields by generating a map object
                 if (!o.hasOwnProperty("properties")) {
                     o.properties = {};
                 }

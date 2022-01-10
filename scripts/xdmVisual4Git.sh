@@ -7,7 +7,7 @@ if [ "$#" -ne 2 ]; then
   exit 1
 fi
 
-#set repo branch name
+#set repo branch name to be displayed on visualization main page
 repoBranch=$2"_"$1
 xdmgit="/xdm.git"
 github="https://github.com/"
@@ -18,10 +18,11 @@ then
   repoBranch=${repoBranch//"adobe_"}
 fi
 
-#Pre-processing xdm json schemas
+#Pre-processing xdm json schemas by clone public repo and running xed conversion before saving to mdjson-schemas.
 (rm -rf publicXdm; git clone -b $1 $2 publicXdm)
 (cd publicXdm; npm install; npm run xed-validation)
 (rm -rf bower_components/mdjson-schemas/*; cp -r ./publicXdm/bin/xed-validation/xed/* ./bower_components/mdjson-schemas/; rm -rf publicXdm)
+#for facebook only
 (cp -r ./bower_components/test/* ./bower_components/mdjson-schemas/)
 node ./scripts/convert.js
 node ./scripts/fixRef.js

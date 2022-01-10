@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-//This script fixes the $ref issue
+//This script fixes the $ref issue where $id is not aligned with folder structure anymore.
 'use strict';
 const fs = require('fs');
 const path = require('path');
