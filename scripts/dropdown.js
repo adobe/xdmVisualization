@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-//This script generates the index.md with dropdowns.
+//This script generates the index.md with dropdowns from the listOfXdms.txt
 'use strict';
 const readline = require('readline');
 const fs = require('fs');
@@ -30,6 +30,7 @@ async function readLines(stream) {
 readLines(fs.createReadStream("listOfXdms.txt")).then(result => {
     let obj = {};
     for (let i = 0; i < result.length; i++) {
+        //generate a nested obj from each xdm's id for dropdown nagivation creation
         if ((result[i].indexOf("adobe.") == 0) || (result[i].indexOf("airship.") == 0) || (result[i].indexOf("facebook.") == 0)) {
             //special handling to put these xdms under extension folder
             dotProp.set(obj, "extensions." + result[i], result[i]);
@@ -43,7 +44,7 @@ readLines(fs.createReadStream("listOfXdms.txt")).then(result => {
     dropDownGen(obj)
 })
 
-function dropDownGen(o) {
+function dropDownGen(o) {//create visualization hyperlinks for index.md in dropdown format.
     //console.log(JSON.stringify(o, null,2))
     for (let i in o) {
         if (o[i] !== null && typeof(o[i]) == "object") {

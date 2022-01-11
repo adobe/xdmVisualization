@@ -36,26 +36,28 @@ xdms=$(find bower_components/mdjson-schemas -name "*.schema.json" -print)
 for xdm in $xdms; do
   echo "processing---> $xdm"
   oldid=${xdm:32}
+  #remove the folder path from id
   newid=$(echo $oldid|rev|cut -d'/' -f 1|rev)
-  echo $oldid
-  echo $newid
+  #echo $oldid
+  #echo $newid
   sed -i '' "s~${oldid}~${newid}~g" $xdm
   sed -i '' "s~\"\$id\":~\"id\":~g" $xdm
 done
 
-#grunt prod
+#setup the xed files location, build visualization html files by grunt prod
 echo "Running grunt prod"
 rm -rf prod/$repoBranch/
 rm -rf Gruntfile.js
 sed "s/xdmVersion/$repoBranch/g" Gruntfile_template.js > Gruntfile.js
 grunt prod
 
-#generate xdm schema visualization pages
+#generate xdm visualization navigation page list.md without using dropdown
 cd prod/$repoBranch/
 rm index.html
 echo "# XDM Visualization" >> list.md
 echo "## Git Repo Branch: $repoBranch" >> list.md
 
+#loop all the xdm files and categorize them into different arrays by filename pattern
 uberSchemas=()
 standardComponents=()
 extensionComponents=()
@@ -91,7 +93,7 @@ for folder in ${folders[@]}; do
   done
 done
 
-#standard component group
+#standard component group setup for classes, datatypes, fieldgroups etc.
 for i in ${standardComponents[@]}; do
   value=$(echo ${i%%.*})
   if ! (printf '%s\n' "${standardCompGrp[@]}" | grep -xq $value); then
@@ -99,6 +101,7 @@ for i in ${standardComponents[@]}; do
   fi
 done
 
+#create visualization hyperlinks for list.md
 echo "### Standard XDM Schemas" >> list.md
 for i in ${uberSchemas[@]}; do
   echo "Generating HTML:" $i
@@ -125,8 +128,10 @@ for i in ${extensionComponents[@]}; do
 done
 
 cd ../../
+#generate xdm visualization navigation page index.md by using dropdown
 node ./scripts/dropdown.js $repoBranch
 (rm prod/index.html; rm index.html)
+#git push the latest build.
 git add .
 git commit -m "merge xdm visualization for $repoBranch branch"
 git push origin
