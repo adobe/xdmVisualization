@@ -55,7 +55,7 @@ grunt prod
 ./scripts/listGen.sh $repoBranch
 
 #generate xdm visualization navigation page index.md by using dropdown
-node ./scripts/dropdown.js $repoBranch
+node ./scripts/dropdownGen.js $repoBranch
 (rm prod/index.html; rm index.html)
 
 #git push the latest build.

@@ -6,7 +6,7 @@ const fs = require('fs');
 const dotProp = require('dot-prop');
 
 const err = 'Wrong parameters!' + '\n' +
-    'Usage: node ./scripts/dropdown.js branchName' + '\n';
+    'Usage: node ./scripts/dropdownGen.js branchName' + '\n';
 
 if (process.argv.length !=3) {
     throw err;
