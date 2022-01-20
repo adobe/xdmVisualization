@@ -1647,7 +1647,7 @@
           "meta:xdmField": "xdm:dataValueChanges",
           "tagNumber": 5,
           "items": {
-            "$ref": "obj08171368185325312.schema.json"
+            "$ref": "obj5896243329717346.schema.json"
           }
         }
       },
@@ -2433,7 +2433,7 @@
     "application": {
       "title": "Application",
       "$ref": "../datatypes/application.schema.json",
-      "description": "This mixin is used to capture application information related to an ExperienceEvent, including the name of the application, app version, installs, launches, crashes, and closures. It could be either the application targeted by the event like the send of a push notification or the application originating the event such as a click, or a login.",
+      "description": "This fieldgroup is used to capture application information related to an ExperienceEvent, including the name of the application, app version, installs, launches, crashes, and closures. It could be either the application targeted by the event like the send of a push notification or the application originating the event such as a click, or a login.",
       "meta:titleId": "experienceevent-application##xdm:application##title##97651",
       "meta:descriptionId": "experienceevent-application##xdm:application##description##28031",
       "meta:xdmField": "xdm:application",
@@ -3307,7 +3307,7 @@
           "meta:xdmField": "xdm:diningReservations",
           "tagNumber": 1,
           "items": {
-            "$ref": "obj09231943042955981.schema.json"
+            "$ref": "obj3215330680204802.schema.json"
           }
         },
         "cancellation": {
@@ -3480,7 +3480,7 @@
           "meta:xdmField": "xdm:flightReservations",
           "tagNumber": 19,
           "items": {
-            "$ref": "obj4360520154733962.schema.json"
+            "$ref": "obj7386776775383324.schema.json"
           }
         },
         "lodgingReservations": {
@@ -3489,7 +3489,7 @@
           "meta:xdmField": "xdm:lodgingReservations",
           "tagNumber": 20,
           "items": {
-            "$ref": "obj8799231766056219.schema.json"
+            "$ref": "obj8122867497813113.schema.json"
           }
         },
         "vehicleReservations": {
@@ -3498,7 +3498,7 @@
           "meta:xdmField": "xdm:vehicleReservations",
           "tagNumber": 21,
           "items": {
-            "$ref": "obj6098048775453755.schema.json"
+            "$ref": "obj8009065091099539.schema.json"
           }
         }
       },

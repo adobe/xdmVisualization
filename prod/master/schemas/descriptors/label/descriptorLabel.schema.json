@@ -1,5 +1,5 @@
 {
-  "id": "_xdm.common.descriptors.descriptorlabel",
+  "id": "_xdm.descriptors.descriptorlabel",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "Label Descriptor",
   "meta:extensible": false,
@@ -67,6 +67,12 @@
       "meta:xdmField": "xdm:sourceItem",
       "tagNumber": 6
     },
+    "excludeProperty": {
+      "title": "Exclude Property",
+      "description": "When present, the property of the source schema to which this descriptor excludes. This value is a JSON Pointer, applied to an instance of an object described by `xdm:sourceSchema`.",
+      "meta:xdmField": "xdm:excludeProperty",
+      "tagNumber": 7
+    },
     "labels": {
       "title": "Labels",
       "description": "When present, it allows an array of labels. Values are resources IDs",
@@ -80,15 +86,15 @@
         "tagNumber": 1
       },
       "meta:xdmField": "xdm:labels",
-      "tagNumber": 7
+      "tagNumber": 8
     }
   },
-  "meta:xdmId": "https://ns.adobe.com/xdm/common/descriptors/descriptorLabel",
-  "meta:altId": "_xdm.common.descriptors.descriptorlabel",
+  "meta:xdmId": "https://ns.adobe.com/xdm/descriptors/descriptorLabel",
+  "meta:altId": "_xdm.descriptors.descriptorlabel",
   "required": [
     "labels",
     "sourceSchema",
     "sourceVersion"
   ],
-  "id": "_xdm.common.descriptors.descriptorlabel"
+  "id": "_xdm.descriptors.descriptorlabel"
 }

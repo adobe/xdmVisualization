@@ -5,7 +5,7 @@
   "type": "object",
   "meta:abstract": true,
   "meta:extensible": true,
-  "description": "Mixin for Decision Events that adds dimensions for rollup by organization, container, batch job and request.",
+  "description": "This is a fieldgroup for Decision Events that adds dimensions for rollup by organization, container, batch job and request.",
   "meta:status": "stable",
   "meta:titleId": "decisionevent-all##title##55751",
   "meta:descriptionId": "decisionevent-all##description##70481",

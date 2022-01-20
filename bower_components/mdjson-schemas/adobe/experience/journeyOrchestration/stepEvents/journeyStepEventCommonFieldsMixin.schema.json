@@ -5,7 +5,7 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
-  "description": "This Mixin contains the common Journey Metadata information.",
+  "description": "This Fieldgroup contains the common Journey Metadata information.",
   "meta:status": "stable",
   "meta:titleId": "journeyStepEventCommonFields##title##66731",
   "meta:descriptionId": "journeyStepEventCommonFields##description##6611",
@@ -33,6 +33,40 @@
                       "type": "object",
                       "meta:xdmType": "object",
                       "properties": {
+                        "hasSegmentQualificationDelta": {
+                          "title": "HasSegmentQualificationDelta",
+                          "description": "Indicate if the journey has configuration for segment qualification delta.",
+                          "type": "boolean",
+                          "meta:xdmType": "boolean",
+                          "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/hasSegmentQualificationDelta",
+                          "tagNumber": 1
+                        },
+                        "startSegmentQualificationTime": {
+                          "title": "StartSegmentQualificationTime",
+                          "description": "Serialized instant of the start of the delta time window.",
+                          "type": "string",
+                          "format": "date-time",
+                          "meta:xdmType": "date-time",
+                          "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/startSegmentQualificationTime",
+                          "tagNumber": 2
+                        },
+                        "endSegmentQualificationTime": {
+                          "title": "EndSegmentQualificationTime",
+                          "description": "Serialized instant of the end of the delta time window.",
+                          "type": "string",
+                          "format": "date-time",
+                          "meta:xdmType": "date-time",
+                          "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/endSegmentQualificationTime",
+                          "tagNumber": 3
+                        },
+                        "segmentQualificationStatus": {
+                          "title": "SegmentQualificationStatus",
+                          "description": "can be value in 'inSegment' or 'exited'. Indicate that the segment triggered journey is interested in profiles in segment or having existed the segment (in the time window is delta is applied).",
+                          "type": "string",
+                          "meta:xdmType": "string",
+                          "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/segmentQualificationStatus",
+                          "tagNumber": 4
+                        },
                         "entrance": {
                           "title": "entrance",
                           "description": "True if the step event was an entrance event for a profile(s). E.g: A step event corresponding to the first event trigger for a unitary journey and scheduled/business event trigger for a batch flow will have this field set to true.",
@@ -41,7 +75,7 @@
                           "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/entrance##description##13631",
                           "meta:xdmType": "boolean",
                           "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/entrance",
-                          "tagNumber": 1
+                          "tagNumber": 5
                         },
                         "reentrance": {
                           "title": "reentrance",
@@ -51,7 +85,7 @@
                           "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/reentrance##description##35681",
                           "meta:xdmType": "boolean",
                           "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/reentrance",
-                          "tagNumber": 2
+                          "tagNumber": 6
                         },
                         "instanceEnded": {
                           "title": "instanceEnded",
@@ -61,7 +95,7 @@
                           "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/instanceEnded##description##33431",
                           "meta:xdmType": "boolean",
                           "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/instanceEnded",
-                          "tagNumber": 3
+                          "tagNumber": 7
                         },
                         "eventID": {
                           "title": "eventID",
@@ -71,7 +105,7 @@
                           "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/eventID##description##26291",
                           "meta:xdmType": "string",
                           "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/eventID",
-                          "tagNumber": 4
+                          "tagNumber": 8
                         },
                         "nodeID": {
                           "title": "nodeID",
@@ -81,7 +115,7 @@
                           "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/nodeID##description##51521",
                           "meta:xdmType": "string",
                           "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/nodeID",
-                          "tagNumber": 5
+                          "tagNumber": 9
                         },
                         "stepID": {
                           "title": "stepID",
@@ -91,7 +125,7 @@
                           "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/stepID##description##34261",
                           "meta:xdmType": "string",
                           "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/stepID",
-                          "tagNumber": 6
+                          "tagNumber": 10
                         },
                         "stepName": {
                           "title": "stepName",
@@ -101,7 +135,7 @@
                           "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/stepName##description##91411",
                           "meta:xdmType": "string",
                           "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/stepName",
-                          "tagNumber": 7
+                          "tagNumber": 11
                         },
                         "stepType": {
                           "title": "stepType",
@@ -111,7 +145,7 @@
                           "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/stepType##description##85861",
                           "meta:xdmType": "string",
                           "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/stepType",
-                          "tagNumber": 8
+                          "tagNumber": 12
                         },
                         "stepStatus": {
                           "title": "stepStatus",
@@ -121,7 +155,7 @@
                           "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/stepStatus##description##22571",
                           "meta:xdmType": "string",
                           "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/stepStatus",
-                          "tagNumber": 9
+                          "tagNumber": 13
                         },
                         "journeyID": {
                           "title": "journeyID",
@@ -131,7 +165,7 @@
                           "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/journeyID##description##38141",
                           "meta:xdmType": "string",
                           "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/journeyID",
-                          "tagNumber": 10
+                          "tagNumber": 14
                         },
                         "journeyVersionID": {
                           "title": "journeyVersionID",
@@ -141,7 +175,7 @@
                           "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/journeyVersionID##description##85421",
                           "meta:xdmType": "string",
                           "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/journeyVersionID",
-                          "tagNumber": 11
+                          "tagNumber": 15
                         },
                         "journeyVersionName": {
                           "title": "journeyVersionName",
@@ -151,7 +185,7 @@
                           "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/journeyVersionName##description##23131",
                           "meta:xdmType": "string",
                           "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/journeyVersionName",
-                          "tagNumber": 12
+                          "tagNumber": 16
                         },
                         "journeyVersion": {
                           "title": "journeyVersion",
@@ -161,7 +195,7 @@
                           "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/journeyVersion##description##57691",
                           "meta:xdmType": "string",
                           "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/journeyVersion",
-                          "tagNumber": 13
+                          "tagNumber": 17
                         },
                         "instanceID": {
                           "title": "instanceID",
@@ -171,7 +205,7 @@
                           "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/instanceID##description##16801",
                           "meta:xdmType": "string",
                           "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/instanceID",
-                          "tagNumber": 14
+                          "tagNumber": 18
                         },
                         "externalKey": {
                           "title": "externalKey",
@@ -181,7 +215,7 @@
                           "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/externalKey##description##101",
                           "meta:xdmType": "string",
                           "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/externalKey",
-                          "tagNumber": 15
+                          "tagNumber": 19
                         },
                         "parentStepID": {
                           "title": "parentStepID",
@@ -191,7 +225,7 @@
                           "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/parentStepID##description##36241",
                           "meta:xdmType": "string",
                           "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/parentStepID",
-                          "tagNumber": 16
+                          "tagNumber": 20
                         },
                         "parentStepName": {
                           "title": "parentStepName",
@@ -201,7 +235,7 @@
                           "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/parentStepName##description##12991",
                           "meta:xdmType": "string",
                           "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/parentStepName",
-                          "tagNumber": 17
+                          "tagNumber": 21
                         },
                         "parentTransitionID": {
                           "title": "parentTransitionID",
@@ -211,7 +245,7 @@
                           "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/parentTransitionID##description##58661",
                           "meta:xdmType": "string",
                           "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/parentTransitionID",
-                          "tagNumber": 18
+                          "tagNumber": 22
                         },
                         "parentTransitionName": {
                           "title": "parentTransitionName",
@@ -221,7 +255,7 @@
                           "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/parentTransitionName##description##82061",
                           "meta:xdmType": "string",
                           "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/parentTransitionName",
-                          "tagNumber": 19
+                          "tagNumber": 23
                         },
                         "inTest": {
                           "title": "inTest",
@@ -231,7 +265,7 @@
                           "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/inTest##description##40971",
                           "meta:xdmType": "boolean",
                           "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/inTest",
-                          "tagNumber": 20
+                          "tagNumber": 24
                         },
                         "processingTime": {
                           "title": "processingTime",
@@ -241,7 +275,7 @@
                           "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/processingTime##description##73591",
                           "meta:xdmType": "int",
                           "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/processingTime",
-                          "tagNumber": 21
+                          "tagNumber": 25
                         },
                         "instanceType": {
                           "title": "instanceType",
@@ -251,7 +285,7 @@
                           "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/instanceType##description##15711",
                           "meta:xdmType": "string",
                           "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/instanceType",
-                          "tagNumber": 22
+                          "tagNumber": 26
                         },
                         "batchRecurrenceIndex": {
                           "title": "batchRecurrenceIndex",
@@ -261,7 +295,7 @@
                           "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/batchRecurrenceIndex##description##17471",
                           "meta:xdmType": "int",
                           "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/batchRecurrenceIndex",
-                          "tagNumber": 23
+                          "tagNumber": 27
                         },
                         "batchExternalKey": {
                           "title": "batchExternalKey",
@@ -271,7 +305,7 @@
                           "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/batchExternalKey##description##34911",
                           "meta:xdmType": "string",
                           "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/batchExternalKey",
-                          "tagNumber": 25
+                          "tagNumber": 29
                         },
                         "batchInstanceID": {
                           "title": "batchInstanceID",
@@ -281,7 +315,7 @@
                           "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/batchInstanceID##description##96341",
                           "meta:xdmType": "string",
                           "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/batchInstanceID",
-                          "tagNumber": 26
+                          "tagNumber": 30
                         },
                         "nodeName": {
                           "title": "nodeName",
@@ -291,7 +325,7 @@
                           "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/nodeName##description##46841",
                           "meta:xdmType": "string",
                           "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/nodeName",
-                          "tagNumber": 28
+                          "tagNumber": 32
                         },
                         "journeyNodeProcessed": {
                           "title": "journeyNodeProcessed",
@@ -301,7 +335,7 @@
                           "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/journeyNodeProcessed##description##10671",
                           "meta:xdmType": "boolean",
                           "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/journeyNodeProcessed",
-                          "tagNumber": 29
+                          "tagNumber": 33
                         },
                         "eventProcessed": {
                           "title": "eventProcessed",
@@ -311,7 +345,7 @@
                           "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/eventProcessed##description##30211",
                           "meta:xdmType": "boolean",
                           "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/eventProcessed",
-                          "tagNumber": 30
+                          "tagNumber": 34
                         },
                         "originJumpJourneyID": {
                           "title": "originJumpJourneyID",
@@ -321,7 +355,7 @@
                           "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/originJumpJourneyID##description##98161",
                           "meta:xdmType": "string",
                           "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/originJumpJourneyID",
-                          "tagNumber": 31
+                          "tagNumber": 35
                         },
                         "originJumpJourneyVersionID": {
                           "title": "originJumpJourneyVersionID",
@@ -331,7 +365,7 @@
                           "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/originJumpJourneyVersionID##description##27101",
                           "meta:xdmType": "string",
                           "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/originJumpJourneyVersionID",
-                          "tagNumber": 32
+                          "tagNumber": 36
                         },
                         "originJumpJourneyInstanceID": {
                           "title": "originJumpJourneyInstanceID",
@@ -341,7 +375,7 @@
                           "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/originJumpJourneyInstanceID##description##73601",
                           "meta:xdmType": "string",
                           "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/originJumpJourneyInstanceID",
-                          "tagNumber": 33
+                          "tagNumber": 37
                         },
                         "previousJumpJourneyID": {
                           "title": "previousJumpJourneyID",
@@ -351,7 +385,7 @@
                           "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/previousJumpJourneyID##description##84191",
                           "meta:xdmType": "string",
                           "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/previousJumpJourneyID",
-                          "tagNumber": 34
+                          "tagNumber": 38
                         },
                         "previousJumpJourneyVersionID": {
                           "title": "previousJumpJourneyVersionID",
@@ -361,7 +395,7 @@
                           "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/previousJumpJourneyVersionID##description##86661",
                           "meta:xdmType": "string",
                           "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/previousJumpJourneyVersionID",
-                          "tagNumber": 35
+                          "tagNumber": 39
                         },
                         "previousJumpJourneyInstanceID": {
                           "title": "previousJumpJourneyInstanceID",
@@ -371,7 +405,7 @@
                           "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/previousJumpJourneyInstanceID##description##13971",
                           "meta:xdmType": "string",
                           "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/previousJumpJourneyInstanceID",
-                          "tagNumber": 36
+                          "tagNumber": 40
                         },
                         "reactionActionID": {
                           "title": "reactionActionID",
@@ -381,7 +415,7 @@
                           "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/reactionActionID##description##37001",
                           "meta:xdmType": "string",
                           "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/reactionActionID",
-                          "tagNumber": 37
+                          "tagNumber": 41
                         },
                         "reactionChannel": {
                           "title": "reactionChannel",
@@ -391,7 +425,7 @@
                           "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/reactionChannel##description##39781",
                           "meta:xdmType": "string",
                           "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/reactionChannel",
-                          "tagNumber": 38
+                          "tagNumber": 42
                         },
                         "reactionInteractionType": {
                           "title": "reactionInteractionType",
@@ -401,7 +435,7 @@
                           "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/reactionInteractionType##description##37011",
                           "meta:xdmType": "string",
                           "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/reactionInteractionType",
-                          "tagNumber": 39
+                          "tagNumber": 43
                         },
                         "parentTransitionType": {
                           "title": "parentTransitionType",
@@ -411,7 +445,7 @@
                           "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/parentTransitionType##description##27571",
                           "meta:xdmType": "string",
                           "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/parentTransitionType",
-                          "tagNumber": 40
+                          "tagNumber": 44
                         },
                         "nodeType": {
                           "title": "nodeType",
@@ -421,7 +455,7 @@
                           "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/nodeType##description##23961",
                           "meta:xdmType": "string",
                           "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/nodeType",
-                          "tagNumber": 41
+                          "tagNumber": 45
                         },
                         "parentNodeID": {
                           "title": "parentNodeID",
@@ -431,7 +465,7 @@
                           "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/parentNodeID##description##63081",
                           "meta:xdmType": "string",
                           "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/parentNodeID",
-                          "tagNumber": 42
+                          "tagNumber": 46
                         },
                         "parentNodeType": {
                           "title": "parentNodeType",
@@ -441,7 +475,7 @@
                           "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/parentNodeType##description##12701",
                           "meta:xdmType": "string",
                           "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/parentNodeType",
-                          "tagNumber": 43
+                          "tagNumber": 47
                         },
                         "parentNodeName": {
                           "title": "parentNodeName",
@@ -451,7 +485,7 @@
                           "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/parentNodeName##description##13141",
                           "meta:xdmType": "string",
                           "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/parentNodeName",
-                          "tagNumber": 44
+                          "tagNumber": 48
                         },
                         "isExternalEvent": {
                           "title": "isExternalEvent",
@@ -461,7 +495,7 @@
                           "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/isExternalEvent##description##86561",
                           "meta:xdmType": "boolean",
                           "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/isExternalEvent",
-                          "tagNumber": 45
+                          "tagNumber": 49
                         },
                         "eventName": {
                           "title": "eventName",
@@ -471,7 +505,7 @@
                           "meta:descriptionId": "journeyStepEventCommonFields##https://ns.adobe.com/experience/journeyOrchestration/eventName##description##91181",
                           "meta:xdmType": "string",
                           "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/eventName",
-                          "tagNumber": 46
+                          "tagNumber": 50
                         }
                       },
                       "tagNumber": 1
