@@ -204,6 +204,7 @@
   "meta:createdDate": [
     "2020-08-10",
     "2021-02-19",
+    "2022-01-13",
     "2020-12-02",
     "2021-01-14",
     "2021-01-07",
@@ -396,6 +397,7 @@
   "meta:conditionalValue": [
     "listOperation.addToList",
     "opportunityEvent.addToOpportunity",
+    "leadOperation.callWebhook",
     "leadOperation.convertLead",
     "directMarketing.emailBounced",
     "directMarketing.emailBouncedSoft",
@@ -1647,7 +1649,7 @@
           "meta:xdmField": "xdm:dataValueChanges",
           "tagNumber": 5,
           "items": {
-            "$ref": "obj5896243329717346.schema.json"
+            "$ref": "obj48634335808160056.schema.json"
           }
         }
       },
@@ -1657,6 +1659,7 @@
     "leadOperation": {
       "title": "Lead Operation",
       "type": "object",
+      "meta:xdmType": "object",
       "meta:titleId": [
         "convert-lead##xdm:leadOperation##title##37391",
         "interesting-moment##xdm:leadOperation##title##97001",
@@ -1664,8 +1667,31 @@
         "scorechanged##xdm:leadOperation##title##65571",
         "statusincampaignprogressionchanged##xdm:leadOperation##title##27501"
       ],
-      "meta:xdmType": "object",
       "properties": {
+        "webhookID": {
+          "title": "Webhook ID",
+          "type": "string",
+          "description": "Unique ID of the Webhook called.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:webhookID",
+          "tagNumber": 1
+        },
+        "webhookName": {
+          "title": "Webhook Name",
+          "type": "string",
+          "description": "Name of the Webhook.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:webhookName",
+          "tagNumber": 2
+        },
+        "responseCode": {
+          "title": "Response Code",
+          "type": "integer",
+          "description": "HTTP response code from Webhook request.",
+          "meta:xdmType": "int",
+          "meta:xdmField": "xdm:responseCode",
+          "tagNumber": 3
+        },
         "convertLead": {
           "title": "Convert Lead",
           "type": "object",
@@ -1704,7 +1730,7 @@
             }
           },
           "meta:xdmField": "xdm:convertLead",
-          "tagNumber": 1
+          "tagNumber": 4
         },
         "interestingMoment": {
           "title": "Interesting Moment",
@@ -1755,7 +1781,7 @@
             }
           },
           "meta:xdmField": "xdm:interestingMoment",
-          "tagNumber": 2
+          "tagNumber": 5
         },
         "newLead": {
           "title": "New Lead",
@@ -1826,7 +1852,7 @@
             }
           },
           "meta:xdmField": "xdm:newLead",
-          "tagNumber": 3
+          "tagNumber": 6
         },
         "changeScore": {
           "title": "Change Score",
@@ -1936,7 +1962,7 @@
             }
           },
           "meta:xdmField": "xdm:changeScore",
-          "tagNumber": 4
+          "tagNumber": 7
         },
         "campaignProgression": {
           "title": "Campaign Progression",
@@ -2036,7 +2062,7 @@
             }
           },
           "meta:xdmField": "xdm:campaignProgression",
-          "tagNumber": 5
+          "tagNumber": 8
         }
       },
       "meta:xdmField": "xdm:leadOperation",
@@ -3307,7 +3333,7 @@
           "meta:xdmField": "xdm:diningReservations",
           "tagNumber": 1,
           "items": {
-            "$ref": "obj3215330680204802.schema.json"
+            "$ref": "obj6859809360148141.schema.json"
           }
         },
         "cancellation": {
@@ -3480,7 +3506,7 @@
           "meta:xdmField": "xdm:flightReservations",
           "tagNumber": 19,
           "items": {
-            "$ref": "obj7386776775383324.schema.json"
+            "$ref": "obj22322319924162803.schema.json"
           }
         },
         "lodgingReservations": {
@@ -3489,7 +3515,7 @@
           "meta:xdmField": "xdm:lodgingReservations",
           "tagNumber": 20,
           "items": {
-            "$ref": "obj8122867497813113.schema.json"
+            "$ref": "obj7534211084005908.schema.json"
           }
         },
         "vehicleReservations": {
@@ -3498,7 +3524,7 @@
           "meta:xdmField": "xdm:vehicleReservations",
           "tagNumber": 21,
           "items": {
-            "$ref": "obj8009065091099539.schema.json"
+            "$ref": "obj7922922610719481.schema.json"
           }
         }
       },
