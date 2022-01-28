@@ -1,0 +1,26 @@
+{
+  "id": "_experience.campaign.orchestration.reportingexternalevent",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "external event received",
+  "type": "object",
+  "description": "",
+  "meta:status": "stable",
+  "meta:titleId": "reportingexternalevent##title##82531",
+  "meta:descriptionId": "reportingexternalevent##description##79501",
+  "meta:xdmType": "object",
+  "properties": {
+    "eventType": {
+      "title": "Type of the event received",
+      "type": "string",
+      "description": "The type for the external event received",
+      "meta:titleId": "reportingexternalevent##xdm:eventType##title##56911",
+      "meta:descriptionId": "reportingexternalevent##xdm:eventType##description##19721",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:eventType",
+      "tagNumber": 1
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/experience/campaign/orchestration/reportingexternalevent",
+  "meta:altId": "_experience.campaign.orchestration.reportingexternalevent",
+  "id": "_experience.campaign.orchestration.reportingexternalevent"
+}

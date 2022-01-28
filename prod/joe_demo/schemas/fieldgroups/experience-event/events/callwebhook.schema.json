@@ -1,0 +1,53 @@
+{
+  "id": "_xdm.mixins.events.callwebhook",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Call Webhook",
+  "type": "object",
+  "meta:tags": {
+    "b2bSchema": true
+  },
+  "meta:conditionalField": "xdm:eventType",
+  "meta:conditionalValue": "leadOperation.callWebhook",
+  "description": "Use to capture details when Webhook is called for a person",
+  "meta:status": "experimental",
+  "meta:createdDate": "2022-01-13",
+  "meta:xdmType": "object",
+  "properties": {
+    "leadOperation": {
+      "title": "Lead Operation",
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "webhookID": {
+          "title": "Webhook ID",
+          "type": "string",
+          "description": "Unique ID of the Webhook called.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:webhookID",
+          "tagNumber": 1
+        },
+        "webhookName": {
+          "title": "Webhook Name",
+          "type": "string",
+          "description": "Name of the Webhook.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:webhookName",
+          "tagNumber": 2
+        },
+        "responseCode": {
+          "title": "Response Code",
+          "type": "integer",
+          "description": "HTTP response code from Webhook request.",
+          "meta:xdmType": "int",
+          "meta:xdmField": "xdm:responseCode",
+          "tagNumber": 3
+        }
+      },
+      "meta:xdmField": "xdm:leadOperation",
+      "tagNumber": 1
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/mixins/events/callwebhook",
+  "meta:altId": "_xdm.mixins.events.callwebhook",
+  "id": "_xdm.mixins.events.callwebhook"
+}

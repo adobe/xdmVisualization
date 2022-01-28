@@ -1,0 +1,198 @@
+{
+  "id": "_experience.consumer-experienceevent",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Consumer ExperienceEvent  Field Group",
+  "type": "object",
+  "description": "A set of standard fields to describe the behavior of an individual. This field group can be used to express behavior of a consumer related to digital content consumption (web, mobile app), online or off-line purchases. The use of this standard represention allows for a single representation for data producers and consumers of consumer behavior in Experience Platform",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:status": [
+    "deprecated",
+    "stable"
+  ],
+  "meta:titleId": [
+    "consumer-experienceevent##title##51911",
+    "experienceevent-application##title##36001",
+    "experienceevent-channel##title##21951",
+    "experienceevent-environment-details##title##62031",
+    "experienceevent-marketing##title##3931",
+    "experienceevent-media##title##81291",
+    "experienceevent-search##title##48011",
+    "experienceevent-segmentmembership##title##47831",
+    "experienceevent-technical-details##title##54831",
+    "experienceevent-web##title##4021",
+    "experienceevent-commerce##title##83091"
+  ],
+  "meta:descriptionId": [
+    "consumer-experienceevent##description##27741",
+    "experienceevent-application##description##93521",
+    "experienceevent-channel##description##17431",
+    "experienceevent-environment-details##description##46401",
+    "experienceevent-marketing##description##48971",
+    "experienceevent-media##description##54191",
+    "experienceevent-search##description##8401",
+    "experienceevent-segmentmembership##description##37041",
+    "experienceevent-technical-details##description##52411",
+    "experienceevent-web##description##72121",
+    "experienceevent-commerce##description##81391"
+  ],
+  "meta:xdmType": "object",
+  "meta:createdDate": "2020-08-10",
+  "meta:tags": {
+    "industry": [
+      "all"
+    ]
+  },
+  "properties": {
+    "application": {
+      "title": "Application",
+      "$ref": "../../datatypes/application.schema.json",
+      "description": "This fieldgroup is used to capture application information related to an ExperienceEvent, including the name of the application, app version, installs, launches, crashes, and closures. It could be either the application targeted by the event like the send of a push notification or the application originating the event such as a click, or a login.",
+      "meta:titleId": "experienceevent-application##xdm:application##title##97651",
+      "meta:descriptionId": "experienceevent-application##xdm:application##description##28031",
+      "meta:xdmField": "xdm:application",
+      "tagNumber": 1
+    },
+    "channel": {
+      "title": "Experience channel",
+      "description": "Experience channel related to the ExperienceEvent.",
+      "$ref": "../../datatypes/channels/channel.schema.json",
+      "meta:titleId": "experienceevent-channel##xdm:channel##title##98461",
+      "meta:descriptionId": "experienceevent-channel##xdm:channel##description##29501",
+      "meta:xdmField": "xdm:channel",
+      "tagNumber": 2
+    },
+    "environment": {
+      "title": "Environment",
+      "$ref": "../../datatypes/environment.schema.json",
+      "description": "Information about the surrounding situation the event observation occurred in, specifically detailing transitory information such as the network or software versions.",
+      "meta:titleId": "experienceevent-environment-details##xdm:environment##title##51051",
+      "meta:descriptionId": "experienceevent-environment-details##xdm:environment##description##68071",
+      "meta:xdmField": "xdm:environment",
+      "tagNumber": 3
+    },
+    "device": {
+      "title": "Device",
+      "$ref": "../../datatypes/device.schema.json",
+      "description": "An identified device, application or device browser instance that is trackable across sessions, normally by cookies.",
+      "meta:titleId": "experienceevent-environment-details##xdm:device##title##96081",
+      "meta:descriptionId": "experienceevent-environment-details##xdm:device##description##29621",
+      "meta:xdmField": "xdm:device",
+      "tagNumber": 4
+    },
+    "placeContext": {
+      "title": "Place context",
+      "$ref": "../../datatypes/placecontext.schema.json",
+      "description": "The transient circumstances related to the observation. Examples include locale specific information such as weather, local time, traffic, day of the week, workday vs. holiday, and working hours.",
+      "meta:titleId": "experienceevent-environment-details##xdm:placeContext##title##83141",
+      "meta:descriptionId": "experienceevent-environment-details##xdm:placeContext##description##71761",
+      "meta:xdmField": "xdm:placeContext",
+      "tagNumber": 5
+    },
+    "marketing": {
+      "title": "Marketing",
+      "$ref": "../../datatypes/marketing/marketing.schema.json",
+      "description": "Tracks offer impression and social network interactions.",
+      "meta:titleId": "experienceevent-marketing##xdm:marketing##title##38331",
+      "meta:descriptionId": "experienceevent-marketing##xdm:marketing##description##30041",
+      "meta:xdmField": "xdm:marketing",
+      "tagNumber": 6
+    },
+    "media": {
+      "title": "Media",
+      "$ref": "../../datatypes/media.schema.json",
+      "description": "Media activity information related to the experience event.",
+      "meta:titleId": "experienceevent-media##xdm:media##title##8591",
+      "meta:descriptionId": "experienceevent-media##xdm:media##description##16281",
+      "meta:xdmField": "xdm:media",
+      "tagNumber": 7
+    },
+    "search": {
+      "title": "Search",
+      "$ref": "../../datatypes/search.schema.json",
+      "description": "The information related to web or mobile search.",
+      "meta:titleId": "experienceevent-search##xdm:search##title##89841",
+      "meta:descriptionId": "experienceevent-search##xdm:search##description##53361",
+      "meta:xdmField": "xdm:search",
+      "tagNumber": 8
+    },
+    "segmentMembership": {
+      "title": "Segment Membership Map",
+      "type": "object",
+      "meta:xdmType": "map",
+      "meta:titleId": "experienceevent-segmentmembership##xdm:segmentMembership##title##48291",
+      "meta:xdmField": "xdm:segmentMembership",
+      "tagNumber": 10,
+      "properties": {
+        "mapObj": {
+          "title": "Segment Membership per Namespace",
+          "type": "object",
+          "meta:xdmType": "map",
+          "meta:titleId": "experienceevent-segmentmembership##additionalProperties##title##75171",
+          "tagNumber": 1,
+          "properties": {
+            "mapObj": {
+              "$ref": "../../datatypes/segmentmembership.schema.json",
+              "tagNumber": 1
+            }
+          }
+        }
+      }
+    },
+    "dataSource": {
+      "title": "Data source",
+      "$ref": "../../datatypes/data/datasource.schema.json",
+      "description": "Globally unique identification of a data source.",
+      "meta:titleId": "experienceevent-technical-details##xdm:dataSource##title##29731",
+      "meta:descriptionId": "experienceevent-technical-details##xdm:dataSource##description##90171",
+      "meta:xdmField": "xdm:dataSource",
+      "tagNumber": 11
+    },
+    "receivedTimestamp": {
+      "title": "Received time stamp",
+      "type": "string",
+      "format": "date-time",
+      "description": "The time at which this interaction was received by a server.",
+      "meta:titleId": "experienceevent-technical-details##xdm:receivedTimestamp##title##40381",
+      "meta:descriptionId": "experienceevent-technical-details##xdm:receivedTimestamp##description##76481",
+      "meta:xdmType": "date-time",
+      "meta:xdmField": "xdm:receivedTimestamp",
+      "tagNumber": 12
+    },
+    "web": {
+      "title": "Web",
+      "$ref": "../../datatypes/webinfo.schema.json",
+      "description": "Link clicks, web page details, referrer information, and browser details.",
+      "meta:titleId": "experienceevent-web##xdm:web##title##43111",
+      "meta:descriptionId": "experienceevent-web##xdm:web##description##40241",
+      "meta:xdmField": "xdm:web",
+      "tagNumber": 13
+    },
+    "productListItems": {
+      "title": "Product list items",
+      "type": "array",
+      "description": "A list of items representing a product selected by a customer with specific options and pricing that are for that usage context at a specific point of time and may differ from the product record.",
+      "meta:titleId": "experienceevent-commerce##xdm:productListItems##title##38781",
+      "meta:descriptionId": "experienceevent-commerce##xdm:productListItems##description##34691",
+      "meta:xdmType": "array",
+      "items": {
+        "$ref": "../../datatypes/productlistitem.schema.json",
+        "tagNumber": 1
+      },
+      "meta:xdmField": "xdm:productListItems",
+      "tagNumber": 14
+    },
+    "commerce": {
+      "title": "Commerce",
+      "$ref": "../../datatypes/marketing/commerce.schema.json",
+      "description": "Product returns, warranty registration, and shopping cart/order process.",
+      "meta:titleId": "experienceevent-commerce##xdm:commerce##title##36691",
+      "meta:descriptionId": "experienceevent-commerce##xdm:commerce##description##4271",
+      "meta:xdmField": "xdm:commerce",
+      "tagNumber": 15
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/experience/consumer-experienceevent",
+  "meta:altId": "_experience.consumer-experienceevent",
+  "id": "_experience.consumer-experienceevent"
+}

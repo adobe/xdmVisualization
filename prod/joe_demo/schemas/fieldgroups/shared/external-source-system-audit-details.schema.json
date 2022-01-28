@@ -1,0 +1,27 @@
+{
+  "id": "_xdm.common.external-source-system-audit-details",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "External Source System Audit Details",
+  "type": "object",
+  "meta:extensible": true,
+  "description": "Defines a set of audit properties for extenal sources. It's strongly encouraged to use this fieldgroup given the asynchronous nature of profile ingestion.",
+  "meta:status": "stable",
+  "meta:createdDate": "2020-08-10",
+  "meta:titleId": "external-source-system-audit-details##title##88991",
+  "meta:descriptionId": "external-source-system-audit-details##description##98601",
+  "meta:xdmType": "object",
+  "properties": {
+    "extSourceSystemAudit": {
+      "title": "External Source System Audit Properties",
+      "$ref": "../../datatypes/auditing/external-source-system-audit.schema.json",
+      "description": "Audit attributes for external sources.",
+      "meta:titleId": "external-source-system-audit-details##xdm:extSourceSystemAudit##title##88841",
+      "meta:descriptionId": "external-source-system-audit-details##xdm:extSourceSystemAudit##description##28131",
+      "meta:xdmField": "xdm:extSourceSystemAudit",
+      "tagNumber": 1
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/common/external-source-system-audit-details",
+  "meta:altId": "_xdm.common.external-source-system-audit-details",
+  "id": "_xdm.common.external-source-system-audit-details"
+}

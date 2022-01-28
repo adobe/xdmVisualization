@@ -1,0 +1,45 @@
+{
+  "id": "_xdm.adobe.b2b.bizible.bizible-account-details",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Bizible Account Details",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "description": "Bizible business account details.",
+  "meta:status": "experimental",
+  "meta:titleId": "bizible-account-details##title##28131",
+  "meta:descriptionId": "bizible-account-details##description##99401",
+  "meta:xdmType": "object",
+  "properties": {
+    "_bizible": {
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "engagementRating": {
+          "title": "Engagement Rating",
+          "description": "Computed engagement rating for a business account.",
+          "type": "number",
+          "meta:titleId": "bizible-account-details##bizible:engagementRating##title##84111",
+          "meta:descriptionId": "bizible-account-details##bizible:engagementRating##description##81661",
+          "meta:xdmType": "number",
+          "meta:xdmField": "bizible:engagementRating",
+          "tagNumber": 1
+        },
+        "engagementScore": {
+          "title": "Engagement Score",
+          "description": "Computed engagement score for a business account.",
+          "type": "number",
+          "meta:titleId": "bizible-account-details##bizible:engagementScore##title##821",
+          "meta:descriptionId": "bizible-account-details##bizible:engagementScore##description##46761",
+          "meta:xdmType": "number",
+          "meta:xdmField": "bizible:engagementScore",
+          "tagNumber": 2
+        }
+      },
+      "tagNumber": 1
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/b2b/bizible/bizible-account-details",
+  "meta:altId": "_xdm.adobe.b2b.bizible.bizible-account-details",
+  "id": "_xdm.adobe.b2b.bizible.bizible-account-details"
+}

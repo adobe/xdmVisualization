@@ -1,0 +1,146 @@
+{
+  "id": "_experience.journeyorchestration.stepevents.journeystepeventdatafetchfields",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Journey Orchestration Step Data Fetch Fields",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "description": "Journey Orchestration Data Fetch Field for a Step Event.",
+  "meta:status": "stable",
+  "meta:titleId": "journeyStepEventDataFetchFields##title##65161",
+  "meta:descriptionId": "journeyStepEventDataFetchFields##description##75771",
+  "meta:xdmType": "object",
+  "properties": {
+    "_experience": {
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "journeyOrchestration": {
+          "type": "object",
+          "meta:xdmType": "object",
+          "properties": {
+            "stepEvents": {
+              "title": "Journey Step Event Data Fetch Field.",
+              "type": "object",
+              "meta:titleId": "journeyStepEventDataFetchFields##https://ns.adobe.com/experience/journeyOrchestration/stepEvents##title##14981",
+              "meta:xdmType": "object",
+              "properties": {
+                "_experience": {
+                  "type": "object",
+                  "meta:xdmType": "object",
+                  "properties": {
+                    "journeyOrchestration": {
+                      "type": "object",
+                      "meta:xdmType": "object",
+                      "properties": {
+                        "fetchTypeInError": {
+                          "title": "fetchTypeInError",
+                          "description": "The source of the first error that occurred while fetching fields to compute a journey step. Set to either Custom or AEP.",
+                          "type": "string",
+                          "meta:titleId": "journeyStepEventDataFetchFields##https://ns.adobe.com/experience/journeyOrchestration/fetchTypeInError##title##34981",
+                          "meta:descriptionId": "journeyStepEventDataFetchFields##https://ns.adobe.com/experience/journeyOrchestration/fetchTypeInError##description##40951",
+                          "meta:xdmType": "string",
+                          "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/fetchTypeInError",
+                          "tagNumber": 2
+                        },
+                        "fetchError": {
+                          "title": "fetchError",
+                          "description": "Error condition that prevented Journey Runtime from executing the fetch. E.g: capping on the Data Source API etc, http error.",
+                          "type": "string",
+                          "meta:titleId": "journeyStepEventDataFetchFields##https://ns.adobe.com/experience/journeyOrchestration/fetchError##title##27291",
+                          "meta:descriptionId": "journeyStepEventDataFetchFields##https://ns.adobe.com/experience/journeyOrchestration/fetchError##description##6791",
+                          "meta:xdmType": "string",
+                          "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/fetchError",
+                          "tagNumber": 3
+                        },
+                        "fetchErrorCode": {
+                          "title": "fetchErrorCode",
+                          "description": "Error code corresponding to fetchError.",
+                          "type": "string",
+                          "meta:titleId": "journeyStepEventDataFetchFields##https://ns.adobe.com/experience/journeyOrchestration/fetchErrorCode##title##79861",
+                          "meta:descriptionId": "journeyStepEventDataFetchFields##https://ns.adobe.com/experience/journeyOrchestration/fetchErrorCode##description##73441",
+                          "meta:xdmType": "string",
+                          "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/fetchErrorCode",
+                          "tagNumber": 4
+                        },
+                        "fetchOriginError": {
+                          "title": "fetchOriginError",
+                          "description": "In case of http error, the latest API response message. E.g: invalid payload, internal server error.",
+                          "type": "string",
+                          "meta:titleId": "journeyStepEventDataFetchFields##https://ns.adobe.com/experience/journeyOrchestration/fetchOriginError##title##30571",
+                          "meta:descriptionId": "journeyStepEventDataFetchFields##https://ns.adobe.com/experience/journeyOrchestration/fetchOriginError##description##47981",
+                          "meta:xdmType": "string",
+                          "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/fetchOriginError",
+                          "tagNumber": 5
+                        },
+                        "fetchOriginErrorCode": {
+                          "title": "fetchOriginErrorCode",
+                          "description": "Error code corresponding to fetchOriginError.",
+                          "type": "string",
+                          "meta:titleId": "journeyStepEventDataFetchFields##https://ns.adobe.com/experience/journeyOrchestration/fetchOriginErrorCode##title##41931",
+                          "meta:descriptionId": "journeyStepEventDataFetchFields##https://ns.adobe.com/experience/journeyOrchestration/fetchOriginErrorCode##description##95941",
+                          "meta:xdmType": "string",
+                          "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/fetchOriginErrorCode",
+                          "tagNumber": 6
+                        },
+                        "fetchPlatformTotalTime": {
+                          "title": "fetchPlatformTotalTime",
+                          "description": "Total time(ms) to fetch all the required fields from the custom data source to execute the step.",
+                          "type": "integer",
+                          "meta:titleId": "journeyStepEventDataFetchFields##https://ns.adobe.com/experience/journeyOrchestration/fetchPlatformTotalTime##title##79091",
+                          "meta:descriptionId": "journeyStepEventDataFetchFields##https://ns.adobe.com/experience/journeyOrchestration/fetchPlatformTotalTime##description##77191",
+                          "meta:xdmType": "int",
+                          "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/fetchPlatformTotalTime",
+                          "tagNumber": 8
+                        },
+                        "fetchPlatformCount": {
+                          "title": "fetchPlatformCount",
+                          "description": "Number of calls made to AEP to fetch the required details to process a step.",
+                          "type": "integer",
+                          "meta:titleId": "journeyStepEventDataFetchFields##https://ns.adobe.com/experience/journeyOrchestration/fetchPlatformCount##title##34781",
+                          "meta:descriptionId": "journeyStepEventDataFetchFields##https://ns.adobe.com/experience/journeyOrchestration/fetchPlatformCount##description##93931",
+                          "meta:xdmType": "int",
+                          "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/fetchPlatformCount",
+                          "tagNumber": 9
+                        },
+                        "fetchCustomTotalTime": {
+                          "title": "fetchCustomTotalTime",
+                          "description": "Total time(ms) to fetch all the required fields from the custom data source to execute the step.",
+                          "type": "integer",
+                          "meta:titleId": "journeyStepEventDataFetchFields##https://ns.adobe.com/experience/journeyOrchestration/fetchCustomTotalTime##title##38221",
+                          "meta:descriptionId": "journeyStepEventDataFetchFields##https://ns.adobe.com/experience/journeyOrchestration/fetchCustomTotalTime##description##30991",
+                          "meta:xdmType": "int",
+                          "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/fetchCustomTotalTime",
+                          "tagNumber": 10
+                        },
+                        "fetchCustomCount": {
+                          "title": "fetchCustomCount",
+                          "description": "Number of calls made to custom data source and to AEP to fetch the required details to process a step. E.g: To process a condition step.",
+                          "type": "integer",
+                          "meta:titleId": "journeyStepEventDataFetchFields##https://ns.adobe.com/experience/journeyOrchestration/fetchCustomCount##title##54101",
+                          "meta:descriptionId": "journeyStepEventDataFetchFields##https://ns.adobe.com/experience/journeyOrchestration/fetchCustomCount##description##21621",
+                          "meta:xdmType": "int",
+                          "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/fetchCustomCount",
+                          "tagNumber": 11
+                        }
+                      },
+                      "tagNumber": 1
+                    }
+                  },
+                  "tagNumber": 1
+                }
+              },
+              "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/stepEvents",
+              "tagNumber": 1
+            }
+          },
+          "tagNumber": 1
+        }
+      },
+      "tagNumber": 1
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/experience/journeyOrchestration/stepEvents/journeyStepEventDataFetchFields",
+  "meta:altId": "_experience.journeyorchestration.stepevents.journeystepeventdatafetchfields",
+  "id": "_experience.journeyorchestration.stepevents.journeystepeventdatafetchfields"
+}
