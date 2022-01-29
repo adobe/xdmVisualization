@@ -125,14 +125,6 @@
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:personID",
       "tagNumber": 7
-    },
-    "demoField": {
-      "title": "Demo Field",
-      "description": "Demo field.",
-      "type": "string",
-      "meta:xdmType": "string",
-      "meta:xdmField": "xdm:demoField",
-      "tagNumber": 8
     }
   },
   "meta:xdmId": "https://ns.adobe.com/xdm/context/profile",

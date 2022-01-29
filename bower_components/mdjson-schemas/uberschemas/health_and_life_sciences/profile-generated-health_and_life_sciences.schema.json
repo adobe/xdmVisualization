@@ -166,14 +166,6 @@
       "meta:xdmField": "xdm:personID",
       "tagNumber": 7
     },
-    "demoField": {
-      "title": "Demo Field",
-      "description": "Demo field.",
-      "type": "string",
-      "meta:xdmType": "string",
-      "meta:xdmField": "xdm:demoField",
-      "tagNumber": 8
-    },
     "consents": {
       "title": "Consents and Preferences",
       "description": "Specific Consent and Preference Options",
@@ -1271,7 +1263,7 @@
         }
       },
       "meta:xdmField": "xdm:consents",
-      "tagNumber": 9
+      "tagNumber": 8
     },
     "loyalty": {
       "type": "object",
@@ -1323,7 +1315,7 @@
           "meta:xdmField": "xdm:pointsExpiration",
           "tagNumber": 4,
           "items": {
-            "$ref": "obj09149452203983532.schema.json"
+            "$ref": "obj08916050546990273.schema.json"
           }
         },
         "pointsRedeemed": {
@@ -1378,7 +1370,7 @@
         }
       },
       "meta:xdmField": "xdm:loyalty",
-      "tagNumber": 10
+      "tagNumber": 9
     },
     "person": {
       "title": "Person",
@@ -1387,7 +1379,7 @@
       "meta:titleId": "profile-person-details##xdm:person##title##68851",
       "meta:descriptionId": "profile-person-details##xdm:person##description##18361",
       "meta:xdmField": "xdm:person",
-      "tagNumber": 11
+      "tagNumber": 10
     },
     "homeAddress": {
       "title": "Home address",
@@ -1396,7 +1388,7 @@
       "meta:titleId": "profile-personal-details##xdm:homeAddress##title##98571",
       "meta:descriptionId": "profile-personal-details##xdm:homeAddress##description##35241",
       "meta:xdmField": "xdm:homeAddress",
-      "tagNumber": 12
+      "tagNumber": 11
     },
     "personalEmail": {
       "title": "Personal email",
@@ -1405,7 +1397,7 @@
       "meta:titleId": "profile-personal-details##xdm:personalEmail##title##13501",
       "meta:descriptionId": "profile-personal-details##xdm:personalEmail##description##54181",
       "meta:xdmField": "xdm:personalEmail",
-      "tagNumber": 13
+      "tagNumber": 12
     },
     "homePhone": {
       "title": "Home phone",
@@ -1414,7 +1406,7 @@
       "meta:titleId": "profile-personal-details##xdm:homePhone##title##28261",
       "meta:descriptionId": "profile-personal-details##xdm:homePhone##description##45111",
       "meta:xdmField": "xdm:homePhone",
-      "tagNumber": 14
+      "tagNumber": 13
     },
     "mobilePhone": {
       "title": "Mobile phone",
@@ -1423,7 +1415,7 @@
       "meta:titleId": "profile-personal-details##xdm:mobilePhone##title##76241",
       "meta:descriptionId": "profile-personal-details##xdm:mobilePhone##description##51801",
       "meta:xdmField": "xdm:mobilePhone",
-      "tagNumber": 15
+      "tagNumber": 14
     },
     "faxPhone": {
       "title": "Fax phone",
@@ -1432,7 +1424,7 @@
       "meta:titleId": "profile-personal-details##xdm:faxPhone##title##15761",
       "meta:descriptionId": "profile-personal-details##xdm:faxPhone##description##5951",
       "meta:xdmField": "xdm:faxPhone",
-      "tagNumber": 16
+      "tagNumber": 15
     },
     "userAccount": {
       "type": "object",
@@ -1533,7 +1525,7 @@
         }
       },
       "meta:xdmField": "xdm:userAccount",
-      "tagNumber": 17
+      "tagNumber": 16
     },
     "workAddress": {
       "title": "Work Address",
@@ -1542,7 +1534,7 @@
       "meta:titleId": "profile-work-details##xdm:workAddress##title##70681",
       "meta:descriptionId": "profile-work-details##xdm:workAddress##description##6351",
       "meta:xdmField": "xdm:workAddress",
-      "tagNumber": 18
+      "tagNumber": 17
     },
     "workEmail": {
       "title": "Work Email",
@@ -1551,7 +1543,7 @@
       "meta:titleId": "profile-work-details##xdm:workEmail##title##5061",
       "meta:descriptionId": "profile-work-details##xdm:workEmail##description##77641",
       "meta:xdmField": "xdm:workEmail",
-      "tagNumber": 19
+      "tagNumber": 18
     },
     "workPhone": {
       "title": "Work Phone",
@@ -1560,7 +1552,7 @@
       "meta:titleId": "profile-work-details##xdm:workPhone##title##72561",
       "meta:descriptionId": "profile-work-details##xdm:workPhone##description##61541",
       "meta:xdmField": "xdm:workPhone",
-      "tagNumber": 20
+      "tagNumber": 19
     },
     "organizations": {
       "title": "Organizations",
@@ -1573,7 +1565,7 @@
         "tagNumber": 1
       },
       "meta:xdmField": "xdm:organizations",
-      "tagNumber": 21
+      "tagNumber": 20
     }
   },
   "meta:xdmId": "https://ns.adobe.com/xdm/context/profile-generated-health_and_life_sciences",

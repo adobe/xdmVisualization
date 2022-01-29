@@ -241,14 +241,6 @@
       "meta:xdmField": "xdm:personID",
       "tagNumber": 7
     },
-    "demoField": {
-      "title": "Demo Field",
-      "description": "Demo field.",
-      "type": "string",
-      "meta:xdmType": "string",
-      "meta:xdmField": "xdm:demoField",
-      "tagNumber": 8
-    },
     "timeSeriesEvents": {
       "title": "Time-series Events",
       "description": "List of time-series based events that relate to schemas based on record.",
@@ -261,7 +253,7 @@
         "tagNumber": 1
       },
       "meta:xdmField": "xdm:timeSeriesEvents",
-      "tagNumber": 9
+      "tagNumber": 8
     },
     "person": {
       "title": "Person",
@@ -276,15 +268,15 @@
         "profile-person-details##xdm:person##description##18361"
       ],
       "meta:xdmField": "xdm:person",
-      "tagNumber": 12
+      "tagNumber": 11
     },
     "personComponents": {
       "type": "array",
       "meta:xdmType": "array",
       "meta:xdmField": "xdm:personComponents",
-      "tagNumber": 13,
+      "tagNumber": 12,
       "items": {
-        "$ref": "obj7330541416807881.schema.json"
+        "$ref": "obj4854736340903387.schema.json"
       }
     },
     "b2b": {
@@ -473,7 +465,7 @@
         }
       },
       "meta:xdmField": "xdm:b2b",
-      "tagNumber": 14
+      "tagNumber": 13
     },
     "homeAddress": {
       "title": "Home address",
@@ -482,7 +474,7 @@
       "meta:titleId": "profile-personal-details##xdm:homeAddress##title##98571",
       "meta:descriptionId": "profile-personal-details##xdm:homeAddress##description##35241",
       "meta:xdmField": "xdm:homeAddress",
-      "tagNumber": 15
+      "tagNumber": 14
     },
     "personalEmail": {
       "title": "Personal email",
@@ -491,7 +483,7 @@
       "meta:titleId": "profile-personal-details##xdm:personalEmail##title##13501",
       "meta:descriptionId": "profile-personal-details##xdm:personalEmail##description##54181",
       "meta:xdmField": "xdm:personalEmail",
-      "tagNumber": 16
+      "tagNumber": 15
     },
     "homePhone": {
       "title": "Home phone",
@@ -506,7 +498,7 @@
         "profile-phones##xdm:homePhone##description##84951"
       ],
       "meta:xdmField": "xdm:homePhone",
-      "tagNumber": 17
+      "tagNumber": 16
     },
     "mobilePhone": {
       "title": "Mobile phone",
@@ -521,7 +513,7 @@
         "profile-phones##xdm:mobilePhone##description##47511"
       ],
       "meta:xdmField": "xdm:mobilePhone",
-      "tagNumber": 18
+      "tagNumber": 17
     },
     "faxPhone": {
       "title": "Fax phone",
@@ -536,7 +528,7 @@
         "profile-phones##xdm:faxPhone##description##42891"
       ],
       "meta:xdmField": "xdm:faxPhone",
-      "tagNumber": 19
+      "tagNumber": 18
     },
     "otherAddress": {
       "title": "Other Address",
@@ -545,7 +537,7 @@
       "meta:titleId": "profile-other-work-details##xdm:otherAddress##title##76831",
       "meta:descriptionId": "profile-other-work-details##xdm:otherAddress##description##11581",
       "meta:xdmField": "xdm:otherAddress",
-      "tagNumber": 20
+      "tagNumber": 19
     },
     "otherPhone": {
       "title": "Other Phone",
@@ -554,7 +546,7 @@
       "meta:titleId": "profile-other-work-details##xdm:otherPhone##title##93741",
       "meta:descriptionId": "profile-other-work-details##xdm:otherPhone##description##65191",
       "meta:xdmField": "xdm:otherPhone",
-      "tagNumber": 21
+      "tagNumber": 20
     },
     "extendedWorkDetails": {
       "type": "object",
@@ -638,7 +630,7 @@
         }
       },
       "meta:xdmField": "xdm:extendedWorkDetails",
-      "tagNumber": 22
+      "tagNumber": 21
     },
     "workAddress": {
       "title": "Work Address",
@@ -647,7 +639,7 @@
       "meta:titleId": "profile-work-details##xdm:workAddress##title##70681",
       "meta:descriptionId": "profile-work-details##xdm:workAddress##description##6351",
       "meta:xdmField": "xdm:workAddress",
-      "tagNumber": 23
+      "tagNumber": 22
     },
     "workEmail": {
       "title": "Work Email",
@@ -656,7 +648,7 @@
       "meta:titleId": "profile-work-details##xdm:workEmail##title##5061",
       "meta:descriptionId": "profile-work-details##xdm:workEmail##description##77641",
       "meta:xdmField": "xdm:workEmail",
-      "tagNumber": 24
+      "tagNumber": 23
     },
     "workPhone": {
       "title": "Work Phone",
@@ -671,7 +663,7 @@
         "profile-phones##xdm:workPhone##description##9241"
       ],
       "meta:xdmField": "xdm:workPhone",
-      "tagNumber": 25
+      "tagNumber": 24
     },
     "organizations": {
       "title": "Organizations",
@@ -684,13 +676,13 @@
         "tagNumber": 1
       },
       "meta:xdmField": "xdm:organizations",
-      "tagNumber": 26
+      "tagNumber": 25
     },
     "identityMap": {
       "type": "object",
       "meta:xdmType": "map",
       "meta:xdmField": "xdm:identityMap",
-      "tagNumber": 27,
+      "tagNumber": 26,
       "properties": {
         "mapObj": {
           "type": "array",
@@ -710,7 +702,7 @@
       "meta:titleId": "external-source-system-audit-details##xdm:extSourceSystemAudit##title##88841",
       "meta:descriptionId": "external-source-system-audit-details##xdm:extSourceSystemAudit##description##28131",
       "meta:xdmField": "xdm:extSourceSystemAudit",
-      "tagNumber": 28
+      "tagNumber": 27
     },
     "consents": {
       "title": "Consents and Preferences",
@@ -1809,7 +1801,7 @@
         }
       },
       "meta:xdmField": "xdm:consents",
-      "tagNumber": 29
+      "tagNumber": 28
     },
     "directMarketingAddress": {
       "title": "Direct marketing address",
@@ -1818,7 +1810,7 @@
       "meta:titleId": "profile-directmarketing##xdm:directMarketingAddress##title##80011",
       "meta:descriptionId": "profile-directmarketing##xdm:directMarketingAddress##description##81761",
       "meta:xdmField": "xdm:directMarketingAddress",
-      "tagNumber": 30
+      "tagNumber": 29
     },
     "directMarketingEmail": {
       "title": "Direct marketing email",
@@ -1827,7 +1819,7 @@
       "meta:titleId": "profile-directmarketing##xdm:directMarketingEmail##title##5111",
       "meta:descriptionId": "profile-directmarketing##xdm:directMarketingEmail##description##75171",
       "meta:xdmField": "xdm:directMarketingEmail",
-      "tagNumber": 31
+      "tagNumber": 30
     },
     "directMarketingPhone": {
       "title": "Direct marketing phone",
@@ -1836,7 +1828,7 @@
       "meta:titleId": "profile-directmarketing##xdm:directMarketingPhone##title##53051",
       "meta:descriptionId": "profile-directmarketing##xdm:directMarketingPhone##description##72381",
       "meta:xdmField": "xdm:directMarketingPhone",
-      "tagNumber": 32
+      "tagNumber": 31
     },
     "anonymousHostname": {
       "title": "Anonymous Hostname",
@@ -1846,7 +1838,7 @@
       "meta:descriptionId": "profile-inferred-person##xdm:anonymousHostname##description##25671",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:anonymousHostname",
-      "tagNumber": 33
+      "tagNumber": 32
     },
     "inferredAddress": {
       "title": "Inferred Address",
@@ -1855,7 +1847,7 @@
       "meta:titleId": "profile-inferred-person##xdm:inferredAddress##title##51121",
       "meta:descriptionId": "profile-inferred-person##xdm:inferredAddress##description##73941",
       "meta:xdmField": "xdm:inferredAddress",
-      "tagNumber": 34
+      "tagNumber": 33
     },
     "inferredCompany": {
       "title": "Inferred Company",
@@ -1865,7 +1857,7 @@
       "meta:descriptionId": "profile-inferred-person##xdm:inferredCompany##description##40781",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:inferredCompany",
-      "tagNumber": 35
+      "tagNumber": 34
     },
     "inferredCompanyStatus": {
       "title": "Inferred Company Status",
@@ -1875,7 +1867,7 @@
       "meta:descriptionId": "profile-inferred-person##xdm:inferredCompanyStatus##description##68141",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:inferredCompanyStatus",
-      "tagNumber": 36
+      "tagNumber": 35
     },
     "inferredMetropolitanArea": {
       "title": "Inferred Metropolitan Area",
@@ -1885,7 +1877,7 @@
       "meta:descriptionId": "profile-inferred-person##xdm:inferredMetropolitanArea##description##68531",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:inferredMetropolitanArea",
-      "tagNumber": 37
+      "tagNumber": 36
     },
     "inferredPhoneAreaCode": {
       "title": "Inferred Phone Area Code",
@@ -1895,7 +1887,7 @@
       "meta:descriptionId": "profile-inferred-person##xdm:inferredPhoneAreaCode##description##93211",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:inferredPhoneAreaCode",
-      "tagNumber": 38
+      "tagNumber": 37
     },
     "loyalty": {
       "type": "object",
@@ -1947,7 +1939,7 @@
           "meta:xdmField": "xdm:pointsExpiration",
           "tagNumber": 4,
           "items": {
-            "$ref": "obj3399641641403812.schema.json"
+            "$ref": "obj6717684503592358.schema.json"
           }
         },
         "pointsRedeemed": {
@@ -2002,7 +1994,7 @@
         }
       },
       "meta:xdmField": "xdm:loyalty",
-      "tagNumber": 39
+      "tagNumber": 38
     },
     "orgUnit": {
       "title": "Organizational unit",
@@ -2011,7 +2003,7 @@
       "meta:titleId": "profile-owning-entities##xdm:orgUnit##title##20321",
       "meta:descriptionId": "profile-owning-entities##xdm:orgUnit##description##30781",
       "meta:xdmField": "xdm:orgUnit",
-      "tagNumber": 40
+      "tagNumber": 39
     },
     "geoUnit": {
       "title": "Geographical unit",
@@ -2020,7 +2012,7 @@
       "meta:titleId": "profile-owning-entities##xdm:geoUnit##title##91451",
       "meta:descriptionId": "profile-owning-entities##xdm:geoUnit##description##30521",
       "meta:xdmField": "xdm:geoUnit",
-      "tagNumber": 41
+      "tagNumber": 40
     },
     "personalFinances": {
       "type": "object",
@@ -2061,7 +2053,7 @@
           "meta:xdmField": "xdm:creditScores",
           "tagNumber": 3,
           "items": {
-            "$ref": "obj96840621311189.schema.json"
+            "$ref": "obj09262952209972797.schema.json"
           }
         },
         "employmentStatus": {
@@ -2178,7 +2170,7 @@
         }
       },
       "meta:xdmField": "xdm:personalFinances",
-      "tagNumber": 42
+      "tagNumber": 41
     },
     "preferredLanguage": {
       "title": "Preferred language",
@@ -2194,7 +2186,7 @@
       "meta:descriptionId": "profile-preferences-details##xdm:preferredLanguage##description##20921",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:preferredLanguage",
-      "tagNumber": 43
+      "tagNumber": 42
     },
     "profilePictureLink": {
       "title": "Profile picture link",
@@ -2204,7 +2196,7 @@
       "meta:descriptionId": "profile-preferences-details##xdm:profilePictureLink##description##42051",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:profilePictureLink",
-      "tagNumber": 44
+      "tagNumber": 43
     },
     "emailFormat": {
       "title": "Email format",
@@ -2214,7 +2206,7 @@
       "meta:descriptionId": "profile-preferences-details##xdm:emailFormat##description##4401",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:emailFormat",
-      "tagNumber": 45
+      "tagNumber": 44
     },
     "timeZone": {
       "title": "Time zone",
@@ -2229,7 +2221,7 @@
       "meta:descriptionId": "profile-preferences-details##xdm:timeZone##description##30991",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:timeZone",
-      "tagNumber": 46
+      "tagNumber": 45
     },
     "identityPrivacyInfo": {
       "title": "Identity level privacy information",
@@ -2239,7 +2231,7 @@
       "meta:titleId": "profile-privacy##xdm:identityPrivacyInfo##title##16881",
       "meta:descriptionId": "profile-privacy##xdm:identityPrivacyInfo##description##50281",
       "meta:xdmField": "xdm:identityPrivacyInfo",
-      "tagNumber": 49,
+      "tagNumber": 48,
       "properties": {
         "mapObj": {
           "title": "User namespace",
@@ -2308,7 +2300,7 @@
         "tagNumber": 1
       },
       "meta:xdmField": "xdm:pushNotificationTokens",
-      "tagNumber": 50
+      "tagNumber": 49
     },
     "pushNotificationDetails": {
       "title": "Push details",
@@ -2318,9 +2310,9 @@
       "meta:descriptionId": "profile-push-notification-details##xdm:pushNotificationDetails##description##88351",
       "meta:xdmType": "array",
       "meta:xdmField": "xdm:pushNotificationDetails",
-      "tagNumber": 51,
+      "tagNumber": 50,
       "items": {
-        "$ref": "obj46175454131167637.schema.json"
+        "$ref": "obj3077442583300476.schema.json"
       }
     },
     "segmentMembership": {
@@ -2329,7 +2321,7 @@
       "meta:xdmType": "map",
       "meta:titleId": "profile-segmentation##xdm:segmentMembership##title##24061",
       "meta:xdmField": "xdm:segmentMembership",
-      "tagNumber": 53,
+      "tagNumber": 52,
       "properties": {
         "mapObj": {
           "title": "Segment membership per namespace",
@@ -2358,7 +2350,7 @@
         "tagNumber": 1
       },
       "meta:xdmField": "xdm:subscriptions",
-      "tagNumber": 54
+      "tagNumber": 53
     },
     "telecomSubscription": {
       "type": "object",
@@ -2401,7 +2393,7 @@
           "meta:xdmField": "xdm:internetSubscription",
           "tagNumber": 4,
           "items": {
-            "$ref": "obj5870720257933701.schema.json"
+            "$ref": "obj1382208439110728.schema.json"
           }
         },
         "landlineSubscription": {
@@ -2412,7 +2404,7 @@
           "meta:xdmField": "xdm:landlineSubscription",
           "tagNumber": 5,
           "items": {
-            "$ref": "obj7718221125715261.schema.json"
+            "$ref": "obj09004109848862085.schema.json"
           }
         },
         "mediaSubscription": {
@@ -2423,7 +2415,7 @@
           "meta:xdmField": "xdm:mediaSubscription",
           "tagNumber": 6,
           "items": {
-            "$ref": "obj5426317150611444.schema.json"
+            "$ref": "obj80114650106622.schema.json"
           }
         },
         "mobileSubscription": {
@@ -2434,12 +2426,12 @@
           "meta:xdmField": "xdm:mobileSubscription",
           "tagNumber": 7,
           "items": {
-            "$ref": "obj41550102416593115.schema.json"
+            "$ref": "obj2571485470160897.schema.json"
           }
         }
       },
       "meta:xdmField": "xdm:telecomSubscription",
-      "tagNumber": 55
+      "tagNumber": 54
     },
     "testProfile": {
       "title": "Test profile",
@@ -2450,7 +2442,7 @@
       "meta:descriptionId": "profile-test-profile##xdm:testProfile##description##82691",
       "meta:xdmType": "boolean",
       "meta:xdmField": "xdm:testProfile",
-      "tagNumber": 56
+      "tagNumber": 55
     },
     "travelPreferences": {
       "type": "object",
@@ -2813,7 +2805,7 @@
         }
       },
       "meta:xdmField": "xdm:travelPreferences",
-      "tagNumber": 57
+      "tagNumber": 56
     },
     "userAccount": {
       "type": "object",
@@ -2914,7 +2906,7 @@
         }
       },
       "meta:xdmField": "xdm:userAccount",
-      "tagNumber": 58
+      "tagNumber": 57
     }
   },
   "meta:xdmId": "https://ns.adobe.com/xdm/context/profile-generated",
