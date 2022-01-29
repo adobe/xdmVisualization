@@ -1,6 +1,4 @@
-##README
-
-#### xdmVisual4Git.sh
+### xdmVisual4Git.sh
 
 The xdmVisual4Git.sh is the main script for the visualization build and calls the below scripts in order.
 
