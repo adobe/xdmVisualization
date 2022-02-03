@@ -18,29 +18,38 @@
       "type": "object",
       "meta:xdmType": "object",
       "properties": {
-        "webhookID": {
-          "title": "Webhook ID",
-          "type": "string",
-          "description": "Unique ID of the Webhook called.",
-          "meta:xdmType": "string",
-          "meta:xdmField": "xdm:webhookID",
+        "callWebhook": {
+          "title": "Call Webhook",
+          "type": "object",
+          "meta:xdmType": "object",
+          "properties": {
+            "webhookID": {
+              "title": "Webhook ID",
+              "type": "string",
+              "description": "Unique ID of the Webhook called.",
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:webhookID",
+              "tagNumber": 1
+            },
+            "webhookName": {
+              "title": "Webhook Name",
+              "type": "string",
+              "description": "Name of the Webhook.",
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:webhookName",
+              "tagNumber": 2
+            },
+            "responseCode": {
+              "title": "Response Code",
+              "type": "integer",
+              "description": "HTTP response code from Webhook request.",
+              "meta:xdmType": "int",
+              "meta:xdmField": "xdm:responseCode",
+              "tagNumber": 3
+            }
+          },
+          "meta:xdmField": "xdm:callWebhook",
           "tagNumber": 1
-        },
-        "webhookName": {
-          "title": "Webhook Name",
-          "type": "string",
-          "description": "Name of the Webhook.",
-          "meta:xdmType": "string",
-          "meta:xdmField": "xdm:webhookName",
-          "tagNumber": 2
-        },
-        "responseCode": {
-          "title": "Response Code",
-          "type": "integer",
-          "description": "HTTP response code from Webhook request.",
-          "meta:xdmType": "int",
-          "meta:xdmField": "xdm:responseCode",
-          "tagNumber": 3
         }
       },
       "meta:xdmField": "xdm:leadOperation",

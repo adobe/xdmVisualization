@@ -85,7 +85,7 @@
       "meta:xdmField": "xdm:accountComponents",
       "tagNumber": 5,
       "items": {
-        "$ref": "obj5918020033213856.schema.json"
+        "$ref": "obj23381622896703091.schema.json"
       }
     },
     "accountName": {
@@ -168,7 +168,7 @@
     },
     "partnerAccountID": {
       "title": "Partner Account Id",
-      "description": "Partner accounts are accounts that a channel manager uses to manage partner organizations, partner users, and activities when using a partner community or partner portal.",
+      "description": "Partner accounts are accounts that a channel manager uses to manage partner organizations, partner users, and activities when using a partner community or partner portal. This field could be used to collect data that may be considered to be sensitive or personal. Go here: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
       "type": "string",
       "meta:titleId": "account-details##xdm:partnerAccountID##title##2721",
       "meta:descriptionId": "account-details##xdm:partnerAccountID##description##96561",
@@ -188,7 +188,7 @@
     },
     "accountDescription": {
       "title": "Account Description",
-      "description": "Text description of the account.",
+      "description": "Text description of the account. This field could be used to collect data that may be considered to be sensitive or personal. Go here: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
       "type": "string",
       "meta:titleId": "account-details##xdm:accountDescription##title##74151",
       "meta:descriptionId": "account-details##xdm:accountDescription##description##3761",
@@ -208,7 +208,7 @@
     },
     "accountType": {
       "title": "Account Type",
-      "description": "Account Type.",
+      "description": "Account Type. This field could be used to collect data that may be considered to be sensitive or personal. Go here: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
       "type": "string",
       "meta:titleId": "account-details##xdm:accountType##title##60831",
       "meta:descriptionId": "account-details##xdm:accountType##description##2451",
@@ -234,7 +234,7 @@
         "EUR"
       ],
       "pattern": "^[A-Z]{3}$",
-      "description": "The ISO 4217 currency code.",
+      "description": "The ISO 4217 currency code. This field could be used to collect data that may be considered to be sensitive or personal. Go here: https://www.adobe.com/go/xdm-spi-and-pii for more information.",
       "meta:titleId": "account-details##xdm:defaultCurrencyCode##title##40311",
       "meta:descriptionId": "account-details##xdm:defaultCurrencyCode##description##24611",
       "meta:xdmType": "string",

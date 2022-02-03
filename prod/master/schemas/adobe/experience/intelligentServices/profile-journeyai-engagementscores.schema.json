@@ -116,6 +116,22 @@
                                                   "meta:xdmType": "number",
                                                   "meta:xdmField": "https://ns.adobe.com/experience/intelligentServices/unsubscriptionProbability",
                                                   "tagNumber": 5
+                                                },
+                                                "churnReasonCode": {
+                                                  "title": "Churn Reason Code",
+                                                  "description": "Churn Reason Code is a qualitative categorization of customer's predicted churn reason.",
+                                                  "type": "string",
+                                                  "meta:xdmType": "string",
+                                                  "meta:xdmField": "https://ns.adobe.com/experience/intelligentServices/churnReasonCode",
+                                                  "tagNumber": 6
+                                                },
+                                                "maxSendsInThirtyDays": {
+                                                  "title": "Max Sends In Thirty Days",
+                                                  "description": "Max Sends In Thirty Days is the recommended maximum number of message sends in thrity days to a customer to avoid customer churn.",
+                                                  "type": "number",
+                                                  "meta:xdmType": "number",
+                                                  "meta:xdmField": "https://ns.adobe.com/experience/intelligentServices/maxSendsInThirtyDays",
+                                                  "tagNumber": 7
                                                 }
                                               },
                                               "tagNumber": 1

@@ -276,7 +276,7 @@
       "meta:xdmField": "xdm:personComponents",
       "tagNumber": 12,
       "items": {
-        "$ref": "obj35582965509327735.schema.json"
+        "$ref": "obj35966009323618775.schema.json"
       }
     },
     "b2b": {
@@ -413,6 +413,39 @@
           "meta:xdmField": "xdm:companyWebsite",
           "tagNumber": 14
         },
+        "matchedAccount": {
+          "type": "object",
+          "meta:xdmType": "object",
+          "properties": {
+            "score": {
+              "title": "Score",
+              "description": "Account score.",
+              "type": "number",
+              "meta:status": "experimental",
+              "meta:xdmType": "number",
+              "meta:xdmField": "xdm:score",
+              "tagNumber": 1
+            },
+            "accountKey": {
+              "title": "Account Key",
+              "description": "Unique identifier of the Account related to the person.",
+              "$ref": "../datatypes/b2b/b2b-source.schema.json",
+              "meta:xdmField": "xdm:accountKey",
+              "tagNumber": 2
+            },
+            "scoreDate": {
+              "title": "Score Date",
+              "description": "Date score was recorded/computed.",
+              "type": "string",
+              "format": "date-time",
+              "meta:xdmType": "date-time",
+              "meta:xdmField": "xdm:scoreDate",
+              "tagNumber": 3
+            }
+          },
+          "meta:xdmField": "xdm:matchedAccount",
+          "tagNumber": 15
+        },
         "personType": {
           "title": "Person Type",
           "description": "Type of the B2B person.",
@@ -421,7 +454,7 @@
           "meta:descriptionId": "b2b-person-details##xdm:personType##description##93781",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:personType",
-          "tagNumber": 15
+          "tagNumber": 16
         },
         "personStatus": {
           "title": "Person Status",
@@ -431,7 +464,7 @@
           "meta:descriptionId": "b2b-person-details##xdm:personStatus##description##16951",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:personStatus",
-          "tagNumber": 16
+          "tagNumber": 17
         },
         "personSource": {
           "title": "Person Source",
@@ -441,7 +474,7 @@
           "meta:descriptionId": "b2b-person-details##xdm:personSource##description##87941",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:personSource",
-          "tagNumber": 17
+          "tagNumber": 18
         },
         "personScore": {
           "title": "Person Score",
@@ -451,7 +484,7 @@
           "meta:descriptionId": "b2b-person-details##xdm:personScore##description##32381",
           "meta:xdmType": "number",
           "meta:xdmField": "xdm:personScore",
-          "tagNumber": 18
+          "tagNumber": 19
         },
         "personGroupID": {
           "title": "Person Group ID",
@@ -461,7 +494,7 @@
           "meta:descriptionId": "b2b-person-details##xdm:personGroupID##description##97231",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:personGroupID",
-          "tagNumber": 19
+          "tagNumber": 20
         }
       },
       "meta:xdmField": "xdm:b2b",
@@ -1939,7 +1972,7 @@
           "meta:xdmField": "xdm:pointsExpiration",
           "tagNumber": 4,
           "items": {
-            "$ref": "obj6499287061499122.schema.json"
+            "$ref": "obj4661196762846038.schema.json"
           }
         },
         "pointsRedeemed": {
@@ -2053,7 +2086,7 @@
           "meta:xdmField": "xdm:creditScores",
           "tagNumber": 3,
           "items": {
-            "$ref": "obj3088880415983457.schema.json"
+            "$ref": "obj20120562275965082.schema.json"
           }
         },
         "employmentStatus": {
@@ -2312,7 +2345,7 @@
       "meta:xdmField": "xdm:pushNotificationDetails",
       "tagNumber": 50,
       "items": {
-        "$ref": "obj7154652319627333.schema.json"
+        "$ref": "obj5972724986337679.schema.json"
       }
     },
     "segmentMembership": {
@@ -2393,7 +2426,7 @@
           "meta:xdmField": "xdm:internetSubscription",
           "tagNumber": 4,
           "items": {
-            "$ref": "obj5867264783159611.schema.json"
+            "$ref": "obj21175999814543278.schema.json"
           }
         },
         "landlineSubscription": {
@@ -2404,7 +2437,7 @@
           "meta:xdmField": "xdm:landlineSubscription",
           "tagNumber": 5,
           "items": {
-            "$ref": "obj10898759727844776.schema.json"
+            "$ref": "obj6665935873292048.schema.json"
           }
         },
         "mediaSubscription": {
@@ -2415,7 +2448,7 @@
           "meta:xdmField": "xdm:mediaSubscription",
           "tagNumber": 6,
           "items": {
-            "$ref": "obj033939654187193025.schema.json"
+            "$ref": "obj554370151589201.schema.json"
           }
         },
         "mobileSubscription": {
@@ -2426,7 +2459,7 @@
           "meta:xdmField": "xdm:mobileSubscription",
           "tagNumber": 7,
           "items": {
-            "$ref": "obj40213503859096855.schema.json"
+            "$ref": "obj7163070433311154.schema.json"
           }
         }
       },

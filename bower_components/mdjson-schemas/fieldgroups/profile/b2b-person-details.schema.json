@@ -179,6 +179,39 @@
           "meta:xdmField": "xdm:companyWebsite",
           "tagNumber": 14
         },
+        "matchedAccount": {
+          "type": "object",
+          "meta:xdmType": "object",
+          "properties": {
+            "score": {
+              "title": "Score",
+              "description": "Account score.",
+              "type": "number",
+              "meta:status": "experimental",
+              "meta:xdmType": "number",
+              "meta:xdmField": "xdm:score",
+              "tagNumber": 1
+            },
+            "accountKey": {
+              "title": "Account Key",
+              "description": "Unique identifier of the Account related to the person.",
+              "$ref": "../../datatypes/b2b/b2b-source.schema.json",
+              "meta:xdmField": "xdm:accountKey",
+              "tagNumber": 2
+            },
+            "scoreDate": {
+              "title": "Score Date",
+              "description": "Date score was recorded/computed.",
+              "type": "string",
+              "format": "date-time",
+              "meta:xdmType": "date-time",
+              "meta:xdmField": "xdm:scoreDate",
+              "tagNumber": 3
+            }
+          },
+          "meta:xdmField": "xdm:matchedAccount",
+          "tagNumber": 15
+        },
         "personType": {
           "title": "Person Type",
           "description": "Type of the B2B person.",
@@ -187,7 +220,7 @@
           "meta:descriptionId": "b2b-person-details##xdm:personType##description##93781",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:personType",
-          "tagNumber": 15
+          "tagNumber": 16
         },
         "personStatus": {
           "title": "Person Status",
@@ -197,7 +230,7 @@
           "meta:descriptionId": "b2b-person-details##xdm:personStatus##description##16951",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:personStatus",
-          "tagNumber": 16
+          "tagNumber": 17
         },
         "personSource": {
           "title": "Person Source",
@@ -207,7 +240,7 @@
           "meta:descriptionId": "b2b-person-details##xdm:personSource##description##87941",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:personSource",
-          "tagNumber": 17
+          "tagNumber": 18
         },
         "personScore": {
           "title": "Person Score",
@@ -217,7 +250,7 @@
           "meta:descriptionId": "b2b-person-details##xdm:personScore##description##32381",
           "meta:xdmType": "number",
           "meta:xdmField": "xdm:personScore",
-          "tagNumber": 18
+          "tagNumber": 19
         },
         "personGroupID": {
           "title": "Person Group ID",
@@ -227,7 +260,7 @@
           "meta:descriptionId": "b2b-person-details##xdm:personGroupID##description##97231",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:personGroupID",
-          "tagNumber": 19
+          "tagNumber": 20
         }
       },
       "meta:xdmField": "xdm:b2b",

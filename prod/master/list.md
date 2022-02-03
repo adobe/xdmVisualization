@@ -235,6 +235,7 @@
 [fieldgroups.experience-event.events.linkclicks](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.events.linkclicks.html)<br/>
 [fieldgroups.experience-event.events.convert-lead](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.events.convert-lead.html)<br/>
 [fieldgroups.experience-event.events.add-to-list](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.events.add-to-list.html)<br/>
+[fieldgroups.experience-event.events.change-campaign-cadence](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.events.change-campaign-cadence.html)<br/>
 [fieldgroups.experience-event.events.opportunityupdated](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.events.opportunityupdated.html)<br/>
 [fieldgroups.experience-event.events.interesting-moment](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.events.interesting-moment.html)<br/>
 [fieldgroups.experience-event.events.formfilledout](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.events.formfilledout.html)<br/>
@@ -348,6 +349,7 @@
 [adobe.experience.implementations-ext](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.implementations-ext.html)<br/>
 [adobe.experience.aam-experienceevent](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.aam-experienceevent.html)<br/>
 [adobe.experience.aep-web-sdk-experienceevent](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.aep-web-sdk-experienceevent.html)<br/>
+[adobe.experience.workfront.changeevent](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.workfront.changeevent.html)<br/>
 [adobe.experience.analytics-experienceevent](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.analytics-experienceevent.html)<br/>
 [adobe.experience.intelligentServices.profile-journeyai-engagementscores](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.intelligentServices.profile-journeyai-engagementscores.html)<br/>
 [adobe.experience.intelligentServices.profile-journeyai-sendtimeoptimization](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.intelligentServices.profile-journeyai-sendtimeoptimization.html)<br/>

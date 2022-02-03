@@ -39,6 +39,22 @@
       "meta:xdmType": "int",
       "meta:xdmField": "xdm:offerCount",
       "tagNumber": 5
+    },
+    "scopeID": {
+      "title": "Offer Decision Scope ID",
+      "type": "string",
+      "description": "Unique Offer Decison Scope identifier(offer-activity-id+placement-id BASE64 encoded).",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:scopeID",
+      "tagNumber": 6
+    },
+    "activityID": {
+      "title": "Offer Activity ID",
+      "type": "string",
+      "description": "Unique Offer Decision identifier.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:activityID",
+      "tagNumber": 7
     }
   },
   "meta:xdmId": "https://ns.adobe.com/experience/customerJourneyManagement/offers",
