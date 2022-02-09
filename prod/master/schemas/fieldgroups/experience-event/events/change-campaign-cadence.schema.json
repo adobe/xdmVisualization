@@ -23,13 +23,12 @@
           "type": "object",
           "meta:xdmType": "object",
           "properties": {
-            "campaignID": {
-              "title": "Campaign ID",
-              "type": "integer",
-              "description": "Unique ID of the engagement campaign for which the cadence changed.",
-              "meta:xdmType": "int",
-              "meta:xdmField": "xdm:campaignID",
-              "tagNumber": 1
+            "campaignKey": {
+              "title": "Campaign Key",
+              "description": "Unique composite identifier of the Campaign.",
+              "$ref": "../../../datatypes/b2b/b2b-source.schema.json",
+              "meta:xdmField": "xdm:campaignKey",
+              "tagNumber": 2
             },
             "newCadence": {
               "title": "New Cadence",
@@ -37,7 +36,7 @@
               "description": "New value of engagement campaign cadence.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:newCadence",
-              "tagNumber": 2
+              "tagNumber": 3
             },
             "previousCadence": {
               "title": "Previous Cadence",
@@ -45,7 +44,7 @@
               "description": "Previous value of engagement campaign cadence.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:previousCadence",
-              "tagNumber": 3
+              "tagNumber": 4
             }
           },
           "meta:xdmField": "xdm:changeCampaignCadence",

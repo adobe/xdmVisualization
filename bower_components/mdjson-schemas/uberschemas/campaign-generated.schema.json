@@ -10,7 +10,8 @@
   "meta:abstract": true,
   "meta:status": [
     "stable",
-    "deprecated"
+    "deprecated",
+    "experimental"
   ],
   "meta:createdDate": [
     "2020-09-29",
@@ -110,7 +111,7 @@
       "meta:xdmField": "xdm:campaignComponents",
       "tagNumber": 8,
       "items": {
-        "$ref": "obj4593821167072838.schema.json"
+        "$ref": "obj0937636927693184.schema.json"
       }
     },
     "parentCampaignID": {
@@ -323,6 +324,14 @@
       "meta:descriptionId": "campaign-details##xdm:actualCost##description##29241",
       "meta:xdmField": "xdm:actualCost",
       "tagNumber": 29
+    },
+    "isDeleted": {
+      "title": "Soft Delete Flag",
+      "description": "Soft delete flag to indicate if the record is marked for deletion.",
+      "type": "boolean",
+      "meta:xdmType": "boolean",
+      "meta:xdmField": "xdm:isDeleted",
+      "tagNumber": 30
     }
   },
   "meta:xdmId": "https://ns.adobe.com/xdm/classes/campaign-generated",

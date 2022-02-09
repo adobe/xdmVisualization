@@ -13,6 +13,7 @@
   "meta:abstract": true,
   "meta:status": [
     "stable",
+    "experimental",
     "deprecated"
   ],
   "meta:titleId": [
@@ -134,13 +135,21 @@
       "meta:xdmField": "xdm:extSourceSystemAudit",
       "tagNumber": 10
     },
+    "isDeleted": {
+      "title": "Soft Delete Flag",
+      "description": "Soft delete flag to indicate if the record is marked for deletion.",
+      "type": "boolean",
+      "meta:xdmType": "boolean",
+      "meta:xdmField": "xdm:isDeleted",
+      "tagNumber": 11
+    },
     "opportunityComponents": {
       "type": "array",
       "meta:xdmType": "array",
       "meta:xdmField": "xdm:opportunityComponents",
-      "tagNumber": 11,
+      "tagNumber": 12,
       "items": {
-        "$ref": "obj8981080434236808.schema.json"
+        "$ref": "obj9621076079815587.schema.json"
       }
     },
     "campaignID": {
@@ -152,7 +161,7 @@
       "meta:descriptionId": "opportunity-details##xdm:campaignID##description##75271",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:campaignID",
-      "tagNumber": 12
+      "tagNumber": 13
     },
     "campaignKey": {
       "title": "Campaign Key",
@@ -161,7 +170,7 @@
       "meta:titleId": "opportunity-details##xdm:campaignKey##title##27181",
       "meta:descriptionId": "opportunity-details##xdm:campaignKey##description##65681",
       "meta:xdmField": "xdm:campaignKey",
-      "tagNumber": 13
+      "tagNumber": 14
     },
     "fiscalYear": {
       "title": "Fiscal Year",
@@ -172,7 +181,7 @@
       "meta:descriptionId": "opportunity-details##xdm:fiscalYear##description##76561",
       "meta:xdmType": "int",
       "meta:xdmField": "xdm:fiscalYear",
-      "tagNumber": 14
+      "tagNumber": 15
     },
     "fiscalQuarter": {
       "title": "Fiscal Quarter",
@@ -183,7 +192,7 @@
       "meta:descriptionId": "opportunity-details##xdm:fiscalQuarter##description##51531",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:fiscalQuarter",
-      "tagNumber": 15
+      "tagNumber": 16
     },
     "forecastCategory": {
       "title": "Forecast Category",
@@ -193,7 +202,7 @@
       "meta:descriptionId": "opportunity-details##xdm:forecastCategory##description##8331",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:forecastCategory",
-      "tagNumber": 16
+      "tagNumber": 17
     },
     "forecastCategoryName": {
       "title": "Forecast Category Name",
@@ -203,7 +212,7 @@
       "meta:descriptionId": "opportunity-details##xdm:forecastCategoryName##description##50891",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:forecastCategoryName",
-      "tagNumber": 17
+      "tagNumber": 18
     },
     "isClosed": {
       "title": "Closed Flag",
@@ -213,7 +222,7 @@
       "meta:descriptionId": "opportunity-details##xdm:isClosed##description##12351",
       "meta:xdmType": "boolean",
       "meta:xdmField": "xdm:isClosed",
-      "tagNumber": 18
+      "tagNumber": 19
     },
     "isWon": {
       "title": "Won Flag",
@@ -223,7 +232,7 @@
       "meta:descriptionId": "opportunity-details##xdm:isWon##description##20961",
       "meta:xdmType": "boolean",
       "meta:xdmField": "xdm:isWon",
-      "tagNumber": 19
+      "tagNumber": 20
     },
     "probabilityPercentage": {
       "title": "Probability Percentage",
@@ -235,7 +244,7 @@
       "meta:descriptionId": "opportunity-details##xdm:probabilityPercentage##description##52361",
       "meta:xdmType": "number",
       "meta:xdmField": "xdm:probabilityPercentage",
-      "tagNumber": 20
+      "tagNumber": 21
     },
     "opportunityAmount": {
       "title": "Opportunity Amount",
@@ -244,7 +253,7 @@
       "meta:titleId": "opportunity-details##xdm:opportunityAmount##title##95561",
       "meta:descriptionId": "opportunity-details##xdm:opportunityAmount##description##7771",
       "meta:xdmField": "xdm:opportunityAmount",
-      "tagNumber": 21
+      "tagNumber": 22
     },
     "expectedRevenue": {
       "title": "Expected Revenue",
@@ -253,7 +262,7 @@
       "meta:titleId": "opportunity-details##xdm:expectedRevenue##title##48771",
       "meta:descriptionId": "opportunity-details##xdm:expectedRevenue##description##18261",
       "meta:xdmField": "xdm:expectedRevenue",
-      "tagNumber": 22
+      "tagNumber": 23
     },
     "opportunityQuantity": {
       "title": "Opportunity Quantity",
@@ -265,7 +274,7 @@
       "meta:descriptionId": "opportunity-details##xdm:opportunityQuantity##description##5961",
       "meta:xdmType": "int",
       "meta:xdmField": "xdm:opportunityQuantity",
-      "tagNumber": 23
+      "tagNumber": 24
     },
     "expectedCloseDate": {
       "title": "Expected Close Date",
@@ -276,7 +285,7 @@
       "meta:descriptionId": "opportunity-details##xdm:expectedCloseDate##description##8381",
       "meta:xdmType": "date",
       "meta:xdmField": "xdm:expectedCloseDate",
-      "tagNumber": 24
+      "tagNumber": 25
     },
     "actualCloseDate": {
       "title": "Actual Close Date",
@@ -287,7 +296,7 @@
       "meta:descriptionId": "opportunity-details##xdm:actualCloseDate##description##1361",
       "meta:xdmType": "date-time",
       "meta:xdmField": "xdm:actualCloseDate",
-      "tagNumber": 25
+      "tagNumber": 26
     },
     "lastActivityDate": {
       "title": "Last Activity Date",
@@ -298,7 +307,7 @@
       "meta:descriptionId": "opportunity-details##xdm:lastActivityDate##description##72041",
       "meta:xdmType": "date-time",
       "meta:xdmField": "xdm:lastActivityDate",
-      "tagNumber": 26
+      "tagNumber": 27
     },
     "leadSource": {
       "title": "Lead Source",
@@ -308,7 +317,7 @@
       "meta:descriptionId": "opportunity-details##xdm:leadSource##description##97671",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:leadSource",
-      "tagNumber": 27
+      "tagNumber": 28
     },
     "nextStep": {
       "title": "Next Step",
@@ -318,7 +327,7 @@
       "meta:descriptionId": "opportunity-details##xdm:nextStep##description##98621",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:nextStep",
-      "tagNumber": 28
+      "tagNumber": 29
     }
   },
   "meta:xdmId": "https://ns.adobe.com/xdm/context/opportunity-generated",

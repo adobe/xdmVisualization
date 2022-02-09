@@ -10,7 +10,10 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "description": "XDM Business Opportunity is a standard Experience Data Model (XDM) class that captures the minimum required properties of a business opportunity. This XDM class can only be included in the profile for customers with the B2B or B2P Edition.",
-  "meta:status": "stable",
+  "meta:status": [
+    "stable",
+    "experimental"
+  ],
   "meta:titleId": [
     "opportunity##title##26231",
     "record##title##65961",
@@ -123,6 +126,14 @@
       "meta:descriptionId": "external-source-system-audit-details##xdm:extSourceSystemAudit##description##28131",
       "meta:xdmField": "xdm:extSourceSystemAudit",
       "tagNumber": 10
+    },
+    "isDeleted": {
+      "title": "Soft Delete Flag",
+      "description": "Soft delete flag to indicate if the record is marked for deletion.",
+      "type": "boolean",
+      "meta:xdmType": "boolean",
+      "meta:xdmField": "xdm:isDeleted",
+      "tagNumber": 11
     }
   },
   "meta:xdmId": "https://ns.adobe.com/xdm/context/opportunity",

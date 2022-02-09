@@ -12,6 +12,7 @@
   "meta:abstract": true,
   "meta:status": [
     "stable",
+    "experimental",
     "deprecated"
   ],
   "meta:titleId": [
@@ -92,13 +93,21 @@
       "meta:xdmField": "xdm:extSourceSystemAudit",
       "tagNumber": 6
     },
+    "isDeleted": {
+      "title": "Soft Delete Flag",
+      "description": "Soft delete flag to indicate if the record is marked for deletion.",
+      "type": "boolean",
+      "meta:xdmType": "boolean",
+      "meta:xdmField": "xdm:isDeleted",
+      "tagNumber": 7
+    },
     "marketingListComponents": {
       "type": "array",
       "meta:xdmType": "array",
       "meta:xdmField": "xdm:marketingListComponents",
-      "tagNumber": 7,
+      "tagNumber": 8,
       "items": {
-        "$ref": "obj15990187684057888.schema.json"
+        "$ref": "obj7555080204269704.schema.json"
       }
     }
   },

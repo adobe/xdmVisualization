@@ -10,7 +10,8 @@
   "meta:abstract": true,
   "meta:status": [
     "stable",
-    "deprecated"
+    "deprecated",
+    "experimental"
   ],
   "meta:createdDate": [
     "2020-08-18",
@@ -121,7 +122,7 @@
       "meta:xdmField": "xdm:campaignMemberComponents",
       "tagNumber": 9,
       "items": {
-        "$ref": "obj8010963157351663.schema.json"
+        "$ref": "obj9877904782756208.schema.json"
       }
     },
     "memberStatus": {
@@ -276,6 +277,14 @@
       "meta:xdmType": "date-time",
       "meta:xdmField": "xdm:firstRespondedDate",
       "tagNumber": 24
+    },
+    "isDeleted": {
+      "title": "Soft Delete Flag",
+      "description": "Soft delete flag to indicate if the record is marked for deletion.",
+      "type": "boolean",
+      "meta:xdmType": "boolean",
+      "meta:xdmField": "xdm:isDeleted",
+      "tagNumber": 25
     }
   },
   "meta:xdmId": "https://ns.adobe.com/xdm/context/campaign-member-generated",

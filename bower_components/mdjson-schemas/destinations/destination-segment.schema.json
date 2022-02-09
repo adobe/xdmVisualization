@@ -85,6 +85,33 @@
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:createdByID",
       "tagNumber": 6
+    },
+    "updateTime": {
+      "title": "Update Time",
+      "type": "string",
+      "format": "date-time",
+      "description": "The date and UTC time when the activation flow to the destination-segment mapping was updated",
+      "meta:xdmType": "date-time",
+      "meta:xdmField": "xdm:updateTime",
+      "tagNumber": 7
+    },
+    "startDate": {
+      "title": "Start Date",
+      "type": "string",
+      "format": "date",
+      "description": "The date when the activation flow will start activating the segment to the destination",
+      "meta:xdmType": "date",
+      "meta:xdmField": "xdm:startDate",
+      "tagNumber": 8
+    },
+    "endDate": {
+      "title": "End Date",
+      "type": "string",
+      "format": "date",
+      "description": "The date when the activation flow will stop activating the segment to the destination",
+      "meta:xdmType": "date",
+      "meta:xdmField": "xdm:endDate",
+      "tagNumber": 9
     }
   },
   "meta:xdmId": "https://ns.adobe.com/xdm/context/destination-segment",

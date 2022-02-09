@@ -125,6 +125,36 @@
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:connectionSpecID",
       "tagNumber": 10
+    },
+    "destinationCategory": {
+      "title": "Destination Category",
+      "type": "string",
+      "description": "Grouping of the destinations in the catalog depending on the marketing action that they help achieve",
+      "enum": [
+        "adobeSolutions",
+        "advertising",
+        "cloudStorage",
+        "emailMarketing",
+        "mobile engagement",
+        "personalization",
+        "social",
+        "streaming"
+      ],
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:destinationCategory",
+      "tagNumber": 11
+    },
+    "destinationFrequency": {
+      "title": "Destination Frequency",
+      "type": "string",
+      "description": "Indicates how often the audiences are sent to the destination",
+      "enum": [
+        "Batch",
+        "Streaming"
+      ],
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:destinationFrequency",
+      "tagNumber": 12
     }
   },
   "meta:xdmId": "https://ns.adobe.com/xdm/context/destination",

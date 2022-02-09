@@ -12,6 +12,7 @@
   "meta:abstract": true,
   "meta:status": [
     "stable",
+    "experimental",
     "deprecated"
   ],
   "meta:titleId": [
@@ -191,13 +192,21 @@
       "meta:xdmField": "xdm:extSourceSystemAudit",
       "tagNumber": 16
     },
+    "isDeleted": {
+      "title": "Soft Delete Flag",
+      "description": "Soft delete flag to indicate if the record is marked for deletion.",
+      "type": "boolean",
+      "meta:xdmType": "boolean",
+      "meta:xdmField": "xdm:isDeleted",
+      "tagNumber": 17
+    },
     "accountPersonComponents": {
       "type": "array",
       "meta:xdmType": "array",
       "meta:xdmField": "xdm:accountPersonComponents",
-      "tagNumber": 17,
+      "tagNumber": 18,
       "items": {
-        "$ref": "obj2667097086729662.schema.json"
+        "$ref": "obj23290195092419186.schema.json"
       }
     }
   },

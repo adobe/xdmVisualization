@@ -13,6 +13,7 @@
   "meta:abstract": true,
   "meta:status": [
     "stable",
+    "experimental",
     "deprecated"
   ],
   "meta:titleId": [
@@ -132,13 +133,21 @@
       "meta:xdmField": "xdm:extSourceSystemAudit",
       "tagNumber": 10
     },
+    "isDeleted": {
+      "title": "Soft Delete Flag",
+      "description": "Soft delete flag to indicate if the record is marked for deletion.",
+      "type": "boolean",
+      "meta:xdmType": "boolean",
+      "meta:xdmField": "xdm:isDeleted",
+      "tagNumber": 11
+    },
     "opportunityPersonComponents": {
       "type": "array",
       "meta:xdmType": "array",
       "meta:xdmField": "xdm:opportunityPersonComponents",
-      "tagNumber": 11,
+      "tagNumber": 12,
       "items": {
-        "$ref": "obj9601549563235166.schema.json"
+        "$ref": "obj9071719323205003.schema.json"
       }
     }
   },

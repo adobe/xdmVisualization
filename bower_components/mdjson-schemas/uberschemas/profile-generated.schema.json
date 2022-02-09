@@ -276,7 +276,7 @@
       "meta:xdmField": "xdm:personComponents",
       "tagNumber": 12,
       "items": {
-        "$ref": "obj7952748368006022.schema.json"
+        "$ref": "obj9967095709154177.schema.json"
       }
     },
     "b2b": {
@@ -736,6 +736,14 @@
       "meta:descriptionId": "external-source-system-audit-details##xdm:extSourceSystemAudit##description##28131",
       "meta:xdmField": "xdm:extSourceSystemAudit",
       "tagNumber": 27
+    },
+    "isDeleted": {
+      "title": "Soft Delete Flag",
+      "description": "Soft delete flag to indicate if the record is marked for deletion.",
+      "type": "boolean",
+      "meta:xdmType": "boolean",
+      "meta:xdmField": "xdm:isDeleted",
+      "tagNumber": 28
     },
     "consents": {
       "title": "Consents and Preferences",
@@ -1834,7 +1842,7 @@
         }
       },
       "meta:xdmField": "xdm:consents",
-      "tagNumber": 28
+      "tagNumber": 29
     },
     "directMarketingAddress": {
       "title": "Direct marketing address",
@@ -1843,7 +1851,7 @@
       "meta:titleId": "profile-directmarketing##xdm:directMarketingAddress##title##80011",
       "meta:descriptionId": "profile-directmarketing##xdm:directMarketingAddress##description##81761",
       "meta:xdmField": "xdm:directMarketingAddress",
-      "tagNumber": 29
+      "tagNumber": 30
     },
     "directMarketingEmail": {
       "title": "Direct marketing email",
@@ -1852,7 +1860,7 @@
       "meta:titleId": "profile-directmarketing##xdm:directMarketingEmail##title##5111",
       "meta:descriptionId": "profile-directmarketing##xdm:directMarketingEmail##description##75171",
       "meta:xdmField": "xdm:directMarketingEmail",
-      "tagNumber": 30
+      "tagNumber": 31
     },
     "directMarketingPhone": {
       "title": "Direct marketing phone",
@@ -1861,7 +1869,7 @@
       "meta:titleId": "profile-directmarketing##xdm:directMarketingPhone##title##53051",
       "meta:descriptionId": "profile-directmarketing##xdm:directMarketingPhone##description##72381",
       "meta:xdmField": "xdm:directMarketingPhone",
-      "tagNumber": 31
+      "tagNumber": 32
     },
     "anonymousHostname": {
       "title": "Anonymous Hostname",
@@ -1871,7 +1879,7 @@
       "meta:descriptionId": "profile-inferred-person##xdm:anonymousHostname##description##25671",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:anonymousHostname",
-      "tagNumber": 32
+      "tagNumber": 33
     },
     "inferredAddress": {
       "title": "Inferred Address",
@@ -1880,7 +1888,7 @@
       "meta:titleId": "profile-inferred-person##xdm:inferredAddress##title##51121",
       "meta:descriptionId": "profile-inferred-person##xdm:inferredAddress##description##73941",
       "meta:xdmField": "xdm:inferredAddress",
-      "tagNumber": 33
+      "tagNumber": 34
     },
     "inferredCompany": {
       "title": "Inferred Company",
@@ -1890,7 +1898,7 @@
       "meta:descriptionId": "profile-inferred-person##xdm:inferredCompany##description##40781",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:inferredCompany",
-      "tagNumber": 34
+      "tagNumber": 35
     },
     "inferredCompanyStatus": {
       "title": "Inferred Company Status",
@@ -1900,7 +1908,7 @@
       "meta:descriptionId": "profile-inferred-person##xdm:inferredCompanyStatus##description##68141",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:inferredCompanyStatus",
-      "tagNumber": 35
+      "tagNumber": 36
     },
     "inferredMetropolitanArea": {
       "title": "Inferred Metropolitan Area",
@@ -1910,7 +1918,7 @@
       "meta:descriptionId": "profile-inferred-person##xdm:inferredMetropolitanArea##description##68531",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:inferredMetropolitanArea",
-      "tagNumber": 36
+      "tagNumber": 37
     },
     "inferredPhoneAreaCode": {
       "title": "Inferred Phone Area Code",
@@ -1920,7 +1928,7 @@
       "meta:descriptionId": "profile-inferred-person##xdm:inferredPhoneAreaCode##description##93211",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:inferredPhoneAreaCode",
-      "tagNumber": 37
+      "tagNumber": 38
     },
     "loyalty": {
       "type": "object",
@@ -1972,7 +1980,7 @@
           "meta:xdmField": "xdm:pointsExpiration",
           "tagNumber": 4,
           "items": {
-            "$ref": "obj27790528233030365.schema.json"
+            "$ref": "obj2578442492925863.schema.json"
           }
         },
         "pointsRedeemed": {
@@ -2027,7 +2035,7 @@
         }
       },
       "meta:xdmField": "xdm:loyalty",
-      "tagNumber": 38
+      "tagNumber": 39
     },
     "orgUnit": {
       "title": "Organizational unit",
@@ -2036,7 +2044,7 @@
       "meta:titleId": "profile-owning-entities##xdm:orgUnit##title##20321",
       "meta:descriptionId": "profile-owning-entities##xdm:orgUnit##description##30781",
       "meta:xdmField": "xdm:orgUnit",
-      "tagNumber": 39
+      "tagNumber": 40
     },
     "geoUnit": {
       "title": "Geographical unit",
@@ -2045,7 +2053,7 @@
       "meta:titleId": "profile-owning-entities##xdm:geoUnit##title##91451",
       "meta:descriptionId": "profile-owning-entities##xdm:geoUnit##description##30521",
       "meta:xdmField": "xdm:geoUnit",
-      "tagNumber": 40
+      "tagNumber": 41
     },
     "personalFinances": {
       "type": "object",
@@ -2086,7 +2094,7 @@
           "meta:xdmField": "xdm:creditScores",
           "tagNumber": 3,
           "items": {
-            "$ref": "obj7730523689340998.schema.json"
+            "$ref": "obj24479431077047953.schema.json"
           }
         },
         "employmentStatus": {
@@ -2203,7 +2211,7 @@
         }
       },
       "meta:xdmField": "xdm:personalFinances",
-      "tagNumber": 41
+      "tagNumber": 42
     },
     "preferredLanguage": {
       "title": "Preferred language",
@@ -2219,7 +2227,7 @@
       "meta:descriptionId": "profile-preferences-details##xdm:preferredLanguage##description##20921",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:preferredLanguage",
-      "tagNumber": 42
+      "tagNumber": 43
     },
     "profilePictureLink": {
       "title": "Profile picture link",
@@ -2229,7 +2237,7 @@
       "meta:descriptionId": "profile-preferences-details##xdm:profilePictureLink##description##42051",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:profilePictureLink",
-      "tagNumber": 43
+      "tagNumber": 44
     },
     "emailFormat": {
       "title": "Email format",
@@ -2239,7 +2247,7 @@
       "meta:descriptionId": "profile-preferences-details##xdm:emailFormat##description##4401",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:emailFormat",
-      "tagNumber": 44
+      "tagNumber": 45
     },
     "timeZone": {
       "title": "Time zone",
@@ -2254,7 +2262,7 @@
       "meta:descriptionId": "profile-preferences-details##xdm:timeZone##description##30991",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:timeZone",
-      "tagNumber": 45
+      "tagNumber": 46
     },
     "identityPrivacyInfo": {
       "title": "Identity level privacy information",
@@ -2264,7 +2272,7 @@
       "meta:titleId": "profile-privacy##xdm:identityPrivacyInfo##title##16881",
       "meta:descriptionId": "profile-privacy##xdm:identityPrivacyInfo##description##50281",
       "meta:xdmField": "xdm:identityPrivacyInfo",
-      "tagNumber": 48,
+      "tagNumber": 49,
       "properties": {
         "mapObj": {
           "title": "User namespace",
@@ -2333,7 +2341,7 @@
         "tagNumber": 1
       },
       "meta:xdmField": "xdm:pushNotificationTokens",
-      "tagNumber": 49
+      "tagNumber": 50
     },
     "pushNotificationDetails": {
       "title": "Push details",
@@ -2343,9 +2351,9 @@
       "meta:descriptionId": "profile-push-notification-details##xdm:pushNotificationDetails##description##88351",
       "meta:xdmType": "array",
       "meta:xdmField": "xdm:pushNotificationDetails",
-      "tagNumber": 50,
+      "tagNumber": 51,
       "items": {
-        "$ref": "obj3599924887134345.schema.json"
+        "$ref": "obj5378067442312477.schema.json"
       }
     },
     "segmentMembership": {
@@ -2354,7 +2362,7 @@
       "meta:xdmType": "map",
       "meta:titleId": "profile-segmentation##xdm:segmentMembership##title##24061",
       "meta:xdmField": "xdm:segmentMembership",
-      "tagNumber": 52,
+      "tagNumber": 53,
       "properties": {
         "mapObj": {
           "title": "Segment membership per namespace",
@@ -2383,7 +2391,7 @@
         "tagNumber": 1
       },
       "meta:xdmField": "xdm:subscriptions",
-      "tagNumber": 53
+      "tagNumber": 54
     },
     "telecomSubscription": {
       "type": "object",
@@ -2426,7 +2434,7 @@
           "meta:xdmField": "xdm:internetSubscription",
           "tagNumber": 4,
           "items": {
-            "$ref": "obj3980571013706262.schema.json"
+            "$ref": "obj7942020280023434.schema.json"
           }
         },
         "landlineSubscription": {
@@ -2437,7 +2445,7 @@
           "meta:xdmField": "xdm:landlineSubscription",
           "tagNumber": 5,
           "items": {
-            "$ref": "obj8355761268460888.schema.json"
+            "$ref": "obj307455008240735.schema.json"
           }
         },
         "mediaSubscription": {
@@ -2448,7 +2456,7 @@
           "meta:xdmField": "xdm:mediaSubscription",
           "tagNumber": 6,
           "items": {
-            "$ref": "obj05128825798914849.schema.json"
+            "$ref": "obj7486039811050023.schema.json"
           }
         },
         "mobileSubscription": {
@@ -2459,12 +2467,12 @@
           "meta:xdmField": "xdm:mobileSubscription",
           "tagNumber": 7,
           "items": {
-            "$ref": "obj5525900496924068.schema.json"
+            "$ref": "obj7123558077327747.schema.json"
           }
         }
       },
       "meta:xdmField": "xdm:telecomSubscription",
-      "tagNumber": 54
+      "tagNumber": 55
     },
     "testProfile": {
       "title": "Test profile",
@@ -2475,7 +2483,7 @@
       "meta:descriptionId": "profile-test-profile##xdm:testProfile##description##82691",
       "meta:xdmType": "boolean",
       "meta:xdmField": "xdm:testProfile",
-      "tagNumber": 55
+      "tagNumber": 56
     },
     "travelPreferences": {
       "type": "object",
@@ -2838,7 +2846,7 @@
         }
       },
       "meta:xdmField": "xdm:travelPreferences",
-      "tagNumber": 56
+      "tagNumber": 57
     },
     "userAccount": {
       "type": "object",
@@ -2939,7 +2947,7 @@
         }
       },
       "meta:xdmField": "xdm:userAccount",
-      "tagNumber": 57
+      "tagNumber": 58
     }
   },
   "meta:xdmId": "https://ns.adobe.com/xdm/context/profile-generated",

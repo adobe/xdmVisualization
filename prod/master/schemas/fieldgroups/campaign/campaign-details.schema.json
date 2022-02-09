@@ -10,7 +10,10 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "description": "Captures properties related to business campaign details.",
-  "meta:status": "stable",
+  "meta:status": [
+    "stable",
+    "experimental"
+  ],
   "meta:createdDate": "2020-09-29",
   "meta:titleId": "campaign-details##title##42341",
   "meta:descriptionId": "campaign-details##description##51611",
@@ -226,6 +229,14 @@
       "meta:descriptionId": "campaign-details##xdm:actualCost##description##29241",
       "meta:xdmField": "xdm:actualCost",
       "tagNumber": 21
+    },
+    "isDeleted": {
+      "title": "Soft Delete Flag",
+      "description": "Soft delete flag to indicate if the record is marked for deletion.",
+      "type": "boolean",
+      "meta:xdmType": "boolean",
+      "meta:xdmField": "xdm:isDeleted",
+      "tagNumber": 22
     }
   },
   "meta:xdmId": "https://ns.adobe.com/xdm/mixins/campaign-details",

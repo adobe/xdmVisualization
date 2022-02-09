@@ -13,8 +13,8 @@
   "meta:abstract": true,
   "meta:status": [
     "stable",
-    "deprecated",
-    "experimental"
+    "experimental",
+    "deprecated"
   ],
   "meta:titleId": [
     "account##title##4841",
@@ -79,13 +79,21 @@
       "meta:xdmField": "xdm:extSourceSystemAudit",
       "tagNumber": 4
     },
+    "isDeleted": {
+      "title": "Soft Delete Flag",
+      "description": "Soft delete flag to indicate if the record is marked for deletion.",
+      "type": "boolean",
+      "meta:xdmType": "boolean",
+      "meta:xdmField": "xdm:isDeleted",
+      "tagNumber": 5
+    },
     "accountComponents": {
       "type": "array",
       "meta:xdmType": "array",
       "meta:xdmField": "xdm:accountComponents",
-      "tagNumber": 5,
+      "tagNumber": 6,
       "items": {
-        "$ref": "obj47634224271162195.schema.json"
+        "$ref": "obj3219850081446538.schema.json"
       }
     },
     "accountName": {
@@ -96,7 +104,7 @@
       "meta:descriptionId": "account-details##xdm:accountName##description##95101",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:accountName",
-      "tagNumber": 6
+      "tagNumber": 7
     },
     "accountTerritoryID": {
       "title": "Account Territory Id",
@@ -106,7 +114,7 @@
       "meta:descriptionId": "account-details##xdm:accountTerritoryID##description##93821",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:accountTerritoryID",
-      "tagNumber": 7
+      "tagNumber": 8
     },
     "accountScore": {
       "title": "Account Score",
@@ -114,21 +122,21 @@
       "meta:titleId": "account-details##xdm:accountScore##title##13421",
       "meta:xdmType": "number",
       "meta:xdmField": "xdm:accountScore",
-      "tagNumber": 8
+      "tagNumber": 9
     },
     "accountBillingAddress": {
       "title": "Account Billing Address",
       "$ref": "../datatypes/demographic/address.schema.json",
       "meta:titleId": "account-details##xdm:accountBillingAddress##title##39071",
       "meta:xdmField": "xdm:accountBillingAddress",
-      "tagNumber": 9
+      "tagNumber": 10
     },
     "accountShippingAddress": {
       "title": "Account Shipping Address",
       "$ref": "../datatypes/demographic/address.schema.json",
       "meta:titleId": "account-details##xdm:accountShippingAddress##title##77991",
       "meta:xdmField": "xdm:accountShippingAddress",
-      "tagNumber": 10
+      "tagNumber": 11
     },
     "accountPhysicalAddress": {
       "title": "Account Physical Address",
@@ -137,14 +145,14 @@
       "meta:titleId": "account-details##xdm:accountPhysicalAddress##title##97131",
       "meta:descriptionId": "account-details##xdm:accountPhysicalAddress##description##65881",
       "meta:xdmField": "xdm:accountPhysicalAddress",
-      "tagNumber": 11
+      "tagNumber": 12
     },
     "accountOrganization": {
       "title": "Account Organization",
       "$ref": "../datatypes/b2b/account-organization.schema.json",
       "meta:titleId": "account-details##xdm:accountOrganization##title##36981",
       "meta:xdmField": "xdm:accountOrganization",
-      "tagNumber": 12
+      "tagNumber": 13
     },
     "accountParentID": {
       "title": "Parent Account",
@@ -155,7 +163,7 @@
       "meta:descriptionId": "account-details##xdm:accountParentID##description##84671",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:accountParentID",
-      "tagNumber": 13
+      "tagNumber": 14
     },
     "accountParentKey": {
       "title": "Parent Account Key",
@@ -164,7 +172,7 @@
       "meta:titleId": "account-details##xdm:accountParentKey##title##4871",
       "meta:descriptionId": "account-details##xdm:accountParentKey##description##56171",
       "meta:xdmField": "xdm:accountParentKey",
-      "tagNumber": 14
+      "tagNumber": 15
     },
     "partnerAccountID": {
       "title": "Partner Account Id",
@@ -174,7 +182,7 @@
       "meta:descriptionId": "account-details##xdm:partnerAccountID##description##96561",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:partnerAccountID",
-      "tagNumber": 15
+      "tagNumber": 16
     },
     "accountNumber": {
       "title": "Account Number",
@@ -184,7 +192,7 @@
       "meta:descriptionId": "account-details##xdm:accountNumber##description##70351",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:accountNumber",
-      "tagNumber": 16
+      "tagNumber": 17
     },
     "accountDescription": {
       "title": "Account Description",
@@ -194,7 +202,7 @@
       "meta:descriptionId": "account-details##xdm:accountDescription##description##3761",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:accountDescription",
-      "tagNumber": 17
+      "tagNumber": 18
     },
     "accountSite": {
       "title": "Account Site Details",
@@ -204,7 +212,7 @@
       "meta:descriptionId": "account-details##xdm:accountSite##description##13291",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:accountSite",
-      "tagNumber": 18
+      "tagNumber": 19
     },
     "accountType": {
       "title": "Account Type",
@@ -214,7 +222,7 @@
       "meta:descriptionId": "account-details##xdm:accountType##description##2451",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:accountType",
-      "tagNumber": 19
+      "tagNumber": 20
     },
     "accountSourceType": {
       "title": "Account Source Type",
@@ -224,7 +232,7 @@
       "meta:descriptionId": "account-details##xdm:accountSourceType##description##48341",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:accountSourceType",
-      "tagNumber": 20
+      "tagNumber": 21
     },
     "defaultCurrencyCode": {
       "title": "Default Currency Code",
@@ -239,7 +247,7 @@
       "meta:descriptionId": "account-details##xdm:defaultCurrencyCode##description##24611",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:defaultCurrencyCode",
-      "tagNumber": 21
+      "tagNumber": 22
     },
     "accountOwnership": {
       "title": "Ownership",
@@ -249,7 +257,7 @@
       "meta:descriptionId": "account-details##xdm:accountOwnership##description##34291",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:accountOwnership",
-      "tagNumber": 22
+      "tagNumber": 23
     },
     "accountTradeStyle": {
       "title": "Account Trade Style",
@@ -259,7 +267,7 @@
       "meta:descriptionId": "account-details##xdm:accountTradeStyle##description##15121",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:accountTradeStyle",
-      "tagNumber": 23
+      "tagNumber": 24
     },
     "accountPhone": {
       "title": "Account Phone Number",
@@ -268,7 +276,7 @@
       "meta:titleId": "account-details##xdm:accountPhone##title##83391",
       "meta:descriptionId": "account-details##xdm:accountPhone##description##44571",
       "meta:xdmField": "xdm:accountPhone",
-      "tagNumber": 24
+      "tagNumber": 25
     },
     "accountFax": {
       "title": "Account Fax Number",
@@ -277,7 +285,7 @@
       "meta:titleId": "account-details##xdm:accountFax##title##15291",
       "meta:descriptionId": "account-details##xdm:accountFax##description##43381",
       "meta:xdmField": "xdm:accountFax",
-      "tagNumber": 25
+      "tagNumber": 26
     },
     "relatedAccounts": {
       "title": "Related Accounts",
@@ -292,7 +300,7 @@
         "tagNumber": 1
       },
       "meta:xdmField": "xdm:relatedAccounts",
-      "tagNumber": 26
+      "tagNumber": 27
     },
     "relatedAccountKeys": {
       "title": "Related Account Keys",
@@ -306,7 +314,7 @@
         "tagNumber": 1
       },
       "meta:xdmField": "xdm:relatedAccountKeys",
-      "tagNumber": 27
+      "tagNumber": 28
     }
   },
   "meta:xdmId": "https://ns.adobe.com/xdm/context/account-generated",

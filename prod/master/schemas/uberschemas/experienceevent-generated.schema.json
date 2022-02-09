@@ -1651,7 +1651,7 @@
           "meta:xdmField": "xdm:dataValueChanges",
           "tagNumber": 5,
           "items": {
-            "$ref": "obj200589125901661.schema.json"
+            "$ref": "obj38253003600809743.schema.json"
           }
         }
       },
@@ -1708,13 +1708,12 @@
           "type": "object",
           "meta:xdmType": "object",
           "properties": {
-            "campaignID": {
-              "title": "Campaign ID",
-              "type": "integer",
-              "description": "Unique ID of the engagement campaign for which the cadence changed.",
-              "meta:xdmType": "int",
-              "meta:xdmField": "xdm:campaignID",
-              "tagNumber": 1
+            "campaignKey": {
+              "title": "Campaign Key",
+              "description": "Unique composite identifier of the Campaign.",
+              "$ref": "../datatypes/b2b/b2b-source.schema.json",
+              "meta:xdmField": "xdm:campaignKey",
+              "tagNumber": 2
             },
             "newCadence": {
               "title": "New Cadence",
@@ -1722,7 +1721,7 @@
               "description": "New value of engagement campaign cadence.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:newCadence",
-              "tagNumber": 2
+              "tagNumber": 3
             },
             "previousCadence": {
               "title": "Previous Cadence",
@@ -1730,7 +1729,7 @@
               "description": "Previous value of engagement campaign cadence.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:previousCadence",
-              "tagNumber": 3
+              "tagNumber": 4
             }
           },
           "meta:xdmField": "xdm:changeCampaignCadence",
@@ -3377,7 +3376,7 @@
           "meta:xdmField": "xdm:diningReservations",
           "tagNumber": 1,
           "items": {
-            "$ref": "obj8163082817127469.schema.json"
+            "$ref": "obj9423352983104065.schema.json"
           }
         },
         "cancellation": {
@@ -3550,7 +3549,7 @@
           "meta:xdmField": "xdm:flightReservations",
           "tagNumber": 19,
           "items": {
-            "$ref": "obj8236859075209308.schema.json"
+            "$ref": "obj49049483856792864.schema.json"
           }
         },
         "lodgingReservations": {
@@ -3559,7 +3558,7 @@
           "meta:xdmField": "xdm:lodgingReservations",
           "tagNumber": 20,
           "items": {
-            "$ref": "obj26920858342483855.schema.json"
+            "$ref": "obj8000643553617819.schema.json"
           }
         },
         "vehicleReservations": {
@@ -3568,7 +3567,7 @@
           "meta:xdmField": "xdm:vehicleReservations",
           "tagNumber": 21,
           "items": {
-            "$ref": "obj8262902822758023.schema.json"
+            "$ref": "obj9821801531077579.schema.json"
           }
         }
       },

@@ -105,21 +105,37 @@
                   "meta:xdmField": "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/messageType",
                   "tagNumber": 8
                 },
-                "ajoCampaignID": {
-                  "title": "AJO Campaign ID",
+                "campaignID": {
+                  "title": "Campaign ID",
                   "type": "string",
-                  "description": " Unique ID of the AJO Campaign that triggered this message execution.",
+                  "description": " Unique ID of the Campaign that triggered this message execution.",
                   "meta:xdmType": "string",
-                  "meta:xdmField": "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/ajoCampaignID",
-                  "tagNumber": 9
-                },
-                "ajoCampaignVersionID": {
-                  "title": "AJO Campaign Version ID",
-                  "type": "string",
-                  "description": " Version ID of the AJO Campaign that triggered this message execution.",
-                  "meta:xdmType": "string",
-                  "meta:xdmField": "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/ajoCampaignVersionID",
+                  "meta:xdmField": "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/campaignID",
                   "tagNumber": 10
+                },
+                "campaignVersionID": {
+                  "title": "Campaign Version ID",
+                  "type": "string",
+                  "description": " Version ID of the Campaign that triggered this message execution.",
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/campaignVersionID",
+                  "tagNumber": 12
+                },
+                "campaignActionID": {
+                  "title": "Campaign Action ID",
+                  "type": "string",
+                  "description": "Action ID of the Campaign that triggered this message execution.",
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/campaignActionID",
+                  "tagNumber": 13
+                },
+                "batchInstanceID": {
+                  "title": "Batch Instance ID",
+                  "type": "string",
+                  "description": "GUID created at invocation of each new batch instance for a scheduled Journey or Campaign Action. E.g: If a scheduled Journey or Campaign Action runs at 8.00am and 10.00am, there will be two separate different batchInstanceID’s.",
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "https://ns.adobe.com/experience/customerJourneyManagement/messageExecution/batchInstanceID",
+                  "tagNumber": 14
                 }
               },
               "required": [

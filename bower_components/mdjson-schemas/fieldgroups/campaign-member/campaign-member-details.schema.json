@@ -10,7 +10,10 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "description": "An XDM Business Campaign Member.",
-  "meta:status": "stable",
+  "meta:status": [
+    "stable",
+    "experimental"
+  ],
   "meta:createdDate": "2020-08-18",
   "meta:titleId": "campaign-member-details##title##66341",
   "meta:descriptionId": "campaign-member-details##description##40731",
@@ -168,6 +171,14 @@
       "meta:xdmType": "date-time",
       "meta:xdmField": "xdm:firstRespondedDate",
       "tagNumber": 15
+    },
+    "isDeleted": {
+      "title": "Soft Delete Flag",
+      "description": "Soft delete flag to indicate if the record is marked for deletion.",
+      "type": "boolean",
+      "meta:xdmType": "boolean",
+      "meta:xdmField": "xdm:isDeleted",
+      "tagNumber": 16
     }
   },
   "meta:xdmId": "https://ns.adobe.com/xdm/context/campaign-member-details",

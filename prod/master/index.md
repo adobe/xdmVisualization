@@ -712,6 +712,7 @@
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.shared.external-source-system-audit-details.html">external-source-system-audit-details</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.shared.identitymap.html">identitymap</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.shared.person-identifier.html">person-identifier</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.shared.record-status.html">record-status</a></li>
 </ul>
 </details>
 </ul>
