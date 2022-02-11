@@ -1,0 +1,127 @@
+{
+  "type": "object",
+  "meta:xdmType": "object",
+  "properties": {
+    "subscriptionDetails": {
+      "title": "Subscription Details",
+      "$ref": "../datatypes/industry-verticals/telecom-subscription.schema.json",
+      "description": "Extension of the subscription data type to include subscription length, fees, status, etc.",
+      "meta:titleId": "profile-telecom-subscription##xdm:subscriptionDetails##title##77391",
+      "meta:descriptionId": "profile-telecom-subscription##xdm:subscriptionDetails##description##34981",
+      "meta:xdmField": "xdm:subscriptionDetails",
+      "tagNumber": 1
+    },
+    "phoneNumber": {
+      "title": "Phone Number",
+      "$ref": "../datatypes/demographic/phonenumber.schema.json",
+      "description": "Captures the phone number assigned to this device.",
+      "meta:titleId": "profile-telecom-subscription##xdm:phoneNumber##title##60901",
+      "meta:descriptionId": "profile-telecom-subscription##xdm:phoneNumber##description##56501",
+      "meta:xdmField": "xdm:phoneNumber",
+      "tagNumber": 2
+    },
+    "minutes": {
+      "title": "Minutes",
+      "type": "integer",
+      "description": "Number of monthly minutes available within the subscription.",
+      "meta:titleId": "profile-telecom-subscription##xdm:minutes##title##45901",
+      "meta:descriptionId": "profile-telecom-subscription##xdm:minutes##description##61981",
+      "meta:xdmType": "int",
+      "meta:xdmField": "xdm:minutes",
+      "tagNumber": 3
+    },
+    "voicemail": {
+      "title": "Voicemail",
+      "type": "boolean",
+      "description": "Flags if the landline subscription features include Voicemail.",
+      "meta:titleId": "profile-telecom-subscription##xdm:voicemail##title##18751",
+      "meta:descriptionId": "profile-telecom-subscription##xdm:voicemail##description##4521",
+      "meta:xdmType": "boolean",
+      "meta:xdmField": "xdm:voicemail",
+      "tagNumber": 4
+    },
+    "callForwarding": {
+      "title": "Call Forwarding",
+      "type": "boolean",
+      "description": "Flags if the landline subscription features include Call Forwarding.",
+      "meta:titleId": "profile-telecom-subscription##xdm:callForwarding##title##17281",
+      "meta:descriptionId": "profile-telecom-subscription##xdm:callForwarding##description##39201",
+      "meta:xdmType": "boolean",
+      "meta:xdmField": "xdm:callForwarding",
+      "tagNumber": 5
+    },
+    "callerID": {
+      "title": "Caller ID",
+      "type": "boolean",
+      "description": "Flags if the landline subscription features include Caller ID.",
+      "meta:titleId": "profile-telecom-subscription##xdm:callerID##title##6501",
+      "meta:descriptionId": "profile-telecom-subscription##xdm:callerID##description##21471",
+      "meta:xdmType": "boolean",
+      "meta:xdmField": "xdm:callerID",
+      "tagNumber": 6
+    },
+    "callBlocking": {
+      "title": "Call Blocking",
+      "type": "boolean",
+      "description": "Flags if the landline subscription features include Call Blocking.",
+      "meta:titleId": "profile-telecom-subscription##xdm:callBlocking##title##49861",
+      "meta:descriptionId": "profile-telecom-subscription##xdm:callBlocking##description##57901",
+      "meta:xdmType": "boolean",
+      "meta:xdmField": "xdm:callBlocking",
+      "tagNumber": 7
+    },
+    "callWaiting": {
+      "title": "Call Waiting",
+      "type": "boolean",
+      "description": "Flags if the landline subscription features include Call Waiting.",
+      "meta:titleId": "profile-telecom-subscription##xdm:callWaiting##title##87371",
+      "meta:descriptionId": "profile-telecom-subscription##xdm:callWaiting##description##46931",
+      "meta:xdmType": "boolean",
+      "meta:xdmField": "xdm:callWaiting",
+      "tagNumber": 8
+    },
+    "threeWayCalling": {
+      "title": "Three-Way Dialing",
+      "type": "boolean",
+      "description": "Flags if the landline subscription features include Three-Way Dialing.",
+      "meta:titleId": "profile-telecom-subscription##xdm:threeWayCalling##title##27471",
+      "meta:descriptionId": "profile-telecom-subscription##xdm:threeWayCalling##description##35821",
+      "meta:xdmType": "boolean",
+      "meta:xdmField": "xdm:threeWayCalling",
+      "tagNumber": 9
+    },
+    "internationalCalling": {
+      "title": "International Calling",
+      "type": "boolean",
+      "description": "Flags if the landline subscription features include International Calling.",
+      "meta:titleId": "profile-telecom-subscription##xdm:internationalCalling##title##82141",
+      "meta:descriptionId": "profile-telecom-subscription##xdm:internationalCalling##description##92231",
+      "meta:xdmType": "boolean",
+      "meta:xdmField": "xdm:internationalCalling",
+      "tagNumber": 10
+    },
+    "unlimitedLocalCalling": {
+      "title": "Unlimited Local Calling",
+      "type": "boolean",
+      "description": "Flags if the landline subscription features include Unlimited Local Calling.",
+      "meta:titleId": "profile-telecom-subscription##xdm:unlimitedLocalCalling##title##10491",
+      "meta:descriptionId": "profile-telecom-subscription##xdm:unlimitedLocalCalling##description##45861",
+      "meta:xdmType": "boolean",
+      "meta:xdmField": "xdm:unlimitedLocalCalling",
+      "tagNumber": 11
+    },
+    "unlimitedDomesticLongDistance": {
+      "title": "Unlimited Domestic Long Distance",
+      "type": "boolean",
+      "description": "Flags if the landline subscription features include Unlimited Domestic Long Distance.",
+      "meta:titleId": "profile-telecom-subscription##xdm:unlimitedDomesticLongDistance##title##65291",
+      "meta:descriptionId": "profile-telecom-subscription##xdm:unlimitedDomesticLongDistance##description##38691",
+      "meta:xdmType": "boolean",
+      "meta:xdmField": "xdm:unlimitedDomesticLongDistance",
+      "tagNumber": 12
+    }
+  },
+  "tagNumber": 1,
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "id": "obj5007355111956142.schema.json"
+}

@@ -142,8 +142,8 @@
         "storyPoints": {
           "title": "Story Points",
           "description": "Story points assigned to this object",
-          "type": "integer",
-          "meta:xdmType": "int",
+          "type": "number",
+          "meta:xdmType": "number",
           "meta:xdmField": "workfront:storyPoints",
           "tagNumber": 12
         },
