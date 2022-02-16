@@ -1,0 +1,137 @@
+{
+  "id": "_experience.journeyorchestration.serviceevents.segmentexportjob.",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Journey Orchestration service Events: SegmentExportJob Fields",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "description": "This event is in relation with journey and Segment Export Job service event fields",
+  "meta:status": "stable",
+  "meta:xdmType": "object",
+  "properties": {
+    "_experience": {
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "journeyOrchestration": {
+          "type": "object",
+          "meta:xdmType": "object",
+          "properties": {
+            "serviceEvents": {
+              "type": "object",
+              "meta:xdmType": "object",
+              "properties": {
+                "segmentExportJob": {
+                  "title": "Journey Orchestration Segment Export Job service event fields.",
+                  "type": "object",
+                  "meta:xdmType": "object",
+                  "properties": {
+                    "_experience": {
+                      "type": "object",
+                      "meta:xdmType": "object",
+                      "properties": {
+                        "journeyOrchestration": {
+                          "type": "object",
+                          "meta:xdmType": "object",
+                          "properties": {
+                            "serviceEvents": {
+                              "type": "object",
+                              "meta:xdmType": "object",
+                              "properties": {
+                                "ID": {
+                                  "title": "ID",
+                                  "type": "string",
+                                  "description": "The identifier of the segment export job triggered.",
+                                  "meta:xdmType": "string",
+                                  "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/ID",
+                                  "tagNumber": 1
+                                },
+                                "status": {
+                                  "title": "Status",
+                                  "type": "string",
+                                  "description": "The status of segment export job.",
+                                  "meta:xdmType": "string",
+                                  "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/status",
+                                  "tagNumber": 2
+                                },
+                                "exportCountTotal": {
+                                  "title": "Export Count Total",
+                                  "type": "integer",
+                                  "minimum": 0,
+                                  "maximum": 100000000000,
+                                  "description": "The max possible value of segment export job",
+                                  "meta:xdmType": "long",
+                                  "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/exportCountTotal",
+                                  "tagNumber": 3
+                                },
+                                "exportCountRealized": {
+                                  "title": "Export Count Realized",
+                                  "type": "integer",
+                                  "minimum": 0,
+                                  "maximum": 100000000000,
+                                  "description": "The actual number of segments exported through the job",
+                                  "meta:xdmType": "long",
+                                  "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/exportCountRealized",
+                                  "tagNumber": 4
+                                },
+                                "exportCountFailed": {
+                                  "title": "Export Count Failed",
+                                  "type": "integer",
+                                  "minimum": 0,
+                                  "maximum": 100000000000,
+                                  "description": "The number of segments failed while exporting through the job",
+                                  "meta:xdmType": "long",
+                                  "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/exportCountFailed",
+                                  "tagNumber": 5
+                                },
+                                "exportSegmentID": {
+                                  "title": "Export Segment ID",
+                                  "type": "string",
+                                  "description": "The identifier of the segment being exported",
+                                  "meta:xdmType": "string",
+                                  "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/exportSegmentID",
+                                  "tagNumber": 6
+                                },
+                                "eventType": {
+                                  "title": "Event Type",
+                                  "type": "string",
+                                  "description": "The event type indicating whether it is an error event of info event.",
+                                  "meta:xdmType": "string",
+                                  "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/eventType",
+                                  "tagNumber": 7
+                                },
+                                "eventCode": {
+                                  "title": "Event Code",
+                                  "type": "string",
+                                  "description": "The error code indicating the reason for corresponding eventType",
+                                  "meta:xdmType": "string",
+                                  "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/eventCode",
+                                  "tagNumber": 8
+                                }
+                              },
+                              "tagNumber": 1
+                            }
+                          },
+                          "tagNumber": 1
+                        }
+                      },
+                      "tagNumber": 1
+                    }
+                  },
+                  "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/segmentExportJob",
+                  "tagNumber": 1
+                }
+              },
+              "tagNumber": 1
+            }
+          },
+          "tagNumber": 1
+        }
+      },
+      "tagNumber": 1
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/experience/journeyOrchestration/serviceEvents/segmentExportJob/",
+  "meta:altId": "_experience.journeyorchestration.serviceevents.segmentexportjob.",
+  "id": "_experience.journeyorchestration.serviceevents.segmentexportjob."
+}

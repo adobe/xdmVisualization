@@ -218,7 +218,7 @@ module.exports = function(grunt) {
 
             prod : [
 
-                './prod/master/**/*',
+                './prod/fixanalyticsgsh/**/*',
 
             ],
 
@@ -252,7 +252,7 @@ module.exports = function(grunt) {
 
                 files : {
 
-                    './prod/master/<%= pkg.name %>.min.js' : [
+                    './prod/fixanalyticsgsh/<%= pkg.name %>.min.js' : [
                         //'./files/scripts/jquery.js',
                         //'./files/scripts/jquery.*.js',
                         './bower_components/uri.js/src/URI.js',
@@ -268,7 +268,7 @@ module.exports = function(grunt) {
                         './lib/example.js',
 
                     ],
-                    './prod/master/lib/preinit.js' : [
+                    './prod/fixanalyticsgsh/lib/preinit.js' : [
                         './lib/preinit.js',
 
                     ],
@@ -328,7 +328,7 @@ module.exports = function(grunt) {
 
                 files : {
 
-                    './prod/master/styles/<%= pkg.name %>.min.css' : './styles/sass/<%= pkg.name %>.scss',
+                    './prod/fixanalyticsgsh/styles/<%= pkg.name %>.min.css' : './styles/sass/<%= pkg.name %>.scss',
 
                 },
 
@@ -402,7 +402,7 @@ module.exports = function(grunt) {
                     {
 
                         src : './templates/index.html',
-                        dest : './prod/master/index.html',
+                        dest : './prod/fixanalyticsgsh/index.html',
 
                     },
 
@@ -416,7 +416,7 @@ module.exports = function(grunt) {
                     {
 
                         src : './templates/basic.html',
-                        dest : './prod/master/basic.html',
+                        dest : './prod/fixanalyticsgsh/basic.html',
 
                     },
 
@@ -451,7 +451,7 @@ module.exports = function(grunt) {
                             'images/**/*',
                             '!images/junk/**',
                         ],
-                        dest : './prod/master/',
+                        dest : './prod/fixanalyticsgsh/',
 
                     },
                     {
@@ -462,7 +462,7 @@ module.exports = function(grunt) {
                             '**/*.json',
                             '!*bower.json',
                         ],
-                        dest : './prod/master/schemas',
+                        dest : './prod/fixanalyticsgsh/schemas',
 
                     },
                     {
@@ -472,7 +472,7 @@ module.exports = function(grunt) {
                         src : [
                             '**/*',
                         ],
-                        dest : './prod/master/docs',
+                        dest : './prod/fixanalyticsgsh/docs',
 
                     }
 
@@ -491,7 +491,7 @@ module.exports = function(grunt) {
 
       'gh-pages' : {
         options: {
-          base: './prod/master/'
+          base: './prod/fixanalyticsgsh/'
         },
         src: ['**/*']
       },

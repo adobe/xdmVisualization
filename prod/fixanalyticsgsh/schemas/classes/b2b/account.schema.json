@@ -1,0 +1,82 @@
+{
+  "id": "_xdm.context.account",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "XDM Business Account",
+  "type": "object",
+  "meta:tags": {
+    "b2bSchema": true
+  },
+  "auditable": true,
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "description": "XDM Business Account is a standard Experience Data Model (XDM) class that captures the minimum required properties of a business account. This XDM class can only be included in the profile for customers with the B2B or B2P Edition.",
+  "meta:status": [
+    "stable",
+    "experimental"
+  ],
+  "meta:titleId": [
+    "account##title##4841",
+    "record##title##65961",
+    "external-source-system-audit-details##title##88991"
+  ],
+  "meta:descriptionId": [
+    "account##description##65781",
+    "record##description##3921",
+    "external-source-system-audit-details##description##98601"
+  ],
+  "meta:xdmType": "object",
+  "meta:createdDate": "2020-08-10",
+  "properties": {
+    "_id": {
+      "title": "Identifier",
+      "type": "string",
+      "format": "uri-reference",
+      "description": "A unique identifier for the record.",
+      "meta:titleId": "record##@id##title##51271",
+      "meta:descriptionId": "record##@id##description##16181",
+      "meta:xdmType": "string",
+      "meta:xdmField": "@id",
+      "tagNumber": 1
+    },
+    "accountID": {
+      "title": "Account Identifier",
+      "description": "Unique ID for the account.",
+      "type": "string",
+      "meta:status": "experimental",
+      "meta:titleId": "account##xdm:accountID##title##59121",
+      "meta:descriptionId": "account##xdm:accountID##description##27991",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:accountID",
+      "tagNumber": 2
+    },
+    "accountKey": {
+      "title": "Account Key",
+      "description": "Unique composite key identifier for the Account.",
+      "$ref": "../../datatypes/b2b/b2b-source.schema.json",
+      "meta:titleId": "account##xdm:accountKey##title##76911",
+      "meta:descriptionId": "account##xdm:accountKey##description##47311",
+      "meta:xdmField": "xdm:accountKey",
+      "tagNumber": 3
+    },
+    "extSourceSystemAudit": {
+      "title": "External Source System Audit Properties",
+      "$ref": "../../datatypes/auditing/external-source-system-audit.schema.json",
+      "description": "Audit attributes for external sources.",
+      "meta:titleId": "external-source-system-audit-details##xdm:extSourceSystemAudit##title##88841",
+      "meta:descriptionId": "external-source-system-audit-details##xdm:extSourceSystemAudit##description##28131",
+      "meta:xdmField": "xdm:extSourceSystemAudit",
+      "tagNumber": 4
+    },
+    "isDeleted": {
+      "title": "Soft Delete Flag",
+      "description": "Soft delete flag to indicate if the record is marked for deletion.",
+      "type": "boolean",
+      "meta:xdmType": "boolean",
+      "meta:xdmField": "xdm:isDeleted",
+      "tagNumber": 5
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/context/account",
+  "meta:altId": "_xdm.context.account",
+  "id": "_xdm.context.account"
+}
