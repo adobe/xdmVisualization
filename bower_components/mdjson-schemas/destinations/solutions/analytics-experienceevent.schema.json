@@ -18,7 +18,10 @@
   ],
   "meta:titleId": [
     "adobe-analytics##title##10671",
+    "experienceevent##title##58361",
+    "identitymap##title##90811",
     "time-series##title##66611",
+    "analytics-experienceevent##title##41701",
     "experienceevent-advertising##title##82361",
     "experienceevent-application##title##36001",
     "experienceevent-channel##title##21951",
@@ -37,11 +40,15 @@
     "experienceevent-shared##title##5521",
     "implementations-ext##title##99241",
     "experienceevent-enduserids##title##11201",
-    "commerce##title##731"
+    "commerce##title##731",
+    "proposition-interaction##title##38171"
   ],
   "meta:descriptionId": [
     "adobe-analytics##description##54661",
+    "experienceevent##description##41211",
+    "identitymap##description##41821",
     "time-series##description##35031",
+    "analytics-experienceevent##description##89241",
     "experienceevent-advertising##description##92721",
     "experienceevent-application##description##93521",
     "experienceevent-channel##description##17431",
@@ -60,16 +67,34 @@
     "experienceevent-shared##description##56371",
     "implementations-ext##description##92071",
     "experienceevent-enduserids##description##25641",
-    "commerce##description##79871"
+    "commerce##description##79871",
+    "proposition-interaction##description##45571"
   ],
   "meta:xdmType": "object",
-  "meta:createdDate": "2020-08-10",
   "meta:tags": {
     "industry": [
       "all"
     ]
   },
+  "meta:createdDate": "2020-08-10",
   "properties": {
+    "identityMap": {
+      "type": "object",
+      "meta:xdmType": "map",
+      "meta:xdmField": "xdm:identityMap",
+      "tagNumber": 1,
+      "properties": {
+        "mapObj": {
+          "type": "array",
+          "meta:xdmType": "array",
+          "items": {
+            "$ref": "../../datatypes/identityitem.schema.json",
+            "tagNumber": 1
+          },
+          "tagNumber": 1
+        }
+      }
+    },
     "_id": {
       "title": "Identifier",
       "type": "string",
@@ -79,7 +104,7 @@
       "meta:descriptionId": "time-series##@id##description##91771",
       "meta:xdmType": "string",
       "meta:xdmField": "@id",
-      "tagNumber": 1
+      "tagNumber": 2
     },
     "timestamp": {
       "title": "Timestamp",
@@ -90,7 +115,7 @@
       "meta:descriptionId": "time-series##xdm:timestamp##description##1861",
       "meta:xdmType": "date-time",
       "meta:xdmField": "xdm:timestamp",
-      "tagNumber": 2
+      "tagNumber": 3
     },
     "eventType": {
       "title": "Event Type",
@@ -100,7 +125,28 @@
       "meta:descriptionId": "time-series##xdm:eventType##description##27681",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:eventType",
-      "tagNumber": 3
+      "tagNumber": 4
+    },
+    "eventMergeId": {
+      "title": "ExperienceEvent merge ID",
+      "description": "An ID to correlate or merge multiple Experience events together that are essentially the same event or should be merged. This is intended to be populated by the data producer prior to ingestion.",
+      "type": "string",
+      "meta:titleId": "experienceevent##xdm:eventMergeId##title##19131",
+      "meta:descriptionId": "experienceevent##xdm:eventMergeId##description##15091",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:eventMergeId",
+      "tagNumber": 5
+    },
+    "producedBy": {
+      "title": "Produced By",
+      "description": "Value that describes the producer of the event - suggested values would be 'self', 'system', 'salesRep', etc. Can be used to filter out certain producers if needed.",
+      "type": "string",
+      "default": "self",
+      "meta:titleId": "experienceevent##xdm:producedBy##title##22021",
+      "meta:descriptionId": "experienceevent##xdm:producedBy##description##23981",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:producedBy",
+      "tagNumber": 6
     },
     "advertising": {
       "title": "Advertising",
@@ -109,7 +155,7 @@
       "meta:titleId": "experienceevent-advertising##xdm:advertising##title##83851",
       "meta:descriptionId": "experienceevent-advertising##xdm:advertising##description##21321",
       "meta:xdmField": "xdm:advertising",
-      "tagNumber": 4
+      "tagNumber": 7
     },
     "application": {
       "title": "Application",
@@ -118,7 +164,7 @@
       "meta:titleId": "experienceevent-application##xdm:application##title##97651",
       "meta:descriptionId": "experienceevent-application##xdm:application##description##28031",
       "meta:xdmField": "xdm:application",
-      "tagNumber": 5
+      "tagNumber": 8
     },
     "channel": {
       "title": "Experience channel",
@@ -127,7 +173,7 @@
       "meta:titleId": "experienceevent-channel##xdm:channel##title##98461",
       "meta:descriptionId": "experienceevent-channel##xdm:channel##description##29501",
       "meta:xdmField": "xdm:channel",
-      "tagNumber": 6
+      "tagNumber": 9
     },
     "directMarketing": {
       "title": "Direct marketing",
@@ -136,7 +182,7 @@
       "meta:titleId": "experienceevent-directmarketing##xdm:directMarketing##title##34631",
       "meta:descriptionId": "experienceevent-directmarketing##xdm:directMarketing##description##64681",
       "meta:xdmField": "xdm:directMarketing",
-      "tagNumber": 7
+      "tagNumber": 10
     },
     "environment": {
       "title": "Environment",
@@ -145,7 +191,7 @@
       "meta:titleId": "experienceevent-environment-details##xdm:environment##title##51051",
       "meta:descriptionId": "experienceevent-environment-details##xdm:environment##description##68071",
       "meta:xdmField": "xdm:environment",
-      "tagNumber": 8
+      "tagNumber": 11
     },
     "device": {
       "title": "Device",
@@ -154,7 +200,7 @@
       "meta:titleId": "experienceevent-environment-details##xdm:device##title##96081",
       "meta:descriptionId": "experienceevent-environment-details##xdm:device##description##29621",
       "meta:xdmField": "xdm:device",
-      "tagNumber": 9
+      "tagNumber": 12
     },
     "placeContext": {
       "title": "Place context",
@@ -163,7 +209,7 @@
       "meta:titleId": "experienceevent-environment-details##xdm:placeContext##title##83141",
       "meta:descriptionId": "experienceevent-environment-details##xdm:placeContext##description##71761",
       "meta:xdmField": "xdm:placeContext",
-      "tagNumber": 10
+      "tagNumber": 13
     },
     "marketing": {
       "title": "Marketing",
@@ -172,7 +218,7 @@
       "meta:titleId": "experienceevent-marketing##xdm:marketing##title##38331",
       "meta:descriptionId": "experienceevent-marketing##xdm:marketing##description##30041",
       "meta:xdmField": "xdm:marketing",
-      "tagNumber": 11
+      "tagNumber": 14
     },
     "media": {
       "title": "Media",
@@ -181,7 +227,7 @@
       "meta:titleId": "experienceevent-media##xdm:media##title##8591",
       "meta:descriptionId": "experienceevent-media##xdm:media##description##16281",
       "meta:xdmField": "xdm:media",
-      "tagNumber": 12
+      "tagNumber": 15
     },
     "profileStitch": {
       "title": "Profile stitch",
@@ -195,7 +241,7 @@
         "tagNumber": 1
       },
       "meta:xdmField": "xdm:profileStitch",
-      "tagNumber": 13
+      "tagNumber": 16
     },
     "search": {
       "title": "Search",
@@ -204,7 +250,7 @@
       "meta:titleId": "experienceevent-search##xdm:search##title##89841",
       "meta:descriptionId": "experienceevent-search##xdm:search##description##53361",
       "meta:xdmField": "xdm:search",
-      "tagNumber": 14
+      "tagNumber": 17
     },
     "segmentMembership": {
       "title": "Segment Membership Map",
@@ -212,7 +258,7 @@
       "meta:xdmType": "map",
       "meta:titleId": "experienceevent-segmentmembership##xdm:segmentMembership##title##48291",
       "meta:xdmField": "xdm:segmentMembership",
-      "tagNumber": 16,
+      "tagNumber": 19,
       "properties": {
         "mapObj": {
           "title": "Segment Membership per Namespace",
@@ -236,7 +282,7 @@
       "meta:titleId": "experienceevent-technical-details##xdm:dataSource##title##29731",
       "meta:descriptionId": "experienceevent-technical-details##xdm:dataSource##description##90171",
       "meta:xdmField": "xdm:dataSource",
-      "tagNumber": 17
+      "tagNumber": 20
     },
     "receivedTimestamp": {
       "title": "Received time stamp",
@@ -247,7 +293,7 @@
       "meta:descriptionId": "experienceevent-technical-details##xdm:receivedTimestamp##description##76481",
       "meta:xdmType": "date-time",
       "meta:xdmField": "xdm:receivedTimestamp",
-      "tagNumber": 18
+      "tagNumber": 21
     },
     "web": {
       "title": "Web",
@@ -256,7 +302,7 @@
       "meta:titleId": "experienceevent-web##xdm:web##title##43111",
       "meta:descriptionId": "experienceevent-web##xdm:web##description##40241",
       "meta:xdmField": "xdm:web",
-      "tagNumber": 19
+      "tagNumber": 22
     },
     "_experience": {
       "type": "object",
@@ -13607,9 +13653,30 @@
           "$ref": "../../adobe/experience/implementations.schema.json",
           "meta:xdmField": "https://ns.adobe.com/experience/implementations",
           "tagNumber": 4
+        },
+        "decisioning": {
+          "type": "object",
+          "meta:xdmType": "object",
+          "properties": {
+            "propositions": {
+              "title": "Involved Propositions",
+              "type": "array",
+              "description": "An array of decision propositions that contributed to the experience event. The experience event is attributed (at least partially) to those prior decisions/propositions. An individual profile's proposition-response history is maintained with these decision identifiers.",
+              "meta:titleId": "proposition-interaction##https://ns.adobe.com/experience/decisioning/propositions##title##37861",
+              "meta:descriptionId": "proposition-interaction##https://ns.adobe.com/experience/decisioning/propositions##description##42611",
+              "meta:xdmType": "array",
+              "items": {
+                "$ref": "../../adobe/experience/decisioning/proposition-interaction-detail.schema.json",
+                "tagNumber": 1
+              },
+              "meta:xdmField": "https://ns.adobe.com/experience/decisioning/propositions",
+              "tagNumber": 1
+            }
+          },
+          "tagNumber": 5
         }
       },
-      "tagNumber": 20
+      "tagNumber": 23
     },
     "userActivityRegion": {
       "title": "User activity region",
@@ -13640,7 +13707,7 @@
         }
       },
       "meta:xdmField": "xdm:userActivityRegion",
-      "tagNumber": 21
+      "tagNumber": 24
     },
     "endUserIDs": {
       "title": "EndUserIDs",
@@ -13649,7 +13716,7 @@
       "meta:titleId": "experienceevent-enduserids##xdm:endUserIDs##title##10151",
       "meta:descriptionId": "experienceevent-enduserids##xdm:endUserIDs##description##83081",
       "meta:xdmField": "xdm:endUserIDs",
-      "tagNumber": 22
+      "tagNumber": 25
     },
     "productListItems": {
       "title": "Product List Items",
@@ -13663,7 +13730,7 @@
         "tagNumber": 1
       },
       "meta:xdmField": "xdm:productListItems",
-      "tagNumber": 23
+      "tagNumber": 26
     },
     "commerce": {
       "title": "Commerce",
@@ -13672,10 +13739,14 @@
       "meta:titleId": "commerce##xdm:commerce##title##90751",
       "meta:descriptionId": "commerce##xdm:commerce##description##54861",
       "meta:xdmField": "xdm:commerce",
-      "tagNumber": 24
+      "tagNumber": 27
     }
   },
   "meta:xdmId": "https://ns.adobe.com/xdm/destinations/adobe-analytics",
   "meta:altId": "_xdm.destinations.adobe-analytics",
+  "required": [
+    "_id",
+    "timestamp"
+  ],
   "id": "_xdm.destinations.adobe-analytics"
 }

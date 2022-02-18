@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "id": "_experience.decisioning.frequency-capping-constraints",
+  "meta:abstract": true,
+  "meta:extensible": true,
+  "type": "object",
+  "title": "Frequency Capping Constraints",
+  "description": "Frequency capping constraints is a component of a decision option that defines the parameters for capping. Capping is the process of limiting how many times an option can be proposed, for an individual profile as well as across all profiles.",
+  "meta:status": "stable",
+  "meta:xdmType": "object",
+  "properties": {
+    "frequencyCappingConstraints": {
+      "type": "array",
+      "meta:xdmType": "array",
+      "meta:xdmField": "xdm:frequencyCappingConstraints",
+      "tagNumber": 1,
+      "items": {
+        "$ref": "obj6510025450820289.schema.json"
+      }
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/experience/decisioning/frequency-capping-constraints",
+  "meta:altId": "_experience.decisioning.frequency-capping-constraints",
+  "id": "_experience.decisioning.frequency-capping-constraints"
+}

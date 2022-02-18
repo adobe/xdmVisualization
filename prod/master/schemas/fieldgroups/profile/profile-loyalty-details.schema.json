@@ -12,7 +12,9 @@
       "automotive",
       "health_and_life_sciences",
       "high_tech",
-      "manufacturing"
+      "manufacturing",
+      "financial_services",
+      "telecom"
     ]
   },
   "description": "Loyalty details such as ID, points, join date, program, and status. ",
@@ -72,7 +74,7 @@
           "meta:xdmField": "xdm:pointsExpiration",
           "tagNumber": 4,
           "items": {
-            "$ref": "obj6264613455041088.schema.json"
+            "$ref": "obj7315707195591994.schema.json"
           }
         },
         "pointsRedeemed": {

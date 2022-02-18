@@ -109,6 +109,20 @@
               "meta:xdmField": "xdm:type",
               "tagNumber": 2
             },
+            "topics": {
+              "title": "Topics",
+              "description": "Topics of interest for personalizing this subscription.",
+              "type": "array",
+              "meta:xdmType": "array",
+              "items": {
+                "type": "string",
+                "maxLength": 15,
+                "meta:xdmType": "string",
+                "tagNumber": 1
+              },
+              "meta:xdmField": "xdm:topics",
+              "tagNumber": 3
+            },
             "subscribers": {
               "title": "Subscribers",
               "description": "The set of identifiers (email addresses, phone numbers, etc.) for this user who have subscribed",
@@ -117,7 +131,7 @@
               "meta:titleId": "consents-and-preferences##xdm:subscribers##title##13561",
               "meta:descriptionId": "consents-and-preferences##xdm:subscribers##description##86531",
               "meta:xdmField": "xdm:subscribers",
-              "tagNumber": 3,
+              "tagNumber": 4,
               "properties": {
                 "mapObj": {
                   "type": "object",

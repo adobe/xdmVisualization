@@ -117,6 +117,15 @@
         }
       },
       "tagNumber": 1
+    },
+    "frequencyCappingConstraints": {
+      "type": "array",
+      "meta:xdmType": "array",
+      "meta:xdmField": "xdm:frequencyCappingConstraints",
+      "tagNumber": 2,
+      "items": {
+        "$ref": "obj20762456981984334.schema.json"
+      }
     }
   },
   "meta:xdmId": "https://ns.adobe.com/experience/decisioning/personalized-content-option",

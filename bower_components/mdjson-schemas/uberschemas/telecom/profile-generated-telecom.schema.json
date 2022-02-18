@@ -16,6 +16,18 @@
     },
     {
       "industry": [
+        "retail",
+        "travel_and_hospitality",
+        "automotive",
+        "health_and_life_sciences",
+        "high_tech",
+        "manufacturing",
+        "financial_services",
+        "telecom"
+      ]
+    },
+    {
+      "industry": [
         "telecom"
       ]
     },
@@ -46,6 +58,7 @@
     "auditable##title##87231",
     "record##title##65961",
     "profile-consents##title##22741",
+    "profile-loyalty-details##title##15641",
     "profile-person-details##title##15141",
     "profile-personal-details##title##17051",
     "profile-telecom-subscription##title##34441",
@@ -57,6 +70,7 @@
     "auditable##description##48551",
     "record##description##3921",
     "profile-consents##description##42021",
+    "profile-loyalty-details##description##74351",
     "profile-person-details##description##51031",
     "profile-personal-details##description##5771",
     "profile-telecom-subscription##description##98821",
@@ -473,6 +487,20 @@
                           "meta:xdmField": "xdm:type",
                           "tagNumber": 2
                         },
+                        "topics": {
+                          "title": "Topics",
+                          "description": "Topics of interest for personalizing this subscription.",
+                          "type": "array",
+                          "meta:xdmType": "array",
+                          "items": {
+                            "type": "string",
+                            "maxLength": 15,
+                            "meta:xdmType": "string",
+                            "tagNumber": 1
+                          },
+                          "meta:xdmField": "xdm:topics",
+                          "tagNumber": 3
+                        },
                         "subscribers": {
                           "title": "Subscribers",
                           "description": "The set of identifiers (email addresses, phone numbers, etc.) for this user who have subscribed",
@@ -481,7 +509,7 @@
                           "meta:titleId": "consents-and-preferences##xdm:subscribers##title##13561",
                           "meta:descriptionId": "consents-and-preferences##xdm:subscribers##description##86531",
                           "meta:xdmField": "xdm:subscribers",
-                          "tagNumber": 3,
+                          "tagNumber": 4,
                           "properties": {
                             "mapObj": {
                               "type": "object",
@@ -631,6 +659,20 @@
                           "meta:xdmField": "xdm:type",
                           "tagNumber": 2
                         },
+                        "topics": {
+                          "title": "Topics",
+                          "description": "Topics of interest for personalizing this subscription.",
+                          "type": "array",
+                          "meta:xdmType": "array",
+                          "items": {
+                            "type": "string",
+                            "maxLength": 15,
+                            "meta:xdmType": "string",
+                            "tagNumber": 1
+                          },
+                          "meta:xdmField": "xdm:topics",
+                          "tagNumber": 3
+                        },
                         "subscribers": {
                           "title": "Subscribers",
                           "description": "The set of identifiers (email addresses, phone numbers, etc.) for this user who have subscribed",
@@ -639,7 +681,7 @@
                           "meta:titleId": "consents-and-preferences##xdm:subscribers##title##13561",
                           "meta:descriptionId": "consents-and-preferences##xdm:subscribers##description##86531",
                           "meta:xdmField": "xdm:subscribers",
-                          "tagNumber": 3,
+                          "tagNumber": 4,
                           "properties": {
                             "mapObj": {
                               "type": "object",
@@ -789,6 +831,20 @@
                           "meta:xdmField": "xdm:type",
                           "tagNumber": 2
                         },
+                        "topics": {
+                          "title": "Topics",
+                          "description": "Topics of interest for personalizing this subscription.",
+                          "type": "array",
+                          "meta:xdmType": "array",
+                          "items": {
+                            "type": "string",
+                            "maxLength": 15,
+                            "meta:xdmType": "string",
+                            "tagNumber": 1
+                          },
+                          "meta:xdmField": "xdm:topics",
+                          "tagNumber": 3
+                        },
                         "subscribers": {
                           "title": "Subscribers",
                           "description": "The set of identifiers (email addresses, phone numbers, etc.) for this user who have subscribed",
@@ -797,7 +853,7 @@
                           "meta:titleId": "consents-and-preferences##xdm:subscribers##title##13561",
                           "meta:descriptionId": "consents-and-preferences##xdm:subscribers##description##86531",
                           "meta:xdmField": "xdm:subscribers",
-                          "tagNumber": 3,
+                          "tagNumber": 4,
                           "properties": {
                             "mapObj": {
                               "type": "object",
@@ -1260,6 +1316,113 @@
       "meta:xdmField": "xdm:consents",
       "tagNumber": 8
     },
+    "loyalty": {
+      "type": "object",
+      "description": "Captures details related to the customer's loyalty rewards.",
+      "meta:descriptionId": "profile-loyalty-details##xdm:loyalty##description##85311",
+      "meta:xdmType": "object",
+      "properties": {
+        "joinDate": {
+          "title": "Program Join Date",
+          "type": "string",
+          "format": "date-time",
+          "description": "Date which the visitor registered for the loyalty program.",
+          "meta:titleId": "profile-loyalty-details##xdm:joinDate##title##8551",
+          "meta:descriptionId": "profile-loyalty-details##xdm:joinDate##description##23391",
+          "meta:xdmType": "date-time",
+          "meta:xdmField": "xdm:joinDate",
+          "tagNumber": 1
+        },
+        "loyaltyID": {
+          "title": "Program ID",
+          "type": "array",
+          "description": "The loyalty program ID(s) associated with a specific user, if they are enrolled in the client's loyalty program.",
+          "meta:titleId": "profile-loyalty-details##xdm:loyaltyID##title##40011",
+          "meta:descriptionId": "profile-loyalty-details##xdm:loyaltyID##description##22711",
+          "meta:xdmType": "array",
+          "items": {
+            "type": "string",
+            "meta:xdmType": "string",
+            "tagNumber": 1
+          },
+          "meta:xdmField": "xdm:loyaltyID",
+          "tagNumber": 2
+        },
+        "points": {
+          "title": "Program Points Balance",
+          "type": "number",
+          "description": "Current balance of the loyalty points/awards in a visitor's loyalty account.",
+          "meta:titleId": "profile-loyalty-details##xdm:points##title##69591",
+          "meta:descriptionId": "profile-loyalty-details##xdm:points##description##21771",
+          "meta:xdmType": "number",
+          "meta:xdmField": "xdm:points",
+          "tagNumber": 3
+        },
+        "pointsExpiration": {
+          "title": "Points Expiration",
+          "type": "array",
+          "meta:titleId": "profile-loyalty-details##xdm:pointsExpiration##title##13161",
+          "meta:xdmType": "array",
+          "meta:xdmField": "xdm:pointsExpiration",
+          "tagNumber": 4,
+          "items": {
+            "$ref": "obj07711317154466024.schema.json"
+          }
+        },
+        "pointsRedeemed": {
+          "title": "Points Redeemed",
+          "type": "number",
+          "description": "Amount of points applied toward a purchase or otherwise redeemed.",
+          "meta:titleId": "profile-loyalty-details##xdm:pointsRedeemed##title##651",
+          "meta:descriptionId": "profile-loyalty-details##xdm:pointsRedeemed##description##53491",
+          "meta:xdmType": "number",
+          "meta:xdmField": "xdm:pointsRedeemed",
+          "tagNumber": 5
+        },
+        "program": {
+          "title": "Program Name",
+          "type": "string",
+          "description": "This should define the loyalty progam in which a visitor is enrolled.",
+          "meta:titleId": "profile-loyalty-details##xdm:program##title##27571",
+          "meta:descriptionId": "profile-loyalty-details##xdm:program##description##36731",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:program",
+          "tagNumber": 6
+        },
+        "upgradeDate": {
+          "title": "Program Name",
+          "type": "string",
+          "description": "Date which the customer was upgraded to the next tier level.",
+          "meta:titleId": "profile-loyalty-details##xdm:upgradeDate##title##76171",
+          "meta:descriptionId": "profile-loyalty-details##xdm:upgradeDate##description##59701",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:upgradeDate",
+          "tagNumber": 7
+        },
+        "status": {
+          "title": "Status",
+          "type": "string",
+          "description": "Captures the visitor's loyalty progam status, such as active, disabled, or suspended.",
+          "meta:titleId": "profile-loyalty-details##xdm:status##title##74261",
+          "meta:descriptionId": "profile-loyalty-details##xdm:status##description##54341",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:status",
+          "tagNumber": 8
+        },
+        "tier": {
+          "title": "Tier",
+          "type": "string",
+          "description": "Captures the loyalty progam tier in which a visitor is enrolled.",
+          "meta:titleId": "profile-loyalty-details##xdm:tier##title##75921",
+          "meta:descriptionId": "profile-loyalty-details##xdm:tier##description##54761",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:tier",
+          "tagNumber": 9
+        }
+      },
+      "meta:xdmField": "xdm:loyalty",
+      "tagNumber": 9
+    },
     "person": {
       "title": "Person",
       "$ref": "../../datatypes/person/person.schema.json",
@@ -1267,7 +1430,7 @@
       "meta:titleId": "profile-person-details##xdm:person##title##68851",
       "meta:descriptionId": "profile-person-details##xdm:person##description##18361",
       "meta:xdmField": "xdm:person",
-      "tagNumber": 9
+      "tagNumber": 10
     },
     "homeAddress": {
       "title": "Home address",
@@ -1276,7 +1439,7 @@
       "meta:titleId": "profile-personal-details##xdm:homeAddress##title##98571",
       "meta:descriptionId": "profile-personal-details##xdm:homeAddress##description##35241",
       "meta:xdmField": "xdm:homeAddress",
-      "tagNumber": 10
+      "tagNumber": 11
     },
     "personalEmail": {
       "title": "Personal email",
@@ -1285,7 +1448,7 @@
       "meta:titleId": "profile-personal-details##xdm:personalEmail##title##13501",
       "meta:descriptionId": "profile-personal-details##xdm:personalEmail##description##54181",
       "meta:xdmField": "xdm:personalEmail",
-      "tagNumber": 11
+      "tagNumber": 12
     },
     "homePhone": {
       "title": "Home phone",
@@ -1294,7 +1457,7 @@
       "meta:titleId": "profile-personal-details##xdm:homePhone##title##28261",
       "meta:descriptionId": "profile-personal-details##xdm:homePhone##description##45111",
       "meta:xdmField": "xdm:homePhone",
-      "tagNumber": 12
+      "tagNumber": 13
     },
     "mobilePhone": {
       "title": "Mobile phone",
@@ -1303,7 +1466,7 @@
       "meta:titleId": "profile-personal-details##xdm:mobilePhone##title##76241",
       "meta:descriptionId": "profile-personal-details##xdm:mobilePhone##description##51801",
       "meta:xdmField": "xdm:mobilePhone",
-      "tagNumber": 13
+      "tagNumber": 14
     },
     "faxPhone": {
       "title": "Fax phone",
@@ -1312,7 +1475,7 @@
       "meta:titleId": "profile-personal-details##xdm:faxPhone##title##15761",
       "meta:descriptionId": "profile-personal-details##xdm:faxPhone##description##5951",
       "meta:xdmField": "xdm:faxPhone",
-      "tagNumber": 14
+      "tagNumber": 15
     },
     "telecomSubscription": {
       "type": "object",
@@ -1355,7 +1518,7 @@
           "meta:xdmField": "xdm:internetSubscription",
           "tagNumber": 4,
           "items": {
-            "$ref": "obj6362807516901754.schema.json"
+            "$ref": "obj47786553449783065.schema.json"
           }
         },
         "landlineSubscription": {
@@ -1366,7 +1529,7 @@
           "meta:xdmField": "xdm:landlineSubscription",
           "tagNumber": 5,
           "items": {
-            "$ref": "obj9897475529776543.schema.json"
+            "$ref": "obj4536945958638354.schema.json"
           }
         },
         "mediaSubscription": {
@@ -1377,7 +1540,7 @@
           "meta:xdmField": "xdm:mediaSubscription",
           "tagNumber": 6,
           "items": {
-            "$ref": "obj38597425578457467.schema.json"
+            "$ref": "obj7874118362031093.schema.json"
           }
         },
         "mobileSubscription": {
@@ -1388,12 +1551,12 @@
           "meta:xdmField": "xdm:mobileSubscription",
           "tagNumber": 7,
           "items": {
-            "$ref": "obj16046076205937676.schema.json"
+            "$ref": "obj5652736271371008.schema.json"
           }
         }
       },
       "meta:xdmField": "xdm:telecomSubscription",
-      "tagNumber": 15
+      "tagNumber": 16
     },
     "userAccount": {
       "type": "object",
@@ -1494,7 +1657,7 @@
         }
       },
       "meta:xdmField": "xdm:userAccount",
-      "tagNumber": 16
+      "tagNumber": 17
     },
     "workAddress": {
       "title": "Work Address",
@@ -1503,7 +1666,7 @@
       "meta:titleId": "profile-work-details##xdm:workAddress##title##70681",
       "meta:descriptionId": "profile-work-details##xdm:workAddress##description##6351",
       "meta:xdmField": "xdm:workAddress",
-      "tagNumber": 17
+      "tagNumber": 18
     },
     "workEmail": {
       "title": "Work Email",
@@ -1512,7 +1675,7 @@
       "meta:titleId": "profile-work-details##xdm:workEmail##title##5061",
       "meta:descriptionId": "profile-work-details##xdm:workEmail##description##77641",
       "meta:xdmField": "xdm:workEmail",
-      "tagNumber": 18
+      "tagNumber": 19
     },
     "workPhone": {
       "title": "Work Phone",
@@ -1521,7 +1684,7 @@
       "meta:titleId": "profile-work-details##xdm:workPhone##title##72561",
       "meta:descriptionId": "profile-work-details##xdm:workPhone##description##61541",
       "meta:xdmField": "xdm:workPhone",
-      "tagNumber": 19
+      "tagNumber": 20
     },
     "organizations": {
       "title": "Organizations",
@@ -1534,7 +1697,7 @@
         "tagNumber": 1
       },
       "meta:xdmField": "xdm:organizations",
-      "tagNumber": 20
+      "tagNumber": 21
     }
   },
   "meta:xdmId": "https://ns.adobe.com/xdm/context/profile-generated-telecom",

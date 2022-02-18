@@ -368,6 +368,7 @@
 [adobe.experience.decisioning.placement](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.decisioning.placement.html)<br/>
 [adobe.experience.decisioning.tags](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.decisioning.tags.html)<br/>
 [adobe.experience.decisioning.decisionevent-all](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.decisioning.decisionevent-all.html)<br/>
+[adobe.experience.decisioning.frequency-capping-constraints](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.decisioning.frequency-capping-constraints.html)<br/>
 [adobe.experience.decisioning.decision-scope](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.decisioning.decision-scope.html)<br/>
 [adobe.experience.decisioning.scope-details](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.decisioning.scope-details.html)<br/>
 [adobe.experience.decisioning.placement-detail](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.decisioning.placement-detail.html)<br/>

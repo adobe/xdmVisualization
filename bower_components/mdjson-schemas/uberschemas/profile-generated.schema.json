@@ -24,7 +24,9 @@
         "automotive",
         "health_and_life_sciences",
         "high_tech",
-        "manufacturing"
+        "manufacturing",
+        "financial_services",
+        "telecom"
       ]
     },
     {
@@ -276,7 +278,7 @@
       "meta:xdmField": "xdm:personComponents",
       "tagNumber": 12,
       "items": {
-        "$ref": "obj03334559898669176.schema.json"
+        "$ref": "obj17394441491707413.schema.json"
       }
     },
     "b2b": {
@@ -1057,6 +1059,20 @@
                           "meta:xdmField": "xdm:type",
                           "tagNumber": 2
                         },
+                        "topics": {
+                          "title": "Topics",
+                          "description": "Topics of interest for personalizing this subscription.",
+                          "type": "array",
+                          "meta:xdmType": "array",
+                          "items": {
+                            "type": "string",
+                            "maxLength": 15,
+                            "meta:xdmType": "string",
+                            "tagNumber": 1
+                          },
+                          "meta:xdmField": "xdm:topics",
+                          "tagNumber": 3
+                        },
                         "subscribers": {
                           "title": "Subscribers",
                           "description": "The set of identifiers (email addresses, phone numbers, etc.) for this user who have subscribed",
@@ -1065,7 +1081,7 @@
                           "meta:titleId": "consents-and-preferences##xdm:subscribers##title##13561",
                           "meta:descriptionId": "consents-and-preferences##xdm:subscribers##description##86531",
                           "meta:xdmField": "xdm:subscribers",
-                          "tagNumber": 3,
+                          "tagNumber": 4,
                           "properties": {
                             "mapObj": {
                               "type": "object",
@@ -1215,6 +1231,20 @@
                           "meta:xdmField": "xdm:type",
                           "tagNumber": 2
                         },
+                        "topics": {
+                          "title": "Topics",
+                          "description": "Topics of interest for personalizing this subscription.",
+                          "type": "array",
+                          "meta:xdmType": "array",
+                          "items": {
+                            "type": "string",
+                            "maxLength": 15,
+                            "meta:xdmType": "string",
+                            "tagNumber": 1
+                          },
+                          "meta:xdmField": "xdm:topics",
+                          "tagNumber": 3
+                        },
                         "subscribers": {
                           "title": "Subscribers",
                           "description": "The set of identifiers (email addresses, phone numbers, etc.) for this user who have subscribed",
@@ -1223,7 +1253,7 @@
                           "meta:titleId": "consents-and-preferences##xdm:subscribers##title##13561",
                           "meta:descriptionId": "consents-and-preferences##xdm:subscribers##description##86531",
                           "meta:xdmField": "xdm:subscribers",
-                          "tagNumber": 3,
+                          "tagNumber": 4,
                           "properties": {
                             "mapObj": {
                               "type": "object",
@@ -1373,6 +1403,20 @@
                           "meta:xdmField": "xdm:type",
                           "tagNumber": 2
                         },
+                        "topics": {
+                          "title": "Topics",
+                          "description": "Topics of interest for personalizing this subscription.",
+                          "type": "array",
+                          "meta:xdmType": "array",
+                          "items": {
+                            "type": "string",
+                            "maxLength": 15,
+                            "meta:xdmType": "string",
+                            "tagNumber": 1
+                          },
+                          "meta:xdmField": "xdm:topics",
+                          "tagNumber": 3
+                        },
                         "subscribers": {
                           "title": "Subscribers",
                           "description": "The set of identifiers (email addresses, phone numbers, etc.) for this user who have subscribed",
@@ -1381,7 +1425,7 @@
                           "meta:titleId": "consents-and-preferences##xdm:subscribers##title##13561",
                           "meta:descriptionId": "consents-and-preferences##xdm:subscribers##description##86531",
                           "meta:xdmField": "xdm:subscribers",
-                          "tagNumber": 3,
+                          "tagNumber": 4,
                           "properties": {
                             "mapObj": {
                               "type": "object",
@@ -1980,7 +2024,7 @@
           "meta:xdmField": "xdm:pointsExpiration",
           "tagNumber": 4,
           "items": {
-            "$ref": "obj13969862555211887.schema.json"
+            "$ref": "obj6850827063800795.schema.json"
           }
         },
         "pointsRedeemed": {
@@ -2094,7 +2138,7 @@
           "meta:xdmField": "xdm:creditScores",
           "tagNumber": 3,
           "items": {
-            "$ref": "obj26010017556817755.schema.json"
+            "$ref": "obj06249501251956424.schema.json"
           }
         },
         "employmentStatus": {
@@ -2353,7 +2397,7 @@
       "meta:xdmField": "xdm:pushNotificationDetails",
       "tagNumber": 51,
       "items": {
-        "$ref": "obj813764892992275.schema.json"
+        "$ref": "obj4400687905774967.schema.json"
       }
     },
     "segmentMembership": {
@@ -2434,7 +2478,7 @@
           "meta:xdmField": "xdm:internetSubscription",
           "tagNumber": 4,
           "items": {
-            "$ref": "obj39497685053074627.schema.json"
+            "$ref": "obj15206436520834954.schema.json"
           }
         },
         "landlineSubscription": {
@@ -2445,7 +2489,7 @@
           "meta:xdmField": "xdm:landlineSubscription",
           "tagNumber": 5,
           "items": {
-            "$ref": "obj5896763645351226.schema.json"
+            "$ref": "obj06300750672471755.schema.json"
           }
         },
         "mediaSubscription": {
@@ -2456,7 +2500,7 @@
           "meta:xdmField": "xdm:mediaSubscription",
           "tagNumber": 6,
           "items": {
-            "$ref": "obj22740476578767588.schema.json"
+            "$ref": "obj9687411553570227.schema.json"
           }
         },
         "mobileSubscription": {
@@ -2467,7 +2511,7 @@
           "meta:xdmField": "xdm:mobileSubscription",
           "tagNumber": 7,
           "items": {
-            "$ref": "obj05078314801507888.schema.json"
+            "$ref": "obj960509439706321.schema.json"
           }
         }
       },
