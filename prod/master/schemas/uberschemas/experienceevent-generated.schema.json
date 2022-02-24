@@ -204,9 +204,11 @@
   "meta:createdDate": [
     "2020-08-10",
     "2021-02-19",
+    "2022-02-14",
     "2022-01-13",
     "2022-01-25",
     "2020-12-02",
+    "2022-02-15",
     "2021-01-14",
     "2021-01-07",
     "2021-01-13",
@@ -396,6 +398,7 @@
   ],
   "meta:conditionalField": "xdm:eventType",
   "meta:conditionalValue": [
+    "leadOperation.addToCampaign",
     "listOperation.addToList",
     "opportunityEvent.addToOpportunity",
     "leadOperation.callWebhook",
@@ -414,6 +417,7 @@
     "opportunityEvent.opportunityUpdated",
     "listOperation.removeFromList",
     "opportunityEvent.removeFromOpportunity",
+    "leadOperation.revenueStageChanged",
     "leadOperation.scoreChanged",
     "leadOperation.statusInCampaignProgressionChanged",
     "web.webpagedetails.pageViews"
@@ -1518,146 +1522,6 @@
       "meta:xdmField": "xdm:supportRequest",
       "tagNumber": 14
     },
-    "listOperations": {
-      "title": "List Operations",
-      "type": "object",
-      "meta:titleId": [
-        "add-to-list##xdm:listOperations##title##56911",
-        "remove-from-list##xdm:listOperations##title##35141"
-      ],
-      "meta:xdmType": "object",
-      "properties": {
-        "listID": {
-          "title": "List ID",
-          "type": "string",
-          "description": "Unique ID of the Marketing List.",
-          "meta:status": "experimental",
-          "meta:titleId": [
-            "add-to-list##xdm:listID##title##63411",
-            "remove-from-list##xdm:listID##title##54211"
-          ],
-          "meta:descriptionId": [
-            "add-to-list##xdm:listID##description##49311",
-            "remove-from-list##xdm:listID##description##51311"
-          ],
-          "meta:xdmType": "string",
-          "meta:xdmField": "xdm:listID",
-          "tagNumber": 1
-        },
-        "listKey": {
-          "title": "List Key",
-          "description": "Unique composite identifier of the Marketing List.",
-          "$ref": "../datatypes/b2b/b2b-source.schema.json",
-          "meta:titleId": [
-            "add-to-list##xdm:listKey##title##5791",
-            "remove-from-list##xdm:listKey##title##19851"
-          ],
-          "meta:descriptionId": [
-            "add-to-list##xdm:listKey##description##65431",
-            "remove-from-list##xdm:listKey##description##91321"
-          ],
-          "meta:xdmField": "xdm:listKey",
-          "tagNumber": 2
-        }
-      },
-      "meta:xdmField": "xdm:listOperations",
-      "tagNumber": 15
-    },
-    "opportunityEvent": {
-      "title": "Opportunity Event",
-      "type": "object",
-      "meta:titleId": [
-        "add-to-opportunity##xdm:opportunityEvent##title##16311",
-        "opportunityupdated##xdm:opportunityEvent##title##86131",
-        "remove-from-opportunity##xdm:opportunityEvent##title##77821"
-      ],
-      "meta:xdmType": "object",
-      "properties": {
-        "opportunityID": {
-          "title": "Opportunity ID",
-          "type": "string",
-          "description": "Unique identifier of the Opportunity.",
-          "meta:status": "experimental",
-          "meta:titleId": [
-            "add-to-opportunity##xdm:opportunityID##title##63081",
-            "opportunityupdated##xdm:opportunityID##title##98021",
-            "remove-from-opportunity##xdm:opportunityID##title##50331"
-          ],
-          "meta:descriptionId": [
-            "add-to-opportunity##xdm:opportunityID##description##1631",
-            "opportunityupdated##xdm:opportunityID##description##64771",
-            "remove-from-opportunity##xdm:opportunityID##description##41791"
-          ],
-          "meta:xdmType": "string",
-          "meta:xdmField": "xdm:opportunityID",
-          "tagNumber": 1
-        },
-        "opportunityKey": {
-          "title": "Opportunity Key",
-          "description": "Unique composite identifier of the Opportunity.",
-          "$ref": "../datatypes/b2b/b2b-source.schema.json",
-          "meta:titleId": [
-            "add-to-opportunity##xdm:opportunityKey##title##72821",
-            "opportunityupdated##xdm:opportunityKey##title##46331",
-            "remove-from-opportunity##xdm:opportunityKey##title##50901"
-          ],
-          "meta:descriptionId": [
-            "add-to-opportunity##xdm:opportunityKey##description##1381",
-            "opportunityupdated##xdm:opportunityKey##description##82501",
-            "remove-from-opportunity##xdm:opportunityKey##description##85241"
-          ],
-          "meta:xdmField": "xdm:opportunityKey",
-          "tagNumber": 2
-        },
-        "isPrimary": {
-          "title": "Is Primary",
-          "type": "boolean",
-          "description": "Boolean indicating if person is the primary contact on the Opportunity.",
-          "meta:titleId": [
-            "add-to-opportunity##xdm:isPrimary##title##69151",
-            "remove-from-opportunity##xdm:isPrimary##title##28551"
-          ],
-          "meta:descriptionId": [
-            "add-to-opportunity##xdm:isPrimary##description##82451",
-            "remove-from-opportunity##xdm:isPrimary##description##81741"
-          ],
-          "meta:xdmType": "boolean",
-          "meta:xdmField": "xdm:isPrimary",
-          "tagNumber": 3
-        },
-        "role": {
-          "title": "Role",
-          "type": "string",
-          "description": "Role of the person on the Opportunity.",
-          "meta:titleId": [
-            "add-to-opportunity##xdm:role##title##39101",
-            "remove-from-opportunity##xdm:role##title##73041"
-          ],
-          "meta:descriptionId": [
-            "add-to-opportunity##xdm:role##description##99461",
-            "remove-from-opportunity##xdm:role##description##10571"
-          ],
-          "meta:xdmType": "string",
-          "meta:xdmField": "xdm:role",
-          "tagNumber": 4
-        },
-        "dataValueChanges": {
-          "title": "Data Value Changes",
-          "description": "Full record of data values updated",
-          "type": "array",
-          "meta:titleId": "opportunityupdated##xdm:dataValueChanges##title##53151",
-          "meta:descriptionId": "opportunityupdated##xdm:dataValueChanges##description##31001",
-          "meta:xdmType": "array",
-          "meta:xdmField": "xdm:dataValueChanges",
-          "tagNumber": 5,
-          "items": {
-            "$ref": "obj41725893488466426.schema.json"
-          }
-        }
-      },
-      "meta:xdmField": "xdm:opportunityEvent",
-      "tagNumber": 16
-    },
     "leadOperation": {
       "title": "Lead Operation",
       "type": "object",
@@ -1670,18 +1534,48 @@
         "statusincampaignprogressionchanged##xdm:leadOperation##title##27501"
       ],
       "properties": {
+        "addToCampaign": {
+          "title": "Add To Campaign",
+          "type": "object",
+          "meta:xdmType": "object",
+          "properties": {
+            "campaignKey": {
+              "title": "Campaign Key",
+              "description": "Unique composite identifier of the campaign.",
+              "$ref": "../datatypes/b2b/b2b-source.schema.json",
+              "meta:xdmField": "xdm:campaignKey",
+              "tagNumber": 1
+            },
+            "streamKey": {
+              "title": "Stream Key",
+              "description": "Unique composite identifier of the stream.",
+              "$ref": "../datatypes/b2b/b2b-source.schema.json",
+              "meta:xdmField": "xdm:streamKey",
+              "tagNumber": 2
+            },
+            "streamName": {
+              "title": "Stream Name",
+              "type": "string",
+              "description": "Name of the stream.",
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:streamName",
+              "tagNumber": 3
+            }
+          },
+          "meta:xdmField": "xdm:addToCampaign",
+          "tagNumber": 1
+        },
         "callWebhook": {
           "title": "Call Webhook",
           "type": "object",
           "meta:xdmType": "object",
           "properties": {
-            "webhookID": {
-              "title": "Webhook ID",
-              "type": "string",
-              "description": "Unique ID of the Webhook called.",
-              "meta:xdmType": "string",
-              "meta:xdmField": "xdm:webhookID",
-              "tagNumber": 1
+            "webhookKey": {
+              "title": "Webhook Key",
+              "description": "Unique composite identifier of the Webhook.",
+              "$ref": "../datatypes/b2b/b2b-source.schema.json",
+              "meta:xdmField": "xdm:webhookKey",
+              "tagNumber": 2
             },
             "webhookName": {
               "title": "Webhook Name",
@@ -1689,7 +1583,7 @@
               "description": "Name of the Webhook.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:webhookName",
-              "tagNumber": 2
+              "tagNumber": 3
             },
             "responseCode": {
               "title": "Response Code",
@@ -1697,11 +1591,11 @@
               "description": "HTTP response code from Webhook request.",
               "meta:xdmType": "int",
               "meta:xdmField": "xdm:responseCode",
-              "tagNumber": 3
+              "tagNumber": 4
             }
           },
           "meta:xdmField": "xdm:callWebhook",
-          "tagNumber": 1
+          "tagNumber": 2
         },
         "changeCampaignCadence": {
           "title": "Change Campaign Cadence",
@@ -1733,7 +1627,7 @@
             }
           },
           "meta:xdmField": "xdm:changeCampaignCadence",
-          "tagNumber": 2
+          "tagNumber": 3
         },
         "convertLead": {
           "title": "Convert Lead",
@@ -1773,7 +1667,7 @@
             }
           },
           "meta:xdmField": "xdm:convertLead",
-          "tagNumber": 3
+          "tagNumber": 4
         },
         "interestingMoment": {
           "title": "Interesting Moment",
@@ -1824,7 +1718,7 @@
             }
           },
           "meta:xdmField": "xdm:interestingMoment",
-          "tagNumber": 4
+          "tagNumber": 5
         },
         "newLead": {
           "title": "New Lead",
@@ -1895,7 +1789,69 @@
             }
           },
           "meta:xdmField": "xdm:newLead",
-          "tagNumber": 5
+          "tagNumber": 6
+        },
+        "changeRevenueStage": {
+          "title": "Change Revenue Stage",
+          "type": "object",
+          "meta:xdmType": "object",
+          "properties": {
+            "modelKey": {
+              "title": "Model Key",
+              "description": "Unique composite identifier for the model of the Revenue Cycle Modeler.",
+              "$ref": "../datatypes/b2b/b2b-source.schema.json",
+              "meta:xdmField": "xdm:modelKey",
+              "tagNumber": 1
+            },
+            "modelName": {
+              "title": "Model Name",
+              "type": "string",
+              "description": "Name of the model for Revenue Cycle Modeler.",
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:modelName",
+              "tagNumber": 2
+            },
+            "newStageKey": {
+              "title": "New Stage Key",
+              "description": "Unique composite identifier of the stage person assigned to.",
+              "$ref": "../datatypes/b2b/b2b-source.schema.json",
+              "meta:xdmField": "xdm:newStageKey",
+              "tagNumber": 3
+            },
+            "newStageName": {
+              "title": "New Stage Name",
+              "type": "string",
+              "description": "Name of the new stage person assigned to.",
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:newStageName",
+              "tagNumber": 4
+            },
+            "previousStageKey": {
+              "title": "Previous Stage Key",
+              "description": "Unique composite identifier of the previous stage person assigned from.",
+              "$ref": "../datatypes/b2b/b2b-source.schema.json",
+              "meta:xdmField": "xdm:previousStageKey",
+              "tagNumber": 5
+            },
+            "previousStageName": {
+              "title": "Previous Stage Name",
+              "type": "string",
+              "description": "Name of the previous stage person assigned from.",
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:previousStageName",
+              "tagNumber": 6
+            },
+            "reason": {
+              "title": "Reason",
+              "type": "string",
+              "description": "Reason to indicate changes in model stages for a person.",
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:reason",
+              "tagNumber": 7
+            }
+          },
+          "meta:xdmField": "xdm:changeRevenueStage",
+          "tagNumber": 7
         },
         "changeScore": {
           "title": "Change Score",
@@ -2005,7 +1961,7 @@
             }
           },
           "meta:xdmField": "xdm:changeScore",
-          "tagNumber": 6
+          "tagNumber": 8
         },
         "campaignProgression": {
           "title": "Campaign Progression",
@@ -2105,10 +2061,150 @@
             }
           },
           "meta:xdmField": "xdm:campaignProgression",
-          "tagNumber": 7
+          "tagNumber": 9
         }
       },
       "meta:xdmField": "xdm:leadOperation",
+      "tagNumber": 15
+    },
+    "listOperations": {
+      "title": "List Operations",
+      "type": "object",
+      "meta:titleId": [
+        "add-to-list##xdm:listOperations##title##56911",
+        "remove-from-list##xdm:listOperations##title##35141"
+      ],
+      "meta:xdmType": "object",
+      "properties": {
+        "listID": {
+          "title": "List ID",
+          "type": "string",
+          "description": "Unique ID of the Marketing List.",
+          "meta:status": "experimental",
+          "meta:titleId": [
+            "add-to-list##xdm:listID##title##63411",
+            "remove-from-list##xdm:listID##title##54211"
+          ],
+          "meta:descriptionId": [
+            "add-to-list##xdm:listID##description##49311",
+            "remove-from-list##xdm:listID##description##51311"
+          ],
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:listID",
+          "tagNumber": 1
+        },
+        "listKey": {
+          "title": "List Key",
+          "description": "Unique composite identifier of the Marketing List.",
+          "$ref": "../datatypes/b2b/b2b-source.schema.json",
+          "meta:titleId": [
+            "add-to-list##xdm:listKey##title##5791",
+            "remove-from-list##xdm:listKey##title##19851"
+          ],
+          "meta:descriptionId": [
+            "add-to-list##xdm:listKey##description##65431",
+            "remove-from-list##xdm:listKey##description##91321"
+          ],
+          "meta:xdmField": "xdm:listKey",
+          "tagNumber": 2
+        }
+      },
+      "meta:xdmField": "xdm:listOperations",
+      "tagNumber": 16
+    },
+    "opportunityEvent": {
+      "title": "Opportunity Event",
+      "type": "object",
+      "meta:titleId": [
+        "add-to-opportunity##xdm:opportunityEvent##title##16311",
+        "opportunityupdated##xdm:opportunityEvent##title##86131",
+        "remove-from-opportunity##xdm:opportunityEvent##title##77821"
+      ],
+      "meta:xdmType": "object",
+      "properties": {
+        "opportunityID": {
+          "title": "Opportunity ID",
+          "type": "string",
+          "description": "Unique identifier of the Opportunity.",
+          "meta:status": "experimental",
+          "meta:titleId": [
+            "add-to-opportunity##xdm:opportunityID##title##63081",
+            "opportunityupdated##xdm:opportunityID##title##98021",
+            "remove-from-opportunity##xdm:opportunityID##title##50331"
+          ],
+          "meta:descriptionId": [
+            "add-to-opportunity##xdm:opportunityID##description##1631",
+            "opportunityupdated##xdm:opportunityID##description##64771",
+            "remove-from-opportunity##xdm:opportunityID##description##41791"
+          ],
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:opportunityID",
+          "tagNumber": 1
+        },
+        "opportunityKey": {
+          "title": "Opportunity Key",
+          "description": "Unique composite identifier of the Opportunity.",
+          "$ref": "../datatypes/b2b/b2b-source.schema.json",
+          "meta:titleId": [
+            "add-to-opportunity##xdm:opportunityKey##title##72821",
+            "opportunityupdated##xdm:opportunityKey##title##46331",
+            "remove-from-opportunity##xdm:opportunityKey##title##50901"
+          ],
+          "meta:descriptionId": [
+            "add-to-opportunity##xdm:opportunityKey##description##1381",
+            "opportunityupdated##xdm:opportunityKey##description##82501",
+            "remove-from-opportunity##xdm:opportunityKey##description##85241"
+          ],
+          "meta:xdmField": "xdm:opportunityKey",
+          "tagNumber": 2
+        },
+        "isPrimary": {
+          "title": "Is Primary",
+          "type": "boolean",
+          "description": "Boolean indicating if person is the primary contact on the Opportunity.",
+          "meta:titleId": [
+            "add-to-opportunity##xdm:isPrimary##title##69151",
+            "remove-from-opportunity##xdm:isPrimary##title##28551"
+          ],
+          "meta:descriptionId": [
+            "add-to-opportunity##xdm:isPrimary##description##82451",
+            "remove-from-opportunity##xdm:isPrimary##description##81741"
+          ],
+          "meta:xdmType": "boolean",
+          "meta:xdmField": "xdm:isPrimary",
+          "tagNumber": 3
+        },
+        "role": {
+          "title": "Role",
+          "type": "string",
+          "description": "Role of the person on the Opportunity.",
+          "meta:titleId": [
+            "add-to-opportunity##xdm:role##title##39101",
+            "remove-from-opportunity##xdm:role##title##73041"
+          ],
+          "meta:descriptionId": [
+            "add-to-opportunity##xdm:role##description##99461",
+            "remove-from-opportunity##xdm:role##description##10571"
+          ],
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:role",
+          "tagNumber": 4
+        },
+        "dataValueChanges": {
+          "title": "Data Value Changes",
+          "description": "Full record of data values updated",
+          "type": "array",
+          "meta:titleId": "opportunityupdated##xdm:dataValueChanges##title##53151",
+          "meta:descriptionId": "opportunityupdated##xdm:dataValueChanges##description##31001",
+          "meta:xdmType": "array",
+          "meta:xdmField": "xdm:dataValueChanges",
+          "tagNumber": 5,
+          "items": {
+            "$ref": "obj3375304381453914.schema.json"
+          }
+        }
+      },
+      "meta:xdmField": "xdm:opportunityEvent",
       "tagNumber": 17
     },
     "directMarketing": {
@@ -3376,7 +3472,7 @@
           "meta:xdmField": "xdm:diningReservations",
           "tagNumber": 1,
           "items": {
-            "$ref": "obj05933198552893115.schema.json"
+            "$ref": "obj07009799413599294.schema.json"
           }
         },
         "cancellation": {
@@ -3549,7 +3645,7 @@
           "meta:xdmField": "xdm:flightReservations",
           "tagNumber": 19,
           "items": {
-            "$ref": "obj45760584658364745.schema.json"
+            "$ref": "obj41701521600809377.schema.json"
           }
         },
         "lodgingReservations": {
@@ -3558,7 +3654,7 @@
           "meta:xdmField": "xdm:lodgingReservations",
           "tagNumber": 20,
           "items": {
-            "$ref": "obj4833203561994901.schema.json"
+            "$ref": "obj9105810607645266.schema.json"
           }
         },
         "vehicleReservations": {
@@ -3567,7 +3663,7 @@
           "meta:xdmField": "xdm:vehicleReservations",
           "tagNumber": 21,
           "items": {
-            "$ref": "obj7070252571153759.schema.json"
+            "$ref": "obj6859269348260351.schema.json"
           }
         }
       },

@@ -497,7 +497,7 @@
                           "meta:xdmType": "array",
                           "items": {
                             "type": "string",
-                            "maxLength": 15,
+                            "maxLength": 25,
                             "meta:xdmType": "string",
                             "tagNumber": 1
                           },
@@ -669,7 +669,7 @@
                           "meta:xdmType": "array",
                           "items": {
                             "type": "string",
-                            "maxLength": 15,
+                            "maxLength": 25,
                             "meta:xdmType": "string",
                             "tagNumber": 1
                           },
@@ -841,7 +841,7 @@
                           "meta:xdmType": "array",
                           "items": {
                             "type": "string",
-                            "maxLength": 15,
+                            "maxLength": 25,
                             "meta:xdmType": "string",
                             "tagNumber": 1
                           },
@@ -1369,7 +1369,7 @@
           "meta:xdmField": "xdm:pointsExpiration",
           "tagNumber": 4,
           "items": {
-            "$ref": "obj360757061803368.schema.json"
+            "$ref": "obj5060482952094219.schema.json"
           }
         },
         "pointsRedeemed": {
@@ -1519,7 +1519,7 @@
           "meta:xdmField": "xdm:creditScores",
           "tagNumber": 3,
           "items": {
-            "$ref": "obj8399954138668335.schema.json"
+            "$ref": "obj41612890575915484.schema.json"
           }
         },
         "employmentStatus": {

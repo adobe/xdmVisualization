@@ -243,8 +243,10 @@
 [fieldgroups.experience-event.events.visit-webpage](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.events.visit-webpage.html)<br/>
 [fieldgroups.experience-event.events.callwebhook](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.events.callwebhook.html)<br/>
 [fieldgroups.experience-event.events.emailbounced](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.events.emailbounced.html)<br/>
+[fieldgroups.experience-event.events.revenueStageChanged](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.events.revenueStageChanged.html)<br/>
 [fieldgroups.experience-event.events.emailunsubscribed](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.events.emailunsubscribed.html)<br/>
 [fieldgroups.experience-event.events.new-lead](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.events.new-lead.html)<br/>
+[fieldgroups.experience-event.events.add-to-campaign](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.events.add-to-campaign.html)<br/>
 [fieldgroups.experience-event.events.remove-from-opportunity](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.events.remove-from-opportunity.html)<br/>
 [fieldgroups.experience-event.events.emailbouncedsoft](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.events.emailbouncedsoft.html)<br/>
 [fieldgroups.experience-event.events.remove-from-list](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.events.remove-from-list.html)<br/>

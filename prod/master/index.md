@@ -563,6 +563,7 @@
 <details>
 <summary>events</summary>
 <ul>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.events.add-to-campaign.html">add-to-campaign</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.events.add-to-list.html">add-to-list</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.events.add-to-opportunity.html">add-to-opportunity</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.events.callwebhook.html">callwebhook</a></li>
@@ -581,6 +582,7 @@
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.events.opportunityupdated.html">opportunityupdated</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.events.remove-from-list.html">remove-from-list</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.events.remove-from-opportunity.html">remove-from-opportunity</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.events.revenueStageChanged.html">revenueStageChanged</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.events.scorechanged.html">scorechanged</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.events.statusincampaignprogressionchanged.html">statusincampaignprogressionchanged</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.events.visit-webpage.html">visit-webpage</a></li>

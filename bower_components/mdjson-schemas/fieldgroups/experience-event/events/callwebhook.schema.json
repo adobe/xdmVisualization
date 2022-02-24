@@ -23,13 +23,12 @@
           "type": "object",
           "meta:xdmType": "object",
           "properties": {
-            "webhookID": {
-              "title": "Webhook ID",
-              "type": "string",
-              "description": "Unique ID of the Webhook called.",
-              "meta:xdmType": "string",
-              "meta:xdmField": "xdm:webhookID",
-              "tagNumber": 1
+            "webhookKey": {
+              "title": "Webhook Key",
+              "description": "Unique composite identifier of the Webhook.",
+              "$ref": "../../../datatypes/b2b/b2b-source.schema.json",
+              "meta:xdmField": "xdm:webhookKey",
+              "tagNumber": 2
             },
             "webhookName": {
               "title": "Webhook Name",
@@ -37,7 +36,7 @@
               "description": "Name of the Webhook.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:webhookName",
-              "tagNumber": 2
+              "tagNumber": 3
             },
             "responseCode": {
               "title": "Response Code",
@@ -45,7 +44,7 @@
               "description": "HTTP response code from Webhook request.",
               "meta:xdmType": "int",
               "meta:xdmField": "xdm:responseCode",
-              "tagNumber": 3
+              "tagNumber": 4
             }
           },
           "meta:xdmField": "xdm:callWebhook",

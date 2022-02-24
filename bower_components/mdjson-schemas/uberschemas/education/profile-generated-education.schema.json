@@ -473,7 +473,7 @@
                           "meta:xdmType": "array",
                           "items": {
                             "type": "string",
-                            "maxLength": 15,
+                            "maxLength": 25,
                             "meta:xdmType": "string",
                             "tagNumber": 1
                           },
@@ -645,7 +645,7 @@
                           "meta:xdmType": "array",
                           "items": {
                             "type": "string",
-                            "maxLength": 15,
+                            "maxLength": 25,
                             "meta:xdmType": "string",
                             "tagNumber": 1
                           },
@@ -817,7 +817,7 @@
                           "meta:xdmType": "array",
                           "items": {
                             "type": "string",
-                            "maxLength": 15,
+                            "maxLength": 25,
                             "meta:xdmType": "string",
                             "tagNumber": 1
                           },

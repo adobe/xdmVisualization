@@ -48,6 +48,14 @@
       "meta:xdmField": "xdm:activity",
       "tagNumber": 4
     },
+    "correlationID": {
+      "type": "string",
+      "title": "Correlation Identifier",
+      "description": "The campaign, journey, or other object to which this activity can be correlated. This string will often be further classified in the reporting engine.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:correlationID",
+      "tagNumber": 5
+    },
     "interactionMeasurements": {
       "type": "array",
       "title": "Interaction Measurements used in this Scope",
@@ -60,7 +68,7 @@
         "tagNumber": 1
       },
       "meta:xdmField": "xdm:interactionMeasurements",
-      "tagNumber": 5
+      "tagNumber": 6
     },
     "strategies": {
       "type": "array",
@@ -74,7 +82,7 @@
         "tagNumber": 1
       },
       "meta:xdmField": "xdm:strategies",
-      "tagNumber": 6
+      "tagNumber": 7
     },
     "experience": {
       "properties": {
@@ -92,7 +100,7 @@
       },
       "type": "object",
       "meta:xdmField": "xdm:experience",
-      "tagNumber": 7
+      "tagNumber": 8
     },
     "characteristics": {
       "title": "Scope Details Characteristics",
@@ -100,7 +108,7 @@
       "type": "object",
       "meta:xdmType": "map",
       "meta:xdmField": "xdm:characteristics",
-      "tagNumber": 8,
+      "tagNumber": 9,
       "properties": {
         "mapObj": {
           "type": "string",

@@ -41,6 +41,14 @@
       "meta:xdmField": "xdm:algorithmID",
       "tagNumber": 3
     },
+    "treatmentID": {
+      "title": "Treatment Identifier",
+      "type": "string",
+      "description": "Identifier for the experiment treatment or traffic allocation strategy that was selected for the decision.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:treatmentID",
+      "tagNumber": 4
+    },
     "trafficType": {
       "title": "Traffic Type",
       "type": "string",
@@ -49,7 +57,7 @@
       "meta:descriptionId": "strategy-details##xdm:trafficType##description##69241",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:trafficType",
-      "tagNumber": 4
+      "tagNumber": 5
     }
   },
   "meta:xdmId": "https://ns.adobe.com/experience/decisioning/strategy-details",

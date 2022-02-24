@@ -487,7 +487,7 @@
                           "meta:xdmType": "array",
                           "items": {
                             "type": "string",
-                            "maxLength": 15,
+                            "maxLength": 25,
                             "meta:xdmType": "string",
                             "tagNumber": 1
                           },
@@ -659,7 +659,7 @@
                           "meta:xdmType": "array",
                           "items": {
                             "type": "string",
-                            "maxLength": 15,
+                            "maxLength": 25,
                             "meta:xdmType": "string",
                             "tagNumber": 1
                           },
@@ -831,7 +831,7 @@
                           "meta:xdmType": "array",
                           "items": {
                             "type": "string",
-                            "maxLength": 15,
+                            "maxLength": 25,
                             "meta:xdmType": "string",
                             "tagNumber": 1
                           },
@@ -1359,7 +1359,7 @@
           "meta:xdmField": "xdm:pointsExpiration",
           "tagNumber": 4,
           "items": {
-            "$ref": "obj476688999471105.schema.json"
+            "$ref": "obj6488450387948299.schema.json"
           }
         },
         "pointsRedeemed": {
