@@ -108,7 +108,8 @@
     "profile-telecom-subscription##title##34441",
     "profile-test-profile##title##7571",
     "travel-preferences##title##82371",
-    "profile-user-account-details##title##84191"
+    "profile-user-account-details##title##84191",
+    "person-identifier##title##62361"
   ],
   "meta:descriptionId": [
     "profile##description##66111",
@@ -143,7 +144,8 @@
     "profile-telecom-subscription##description##98821",
     "profile-test-profile##description##71331",
     "travel-preferences##description##2511",
-    "profile-user-account-details##description##50141"
+    "profile-user-account-details##description##50141",
+    "person-identifier##description##76761"
   ],
   "properties": {
     "repositoryCreatedBy": {
@@ -237,9 +239,16 @@
       "title": "Person ID",
       "description": "Unique identifier of Person/Profile fragment.",
       "type": "string",
-      "meta:titleId": "profile##xdm:personID##title##43391",
-      "meta:descriptionId": "profile##xdm:personID##description##5871",
+      "meta:titleId": [
+        "profile##xdm:personID##title##43391",
+        "person-identifier##xdm:personID##title##75321"
+      ],
+      "meta:descriptionId": [
+        "profile##xdm:personID##description##5871",
+        "person-identifier##xdm:personID##description##61151"
+      ],
       "meta:xdmType": "string",
+      "meta:status": "experimental",
       "meta:xdmField": "xdm:personID",
       "tagNumber": 7
     },
@@ -278,7 +287,7 @@
       "meta:xdmField": "xdm:personComponents",
       "tagNumber": 12,
       "items": {
-        "$ref": "obj6242264078010953.schema.json"
+        "$ref": "obj442736674328327.schema.json"
       }
     },
     "b2b": {
@@ -2024,7 +2033,7 @@
           "meta:xdmField": "xdm:pointsExpiration",
           "tagNumber": 4,
           "items": {
-            "$ref": "obj13200187893295023.schema.json"
+            "$ref": "obj609730064343533.schema.json"
           }
         },
         "pointsRedeemed": {
@@ -2138,7 +2147,7 @@
           "meta:xdmField": "xdm:creditScores",
           "tagNumber": 3,
           "items": {
-            "$ref": "obj1249763617549311.schema.json"
+            "$ref": "obj769329448090083.schema.json"
           }
         },
         "employmentStatus": {
@@ -2397,7 +2406,7 @@
       "meta:xdmField": "xdm:pushNotificationDetails",
       "tagNumber": 51,
       "items": {
-        "$ref": "obj5497092992997079.schema.json"
+        "$ref": "obj12545209795654055.schema.json"
       }
     },
     "segmentMembership": {
@@ -2478,7 +2487,7 @@
           "meta:xdmField": "xdm:internetSubscription",
           "tagNumber": 4,
           "items": {
-            "$ref": "obj7352317792822523.schema.json"
+            "$ref": "obj33051856628260423.schema.json"
           }
         },
         "landlineSubscription": {
@@ -2489,7 +2498,7 @@
           "meta:xdmField": "xdm:landlineSubscription",
           "tagNumber": 5,
           "items": {
-            "$ref": "obj9950077301933933.schema.json"
+            "$ref": "obj008581812819423051.schema.json"
           }
         },
         "mediaSubscription": {
@@ -2500,7 +2509,7 @@
           "meta:xdmField": "xdm:mediaSubscription",
           "tagNumber": 6,
           "items": {
-            "$ref": "obj8510493223400464.schema.json"
+            "$ref": "obj5964480702413213.schema.json"
           }
         },
         "mobileSubscription": {
@@ -2511,7 +2520,7 @@
           "meta:xdmField": "xdm:mobileSubscription",
           "tagNumber": 7,
           "items": {
-            "$ref": "obj7847945769561744.schema.json"
+            "$ref": "obj18184639561180105.schema.json"
           }
         }
       },
@@ -2992,6 +3001,15 @@
       },
       "meta:xdmField": "xdm:userAccount",
       "tagNumber": 58
+    },
+    "personKey": {
+      "title": "Person Key",
+      "description": "Unique composite identifier of the Person.",
+      "$ref": "../datatypes/b2b/b2b-source.schema.json",
+      "meta:titleId": "person-identifier##xdm:personKey##title##34821",
+      "meta:descriptionId": "person-identifier##xdm:personKey##description##12581",
+      "meta:xdmField": "xdm:personKey",
+      "tagNumber": 59
     }
   },
   "meta:xdmId": "https://ns.adobe.com/xdm/context/profile-generated",

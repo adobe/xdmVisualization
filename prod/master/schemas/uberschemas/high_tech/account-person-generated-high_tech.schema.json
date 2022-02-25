@@ -1,0 +1,227 @@
+{
+  "id": "_xdm.classes.account-person-generated-high_tech",
+  "title": "Uber schema for https://ns.adobe.com/xdm/classes/account-person",
+  "description": "Uber schema for https://ns.adobe.com/xdm/classes/account-person",
+  "type": "object",
+  "meta:xdmType": "object",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "meta:tags": [
+    {
+      "b2bSchema": true
+    },
+    {
+      "industry": [
+        "all"
+      ]
+    }
+  ],
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:status": [
+    "stable",
+    "experimental"
+  ],
+  "meta:titleId": [
+    "account-person##title##54851",
+    "record##title##65961",
+    "external-source-system-audit-details##title##88991",
+    "identitymap##title##90811"
+  ],
+  "meta:descriptionId": [
+    "account-person##description##46121",
+    "record##description##3921",
+    "external-source-system-audit-details##description##98601",
+    "identitymap##description##41821"
+  ],
+  "meta:createdDate": "2020-08-10",
+  "properties": {
+    "_id": {
+      "title": "Identifier",
+      "type": "string",
+      "format": "uri-reference",
+      "description": "A unique identifier for the record.",
+      "meta:titleId": "record##@id##title##51271",
+      "meta:descriptionId": "record##@id##description##16181",
+      "meta:xdmType": "string",
+      "meta:xdmField": "@id",
+      "tagNumber": 1
+    },
+    "accountPersonID": {
+      "title": "Account Person ID",
+      "description": "Unique identifier for this relationship between an account and a person.",
+      "type": "string",
+      "meta:status": "experimental",
+      "meta:titleId": "account-person##xdm:accountPersonID##title##55901",
+      "meta:descriptionId": "account-person##xdm:accountPersonID##description##63171",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:accountPersonID",
+      "tagNumber": 2
+    },
+    "accountPersonKey": {
+      "title": "Account Person Key",
+      "description": "Unique composite identifier for this relationship between an account and a person.",
+      "$ref": "../../datatypes/b2b/b2b-source.schema.json",
+      "meta:titleId": "account-person##xdm:accountPersonKey##title##86581",
+      "meta:descriptionId": "account-person##xdm:accountPersonKey##description##50861",
+      "meta:xdmField": "xdm:accountPersonKey",
+      "tagNumber": 3
+    },
+    "accountID": {
+      "title": "Account ID",
+      "description": "Unique identifier for the account in this account person relationship.",
+      "type": "string",
+      "meta:status": "experimental",
+      "meta:titleId": "account-person##xdm:accountID##title##74971",
+      "meta:descriptionId": "account-person##xdm:accountID##description##96141",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:accountID",
+      "tagNumber": 4
+    },
+    "accountKey": {
+      "title": "Account Key",
+      "description": "Unique composite identifier for the account in this account person relationship.",
+      "$ref": "../../datatypes/b2b/b2b-source.schema.json",
+      "meta:titleId": "account-person##xdm:accountKey##title##85441",
+      "meta:descriptionId": "account-person##xdm:accountKey##description##20571",
+      "meta:xdmField": "xdm:accountKey",
+      "tagNumber": 5
+    },
+    "personID": {
+      "title": "Person ID",
+      "description": "Unique identifier for the person in this account person relationship.",
+      "type": "string",
+      "meta:status": "experimental",
+      "meta:titleId": "account-person##xdm:personID##title##42991",
+      "meta:descriptionId": "account-person##xdm:personID##description##66421",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:personID",
+      "tagNumber": 6
+    },
+    "personKey": {
+      "title": "Person Key",
+      "description": "Unique composite identifier for the person in this account person relationship.",
+      "$ref": "../../datatypes/b2b/b2b-source.schema.json",
+      "meta:titleId": "account-person##xdm:personKey##title##73161",
+      "meta:descriptionId": "account-person##xdm:personKey##description##86061",
+      "meta:xdmField": "xdm:personKey",
+      "tagNumber": 7
+    },
+    "personRoles": {
+      "title": "Person Roles",
+      "description": "An array of roles of the person on this account.",
+      "type": "array",
+      "meta:xdmType": "array",
+      "items": {
+        "type": "string",
+        "meta:xdmType": "string",
+        "tagNumber": 1
+      },
+      "meta:xdmField": "xdm:personRoles",
+      "tagNumber": 9
+    },
+    "isDirect": {
+      "title": "Direct Flag",
+      "description": "Boolean to indicate if this is a direct relationship between the account and the person.",
+      "type": "boolean",
+      "meta:titleId": "account-person##xdm:isDirect##title##75251",
+      "meta:descriptionId": "account-person##xdm:isDirect##description##5791",
+      "meta:xdmType": "boolean",
+      "meta:xdmField": "xdm:isDirect",
+      "tagNumber": 10
+    },
+    "isActive": {
+      "title": "Active Flag",
+      "description": "Boolean to indicate if this relationship between the account and the person is active.",
+      "type": "boolean",
+      "meta:titleId": "account-person##xdm:isActive##title##32451",
+      "meta:descriptionId": "account-person##xdm:isActive##description##46311",
+      "meta:xdmType": "boolean",
+      "meta:xdmField": "xdm:isActive",
+      "tagNumber": 11
+    },
+    "isPrimary": {
+      "title": "Primary Flag",
+      "description": "Boolean to indicate if the person is the primary contact on the account.",
+      "type": "boolean",
+      "meta:titleId": "account-person##xdm:isPrimary##title##68351",
+      "meta:descriptionId": "account-person##xdm:isPrimary##description##31061",
+      "meta:xdmType": "boolean",
+      "meta:xdmField": "xdm:isPrimary",
+      "tagNumber": 12
+    },
+    "relationStartDate": {
+      "title": "Relationship Start Date",
+      "description": "The date when the relationship between the account and the person started.",
+      "type": "string",
+      "format": "date-time",
+      "meta:titleId": "account-person##xdm:relationStartDate##title##91141",
+      "meta:descriptionId": "account-person##xdm:relationStartDate##description##49381",
+      "meta:xdmType": "date-time",
+      "meta:xdmField": "xdm:relationStartDate",
+      "tagNumber": 13
+    },
+    "relationEndDate": {
+      "title": "Relationship End Date",
+      "description": "The date when the relationship between the account and the person ended.",
+      "type": "string",
+      "format": "date-time",
+      "meta:titleId": "account-person##xdm:relationEndDate##title##35651",
+      "meta:descriptionId": "account-person##xdm:relationEndDate##description##37071",
+      "meta:xdmType": "date-time",
+      "meta:xdmField": "xdm:relationEndDate",
+      "tagNumber": 14
+    },
+    "currencyCode": {
+      "title": "Currency Code",
+      "type": "string",
+      "examples": [
+        "USD",
+        "EUR"
+      ],
+      "pattern": "^[A-Z]{3}$",
+      "description": "The ISO 4217 currency code used for the relationship between the account and the person.",
+      "meta:titleId": "account-person##xdm:currencyCode##title##72221",
+      "meta:descriptionId": "account-person##xdm:currencyCode##description##58201",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:currencyCode",
+      "tagNumber": 15
+    },
+    "extSourceSystemAudit": {
+      "title": "External Source System Audit Properties",
+      "$ref": "../../datatypes/auditing/external-source-system-audit.schema.json",
+      "description": "Audit attributes for external sources.",
+      "meta:titleId": "external-source-system-audit-details##xdm:extSourceSystemAudit##title##88841",
+      "meta:descriptionId": "external-source-system-audit-details##xdm:extSourceSystemAudit##description##28131",
+      "meta:xdmField": "xdm:extSourceSystemAudit",
+      "tagNumber": 16
+    },
+    "isDeleted": {
+      "title": "Soft Delete Flag",
+      "description": "Soft delete flag to indicate if the record is marked for deletion.",
+      "type": "boolean",
+      "meta:xdmType": "boolean",
+      "meta:xdmField": "xdm:isDeleted",
+      "tagNumber": 17
+    },
+    "identityMap": {
+      "type": "object",
+      "meta:xdmType": "map",
+      "meta:xdmField": "xdm:identityMap",
+      "tagNumber": 18,
+      "properties": {
+        "mapObj": {
+          "type": "array",
+          "meta:xdmType": "array",
+          "items": {
+            "$ref": "../../datatypes/identityitem.schema.json",
+            "tagNumber": 1
+          },
+          "tagNumber": 1
+        }
+      }
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/classes/account-person-generated-high_tech",
+  "meta:altId": "_xdm.classes.account-person-generated-high_tech",
+  "id": "_xdm.classes.account-person-generated-high_tech"
+}

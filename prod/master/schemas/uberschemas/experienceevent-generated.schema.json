@@ -307,7 +307,9 @@
     "experienceevent-upgrade-details##title##3091",
     "experienceevent-upsell-details##title##14631",
     "experienceevent-vehicle-reservation##title##24041",
-    "experienceevent-warranty-claim-details##title##72021"
+    "experienceevent-warranty-claim-details##title##72021",
+    "external-source-system-audit-details##title##88991",
+    "person-identifier##title##62361"
   ],
   "meta:descriptionId": [
     "experienceevent##description##41211",
@@ -394,7 +396,9 @@
     "experienceevent-upgrade-details##description##25701",
     "experienceevent-upsell-details##description##98371",
     "experienceevent-vehicle-reservation##description##68881",
-    "experienceevent-warranty-claim-details##description##25171"
+    "experienceevent-warranty-claim-details##description##25171",
+    "external-source-system-audit-details##description##98601",
+    "person-identifier##description##76761"
   ],
   "meta:conditionalField": "xdm:eventType",
   "meta:conditionalValue": [
@@ -403,6 +407,7 @@
     "opportunityEvent.addToOpportunity",
     "leadOperation.callWebhook",
     "leadOperation.changeCampaignCadence",
+    "leadOperation.changeCampaignStream",
     "leadOperation.convertLead",
     "directMarketing.emailBounced",
     "directMarketing.emailBouncedSoft",
@@ -1629,6 +1634,52 @@
           "meta:xdmField": "xdm:changeCampaignCadence",
           "tagNumber": 3
         },
+        "changeCampaignStream": {
+          "title": "Change Campaign Stream",
+          "type": "object",
+          "meta:xdmType": "object",
+          "properties": {
+            "campaignKey": {
+              "title": "Campaign Key",
+              "description": "Unique composite identifier of the campaign.",
+              "$ref": "../datatypes/b2b/b2b-source.schema.json",
+              "meta:xdmField": "xdm:campaignKey",
+              "tagNumber": 1
+            },
+            "newStreamKey": {
+              "title": "New Stream Key",
+              "description": "Unique composite identifier of the new stream.",
+              "$ref": "../datatypes/b2b/b2b-source.schema.json",
+              "meta:xdmField": "xdm:newStreamKey",
+              "tagNumber": 2
+            },
+            "newStreamName": {
+              "title": "New Stream Name",
+              "type": "string",
+              "description": "Name of the new stream.",
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:newStreamName",
+              "tagNumber": 3
+            },
+            "previousStreamKey": {
+              "title": "Previous Stream Key",
+              "description": "Unique composite identifier of the previous stream.",
+              "$ref": "../datatypes/b2b/b2b-source.schema.json",
+              "meta:xdmField": "xdm:previousStreamKey",
+              "tagNumber": 4
+            },
+            "previousStreamName": {
+              "title": "Previous Stream Name",
+              "type": "string",
+              "description": "Name of the previous stream.",
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:previousStreamName",
+              "tagNumber": 5
+            }
+          },
+          "meta:xdmField": "xdm:changeCampaignStream",
+          "tagNumber": 4
+        },
         "convertLead": {
           "title": "Convert Lead",
           "type": "object",
@@ -1667,7 +1718,7 @@
             }
           },
           "meta:xdmField": "xdm:convertLead",
-          "tagNumber": 4
+          "tagNumber": 5
         },
         "interestingMoment": {
           "title": "Interesting Moment",
@@ -1718,7 +1769,7 @@
             }
           },
           "meta:xdmField": "xdm:interestingMoment",
-          "tagNumber": 5
+          "tagNumber": 6
         },
         "newLead": {
           "title": "New Lead",
@@ -1789,7 +1840,7 @@
             }
           },
           "meta:xdmField": "xdm:newLead",
-          "tagNumber": 6
+          "tagNumber": 7
         },
         "changeRevenueStage": {
           "title": "Change Revenue Stage",
@@ -1851,7 +1902,7 @@
             }
           },
           "meta:xdmField": "xdm:changeRevenueStage",
-          "tagNumber": 7
+          "tagNumber": 8
         },
         "changeScore": {
           "title": "Change Score",
@@ -1961,7 +2012,7 @@
             }
           },
           "meta:xdmField": "xdm:changeScore",
-          "tagNumber": 8
+          "tagNumber": 9
         },
         "campaignProgression": {
           "title": "Campaign Progression",
@@ -2061,7 +2112,7 @@
             }
           },
           "meta:xdmField": "xdm:campaignProgression",
-          "tagNumber": 9
+          "tagNumber": 10
         }
       },
       "meta:xdmField": "xdm:leadOperation",
@@ -2200,7 +2251,7 @@
           "meta:xdmField": "xdm:dataValueChanges",
           "tagNumber": 5,
           "items": {
-            "$ref": "obj3375304381453914.schema.json"
+            "$ref": "obj3917252485051226.schema.json"
           }
         }
       },
@@ -3472,7 +3523,7 @@
           "meta:xdmField": "xdm:diningReservations",
           "tagNumber": 1,
           "items": {
-            "$ref": "obj07009799413599294.schema.json"
+            "$ref": "obj1081556782745785.schema.json"
           }
         },
         "cancellation": {
@@ -3645,7 +3696,7 @@
           "meta:xdmField": "xdm:flightReservations",
           "tagNumber": 19,
           "items": {
-            "$ref": "obj41701521600809377.schema.json"
+            "$ref": "obj14879755393425476.schema.json"
           }
         },
         "lodgingReservations": {
@@ -3654,7 +3705,7 @@
           "meta:xdmField": "xdm:lodgingReservations",
           "tagNumber": 20,
           "items": {
-            "$ref": "obj9105810607645266.schema.json"
+            "$ref": "obj7057177466603712.schema.json"
           }
         },
         "vehicleReservations": {
@@ -3663,7 +3714,7 @@
           "meta:xdmField": "xdm:vehicleReservations",
           "tagNumber": 21,
           "items": {
-            "$ref": "obj6859269348260351.schema.json"
+            "$ref": "obj6252118585177349.schema.json"
           }
         }
       },
@@ -4016,6 +4067,35 @@
       },
       "meta:xdmField": "xdm:warrantyClaim",
       "tagNumber": 56
+    },
+    "extSourceSystemAudit": {
+      "title": "External Source System Audit Properties",
+      "$ref": "../datatypes/auditing/external-source-system-audit.schema.json",
+      "description": "Audit attributes for external sources.",
+      "meta:titleId": "external-source-system-audit-details##xdm:extSourceSystemAudit##title##88841",
+      "meta:descriptionId": "external-source-system-audit-details##xdm:extSourceSystemAudit##description##28131",
+      "meta:xdmField": "xdm:extSourceSystemAudit",
+      "tagNumber": 57
+    },
+    "personID": {
+      "title": "Person ID",
+      "description": "Person unique identifier.",
+      "type": "string",
+      "meta:status": "experimental",
+      "meta:titleId": "person-identifier##xdm:personID##title##75321",
+      "meta:descriptionId": "person-identifier##xdm:personID##description##61151",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:personID",
+      "tagNumber": 58
+    },
+    "personKey": {
+      "title": "Person Key",
+      "description": "Unique composite identifier of the Person.",
+      "$ref": "../datatypes/b2b/b2b-source.schema.json",
+      "meta:titleId": "person-identifier##xdm:personKey##title##34821",
+      "meta:descriptionId": "person-identifier##xdm:personKey##description##12581",
+      "meta:xdmField": "xdm:personKey",
+      "tagNumber": 59
     }
   },
   "meta:xdmId": "https://ns.adobe.com/xdm/context/experienceevent-generated",

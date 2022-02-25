@@ -1,0 +1,131 @@
+{
+  "id": "_xdm.classes.fsi.branch-generated-travel_and_hospitality",
+  "title": "Uber schema for https://ns.adobe.com/xdm/classes/fsi/branch",
+  "description": "Uber schema for https://ns.adobe.com/xdm/classes/fsi/branch",
+  "type": "object",
+  "meta:xdmType": "object",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:tags": [
+    {
+      "industry": [
+        "financial_services"
+      ]
+    },
+    {
+      "industry": [
+        "all"
+      ]
+    }
+  ],
+  "meta:status": "stable",
+  "meta:createdDate": [
+    "2020-11-19",
+    "2020-08-10"
+  ],
+  "meta:titleId": [
+    "branch##title##23951",
+    "record##title##65961",
+    "identitymap##title##90811"
+  ],
+  "meta:descriptionId": [
+    "branch##description##27891",
+    "record##description##3921",
+    "identitymap##description##41821"
+  ],
+  "properties": {
+    "_id": {
+      "title": "Identifier",
+      "type": "string",
+      "format": "uri-reference",
+      "description": "A unique identifier for the record.",
+      "meta:titleId": "record##@id##title##51271",
+      "meta:descriptionId": "record##@id##description##16181",
+      "meta:xdmType": "string",
+      "meta:xdmField": "@id",
+      "tagNumber": 1
+    },
+    "isBranchActive": {
+      "title": "Is Branch Active",
+      "type": "boolean",
+      "description": "Yes/no if the branch is currently active.",
+      "meta:titleId": "branch##xdm:isBranchActive##title##32631",
+      "meta:descriptionId": "branch##xdm:isBranchActive##description##75651",
+      "meta:xdmType": "boolean",
+      "meta:xdmField": "xdm:isBranchActive",
+      "tagNumber": 2
+    },
+    "branchAddress": {
+      "title": "Branch Address",
+      "$ref": "../../datatypes/demographic/address.schema.json",
+      "description": "Physical address where the branch is located.",
+      "meta:titleId": "branch##xdm:branchAddress##title##19621",
+      "meta:descriptionId": "branch##xdm:branchAddress##description##12861",
+      "meta:xdmField": "xdm:branchAddress",
+      "tagNumber": 3
+    },
+    "branchID": {
+      "title": "Branch ID",
+      "type": "string",
+      "description": "ID associated with the branch. ",
+      "meta:titleId": "branch##xdm:branchID##title##91031",
+      "meta:descriptionId": "branch##xdm:branchID##description##13161",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:branchID",
+      "tagNumber": 4
+    },
+    "branchName": {
+      "title": "Branch Name",
+      "type": "string",
+      "description": "Name of the branch.",
+      "meta:titleId": "branch##xdm:branchName##title##39531",
+      "meta:descriptionId": "branch##xdm:branchName##description##9021",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:branchName",
+      "tagNumber": 5
+    },
+    "branchCloseTime": {
+      "title": "Branch Close Time",
+      "type": "string",
+      "format": "date-time",
+      "description": "Time of day the branch closes.",
+      "meta:titleId": "branch##xdm:branchCloseTime##title##68091",
+      "meta:descriptionId": "branch##xdm:branchCloseTime##description##21881",
+      "meta:xdmType": "date-time",
+      "meta:xdmField": "xdm:branchCloseTime",
+      "tagNumber": 6
+    },
+    "branchOpenTime": {
+      "title": "Brancn Open Time",
+      "type": "string",
+      "format": "date-time",
+      "description": "Time of day the branch opens.",
+      "meta:titleId": "branch##xdm:branchOpenTime##title##12401",
+      "meta:descriptionId": "branch##xdm:branchOpenTime##description##70351",
+      "meta:xdmType": "date-time",
+      "meta:xdmField": "xdm:branchOpenTime",
+      "tagNumber": 7
+    },
+    "identityMap": {
+      "type": "object",
+      "meta:xdmType": "map",
+      "meta:xdmField": "xdm:identityMap",
+      "tagNumber": 8,
+      "properties": {
+        "mapObj": {
+          "type": "array",
+          "meta:xdmType": "array",
+          "items": {
+            "$ref": "../../datatypes/identityitem.schema.json",
+            "tagNumber": 1
+          },
+          "tagNumber": 1
+        }
+      }
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/classes/fsi/branch-generated-travel_and_hospitality",
+  "meta:altId": "_xdm.classes.fsi.branch-generated-travel_and_hospitality",
+  "id": "_xdm.classes.fsi.branch-generated-travel_and_hospitality"
+}

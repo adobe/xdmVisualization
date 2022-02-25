@@ -18,7 +18,10 @@
     "record##title##65961",
     "graph-edge##title##42021",
     "graph-node##title##16221",
-    "graph##title##9301"
+    "graph##title##9301",
+    "external-source-system-audit-details##title##88991",
+    "identitymap##title##90811",
+    "person-identifier##title##62361"
   ],
   "meta:descriptionId": [
     "graphs##description##93501",
@@ -26,10 +29,18 @@
     "record##description##3921",
     "graph-edge##description##59681",
     "graph-node##description##8391",
-    "graph##description##46971"
+    "graph##description##46971",
+    "external-source-system-audit-details##description##98601",
+    "identitymap##description##41821",
+    "person-identifier##description##76761"
   ],
   "meta:auditable": true,
   "auditable": true,
+  "meta:tags": {
+    "industry": [
+      "all"
+    ]
+  },
   "properties": {
     "repositoryCreatedBy": {
       "title": "Created by user identifier",
@@ -128,7 +139,7 @@
       "meta:xdmField": "xdm:edges",
       "tagNumber": 7,
       "items": {
-        "$ref": "obj7556940570684791.schema.json"
+        "$ref": "obj2773196762018906.schema.json"
       }
     },
     "nodes": {
@@ -141,7 +152,7 @@
       "meta:xdmField": "xdm:nodes",
       "tagNumber": 8,
       "items": {
-        "$ref": "obj08348718735637095.schema.json"
+        "$ref": "obj31959853771666835.schema.json"
       }
     },
     "graphId": {
@@ -206,6 +217,52 @@
       "meta:xdmType": "date-time",
       "meta:xdmField": "xdm:lastModifiedTimestamp",
       "tagNumber": 14
+    },
+    "extSourceSystemAudit": {
+      "title": "External Source System Audit Properties",
+      "$ref": "../datatypes/auditing/external-source-system-audit.schema.json",
+      "description": "Audit attributes for external sources.",
+      "meta:titleId": "external-source-system-audit-details##xdm:extSourceSystemAudit##title##88841",
+      "meta:descriptionId": "external-source-system-audit-details##xdm:extSourceSystemAudit##description##28131",
+      "meta:xdmField": "xdm:extSourceSystemAudit",
+      "tagNumber": 15
+    },
+    "identityMap": {
+      "type": "object",
+      "meta:xdmType": "map",
+      "meta:xdmField": "xdm:identityMap",
+      "tagNumber": 16,
+      "properties": {
+        "mapObj": {
+          "type": "array",
+          "meta:xdmType": "array",
+          "items": {
+            "$ref": "../datatypes/identityitem.schema.json",
+            "tagNumber": 1
+          },
+          "tagNumber": 1
+        }
+      }
+    },
+    "personID": {
+      "title": "Person ID",
+      "description": "Person unique identifier.",
+      "type": "string",
+      "meta:status": "experimental",
+      "meta:titleId": "person-identifier##xdm:personID##title##75321",
+      "meta:descriptionId": "person-identifier##xdm:personID##description##61151",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:personID",
+      "tagNumber": 17
+    },
+    "personKey": {
+      "title": "Person Key",
+      "description": "Unique composite identifier of the Person.",
+      "$ref": "../datatypes/b2b/b2b-source.schema.json",
+      "meta:titleId": "person-identifier##xdm:personKey##title##34821",
+      "meta:descriptionId": "person-identifier##xdm:personKey##description##12581",
+      "meta:xdmField": "xdm:personKey",
+      "tagNumber": 18
     }
   },
   "meta:xdmId": "https://ns.adobe.com/xdm/context/graphs-generated",

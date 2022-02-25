@@ -1,0 +1,147 @@
+{
+  "id": "_xdm.classes.marketing-list-member-generated-manufacturing",
+  "title": "Uber schema for https://ns.adobe.com/xdm/classes/marketing-list-member",
+  "description": "Uber schema for https://ns.adobe.com/xdm/classes/marketing-list-member",
+  "type": "object",
+  "meta:xdmType": "object",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "meta:tags": [
+    {
+      "b2bSchema": true
+    },
+    {
+      "industry": [
+        "all"
+      ]
+    }
+  ],
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:status": [
+    "stable",
+    "experimental"
+  ],
+  "meta:titleId": [
+    "marketing-list-member##title##46541",
+    "record##title##65961",
+    "external-source-system-audit-details##title##88991",
+    "identitymap##title##90811"
+  ],
+  "meta:descriptionId": [
+    "marketing-list-member##description##7641",
+    "record##description##3921",
+    "external-source-system-audit-details##description##98601",
+    "identitymap##description##41821"
+  ],
+  "meta:createdDate": "2020-08-10",
+  "properties": {
+    "_id": {
+      "title": "Identifier",
+      "type": "string",
+      "format": "uri-reference",
+      "description": "A unique identifier for the record.",
+      "meta:titleId": "record##@id##title##51271",
+      "meta:descriptionId": "record##@id##description##16181",
+      "meta:xdmType": "string",
+      "meta:xdmField": "@id",
+      "tagNumber": 1
+    },
+    "marketingListMemberID": {
+      "title": "Marketing List Member ID",
+      "description": "Unique ID for the membership of this person to this marketing list.",
+      "type": "string",
+      "meta:status": "experimental",
+      "meta:titleId": "marketing-list-member##xdm:marketingListMemberID##title##85671",
+      "meta:descriptionId": "marketing-list-member##xdm:marketingListMemberID##description##52641",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:marketingListMemberID",
+      "tagNumber": 2
+    },
+    "marketingListMemberKey": {
+      "title": "Marketing List Member Key",
+      "description": "Unique composite identifier of the membership of this person from the marketing list.",
+      "$ref": "../../datatypes/b2b/b2b-source.schema.json",
+      "meta:titleId": "marketing-list-member##xdm:marketingListMemberKey##title##31771",
+      "meta:descriptionId": "marketing-list-member##xdm:marketingListMemberKey##description##52381",
+      "meta:xdmField": "xdm:marketingListMemberKey",
+      "tagNumber": 3
+    },
+    "personID": {
+      "title": "Person Identifier",
+      "description": "Unique ID for the person who is a member of this marketing list.",
+      "type": "string",
+      "meta:status": "experimental",
+      "meta:titleId": "marketing-list-member##xdm:personID##title##41781",
+      "meta:descriptionId": "marketing-list-member##xdm:personID##description##94281",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:personID",
+      "tagNumber": 4
+    },
+    "personKey": {
+      "title": "Person Key",
+      "description": "Unique composite identifier of the Person from the marketing list.",
+      "$ref": "../../datatypes/b2b/b2b-source.schema.json",
+      "meta:titleId": "marketing-list-member##xdm:personKey##title##3831",
+      "meta:descriptionId": "marketing-list-member##xdm:personKey##description##79331",
+      "meta:xdmField": "xdm:personKey",
+      "tagNumber": 5
+    },
+    "marketingListID": {
+      "title": "Marketing List Identifier",
+      "description": "Unique ID for the marketing list this person is a member of.",
+      "type": "string",
+      "meta:status": "experimental",
+      "meta:titleId": "marketing-list-member##xdm:marketingListID##title##76661",
+      "meta:descriptionId": "marketing-list-member##xdm:marketingListID##description##78351",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:marketingListID",
+      "tagNumber": 6
+    },
+    "marketingListKey": {
+      "title": "Marketing List Key",
+      "description": "Unique composite identifier of the Marketing List this person is a member of.",
+      "$ref": "../../datatypes/b2b/b2b-source.schema.json",
+      "meta:titleId": "marketing-list-member##xdm:marketingListKey##title##59911",
+      "meta:descriptionId": "marketing-list-member##xdm:marketingListKey##description##44301",
+      "meta:xdmField": "xdm:marketingListKey",
+      "tagNumber": 7
+    },
+    "extSourceSystemAudit": {
+      "title": "External Source System Audit Properties",
+      "$ref": "../../datatypes/auditing/external-source-system-audit.schema.json",
+      "description": "Audit attributes for external sources.",
+      "meta:titleId": "external-source-system-audit-details##xdm:extSourceSystemAudit##title##88841",
+      "meta:descriptionId": "external-source-system-audit-details##xdm:extSourceSystemAudit##description##28131",
+      "meta:xdmField": "xdm:extSourceSystemAudit",
+      "tagNumber": 8
+    },
+    "isDeleted": {
+      "title": "Soft Delete Flag",
+      "description": "Soft delete flag to indicate if the record is marked for deletion.",
+      "type": "boolean",
+      "meta:xdmType": "boolean",
+      "meta:xdmField": "xdm:isDeleted",
+      "tagNumber": 9
+    },
+    "identityMap": {
+      "type": "object",
+      "meta:xdmType": "map",
+      "meta:xdmField": "xdm:identityMap",
+      "tagNumber": 10,
+      "properties": {
+        "mapObj": {
+          "type": "array",
+          "meta:xdmType": "array",
+          "items": {
+            "$ref": "../../datatypes/identityitem.schema.json",
+            "tagNumber": 1
+          },
+          "tagNumber": 1
+        }
+      }
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/classes/marketing-list-member-generated-manufacturing",
+  "meta:altId": "_xdm.classes.marketing-list-member-generated-manufacturing",
+  "id": "_xdm.classes.marketing-list-member-generated-manufacturing"
+}

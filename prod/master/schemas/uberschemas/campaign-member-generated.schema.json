@@ -16,25 +16,37 @@
   "meta:createdDate": [
     "2020-08-18",
     "2020-08-10",
-    "2020-09-29"
+    "2020-09-29",
+    "2021-02-19"
   ],
   "meta:titleId": [
     "campaign-member##title##30961",
     "record##title##65961",
     "external-source-system-audit-details##title##88991",
     "campaign-member-components##title##59761",
-    "campaign-member-details##title##66341"
+    "campaign-member-details##title##66341",
+    "identitymap##title##90811",
+    "person-identifier##title##62361"
   ],
   "meta:descriptionId": [
     "campaign-member##description##56301",
     "record##description##3921",
     "external-source-system-audit-details##description##98601",
     "campaign-member-components##description##93481",
-    "campaign-member-details##description##40731"
+    "campaign-member-details##description##40731",
+    "identitymap##description##41821",
+    "person-identifier##description##76761"
   ],
-  "meta:tags": {
-    "b2bSchema": true
-  },
+  "meta:tags": [
+    {
+      "b2bSchema": true
+    },
+    {
+      "industry": [
+        "all"
+      ]
+    }
+  ],
   "properties": {
     "_id": {
       "title": "Identifier",
@@ -101,8 +113,14 @@
       "description": "Person unique identifier.",
       "type": "string",
       "meta:status": "experimental",
-      "meta:titleId": "campaign-member##xdm:personID##title##80381",
-      "meta:descriptionId": "campaign-member##xdm:personID##description##74641",
+      "meta:titleId": [
+        "campaign-member##xdm:personID##title##80381",
+        "person-identifier##xdm:personID##title##75321"
+      ],
+      "meta:descriptionId": [
+        "campaign-member##xdm:personID##description##74641",
+        "person-identifier##xdm:personID##description##61151"
+      ],
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:personID",
       "tagNumber": 7
@@ -111,8 +129,14 @@
       "title": "Person Key",
       "description": "Unique composite identifier of the person.",
       "$ref": "../datatypes/b2b/b2b-source.schema.json",
-      "meta:titleId": "campaign-member##xdm:personKey##title##17441",
-      "meta:descriptionId": "campaign-member##xdm:personKey##description##78901",
+      "meta:titleId": [
+        "campaign-member##xdm:personKey##title##17441",
+        "person-identifier##xdm:personKey##title##34821"
+      ],
+      "meta:descriptionId": [
+        "campaign-member##xdm:personKey##description##78901",
+        "person-identifier##xdm:personKey##description##12581"
+      ],
       "meta:xdmField": "xdm:personKey",
       "tagNumber": 8
     },
@@ -122,7 +146,7 @@
       "meta:xdmField": "xdm:campaignMemberComponents",
       "tagNumber": 9,
       "items": {
-        "$ref": "obj8738397922943149.schema.json"
+        "$ref": "obj24922254900452212.schema.json"
       }
     },
     "memberStatus": {
@@ -285,6 +309,23 @@
       "meta:xdmType": "boolean",
       "meta:xdmField": "xdm:isDeleted",
       "tagNumber": 25
+    },
+    "identityMap": {
+      "type": "object",
+      "meta:xdmType": "map",
+      "meta:xdmField": "xdm:identityMap",
+      "tagNumber": 26,
+      "properties": {
+        "mapObj": {
+          "type": "array",
+          "meta:xdmType": "array",
+          "items": {
+            "$ref": "../datatypes/identityitem.schema.json",
+            "tagNumber": 1
+          },
+          "tagNumber": 1
+        }
+      }
     }
   },
   "meta:xdmId": "https://ns.adobe.com/xdm/context/campaign-member-generated",

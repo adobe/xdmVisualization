@@ -1,0 +1,152 @@
+{
+  "id": "_xdm.classes.promotion-generated-manufacturing",
+  "title": "Uber schema for https://ns.adobe.com/xdm/classes/promotion",
+  "description": "Uber schema for https://ns.adobe.com/xdm/classes/promotion",
+  "type": "object",
+  "meta:xdmType": "object",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:tags": [
+    {
+      "industry": [
+        "retail",
+        "financial_services",
+        "travel_and_hospitality",
+        "telecom",
+        "automotive",
+        "education",
+        "health_and_life_sciences",
+        "high_tech",
+        "manufacturing",
+        "media_and_entertainment",
+        "public_sector"
+      ]
+    },
+    {
+      "industry": [
+        "all"
+      ]
+    }
+  ],
+  "meta:status": "stable",
+  "meta:createdDate": [
+    "2021-02-24",
+    "2020-08-10"
+  ],
+  "meta:titleId": [
+    "promotion##title##83301",
+    "record##title##65961",
+    "identitymap##title##90811"
+  ],
+  "meta:descriptionId": [
+    "promotion##description##51391",
+    "record##description##3921",
+    "identitymap##description##41821"
+  ],
+  "properties": {
+    "_id": {
+      "title": "Identifier",
+      "type": "string",
+      "format": "uri-reference",
+      "description": "A unique identifier for the record.",
+      "meta:titleId": "record##@id##title##51271",
+      "meta:descriptionId": "record##@id##description##16181",
+      "meta:xdmType": "string",
+      "meta:xdmField": "@id",
+      "tagNumber": 1
+    },
+    "endDate": {
+      "title": "End Date",
+      "type": "string",
+      "format": "date-time",
+      "description": "Date on which the promotion ceases to be valid.",
+      "meta:titleId": "promotion##xdm:endDate##title##94911",
+      "meta:descriptionId": "promotion##xdm:endDate##description##62961",
+      "meta:xdmType": "date-time",
+      "meta:xdmField": "xdm:endDate",
+      "tagNumber": 2
+    },
+    "promoCreative": {
+      "title": "Promotion Creative",
+      "type": "string",
+      "description": "The text or creative variation associated with the promotion.",
+      "meta:titleId": "promotion##xdm:promoCreative##title##5541",
+      "meta:descriptionId": "promotion##xdm:promoCreative##description##71091",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:promoCreative",
+      "tagNumber": 3
+    },
+    "promotionDetails": {
+      "title": "Promotion Details",
+      "type": "string",
+      "description": "Details of the promotion such as percentage off, or other restrictions.",
+      "meta:titleId": "promotion##xdm:promotionDetails##title##93381",
+      "meta:descriptionId": "promotion##xdm:promotionDetails##description##20201",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:promotionDetails",
+      "tagNumber": 4
+    },
+    "ID": {
+      "title": "Promotion ID",
+      "type": "string",
+      "description": "The ID associated with the promotion.",
+      "meta:titleId": "promotion##xdm:ID##title##53941",
+      "meta:descriptionId": "promotion##xdm:ID##description##31301",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:ID",
+      "tagNumber": 5
+    },
+    "promoName": {
+      "title": "Promotion Name",
+      "type": "string",
+      "description": "Promotion name",
+      "meta:titleId": "promotion##xdm:promoName##title##67091",
+      "meta:descriptionId": "promotion##xdm:promoName##description##77381",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:promoName",
+      "tagNumber": 6
+    },
+    "promoPosition": {
+      "title": "Promotion Position",
+      "type": "string",
+      "description": "Promotion position on site.",
+      "meta:titleId": "promotion##xdm:promoPosition##title##84961",
+      "meta:descriptionId": "promotion##xdm:promoPosition##description##95911",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:promoPosition",
+      "tagNumber": 7
+    },
+    "startDate": {
+      "title": "Start Date",
+      "type": "string",
+      "format": "date-time",
+      "description": "Date on which the promotion is valid.",
+      "meta:titleId": "promotion##xdm:startDate##title##89761",
+      "meta:descriptionId": "promotion##xdm:startDate##description##24731",
+      "meta:xdmType": "date-time",
+      "meta:xdmField": "xdm:startDate",
+      "tagNumber": 8
+    },
+    "identityMap": {
+      "type": "object",
+      "meta:xdmType": "map",
+      "meta:xdmField": "xdm:identityMap",
+      "tagNumber": 9,
+      "properties": {
+        "mapObj": {
+          "type": "array",
+          "meta:xdmType": "array",
+          "items": {
+            "$ref": "../../datatypes/identityitem.schema.json",
+            "tagNumber": 1
+          },
+          "tagNumber": 1
+        }
+      }
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/classes/promotion-generated-manufacturing",
+  "meta:altId": "_xdm.classes.promotion-generated-manufacturing",
+  "id": "_xdm.classes.promotion-generated-manufacturing"
+}
