@@ -189,6 +189,19 @@
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:segmentStatus",
       "tagNumber": 12
+    },
+    "labels": {
+      "title": "Labels",
+      "description": "When present, it allows an array of labels. Values are resources IDs",
+      "type": "array",
+      "meta:xdmType": "array",
+      "items": {
+        "type": "string",
+        "meta:xdmType": "string",
+        "tagNumber": 1
+      },
+      "meta:xdmField": "xdm:labels",
+      "tagNumber": 13
     }
   },
   "meta:xdmId": "https://ns.adobe.com/xdm/context/segmentdefinition-generated-media_and_entertainment",

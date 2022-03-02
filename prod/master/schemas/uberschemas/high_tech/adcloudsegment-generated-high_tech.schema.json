@@ -195,6 +195,19 @@
       "meta:xdmField": "xdm:segmentStatus",
       "tagNumber": 12
     },
+    "labels": {
+      "title": "Labels",
+      "description": "When present, it allows an array of labels. Values are resources IDs",
+      "type": "array",
+      "meta:xdmType": "array",
+      "items": {
+        "type": "string",
+        "meta:xdmType": "string",
+        "tagNumber": 1
+      },
+      "meta:xdmField": "xdm:labels",
+      "tagNumber": 13
+    },
     "targeted": {
       "title": "Targeted",
       "type": "boolean",
@@ -203,7 +216,7 @@
       "meta:descriptionId": "adcloudsegment##xdm:targeted##description##73341",
       "meta:xdmType": "boolean",
       "meta:xdmField": "xdm:targeted",
-      "tagNumber": 13
+      "tagNumber": 14
     },
     "partnerId": {
       "title": "Attributable Partner ID",
@@ -213,7 +226,7 @@
       "meta:descriptionId": "adcloudsegment##xdm:partnerId##description##8151",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:partnerId",
-      "tagNumber": 14
+      "tagNumber": 15
     }
   },
   "meta:xdmId": "https://ns.adobe.com/experience/adcloud/adcloudsegment-generated-high_tech",

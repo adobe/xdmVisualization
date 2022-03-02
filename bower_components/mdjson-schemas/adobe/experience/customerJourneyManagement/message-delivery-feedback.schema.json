@@ -26,7 +26,7 @@
                 "feedbackStatus": {
                   "title": "Feedback Status",
                   "type": "string",
-                  "description": "Provide status of a delivery attempt.",
+                  "description": "Provide status of a delivery attempt across different channels(Email,Push,SMS etc.), Not all enums are used for all the channels, so follow the detailed documentation.",
                   "enum": [
                     "error",
                     "exclude",
@@ -34,7 +34,8 @@
                     "bounce",
                     "delay",
                     "duplicate",
-                    "denylist"
+                    "denylist",
+                    "delivered"
                   ],
                   "meta:titleId": "message-delivery-feedback##https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/feedbackStatus##title##21101",
                   "meta:descriptionId": "message-delivery-feedback##https://ns.adobe.com/experience/customerJourneyManagement/messageDeliveryfeedback/feedbackStatus##description##54571",

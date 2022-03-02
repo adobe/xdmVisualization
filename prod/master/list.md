@@ -630,7 +630,9 @@
 [adobe.experience.implementations-ext](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.implementations-ext.html)<br/>
 [adobe.experience.aam-experienceevent](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.aam-experienceevent.html)<br/>
 [adobe.experience.aep-web-sdk-experienceevent](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.aep-web-sdk-experienceevent.html)<br/>
+[adobe.experience.workfront.workobject](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.workfront.workobject.html)<br/>
 [adobe.experience.workfront.changeevent](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.workfront.changeevent.html)<br/>
+[adobe.experience.workfront.task](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.workfront.task.html)<br/>
 [adobe.experience.analytics-experienceevent](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.analytics-experienceevent.html)<br/>
 [adobe.experience.intelligentServices.profile-journeyai-engagementscores](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.intelligentServices.profile-journeyai-engagementscores.html)<br/>
 [adobe.experience.intelligentServices.profile-journeyai-sendtimeoptimization](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.intelligentServices.profile-journeyai-sendtimeoptimization.html)<br/>
@@ -726,6 +728,7 @@
 [adobe.experience.journeyOrchestration.stepEvents.journeyStepEventActionExecutionFieldsMixin](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.journeyOrchestration.stepEvents.journeyStepEventActionExecutionFieldsMixin.html)<br/>
 [adobe.experience.journeyOrchestration.stepEvents.journeyStepEventJourneyFieldsMixin](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.journeyOrchestration.stepEvents.journeyStepEventJourneyFieldsMixin.html)<br/>
 [adobe.experience.journeyOrchestration.journeyOrchestrationServiceEventsStateMachine](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.journeyOrchestration.journeyOrchestrationServiceEventsStateMachine.html)<br/>
+[adobe.experience.journeyOrchestration.journeyOrchestrationClassification](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.journeyOrchestration.journeyOrchestrationClassification.html)<br/>
 [adobe.experience.journeyOrchestration.journeyOrchestrationJourney](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.journeyOrchestration.journeyOrchestrationJourney.html)<br/>
 [adobe.experience.journeyOrchestration.journeyOrchestrationServiceEventsDispatcher](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.journeyOrchestration.journeyOrchestrationServiceEventsDispatcher.html)<br/>
 [adobe.experience.journeyOrchestration.journeyOrchestrationServiceEventsSegmentExportJob](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.journeyOrchestration.journeyOrchestrationServiceEventsSegmentExportJob.html)<br/>

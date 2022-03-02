@@ -128,6 +128,21 @@
                 }
               },
               "tagNumber": 3
+            },
+            "smsChannelContext": {
+              "type": "object",
+              "meta:xdmType": "object",
+              "properties": {
+                "smsProvider": {
+                  "title": "SMS Provider",
+                  "type": "string",
+                  "description": "SMS provider , e.g. sinch or twilio",
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "https://ns.adobe.com/experience/customerJourneyManagement/smsChannelContext/smsProvider",
+                  "tagNumber": 1
+                }
+              },
+              "tagNumber": 4
             }
           },
           "required": [

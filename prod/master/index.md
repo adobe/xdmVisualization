@@ -227,6 +227,7 @@
 <details>
 <summary>journeyOrchestration</summary>
 <ul>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.journeyOrchestration.journeyOrchestrationClassification.html">journeyOrchestrationClassification</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.journeyOrchestration.journeyOrchestrationDebugInfo.html">journeyOrchestrationDebugInfo</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.journeyOrchestration.journeyOrchestrationIdentity.html">journeyOrchestrationIdentity</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.journeyOrchestration.journeyOrchestrationJourney.html">journeyOrchestrationJourney</a></li>
@@ -290,6 +291,8 @@
 <summary>workfront</summary>
 <ul>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.workfront.changeevent.html">changeevent</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.workfront.task.html">task</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.workfront.workobject.html">workobject</a></li>
 </ul>
 </details>
 </ul>

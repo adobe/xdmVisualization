@@ -8,7 +8,7 @@
   },
   "meta:conditionalField": "xdm:eventType",
   "meta:conditionalValue": "leadOperation.changeCampaignCadence",
-  "description": "Use to capture details when engagement campaign cadence changes for a person.",
+  "description": "Use to capture details when campaign cadence changes for a person.",
   "meta:status": "experimental",
   "meta:createdDate": "2022-01-25",
   "meta:xdmType": "object",
@@ -25,7 +25,7 @@
           "properties": {
             "campaignKey": {
               "title": "Campaign Key",
-              "description": "Unique composite identifier of the Campaign.",
+              "description": "Unique composite identifier of the campaign.",
               "$ref": "../../../datatypes/b2b/b2b-source.schema.json",
               "meta:xdmField": "xdm:campaignKey",
               "tagNumber": 2
@@ -33,7 +33,7 @@
             "newCadence": {
               "title": "New Cadence",
               "type": "string",
-              "description": "New value of engagement campaign cadence.",
+              "description": "New value of campaign cadence.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:newCadence",
               "tagNumber": 3
@@ -41,7 +41,7 @@
             "previousCadence": {
               "title": "Previous Cadence",
               "type": "string",
-              "description": "Previous value of engagement campaign cadence.",
+              "description": "Previous value of campaign cadence.",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:previousCadence",
               "tagNumber": 4

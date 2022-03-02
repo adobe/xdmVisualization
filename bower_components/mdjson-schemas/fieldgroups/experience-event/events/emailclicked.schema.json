@@ -21,15 +21,12 @@
       "meta:titleId": "emailclicked##xdm:directMarketing##title##9041",
       "meta:xdmType": "object",
       "properties": {
-        "mailingID": {
+        "mailingKey": {
           "title": "Mailing ID",
-          "type": "string",
-          "description": "Unique ID of the email asset.",
-          "meta:titleId": "emailclicked##xdm:mailingID##title##16031",
-          "meta:descriptionId": "emailclicked##xdm:mailingID##description##71861",
-          "meta:xdmType": "string",
-          "meta:xdmField": "xdm:mailingID",
-          "tagNumber": 1
+          "description": "Unique key of the email asset.",
+          "$ref": "../../../datatypes/b2b/b2b-source.schema.json",
+          "meta:xdmField": "xdm:mailingKey",
+          "tagNumber": 2
         },
         "mailingName": {
           "title": "Mailing Name",
@@ -39,7 +36,7 @@
           "meta:descriptionId": "emailclicked##xdm:mailingName##description##11041",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:mailingName",
-          "tagNumber": 2
+          "tagNumber": 3
         },
         "linkURL": {
           "title": "Link URL",
@@ -49,7 +46,7 @@
           "meta:descriptionId": "emailclicked##xdm:linkURL##description##24191",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:linkURL",
-          "tagNumber": 3
+          "tagNumber": 4
         },
         "testVariantID": {
           "title": "Test Variant ID",
@@ -59,7 +56,7 @@
           "meta:descriptionId": "emailclicked##xdm:testVariantID##description##66361",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:testVariantID",
-          "tagNumber": 4
+          "tagNumber": 5
         },
         "testVariantName": {
           "title": "Test Variant Name",
@@ -69,7 +66,7 @@
           "meta:descriptionId": "emailclicked##xdm:testVariantName##description##31951",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:testVariantName",
-          "tagNumber": 5
+          "tagNumber": 6
         }
       },
       "meta:xdmField": "xdm:directMarketing",

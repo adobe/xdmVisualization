@@ -83,128 +83,13 @@
           "meta:xdmField": "workfront:completed",
           "tagNumber": 4
         },
-        "parentProjectID": {
-          "title": "Project ID",
-          "description": "The parent Project ID",
-          "type": "string",
-          "meta:xdmType": "string",
-          "meta:xdmField": "workfront:parentProjectID",
-          "tagNumber": 5
-        },
-        "parentProgramID": {
-          "title": "Program ID",
-          "description": "The parent Program ID",
-          "type": "string",
-          "meta:xdmType": "string",
-          "meta:xdmField": "workfront:parentProgramID",
-          "tagNumber": 6
-        },
-        "parentPortfolioID": {
-          "title": "Portfolio ID",
-          "description": "The parent Portfolio ID",
-          "type": "string",
-          "meta:xdmType": "string",
-          "meta:xdmField": "workfront:parentPortfolioID",
-          "tagNumber": 7
-        },
-        "iterationID": {
-          "title": "Iteration ID",
-          "description": "Iteration/Sprint this task was associated with",
-          "type": "string",
-          "meta:xdmType": "string",
-          "meta:xdmField": "workfront:iterationID",
-          "tagNumber": 8
-        },
-        "status": {
-          "title": "Status",
-          "description": "Current Status",
-          "type": "string",
-          "meta:xdmType": "string",
-          "meta:xdmField": "workfront:status",
-          "tagNumber": 9
-        },
-        "percentComplete": {
-          "title": "Percent Complete",
-          "description": "Current percentage complete",
-          "type": "number",
-          "meta:xdmType": "number",
-          "meta:xdmField": "workfront:percentComplete",
-          "tagNumber": 10
-        },
-        "priority": {
-          "title": "Priority",
-          "description": "Current priority of this object",
-          "type": "integer",
-          "meta:xdmType": "int",
-          "meta:xdmField": "workfront:priority",
-          "tagNumber": 11
-        },
-        "storyPoints": {
-          "title": "Story Points",
-          "description": "Story points assigned to this object",
-          "type": "number",
-          "meta:xdmType": "number",
-          "meta:xdmField": "workfront:storyPoints",
-          "tagNumber": 12
-        },
-        "durationMinutes": {
-          "title": "Duration Minutes",
-          "description": "Number of minutes spent",
-          "type": "integer",
-          "meta:xdmType": "int",
-          "meta:xdmField": "workfront:durationMinutes",
-          "tagNumber": 13
-        },
-        "remainingMinutes": {
-          "title": "Remaining Minutes",
-          "description": "Remaining minutes expected",
-          "type": "integer",
-          "meta:xdmType": "int",
-          "meta:xdmField": "workfront:remainingMinutes",
-          "tagNumber": 14
-        },
-        "assignedToID": {
-          "title": "Assigned To",
-          "description": "The ID of the employee or person this object type is assigned to",
-          "type": "string",
-          "meta:xdmType": "string",
-          "meta:xdmField": "workfront:assignedToID",
-          "tagNumber": 15
-        },
-        "actualStartDate": {
-          "title": "Actual Start Date",
-          "description": "Actual start date of execution",
-          "type": "string",
-          "format": "date-time",
-          "meta:xdmType": "date-time",
-          "meta:xdmField": "workfront:actualStartDate",
-          "tagNumber": 16
-        },
-        "actualCompletionDate": {
-          "title": "Actual Completion",
-          "description": "Actual completion date execution",
-          "type": "string",
-          "format": "date-time",
-          "meta:xdmType": "date-time",
-          "meta:xdmField": "workfront:actualCompletionDate",
-          "tagNumber": 17
-        },
-        "plannedStartDate": {
-          "title": "Planned Start Date",
-          "description": "Planned start date of execution",
-          "type": "string",
-          "format": "date-time",
-          "meta:xdmType": "date-time",
-          "meta:xdmField": "workfront:plannedStartDate",
-          "tagNumber": 18
-        },
         "objectName": {
           "title": "Object Name",
           "description": "Name assigned to this object",
           "type": "string",
           "meta:xdmType": "string",
           "meta:xdmField": "workfront:objectName",
-          "tagNumber": 19
+          "tagNumber": 5
         },
         "objectID": {
           "title": "Object ID",
@@ -212,7 +97,7 @@
           "type": "string",
           "meta:xdmType": "string",
           "meta:xdmField": "workfront:objectID",
-          "tagNumber": 20
+          "tagNumber": 6
         },
         "objectType": {
           "title": "Object Type",
@@ -225,6 +110,121 @@
           ],
           "meta:xdmType": "string",
           "meta:xdmField": "workfront:objectType",
+          "tagNumber": 7
+        },
+        "parentID": {
+          "title": "Parent Object ID",
+          "description": "The ID of the parent object",
+          "type": "string",
+          "meta:xdmType": "string",
+          "meta:xdmField": "workfront:parentID",
+          "tagNumber": 8
+        },
+        "parentObjectType": {
+          "title": "Parent Object Type",
+          "description": "String value representing the type of parent - PROJECT, TASK, etc.",
+          "type": "string",
+          "meta:xdmType": "string",
+          "meta:xdmField": "workfront:parentObjectType",
+          "tagNumber": 9
+        },
+        "iterationID": {
+          "title": "Iteration ID",
+          "description": "Iteration/Sprint this task was associated with",
+          "type": "string",
+          "meta:xdmType": "string",
+          "meta:xdmField": "workfront:iterationID",
+          "tagNumber": 10
+        },
+        "status": {
+          "title": "Status",
+          "description": "Current Status",
+          "type": "string",
+          "meta:xdmType": "string",
+          "meta:xdmField": "workfront:status",
+          "tagNumber": 11
+        },
+        "percentComplete": {
+          "title": "Percent Complete",
+          "description": "Current percentage complete",
+          "type": "number",
+          "meta:xdmType": "number",
+          "meta:xdmField": "workfront:percentComplete",
+          "tagNumber": 12
+        },
+        "priority": {
+          "title": "Priority",
+          "description": "Current priority of this object",
+          "type": "integer",
+          "meta:xdmType": "int",
+          "meta:xdmField": "workfront:priority",
+          "tagNumber": 13
+        },
+        "storyPoints": {
+          "title": "Story Points",
+          "description": "Story points assigned to this object",
+          "type": "number",
+          "meta:xdmType": "number",
+          "meta:xdmField": "workfront:storyPoints",
+          "tagNumber": 14
+        },
+        "durationMinutes": {
+          "title": "Duration Minutes",
+          "description": "Number of minutes spent",
+          "type": "integer",
+          "meta:xdmType": "int",
+          "meta:xdmField": "workfront:durationMinutes",
+          "tagNumber": 15
+        },
+        "remainingMinutes": {
+          "title": "Remaining Minutes",
+          "description": "Remaining minutes expected",
+          "type": "integer",
+          "meta:xdmType": "int",
+          "meta:xdmField": "workfront:remainingMinutes",
+          "tagNumber": 16
+        },
+        "assignedToID": {
+          "title": "Assigned To",
+          "description": "The ID of the employee or person this object type is assigned to",
+          "type": "string",
+          "meta:xdmType": "string",
+          "meta:xdmField": "workfront:assignedToID",
+          "tagNumber": 17
+        },
+        "actualStartDate": {
+          "title": "Actual Start Date",
+          "description": "Actual start date of execution",
+          "type": "string",
+          "format": "date-time",
+          "meta:xdmType": "date-time",
+          "meta:xdmField": "workfront:actualStartDate",
+          "tagNumber": 18
+        },
+        "actualCompletionDate": {
+          "title": "Actual Completion",
+          "description": "Actual completion date execution",
+          "type": "string",
+          "format": "date-time",
+          "meta:xdmType": "date-time",
+          "meta:xdmField": "workfront:actualCompletionDate",
+          "tagNumber": 19
+        },
+        "plannedStartDate": {
+          "title": "Planned Start Date",
+          "description": "Planned start date of execution",
+          "type": "string",
+          "format": "date-time",
+          "meta:xdmType": "date-time",
+          "meta:xdmField": "workfront:plannedStartDate",
+          "tagNumber": 20
+        },
+        "lastUpdatedByID": {
+          "title": "Updated By",
+          "description": "The ID of the user who made the last update",
+          "type": "string",
+          "meta:xdmType": "string",
+          "meta:xdmField": "workfront:lastUpdatedByID",
           "tagNumber": 21
         }
       },
