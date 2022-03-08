@@ -146,7 +146,8 @@
     "experienceevent-reservation-search##title##50481",
     "experienceevent-upgrade-details##title##3091",
     "experienceevent-upsell-details##title##14631",
-    "experienceevent-vehicle-reservation##title##24041"
+    "experienceevent-vehicle-reservation##title##24041",
+    "profile-personal-details##title##17051"
   ],
   "meta:descriptionId": [
     "experienceevent##description##41211",
@@ -178,7 +179,8 @@
     "experienceevent-reservation-search##description##7971",
     "experienceevent-upgrade-details##description##25701",
     "experienceevent-upsell-details##description##98371",
-    "experienceevent-vehicle-reservation##description##68881"
+    "experienceevent-vehicle-reservation##description##68881",
+    "profile-personal-details##description##5771"
   ],
   "properties": {
     "identityMap": {
@@ -1010,7 +1012,7 @@
           "meta:xdmField": "xdm:diningReservations",
           "tagNumber": 1,
           "items": {
-            "$ref": "obj3567070478416903.schema.json"
+            "$ref": "obj4145683605515318.schema.json"
           }
         },
         "cancellation": {
@@ -1183,7 +1185,7 @@
           "meta:xdmField": "xdm:flightReservations",
           "tagNumber": 19,
           "items": {
-            "$ref": "obj47078794738368956.schema.json"
+            "$ref": "obj15799534457047404.schema.json"
           }
         },
         "lodgingReservations": {
@@ -1192,7 +1194,7 @@
           "meta:xdmField": "xdm:lodgingReservations",
           "tagNumber": 20,
           "items": {
-            "$ref": "obj7691328410025597.schema.json"
+            "$ref": "obj34407378466561034.schema.json"
           }
         },
         "vehicleReservations": {
@@ -1201,7 +1203,7 @@
           "meta:xdmField": "xdm:vehicleReservations",
           "tagNumber": 21,
           "items": {
-            "$ref": "obj7696489661020973.schema.json"
+            "$ref": "obj04217570771905965.schema.json"
           }
         }
       },
@@ -1369,6 +1371,51 @@
       },
       "meta:xdmField": "xdm:upsells",
       "tagNumber": 28
+    },
+    "homeAddress": {
+      "title": "Home address",
+      "$ref": "../../datatypes/demographic/address.schema.json",
+      "description": "A home postal address.",
+      "meta:titleId": "profile-personal-details##xdm:homeAddress##title##98571",
+      "meta:descriptionId": "profile-personal-details##xdm:homeAddress##description##35241",
+      "meta:xdmField": "xdm:homeAddress",
+      "tagNumber": 29
+    },
+    "personalEmail": {
+      "title": "Personal email",
+      "$ref": "../../datatypes/demographic/emailaddress.schema.json",
+      "description": "A personal email address.",
+      "meta:titleId": "profile-personal-details##xdm:personalEmail##title##13501",
+      "meta:descriptionId": "profile-personal-details##xdm:personalEmail##description##54181",
+      "meta:xdmField": "xdm:personalEmail",
+      "tagNumber": 30
+    },
+    "homePhone": {
+      "title": "Home phone",
+      "$ref": "../../datatypes/demographic/phonenumber.schema.json",
+      "description": "Home phone number.",
+      "meta:titleId": "profile-personal-details##xdm:homePhone##title##28261",
+      "meta:descriptionId": "profile-personal-details##xdm:homePhone##description##45111",
+      "meta:xdmField": "xdm:homePhone",
+      "tagNumber": 31
+    },
+    "mobilePhone": {
+      "title": "Mobile phone",
+      "$ref": "../../datatypes/demographic/phonenumber.schema.json",
+      "description": "Mobile phone number.",
+      "meta:titleId": "profile-personal-details##xdm:mobilePhone##title##76241",
+      "meta:descriptionId": "profile-personal-details##xdm:mobilePhone##description##51801",
+      "meta:xdmField": "xdm:mobilePhone",
+      "tagNumber": 32
+    },
+    "faxPhone": {
+      "title": "Fax phone",
+      "$ref": "../../datatypes/demographic/phonenumber.schema.json",
+      "description": "Fax phone number.",
+      "meta:titleId": "profile-personal-details##xdm:faxPhone##title##15761",
+      "meta:descriptionId": "profile-personal-details##xdm:faxPhone##description##5951",
+      "meta:xdmField": "xdm:faxPhone",
+      "tagNumber": 33
     }
   },
   "meta:xdmId": "https://ns.adobe.com/xdm/context/experienceevent-generated-travel_and_hospitality",
