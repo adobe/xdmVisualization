@@ -1,0 +1,33 @@
+{
+  "properties": {
+    "items": {
+      "title": "Decision Options' Snapshot",
+      "description": "Snapshot of the options that were selected by this proposition. The objects contain at least the xdm:id property value which is the identifier of an option. The intention is that either the selections or the fallback property is required.",
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "meta:titleId": "decisionevent##xdm:items##title##30091",
+      "meta:descriptionId": "decisionevent##xdm:items##description##64411",
+      "meta:xdmType": "array",
+      "items": {
+        "$ref": "../../adobe/experience/decisioning/option-detail.schema.json",
+        "tagNumber": 1
+      },
+      "meta:xdmField": "xdm:items",
+      "tagNumber": 1
+    },
+    "scopeDetails": {
+      "$ref": "../../adobe/experience/decisioning/scope-details.schema.json",
+      "title": "Decision Scope Snapshot",
+      "description": "A snapshot of properties from the decision scope. This is the state of the scope entity that was used in the decision requst.",
+      "meta:titleId": "decisionevent##xdm:scopeDetails##title##8281",
+      "meta:descriptionId": "decisionevent##xdm:scopeDetails##description##6731",
+      "meta:xdmField": "xdm:scopeDetails",
+      "tagNumber": 2
+    }
+  },
+  "type": "object",
+  "tagNumber": 1,
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "id": "obj015205700052115523.schema.json"
+}
