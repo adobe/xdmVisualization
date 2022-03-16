@@ -100,16 +100,6 @@
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:nationality",
       "tagNumber": 7
-    },
-    "taxId": {
-      "title": "Tax ID",
-      "type": "string",
-      "description": "The Tax / Fiscal ID of the person, e.g. the TIN in the US or the CIF/NIF in Spain.",
-      "meta:titleId": "person##xdm:taxId##title##67871",
-      "meta:descriptionId": "person##xdm:taxId##description##73551",
-      "meta:xdmType": "string",
-      "meta:xdmField": "xdm:taxId",
-      "tagNumber": 8
     }
   },
   "meta:xdmId": "https://ns.adobe.com/xdm/context/person",

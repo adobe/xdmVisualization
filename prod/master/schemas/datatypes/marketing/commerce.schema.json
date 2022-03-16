@@ -31,6 +31,7 @@
       "tagNumber": 2
     },
     "cartAbandons": {
+      "title": "Cart Abandons",
       "$ref": "../data/measure.schema.json",
       "description": "A product list has been identified as no longer accessible or purchasable by the user.",
       "meta:descriptionId": "commerce##xdm:cartAbandons##description##31901",
@@ -38,6 +39,7 @@
       "tagNumber": 3
     },
     "checkouts": {
+      "title": "Checkouts",
       "$ref": "../data/measure.schema.json",
       "description": "An action during a checkout process of a product list, there can be more than one checkout event if there are multiple steps in a checkout process. If there are multiple steps the event time information and referenced page or experience is used to identify the step individual events represent in order.",
       "meta:descriptionId": "commerce##xdm:checkouts##description##73181",
@@ -45,6 +47,7 @@
       "tagNumber": 4
     },
     "productListAdds": {
+      "title": "Product List(Cart) Adds",
       "$ref": "../data/measure.schema.json",
       "description": "Addition of a product to the product list, for example a product is added to a shopping cart.",
       "meta:descriptionId": "commerce##xdm:productListAdds##description##19431",
@@ -52,6 +55,7 @@
       "tagNumber": 5
     },
     "productListOpens": {
+      "title": "Product List(Cart) Opens",
       "$ref": "../data/measure.schema.json",
       "description": "Initializations of a new product list, for example a shopping cart is created.",
       "meta:descriptionId": "commerce##xdm:productListOpens##description##58831",
@@ -59,6 +63,7 @@
       "tagNumber": 6
     },
     "productListRemovals": {
+      "title": "Product List(Cart) Removals",
       "$ref": "../data/measure.schema.json",
       "description": "Removal or removals of a product entry from a product list, for example a product is removed from a shopping cart.",
       "meta:descriptionId": "commerce##xdm:productListRemovals##description##78581",
@@ -66,6 +71,7 @@
       "tagNumber": 7
     },
     "productListReopens": {
+      "title": "Product List(Cart) Reopens",
       "$ref": "../data/measure.schema.json",
       "description": "A product list that was no longer accessible (abandoned) has been re-activated by the user. Example via a re-marketing activity.",
       "meta:descriptionId": "commerce##xdm:productListReopens##description##26411",
@@ -73,6 +79,7 @@
       "tagNumber": 8
     },
     "productListViews": {
+      "title": "Product List(Cart) Views",
       "$ref": "../data/measure.schema.json",
       "description": "View or views of a product-list has occurred.",
       "meta:descriptionId": "commerce##xdm:productListViews##description##21091",
@@ -80,6 +87,7 @@
       "tagNumber": 9
     },
     "productViews": {
+      "title": "Product Views",
       "$ref": "../data/measure.schema.json",
       "description": "View or views of a product have occurred.",
       "meta:descriptionId": "commerce##xdm:productViews##description##22921",
@@ -87,6 +95,7 @@
       "tagNumber": 10
     },
     "purchases": {
+      "title": "Purchases",
       "$ref": "../data/measure.schema.json",
       "description": "An order has been accepted. Purchase is the only required action in a commerce conversion. Purchase must have a product list referenced.",
       "meta:descriptionId": "commerce##xdm:purchases##description##20481",
@@ -94,6 +103,7 @@
       "tagNumber": 11
     },
     "saveForLaters": {
+      "title": "Save For Laters",
       "$ref": "../data/measure.schema.json",
       "description": "Product list is saved for future use, for example a product wish list.",
       "meta:descriptionId": "commerce##xdm:saveForLaters##description##45041",
@@ -101,6 +111,7 @@
       "tagNumber": 12
     },
     "inStorePurchase": {
+      "title": "In Store Purchase",
       "$ref": "../data/measure.schema.json",
       "description": "'inStore' purchase is saved for analytics use.",
       "meta:descriptionId": "commerce##xdm:inStorePurchase##description##27451",
