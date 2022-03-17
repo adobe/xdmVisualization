@@ -47,7 +47,7 @@
       "tagNumber": 4
     },
     "productListAdds": {
-      "title": "Product List(Cart) Adds",
+      "title": "Product List (Cart) Adds",
       "$ref": "../data/measure.schema.json",
       "description": "Addition of a product to the product list, for example a product is added to a shopping cart.",
       "meta:descriptionId": "commerce##xdm:productListAdds##description##19431",
@@ -55,7 +55,7 @@
       "tagNumber": 5
     },
     "productListOpens": {
-      "title": "Product List(Cart) Opens",
+      "title": "Product List (Cart) Opens",
       "$ref": "../data/measure.schema.json",
       "description": "Initializations of a new product list, for example a shopping cart is created.",
       "meta:descriptionId": "commerce##xdm:productListOpens##description##58831",
@@ -63,7 +63,7 @@
       "tagNumber": 6
     },
     "productListRemovals": {
-      "title": "Product List(Cart) Removals",
+      "title": "Product List (Cart) Removals",
       "$ref": "../data/measure.schema.json",
       "description": "Removal or removals of a product entry from a product list, for example a product is removed from a shopping cart.",
       "meta:descriptionId": "commerce##xdm:productListRemovals##description##78581",
@@ -71,7 +71,7 @@
       "tagNumber": 7
     },
     "productListReopens": {
-      "title": "Product List(Cart) Reopens",
+      "title": "Product List (Cart) Reopens",
       "$ref": "../data/measure.schema.json",
       "description": "A product list that was no longer accessible (abandoned) has been re-activated by the user. Example via a re-marketing activity.",
       "meta:descriptionId": "commerce##xdm:productListReopens##description##26411",
@@ -79,7 +79,7 @@
       "tagNumber": 8
     },
     "productListViews": {
-      "title": "Product List(Cart) Views",
+      "title": "Product List (Cart) Views",
       "$ref": "../data/measure.schema.json",
       "description": "View or views of a product-list has occurred.",
       "meta:descriptionId": "commerce##xdm:productListViews##description##21091",
