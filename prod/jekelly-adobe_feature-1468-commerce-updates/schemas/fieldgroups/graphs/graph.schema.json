@@ -1,0 +1,168 @@
+{
+  "id": "_xdm.context.graph",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "XDM Graph Schema",
+  "type": "object",
+  "description": "Use for host graph data such as label, type, and creation timestamps.",
+  "auditable": true,
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:status": "stable",
+  "meta:createdDate": [
+    "2020-08-10",
+    "2021-02-19"
+  ],
+  "meta:titleId": [
+    "graph##title##9301",
+    "auditable##title##87231"
+  ],
+  "meta:descriptionId": [
+    "graph##description##46971",
+    "auditable##description##48551"
+  ],
+  "meta:xdmType": "object",
+  "properties": {
+    "graphId": {
+      "title": "Graph Identifier",
+      "description": "The unique identifier of the identity associated with this graph.",
+      "type": "string",
+      "meta:titleId": "graph##xdm:graphId##title##971",
+      "meta:descriptionId": "graph##xdm:graphId##description##80361",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:graphId",
+      "tagNumber": 1
+    },
+    "label": {
+      "title": "Graph Label",
+      "description": "Graph label.",
+      "type": "string",
+      "meta:titleId": "graph##xdm:label##title##131",
+      "meta:descriptionId": "graph##xdm:label##description##29611",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:label",
+      "tagNumber": 2
+    },
+    "directed": {
+      "title": "Directed Graph Indicator",
+      "description": "Directed graph indicator.",
+      "type": "boolean",
+      "default": true,
+      "meta:titleId": "graph##xdm:directed##title##92241",
+      "meta:descriptionId": "graph##xdm:directed##description##16861",
+      "meta:xdmType": "boolean",
+      "meta:xdmField": "xdm:directed",
+      "tagNumber": 3
+    },
+    "graphType": {
+      "title": "Graph Type",
+      "description": "Graph type. Examples - Person graph, Third party graph, Private graph etc.",
+      "type": "string",
+      "meta:titleId": "graph##xdm:graphType##title##32771",
+      "meta:descriptionId": "graph##xdm:graphType##description##22421",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:graphType",
+      "tagNumber": 4
+    },
+    "firstCreatedTimestamp": {
+      "title": "Graph Created Date And Time",
+      "description": "Time and date this graph was created.",
+      "type": "string",
+      "format": "date-time",
+      "meta:titleId": "graph##xdm:firstCreatedTimestamp##title##13721",
+      "meta:descriptionId": "graph##xdm:firstCreatedTimestamp##description##34671",
+      "meta:xdmType": "date-time",
+      "meta:xdmField": "xdm:firstCreatedTimestamp",
+      "tagNumber": 5
+    },
+    "lastModifiedTimestamp": {
+      "title": "Graph Last Modified Date And Time",
+      "description": "Time and date this graph was last modified.",
+      "type": "string",
+      "format": "date-time",
+      "meta:titleId": "graph##xdm:lastModifiedTimestamp##title##29521",
+      "meta:descriptionId": "graph##xdm:lastModifiedTimestamp##description##64601",
+      "meta:xdmType": "date-time",
+      "meta:xdmField": "xdm:lastModifiedTimestamp",
+      "tagNumber": 6
+    },
+    "repositoryCreatedBy": {
+      "title": "Created by user identifier",
+      "type": "string",
+      "description": "User ID of who created the record.",
+      "meta:titleId": "auditable##xdm:repositoryCreatedBy##title##81581",
+      "meta:descriptionId": "auditable##xdm:repositoryCreatedBy##description##79871",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:repositoryCreatedBy",
+      "tagNumber": 7
+    },
+    "repositoryLastModifiedBy": {
+      "title": "Modified by user identifier",
+      "type": "string",
+      "description": "User ID of who last modified the record. At creation time, `modifiedByUser` is set as `createdByUser`.",
+      "meta:titleId": "auditable##xdm:repositoryLastModifiedBy##title##8121",
+      "meta:descriptionId": "auditable##xdm:repositoryLastModifiedBy##description##90771",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:repositoryLastModifiedBy",
+      "tagNumber": 8
+    },
+    "createdByBatchID": {
+      "title": "Created by batch identifier",
+      "type": "string",
+      "format": "uri-reference",
+      "description": "The dataset files in Catalog which has been originating the creation of the record.",
+      "meta:titleId": "auditable##xdm:createdByBatchID##title##46121",
+      "meta:descriptionId": "auditable##xdm:createdByBatchID##description##60231",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:createdByBatchID",
+      "tagNumber": 9
+    },
+    "modifiedByBatchID": {
+      "title": "Modified by batch identifier",
+      "type": "string",
+      "format": "uri-reference",
+      "description": "The last dataset files in Catalog which has modified the record. At creation time, `modifiedByBatchID` is set as `createdByBatchID`.",
+      "meta:titleId": "auditable##xdm:modifiedByBatchID##title##45371",
+      "meta:descriptionId": "auditable##xdm:modifiedByBatchID##description##21001",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:modifiedByBatchID",
+      "tagNumber": 10
+    },
+    "_repo": {
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "createDate": {
+          "type": "string",
+          "format": "date-time",
+          "meta:immutable": true,
+          "meta:usereditable": false,
+          "examples": [
+            "2004-10-23T12:00:00-06:00"
+          ],
+          "description": "The server date and time when the resource was created in the repository, such as when an asset file is first uploaded or a directory is created by the server as the parent of a new asset. The date time property should conform to ISO 8601 standard. An example form is \"2004-10-23T12:00:00-06:00\".",
+          "meta:descriptionId": "1.0##repo:createDate##description##36201",
+          "meta:xdmType": "date-time",
+          "meta:xdmField": "repo:createDate",
+          "tagNumber": 1
+        },
+        "modifyDate": {
+          "type": "string",
+          "format": "date-time",
+          "meta:usereditable": false,
+          "examples": [
+            "2004-10-23T12:00:00-06:00"
+          ],
+          "description": "The server date and time when the resource was last modified in the repository, such as when a new version of an asset is uploaded or a directory's child resource is added or removed. The date time property should conform to ISO 8601 standard. An example form is \"2004-10-23T12:00:00-06:00\".",
+          "meta:descriptionId": "1.0##repo:modifyDate##description##84751",
+          "meta:xdmType": "date-time",
+          "meta:xdmField": "repo:modifyDate",
+          "tagNumber": 2
+        }
+      },
+      "tagNumber": 11
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/context/graph",
+  "meta:altId": "_xdm.context.graph",
+  "id": "_xdm.context.graph"
+}

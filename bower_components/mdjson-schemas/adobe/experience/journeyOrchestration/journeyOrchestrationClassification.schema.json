@@ -1,0 +1,281 @@
+{
+  "id": "_experience.journeyorchestration.classification",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "AJO Classification Fields",
+  "description": "A set of meta-data fields that will classify the correlation id for performance reporting.",
+  "type": "object",
+  "meta:status": "stable",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:xdmType": "object",
+  "properties": {
+    "_experience": {
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "journeyOrchestration": {
+          "type": "object",
+          "meta:xdmType": "object",
+          "properties": {
+            "classification": {
+              "type": "object",
+              "meta:xdmType": "object",
+              "properties": {
+                "messageID": {
+                  "title": "Message Id",
+                  "description": "The message id to which this data should be correlated.",
+                  "type": "string",
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/classification/messageID",
+                  "tagNumber": 1
+                },
+                "channel": {
+                  "title": "Channel",
+                  "description": "The channel to which this data should be correlated.",
+                  "$ref": "../../../datatypes/channels/channel.schema.json",
+                  "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/classification/channel",
+                  "tagNumber": 2
+                },
+                "experimentation": {
+                  "title": "Experimentation",
+                  "description": "A container to group experimentation details.",
+                  "type": "object",
+                  "meta:xdmType": "object",
+                  "properties": {
+                    "_experience": {
+                      "type": "object",
+                      "meta:xdmType": "object",
+                      "properties": {
+                        "journeyOrchestration": {
+                          "type": "object",
+                          "meta:xdmType": "object",
+                          "properties": {
+                            "classification": {
+                              "type": "object",
+                              "meta:xdmType": "object",
+                              "properties": {
+                                "experimentID": {
+                                  "title": "Experiment Id",
+                                  "description": "The id of the experiment.",
+                                  "type": "string",
+                                  "meta:xdmType": "string",
+                                  "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/classification/experimentID",
+                                  "tagNumber": 1
+                                },
+                                "experimentName": {
+                                  "title": "Experiment Name",
+                                  "description": "The name of the experiment.",
+                                  "type": "string",
+                                  "meta:xdmType": "string",
+                                  "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/classification/experimentName",
+                                  "tagNumber": 2
+                                },
+                                "treatmentID": {
+                                  "title": "Treatment Id",
+                                  "description": "The id of selected treatment for the experiment.",
+                                  "type": "string",
+                                  "meta:xdmType": "string",
+                                  "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/classification/treatmentID",
+                                  "tagNumber": 3
+                                },
+                                "treatmentName": {
+                                  "title": "Treatment Name",
+                                  "description": "The name of the selected treatment for the experiment.",
+                                  "type": "string",
+                                  "meta:xdmType": "string",
+                                  "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/classification/treatmentName",
+                                  "tagNumber": 4
+                                }
+                              },
+                              "tagNumber": 1
+                            }
+                          },
+                          "tagNumber": 1
+                        }
+                      },
+                      "tagNumber": 1
+                    }
+                  },
+                  "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/classification/experimentation",
+                  "tagNumber": 3
+                },
+                "journey": {
+                  "title": "Journey",
+                  "description": "A container to group journey details.",
+                  "type": "object",
+                  "meta:xdmType": "object",
+                  "properties": {
+                    "_experience": {
+                      "type": "object",
+                      "meta:xdmType": "object",
+                      "properties": {
+                        "journeyOrchestration": {
+                          "type": "object",
+                          "meta:xdmType": "object",
+                          "properties": {
+                            "classification": {
+                              "type": "object",
+                              "meta:xdmType": "object",
+                              "properties": {
+                                "journeyID": {
+                                  "title": "Journey Id",
+                                  "description": "The id of the journey to which this data should be correlated.",
+                                  "type": "string",
+                                  "meta:xdmType": "string",
+                                  "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/classification/journeyID",
+                                  "tagNumber": 1
+                                },
+                                "journeyName": {
+                                  "title": "Journey Name",
+                                  "description": "The name of the journey to which this data should be correlated.",
+                                  "type": "string",
+                                  "meta:xdmType": "string",
+                                  "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/classification/journeyName",
+                                  "tagNumber": 2
+                                },
+                                "journeyVersionID": {
+                                  "title": "Journey Version Id",
+                                  "description": "The version id of the journey to which this data should be correlated.",
+                                  "type": "string",
+                                  "meta:xdmType": "string",
+                                  "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/classification/journeyVersionID",
+                                  "tagNumber": 3
+                                },
+                                "journeyNameAndVersion": {
+                                  "title": "JourneyVersionName",
+                                  "description": "The name with the appended version of the journey to which this data should be correlated.",
+                                  "type": "string",
+                                  "meta:xdmType": "string",
+                                  "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/classification/journeyNameAndVersion",
+                                  "tagNumber": 4
+                                },
+                                "actionName": {
+                                  "title": "Action Name",
+                                  "description": "The action name of the journey to which this data should be correlated.",
+                                  "type": "string",
+                                  "meta:xdmType": "string",
+                                  "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/classification/actionName",
+                                  "tagNumber": 5
+                                },
+                                "nodeID": {
+                                  "title": "Node Id",
+                                  "description": "The node id of the journey to which this data should be correlated.",
+                                  "type": "string",
+                                  "meta:xdmType": "string",
+                                  "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/classification/nodeID",
+                                  "tagNumber": 6
+                                },
+                                "actionID": {
+                                  "title": "actionName",
+                                  "description": "The action name of the journey to which this data should be correlated.",
+                                  "type": "string",
+                                  "meta:xdmType": "string",
+                                  "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/classification/actionID",
+                                  "tagNumber": 7
+                                },
+                                "nodeName": {
+                                  "title": "Node Name",
+                                  "description": "The node name of the journey to which this data should be correlated.",
+                                  "type": "string",
+                                  "meta:xdmType": "string",
+                                  "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/classification/nodeName",
+                                  "tagNumber": 8
+                                },
+                                "stepID": {
+                                  "title": "Step Id",
+                                  "description": "The step id of the journey to which this data should be correlated.",
+                                  "type": "string",
+                                  "meta:xdmType": "string",
+                                  "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/classification/stepID",
+                                  "tagNumber": 9
+                                },
+                                "stepName": {
+                                  "title": "Step Name",
+                                  "description": "The step id of the journey to which this data should be correlated.",
+                                  "type": "string",
+                                  "meta:xdmType": "string",
+                                  "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/classification/stepName",
+                                  "tagNumber": 10
+                                }
+                              },
+                              "tagNumber": 1
+                            }
+                          },
+                          "tagNumber": 1
+                        }
+                      },
+                      "tagNumber": 1
+                    }
+                  },
+                  "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/classification/journey",
+                  "tagNumber": 4
+                },
+                "campaign": {
+                  "title": "Campaign",
+                  "description": "A container to group campaign details.",
+                  "type": "object",
+                  "meta:xdmType": "object",
+                  "properties": {
+                    "_experience": {
+                      "type": "object",
+                      "meta:xdmType": "object",
+                      "properties": {
+                        "journeyOrchestration": {
+                          "type": "object",
+                          "meta:xdmType": "object",
+                          "properties": {
+                            "classification": {
+                              "type": "object",
+                              "meta:xdmType": "object",
+                              "properties": {
+                                "campaignID": {
+                                  "title": "Campaign Id",
+                                  "description": "The id of the campaign to which this data should be correlated.",
+                                  "type": "string",
+                                  "meta:xdmType": "string",
+                                  "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/classification/campaignID",
+                                  "tagNumber": 1
+                                },
+                                "campaignName": {
+                                  "title": "Campaign Name",
+                                  "description": "The name of the campaign to which this data should be correlated.",
+                                  "type": "string",
+                                  "meta:xdmType": "string",
+                                  "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/classification/campaignName",
+                                  "tagNumber": 2
+                                },
+                                "campaignVersionID": {
+                                  "title": "Campaign Version Id",
+                                  "description": "The version id of the campaign to which this data should be correlated.",
+                                  "type": "string",
+                                  "meta:xdmType": "string",
+                                  "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/classification/campaignVersionID",
+                                  "tagNumber": 3
+                                }
+                              },
+                              "tagNumber": 1
+                            }
+                          },
+                          "tagNumber": 1
+                        }
+                      },
+                      "tagNumber": 1
+                    }
+                  },
+                  "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/classification/campaign",
+                  "tagNumber": 5
+                }
+              },
+              "tagNumber": 1
+            }
+          },
+          "tagNumber": 1
+        }
+      },
+      "tagNumber": 1
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/experience/journeyOrchestration/classification",
+  "meta:altId": "_experience.journeyorchestration.classification",
+  "id": "_experience.journeyorchestration.classification"
+}

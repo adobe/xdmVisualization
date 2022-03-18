@@ -1,0 +1,163 @@
+{
+  "id": "_xdm.context.destination",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Destinations",
+  "type": "object",
+  "meta:extensible": [
+    false,
+    true
+  ],
+  "meta:abstract": [
+    false,
+    true
+  ],
+  "description": "Destinations Schema.",
+  "meta:status": "stable",
+  "meta:titleId": [
+    "destination##title##92391",
+    "record##title##65961"
+  ],
+  "meta:descriptionId": [
+    "destination##description##65551",
+    "record##description##3921"
+  ],
+  "meta:xdmType": "object",
+  "meta:createdDate": "2020-08-10",
+  "properties": {
+    "_id": {
+      "title": "Identifier",
+      "type": "string",
+      "format": "uri-reference",
+      "description": "A unique identifier for the record.",
+      "meta:titleId": "record##@id##title##51271",
+      "meta:descriptionId": "record##@id##description##16181",
+      "meta:xdmType": "string",
+      "meta:xdmField": "@id",
+      "tagNumber": 1
+    },
+    "destinationID": {
+      "title": "Destination ID",
+      "type": "string",
+      "description": "Unique Identifier for a destination instance",
+      "meta:titleId": "destination##xdm:destinationID##title##74541",
+      "meta:descriptionId": "destination##xdm:destinationID##description##90701",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:destinationID",
+      "tagNumber": 2
+    },
+    "destinationName": {
+      "title": "Destination Name",
+      "type": "string",
+      "description": "Destination flow name",
+      "meta:titleId": "destination##xdm:destinationName##title##85081",
+      "meta:descriptionId": "destination##xdm:destinationName##description##76141",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:destinationName",
+      "tagNumber": 3
+    },
+    "destinationPlatform": {
+      "title": "Destination Platform",
+      "type": "string",
+      "description": "The destination platform selected for activation flow.",
+      "meta:titleId": "destination##xdm:destinationPlatform##title##22141",
+      "meta:descriptionId": "destination##xdm:destinationPlatform##description##2551",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:destinationPlatform",
+      "tagNumber": 4
+    },
+    "createTime": {
+      "title": "Create Time",
+      "type": "string",
+      "format": "date-time",
+      "description": "The date and UTC time when the activation flow to the destination was createdByID",
+      "meta:titleId": "destination##xdm:createTime##title##4181",
+      "meta:descriptionId": "destination##xdm:createTime##description##99161",
+      "meta:xdmType": "date-time",
+      "meta:xdmField": "xdm:createTime",
+      "tagNumber": 5
+    },
+    "createdByID": {
+      "title": "Created User ID",
+      "type": "string",
+      "description": "ID of user who created the destination flow",
+      "meta:titleId": "destination##xdm:createdByID##title##43631",
+      "meta:descriptionId": "destination##xdm:createdByID##description##66631",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:createdByID",
+      "tagNumber": 6
+    },
+    "destinationDescription": {
+      "title": "Destination Description",
+      "type": "string",
+      "description": "Destination flow description",
+      "meta:titleId": "destination##xdm:destinationDescription##title##57331",
+      "meta:descriptionId": "destination##xdm:destinationDescription##description##64451",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:destinationDescription",
+      "tagNumber": 7
+    },
+    "destinationStatus": {
+      "title": "Destination Status",
+      "type": "string",
+      "description": "Status of destination flow",
+      "meta:titleId": "destination##xdm:destinationStatus##title##53881",
+      "meta:descriptionId": "destination##xdm:destinationStatus##description##61291",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:destinationStatus",
+      "tagNumber": 8
+    },
+    "version": {
+      "title": "Version",
+      "type": "string",
+      "description": "Destination flow version",
+      "meta:titleId": "destination##xdm:version##title##6731",
+      "meta:descriptionId": "destination##xdm:version##description##27621",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:version",
+      "tagNumber": 9
+    },
+    "connectionSpecID": {
+      "title": "Connection Spec ID",
+      "type": "string",
+      "description": "Unique identifier to connect and deliver segments to the destination",
+      "meta:titleId": "destination##xdm:connectionSpecID##title##40981",
+      "meta:descriptionId": "destination##xdm:connectionSpecID##description##44091",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:connectionSpecID",
+      "tagNumber": 10
+    },
+    "destinationCategory": {
+      "title": "Destination Category",
+      "type": "string",
+      "description": "Grouping of the destinations in the catalog depending on the marketing action that they help achieve",
+      "enum": [
+        "adobeSolutions",
+        "advertising",
+        "cloudStorage",
+        "emailMarketing",
+        "mobile engagement",
+        "personalization",
+        "social",
+        "streaming"
+      ],
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:destinationCategory",
+      "tagNumber": 11
+    },
+    "destinationFrequency": {
+      "title": "Destination Frequency",
+      "type": "string",
+      "description": "Indicates how often the audiences are sent to the destination",
+      "enum": [
+        "Batch",
+        "Streaming"
+      ],
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:destinationFrequency",
+      "tagNumber": 12
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/context/destination",
+  "meta:altId": "_xdm.context.destination",
+  "id": "_xdm.context.destination"
+}

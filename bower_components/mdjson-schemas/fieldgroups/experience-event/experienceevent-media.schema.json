@@ -1,0 +1,33 @@
+{
+  "id": "_xdm.context.experienceevent-media",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Media Interaction Details ",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:tags": {
+    "industry": [
+      "all"
+    ]
+  },
+  "description": "Track interactions with media such as progress (how much was consumed), total time played, timing of any pauses, and number of media completions.",
+  "meta:status": "stable",
+  "meta:createdDate": "2020-08-10",
+  "meta:titleId": "experienceevent-media##title##81291",
+  "meta:descriptionId": "experienceevent-media##description##54191",
+  "meta:xdmType": "object",
+  "properties": {
+    "media": {
+      "title": "Media",
+      "$ref": "../../datatypes/media.schema.json",
+      "description": "Media activity information related to the experience event.",
+      "meta:titleId": "experienceevent-media##xdm:media##title##8591",
+      "meta:descriptionId": "experienceevent-media##xdm:media##description##16281",
+      "meta:xdmField": "xdm:media",
+      "tagNumber": 1
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/context/experienceevent-media",
+  "meta:altId": "_xdm.context.experienceevent-media",
+  "id": "_xdm.context.experienceevent-media"
+}

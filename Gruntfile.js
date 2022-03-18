@@ -218,7 +218,7 @@ module.exports = function(grunt) {
 
             prod : [
 
-                './prod/feature-1468-commerce-updates/**/*',
+                './prod/jekelly-adobe_feature-1468-commerce-updates/**/*',
 
             ],
 
@@ -252,7 +252,7 @@ module.exports = function(grunt) {
 
                 files : {
 
-                    './prod/feature-1468-commerce-updates/<%= pkg.name %>.min.js' : [
+                    './prod/jekelly-adobe_feature-1468-commerce-updates/<%= pkg.name %>.min.js' : [
                         //'./files/scripts/jquery.js',
                         //'./files/scripts/jquery.*.js',
                         './bower_components/uri.js/src/URI.js',
@@ -268,7 +268,7 @@ module.exports = function(grunt) {
                         './lib/example.js',
 
                     ],
-                    './prod/feature-1468-commerce-updates/lib/preinit.js' : [
+                    './prod/jekelly-adobe_feature-1468-commerce-updates/lib/preinit.js' : [
                         './lib/preinit.js',
 
                     ],
@@ -328,7 +328,7 @@ module.exports = function(grunt) {
 
                 files : {
 
-                    './prod/feature-1468-commerce-updates/styles/<%= pkg.name %>.min.css' : './styles/sass/<%= pkg.name %>.scss',
+                    './prod/jekelly-adobe_feature-1468-commerce-updates/styles/<%= pkg.name %>.min.css' : './styles/sass/<%= pkg.name %>.scss',
 
                 },
 
@@ -402,7 +402,7 @@ module.exports = function(grunt) {
                     {
 
                         src : './templates/index.html',
-                        dest : './prod/feature-1468-commerce-updates/index.html',
+                        dest : './prod/jekelly-adobe_feature-1468-commerce-updates/index.html',
 
                     },
 
@@ -416,7 +416,7 @@ module.exports = function(grunt) {
                     {
 
                         src : './templates/basic.html',
-                        dest : './prod/feature-1468-commerce-updates/basic.html',
+                        dest : './prod/jekelly-adobe_feature-1468-commerce-updates/basic.html',
 
                     },
 
@@ -451,7 +451,7 @@ module.exports = function(grunt) {
                             'images/**/*',
                             '!images/junk/**',
                         ],
-                        dest : './prod/feature-1468-commerce-updates/',
+                        dest : './prod/jekelly-adobe_feature-1468-commerce-updates/',
 
                     },
                     {
@@ -462,7 +462,7 @@ module.exports = function(grunt) {
                             '**/*.json',
                             '!*bower.json',
                         ],
-                        dest : './prod/feature-1468-commerce-updates/schemas',
+                        dest : './prod/jekelly-adobe_feature-1468-commerce-updates/schemas',
 
                     },
                     {
@@ -472,7 +472,7 @@ module.exports = function(grunt) {
                         src : [
                             '**/*',
                         ],
-                        dest : './prod/feature-1468-commerce-updates/docs',
+                        dest : './prod/jekelly-adobe_feature-1468-commerce-updates/docs',
 
                     }
 
@@ -491,7 +491,7 @@ module.exports = function(grunt) {
 
       'gh-pages' : {
         options: {
-          base: './prod/feature-1468-commerce-updates/'
+          base: './prod/jekelly-adobe_feature-1468-commerce-updates/'
         },
         src: ['**/*']
       },

@@ -1,0 +1,60 @@
+{
+  "id": "_xdm.mixins.product-category",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Product Category",
+  "type": "object",
+  "auditable": true,
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "description": "Captures properties related to product category.",
+  "meta:status": "stable",
+  "meta:createdDate": "2020-11-19",
+  "meta:titleId": "product-category##title##26841",
+  "meta:descriptionId": "product-category##description##80251",
+  "meta:xdmType": "object",
+  "properties": {
+    "productCategoryName": {
+      "title": "Product Category Name",
+      "type": "string",
+      "description": "friendly name of the product category.",
+      "meta:titleId": "product-category##xdm:productCategoryName##title##87501",
+      "meta:descriptionId": "product-category##xdm:productCategoryName##description##62791",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:productCategoryName",
+      "tagNumber": 1
+    },
+    "productCategoryDescription": {
+      "title": "Product Category Description",
+      "type": "string",
+      "description": "Friendly description of product category.",
+      "meta:titleId": "product-category##xdm:productCategoryDescription##title##76391",
+      "meta:descriptionId": "product-category##xdm:productCategoryDescription##description##79791",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:productCategoryDescription",
+      "tagNumber": 2
+    },
+    "productSubcategoryName": {
+      "title": "Product Subcategory Name",
+      "type": "string",
+      "description": "friendly name of the product subcategory.",
+      "meta:titleId": "product-category##xdm:productSubcategoryName##title##78861",
+      "meta:descriptionId": "product-category##xdm:productSubcategoryName##description##6541",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:productSubcategoryName",
+      "tagNumber": 3
+    },
+    "productSubcategoryDescription": {
+      "title": "Product Sub category Description",
+      "type": "string",
+      "description": "Friendly description of product subcategory.",
+      "meta:titleId": "product-category##xdm:productSubcategoryDescription##title##2711",
+      "meta:descriptionId": "product-category##xdm:productSubcategoryDescription##description##89711",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:productSubcategoryDescription",
+      "tagNumber": 4
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/mixins/product-category",
+  "meta:altId": "_xdm.mixins.product-category",
+  "id": "_xdm.mixins.product-category"
+}

@@ -1,0 +1,209 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "id": "_xdm.adcloud.searchads.aggregateperformancebykeyword",
+  "title": "Search Advertising Aggregate Performance Measures By Keyword",
+  "type": "object",
+  "meta:extensible": [
+    false,
+    true
+  ],
+  "meta:abstract": [
+    false,
+    true
+  ],
+  "description": "Search Advertising Aggregate Performance Measures By Keyword is a collection of measures pulled from Search Advertising Platforms by Keyword.",
+  "meta:status": "stable",
+  "meta:titleId": [
+    "aggregateperformancebykeyword##title##20391",
+    "time-series##title##66611"
+  ],
+  "meta:descriptionId": [
+    "aggregateperformancebykeyword##description##12731",
+    "time-series##description##35031"
+  ],
+  "meta:xdmType": "object",
+  "meta:createdDate": "2020-08-10",
+  "properties": {
+    "_id": {
+      "title": "Identifier",
+      "type": "string",
+      "format": "uri-reference",
+      "description": "A unique identifier for the time-series event.",
+      "meta:titleId": "time-series##@id##title##97851",
+      "meta:descriptionId": "time-series##@id##description##91771",
+      "meta:xdmType": "string",
+      "meta:xdmField": "@id",
+      "tagNumber": 1
+    },
+    "timestamp": {
+      "title": "Timestamp",
+      "type": "string",
+      "format": "date-time",
+      "description": "The time when an event or observation occurred.",
+      "meta:titleId": "time-series##xdm:timestamp##title##71321",
+      "meta:descriptionId": "time-series##xdm:timestamp##description##1861",
+      "meta:xdmType": "date-time",
+      "meta:xdmField": "xdm:timestamp",
+      "tagNumber": 2
+    },
+    "eventType": {
+      "title": "Event Type",
+      "type": "string",
+      "description": "The primary event type for this time-series record.",
+      "meta:titleId": "time-series##xdm:eventType##title##79221",
+      "meta:descriptionId": "time-series##xdm:eventType##description##27681",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:eventType",
+      "tagNumber": 3
+    },
+    "_searchads": {
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "accountId": {
+          "title": "Account Identifier",
+          "type": "string",
+          "description": "Identifier that defines Customer/Client ID setup on the Search Advertising Platform.",
+          "meta:titleId": "aggregateperformancebykeyword##searchads:accountId##title##52861",
+          "meta:descriptionId": "aggregateperformancebykeyword##searchads:accountId##description##29081",
+          "meta:xdmType": "string",
+          "meta:xdmField": "searchads:accountId",
+          "tagNumber": 1
+        },
+        "campaignId": {
+          "title": "Campaign Identifier",
+          "type": "string",
+          "description": "Campaign ID on the search advertising platform..",
+          "meta:titleId": "aggregateperformancebykeyword##searchads:campaignId##title##59451",
+          "meta:descriptionId": "aggregateperformancebykeyword##searchads:campaignId##description##25051",
+          "meta:xdmType": "string",
+          "meta:xdmField": "searchads:campaignId",
+          "tagNumber": 2
+        },
+        "adgroupId": {
+          "title": "Ad Group Identifier",
+          "type": "string",
+          "description": "Ad Group ID on the search advertising platform.",
+          "meta:titleId": "aggregateperformancebykeyword##searchads:adgroupId##title##19391",
+          "meta:descriptionId": "aggregateperformancebykeyword##searchads:adgroupId##description##95111",
+          "meta:xdmType": "string",
+          "meta:xdmField": "searchads:adgroupId",
+          "tagNumber": 3
+        },
+        "termId": {
+          "title": "Search Term Identifier",
+          "type": "string",
+          "description": "Search Term ID on the search advertising platform.",
+          "meta:titleId": "aggregateperformancebykeyword##searchads:termId##title##51021",
+          "meta:descriptionId": "aggregateperformancebykeyword##searchads:termId##description##54181",
+          "meta:xdmType": "string",
+          "meta:xdmField": "searchads:termId",
+          "tagNumber": 4
+        },
+        "term": {
+          "title": "Search Term",
+          "type": "string",
+          "description": "Search Term targeted for the Ad.",
+          "meta:titleId": "aggregateperformancebykeyword##searchads:term##title##77981",
+          "meta:descriptionId": "aggregateperformancebykeyword##searchads:term##description##62991",
+          "meta:xdmType": "string",
+          "meta:xdmField": "searchads:term",
+          "tagNumber": 5
+        },
+        "matchType": {
+          "title": "Term Match Type",
+          "type": "string",
+          "description": "Match Type associated to the Search Term being targeted for the Ad.",
+          "enum": [
+            "Broad",
+            "Phrase",
+            "Exact",
+            "Advanced",
+            "Standard",
+            "Website",
+            "Product Target",
+            "Product Group",
+            "Content",
+            "SiteCpc",
+            "SiteCpm",
+            "Category",
+            "Search",
+            "Adgroup",
+            "Dynamic Ad Target",
+            "Unknown"
+          ],
+          "meta:titleId": "aggregateperformancebykeyword##searchads:matchType##title##90981",
+          "meta:descriptionId": "aggregateperformancebykeyword##searchads:matchType##description##40331",
+          "meta:xdmType": "string",
+          "meta:xdmField": "searchads:matchType",
+          "tagNumber": 6
+        },
+        "searchEngineId": {
+          "title": "Search Engine Identifier",
+          "type": "integer",
+          "description": "The application-specified identifier used to identify the Search Advertising Platform Name.",
+          "meta:titleId": "aggregateperformancebykeyword##searchads:searchEngineId##title##68991",
+          "meta:descriptionId": "aggregateperformancebykeyword##searchads:searchEngineId##description##65221",
+          "meta:xdmType": "int",
+          "meta:xdmField": "searchads:searchEngineId",
+          "tagNumber": 7
+        },
+        "clicks": {
+          "$ref": "../../../../datatypes/data/measure.schema.json",
+          "description": "Count of Clicks for a given ad displayed on the network.",
+          "meta:descriptionId": "aggregateperformancebykeyword##searchads:clicks##description##34031",
+          "meta:xdmField": "searchads:clicks",
+          "tagNumber": 8
+        },
+        "impressions": {
+          "$ref": "../../../../datatypes/data/measure.schema.json",
+          "description": "Count of impressions for a given ad displayed on the network.",
+          "meta:descriptionId": "aggregateperformancebykeyword##searchads:impressions##description##2131",
+          "meta:xdmField": "searchads:impressions",
+          "tagNumber": 9
+        },
+        "totalCost": {
+          "$ref": "../../../../datatypes/data/measure.schema.json",
+          "description": "Total Advertising Spend for a given ad displayed on the network. The spend is in the account currency configured on the network.",
+          "meta:descriptionId": "aggregateperformancebykeyword##searchads:totalCost##description##48441",
+          "meta:xdmField": "searchads:totalCost",
+          "tagNumber": 10
+        },
+        "avgPosition": {
+          "$ref": "../../../../datatypes/data/measure.schema.json",
+          "description": "Average Position of the Ad displayed on the network.",
+          "meta:descriptionId": "aggregateperformancebykeyword##searchads:avgPosition##description##50171",
+          "meta:xdmField": "searchads:avgPosition",
+          "tagNumber": 11
+        },
+        "topPageBid": {
+          "$ref": "../../../../datatypes/data/measure.schema.json",
+          "description": "Top of the Page Bid Estimator. The measure is computed by the network and is not an additive measure.",
+          "meta:descriptionId": "aggregateperformancebykeyword##searchads:topPageBid##description##94671",
+          "meta:xdmField": "searchads:topPageBid",
+          "tagNumber": 12
+        },
+        "qualityScore": {
+          "$ref": "../../../../datatypes/data/measure.schema.json",
+          "description": "Quality Score of the Keyword assigned by the network - range 1 to 10. This is not an additive measure.",
+          "meta:descriptionId": "aggregateperformancebykeyword##searchads:qualityScore##description##8471",
+          "meta:xdmField": "searchads:qualityScore",
+          "tagNumber": 13
+        },
+        "device": {
+          "title": "Device",
+          "$ref": "../../../../datatypes/device.schema.json",
+          "description": "The device from where the ad was displayed.",
+          "meta:titleId": "aggregateperformancebykeyword##searchads:device##title##1301",
+          "meta:descriptionId": "aggregateperformancebykeyword##searchads:device##description##18511",
+          "meta:xdmField": "searchads:device",
+          "tagNumber": 14
+        }
+      },
+      "tagNumber": 4
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/adcloud/searchads/aggregateperformancebykeyword",
+  "meta:altId": "_xdm.adcloud.searchads.aggregateperformancebykeyword",
+  "id": "_xdm.adcloud.searchads.aggregateperformancebykeyword"
+}

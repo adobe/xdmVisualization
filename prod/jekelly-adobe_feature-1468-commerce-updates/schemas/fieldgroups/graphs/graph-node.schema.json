@@ -1,0 +1,33 @@
+{
+  "id": "_xdm.context.graph-node",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "XDM Graph Node/Vertex Schema",
+  "type": "object",
+  "description": "Use for node information such as data source, type, and label.",
+  "meta:auditable": true,
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:status": "stable",
+  "meta:createdDate": "2020-08-10",
+  "meta:titleId": "graph-node##title##16221",
+  "meta:descriptionId": "graph-node##description##8391",
+  "meta:xdmType": "object",
+  "properties": {
+    "nodes": {
+      "title": "Array Of Nodes",
+      "description": "Array of nodes.",
+      "type": "array",
+      "meta:titleId": "graph-node##xdm:nodes##title##22721",
+      "meta:descriptionId": "graph-node##xdm:nodes##description##98051",
+      "meta:xdmType": "array",
+      "meta:xdmField": "xdm:nodes",
+      "tagNumber": 1,
+      "items": {
+        "$ref": "obj33260700774510643.schema.json"
+      }
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/context/graph-node",
+  "meta:altId": "_xdm.context.graph-node",
+  "id": "_xdm.context.graph-node"
+}
