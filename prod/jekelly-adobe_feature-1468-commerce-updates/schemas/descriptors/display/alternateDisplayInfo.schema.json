@@ -114,6 +114,13 @@
         }
       },
       "tagNumber": 10
+    },
+    "excludeMetaEnum": {
+      "title": "Exclude meta:enum values",
+      "type": "object",
+      "meta:xdmType": "object",
+      "meta:xdmField": "xdm:excludeMetaEnum",
+      "tagNumber": 11
     }
   },
   "meta:xdmId": "https://ns.adobe.com/xdm/common/descriptors/alternateDisplayInfo",
