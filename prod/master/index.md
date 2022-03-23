@@ -379,6 +379,7 @@
 </ul>
 </details>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.browserdetails.html">browserdetails</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.cart.html">cart</a></li>
 <details>
 <summary>channels</summary>
 <ul>
@@ -535,6 +536,7 @@
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.segmentidentity.html">segmentidentity</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.segmentmembership.html">segmentmembership</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.segmentmembershipitem.html">segmentmembershipitem</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.shipping.html">shipping</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.webinfo.html">webinfo</a></li>
 </ul>
 </details>

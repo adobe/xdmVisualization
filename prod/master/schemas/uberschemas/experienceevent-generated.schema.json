@@ -2253,7 +2253,7 @@
           "meta:xdmField": "xdm:dataValueChanges",
           "tagNumber": 5,
           "items": {
-            "$ref": "obj7670167120479996.schema.json"
+            "$ref": "obj3275485387355592.schema.json"
           }
         }
       },
@@ -2277,6 +2277,30 @@
       "description": "Events and properties related to direct and outbound marketing such as email, direct mail, texts, and in-app notifications.",
       "meta:descriptionId": "experienceevent-directmarketing##xdm:directMarketing##description##64681",
       "properties": {
+        "mailingID": {
+          "title": "Mailing ID",
+          "type": "string",
+          "description": "Unique ID of the email asset.",
+          "meta:titleId": [
+            "emailbounced##xdm:mailingID##title##69611",
+            "emailbouncedsoft##xdm:mailingID##title##35741",
+            "emailclicked##xdm:mailingID##title##16031",
+            "emaildelivered##xdm:mailingID##title##61861",
+            "emailopened##xdm:mailingID##title##77991",
+            "emailunsubscribed##xdm:mailingID##title##96401"
+          ],
+          "meta:descriptionId": [
+            "emailbounced##xdm:mailingID##description##27341",
+            "emailbouncedsoft##xdm:mailingID##description##79361",
+            "emailclicked##xdm:mailingID##description##71861",
+            "emaildelivered##xdm:mailingID##description##45971",
+            "emailopened##xdm:mailingID##description##83901",
+            "emailunsubscribed##xdm:mailingID##description##92371"
+          ],
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:mailingID",
+          "tagNumber": 1
+        },
         "mailingName": {
           "title": "Mailing Name",
           "type": "string",
@@ -2397,13 +2421,6 @@
           "meta:xdmField": "xdm:testVariantName",
           "tagNumber": 7
         },
-        "mailingKey": {
-          "title": "Mailing ID",
-          "description": "Unique key of the email asset.",
-          "$ref": "../datatypes/b2b/b2b-source.schema.json",
-          "meta:xdmField": "xdm:mailingKey",
-          "tagNumber": 8
-        },
         "linkURL": {
           "title": "Link URL",
           "type": "string",
@@ -2412,7 +2429,7 @@
           "meta:descriptionId": "emailclicked##xdm:linkURL##description##24191",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:linkURL",
-          "tagNumber": 9
+          "tagNumber": 8
         }
       },
       "meta:xdmField": "xdm:directMarketing",
@@ -3508,7 +3525,7 @@
           "meta:xdmField": "xdm:diningReservations",
           "tagNumber": 1,
           "items": {
-            "$ref": "obj7102953783209573.schema.json"
+            "$ref": "obj4050895063926423.schema.json"
           }
         },
         "cancellation": {
@@ -3681,7 +3698,7 @@
           "meta:xdmField": "xdm:flightReservations",
           "tagNumber": 19,
           "items": {
-            "$ref": "obj018596703790819458.schema.json"
+            "$ref": "obj7763222394657807.schema.json"
           }
         },
         "lodgingReservations": {
@@ -3690,7 +3707,7 @@
           "meta:xdmField": "xdm:lodgingReservations",
           "tagNumber": 20,
           "items": {
-            "$ref": "obj01101418760414652.schema.json"
+            "$ref": "obj6550549300136586.schema.json"
           }
         },
         "vehicleReservations": {
@@ -3699,7 +3716,7 @@
           "meta:xdmField": "xdm:vehicleReservations",
           "tagNumber": 21,
           "items": {
-            "$ref": "obj9453819934708279.schema.json"
+            "$ref": "obj8034846394979815.schema.json"
           }
         }
       },

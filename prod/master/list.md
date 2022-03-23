@@ -344,6 +344,7 @@
 [classes.fsi.branch](http://opensource.adobe.com/xdmVisualization/prod/master/classes.fsi.branch.html)<br/>
 #### datatypes
 [datatypes.device](http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.device.html)<br/>
+[datatypes.shipping](http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.shipping.html)<br/>
 [datatypes.identityitem](http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.identityitem.html)<br/>
 [datatypes.currency](http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.currency.html)<br/>
 [datatypes.environment](http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.environment.html)<br/>
@@ -358,6 +359,7 @@
 [datatypes.person.person-name](http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.person.person-name.html)<br/>
 [datatypes.webinfo](http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.webinfo.html)<br/>
 [datatypes.poi-detail](http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.poi-detail.html)<br/>
+[datatypes.cart](http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.cart.html)<br/>
 [datatypes.optinout-additional-details](http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.optinout-additional-details.html)<br/>
 [datatypes.product](http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.product.html)<br/>
 [datatypes.pushnotificationtoken](http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.pushnotificationtoken.html)<br/>

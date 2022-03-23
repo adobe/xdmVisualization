@@ -117,6 +117,24 @@
       "meta:descriptionId": "commerce##xdm:inStorePurchase##description##27451",
       "meta:xdmField": "xdm:inStorePurchase",
       "tagNumber": 13
+    },
+    "cart": {
+      "$ref": "../cart.schema.json",
+      "description": "The properties of the cart that contains one or more products.",
+      "meta:xdmField": "xdm:cart",
+      "tagNumber": 14
+    },
+    "shipping": {
+      "$ref": "../shipping.schema.json",
+      "description": "Shipping details for one or more products.",
+      "meta:xdmField": "xdm:shipping",
+      "tagNumber": 15
+    },
+    "instantPurchase": {
+      "$ref": "../data/measure.schema.json",
+      "description": "A product has been purchased instantly, potentially skipping the cart or checkout.",
+      "meta:xdmField": "xdm:instantPurchase",
+      "tagNumber": 16
     }
   },
   "meta:xdmId": "https://ns.adobe.com/xdm/context/commerce",
