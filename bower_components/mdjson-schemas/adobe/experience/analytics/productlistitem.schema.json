@@ -9238,6 +9238,25 @@
       "meta:xdmField": "xdm:priceTotal",
       "tagNumber": 9
     },
+    "selectedOptions": {
+      "title": "Selected Options",
+      "type": "array",
+      "description": "Particular options chosen for a configurable product.",
+      "meta:xdmType": "array",
+      "meta:xdmField": "xdm:selectedOptions",
+      "tagNumber": 10,
+      "items": {
+        "$ref": "obj8826598074427991.schema.json"
+      }
+    },
+    "discountAmount": {
+      "title": "Discount Amount",
+      "type": "number",
+      "description": "The difference between the regular price and the special price for the product.",
+      "meta:xdmType": "number",
+      "meta:xdmField": "xdm:discountAmount",
+      "tagNumber": 11
+    },
     "unitOfMeasureCode": {
       "title": "Product Unit Of Measure Code",
       "type": "string",
@@ -9246,7 +9265,7 @@
       "meta:descriptionId": "product-measurement##xdm:unitOfMeasureCode##description##24871",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:unitOfMeasureCode",
-      "tagNumber": 10
+      "tagNumber": 12
     }
   },
   "meta:xdmId": "https://ns.adobe.com/experience/analytics/productlistitem",
