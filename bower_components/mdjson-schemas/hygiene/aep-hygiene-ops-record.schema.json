@@ -1,0 +1,124 @@
+{
+  "id": "_experience.aep-hygiene-ops",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "AEP Hygiene Operation Request",
+  "description": "AEP Data Hygiene operations that instruct AEP to delete or modify records in a specified dataset and sandbox.",
+  "type": "object",
+  "meta:extensible": [
+    false,
+    true
+  ],
+  "meta:abstract": [
+    false,
+    true
+  ],
+  "meta:status": [
+    "experimental",
+    "stable"
+  ],
+  "meta:xdmType": "object",
+  "meta:createdDate": "2020-08-10",
+  "meta:titleId": "record##title##65961",
+  "meta:descriptionId": "record##description##3921",
+  "properties": {
+    "_id": {
+      "title": "Identifier",
+      "type": "string",
+      "format": "uri-reference",
+      "description": "A unique identifier for the record.",
+      "meta:titleId": "record##@id##title##51271",
+      "meta:descriptionId": "record##@id##description##16181",
+      "meta:xdmType": "string",
+      "meta:xdmField": "@id",
+      "tagNumber": 1
+    },
+    "batchTime": {
+      "title": "Time the batch was created",
+      "description": "Time the hygiene batch was created",
+      "type": "string",
+      "format": "date-time",
+      "meta:xdmType": "date-time",
+      "meta:xdmField": "xdm:batchTime",
+      "tagNumber": 2
+    },
+    "action": {
+      "title": "Name of the hygiene operation to be applied by downstream consumers",
+      "description": "Name of the hygiene operation to be applied by downstream consumers.",
+      "type": "string",
+      "enum": [
+        "deleteIdentity",
+        "updateField"
+      ],
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:action",
+      "tagNumber": 3
+    },
+    "targetDatasetID": {
+      "title": "Target Dataset ID specified by the user to apply hygiene operations",
+      "description": "May be \"*\", but only if operationType = \"deleteIdentity\". Otherwise a valid value is required.",
+      "type": "string",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:targetDatasetID",
+      "tagNumber": 4
+    },
+    "operation": {
+      "title": "Payload of the hygiene op request",
+      "description": "Contents of this payload provides identities to delete, or records to update",
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "deleteIdentity": {
+          "title": "Specifies rows to delete for matching identities",
+          "description": "Specifies rows to delete for matching identities",
+          "type": "object",
+          "meta:xdmType": "object",
+          "properties": {
+            "identities": {
+              "title": "Set of primary identities",
+              "description": "Set of primary identities",
+              "type": "array",
+              "meta:xdmType": "array",
+              "meta:xdmField": "xdm:identities",
+              "tagNumber": 1,
+              "items": {
+                "$ref": "obj5235716544971925.schema.json"
+              }
+            }
+          },
+          "meta:xdmField": "xdm:deleteIdentity",
+          "tagNumber": 1
+        },
+        "updateField": {
+          "title": "Details of the update operation",
+          "description": "Details of the update operation",
+          "type": "object",
+          "meta:xdmType": "object",
+          "properties": {
+            "changes": {
+              "title": "Array of records to update",
+              "description": "Array of records to update",
+              "type": "array",
+              "meta:xdmType": "array",
+              "items": {
+                "title": "String-encoded JSON record to update",
+                "description": "String-encoded JSON record to update",
+                "type": "string",
+                "meta:xdmType": "string",
+                "tagNumber": 1
+              },
+              "meta:xdmField": "xdm:changes",
+              "tagNumber": 1
+            }
+          },
+          "meta:xdmField": "xdm:updateField",
+          "tagNumber": 2
+        }
+      },
+      "meta:xdmField": "xdm:operation",
+      "tagNumber": 5
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/experience/aep-hygiene-ops",
+  "meta:altId": "_experience.aep-hygiene-ops",
+  "id": "_experience.aep-hygiene-ops"
+}
