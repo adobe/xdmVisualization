@@ -208,6 +208,8 @@
     "2022-01-13",
     "2022-01-25",
     "2020-12-02",
+    "2020-03-22",
+    "2022-03-22",
     "2022-02-15",
     "2021-01-14",
     "2021-01-07",
@@ -216,6 +218,7 @@
     "2021-01-15",
     "2020-09-28",
     "2021-03-31",
+    "2022-03-24",
     "2021-03-30",
     "2021-02-02",
     "2021-02-10",
@@ -416,10 +419,12 @@
     "directMarketing.emailClicked",
     "directMarketing.emailDelivered",
     "directMarketing.emailOpened",
+    "directMarketing.emailSent",
     "directMarketing.emailUnsubscribed",
     "web.formFilledOut",
     "leadOperation.interestingMoment",
     "web.webInteraction.linkClicks",
+    "leadOperation.mergeLeads",
     "leadOperation.newLead",
     "opportunityEvent.opportunityUpdated",
     "listOperation.removeFromList",
@@ -1773,6 +1778,51 @@
           "meta:xdmField": "xdm:interestingMoment",
           "tagNumber": 6
         },
+        "mergeLeads": {
+          "title": "Merge Leads",
+          "type": "object",
+          "meta:xdmType": "object",
+          "properties": {
+            "sourceKeys": {
+              "title": "Source Keys",
+              "type": "array",
+              "description": "A list of unique composite identifier of losing leads.",
+              "meta:xdmType": "array",
+              "items": {
+                "$ref": "../datatypes/b2b/b2b-source.schema.json",
+                "tagNumber": 1
+              },
+              "meta:xdmField": "xdm:sourceKeys",
+              "tagNumber": 1
+            },
+            "targetUpdated": {
+              "title": "Target Updated",
+              "type": "boolean",
+              "description": "Boolean indicating if winning lead is updated after merge operation.",
+              "meta:xdmType": "boolean",
+              "meta:xdmField": "xdm:targetUpdated",
+              "tagNumber": 2
+            },
+            "mergedInCRM": {
+              "title": "Merged In CRM",
+              "type": "boolean",
+              "description": "Boolean indicating if leads were/should be merged in CRM.",
+              "meta:xdmType": "boolean",
+              "meta:xdmField": "xdm:mergedInCRM",
+              "tagNumber": 3
+            },
+            "mergeSource": {
+              "title": "Merge Source",
+              "type": "string",
+              "description": "Source of merge operation.",
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:mergeSource",
+              "tagNumber": 4
+            }
+          },
+          "meta:xdmField": "xdm:mergeLeads",
+          "tagNumber": 7
+        },
         "newLead": {
           "title": "New Lead",
           "type": "object",
@@ -1842,7 +1892,7 @@
             }
           },
           "meta:xdmField": "xdm:newLead",
-          "tagNumber": 7
+          "tagNumber": 8
         },
         "changeRevenueStage": {
           "title": "Change Revenue Stage",
@@ -1904,7 +1954,7 @@
             }
           },
           "meta:xdmField": "xdm:changeRevenueStage",
-          "tagNumber": 8
+          "tagNumber": 9
         },
         "changeScore": {
           "title": "Change Score",
@@ -2014,7 +2064,7 @@
             }
           },
           "meta:xdmField": "xdm:changeScore",
-          "tagNumber": 9
+          "tagNumber": 10
         },
         "campaignProgression": {
           "title": "Campaign Progression",
@@ -2114,7 +2164,7 @@
             }
           },
           "meta:xdmField": "xdm:campaignProgression",
-          "tagNumber": 10
+          "tagNumber": 11
         }
       },
       "meta:xdmField": "xdm:leadOperation",
@@ -2253,7 +2303,7 @@
           "meta:xdmField": "xdm:dataValueChanges",
           "tagNumber": 5,
           "items": {
-            "$ref": "obj6890510875629863.schema.json"
+            "$ref": "obj640091588161602.schema.json"
           }
         }
       },
@@ -2430,6 +2480,54 @@
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:linkURL",
           "tagNumber": 8
+        },
+        "emailSent": {
+          "title": "Email Sent",
+          "type": "object",
+          "meta:xdmType": "object",
+          "properties": {
+            "mailingKey": {
+              "title": "Mailing Key",
+              "description": "Unique composite identifier of the email asset.",
+              "$ref": "../datatypes/b2b/b2b-source.schema.json",
+              "meta:xdmField": "xdm:mailingKey",
+              "tagNumber": 1
+            },
+            "mailingName": {
+              "title": "Mailing Name",
+              "type": "string",
+              "description": "Name of the email asset.",
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:mailingName",
+              "tagNumber": 2
+            },
+            "testVariantID": {
+              "title": "Test Variant ID",
+              "type": "string",
+              "description": "Unique ID of the test variant of the email asset.",
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:testVariantID",
+              "tagNumber": 3
+            },
+            "testVariantName": {
+              "title": "Test Variant Name",
+              "type": "string",
+              "description": "Name of the test variant of the email asset.",
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:testVariantName",
+              "tagNumber": 4
+            },
+            "automationRunID": {
+              "title": "Automation Run ID",
+              "type": "string",
+              "description": "Unique ID of the automation run.",
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:automationRunID",
+              "tagNumber": 5
+            }
+          },
+          "meta:xdmField": "xdm:emailSent",
+          "tagNumber": 9
         }
       },
       "meta:xdmField": "xdm:directMarketing",
@@ -3203,6 +3301,13 @@
       "meta:xdmField": "xdm:socialMarketing",
       "tagNumber": 44
     },
+    "stitchedID": {
+      "title": "Stitched ID",
+      "$ref": "../datatypes/identity.schema.json",
+      "description": "Identifier computed by the Stitching service, containing a pair of (id, namespace) that uniquely identifies an individual to which this event belongs.",
+      "meta:xdmField": "xdm:stitchedID",
+      "tagNumber": 45
+    },
     "surveyResponse": {
       "type": "object",
       "description": "Stores details related to a survey that has been completed by a user.",
@@ -3251,7 +3356,7 @@
         }
       },
       "meta:xdmField": "xdm:surveyResponse",
-      "tagNumber": 45
+      "tagNumber": 46
     },
     "claims": {
       "type": "object",
@@ -3339,7 +3444,7 @@
         }
       },
       "meta:xdmField": "xdm:claims",
-      "tagNumber": 46
+      "tagNumber": 47
     },
     "customerFeedback": {
       "type": "object",
@@ -3467,7 +3572,7 @@
         }
       },
       "meta:xdmField": "xdm:customerFeedback",
-      "tagNumber": 47
+      "tagNumber": 48
     },
     "deviceTradeInDetails": {
       "type": "object",
@@ -3506,7 +3611,7 @@
         }
       },
       "meta:xdmField": "xdm:deviceTradeInDetails",
-      "tagNumber": 48
+      "tagNumber": 49
     },
     "reservations": {
       "type": "object",
@@ -3525,7 +3630,7 @@
           "meta:xdmField": "xdm:diningReservations",
           "tagNumber": 1,
           "items": {
-            "$ref": "obj026402164458358968.schema.json"
+            "$ref": "obj21771385049941938.schema.json"
           }
         },
         "cancellation": {
@@ -3698,7 +3803,7 @@
           "meta:xdmField": "xdm:flightReservations",
           "tagNumber": 19,
           "items": {
-            "$ref": "obj14765603254544346.schema.json"
+            "$ref": "obj5202126583570852.schema.json"
           }
         },
         "lodgingReservations": {
@@ -3707,7 +3812,7 @@
           "meta:xdmField": "xdm:lodgingReservations",
           "tagNumber": 20,
           "items": {
-            "$ref": "obj29307739810892497.schema.json"
+            "$ref": "obj15840072655574167.schema.json"
           }
         },
         "vehicleReservations": {
@@ -3716,12 +3821,12 @@
           "meta:xdmField": "xdm:vehicleReservations",
           "tagNumber": 21,
           "items": {
-            "$ref": "obj5495616060142172.schema.json"
+            "$ref": "obj6975027467988748.schema.json"
           }
         }
       },
       "meta:xdmField": "xdm:reservations",
-      "tagNumber": 50
+      "tagNumber": 51
     },
     "insuranceClaim": {
       "type": "object",
@@ -3803,7 +3908,7 @@
         }
       },
       "meta:xdmField": "xdm:insuranceClaim",
-      "tagNumber": 51
+      "tagNumber": 52
     },
     "prescription": {
       "type": "object",
@@ -3860,7 +3965,7 @@
         }
       },
       "meta:xdmField": "xdm:prescription",
-      "tagNumber": 52
+      "tagNumber": 53
     },
     "reservationSearch": {
       "type": "object",
@@ -3956,7 +4061,7 @@
         }
       },
       "meta:xdmField": "xdm:reservationSearch",
-      "tagNumber": 53
+      "tagNumber": 54
     },
     "upgrades": {
       "type": "object",
@@ -3989,7 +4094,7 @@
         }
       },
       "meta:xdmField": "xdm:upgrades",
-      "tagNumber": 54
+      "tagNumber": 55
     },
     "upsells": {
       "type": "object",
@@ -4022,7 +4127,7 @@
         }
       },
       "meta:xdmField": "xdm:upsells",
-      "tagNumber": 55
+      "tagNumber": 56
     },
     "warrantyClaim": {
       "type": "object",
@@ -4068,7 +4173,7 @@
         }
       },
       "meta:xdmField": "xdm:warrantyClaim",
-      "tagNumber": 56
+      "tagNumber": 57
     },
     "homeAddress": {
       "title": "Home address",
@@ -4077,7 +4182,7 @@
       "meta:titleId": "profile-personal-details##xdm:homeAddress##title##98571",
       "meta:descriptionId": "profile-personal-details##xdm:homeAddress##description##35241",
       "meta:xdmField": "xdm:homeAddress",
-      "tagNumber": 57
+      "tagNumber": 58
     },
     "personalEmail": {
       "title": "Personal email",
@@ -4086,7 +4191,7 @@
       "meta:titleId": "profile-personal-details##xdm:personalEmail##title##13501",
       "meta:descriptionId": "profile-personal-details##xdm:personalEmail##description##54181",
       "meta:xdmField": "xdm:personalEmail",
-      "tagNumber": 58
+      "tagNumber": 59
     },
     "homePhone": {
       "title": "Home phone",
@@ -4095,7 +4200,7 @@
       "meta:titleId": "profile-personal-details##xdm:homePhone##title##28261",
       "meta:descriptionId": "profile-personal-details##xdm:homePhone##description##45111",
       "meta:xdmField": "xdm:homePhone",
-      "tagNumber": 59
+      "tagNumber": 60
     },
     "mobilePhone": {
       "title": "Mobile phone",
@@ -4104,7 +4209,7 @@
       "meta:titleId": "profile-personal-details##xdm:mobilePhone##title##76241",
       "meta:descriptionId": "profile-personal-details##xdm:mobilePhone##description##51801",
       "meta:xdmField": "xdm:mobilePhone",
-      "tagNumber": 60
+      "tagNumber": 61
     },
     "faxPhone": {
       "title": "Fax phone",
@@ -4113,7 +4218,7 @@
       "meta:titleId": "profile-personal-details##xdm:faxPhone##title##15761",
       "meta:descriptionId": "profile-personal-details##xdm:faxPhone##description##5951",
       "meta:xdmField": "xdm:faxPhone",
-      "tagNumber": 61
+      "tagNumber": 62
     },
     "extSourceSystemAudit": {
       "title": "External Source System Audit Properties",
@@ -4122,7 +4227,7 @@
       "meta:titleId": "external-source-system-audit-details##xdm:extSourceSystemAudit##title##88841",
       "meta:descriptionId": "external-source-system-audit-details##xdm:extSourceSystemAudit##description##28131",
       "meta:xdmField": "xdm:extSourceSystemAudit",
-      "tagNumber": 62
+      "tagNumber": 63
     },
     "personID": {
       "title": "Person ID",
@@ -4133,7 +4238,7 @@
       "meta:descriptionId": "person-identifier##xdm:personID##description##61151",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:personID",
-      "tagNumber": 63
+      "tagNumber": 64
     },
     "personKey": {
       "title": "Person Key",
@@ -4142,7 +4247,7 @@
       "meta:titleId": "person-identifier##xdm:personKey##title##34821",
       "meta:descriptionId": "person-identifier##xdm:personKey##description##12581",
       "meta:xdmField": "xdm:personKey",
-      "tagNumber": 64
+      "tagNumber": 65
     }
   },
   "meta:xdmId": "https://ns.adobe.com/xdm/context/experienceevent-generated",

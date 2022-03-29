@@ -141,6 +141,7 @@
     "2021-02-19",
     "2021-01-13",
     "2021-01-15",
+    "2022-03-24",
     "2021-02-02"
   ],
   "meta:titleId": [
@@ -903,6 +904,13 @@
       "meta:xdmField": "xdm:socialMarketing",
       "tagNumber": 25
     },
+    "stitchedID": {
+      "title": "Stitched ID",
+      "$ref": "../../datatypes/identity.schema.json",
+      "description": "Identifier computed by the Stitching service, containing a pair of (id, namespace) that uniquely identifies an individual to which this event belongs.",
+      "meta:xdmField": "xdm:stitchedID",
+      "tagNumber": 26
+    },
     "surveyResponse": {
       "type": "object",
       "description": "Stores details related to a survey that has been completed by a user.",
@@ -951,7 +959,7 @@
         }
       },
       "meta:xdmField": "xdm:surveyResponse",
-      "tagNumber": 26
+      "tagNumber": 27
     },
     "customerFeedback": {
       "type": "object",
@@ -1079,7 +1087,7 @@
         }
       },
       "meta:xdmField": "xdm:customerFeedback",
-      "tagNumber": 27
+      "tagNumber": 28
     },
     "deviceTradeInDetails": {
       "type": "object",
@@ -1118,7 +1126,7 @@
         }
       },
       "meta:xdmField": "xdm:deviceTradeInDetails",
-      "tagNumber": 28
+      "tagNumber": 29
     },
     "upgrades": {
       "type": "object",
@@ -1151,7 +1159,7 @@
         }
       },
       "meta:xdmField": "xdm:upgrades",
-      "tagNumber": 30
+      "tagNumber": 31
     },
     "upsells": {
       "type": "object",
@@ -1184,7 +1192,7 @@
         }
       },
       "meta:xdmField": "xdm:upsells",
-      "tagNumber": 31
+      "tagNumber": 32
     },
     "warrantyClaim": {
       "type": "object",
@@ -1230,7 +1238,7 @@
         }
       },
       "meta:xdmField": "xdm:warrantyClaim",
-      "tagNumber": 32
+      "tagNumber": 33
     },
     "homeAddress": {
       "title": "Home address",
@@ -1239,7 +1247,7 @@
       "meta:titleId": "profile-personal-details##xdm:homeAddress##title##98571",
       "meta:descriptionId": "profile-personal-details##xdm:homeAddress##description##35241",
       "meta:xdmField": "xdm:homeAddress",
-      "tagNumber": 33
+      "tagNumber": 34
     },
     "personalEmail": {
       "title": "Personal email",
@@ -1248,7 +1256,7 @@
       "meta:titleId": "profile-personal-details##xdm:personalEmail##title##13501",
       "meta:descriptionId": "profile-personal-details##xdm:personalEmail##description##54181",
       "meta:xdmField": "xdm:personalEmail",
-      "tagNumber": 34
+      "tagNumber": 35
     },
     "homePhone": {
       "title": "Home phone",
@@ -1257,7 +1265,7 @@
       "meta:titleId": "profile-personal-details##xdm:homePhone##title##28261",
       "meta:descriptionId": "profile-personal-details##xdm:homePhone##description##45111",
       "meta:xdmField": "xdm:homePhone",
-      "tagNumber": 35
+      "tagNumber": 36
     },
     "mobilePhone": {
       "title": "Mobile phone",
@@ -1266,7 +1274,7 @@
       "meta:titleId": "profile-personal-details##xdm:mobilePhone##title##76241",
       "meta:descriptionId": "profile-personal-details##xdm:mobilePhone##description##51801",
       "meta:xdmField": "xdm:mobilePhone",
-      "tagNumber": 36
+      "tagNumber": 37
     },
     "faxPhone": {
       "title": "Fax phone",
@@ -1275,7 +1283,7 @@
       "meta:titleId": "profile-personal-details##xdm:faxPhone##title##15761",
       "meta:descriptionId": "profile-personal-details##xdm:faxPhone##description##5951",
       "meta:xdmField": "xdm:faxPhone",
-      "tagNumber": 37
+      "tagNumber": 38
     }
   },
   "meta:xdmId": "https://ns.adobe.com/xdm/context/experienceevent-generated-telecom",

@@ -480,6 +480,7 @@
 [fieldgroups.profile.profile-subscriptions](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.profile.profile-subscriptions.html)<br/>
 [fieldgroups.profile.b2b-person-details](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.profile.b2b-person-details.html)<br/>
 [fieldgroups.profile.profile-telecom-subscription](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.profile.profile-telecom-subscription.html)<br/>
+[fieldgroups.profile.profile-consentResults](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.profile.profile-consentResults.html)<br/>
 [fieldgroups.profile.profile-privacy](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.profile.profile-privacy.html)<br/>
 [fieldgroups.profile.profile-other-work-details](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.profile.profile-other-work-details.html)<br/>
 [fieldgroups.profile.profile-owning-entities](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.profile.profile-owning-entities.html)<br/>
@@ -498,6 +499,7 @@
 [fieldgroups.experience-event.experienceevent-knowledge-base-details](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.experienceevent-knowledge-base-details.html)<br/>
 [fieldgroups.experience-event.experienceevent-enduserids](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.experienceevent-enduserids.html)<br/>
 [fieldgroups.experience-event.experienceevent-service-payment-details](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.experienceevent-service-payment-details.html)<br/>
+[fieldgroups.experience-event.experienceevent-stitching](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.experienceevent-stitching.html)<br/>
 [fieldgroups.experience-event.experienceevent-pushtracking](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.experienceevent-pushtracking.html)<br/>
 [fieldgroups.experience-event.experienceevent-offer-impression-details](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.experienceevent-offer-impression-details.html)<br/>
 [fieldgroups.experience-event.experienceevent-file-upload-details](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.experienceevent-file-upload-details.html)<br/>
@@ -514,6 +516,7 @@
 [fieldgroups.experience-event.events.scorechanged](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.events.scorechanged.html)<br/>
 [fieldgroups.experience-event.events.linkclicks](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.events.linkclicks.html)<br/>
 [fieldgroups.experience-event.events.convert-lead](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.events.convert-lead.html)<br/>
+[fieldgroups.experience-event.events.emailsent](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.events.emailsent.html)<br/>
 [fieldgroups.experience-event.events.change-campaign-stream](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.events.change-campaign-stream.html)<br/>
 [fieldgroups.experience-event.events.add-to-list](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.events.add-to-list.html)<br/>
 [fieldgroups.experience-event.events.change-campaign-cadence](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.events.change-campaign-cadence.html)<br/>
@@ -531,6 +534,7 @@
 [fieldgroups.experience-event.events.emailbouncedsoft](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.events.emailbouncedsoft.html)<br/>
 [fieldgroups.experience-event.events.remove-from-list](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.events.remove-from-list.html)<br/>
 [fieldgroups.experience-event.events.add-to-opportunity](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.events.add-to-opportunity.html)<br/>
+[fieldgroups.experience-event.events.merge-leads](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.events.merge-leads.html)<br/>
 [fieldgroups.experience-event.events.statusincampaignprogressionchanged](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.events.statusincampaignprogressionchanged.html)<br/>
 [fieldgroups.experience-event.events.emailopened](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.events.emailopened.html)<br/>
 [fieldgroups.experience-event.events.emailclicked](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.events.emailclicked.html)<br/>

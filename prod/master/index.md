@@ -580,10 +580,12 @@
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.events.emailclicked.html">emailclicked</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.events.emaildelivered.html">emaildelivered</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.events.emailopened.html">emailopened</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.events.emailsent.html">emailsent</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.events.emailunsubscribed.html">emailunsubscribed</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.events.formfilledout.html">formfilledout</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.events.interesting-moment.html">interesting-moment</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.events.linkclicks.html">linkclicks</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.events.merge-leads.html">merge-leads</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.events.new-lead.html">new-lead</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.events.opportunityupdated.html">opportunityupdated</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.events.remove-from-list.html">remove-from-list</a></li>
@@ -619,6 +621,7 @@
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.experienceevent-segmentmembership.html">experienceevent-segmentmembership</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.experienceevent-service-payment-details.html">experienceevent-service-payment-details</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.experienceevent-social-network-usage-details.html">experienceevent-social-network-usage-details</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.experienceevent-stitching.html">experienceevent-stitching</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.experienceevent-support-site-search.html">experienceevent-support-site-search</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.experienceevent-survey-response-details.html">experienceevent-survey-response-details</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.experienceevent-technical-details.html">experienceevent-technical-details</a></li>
@@ -687,6 +690,7 @@
 <ul>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.profile.b2b-person-components.html">b2b-person-components</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.profile.b2b-person-details.html">b2b-person-details</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.profile.profile-consentResults.html">profile-consentResults</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.profile.profile-consents.html">profile-consents</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.profile.profile-directmarketing.html">profile-directmarketing</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.profile.profile-loyalty-details.html">profile-loyalty-details</a></li>
