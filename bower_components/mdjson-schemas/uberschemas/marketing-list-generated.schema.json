@@ -5,16 +5,9 @@
   "type": "object",
   "meta:xdmType": "object",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "meta:tags": [
-    {
-      "b2bSchema": true
-    },
-    {
-      "industry": [
-        "all"
-      ]
-    }
-  ],
+  "meta:tags": {
+    "b2bSchema": true
+  },
   "meta:extensible": true,
   "meta:abstract": true,
   "meta:status": [
@@ -26,22 +19,17 @@
     "marketing-list##title##32631",
     "record##title##65961",
     "external-source-system-audit-details##title##88991",
-    "marketing-list-components##title##60451",
-    "identitymap##title##90811",
-    "person-identifier##title##62361"
+    "marketing-list-components##title##60451"
   ],
   "meta:descriptionId": [
     "marketing-list##description##65341",
     "record##description##3921",
     "external-source-system-audit-details##description##98601",
-    "marketing-list-components##description##15941",
-    "identitymap##description##41821",
-    "person-identifier##description##76761"
+    "marketing-list-components##description##15941"
   ],
   "meta:createdDate": [
     "2020-08-10",
-    "2020-09-14",
-    "2021-02-19"
+    "2020-09-14"
   ],
   "auditable": true,
   "properties": {
@@ -119,45 +107,8 @@
       "meta:xdmField": "xdm:marketingListComponents",
       "tagNumber": 8,
       "items": {
-        "$ref": "obj7491809767003241.schema.json"
+        "$ref": "obj9646685090679818.schema.json"
       }
-    },
-    "identityMap": {
-      "type": "object",
-      "meta:xdmType": "map",
-      "meta:xdmField": "xdm:identityMap",
-      "tagNumber": 9,
-      "properties": {
-        "mapObj": {
-          "type": "array",
-          "meta:xdmType": "array",
-          "items": {
-            "$ref": "../datatypes/identityitem.schema.json",
-            "tagNumber": 1
-          },
-          "tagNumber": 1
-        }
-      }
-    },
-    "personID": {
-      "title": "Person ID",
-      "description": "Person unique identifier.",
-      "type": "string",
-      "meta:status": "experimental",
-      "meta:titleId": "person-identifier##xdm:personID##title##75321",
-      "meta:descriptionId": "person-identifier##xdm:personID##description##61151",
-      "meta:xdmType": "string",
-      "meta:xdmField": "xdm:personID",
-      "tagNumber": 10
-    },
-    "personKey": {
-      "title": "Person Key",
-      "description": "Unique composite identifier of the Person.",
-      "$ref": "../datatypes/b2b/b2b-source.schema.json",
-      "meta:titleId": "person-identifier##xdm:personKey##title##34821",
-      "meta:descriptionId": "person-identifier##xdm:personKey##description##12581",
-      "meta:xdmField": "xdm:personKey",
-      "tagNumber": 11
     }
   },
   "meta:xdmId": "https://ns.adobe.com/xdm/classes/marketing-list-generated",

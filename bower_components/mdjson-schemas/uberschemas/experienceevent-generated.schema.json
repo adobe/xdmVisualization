@@ -311,9 +311,7 @@
     "experienceevent-upsell-details##title##14631",
     "experienceevent-vehicle-reservation##title##24041",
     "experienceevent-warranty-claim-details##title##72021",
-    "profile-personal-details##title##17051",
-    "external-source-system-audit-details##title##88991",
-    "person-identifier##title##62361"
+    "profile-personal-details##title##17051"
   ],
   "meta:descriptionId": [
     "experienceevent##description##41211",
@@ -401,9 +399,7 @@
     "experienceevent-upsell-details##description##98371",
     "experienceevent-vehicle-reservation##description##68881",
     "experienceevent-warranty-claim-details##description##25171",
-    "profile-personal-details##description##5771",
-    "external-source-system-audit-details##description##98601",
-    "person-identifier##description##76761"
+    "profile-personal-details##description##5771"
   ],
   "meta:conditionalField": "xdm:eventType",
   "meta:conditionalValue": [
@@ -2303,7 +2299,7 @@
           "meta:xdmField": "xdm:dataValueChanges",
           "tagNumber": 5,
           "items": {
-            "$ref": "obj6412451363835323.schema.json"
+            "$ref": "obj4270640492458946.schema.json"
           }
         }
       },
@@ -3630,7 +3626,7 @@
           "meta:xdmField": "xdm:diningReservations",
           "tagNumber": 1,
           "items": {
-            "$ref": "obj995060966165878.schema.json"
+            "$ref": "obj2656020623809534.schema.json"
           }
         },
         "cancellation": {
@@ -3803,7 +3799,7 @@
           "meta:xdmField": "xdm:flightReservations",
           "tagNumber": 19,
           "items": {
-            "$ref": "obj7453503479984982.schema.json"
+            "$ref": "obj7162546636355853.schema.json"
           }
         },
         "lodgingReservations": {
@@ -3812,7 +3808,7 @@
           "meta:xdmField": "xdm:lodgingReservations",
           "tagNumber": 20,
           "items": {
-            "$ref": "obj9685395618453359.schema.json"
+            "$ref": "obj17615471488178835.schema.json"
           }
         },
         "vehicleReservations": {
@@ -3821,7 +3817,7 @@
           "meta:xdmField": "xdm:vehicleReservations",
           "tagNumber": 21,
           "items": {
-            "$ref": "obj574711662770111.schema.json"
+            "$ref": "obj2861196787478095.schema.json"
           }
         }
       },
@@ -4219,35 +4215,6 @@
       "meta:descriptionId": "profile-personal-details##xdm:faxPhone##description##5951",
       "meta:xdmField": "xdm:faxPhone",
       "tagNumber": 62
-    },
-    "extSourceSystemAudit": {
-      "title": "External Source System Audit Properties",
-      "$ref": "../datatypes/auditing/external-source-system-audit.schema.json",
-      "description": "Audit attributes for external sources.",
-      "meta:titleId": "external-source-system-audit-details##xdm:extSourceSystemAudit##title##88841",
-      "meta:descriptionId": "external-source-system-audit-details##xdm:extSourceSystemAudit##description##28131",
-      "meta:xdmField": "xdm:extSourceSystemAudit",
-      "tagNumber": 63
-    },
-    "personID": {
-      "title": "Person ID",
-      "description": "Person unique identifier.",
-      "type": "string",
-      "meta:status": "experimental",
-      "meta:titleId": "person-identifier##xdm:personID##title##75321",
-      "meta:descriptionId": "person-identifier##xdm:personID##description##61151",
-      "meta:xdmType": "string",
-      "meta:xdmField": "xdm:personID",
-      "tagNumber": 64
-    },
-    "personKey": {
-      "title": "Person Key",
-      "description": "Unique composite identifier of the Person.",
-      "$ref": "../datatypes/b2b/b2b-source.schema.json",
-      "meta:titleId": "person-identifier##xdm:personKey##title##34821",
-      "meta:descriptionId": "person-identifier##xdm:personKey##description##12581",
-      "meta:xdmField": "xdm:personKey",
-      "tagNumber": 65
     }
   },
   "meta:xdmId": "https://ns.adobe.com/xdm/context/experienceevent-generated",

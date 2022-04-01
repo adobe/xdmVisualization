@@ -65,8 +65,7 @@
     "profile-personal-finance-details##title##74901",
     "profile-personal-tax-profile-details##title##13291",
     "profile-user-account-details##title##84191",
-    "profile-work-details##title##83911",
-    "identitymap##title##90811"
+    "profile-work-details##title##83911"
   ],
   "meta:descriptionId": [
     "profile##description##66111",
@@ -79,8 +78,7 @@
     "profile-personal-finance-details##description##19971",
     "profile-personal-tax-profile-details##description##88281",
     "profile-user-account-details##description##50141",
-    "profile-work-details##description##64201",
-    "identitymap##description##41821"
+    "profile-work-details##description##64201"
   ],
   "properties": {
     "repositoryCreatedBy": {
@@ -1371,7 +1369,7 @@
           "meta:xdmField": "xdm:pointsExpiration",
           "tagNumber": 4,
           "items": {
-            "$ref": "obj09667209020992451.schema.json"
+            "$ref": "obj21580711896293314.schema.json"
           }
         },
         "pointsRedeemed": {
@@ -1521,7 +1519,7 @@
           "meta:xdmField": "xdm:creditScores",
           "tagNumber": 3,
           "items": {
-            "$ref": "obj09096154598380002.schema.json"
+            "$ref": "obj6820595043742348.schema.json"
           }
         },
         "employmentStatus": {
@@ -1780,23 +1778,6 @@
       },
       "meta:xdmField": "xdm:organizations",
       "tagNumber": 21
-    },
-    "identityMap": {
-      "type": "object",
-      "meta:xdmType": "map",
-      "meta:xdmField": "xdm:identityMap",
-      "tagNumber": 22,
-      "properties": {
-        "mapObj": {
-          "type": "array",
-          "meta:xdmType": "array",
-          "items": {
-            "$ref": "../../datatypes/identityitem.schema.json",
-            "tagNumber": 1
-          },
-          "tagNumber": 1
-        }
-      }
     }
   },
   "meta:xdmId": "https://ns.adobe.com/xdm/context/profile-generated-financial_services",

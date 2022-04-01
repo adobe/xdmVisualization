@@ -17,18 +17,14 @@
     "identitymap##title##90811",
     "auditable##title##87231",
     "record##title##65961",
-    "segmentdefinition-expression##title##33401",
-    "external-source-system-audit-details##title##88991",
-    "person-identifier##title##62361"
+    "segmentdefinition-expression##title##33401"
   ],
   "meta:descriptionId": [
     "segmentdefinition##description##42991",
     "identitymap##description##41821",
     "auditable##description##48551",
     "record##description##3921",
-    "segmentdefinition-expression##description##2571",
-    "external-source-system-audit-details##description##98601",
-    "person-identifier##description##76761"
+    "segmentdefinition-expression##description##2571"
   ],
   "meta:tags": {
     "industry": [
@@ -249,35 +245,6 @@
       },
       "meta:xdmField": "xdm:segmentExpression",
       "tagNumber": 14
-    },
-    "extSourceSystemAudit": {
-      "title": "External Source System Audit Properties",
-      "$ref": "../datatypes/auditing/external-source-system-audit.schema.json",
-      "description": "Audit attributes for external sources.",
-      "meta:titleId": "external-source-system-audit-details##xdm:extSourceSystemAudit##title##88841",
-      "meta:descriptionId": "external-source-system-audit-details##xdm:extSourceSystemAudit##description##28131",
-      "meta:xdmField": "xdm:extSourceSystemAudit",
-      "tagNumber": 15
-    },
-    "personID": {
-      "title": "Person ID",
-      "description": "Person unique identifier.",
-      "type": "string",
-      "meta:status": "experimental",
-      "meta:titleId": "person-identifier##xdm:personID##title##75321",
-      "meta:descriptionId": "person-identifier##xdm:personID##description##61151",
-      "meta:xdmType": "string",
-      "meta:xdmField": "xdm:personID",
-      "tagNumber": 16
-    },
-    "personKey": {
-      "title": "Person Key",
-      "description": "Unique composite identifier of the Person.",
-      "$ref": "../datatypes/b2b/b2b-source.schema.json",
-      "meta:titleId": "person-identifier##xdm:personKey##title##34821",
-      "meta:descriptionId": "person-identifier##xdm:personKey##description##12581",
-      "meta:xdmField": "xdm:personKey",
-      "tagNumber": 17
     }
   },
   "meta:xdmId": "https://ns.adobe.com/xdm/context/segmentdefinition-generated",

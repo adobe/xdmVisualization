@@ -44,8 +44,7 @@
     "profile-person-details##title##15141",
     "profile-personal-details##title##17051",
     "profile-user-account-details##title##84191",
-    "profile-work-details##title##83911",
-    "identitymap##title##90811"
+    "profile-work-details##title##83911"
   ],
   "meta:descriptionId": [
     "profile##description##66111",
@@ -55,8 +54,7 @@
     "profile-person-details##description##51031",
     "profile-personal-details##description##5771",
     "profile-user-account-details##description##50141",
-    "profile-work-details##description##64201",
-    "identitymap##description##41821"
+    "profile-work-details##description##64201"
   ],
   "properties": {
     "repositoryCreatedBy": {
@@ -1491,23 +1489,6 @@
       },
       "meta:xdmField": "xdm:organizations",
       "tagNumber": 19
-    },
-    "identityMap": {
-      "type": "object",
-      "meta:xdmType": "map",
-      "meta:xdmField": "xdm:identityMap",
-      "tagNumber": 20,
-      "properties": {
-        "mapObj": {
-          "type": "array",
-          "meta:xdmType": "array",
-          "items": {
-            "$ref": "../../datatypes/identityitem.schema.json",
-            "tagNumber": 1
-          },
-          "tagNumber": 1
-        }
-      }
     }
   },
   "meta:xdmId": "https://ns.adobe.com/xdm/context/profile-generated-education",

@@ -63,8 +63,7 @@
     "profile-personal-details##title##17051",
     "travel-preferences##title##82371",
     "profile-user-account-details##title##84191",
-    "profile-work-details##title##83911",
-    "identitymap##title##90811"
+    "profile-work-details##title##83911"
   ],
   "meta:descriptionId": [
     "profile##description##66111",
@@ -76,8 +75,7 @@
     "profile-personal-details##description##5771",
     "travel-preferences##description##2511",
     "profile-user-account-details##description##50141",
-    "profile-work-details##description##64201",
-    "identitymap##description##41821"
+    "profile-work-details##description##64201"
   ],
   "properties": {
     "repositoryCreatedBy": {
@@ -1368,7 +1366,7 @@
           "meta:xdmField": "xdm:pointsExpiration",
           "tagNumber": 4,
           "items": {
-            "$ref": "obj357708994008177.schema.json"
+            "$ref": "obj753407018286884.schema.json"
           }
         },
         "pointsRedeemed": {
@@ -1982,23 +1980,6 @@
       },
       "meta:xdmField": "xdm:organizations",
       "tagNumber": 21
-    },
-    "identityMap": {
-      "type": "object",
-      "meta:xdmType": "map",
-      "meta:xdmField": "xdm:identityMap",
-      "tagNumber": 22,
-      "properties": {
-        "mapObj": {
-          "type": "array",
-          "meta:xdmType": "array",
-          "items": {
-            "$ref": "../../datatypes/identityitem.schema.json",
-            "tagNumber": 1
-          },
-          "tagNumber": 1
-        }
-      }
     }
   },
   "meta:xdmId": "https://ns.adobe.com/xdm/context/profile-generated-travel_and_hospitality",
