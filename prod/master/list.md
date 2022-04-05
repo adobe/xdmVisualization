@@ -61,6 +61,7 @@
 [classes.campaign-member](http://opensource.adobe.com/xdmVisualization/prod/master/classes.campaign-member.html)<br/>
 [classes.segmentdefinition](http://opensource.adobe.com/xdmVisualization/prod/master/classes.segmentdefinition.html)<br/>
 [classes.promotion](http://opensource.adobe.com/xdmVisualization/prod/master/classes.promotion.html)<br/>
+[classes.summary_metrics](http://opensource.adobe.com/xdmVisualization/prod/master/classes.summary_metrics.html)<br/>
 [classes.restaurant](http://opensource.adobe.com/xdmVisualization/prod/master/classes.restaurant.html)<br/>
 [classes.fsi.atm](http://opensource.adobe.com/xdmVisualization/prod/master/classes.fsi.atm.html)<br/>
 [classes.fsi.policy](http://opensource.adobe.com/xdmVisualization/prod/master/classes.fsi.policy.html)<br/>
@@ -102,6 +103,7 @@
 [datatypes.identity](http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.identity.html)<br/>
 [datatypes.media](http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.media.html)<br/>
 [datatypes.segmentidentity](http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.segmentidentity.html)<br/>
+[datatypes.sitesearch](http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.sitesearch.html)<br/>
 [datatypes.marketing.directmarketing-address](http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.marketing.directmarketing-address.html)<br/>
 [datatypes.marketing.marketing](http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.marketing.marketing.html)<br/>
 [datatypes.marketing.directmarketing-phonenumber](http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.marketing.directmarketing-phonenumber.html)<br/>
@@ -220,6 +222,7 @@
 [fieldgroups.experience-event.experienceevent-support-site-search](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.experienceevent-support-site-search.html)<br/>
 [fieldgroups.experience-event.experienceevent-social-network-usage-details](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.experienceevent-social-network-usage-details.html)<br/>
 [fieldgroups.experience-event.experienceevent-knowledge-base-details](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.experienceevent-knowledge-base-details.html)<br/>
+[fieldgroups.experience-event.experienceevent-site-search](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.experienceevent-site-search.html)<br/>
 [fieldgroups.experience-event.experienceevent-enduserids](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.experienceevent-enduserids.html)<br/>
 [fieldgroups.experience-event.experienceevent-service-payment-details](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.experienceevent-service-payment-details.html)<br/>
 [fieldgroups.experience-event.experienceevent-stitching](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.experienceevent-stitching.html)<br/>

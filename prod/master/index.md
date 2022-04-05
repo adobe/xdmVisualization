@@ -355,6 +355,7 @@
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/classes.promotion.html">promotion</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/classes.restaurant.html">restaurant</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/classes.segmentdefinition.html">segmentdefinition</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/classes.summary_metrics.html">summary_metrics</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/classes.vehicle-product.html">vehicle-product</a></li>
 </ul>
 </details>
@@ -537,6 +538,7 @@
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.segmentmembership.html">segmentmembership</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.segmentmembershipitem.html">segmentmembershipitem</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.shipping.html">shipping</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.sitesearch.html">sitesearch</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.webinfo.html">webinfo</a></li>
 </ul>
 </details>
@@ -620,6 +622,7 @@
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.experienceevent-search.html">experienceevent-search</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.experienceevent-segmentmembership.html">experienceevent-segmentmembership</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.experienceevent-service-payment-details.html">experienceevent-service-payment-details</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.experienceevent-site-search.html">experienceevent-site-search</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.experienceevent-social-network-usage-details.html">experienceevent-social-network-usage-details</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.experienceevent-stitching.html">experienceevent-stitching</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.experienceevent-support-site-search.html">experienceevent-support-site-search</a></li>

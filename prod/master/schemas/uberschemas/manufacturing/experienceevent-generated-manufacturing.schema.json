@@ -433,6 +433,14 @@
           "meta:xdmType": "int",
           "meta:xdmField": "xdm:updateProfile",
           "tagNumber": 20
+        },
+        "createProfile": {
+          "title": "Account Profile Create",
+          "type": "integer",
+          "description": "Counter event indicating a user has created an account profile.",
+          "meta:xdmType": "int",
+          "meta:xdmField": "xdm:createProfile",
+          "tagNumber": 21
         }
       },
       "meta:xdmField": "xdm:userAccount",

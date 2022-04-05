@@ -1,0 +1,66 @@
+{
+  "id": "_xdm.datatypes.sitesearch",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Site Search",
+  "type": "object",
+  "meta:extensible": true,
+  "description": "Information about site content search activity.",
+  "meta:status": "experimental",
+  "meta:xdmType": "object",
+  "properties": {
+    "filter": {
+      "title": "Filter",
+      "type": "array",
+      "description": "Filters applied to limit search results.",
+      "meta:xdmType": "array",
+      "meta:xdmField": "xdm:filter",
+      "tagNumber": 1,
+      "items": {
+        "$ref": "obj6436480961716669.schema.json"
+      }
+    },
+    "sort": {
+      "title": "Sort",
+      "type": "array",
+      "description": "Specification for how search results should be sorted.",
+      "meta:xdmType": "array",
+      "meta:xdmField": "xdm:sort",
+      "tagNumber": 2,
+      "items": {
+        "$ref": "obj6418503732695504.schema.json"
+      }
+    },
+    "query": {
+      "title": "Query",
+      "type": "string",
+      "description": "The terms searched for.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:query",
+      "tagNumber": 3
+    },
+    "suggestions": {
+      "title": "Suggestions",
+      "type": "array",
+      "description": "Suggested search terms.",
+      "meta:xdmType": "array",
+      "items": {
+        "type": "string",
+        "meta:xdmType": "string",
+        "tagNumber": 1
+      },
+      "meta:xdmField": "xdm:suggestions",
+      "tagNumber": 4
+    },
+    "numberOfResults": {
+      "title": "Number of Results",
+      "type": "integer",
+      "description": "Number of search results.",
+      "meta:xdmType": "int",
+      "meta:xdmField": "xdm:numberOfResults",
+      "tagNumber": 5
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/datatypes/sitesearch",
+  "meta:altId": "_xdm.datatypes.sitesearch",
+  "id": "_xdm.datatypes.sitesearch"
+}

@@ -521,6 +521,14 @@
           "meta:xdmType": "int",
           "meta:xdmField": "xdm:updateProfile",
           "tagNumber": 20
+        },
+        "createProfile": {
+          "title": "Account Profile Create",
+          "type": "integer",
+          "description": "Counter event indicating a user has created an account profile.",
+          "meta:xdmType": "int",
+          "meta:xdmField": "xdm:createProfile",
+          "tagNumber": 21
         }
       },
       "meta:xdmField": "xdm:userAccount",
@@ -1020,7 +1028,7 @@
           "meta:xdmField": "xdm:diningReservations",
           "tagNumber": 1,
           "items": {
-            "$ref": "obj1706470688749817.schema.json"
+            "$ref": "obj9659128211206738.schema.json"
           }
         },
         "cancellation": {
@@ -1193,7 +1201,7 @@
           "meta:xdmField": "xdm:flightReservations",
           "tagNumber": 19,
           "items": {
-            "$ref": "obj5856441957800105.schema.json"
+            "$ref": "obj2783553119615372.schema.json"
           }
         },
         "lodgingReservations": {
@@ -1202,7 +1210,7 @@
           "meta:xdmField": "xdm:lodgingReservations",
           "tagNumber": 20,
           "items": {
-            "$ref": "obj5144771626070856.schema.json"
+            "$ref": "obj774463351014175.schema.json"
           }
         },
         "vehicleReservations": {
@@ -1211,7 +1219,7 @@
           "meta:xdmField": "xdm:vehicleReservations",
           "tagNumber": 21,
           "items": {
-            "$ref": "obj87626361383222.schema.json"
+            "$ref": "obj744426876109991.schema.json"
           }
         }
       },
