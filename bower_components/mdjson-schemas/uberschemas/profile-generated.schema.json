@@ -278,7 +278,7 @@
       "meta:xdmField": "xdm:personComponents",
       "tagNumber": 12,
       "items": {
-        "$ref": "obj8316179466025235.schema.json"
+        "$ref": "obj08847630261512496.schema.json"
       }
     },
     "b2b": {
@@ -2054,7 +2054,7 @@
           "meta:xdmField": "xdm:pointsExpiration",
           "tagNumber": 4,
           "items": {
-            "$ref": "obj714311302775777.schema.json"
+            "$ref": "obj08893135946071484.schema.json"
           }
         },
         "pointsRedeemed": {
@@ -2168,7 +2168,7 @@
           "meta:xdmField": "xdm:creditScores",
           "tagNumber": 3,
           "items": {
-            "$ref": "obj3712027358104111.schema.json"
+            "$ref": "obj38629441080847715.schema.json"
           }
         },
         "employmentStatus": {
@@ -2427,7 +2427,7 @@
       "meta:xdmField": "xdm:pushNotificationDetails",
       "tagNumber": 52,
       "items": {
-        "$ref": "obj6976631112634606.schema.json"
+        "$ref": "obj20864060581020927.schema.json"
       }
     },
     "segmentMembership": {
@@ -2508,7 +2508,7 @@
           "meta:xdmField": "xdm:internetSubscription",
           "tagNumber": 4,
           "items": {
-            "$ref": "obj6415245875972084.schema.json"
+            "$ref": "obj8024148470256927.schema.json"
           }
         },
         "landlineSubscription": {
@@ -2519,7 +2519,7 @@
           "meta:xdmField": "xdm:landlineSubscription",
           "tagNumber": 5,
           "items": {
-            "$ref": "obj6300482414265232.schema.json"
+            "$ref": "obj2598896895254579.schema.json"
           }
         },
         "mediaSubscription": {
@@ -2530,7 +2530,7 @@
           "meta:xdmField": "xdm:mediaSubscription",
           "tagNumber": 6,
           "items": {
-            "$ref": "obj293963664971832.schema.json"
+            "$ref": "obj48778276663322995.schema.json"
           }
         },
         "mobileSubscription": {
@@ -2541,7 +2541,7 @@
           "meta:xdmField": "xdm:mobileSubscription",
           "tagNumber": 7,
           "items": {
-            "$ref": "obj9643386174981425.schema.json"
+            "$ref": "obj6371852804592253.schema.json"
           }
         }
       },

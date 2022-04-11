@@ -1,0 +1,39 @@
+{
+  "type": "object",
+  "meta:xdmType": "object",
+  "properties": {
+    "serviceName": {
+      "title": "Service Name",
+      "type": "integer",
+      "description": "Records the name of the streaming service.",
+      "meta:titleId": "profile-telecom-subscription##xdm:serviceName##title##83871",
+      "meta:descriptionId": "profile-telecom-subscription##xdm:serviceName##description##20291",
+      "meta:xdmType": "int",
+      "meta:xdmField": "xdm:serviceName",
+      "tagNumber": 1
+    },
+    "promotionalAddition": {
+      "title": "Promotional Addition",
+      "type": "boolean",
+      "description": "Flags if the streaming service was added as part of a promotion.",
+      "meta:titleId": "profile-telecom-subscription##xdm:promotionalAddition##title##46091",
+      "meta:descriptionId": "profile-telecom-subscription##xdm:promotionalAddition##description##17181",
+      "meta:xdmType": "boolean",
+      "meta:xdmField": "xdm:promotionalAddition",
+      "tagNumber": 2
+    },
+    "promotionLength": {
+      "title": "Promotion Length",
+      "type": "integer",
+      "description": "Tracks the length of the promotion, in months, if the streaming service was added as part of a promotion.",
+      "meta:titleId": "profile-telecom-subscription##xdm:promotionLength##title##29001",
+      "meta:descriptionId": "profile-telecom-subscription##xdm:promotionLength##description##43591",
+      "meta:xdmType": "int",
+      "meta:xdmField": "xdm:promotionLength",
+      "tagNumber": 3
+    }
+  },
+  "tagNumber": 1,
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "id": "obj33315299203043525.schema.json"
+}
