@@ -1,0 +1,71 @@
+{
+  "id": "_experience.workfront.portfolio",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Work Portfolio Attributes",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "description": "Portfolio related fields",
+  "meta:status": "experimental",
+  "meta:xdmType": "object",
+  "properties": {
+    "_workfront": {
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "portfolio": {
+          "type": "object",
+          "title": "Portfolio Attributes",
+          "meta:xdmType": "object",
+          "properties": {
+            "_workfront": {
+              "type": "object",
+              "meta:xdmType": "object",
+              "properties": {
+                "budget": {
+                  "title": "Portfolio Budget",
+                  "description": "",
+                  "type": "number",
+                  "meta:xdmType": "number",
+                  "meta:xdmField": "workfront:budget",
+                  "tagNumber": 1
+                },
+                "description": {
+                  "title": "Portfolio Description",
+                  "description": "",
+                  "type": "string",
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "workfront:description",
+                  "tagNumber": 2
+                },
+                "isActive": {
+                  "title": "Portfolio Is Active",
+                  "description": "",
+                  "type": "boolean",
+                  "meta:xdmType": "boolean",
+                  "meta:xdmField": "workfront:isActive",
+                  "tagNumber": 3
+                },
+                "ownerEmployeeID": {
+                  "title": "Portfolio Owner Employee ID",
+                  "description": "",
+                  "type": "string",
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "workfront:ownerEmployeeID",
+                  "tagNumber": 4
+                }
+              },
+              "tagNumber": 1
+            }
+          },
+          "meta:xdmField": "workfront:portfolio",
+          "tagNumber": 1
+        }
+      },
+      "tagNumber": 1
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/experience/workfront/portfolio",
+  "meta:altId": "_experience.workfront.portfolio",
+  "id": "_experience.workfront.portfolio"
+}

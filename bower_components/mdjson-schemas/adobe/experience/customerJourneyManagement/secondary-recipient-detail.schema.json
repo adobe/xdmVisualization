@@ -1,0 +1,70 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "id": "_experience.customerjourneymanagement.secondaryrecipientdetail",
+  "title": "Secondary Recipient Detail For Audit",
+  "description": "It will contain the detail related to the secondary recipient which received the copy of the mail sent to the original recipient for the Audit.",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:status": "stable",
+  "meta:xdmType": "object",
+  "properties": {
+    "_experience": {
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "customerJourneyManagement": {
+          "type": "object",
+          "meta:xdmType": "object",
+          "properties": {
+            "secondaryRecipientDetail": {
+              "properties": {
+                "type": {
+                  "title": "Secondary Recipient Type",
+                  "type": "string",
+                  "description": "The type of the secondary recipient. i.e BCC (Blind Carbon Copy), CC (Carbon Copy) & Archival",
+                  "enum": [
+                    "bcc",
+                    "cc",
+                    "archival"
+                  ],
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "https://ns.adobe.com/experience/customerJourneyManagement/secondaryRecipientDetail/type",
+                  "tagNumber": 1
+                },
+                "originalRecipientAddress": {
+                  "title": "Original Recipient Address",
+                  "type": "string",
+                  "description": "It is the address of the original recipient of which the copy of the mail to the secondary recipient was sent.",
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "https://ns.adobe.com/experience/customerJourneyManagement/secondaryRecipientDetail/originalRecipientAddress",
+                  "tagNumber": 2
+                }
+              },
+              "type": "object",
+              "meta:xdmType": "object",
+              "required": [
+                "type"
+              ],
+              "tagNumber": 1
+            }
+          },
+          "required": [
+            "secondaryRecipientDetail"
+          ],
+          "tagNumber": 1
+        }
+      },
+      "required": [
+        "customerJourneyManagement"
+      ],
+      "tagNumber": 1
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/experience/customerJourneyManagement/secondaryRecipientDetail",
+  "meta:altId": "_experience.customerjourneymanagement.secondaryrecipientdetail",
+  "required": [
+    "_experience"
+  ],
+  "id": "_experience.customerjourneymanagement.secondaryrecipientdetail"
+}

@@ -31,6 +31,7 @@
     "2020-08-10",
     "2020-09-21"
   ],
+  "meta:sensitiveData": true,
   "properties": {
     "_id": {
       "title": "Identifier",
@@ -183,6 +184,14 @@
       "meta:xdmField": "xdm:currencyCode",
       "tagNumber": 15
     },
+    "relationshipSource": {
+      "title": "Relationship Source",
+      "description": "Source of Account Person relation.",
+      "type": "string",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:relationshipSource",
+      "tagNumber": 16
+    },
     "extSourceSystemAudit": {
       "title": "External Source System Audit Properties",
       "$ref": "../datatypes/auditing/external-source-system-audit.schema.json",
@@ -190,7 +199,7 @@
       "meta:titleId": "external-source-system-audit-details##xdm:extSourceSystemAudit##title##88841",
       "meta:descriptionId": "external-source-system-audit-details##xdm:extSourceSystemAudit##description##28131",
       "meta:xdmField": "xdm:extSourceSystemAudit",
-      "tagNumber": 16
+      "tagNumber": 17
     },
     "isDeleted": {
       "title": "Soft Delete Flag",
@@ -198,15 +207,41 @@
       "type": "boolean",
       "meta:xdmType": "boolean",
       "meta:xdmField": "xdm:isDeleted",
-      "tagNumber": 17
+      "tagNumber": 18
+    },
+    "matchedAccount": {
+      "title": "Matched Account",
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "matchingScore": {
+          "title": "Matching Score",
+          "description": "Computed matching score for account person affinity.",
+          "type": "number",
+          "meta:xdmType": "number",
+          "meta:xdmField": "xdm:matchingScore",
+          "tagNumber": 1
+        },
+        "scoreCreatedDate": {
+          "title": "Score Created Date",
+          "description": "The date when the account-person affinity score was computed.",
+          "type": "string",
+          "format": "date-time",
+          "meta:xdmType": "date-time",
+          "meta:xdmField": "xdm:scoreCreatedDate",
+          "tagNumber": 2
+        }
+      },
+      "meta:xdmField": "xdm:matchedAccount",
+      "tagNumber": 19
     },
     "accountPersonComponents": {
       "type": "array",
       "meta:xdmType": "array",
       "meta:xdmField": "xdm:accountPersonComponents",
-      "tagNumber": 18,
+      "tagNumber": 20,
       "items": {
-        "$ref": "obj9975473550104657.schema.json"
+        "$ref": "obj6344880021430721.schema.json"
       }
     }
   },

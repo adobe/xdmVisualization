@@ -1,0 +1,46 @@
+{
+  "id": "_xdm.mixins.account-person-details",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "XDM Business Account Person Relation Details",
+  "type": "object",
+  "meta:tags": {
+    "b2bSchema": true
+  },
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "description": "Collects all details related to an accout person relationship.",
+  "meta:sensitiveData": true,
+  "meta:status": "stable",
+  "meta:xdmType": "object",
+  "properties": {
+    "matchedAccount": {
+      "title": "Matched Account",
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "matchingScore": {
+          "title": "Matching Score",
+          "description": "Computed matching score for account person affinity.",
+          "type": "number",
+          "meta:xdmType": "number",
+          "meta:xdmField": "xdm:matchingScore",
+          "tagNumber": 1
+        },
+        "scoreCreatedDate": {
+          "title": "Score Created Date",
+          "description": "The date when the account-person affinity score was computed.",
+          "type": "string",
+          "format": "date-time",
+          "meta:xdmType": "date-time",
+          "meta:xdmField": "xdm:scoreCreatedDate",
+          "tagNumber": 2
+        }
+      },
+      "meta:xdmField": "xdm:matchedAccount",
+      "tagNumber": 1
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/mixins/account-person-details",
+  "meta:altId": "_xdm.mixins.account-person-details",
+  "id": "_xdm.mixins.account-person-details"
+}

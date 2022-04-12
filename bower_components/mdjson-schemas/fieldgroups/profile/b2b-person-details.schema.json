@@ -179,39 +179,6 @@
           "meta:xdmField": "xdm:companyWebsite",
           "tagNumber": 14
         },
-        "matchedAccount": {
-          "type": "object",
-          "meta:xdmType": "object",
-          "properties": {
-            "score": {
-              "title": "Score",
-              "description": "Account score.",
-              "type": "number",
-              "meta:status": "experimental",
-              "meta:xdmType": "number",
-              "meta:xdmField": "xdm:score",
-              "tagNumber": 1
-            },
-            "accountKey": {
-              "title": "Account Key",
-              "description": "Unique identifier of the Account related to the person.",
-              "$ref": "../../datatypes/b2b/b2b-source.schema.json",
-              "meta:xdmField": "xdm:accountKey",
-              "tagNumber": 2
-            },
-            "scoreDate": {
-              "title": "Score Date",
-              "description": "Date score was recorded/computed.",
-              "type": "string",
-              "format": "date-time",
-              "meta:xdmType": "date-time",
-              "meta:xdmField": "xdm:scoreDate",
-              "tagNumber": 3
-            }
-          },
-          "meta:xdmField": "xdm:matchedAccount",
-          "tagNumber": 15
-        },
         "personType": {
           "title": "Person Type",
           "description": "Type of the B2B person.",

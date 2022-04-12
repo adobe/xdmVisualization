@@ -278,7 +278,7 @@
       "meta:xdmField": "xdm:personComponents",
       "tagNumber": 12,
       "items": {
-        "$ref": "obj08847630261512496.schema.json"
+        "$ref": "obj6656051627765269.schema.json"
       }
     },
     "b2b": {
@@ -414,39 +414,6 @@
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:companyWebsite",
           "tagNumber": 14
-        },
-        "matchedAccount": {
-          "type": "object",
-          "meta:xdmType": "object",
-          "properties": {
-            "score": {
-              "title": "Score",
-              "description": "Account score.",
-              "type": "number",
-              "meta:status": "experimental",
-              "meta:xdmType": "number",
-              "meta:xdmField": "xdm:score",
-              "tagNumber": 1
-            },
-            "accountKey": {
-              "title": "Account Key",
-              "description": "Unique identifier of the Account related to the person.",
-              "$ref": "../datatypes/b2b/b2b-source.schema.json",
-              "meta:xdmField": "xdm:accountKey",
-              "tagNumber": 2
-            },
-            "scoreDate": {
-              "title": "Score Date",
-              "description": "Date score was recorded/computed.",
-              "type": "string",
-              "format": "date-time",
-              "meta:xdmType": "date-time",
-              "meta:xdmField": "xdm:scoreDate",
-              "tagNumber": 3
-            }
-          },
-          "meta:xdmField": "xdm:matchedAccount",
-          "tagNumber": 15
         },
         "personType": {
           "title": "Person Type",
@@ -2054,7 +2021,7 @@
           "meta:xdmField": "xdm:pointsExpiration",
           "tagNumber": 4,
           "items": {
-            "$ref": "obj08893135946071484.schema.json"
+            "$ref": "obj2792329951199055.schema.json"
           }
         },
         "pointsRedeemed": {
@@ -2168,7 +2135,7 @@
           "meta:xdmField": "xdm:creditScores",
           "tagNumber": 3,
           "items": {
-            "$ref": "obj38629441080847715.schema.json"
+            "$ref": "obj7723094414262526.schema.json"
           }
         },
         "employmentStatus": {
@@ -2427,7 +2394,7 @@
       "meta:xdmField": "xdm:pushNotificationDetails",
       "tagNumber": 52,
       "items": {
-        "$ref": "obj20864060581020927.schema.json"
+        "$ref": "obj10990495930167632.schema.json"
       }
     },
     "segmentMembership": {
@@ -2508,7 +2475,7 @@
           "meta:xdmField": "xdm:internetSubscription",
           "tagNumber": 4,
           "items": {
-            "$ref": "obj8024148470256927.schema.json"
+            "$ref": "obj2167806545806632.schema.json"
           }
         },
         "landlineSubscription": {
@@ -2519,7 +2486,7 @@
           "meta:xdmField": "xdm:landlineSubscription",
           "tagNumber": 5,
           "items": {
-            "$ref": "obj2598896895254579.schema.json"
+            "$ref": "obj03646649515143707.schema.json"
           }
         },
         "mediaSubscription": {
@@ -2530,7 +2497,7 @@
           "meta:xdmField": "xdm:mediaSubscription",
           "tagNumber": 6,
           "items": {
-            "$ref": "obj48778276663322995.schema.json"
+            "$ref": "obj6653373554261603.schema.json"
           }
         },
         "mobileSubscription": {
@@ -2541,7 +2508,7 @@
           "meta:xdmField": "xdm:mobileSubscription",
           "tagNumber": 7,
           "items": {
-            "$ref": "obj6371852804592253.schema.json"
+            "$ref": "obj33846045884764964.schema.json"
           }
         }
       },

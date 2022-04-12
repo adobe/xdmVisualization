@@ -1,7 +1,7 @@
 {
   "id": "_experience.workfront.task",
   "$schema": "http://json-schema.org/draft-06/schema#",
-  "title": "Work Task Atrributes",
+  "title": "Work Task Attributes",
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
@@ -13,21 +13,253 @@
       "type": "object",
       "meta:xdmType": "object",
       "properties": {
-        "storyPoints": {
-          "title": "Story Points",
-          "description": "The number of story points assigned to this task",
-          "type": "number",
-          "meta:xdmType": "number",
-          "meta:xdmField": "workfront:storyPoints",
+        "task": {
+          "type": "object",
+          "title": "Task Attributes",
+          "meta:xdmType": "object",
+          "properties": {
+            "_workfront": {
+              "type": "object",
+              "meta:xdmType": "object",
+              "properties": {
+                "parentTaskID": {
+                  "title": "Parent Task ID",
+                  "description": "",
+                  "type": "string",
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "workfront:parentTaskID",
+                  "tagNumber": 1
+                },
+                "actualCompletionTimestamp": {
+                  "title": "Task Actual Completion Timestamp",
+                  "description": "",
+                  "type": "string",
+                  "format": "date-time",
+                  "meta:xdmType": "date-time",
+                  "meta:xdmField": "workfront:actualCompletionTimestamp",
+                  "tagNumber": 2
+                },
+                "actualDurationMinutes": {
+                  "title": "Task Actual Duration Minutes",
+                  "description": "",
+                  "type": "number",
+                  "meta:xdmType": "number",
+                  "meta:xdmField": "workfront:actualDurationMinutes",
+                  "tagNumber": 3
+                },
+                "actualStartTimestamp": {
+                  "title": "Task Actual Start Timestamp",
+                  "description": "",
+                  "type": "string",
+                  "format": "date-time",
+                  "meta:xdmType": "date-time",
+                  "meta:xdmField": "workfront:actualStartTimestamp",
+                  "tagNumber": 4
+                },
+                "assignedToEmployeeID": {
+                  "title": "Task Assigned To Employee ID",
+                  "description": "",
+                  "type": "string",
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "workfront:assignedToEmployeeID",
+                  "tagNumber": 5
+                },
+                "condition": {
+                  "title": "Task Condition",
+                  "description": "",
+                  "type": "string",
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "workfront:condition",
+                  "tagNumber": 6
+                },
+                "description": {
+                  "title": "Task Description",
+                  "description": "",
+                  "type": "string",
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "workfront:description",
+                  "tagNumber": 7
+                },
+                "durationMinutes": {
+                  "title": "Task Duration Minutes",
+                  "description": "",
+                  "type": "number",
+                  "meta:xdmType": "number",
+                  "meta:xdmField": "workfront:durationMinutes",
+                  "tagNumber": 8
+                },
+                "estimatedCompletionTimestamp": {
+                  "title": "Task Estimated Completion Timestamp",
+                  "description": "",
+                  "type": "string",
+                  "format": "date-time",
+                  "meta:xdmType": "date-time",
+                  "meta:xdmField": "workfront:estimatedCompletionTimestamp",
+                  "tagNumber": 9
+                },
+                "estimatedStartTimestamp": {
+                  "title": "Task Estimated Start Timestamp",
+                  "description": "",
+                  "type": "string",
+                  "format": "date-time",
+                  "meta:xdmType": "date-time",
+                  "meta:xdmField": "workfront:estimatedStartTimestamp",
+                  "tagNumber": 10
+                },
+                "groupID": {
+                  "title": "Task Group ID",
+                  "description": "",
+                  "type": "string",
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "workfront:groupID",
+                  "tagNumber": 11
+                },
+                "hierarchyIndentLevel": {
+                  "title": "Task Hierarchy Indent Level",
+                  "description": "",
+                  "type": "integer",
+                  "meta:xdmType": "int",
+                  "meta:xdmField": "workfront:hierarchyIndentLevel",
+                  "tagNumber": 12
+                },
+                "isCritical": {
+                  "title": "Task Is Critical",
+                  "description": "",
+                  "type": "boolean",
+                  "meta:xdmType": "boolean",
+                  "meta:xdmField": "workfront:isCritical",
+                  "tagNumber": 13
+                },
+                "milestoneID": {
+                  "title": "Task Milestone ID",
+                  "description": "",
+                  "type": "string",
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "workfront:milestoneID",
+                  "tagNumber": 14
+                },
+                "numberOfChildren": {
+                  "title": "Task Number of Children",
+                  "description": "",
+                  "type": "integer",
+                  "meta:xdmType": "int",
+                  "meta:xdmField": "workfront:numberOfChildren",
+                  "tagNumber": 15
+                },
+                "numberOfOpenOpTasks": {
+                  "title": "Task Number of Open OpTasks",
+                  "description": "",
+                  "type": "integer",
+                  "meta:xdmType": "int",
+                  "meta:xdmField": "workfront:numberOfOpenOpTasks",
+                  "tagNumber": 16
+                },
+                "originalDurationMinutes": {
+                  "title": "Task Original Duration Minutes",
+                  "description": "",
+                  "type": "number",
+                  "meta:xdmType": "number",
+                  "meta:xdmField": "workfront:originalDurationMinutes",
+                  "tagNumber": 17
+                },
+                "percentComplete": {
+                  "title": "Task Percent Complete",
+                  "description": "",
+                  "type": "number",
+                  "meta:xdmType": "number",
+                  "meta:xdmField": "workfront:percentComplete",
+                  "tagNumber": 18
+                },
+                "plannedCompletionTimestamp": {
+                  "title": "Task Planned Completion Timestamp",
+                  "description": "",
+                  "type": "string",
+                  "format": "date-time",
+                  "meta:xdmType": "date-time",
+                  "meta:xdmField": "workfront:plannedCompletionTimestamp",
+                  "tagNumber": 19
+                },
+                "plannedDurationMinutes": {
+                  "title": "Task Planned Duration Minutes",
+                  "description": "",
+                  "type": "number",
+                  "meta:xdmType": "number",
+                  "meta:xdmField": "workfront:plannedDurationMinutes",
+                  "tagNumber": 20
+                },
+                "plannedStartTimestamp": {
+                  "title": "Task Planned Start Timestamp",
+                  "description": "",
+                  "type": "string",
+                  "format": "date-time",
+                  "meta:xdmType": "date-time",
+                  "meta:xdmField": "workfront:plannedStartTimestamp",
+                  "tagNumber": 21
+                },
+                "projectedCompletionTimestamp": {
+                  "title": "Task Projected Completion Timestamp",
+                  "description": "",
+                  "type": "string",
+                  "format": "date-time",
+                  "meta:xdmType": "date-time",
+                  "meta:xdmField": "workfront:projectedCompletionTimestamp",
+                  "tagNumber": 22
+                },
+                "priority": {
+                  "title": "Task Priority",
+                  "description": "",
+                  "type": "string",
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "workfront:priority",
+                  "tagNumber": 23
+                },
+                "projectedStartTimestamp": {
+                  "title": "Task Projected Start Timestamp",
+                  "description": "",
+                  "type": "string",
+                  "format": "date-time",
+                  "meta:xdmType": "date-time",
+                  "meta:xdmField": "workfront:projectedStartTimestamp",
+                  "tagNumber": 24
+                },
+                "status": {
+                  "title": "Task Status",
+                  "description": "",
+                  "type": "string",
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "workfront:status",
+                  "tagNumber": 25
+                },
+                "storyPoints": {
+                  "title": "Task Story Points",
+                  "description": "",
+                  "type": "number",
+                  "meta:xdmType": "number",
+                  "meta:xdmField": "workfront:storyPoints",
+                  "tagNumber": 26
+                },
+                "teamID": {
+                  "title": "Task Team ID",
+                  "description": "",
+                  "type": "string",
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "workfront:teamID",
+                  "tagNumber": 27
+                },
+                "iterationID": {
+                  "title": "Iteration ID",
+                  "description": "",
+                  "type": "string",
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "workfront:iterationID",
+                  "tagNumber": 28
+                }
+              },
+              "tagNumber": 1
+            }
+          },
+          "meta:xdmField": "workfront:task",
           "tagNumber": 1
-        },
-        "status": {
-          "title": "Status",
-          "description": "The status of this object",
-          "type": "string",
-          "meta:xdmType": "string",
-          "meta:xdmField": "workfront:status",
-          "tagNumber": 2
         }
       },
       "tagNumber": 1

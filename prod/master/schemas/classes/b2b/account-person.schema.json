@@ -177,6 +177,14 @@
       "meta:xdmField": "xdm:currencyCode",
       "tagNumber": 15
     },
+    "relationshipSource": {
+      "title": "Relationship Source",
+      "description": "Source of Account Person relation.",
+      "type": "string",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:relationshipSource",
+      "tagNumber": 16
+    },
     "extSourceSystemAudit": {
       "title": "External Source System Audit Properties",
       "$ref": "../../datatypes/auditing/external-source-system-audit.schema.json",
@@ -184,7 +192,7 @@
       "meta:titleId": "external-source-system-audit-details##xdm:extSourceSystemAudit##title##88841",
       "meta:descriptionId": "external-source-system-audit-details##xdm:extSourceSystemAudit##description##28131",
       "meta:xdmField": "xdm:extSourceSystemAudit",
-      "tagNumber": 16
+      "tagNumber": 17
     },
     "isDeleted": {
       "title": "Soft Delete Flag",
@@ -192,7 +200,7 @@
       "type": "boolean",
       "meta:xdmType": "boolean",
       "meta:xdmField": "xdm:isDeleted",
-      "tagNumber": 17
+      "tagNumber": 18
     }
   },
   "meta:xdmId": "https://ns.adobe.com/xdm/classes/account-person",

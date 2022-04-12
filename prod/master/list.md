@@ -297,6 +297,7 @@
 [fieldgroups.graphs.graph-node](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.graphs.graph-node.html)<br/>
 [fieldgroups.account.account-details](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.account.account-details.html)<br/>
 [fieldgroups.account.related-accounts](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.account.related-accounts.html)<br/>
+[fieldgroups.account-person.account-person-details](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.account-person.account-person-details.html)<br/>
 ### Extension Components
 [adobe.experience.profile-edgeregion](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.profile-edgeregion.html)<br/>
 [adobe.experience.target-experienceevent](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.target-experienceevent.html)<br/>
@@ -363,7 +364,11 @@
 [adobe.experience.aam-experienceevent](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.aam-experienceevent.html)<br/>
 [adobe.experience.aep-web-sdk-experienceevent](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.aep-web-sdk-experienceevent.html)<br/>
 [adobe.experience.workfront.workobject](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.workfront.workobject.html)<br/>
+[adobe.experience.workfront.portfolio](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.workfront.portfolio.html)<br/>
 [adobe.experience.workfront.changeevent](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.workfront.changeevent.html)<br/>
+[adobe.experience.workfront.project](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.workfront.project.html)<br/>
+[adobe.experience.workfront.opTask](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.workfront.opTask.html)<br/>
+[adobe.experience.workfront.program](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.workfront.program.html)<br/>
 [adobe.experience.workfront.task](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.workfront.task.html)<br/>
 [adobe.experience.analytics-experienceevent](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.analytics-experienceevent.html)<br/>
 [adobe.experience.intelligentServices.profile-journeyai-engagementscores](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.intelligentServices.profile-journeyai-engagementscores.html)<br/>
@@ -442,6 +447,7 @@
 [adobe.experience.campaign.experienceevent-profile-segmentation](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.campaign.experienceevent-profile-segmentation.html)<br/>
 [adobe.experience.campaign-experienceevent](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.campaign-experienceevent.html)<br/>
 [adobe.experience.customerJourneyManagement.offers](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.customerJourneyManagement.offers.html)<br/>
+[adobe.experience.customerJourneyManagement.secondary-recipient-detail](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.customerJourneyManagement.secondary-recipient-detail.html)<br/>
 [adobe.experience.customerJourneyManagement.message-delivery-feedback](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.customerJourneyManagement.message-delivery-feedback.html)<br/>
 [adobe.experience.customerJourneyManagement.profile-counters-v2](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.customerJourneyManagement.profile-counters-v2.html)<br/>
 [adobe.experience.customerJourneyManagement.messageprofile](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.customerJourneyManagement.messageprofile.html)<br/>

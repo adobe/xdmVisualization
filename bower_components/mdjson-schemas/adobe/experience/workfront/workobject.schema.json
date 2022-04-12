@@ -61,13 +61,36 @@
           "meta:xdmField": "workfront:parentID",
           "tagNumber": 2
         },
+        "parentObjectType": {
+          "title": "Parent Object Type",
+          "description": "String value representing the type of parent - PROJECT, TASK, etc.",
+          "type": "string",
+          "meta:xdmType": "string",
+          "meta:xdmField": "workfront:parentObjectType",
+          "tagNumber": 3
+        },
         "objectType": {
           "title": "Object Type",
           "description": "Basic string value representing the high level type of object",
           "type": "string",
           "meta:xdmType": "string",
           "meta:xdmField": "workfront:objectType",
-          "tagNumber": 3
+          "tagNumber": 4
+        },
+        "customData": {
+          "title": "Custom Form Fields",
+          "description": "Custom form data in the form of key/value pairs",
+          "type": "object",
+          "meta:xdmType": "map",
+          "meta:xdmField": "workfront:customData",
+          "tagNumber": 5,
+          "properties": {
+            "mapObj": {
+              "type": "string",
+              "meta:xdmType": "string",
+              "tagNumber": 1
+            }
+          }
         }
       },
       "tagNumber": 3

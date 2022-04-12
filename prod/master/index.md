@@ -168,6 +168,7 @@
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.customerJourneyManagement.offers.html">offers</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.customerJourneyManagement.processing-flow-timeline.html">processing-flow-timeline</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.customerJourneyManagement.profile-counters-v2.html">profile-counters-v2</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.customerJourneyManagement.secondary-recipient-detail.html">secondary-recipient-detail</a></li>
 </ul>
 </details>
 <details>
@@ -291,6 +292,10 @@
 <summary>workfront</summary>
 <ul>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.workfront.changeevent.html">changeevent</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.workfront.opTask.html">opTask</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.workfront.portfolio.html">portfolio</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.workfront.program.html">program</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.workfront.project.html">project</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.workfront.task.html">task</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.workfront.workobject.html">workobject</a></li>
 </ul>
@@ -545,6 +550,12 @@
 <details>
 <summary>fieldgroups</summary>
 <ul>
+<details>
+<summary>account-person</summary>
+<ul>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.account-person.account-person-details.html">account-person-details</a></li>
+</ul>
+</details>
 <details>
 <summary>account</summary>
 <ul>

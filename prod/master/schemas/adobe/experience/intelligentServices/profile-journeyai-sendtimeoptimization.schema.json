@@ -67,39 +67,39 @@
                                               "type": "object",
                                               "meta:xdmType": "object",
                                               "properties": {
-                                                "sendTimeScoreForClick": {
-                                                  "title": "Send Time Score for Click",
-                                                  "description": "Scores are for 7*24 hours from GMT Monday hour 0 to Sunday hour 23, representing the inclination of a customer clicking on an email's link if it's sent at that hour.",
+                                                "sendTimeScoreClick": {
+                                                  "title": "Send Time Score to Optimize Click",
+                                                  "description": "Scores are for 7*24 hours from GMT Monday hour 0 to Sunday hour 23, representing the order of the inclination of a customer clicking on an email's link if it's sent at that hour.",
                                                   "type": "array",
                                                   "minItems": 168,
                                                   "maxItems": 168,
-                                                  "meta:titleId": "profile-journeyai-sendtimeoptimization##https://ns.adobe.com/experience/intelligentServices/sendTimeScoreForClick##title##69241",
-                                                  "meta:descriptionId": "profile-journeyai-sendtimeoptimization##https://ns.adobe.com/experience/intelligentServices/sendTimeScoreForClick##description##72351",
                                                   "meta:xdmType": "array",
                                                   "items": {
-                                                    "type": "number",
-                                                    "meta:xdmType": "number",
+                                                    "type": "integer",
+                                                    "minimum": -128,
+                                                    "maximum": 127,
+                                                    "meta:xdmType": "byte",
                                                     "tagNumber": 1
                                                   },
-                                                  "meta:xdmField": "https://ns.adobe.com/experience/intelligentServices/sendTimeScoreForClick",
-                                                  "tagNumber": 1
+                                                  "meta:xdmField": "https://ns.adobe.com/experience/intelligentServices/sendTimeScoreClick",
+                                                  "tagNumber": 3
                                                 },
-                                                "sendTimeScoreForOpen": {
-                                                  "title": "Send Time Score for Open",
-                                                  "description": "Scores are for 7*24 hours from GMT Monday hour 0 to Sunday hour 23, representing the inclination of a customer opening an email if it's sent at that hour.",
+                                                "sendTimeScoreOpen": {
+                                                  "title": "Send Time Score to Optimize Open",
+                                                  "description": "Scores are for 7*24 hours from GMT Monday hour 0 to Sunday hour 23, representing the order of the inclination of a customer opening an email if it's sent at that hour.",
                                                   "type": "array",
                                                   "minItems": 168,
                                                   "maxItems": 168,
-                                                  "meta:titleId": "profile-journeyai-sendtimeoptimization##https://ns.adobe.com/experience/intelligentServices/sendTimeScoreForOpen##title##4891",
-                                                  "meta:descriptionId": "profile-journeyai-sendtimeoptimization##https://ns.adobe.com/experience/intelligentServices/sendTimeScoreForOpen##description##50931",
                                                   "meta:xdmType": "array",
                                                   "items": {
-                                                    "type": "number",
-                                                    "meta:xdmType": "number",
+                                                    "type": "integer",
+                                                    "minimum": -128,
+                                                    "maximum": 127,
+                                                    "meta:xdmType": "byte",
                                                     "tagNumber": 1
                                                   },
-                                                  "meta:xdmField": "https://ns.adobe.com/experience/intelligentServices/sendTimeScoreForOpen",
-                                                  "tagNumber": 2
+                                                  "meta:xdmField": "https://ns.adobe.com/experience/intelligentServices/sendTimeScoreOpen",
+                                                  "tagNumber": 4
                                                 }
                                               },
                                               "tagNumber": 1
@@ -127,22 +127,22 @@
                                               "type": "object",
                                               "meta:xdmType": "object",
                                               "properties": {
-                                                "sendTimeScoreForOpen": {
-                                                  "title": "Send Time Score for Open",
-                                                  "description": "Score are for 7*24 hours from GMT Monday hour 0 to Sunday hour 23, representing the inclination of a customer opening a push notification if it's sent at that hour.",
+                                                "sendTimeScoreOpen": {
+                                                  "title": "Send Time Score to Optimize Open",
+                                                  "description": "Score are for 7*24 hours from GMT Monday hour 0 to Sunday hour 23, representing the order of the inclination of a customer opening a push notification if it's sent at that hour.",
                                                   "type": "array",
                                                   "minItems": 168,
                                                   "maxItems": 168,
-                                                  "meta:titleId": "profile-journeyai-sendtimeoptimization##https://ns.adobe.com/experience/intelligentServices/sendTimeScoreForOpen##title##84141",
-                                                  "meta:descriptionId": "profile-journeyai-sendtimeoptimization##https://ns.adobe.com/experience/intelligentServices/sendTimeScoreForOpen##description##23631",
                                                   "meta:xdmType": "array",
                                                   "items": {
-                                                    "type": "number",
-                                                    "meta:xdmType": "number",
+                                                    "type": "integer",
+                                                    "minimum": -128,
+                                                    "maximum": 127,
+                                                    "meta:xdmType": "byte",
                                                     "tagNumber": 1
                                                   },
-                                                  "meta:xdmField": "https://ns.adobe.com/experience/intelligentServices/sendTimeScoreForOpen",
-                                                  "tagNumber": 1
+                                                  "meta:xdmField": "https://ns.adobe.com/experience/intelligentServices/sendTimeScoreOpen",
+                                                  "tagNumber": 2
                                                 }
                                               },
                                               "tagNumber": 1

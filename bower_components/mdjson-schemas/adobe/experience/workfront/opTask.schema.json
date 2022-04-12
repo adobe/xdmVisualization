@@ -1,0 +1,171 @@
+{
+  "id": "_experience.workfront.optask",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Work Task Attributes",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "description": "Operational Task related fields",
+  "meta:status": "experimental",
+  "meta:xdmType": "object",
+  "properties": {
+    "_workfront": {
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "opTask": {
+          "title": "Operational Task Attributes",
+          "type": "object",
+          "meta:xdmType": "object",
+          "properties": {
+            "_workfront": {
+              "type": "object",
+              "meta:xdmType": "object",
+              "properties": {
+                "opTaskType": {
+                  "title": "Operational Task Type",
+                  "description": "",
+                  "type": "string",
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "workfront:opTaskType",
+                  "tagNumber": 1
+                },
+                "actualCompletionTimestamp": {
+                  "title": "OpTask Actual Completion Timestamp",
+                  "description": "",
+                  "type": "string",
+                  "format": "date-time",
+                  "meta:xdmType": "date-time",
+                  "meta:xdmField": "workfront:actualCompletionTimestamp",
+                  "tagNumber": 2
+                },
+                "actualStartTimestamp": {
+                  "title": "OpTask Actual Start Timestamp",
+                  "description": "",
+                  "type": "string",
+                  "format": "date-time",
+                  "meta:xdmType": "date-time",
+                  "meta:xdmField": "workfront:actualStartTimestamp",
+                  "tagNumber": 3
+                },
+                "actualDurMinutes": {
+                  "title": "OpTask Actual Duration Minutes",
+                  "description": "",
+                  "type": "number",
+                  "meta:xdmType": "number",
+                  "meta:xdmField": "workfront:actualDurMinutes",
+                  "tagNumber": 4
+                },
+                "assignedToEmployeeID": {
+                  "title": "OpTask Assigned To Employee ID",
+                  "description": "",
+                  "type": "string",
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "workfront:assignedToEmployeeID",
+                  "tagNumber": 5
+                },
+                "condition": {
+                  "title": "OpTask Condition",
+                  "description": "",
+                  "type": "string",
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "workfront:condition",
+                  "tagNumber": 6
+                },
+                "description": {
+                  "title": "OpTask Description",
+                  "description": "",
+                  "type": "string",
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "workfront:description",
+                  "tagNumber": 7
+                },
+                "ownerEmployeeID": {
+                  "title": "OpTask Owner Employee ID",
+                  "description": "",
+                  "type": "string",
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "workfront:ownerEmployeeID",
+                  "tagNumber": 8
+                },
+                "percentComplete": {
+                  "title": "OpTask Percent Complete",
+                  "description": "",
+                  "type": "number",
+                  "meta:xdmType": "number",
+                  "meta:xdmField": "workfront:percentComplete",
+                  "tagNumber": 9
+                },
+                "plannedCompletionTimestamp": {
+                  "title": "OpTask Planned Completion Timestamp",
+                  "description": "",
+                  "type": "string",
+                  "format": "date-time",
+                  "meta:xdmType": "date-time",
+                  "meta:xdmField": "workfront:plannedCompletionTimestamp",
+                  "tagNumber": 10
+                },
+                "teamID": {
+                  "title": "OpTask Team ID",
+                  "description": "",
+                  "type": "string",
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "workfront:teamID",
+                  "tagNumber": 11
+                },
+                "storyPoints": {
+                  "title": "OpTask Story Points",
+                  "description": "",
+                  "type": "number",
+                  "meta:xdmType": "number",
+                  "meta:xdmField": "workfront:storyPoints",
+                  "tagNumber": 12
+                },
+                "plannedStartTimestamp": {
+                  "title": "OpTask Planned Start Timestamp",
+                  "description": "",
+                  "type": "string",
+                  "format": "date-time",
+                  "meta:xdmType": "date-time",
+                  "meta:xdmField": "workfront:plannedStartTimestamp",
+                  "tagNumber": 13
+                },
+                "priority": {
+                  "title": "OpTask Priority",
+                  "description": "",
+                  "type": "string",
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "workfront:priority",
+                  "tagNumber": 14
+                },
+                "status": {
+                  "title": "OpTask Status",
+                  "description": "",
+                  "type": "string",
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "workfront:status",
+                  "tagNumber": 15
+                },
+                "iterationID": {
+                  "title": "OpTask Iteration ID",
+                  "description": "",
+                  "type": "string",
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "workfront:iterationID",
+                  "tagNumber": 16
+                }
+              },
+              "tagNumber": 1
+            }
+          },
+          "meta:xdmField": "workfront:opTask",
+          "tagNumber": 1
+        }
+      },
+      "tagNumber": 1
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/experience/workfront/optask",
+  "meta:altId": "_experience.workfront.optask",
+  "id": "_experience.workfront.optask"
+}
