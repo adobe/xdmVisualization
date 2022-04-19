@@ -13,8 +13,8 @@
   "meta:abstract": true,
   "meta:status": [
     "stable",
-    "experimental",
-    "deprecated"
+    "deprecated",
+    "experimental"
   ],
   "meta:titleId": [
     "account##title##4841",
@@ -94,7 +94,7 @@
       "meta:xdmField": "xdm:accountComponents",
       "tagNumber": 6,
       "items": {
-        "$ref": "obj24600831941036816.schema.json"
+        "$ref": "obj5085994146101351.schema.json"
       }
     },
     "accountName": {

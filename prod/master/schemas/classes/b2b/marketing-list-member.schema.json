@@ -9,10 +9,7 @@
   "meta:extensible": true,
   "meta:abstract": true,
   "description": "XDM Business Marketing List Members is a standard Experience Data Model (XDM) class that describes members, persons, or contacts associated with a marketing list. This XDM class can only be included in the profile for customers with the B2B or B2P Edition.",
-  "meta:status": [
-    "stable",
-    "experimental"
-  ],
+  "meta:status": "stable",
   "meta:titleId": [
     "marketing-list-member##title##46541",
     "record##title##65961",

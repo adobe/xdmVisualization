@@ -13,7 +13,6 @@
   "meta:abstract": true,
   "meta:status": [
     "stable",
-    "experimental",
     "deprecated"
   ],
   "meta:titleId": [
@@ -149,7 +148,7 @@
       "meta:xdmField": "xdm:opportunityComponents",
       "tagNumber": 12,
       "items": {
-        "$ref": "obj8314606668448465.schema.json"
+        "$ref": "obj9467224507173368.schema.json"
       }
     },
     "campaignID": {

@@ -10,8 +10,7 @@
   "meta:abstract": true,
   "meta:status": [
     "stable",
-    "deprecated",
-    "experimental"
+    "deprecated"
   ],
   "meta:createdDate": [
     "2020-09-29",
@@ -111,7 +110,7 @@
       "meta:xdmField": "xdm:campaignComponents",
       "tagNumber": 8,
       "items": {
-        "$ref": "obj4167141252348736.schema.json"
+        "$ref": "obj9657736508652097.schema.json"
       }
     },
     "parentCampaignID": {

@@ -4,7 +4,7 @@
   "title": "Record Status",
   "type": "object",
   "description": "Used to provide a status for the igested record. Example, mark the isDeleted flag TRUE if the record is marked for deletion. This field group could also be used to add more record statuses in future.",
-  "meta:status": "experimental",
+  "meta:status": "stable",
   "meta:xdmType": "object",
   "properties": {
     "isDeleted": {

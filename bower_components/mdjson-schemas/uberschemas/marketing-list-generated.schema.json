@@ -12,7 +12,6 @@
   "meta:abstract": true,
   "meta:status": [
     "stable",
-    "experimental",
     "deprecated"
   ],
   "meta:titleId": [
@@ -107,7 +106,7 @@
       "meta:xdmField": "xdm:marketingListComponents",
       "tagNumber": 8,
       "items": {
-        "$ref": "obj09296330927892615.schema.json"
+        "$ref": "obj585601421827372.schema.json"
       }
     }
   },

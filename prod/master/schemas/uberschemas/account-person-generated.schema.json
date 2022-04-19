@@ -12,7 +12,6 @@
   "meta:abstract": true,
   "meta:status": [
     "stable",
-    "experimental",
     "deprecated"
   ],
   "meta:titleId": [
@@ -241,7 +240,7 @@
       "meta:xdmField": "xdm:accountPersonComponents",
       "tagNumber": 20,
       "items": {
-        "$ref": "obj7774749158585248.schema.json"
+        "$ref": "obj14965349544945306.schema.json"
       }
     }
   },
