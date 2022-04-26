@@ -130,17 +130,6 @@
       "title": "Destination Category",
       "type": "string",
       "description": "Grouping of the destinations in the catalog depending on the marketing action that they help achieve",
-      "enum": [
-        "adobeSolutions",
-        "advertising",
-        "cloudStorage",
-        "emailMarketing",
-        "mobile engagement",
-        "personalization",
-        "social",
-        "streaming",
-        "mobile"
-      ],
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:destinationCategory",
       "tagNumber": 11
