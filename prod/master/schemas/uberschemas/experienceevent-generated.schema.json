@@ -2308,7 +2308,7 @@
           "meta:xdmField": "xdm:dataValueChanges",
           "tagNumber": 5,
           "items": {
-            "$ref": "obj3892947642801545.schema.json"
+            "$ref": "obj6745503388705807.schema.json"
           }
         }
       },
@@ -3197,6 +3197,40 @@
       "meta:xdmField": "xdm:quotes",
       "tagNumber": 42
     },
+    "person": {
+      "title": "Person Reference Properties",
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "personalEmailID": {
+          "title": "Personal Email Address",
+          "type": "string",
+          "format": "email",
+          "description": "The technical address, for example, 'name@domain.com' as commonly defined in RFC2822 and subsequent standards.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:personalEmailID",
+          "tagNumber": 1
+        },
+        "accountID": {
+          "title": "Account ID",
+          "type": "string",
+          "description": "Account ID.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:accountID",
+          "tagNumber": 2
+        },
+        "accountType": {
+          "title": "Account Type",
+          "type": "string",
+          "description": "Account Type.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:accountType",
+          "tagNumber": 3
+        }
+      },
+      "meta:xdmField": "xdm:person",
+      "tagNumber": 43
+    },
     "servicePaymentDetails": {
       "type": "object",
       "description": "Payments that are not be considered part of a typical commerce transaction, such as when a customer pays a bill or initiates a recurring payment.",
@@ -3214,28 +3248,28 @@
         }
       },
       "meta:xdmField": "xdm:service-payment-details",
-      "tagNumber": 43
+      "tagNumber": 44
     },
     "siteSearch": {
       "title": "Site Search",
       "$ref": "../datatypes/sitesearch.schema.json",
       "description": "The information related to site search.",
       "meta:xdmField": "xdm:siteSearch",
-      "tagNumber": 44
+      "tagNumber": 45
     },
     "searchRequest": {
       "title": "Search Request",
       "$ref": "../datatypes/data/measure.schema.json",
       "description": "A search request has been sent.",
       "meta:xdmField": "xdm:searchRequest",
-      "tagNumber": 45
+      "tagNumber": 46
     },
     "searchResponse": {
       "title": "Search Response",
       "$ref": "../datatypes/data/measure.schema.json",
       "description": "A search response has been received.",
       "meta:xdmField": "xdm:searchResponse",
-      "tagNumber": 46
+      "tagNumber": 47
     },
     "socialMarketing": {
       "type": "object",
@@ -3325,14 +3359,14 @@
         }
       },
       "meta:xdmField": "xdm:socialMarketing",
-      "tagNumber": 47
+      "tagNumber": 48
     },
     "stitchedID": {
       "title": "Stitched ID",
       "$ref": "../datatypes/identity.schema.json",
       "description": "Identifier computed by the Stitching service, containing a pair of (id, namespace) that uniquely identifies an individual to which this event belongs.",
       "meta:xdmField": "xdm:stitchedID",
-      "tagNumber": 48
+      "tagNumber": 49
     },
     "surveyResponse": {
       "type": "object",
@@ -3382,7 +3416,7 @@
         }
       },
       "meta:xdmField": "xdm:surveyResponse",
-      "tagNumber": 49
+      "tagNumber": 50
     },
     "claims": {
       "type": "object",
@@ -3470,7 +3504,7 @@
         }
       },
       "meta:xdmField": "xdm:claims",
-      "tagNumber": 50
+      "tagNumber": 51
     },
     "customerFeedback": {
       "type": "object",
@@ -3598,7 +3632,7 @@
         }
       },
       "meta:xdmField": "xdm:customerFeedback",
-      "tagNumber": 51
+      "tagNumber": 52
     },
     "deviceTradeInDetails": {
       "type": "object",
@@ -3637,7 +3671,7 @@
         }
       },
       "meta:xdmField": "xdm:deviceTradeInDetails",
-      "tagNumber": 52
+      "tagNumber": 53
     },
     "reservations": {
       "type": "object",
@@ -3656,7 +3690,7 @@
           "meta:xdmField": "xdm:diningReservations",
           "tagNumber": 1,
           "items": {
-            "$ref": "obj026128942013578405.schema.json"
+            "$ref": "obj33144294927223017.schema.json"
           }
         },
         "cancellation": {
@@ -3829,7 +3863,7 @@
           "meta:xdmField": "xdm:flightReservations",
           "tagNumber": 19,
           "items": {
-            "$ref": "obj5748803569947103.schema.json"
+            "$ref": "obj022385596205528158.schema.json"
           }
         },
         "lodgingReservations": {
@@ -3838,7 +3872,7 @@
           "meta:xdmField": "xdm:lodgingReservations",
           "tagNumber": 20,
           "items": {
-            "$ref": "obj9928062463659386.schema.json"
+            "$ref": "obj7389960197260832.schema.json"
           }
         },
         "vehicleReservations": {
@@ -3847,12 +3881,12 @@
           "meta:xdmField": "xdm:vehicleReservations",
           "tagNumber": 21,
           "items": {
-            "$ref": "obj722331504296265.schema.json"
+            "$ref": "obj7891707953869842.schema.json"
           }
         }
       },
       "meta:xdmField": "xdm:reservations",
-      "tagNumber": 54
+      "tagNumber": 55
     },
     "insuranceClaim": {
       "type": "object",
@@ -3934,7 +3968,7 @@
         }
       },
       "meta:xdmField": "xdm:insuranceClaim",
-      "tagNumber": 55
+      "tagNumber": 56
     },
     "prescription": {
       "type": "object",
@@ -3991,7 +4025,7 @@
         }
       },
       "meta:xdmField": "xdm:prescription",
-      "tagNumber": 56
+      "tagNumber": 57
     },
     "reservationSearch": {
       "type": "object",
@@ -4087,7 +4121,7 @@
         }
       },
       "meta:xdmField": "xdm:reservationSearch",
-      "tagNumber": 57
+      "tagNumber": 58
     },
     "upgrades": {
       "type": "object",
@@ -4120,7 +4154,7 @@
         }
       },
       "meta:xdmField": "xdm:upgrades",
-      "tagNumber": 58
+      "tagNumber": 59
     },
     "upsells": {
       "type": "object",
@@ -4153,7 +4187,7 @@
         }
       },
       "meta:xdmField": "xdm:upsells",
-      "tagNumber": 59
+      "tagNumber": 60
     },
     "warrantyClaim": {
       "type": "object",
@@ -4199,7 +4233,7 @@
         }
       },
       "meta:xdmField": "xdm:warrantyClaim",
-      "tagNumber": 60
+      "tagNumber": 61
     },
     "homeAddress": {
       "title": "Home address",
@@ -4208,7 +4242,7 @@
       "meta:titleId": "profile-personal-details##xdm:homeAddress##title##98571",
       "meta:descriptionId": "profile-personal-details##xdm:homeAddress##description##35241",
       "meta:xdmField": "xdm:homeAddress",
-      "tagNumber": 61
+      "tagNumber": 62
     },
     "personalEmail": {
       "title": "Personal email",
@@ -4217,7 +4251,7 @@
       "meta:titleId": "profile-personal-details##xdm:personalEmail##title##13501",
       "meta:descriptionId": "profile-personal-details##xdm:personalEmail##description##54181",
       "meta:xdmField": "xdm:personalEmail",
-      "tagNumber": 62
+      "tagNumber": 63
     },
     "homePhone": {
       "title": "Home phone",
@@ -4226,7 +4260,7 @@
       "meta:titleId": "profile-personal-details##xdm:homePhone##title##28261",
       "meta:descriptionId": "profile-personal-details##xdm:homePhone##description##45111",
       "meta:xdmField": "xdm:homePhone",
-      "tagNumber": 63
+      "tagNumber": 64
     },
     "mobilePhone": {
       "title": "Mobile phone",
@@ -4235,7 +4269,7 @@
       "meta:titleId": "profile-personal-details##xdm:mobilePhone##title##76241",
       "meta:descriptionId": "profile-personal-details##xdm:mobilePhone##description##51801",
       "meta:xdmField": "xdm:mobilePhone",
-      "tagNumber": 64
+      "tagNumber": 65
     },
     "faxPhone": {
       "title": "Fax phone",
@@ -4244,7 +4278,7 @@
       "meta:titleId": "profile-personal-details##xdm:faxPhone##title##15761",
       "meta:descriptionId": "profile-personal-details##xdm:faxPhone##description##5951",
       "meta:xdmField": "xdm:faxPhone",
-      "tagNumber": 65
+      "tagNumber": 66
     }
   },
   "meta:xdmId": "https://ns.adobe.com/xdm/context/experienceevent-generated",

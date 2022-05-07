@@ -134,7 +134,8 @@
   ],
   "meta:status": [
     "stable",
-    "deprecated"
+    "deprecated",
+    "experimental"
   ],
   "meta:createdDate": [
     "2020-08-10",
@@ -803,6 +804,40 @@
       "meta:xdmField": "xdm:offers",
       "tagNumber": 23
     },
+    "person": {
+      "title": "Person Reference Properties",
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "personalEmailID": {
+          "title": "Personal Email Address",
+          "type": "string",
+          "format": "email",
+          "description": "The technical address, for example, 'name@domain.com' as commonly defined in RFC2822 and subsequent standards.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:personalEmailID",
+          "tagNumber": 1
+        },
+        "accountID": {
+          "title": "Account ID",
+          "type": "string",
+          "description": "Account ID.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:accountID",
+          "tagNumber": 2
+        },
+        "accountType": {
+          "title": "Account Type",
+          "type": "string",
+          "description": "Account Type.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:accountType",
+          "tagNumber": 3
+        }
+      },
+      "meta:xdmField": "xdm:person",
+      "tagNumber": 24
+    },
     "servicePaymentDetails": {
       "type": "object",
       "description": "Payments that are not be considered part of a typical commerce transaction, such as when a customer pays a bill or initiates a recurring payment.",
@@ -820,7 +855,7 @@
         }
       },
       "meta:xdmField": "xdm:service-payment-details",
-      "tagNumber": 24
+      "tagNumber": 25
     },
     "socialMarketing": {
       "type": "object",
@@ -910,14 +945,14 @@
         }
       },
       "meta:xdmField": "xdm:socialMarketing",
-      "tagNumber": 25
+      "tagNumber": 26
     },
     "stitchedID": {
       "title": "Stitched ID",
       "$ref": "../../datatypes/identity.schema.json",
       "description": "Identifier computed by the Stitching service, containing a pair of (id, namespace) that uniquely identifies an individual to which this event belongs.",
       "meta:xdmField": "xdm:stitchedID",
-      "tagNumber": 26
+      "tagNumber": 27
     },
     "surveyResponse": {
       "type": "object",
@@ -967,7 +1002,7 @@
         }
       },
       "meta:xdmField": "xdm:surveyResponse",
-      "tagNumber": 27
+      "tagNumber": 28
     },
     "customerFeedback": {
       "type": "object",
@@ -1095,7 +1130,7 @@
         }
       },
       "meta:xdmField": "xdm:customerFeedback",
-      "tagNumber": 28
+      "tagNumber": 29
     },
     "deviceTradeInDetails": {
       "type": "object",
@@ -1134,7 +1169,7 @@
         }
       },
       "meta:xdmField": "xdm:deviceTradeInDetails",
-      "tagNumber": 29
+      "tagNumber": 30
     },
     "upgrades": {
       "type": "object",
@@ -1167,7 +1202,7 @@
         }
       },
       "meta:xdmField": "xdm:upgrades",
-      "tagNumber": 31
+      "tagNumber": 32
     },
     "upsells": {
       "type": "object",
@@ -1200,7 +1235,7 @@
         }
       },
       "meta:xdmField": "xdm:upsells",
-      "tagNumber": 32
+      "tagNumber": 33
     },
     "warrantyClaim": {
       "type": "object",
@@ -1246,7 +1281,7 @@
         }
       },
       "meta:xdmField": "xdm:warrantyClaim",
-      "tagNumber": 33
+      "tagNumber": 34
     },
     "homeAddress": {
       "title": "Home address",
@@ -1255,7 +1290,7 @@
       "meta:titleId": "profile-personal-details##xdm:homeAddress##title##98571",
       "meta:descriptionId": "profile-personal-details##xdm:homeAddress##description##35241",
       "meta:xdmField": "xdm:homeAddress",
-      "tagNumber": 34
+      "tagNumber": 35
     },
     "personalEmail": {
       "title": "Personal email",
@@ -1264,7 +1299,7 @@
       "meta:titleId": "profile-personal-details##xdm:personalEmail##title##13501",
       "meta:descriptionId": "profile-personal-details##xdm:personalEmail##description##54181",
       "meta:xdmField": "xdm:personalEmail",
-      "tagNumber": 35
+      "tagNumber": 36
     },
     "homePhone": {
       "title": "Home phone",
@@ -1273,7 +1308,7 @@
       "meta:titleId": "profile-personal-details##xdm:homePhone##title##28261",
       "meta:descriptionId": "profile-personal-details##xdm:homePhone##description##45111",
       "meta:xdmField": "xdm:homePhone",
-      "tagNumber": 36
+      "tagNumber": 37
     },
     "mobilePhone": {
       "title": "Mobile phone",
@@ -1282,7 +1317,7 @@
       "meta:titleId": "profile-personal-details##xdm:mobilePhone##title##76241",
       "meta:descriptionId": "profile-personal-details##xdm:mobilePhone##description##51801",
       "meta:xdmField": "xdm:mobilePhone",
-      "tagNumber": 37
+      "tagNumber": 38
     },
     "faxPhone": {
       "title": "Fax phone",
@@ -1291,7 +1326,7 @@
       "meta:titleId": "profile-personal-details##xdm:faxPhone##title##15761",
       "meta:descriptionId": "profile-personal-details##xdm:faxPhone##description##5951",
       "meta:xdmField": "xdm:faxPhone",
-      "tagNumber": 38
+      "tagNumber": 39
     }
   },
   "meta:xdmId": "https://ns.adobe.com/xdm/context/experienceevent-generated-telecom",

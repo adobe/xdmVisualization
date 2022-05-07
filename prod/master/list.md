@@ -229,6 +229,7 @@
 [fieldgroups.experience-event.experienceevent-pushtracking](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.experienceevent-pushtracking.html)<br/>
 [fieldgroups.experience-event.experienceevent-offer-impression-details](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.experienceevent-offer-impression-details.html)<br/>
 [fieldgroups.experience-event.experienceevent-file-upload-details](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.experienceevent-file-upload-details.html)<br/>
+[fieldgroups.experience-event.experienceevent-reference-keys](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.experienceevent-reference-keys.html)<br/>
 [fieldgroups.experience-event.experienceevent-channel](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.experienceevent-channel.html)<br/>
 [fieldgroups.experience-event.experienceevent-web](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.experienceevent-web.html)<br/>
 [fieldgroups.experience-event.experienceevent-privacy](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.experienceevent-privacy.html)<br/>
