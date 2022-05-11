@@ -182,6 +182,7 @@
 [fieldgroups.shared.identitymap](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.shared.identitymap.html)<br/>
 [fieldgroups.shared.person-identifier](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.shared.person-identifier.html)<br/>
 [fieldgroups.shared.record-status](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.shared.record-status.html)<br/>
+[fieldgroups.shared.changeset](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.shared.changeset.html)<br/>
 [fieldgroups.product.product-category](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.product.product-category.html)<br/>
 [fieldgroups.product.product-catalog](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.product.product-catalog.html)<br/>
 [fieldgroups.product.product-identifiers](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.product.product-identifiers.html)<br/>

@@ -1,0 +1,48 @@
+{
+  "id": "_xdm.mixins.changeset",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Change Set",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "description": "Schema for communicating row level changes to and from datasets.",
+  "meta:status": "experimental",
+  "meta:xdmType": "object",
+  "properties": {
+    "changeRequest": {
+      "type": "object",
+      "title": "Change Request",
+      "description": "Structure to store control data for row-level changes.",
+      "meta:xdmType": "object",
+      "properties": {
+        "type": {
+          "title": "Change Request Type",
+          "description": "Value signaling the type of change.",
+          "type": "string",
+          "enum": [
+            "i",
+            "u",
+            "d",
+            "m"
+          ],
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:type",
+          "tagNumber": 1
+        },
+        "reason": {
+          "title": "Change Request Reason",
+          "description": "Optional value signaling the reason for this change (e.g. GDPR).",
+          "type": "string",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:reason",
+          "tagNumber": 2
+        }
+      },
+      "meta:xdmField": "xdm:changeRequest",
+      "tagNumber": 1
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/mixins/changeset",
+  "meta:altId": "_xdm.mixins.changeset",
+  "id": "_xdm.mixins.changeset"
+}

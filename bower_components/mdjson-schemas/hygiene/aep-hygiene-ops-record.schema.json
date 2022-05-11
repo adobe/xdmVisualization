@@ -1,5 +1,5 @@
 {
-  "id": "_experience.aep-hygiene-ops",
+  "id": "_xdm.schemas.aep-hygiene-ops",
   "$schema": "http://json-schema.org/draft-06/schema#",
   "title": "AEP Hygiene Operation Request",
   "description": "AEP Data Hygiene operations that instruct AEP to delete or modify records in a specified dataset and sandbox.",
@@ -61,6 +61,14 @@
       "meta:xdmField": "xdm:targetDatasetID",
       "tagNumber": 4
     },
+    "workorderID": {
+      "title": "Work Order ID for tracking purposes.",
+      "description": "Each row in a batch will be produced by a different customer REST API request, and will therefore have a different workorderID for tracking purposes.",
+      "type": "string",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:workorderID",
+      "tagNumber": 5
+    },
     "operation": {
       "title": "Payload of the hygiene op request",
       "description": "Contents of this payload provides identities to delete, or records to update",
@@ -81,7 +89,7 @@
               "meta:xdmField": "xdm:identities",
               "tagNumber": 1,
               "items": {
-                "$ref": "obj45768559687866417.schema.json"
+                "$ref": "obj33881313841964134.schema.json"
               }
             }
           },
@@ -115,10 +123,10 @@
         }
       },
       "meta:xdmField": "xdm:operation",
-      "tagNumber": 5
+      "tagNumber": 6
     }
   },
-  "meta:xdmId": "https://ns.adobe.com/experience/aep-hygiene-ops",
-  "meta:altId": "_experience.aep-hygiene-ops",
-  "id": "_experience.aep-hygiene-ops"
+  "meta:xdmId": "https://ns.adobe.com/xdm/schemas/aep-hygiene-ops",
+  "meta:altId": "_xdm.schemas.aep-hygiene-ops",
+  "id": "_xdm.schemas.aep-hygiene-ops"
 }
