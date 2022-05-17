@@ -30,14 +30,21 @@
           "meta:xdmType": "object",
           "properties": {
             "webFormID": {
-              "title": "Web Form ID",
+              "title": "Web Form ID (deprecated)",
               "type": "string",
-              "description": "Unique ID of the form.",
+              "description": "Web Form ID is going to depreciate soon. Please use  Web Form Key.",
               "meta:titleId": "formfilledout##xdm:webFormID##title##36241",
               "meta:descriptionId": "formfilledout##xdm:webFormID##description##30331",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:webFormID",
               "tagNumber": 1
+            },
+            "webFormKey": {
+              "title": "Web Form Key",
+              "description": "Unique key of the form.",
+              "$ref": "../../../datatypes/b2b/b2b-source.schema.json",
+              "meta:xdmField": "xdm:webFormKey",
+              "tagNumber": 2
             },
             "webFormName": {
               "title": "Web Form Name",
@@ -47,7 +54,7 @@
               "meta:descriptionId": "formfilledout##xdm:webFormName##description##62561",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:webFormName",
-              "tagNumber": 2
+              "tagNumber": 3
             }
           },
           "meta:xdmField": "xdm:fillOutForm",

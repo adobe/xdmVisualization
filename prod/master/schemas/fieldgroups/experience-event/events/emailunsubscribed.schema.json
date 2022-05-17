@@ -22,14 +22,21 @@
       "meta:xdmType": "object",
       "properties": {
         "mailingID": {
-          "title": "Mailing ID",
+          "title": "Mailing ID (deprecated)",
           "type": "string",
-          "description": "Unique ID of the email asset.",
+          "description": "Mailing ID is going to depreciate soon. Please use Mailing Key.",
           "meta:titleId": "emailunsubscribed##xdm:mailingID##title##96401",
           "meta:descriptionId": "emailunsubscribed##xdm:mailingID##description##92371",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:mailingID",
           "tagNumber": 1
+        },
+        "mailingKey": {
+          "title": "Mailing Key",
+          "description": "Unique key of the email asset.",
+          "$ref": "../../../datatypes/b2b/b2b-source.schema.json",
+          "meta:xdmField": "xdm:mailingKey",
+          "tagNumber": 2
         },
         "mailingName": {
           "title": "Mailing Name",
@@ -39,7 +46,7 @@
           "meta:descriptionId": "emailunsubscribed##xdm:mailingName##description##36671",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:mailingName",
-          "tagNumber": 2
+          "tagNumber": 3
         },
         "testVariantID": {
           "title": "Test Variant ID",
@@ -49,7 +56,7 @@
           "meta:descriptionId": "emailunsubscribed##xdm:testVariantID##description##49951",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:testVariantID",
-          "tagNumber": 3
+          "tagNumber": 4
         },
         "testVariantName": {
           "title": "Test Variant Name",
@@ -59,7 +66,15 @@
           "meta:descriptionId": "emailunsubscribed##xdm:testVariantName##description##5151",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:testVariantName",
-          "tagNumber": 4
+          "tagNumber": 5
+        },
+        "automationRunID": {
+          "title": "Automation Run ID",
+          "type": "string",
+          "description": "Automation Run ID",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:automationRunID",
+          "tagNumber": 6
         }
       },
       "meta:xdmField": "xdm:directMarketing",

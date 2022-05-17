@@ -150,6 +150,79 @@
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:userAgent",
       "tagNumber": 14
+    },
+    "userAgentClientHints": {
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "brands": {
+          "type": "array",
+          "meta:xdmType": "array",
+          "meta:xdmField": "xdm:brands",
+          "tagNumber": 1,
+          "items": {
+            "$ref": "obj4354092010035677.schema.json"
+          }
+        },
+        "mobile": {
+          "title": "Mobileness",
+          "type": "boolean",
+          "description": "A boolean indicating if the user agent's device is a mobile device.",
+          "meta:xdmType": "boolean",
+          "meta:xdmField": "xdm:mobile",
+          "tagNumber": 2
+        },
+        "architecture": {
+          "title": "Platform architecture",
+          "type": "string",
+          "description": "The user agent's underlying CPU architecture (e.g., ARM, or x86).",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:architecture",
+          "tagNumber": 3
+        },
+        "bitness": {
+          "title": "Platform bitness",
+          "type": "string",
+          "description": "The user agent's underlying CPU architecture bitness (e.g., 32 or 64).",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:bitness",
+          "tagNumber": 4
+        },
+        "model": {
+          "title": "Model",
+          "type": "string",
+          "description": "The user agent's device model  (e.g., Pixel 2 XL).",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:model",
+          "tagNumber": 5
+        },
+        "platform": {
+          "title": "Platform",
+          "type": "string",
+          "description": "The user agent's operating system's commercial name.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:platform",
+          "tagNumber": 6
+        },
+        "platformVersion": {
+          "title": "Platform version",
+          "type": "string",
+          "description": "The user agent's operating system's version (e.g., NT 6.0, 15, or 17G).",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:platformVersion",
+          "tagNumber": 7
+        },
+        "wow64": {
+          "title": "WoW64-ness",
+          "type": "boolean",
+          "description": "A boolean indicating if the user agent's binary is running in 32-bit mode on 64-bit Windows.",
+          "meta:xdmType": "boolean",
+          "meta:xdmField": "xdm:wow64",
+          "tagNumber": 8
+        }
+      },
+      "meta:xdmField": "xdm:userAgentClientHints",
+      "tagNumber": 15
     }
   },
   "meta:xdmId": "https://ns.adobe.com/xdm/context/browserdetails",

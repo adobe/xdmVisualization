@@ -28,24 +28,31 @@
           "meta:xdmType": "object",
           "properties": {
             "scoreAttributeID": {
-              "title": "Score Atribute ID",
+              "title": "Score Attribute ID (deprecated)",
               "type": "string",
-              "description": "Unique ID of the lead score attribute.",
+              "description": "Score Attribute ID is going to depreciate soon. Please use  Score Attribute Key.",
               "meta:titleId": "scorechanged##xdm:scoreAttributeID##title##521",
               "meta:descriptionId": "scorechanged##xdm:scoreAttributeID##description##16521",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:scoreAttributeID",
               "tagNumber": 1
             },
+            "scoreAttributeKey": {
+              "title": "Score Attribute Key",
+              "description": "Unique key of the lead score attribute.",
+              "$ref": "../../../datatypes/b2b/b2b-source.schema.json",
+              "meta:xdmField": "xdm:scoreAttributeKey",
+              "tagNumber": 2
+            },
             "scoreAttributeName": {
-              "title": "Score Atribute Name",
+              "title": "Score Attribute Name",
               "type": "string",
               "description": "Friendly name of the lead score attribute.",
               "meta:titleId": "scorechanged##xdm:scoreAttributeName##title##50051",
               "meta:descriptionId": "scorechanged##xdm:scoreAttributeName##description##20401",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:scoreAttributeName",
-              "tagNumber": 2
+              "tagNumber": 3
             },
             "changeValue": {
               "title": "Change Value",
@@ -55,7 +62,7 @@
               "meta:descriptionId": "scorechanged##xdm:changeValue##description##15761",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:changeValue",
-              "tagNumber": 3
+              "tagNumber": 4
             },
             "newValue": {
               "title": "New Value",
@@ -65,7 +72,7 @@
               "meta:descriptionId": "scorechanged##xdm:newValue##description##79061",
               "meta:xdmType": "int",
               "meta:xdmField": "xdm:newValue",
-              "tagNumber": 4
+              "tagNumber": 5
             },
             "oldValue": {
               "title": "Old Value",
@@ -75,7 +82,7 @@
               "meta:descriptionId": "scorechanged##xdm:oldValue##description##52341",
               "meta:xdmType": "int",
               "meta:xdmField": "xdm:oldValue",
-              "tagNumber": 5
+              "tagNumber": 6
             },
             "reason": {
               "title": "Reason",
@@ -85,7 +92,7 @@
               "meta:descriptionId": "scorechanged##xdm:reason##description##8411",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:reason",
-              "tagNumber": 6
+              "tagNumber": 7
             },
             "urgency": {
               "title": "Urgency",
@@ -95,7 +102,7 @@
               "meta:descriptionId": "scorechanged##xdm:urgency##description##24791",
               "meta:xdmType": "number",
               "meta:xdmField": "xdm:urgency",
-              "tagNumber": 7
+              "tagNumber": 8
             },
             "priority": {
               "title": "Priority",
@@ -105,7 +112,7 @@
               "meta:descriptionId": "scorechanged##xdm:priority##description##20961",
               "meta:xdmType": "int",
               "meta:xdmField": "xdm:priority",
-              "tagNumber": 8
+              "tagNumber": 9
             },
             "relativeScore": {
               "title": "Relative Score",
@@ -115,7 +122,7 @@
               "meta:descriptionId": "scorechanged##xdm:relativeScore##description##31281",
               "meta:xdmType": "int",
               "meta:xdmField": "xdm:relativeScore",
-              "tagNumber": 9
+              "tagNumber": 10
             },
             "relativeUrgency": {
               "title": "Relative Urgency",
@@ -125,7 +132,7 @@
               "meta:descriptionId": "scorechanged##xdm:relativeUrgency##description##65261",
               "meta:xdmType": "int",
               "meta:xdmField": "xdm:relativeUrgency",
-              "tagNumber": 10
+              "tagNumber": 11
             }
           },
           "meta:xdmField": "xdm:changeScore",

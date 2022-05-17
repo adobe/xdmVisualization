@@ -1329,6 +1329,13 @@
               "meta:xdmField": "xdm:linkID",
               "tagNumber": 1
             },
+            "webInteractionKey": {
+              "title": "Web Interaction Key",
+              "description": "Unique key of the link clicked.",
+              "$ref": "../datatypes/b2b/b2b-source.schema.json",
+              "meta:xdmField": "xdm:webInteractionKey",
+              "tagNumber": 2
+            },
             "linkURL": {
               "title": "Link URL",
               "type": "string",
@@ -1337,7 +1344,7 @@
               "meta:descriptionId": "linkclicks##xdm:linkURL##description##94691",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:linkURL",
-              "tagNumber": 2
+              "tagNumber": 3
             }
           },
           "meta:xdmField": "xdm:webInteraction",
@@ -1383,6 +1390,13 @@
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:webFormName",
               "tagNumber": 2
+            },
+            "webFormKey": {
+              "title": "Web Form Key",
+              "description": "Unique key of the form.",
+              "$ref": "../datatypes/b2b/b2b-source.schema.json",
+              "meta:xdmField": "xdm:webFormKey",
+              "tagNumber": 3
             }
           },
           "meta:xdmField": "xdm:fillOutForm",
@@ -1459,6 +1473,13 @@
               "meta:xdmField": "xdm:queryParameters",
               "tagNumber": 3
             },
+            "webPageKey": {
+              "title": "Web Page Key",
+              "description": "Unique key of the web page.",
+              "$ref": "../datatypes/b2b/b2b-source.schema.json",
+              "meta:xdmField": "xdm:webPageKey",
+              "tagNumber": 4
+            },
             "URL": {
               "title": "URL",
               "type": "string",
@@ -1467,7 +1488,7 @@
               "meta:descriptionId": "visit-webpage##xdm:URL##description##36051",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:URL",
-              "tagNumber": 4
+              "tagNumber": 5
             },
             "isPersonalizedURL": {
               "title": "Is Personalized URL",
@@ -1477,7 +1498,7 @@
               "meta:descriptionId": "visit-webpage##xdm:isPersonalizedURL##description##28521",
               "meta:xdmType": "boolean",
               "meta:xdmField": "xdm:isPersonalizedURL",
-              "tagNumber": 5
+              "tagNumber": 6
             }
           },
           "meta:xdmField": "xdm:webPageDetails",
@@ -1587,6 +1608,14 @@
           "type": "object",
           "meta:xdmType": "object",
           "properties": {
+            "webhookID": {
+              "title": "Webhook ID (deprecated)",
+              "type": "string",
+              "description": "Webhook ID is going to depreciate soon. Please use Webhook Key.",
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:webhookID",
+              "tagNumber": 1
+            },
             "webhookKey": {
               "title": "Webhook Key",
               "description": "Unique composite identifier of the Webhook.",
@@ -1968,24 +1997,31 @@
           "meta:xdmType": "object",
           "properties": {
             "scoreAttributeID": {
-              "title": "Score Atribute ID",
+              "title": "Score Attribute ID (deprecated)",
               "type": "string",
-              "description": "Unique ID of the lead score attribute.",
+              "description": "Score Attribute ID is going to depreciate soon. Please use  Score Attribute Key.",
               "meta:titleId": "scorechanged##xdm:scoreAttributeID##title##521",
               "meta:descriptionId": "scorechanged##xdm:scoreAttributeID##description##16521",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:scoreAttributeID",
               "tagNumber": 1
             },
+            "scoreAttributeKey": {
+              "title": "Score Attribute Key",
+              "description": "Unique key of the lead score attribute.",
+              "$ref": "../datatypes/b2b/b2b-source.schema.json",
+              "meta:xdmField": "xdm:scoreAttributeKey",
+              "tagNumber": 2
+            },
             "scoreAttributeName": {
-              "title": "Score Atribute Name",
+              "title": "Score Attribute Name",
               "type": "string",
               "description": "Friendly name of the lead score attribute.",
               "meta:titleId": "scorechanged##xdm:scoreAttributeName##title##50051",
               "meta:descriptionId": "scorechanged##xdm:scoreAttributeName##description##20401",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:scoreAttributeName",
-              "tagNumber": 2
+              "tagNumber": 3
             },
             "changeValue": {
               "title": "Change Value",
@@ -1995,7 +2031,7 @@
               "meta:descriptionId": "scorechanged##xdm:changeValue##description##15761",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:changeValue",
-              "tagNumber": 3
+              "tagNumber": 4
             },
             "newValue": {
               "title": "New Value",
@@ -2005,7 +2041,7 @@
               "meta:descriptionId": "scorechanged##xdm:newValue##description##79061",
               "meta:xdmType": "int",
               "meta:xdmField": "xdm:newValue",
-              "tagNumber": 4
+              "tagNumber": 5
             },
             "oldValue": {
               "title": "Old Value",
@@ -2015,7 +2051,7 @@
               "meta:descriptionId": "scorechanged##xdm:oldValue##description##52341",
               "meta:xdmType": "int",
               "meta:xdmField": "xdm:oldValue",
-              "tagNumber": 5
+              "tagNumber": 6
             },
             "reason": {
               "title": "Reason",
@@ -2025,7 +2061,7 @@
               "meta:descriptionId": "scorechanged##xdm:reason##description##8411",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:reason",
-              "tagNumber": 6
+              "tagNumber": 7
             },
             "urgency": {
               "title": "Urgency",
@@ -2035,7 +2071,7 @@
               "meta:descriptionId": "scorechanged##xdm:urgency##description##24791",
               "meta:xdmType": "number",
               "meta:xdmField": "xdm:urgency",
-              "tagNumber": 7
+              "tagNumber": 8
             },
             "priority": {
               "title": "Priority",
@@ -2045,7 +2081,7 @@
               "meta:descriptionId": "scorechanged##xdm:priority##description##20961",
               "meta:xdmType": "int",
               "meta:xdmField": "xdm:priority",
-              "tagNumber": 8
+              "tagNumber": 9
             },
             "relativeScore": {
               "title": "Relative Score",
@@ -2055,7 +2091,7 @@
               "meta:descriptionId": "scorechanged##xdm:relativeScore##description##31281",
               "meta:xdmType": "int",
               "meta:xdmField": "xdm:relativeScore",
-              "tagNumber": 9
+              "tagNumber": 10
             },
             "relativeUrgency": {
               "title": "Relative Urgency",
@@ -2065,7 +2101,7 @@
               "meta:descriptionId": "scorechanged##xdm:relativeUrgency##description##65261",
               "meta:xdmType": "int",
               "meta:xdmField": "xdm:relativeUrgency",
-              "tagNumber": 10
+              "tagNumber": 11
             }
           },
           "meta:xdmField": "xdm:changeScore",
@@ -2308,7 +2344,7 @@
           "meta:xdmField": "xdm:dataValueChanges",
           "tagNumber": 5,
           "items": {
-            "$ref": "obj2796565595667475.schema.json"
+            "$ref": "obj3675165395808546.schema.json"
           }
         }
       },
@@ -2333,9 +2369,9 @@
       "meta:descriptionId": "experienceevent-directmarketing##xdm:directMarketing##description##64681",
       "properties": {
         "mailingID": {
-          "title": "Mailing ID",
+          "title": "Mailing ID (deprecated)",
           "type": "string",
-          "description": "Unique ID of the email asset.",
+          "description": "Mailing ID is going to depreciate soon. Please use Mailing Key.",
           "meta:titleId": [
             "emailbounced##xdm:mailingID##title##69611",
             "emailbouncedsoft##xdm:mailingID##title##35741",
@@ -2355,6 +2391,13 @@
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:mailingID",
           "tagNumber": 1
+        },
+        "mailingKey": {
+          "title": "Mailing Key",
+          "description": "Unique key of the email asset.",
+          "$ref": "../datatypes/b2b/b2b-source.schema.json",
+          "meta:xdmField": "xdm:mailingKey",
+          "tagNumber": 2
         },
         "mailingName": {
           "title": "Mailing Name",
@@ -2378,7 +2421,7 @@
           ],
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:mailingName",
-          "tagNumber": 2
+          "tagNumber": 3
         },
         "emailBouncedCode": {
           "title": "Email Bounced Category",
@@ -2394,7 +2437,7 @@
           ],
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:emailBouncedCode",
-          "tagNumber": 3
+          "tagNumber": 4
         },
         "emailBouncedDetails": {
           "title": "Email Bounced Details",
@@ -2410,7 +2453,7 @@
           ],
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:emailBouncedDetails",
-          "tagNumber": 4
+          "tagNumber": 5
         },
         "email": {
           "title": "email",
@@ -2426,7 +2469,7 @@
           ],
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:email",
-          "tagNumber": 5
+          "tagNumber": 6
         },
         "testVariantID": {
           "title": "Test Variant ID",
@@ -2450,7 +2493,7 @@
           ],
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:testVariantID",
-          "tagNumber": 6
+          "tagNumber": 7
         },
         "testVariantName": {
           "title": "Test Variant Name",
@@ -2474,7 +2517,15 @@
           ],
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:testVariantName",
-          "tagNumber": 7
+          "tagNumber": 8
+        },
+        "automationRunID": {
+          "title": "Automation Run ID",
+          "type": "string",
+          "description": "Automation Run ID",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:automationRunID",
+          "tagNumber": 9
         },
         "linkURL": {
           "title": "Link URL",
@@ -2484,7 +2535,7 @@
           "meta:descriptionId": "emailclicked##xdm:linkURL##description##24191",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:linkURL",
-          "tagNumber": 8
+          "tagNumber": 10
         },
         "emailSent": {
           "title": "Email Sent",
@@ -2532,7 +2583,7 @@
             }
           },
           "meta:xdmField": "xdm:emailSent",
-          "tagNumber": 9
+          "tagNumber": 11
         }
       },
       "meta:xdmField": "xdm:directMarketing",
@@ -3690,7 +3741,7 @@
           "meta:xdmField": "xdm:diningReservations",
           "tagNumber": 1,
           "items": {
-            "$ref": "obj23196197493370585.schema.json"
+            "$ref": "obj5435035994040018.schema.json"
           }
         },
         "cancellation": {
@@ -3863,7 +3914,7 @@
           "meta:xdmField": "xdm:flightReservations",
           "tagNumber": 19,
           "items": {
-            "$ref": "obj9950217615402142.schema.json"
+            "$ref": "obj5198254958481743.schema.json"
           }
         },
         "lodgingReservations": {
@@ -3872,7 +3923,7 @@
           "meta:xdmField": "xdm:lodgingReservations",
           "tagNumber": 20,
           "items": {
-            "$ref": "obj3780246549835673.schema.json"
+            "$ref": "obj5763782997342297.schema.json"
           }
         },
         "vehicleReservations": {
@@ -3881,7 +3932,7 @@
           "meta:xdmField": "xdm:vehicleReservations",
           "tagNumber": 21,
           "items": {
-            "$ref": "obj14937039849412836.schema.json"
+            "$ref": "obj47467344212593443.schema.json"
           }
         }
       },

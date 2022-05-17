@@ -23,6 +23,14 @@
           "type": "object",
           "meta:xdmType": "object",
           "properties": {
+            "webhookID": {
+              "title": "Webhook ID (deprecated)",
+              "type": "string",
+              "description": "Webhook ID is going to depreciate soon. Please use Webhook Key.",
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:webhookID",
+              "tagNumber": 1
+            },
             "webhookKey": {
               "title": "Webhook Key",
               "description": "Unique composite identifier of the Webhook.",

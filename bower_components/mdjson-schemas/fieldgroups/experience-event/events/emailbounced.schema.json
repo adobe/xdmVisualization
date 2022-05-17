@@ -22,14 +22,21 @@
       "meta:xdmType": "object",
       "properties": {
         "mailingID": {
-          "title": "Mailing ID",
+          "title": "Mailing ID (deprecated)",
           "type": "string",
-          "description": "Unique ID of the email asset.",
+          "description": "Mailing ID is going to depreciate soon. Please use Mailing Key.",
           "meta:titleId": "emailbounced##xdm:mailingID##title##69611",
           "meta:descriptionId": "emailbounced##xdm:mailingID##description##27341",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:mailingID",
           "tagNumber": 1
+        },
+        "mailingKey": {
+          "title": "Mailing Key",
+          "description": "Unique key of the email asset.",
+          "$ref": "../../../datatypes/b2b/b2b-source.schema.json",
+          "meta:xdmField": "xdm:mailingKey",
+          "tagNumber": 2
         },
         "mailingName": {
           "title": "Mailing Name",
@@ -39,7 +46,7 @@
           "meta:descriptionId": "emailbounced##xdm:mailingName##description##24861",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:mailingName",
-          "tagNumber": 2
+          "tagNumber": 3
         },
         "emailBouncedCode": {
           "title": "Email Bounced Category",
@@ -49,7 +56,7 @@
           "meta:descriptionId": "emailbounced##xdm:emailBouncedCode##description##92581",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:emailBouncedCode",
-          "tagNumber": 3
+          "tagNumber": 4
         },
         "emailBouncedDetails": {
           "title": "Email Bounced Details",
@@ -59,7 +66,7 @@
           "meta:descriptionId": "emailbounced##xdm:emailBouncedDetails##description##25591",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:emailBouncedDetails",
-          "tagNumber": 4
+          "tagNumber": 5
         },
         "email": {
           "title": "email",
@@ -69,7 +76,7 @@
           "meta:descriptionId": "emailbounced##xdm:email##description##57961",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:email",
-          "tagNumber": 5
+          "tagNumber": 6
         },
         "testVariantID": {
           "title": "Test Variant ID",
@@ -79,7 +86,7 @@
           "meta:descriptionId": "emailbounced##xdm:testVariantID##description##83421",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:testVariantID",
-          "tagNumber": 6
+          "tagNumber": 7
         },
         "testVariantName": {
           "title": "Test Variant Name",
@@ -89,7 +96,15 @@
           "meta:descriptionId": "emailbounced##xdm:testVariantName##description##51881",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:testVariantName",
-          "tagNumber": 7
+          "tagNumber": 8
+        },
+        "automationRunID": {
+          "title": "Automation Run ID",
+          "type": "string",
+          "description": "Automation Run ID",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:automationRunID",
+          "tagNumber": 9
         }
       },
       "meta:xdmField": "xdm:directMarketing",
