@@ -1,0 +1,37 @@
+{
+  "properties": {
+    "attribute": {
+      "title": "Attribute",
+      "type": "string",
+      "description": "The facet of an item used to determine whether to include it in search results.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:attribute",
+      "tagNumber": 1
+    },
+    "value": {
+      "title": "Value",
+      "type": "array",
+      "description": "Attribute values used to determine which items will be included in search results.",
+      "meta:xdmType": "array",
+      "items": {
+        "type": "string",
+        "meta:xdmType": "string",
+        "tagNumber": 1
+      },
+      "meta:xdmField": "xdm:value",
+      "tagNumber": 2
+    },
+    "isRange": {
+      "title": "Is Range",
+      "type": "boolean",
+      "description": "When true, values indicate endpoints of an acceptable range of values.",
+      "meta:xdmType": "boolean",
+      "meta:xdmField": "xdm:isRange",
+      "tagNumber": 3
+    }
+  },
+  "type": "object",
+  "tagNumber": 1,
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "id": "obj4637813470645855.schema.json"
+}
