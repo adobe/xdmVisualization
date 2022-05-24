@@ -13,6 +13,8 @@
 [uberschemas.financial_services.experienceevent-generated-financial_services](http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.financial_services.experienceevent-generated-financial_services.html)<br/>
 [uberschemas.financial_services.profile-generated-financial_services](http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.financial_services.profile-generated-financial_services.html)<br/>
 [uberschemas.profile-generated](http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.profile-generated.html)<br/>
+[uberschemas.healthcare_services.profile-generated-healthcare_services](http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.healthcare_services.profile-generated-healthcare_services.html)<br/>
+[uberschemas.healthcare_services.experienceevent-generated-healthcare_services](http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.healthcare_services.experienceevent-generated-healthcare_services.html)<br/>
 [uberschemas.education.profile-generated-education](http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.education.profile-generated-education.html)<br/>
 [uberschemas.education.experienceevent-generated-education](http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.education.experienceevent-generated-education.html)<br/>
 [uberschemas.marketing-list-generated](http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.marketing-list-generated.html)<br/>
@@ -201,6 +203,7 @@
 [fieldgroups.profile.profile-loyalty-details](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.profile.profile-loyalty-details.html)<br/>
 [fieldgroups.profile.profile-personal-details](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.profile.profile-personal-details.html)<br/>
 [fieldgroups.profile.profile-phones](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.profile.profile-phones.html)<br/>
+[fieldgroups.profile.healthcare-member](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.profile.healthcare-member.html)<br/>
 [fieldgroups.profile.profile-user-account-details](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.profile.profile-user-account-details.html)<br/>
 [fieldgroups.profile.profile-push-notification-details](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.profile.profile-push-notification-details.html)<br/>
 [fieldgroups.profile.profile-subscriptions](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.profile.profile-subscriptions.html)<br/>

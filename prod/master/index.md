@@ -705,6 +705,7 @@
 <ul>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.profile.b2b-person-components.html">b2b-person-components</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.profile.b2b-person-details.html">b2b-person-details</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.profile.healthcare-member.html">healthcare-member</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.profile.profile-consentResults.html">profile-consentResults</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.profile.profile-consents.html">profile-consents</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.profile.profile-directmarketing.html">profile-directmarketing</a></li>
@@ -781,6 +782,13 @@
 <ul>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.health_and_life_sciences.experienceevent-generated-health_and_life_sciences.html">experienceevent-generated-health_and_life_sciences</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.health_and_life_sciences.profile-generated-health_and_life_sciences.html">profile-generated-health_and_life_sciences</a></li>
+</ul>
+</details>
+<details>
+<summary>healthcare_services</summary>
+<ul>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.healthcare_services.experienceevent-generated-healthcare_services.html">experienceevent-generated-healthcare_services</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.healthcare_services.profile-generated-healthcare_services.html">profile-generated-healthcare_services</a></li>
 </ul>
 </details>
 <details>

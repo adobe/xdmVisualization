@@ -1,0 +1,259 @@
+{
+  "id": "_xdm.mixins.healthcare-member",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Member Details",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:tags": {
+    "industry": [
+      "healthcare_services"
+    ]
+  },
+  "description": "Details of a person who may be waiting for a care or may be receiving care or may have already received care.",
+  "meta:status": "experimental",
+  "meta:createdDate": "2022-05-18",
+  "meta:xdmType": "object",
+  "properties": {
+    "member": {
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "ID": {
+          "Title": "Member ID",
+          "type": "string",
+          "description": "Unique Identifier of the patient/member.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:ID",
+          "tagNumber": 1
+        },
+        "name": {
+          "Title": "Member Name",
+          "$ref": "../../datatypes/person/person-name.schema.json",
+          "meta:xdmField": "xdm:name",
+          "tagNumber": 2
+        },
+        "memberAddress": {
+          "type": "object",
+          "meta:xdmType": "object",
+          "properties": {
+            "addressType": {
+              "Title": "Member Address type",
+              "type": "string",
+              "enum": [
+                "Home",
+                "Work",
+                "Mailing",
+                "Other"
+              ],
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:addressType",
+              "tagNumber": 1
+            },
+            "address": {
+              "Title": "Member Address",
+              "$ref": "../../datatypes/demographic/address.schema.json",
+              "meta:xdmField": "xdm:address",
+              "tagNumber": 2
+            },
+            "effectiveStartDate": {
+              "Title": "Effective Start Date",
+              "type": "string",
+              "format": "date-time",
+              "description": "Address start date.",
+              "meta:xdmType": "date-time",
+              "meta:xdmField": "xdm:effectiveStartDate",
+              "tagNumber": 3
+            },
+            "efectiveEndDate": {
+              "Title": "Effective End Date",
+              "type": "string",
+              "format": "date-time",
+              "description": "Address end date.",
+              "meta:xdmType": "date-time",
+              "meta:xdmField": "xdm:efectiveEndDate",
+              "tagNumber": 4
+            },
+            "xdm:phoneNumber": {
+              "Title": "Phone Number",
+              "$ref": "../../datatypes/demographic/phonenumber.schema.json",
+              "tagNumber": 5
+            },
+            "xdm:memberDetails": {
+              "Title": "Member Details",
+              "$ref": "../../datatypes/person/person.schema.json",
+              "description": "An individual patient/member additional details.",
+              "tagNumber": 6
+            },
+            "xdm:emailAddress": {
+              "Title": "Email Address",
+              "$ref": "../../datatypes/demographic/emailaddress.schema.json",
+              "tagNumber": 7
+            },
+            "xdm:memberOrganization": {
+              "Title": "Member Organization",
+              "$ref": "../../datatypes/b2b/account-organization.schema.json",
+              "tagNumber": 8
+            }
+          },
+          "meta:xdmField": "xdm:memberAddress",
+          "tagNumber": 3
+        }
+      },
+      "meta:xdmField": "xdm:member",
+      "tagNumber": 1
+    },
+    "primaryCarePhysician ": {
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "ID ": {
+          "Title": "ID",
+          "type": "string",
+          "description": "Primary Care Physician unique identifier.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:ID ",
+          "tagNumber": 1
+        },
+        "name": {
+          "Title": "Primary Care Physician Name",
+          "type": "string",
+          "description": "Primary Care Physician Name.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:name",
+          "tagNumber": 2
+        },
+        "startDate": {
+          "Title": "Start Date",
+          "type": "string",
+          "format": "date-time",
+          "description": "Primary Care Physician start date.",
+          "meta:xdmType": "date-time",
+          "meta:xdmField": "xdm:startDate",
+          "tagNumber": 3
+        },
+        "endDate": {
+          "Title": "End Date",
+          "type": "string",
+          "format": "date-time",
+          "description": "Primary Care Physician end date.",
+          "meta:xdmType": "date-time",
+          "meta:xdmField": "xdm:endDate",
+          "tagNumber": 4
+        }
+      },
+      "meta:xdmField": "xdm:primaryCarePhysician ",
+      "tagNumber": 2
+    },
+    "emergencyContact": {
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "name": {
+          "Title": "Emergency Contact Name",
+          "type": "string",
+          "description": "Emergency contact name.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:name",
+          "tagNumber": 1
+        },
+        "contactPhone": {
+          "Title": "Emergency Contact Phone",
+          "type": "string",
+          "description": "Emergency contact phone number.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:contactPhone",
+          "tagNumber": 2
+        }
+      },
+      "meta:xdmField": "xdm:emergencyContact",
+      "tagNumber": 3
+    },
+    "prefferedAvaiability": {
+      "Title": "Preffered Availability",
+      "type": "string",
+      "description": "Patient prefered day and time avaiability for an appointment.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:prefferedAvaiability",
+      "tagNumber": 4
+    },
+    "Medication": {
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "medicationID": {
+          "Title": "Medication Id",
+          "type": "string",
+          "description": "Medication unique identifier.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:medicationID",
+          "tagNumber": 1
+        },
+        "medicationDate": {
+          "Title": "Medication Date",
+          "type": "string",
+          "format": "date-time",
+          "description": "Medication Date.",
+          "meta:xdmType": "date-time",
+          "meta:xdmField": "xdm:medicationDate",
+          "tagNumber": 2
+        },
+        "isCurrent": {
+          "Title": "Is Current",
+          "type": "boolean",
+          "description": "Boolean flag indicates if this medication is current or previous.",
+          "meta:xdmType": "boolean",
+          "meta:xdmField": "xdm:isCurrent",
+          "tagNumber": 3
+        }
+      },
+      "meta:xdmField": "xdm:Medication",
+      "tagNumber": 5
+    },
+    "beneficiaryRelationship": {
+      "Title": "Beneficiary Relationship",
+      "type": "string",
+      "description": "Beneficiary relationship to the Subscriber if the member is a dependent(self,spouse,child..etc).",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:beneficiaryRelationship",
+      "tagNumber": 6
+    },
+    "primaryMemeberID": {
+      "Title": "Primary Member ID",
+      "type": "string",
+      "description": "Unique Identifier of the primary subscriber if the member is dependent.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:primaryMemeberID",
+      "tagNumber": 7
+    },
+    "specialist": {
+      "Title": "Specialist",
+      "type": "array",
+      "meta:xdmType": "array",
+      "meta:xdmField": "xdm:specialist",
+      "tagNumber": 8,
+      "items": {
+        "$ref": "obj26562908771815663.schema.json"
+      }
+    },
+    "isLead": {
+      "Title": "Is Lead",
+      "type": "boolean",
+      "description": "Boolean flag indicates if this member is a lead.",
+      "meta:xdmType": "boolean",
+      "meta:xdmField": "xdm:isLead",
+      "tagNumber": 9
+    },
+    "isOpportunity": {
+      "Title": "Is Opportunity",
+      "type": "boolean",
+      "description": "Boolean flag indicates if this this member is a opportunity.",
+      "meta:xdmType": "boolean",
+      "meta:xdmField": "xdm:isOpportunity",
+      "tagNumber": 10
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/mixins/healthcare-member",
+  "meta:altId": "_xdm.mixins.healthcare-member",
+  "id": "_xdm.mixins.healthcare-member"
+}
