@@ -48,12 +48,12 @@
                   "meta:xdmField": "workfront:actualStartTimestamp",
                   "tagNumber": 3
                 },
-                "actualDurMinutes": {
+                "actualDurationMinutes": {
                   "title": "OpTask Actual Duration Minutes",
                   "description": "",
                   "type": "number",
                   "meta:xdmType": "number",
-                  "meta:xdmField": "workfront:actualDurMinutes",
+                  "meta:xdmField": "workfront:actualDurationMinutes",
                   "tagNumber": 4
                 },
                 "assignedToEmployeeID": {

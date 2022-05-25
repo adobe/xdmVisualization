@@ -720,7 +720,9 @@
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.profile.profile-preferences-details.html">profile-preferences-details</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.profile.profile-privacy.html">profile-privacy</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.profile.profile-push-notification-details.html">profile-push-notification-details</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.profile.profile-responses.html">profile-responses</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.profile.profile-segmentation.html">profile-segmentation</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.profile.profile-source-system-markers.html">profile-source-system-markers</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.profile.profile-subscriptions.html">profile-subscriptions</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.profile.profile-telecom-subscription.html">profile-telecom-subscription</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.profile.profile-test-profile.html">profile-test-profile</a></li>

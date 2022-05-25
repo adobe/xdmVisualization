@@ -100,6 +100,14 @@
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:nationality",
       "tagNumber": 7
+    },
+    "type": {
+      "title": "Type",
+      "type": "string",
+      "description": "The type of individual in different business contexts like B2C.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:type",
+      "tagNumber": 8
     }
   },
   "meta:xdmId": "https://ns.adobe.com/xdm/context/person",

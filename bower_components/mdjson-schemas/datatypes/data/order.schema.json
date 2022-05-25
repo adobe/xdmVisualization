@@ -68,6 +68,18 @@
       "meta:xdmType": "number",
       "meta:xdmField": "xdm:priceTotal",
       "tagNumber": 5
+    },
+    "orderType": {
+      "title": "Order Type",
+      "type": "string",
+      "description": "The type order that has been placed.",
+      "enum": [
+        "checkout",
+        "instant_purchase"
+      ],
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:orderType",
+      "tagNumber": 6
     }
   },
   "meta:xdmId": "https://ns.adobe.com/xdm/data/order",

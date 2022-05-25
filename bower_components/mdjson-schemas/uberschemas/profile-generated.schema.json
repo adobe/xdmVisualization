@@ -284,7 +284,7 @@
       "meta:xdmField": "xdm:personComponents",
       "tagNumber": 12,
       "items": {
-        "$ref": "obj035039264540512205.schema.json"
+        "$ref": "obj6528865211416892.schema.json"
       }
     },
     "b2b": {
@@ -938,7 +938,7 @@
       "meta:xdmField": "xdm:specialist",
       "tagNumber": 36,
       "items": {
-        "$ref": "obj10039631246854919.schema.json"
+        "$ref": "obj5472919867511465.schema.json"
       }
     },
     "isLead": {
@@ -2264,7 +2264,7 @@
           "meta:xdmField": "xdm:pointsExpiration",
           "tagNumber": 4,
           "items": {
-            "$ref": "obj16443064591282308.schema.json"
+            "$ref": "obj6781943471413667.schema.json"
           }
         },
         "pointsRedeemed": {
@@ -2378,7 +2378,7 @@
           "meta:xdmField": "xdm:creditScores",
           "tagNumber": 3,
           "items": {
-            "$ref": "obj9362305235252288.schema.json"
+            "$ref": "obj7053615549083727.schema.json"
           }
         },
         "employmentStatus": {
@@ -2637,8 +2637,42 @@
       "meta:xdmField": "xdm:pushNotificationDetails",
       "tagNumber": 62,
       "items": {
-        "$ref": "obj6749394431178357.schema.json"
+        "$ref": "obj7839936994704797.schema.json"
       }
+    },
+    "emailResponse": {
+      "type": "object",
+      "title": "Email responses",
+      "meta:xdmType": "object",
+      "properties": {
+        "isEmailBounced": {
+          "title": "Email Bounced Indicator",
+          "type": "boolean",
+          "description": "Email bounced Indicator.",
+          "meta:xdmType": "boolean",
+          "meta:xdmField": "xdm:isEmailBounced",
+          "tagNumber": 1
+        },
+        "emailBouncedDate": {
+          "title": "Email Bounced Date",
+          "type": "string",
+          "format": "date-time",
+          "description": "Email bounced date.",
+          "meta:xdmType": "date-time",
+          "meta:xdmField": "xdm:emailBouncedDate",
+          "tagNumber": 2
+        },
+        "emailBouncedReason": {
+          "title": "Email Bounced Reason",
+          "type": "string",
+          "description": "Email bounced reason.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:emailBouncedReason",
+          "tagNumber": 3
+        }
+      },
+      "meta:xdmField": "xdm:emailResponse",
+      "tagNumber": 63
     },
     "segmentMembership": {
       "title": "Segment membership map",
@@ -2646,7 +2680,7 @@
       "meta:xdmType": "map",
       "meta:titleId": "profile-segmentation##xdm:segmentMembership##title##24061",
       "meta:xdmField": "xdm:segmentMembership",
-      "tagNumber": 64,
+      "tagNumber": 65,
       "properties": {
         "mapObj": {
           "title": "Segment membership per namespace",
@@ -2663,6 +2697,38 @@
         }
       }
     },
+    "sourceSystemName": {
+      "title": "Source System Name",
+      "type": "string",
+      "description": "Source system name where the profile fragment is ingested from.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:sourceSystemName",
+      "tagNumber": 66
+    },
+    "recordTypeID": {
+      "title": "Record type ID",
+      "type": "string",
+      "description": "Record type identifier.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:recordTypeID",
+      "tagNumber": 67
+    },
+    "recordStatus": {
+      "title": "Record Status",
+      "type": "string",
+      "description": "Record status.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:recordStatus",
+      "tagNumber": 68
+    },
+    "recordSource": {
+      "title": "Record Source`",
+      "type": "string",
+      "description": "Record source.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:recordSource",
+      "tagNumber": 69
+    },
     "subscriptions": {
       "title": "Subscriptions",
       "type": "array",
@@ -2675,7 +2741,7 @@
         "tagNumber": 1
       },
       "meta:xdmField": "xdm:subscriptions",
-      "tagNumber": 65
+      "tagNumber": 70
     },
     "telecomSubscription": {
       "type": "object",
@@ -2718,7 +2784,7 @@
           "meta:xdmField": "xdm:internetSubscription",
           "tagNumber": 4,
           "items": {
-            "$ref": "obj7108480886638169.schema.json"
+            "$ref": "obj6668578193463404.schema.json"
           }
         },
         "landlineSubscription": {
@@ -2729,7 +2795,7 @@
           "meta:xdmField": "xdm:landlineSubscription",
           "tagNumber": 5,
           "items": {
-            "$ref": "obj9197977717361028.schema.json"
+            "$ref": "obj173260129227925.schema.json"
           }
         },
         "mediaSubscription": {
@@ -2740,7 +2806,7 @@
           "meta:xdmField": "xdm:mediaSubscription",
           "tagNumber": 6,
           "items": {
-            "$ref": "obj37854644337688104.schema.json"
+            "$ref": "obj27975242918388044.schema.json"
           }
         },
         "mobileSubscription": {
@@ -2751,12 +2817,12 @@
           "meta:xdmField": "xdm:mobileSubscription",
           "tagNumber": 7,
           "items": {
-            "$ref": "obj5282503168089163.schema.json"
+            "$ref": "obj7114947947399604.schema.json"
           }
         }
       },
       "meta:xdmField": "xdm:telecomSubscription",
-      "tagNumber": 66
+      "tagNumber": 71
     },
     "testProfile": {
       "title": "Test profile",
@@ -2767,7 +2833,7 @@
       "meta:descriptionId": "profile-test-profile##xdm:testProfile##description##82691",
       "meta:xdmType": "boolean",
       "meta:xdmField": "xdm:testProfile",
-      "tagNumber": 67
+      "tagNumber": 72
     },
     "travelPreferences": {
       "type": "object",
@@ -3130,7 +3196,7 @@
         }
       },
       "meta:xdmField": "xdm:travelPreferences",
-      "tagNumber": 68
+      "tagNumber": 73
     },
     "userAccount": {
       "type": "object",
@@ -3231,10 +3297,13 @@
         }
       },
       "meta:xdmField": "xdm:userAccount",
-      "tagNumber": 69
+      "tagNumber": 74
     }
   },
   "meta:xdmId": "https://ns.adobe.com/xdm/context/profile-generated",
   "meta:altId": "_xdm.context.profile-generated",
+  "required": [
+    "sourceSystemName"
+  ],
   "id": "_xdm.context.profile-generated"
 }
