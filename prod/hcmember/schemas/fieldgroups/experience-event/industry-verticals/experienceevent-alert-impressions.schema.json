@@ -1,0 +1,82 @@
+{
+  "id": "_xdm.mixins.experienceevent-alert-impressions",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Alert Impressions",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:tags": {
+    "industry": [
+      "retail",
+      "financial_services",
+      "travel_and_hospitality",
+      "health_and_life_sciences",
+      "public_sector"
+    ]
+  },
+  "description": "Alert information such as ad impressions and ad clicks. ",
+  "meta:status": "stable",
+  "meta:createdDate": "2021-02-19",
+  "meta:titleId": "experienceevent-alert-impressions##title##9341",
+  "meta:descriptionId": "experienceevent-alert-impressions##description##98221",
+  "meta:xdmType": "object",
+  "properties": {
+    "alerts": {
+      "type": "object",
+      "description": "Alert information including alert impressions and clickthroughs as well as alert setups.",
+      "meta:descriptionId": "experienceevent-alert-impressions##xdm:alerts##description##39631",
+      "meta:xdmType": "object",
+      "properties": {
+        "ID": {
+          "title": "Alert ID",
+          "type": "string",
+          "description": "Alert identifier.",
+          "meta:titleId": "experienceevent-alert-impressions##xdm:ID##title##41991",
+          "meta:descriptionId": "experienceevent-alert-impressions##xdm:ID##description##14711",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:ID",
+          "tagNumber": 1
+        },
+        "clicks": {
+          "title": "Alert Clicks",
+          "type": "integer",
+          "description": "Counts the number of times an alert has been clicked.",
+          "meta:titleId": "experienceevent-alert-impressions##xdm:clicks##title##51501",
+          "meta:descriptionId": "experienceevent-alert-impressions##xdm:clicks##description##92541",
+          "meta:xdmType": "int",
+          "meta:xdmField": "xdm:clicks",
+          "tagNumber": 2
+        },
+        "dismissals": {
+          "title": "Alert Dismissals",
+          "type": "integer",
+          "description": "Counts the number of times an alert has been dismissed.",
+          "meta:titleId": "experienceevent-alert-impressions##xdm:dismissals##title##96031",
+          "meta:descriptionId": "experienceevent-alert-impressions##xdm:dismissals##description##1251",
+          "meta:xdmType": "int",
+          "meta:xdmField": "xdm:dismissals",
+          "tagNumber": 3
+        },
+        "impressions": {
+          "title": "Alert Impression Details",
+          "type": "array",
+          "description": "An array of alerts that have been displayed to a customer.",
+          "meta:titleId": "experienceevent-alert-impressions##xdm:impressions##title##4331",
+          "meta:descriptionId": "experienceevent-alert-impressions##xdm:impressions##description##49741",
+          "meta:xdmType": "array",
+          "items": {
+            "$ref": "../../../datatypes/industry-verticals/impressions.schema.json",
+            "tagNumber": 1
+          },
+          "meta:xdmField": "xdm:impressions",
+          "tagNumber": 4
+        }
+      },
+      "meta:xdmField": "xdm:alerts",
+      "tagNumber": 1
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/mixins/experienceevent-alert-impressions",
+  "meta:altId": "_xdm.mixins.experienceevent-alert-impressions",
+  "id": "_xdm.mixins.experienceevent-alert-impressions"
+}

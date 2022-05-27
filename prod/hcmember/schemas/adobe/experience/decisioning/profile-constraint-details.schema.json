@@ -1,0 +1,70 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "id": "_experience.decisioning.profile-constraint-details",
+  "meta:extensible": true,
+  "type": "object",
+  "title": "Profile Constraint Details",
+  "description": "Profile constraints define the policies that ensure a particular decision option qualifies, is relevant and is suitable for a particular profile. Such policy rules determine the eligibility, applicability and suitability of the option. Usually the option is tested against a user profile and the events that were observed for that profile, but the qualification rule can consider any context data as long as it can be described by an XDM schema.",
+  "meta:status": "stable",
+  "meta:titleId": "profile-constraint-details##title##16971",
+  "meta:descriptionId": "profile-constraint-details##description##11421",
+  "meta:xdmType": "object",
+  "properties": {
+    "description": {
+      "type": "string",
+      "title": "Description",
+      "description": "Profile constraint description. It is used to convey human readable intentions on how or why this profile constraint was constructed and/or what option will be included or excluded by it.",
+      "meta:titleId": "profile-constraint-details##xdm:description##title##72701",
+      "meta:descriptionId": "profile-constraint-details##xdm:description##description##71551",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:description",
+      "tagNumber": 1
+    },
+    "profileConstraintType": {
+      "type": "string",
+      "title": "Profile Constraint Type",
+      "enum": [
+        "none",
+        "eligibilityRule",
+        "anySegments",
+        "allSegments",
+        "rules"
+      ],
+      "default": "none",
+      "description": "Determines if any constraints are currently set and how the contraints are expressed. It could be though a rule or through one or more segment memberships.",
+      "meta:titleId": "profile-constraint-details##xdm:profileConstraintType##title##50331",
+      "meta:descriptionId": "profile-constraint-details##xdm:profileConstraintType##description##61821",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:profileConstraintType",
+      "tagNumber": 2
+    },
+    "eligibilityRule": {
+      "type": "string",
+      "format": "uri-reference",
+      "title": "Eligibility Rule",
+      "description": "A reference to a decision rule that evaluates to true or false for a given profile and/or other given contextual XDM objects. The rule is used to decide if the option qualifies for a given profile. The value is the URI (@id) of the decision rule that is referenced. See schema https://ns.adobe.com/experience/decisioning/rule",
+      "meta:titleId": "profile-constraint-details##xdm:eligibilityRule##title##99811",
+      "meta:descriptionId": "profile-constraint-details##xdm:eligibilityRule##description##20111",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:eligibilityRule",
+      "tagNumber": 3
+    },
+    "segmentIdentities": {
+      "title": "Segment Identifiers",
+      "description": "Identifiers of the segments",
+      "type": "array",
+      "meta:titleId": "profile-constraint-details##xdm:segmentIdentities##title##87071",
+      "meta:descriptionId": "profile-constraint-details##xdm:segmentIdentities##description##47431",
+      "meta:xdmType": "array",
+      "items": {
+        "$ref": "../../../datatypes/segmentidentity.schema.json",
+        "tagNumber": 1
+      },
+      "meta:xdmField": "xdm:segmentIdentities",
+      "tagNumber": 4
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/experience/decisioning/profile-constraint-details",
+  "meta:altId": "_experience.decisioning.profile-constraint-details",
+  "id": "_experience.decisioning.profile-constraint-details"
+}

@@ -1,0 +1,54 @@
+{
+  "type": "object",
+  "xdm:phoneNumber": {
+    "Title": "Phone Number",
+    "description": "Member's phone number.",
+    "$ref": "../datatypes/demographic/phonenumber.schema.json",
+    "tagNumber": 1
+  },
+  "meta:xdmType": "object",
+  "additionalProperties": false,
+  "properties": {
+    "addressType": {
+      "Title": "Type of the address indication if the address is home, mailing, or work.",
+      "type": "string",
+      "description": "Member's full name.",
+      "enum": [
+        "Home",
+        "Work",
+        "Mailing",
+        "Other"
+      ],
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:addressType",
+      "tagNumber": 1
+    },
+    "address": {
+      "Title": "Member Address",
+      "$ref": "../datatypes/demographic/address.schema.json",
+      "meta:xdmField": "xdm:address",
+      "tagNumber": 2
+    },
+    "effectiveStartDate": {
+      "Title": "Effective Start Date",
+      "type": "string",
+      "format": "date-time",
+      "description": "Effective start date of the member's address.",
+      "meta:xdmType": "date-time",
+      "meta:xdmField": "xdm:effectiveStartDate",
+      "tagNumber": 3
+    },
+    "efectiveEndDate": {
+      "Title": "Effective End Date",
+      "type": "string",
+      "format": "date-time",
+      "description": "Effective end date of the member's address.",
+      "meta:xdmType": "date-time",
+      "meta:xdmField": "xdm:efectiveEndDate",
+      "tagNumber": 4
+    }
+  },
+  "tagNumber": 1,
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "id": "obj7295769805163423.schema.json"
+}

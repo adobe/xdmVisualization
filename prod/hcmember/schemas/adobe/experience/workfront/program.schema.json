@@ -1,0 +1,63 @@
+{
+  "id": "_experience.workfront.program",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Work Program Attributes",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "description": "Program related fields",
+  "meta:status": "experimental",
+  "meta:xdmType": "object",
+  "properties": {
+    "_workfront": {
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "program": {
+          "type": "object",
+          "title": "Program Attributes",
+          "meta:xdmType": "object",
+          "properties": {
+            "_workfront": {
+              "type": "object",
+              "meta:xdmType": "object",
+              "properties": {
+                "description": {
+                  "title": "Program Description",
+                  "description": "",
+                  "type": "string",
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "workfront:description",
+                  "tagNumber": 1
+                },
+                "isActive": {
+                  "title": "Program is Active",
+                  "description": "",
+                  "type": "boolean",
+                  "meta:xdmType": "boolean",
+                  "meta:xdmField": "workfront:isActive",
+                  "tagNumber": 2
+                },
+                "ownerEmployeeID": {
+                  "title": "Program Owner Employee ID",
+                  "description": "",
+                  "type": "string",
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "workfront:ownerEmployeeID",
+                  "tagNumber": 3
+                }
+              },
+              "tagNumber": 1
+            }
+          },
+          "meta:xdmField": "workfront:program",
+          "tagNumber": 1
+        }
+      },
+      "tagNumber": 1
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/experience/workfront/program",
+  "meta:altId": "_experience.workfront.program",
+  "id": "_experience.workfront.program"
+}

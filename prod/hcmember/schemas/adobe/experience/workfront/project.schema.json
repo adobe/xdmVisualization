@@ -1,0 +1,207 @@
+{
+  "id": "_experience.workfront.project",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Work Project Attributes",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "description": "Project related fields",
+  "meta:status": "experimental",
+  "meta:xdmType": "object",
+  "properties": {
+    "_workfront": {
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "project": {
+          "type": "object",
+          "title": "Project Attributes",
+          "meta:xdmType": "object",
+          "properties": {
+            "_workfront": {
+              "type": "object",
+              "meta:xdmType": "object",
+              "properties": {
+                "actualCompletionTimestamp": {
+                  "title": "Project Actual Completion Timestamp",
+                  "description": "",
+                  "type": "string",
+                  "format": "date-time",
+                  "meta:xdmType": "date-time",
+                  "meta:xdmField": "workfront:actualCompletionTimestamp",
+                  "tagNumber": 1
+                },
+                "actualStartTimestamp": {
+                  "title": "Project Actual Start Timestamp",
+                  "description": "",
+                  "type": "string",
+                  "format": "date-time",
+                  "meta:xdmType": "date-time",
+                  "meta:xdmField": "workfront:actualStartTimestamp",
+                  "tagNumber": 2
+                },
+                "budget": {
+                  "title": "Project Budget",
+                  "description": "",
+                  "type": "number",
+                  "meta:xdmType": "number",
+                  "meta:xdmField": "workfront:budget",
+                  "tagNumber": 3
+                },
+                "condition": {
+                  "title": "Project Condition",
+                  "description": "",
+                  "type": "string",
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "workfront:condition",
+                  "tagNumber": 4
+                },
+                "description": {
+                  "title": "Project Description",
+                  "description": "",
+                  "type": "string",
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "workfront:description",
+                  "tagNumber": 5
+                },
+                "displayOrder": {
+                  "title": "Project Display Order",
+                  "description": "",
+                  "type": "integer",
+                  "meta:xdmType": "int",
+                  "meta:xdmField": "workfront:displayOrder",
+                  "tagNumber": 6
+                },
+                "durationMinutes": {
+                  "title": "Project Duration Minutes",
+                  "description": "",
+                  "type": "number",
+                  "meta:xdmType": "number",
+                  "meta:xdmField": "workfront:durationMinutes",
+                  "tagNumber": 7
+                },
+                "estimatedCompletionTimestamp": {
+                  "title": "Project Estimated Completion Timestamp",
+                  "description": "",
+                  "type": "string",
+                  "format": "date-time",
+                  "meta:xdmType": "date-time",
+                  "meta:xdmField": "workfront:estimatedCompletionTimestamp",
+                  "tagNumber": 8
+                },
+                "estimatedStartTimestamp": {
+                  "title": "Project Estimated Start Timestamp",
+                  "description": "",
+                  "type": "string",
+                  "format": "date-time",
+                  "meta:xdmType": "date-time",
+                  "meta:xdmField": "workfront:estimatedStartTimestamp",
+                  "tagNumber": 9
+                },
+                "groupID": {
+                  "title": "Project Group ID",
+                  "description": "",
+                  "type": "string",
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "workfront:groupID",
+                  "tagNumber": 10
+                },
+                "milestonePathID": {
+                  "title": "Project Milestone Path ID",
+                  "description": "",
+                  "type": "string",
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "workfront:milestonePathID",
+                  "tagNumber": 11
+                },
+                "ownerEmployeeID": {
+                  "title": "Project Owner Employee ID",
+                  "description": "",
+                  "type": "string",
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "workfront:ownerEmployeeID",
+                  "tagNumber": 12
+                },
+                "percentComplete": {
+                  "title": "Project Percent Complete",
+                  "description": "",
+                  "type": "number",
+                  "meta:xdmType": "number",
+                  "meta:xdmField": "workfront:percentComplete",
+                  "tagNumber": 13
+                },
+                "plannedCompletionTimestamp": {
+                  "title": "Project Planned Completion Timestamp",
+                  "description": "",
+                  "type": "string",
+                  "format": "date-time",
+                  "meta:xdmType": "date-time",
+                  "meta:xdmField": "workfront:plannedCompletionTimestamp",
+                  "tagNumber": 14
+                },
+                "plannedStartTimestamp": {
+                  "title": "Project Planned Start Timestamp",
+                  "description": "",
+                  "type": "string",
+                  "format": "date-time",
+                  "meta:xdmType": "date-time",
+                  "meta:xdmField": "workfront:plannedStartTimestamp",
+                  "tagNumber": 15
+                },
+                "priority": {
+                  "title": "Project Priority",
+                  "description": "",
+                  "type": "string",
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "workfront:priority",
+                  "tagNumber": 16
+                },
+                "projectedStartTimestamp": {
+                  "title": "Project Projected Start Timestamp",
+                  "description": "",
+                  "type": "string",
+                  "format": "date-time",
+                  "meta:xdmType": "date-time",
+                  "meta:xdmField": "workfront:projectedStartTimestamp",
+                  "tagNumber": 17
+                },
+                "status": {
+                  "title": "Project Status",
+                  "description": "",
+                  "type": "string",
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "workfront:status",
+                  "tagNumber": 18
+                },
+                "teamID": {
+                  "title": "Project Team ID",
+                  "description": "",
+                  "type": "string",
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "workfront:teamID",
+                  "tagNumber": 19
+                },
+                "projectedCompletionTimestamp": {
+                  "title": "Project Projected Completion Timestamp",
+                  "description": "",
+                  "type": "string",
+                  "format": "date-time",
+                  "meta:xdmType": "date-time",
+                  "meta:xdmField": "workfront:projectedCompletionTimestamp",
+                  "tagNumber": 20
+                }
+              },
+              "tagNumber": 1
+            }
+          },
+          "meta:xdmField": "workfront:project",
+          "tagNumber": 1
+        }
+      },
+      "tagNumber": 1
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/experience/workfront/project",
+  "meta:altId": "_experience.workfront.project",
+  "id": "_experience.workfront.project"
+}

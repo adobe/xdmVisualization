@@ -1,0 +1,69 @@
+{
+  "id": "_xdm.context.profile-personal-details",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Personal Contact Details",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:tags": {
+    "industry": [
+      "all"
+    ]
+  },
+  "description": "Contact information for an individual person such as home address, phone number, fax, and email.",
+  "meta:status": "stable",
+  "meta:createdDate": "2020-08-10",
+  "meta:titleId": "profile-personal-details##title##17051",
+  "meta:descriptionId": "profile-personal-details##description##5771",
+  "meta:xdmType": "object",
+  "properties": {
+    "homeAddress": {
+      "title": "Home address",
+      "$ref": "../../datatypes/demographic/address.schema.json",
+      "description": "A home postal address.",
+      "meta:titleId": "profile-personal-details##xdm:homeAddress##title##98571",
+      "meta:descriptionId": "profile-personal-details##xdm:homeAddress##description##35241",
+      "meta:xdmField": "xdm:homeAddress",
+      "tagNumber": 1
+    },
+    "personalEmail": {
+      "title": "Personal email",
+      "$ref": "../../datatypes/demographic/emailaddress.schema.json",
+      "description": "A personal email address.",
+      "meta:titleId": "profile-personal-details##xdm:personalEmail##title##13501",
+      "meta:descriptionId": "profile-personal-details##xdm:personalEmail##description##54181",
+      "meta:xdmField": "xdm:personalEmail",
+      "tagNumber": 2
+    },
+    "homePhone": {
+      "title": "Home phone",
+      "$ref": "../../datatypes/demographic/phonenumber.schema.json",
+      "description": "Home phone number.",
+      "meta:titleId": "profile-personal-details##xdm:homePhone##title##28261",
+      "meta:descriptionId": "profile-personal-details##xdm:homePhone##description##45111",
+      "meta:xdmField": "xdm:homePhone",
+      "tagNumber": 3
+    },
+    "mobilePhone": {
+      "title": "Mobile phone",
+      "$ref": "../../datatypes/demographic/phonenumber.schema.json",
+      "description": "Mobile phone number.",
+      "meta:titleId": "profile-personal-details##xdm:mobilePhone##title##76241",
+      "meta:descriptionId": "profile-personal-details##xdm:mobilePhone##description##51801",
+      "meta:xdmField": "xdm:mobilePhone",
+      "tagNumber": 4
+    },
+    "faxPhone": {
+      "title": "Fax phone",
+      "$ref": "../../datatypes/demographic/phonenumber.schema.json",
+      "description": "Fax phone number.",
+      "meta:titleId": "profile-personal-details##xdm:faxPhone##title##15761",
+      "meta:descriptionId": "profile-personal-details##xdm:faxPhone##description##5951",
+      "meta:xdmField": "xdm:faxPhone",
+      "tagNumber": 5
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/context/profile-personal-details",
+  "meta:altId": "_xdm.context.profile-personal-details",
+  "id": "_xdm.context.profile-personal-details"
+}

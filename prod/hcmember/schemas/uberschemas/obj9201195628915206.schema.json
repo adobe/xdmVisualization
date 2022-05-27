@@ -1,0 +1,35 @@
+{
+  "type": "object",
+  "meta:xdmType": "object",
+  "additionalProperties": false,
+  "properties": {
+    "ID": {
+      "Title": "Medication ID",
+      "type": "string",
+      "description": "Unique identifier for the medication.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:ID",
+      "tagNumber": 1
+    },
+    "startDate": {
+      "Title": "Medication Start Date",
+      "type": "string",
+      "format": "date-time",
+      "description": "Date on which the patient began taking the medication.",
+      "meta:xdmType": "date-time",
+      "meta:xdmField": "xdm:startDate",
+      "tagNumber": 2
+    },
+    "isCurrent": {
+      "Title": "Is Current",
+      "type": "boolean",
+      "description": "Indicates whether the medication is current or past.",
+      "meta:xdmType": "boolean",
+      "meta:xdmField": "xdm:isCurrent",
+      "tagNumber": 3
+    }
+  },
+  "tagNumber": 1,
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "id": "obj9201195628915206.schema.json"
+}
