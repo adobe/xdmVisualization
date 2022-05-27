@@ -1,0 +1,79 @@
+{
+  "type": "object",
+  "meta:xdmType": "object",
+  "additionalProperties": false,
+  "properties": {
+    "ID": {
+      "Title": "ID",
+      "type": "string",
+      "description": "Plan ID unique identifier.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:ID",
+      "tagNumber": 1
+    },
+    "planType": {
+      "Title": "Plan Type",
+      "type": "string",
+      "enum": [
+        "primary",
+        "secondary",
+        "tertiary"
+      ],
+      "description": "This indicates if the plan is primary,secondary or tertiary plan.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:planType",
+      "tagNumber": 2
+    },
+    "coverageType": {
+      "Title": "Coverage Type",
+      "type": "string",
+      "enum": [
+        "Medical",
+        "Dental",
+        "Vision",
+        "Accident"
+      ],
+      "description": "Member plan coverage type.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:coverageType",
+      "tagNumber": 3
+    },
+    "coverageStartDate": {
+      "Title": "Coverage Start Date",
+      "type": "string",
+      "format": "date-time",
+      "description": "Coverage start date.",
+      "meta:xdmType": "date-time",
+      "meta:xdmField": "xdm:coverageStartDate",
+      "tagNumber": 4
+    },
+    "coverageEndDate": {
+      "Title": "Coverage End Date",
+      "type": "string",
+      "format": "date-time",
+      "description": "Coverage end date.",
+      "meta:xdmType": "date-time",
+      "meta:xdmField": "xdm:coverageEndDate",
+      "tagNumber": 5
+    },
+    "network": {
+      "Title": "Network",
+      "type": "string",
+      "description": "The insurer-specific identifier for the insurer-defined network of providers to which the beneficiary may seek treatment which will be covered at the 'in-network' rate, otherwise 'out of network' term.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:network",
+      "tagNumber": 6
+    },
+    "isActive": {
+      "Title": "Is Active",
+      "type": "boolean",
+      "description": "Boolean flag indicates whether the plan is active.",
+      "meta:xdmType": "boolean",
+      "meta:xdmField": "xdm:isActive",
+      "tagNumber": 7
+    }
+  },
+  "tagNumber": 1,
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "id": "obj5282774009934432.schema.json"
+}

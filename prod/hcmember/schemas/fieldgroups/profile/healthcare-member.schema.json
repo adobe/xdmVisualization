@@ -51,7 +51,7 @@
           "meta:xdmField": "xdm:addressDetails",
           "tagNumber": 3,
           "items": {
-            "$ref": "obj6642137985502927.schema.json"
+            "$ref": "obj9779766882517178.schema.json"
           }
         },
         "birthDate": {
@@ -138,7 +138,12 @@
         },
         "emailAddress": {
           "Title": "Email Address",
-          "$ref": "../../datatypes/demographic/emailaddress.schema.json",
+          "type": "array",
+          "meta:xdmType": "array",
+          "items": {
+            "$ref": "../../datatypes/demographic/emailaddress.schema.json",
+            "tagNumber": 1
+          },
           "meta:xdmField": "xdm:emailAddress",
           "tagNumber": 10
         },
@@ -154,7 +159,7 @@
           "meta:xdmField": "xdm:primaryCarePhysicians",
           "tagNumber": 12,
           "items": {
-            "$ref": "obj9691343454273122.schema.json"
+            "$ref": "obj5518434008212159.schema.json"
           }
         },
         "emergencyContact": {
@@ -199,7 +204,7 @@
           "meta:xdmField": "xdm:medications",
           "tagNumber": 15,
           "items": {
-            "$ref": "obj47587372910162884.schema.json"
+            "$ref": "obj4032938555597685.schema.json"
           }
         },
         "isDependent": {
@@ -241,7 +246,7 @@
           "meta:xdmField": "xdm:specialists",
           "tagNumber": 20,
           "items": {
-            "$ref": "obj5540700015192537.schema.json"
+            "$ref": "obj6716596193333004.schema.json"
           }
         },
         "isLead": {
@@ -267,7 +272,7 @@
           "meta:xdmField": "xdm:plans",
           "tagNumber": 23,
           "items": {
-            "$ref": "obj29947754400132776.schema.json"
+            "$ref": "obj30208617523435.schema.json"
           }
         }
       },

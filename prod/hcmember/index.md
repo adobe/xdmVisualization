@@ -353,7 +353,6 @@
 </ul>
 </details>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/hcmember/classes.graphs.html">graphs</a></li>
-<li><a href="http://opensource.adobe.com/xdmVisualization/prod/hcmember/classes.healthcare-plan.html">healthcare-plan</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/hcmember/classes.loan.html">loan</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/hcmember/classes.lodging-product.html">lodging-product</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/hcmember/classes.product.html">product</a></li>
@@ -680,12 +679,6 @@
 </ul>
 </details>
 <details>
-<summary>healthcare-plan</summary>
-<ul>
-<li><a href="http://opensource.adobe.com/xdmVisualization/prod/hcmember/fieldgroups.healthcare-plan.healthcare-plan-details.html">healthcare-plan-details</a></li>
-</ul>
-</details>
-<details>
 <summary>opportunity-contact-role</summary>
 <ul>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/hcmember/fieldgroups.opportunity-contact-role.opportunity-contact-role-details.html">opportunity-contact-role-details</a></li>
@@ -793,12 +786,10 @@
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/hcmember/uberschemas.health_and_life_sciences.profile-generated-health_and_life_sciences.html">profile-generated-health_and_life_sciences</a></li>
 </ul>
 </details>
-<li><a href="http://opensource.adobe.com/xdmVisualization/prod/hcmember/uberschemas.healthcare-plan-generated.html">healthcare-plan-generated</a></li>
 <details>
 <summary>healthcare_services</summary>
 <ul>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/hcmember/uberschemas.healthcare_services.experienceevent-generated-healthcare_services.html">experienceevent-generated-healthcare_services</a></li>
-<li><a href="http://opensource.adobe.com/xdmVisualization/prod/hcmember/uberschemas.healthcare_services.healthcare-plan-generated-healthcare_services.html">healthcare-plan-generated-healthcare_services</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/hcmember/uberschemas.healthcare_services.profile-generated-healthcare_services.html">profile-generated-healthcare_services</a></li>
 </ul>
 </details>
