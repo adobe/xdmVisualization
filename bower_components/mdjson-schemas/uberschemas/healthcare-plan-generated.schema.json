@@ -1,0 +1,165 @@
+{
+  "id": "_xdm.classes.healthcare-plan-generated",
+  "title": "Uber schema for https://ns.adobe.com/xdm/classes/healthcare-plan",
+  "description": "Uber schema for https://ns.adobe.com/xdm/classes/healthcare-plan",
+  "type": "object",
+  "meta:xdmType": "object",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:tags": {
+    "industry": [
+      "healthcare_services"
+    ]
+  },
+  "meta:status": [
+    "experimental",
+    "stable"
+  ],
+  "meta:createdDate": [
+    "2022-05-18",
+    "2020-08-10"
+  ],
+  "meta:titleId": "external-source-system-audit-details##title##88991",
+  "meta:descriptionId": "external-source-system-audit-details##description##98601",
+  "properties": {
+    "planID": {
+      "Title": "Plan ID",
+      "type": "string",
+      "description": "Unique identifier of the insurance plan.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:planID",
+      "tagNumber": 1
+    },
+    "planName": {
+      "Title": "Plan Name",
+      "type": "string",
+      "description": "Name of the insurance plan.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:planName",
+      "tagNumber": 2
+    },
+    "planType": {
+      "Title": "Plan Type",
+      "type": "string",
+      "enum": [
+        "primary",
+        "secondary",
+        "tertiary"
+      ],
+      "description": "This indicates if the plan is primary,secondary or tertiary plan.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:planType",
+      "tagNumber": 3
+    },
+    "isActive": {
+      "Title": "Is Active",
+      "type": "boolean",
+      "description": "Indicates whether the plan is active.",
+      "meta:xdmType": "boolean",
+      "meta:xdmField": "xdm:isActive",
+      "tagNumber": 4
+    },
+    "extSourceSystemAudit": {
+      "title": "External Source System Audit Properties",
+      "$ref": "../datatypes/auditing/external-source-system-audit.schema.json",
+      "description": "Audit attributes for external sources.",
+      "meta:titleId": "external-source-system-audit-details##xdm:extSourceSystemAudit##title##88841",
+      "meta:descriptionId": "external-source-system-audit-details##xdm:extSourceSystemAudit##description##28131",
+      "meta:xdmField": "xdm:extSourceSystemAudit",
+      "tagNumber": 5
+    },
+    "payerID": {
+      "Title": "Payer ID",
+      "type": "string",
+      "description": "Unique identifier of the payer.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:payerID",
+      "tagNumber": 6
+    },
+    "contractID": {
+      "Title": "Contract ID",
+      "type": "string",
+      "description": "Unique identifier of the contract that is signed by the member.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:contractID",
+      "tagNumber": 7
+    },
+    "ownerID": {
+      "Title": "Owner ID",
+      "type": "string",
+      "description": "Unique identifier of the Owner of the policy which could be owned by an individual , group or an organization.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:ownerID",
+      "tagNumber": 8
+    },
+    "network": {
+      "Title": "Network",
+      "type": "string",
+      "description": "The insurer-specific identifier for the insurer-defined network of providers to which the beneficiary may seek treatment which will be covered at the 'in-network' rate, otherwise 'out of network' term.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:network",
+      "tagNumber": 9
+    },
+    "affiliation": {
+      "Title": "Affiliation",
+      "type": "string",
+      "description": "An affiliation to a government service, such as the army or navy.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:affiliation",
+      "tagNumber": 10
+    },
+    "coverageType": {
+      "Title": "Coverage Type",
+      "type": "string",
+      "enum": [
+        "Medical",
+        "Dental",
+        "Vision",
+        "Accident"
+      ],
+      "description": "Member plan coverage type.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:coverageType",
+      "tagNumber": 11
+    },
+    "coverageStartDate": {
+      "Title": "Coverage Start Date",
+      "type": "string",
+      "format": "date-time",
+      "description": "Coverage start date.",
+      "meta:xdmType": "date-time",
+      "meta:xdmField": "xdm:coverageStartDate",
+      "tagNumber": 12
+    },
+    "coverageEndDate": {
+      "Title": "Coverage End Date",
+      "type": "string",
+      "format": "date-time",
+      "description": "Coverage end date.",
+      "meta:xdmType": "date-time",
+      "meta:xdmField": "xdm:coverageEndDate",
+      "tagNumber": 13
+    },
+    "lastVerification": {
+      "Title": "Last Verification Date",
+      "type": "string",
+      "format": "date-time",
+      "description": "The date on which this plan was last verified.",
+      "meta:xdmType": "date-time",
+      "meta:xdmField": "xdm:lastVerification",
+      "tagNumber": 14
+    },
+    "cost": {
+      "Title": "Plan Cost",
+      "type": "number",
+      "description": "The cost associated to this insurance plan.",
+      "meta:xdmType": "number",
+      "meta:xdmField": "xdm:cost",
+      "tagNumber": 15
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/classes/healthcare-plan-generated",
+  "meta:altId": "_xdm.classes.healthcare-plan-generated",
+  "id": "_xdm.classes.healthcare-plan-generated"
+}

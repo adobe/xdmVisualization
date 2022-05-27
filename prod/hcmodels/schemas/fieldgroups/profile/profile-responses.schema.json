@@ -1,0 +1,50 @@
+{
+  "id": "_xdm.mixins.profile-responses",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Phone Responses (Experimental, please expect breaking changes)",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "description": "Use this to add various profile responses like email, postal mail etc(Experimental, please expect breaking changes).",
+  "meta:status": "experimental",
+  "meta:xdmType": "object",
+  "properties": {
+    "emailResponse": {
+      "type": "object",
+      "title": "Email responses",
+      "meta:xdmType": "object",
+      "properties": {
+        "isEmailBounced": {
+          "title": "Email Bounced Indicator",
+          "type": "boolean",
+          "description": "Email bounced Indicator.",
+          "meta:xdmType": "boolean",
+          "meta:xdmField": "xdm:isEmailBounced",
+          "tagNumber": 1
+        },
+        "emailBouncedDate": {
+          "title": "Email Bounced Date",
+          "type": "string",
+          "format": "date-time",
+          "description": "Email bounced date.",
+          "meta:xdmType": "date-time",
+          "meta:xdmField": "xdm:emailBouncedDate",
+          "tagNumber": 2
+        },
+        "emailBouncedReason": {
+          "title": "Email Bounced Reason",
+          "type": "string",
+          "description": "Email bounced reason.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:emailBouncedReason",
+          "tagNumber": 3
+        }
+      },
+      "meta:xdmField": "xdm:emailResponse",
+      "tagNumber": 1
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/mixins/profile-responses",
+  "meta:altId": "_xdm.mixins.profile-responses",
+  "id": "_xdm.mixins.profile-responses"
+}

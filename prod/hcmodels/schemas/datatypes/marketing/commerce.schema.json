@@ -1,0 +1,143 @@
+{
+  "id": "_xdm.context.commerce",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Commerce",
+  "type": "object",
+  "meta:extensible": true,
+  "description": "The records related to buying and selling activity.",
+  "meta:status": "stable",
+  "meta:createdDate": "2021-02-19",
+  "meta:titleId": "commerce##title##49471",
+  "meta:descriptionId": "commerce##description##20081",
+  "meta:xdmType": "object",
+  "properties": {
+    "order": {
+      "title": "Order",
+      "$ref": "../data/order.schema.json",
+      "description": "The placed order for one or more products.",
+      "meta:titleId": "commerce##xdm:order##title##3821",
+      "meta:descriptionId": "commerce##xdm:order##description##54091",
+      "meta:xdmField": "xdm:order",
+      "tagNumber": 1
+    },
+    "promotionID": {
+      "title": "Promotion ID",
+      "type": "string",
+      "description": "Promotion identifier if any for the order placed.",
+      "meta:titleId": "commerce##xdm:promotionID##title##67161",
+      "meta:descriptionId": "commerce##xdm:promotionID##description##36471",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:promotionID",
+      "tagNumber": 2
+    },
+    "cartAbandons": {
+      "title": "Cart Abandons",
+      "$ref": "../data/measure.schema.json",
+      "description": "A product list has been identified as no longer accessible or purchasable by the user.",
+      "meta:descriptionId": "commerce##xdm:cartAbandons##description##31901",
+      "meta:xdmField": "xdm:cartAbandons",
+      "tagNumber": 3
+    },
+    "checkouts": {
+      "title": "Checkouts",
+      "$ref": "../data/measure.schema.json",
+      "description": "An action during a checkout process of a product list, there can be more than one checkout event if there are multiple steps in a checkout process. If there are multiple steps the event time information and referenced page or experience is used to identify the step individual events represent in order.",
+      "meta:descriptionId": "commerce##xdm:checkouts##description##73181",
+      "meta:xdmField": "xdm:checkouts",
+      "tagNumber": 4
+    },
+    "productListAdds": {
+      "title": "Product List (Cart) Adds",
+      "$ref": "../data/measure.schema.json",
+      "description": "Addition of a product to the product list, for example a product is added to a shopping cart.",
+      "meta:descriptionId": "commerce##xdm:productListAdds##description##19431",
+      "meta:xdmField": "xdm:productListAdds",
+      "tagNumber": 5
+    },
+    "productListOpens": {
+      "title": "Product List (Cart) Opens",
+      "$ref": "../data/measure.schema.json",
+      "description": "Initializations of a new product list, for example a shopping cart is created.",
+      "meta:descriptionId": "commerce##xdm:productListOpens##description##58831",
+      "meta:xdmField": "xdm:productListOpens",
+      "tagNumber": 6
+    },
+    "productListRemovals": {
+      "title": "Product List (Cart) Removals",
+      "$ref": "../data/measure.schema.json",
+      "description": "Removal or removals of a product entry from a product list, for example a product is removed from a shopping cart.",
+      "meta:descriptionId": "commerce##xdm:productListRemovals##description##78581",
+      "meta:xdmField": "xdm:productListRemovals",
+      "tagNumber": 7
+    },
+    "productListReopens": {
+      "title": "Product List (Cart) Reopens",
+      "$ref": "../data/measure.schema.json",
+      "description": "A product list that was no longer accessible (abandoned) has been re-activated by the user. Example via a re-marketing activity.",
+      "meta:descriptionId": "commerce##xdm:productListReopens##description##26411",
+      "meta:xdmField": "xdm:productListReopens",
+      "tagNumber": 8
+    },
+    "productListViews": {
+      "title": "Product List (Cart) Views",
+      "$ref": "../data/measure.schema.json",
+      "description": "View or views of a product-list has occurred.",
+      "meta:descriptionId": "commerce##xdm:productListViews##description##21091",
+      "meta:xdmField": "xdm:productListViews",
+      "tagNumber": 9
+    },
+    "productViews": {
+      "title": "Product Views",
+      "$ref": "../data/measure.schema.json",
+      "description": "View or views of a product have occurred.",
+      "meta:descriptionId": "commerce##xdm:productViews##description##22921",
+      "meta:xdmField": "xdm:productViews",
+      "tagNumber": 10
+    },
+    "purchases": {
+      "title": "Purchases",
+      "$ref": "../data/measure.schema.json",
+      "description": "An order has been accepted. Purchase is the only required action in a commerce conversion. Purchase must have a product list referenced.",
+      "meta:descriptionId": "commerce##xdm:purchases##description##20481",
+      "meta:xdmField": "xdm:purchases",
+      "tagNumber": 11
+    },
+    "saveForLaters": {
+      "title": "Save For Laters",
+      "$ref": "../data/measure.schema.json",
+      "description": "Product list is saved for future use, for example a product wish list.",
+      "meta:descriptionId": "commerce##xdm:saveForLaters##description##45041",
+      "meta:xdmField": "xdm:saveForLaters",
+      "tagNumber": 12
+    },
+    "inStorePurchase": {
+      "title": "In Store Purchase",
+      "$ref": "../data/measure.schema.json",
+      "description": "'inStore' purchase is saved for analytics use.",
+      "meta:descriptionId": "commerce##xdm:inStorePurchase##description##27451",
+      "meta:xdmField": "xdm:inStorePurchase",
+      "tagNumber": 13
+    },
+    "cart": {
+      "$ref": "../cart.schema.json",
+      "description": "The properties of the cart that contains one or more products.",
+      "meta:xdmField": "xdm:cart",
+      "tagNumber": 14
+    },
+    "shipping": {
+      "$ref": "../shipping.schema.json",
+      "description": "Shipping details for one or more products.",
+      "meta:xdmField": "xdm:shipping",
+      "tagNumber": 15
+    },
+    "instantPurchase": {
+      "$ref": "../data/measure.schema.json",
+      "description": "A product has been purchased instantly, potentially skipping the cart or checkout.",
+      "meta:xdmField": "xdm:instantPurchase",
+      "tagNumber": 16
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/context/commerce",
+  "meta:altId": "_xdm.context.commerce",
+  "id": "_xdm.context.commerce"
+}

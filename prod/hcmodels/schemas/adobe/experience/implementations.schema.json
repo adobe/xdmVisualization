@@ -1,0 +1,87 @@
+{
+  "id": "_experience.implementations",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Adobe Experience Platform Implementation Details",
+  "type": "object",
+  "description": "Details the type and version of client implementations for data collection interacting with Adobe Experience Cloud services. Used for debugging and usage analysis.",
+  "meta:status": "stable",
+  "meta:titleId": "implementations##title##84841",
+  "meta:descriptionId": "implementations##description##51811",
+  "meta:xdmType": "object",
+  "properties": {
+    "_experience": {
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "analytics": {
+          "type": "object",
+          "meta:xdmType": "object",
+          "properties": {
+            "implementation": {
+              "title": "Client Implementation for Adobe Analytics",
+              "$ref": "../../datatypes/industry-verticals/implementationdetails.schema.json",
+              "description": "Client details interacting with Adobe Analytics.",
+              "meta:titleId": "implementations##https://ns.adobe.com/experience/analytics/implementation##title##96061",
+              "meta:descriptionId": "implementations##https://ns.adobe.com/experience/analytics/implementation##description##72391",
+              "meta:xdmField": "https://ns.adobe.com/experience/analytics/implementation",
+              "tagNumber": 1
+            }
+          },
+          "tagNumber": 1
+        },
+        "target": {
+          "type": "object",
+          "meta:xdmType": "object",
+          "properties": {
+            "implementation": {
+              "title": "Client Implementation for Adobe Target",
+              "$ref": "../../datatypes/industry-verticals/implementationdetails.schema.json",
+              "description": "Client details interacting with Adobe Target.",
+              "meta:titleId": "implementations##https://ns.adobe.com/xdm/experience/target/implementation##title##62451",
+              "meta:descriptionId": "implementations##https://ns.adobe.com/xdm/experience/target/implementation##description##58441",
+              "meta:xdmField": "https://ns.adobe.com/xdm/experience/target/implementation",
+              "tagNumber": 1
+            }
+          },
+          "tagNumber": 2
+        },
+        "idservice": {
+          "type": "object",
+          "meta:xdmType": "object",
+          "properties": {
+            "implementation": {
+              "title": "Client Implementation for Adobe Visitor Service",
+              "$ref": "../../datatypes/industry-verticals/implementationdetails.schema.json",
+              "description": "Client details interacting with Adobe Experience Cloud ID Service.",
+              "meta:titleId": "implementations##https://ns.adobe.com/experience/idservice/implementation##title##64591",
+              "meta:descriptionId": "implementations##https://ns.adobe.com/experience/idservice/implementation##description##1861",
+              "meta:xdmField": "https://ns.adobe.com/experience/idservice/implementation",
+              "tagNumber": 1
+            }
+          },
+          "tagNumber": 3
+        },
+        "adcloud": {
+          "type": "object",
+          "meta:xdmType": "object",
+          "properties": {
+            "implementation": {
+              "title": "Client Implementation for Adobe Advertising Cloud",
+              "$ref": "../../datatypes/industry-verticals/implementationdetails.schema.json",
+              "description": "Client details interacting with Adobe Advertising Cloud.",
+              "meta:titleId": "implementations##https://ns.adobe.com/experience/adcloud/implementation##title##601",
+              "meta:descriptionId": "implementations##https://ns.adobe.com/experience/adcloud/implementation##description##69731",
+              "meta:xdmField": "https://ns.adobe.com/experience/adcloud/implementation",
+              "tagNumber": 1
+            }
+          },
+          "tagNumber": 4
+        }
+      },
+      "tagNumber": 1
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/experience/implementations",
+  "meta:altId": "_experience.implementations",
+  "id": "_experience.implementations"
+}
