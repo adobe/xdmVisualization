@@ -1,0 +1,35 @@
+{
+  "type": "object",
+  "meta:xdmType": "object",
+  "additionalProperties": false,
+  "properties": {
+    "medicationID": {
+      "Title": "Medication Id",
+      "type": "string",
+      "description": "Medication unique identifier.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:medicationID",
+      "tagNumber": 1
+    },
+    "medicationDate": {
+      "Title": "Medication Date",
+      "type": "string",
+      "format": "date-time",
+      "description": "Medication Date.",
+      "meta:xdmType": "date-time",
+      "meta:xdmField": "xdm:medicationDate",
+      "tagNumber": 2
+    },
+    "isCurrent": {
+      "Title": "Is Current",
+      "type": "boolean",
+      "description": "Boolean flag indicates if this medication is current or previous.",
+      "meta:xdmType": "boolean",
+      "meta:xdmField": "xdm:isCurrent",
+      "tagNumber": 3
+    }
+  },
+  "tagNumber": 1,
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "id": "obj5730548962086224.schema.json"
+}

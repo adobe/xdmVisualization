@@ -24,8 +24,6 @@
   "meta:descriptionId": "external-source-system-audit-details##description##98601",
   "properties": {
     "member": {
-      "Title": "Member",
-      "description": "Information about the member.",
       "type": "object",
       "meta:xdmType": "object",
       "properties": {
@@ -44,240 +42,279 @@
           "meta:xdmField": "xdm:name",
           "tagNumber": 2
         },
-        "addressDetails": {
-          "Title": "Address Details",
-          "type": "array",
-          "meta:xdmType": "array",
-          "meta:xdmField": "xdm:addressDetails",
-          "tagNumber": 3,
-          "items": {
-            "$ref": "obj9779766882517178.schema.json"
-          }
-        },
-        "birthDate": {
-          "title": "Birth date(YYYY-MM-DD)",
-          "type": "string",
-          "format": "date",
-          "description": "Date of birth of the patient/member.",
-          "meta:xdmType": "date",
-          "meta:xdmField": "xdm:birthDate",
-          "tagNumber": 4
-        },
-        "gender": {
-          "title": "Gender",
-          "type": "string",
-          "enum": [
-            "male",
-            "female",
-            "not_specified",
-            "non_specific"
-          ],
-          "description": "Gender of the patient/member.",
-          "default": "not_specified",
-          "meta:xdmType": "string",
-          "meta:xdmField": "xdm:gender",
-          "tagNumber": 5
-        },
-        "maritalStatus": {
-          "title": "Marital Status",
-          "type": "string",
-          "enum": [
-            "married",
-            "single",
-            "divorced",
-            "widowed",
-            "not_specified"
-          ],
-          "description": "Describes a person's relationship with a significant other.",
-          "default": "not_specified",
-          "meta:xdmType": "string",
-          "meta:xdmField": "xdm:maritalStatus",
-          "tagNumber": 6
-        },
-        "nationality": {
-          "title": "Nationality",
-          "type": "string",
-          "pattern": "^[A-Z]{2}$",
-          "description": "The legal relationship between a patient/member and their state represented using the ISO 3166-1 Alpha-2 code.",
-          "meta:xdmType": "string",
-          "meta:xdmField": "xdm:nationality",
-          "tagNumber": 7
-        },
-        "dateAgeCollected": {
-          "Title": "Date Age Collected",
-          "type": "string",
-          "format": "date-time",
-          "description": "The date the patient age was collected.",
-          "meta:xdmType": "date-time",
-          "meta:xdmField": "xdm:dateAgeCollected",
-          "tagNumber": 8
-        },
-        "multipleBirth": {
+        "memberAddress": {
           "type": "object",
           "meta:xdmType": "object",
           "properties": {
-            "isMultipleBirth ": {
-              "Title": "Is Multiple Birth",
-              "type": "boolean",
-              "description": "Boolean flag to indicate if the member had a multiple birth.",
-              "meta:xdmType": "boolean",
-              "meta:xdmField": "xdm:isMultipleBirth ",
-              "tagNumber": 1
-            },
-            "multipleBirthNumber": {
-              "Title": "Multiple Birth Number",
-              "type": "integer",
-              "description": "Number of babies born if multiple birth is true.",
-              "meta:xdmType": "int",
-              "meta:xdmField": "xdm:multipleBirthNumber",
-              "tagNumber": 2
-            }
-          },
-          "meta:xdmField": "xdm:multipleBirth",
-          "tagNumber": 9
-        },
-        "emailAddress": {
-          "Title": "Email Address",
-          "type": "array",
-          "meta:xdmType": "array",
-          "items": {
-            "$ref": "../../datatypes/demographic/emailaddress.schema.json",
-            "tagNumber": 1
-          },
-          "meta:xdmField": "xdm:emailAddress",
-          "tagNumber": 10
-        },
-        "organization": {
-          "Title": "Organization",
-          "$ref": "../../datatypes/b2b/account-organization.schema.json",
-          "meta:xdmField": "xdm:organization",
-          "tagNumber": 11
-        },
-        "primaryCarePhysicians": {
-          "type": "array",
-          "meta:xdmType": "array",
-          "meta:xdmField": "xdm:primaryCarePhysicians",
-          "tagNumber": 12,
-          "items": {
-            "$ref": "obj5518434008212159.schema.json"
-          }
-        },
-        "emergencyContact": {
-          "Title": "Emergency Contact",
-          "description": "Emergency contact details.",
-          "type": "object",
-          "meta:xdmType": "object",
-          "properties": {
-            "fullName": {
-              "Title": "Full Name",
+            "addressType": {
+              "Title": "Member Address type",
               "type": "string",
-              "description": "Full name of the emergency contact.",
+              "enum": [
+                "Home",
+                "Work",
+                "Mailing",
+                "Other"
+              ],
               "meta:xdmType": "string",
-              "meta:xdmField": "xdm:fullName",
+              "meta:xdmField": "xdm:addressType",
               "tagNumber": 1
             },
-            "phone": {
+            "address": {
+              "Title": "Member Address",
+              "$ref": "../../datatypes/demographic/address.schema.json",
+              "meta:xdmField": "xdm:address",
+              "tagNumber": 2
+            },
+            "effectiveStartDate": {
+              "Title": "Effective Start Date",
+              "type": "string",
+              "format": "date-time",
+              "description": "Address start date.",
+              "meta:xdmType": "date-time",
+              "meta:xdmField": "xdm:effectiveStartDate",
+              "tagNumber": 3
+            },
+            "efectiveEndDate": {
+              "Title": "Effective End Date",
+              "type": "string",
+              "format": "date-time",
+              "description": "Address end date.",
+              "meta:xdmType": "date-time",
+              "meta:xdmField": "xdm:efectiveEndDate",
+              "tagNumber": 4
+            },
+            "xdm:phoneNumber": {
               "Title": "Phone Number",
-              "type": "string",
-              "description": "Phone number of the emergency contact.",
-              "meta:xdmType": "string",
-              "meta:xdmField": "xdm:phone",
-              "tagNumber": 2
+              "description": "Member's phone number.",
+              "$ref": "../../datatypes/demographic/phonenumber.schema.json",
+              "tagNumber": 5
+            },
+            "xdm:memberDetails": {
+              "Title": "Member Details",
+              "description": "Member's additional details.",
+              "type": "object",
+              "properties": {
+                "birthDate": {
+                  "title": "Birth date(YYYY-MM-DD)",
+                  "type": "string",
+                  "format": "date",
+                  "description": "The full date a person was born.",
+                  "meta:xdmType": "date",
+                  "meta:xdmField": "xdm:birthDate",
+                  "tagNumber": 1
+                },
+                "gender": {
+                  "title": "Gender",
+                  "type": "string",
+                  "enum": [
+                    "male",
+                    "female",
+                    "not_specified",
+                    "non_specific"
+                  ],
+                  "description": "Gender identity of the person.\n",
+                  "default": "not_specified",
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:gender",
+                  "tagNumber": 2
+                },
+                "maritalStatus": {
+                  "title": "Marital Status",
+                  "type": "string",
+                  "enum": [
+                    "married",
+                    "single",
+                    "divorced",
+                    "widowed",
+                    "not_specified"
+                  ],
+                  "description": "Describes a person's relationship with a significant other.",
+                  "default": "not_specified",
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:maritalStatus",
+                  "tagNumber": 3
+                },
+                "nationality": {
+                  "title": "Nationality",
+                  "type": "string",
+                  "pattern": "^[A-Z]{2}$",
+                  "description": "The legal relationship between a person and their state represented using the ISO 3166-1 Alpha-2 code.",
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:nationality",
+                  "tagNumber": 4
+                },
+                "dateAgeCollected": {
+                  "Title": "Date Age Collected",
+                  "type": "string",
+                  "format": "date-time",
+                  "description": "Date when date of birth information collected.",
+                  "meta:xdmType": "date-time",
+                  "meta:xdmField": "xdm:dateAgeCollected",
+                  "tagNumber": 5
+                },
+                "multipleBirth": {
+                  "type": "object",
+                  "properties": {
+                    "isMultipleBirth ": {
+                      "Title": "Is Multiple Birth",
+                      "type": "boolean",
+                      "description": "Boolean flag to indicate if the member had a multiple birth.",
+                      "meta:xdmType": "boolean",
+                      "meta:xdmField": "xdm:isMultipleBirth ",
+                      "tagNumber": 1
+                    },
+                    "multipleBirthNumber": {
+                      "Title": "Multiple Birth Number",
+                      "type": "integer",
+                      "description": "Number of babies born if multiple birth is true.",
+                      "meta:xdmType": "int",
+                      "meta:xdmField": "xdm:multipleBirthNumber",
+                      "tagNumber": 2
+                    }
+                  },
+                  "meta:xdmType": "object",
+                  "meta:xdmField": "xdm:multipleBirth",
+                  "tagNumber": 6
+                }
+              },
+              "meta:xdmType": "object",
+              "tagNumber": 6
+            },
+            "xdm:emailAddress": {
+              "Title": "Email Address",
+              "$ref": "../../datatypes/demographic/emailaddress.schema.json",
+              "tagNumber": 7
+            },
+            "xdm:memberOrganization": {
+              "Title": "Member Organization",
+              "$ref": "../../datatypes/b2b/account-organization.schema.json",
+              "tagNumber": 8
             }
           },
-          "meta:xdmField": "xdm:emergencyContact",
-          "tagNumber": 13
-        },
-        "preferredAvaiability": {
-          "Title": "Preferred Availability",
-          "type": "string",
-          "description": "Patient prefered day and time availability for an appointment.",
-          "meta:xdmType": "string",
-          "meta:xdmField": "xdm:preferredAvaiability",
-          "tagNumber": 14
-        },
-        "medications": {
-          "Title": "Medications",
-          "description": "Medication information including ID, start date, and active flag.",
-          "type": "array",
-          "meta:xdmType": "array",
-          "meta:xdmField": "xdm:medications",
-          "tagNumber": 15,
-          "items": {
-            "$ref": "obj4032938555597685.schema.json"
-          }
-        },
-        "isDependent": {
-          "Title": "Is Dependent",
-          "type": "boolean",
-          "description": "Indicates whether this member is a dependent.",
-          "meta:xdmType": "boolean",
-          "meta:xdmField": "xdm:isDependent",
-          "tagNumber": 16
-        },
-        "primaryMemberID": {
-          "Title": "Primary Member ID",
-          "type": "string",
-          "description": "Unique Identifier of the primary subscriber if the member is dependent.",
-          "meta:xdmType": "string",
-          "meta:xdmField": "xdm:primaryMemberID",
-          "tagNumber": 17
-        },
-        "beneficiaryRelationship": {
-          "Title": "Beneficiary Relationship",
-          "type": "string",
-          "description": "Beneficiary relationship to the subscriber if the member is a dependent (self, spouse, child, etc).",
-          "meta:xdmType": "string",
-          "meta:xdmField": "xdm:beneficiaryRelationship",
-          "tagNumber": 18
-        },
-        "billingAccountID": {
-          "Title": "Billing Account ID",
-          "type": "string",
-          "description": "Unique Identifier of the billing account.",
-          "meta:xdmType": "string",
-          "meta:xdmField": "xdm:billingAccountID",
-          "tagNumber": 19
-        },
-        "specialists": {
-          "Title": "Specialist",
-          "type": "array",
-          "meta:xdmType": "array",
-          "meta:xdmField": "xdm:specialists",
-          "tagNumber": 20,
-          "items": {
-            "$ref": "obj6716596193333004.schema.json"
-          }
-        },
-        "isLead": {
-          "Title": "Is Lead",
-          "type": "boolean",
-          "description": "Boolean flag indicates if this member is a lead.",
-          "meta:xdmType": "boolean",
-          "meta:xdmField": "xdm:isLead",
-          "tagNumber": 21
-        },
-        "isOpportunity": {
-          "Title": "Is Opportunity",
-          "type": "boolean",
-          "description": "Boolean flag indicates if this this member is a opportunity.",
-          "meta:xdmType": "boolean",
-          "meta:xdmField": "xdm:isOpportunity",
-          "tagNumber": 22
-        },
-        "plans": {
-          "Title": "Member Plan",
-          "type": "array",
-          "meta:xdmType": "array",
-          "meta:xdmField": "xdm:plans",
-          "tagNumber": 23,
-          "items": {
-            "$ref": "obj30208617523435.schema.json"
-          }
+          "meta:xdmField": "xdm:memberAddress",
+          "tagNumber": 3
         }
       },
       "meta:xdmField": "xdm:member",
       "tagNumber": 1
+    },
+    "primaryCarePhysician ": {
+      "type": "array",
+      "meta:xdmType": "array",
+      "meta:xdmField": "xdm:primaryCarePhysician ",
+      "tagNumber": 2,
+      "items": {
+        "$ref": "obj5936168656599874.schema.json"
+      }
+    },
+    "emergencyContact": {
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "name": {
+          "Title": "Emergency Contact Name",
+          "type": "string",
+          "description": "Emergency contact name.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:name",
+          "tagNumber": 1
+        },
+        "contactPhone": {
+          "Title": "Emergency Contact Phone",
+          "type": "string",
+          "description": "Emergency contact phone number.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:contactPhone",
+          "tagNumber": 2
+        }
+      },
+      "meta:xdmField": "xdm:emergencyContact",
+      "tagNumber": 3
+    },
+    "prefferedAvaiability": {
+      "Title": "Preffered Availability",
+      "type": "string",
+      "description": "Patient prefered day and time avaiability for an appointment.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:prefferedAvaiability",
+      "tagNumber": 4
+    },
+    "Medication": {
+      "type": "array",
+      "meta:xdmType": "array",
+      "meta:xdmField": "xdm:Medication",
+      "tagNumber": 5,
+      "items": {
+        "$ref": "obj402876303886901.schema.json"
+      }
+    },
+    "dependent": {
+      "Title": "Dependent",
+      "type": "integer",
+      "description": "number issued to each beneficiary.",
+      "meta:xdmType": "int",
+      "meta:xdmField": "xdm:dependent",
+      "tagNumber": 6
+    },
+    "beneficiaryRelationship": {
+      "Title": "Beneficiary Relationship",
+      "type": "string",
+      "description": "Beneficiary relationship to the Subscriber if the member is a dependent(self,spouse,child..etc).",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:beneficiaryRelationship",
+      "tagNumber": 7
+    },
+    "primaryMemeberID": {
+      "Title": "Primary Member ID",
+      "type": "string",
+      "description": "Unique Identifier of the primary subscriber if the member is dependent.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:primaryMemeberID",
+      "tagNumber": 8
+    },
+    "billingAccountID": {
+      "Title": "Billing Account ID",
+      "type": "string",
+      "description": "Unique Identifier of the billing account.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:billingAccountID",
+      "tagNumber": 9
+    },
+    "specialist": {
+      "Title": "Specialist",
+      "type": "array",
+      "meta:xdmType": "array",
+      "meta:xdmField": "xdm:specialist",
+      "tagNumber": 10,
+      "items": {
+        "$ref": "obj3931534981537508.schema.json"
+      }
+    },
+    "isLead": {
+      "Title": "Is Lead",
+      "type": "boolean",
+      "description": "Boolean flag indicates if this member is a lead.",
+      "meta:xdmType": "boolean",
+      "meta:xdmField": "xdm:isLead",
+      "tagNumber": 11
+    },
+    "isOpportunity": {
+      "Title": "Is Opportunity",
+      "type": "boolean",
+      "description": "Boolean flag indicates if this this member is a opportunity.",
+      "meta:xdmType": "boolean",
+      "meta:xdmField": "xdm:isOpportunity",
+      "tagNumber": 12
+    },
+    "plan": {
+      "Title": "Member Plan",
+      "type": "array",
+      "meta:xdmType": "array",
+      "meta:xdmField": "xdm:plan",
+      "tagNumber": 13,
+      "items": {
+        "$ref": "obj375210569957964.schema.json"
+      }
     },
     "extSourceSystemAudit": {
       "title": "External Source System Audit Properties",
@@ -286,7 +323,7 @@
       "meta:titleId": "external-source-system-audit-details##xdm:extSourceSystemAudit##title##88841",
       "meta:descriptionId": "external-source-system-audit-details##xdm:extSourceSystemAudit##description##28131",
       "meta:xdmField": "xdm:extSourceSystemAudit",
-      "tagNumber": 2
+      "tagNumber": 14
     }
   },
   "meta:xdmId": "https://ns.adobe.com/xdm/mixins/healthcare-member",

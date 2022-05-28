@@ -284,7 +284,7 @@
       "meta:xdmField": "xdm:personComponents",
       "tagNumber": 12,
       "items": {
-        "$ref": "obj4215246386563234.schema.json"
+        "$ref": "obj757761533295912.schema.json"
       }
     },
     "b2b": {
@@ -721,8 +721,6 @@
       "tagNumber": 28
     },
     "member": {
-      "Title": "Member",
-      "description": "Information about the member.",
       "type": "object",
       "meta:xdmType": "object",
       "properties": {
@@ -741,247 +739,286 @@
           "meta:xdmField": "xdm:name",
           "tagNumber": 2
         },
-        "addressDetails": {
-          "Title": "Address Details",
-          "type": "array",
-          "meta:xdmType": "array",
-          "meta:xdmField": "xdm:addressDetails",
-          "tagNumber": 3,
-          "items": {
-            "$ref": "obj21008604707548484.schema.json"
-          }
-        },
-        "birthDate": {
-          "title": "Birth date(YYYY-MM-DD)",
-          "type": "string",
-          "format": "date",
-          "description": "Date of birth of the patient/member.",
-          "meta:xdmType": "date",
-          "meta:xdmField": "xdm:birthDate",
-          "tagNumber": 4
-        },
-        "gender": {
-          "title": "Gender",
-          "type": "string",
-          "enum": [
-            "male",
-            "female",
-            "not_specified",
-            "non_specific"
-          ],
-          "description": "Gender of the patient/member.",
-          "default": "not_specified",
-          "meta:xdmType": "string",
-          "meta:xdmField": "xdm:gender",
-          "tagNumber": 5
-        },
-        "maritalStatus": {
-          "title": "Marital Status",
-          "type": "string",
-          "enum": [
-            "married",
-            "single",
-            "divorced",
-            "widowed",
-            "not_specified"
-          ],
-          "description": "Describes a person's relationship with a significant other.",
-          "default": "not_specified",
-          "meta:xdmType": "string",
-          "meta:xdmField": "xdm:maritalStatus",
-          "tagNumber": 6
-        },
-        "nationality": {
-          "title": "Nationality",
-          "type": "string",
-          "pattern": "^[A-Z]{2}$",
-          "description": "The legal relationship between a patient/member and their state represented using the ISO 3166-1 Alpha-2 code.",
-          "meta:xdmType": "string",
-          "meta:xdmField": "xdm:nationality",
-          "tagNumber": 7
-        },
-        "dateAgeCollected": {
-          "Title": "Date Age Collected",
-          "type": "string",
-          "format": "date-time",
-          "description": "The date the patient age was collected.",
-          "meta:xdmType": "date-time",
-          "meta:xdmField": "xdm:dateAgeCollected",
-          "tagNumber": 8
-        },
-        "multipleBirth": {
+        "memberAddress": {
           "type": "object",
           "meta:xdmType": "object",
           "properties": {
-            "isMultipleBirth ": {
-              "Title": "Is Multiple Birth",
-              "type": "boolean",
-              "description": "Boolean flag to indicate if the member had a multiple birth.",
-              "meta:xdmType": "boolean",
-              "meta:xdmField": "xdm:isMultipleBirth ",
-              "tagNumber": 1
-            },
-            "multipleBirthNumber": {
-              "Title": "Multiple Birth Number",
-              "type": "integer",
-              "description": "Number of babies born if multiple birth is true.",
-              "meta:xdmType": "int",
-              "meta:xdmField": "xdm:multipleBirthNumber",
-              "tagNumber": 2
-            }
-          },
-          "meta:xdmField": "xdm:multipleBirth",
-          "tagNumber": 9
-        },
-        "emailAddress": {
-          "Title": "Email Address",
-          "type": "array",
-          "meta:xdmType": "array",
-          "items": {
-            "$ref": "../datatypes/demographic/emailaddress.schema.json",
-            "tagNumber": 1
-          },
-          "meta:xdmField": "xdm:emailAddress",
-          "tagNumber": 10
-        },
-        "organization": {
-          "Title": "Organization",
-          "$ref": "../datatypes/b2b/account-organization.schema.json",
-          "meta:xdmField": "xdm:organization",
-          "tagNumber": 11
-        },
-        "primaryCarePhysicians": {
-          "type": "array",
-          "meta:xdmType": "array",
-          "meta:xdmField": "xdm:primaryCarePhysicians",
-          "tagNumber": 12,
-          "items": {
-            "$ref": "obj22705011267476571.schema.json"
-          }
-        },
-        "emergencyContact": {
-          "Title": "Emergency Contact",
-          "description": "Emergency contact details.",
-          "type": "object",
-          "meta:xdmType": "object",
-          "properties": {
-            "fullName": {
-              "Title": "Full Name",
+            "addressType": {
+              "Title": "Member Address type",
               "type": "string",
-              "description": "Full name of the emergency contact.",
+              "enum": [
+                "Home",
+                "Work",
+                "Mailing",
+                "Other"
+              ],
               "meta:xdmType": "string",
-              "meta:xdmField": "xdm:fullName",
+              "meta:xdmField": "xdm:addressType",
               "tagNumber": 1
             },
-            "phone": {
+            "address": {
+              "Title": "Member Address",
+              "$ref": "../datatypes/demographic/address.schema.json",
+              "meta:xdmField": "xdm:address",
+              "tagNumber": 2
+            },
+            "effectiveStartDate": {
+              "Title": "Effective Start Date",
+              "type": "string",
+              "format": "date-time",
+              "description": "Address start date.",
+              "meta:xdmType": "date-time",
+              "meta:xdmField": "xdm:effectiveStartDate",
+              "tagNumber": 3
+            },
+            "efectiveEndDate": {
+              "Title": "Effective End Date",
+              "type": "string",
+              "format": "date-time",
+              "description": "Address end date.",
+              "meta:xdmType": "date-time",
+              "meta:xdmField": "xdm:efectiveEndDate",
+              "tagNumber": 4
+            },
+            "xdm:phoneNumber": {
               "Title": "Phone Number",
-              "type": "string",
-              "description": "Phone number of the emergency contact.",
-              "meta:xdmType": "string",
-              "meta:xdmField": "xdm:phone",
-              "tagNumber": 2
+              "description": "Member's phone number.",
+              "$ref": "../datatypes/demographic/phonenumber.schema.json",
+              "tagNumber": 5
+            },
+            "xdm:memberDetails": {
+              "Title": "Member Details",
+              "description": "Member's additional details.",
+              "type": "object",
+              "properties": {
+                "birthDate": {
+                  "title": "Birth date(YYYY-MM-DD)",
+                  "type": "string",
+                  "format": "date",
+                  "description": "The full date a person was born.",
+                  "meta:xdmType": "date",
+                  "meta:xdmField": "xdm:birthDate",
+                  "tagNumber": 1
+                },
+                "gender": {
+                  "title": "Gender",
+                  "type": "string",
+                  "enum": [
+                    "male",
+                    "female",
+                    "not_specified",
+                    "non_specific"
+                  ],
+                  "description": "Gender identity of the person.\n",
+                  "default": "not_specified",
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:gender",
+                  "tagNumber": 2
+                },
+                "maritalStatus": {
+                  "title": "Marital Status",
+                  "type": "string",
+                  "enum": [
+                    "married",
+                    "single",
+                    "divorced",
+                    "widowed",
+                    "not_specified"
+                  ],
+                  "description": "Describes a person's relationship with a significant other.",
+                  "default": "not_specified",
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:maritalStatus",
+                  "tagNumber": 3
+                },
+                "nationality": {
+                  "title": "Nationality",
+                  "type": "string",
+                  "pattern": "^[A-Z]{2}$",
+                  "description": "The legal relationship between a person and their state represented using the ISO 3166-1 Alpha-2 code.",
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:nationality",
+                  "tagNumber": 4
+                },
+                "dateAgeCollected": {
+                  "Title": "Date Age Collected",
+                  "type": "string",
+                  "format": "date-time",
+                  "description": "Date when date of birth information collected.",
+                  "meta:xdmType": "date-time",
+                  "meta:xdmField": "xdm:dateAgeCollected",
+                  "tagNumber": 5
+                },
+                "multipleBirth": {
+                  "type": "object",
+                  "properties": {
+                    "isMultipleBirth ": {
+                      "Title": "Is Multiple Birth",
+                      "type": "boolean",
+                      "description": "Boolean flag to indicate if the member had a multiple birth.",
+                      "meta:xdmType": "boolean",
+                      "meta:xdmField": "xdm:isMultipleBirth ",
+                      "tagNumber": 1
+                    },
+                    "multipleBirthNumber": {
+                      "Title": "Multiple Birth Number",
+                      "type": "integer",
+                      "description": "Number of babies born if multiple birth is true.",
+                      "meta:xdmType": "int",
+                      "meta:xdmField": "xdm:multipleBirthNumber",
+                      "tagNumber": 2
+                    }
+                  },
+                  "meta:xdmType": "object",
+                  "meta:xdmField": "xdm:multipleBirth",
+                  "tagNumber": 6
+                }
+              },
+              "meta:xdmType": "object",
+              "tagNumber": 6
+            },
+            "xdm:emailAddress": {
+              "Title": "Email Address",
+              "$ref": "../datatypes/demographic/emailaddress.schema.json",
+              "tagNumber": 7
+            },
+            "xdm:memberOrganization": {
+              "Title": "Member Organization",
+              "$ref": "../datatypes/b2b/account-organization.schema.json",
+              "tagNumber": 8
             }
           },
-          "meta:xdmField": "xdm:emergencyContact",
-          "tagNumber": 13
-        },
-        "preferredAvaiability": {
-          "Title": "Preferred Availability",
-          "type": "string",
-          "description": "Patient prefered day and time availability for an appointment.",
-          "meta:xdmType": "string",
-          "meta:xdmField": "xdm:preferredAvaiability",
-          "tagNumber": 14
-        },
-        "medications": {
-          "Title": "Medications",
-          "description": "Medication information including ID, start date, and active flag.",
-          "type": "array",
-          "meta:xdmType": "array",
-          "meta:xdmField": "xdm:medications",
-          "tagNumber": 15,
-          "items": {
-            "$ref": "obj6324628210838095.schema.json"
-          }
-        },
-        "isDependent": {
-          "Title": "Is Dependent",
-          "type": "boolean",
-          "description": "Indicates whether this member is a dependent.",
-          "meta:xdmType": "boolean",
-          "meta:xdmField": "xdm:isDependent",
-          "tagNumber": 16
-        },
-        "primaryMemberID": {
-          "Title": "Primary Member ID",
-          "type": "string",
-          "description": "Unique Identifier of the primary subscriber if the member is dependent.",
-          "meta:xdmType": "string",
-          "meta:xdmField": "xdm:primaryMemberID",
-          "tagNumber": 17
-        },
-        "beneficiaryRelationship": {
-          "Title": "Beneficiary Relationship",
-          "type": "string",
-          "description": "Beneficiary relationship to the subscriber if the member is a dependent (self, spouse, child, etc).",
-          "meta:xdmType": "string",
-          "meta:xdmField": "xdm:beneficiaryRelationship",
-          "tagNumber": 18
-        },
-        "billingAccountID": {
-          "Title": "Billing Account ID",
-          "type": "string",
-          "description": "Unique Identifier of the billing account.",
-          "meta:xdmType": "string",
-          "meta:xdmField": "xdm:billingAccountID",
-          "tagNumber": 19
-        },
-        "specialists": {
-          "Title": "Specialist",
-          "type": "array",
-          "meta:xdmType": "array",
-          "meta:xdmField": "xdm:specialists",
-          "tagNumber": 20,
-          "items": {
-            "$ref": "obj18325301498230684.schema.json"
-          }
-        },
-        "isLead": {
-          "Title": "Is Lead",
-          "type": "boolean",
-          "description": "Boolean flag indicates if this member is a lead.",
-          "meta:xdmType": "boolean",
-          "meta:xdmField": "xdm:isLead",
-          "tagNumber": 21
-        },
-        "isOpportunity": {
-          "Title": "Is Opportunity",
-          "type": "boolean",
-          "description": "Boolean flag indicates if this this member is a opportunity.",
-          "meta:xdmType": "boolean",
-          "meta:xdmField": "xdm:isOpportunity",
-          "tagNumber": 22
-        },
-        "plans": {
-          "Title": "Member Plan",
-          "type": "array",
-          "meta:xdmType": "array",
-          "meta:xdmField": "xdm:plans",
-          "tagNumber": 23,
-          "items": {
-            "$ref": "obj5282774009934432.schema.json"
-          }
+          "meta:xdmField": "xdm:memberAddress",
+          "tagNumber": 3
         }
       },
       "meta:xdmField": "xdm:member",
       "tagNumber": 29
+    },
+    "primaryCarePhysician ": {
+      "type": "array",
+      "meta:xdmType": "array",
+      "meta:xdmField": "xdm:primaryCarePhysician ",
+      "tagNumber": 30,
+      "items": {
+        "$ref": "obj24563982071456514.schema.json"
+      }
+    },
+    "emergencyContact": {
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "name": {
+          "Title": "Emergency Contact Name",
+          "type": "string",
+          "description": "Emergency contact name.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:name",
+          "tagNumber": 1
+        },
+        "contactPhone": {
+          "Title": "Emergency Contact Phone",
+          "type": "string",
+          "description": "Emergency contact phone number.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:contactPhone",
+          "tagNumber": 2
+        }
+      },
+      "meta:xdmField": "xdm:emergencyContact",
+      "tagNumber": 31
+    },
+    "prefferedAvaiability": {
+      "Title": "Preffered Availability",
+      "type": "string",
+      "description": "Patient prefered day and time avaiability for an appointment.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:prefferedAvaiability",
+      "tagNumber": 32
+    },
+    "Medication": {
+      "type": "array",
+      "meta:xdmType": "array",
+      "meta:xdmField": "xdm:Medication",
+      "tagNumber": 33,
+      "items": {
+        "$ref": "obj5885305896943571.schema.json"
+      }
+    },
+    "dependent": {
+      "Title": "Dependent",
+      "type": "integer",
+      "description": "number issued to each beneficiary.",
+      "meta:xdmType": "int",
+      "meta:xdmField": "xdm:dependent",
+      "tagNumber": 34
+    },
+    "beneficiaryRelationship": {
+      "Title": "Beneficiary Relationship",
+      "type": "string",
+      "description": "Beneficiary relationship to the Subscriber if the member is a dependent(self,spouse,child..etc).",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:beneficiaryRelationship",
+      "tagNumber": 35
+    },
+    "primaryMemeberID": {
+      "Title": "Primary Member ID",
+      "type": "string",
+      "description": "Unique Identifier of the primary subscriber if the member is dependent.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:primaryMemeberID",
+      "tagNumber": 36
+    },
+    "billingAccountID": {
+      "Title": "Billing Account ID",
+      "type": "string",
+      "description": "Unique Identifier of the billing account.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:billingAccountID",
+      "tagNumber": 37
+    },
+    "specialist": {
+      "Title": "Specialist",
+      "type": "array",
+      "meta:xdmType": "array",
+      "meta:xdmField": "xdm:specialist",
+      "tagNumber": 38,
+      "items": {
+        "$ref": "obj6081714872175672.schema.json"
+      }
+    },
+    "isLead": {
+      "Title": "Is Lead",
+      "type": "boolean",
+      "description": "Boolean flag indicates if this member is a lead.",
+      "meta:xdmType": "boolean",
+      "meta:xdmField": "xdm:isLead",
+      "tagNumber": 39
+    },
+    "isOpportunity": {
+      "Title": "Is Opportunity",
+      "type": "boolean",
+      "description": "Boolean flag indicates if this this member is a opportunity.",
+      "meta:xdmType": "boolean",
+      "meta:xdmField": "xdm:isOpportunity",
+      "tagNumber": 40
+    },
+    "plan": {
+      "Title": "Member Plan",
+      "type": "array",
+      "meta:xdmType": "array",
+      "meta:xdmField": "xdm:plan",
+      "tagNumber": 41,
+      "items": {
+        "$ref": "obj2561163066566259.schema.json"
+      }
     },
     "consentPoliciesIDMap": {
       "title": "consent policies map",
       "type": "object",
       "meta:xdmType": "map",
       "meta:xdmField": "xdm:consentPoliciesIDMap",
-      "tagNumber": 30,
+      "tagNumber": 42,
       "properties": {
         "mapObj": {
           "title": "consent policy id map",
@@ -2145,7 +2182,7 @@
         }
       },
       "meta:xdmField": "xdm:consents",
-      "tagNumber": 31
+      "tagNumber": 43
     },
     "directMarketingAddress": {
       "title": "Direct marketing address",
@@ -2154,7 +2191,7 @@
       "meta:titleId": "profile-directmarketing##xdm:directMarketingAddress##title##80011",
       "meta:descriptionId": "profile-directmarketing##xdm:directMarketingAddress##description##81761",
       "meta:xdmField": "xdm:directMarketingAddress",
-      "tagNumber": 32
+      "tagNumber": 44
     },
     "directMarketingEmail": {
       "title": "Direct marketing email",
@@ -2163,7 +2200,7 @@
       "meta:titleId": "profile-directmarketing##xdm:directMarketingEmail##title##5111",
       "meta:descriptionId": "profile-directmarketing##xdm:directMarketingEmail##description##75171",
       "meta:xdmField": "xdm:directMarketingEmail",
-      "tagNumber": 33
+      "tagNumber": 45
     },
     "directMarketingPhone": {
       "title": "Direct marketing phone",
@@ -2172,7 +2209,7 @@
       "meta:titleId": "profile-directmarketing##xdm:directMarketingPhone##title##53051",
       "meta:descriptionId": "profile-directmarketing##xdm:directMarketingPhone##description##72381",
       "meta:xdmField": "xdm:directMarketingPhone",
-      "tagNumber": 34
+      "tagNumber": 46
     },
     "anonymousHostname": {
       "title": "Anonymous Hostname",
@@ -2182,7 +2219,7 @@
       "meta:descriptionId": "profile-inferred-person##xdm:anonymousHostname##description##25671",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:anonymousHostname",
-      "tagNumber": 35
+      "tagNumber": 47
     },
     "inferredAddress": {
       "title": "Inferred Address",
@@ -2191,7 +2228,7 @@
       "meta:titleId": "profile-inferred-person##xdm:inferredAddress##title##51121",
       "meta:descriptionId": "profile-inferred-person##xdm:inferredAddress##description##73941",
       "meta:xdmField": "xdm:inferredAddress",
-      "tagNumber": 36
+      "tagNumber": 48
     },
     "inferredCompany": {
       "title": "Inferred Company",
@@ -2201,7 +2238,7 @@
       "meta:descriptionId": "profile-inferred-person##xdm:inferredCompany##description##40781",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:inferredCompany",
-      "tagNumber": 37
+      "tagNumber": 49
     },
     "inferredCompanyStatus": {
       "title": "Inferred Company Status",
@@ -2211,7 +2248,7 @@
       "meta:descriptionId": "profile-inferred-person##xdm:inferredCompanyStatus##description##68141",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:inferredCompanyStatus",
-      "tagNumber": 38
+      "tagNumber": 50
     },
     "inferredMetropolitanArea": {
       "title": "Inferred Metropolitan Area",
@@ -2221,7 +2258,7 @@
       "meta:descriptionId": "profile-inferred-person##xdm:inferredMetropolitanArea##description##68531",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:inferredMetropolitanArea",
-      "tagNumber": 39
+      "tagNumber": 51
     },
     "inferredPhoneAreaCode": {
       "title": "Inferred Phone Area Code",
@@ -2231,7 +2268,7 @@
       "meta:descriptionId": "profile-inferred-person##xdm:inferredPhoneAreaCode##description##93211",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:inferredPhoneAreaCode",
-      "tagNumber": 40
+      "tagNumber": 52
     },
     "loyalty": {
       "type": "object",
@@ -2283,7 +2320,7 @@
           "meta:xdmField": "xdm:pointsExpiration",
           "tagNumber": 4,
           "items": {
-            "$ref": "obj05448217883216677.schema.json"
+            "$ref": "obj7136456279856782.schema.json"
           }
         },
         "pointsRedeemed": {
@@ -2338,7 +2375,7 @@
         }
       },
       "meta:xdmField": "xdm:loyalty",
-      "tagNumber": 41
+      "tagNumber": 53
     },
     "orgUnit": {
       "title": "Organizational unit",
@@ -2347,7 +2384,7 @@
       "meta:titleId": "profile-owning-entities##xdm:orgUnit##title##20321",
       "meta:descriptionId": "profile-owning-entities##xdm:orgUnit##description##30781",
       "meta:xdmField": "xdm:orgUnit",
-      "tagNumber": 42
+      "tagNumber": 54
     },
     "geoUnit": {
       "title": "Geographical unit",
@@ -2356,7 +2393,7 @@
       "meta:titleId": "profile-owning-entities##xdm:geoUnit##title##91451",
       "meta:descriptionId": "profile-owning-entities##xdm:geoUnit##description##30521",
       "meta:xdmField": "xdm:geoUnit",
-      "tagNumber": 43
+      "tagNumber": 55
     },
     "personalFinances": {
       "type": "object",
@@ -2397,7 +2434,7 @@
           "meta:xdmField": "xdm:creditScores",
           "tagNumber": 3,
           "items": {
-            "$ref": "obj11197168677940583.schema.json"
+            "$ref": "obj8552917455484819.schema.json"
           }
         },
         "employmentStatus": {
@@ -2514,7 +2551,7 @@
         }
       },
       "meta:xdmField": "xdm:personalFinances",
-      "tagNumber": 44
+      "tagNumber": 56
     },
     "preferredLanguage": {
       "title": "Preferred language",
@@ -2530,7 +2567,7 @@
       "meta:descriptionId": "profile-preferences-details##xdm:preferredLanguage##description##20921",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:preferredLanguage",
-      "tagNumber": 45
+      "tagNumber": 57
     },
     "profilePictureLink": {
       "title": "Profile picture link",
@@ -2540,7 +2577,7 @@
       "meta:descriptionId": "profile-preferences-details##xdm:profilePictureLink##description##42051",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:profilePictureLink",
-      "tagNumber": 46
+      "tagNumber": 58
     },
     "emailFormat": {
       "title": "Email format",
@@ -2550,7 +2587,7 @@
       "meta:descriptionId": "profile-preferences-details##xdm:emailFormat##description##4401",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:emailFormat",
-      "tagNumber": 47
+      "tagNumber": 59
     },
     "timeZone": {
       "title": "Time zone",
@@ -2565,7 +2602,7 @@
       "meta:descriptionId": "profile-preferences-details##xdm:timeZone##description##30991",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:timeZone",
-      "tagNumber": 48
+      "tagNumber": 60
     },
     "identityPrivacyInfo": {
       "title": "Identity level privacy information",
@@ -2575,7 +2612,7 @@
       "meta:titleId": "profile-privacy##xdm:identityPrivacyInfo##title##16881",
       "meta:descriptionId": "profile-privacy##xdm:identityPrivacyInfo##description##50281",
       "meta:xdmField": "xdm:identityPrivacyInfo",
-      "tagNumber": 51,
+      "tagNumber": 63,
       "properties": {
         "mapObj": {
           "title": "User namespace",
@@ -2644,7 +2681,7 @@
         "tagNumber": 1
       },
       "meta:xdmField": "xdm:pushNotificationTokens",
-      "tagNumber": 52
+      "tagNumber": 64
     },
     "pushNotificationDetails": {
       "title": "Push details",
@@ -2654,9 +2691,9 @@
       "meta:descriptionId": "profile-push-notification-details##xdm:pushNotificationDetails##description##88351",
       "meta:xdmType": "array",
       "meta:xdmField": "xdm:pushNotificationDetails",
-      "tagNumber": 53,
+      "tagNumber": 65,
       "items": {
-        "$ref": "obj6869859390551603.schema.json"
+        "$ref": "obj8365604553509476.schema.json"
       }
     },
     "emailResponse": {
@@ -2691,7 +2728,7 @@
         }
       },
       "meta:xdmField": "xdm:emailResponse",
-      "tagNumber": 54
+      "tagNumber": 66
     },
     "segmentMembership": {
       "title": "Segment membership map",
@@ -2699,7 +2736,7 @@
       "meta:xdmType": "map",
       "meta:titleId": "profile-segmentation##xdm:segmentMembership##title##24061",
       "meta:xdmField": "xdm:segmentMembership",
-      "tagNumber": 56,
+      "tagNumber": 68,
       "properties": {
         "mapObj": {
           "title": "Segment membership per namespace",
@@ -2722,7 +2759,7 @@
       "description": "Source system name where the profile fragment is ingested from.",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:sourceSystemName",
-      "tagNumber": 57
+      "tagNumber": 69
     },
     "recordTypeID": {
       "title": "Record type ID",
@@ -2730,7 +2767,7 @@
       "description": "Record type identifier.",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:recordTypeID",
-      "tagNumber": 58
+      "tagNumber": 70
     },
     "recordStatus": {
       "title": "Record Status",
@@ -2738,7 +2775,7 @@
       "description": "Record status.",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:recordStatus",
-      "tagNumber": 59
+      "tagNumber": 71
     },
     "recordSource": {
       "title": "Record Source`",
@@ -2746,7 +2783,7 @@
       "description": "Record source.",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:recordSource",
-      "tagNumber": 60
+      "tagNumber": 72
     },
     "subscriptions": {
       "title": "Subscriptions",
@@ -2760,7 +2797,7 @@
         "tagNumber": 1
       },
       "meta:xdmField": "xdm:subscriptions",
-      "tagNumber": 61
+      "tagNumber": 73
     },
     "telecomSubscription": {
       "type": "object",
@@ -2803,7 +2840,7 @@
           "meta:xdmField": "xdm:internetSubscription",
           "tagNumber": 4,
           "items": {
-            "$ref": "obj9392729117535854.schema.json"
+            "$ref": "obj21852853669735595.schema.json"
           }
         },
         "landlineSubscription": {
@@ -2814,7 +2851,7 @@
           "meta:xdmField": "xdm:landlineSubscription",
           "tagNumber": 5,
           "items": {
-            "$ref": "obj38918641025503864.schema.json"
+            "$ref": "obj8332098967309884.schema.json"
           }
         },
         "mediaSubscription": {
@@ -2825,7 +2862,7 @@
           "meta:xdmField": "xdm:mediaSubscription",
           "tagNumber": 6,
           "items": {
-            "$ref": "obj8230337159125871.schema.json"
+            "$ref": "obj07135340294912917.schema.json"
           }
         },
         "mobileSubscription": {
@@ -2836,12 +2873,12 @@
           "meta:xdmField": "xdm:mobileSubscription",
           "tagNumber": 7,
           "items": {
-            "$ref": "obj14576344954169018.schema.json"
+            "$ref": "obj07628565876407167.schema.json"
           }
         }
       },
       "meta:xdmField": "xdm:telecomSubscription",
-      "tagNumber": 62
+      "tagNumber": 74
     },
     "testProfile": {
       "title": "Test profile",
@@ -2852,7 +2889,7 @@
       "meta:descriptionId": "profile-test-profile##xdm:testProfile##description##82691",
       "meta:xdmType": "boolean",
       "meta:xdmField": "xdm:testProfile",
-      "tagNumber": 63
+      "tagNumber": 75
     },
     "travelPreferences": {
       "type": "object",
@@ -3215,7 +3252,7 @@
         }
       },
       "meta:xdmField": "xdm:travelPreferences",
-      "tagNumber": 64
+      "tagNumber": 76
     },
     "userAccount": {
       "type": "object",
@@ -3316,7 +3353,7 @@
         }
       },
       "meta:xdmField": "xdm:userAccount",
-      "tagNumber": 65
+      "tagNumber": 77
     }
   },
   "meta:xdmId": "https://ns.adobe.com/xdm/context/profile-generated",
