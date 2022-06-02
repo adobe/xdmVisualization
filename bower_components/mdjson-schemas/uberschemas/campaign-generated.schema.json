@@ -110,7 +110,7 @@
       "meta:xdmField": "xdm:campaignComponents",
       "tagNumber": 8,
       "items": {
-        "$ref": "obj3806475694301039.schema.json"
+        "$ref": "obj4230389128343919.schema.json"
       }
     },
     "parentCampaignID": {
@@ -324,13 +324,29 @@
       "meta:xdmField": "xdm:actualCost",
       "tagNumber": 29
     },
+    "b2b": {
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "personType": {
+          "title": "Person Type",
+          "description": "Use this property to map this campaign to the respective measure, eg. Marketo Measure.",
+          "type": "string",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:personType",
+          "tagNumber": 1
+        }
+      },
+      "meta:xdmField": "xdm:b2b",
+      "tagNumber": 30
+    },
     "isDeleted": {
       "title": "Soft Delete Flag",
       "description": "Soft delete flag to indicate if the record is marked for deletion.",
       "type": "boolean",
       "meta:xdmType": "boolean",
       "meta:xdmField": "xdm:isDeleted",
-      "tagNumber": 30
+      "tagNumber": 31
     }
   },
   "meta:xdmId": "https://ns.adobe.com/xdm/classes/campaign-generated",

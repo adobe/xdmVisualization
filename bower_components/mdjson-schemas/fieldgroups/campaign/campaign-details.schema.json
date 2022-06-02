@@ -227,13 +227,29 @@
       "meta:xdmField": "xdm:actualCost",
       "tagNumber": 21
     },
+    "b2b": {
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "personType": {
+          "title": "Person Type",
+          "description": "Use this property to map this campaign to the respective measure, eg. Marketo Measure.",
+          "type": "string",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:personType",
+          "tagNumber": 1
+        }
+      },
+      "meta:xdmField": "xdm:b2b",
+      "tagNumber": 22
+    },
     "isDeleted": {
       "title": "Soft Delete Flag",
       "description": "Soft delete flag to indicate if the record is marked for deletion.",
       "type": "boolean",
       "meta:xdmType": "boolean",
       "meta:xdmField": "xdm:isDeleted",
-      "tagNumber": 22
+      "tagNumber": 23
     }
   },
   "meta:xdmId": "https://ns.adobe.com/xdm/mixins/campaign-details",
