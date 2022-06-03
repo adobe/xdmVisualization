@@ -1,0 +1,39 @@
+{
+  "type": "object",
+  "meta:xdmType": "object",
+  "properties": {
+    "attributeName": {
+      "title": "Attribute Name",
+      "type": "string",
+      "description": "Attribute that was updated",
+      "meta:titleId": "opportunityupdated##xdm:attributeName##title##29981",
+      "meta:descriptionId": "opportunityupdated##xdm:attributeName##description##10351",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:attributeName",
+      "tagNumber": 1
+    },
+    "newValue": {
+      "title": "New Value",
+      "type": "string",
+      "description": "New value of updated attribute",
+      "meta:titleId": "opportunityupdated##xdm:newValue##title##33091",
+      "meta:descriptionId": "opportunityupdated##xdm:newValue##description##12741",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:newValue",
+      "tagNumber": 2
+    },
+    "oldValue": {
+      "title": "Old Value",
+      "type": "string",
+      "description": "Previous value of updated attribute",
+      "meta:titleId": "opportunityupdated##xdm:oldValue##title##22671",
+      "meta:descriptionId": "opportunityupdated##xdm:oldValue##description##25241",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:oldValue",
+      "tagNumber": 3
+    }
+  },
+  "tagNumber": 1,
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "id": "obj11049923208658297.schema.json"
+}
