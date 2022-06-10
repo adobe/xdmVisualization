@@ -18,7 +18,7 @@
   "meta:xdmType": "object",
   "properties": {
     "homeAddress": {
-      "title": "Home address",
+      "title": "Home Address",
       "$ref": "../../datatypes/demographic/address.schema.json",
       "description": "A home postal address.",
       "meta:titleId": "profile-personal-details##xdm:homeAddress##title##98571",
@@ -27,7 +27,7 @@
       "tagNumber": 1
     },
     "personalEmail": {
-      "title": "Personal email",
+      "title": "Personal Email",
       "$ref": "../../datatypes/demographic/emailaddress.schema.json",
       "description": "A personal email address.",
       "meta:titleId": "profile-personal-details##xdm:personalEmail##title##13501",
@@ -36,7 +36,7 @@
       "tagNumber": 2
     },
     "homePhone": {
-      "title": "Home phone",
+      "title": "Home Phone",
       "$ref": "../../datatypes/demographic/phonenumber.schema.json",
       "description": "Home phone number.",
       "meta:titleId": "profile-personal-details##xdm:homePhone##title##28261",
@@ -45,7 +45,7 @@
       "tagNumber": 3
     },
     "mobilePhone": {
-      "title": "Mobile phone",
+      "title": "Mobile Phone",
       "$ref": "../../datatypes/demographic/phonenumber.schema.json",
       "description": "Mobile phone number.",
       "meta:titleId": "profile-personal-details##xdm:mobilePhone##title##76241",
@@ -54,13 +54,34 @@
       "tagNumber": 4
     },
     "faxPhone": {
-      "title": "Fax phone",
+      "title": "Fax Phone",
       "$ref": "../../datatypes/demographic/phonenumber.schema.json",
       "description": "Fax phone number.",
       "meta:titleId": "profile-personal-details##xdm:faxPhone##title##15761",
       "meta:descriptionId": "profile-personal-details##xdm:faxPhone##description##5951",
       "meta:xdmField": "xdm:faxPhone",
       "tagNumber": 5
+    },
+    "shippingAddress": {
+      "title": "Shipping Address",
+      "$ref": "../../datatypes/demographic/address.schema.json",
+      "description": "Shipping postal address.",
+      "meta:xdmField": "xdm:shippingAddress",
+      "tagNumber": 6
+    },
+    "billingAddress": {
+      "title": "Billing Address",
+      "$ref": "../../datatypes/demographic/address.schema.json",
+      "description": "Billing postal address.",
+      "meta:xdmField": "xdm:billingAddress",
+      "tagNumber": 7
+    },
+    "mailingAddress": {
+      "title": "Mailing Address",
+      "$ref": "../../datatypes/demographic/address.schema.json",
+      "description": "Mailing postal address.",
+      "meta:xdmField": "xdm:mailingAddress",
+      "tagNumber": 8
     }
   },
   "meta:xdmId": "https://ns.adobe.com/xdm/context/profile-personal-details",

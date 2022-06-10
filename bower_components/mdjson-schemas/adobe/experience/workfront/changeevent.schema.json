@@ -103,11 +103,6 @@
           "title": "Object Type",
           "description": "The type of object",
           "type": "string",
-          "enum": [
-            "TASK",
-            "PROJECT",
-            "ISSUE"
-          ],
           "meta:xdmType": "string",
           "meta:xdmField": "workfront:objectType",
           "tagNumber": 7
@@ -142,6 +137,23 @@
               "tagNumber": 1
             }
           }
+        },
+        "creationDate": {
+          "title": "Creation Date",
+          "description": "The entry date from the source system",
+          "type": "string",
+          "format": "date-time",
+          "meta:xdmType": "date-time",
+          "meta:xdmField": "workfront:creationDate",
+          "tagNumber": 11
+        },
+        "createdByEmployeeID": {
+          "title": "Created By ID",
+          "type": "string",
+          "description": "The employeeID involved in the CREATE event",
+          "meta:xdmType": "string",
+          "meta:xdmField": "workfront:createdByEmployeeID",
+          "tagNumber": 12
         }
       },
       "tagNumber": 4

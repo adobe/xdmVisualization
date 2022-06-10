@@ -1,0 +1,129 @@
+{
+  "id": "_xdm.mixins.healthcare-plan-details",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Healthcare Plan Details",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:tags": {
+    "industry": [
+      "healthcare_services"
+    ]
+  },
+  "description": "Patient medical plan details such as network, type, and active status.",
+  "meta:status": "experimental",
+  "meta:xdmType": "object",
+  "properties": {
+    "healthcarePlanDetails": {
+      "title": "Healthcare Plan Details",
+      "description": "Information about the healthcare plan.",
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "payerID": {
+          "title": "Payer ID",
+          "type": "string",
+          "description": "Unique identifier of the payer. This is the insurance provider of the plan.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:payerID",
+          "tagNumber": 1
+        },
+        "targetOwnerType": {
+          "title": "Target Owner Type",
+          "type": "string",
+          "description": "The type of owner a plan is for. Examples are individual, group, organization etc.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:targetOwnerType",
+          "tagNumber": 2
+        },
+        "isActive": {
+          "title": "Is Active",
+          "type": "boolean",
+          "description": "Indicates whether the plan is active.",
+          "meta:xdmType": "boolean",
+          "meta:xdmField": "xdm:isActive",
+          "tagNumber": 3
+        },
+        "networkDetails": {
+          "type": "array",
+          "title": "Network Details",
+          "meta:xdmType": "array",
+          "meta:xdmField": "xdm:networkDetails",
+          "tagNumber": 4,
+          "items": {
+            "$ref": "obj9490093592944928.schema.json"
+          }
+        },
+        "affiliations": {
+          "type": "array",
+          "title": "Affiliations",
+          "meta:xdmType": "array",
+          "items": {
+            "type": "string",
+            "meta:xdmType": "string",
+            "tagNumber": 1
+          },
+          "meta:xdmField": "xdm:affiliations",
+          "tagNumber": 5
+        },
+        "planType": {
+          "title": "Plan Type",
+          "type": "string",
+          "enum": [
+            "hmo",
+            "ppo",
+            "epo",
+            "pos",
+            "hdhp"
+          ],
+          "description": "This indicates if the plan is primary,secondary or tertiary plan.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:planType",
+          "tagNumber": 6
+        },
+        "planLevel": {
+          "title": "Plan Level",
+          "type": "string",
+          "enum": [
+            "primary",
+            "secondary",
+            "tertiary",
+            "quaternary"
+          ],
+          "description": "This indicates if the plan is primary, secondary, tertiary etc.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:planLevel",
+          "tagNumber": 7
+        },
+        "coverageType": {
+          "title": "Coverage Type",
+          "type": "string",
+          "enum": [
+            "medical",
+            "dental",
+            "vision",
+            "accident"
+          ],
+          "description": "Plan coverage type.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:coverageType",
+          "tagNumber": 8
+        },
+        "lastVerificationDate": {
+          "title": "Last Verification Date",
+          "type": "string",
+          "format": "date-time",
+          "description": "The date on which the plan was last verified.",
+          "meta:xdmType": "date-time",
+          "meta:xdmField": "xdm:lastVerificationDate",
+          "tagNumber": 9
+        }
+      },
+      "meta:xdmField": "xdm:healthcarePlanDetails",
+      "tagNumber": 1
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/mixins/healthcare-plan-details",
+  "meta:altId": "_xdm.mixins.healthcare-plan-details",
+  "id": "_xdm.mixins.healthcare-plan-details"
+}

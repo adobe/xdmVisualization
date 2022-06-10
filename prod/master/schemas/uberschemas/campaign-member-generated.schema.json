@@ -121,7 +121,7 @@
       "meta:xdmField": "xdm:campaignMemberComponents",
       "tagNumber": 9,
       "items": {
-        "$ref": "obj7661642810149667.schema.json"
+        "$ref": "obj776298731765892.schema.json"
       }
     },
     "memberStatus": {
@@ -277,13 +277,29 @@
       "meta:xdmField": "xdm:firstRespondedDate",
       "tagNumber": 24
     },
+    "b2b": {
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "personType": {
+          "title": "Person Type",
+          "description": "Use this property to map this campaign to the respective measure, eg. Marketo Measure.",
+          "type": "string",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:personType",
+          "tagNumber": 1
+        }
+      },
+      "meta:xdmField": "xdm:b2b",
+      "tagNumber": 25
+    },
     "isDeleted": {
       "title": "Soft Delete Flag",
       "description": "Soft delete flag to indicate if the record is marked for deletion.",
       "type": "boolean",
       "meta:xdmType": "boolean",
       "meta:xdmField": "xdm:isDeleted",
-      "tagNumber": 25
+      "tagNumber": 26
     }
   },
   "meta:xdmId": "https://ns.adobe.com/xdm/context/campaign-member-generated",

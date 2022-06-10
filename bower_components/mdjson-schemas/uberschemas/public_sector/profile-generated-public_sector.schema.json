@@ -880,6 +880,230 @@
                 "val"
               ],
               "tagNumber": 5
+            },
+            "call": {
+              "type": "object",
+              "meta:xdmType": "object",
+              "properties": {
+                "val": {
+                  "title": "Choice Value",
+                  "description": "The value specified by the user as their preference or the basis of processing that precludes the need for user consent",
+                  "type": "string",
+                  "enum": [
+                    "y",
+                    "n",
+                    "p",
+                    "u",
+                    "dy",
+                    "dn",
+                    "LI",
+                    "CT",
+                    "CP",
+                    "VI",
+                    "PI"
+                  ],
+                  "meta:titleId": "consents-and-preferences##choice-value##title##22381",
+                  "meta:descriptionId": "consents-and-preferences##choice-value##description##81411",
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:val",
+                  "tagNumber": 1
+                },
+                "time": {
+                  "title": "Preference timestamp",
+                  "description": "Date and time this specific preference was collected. This value should conform to ISO 8601 standard. An example form is \"2004-10-23T12:00:00-06:00\".",
+                  "type": "string",
+                  "format": "date-time",
+                  "meta:titleId": "consents-and-preferences##timestamp##title##78891",
+                  "meta:descriptionId": "consents-and-preferences##timestamp##description##62471",
+                  "meta:xdmType": "date-time",
+                  "meta:xdmField": "xdm:time",
+                  "tagNumber": 2
+                },
+                "reason": {
+                  "title": "Opt-out reason",
+                  "type": "string",
+                  "description": "Reason for opting out",
+                  "maxLength": 255,
+                  "meta:titleId": "consents-and-preferences##reason##title##75301",
+                  "meta:descriptionId": "consents-and-preferences##reason##description##49681",
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:reason",
+                  "tagNumber": 3
+                }
+              },
+              "meta:xdmField": "xdm:call",
+              "required": [
+                "val"
+              ],
+              "tagNumber": 6
+            },
+            "fax": {
+              "type": "object",
+              "meta:xdmType": "object",
+              "properties": {
+                "val": {
+                  "title": "Choice Value",
+                  "description": "The value specified by the user as their preference or the basis of processing that precludes the need for user consent",
+                  "type": "string",
+                  "enum": [
+                    "y",
+                    "n",
+                    "p",
+                    "u",
+                    "dy",
+                    "dn",
+                    "LI",
+                    "CT",
+                    "CP",
+                    "VI",
+                    "PI"
+                  ],
+                  "meta:titleId": "consents-and-preferences##choice-value##title##22381",
+                  "meta:descriptionId": "consents-and-preferences##choice-value##description##81411",
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:val",
+                  "tagNumber": 1
+                },
+                "time": {
+                  "title": "Preference timestamp",
+                  "description": "Date and time this specific preference was collected. This value should conform to ISO 8601 standard. An example form is \"2004-10-23T12:00:00-06:00\".",
+                  "type": "string",
+                  "format": "date-time",
+                  "meta:titleId": "consents-and-preferences##timestamp##title##78891",
+                  "meta:descriptionId": "consents-and-preferences##timestamp##description##62471",
+                  "meta:xdmType": "date-time",
+                  "meta:xdmField": "xdm:time",
+                  "tagNumber": 2
+                },
+                "reason": {
+                  "title": "Opt-out reason",
+                  "type": "string",
+                  "description": "Reason for opting out",
+                  "maxLength": 255,
+                  "meta:titleId": "consents-and-preferences##reason##title##75301",
+                  "meta:descriptionId": "consents-and-preferences##reason##description##49681",
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:reason",
+                  "tagNumber": 3
+                }
+              },
+              "meta:xdmField": "xdm:fax",
+              "required": [
+                "val"
+              ],
+              "tagNumber": 7
+            },
+            "commercialEmail": {
+              "type": "object",
+              "meta:xdmType": "object",
+              "properties": {
+                "val": {
+                  "title": "Choice Value",
+                  "description": "The value specified by the user as their preference or the basis of processing that precludes the need for user consent",
+                  "type": "string",
+                  "enum": [
+                    "y",
+                    "n",
+                    "p",
+                    "u",
+                    "dy",
+                    "dn",
+                    "LI",
+                    "CT",
+                    "CP",
+                    "VI",
+                    "PI"
+                  ],
+                  "meta:titleId": "consents-and-preferences##choice-value##title##22381",
+                  "meta:descriptionId": "consents-and-preferences##choice-value##description##81411",
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:val",
+                  "tagNumber": 1
+                },
+                "time": {
+                  "title": "Preference timestamp",
+                  "description": "Date and time this specific preference was collected. This value should conform to ISO 8601 standard. An example form is \"2004-10-23T12:00:00-06:00\".",
+                  "type": "string",
+                  "format": "date-time",
+                  "meta:titleId": "consents-and-preferences##timestamp##title##78891",
+                  "meta:descriptionId": "consents-and-preferences##timestamp##description##62471",
+                  "meta:xdmType": "date-time",
+                  "meta:xdmField": "xdm:time",
+                  "tagNumber": 2
+                },
+                "reason": {
+                  "title": "Opt-out reason",
+                  "type": "string",
+                  "description": "Reason for opting out",
+                  "maxLength": 255,
+                  "meta:titleId": "consents-and-preferences##reason##title##75301",
+                  "meta:descriptionId": "consents-and-preferences##reason##description##49681",
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:reason",
+                  "tagNumber": 3
+                }
+              },
+              "meta:xdmField": "xdm:commercialEmail",
+              "required": [
+                "val"
+              ],
+              "tagNumber": 8
+            },
+            "postalMail": {
+              "type": "object",
+              "meta:xdmType": "object",
+              "properties": {
+                "val": {
+                  "title": "Choice Value",
+                  "description": "The value specified by the user as their preference or the basis of processing that precludes the need for user consent",
+                  "type": "string",
+                  "enum": [
+                    "y",
+                    "n",
+                    "p",
+                    "u",
+                    "dy",
+                    "dn",
+                    "LI",
+                    "CT",
+                    "CP",
+                    "VI",
+                    "PI"
+                  ],
+                  "meta:titleId": "consents-and-preferences##choice-value##title##22381",
+                  "meta:descriptionId": "consents-and-preferences##choice-value##description##81411",
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:val",
+                  "tagNumber": 1
+                },
+                "time": {
+                  "title": "Preference timestamp",
+                  "description": "Date and time this specific preference was collected. This value should conform to ISO 8601 standard. An example form is \"2004-10-23T12:00:00-06:00\".",
+                  "type": "string",
+                  "format": "date-time",
+                  "meta:titleId": "consents-and-preferences##timestamp##title##78891",
+                  "meta:descriptionId": "consents-and-preferences##timestamp##description##62471",
+                  "meta:xdmType": "date-time",
+                  "meta:xdmField": "xdm:time",
+                  "tagNumber": 2
+                },
+                "reason": {
+                  "title": "Opt-out reason",
+                  "type": "string",
+                  "description": "Reason for opting out",
+                  "maxLength": 255,
+                  "meta:titleId": "consents-and-preferences##reason##title##75301",
+                  "meta:descriptionId": "consents-and-preferences##reason##description##49681",
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "xdm:reason",
+                  "tagNumber": 3
+                }
+              },
+              "meta:xdmField": "xdm:postalMail",
+              "required": [
+                "val"
+              ],
+              "tagNumber": 9
             }
           },
           "meta:xdmField": "xdm:marketing",
@@ -1305,7 +1529,7 @@
       "tagNumber": 9
     },
     "homeAddress": {
-      "title": "Home address",
+      "title": "Home Address",
       "$ref": "../../datatypes/demographic/address.schema.json",
       "description": "A home postal address.",
       "meta:titleId": "profile-personal-details##xdm:homeAddress##title##98571",
@@ -1314,7 +1538,7 @@
       "tagNumber": 10
     },
     "personalEmail": {
-      "title": "Personal email",
+      "title": "Personal Email",
       "$ref": "../../datatypes/demographic/emailaddress.schema.json",
       "description": "A personal email address.",
       "meta:titleId": "profile-personal-details##xdm:personalEmail##title##13501",
@@ -1323,7 +1547,7 @@
       "tagNumber": 11
     },
     "homePhone": {
-      "title": "Home phone",
+      "title": "Home Phone",
       "$ref": "../../datatypes/demographic/phonenumber.schema.json",
       "description": "Home phone number.",
       "meta:titleId": "profile-personal-details##xdm:homePhone##title##28261",
@@ -1332,7 +1556,7 @@
       "tagNumber": 12
     },
     "mobilePhone": {
-      "title": "Mobile phone",
+      "title": "Mobile Phone",
       "$ref": "../../datatypes/demographic/phonenumber.schema.json",
       "description": "Mobile phone number.",
       "meta:titleId": "profile-personal-details##xdm:mobilePhone##title##76241",
@@ -1341,13 +1565,34 @@
       "tagNumber": 13
     },
     "faxPhone": {
-      "title": "Fax phone",
+      "title": "Fax Phone",
       "$ref": "../../datatypes/demographic/phonenumber.schema.json",
       "description": "Fax phone number.",
       "meta:titleId": "profile-personal-details##xdm:faxPhone##title##15761",
       "meta:descriptionId": "profile-personal-details##xdm:faxPhone##description##5951",
       "meta:xdmField": "xdm:faxPhone",
       "tagNumber": 14
+    },
+    "shippingAddress": {
+      "title": "Shipping Address",
+      "$ref": "../../datatypes/demographic/address.schema.json",
+      "description": "Shipping postal address.",
+      "meta:xdmField": "xdm:shippingAddress",
+      "tagNumber": 15
+    },
+    "billingAddress": {
+      "title": "Billing Address",
+      "$ref": "../../datatypes/demographic/address.schema.json",
+      "description": "Billing postal address.",
+      "meta:xdmField": "xdm:billingAddress",
+      "tagNumber": 16
+    },
+    "mailingAddress": {
+      "title": "Mailing Address",
+      "$ref": "../../datatypes/demographic/address.schema.json",
+      "description": "Mailing postal address.",
+      "meta:xdmField": "xdm:mailingAddress",
+      "tagNumber": 17
     },
     "userAccount": {
       "type": "object",
@@ -1448,7 +1693,7 @@
         }
       },
       "meta:xdmField": "xdm:userAccount",
-      "tagNumber": 15
+      "tagNumber": 18
     },
     "workAddress": {
       "title": "Work Address",
@@ -1457,7 +1702,7 @@
       "meta:titleId": "profile-work-details##xdm:workAddress##title##70681",
       "meta:descriptionId": "profile-work-details##xdm:workAddress##description##6351",
       "meta:xdmField": "xdm:workAddress",
-      "tagNumber": 16
+      "tagNumber": 19
     },
     "workEmail": {
       "title": "Work Email",
@@ -1466,7 +1711,7 @@
       "meta:titleId": "profile-work-details##xdm:workEmail##title##5061",
       "meta:descriptionId": "profile-work-details##xdm:workEmail##description##77641",
       "meta:xdmField": "xdm:workEmail",
-      "tagNumber": 17
+      "tagNumber": 20
     },
     "workPhone": {
       "title": "Work Phone",
@@ -1475,7 +1720,7 @@
       "meta:titleId": "profile-work-details##xdm:workPhone##title##72561",
       "meta:descriptionId": "profile-work-details##xdm:workPhone##description##61541",
       "meta:xdmField": "xdm:workPhone",
-      "tagNumber": 18
+      "tagNumber": 21
     },
     "organizations": {
       "title": "Organizations",
@@ -1488,7 +1733,7 @@
         "tagNumber": 1
       },
       "meta:xdmField": "xdm:organizations",
-      "tagNumber": 19
+      "tagNumber": 22
     }
   },
   "meta:xdmId": "https://ns.adobe.com/xdm/context/profile-generated-public_sector",

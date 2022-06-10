@@ -1,0 +1,108 @@
+{
+  "id": "_xdm.context.dim-segment",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Segment Dimension",
+  "type": "object",
+  "meta:extensible": [
+    false,
+    true
+  ],
+  "meta:abstract": [
+    false,
+    true
+  ],
+  "description": "This is the dimension schema for a segment definition which includes required fields like segment ID and name of segment.",
+  "meta:status": "stable",
+  "meta:xdmType": "object",
+  "meta:createdDate": "2020-08-10",
+  "meta:titleId": "record##title##65961",
+  "meta:descriptionId": "record##description##3921",
+  "properties": {
+    "_id": {
+      "title": "Identifier",
+      "type": "string",
+      "format": "uri-reference",
+      "description": "A unique identifier for the record.",
+      "meta:titleId": "record##@id##title##51271",
+      "meta:descriptionId": "record##@id##description##16181",
+      "meta:xdmType": "string",
+      "meta:xdmField": "@id",
+      "tagNumber": 1
+    },
+    "segment": {
+      "type": "object",
+      "description": "Segment Dimension and its properties.",
+      "meta:xdmType": "object",
+      "properties": {
+        "ID": {
+          "title": "Segment Identifier",
+          "type": "string",
+          "description": "Unique identifier of the segment.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:ID",
+          "tagNumber": 1
+        },
+        "name": {
+          "title": "Segment name",
+          "type": "string",
+          "description": "Name of the segment.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:name",
+          "tagNumber": 2
+        },
+        "description": {
+          "title": "Segment description",
+          "type": "string",
+          "description": "Description of the segment.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:description",
+          "tagNumber": 3
+        },
+        "source": {
+          "title": "Segment Source",
+          "type": "string",
+          "description": "Segment source indicating whether the segment was sent from an internal or external source.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:source",
+          "tagNumber": 4
+        },
+        "namespace": {
+          "title": "Segment Namespace",
+          "type": "string",
+          "description": "Segment namespace.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:namespace",
+          "tagNumber": 5
+        },
+        "version": {
+          "title": "Segment version",
+          "type": "string",
+          "description": "Version of the segment.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:version",
+          "tagNumber": 6
+        },
+        "status": {
+          "type": "string",
+          "title": "Segment status",
+          "description": "Current status of segment from external system normalized to active, inactive, deleted, draft or revoked.",
+          "enum": [
+            "ACTIVE",
+            "INACTIVE",
+            "DELETED",
+            "DRAFT",
+            "REVOKED"
+          ],
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:status",
+          "tagNumber": 7
+        }
+      },
+      "meta:xdmField": "xdm:segment",
+      "tagNumber": 2
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/context/dim-segment",
+  "meta:altId": "_xdm.context.dim-segment",
+  "id": "_xdm.context.dim-segment"
+}

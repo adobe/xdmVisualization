@@ -234,7 +234,7 @@
       "tagNumber": 1
     },
     "homeAddress": {
-      "title": "Home address",
+      "title": "Home Address",
       "$ref": "../../datatypes/demographic/address.schema.json",
       "description": "A home postal address.",
       "meta:titleId": "profile-personal-details##xdm:homeAddress##title##98571",
@@ -243,7 +243,7 @@
       "tagNumber": 2
     },
     "personalEmail": {
-      "title": "Personal email",
+      "title": "Personal Email",
       "$ref": "../../datatypes/demographic/emailaddress.schema.json",
       "description": "A personal email address.",
       "meta:titleId": "profile-personal-details##xdm:personalEmail##title##13501",
@@ -252,7 +252,7 @@
       "tagNumber": 3
     },
     "homePhone": {
-      "title": "Home phone",
+      "title": "Home Phone",
       "$ref": "../../datatypes/demographic/phonenumber.schema.json",
       "description": "Home phone number.",
       "meta:titleId": "profile-personal-details##xdm:homePhone##title##28261",
@@ -261,7 +261,7 @@
       "tagNumber": 4
     },
     "mobilePhone": {
-      "title": "Mobile phone",
+      "title": "Mobile Phone",
       "$ref": "../../datatypes/demographic/phonenumber.schema.json",
       "description": "Mobile phone number.",
       "meta:titleId": "profile-personal-details##xdm:mobilePhone##title##76241",
@@ -270,13 +270,34 @@
       "tagNumber": 5
     },
     "faxPhone": {
-      "title": "Fax phone",
+      "title": "Fax Phone",
       "$ref": "../../datatypes/demographic/phonenumber.schema.json",
       "description": "Fax phone number.",
       "meta:titleId": "profile-personal-details##xdm:faxPhone##title##15761",
       "meta:descriptionId": "profile-personal-details##xdm:faxPhone##description##5951",
       "meta:xdmField": "xdm:faxPhone",
       "tagNumber": 6
+    },
+    "shippingAddress": {
+      "title": "Shipping Address",
+      "$ref": "../../datatypes/demographic/address.schema.json",
+      "description": "Shipping postal address.",
+      "meta:xdmField": "xdm:shippingAddress",
+      "tagNumber": 7
+    },
+    "billingAddress": {
+      "title": "Billing Address",
+      "$ref": "../../datatypes/demographic/address.schema.json",
+      "description": "Billing postal address.",
+      "meta:xdmField": "xdm:billingAddress",
+      "tagNumber": 8
+    },
+    "mailingAddress": {
+      "title": "Mailing Address",
+      "$ref": "../../datatypes/demographic/address.schema.json",
+      "description": "Mailing postal address.",
+      "meta:xdmField": "xdm:mailingAddress",
+      "tagNumber": 9
     },
     "person": {
       "title": "Person",
@@ -285,7 +306,7 @@
       "meta:titleId": "profile-person-details##xdm:person##title##68851",
       "meta:descriptionId": "profile-person-details##xdm:person##description##18361",
       "meta:xdmField": "xdm:person",
-      "tagNumber": 7
+      "tagNumber": 10
     },
     "otherAddress": {
       "title": "Other Address",
@@ -294,7 +315,7 @@
       "meta:titleId": "profile-other-work-details##xdm:otherAddress##title##76831",
       "meta:descriptionId": "profile-other-work-details##xdm:otherAddress##description##11581",
       "meta:xdmField": "xdm:otherAddress",
-      "tagNumber": 8
+      "tagNumber": 11
     },
     "otherPhone": {
       "title": "Other Phone",
@@ -303,7 +324,7 @@
       "meta:titleId": "profile-other-work-details##xdm:otherPhone##title##93741",
       "meta:descriptionId": "profile-other-work-details##xdm:otherPhone##description##65191",
       "meta:xdmField": "xdm:otherPhone",
-      "tagNumber": 9
+      "tagNumber": 12
     },
     "extendedWorkDetails": {
       "type": "object",
@@ -387,7 +408,7 @@
         }
       },
       "meta:xdmField": "xdm:extendedWorkDetails",
-      "tagNumber": 10
+      "tagNumber": 13
     },
     "workAddress": {
       "title": "Work Address",
@@ -396,7 +417,7 @@
       "meta:titleId": "profile-work-details##xdm:workAddress##title##70681",
       "meta:descriptionId": "profile-work-details##xdm:workAddress##description##6351",
       "meta:xdmField": "xdm:workAddress",
-      "tagNumber": 11
+      "tagNumber": 14
     },
     "workEmail": {
       "title": "Work Email",
@@ -405,7 +426,7 @@
       "meta:titleId": "profile-work-details##xdm:workEmail##title##5061",
       "meta:descriptionId": "profile-work-details##xdm:workEmail##description##77641",
       "meta:xdmField": "xdm:workEmail",
-      "tagNumber": 12
+      "tagNumber": 15
     },
     "workPhone": {
       "title": "Work Phone",
@@ -414,7 +435,7 @@
       "meta:titleId": "profile-work-details##xdm:workPhone##title##72561",
       "meta:descriptionId": "profile-work-details##xdm:workPhone##description##61541",
       "meta:xdmField": "xdm:workPhone",
-      "tagNumber": 13
+      "tagNumber": 16
     },
     "organizations": {
       "title": "Organizations",
@@ -427,13 +448,13 @@
         "tagNumber": 1
       },
       "meta:xdmField": "xdm:organizations",
-      "tagNumber": 14
+      "tagNumber": 17
     },
     "identityMap": {
       "type": "object",
       "meta:xdmType": "map",
       "meta:xdmField": "xdm:identityMap",
-      "tagNumber": 15,
+      "tagNumber": 18,
       "properties": {
         "mapObj": {
           "type": "array",
@@ -453,7 +474,7 @@
       "meta:titleId": "external-source-system-audit-details##xdm:extSourceSystemAudit##title##88841",
       "meta:descriptionId": "external-source-system-audit-details##xdm:extSourceSystemAudit##description##28131",
       "meta:xdmField": "xdm:extSourceSystemAudit",
-      "tagNumber": 16
+      "tagNumber": 19
     },
     "isDeleted": {
       "title": "Soft Delete Flag",
@@ -461,7 +482,7 @@
       "type": "boolean",
       "meta:xdmType": "boolean",
       "meta:xdmField": "xdm:isDeleted",
-      "tagNumber": 17
+      "tagNumber": 20
     }
   },
   "meta:xdmId": "https://ns.adobe.com/xdm/mixins/b2b-person-details",

@@ -1,0 +1,138 @@
+{
+  "id": "_xdm.mixins.healthcare-provider",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Healthcare Provider",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:tags": {
+    "industry": [
+      "healthcare_services"
+    ]
+  },
+  "description": "Details of an individual health professional or a health facility organization licensed to provide health care diagnosis and treatment services.",
+  "meta:status": "experimental",
+  "meta:xdmType": "object",
+  "properties": {
+    "healthcareProvider": {
+      "title": "Healthcare Provider",
+      "description": "Information about the healthcare provider.",
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "isActive": {
+          "title": "Is Active",
+          "type": "boolean",
+          "description": "Indicates whether the provider is active.",
+          "meta:xdmType": "boolean",
+          "meta:xdmField": "xdm:isActive",
+          "tagNumber": 1
+        },
+        "practiceType": {
+          "title": "Service Provider Practice Type",
+          "type": "string",
+          "description": "Service provider practice type.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:practiceType",
+          "tagNumber": 2
+        },
+        "practiceGroupName": {
+          "title": "Service Provider Practice Group Name",
+          "type": "string",
+          "description": "Service provider practice group name.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:practiceGroupName",
+          "tagNumber": 3
+        },
+        "practiceGroupType": {
+          "title": "Service Provider Practice Group Type",
+          "type": "string",
+          "description": "Service provider practice group type.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:practiceGroupType",
+          "tagNumber": 4
+        },
+        "classification": {
+          "title": "Service Provider Class/Category",
+          "type": "string",
+          "description": "Service provider classification based on class or category (e.g. patient-care, non-patient care, etc).",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:classification",
+          "tagNumber": 5
+        },
+        "specialities": {
+          "title": "Specialities",
+          "description": "Specialities offered by this provider.",
+          "type": "array",
+          "meta:xdmType": "array",
+          "items": {
+            "type": "string",
+            "meta:xdmType": "string",
+            "tagNumber": 1
+          },
+          "meta:xdmField": "xdm:specialities",
+          "tagNumber": 6
+        },
+        "phoneNumber": {
+          "title": "Phone Number",
+          "description": "Provider's phone number.",
+          "$ref": "../../datatypes/demographic/phonenumber.schema.json",
+          "meta:xdmField": "xdm:phoneNumber",
+          "tagNumber": 7
+        },
+        "fax": {
+          "title": "Fax Number",
+          "description": "Provider's fax number.",
+          "$ref": "../../datatypes/demographic/phonenumber.schema.json",
+          "meta:xdmField": "xdm:fax",
+          "tagNumber": 8
+        },
+        "emailAddress": {
+          "title": "Provider's Email Address",
+          "description": "Provider's email address.",
+          "$ref": "../../datatypes/demographic/emailaddress.schema.json",
+          "meta:xdmField": "xdm:emailAddress",
+          "tagNumber": 9
+        },
+        "addressDetails": {
+          "title": "Provider Address Details",
+          "type": "array",
+          "meta:xdmType": "array",
+          "meta:xdmField": "xdm:addressDetails",
+          "tagNumber": 10,
+          "items": {
+            "$ref": "obj7302264100183387.schema.json"
+          }
+        },
+        "qualifications": {
+          "title": "Qualifications",
+          "description": "Certification, licenses, or training pertaining to the provision of care.",
+          "type": "array",
+          "meta:xdmType": "array",
+          "meta:xdmField": "xdm:qualifications",
+          "tagNumber": 11,
+          "items": {
+            "$ref": "obj5313162615844389.schema.json"
+          }
+        },
+        "languages": {
+          "title": "Languages",
+          "type": "array",
+          "meta:xdmType": "array",
+          "items": {
+            "type": "string",
+            "meta:xdmType": "string",
+            "tagNumber": 1
+          },
+          "meta:xdmField": "xdm:languages",
+          "tagNumber": 12
+        }
+      },
+      "meta:xdmField": "xdm:healthcareProvider",
+      "tagNumber": 1
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/mixins/healthcare-provider",
+  "meta:altId": "_xdm.mixins.healthcare-provider",
+  "id": "_xdm.mixins.healthcare-provider"
+}

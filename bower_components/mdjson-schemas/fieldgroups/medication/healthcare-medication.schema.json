@@ -1,0 +1,139 @@
+{
+  "id": "_xdm.mixins.healthcare-medication",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Healthcare medication",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:tags": {
+    "industry": [
+      "healthcare_services"
+    ]
+  },
+  "description": "Medication details such as brand name, lot number, and quantity.",
+  "meta:status": "experimental",
+  "meta:xdmType": "object",
+  "properties": {
+    "medication": {
+      "title": "Medication",
+      "description": "Information about the medication.",
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "codes": {
+          "title": "Codes",
+          "type": "array",
+          "description": "Codes that identify this medication.",
+          "meta:xdmType": "array",
+          "items": {
+            "type": "string",
+            "meta:xdmType": "string",
+            "tagNumber": 1
+          },
+          "meta:xdmField": "xdm:codes",
+          "tagNumber": 1
+        },
+        "status": {
+          "title": "Status",
+          "type": "string",
+          "enum": [
+            "active",
+            "inactive",
+            "entered-in-error"
+          ],
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:status",
+          "tagNumber": 2
+        },
+        "brandName": {
+          "title": "Brand Name",
+          "description": "Brand name of the drug.",
+          "type": "string",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:brandName",
+          "tagNumber": 3
+        },
+        "genericName": {
+          "title": "Generic Name",
+          "description": "Generic name of the drug.",
+          "type": "string",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:genericName",
+          "tagNumber": 4
+        },
+        "manufacturer": {
+          "title": "Manufacturer",
+          "description": "Manufacturer of the medication.",
+          "$ref": "../../datatypes/b2b/account-organization.schema.json",
+          "meta:xdmField": "xdm:manufacturer",
+          "tagNumber": 5
+        },
+        "dosageUnitNumber": {
+          "title": "Dosage Unit Number",
+          "type": "number",
+          "description": "Dosage unit number.",
+          "meta:xdmType": "number",
+          "meta:xdmField": "xdm:dosageUnitNumber",
+          "tagNumber": 6
+        },
+        "dosageUnitOfMeasurement": {
+          "title": "Dosage Unit Of measurement",
+          "type": "string",
+          "description": "Dosage unit of measurement.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:dosageUnitOfMeasurement",
+          "tagNumber": 7
+        },
+        "quantity": {
+          "title": "Drug Quantity",
+          "type": "number",
+          "description": "Amount of drug in the package.",
+          "meta:xdmType": "number",
+          "meta:xdmField": "xdm:quantity",
+          "tagNumber": 8
+        },
+        "volume": {
+          "title": "Drug Volume",
+          "type": "number",
+          "description": "Drug Volume.",
+          "meta:xdmType": "number",
+          "meta:xdmField": "xdm:volume",
+          "tagNumber": 9
+        },
+        "ingredients": {
+          "title": "ingredients",
+          "description": "Ingredients present in the medication",
+          "type": "array",
+          "meta:xdmType": "array",
+          "meta:xdmField": "xdm:ingredients",
+          "tagNumber": 10,
+          "items": {
+            "$ref": "obj8751868923022319.schema.json"
+          }
+        },
+        "expiryDate": {
+          "title": "Expiry Date",
+          "type": "string",
+          "format": "date-time",
+          "description": "Expiry date of the medication.",
+          "meta:xdmType": "date-time",
+          "meta:xdmField": "xdm:expiryDate",
+          "tagNumber": 11
+        },
+        "lotNumber": {
+          "title": "Lot Number",
+          "type": "string",
+          "description": "Unique identifier of the batch.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:lotNumber",
+          "tagNumber": 12
+        }
+      },
+      "meta:xdmField": "xdm:medication",
+      "tagNumber": 1
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/mixins/healthcare-medication",
+  "meta:altId": "_xdm.mixins.healthcare-medication",
+  "id": "_xdm.mixins.healthcare-medication"
+}

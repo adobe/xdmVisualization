@@ -2344,7 +2344,7 @@
           "meta:xdmField": "xdm:dataValueChanges",
           "tagNumber": 5,
           "items": {
-            "$ref": "obj6741163823741483.schema.json"
+            "$ref": "obj556104939663493.schema.json"
           }
         }
       },
@@ -3741,7 +3741,7 @@
           "meta:xdmField": "xdm:diningReservations",
           "tagNumber": 1,
           "items": {
-            "$ref": "obj8004188110821298.schema.json"
+            "$ref": "obj2450026824940148.schema.json"
           }
         },
         "cancellation": {
@@ -3914,7 +3914,7 @@
           "meta:xdmField": "xdm:flightReservations",
           "tagNumber": 19,
           "items": {
-            "$ref": "obj6190239181791142.schema.json"
+            "$ref": "obj14245505098947597.schema.json"
           }
         },
         "lodgingReservations": {
@@ -3923,7 +3923,7 @@
           "meta:xdmField": "xdm:lodgingReservations",
           "tagNumber": 20,
           "items": {
-            "$ref": "obj31576109038354505.schema.json"
+            "$ref": "obj5880143103559567.schema.json"
           }
         },
         "vehicleReservations": {
@@ -3932,7 +3932,7 @@
           "meta:xdmField": "xdm:vehicleReservations",
           "tagNumber": 21,
           "items": {
-            "$ref": "obj9904762744597295.schema.json"
+            "$ref": "obj5647486608594587.schema.json"
           }
         }
       },
@@ -4287,7 +4287,7 @@
       "tagNumber": 61
     },
     "homeAddress": {
-      "title": "Home address",
+      "title": "Home Address",
       "$ref": "../datatypes/demographic/address.schema.json",
       "description": "A home postal address.",
       "meta:titleId": "profile-personal-details##xdm:homeAddress##title##98571",
@@ -4296,7 +4296,7 @@
       "tagNumber": 62
     },
     "personalEmail": {
-      "title": "Personal email",
+      "title": "Personal Email",
       "$ref": "../datatypes/demographic/emailaddress.schema.json",
       "description": "A personal email address.",
       "meta:titleId": "profile-personal-details##xdm:personalEmail##title##13501",
@@ -4305,7 +4305,7 @@
       "tagNumber": 63
     },
     "homePhone": {
-      "title": "Home phone",
+      "title": "Home Phone",
       "$ref": "../datatypes/demographic/phonenumber.schema.json",
       "description": "Home phone number.",
       "meta:titleId": "profile-personal-details##xdm:homePhone##title##28261",
@@ -4314,7 +4314,7 @@
       "tagNumber": 64
     },
     "mobilePhone": {
-      "title": "Mobile phone",
+      "title": "Mobile Phone",
       "$ref": "../datatypes/demographic/phonenumber.schema.json",
       "description": "Mobile phone number.",
       "meta:titleId": "profile-personal-details##xdm:mobilePhone##title##76241",
@@ -4323,13 +4323,34 @@
       "tagNumber": 65
     },
     "faxPhone": {
-      "title": "Fax phone",
+      "title": "Fax Phone",
       "$ref": "../datatypes/demographic/phonenumber.schema.json",
       "description": "Fax phone number.",
       "meta:titleId": "profile-personal-details##xdm:faxPhone##title##15761",
       "meta:descriptionId": "profile-personal-details##xdm:faxPhone##description##5951",
       "meta:xdmField": "xdm:faxPhone",
       "tagNumber": 66
+    },
+    "shippingAddress": {
+      "title": "Shipping Address",
+      "$ref": "../datatypes/demographic/address.schema.json",
+      "description": "Shipping postal address.",
+      "meta:xdmField": "xdm:shippingAddress",
+      "tagNumber": 67
+    },
+    "billingAddress": {
+      "title": "Billing Address",
+      "$ref": "../datatypes/demographic/address.schema.json",
+      "description": "Billing postal address.",
+      "meta:xdmField": "xdm:billingAddress",
+      "tagNumber": 68
+    },
+    "mailingAddress": {
+      "title": "Mailing Address",
+      "$ref": "../datatypes/demographic/address.schema.json",
+      "description": "Mailing postal address.",
+      "meta:xdmField": "xdm:mailingAddress",
+      "tagNumber": 69
     }
   },
   "meta:xdmId": "https://ns.adobe.com/xdm/context/experienceevent-generated",

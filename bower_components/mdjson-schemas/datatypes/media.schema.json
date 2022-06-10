@@ -719,6 +719,32 @@
               },
               "meta:xdmField": "xdm:fullScreen",
               "tagNumber": 15
+            },
+            "statesStart": {
+              "title": "List of states start",
+              "description": "The list of states start",
+              "type": "array",
+              "meta:xdmType": "array",
+              "items": {
+                "type": "string",
+                "meta:xdmType": "string",
+                "tagNumber": 1
+              },
+              "meta:xdmField": "xdm:statesStart",
+              "tagNumber": 20
+            },
+            "statesEnd": {
+              "title": "List of states end",
+              "description": "The list of states end",
+              "type": "array",
+              "meta:xdmType": "array",
+              "items": {
+                "type": "string",
+                "meta:xdmType": "string",
+                "tagNumber": 1
+              },
+              "meta:xdmField": "xdm:statesEnd",
+              "tagNumber": 21
             }
           },
           "meta:xdmField": "xdm:primaryAssetViewDetails",
