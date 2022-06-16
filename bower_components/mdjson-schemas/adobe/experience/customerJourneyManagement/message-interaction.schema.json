@@ -159,6 +159,223 @@
                                   "meta:xdmType": "string",
                                   "meta:xdmField": "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/sourceType",
                                   "tagNumber": 4
+                                },
+                                "formData": {
+                                  "title": "Form Data",
+                                  "type": "object",
+                                  "description": "Data filled by the user on the landing page form.",
+                                  "meta:xdmType": "object",
+                                  "properties": {
+                                    "_experience": {
+                                      "type": "object",
+                                      "meta:xdmType": "object",
+                                      "properties": {
+                                        "customerJourneyManagement": {
+                                          "type": "object",
+                                          "meta:xdmType": "object",
+                                          "properties": {
+                                            "messageInteraction": {
+                                              "type": "object",
+                                              "meta:xdmType": "object",
+                                              "properties": {
+                                                "subscriptions": {
+                                                  "title": "Subscription details.",
+                                                  "type": "object",
+                                                  "description": "Subscription details input by the end user in the landing page.",
+                                                  "meta:xdmType": "map",
+                                                  "meta:xdmField": "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscriptions",
+                                                  "tagNumber": 1,
+                                                  "properties": {
+                                                    "mapObj": {
+                                                      "type": "object",
+                                                      "description": "Subscription details input by the end user in the landing page. ",
+                                                      "meta:xdmType": "object",
+                                                      "properties": {
+                                                        "_experience": {
+                                                          "customerJourneyManagement": {
+                                                            "messageInteraction": {
+                                                              "val": {
+                                                                "title": "Subscription Choice",
+                                                                "type": "string",
+                                                                "description": "Subscription Choice for the Subscription List.",
+                                                                "enum": [
+                                                                  "y",
+                                                                  "n",
+                                                                  "p",
+                                                                  "u"
+                                                                ],
+                                                                "meta:xdmType": "string",
+                                                                "meta:xdmField": "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/val",
+                                                                "tagNumber": 1
+                                                              },
+                                                              "type": {
+                                                                "title": "Subscription Type",
+                                                                "type": "string",
+                                                                "description": "The type of subscription.",
+                                                                "meta:xdmType": "string",
+                                                                "meta:xdmField": "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/type",
+                                                                "tagNumber": 2
+                                                              },
+                                                              "tagNumber": 1
+                                                            },
+                                                            "tagNumber": 1
+                                                          },
+                                                          "tagNumber": 1
+                                                        }
+                                                      },
+                                                      "tagNumber": 1
+                                                    }
+                                                  }
+                                                },
+                                                "consents": {
+                                                  "title": "Consent details.",
+                                                  "type": "object",
+                                                  "description": "Consent details input by the end user in the landing page.",
+                                                  "meta:xdmType": "object",
+                                                  "properties": {
+                                                    "_experience": {
+                                                      "type": "object",
+                                                      "meta:xdmType": "object",
+                                                      "properties": {
+                                                        "customerJourneyManagement": {
+                                                          "type": "object",
+                                                          "meta:xdmType": "object",
+                                                          "properties": {
+                                                            "messageInteraction": {
+                                                              "type": "object",
+                                                              "meta:xdmType": "object",
+                                                              "properties": {
+                                                                "channel": {
+                                                                  "title": "Channel level consent details",
+                                                                  "type": "object",
+                                                                  "description": "Consent details specific to channel like email/push etc",
+                                                                  "meta:xdmType": "map",
+                                                                  "meta:xdmField": "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/channel",
+                                                                  "tagNumber": 1,
+                                                                  "properties": {
+                                                                    "mapObj": {
+                                                                      "type": "object",
+                                                                      "description": "Consent details specific to channel like email/push etc",
+                                                                      "meta:xdmType": "object",
+                                                                      "properties": {
+                                                                        "_experience": {
+                                                                          "customerJourneyManagement": {
+                                                                            "messageInteraction": {
+                                                                              "val": {
+                                                                                "title": "Consent choice",
+                                                                                "type": "string",
+                                                                                "description": "Consent choice for the channel.",
+                                                                                "enum": [
+                                                                                  "y",
+                                                                                  "n",
+                                                                                  "p",
+                                                                                  "u"
+                                                                                ],
+                                                                                "meta:xdmType": "string",
+                                                                                "meta:xdmField": "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/val",
+                                                                                "tagNumber": 1
+                                                                              },
+                                                                              "tagNumber": 1
+                                                                            },
+                                                                            "tagNumber": 1
+                                                                          },
+                                                                          "tagNumber": 1
+                                                                        }
+                                                                      },
+                                                                      "tagNumber": 1
+                                                                    }
+                                                                  }
+                                                                },
+                                                                "idSpecific": {
+                                                                  "title": "Contact address level consent details.",
+                                                                  "type": "object",
+                                                                  "description": "Consent details specific to contact address.",
+                                                                  "meta:xdmType": "map",
+                                                                  "meta:xdmField": "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/idSpecific",
+                                                                  "tagNumber": 2,
+                                                                  "properties": {
+                                                                    "mapObj": {
+                                                                      "type": "object",
+                                                                      "description": "Consent details specific to contact address.",
+                                                                      "meta:xdmType": "object",
+                                                                      "properties": {
+                                                                        "_experience": {
+                                                                          "customerJourneyManagement": {
+                                                                            "messageInteraction": {
+                                                                              "val": {
+                                                                                "title": "Consent choice",
+                                                                                "type": "string",
+                                                                                "description": "Consent choice for the contact address.",
+                                                                                "enum": [
+                                                                                  "y",
+                                                                                  "n",
+                                                                                  "p",
+                                                                                  "u"
+                                                                                ],
+                                                                                "meta:xdmType": "string",
+                                                                                "meta:xdmField": "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/val",
+                                                                                "tagNumber": 1
+                                                                              },
+                                                                              "tagNumber": 1
+                                                                            },
+                                                                            "tagNumber": 1
+                                                                          },
+                                                                          "tagNumber": 1
+                                                                        }
+                                                                      },
+                                                                      "tagNumber": 1
+                                                                    }
+                                                                  }
+                                                                }
+                                                              },
+                                                              "tagNumber": 1
+                                                            }
+                                                          },
+                                                          "tagNumber": 1
+                                                        }
+                                                      },
+                                                      "tagNumber": 1
+                                                    }
+                                                  },
+                                                  "meta:xdmField": "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/consents",
+                                                  "tagNumber": 2
+                                                },
+                                                "subscriberContactAddress": {
+                                                  "title": "Contact address specified by the subscriber.",
+                                                  "type": "string",
+                                                  "description": "Contact address specified by the subscriber.",
+                                                  "meta:xdmType": "string",
+                                                  "meta:xdmField": "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/subscriberContactAddress",
+                                                  "tagNumber": 3
+                                                }
+                                              },
+                                              "tagNumber": 1
+                                            }
+                                          },
+                                          "tagNumber": 1
+                                        }
+                                      },
+                                      "tagNumber": 1
+                                    }
+                                  },
+                                  "meta:xdmField": "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/formData",
+                                  "tagNumber": 5
+                                },
+                                "additionalData": {
+                                  "title": "Additional Data",
+                                  "type": "object",
+                                  "description": "Additional data added by the marketer while authoring the landing page.",
+                                  "meta:xdmType": "map",
+                                  "meta:xdmField": "https://ns.adobe.com/experience/customerJourneyManagement/messageInteraction/additionalData",
+                                  "tagNumber": 6,
+                                  "properties": {
+                                    "mapObj": {
+                                      "type": "string",
+                                      "description": "Values of additional data added by the marketer while authoring the landing page. ",
+                                      "meta:xdmType": "string",
+                                      "tagNumber": 1
+                                    }
+                                  }
                                 }
                               },
                               "tagNumber": 1

@@ -1,0 +1,82 @@
+{
+  "id": "_xdm.mixins.experienceevent-live-event-purchase",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Live Event Ticket Purchase",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "description": "Purchase history for tickets to a live event, e.g., a concert or sports game.",
+  "meta:status": "experimental",
+  "meta:xdmType": "object",
+  "properties": {
+    "eventPurchaseDetails": {
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "ticketPurchaseID": {
+          "title": "Ticket Purchase ID",
+          "description": "Unique ID for the ticket purchase order.",
+          "type": "string",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:ticketPurchaseID",
+          "tagNumber": 1
+        },
+        "liveEventID": {
+          "title": "Live Event Identifier",
+          "description": "Unique ID for the event in which the ticket was purchased for.",
+          "type": "string",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:liveEventID",
+          "tagNumber": 2
+        },
+        "ticketMasterEventCode": {
+          "title": "TicketMaster.com Event Code",
+          "description": "TicketMaster.com Event Code",
+          "type": "string",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:ticketMasterEventCode",
+          "tagNumber": 3
+        },
+        "liveEventName": {
+          "title": "Live Event Name",
+          "description": "Name of the live event.",
+          "type": "string",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:liveEventName",
+          "tagNumber": 4
+        },
+        "corporateSponsorshipFlag": {
+          "title": "Corporate Sponsorship Flag ",
+          "description": "Indicates if the ticket was provided by a corporate sponsorship.",
+          "type": "boolean",
+          "meta:xdmType": "boolean",
+          "meta:xdmField": "xdm:corporateSponsorshipFlag",
+          "tagNumber": 5
+        },
+        "tickets": {
+          "type": "array",
+          "description": "Ticket(s) Purchased",
+          "title": "Tickets",
+          "meta:xdmType": "array",
+          "meta:xdmField": "xdm:tickets",
+          "tagNumber": 6,
+          "items": {
+            "$ref": "obj6984276092582014.schema.json"
+          }
+        },
+        "ticketPurchase": {
+          "$ref": "../../../datatypes/industry-verticals/transaction.schema.json",
+          "description": "Transaction details for ticket purchase.",
+          "title": "Ticket Purchase Transaction",
+          "meta:xdmField": "xdm:ticketPurchase",
+          "tagNumber": 7
+        }
+      },
+      "meta:xdmField": "xdm:eventPurchaseDetails",
+      "tagNumber": 1
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/mixins/experienceevent-live-event-purchase",
+  "meta:altId": "_xdm.mixins.experienceevent-live-event-purchase",
+  "id": "_xdm.mixins.experienceevent-live-event-purchase"
+}

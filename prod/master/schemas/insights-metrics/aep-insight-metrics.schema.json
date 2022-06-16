@@ -75,13 +75,21 @@
           "meta:xdmField": "xdm:totalIdentitiesSkipped",
           "tagNumber": 5
         },
+        "failedIdentitiesCount": {
+          "title": "Count of failed Identities",
+          "type": "number",
+          "description": "Count of failed identities summarized at the granularity of provided dimensions in this record.",
+          "meta:xdmType": "number",
+          "meta:xdmField": "xdm:failedIdentitiesCount",
+          "tagNumber": 6
+        },
         "totalIdentitiesActivated": {
           "title": "Total Identities Activated",
           "type": "number",
           "description": "Total number of identities activated summarized at the granularity of provided dimensions in this record.",
           "meta:xdmType": "number",
           "meta:xdmField": "xdm:totalIdentitiesActivated",
-          "tagNumber": 6
+          "tagNumber": 7
         }
       },
       "meta:xdmField": "xdm:destinationMetrics",

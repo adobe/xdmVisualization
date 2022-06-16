@@ -69,6 +69,7 @@
         "status": {
           "title": "Status",
           "type": "string",
+          "description": "Status indicating whether the drug/medication is active or not.",
           "enum": [
             "active",
             "inactive",
@@ -94,11 +95,12 @@
           "meta:xdmField": "xdm:genericName",
           "tagNumber": 4
         },
-        "manufacturer": {
-          "title": "Manufacturer",
+        "manufacturerName": {
+          "title": "Manufacturer Name",
           "description": "Manufacturer of the medication.",
-          "$ref": "../datatypes/b2b/account-organization.schema.json",
-          "meta:xdmField": "xdm:manufacturer",
+          "type": "string",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:manufacturerName",
           "tagNumber": 5
         },
         "dosageUnitNumber": {
@@ -141,7 +143,7 @@
           "meta:xdmField": "xdm:ingredients",
           "tagNumber": 10,
           "items": {
-            "$ref": "obj14894451609644732.schema.json"
+            "$ref": "obj9434532615475713.schema.json"
           }
         },
         "expiryDate": {

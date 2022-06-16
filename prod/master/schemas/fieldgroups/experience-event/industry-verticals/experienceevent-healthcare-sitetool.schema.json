@@ -1,0 +1,135 @@
+{
+  "id": "_xdm.mixins.experienceevent-healthcare-sitetool",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Sitetool Details",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:tags": {
+    "industry": [
+      "healthcare_services"
+    ]
+  },
+  "description": "Data that is collected by sitetools like chatbot,survey ..etc.",
+  "meta:status": "experimental",
+  "meta:xdmType": "object",
+  "properties": {
+    "sitetool": {
+      "Title": "Site Tool",
+      "description": "Information collected by sitetool.",
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "name": {
+          "Title": "Site Tool Name",
+          "type": "string",
+          "description": "Name of the site tool like chatbot, survey ..etc.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:name",
+          "tagNumber": 1
+        },
+        "section": {
+          "Title": "Site Tool Section",
+          "type": "string",
+          "description": "Section of the site tool like main , sub.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:section",
+          "tagNumber": 2
+        },
+        "actor": {
+          "Title": "Actor",
+          "type": "string",
+          "description": "A person/member who did the action.",
+          "enum": [
+            "Member",
+            "Practitioner",
+            "RelatedPerson"
+          ],
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:actor",
+          "tagNumber": 3
+        },
+        "actorID": {
+          "Title": "Actor ID",
+          "type": "string",
+          "description": "Reference to the actor who could be a member,practionner or a relatedperson.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:actorID",
+          "tagNumber": 4
+        },
+        "dataGatheringEvent": {
+          "Title": "Data Gathering Event",
+          "type": "object",
+          "description": "Indicates if this event is a data gathering event and the other event details.",
+          "meta:xdmType": "object",
+          "properties": {
+            "isTrue": {
+              "Title": "Is True",
+              "type": "boolean",
+              "description": "Indicates if this event is a data gathering event like quiz,survey, poll.",
+              "meta:xdmType": "boolean",
+              "meta:xdmField": "xdm:isTrue",
+              "tagNumber": 1
+            },
+            "data": {
+              "Title": "Data",
+              "type": "object",
+              "meta:xdmType": "map",
+              "description": "Data that is collected and submitted as part of quiz,survey or poll submit event.",
+              "meta:xdmField": "xdm:data",
+              "tagNumber": 2,
+              "properties": {
+                "mapObj": {
+                  "type": "object",
+                  "meta:xdmType": "object",
+                  "properties": {
+                    "question": {
+                      "Title": "Question",
+                      "type": "string",
+                      "description": "Question of for which the response is collected.",
+                      "meta:xdmType": "string",
+                      "meta:xdmField": "xdm:question",
+                      "tagNumber": 1
+                    },
+                    "response": {
+                      "Title": "Response",
+                      "type": "string",
+                      "description": "Response provided by the actor.",
+                      "meta:xdmType": "string",
+                      "meta:xdmField": "xdm:response",
+                      "tagNumber": 2
+                    }
+                  },
+                  "tagNumber": 1
+                }
+              }
+            },
+            "score": {
+              "Title": "Score",
+              "type": "integer",
+              "description": "Score secured by the actor based on event responses.",
+              "meta:xdmType": "int",
+              "meta:xdmField": "xdm:score",
+              "tagNumber": 3
+            }
+          },
+          "meta:xdmField": "xdm:dataGatheringEvent",
+          "tagNumber": 5
+        },
+        "isKeyEvent": {
+          "Title": "Is Key Event",
+          "type": "boolean",
+          "description": "Indicates if this event is a key event.",
+          "meta:xdmType": "boolean",
+          "meta:xdmField": "xdm:isKeyEvent",
+          "tagNumber": 6
+        }
+      },
+      "meta:xdmField": "xdm:sitetool",
+      "tagNumber": 1
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/mixins/experienceevent-healthcare-sitetool",
+  "meta:altId": "_xdm.mixins.experienceevent-healthcare-sitetool",
+  "id": "_xdm.mixins.experienceevent-healthcare-sitetool"
+}

@@ -160,6 +160,11 @@
     },
     {
       "industry": [
+        "healthcare_services"
+      ]
+    },
+    {
+      "industry": [
         "health_and_life_sciences"
       ]
     },
@@ -2344,7 +2349,7 @@
           "meta:xdmField": "xdm:dataValueChanges",
           "tagNumber": 5,
           "items": {
-            "$ref": "obj06448180789632318.schema.json"
+            "$ref": "obj9959863901282218.schema.json"
           }
         }
       },
@@ -3741,7 +3746,7 @@
           "meta:xdmField": "xdm:diningReservations",
           "tagNumber": 1,
           "items": {
-            "$ref": "obj18404445338361786.schema.json"
+            "$ref": "obj3232660593210812.schema.json"
           }
         },
         "cancellation": {
@@ -3914,7 +3919,7 @@
           "meta:xdmField": "xdm:flightReservations",
           "tagNumber": 19,
           "items": {
-            "$ref": "obj3680783964920642.schema.json"
+            "$ref": "obj32351601073015757.schema.json"
           }
         },
         "lodgingReservations": {
@@ -3923,7 +3928,7 @@
           "meta:xdmField": "xdm:lodgingReservations",
           "tagNumber": 20,
           "items": {
-            "$ref": "obj8691598994893224.schema.json"
+            "$ref": "obj22939557189283355.schema.json"
           }
         },
         "vehicleReservations": {
@@ -3932,12 +3937,126 @@
           "meta:xdmField": "xdm:vehicleReservations",
           "tagNumber": 21,
           "items": {
-            "$ref": "obj12141711995048454.schema.json"
+            "$ref": "obj823106841192921.schema.json"
           }
         }
       },
       "meta:xdmField": "xdm:reservations",
       "tagNumber": 55
+    },
+    "sitetool": {
+      "Title": "Site Tool",
+      "description": "Information collected by sitetool.",
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "name": {
+          "Title": "Site Tool Name",
+          "type": "string",
+          "description": "Name of the site tool like chatbot, survey ..etc.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:name",
+          "tagNumber": 1
+        },
+        "section": {
+          "Title": "Site Tool Section",
+          "type": "string",
+          "description": "Section of the site tool like main , sub.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:section",
+          "tagNumber": 2
+        },
+        "actor": {
+          "Title": "Actor",
+          "type": "string",
+          "description": "A person/member who did the action.",
+          "enum": [
+            "Member",
+            "Practitioner",
+            "RelatedPerson"
+          ],
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:actor",
+          "tagNumber": 3
+        },
+        "actorID": {
+          "Title": "Actor ID",
+          "type": "string",
+          "description": "Reference to the actor who could be a member,practionner or a relatedperson.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:actorID",
+          "tagNumber": 4
+        },
+        "dataGatheringEvent": {
+          "Title": "Data Gathering Event",
+          "type": "object",
+          "description": "Indicates if this event is a data gathering event and the other event details.",
+          "meta:xdmType": "object",
+          "properties": {
+            "isTrue": {
+              "Title": "Is True",
+              "type": "boolean",
+              "description": "Indicates if this event is a data gathering event like quiz,survey, poll.",
+              "meta:xdmType": "boolean",
+              "meta:xdmField": "xdm:isTrue",
+              "tagNumber": 1
+            },
+            "data": {
+              "Title": "Data",
+              "type": "object",
+              "meta:xdmType": "map",
+              "description": "Data that is collected and submitted as part of quiz,survey or poll submit event.",
+              "meta:xdmField": "xdm:data",
+              "tagNumber": 2,
+              "properties": {
+                "mapObj": {
+                  "type": "object",
+                  "meta:xdmType": "object",
+                  "properties": {
+                    "question": {
+                      "Title": "Question",
+                      "type": "string",
+                      "description": "Question of for which the response is collected.",
+                      "meta:xdmType": "string",
+                      "meta:xdmField": "xdm:question",
+                      "tagNumber": 1
+                    },
+                    "response": {
+                      "Title": "Response",
+                      "type": "string",
+                      "description": "Response provided by the actor.",
+                      "meta:xdmType": "string",
+                      "meta:xdmField": "xdm:response",
+                      "tagNumber": 2
+                    }
+                  },
+                  "tagNumber": 1
+                }
+              }
+            },
+            "score": {
+              "Title": "Score",
+              "type": "integer",
+              "description": "Score secured by the actor based on event responses.",
+              "meta:xdmType": "int",
+              "meta:xdmField": "xdm:score",
+              "tagNumber": 3
+            }
+          },
+          "meta:xdmField": "xdm:dataGatheringEvent",
+          "tagNumber": 5
+        },
+        "isKeyEvent": {
+          "Title": "Is Key Event",
+          "type": "boolean",
+          "description": "Indicates if this event is a key event.",
+          "meta:xdmType": "boolean",
+          "meta:xdmField": "xdm:isKeyEvent",
+          "tagNumber": 6
+        }
+      },
+      "meta:xdmField": "xdm:sitetool",
+      "tagNumber": 56
     },
     "insuranceClaim": {
       "type": "object",
@@ -4019,7 +4138,73 @@
         }
       },
       "meta:xdmField": "xdm:insuranceClaim",
-      "tagNumber": 56
+      "tagNumber": 57
+    },
+    "eventPurchaseDetails": {
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "ticketPurchaseID": {
+          "title": "Ticket Purchase ID",
+          "description": "Unique ID for the ticket purchase order.",
+          "type": "string",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:ticketPurchaseID",
+          "tagNumber": 1
+        },
+        "liveEventID": {
+          "title": "Live Event Identifier",
+          "description": "Unique ID for the event in which the ticket was purchased for.",
+          "type": "string",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:liveEventID",
+          "tagNumber": 2
+        },
+        "ticketMasterEventCode": {
+          "title": "TicketMaster.com Event Code",
+          "description": "TicketMaster.com Event Code",
+          "type": "string",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:ticketMasterEventCode",
+          "tagNumber": 3
+        },
+        "liveEventName": {
+          "title": "Live Event Name",
+          "description": "Name of the live event.",
+          "type": "string",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:liveEventName",
+          "tagNumber": 4
+        },
+        "corporateSponsorshipFlag": {
+          "title": "Corporate Sponsorship Flag ",
+          "description": "Indicates if the ticket was provided by a corporate sponsorship.",
+          "type": "boolean",
+          "meta:xdmType": "boolean",
+          "meta:xdmField": "xdm:corporateSponsorshipFlag",
+          "tagNumber": 5
+        },
+        "tickets": {
+          "type": "array",
+          "description": "Ticket(s) Purchased",
+          "title": "Tickets",
+          "meta:xdmType": "array",
+          "meta:xdmField": "xdm:tickets",
+          "tagNumber": 6,
+          "items": {
+            "$ref": "obj6424894688913048.schema.json"
+          }
+        },
+        "ticketPurchase": {
+          "$ref": "../datatypes/industry-verticals/transaction.schema.json",
+          "description": "Transaction details for ticket purchase.",
+          "title": "Ticket Purchase Transaction",
+          "meta:xdmField": "xdm:ticketPurchase",
+          "tagNumber": 7
+        }
+      },
+      "meta:xdmField": "xdm:eventPurchaseDetails",
+      "tagNumber": 58
     },
     "prescription": {
       "type": "object",
@@ -4076,7 +4261,7 @@
         }
       },
       "meta:xdmField": "xdm:prescription",
-      "tagNumber": 57
+      "tagNumber": 59
     },
     "reservationSearch": {
       "type": "object",
@@ -4172,7 +4357,7 @@
         }
       },
       "meta:xdmField": "xdm:reservationSearch",
-      "tagNumber": 58
+      "tagNumber": 60
     },
     "upgrades": {
       "type": "object",
@@ -4205,7 +4390,7 @@
         }
       },
       "meta:xdmField": "xdm:upgrades",
-      "tagNumber": 59
+      "tagNumber": 61
     },
     "upsells": {
       "type": "object",
@@ -4238,7 +4423,7 @@
         }
       },
       "meta:xdmField": "xdm:upsells",
-      "tagNumber": 60
+      "tagNumber": 62
     },
     "warrantyClaim": {
       "type": "object",
@@ -4284,7 +4469,7 @@
         }
       },
       "meta:xdmField": "xdm:warrantyClaim",
-      "tagNumber": 61
+      "tagNumber": 63
     },
     "homeAddress": {
       "title": "Home Address",
@@ -4293,7 +4478,7 @@
       "meta:titleId": "profile-personal-details##xdm:homeAddress##title##98571",
       "meta:descriptionId": "profile-personal-details##xdm:homeAddress##description##35241",
       "meta:xdmField": "xdm:homeAddress",
-      "tagNumber": 62
+      "tagNumber": 64
     },
     "personalEmail": {
       "title": "Personal Email",
@@ -4302,7 +4487,7 @@
       "meta:titleId": "profile-personal-details##xdm:personalEmail##title##13501",
       "meta:descriptionId": "profile-personal-details##xdm:personalEmail##description##54181",
       "meta:xdmField": "xdm:personalEmail",
-      "tagNumber": 63
+      "tagNumber": 65
     },
     "homePhone": {
       "title": "Home Phone",
@@ -4311,7 +4496,7 @@
       "meta:titleId": "profile-personal-details##xdm:homePhone##title##28261",
       "meta:descriptionId": "profile-personal-details##xdm:homePhone##description##45111",
       "meta:xdmField": "xdm:homePhone",
-      "tagNumber": 64
+      "tagNumber": 66
     },
     "mobilePhone": {
       "title": "Mobile Phone",
@@ -4320,7 +4505,7 @@
       "meta:titleId": "profile-personal-details##xdm:mobilePhone##title##76241",
       "meta:descriptionId": "profile-personal-details##xdm:mobilePhone##description##51801",
       "meta:xdmField": "xdm:mobilePhone",
-      "tagNumber": 65
+      "tagNumber": 67
     },
     "faxPhone": {
       "title": "Fax Phone",
@@ -4329,28 +4514,28 @@
       "meta:titleId": "profile-personal-details##xdm:faxPhone##title##15761",
       "meta:descriptionId": "profile-personal-details##xdm:faxPhone##description##5951",
       "meta:xdmField": "xdm:faxPhone",
-      "tagNumber": 66
+      "tagNumber": 68
     },
     "shippingAddress": {
       "title": "Shipping Address",
       "$ref": "../datatypes/demographic/address.schema.json",
       "description": "Shipping postal address.",
       "meta:xdmField": "xdm:shippingAddress",
-      "tagNumber": 67
+      "tagNumber": 69
     },
     "billingAddress": {
       "title": "Billing Address",
       "$ref": "../datatypes/demographic/address.schema.json",
       "description": "Billing postal address.",
       "meta:xdmField": "xdm:billingAddress",
-      "tagNumber": 68
+      "tagNumber": 70
     },
     "mailingAddress": {
       "title": "Mailing Address",
       "$ref": "../datatypes/demographic/address.schema.json",
       "description": "Mailing postal address.",
       "meta:xdmField": "xdm:mailingAddress",
-      "tagNumber": 69
+      "tagNumber": 71
     }
   },
   "meta:xdmId": "https://ns.adobe.com/xdm/context/experienceevent-generated",

@@ -353,9 +353,12 @@
 </ul>
 </details>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/classes.graphs.html">graphs</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/classes.live-event-schedule.html">live-event-schedule</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/classes.loan.html">loan</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/classes.location.html">location</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/classes.lodging-product.html">lodging-product</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/classes.medication.html">medication</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/classes.payer.html">payer</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/classes.plan.html">plan</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/classes.product.html">product</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/classes.profile.html">profile</a></li>
@@ -659,7 +662,9 @@
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.industry-verticals.experienceevent-device-trade-in-details.html">experienceevent-device-trade-in-details</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.industry-verticals.experienceevent-dining-reservation.html">experienceevent-dining-reservation</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.industry-verticals.experienceevent-flight-reservation.html">experienceevent-flight-reservation</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.industry-verticals.experienceevent-healthcare-sitetool.html">experienceevent-healthcare-sitetool</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.industry-verticals.experienceevent-insurance-claim-process.html">experienceevent-insurance-claim-process</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.industry-verticals.experienceevent-live-event-ticket-purchase.html">experienceevent-live-event-ticket-purchase</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.industry-verticals.experienceevent-loan-application-details.html">experienceevent-loan-application-details</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.industry-verticals.experienceevent-lodging-reservation.html">experienceevent-lodging-reservation</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.industry-verticals.experienceevent-prescription-details.html">experienceevent-prescription-details</a></li>
@@ -679,6 +684,18 @@
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.graphs.graph.html">graph</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.graphs.graph-edge.html">graph-edge</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.graphs.graph-node.html">graph-node</a></li>
+</ul>
+</details>
+<details>
+<summary>live-event-schedule</summary>
+<ul>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.live-event-schedule.sports-entertainment-event-schedule.html">sports-entertainment-event-schedule</a></li>
+</ul>
+</details>
+<details>
+<summary>location</summary>
+<ul>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.location.sports-entertainment-event-venue.html">sports-entertainment-event-venue</a></li>
 </ul>
 </details>
 <details>
@@ -824,6 +841,8 @@
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.high_tech.profile-generated-high_tech.html">profile-generated-high_tech</a></li>
 </ul>
 </details>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.live-event-schedule-generated.html">live-event-schedule-generated</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.location-generated.html">location-generated</a></li>
 <details>
 <summary>manufacturing</summary>
 <ul>
@@ -874,6 +893,8 @@
 <summary>travel_and_hospitality</summary>
 <ul>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.travel_and_hospitality.experienceevent-generated-travel_and_hospitality.html">experienceevent-generated-travel_and_hospitality</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.travel_and_hospitality.live-event-schedule-generated-travel_and_hospitality.html">live-event-schedule-generated-travel_and_hospitality</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.travel_and_hospitality.location-generated-travel_and_hospitality.html">location-generated-travel_and_hospitality</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.travel_and_hospitality.profile-generated-travel_and_hospitality.html">profile-generated-travel_and_hospitality</a></li>
 </ul>
 </details>

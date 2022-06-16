@@ -8,6 +8,7 @@
 [uberschemas.product-generated](http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html)<br/>
 [uberschemas.opportunity-contact-role-generated](http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.opportunity-contact-role-generated.html)<br/>
 [uberschemas.opportunity-person-generated](http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.opportunity-person-generated.html)<br/>
+[uberschemas.location-generated](http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.location-generated.html)<br/>
 [uberschemas.campaign-generated](http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.campaign-generated.html)<br/>
 [uberschemas.opportunity-generated](http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.opportunity-generated.html)<br/>
 [uberschemas.financial_services.experienceevent-generated-financial_services](http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.financial_services.experienceevent-generated-financial_services.html)<br/>
@@ -23,6 +24,8 @@
 [uberschemas.marketing-list-generated](http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.marketing-list-generated.html)<br/>
 [uberschemas.travel_and_hospitality.profile-generated-travel_and_hospitality](http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.travel_and_hospitality.profile-generated-travel_and_hospitality.html)<br/>
 [uberschemas.travel_and_hospitality.experienceevent-generated-travel_and_hospitality](http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.travel_and_hospitality.experienceevent-generated-travel_and_hospitality.html)<br/>
+[uberschemas.travel_and_hospitality.location-generated-travel_and_hospitality](http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.travel_and_hospitality.location-generated-travel_and_hospitality.html)<br/>
+[uberschemas.travel_and_hospitality.live-event-schedule-generated-travel_and_hospitality](http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.travel_and_hospitality.live-event-schedule-generated-travel_and_hospitality.html)<br/>
 [uberschemas.segmentdefinition-generated](http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.segmentdefinition-generated.html)<br/>
 [uberschemas.medication-generated](http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.medication-generated.html)<br/>
 [uberschemas.retail.experienceevent-generated-retail](http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.retail.experienceevent-generated-retail.html)<br/>
@@ -39,6 +42,7 @@
 [uberschemas.telecom.experienceevent-generated-telecom](http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.telecom.experienceevent-generated-telecom.html)<br/>
 [uberschemas.telecom.profile-generated-telecom](http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.telecom.profile-generated-telecom.html)<br/>
 [uberschemas.account-generated](http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.account-generated.html)<br/>
+[uberschemas.live-event-schedule-generated](http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.live-event-schedule-generated.html)<br/>
 [uberschemas.marketing-list-member-generated](http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.marketing-list-member-generated.html)<br/>
 [uberschemas.provider-generated](http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.provider-generated.html)<br/>
 [uberschemas.account-person-generated](http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.account-person-generated.html)<br/>
@@ -50,8 +54,10 @@
 [behaviors.time-series](http://opensource.adobe.com/xdmVisualization/prod/master/behaviors.time-series.html)<br/>
 [behaviors.record](http://opensource.adobe.com/xdmVisualization/prod/master/behaviors.record.html)<br/>
 #### classes
+[classes.live-event-schedule](http://opensource.adobe.com/xdmVisualization/prod/master/classes.live-event-schedule.html)<br/>
 [classes.provider](http://opensource.adobe.com/xdmVisualization/prod/master/classes.provider.html)<br/>
 [classes.experienceevent](http://opensource.adobe.com/xdmVisualization/prod/master/classes.experienceevent.html)<br/>
+[classes.payer](http://opensource.adobe.com/xdmVisualization/prod/master/classes.payer.html)<br/>
 [classes.profile](http://opensource.adobe.com/xdmVisualization/prod/master/classes.profile.html)<br/>
 [classes.vehicle-product](http://opensource.adobe.com/xdmVisualization/prod/master/classes.vehicle-product.html)<br/>
 [classes.graphs](http://opensource.adobe.com/xdmVisualization/prod/master/classes.graphs.html)<br/>
@@ -67,6 +73,7 @@
 [classes.b2b.marketing-list](http://opensource.adobe.com/xdmVisualization/prod/master/classes.b2b.marketing-list.html)<br/>
 [classes.b2b.opportunity-person](http://opensource.adobe.com/xdmVisualization/prod/master/classes.b2b.opportunity-person.html)<br/>
 [classes.medication](http://opensource.adobe.com/xdmVisualization/prod/master/classes.medication.html)<br/>
+[classes.location](http://opensource.adobe.com/xdmVisualization/prod/master/classes.location.html)<br/>
 [classes.lodging-product](http://opensource.adobe.com/xdmVisualization/prod/master/classes.lodging-product.html)<br/>
 [classes.plan](http://opensource.adobe.com/xdmVisualization/prod/master/classes.plan.html)<br/>
 [classes.campaign-member](http://opensource.adobe.com/xdmVisualization/prod/master/classes.campaign-member.html)<br/>
@@ -189,7 +196,9 @@
 #### fieldgroups
 [fieldgroups.opportunity.opportunity-details](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.opportunity.opportunity-details.html)<br/>
 [fieldgroups.segment-definition.segmentdefinition-expression](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.segment-definition.segmentdefinition-expression.html)<br/>
+[fieldgroups.live-event-schedule.sports-entertainment-event-schedule](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.live-event-schedule.sports-entertainment-event-schedule.html)<br/>
 [fieldgroups.plan.healthcare-plan-details](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.plan.healthcare-plan-details.html)<br/>
+[fieldgroups.location.sports-entertainment-event-venue](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.location.sports-entertainment-event-venue.html)<br/>
 [fieldgroups.provider.healthcare-provider-details](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.provider.healthcare-provider-details.html)<br/>
 [fieldgroups.shared.external-source-system-audit-details](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.shared.external-source-system-audit-details.html)<br/>
 [fieldgroups.shared.identitymap](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.shared.identitymap.html)<br/>
@@ -291,12 +300,14 @@
 [fieldgroups.experience-event.industry-verticals.experienceevent-flight-reservation](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.industry-verticals.experienceevent-flight-reservation.html)<br/>
 [fieldgroups.experience-event.industry-verticals.experienceevent-bill-pay-details](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.industry-verticals.experienceevent-bill-pay-details.html)<br/>
 [fieldgroups.experience-event.industry-verticals.experienceevent-dining-reservation](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.industry-verticals.experienceevent-dining-reservation.html)<br/>
+[fieldgroups.experience-event.industry-verticals.experienceevent-live-event-ticket-purchase](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.industry-verticals.experienceevent-live-event-ticket-purchase.html)<br/>
 [fieldgroups.experience-event.industry-verticals.experienceevent-card-application-details](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.industry-verticals.experienceevent-card-application-details.html)<br/>
 [fieldgroups.experience-event.industry-verticals.experienceevent-loan-application-details](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.industry-verticals.experienceevent-loan-application-details.html)<br/>
 [fieldgroups.experience-event.industry-verticals.experienceevent-claim-details](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.industry-verticals.experienceevent-claim-details.html)<br/>
 [fieldgroups.experience-event.industry-verticals.experienceevent-insurance-claim-process](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.industry-verticals.experienceevent-insurance-claim-process.html)<br/>
 [fieldgroups.experience-event.industry-verticals.experienceevent-credit-limit-increase-details](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.industry-verticals.experienceevent-credit-limit-increase-details.html)<br/>
 [fieldgroups.experience-event.industry-verticals.experienceevent-upgrade-details](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.industry-verticals.experienceevent-upgrade-details.html)<br/>
+[fieldgroups.experience-event.industry-verticals.experienceevent-healthcare-sitetool](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.industry-verticals.experienceevent-healthcare-sitetool.html)<br/>
 [fieldgroups.experience-event.industry-verticals.experienceevent-reservation-search](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.industry-verticals.experienceevent-reservation-search.html)<br/>
 [fieldgroups.experience-event.industry-verticals.experienceevent-warranty-claim-process](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.industry-verticals.experienceevent-warranty-claim-process.html)<br/>
 [fieldgroups.experience-event.industry-verticals.experienceevent-vehicle-reservation](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.industry-verticals.experienceevent-vehicle-reservation.html)<br/>

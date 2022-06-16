@@ -1,0 +1,122 @@
+{
+  "id": "_xdm.mixins.sports-entertainment-event-schedule",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Sports and Entertainment Event Schedule",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:tags": {
+    "industry": [
+      "travel_and_hospitality"
+    ]
+  },
+  "description": "For Live Event schedule data, such as a traveling concert schedule or a sports team's schedule.",
+  "meta:status": "experimental",
+  "meta:xdmType": "object",
+  "properties": {
+    "sportsEntertainmentEventSchedule": {
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "locationID": {
+          "title": "Location ID",
+          "description": "Unique identifier for the Location in which the event is taking place.",
+          "type": "string",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:locationID",
+          "tagNumber": 1
+        },
+        "eventStartDateTime": {
+          "title": "Event Start Datetime",
+          "description": "Datetime for the event",
+          "type": "string",
+          "format": "date-time",
+          "meta:xdmType": "date-time",
+          "meta:xdmField": "xdm:eventStartDateTime",
+          "tagNumber": 2
+        },
+        "attractionName": {
+          "title": "Attraction Name",
+          "description": "Name of the attraction(s) at the event",
+          "type": "string",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:attractionName",
+          "tagNumber": 3
+        },
+        "eventClassification": {
+          "title": "Event Classification",
+          "description": "Describes the type of event, e.g., sports, music",
+          "type": "string",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:eventClassification",
+          "tagNumber": 4
+        },
+        "eventSubClassification": {
+          "title": "Event Sub Classification",
+          "description": "Describes the sub-type of the event. For example, if the classification is sports, the sub-classification might be the type of sport (baseball).",
+          "type": "string",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:eventSubClassification",
+          "tagNumber": 5
+        },
+        "premiumDoorTime": {
+          "title": "Premium Door Time",
+          "description": "Door open time for premium ticket holders.",
+          "type": "string",
+          "format": "date-time",
+          "meta:xdmType": "date-time",
+          "meta:xdmField": "xdm:premiumDoorTime",
+          "tagNumber": 6
+        },
+        "regularDoorTime": {
+          "title": "Regular Door Time",
+          "description": "The time the doors open for non-premium ticket holders.",
+          "type": "string",
+          "format": "date-time",
+          "meta:xdmType": "date-time",
+          "meta:xdmField": "xdm:regularDoorTime",
+          "tagNumber": 7
+        },
+        "ticketSalesStartTime": {
+          "title": "Ticket Sales Start Time",
+          "description": "",
+          "type": "string",
+          "format": "date-time",
+          "meta:xdmType": "date-time",
+          "meta:xdmField": "xdm:ticketSalesStartTime",
+          "tagNumber": 8
+        },
+        "ticketSalesEndTime": {
+          "title": "Ticket Sales End Time",
+          "description": "",
+          "type": "string",
+          "format": "date-time",
+          "meta:xdmType": "date-time",
+          "meta:xdmField": "xdm:ticketSalesEndTime",
+          "tagNumber": 9
+        },
+        "ticketsAvailable": {
+          "title": "Tickets Available",
+          "description": "Indicates if tickets are still available for the event or not.",
+          "type": "boolean",
+          "meta:xdmType": "boolean",
+          "meta:xdmField": "xdm:ticketsAvailable",
+          "tagNumber": 10
+        },
+        "eventSeasonName": {
+          "title": "Season Name",
+          "description": "Descriptive name of the event season, if it is an event within a series. For example, a sports season.",
+          "type": "string",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:eventSeasonName",
+          "tagNumber": 11
+        }
+      },
+      "meta:xdmField": "xdm:sportsEntertainmentEventSchedule",
+      "tagNumber": 1
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/mixins/sports-entertainment-event-schedule",
+  "meta:altId": "_xdm.mixins.sports-entertainment-event-schedule",
+  "id": "_xdm.mixins.sports-entertainment-event-schedule"
+}

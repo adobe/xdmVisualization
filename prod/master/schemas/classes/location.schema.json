@@ -1,0 +1,54 @@
+{
+  "id": "_xdm.classes.location",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Location",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:tags": {
+    "industry": [
+      "travel_and_hospitality"
+    ]
+  },
+  "description": "For Live Event Location information, such as a concert hall or sports arena.",
+  "meta:status": [
+    "experimental",
+    "stable"
+  ],
+  "meta:xdmType": "object",
+  "meta:createdDate": "2020-08-10",
+  "meta:titleId": "record##title##65961",
+  "meta:descriptionId": "record##description##3921",
+  "properties": {
+    "_id": {
+      "title": "Identifier",
+      "type": "string",
+      "format": "uri-reference",
+      "description": "A unique identifier for the record.",
+      "meta:titleId": "record##@id##title##51271",
+      "meta:descriptionId": "record##@id##description##16181",
+      "meta:xdmType": "string",
+      "meta:xdmField": "@id",
+      "tagNumber": 1
+    },
+    "locationID": {
+      "description": "Unique identifier for the Location.",
+      "title": "Location Identifier",
+      "type": "string",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:locationID",
+      "tagNumber": 2
+    },
+    "locationName": {
+      "description": "Name of the location.",
+      "title": "Location Name",
+      "type": "string",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:locationName",
+      "tagNumber": 3
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/classes/location",
+  "meta:altId": "_xdm.classes.location",
+  "id": "_xdm.classes.location"
+}
