@@ -283,7 +283,7 @@
       "meta:xdmField": "xdm:personComponents",
       "tagNumber": 12,
       "items": {
-        "$ref": "obj6900162230592086.schema.json"
+        "$ref": "obj9556174022939334.schema.json"
       }
     },
     "b2b": {
@@ -2216,7 +2216,7 @@
           "meta:xdmField": "xdm:primaryCarePhysicians",
           "tagNumber": 4,
           "items": {
-            "$ref": "obj17671883121101217.schema.json"
+            "$ref": "obj5704227571376481.schema.json"
           }
         },
         "emergencyContact": {
@@ -2269,7 +2269,7 @@
           "meta:xdmField": "xdm:medications",
           "tagNumber": 7,
           "items": {
-            "$ref": "obj718015690490998.schema.json"
+            "$ref": "obj40540897912568963.schema.json"
           }
         },
         "isDependent": {
@@ -2317,7 +2317,7 @@
           "meta:xdmField": "xdm:specialists",
           "tagNumber": 12,
           "items": {
-            "$ref": "obj3718208995950969.schema.json"
+            "$ref": "obj446849766964293.schema.json"
           }
         },
         "isDeceased": {
@@ -2344,7 +2344,7 @@
           "meta:xdmField": "xdm:plans",
           "tagNumber": 15,
           "items": {
-            "$ref": "obj7624880279515331.schema.json"
+            "$ref": "obj4206591239708872.schema.json"
           }
         }
       },
@@ -2460,7 +2460,7 @@
           "meta:xdmField": "xdm:pointsExpiration",
           "tagNumber": 4,
           "items": {
-            "$ref": "obj21947618024220117.schema.json"
+            "$ref": "obj4166288913635574.schema.json"
           }
         },
         "pointsRedeemed": {
@@ -2574,7 +2574,7 @@
           "meta:xdmField": "xdm:creditScores",
           "tagNumber": 3,
           "items": {
-            "$ref": "obj5154395666583611.schema.json"
+            "$ref": "obj6762934533070522.schema.json"
           }
         },
         "employmentStatus": {
@@ -2833,7 +2833,7 @@
       "meta:xdmField": "xdm:pushNotificationDetails",
       "tagNumber": 56,
       "items": {
-        "$ref": "obj5180316265935547.schema.json"
+        "$ref": "obj7751353987960408.schema.json"
       }
     },
     "emailResponse": {
@@ -2980,7 +2980,7 @@
           "meta:xdmField": "xdm:internetSubscription",
           "tagNumber": 4,
           "items": {
-            "$ref": "obj08811760781193256.schema.json"
+            "$ref": "obj016365818443646152.schema.json"
           }
         },
         "landlineSubscription": {
@@ -2991,7 +2991,7 @@
           "meta:xdmField": "xdm:landlineSubscription",
           "tagNumber": 5,
           "items": {
-            "$ref": "obj5471334597166433.schema.json"
+            "$ref": "obj6714923874119956.schema.json"
           }
         },
         "mediaSubscription": {
@@ -3002,7 +3002,7 @@
           "meta:xdmField": "xdm:mediaSubscription",
           "tagNumber": 6,
           "items": {
-            "$ref": "obj570506621529207.schema.json"
+            "$ref": "obj2700191131861649.schema.json"
           }
         },
         "mobileSubscription": {
@@ -3013,7 +3013,7 @@
           "meta:xdmField": "xdm:mobileSubscription",
           "tagNumber": 7,
           "items": {
-            "$ref": "obj9472556219569654.schema.json"
+            "$ref": "obj16975772317777782.schema.json"
           }
         }
       },
