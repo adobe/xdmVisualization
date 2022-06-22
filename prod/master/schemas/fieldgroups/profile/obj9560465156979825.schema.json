@@ -1,0 +1,44 @@
+{
+  "type": "object",
+  "meta:xdmType": "object",
+  "additionalProperties": false,
+  "properties": {
+    "providerID": {
+      "title": "Provider ID",
+      "type": "string",
+      "description": "Unique identifier of the physician.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:providerID",
+      "tagNumber": 1
+    },
+    "fullName": {
+      "title": "Full Name",
+      "type": "string",
+      "description": "Primary care physician's full name.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:fullName",
+      "tagNumber": 2
+    },
+    "startDate": {
+      "title": "Start Date",
+      "type": "string",
+      "format": "date-time",
+      "description": "Date on which the PCP began care for the member.",
+      "meta:xdmType": "date-time",
+      "meta:xdmField": "xdm:startDate",
+      "tagNumber": 3
+    },
+    "endDate": {
+      "title": "End Date",
+      "type": "string",
+      "format": "date-time",
+      "description": "Date on which the PCP ended care for the member.",
+      "meta:xdmType": "date-time",
+      "meta:xdmField": "xdm:endDate",
+      "tagNumber": 4
+    }
+  },
+  "tagNumber": 1,
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "id": "obj9560465156979825.schema.json"
+}
