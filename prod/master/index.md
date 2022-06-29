@@ -550,6 +550,7 @@
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.segmentmembershipitem.html">segmentmembershipitem</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.shipping.html">shipping</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.sitesearch.html">sitesearch</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.store-web-order.html">store-web-order</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.webinfo.html">webinfo</a></li>
 </ul>
 </details>
@@ -632,6 +633,7 @@
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.experienceevent-marketing.html">experienceevent-marketing</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.experienceevent-media.html">experienceevent-media</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.experienceevent-offer-impression-details.html">experienceevent-offer-impression-details</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.experienceevent-order-details.html">experienceevent-order-details</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.experienceevent-privacy.html">experienceevent-privacy</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.experienceevent-profile-stitch.html">experienceevent-profile-stitch</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.experienceevent-pushtracking.html">experienceevent-pushtracking</a></li>

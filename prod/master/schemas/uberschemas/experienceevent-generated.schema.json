@@ -2349,7 +2349,7 @@
           "meta:xdmField": "xdm:dataValueChanges",
           "tagNumber": 5,
           "items": {
-            "$ref": "obj11498519011216635.schema.json"
+            "$ref": "obj2248392949504554.schema.json"
           }
         }
       },
@@ -3095,6 +3095,55 @@
       "meta:xdmField": "xdm:offers",
       "tagNumber": 38
     },
+    "order": {
+      "title": "Order",
+      "$ref": "../datatypes/store-web-order.schema.json",
+      "description": "Product Orders and realted information like payments.",
+      "meta:xdmField": "xdm:order",
+      "tagNumber": 39
+    },
+    "store": {
+      "title": "Store Details",
+      "type": "object",
+      "description": "Store related information.",
+      "meta:xdmType": "object",
+      "properties": {
+        "storeID": {
+          "title": "Store ID",
+          "type": "string",
+          "description": "Unique identifier for the store.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:storeID",
+          "tagNumber": 1
+        }
+      },
+      "meta:xdmField": "xdm:store",
+      "tagNumber": 40
+    },
+    "billing": {
+      "title": "Billing Details",
+      "type": "object",
+      "description": "Billing related information.",
+      "meta:xdmType": "object",
+      "properties": {
+        "address": {
+          "title": "Billing Address",
+          "description": "Billing Address.",
+          "$ref": "../datatypes/demographic/address.schema.json",
+          "meta:xdmField": "xdm:address",
+          "tagNumber": 1
+        }
+      },
+      "meta:xdmField": "xdm:billing",
+      "tagNumber": 41
+    },
+    "shipping": {
+      "title": "Shipping",
+      "$ref": "../datatypes/shipping.schema.json",
+      "description": "Shipping related informnation for the order.",
+      "meta:xdmField": "xdm:shipping",
+      "tagNumber": 42
+    },
     "consentStrings": {
       "title": "Identity level consent information",
       "type": "array",
@@ -3105,7 +3154,7 @@
         "tagNumber": 1
       },
       "meta:xdmField": "xdm:consentStrings",
-      "tagNumber": 39
+      "tagNumber": 43
     },
     "profileStitch": {
       "title": "Profile stitch",
@@ -3119,7 +3168,7 @@
         "tagNumber": 1
       },
       "meta:xdmField": "xdm:profileStitch",
-      "tagNumber": 40
+      "tagNumber": 44
     },
     "pushNotificationTracking": {
       "title": "push notification tracking details",
@@ -3193,7 +3242,7 @@
         }
       },
       "meta:xdmField": "xdm:pushNotificationTracking",
-      "tagNumber": 41
+      "tagNumber": 45
     },
     "quotes": {
       "type": "object",
@@ -3251,7 +3300,7 @@
         }
       },
       "meta:xdmField": "xdm:quotes",
-      "tagNumber": 42
+      "tagNumber": 46
     },
     "person": {
       "title": "Person Reference Properties",
@@ -3285,7 +3334,7 @@
         }
       },
       "meta:xdmField": "xdm:person",
-      "tagNumber": 43
+      "tagNumber": 47
     },
     "servicePaymentDetails": {
       "type": "object",
@@ -3304,28 +3353,28 @@
         }
       },
       "meta:xdmField": "xdm:service-payment-details",
-      "tagNumber": 44
+      "tagNumber": 48
     },
     "siteSearch": {
       "title": "Site Search",
       "$ref": "../datatypes/sitesearch.schema.json",
       "description": "The information related to site search.",
       "meta:xdmField": "xdm:siteSearch",
-      "tagNumber": 45
+      "tagNumber": 49
     },
     "searchRequest": {
       "title": "Search Request",
       "$ref": "../datatypes/data/measure.schema.json",
       "description": "A search request has been sent.",
       "meta:xdmField": "xdm:searchRequest",
-      "tagNumber": 46
+      "tagNumber": 50
     },
     "searchResponse": {
       "title": "Search Response",
       "$ref": "../datatypes/data/measure.schema.json",
       "description": "A search response has been received.",
       "meta:xdmField": "xdm:searchResponse",
-      "tagNumber": 47
+      "tagNumber": 51
     },
     "socialMarketing": {
       "type": "object",
@@ -3415,14 +3464,14 @@
         }
       },
       "meta:xdmField": "xdm:socialMarketing",
-      "tagNumber": 48
+      "tagNumber": 52
     },
     "stitchedID": {
       "title": "Stitched ID",
       "$ref": "../datatypes/identity.schema.json",
       "description": "Identifier computed by the Stitching service, containing a pair of (id, namespace) that uniquely identifies an individual to which this event belongs.",
       "meta:xdmField": "xdm:stitchedID",
-      "tagNumber": 49
+      "tagNumber": 53
     },
     "surveyResponse": {
       "type": "object",
@@ -3472,7 +3521,7 @@
         }
       },
       "meta:xdmField": "xdm:surveyResponse",
-      "tagNumber": 50
+      "tagNumber": 54
     },
     "claims": {
       "type": "object",
@@ -3560,7 +3609,7 @@
         }
       },
       "meta:xdmField": "xdm:claims",
-      "tagNumber": 51
+      "tagNumber": 55
     },
     "customerFeedback": {
       "type": "object",
@@ -3688,7 +3737,7 @@
         }
       },
       "meta:xdmField": "xdm:customerFeedback",
-      "tagNumber": 52
+      "tagNumber": 56
     },
     "deviceTradeInDetails": {
       "type": "object",
@@ -3727,7 +3776,7 @@
         }
       },
       "meta:xdmField": "xdm:deviceTradeInDetails",
-      "tagNumber": 53
+      "tagNumber": 57
     },
     "reservations": {
       "type": "object",
@@ -3746,7 +3795,7 @@
           "meta:xdmField": "xdm:diningReservations",
           "tagNumber": 1,
           "items": {
-            "$ref": "obj5887109368151557.schema.json"
+            "$ref": "obj2668005572389234.schema.json"
           }
         },
         "cancellation": {
@@ -3919,7 +3968,7 @@
           "meta:xdmField": "xdm:flightReservations",
           "tagNumber": 19,
           "items": {
-            "$ref": "obj3183313434201811.schema.json"
+            "$ref": "obj5385563318213178.schema.json"
           }
         },
         "lodgingReservations": {
@@ -3928,7 +3977,7 @@
           "meta:xdmField": "xdm:lodgingReservations",
           "tagNumber": 20,
           "items": {
-            "$ref": "obj7307529453982129.schema.json"
+            "$ref": "obj38550685159175635.schema.json"
           }
         },
         "vehicleReservations": {
@@ -3937,12 +3986,12 @@
           "meta:xdmField": "xdm:vehicleReservations",
           "tagNumber": 21,
           "items": {
-            "$ref": "obj7521432981940321.schema.json"
+            "$ref": "obj964980402070833.schema.json"
           }
         }
       },
       "meta:xdmField": "xdm:reservations",
-      "tagNumber": 55
+      "tagNumber": 59
     },
     "sitetool": {
       "Title": "Site Tool",
@@ -4056,7 +4105,7 @@
         }
       },
       "meta:xdmField": "xdm:sitetool",
-      "tagNumber": 56
+      "tagNumber": 60
     },
     "insuranceClaim": {
       "type": "object",
@@ -4138,7 +4187,7 @@
         }
       },
       "meta:xdmField": "xdm:insuranceClaim",
-      "tagNumber": 57
+      "tagNumber": 61
     },
     "eventPurchaseDetails": {
       "type": "object",
@@ -4192,7 +4241,7 @@
           "meta:xdmField": "xdm:tickets",
           "tagNumber": 6,
           "items": {
-            "$ref": "obj10204868088697805.schema.json"
+            "$ref": "obj3344248235897598.schema.json"
           }
         },
         "ticketPurchase": {
@@ -4204,7 +4253,7 @@
         }
       },
       "meta:xdmField": "xdm:eventPurchaseDetails",
-      "tagNumber": 58
+      "tagNumber": 62
     },
     "prescription": {
       "type": "object",
@@ -4261,7 +4310,7 @@
         }
       },
       "meta:xdmField": "xdm:prescription",
-      "tagNumber": 59
+      "tagNumber": 63
     },
     "reservationSearch": {
       "type": "object",
@@ -4357,7 +4406,7 @@
         }
       },
       "meta:xdmField": "xdm:reservationSearch",
-      "tagNumber": 60
+      "tagNumber": 64
     },
     "upgrades": {
       "type": "object",
@@ -4390,7 +4439,7 @@
         }
       },
       "meta:xdmField": "xdm:upgrades",
-      "tagNumber": 61
+      "tagNumber": 65
     },
     "upsells": {
       "type": "object",
@@ -4423,7 +4472,7 @@
         }
       },
       "meta:xdmField": "xdm:upsells",
-      "tagNumber": 62
+      "tagNumber": 66
     },
     "warrantyClaim": {
       "type": "object",
@@ -4469,7 +4518,7 @@
         }
       },
       "meta:xdmField": "xdm:warrantyClaim",
-      "tagNumber": 63
+      "tagNumber": 67
     },
     "homeAddress": {
       "title": "Home Address",
@@ -4478,7 +4527,7 @@
       "meta:titleId": "profile-personal-details##xdm:homeAddress##title##98571",
       "meta:descriptionId": "profile-personal-details##xdm:homeAddress##description##35241",
       "meta:xdmField": "xdm:homeAddress",
-      "tagNumber": 64
+      "tagNumber": 68
     },
     "personalEmail": {
       "title": "Personal Email",
@@ -4487,7 +4536,7 @@
       "meta:titleId": "profile-personal-details##xdm:personalEmail##title##13501",
       "meta:descriptionId": "profile-personal-details##xdm:personalEmail##description##54181",
       "meta:xdmField": "xdm:personalEmail",
-      "tagNumber": 65
+      "tagNumber": 69
     },
     "homePhone": {
       "title": "Home Phone",
@@ -4496,7 +4545,7 @@
       "meta:titleId": "profile-personal-details##xdm:homePhone##title##28261",
       "meta:descriptionId": "profile-personal-details##xdm:homePhone##description##45111",
       "meta:xdmField": "xdm:homePhone",
-      "tagNumber": 66
+      "tagNumber": 70
     },
     "mobilePhone": {
       "title": "Mobile Phone",
@@ -4505,7 +4554,7 @@
       "meta:titleId": "profile-personal-details##xdm:mobilePhone##title##76241",
       "meta:descriptionId": "profile-personal-details##xdm:mobilePhone##description##51801",
       "meta:xdmField": "xdm:mobilePhone",
-      "tagNumber": 67
+      "tagNumber": 71
     },
     "faxPhone": {
       "title": "Fax Phone",
@@ -4514,28 +4563,28 @@
       "meta:titleId": "profile-personal-details##xdm:faxPhone##title##15761",
       "meta:descriptionId": "profile-personal-details##xdm:faxPhone##description##5951",
       "meta:xdmField": "xdm:faxPhone",
-      "tagNumber": 68
+      "tagNumber": 72
     },
     "shippingAddress": {
       "title": "Shipping Address",
       "$ref": "../datatypes/demographic/address.schema.json",
       "description": "Shipping postal address.",
       "meta:xdmField": "xdm:shippingAddress",
-      "tagNumber": 69
+      "tagNumber": 73
     },
     "billingAddress": {
       "title": "Billing Address",
       "$ref": "../datatypes/demographic/address.schema.json",
       "description": "Billing postal address.",
       "meta:xdmField": "xdm:billingAddress",
-      "tagNumber": 70
+      "tagNumber": 74
     },
     "mailingAddress": {
       "title": "Mailing Address",
       "$ref": "../datatypes/demographic/address.schema.json",
       "description": "Mailing postal address.",
       "meta:xdmField": "xdm:mailingAddress",
-      "tagNumber": 71
+      "tagNumber": 75
     }
   },
   "meta:xdmId": "https://ns.adobe.com/xdm/context/experienceevent-generated",

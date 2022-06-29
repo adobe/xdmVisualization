@@ -408,6 +408,55 @@
       "meta:xdmField": "xdm:media",
       "tagNumber": 19
     },
+    "order": {
+      "title": "Order",
+      "$ref": "../../datatypes/store-web-order.schema.json",
+      "description": "Product Orders and realted information like payments.",
+      "meta:xdmField": "xdm:order",
+      "tagNumber": 20
+    },
+    "store": {
+      "title": "Store Details",
+      "type": "object",
+      "description": "Store related information.",
+      "meta:xdmType": "object",
+      "properties": {
+        "storeID": {
+          "title": "Store ID",
+          "type": "string",
+          "description": "Unique identifier for the store.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:storeID",
+          "tagNumber": 1
+        }
+      },
+      "meta:xdmField": "xdm:store",
+      "tagNumber": 21
+    },
+    "billing": {
+      "title": "Billing Details",
+      "type": "object",
+      "description": "Billing related information.",
+      "meta:xdmType": "object",
+      "properties": {
+        "address": {
+          "title": "Billing Address",
+          "description": "Billing Address.",
+          "$ref": "../../datatypes/demographic/address.schema.json",
+          "meta:xdmField": "xdm:address",
+          "tagNumber": 1
+        }
+      },
+      "meta:xdmField": "xdm:billing",
+      "tagNumber": 22
+    },
+    "shipping": {
+      "title": "Shipping",
+      "$ref": "../../datatypes/shipping.schema.json",
+      "description": "Shipping related informnation for the order.",
+      "meta:xdmField": "xdm:shipping",
+      "tagNumber": 23
+    },
     "person": {
       "title": "Person Reference Properties",
       "type": "object",
@@ -440,7 +489,7 @@
         }
       },
       "meta:xdmField": "xdm:person",
-      "tagNumber": 20
+      "tagNumber": 24
     },
     "socialMarketing": {
       "type": "object",
@@ -530,14 +579,14 @@
         }
       },
       "meta:xdmField": "xdm:socialMarketing",
-      "tagNumber": 21
+      "tagNumber": 25
     },
     "stitchedID": {
       "title": "Stitched ID",
       "$ref": "../../datatypes/identity.schema.json",
       "description": "Identifier computed by the Stitching service, containing a pair of (id, namespace) that uniquely identifies an individual to which this event belongs.",
       "meta:xdmField": "xdm:stitchedID",
-      "tagNumber": 22
+      "tagNumber": 26
     },
     "surveyResponse": {
       "type": "object",
@@ -587,7 +636,7 @@
         }
       },
       "meta:xdmField": "xdm:surveyResponse",
-      "tagNumber": 23
+      "tagNumber": 27
     },
     "userAccount": {
       "type": "object",
@@ -795,7 +844,7 @@
         }
       },
       "meta:xdmField": "xdm:userAccount",
-      "tagNumber": 24
+      "tagNumber": 28
     },
     "web": {
       "title": "Web",
@@ -804,7 +853,7 @@
       "meta:titleId": "experienceevent-web##xdm:web##title##43111",
       "meta:descriptionId": "experienceevent-web##xdm:web##description##40241",
       "meta:xdmField": "xdm:web",
-      "tagNumber": 25
+      "tagNumber": 29
     },
     "customerFeedback": {
       "type": "object",
@@ -932,7 +981,7 @@
         }
       },
       "meta:xdmField": "xdm:customerFeedback",
-      "tagNumber": 26
+      "tagNumber": 30
     },
     "upsells": {
       "type": "object",
@@ -965,7 +1014,7 @@
         }
       },
       "meta:xdmField": "xdm:upsells",
-      "tagNumber": 27
+      "tagNumber": 31
     },
     "homeAddress": {
       "title": "Home Address",
@@ -974,7 +1023,7 @@
       "meta:titleId": "profile-personal-details##xdm:homeAddress##title##98571",
       "meta:descriptionId": "profile-personal-details##xdm:homeAddress##description##35241",
       "meta:xdmField": "xdm:homeAddress",
-      "tagNumber": 28
+      "tagNumber": 32
     },
     "personalEmail": {
       "title": "Personal Email",
@@ -983,7 +1032,7 @@
       "meta:titleId": "profile-personal-details##xdm:personalEmail##title##13501",
       "meta:descriptionId": "profile-personal-details##xdm:personalEmail##description##54181",
       "meta:xdmField": "xdm:personalEmail",
-      "tagNumber": 29
+      "tagNumber": 33
     },
     "homePhone": {
       "title": "Home Phone",
@@ -992,7 +1041,7 @@
       "meta:titleId": "profile-personal-details##xdm:homePhone##title##28261",
       "meta:descriptionId": "profile-personal-details##xdm:homePhone##description##45111",
       "meta:xdmField": "xdm:homePhone",
-      "tagNumber": 30
+      "tagNumber": 34
     },
     "mobilePhone": {
       "title": "Mobile Phone",
@@ -1001,7 +1050,7 @@
       "meta:titleId": "profile-personal-details##xdm:mobilePhone##title##76241",
       "meta:descriptionId": "profile-personal-details##xdm:mobilePhone##description##51801",
       "meta:xdmField": "xdm:mobilePhone",
-      "tagNumber": 31
+      "tagNumber": 35
     },
     "faxPhone": {
       "title": "Fax Phone",
@@ -1010,28 +1059,28 @@
       "meta:titleId": "profile-personal-details##xdm:faxPhone##title##15761",
       "meta:descriptionId": "profile-personal-details##xdm:faxPhone##description##5951",
       "meta:xdmField": "xdm:faxPhone",
-      "tagNumber": 32
+      "tagNumber": 36
     },
     "shippingAddress": {
       "title": "Shipping Address",
       "$ref": "../../datatypes/demographic/address.schema.json",
       "description": "Shipping postal address.",
       "meta:xdmField": "xdm:shippingAddress",
-      "tagNumber": 33
+      "tagNumber": 37
     },
     "billingAddress": {
       "title": "Billing Address",
       "$ref": "../../datatypes/demographic/address.schema.json",
       "description": "Billing postal address.",
       "meta:xdmField": "xdm:billingAddress",
-      "tagNumber": 34
+      "tagNumber": 38
     },
     "mailingAddress": {
       "title": "Mailing Address",
       "$ref": "../../datatypes/demographic/address.schema.json",
       "description": "Mailing postal address.",
       "meta:xdmField": "xdm:mailingAddress",
-      "tagNumber": 35
+      "tagNumber": 39
     }
   },
   "meta:xdmId": "https://ns.adobe.com/xdm/context/experienceevent-generated-education",

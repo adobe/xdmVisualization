@@ -5,7 +5,6 @@
   "type": "object",
   "description": "Shipping information for one or more products, such as method, cost, etc.",
   "meta:status": "experimental",
-  "meta:createdDate": "2022-03-02",
   "meta:xdmType": "object",
   "properties": {
     "shippingMethod": {
@@ -23,6 +22,25 @@
       "meta:xdmType": "number",
       "meta:xdmField": "xdm:shippingAmount",
       "tagNumber": 2
+    },
+    "shippingDestination": {
+      "title": "Shipping Destination",
+      "type": "string",
+      "description": "The ship-to  destination specified by the user. It could be home, store etc.",
+      "enum": [
+        "home",
+        "store"
+      ],
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:shippingDestination",
+      "tagNumber": 3
+    },
+    "address": {
+      "title": "Shipping Address",
+      "description": "Shipping Address.",
+      "$ref": "demographic/address.schema.json",
+      "meta:xdmField": "xdm:address",
+      "tagNumber": 4
     }
   },
   "meta:xdmId": "https://ns.adobe.com/xdm/datatypes/shipping",

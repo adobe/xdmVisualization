@@ -100,6 +100,7 @@
 [datatypes.person.person](http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.person.person.html)<br/>
 [datatypes.person.person-name](http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.person.person-name.html)<br/>
 [datatypes.webinfo](http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.webinfo.html)<br/>
+[datatypes.store-web-order](http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.store-web-order.html)<br/>
 [datatypes.poi-detail](http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.poi-detail.html)<br/>
 [datatypes.cart](http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.cart.html)<br/>
 [datatypes.optinout-additional-details](http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.optinout-additional-details.html)<br/>
@@ -318,6 +319,7 @@
 [fieldgroups.experience-event.industry-verticals.experienceevent-balance-transfers](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.industry-verticals.experienceevent-balance-transfers.html)<br/>
 [fieldgroups.experience-event.experienceevent-user-login-details](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.experienceevent-user-login-details.html)<br/>
 [fieldgroups.experience-event.experienceevent-quote-request-details](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.experienceevent-quote-request-details.html)<br/>
+[fieldgroups.experience-event.experienceevent-order-details](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.experienceevent-order-details.html)<br/>
 [fieldgroups.opportunity-contact-role.opportunity-contact-role-details](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.opportunity-contact-role.opportunity-contact-role-details.html)<br/>
 [fieldgroups.campaign.campaign-details](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.campaign.campaign-details.html)<br/>
 [fieldgroups.campaign-member.campaign-member-details](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.campaign-member.campaign-member-details.html)<br/>

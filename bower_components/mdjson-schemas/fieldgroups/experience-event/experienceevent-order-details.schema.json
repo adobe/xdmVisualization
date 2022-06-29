@@ -1,0 +1,82 @@
+{
+  "id": "_xdm.context.experienceevent-order-details",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Order Details",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:tags": {
+    "industry": [
+      "all"
+    ]
+  },
+  "description": "Order data such as product information (SKU, name, quantity), and related information like shipping, billing, payments etc.",
+  "meta:status": "experimental",
+  "meta:xdmType": "object",
+  "properties": {
+    "productListItems": {
+      "title": "Product list items",
+      "type": "array",
+      "description": "A list of items representing a product selected by a customer with specific options and pricing that are for that usage context at a specific point of time and may differ from the product record.",
+      "meta:xdmType": "array",
+      "items": {
+        "$ref": "../../datatypes/productlistitem.schema.json",
+        "tagNumber": 1
+      },
+      "meta:xdmField": "xdm:productListItems",
+      "tagNumber": 1
+    },
+    "order": {
+      "title": "Order",
+      "$ref": "../../datatypes/store-web-order.schema.json",
+      "description": "Product Orders and realted information like payments.",
+      "meta:xdmField": "xdm:order",
+      "tagNumber": 2
+    },
+    "store": {
+      "title": "Store Details",
+      "type": "object",
+      "description": "Store related information.",
+      "meta:xdmType": "object",
+      "properties": {
+        "storeID": {
+          "title": "Store ID",
+          "type": "string",
+          "description": "Unique identifier for the store.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:storeID",
+          "tagNumber": 1
+        }
+      },
+      "meta:xdmField": "xdm:store",
+      "tagNumber": 3
+    },
+    "billing": {
+      "title": "Billing Details",
+      "type": "object",
+      "description": "Billing related information.",
+      "meta:xdmType": "object",
+      "properties": {
+        "address": {
+          "title": "Billing Address",
+          "description": "Billing Address.",
+          "$ref": "../../datatypes/demographic/address.schema.json",
+          "meta:xdmField": "xdm:address",
+          "tagNumber": 1
+        }
+      },
+      "meta:xdmField": "xdm:billing",
+      "tagNumber": 4
+    },
+    "shipping": {
+      "title": "Shipping",
+      "$ref": "../../datatypes/shipping.schema.json",
+      "description": "Shipping related informnation for the order.",
+      "meta:xdmField": "xdm:shipping",
+      "tagNumber": 5
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/context/experienceevent-order-details",
+  "meta:altId": "_xdm.context.experienceevent-order-details",
+  "id": "_xdm.context.experienceevent-order-details"
+}
