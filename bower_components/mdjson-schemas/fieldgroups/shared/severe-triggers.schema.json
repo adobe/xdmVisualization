@@ -1,0 +1,43 @@
+{
+  "id": "_xdm.mixins.severe-triggers",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:status": "experimental",
+  "title": "Severe Triggers",
+  "type": "object",
+  "description": "Weather Severe Triggers",
+  "meta:xdmType": "object",
+  "properties": {
+    "severeTriggers": {
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "_unqualified": {
+          "type": "object",
+          "meta:xdmType": "object",
+          "properties": {
+            "triggersSevere": {
+              "type": "array",
+              "title": "Severe Triggers",
+              "meta:xdmType": "array",
+              "items": {
+                "type": "integer",
+                "meta:xdmType": "int",
+                "tagNumber": 1
+              },
+              "meta:xdmField": "triggersSevere",
+              "tagNumber": 1
+            }
+          },
+          "tagNumber": 1
+        }
+      },
+      "meta:xdmField": "xdm:severeTriggers",
+      "tagNumber": 1
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/mixins/severe-triggers",
+  "meta:altId": "_xdm.mixins.severe-triggers",
+  "id": "_xdm.mixins.severe-triggers"
+}

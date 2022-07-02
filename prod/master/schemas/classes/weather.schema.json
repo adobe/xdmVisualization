@@ -1,0 +1,44 @@
+{
+  "id": "_xdm.classes.weather",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Weather",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:status": [
+    "experimental",
+    "stable"
+  ],
+  "description": "Class for tracking weather data",
+  "meta:xdmType": "object",
+  "meta:createdDate": "2020-08-10",
+  "meta:titleId": "record##title##65961",
+  "meta:descriptionId": "record##description##3921",
+  "properties": {
+    "weatherID": {
+      "title": "Weather ID",
+      "description": "Weather identifier",
+      "type": "string",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:weatherID",
+      "tagNumber": 1
+    },
+    "_id": {
+      "title": "Identifier",
+      "type": "string",
+      "format": "uri-reference",
+      "description": "A unique identifier for the record.",
+      "meta:titleId": "record##@id##title##51271",
+      "meta:descriptionId": "record##@id##description##16181",
+      "meta:xdmType": "string",
+      "meta:xdmField": "@id",
+      "tagNumber": 2
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/classes/weather",
+  "meta:altId": "_xdm.classes.weather",
+  "required": [
+    "weatherID"
+  ],
+  "id": "_xdm.classes.weather"
+}

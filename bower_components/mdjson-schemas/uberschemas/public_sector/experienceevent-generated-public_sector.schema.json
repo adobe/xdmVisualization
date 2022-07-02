@@ -610,6 +610,158 @@
       "meta:xdmField": "xdm:marketing",
       "tagNumber": 19
     },
+    "mediaCollection": {
+      "type": "object",
+      "description": "Media Collection related fields.",
+      "meta:xdmType": "object",
+      "properties": {
+        "playerEventDetails": {
+          "title": "Player Event Details",
+          "$ref": "../../datatypes/playereventdetails.schema.json",
+          "description": "Player event details information related to the experience event.",
+          "meta:xdmField": "xdm:playerEventDetails",
+          "tagNumber": 1
+        },
+        "sessionDetails": {
+          "title": "Session Details",
+          "$ref": "../../datatypes/sessiondetails.schema.json",
+          "description": "Session details information related to the experience event.",
+          "meta:xdmField": "xdm:sessionDetails",
+          "tagNumber": 2
+        },
+        "advertisingDetails": {
+          "title": "Advertising Details",
+          "$ref": "../../datatypes/advertisingdetails.schema.json",
+          "description": "Advertising details information related to the experience event.",
+          "meta:xdmField": "xdm:advertisingDetails",
+          "tagNumber": 3
+        },
+        "advertisingPodDetails": {
+          "title": "Advertising Pod Details",
+          "$ref": "../../datatypes/advertisingpoddetails.schema.json",
+          "description": "Advertising pod details information related to the experience event.",
+          "meta:xdmField": "xdm:advertisingPodDetails",
+          "tagNumber": 4
+        },
+        "chapterDetails": {
+          "title": "Chapter Details",
+          "$ref": "../../datatypes/chapterdetails.schema.json",
+          "description": "Chapter details information related to the experience event.",
+          "meta:xdmField": "xdm:chapterDetails",
+          "tagNumber": 5
+        },
+        "errorDetails": {
+          "title": "Error Details",
+          "$ref": "../../datatypes/errordetails.schema.json",
+          "description": "Error details information related to the experience event.",
+          "meta:xdmField": "xdm:errorDetails",
+          "tagNumber": 6
+        },
+        "qoeDataDetails": {
+          "title": "Qoe Data Details",
+          "$ref": "../../datatypes/qoedatadetails.schema.json",
+          "description": "Qoe data details information related to the experience event.",
+          "meta:xdmField": "xdm:qoeDataDetails",
+          "tagNumber": 7
+        },
+        "statesStart": {
+          "title": "List Of States Start",
+          "type": "array",
+          "description": "The list of states start.",
+          "meta:xdmType": "array",
+          "items": {
+            "$ref": "../../datatypes/playerstatedata.schema.json",
+            "tagNumber": 1
+          },
+          "meta:xdmField": "xdm:statesStart",
+          "tagNumber": 8
+        },
+        "statesEnd": {
+          "title": "List Of States End",
+          "type": "array",
+          "description": "The list of states end.",
+          "meta:xdmType": "array",
+          "items": {
+            "$ref": "../../datatypes/playerstatedata.schema.json",
+            "tagNumber": 1
+          },
+          "meta:xdmField": "xdm:statesEnd",
+          "tagNumber": 9
+        }
+      },
+      "meta:xdmField": "xdm:mediaCollection",
+      "tagNumber": 20
+    },
+    "mediaReporting": {
+      "type": "object",
+      "description": "Media Reporting related fields.",
+      "meta:xdmType": "object",
+      "properties": {
+        "playerEventDetails": {
+          "title": "Player Event Details",
+          "$ref": "../../datatypes/playereventdetails.schema.json",
+          "description": "Player event details information related to the experience event.",
+          "meta:xdmField": "xdm:playerEventDetails",
+          "tagNumber": 1
+        },
+        "sessionDetails": {
+          "title": "Session Details",
+          "$ref": "../../datatypes/sessiondetails.schema.json",
+          "description": "Session details information related to the experience event.",
+          "meta:xdmField": "xdm:sessionDetails",
+          "tagNumber": 2
+        },
+        "advertisingDetails": {
+          "title": "Advertising Details",
+          "$ref": "../../datatypes/advertisingdetails.schema.json",
+          "description": "Advertising details information related to the experience event.",
+          "meta:xdmField": "xdm:advertisingDetails",
+          "tagNumber": 3
+        },
+        "advertisingPodDetails": {
+          "title": "Advertising Pod Details",
+          "$ref": "../../datatypes/advertisingpoddetails.schema.json",
+          "description": "Advertising pod details information related to the experience event.",
+          "meta:xdmField": "xdm:advertisingPodDetails",
+          "tagNumber": 4
+        },
+        "chapterDetails": {
+          "title": "Chapter Details",
+          "$ref": "../../datatypes/chapterdetails.schema.json",
+          "description": "Chapter details information related to the experience event.",
+          "meta:xdmField": "xdm:chapterDetails",
+          "tagNumber": 5
+        },
+        "errorDetails": {
+          "title": "Error Details",
+          "$ref": "../../datatypes/errordetails.schema.json",
+          "description": "Error details information related to the experience event.",
+          "meta:xdmField": "xdm:errorDetails",
+          "tagNumber": 6
+        },
+        "qoeDataDetails": {
+          "title": "Qoe Data Details",
+          "$ref": "../../datatypes/qoedatadetails.schema.json",
+          "description": "Qoe data details information related to the experience event.",
+          "meta:xdmField": "xdm:qoeDataDetails",
+          "tagNumber": 7
+        },
+        "states": {
+          "title": "List Of States",
+          "type": "array",
+          "description": "The list of states.",
+          "meta:xdmType": "array",
+          "items": {
+            "$ref": "../../datatypes/playerstatedata.schema.json",
+            "tagNumber": 1
+          },
+          "meta:xdmField": "xdm:states",
+          "tagNumber": 8
+        }
+      },
+      "meta:xdmField": "xdm:mediaReporting",
+      "tagNumber": 21
+    },
     "media": {
       "title": "Media",
       "$ref": "../../datatypes/media.schema.json",
@@ -617,14 +769,14 @@
       "meta:titleId": "experienceevent-media##xdm:media##title##8591",
       "meta:descriptionId": "experienceevent-media##xdm:media##description##16281",
       "meta:xdmField": "xdm:media",
-      "tagNumber": 20
+      "tagNumber": 22
     },
     "order": {
       "title": "Order",
       "$ref": "../../datatypes/store-web-order.schema.json",
       "description": "Product Orders and realted information like payments.",
       "meta:xdmField": "xdm:order",
-      "tagNumber": 21
+      "tagNumber": 23
     },
     "store": {
       "title": "Store Details",
@@ -642,7 +794,7 @@
         }
       },
       "meta:xdmField": "xdm:store",
-      "tagNumber": 22
+      "tagNumber": 24
     },
     "billing": {
       "title": "Billing Details",
@@ -659,14 +811,14 @@
         }
       },
       "meta:xdmField": "xdm:billing",
-      "tagNumber": 23
+      "tagNumber": 25
     },
     "shipping": {
       "title": "Shipping",
       "$ref": "../../datatypes/shipping.schema.json",
       "description": "Shipping related informnation for the order.",
       "meta:xdmField": "xdm:shipping",
-      "tagNumber": 24
+      "tagNumber": 26
     },
     "person": {
       "title": "Person Reference Properties",
@@ -700,7 +852,7 @@
         }
       },
       "meta:xdmField": "xdm:person",
-      "tagNumber": 25
+      "tagNumber": 27
     },
     "socialMarketing": {
       "type": "object",
@@ -790,14 +942,14 @@
         }
       },
       "meta:xdmField": "xdm:socialMarketing",
-      "tagNumber": 26
+      "tagNumber": 28
     },
     "stitchedID": {
       "title": "Stitched ID",
       "$ref": "../../datatypes/identity.schema.json",
       "description": "Identifier computed by the Stitching service, containing a pair of (id, namespace) that uniquely identifies an individual to which this event belongs.",
       "meta:xdmField": "xdm:stitchedID",
-      "tagNumber": 27
+      "tagNumber": 29
     },
     "surveyResponse": {
       "type": "object",
@@ -847,7 +999,7 @@
         }
       },
       "meta:xdmField": "xdm:surveyResponse",
-      "tagNumber": 28
+      "tagNumber": 30
     },
     "web": {
       "title": "Web",
@@ -856,7 +1008,7 @@
       "meta:titleId": "experienceevent-web##xdm:web##title##43111",
       "meta:descriptionId": "experienceevent-web##xdm:web##description##40241",
       "meta:xdmField": "xdm:web",
-      "tagNumber": 29
+      "tagNumber": 31
     },
     "alerts": {
       "type": "object",
@@ -910,7 +1062,7 @@
         }
       },
       "meta:xdmField": "xdm:alerts",
-      "tagNumber": 30
+      "tagNumber": 32
     },
     "customerFeedback": {
       "type": "object",
@@ -1038,7 +1190,7 @@
         }
       },
       "meta:xdmField": "xdm:customerFeedback",
-      "tagNumber": 31
+      "tagNumber": 33
     },
     "homeAddress": {
       "title": "Home Address",
@@ -1047,7 +1199,7 @@
       "meta:titleId": "profile-personal-details##xdm:homeAddress##title##98571",
       "meta:descriptionId": "profile-personal-details##xdm:homeAddress##description##35241",
       "meta:xdmField": "xdm:homeAddress",
-      "tagNumber": 32
+      "tagNumber": 34
     },
     "personalEmail": {
       "title": "Personal Email",
@@ -1056,7 +1208,7 @@
       "meta:titleId": "profile-personal-details##xdm:personalEmail##title##13501",
       "meta:descriptionId": "profile-personal-details##xdm:personalEmail##description##54181",
       "meta:xdmField": "xdm:personalEmail",
-      "tagNumber": 33
+      "tagNumber": 35
     },
     "homePhone": {
       "title": "Home Phone",
@@ -1065,7 +1217,7 @@
       "meta:titleId": "profile-personal-details##xdm:homePhone##title##28261",
       "meta:descriptionId": "profile-personal-details##xdm:homePhone##description##45111",
       "meta:xdmField": "xdm:homePhone",
-      "tagNumber": 34
+      "tagNumber": 36
     },
     "mobilePhone": {
       "title": "Mobile Phone",
@@ -1074,7 +1226,7 @@
       "meta:titleId": "profile-personal-details##xdm:mobilePhone##title##76241",
       "meta:descriptionId": "profile-personal-details##xdm:mobilePhone##description##51801",
       "meta:xdmField": "xdm:mobilePhone",
-      "tagNumber": 35
+      "tagNumber": 37
     },
     "faxPhone": {
       "title": "Fax Phone",
@@ -1083,28 +1235,28 @@
       "meta:titleId": "profile-personal-details##xdm:faxPhone##title##15761",
       "meta:descriptionId": "profile-personal-details##xdm:faxPhone##description##5951",
       "meta:xdmField": "xdm:faxPhone",
-      "tagNumber": 36
+      "tagNumber": 38
     },
     "shippingAddress": {
       "title": "Shipping Address",
       "$ref": "../../datatypes/demographic/address.schema.json",
       "description": "Shipping postal address.",
       "meta:xdmField": "xdm:shippingAddress",
-      "tagNumber": 37
+      "tagNumber": 39
     },
     "billingAddress": {
       "title": "Billing Address",
       "$ref": "../../datatypes/demographic/address.schema.json",
       "description": "Billing postal address.",
       "meta:xdmField": "xdm:billingAddress",
-      "tagNumber": 38
+      "tagNumber": 40
     },
     "mailingAddress": {
       "title": "Mailing Address",
       "$ref": "../../datatypes/demographic/address.schema.json",
       "description": "Mailing postal address.",
       "meta:xdmField": "xdm:mailingAddress",
-      "tagNumber": 39
+      "tagNumber": 41
     }
   },
   "meta:xdmId": "https://ns.adobe.com/xdm/context/experienceevent-generated-public_sector",

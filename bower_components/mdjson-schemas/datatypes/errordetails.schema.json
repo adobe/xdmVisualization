@@ -1,0 +1,40 @@
+{
+  "id": "_xdm.datatypes.errordetails",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Error details information",
+  "type": "object",
+  "meta:status": "experimental",
+  "meta:extensible": true,
+  "description": "Error details information.",
+  "meta:xdmType": "object",
+  "properties": {
+    "errorID": {
+      "title": "Error ID",
+      "type": "string",
+      "pattern": "^.{1,}$",
+      "description": "The error ID.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:errorID",
+      "tagNumber": 1
+    },
+    "errorSource": {
+      "title": "Error Source",
+      "type": "string",
+      "description": "The error source.",
+      "enum": [
+        "player",
+        "external"
+      ],
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:errorSource",
+      "tagNumber": 2
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/datatypes/errorDetails",
+  "meta:altId": "_xdm.datatypes.errordetails",
+  "required": [
+    "errorID",
+    "errorSource"
+  ],
+  "id": "_xdm.datatypes.errordetails"
+}

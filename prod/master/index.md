@@ -368,11 +368,14 @@
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/classes.segmentdefinition.html">segmentdefinition</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/classes.summary_metrics.html">summary_metrics</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/classes.vehicle-product.html">vehicle-product</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/classes.weather.html">weather</a></li>
 </ul>
 </details>
 <details>
 <summary>datatypes</summary>
 <ul>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.advertisingdetails.html">advertisingdetails</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.advertisingpoddetails.html">advertisingpoddetails</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.application.html">application</a></li>
 <details>
 <summary>auditing</summary>
@@ -400,6 +403,7 @@
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.channels.phone.html">phone</a></li>
 </ul>
 </details>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.chapterdetails.html">chapterdetails</a></li>
 <details>
 <summary>consent</summary>
 <ul>
@@ -465,6 +469,7 @@
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.device.html">device</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.enduserids.html">enduserids</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.environment.html">environment</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.errordetails.html">errordetails</a></li>
 <details>
 <summary>external</summary>
 <ul>
@@ -538,16 +543,20 @@
 </ul>
 </details>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.placecontext.html">placecontext</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.playereventdetails.html">playereventdetails</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.playerstatedata.html">playerstatedata</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.poi-detail.html">poi-detail</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.product.html">product</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.productlistitem.html">productlistitem</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.profilestitch.html">profilestitch</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.profilestitchidentity.html">profilestitchidentity</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.pushnotificationtoken.html">pushnotificationtoken</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.qoedatadetails.html">qoedatadetails</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.search.html">search</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.segmentidentity.html">segmentidentity</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.segmentmembership.html">segmentmembership</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.segmentmembershipitem.html">segmentmembershipitem</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.sessiondetails.html">sessiondetails</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.shipping.html">shipping</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.sitesearch.html">sitesearch</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.store-web-order.html">store-web-order</a></li>
@@ -632,6 +641,8 @@
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.experienceevent-knowledge-base-details.html">experienceevent-knowledge-base-details</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.experienceevent-marketing.html">experienceevent-marketing</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.experienceevent-media.html">experienceevent-media</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.experienceevent-media-collection.html">experienceevent-media-collection</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.experienceevent-media-reporting.html">experienceevent-media-reporting</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.experienceevent-offer-impression-details.html">experienceevent-offer-impression-details</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.experienceevent-order-details.html">experienceevent-order-details</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.experienceevent-privacy.html">experienceevent-privacy</a></li>
@@ -781,10 +792,16 @@
 <summary>shared</summary>
 <ul>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.shared.changeset.html">changeset</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.shared.current-weather.html">current-weather</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.shared.external-source-system-audit-details.html">external-source-system-audit-details</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.shared.forecasted-weather.html">forecasted-weather</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.shared.identitymap.html">identitymap</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.shared.person-identifier.html">person-identifier</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.shared.product-triggers.html">product-triggers</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.shared.record-status.html">record-status</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.shared.relative-triggers.html">relative-triggers</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.shared.severe-triggers.html">severe-triggers</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.shared.weather-triggers.html">weather-triggers</a></li>
 </ul>
 </details>
 </ul>
@@ -900,5 +917,6 @@
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.travel_and_hospitality.profile-generated-travel_and_hospitality.html">profile-generated-travel_and_hospitality</a></li>
 </ul>
 </details>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.weather-generated.html">weather-generated</a></li>
 </ul>
 </details>
