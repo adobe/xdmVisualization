@@ -1,0 +1,34 @@
+{
+  "type": "object",
+  "meta:xdmType": "object",
+  "additionalProperties": false,
+  "properties": {
+    "name": {
+      "title": "Name",
+      "type": "string",
+      "description": "Name of the ingredient.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:name",
+      "tagNumber": 1
+    },
+    "quantity": {
+      "title": "Quantity",
+      "type": "string",
+      "description": "Quantity of the ingredient present in the medication.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:quantity",
+      "tagNumber": 2
+    },
+    "isActive": {
+      "title": "Is Active",
+      "type": "boolean",
+      "description": "Indicates if this ingredient is still actively used in this medication.",
+      "meta:xdmType": "boolean",
+      "meta:xdmField": "xdm:isActive",
+      "tagNumber": 3
+    }
+  },
+  "tagNumber": 1,
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "id": "obj6431389473185225.schema.json"
+}
