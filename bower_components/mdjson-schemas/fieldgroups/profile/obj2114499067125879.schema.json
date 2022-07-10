@@ -1,0 +1,49 @@
+{
+  "type": "object",
+  "meta:xdmType": "object",
+  "additionalProperties": false,
+  "properties": {
+    "ID": {
+      "title": "Medication ID",
+      "type": "string",
+      "description": "Unique identifier for the medication.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:ID",
+      "tagNumber": 1
+    },
+    "numberOfRefills": {
+      "title": "Number Of Refills",
+      "type": "integer",
+      "description": "Number of refills prescribed by the provider for this medication.",
+      "meta:xdmType": "int",
+      "meta:xdmField": "xdm:numberOfRefills",
+      "tagNumber": 2
+    },
+    "refillLocation": {
+      "title": "Medication Refill Location",
+      "$ref": "../../datatypes/demographic/address.schema.json",
+      "meta:xdmField": "xdm:refillLocation",
+      "tagNumber": 3
+    },
+    "startDate": {
+      "title": "Medication Start Date",
+      "type": "string",
+      "format": "date-time",
+      "description": "Date on which the patient began taking the medication.",
+      "meta:xdmType": "date-time",
+      "meta:xdmField": "xdm:startDate",
+      "tagNumber": 4
+    },
+    "isCurrent": {
+      "title": "Is Current",
+      "type": "boolean",
+      "description": "Indicates whether the medication is current or past.",
+      "meta:xdmType": "boolean",
+      "meta:xdmField": "xdm:isCurrent",
+      "tagNumber": 5
+    }
+  },
+  "tagNumber": 1,
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "id": "obj2114499067125879.schema.json"
+}
