@@ -1264,7 +1264,7 @@
           "meta:xdmField": "xdm:diningReservations",
           "tagNumber": 1,
           "items": {
-            "$ref": "obj01531850404101931.schema.json"
+            "$ref": "obj45836288279924875.schema.json"
           }
         },
         "cancellation": {
@@ -1437,7 +1437,7 @@
           "meta:xdmField": "xdm:flightReservations",
           "tagNumber": 19,
           "items": {
-            "$ref": "obj5367787900915819.schema.json"
+            "$ref": "obj8359358209789596.schema.json"
           }
         },
         "lodgingReservations": {
@@ -1446,7 +1446,7 @@
           "meta:xdmField": "xdm:lodgingReservations",
           "tagNumber": 20,
           "items": {
-            "$ref": "obj1271156711642698.schema.json"
+            "$ref": "obj4055545623090444.schema.json"
           }
         },
         "vehicleReservations": {
@@ -1455,7 +1455,7 @@
           "meta:xdmField": "xdm:vehicleReservations",
           "tagNumber": 21,
           "items": {
-            "$ref": "obj18714179830625866.schema.json"
+            "$ref": "obj6670987912647575.schema.json"
           }
         }
       },
