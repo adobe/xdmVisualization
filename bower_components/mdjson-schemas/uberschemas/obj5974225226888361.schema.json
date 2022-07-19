@@ -1,0 +1,134 @@
+{
+  "type": "object",
+  "meta:xdmType": "object",
+  "properties": {
+    "barcodeID": {
+      "title": "Ticket Bar Code",
+      "description": "Unique bar code assigned to a ticket.",
+      "type": "string",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:barcodeID",
+      "tagNumber": 1
+    },
+    "deliveryMethod": {
+      "title": "Delivery Method",
+      "description": "Ticket Delivery Method, for example, postal or digital.",
+      "type": "string",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:deliveryMethod",
+      "tagNumber": 2
+    },
+    "rowName": {
+      "title": "Seat Row Name",
+      "description": "Seat row name as printed on the ticket",
+      "type": "string",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:rowName",
+      "tagNumber": 3
+    },
+    "seatingArea": {
+      "title": "Seating Area",
+      "description": "Seating area as printed on ticket",
+      "type": "string",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:seatingArea",
+      "tagNumber": 4
+    },
+    "seatName": {
+      "title": "Seat Name",
+      "description": "Seat name as printed on ticket.",
+      "type": "string",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:seatName",
+      "tagNumber": 5
+    },
+    "seatingAreaNumeric": {
+      "title": "Seating Area Numeric",
+      "description": "Numeric Seating Area value",
+      "type": "integer",
+      "meta:xdmType": "int",
+      "meta:xdmField": "xdm:seatingAreaNumeric",
+      "tagNumber": 6
+    },
+    "sectionCategory": {
+      "title": "Seating Section Category",
+      "description": "Category of section, used to describe tier of ticket, balcony, box, etc...",
+      "type": "string",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:sectionCategory",
+      "tagNumber": 7
+    },
+    "sectionGroup": {
+      "title": "Seating Section Group",
+      "description": "Section Group as presented on ticket",
+      "type": "string",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:sectionGroup",
+      "tagNumber": 8
+    },
+    "sectionLevel": {
+      "title": "Seating Section Level",
+      "description": "Section Level as presented on ticket.",
+      "type": "string",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:sectionLevel",
+      "tagNumber": 9
+    },
+    "sectionName": {
+      "title": "Seating Section Name",
+      "description": "Section name as presented on the ticket.",
+      "type": "string",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:sectionName",
+      "tagNumber": 10
+    },
+    "sectionRowName": {
+      "title": "Seating Section Row Name",
+      "description": "Seating section row name as presented on ticket.",
+      "type": "string",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:sectionRowName",
+      "tagNumber": 11
+    },
+    "ticketClassCategory": {
+      "title": "Ticket Class Category",
+      "description": "Category of the ticket class.",
+      "type": "string",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:ticketClassCategory",
+      "tagNumber": 12
+    },
+    "ticketClassGroupName": {
+      "title": "Ticket Class Group Name",
+      "description": "Group name of the ticket class.",
+      "type": "string",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:ticketClassGroupName",
+      "tagNumber": 13
+    },
+    "ticketClassName": {
+      "title": "Ticket Class Name",
+      "description": "Name of the ticket class.",
+      "type": "string",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:ticketClassName",
+      "tagNumber": 14
+    },
+    "ticketType": {
+      "enum": [
+        "season",
+        "package",
+        "single"
+      ],
+      "title": "ticketType",
+      "description": "Enum: Type of ticket purchase, season, package, or single ticket.",
+      "type": "string",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:ticketType",
+      "tagNumber": 15
+    }
+  },
+  "tagNumber": 1,
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "id": "obj5974225226888361.schema.json"
+}
