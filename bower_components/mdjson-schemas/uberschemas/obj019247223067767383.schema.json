@@ -1,0 +1,33 @@
+{
+  "type": "object",
+  "meta:xdmType": "object",
+  "additionalProperties": false,
+  "properties": {
+    "code": {
+      "title": "Code",
+      "type": "string",
+      "description": "Coded representation of the qualification.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:code",
+      "tagNumber": 1
+    },
+    "issuer": {
+      "title": "Issuer",
+      "description": "Organization that regulates and issues the qualification.",
+      "$ref": "../datatypes/b2b/account-organization.schema.json",
+      "meta:xdmField": "xdm:issuer",
+      "tagNumber": 2
+    },
+    "activePeriod": {
+      "title": "Active Period",
+      "type": "integer",
+      "description": "Year until which the qualification is valid.",
+      "meta:xdmType": "int",
+      "meta:xdmField": "xdm:activePeriod",
+      "tagNumber": 3
+    }
+  },
+  "tagNumber": 1,
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "id": "obj019247223067767383.schema.json"
+}
