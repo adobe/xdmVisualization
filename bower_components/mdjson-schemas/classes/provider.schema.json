@@ -5,6 +5,11 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
+  "meta:tags": {
+    "industry": [
+      "healthcare_services"
+    ]
+  },
   "description": "Provider business entity to collect data pertaining to providers (e.g. health provider, insurance provider).",
   "meta:status": [
     "experimental",

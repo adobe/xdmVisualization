@@ -5,6 +5,11 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
+  "meta:tags": {
+    "industry": [
+      "healthcare_services"
+    ]
+  },
   "description": "Payer business entity to collect data pertaining to insurance companies (e.g. health insurance).",
   "meta:status": [
     "experimental",

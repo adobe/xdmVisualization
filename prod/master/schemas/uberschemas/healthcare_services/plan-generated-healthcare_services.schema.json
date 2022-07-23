@@ -7,6 +7,19 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "meta:extensible": true,
   "meta:abstract": true,
+  "meta:tags": [
+    {
+      "industry": [
+        "healthcare_services",
+        "telecom"
+      ]
+    },
+    {
+      "industry": [
+        "healthcare_services"
+      ]
+    }
+  ],
   "meta:status": [
     "experimental",
     "stable"
@@ -14,11 +27,6 @@
   "meta:createdDate": "2020-08-10",
   "meta:titleId": "record##title##65961",
   "meta:descriptionId": "record##description##3921",
-  "meta:tags": {
-    "industry": [
-      "healthcare_services"
-    ]
-  },
   "properties": {
     "planID": {
       "title": "Plan ID",
@@ -84,7 +92,7 @@
           "meta:xdmField": "xdm:networkDetails",
           "tagNumber": 4,
           "items": {
-            "$ref": "obj06038839992262468.schema.json"
+            "$ref": "obj19061414985367575.schema.json"
           }
         },
         "affiliations": {

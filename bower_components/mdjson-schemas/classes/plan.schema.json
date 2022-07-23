@@ -5,6 +5,12 @@
   "type": "object",
   "meta:extensible": true,
   "meta:abstract": true,
+  "meta:tags": {
+    "industry": [
+      "healthcare_services",
+      "telecom"
+    ]
+  },
   "description": "Plan business entity to collect data pertaining to plans (e.g. health plan, insurance plan).",
   "meta:status": [
     "experimental",

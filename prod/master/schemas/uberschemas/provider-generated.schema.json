@@ -7,6 +7,11 @@
   "$schema": "http://json-schema.org/draft-06/schema#",
   "meta:extensible": true,
   "meta:abstract": true,
+  "meta:tags": {
+    "industry": [
+      "healthcare_services"
+    ]
+  },
   "meta:status": [
     "experimental",
     "stable"
@@ -14,11 +19,6 @@
   "meta:createdDate": "2020-08-10",
   "meta:titleId": "record##title##65961",
   "meta:descriptionId": "record##description##3921",
-  "meta:tags": {
-    "industry": [
-      "healthcare_services"
-    ]
-  },
   "properties": {
     "providerID": {
       "title": "Provider ID",
@@ -133,7 +133,7 @@
           "meta:xdmField": "xdm:addressDetails",
           "tagNumber": 10,
           "items": {
-            "$ref": "obj9344097116869072.schema.json"
+            "$ref": "obj8409055884110472.schema.json"
           }
         },
         "qualifications": {
@@ -144,7 +144,7 @@
           "meta:xdmField": "xdm:qualifications",
           "tagNumber": 11,
           "items": {
-            "$ref": "obj37394529852485636.schema.json"
+            "$ref": "obj3012684011917317.schema.json"
           }
         },
         "languages": {
