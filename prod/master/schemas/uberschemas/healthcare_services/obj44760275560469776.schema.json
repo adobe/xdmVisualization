@@ -1,0 +1,34 @@
+{
+  "type": "object",
+  "meta:xdmType": "object",
+  "additionalProperties": false,
+  "properties": {
+    "fullname": {
+      "title": "Full Name",
+      "type": "string",
+      "description": "Full name of the specialist provider.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:fullname",
+      "tagNumber": 1
+    },
+    "specialty": {
+      "title": "Specialty",
+      "type": "string",
+      "description": "Specialty of the provider (anesthesiology, urology, radiology, dermatology, etc).",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:specialty",
+      "tagNumber": 2
+    },
+    "providerID": {
+      "title": "Provider ID",
+      "type": "string",
+      "description": "Unique identifier of the specialist.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:providerID",
+      "tagNumber": 3
+    }
+  },
+  "tagNumber": 1,
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "id": "obj44760275560469776.schema.json"
+}
