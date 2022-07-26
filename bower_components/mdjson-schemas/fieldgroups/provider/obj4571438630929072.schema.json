@@ -1,0 +1,44 @@
+{
+  "type": "object",
+  "meta:xdmType": "object",
+  "additionalProperties": false,
+  "properties": {
+    "code": {
+      "title": "Code",
+      "type": "string",
+      "description": "Coded representation of the qualification.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:code",
+      "tagNumber": 1
+    },
+    "issuer": {
+      "title": "Issuer",
+      "type": "string",
+      "description": "Organization name that regulates and issues the qualification.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:issuer",
+      "tagNumber": 2
+    },
+    "startDate": {
+      "title": "Start Date",
+      "type": "string",
+      "format": "date-time",
+      "description": "Start date of this qualification.",
+      "meta:xdmType": "date-time",
+      "meta:xdmField": "xdm:startDate",
+      "tagNumber": 3
+    },
+    "endDate": {
+      "title": "End Date",
+      "type": "string",
+      "format": "date-time",
+      "description": "Date on which this qualification becomes inactive.",
+      "meta:xdmType": "date-time",
+      "meta:xdmField": "xdm:endDate",
+      "tagNumber": 4
+    }
+  },
+  "tagNumber": 1,
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "id": "obj4571438630929072.schema.json"
+}

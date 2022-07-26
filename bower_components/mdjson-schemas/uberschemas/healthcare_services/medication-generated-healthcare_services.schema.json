@@ -53,23 +53,10 @@
       "type": "object",
       "meta:xdmType": "object",
       "properties": {
-        "codes": {
-          "title": "Codes",
-          "type": "array",
-          "description": "Codes that identify this medication.",
-          "meta:xdmType": "array",
-          "items": {
-            "type": "string",
-            "meta:xdmType": "string",
-            "tagNumber": 1
-          },
-          "meta:xdmField": "xdm:codes",
-          "tagNumber": 1
-        },
         "status": {
           "title": "Status",
           "type": "string",
-          "description": "Status indicating whether the drug/medication is active or not.",
+          "description": "Status indicating whether the drug/medication is active/prescribable or not.",
           "enum": [
             "active",
             "inactive",
@@ -77,7 +64,7 @@
           ],
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:status",
-          "tagNumber": 2
+          "tagNumber": 1
         },
         "brandName": {
           "title": "Brand Name",
@@ -85,7 +72,7 @@
           "type": "string",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:brandName",
-          "tagNumber": 3
+          "tagNumber": 2
         },
         "genericName": {
           "title": "Generic Name",
@@ -93,7 +80,7 @@
           "type": "string",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:genericName",
-          "tagNumber": 4
+          "tagNumber": 3
         },
         "manufacturerName": {
           "title": "Manufacturer Name",
@@ -101,6 +88,14 @@
           "type": "string",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:manufacturerName",
+          "tagNumber": 4
+        },
+        "form": {
+          "title": "Medication Form",
+          "type": "string",
+          "description": "Form that the medication comes in such as tablet, capsule, or liquid.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:form",
           "tagNumber": 5
         },
         "dosageUnitNumber": {
@@ -127,41 +122,16 @@
           "meta:xdmField": "xdm:quantity",
           "tagNumber": 8
         },
-        "volume": {
-          "title": "Drug Volume",
-          "type": "number",
-          "description": "Drug Volume.",
-          "meta:xdmType": "number",
-          "meta:xdmField": "xdm:volume",
-          "tagNumber": 9
-        },
         "ingredients": {
           "title": "ingredients",
           "description": "Ingredients present in the medication",
           "type": "array",
           "meta:xdmType": "array",
           "meta:xdmField": "xdm:ingredients",
-          "tagNumber": 10,
+          "tagNumber": 9,
           "items": {
-            "$ref": "obj8081189639733757.schema.json"
+            "$ref": "obj49799083663274657.schema.json"
           }
-        },
-        "expiryDate": {
-          "title": "Expiry Date",
-          "type": "string",
-          "format": "date-time",
-          "description": "Expiry date of the medication.",
-          "meta:xdmType": "date-time",
-          "meta:xdmField": "xdm:expiryDate",
-          "tagNumber": 11
-        },
-        "lotNumber": {
-          "title": "Lot Number",
-          "type": "string",
-          "description": "Unique identifier of the batch.",
-          "meta:xdmType": "string",
-          "meta:xdmField": "xdm:lotNumber",
-          "tagNumber": 12
         }
       },
       "meta:xdmField": "xdm:medication",

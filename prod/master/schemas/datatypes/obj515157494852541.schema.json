@@ -1,0 +1,29 @@
+{
+  "properties": {
+    "attribute": {
+      "title": "Attribute",
+      "type": "string",
+      "description": "An attribute used to sort items in search results.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:attribute",
+      "tagNumber": 1
+    },
+    "order": {
+      "title": "Order",
+      "type": "string",
+      "description": "The order in which to return search results",
+      "enum": [
+        "ASC",
+        "DESC",
+        "RELEVANCE"
+      ],
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:order",
+      "tagNumber": 2
+    }
+  },
+  "type": "object",
+  "tagNumber": 1,
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "id": "obj515157494852541.schema.json"
+}

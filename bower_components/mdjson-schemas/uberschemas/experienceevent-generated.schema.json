@@ -2349,7 +2349,7 @@
           "meta:xdmField": "xdm:dataValueChanges",
           "tagNumber": 5,
           "items": {
-            "$ref": "obj6527235481248208.schema.json"
+            "$ref": "obj4248173357126035.schema.json"
           }
         }
       },
@@ -3947,7 +3947,7 @@
           "meta:xdmField": "xdm:diningReservations",
           "tagNumber": 1,
           "items": {
-            "$ref": "obj8475090531718656.schema.json"
+            "$ref": "obj14438247657351932.schema.json"
           }
         },
         "cancellation": {
@@ -4120,7 +4120,7 @@
           "meta:xdmField": "xdm:flightReservations",
           "tagNumber": 19,
           "items": {
-            "$ref": "obj9023832794847624.schema.json"
+            "$ref": "obj20356768191377572.schema.json"
           }
         },
         "lodgingReservations": {
@@ -4129,7 +4129,7 @@
           "meta:xdmField": "xdm:lodgingReservations",
           "tagNumber": 20,
           "items": {
-            "$ref": "obj08294229369392725.schema.json"
+            "$ref": "obj9661339955418886.schema.json"
           }
         },
         "vehicleReservations": {
@@ -4138,7 +4138,7 @@
           "meta:xdmField": "xdm:vehicleReservations",
           "tagNumber": 21,
           "items": {
-            "$ref": "obj7718142836453141.schema.json"
+            "$ref": "obj8932023013062853.schema.json"
           }
         }
       },
@@ -4154,7 +4154,7 @@
         "name": {
           "Title": "Site Tool Name",
           "type": "string",
-          "description": "Name of the site tool like chatbot, survey ..etc.",
+          "description": "Name of the site tool. I.e., chatbot, survey, questionnaire.",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:name",
           "tagNumber": 1
@@ -4162,7 +4162,7 @@
         "section": {
           "Title": "Site Tool Section",
           "type": "string",
-          "description": "Section of the site tool like main , sub.",
+          "description": "Section of the site tool. I.e., main, sub, etc.",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:section",
           "tagNumber": 2
@@ -4393,7 +4393,7 @@
           "meta:xdmField": "xdm:tickets",
           "tagNumber": 6,
           "items": {
-            "$ref": "obj8985941664505377.schema.json"
+            "$ref": "obj8349631755777764.schema.json"
           }
         },
         "ticketPurchase": {

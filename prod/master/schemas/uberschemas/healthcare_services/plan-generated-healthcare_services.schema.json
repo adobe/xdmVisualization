@@ -69,13 +69,21 @@
           "meta:xdmField": "xdm:payerID",
           "tagNumber": 1
         },
+        "payerName": {
+          "title": "Payer Name",
+          "type": "string",
+          "description": "Name of the payer. This is the insurance provider of the plan.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:payerName",
+          "tagNumber": 2
+        },
         "targetOwnerType": {
           "title": "Target Owner Type",
           "type": "string",
-          "description": "The type of owner a plan is for. Examples are individual, group, organization etc.",
+          "description": " The type of owner a plan is for. Examples are individual, group, organization, etc.",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:targetOwnerType",
-          "tagNumber": 2
+          "tagNumber": 3
         },
         "isActive": {
           "title": "Is Active",
@@ -83,29 +91,17 @@
           "description": "Indicates whether the plan is active.",
           "meta:xdmType": "boolean",
           "meta:xdmField": "xdm:isActive",
-          "tagNumber": 3
+          "tagNumber": 4
         },
         "networkDetails": {
           "type": "array",
           "title": "Network Details",
           "meta:xdmType": "array",
           "meta:xdmField": "xdm:networkDetails",
-          "tagNumber": 4,
+          "tagNumber": 5,
           "items": {
-            "$ref": "obj506260090350461.schema.json"
+            "$ref": "obj44305871029472854.schema.json"
           }
-        },
-        "affiliations": {
-          "type": "array",
-          "title": "Affiliations",
-          "meta:xdmType": "array",
-          "items": {
-            "type": "string",
-            "meta:xdmType": "string",
-            "tagNumber": 1
-          },
-          "meta:xdmField": "xdm:affiliations",
-          "tagNumber": 5
         },
         "planType": {
           "title": "Plan Type",
@@ -117,7 +113,7 @@
             "pos",
             "hdhp"
           ],
-          "description": "This indicates if the plan is primary,secondary or tertiary plan.",
+          "description": "This indicates if the plan is primary, secondary or a tertiary plan.",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:planType",
           "tagNumber": 6
