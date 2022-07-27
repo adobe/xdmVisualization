@@ -20,10 +20,7 @@
       ]
     }
   ],
-  "meta:status": [
-    "experimental",
-    "stable"
-  ],
+  "meta:status": "stable",
   "meta:createdDate": "2020-08-10",
   "meta:titleId": "record##title##65961",
   "meta:descriptionId": "record##description##3921",
@@ -100,19 +97,12 @@
           "meta:xdmField": "xdm:networkDetails",
           "tagNumber": 5,
           "items": {
-            "$ref": "obj44305871029472854.schema.json"
+            "$ref": "obj2972495514159377.schema.json"
           }
         },
         "planType": {
           "title": "Plan Type",
           "type": "string",
-          "enum": [
-            "hmo",
-            "ppo",
-            "epo",
-            "pos",
-            "hdhp"
-          ],
           "description": "This indicates if the plan is primary, secondary or a tertiary plan.",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:planType",
@@ -121,12 +111,6 @@
         "planLevel": {
           "title": "Plan Level",
           "type": "string",
-          "enum": [
-            "primary",
-            "secondary",
-            "tertiary",
-            "quaternary"
-          ],
           "description": "This indicates if the plan is primary, secondary, tertiary etc.",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:planLevel",
@@ -135,12 +119,6 @@
         "coverageType": {
           "title": "Coverage Type",
           "type": "string",
-          "enum": [
-            "medical",
-            "dental",
-            "vision",
-            "accident"
-          ],
           "description": "Plan coverage type.",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:coverageType",

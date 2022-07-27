@@ -12,10 +12,7 @@
       "healthcare_services"
     ]
   },
-  "meta:status": [
-    "experimental",
-    "stable"
-  ],
+  "meta:status": "stable",
   "meta:createdDate": "2020-08-10",
   "meta:titleId": "record##title##65961",
   "meta:descriptionId": "record##description##3921",
@@ -125,7 +122,7 @@
           "meta:xdmField": "xdm:addressDetails",
           "tagNumber": 9,
           "items": {
-            "$ref": "obj777277831632303.schema.json"
+            "$ref": "obj04089686853329777.schema.json"
           }
         },
         "qualifications": {
@@ -136,7 +133,7 @@
           "meta:xdmField": "xdm:qualifications",
           "tagNumber": 10,
           "items": {
-            "$ref": "obj44628374921160785.schema.json"
+            "$ref": "obj9860899473399911.schema.json"
           }
         },
         "languages": {

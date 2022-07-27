@@ -20,10 +20,7 @@
       ]
     }
   ],
-  "meta:status": [
-    "stable",
-    "experimental"
-  ],
+  "meta:status": "stable",
   "meta:createdDate": [
     "2020-08-10",
     "2021-02-19",
@@ -1531,7 +1528,7 @@
           "meta:xdmField": "xdm:primaryCarePhysicians",
           "tagNumber": 2,
           "items": {
-            "$ref": "obj9201316710634773.schema.json"
+            "$ref": "obj5167488687148565.schema.json"
           }
         },
         "preferredAvailability": {
@@ -1550,7 +1547,7 @@
           "meta:xdmField": "xdm:prescriptions",
           "tagNumber": 4,
           "items": {
-            "$ref": "obj874227198388124.schema.json"
+            "$ref": "obj8881733618002046.schema.json"
           }
         },
         "specialists": {
@@ -1560,7 +1557,7 @@
           "meta:xdmField": "xdm:specialists",
           "tagNumber": 5,
           "items": {
-            "$ref": "obj41701523890058856.schema.json"
+            "$ref": "obj8427332270286874.schema.json"
           }
         },
         "healthConcerns": {
@@ -1600,7 +1597,7 @@
           "meta:xdmField": "xdm:plans",
           "tagNumber": 9,
           "items": {
-            "$ref": "obj5992168394928181.schema.json"
+            "$ref": "obj7040694360038517.schema.json"
           }
         }
       },

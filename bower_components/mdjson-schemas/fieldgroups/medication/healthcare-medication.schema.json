@@ -11,7 +11,7 @@
     ]
   },
   "description": "Medication details such as ingredients, brand name, and quantity.",
-  "meta:status": "experimental",
+  "meta:status": "stable",
   "meta:xdmType": "object",
   "properties": {
     "medication": {
@@ -24,11 +24,6 @@
           "title": "Status",
           "type": "string",
           "description": "Status indicating whether the drug/medication is active/prescribable or not.",
-          "enum": [
-            "active",
-            "inactive",
-            "entered-in-error"
-          ],
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:status",
           "tagNumber": 1
@@ -97,7 +92,7 @@
           "meta:xdmField": "xdm:ingredients",
           "tagNumber": 9,
           "items": {
-            "$ref": "obj3342545686102205.schema.json"
+            "$ref": "obj5891962618015649.schema.json"
           }
         }
       },

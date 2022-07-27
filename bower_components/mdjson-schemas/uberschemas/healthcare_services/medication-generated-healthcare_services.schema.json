@@ -12,10 +12,7 @@
       "healthcare_services"
     ]
   },
-  "meta:status": [
-    "experimental",
-    "stable"
-  ],
+  "meta:status": "stable",
   "meta:createdDate": "2020-08-10",
   "meta:titleId": "record##title##65961",
   "meta:descriptionId": "record##description##3921",
@@ -57,11 +54,6 @@
           "title": "Status",
           "type": "string",
           "description": "Status indicating whether the drug/medication is active/prescribable or not.",
-          "enum": [
-            "active",
-            "inactive",
-            "entered-in-error"
-          ],
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:status",
           "tagNumber": 1
@@ -130,7 +122,7 @@
           "meta:xdmField": "xdm:ingredients",
           "tagNumber": 9,
           "items": {
-            "$ref": "obj49799083663274657.schema.json"
+            "$ref": "obj47609307984660587.schema.json"
           }
         }
       },

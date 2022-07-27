@@ -18,10 +18,7 @@
     }
   ],
   "description": "Healthcare member details of a person that has or will receive a service or care, such as contact information, primary care physician, and plan information.",
-  "meta:status": [
-    "experimental",
-    "stable"
-  ],
+  "meta:status": "stable",
   "meta:xdmType": "object",
   "meta:createdDate": "2020-08-10",
   "meta:titleId": [
@@ -54,7 +51,7 @@
           "meta:xdmField": "xdm:primaryCarePhysicians",
           "tagNumber": 2,
           "items": {
-            "$ref": "obj8364361743042552.schema.json"
+            "$ref": "obj7478339580661826.schema.json"
           }
         },
         "preferredAvailability": {
@@ -73,7 +70,7 @@
           "meta:xdmField": "xdm:prescriptions",
           "tagNumber": 4,
           "items": {
-            "$ref": "obj2663565732833657.schema.json"
+            "$ref": "obj7844868548138348.schema.json"
           }
         },
         "specialists": {
@@ -83,7 +80,7 @@
           "meta:xdmField": "xdm:specialists",
           "tagNumber": 5,
           "items": {
-            "$ref": "obj704061168337466.schema.json"
+            "$ref": "obj17091171275899275.schema.json"
           }
         },
         "healthConcerns": {
@@ -123,7 +120,7 @@
           "meta:xdmField": "xdm:plans",
           "tagNumber": 9,
           "items": {
-            "$ref": "obj9140290142661172.schema.json"
+            "$ref": "obj08070110889887672.schema.json"
           }
         }
       },

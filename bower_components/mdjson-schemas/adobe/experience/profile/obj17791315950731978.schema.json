@@ -1,0 +1,31 @@
+{
+  "type": "object",
+  "meta:xdmType": "object",
+  "properties": {
+    "start": {
+      "title": "Start time",
+      "type": "string",
+      "format": "date-time",
+      "description": "The timestamp for when the identity association started.",
+      "meta:titleId": "profile-all##xdm:start##title##77201",
+      "meta:descriptionId": "profile-all##xdm:start##description##75011",
+      "meta:xdmType": "date-time",
+      "meta:xdmField": "xdm:start",
+      "tagNumber": 1
+    },
+    "end": {
+      "title": "End time",
+      "type": "string",
+      "format": "date-time",
+      "description": "The timestamp for when the identity association ended.",
+      "meta:titleId": "profile-all##xdm:end##title##14431",
+      "meta:descriptionId": "profile-all##xdm:end##description##70561",
+      "meta:xdmType": "date-time",
+      "meta:xdmField": "xdm:end",
+      "tagNumber": 2
+    }
+  },
+  "tagNumber": 1,
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "id": "obj17791315950731978.schema.json"
+}

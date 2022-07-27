@@ -11,7 +11,7 @@
     ]
   },
   "description": "Patient medical plan details such as network, type, and active status.",
-  "meta:status": "experimental",
+  "meta:status": "stable",
   "meta:xdmType": "object",
   "properties": {
     "healthcarePlanDetails": {
@@ -59,19 +59,12 @@
           "meta:xdmField": "xdm:networkDetails",
           "tagNumber": 5,
           "items": {
-            "$ref": "obj5446176346686571.schema.json"
+            "$ref": "obj5634980907231146.schema.json"
           }
         },
         "planType": {
           "title": "Plan Type",
           "type": "string",
-          "enum": [
-            "hmo",
-            "ppo",
-            "epo",
-            "pos",
-            "hdhp"
-          ],
           "description": "This indicates if the plan is primary, secondary or a tertiary plan.",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:planType",
@@ -80,12 +73,6 @@
         "planLevel": {
           "title": "Plan Level",
           "type": "string",
-          "enum": [
-            "primary",
-            "secondary",
-            "tertiary",
-            "quaternary"
-          ],
           "description": "This indicates if the plan is primary, secondary, tertiary etc.",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:planLevel",
@@ -94,12 +81,6 @@
         "coverageType": {
           "title": "Coverage Type",
           "type": "string",
-          "enum": [
-            "medical",
-            "dental",
-            "vision",
-            "accident"
-          ],
           "description": "Plan coverage type.",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:coverageType",

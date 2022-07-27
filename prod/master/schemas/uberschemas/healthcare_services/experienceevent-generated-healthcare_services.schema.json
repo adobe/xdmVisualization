@@ -498,11 +498,6 @@
           "Title": "Actor",
           "type": "string",
           "description": "A person/member who did the action.",
-          "enum": [
-            "Member",
-            "Practitioner",
-            "RelatedPerson"
-          ],
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:actor",
           "tagNumber": 3

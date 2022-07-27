@@ -10,8 +10,8 @@
       "healthcare_services"
     ]
   },
-  "description": "Data that is collected by sitetools like chatbot,survey ..etc.",
-  "meta:status": "experimental",
+  "description": "Generic collection of site tool behaviors for online interactions. For example interactions with chatbots, surveys, or questionnaires.",
+  "meta:status": "stable",
   "meta:xdmType": "object",
   "properties": {
     "sitetool": {
@@ -40,11 +40,6 @@
           "Title": "Actor",
           "type": "string",
           "description": "A person/member who did the action.",
-          "enum": [
-            "Member",
-            "Practitioner",
-            "RelatedPerson"
-          ],
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:actor",
           "tagNumber": 3
