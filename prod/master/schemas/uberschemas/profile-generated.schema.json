@@ -96,6 +96,8 @@
     "profile-work-details##title##83911",
     "identitymap##title##90811",
     "external-source-system-audit-details##title##88991",
+    "record-status##title##68531",
+    "profile-consentResults##title##35151",
     "profile-consents##title##22741",
     "profile-directmarketing##title##87841",
     "profile-inferred-person##title##37161",
@@ -108,7 +110,9 @@
     "profile-privacy##title##10921",
     "profile-push-details##title##87941",
     "profile-push-notification-details##title##65141",
+    "profile-responses##title##10381",
     "profile-segmentation##title##98301",
+    "profile-source-system-markers##title##58291",
     "profile-subscriptions##title##76011",
     "profile-telecom-subscription##title##34441",
     "profile-test-profile##title##7571",
@@ -131,6 +135,8 @@
     "profile-work-details##description##64201",
     "identitymap##description##41821",
     "external-source-system-audit-details##description##98601",
+    "record-status##description##57781",
+    "profile-consentResults##description##64881",
     "profile-consents##description##42021",
     "profile-directmarketing##description##16031",
     "profile-inferred-person##description##86151",
@@ -143,7 +149,9 @@
     "profile-privacy##description##86951",
     "profile-push-details##description##41321",
     "profile-push-notification-details##description##65501",
+    "profile-responses##description##1341",
     "profile-segmentation##description##95051",
+    "profile-source-system-markers##description##38771",
     "profile-subscriptions##description##5101",
     "profile-telecom-subscription##description##98821",
     "profile-test-profile##description##71331",
@@ -283,7 +291,7 @@
       "meta:xdmField": "xdm:personComponents",
       "tagNumber": 12,
       "items": {
-        "$ref": "obj33156548265900043.schema.json"
+        "$ref": "obj1745978615071191.schema.json"
       }
     },
     "b2b": {
@@ -736,6 +744,8 @@
       "title": "Soft Delete Flag",
       "description": "Soft delete flag to indicate if the record is marked for deletion.",
       "type": "boolean",
+      "meta:titleId": "record-status##xdm:isDeleted##title##77601",
+      "meta:descriptionId": "record-status##xdm:isDeleted##description##95591",
       "meta:xdmType": "boolean",
       "meta:xdmField": "xdm:isDeleted",
       "tagNumber": 31
@@ -744,6 +754,7 @@
       "title": "consent policies map",
       "type": "object",
       "meta:xdmType": "map",
+      "meta:titleId": "profile-consentResults##xdm:consentPoliciesIDMap##title##43181",
       "meta:xdmField": "xdm:consentPoliciesIDMap",
       "tagNumber": 32,
       "properties": {
@@ -752,12 +763,16 @@
           "description": "map of validated fields for a consent policy",
           "type": "object",
           "meta:xdmType": "map",
+          "meta:titleId": "profile-consentResults##additionalProperties##title##89801",
+          "meta:descriptionId": "profile-consentResults##additionalProperties##description##38471",
           "tagNumber": 1,
           "properties": {
             "mapObj": {
               "title": "consented identities per namespace",
               "description": "List of identities for each namespace in each consent policy",
               "type": "array",
+              "meta:titleId": "profile-consentResults##additionalProperties##title##15641",
+              "meta:descriptionId": "profile-consentResults##additionalProperties##description##11471",
               "meta:xdmType": "array",
               "items": {
                 "type": "string",
@@ -1086,6 +1101,8 @@
                           "title": "Topics",
                           "description": "Topics of interest for personalizing this subscription.",
                           "type": "array",
+                          "meta:titleId": "consents-and-preferences##xdm:topics##title##18231",
+                          "meta:descriptionId": "consents-and-preferences##xdm:topics##description##91571",
                           "meta:xdmType": "array",
                           "items": {
                             "type": "string",
@@ -1258,6 +1275,8 @@
                           "title": "Topics",
                           "description": "Topics of interest for personalizing this subscription.",
                           "type": "array",
+                          "meta:titleId": "consents-and-preferences##xdm:topics##title##18231",
+                          "meta:descriptionId": "consents-and-preferences##xdm:topics##description##91571",
                           "meta:xdmType": "array",
                           "items": {
                             "type": "string",
@@ -1430,6 +1449,8 @@
                           "title": "Topics",
                           "description": "Topics of interest for personalizing this subscription.",
                           "type": "array",
+                          "meta:titleId": "consents-and-preferences##xdm:topics##title##18231",
+                          "meta:descriptionId": "consents-and-preferences##xdm:topics##description##91571",
                           "meta:xdmType": "array",
                           "items": {
                             "type": "string",
@@ -1869,6 +1890,7 @@
                             "IDFA",
                             "GAID"
                           ],
+                          "meta:titleId": "consents-and-preferences##xdm:idType##title##12521",
                           "meta:xdmType": "string",
                           "meta:xdmField": "xdm:idType",
                           "tagNumber": 2
@@ -2183,7 +2205,7 @@
           "meta:xdmField": "xdm:primaryCarePhysicians",
           "tagNumber": 2,
           "items": {
-            "$ref": "obj23990911745753052.schema.json"
+            "$ref": "obj17163191465589733.schema.json"
           }
         },
         "preferredAvailability": {
@@ -2202,7 +2224,7 @@
           "meta:xdmField": "xdm:prescriptions",
           "tagNumber": 4,
           "items": {
-            "$ref": "obj721805073909918.schema.json"
+            "$ref": "obj9244897272023689.schema.json"
           }
         },
         "specialists": {
@@ -2212,7 +2234,7 @@
           "meta:xdmField": "xdm:specialists",
           "tagNumber": 5,
           "items": {
-            "$ref": "obj19616505111665905.schema.json"
+            "$ref": "obj2611739065166814.schema.json"
           }
         },
         "healthConcerns": {
@@ -2252,7 +2274,7 @@
           "meta:xdmField": "xdm:plans",
           "tagNumber": 9,
           "items": {
-            "$ref": "obj04895645681202643.schema.json"
+            "$ref": "obj5140596842069105.schema.json"
           }
         }
       },
@@ -2368,7 +2390,7 @@
           "meta:xdmField": "xdm:pointsExpiration",
           "tagNumber": 4,
           "items": {
-            "$ref": "obj11430229432383121.schema.json"
+            "$ref": "obj46189257105986825.schema.json"
           }
         },
         "pointsRedeemed": {
@@ -2482,7 +2504,7 @@
           "meta:xdmField": "xdm:creditScores",
           "tagNumber": 3,
           "items": {
-            "$ref": "obj6418683182490721.schema.json"
+            "$ref": "obj6023722214496781.schema.json"
           }
         },
         "employmentStatus": {
@@ -2741,18 +2763,21 @@
       "meta:xdmField": "xdm:pushNotificationDetails",
       "tagNumber": 56,
       "items": {
-        "$ref": "obj5751906829764255.schema.json"
+        "$ref": "obj6888956261400889.schema.json"
       }
     },
     "emailResponse": {
       "type": "object",
       "title": "Email responses",
+      "meta:titleId": "profile-responses##xdm:emailResponse##title##50741",
       "meta:xdmType": "object",
       "properties": {
         "isEmailBounced": {
           "title": "Email Bounced Indicator",
           "type": "boolean",
           "description": "Email bounced Indicator.",
+          "meta:titleId": "profile-responses##xdm:isEmailBounced##title##92141",
+          "meta:descriptionId": "profile-responses##xdm:isEmailBounced##description##11371",
           "meta:xdmType": "boolean",
           "meta:xdmField": "xdm:isEmailBounced",
           "tagNumber": 1
@@ -2762,6 +2787,8 @@
           "type": "string",
           "format": "date-time",
           "description": "Email bounced date.",
+          "meta:titleId": "profile-responses##xdm:emailBouncedDate##title##68831",
+          "meta:descriptionId": "profile-responses##xdm:emailBouncedDate##description##39011",
           "meta:xdmType": "date-time",
           "meta:xdmField": "xdm:emailBouncedDate",
           "tagNumber": 2
@@ -2770,6 +2797,8 @@
           "title": "Email Bounced Reason",
           "type": "string",
           "description": "Email bounced reason.",
+          "meta:titleId": "profile-responses##xdm:emailBouncedReason##title##24051",
+          "meta:descriptionId": "profile-responses##xdm:emailBouncedReason##description##52991",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:emailBouncedReason",
           "tagNumber": 3
@@ -2805,6 +2834,8 @@
       "title": "Source System Name",
       "type": "string",
       "description": "Source system name where the profile fragment is ingested from.",
+      "meta:titleId": "profile-source-system-markers##xdm:sourceSystemName##title##29811",
+      "meta:descriptionId": "profile-source-system-markers##xdm:sourceSystemName##description##21791",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:sourceSystemName",
       "tagNumber": 60
@@ -2813,6 +2844,8 @@
       "title": "Record type ID",
       "type": "string",
       "description": "Record type identifier.",
+      "meta:titleId": "profile-source-system-markers##xdm:recordTypeID##title##2031",
+      "meta:descriptionId": "profile-source-system-markers##xdm:recordTypeID##description##16351",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:recordTypeID",
       "tagNumber": 61
@@ -2821,6 +2854,8 @@
       "title": "Record Status",
       "type": "string",
       "description": "Record status.",
+      "meta:titleId": "profile-source-system-markers##xdm:recordStatus##title##9581",
+      "meta:descriptionId": "profile-source-system-markers##xdm:recordStatus##description##27301",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:recordStatus",
       "tagNumber": 62
@@ -2829,6 +2864,8 @@
       "title": "Record Source`",
       "type": "string",
       "description": "Record source.",
+      "meta:titleId": "profile-source-system-markers##xdm:recordSource##title##70531",
+      "meta:descriptionId": "profile-source-system-markers##xdm:recordSource##description##34221",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:recordSource",
       "tagNumber": 63
@@ -2888,7 +2925,7 @@
           "meta:xdmField": "xdm:internetSubscription",
           "tagNumber": 4,
           "items": {
-            "$ref": "obj31377034226456413.schema.json"
+            "$ref": "obj4296237563642218.schema.json"
           }
         },
         "landlineSubscription": {
@@ -2899,7 +2936,7 @@
           "meta:xdmField": "xdm:landlineSubscription",
           "tagNumber": 5,
           "items": {
-            "$ref": "obj5040946315872057.schema.json"
+            "$ref": "obj46047075477261257.schema.json"
           }
         },
         "mediaSubscription": {
@@ -2910,7 +2947,7 @@
           "meta:xdmField": "xdm:mediaSubscription",
           "tagNumber": 6,
           "items": {
-            "$ref": "obj2926969190295552.schema.json"
+            "$ref": "obj7066383908647966.schema.json"
           }
         },
         "mobileSubscription": {
@@ -2921,7 +2958,7 @@
           "meta:xdmField": "xdm:mobileSubscription",
           "tagNumber": 7,
           "items": {
-            "$ref": "obj4435137845170629.schema.json"
+            "$ref": "obj7300860557761599.schema.json"
           }
         }
       },

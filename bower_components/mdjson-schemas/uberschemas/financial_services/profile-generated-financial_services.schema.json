@@ -494,6 +494,8 @@
                           "title": "Topics",
                           "description": "Topics of interest for personalizing this subscription.",
                           "type": "array",
+                          "meta:titleId": "consents-and-preferences##xdm:topics##title##18231",
+                          "meta:descriptionId": "consents-and-preferences##xdm:topics##description##91571",
                           "meta:xdmType": "array",
                           "items": {
                             "type": "string",
@@ -666,6 +668,8 @@
                           "title": "Topics",
                           "description": "Topics of interest for personalizing this subscription.",
                           "type": "array",
+                          "meta:titleId": "consents-and-preferences##xdm:topics##title##18231",
+                          "meta:descriptionId": "consents-and-preferences##xdm:topics##description##91571",
                           "meta:xdmType": "array",
                           "items": {
                             "type": "string",
@@ -838,6 +842,8 @@
                           "title": "Topics",
                           "description": "Topics of interest for personalizing this subscription.",
                           "type": "array",
+                          "meta:titleId": "consents-and-preferences##xdm:topics##title##18231",
+                          "meta:descriptionId": "consents-and-preferences##xdm:topics##description##91571",
                           "meta:xdmType": "array",
                           "items": {
                             "type": "string",
@@ -1277,6 +1283,7 @@
                             "IDFA",
                             "GAID"
                           ],
+                          "meta:titleId": "consents-and-preferences##xdm:idType##title##12521",
                           "meta:xdmType": "string",
                           "meta:xdmField": "xdm:idType",
                           "tagNumber": 2
@@ -1593,7 +1600,7 @@
           "meta:xdmField": "xdm:pointsExpiration",
           "tagNumber": 4,
           "items": {
-            "$ref": "obj15626545850230578.schema.json"
+            "$ref": "obj929057782799052.schema.json"
           }
         },
         "pointsRedeemed": {
@@ -1764,7 +1771,7 @@
           "meta:xdmField": "xdm:creditScores",
           "tagNumber": 3,
           "items": {
-            "$ref": "obj5237749239628193.schema.json"
+            "$ref": "obj65583060875267.schema.json"
           }
         },
         "employmentStatus": {

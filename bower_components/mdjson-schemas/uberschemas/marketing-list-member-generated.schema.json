@@ -18,12 +18,14 @@
     "marketing-list-member##title##46541",
     "record##title##65961",
     "external-source-system-audit-details##title##88991",
+    "record-status##title##68531",
     "marketing-list-member-components##title##10001"
   ],
   "meta:descriptionId": [
     "marketing-list-member##description##7641",
     "record##description##3921",
     "external-source-system-audit-details##description##98601",
+    "record-status##description##57781",
     "marketing-list-member-components##description##41371"
   ],
   "meta:createdDate": [
@@ -116,6 +118,8 @@
       "title": "Soft Delete Flag",
       "description": "Soft delete flag to indicate if the record is marked for deletion.",
       "type": "boolean",
+      "meta:titleId": "record-status##xdm:isDeleted##title##77601",
+      "meta:descriptionId": "record-status##xdm:isDeleted##description##95591",
       "meta:xdmType": "boolean",
       "meta:xdmField": "xdm:isDeleted",
       "tagNumber": 9
@@ -126,7 +130,7 @@
       "meta:xdmField": "xdm:marketingListMemberComponents",
       "tagNumber": 10,
       "items": {
-        "$ref": "obj5709110018297201.schema.json"
+        "$ref": "obj9749508614373732.schema.json"
       }
     }
   },

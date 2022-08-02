@@ -21,14 +21,16 @@
     "external-source-system-audit-details##title##88991",
     "record##title##65961",
     "campaign-components##title##53451",
-    "campaign-details##title##42341"
+    "campaign-details##title##42341",
+    "record-status##title##68531"
   ],
   "meta:descriptionId": [
     "campaign##description##58771",
     "external-source-system-audit-details##description##98601",
     "record##description##3921",
     "campaign-components##description##62381",
-    "campaign-details##description##51611"
+    "campaign-details##description##51611",
+    "record-status##description##57781"
   ],
   "meta:tags": {
     "b2bSchema": true
@@ -110,7 +112,7 @@
       "meta:xdmField": "xdm:campaignComponents",
       "tagNumber": 8,
       "items": {
-        "$ref": "obj010518878409506938.schema.json"
+        "$ref": "obj5772821686391811.schema.json"
       }
     },
     "parentCampaignID": {
@@ -328,6 +330,8 @@
       "title": "Soft Delete Flag",
       "description": "Soft delete flag to indicate if the record is marked for deletion.",
       "type": "boolean",
+      "meta:titleId": "record-status##xdm:isDeleted##title##77601",
+      "meta:descriptionId": "record-status##xdm:isDeleted##description##95591",
       "meta:xdmType": "boolean",
       "meta:xdmField": "xdm:isDeleted",
       "tagNumber": 30

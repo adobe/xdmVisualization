@@ -504,6 +504,7 @@
 [adobe.experience.customerJourneyManagement.message-interaction](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.customerJourneyManagement.message-interaction.html)<br/>
 [adobe.experience.customerJourneyManagement.processing-flow-timeline](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.customerJourneyManagement.processing-flow-timeline.html)<br/>
 [adobe.experience.customerJourneyManagement.messageexecution](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.customerJourneyManagement.messageexecution.html)<br/>
+[adobe.experience.customerJourneyManagement.ajo-entity](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.customerJourneyManagement.ajo-entity.html)<br/>
 [adobe.experience.mobile-lifecycle-details-test](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.mobile-lifecycle-details-test.html)<br/>
 [adobe.experience.experienceevent-edgeregion](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.experienceevent-edgeregion.html)<br/>
 [adobe.experience.journeyOrchestration.journeyOrchestrationIdentity](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.journeyOrchestration.journeyOrchestrationIdentity.html)<br/>

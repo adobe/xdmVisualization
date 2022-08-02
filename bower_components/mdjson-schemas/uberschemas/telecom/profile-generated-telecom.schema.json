@@ -491,6 +491,8 @@
                           "title": "Topics",
                           "description": "Topics of interest for personalizing this subscription.",
                           "type": "array",
+                          "meta:titleId": "consents-and-preferences##xdm:topics##title##18231",
+                          "meta:descriptionId": "consents-and-preferences##xdm:topics##description##91571",
                           "meta:xdmType": "array",
                           "items": {
                             "type": "string",
@@ -663,6 +665,8 @@
                           "title": "Topics",
                           "description": "Topics of interest for personalizing this subscription.",
                           "type": "array",
+                          "meta:titleId": "consents-and-preferences##xdm:topics##title##18231",
+                          "meta:descriptionId": "consents-and-preferences##xdm:topics##description##91571",
                           "meta:xdmType": "array",
                           "items": {
                             "type": "string",
@@ -835,6 +839,8 @@
                           "title": "Topics",
                           "description": "Topics of interest for personalizing this subscription.",
                           "type": "array",
+                          "meta:titleId": "consents-and-preferences##xdm:topics##title##18231",
+                          "meta:descriptionId": "consents-and-preferences##xdm:topics##description##91571",
                           "meta:xdmType": "array",
                           "items": {
                             "type": "string",
@@ -1274,6 +1280,7 @@
                             "IDFA",
                             "GAID"
                           ],
+                          "meta:titleId": "consents-and-preferences##xdm:idType##title##12521",
                           "meta:xdmType": "string",
                           "meta:xdmField": "xdm:idType",
                           "tagNumber": 2
@@ -1590,7 +1597,7 @@
           "meta:xdmField": "xdm:pointsExpiration",
           "tagNumber": 4,
           "items": {
-            "$ref": "obj7527141465858225.schema.json"
+            "$ref": "obj4704552985599997.schema.json"
           }
         },
         "pointsRedeemed": {
@@ -1763,7 +1770,7 @@
           "meta:xdmField": "xdm:internetSubscription",
           "tagNumber": 4,
           "items": {
-            "$ref": "obj21773033162061517.schema.json"
+            "$ref": "obj657803704022297.schema.json"
           }
         },
         "landlineSubscription": {
@@ -1774,7 +1781,7 @@
           "meta:xdmField": "xdm:landlineSubscription",
           "tagNumber": 5,
           "items": {
-            "$ref": "obj5094179461698223.schema.json"
+            "$ref": "obj7542934497234408.schema.json"
           }
         },
         "mediaSubscription": {
@@ -1785,7 +1792,7 @@
           "meta:xdmField": "xdm:mediaSubscription",
           "tagNumber": 6,
           "items": {
-            "$ref": "obj8732325362877498.schema.json"
+            "$ref": "obj42059071777504187.schema.json"
           }
         },
         "mobileSubscription": {
@@ -1796,7 +1803,7 @@
           "meta:xdmField": "xdm:mobileSubscription",
           "tagNumber": 7,
           "items": {
-            "$ref": "obj5189616038258609.schema.json"
+            "$ref": "obj15493658853837622.schema.json"
           }
         }
       },

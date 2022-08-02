@@ -11,17 +11,22 @@
   "description": "Collects all details related to an accout person relationship.",
   "meta:sensitiveData": true,
   "meta:status": "stable",
+  "meta:titleId": "account-person-details##title##96791",
+  "meta:descriptionId": "account-person-details##description##98201",
   "meta:xdmType": "object",
   "properties": {
     "matchedAccount": {
       "title": "Matched Account",
       "type": "object",
+      "meta:titleId": "account-person-details##xdm:matchedAccount##title##59111",
       "meta:xdmType": "object",
       "properties": {
         "matchingScore": {
           "title": "Matching Score",
           "description": "Computed matching score for account person affinity.",
           "type": "number",
+          "meta:titleId": "account-person-details##xdm:matchingScore##title##49431",
+          "meta:descriptionId": "account-person-details##xdm:matchingScore##description##18911",
           "meta:xdmType": "number",
           "meta:xdmField": "xdm:matchingScore",
           "tagNumber": 1
@@ -31,6 +36,8 @@
           "description": "The date when the account-person affinity score was computed.",
           "type": "string",
           "format": "date-time",
+          "meta:titleId": "account-person-details##xdm:scoreCreatedDate##title##94031",
+          "meta:descriptionId": "account-person-details##xdm:scoreCreatedDate##description##57471",
           "meta:xdmType": "date-time",
           "meta:xdmField": "xdm:scoreCreatedDate",
           "tagNumber": 2

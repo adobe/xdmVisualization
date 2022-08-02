@@ -91,6 +91,20 @@
           },
           "meta:xdmField": "xdm:statesEnd",
           "tagNumber": 9
+        },
+        "endUserIDs": {
+          "title": "End User IDs",
+          "$ref": "../../datatypes/enduserids.schema.json",
+          "description": "Condensed, normalized encapsulation of all end user identifiers. At least one of the fields is required.",
+          "meta:xdmField": "xdm:endUserIDs",
+          "tagNumber": 10
+        },
+        "implementationDetails": {
+          "title": "Implementation Details",
+          "$ref": "../../datatypes/industry-verticals/implementationdetails.schema.json",
+          "description": "Details about the SDK, library, or service used in an application or web page implementation of a service.",
+          "meta:xdmField": "xdm:implementationDetails",
+          "tagNumber": 11
         }
       },
       "meta:xdmField": "xdm:mediaCollection",

@@ -7,6 +7,8 @@
   "type": "string",
   "description": "Allows to remove values from meta:enum.",
   "meta:status": "stable",
+  "meta:titleId": "descriptorMetaEnumRemove##title##99171",
+  "meta:descriptionId": "descriptorMetaEnumRemove##description##17491",
   "meta:xdmType": "string",
   "properties": {
     "_id": {
@@ -24,7 +26,10 @@
       "title": "Type",
       "type": "string",
       "description": "The type of descriptor this object represents.",
-      "meta:titleId": "schemadescriptor##@type##title##15981",
+      "meta:titleId": [
+        "schemadescriptor##@type##title##15981",
+        "descriptorMetaEnumRemove##@type##title##4421"
+      ],
       "meta:descriptionId": "schemadescriptor##@type##description##6141",
       "meta:xdmType": "string",
       "const": "xdm:descriptorMetaEnumRemove",
@@ -71,6 +76,7 @@
         "enum": {
           "title": "Extended meta:enum values",
           "type": "object",
+          "meta:titleId": "descriptorMetaEnumRemove##meta:enum##title##37811",
           "meta:xdmType": "object",
           "meta:xdmField": "meta:enum",
           "tagNumber": 1

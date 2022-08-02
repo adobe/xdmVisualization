@@ -13,12 +13,14 @@
   "meta:titleId": [
     "account-person##title##54851",
     "record##title##65961",
-    "external-source-system-audit-details##title##88991"
+    "external-source-system-audit-details##title##88991",
+    "record-status##title##68531"
   ],
   "meta:descriptionId": [
     "account-person##description##46121",
     "record##description##3921",
-    "external-source-system-audit-details##description##98601"
+    "external-source-system-audit-details##description##98601",
+    "record-status##description##57781"
   ],
   "meta:xdmType": "object",
   "meta:createdDate": "2020-08-10",
@@ -98,6 +100,8 @@
       "title": "Person Roles",
       "description": "An array of roles of the person on this account.",
       "type": "array",
+      "meta:titleId": "account-person##xdm:personRoles##title##98611",
+      "meta:descriptionId": "account-person##xdm:personRoles##description##67421",
       "meta:xdmType": "array",
       "items": {
         "type": "string",
@@ -178,6 +182,8 @@
       "title": "Relationship Source",
       "description": "Source of Account Person relation.",
       "type": "string",
+      "meta:titleId": "account-person##xdm:relationshipSource##title##40031",
+      "meta:descriptionId": "account-person##xdm:relationshipSource##description##88321",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:relationshipSource",
       "tagNumber": 16
@@ -195,6 +201,8 @@
       "title": "Soft Delete Flag",
       "description": "Soft delete flag to indicate if the record is marked for deletion.",
       "type": "boolean",
+      "meta:titleId": "record-status##xdm:isDeleted##title##77601",
+      "meta:descriptionId": "record-status##xdm:isDeleted##description##95591",
       "meta:xdmType": "boolean",
       "meta:xdmField": "xdm:isDeleted",
       "tagNumber": 18

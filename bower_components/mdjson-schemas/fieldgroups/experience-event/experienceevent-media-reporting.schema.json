@@ -19,54 +19,40 @@
       "description": "Media Reporting related fields.",
       "meta:xdmType": "object",
       "properties": {
-        "playerEventDetails": {
-          "title": "Player Event Details",
-          "$ref": "../../datatypes/playereventdetails.schema.json",
-          "description": "Player event details information related to the experience event.",
-          "meta:xdmField": "xdm:playerEventDetails",
-          "tagNumber": 1
-        },
         "sessionDetails": {
           "title": "Session Details",
           "$ref": "../../datatypes/sessiondetails.schema.json",
           "description": "Session details information related to the experience event.",
           "meta:xdmField": "xdm:sessionDetails",
-          "tagNumber": 2
+          "tagNumber": 1
         },
         "advertisingDetails": {
           "title": "Advertising Details",
           "$ref": "../../datatypes/advertisingdetails.schema.json",
           "description": "Advertising details information related to the experience event.",
           "meta:xdmField": "xdm:advertisingDetails",
-          "tagNumber": 3
+          "tagNumber": 2
         },
         "advertisingPodDetails": {
           "title": "Advertising Pod Details",
           "$ref": "../../datatypes/advertisingpoddetails.schema.json",
           "description": "Advertising pod details information related to the experience event.",
           "meta:xdmField": "xdm:advertisingPodDetails",
-          "tagNumber": 4
+          "tagNumber": 3
         },
         "chapterDetails": {
           "title": "Chapter Details",
           "$ref": "../../datatypes/chapterdetails.schema.json",
           "description": "Chapter details information related to the experience event.",
           "meta:xdmField": "xdm:chapterDetails",
-          "tagNumber": 5
-        },
-        "errorDetails": {
-          "title": "Error Details",
-          "$ref": "../../datatypes/errordetails.schema.json",
-          "description": "Error details information related to the experience event.",
-          "meta:xdmField": "xdm:errorDetails",
-          "tagNumber": 6
+          "tagNumber": 4
         },
         "qoeDataDetails": {
           "title": "Qoe Data Details",
           "$ref": "../../datatypes/qoedatadetails.schema.json",
           "description": "Qoe data details information related to the experience event.",
           "meta:xdmField": "xdm:qoeDataDetails",
-          "tagNumber": 7
+          "tagNumber": 5
         },
         "states": {
           "title": "List Of States",
@@ -78,10 +64,20 @@
             "tagNumber": 1
           },
           "meta:xdmField": "xdm:states",
-          "tagNumber": 8
+          "tagNumber": 6
+        },
+        "implementationDetails": {
+          "title": "Implementation Details",
+          "$ref": "../../datatypes/industry-verticals/implementationdetails.schema.json",
+          "description": "Details about the SDK, library, or service used in an application or web page implementation of a service.",
+          "meta:xdmField": "xdm:implementationDetails",
+          "tagNumber": 7
         }
       },
       "meta:xdmField": "xdm:mediaReporting",
+      "required": [
+        "sessionDetails"
+      ],
       "tagNumber": 1
     }
   },

@@ -11,22 +11,28 @@
   "description": "Use to add a person to the specific campaign.",
   "meta:status": "experimental",
   "meta:createdDate": "2022-02-14",
+  "meta:titleId": "add-to-campaign##title##14431",
+  "meta:descriptionId": "add-to-campaign##description##57431",
   "meta:xdmType": "object",
   "properties": {
     "leadOperation": {
       "title": "Lead Operation",
       "type": "object",
+      "meta:titleId": "add-to-campaign##xdm:leadOperation##title##19001",
       "meta:xdmType": "object",
       "properties": {
         "addToCampaign": {
           "title": "Add To Campaign",
           "type": "object",
+          "meta:titleId": "add-to-campaign##xdm:addToCampaign##title##26721",
           "meta:xdmType": "object",
           "properties": {
             "campaignKey": {
               "title": "Campaign Key",
               "description": "Unique composite identifier of the campaign.",
               "$ref": "../../../datatypes/b2b/b2b-source.schema.json",
+              "meta:titleId": "add-to-campaign##xdm:campaignKey##title##39421",
+              "meta:descriptionId": "add-to-campaign##xdm:campaignKey##description##67731",
               "meta:xdmField": "xdm:campaignKey",
               "tagNumber": 1
             },
@@ -34,6 +40,8 @@
               "title": "Stream Key",
               "description": "Unique composite identifier of the stream.",
               "$ref": "../../../datatypes/b2b/b2b-source.schema.json",
+              "meta:titleId": "add-to-campaign##xdm:streamKey##title##73241",
+              "meta:descriptionId": "add-to-campaign##xdm:streamKey##description##39201",
               "meta:xdmField": "xdm:streamKey",
               "tagNumber": 2
             },
@@ -41,6 +49,8 @@
               "title": "Stream Name",
               "type": "string",
               "description": "Name of the stream.",
+              "meta:titleId": "add-to-campaign##xdm:streamName##title##99131",
+              "meta:descriptionId": "add-to-campaign##xdm:streamName##description##27331",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:streamName",
               "tagNumber": 3

@@ -8,13 +8,21 @@
   "description": "Advertising Pod details information.",
   "meta:xdmType": "object",
   "properties": {
+    "adBreakID": {
+      "title": "Ad Break ID",
+      "type": "string",
+      "description": "The ID of the ad break.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:adBreakID",
+      "tagNumber": 1
+    },
     "friendlyName": {
       "title": "Pod Friendly Name",
       "type": "string",
       "description": "The friendly name of the Ad Break.",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:friendlyName",
-      "tagNumber": 1
+      "tagNumber": 2
     },
     "index": {
       "title": "Ad In Pod Position (Ad Break Start)",
@@ -22,7 +30,7 @@
       "description": "The index of the ad inside the parent ad break start, for example, the first ad has index 0 and the second ad has index 1.",
       "meta:xdmType": "int",
       "meta:xdmField": "xdm:index",
-      "tagNumber": 2
+      "tagNumber": 3
     },
     "second": {
       "title": "Pod Second",
@@ -30,14 +38,15 @@
       "description": "The offset of the ad break inside the content, in seconds.",
       "meta:xdmType": "int",
       "meta:xdmField": "xdm:second",
-      "tagNumber": 3
+      "tagNumber": 4
     }
   },
   "meta:xdmId": "https://ns.adobe.com/xdm/datatypes/advertisingPodDetails",
   "meta:altId": "_xdm.datatypes.advertisingpoddetails",
   "required": [
     "index",
-    "second"
+    "second",
+    "adBreakID"
   ],
   "id": "_xdm.datatypes.advertisingpoddetails"
 }

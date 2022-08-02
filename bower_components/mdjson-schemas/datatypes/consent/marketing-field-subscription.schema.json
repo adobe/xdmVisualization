@@ -113,6 +113,8 @@
               "title": "Topics",
               "description": "Topics of interest for personalizing this subscription.",
               "type": "array",
+              "meta:titleId": "consents-and-preferences##xdm:topics##title##18231",
+              "meta:descriptionId": "consents-and-preferences##xdm:topics##description##91571",
               "meta:xdmType": "array",
               "items": {
                 "type": "string",

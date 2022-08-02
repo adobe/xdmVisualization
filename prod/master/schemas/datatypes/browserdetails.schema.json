@@ -161,13 +161,15 @@
           "meta:xdmField": "xdm:brands",
           "tagNumber": 1,
           "items": {
-            "$ref": "obj8507560489940424.schema.json"
+            "$ref": "obj10897583321574134.schema.json"
           }
         },
         "mobile": {
           "title": "Mobileness",
           "type": "boolean",
           "description": "A boolean indicating if the user agent's device is a mobile device.",
+          "meta:titleId": "browserdetails##xdm:mobile##title##7731",
+          "meta:descriptionId": "browserdetails##xdm:mobile##description##63751",
           "meta:xdmType": "boolean",
           "meta:xdmField": "xdm:mobile",
           "tagNumber": 2
@@ -176,6 +178,8 @@
           "title": "Platform architecture",
           "type": "string",
           "description": "The user agent's underlying CPU architecture (e.g., ARM, or x86).",
+          "meta:titleId": "browserdetails##xdm:architecture##title##43501",
+          "meta:descriptionId": "browserdetails##xdm:architecture##description##50311",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:architecture",
           "tagNumber": 3
@@ -184,6 +188,8 @@
           "title": "Platform bitness",
           "type": "string",
           "description": "The user agent's underlying CPU architecture bitness (e.g., 32 or 64).",
+          "meta:titleId": "browserdetails##xdm:bitness##title##70511",
+          "meta:descriptionId": "browserdetails##xdm:bitness##description##39691",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:bitness",
           "tagNumber": 4
@@ -192,6 +198,8 @@
           "title": "Model",
           "type": "string",
           "description": "The user agent's device model  (e.g., Pixel 2 XL).",
+          "meta:titleId": "browserdetails##xdm:model##title##34541",
+          "meta:descriptionId": "browserdetails##xdm:model##description##70991",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:model",
           "tagNumber": 5
@@ -200,6 +208,8 @@
           "title": "Platform",
           "type": "string",
           "description": "The user agent's operating system's commercial name.",
+          "meta:titleId": "browserdetails##xdm:platform##title##38421",
+          "meta:descriptionId": "browserdetails##xdm:platform##description##80271",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:platform",
           "tagNumber": 6
@@ -208,6 +218,8 @@
           "title": "Platform version",
           "type": "string",
           "description": "The user agent's operating system's version (e.g., NT 6.0, 15, or 17G).",
+          "meta:titleId": "browserdetails##xdm:platformVersion##title##67441",
+          "meta:descriptionId": "browserdetails##xdm:platformVersion##description##3431",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:platformVersion",
           "tagNumber": 7
@@ -216,6 +228,8 @@
           "title": "WoW64-ness",
           "type": "boolean",
           "description": "A boolean indicating if the user agent's binary is running in 32-bit mode on 64-bit Windows.",
+          "meta:titleId": "browserdetails##xdm:wow64##title##14641",
+          "meta:descriptionId": "browserdetails##xdm:wow64##description##52501",
           "meta:xdmType": "boolean",
           "meta:xdmField": "xdm:wow64",
           "tagNumber": 8

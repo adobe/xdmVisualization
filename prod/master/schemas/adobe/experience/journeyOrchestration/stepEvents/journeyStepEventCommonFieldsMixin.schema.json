@@ -519,6 +519,22 @@
                           "meta:xdmType": "string",
                           "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/eventName",
                           "tagNumber": 51
+                        },
+                        "origTimestamp": {
+                          "title": "Projection Original Timestamp",
+                          "type": "string",
+                          "description": "The Projection Original Timestamp of the segment being used in journey",
+                          "meta:xdmType": "string",
+                          "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/origTimestamp",
+                          "tagNumber": 52
+                        },
+                        "experienceID": {
+                          "title": "Experience ID",
+                          "type": "string",
+                          "description": "Journey Orchestration Experience Id",
+                          "meta:xdmType": "string",
+                          "meta:xdmField": "https://ns.adobe.com/experience/journeyOrchestration/experienceID",
+                          "tagNumber": 53
                         }
                       },
                       "tagNumber": 1

@@ -20,6 +20,7 @@
     "account##title##4841",
     "record##title##65961",
     "external-source-system-audit-details##title##88991",
+    "record-status##title##68531",
     "account-components##title##12001",
     "account-details##title##16521",
     "related-accounts##title##50181"
@@ -28,6 +29,7 @@
     "account##description##65781",
     "record##description##3921",
     "external-source-system-audit-details##description##98601",
+    "record-status##description##57781",
     "account-components##description##67441",
     "account-details##description##72981",
     "related-accounts##description##47861"
@@ -84,6 +86,8 @@
       "title": "Soft Delete Flag",
       "description": "Soft delete flag to indicate if the record is marked for deletion.",
       "type": "boolean",
+      "meta:titleId": "record-status##xdm:isDeleted##title##77601",
+      "meta:descriptionId": "record-status##xdm:isDeleted##description##95591",
       "meta:xdmType": "boolean",
       "meta:xdmField": "xdm:isDeleted",
       "tagNumber": 5
@@ -94,7 +98,7 @@
       "meta:xdmField": "xdm:accountComponents",
       "tagNumber": 6,
       "items": {
-        "$ref": "obj46811668603600953.schema.json"
+        "$ref": "obj41811974307423405.schema.json"
       }
     },
     "accountName": {

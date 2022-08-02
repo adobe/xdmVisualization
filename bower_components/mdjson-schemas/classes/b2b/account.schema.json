@@ -14,12 +14,14 @@
   "meta:titleId": [
     "account##title##4841",
     "record##title##65961",
-    "external-source-system-audit-details##title##88991"
+    "external-source-system-audit-details##title##88991",
+    "record-status##title##68531"
   ],
   "meta:descriptionId": [
     "account##description##65781",
     "record##description##3921",
-    "external-source-system-audit-details##description##98601"
+    "external-source-system-audit-details##description##98601",
+    "record-status##description##57781"
   ],
   "meta:xdmType": "object",
   "meta:createdDate": "2020-08-10",
@@ -68,6 +70,8 @@
       "title": "Soft Delete Flag",
       "description": "Soft delete flag to indicate if the record is marked for deletion.",
       "type": "boolean",
+      "meta:titleId": "record-status##xdm:isDeleted##title##77601",
+      "meta:descriptionId": "record-status##xdm:isDeleted##description##95591",
       "meta:xdmType": "boolean",
       "meta:xdmField": "xdm:isDeleted",
       "tagNumber": 5

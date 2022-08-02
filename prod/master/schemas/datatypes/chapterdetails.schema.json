@@ -11,7 +11,7 @@
     "friendlyName": {
       "title": "Chapter Name",
       "type": "string",
-      "description": "The friendly name of the chapter and or segment.",
+      "description": "The name of the chapter and/or segment.",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:friendlyName",
       "tagNumber": 1
@@ -27,7 +27,7 @@
     "offset": {
       "title": "Chapter Offset",
       "type": "integer",
-      "description": "The offset of the chapter, in seconds, inside the content from the start.",
+      "description": "The offset of the chapter inside the content (in seconds) from the start.",
       "meta:xdmType": "int",
       "meta:xdmField": "xdm:offset",
       "tagNumber": 3
@@ -35,7 +35,7 @@
     "index": {
       "title": "Chapter Position",
       "type": "integer",
-      "description": "The index of the chapter inside the content.",
+      "description": "The position (index, integer) of the chapter inside the content.",
       "meta:xdmType": "int",
       "meta:xdmField": "xdm:index",
       "tagNumber": 4
@@ -67,7 +67,7 @@
     "timePlayed": {
       "title": "Chapter Time Played",
       "type": "integer",
-      "description": "The time spent on the chapter. The value will be displayed in the time format (HH:MM:SS) in Analysis Workspace and Reports & Analytics. In Data Feeds, Data Warehouse, and Reporting APIs the values will be displayed in seconds.",
+      "description": "The time spent on the chapter, in seconds.",
       "meta:xdmType": "int",
       "meta:xdmField": "xdm:timePlayed",
       "tagNumber": 8

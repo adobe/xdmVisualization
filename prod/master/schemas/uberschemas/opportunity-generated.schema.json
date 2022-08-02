@@ -19,6 +19,7 @@
     "opportunity##title##26231",
     "record##title##65961",
     "external-source-system-audit-details##title##88991",
+    "record-status##title##68531",
     "opportunity-components##title##44811",
     "opportunity-details##title##12721"
   ],
@@ -26,6 +27,7 @@
     "opportunity##description##20011",
     "record##description##3921",
     "external-source-system-audit-details##description##98601",
+    "record-status##description##57781",
     "opportunity-components##description##92541",
     "opportunity-details##description##54001"
   ],
@@ -138,6 +140,8 @@
       "title": "Soft Delete Flag",
       "description": "Soft delete flag to indicate if the record is marked for deletion.",
       "type": "boolean",
+      "meta:titleId": "record-status##xdm:isDeleted##title##77601",
+      "meta:descriptionId": "record-status##xdm:isDeleted##description##95591",
       "meta:xdmType": "boolean",
       "meta:xdmField": "xdm:isDeleted",
       "tagNumber": 11
@@ -148,7 +152,7 @@
       "meta:xdmField": "xdm:opportunityComponents",
       "tagNumber": 12,
       "items": {
-        "$ref": "obj24412480080931354.schema.json"
+        "$ref": "obj0012999299155957988.schema.json"
       }
     },
     "campaignID": {

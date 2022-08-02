@@ -38,6 +38,8 @@
     "experienceevent-implementation-details##title##73141",
     "experienceevent-marketing##title##3931",
     "experienceevent-media##title##81291",
+    "experienceevent-reference-keys##title##6331",
+    "experienceevent-stitching##title##22731",
     "experienceevent-web##title##4021",
     "profile-personal-details##title##17051"
   ],
@@ -52,6 +54,8 @@
     "experienceevent-implementation-details##description##63811",
     "experienceevent-marketing##description##48971",
     "experienceevent-media##description##54191",
+    "experienceevent-reference-keys##description##77561",
+    "experienceevent-stitching##description##79081",
     "experienceevent-web##description##72121",
     "profile-personal-details##description##5771"
   ],
@@ -289,6 +293,20 @@
           },
           "meta:xdmField": "xdm:statesEnd",
           "tagNumber": 9
+        },
+        "endUserIDs": {
+          "title": "End User IDs",
+          "$ref": "../../datatypes/enduserids.schema.json",
+          "description": "Condensed, normalized encapsulation of all end user identifiers. At least one of the fields is required.",
+          "meta:xdmField": "xdm:endUserIDs",
+          "tagNumber": 10
+        },
+        "implementationDetails": {
+          "title": "Implementation Details",
+          "$ref": "../../datatypes/industry-verticals/implementationdetails.schema.json",
+          "description": "Details about the SDK, library, or service used in an application or web page implementation of a service.",
+          "meta:xdmField": "xdm:implementationDetails",
+          "tagNumber": 11
         }
       },
       "meta:xdmField": "xdm:mediaCollection",
@@ -299,54 +317,40 @@
       "description": "Media Reporting related fields.",
       "meta:xdmType": "object",
       "properties": {
-        "playerEventDetails": {
-          "title": "Player Event Details",
-          "$ref": "../../datatypes/playereventdetails.schema.json",
-          "description": "Player event details information related to the experience event.",
-          "meta:xdmField": "xdm:playerEventDetails",
-          "tagNumber": 1
-        },
         "sessionDetails": {
           "title": "Session Details",
           "$ref": "../../datatypes/sessiondetails.schema.json",
           "description": "Session details information related to the experience event.",
           "meta:xdmField": "xdm:sessionDetails",
-          "tagNumber": 2
+          "tagNumber": 1
         },
         "advertisingDetails": {
           "title": "Advertising Details",
           "$ref": "../../datatypes/advertisingdetails.schema.json",
           "description": "Advertising details information related to the experience event.",
           "meta:xdmField": "xdm:advertisingDetails",
-          "tagNumber": 3
+          "tagNumber": 2
         },
         "advertisingPodDetails": {
           "title": "Advertising Pod Details",
           "$ref": "../../datatypes/advertisingpoddetails.schema.json",
           "description": "Advertising pod details information related to the experience event.",
           "meta:xdmField": "xdm:advertisingPodDetails",
-          "tagNumber": 4
+          "tagNumber": 3
         },
         "chapterDetails": {
           "title": "Chapter Details",
           "$ref": "../../datatypes/chapterdetails.schema.json",
           "description": "Chapter details information related to the experience event.",
           "meta:xdmField": "xdm:chapterDetails",
-          "tagNumber": 5
-        },
-        "errorDetails": {
-          "title": "Error Details",
-          "$ref": "../../datatypes/errordetails.schema.json",
-          "description": "Error details information related to the experience event.",
-          "meta:xdmField": "xdm:errorDetails",
-          "tagNumber": 6
+          "tagNumber": 4
         },
         "qoeDataDetails": {
           "title": "Qoe Data Details",
           "$ref": "../../datatypes/qoedatadetails.schema.json",
           "description": "Qoe data details information related to the experience event.",
           "meta:xdmField": "xdm:qoeDataDetails",
-          "tagNumber": 7
+          "tagNumber": 5
         },
         "states": {
           "title": "List Of States",
@@ -358,10 +362,20 @@
             "tagNumber": 1
           },
           "meta:xdmField": "xdm:states",
-          "tagNumber": 8
+          "tagNumber": 6
+        },
+        "implementationDetails": {
+          "title": "Implementation Details",
+          "$ref": "../../datatypes/industry-verticals/implementationdetails.schema.json",
+          "description": "Details about the SDK, library, or service used in an application or web page implementation of a service.",
+          "meta:xdmField": "xdm:implementationDetails",
+          "tagNumber": 7
         }
       },
       "meta:xdmField": "xdm:mediaReporting",
+      "required": [
+        "sessionDetails"
+      ],
       "tagNumber": 17
     },
     "media": {
@@ -425,6 +439,7 @@
     "person": {
       "title": "Person Reference Properties",
       "type": "object",
+      "meta:titleId": "experienceevent-reference-keys##xdm:person##title##19721",
       "meta:xdmType": "object",
       "properties": {
         "personalEmailID": {
@@ -432,6 +447,8 @@
           "type": "string",
           "format": "email",
           "description": "The technical address, for example, 'name@domain.com' as commonly defined in RFC2822 and subsequent standards.",
+          "meta:titleId": "experienceevent-reference-keys##xdm:personalEmailID##title##76881",
+          "meta:descriptionId": "experienceevent-reference-keys##xdm:personalEmailID##description##87691",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:personalEmailID",
           "tagNumber": 1
@@ -440,6 +457,8 @@
           "title": "Account ID",
           "type": "string",
           "description": "Account ID.",
+          "meta:titleId": "experienceevent-reference-keys##xdm:accountID##title##85891",
+          "meta:descriptionId": "experienceevent-reference-keys##xdm:accountID##description##88611",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:accountID",
           "tagNumber": 2
@@ -448,6 +467,8 @@
           "title": "Account Type",
           "type": "string",
           "description": "Account Type.",
+          "meta:titleId": "experienceevent-reference-keys##xdm:accountType##title##35281",
+          "meta:descriptionId": "experienceevent-reference-keys##xdm:accountType##description##80081",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:accountType",
           "tagNumber": 3
@@ -460,6 +481,8 @@
       "title": "Stitched ID",
       "$ref": "../../datatypes/identity.schema.json",
       "description": "Identifier computed by the Stitching service, containing a pair of (id, namespace) that uniquely identifies an individual to which this event belongs.",
+      "meta:titleId": "experienceevent-stitching##xdm:stitchedID##title##54581",
+      "meta:descriptionId": "experienceevent-stitching##xdm:stitchedID##description##53511",
       "meta:xdmField": "xdm:stitchedID",
       "tagNumber": 24
     },

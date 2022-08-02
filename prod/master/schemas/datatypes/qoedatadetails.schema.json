@@ -8,21 +8,61 @@
   "description": "Qoe Data details information.",
   "meta:xdmType": "object",
   "properties": {
-    "bitrate": {
+    "bitrateAverageBucket": {
       "title": "Average Bitrate Bucket",
       "type": "integer",
-      "description": "The average bitrate (in kbps). The value is predefined buckets at 100kbps intervals.",
+      "description": "The average bitrate (in kbps). The value is predefined buckets at 100kbps intervals. The Average Bitrate is computed as a weighted average of all bitrate values related to the play duration that occurred during a playback session.",
       "meta:xdmType": "int",
-      "meta:xdmField": "xdm:bitrate",
+      "meta:xdmField": "xdm:bitrateAverageBucket",
       "tagNumber": 1
     },
-    "droppedFrames": {
+    "bitrateAverage": {
+      "title": "Average Bitrate",
+      "type": "number",
+      "description": "The average bitrate (in kbps, integer). This metric is computed as a weighted average of all bitrate values related to the play duration that occurred during a playback session.",
+      "meta:xdmType": "number",
+      "meta:xdmField": "xdm:bitrateAverage",
+      "tagNumber": 2
+    },
+    "hasBitrateChangeImpactedStreams": {
+      "title": "Bitrate Change Impacted Streams",
+      "type": "boolean",
+      "description": "The number of streams in which bitrate changes occurred. This metric is set to true only if at least one bitrate change event occurred during a playback session.",
+      "meta:xdmType": "boolean",
+      "meta:xdmField": "xdm:hasBitrateChangeImpactedStreams",
+      "tagNumber": 3
+    },
+    "bitrateChangeCount": {
+      "title": "Bitrate Changes",
+      "type": "integer",
+      "description": "The number of bitrate changes. This value is computed as a sum of all bitrate change events that occurred during a playback session.",
+      "meta:xdmType": "int",
+      "meta:xdmField": "xdm:bitrateChangeCount",
+      "tagNumber": 4
+    },
+    "hasDroppedFrameImpactedStreams": {
+      "title": "Dropped Frame Impacted Streams",
+      "type": "boolean",
+      "description": "The number of streams in which frames were dropped. This metric is set to true only if at least one frame was dropped during a playback session.",
+      "meta:xdmType": "boolean",
+      "meta:xdmField": "xdm:hasDroppedFrameImpactedStreams",
+      "tagNumber": 5
+    },
+    "droppedFrameCount": {
       "title": "Dropped Frames",
       "type": "integer",
       "description": "The number of frames dropped during playback of the main content.",
       "meta:xdmType": "int",
-      "meta:xdmField": "xdm:droppedFrames",
-      "tagNumber": 2
+      "meta:xdmField": "xdm:droppedFrameCount",
+      "tagNumber": 6
+    },
+    "isDroppedBeforeStart": {
+      "title": "Drops Before Starts",
+      "type": "boolean",
+      "description": "The number of times a user quit the video before its start. This metric is set to true only if no content was rendered, regardless of ads.",
+      "meta:xdmType": "boolean",
+      "meta:xdmField": "xdm:isDroppedBeforeStart",
+      "tagNumber": 7
     },
     "timeToStart": {
       "title": "Time To Start",
@@ -30,84 +70,76 @@
       "description": "Describes the duration (in seconds) passed between video load and start.",
       "meta:xdmType": "int",
       "meta:xdmField": "xdm:timeToStart",
-      "tagNumber": 3
+      "tagNumber": 8
     },
-    "bitrateChange": {
-      "title": "Bitrate Changes",
-      "type": "integer",
-      "description": "The number of bitrate change events that occurred during a playback session.",
-      "meta:xdmType": "int",
-      "meta:xdmField": "xdm:bitrateChange",
-      "tagNumber": 4
-    },
-    "bitrateAverage": {
-      "title": "Average Bitrate",
-      "type": "number",
-      "description": "A weighted average of all bitrate values related to the play duration that occurred during a playback session.",
-      "meta:xdmType": "number",
-      "meta:xdmField": "xdm:bitrateAverage",
-      "tagNumber": 5
-    },
-    "bitrateChangeImpactedStreams": {
-      "title": "Bitrate Change Impacted Streams",
-      "type": "number",
-      "description": "The number of streams in which bitrate changes occurred.",
-      "meta:xdmType": "number",
-      "meta:xdmField": "xdm:bitrateChangeImpactedStreams",
-      "tagNumber": 6
-    },
-    "droppedFrameImpactedStreams": {
-      "title": "Dropped Frame Impacted Streams",
-      "type": "number",
-      "description": "The number of streams in which frames were dropped.",
-      "meta:xdmType": "number",
-      "meta:xdmField": "xdm:droppedFrameImpactedStreams",
-      "tagNumber": 7
+    "hasBufferImpactedStreams": {
+      "title": "Buffer Impacted Streams",
+      "type": "boolean",
+      "description": "The number of streams impacted by buffering. This metric is set to true only if at least one buffer event occurred during a playback session.",
+      "meta:xdmType": "boolean",
+      "meta:xdmField": "xdm:hasBufferImpactedStreams",
+      "tagNumber": 9
     },
     "bufferCount": {
       "title": "Buffer Events",
-      "type": "number",
-      "description": "The number of buffer states that occurred during a playback session.",
-      "meta:xdmType": "number",
+      "type": "integer",
+      "description": "The number of buffer events. This metric is computed as a count of the different buffer states that occurred during a playback session. This is a count of how many times the player enters a buffer state from other states, e.g., playing or pausing.",
+      "meta:xdmType": "int",
       "meta:xdmField": "xdm:bufferCount",
-      "tagNumber": 8
+      "tagNumber": 10
     },
     "bufferTime": {
       "title": "Total Buffer Duration",
-      "type": "number",
-      "description": "Describes the total amount of time in seconds, spent buffering.",
-      "meta:xdmType": "number",
+      "type": "integer",
+      "description": "The total amount of time, in seconds, spent buffering. This value is computed as a sum of all buffer events durations that occurred during a playback session.",
+      "meta:xdmType": "int",
       "meta:xdmField": "xdm:bufferTime",
-      "tagNumber": 9
-    },
-    "buffer": {
-      "title": "Buffer Impacted Streams",
-      "type": "number",
-      "description": "The number of streams impacted by buffering.",
-      "meta:xdmType": "number",
-      "meta:xdmField": "xdm:buffer",
-      "tagNumber": 10
-    },
-    "error": {
-      "title": "Error Impacted Streams",
-      "type": "number",
-      "description": "The number of streams in which an error event occurred.",
-      "meta:xdmType": "number",
-      "meta:xdmField": "xdm:error",
       "tagNumber": 11
+    },
+    "hasErrorImpactedStreams": {
+      "title": "Error Impacted Streams",
+      "type": "boolean",
+      "description": "The number of streams in which an error event occurred (i.e., trackError was called during the playback session, and a type=error heartbeat call was generated). This metric is set to true only if at least one error occurred during playback.",
+      "meta:xdmType": "boolean",
+      "meta:xdmField": "xdm:hasErrorImpactedStreams",
+      "tagNumber": 12
     },
     "errorCount": {
       "title": "Errors",
-      "type": "number",
-      "description": "The number of errors that were encountered during playback.",
-      "meta:xdmType": "number",
+      "type": "integer",
+      "description": "The number of errors that occurred (Integer). This value is computed as a sum of all error events that occurred during a playback session.",
+      "meta:xdmType": "int",
       "meta:xdmField": "xdm:errorCount",
-      "tagNumber": 12
+      "tagNumber": 13
+    },
+    "hasStall": {
+      "title": "Stalling Impacted Streams",
+      "type": "boolean",
+      "description": "The number of streams in which a stalled event occurred. This metric is set to true only if at least one stall occurred during playback.",
+      "meta:xdmType": "boolean",
+      "meta:xdmField": "xdm:hasStall",
+      "tagNumber": 14
+    },
+    "stallCount": {
+      "title": "Stalling Events",
+      "type": "integer",
+      "description": "The number of times the playback was stalled during a playback session.",
+      "meta:xdmType": "int",
+      "meta:xdmField": "xdm:stallCount",
+      "tagNumber": 15
+    },
+    "stallTime": {
+      "title": "Total Stalling Duration",
+      "type": "integer",
+      "description": "The total time (seconds; integer) the playback was stalled during a playback session.",
+      "meta:xdmType": "int",
+      "meta:xdmField": "xdm:stallTime",
+      "tagNumber": 16
     },
     "playerSdkErrors": {
       "title": "Player SDK Error IDs",
       "type": "array",
-      "description": "The error IDs encountered during a playback session that originated in the Player.",
+      "description": "The unique error IDs generated by the player SDK. Customers must provide the error codes/ids at implementation time via provided error APIs.",
       "meta:xdmType": "array",
       "items": {
         "type": "string",
@@ -115,12 +147,12 @@
         "tagNumber": 1
       },
       "meta:xdmField": "xdm:playerSdkErrors",
-      "tagNumber": 13
+      "tagNumber": 17
     },
     "externalErrors": {
       "title": "External Error IDs",
       "type": "array",
-      "description": "The error IDs encountered during a playback session that originated outside the Player or SDK.",
+      "description": "The unique error IDs from any external source, e.g., CDN errors. Customers must provide the error codes/ids at implementation time via provided error APIs.",
       "meta:xdmType": "array",
       "items": {
         "type": "string",
@@ -128,12 +160,12 @@
         "tagNumber": 1
       },
       "meta:xdmField": "xdm:externalErrors",
-      "tagNumber": 14
+      "tagNumber": 18
     },
     "mediaSdkErrors": {
       "title": "Media SDK Error IDs",
       "type": "array",
-      "description": "The error IDs encountered during a playback session that originated in the Media SDK.",
+      "description": "The unique error IDs generated by Media SDK during playback.",
       "meta:xdmType": "array",
       "items": {
         "type": "string",
@@ -141,38 +173,6 @@
         "tagNumber": 1
       },
       "meta:xdmField": "xdm:mediaSdkErrors",
-      "tagNumber": 15
-    },
-    "dropBeforeStart": {
-      "title": "Drops Before Starts",
-      "type": "number",
-      "description": "Indicates the user abandoned the media stream before the first frame for example, during the pre-roll ad break, or due to an error while loading the content from the CDN.",
-      "meta:xdmType": "number",
-      "meta:xdmField": "xdm:dropBeforeStart",
-      "tagNumber": 16
-    },
-    "stall": {
-      "title": "Stalling Impacted Streams",
-      "type": "number",
-      "description": "The number of streams impacted by stalling.",
-      "meta:xdmType": "number",
-      "meta:xdmField": "xdm:stall",
-      "tagNumber": 17
-    },
-    "stallCount": {
-      "title": "Stalling Events",
-      "type": "number",
-      "description": "The number of stall states that occurred during a playback session.",
-      "meta:xdmType": "number",
-      "meta:xdmField": "xdm:stallCount",
-      "tagNumber": 18
-    },
-    "stallTime": {
-      "title": "Total Stalling Duration",
-      "type": "integer",
-      "description": "Describes the duration in seconds in which the playback was stalled during playback.",
-      "meta:xdmType": "int",
-      "meta:xdmField": "xdm:stallTime",
       "tagNumber": 19
     }
   },

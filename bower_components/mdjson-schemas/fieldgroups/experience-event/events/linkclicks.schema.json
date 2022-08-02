@@ -43,6 +43,8 @@
               "title": "Web Interaction Key",
               "description": "Unique key of the link clicked.",
               "$ref": "../../../datatypes/b2b/b2b-source.schema.json",
+              "meta:titleId": "linkclicks##xdm:webInteractionKey##title##58071",
+              "meta:descriptionId": "linkclicks##xdm:webInteractionKey##description##19121",
               "meta:xdmField": "xdm:webInteractionKey",
               "tagNumber": 2
             },

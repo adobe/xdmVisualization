@@ -458,6 +458,8 @@
                           "title": "Topics",
                           "description": "Topics of interest for personalizing this subscription.",
                           "type": "array",
+                          "meta:titleId": "consents-and-preferences##xdm:topics##title##18231",
+                          "meta:descriptionId": "consents-and-preferences##xdm:topics##description##91571",
                           "meta:xdmType": "array",
                           "items": {
                             "type": "string",
@@ -630,6 +632,8 @@
                           "title": "Topics",
                           "description": "Topics of interest for personalizing this subscription.",
                           "type": "array",
+                          "meta:titleId": "consents-and-preferences##xdm:topics##title##18231",
+                          "meta:descriptionId": "consents-and-preferences##xdm:topics##description##91571",
                           "meta:xdmType": "array",
                           "items": {
                             "type": "string",
@@ -802,6 +806,8 @@
                           "title": "Topics",
                           "description": "Topics of interest for personalizing this subscription.",
                           "type": "array",
+                          "meta:titleId": "consents-and-preferences##xdm:topics##title##18231",
+                          "meta:descriptionId": "consents-and-preferences##xdm:topics##description##91571",
                           "meta:xdmType": "array",
                           "items": {
                             "type": "string",
@@ -1241,6 +1247,7 @@
                             "IDFA",
                             "GAID"
                           ],
+                          "meta:titleId": "consents-and-preferences##xdm:idType##title##12521",
                           "meta:xdmType": "string",
                           "meta:xdmField": "xdm:idType",
                           "tagNumber": 2
@@ -1528,7 +1535,7 @@
           "meta:xdmField": "xdm:primaryCarePhysicians",
           "tagNumber": 2,
           "items": {
-            "$ref": "obj6865950624296213.schema.json"
+            "$ref": "obj47764799589751594.schema.json"
           }
         },
         "preferredAvailability": {
@@ -1547,7 +1554,7 @@
           "meta:xdmField": "xdm:prescriptions",
           "tagNumber": 4,
           "items": {
-            "$ref": "obj06887534645728222.schema.json"
+            "$ref": "obj36273666757720147.schema.json"
           }
         },
         "specialists": {
@@ -1557,7 +1564,7 @@
           "meta:xdmField": "xdm:specialists",
           "tagNumber": 5,
           "items": {
-            "$ref": "obj09345324781625197.schema.json"
+            "$ref": "obj70318491132743.schema.json"
           }
         },
         "healthConcerns": {
@@ -1597,7 +1604,7 @@
           "meta:xdmField": "xdm:plans",
           "tagNumber": 9,
           "items": {
-            "$ref": "obj4314606675059891.schema.json"
+            "$ref": "obj4771131961529218.schema.json"
           }
         }
       },

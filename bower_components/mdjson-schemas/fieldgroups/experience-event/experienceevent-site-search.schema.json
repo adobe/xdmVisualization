@@ -8,12 +8,16 @@
   "description": "Site search related information such as search query, filtering, and ordering.",
   "meta:status": "experimental",
   "meta:createdDate": "2022-03-18",
+  "meta:titleId": "experienceevent-site-search##title##48661",
+  "meta:descriptionId": "experienceevent-site-search##description##16361",
   "meta:xdmType": "object",
   "properties": {
     "siteSearch": {
       "title": "Site Search",
       "$ref": "../../datatypes/sitesearch.schema.json",
       "description": "The information related to site search.",
+      "meta:titleId": "experienceevent-site-search##xdm:siteSearch##title##57341",
+      "meta:descriptionId": "experienceevent-site-search##xdm:siteSearch##description##11031",
       "meta:xdmField": "xdm:siteSearch",
       "tagNumber": 1
     },
@@ -21,6 +25,8 @@
       "title": "Search Request",
       "$ref": "../../datatypes/data/measure.schema.json",
       "description": "A search request has been sent.",
+      "meta:titleId": "experienceevent-site-search##xdm:searchRequest##title##64271",
+      "meta:descriptionId": "experienceevent-site-search##xdm:searchRequest##description##2271",
       "meta:xdmField": "xdm:searchRequest",
       "tagNumber": 2
     },
@@ -28,6 +34,8 @@
       "title": "Search Response",
       "$ref": "../../datatypes/data/measure.schema.json",
       "description": "A search response has been received.",
+      "meta:titleId": "experienceevent-site-search##xdm:searchResponse##title##21471",
+      "meta:descriptionId": "experienceevent-site-search##xdm:searchResponse##description##55701",
       "meta:xdmField": "xdm:searchResponse",
       "tagNumber": 3
     }

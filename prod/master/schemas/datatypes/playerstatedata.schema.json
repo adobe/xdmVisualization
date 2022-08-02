@@ -17,12 +17,12 @@
       "meta:xdmField": "xdm:name",
       "tagNumber": 1
     },
-    "set": {
+    "isSet": {
       "title": "Player State Set",
       "type": "boolean",
       "description": "Whether or not the player state is set on that state.",
       "meta:xdmType": "boolean",
-      "meta:xdmField": "xdm:set",
+      "meta:xdmField": "xdm:isSet",
       "tagNumber": 2
     },
     "count": {

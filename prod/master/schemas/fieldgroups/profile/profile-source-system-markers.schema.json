@@ -7,12 +7,16 @@
   "meta:abstract": true,
   "description": "Use this to add source system specific markers or record traits for a profile fragment (Experimental, please expect breaking changes).",
   "meta:status": "experimental",
+  "meta:titleId": "profile-source-system-markers##title##58291",
+  "meta:descriptionId": "profile-source-system-markers##description##38771",
   "meta:xdmType": "object",
   "properties": {
     "sourceSystemName": {
       "title": "Source System Name",
       "type": "string",
       "description": "Source system name where the profile fragment is ingested from.",
+      "meta:titleId": "profile-source-system-markers##xdm:sourceSystemName##title##29811",
+      "meta:descriptionId": "profile-source-system-markers##xdm:sourceSystemName##description##21791",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:sourceSystemName",
       "tagNumber": 1
@@ -21,6 +25,8 @@
       "title": "Record type ID",
       "type": "string",
       "description": "Record type identifier.",
+      "meta:titleId": "profile-source-system-markers##xdm:recordTypeID##title##2031",
+      "meta:descriptionId": "profile-source-system-markers##xdm:recordTypeID##description##16351",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:recordTypeID",
       "tagNumber": 2
@@ -29,6 +35,8 @@
       "title": "Record Status",
       "type": "string",
       "description": "Record status.",
+      "meta:titleId": "profile-source-system-markers##xdm:recordStatus##title##9581",
+      "meta:descriptionId": "profile-source-system-markers##xdm:recordStatus##description##27301",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:recordStatus",
       "tagNumber": 3
@@ -37,6 +45,8 @@
       "title": "Record Source`",
       "type": "string",
       "description": "Record source.",
+      "meta:titleId": "profile-source-system-markers##xdm:recordSource##title##70531",
+      "meta:descriptionId": "profile-source-system-markers##xdm:recordSource##description##34221",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:recordSource",
       "tagNumber": 4

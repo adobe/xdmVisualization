@@ -11,7 +11,7 @@
     "name": {
       "title": "Ad Name",
       "type": "string",
-      "description": "The friendly and human-readable name of the ad asset.",
+      "description": "Friendly name of the ad. In reporting, “Ad Name” is the classification and “Ad Name (variable)” is the eVar.",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:name",
       "tagNumber": 1
@@ -20,7 +20,7 @@
       "title": "Ad ID",
       "type": "string",
       "pattern": "^.{1,}$",
-      "description": "Identifier of the ad asset provided by media analytics customers. Following the Ad-ID standard [https://www.ad-id.org].",
+      "description": "ID of the ad. Any integer and/or letter combination.",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:ID",
       "tagNumber": 2
@@ -28,7 +28,7 @@
     "length": {
       "title": "Ad Length Or Duration",
       "type": "integer",
-      "description": "Length or duration of ad asset in seconds.",
+      "description": "Length of video ad in seconds.",
       "meta:xdmType": "int",
       "meta:xdmField": "xdm:length",
       "tagNumber": 3
@@ -69,7 +69,7 @@
     "creativeID": {
       "title": "Ad Creative ID",
       "type": "string",
-      "description": "The ID of the ad creative.",
+      "description": "ID of the ad creative.",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:creativeID",
       "tagNumber": 8
@@ -86,7 +86,7 @@
       "title": "Ad Creative URL",
       "type": "string",
       "format": "uri",
-      "description": "The URL of the ad creative.",
+      "description": "URL of the ad creative.",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:creativeURL",
       "tagNumber": 10
@@ -122,14 +122,6 @@
       "meta:xdmType": "int",
       "meta:xdmField": "xdm:timePlayed",
       "tagNumber": 14
-    },
-    "adBreakID": {
-      "title": "Ad Break ID",
-      "type": "string",
-      "description": "The ID of the ad.",
-      "meta:xdmType": "string",
-      "meta:xdmField": "xdm:adBreakID",
-      "tagNumber": 15
     }
   },
   "meta:xdmId": "https://ns.adobe.com/xdm/datatypes/advertisingDetails",
@@ -140,9 +132,7 @@
     "podPosition",
     "playerName",
     "isCompleted",
-    "isStarted",
-    "timePlayed",
-    "adBreakID"
+    "isStarted"
   ],
   "id": "_xdm.datatypes.advertisingdetails"
 }

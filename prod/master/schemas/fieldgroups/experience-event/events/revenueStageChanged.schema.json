@@ -11,22 +11,28 @@
   "description": "Use to capture details when revenue model stage for a person changes.",
   "meta:status": "experimental",
   "meta:createdDate": "2022-02-15",
+  "meta:titleId": "revenueStageChanged##title##16311",
+  "meta:descriptionId": "revenueStageChanged##description##98331",
   "meta:xdmType": "object",
   "properties": {
     "leadOperation": {
       "title": "Lead Operation",
       "type": "object",
+      "meta:titleId": "revenueStageChanged##xdm:leadOperation##title##3911",
       "meta:xdmType": "object",
       "properties": {
         "changeRevenueStage": {
           "title": "Change Revenue Stage",
           "type": "object",
+          "meta:titleId": "revenueStageChanged##xdm:changeRevenueStage##title##83221",
           "meta:xdmType": "object",
           "properties": {
             "modelKey": {
               "title": "Model Key",
               "description": "Unique composite identifier for the model of the Revenue Cycle Modeler.",
               "$ref": "../../../datatypes/b2b/b2b-source.schema.json",
+              "meta:titleId": "revenueStageChanged##xdm:modelKey##title##25831",
+              "meta:descriptionId": "revenueStageChanged##xdm:modelKey##description##37271",
               "meta:xdmField": "xdm:modelKey",
               "tagNumber": 1
             },
@@ -34,6 +40,8 @@
               "title": "Model Name",
               "type": "string",
               "description": "Name of the model for Revenue Cycle Modeler.",
+              "meta:titleId": "revenueStageChanged##xdm:modelName##title##61941",
+              "meta:descriptionId": "revenueStageChanged##xdm:modelName##description##64651",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:modelName",
               "tagNumber": 2
@@ -42,6 +50,8 @@
               "title": "New Stage Key",
               "description": "Unique composite identifier of the stage person assigned to.",
               "$ref": "../../../datatypes/b2b/b2b-source.schema.json",
+              "meta:titleId": "revenueStageChanged##xdm:newStageKey##title##7731",
+              "meta:descriptionId": "revenueStageChanged##xdm:newStageKey##description##67771",
               "meta:xdmField": "xdm:newStageKey",
               "tagNumber": 3
             },
@@ -49,6 +59,8 @@
               "title": "New Stage Name",
               "type": "string",
               "description": "Name of the new stage person assigned to.",
+              "meta:titleId": "revenueStageChanged##xdm:newStageName##title##21601",
+              "meta:descriptionId": "revenueStageChanged##xdm:newStageName##description##80421",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:newStageName",
               "tagNumber": 4
@@ -57,6 +69,8 @@
               "title": "Previous Stage Key",
               "description": "Unique composite identifier of the previous stage person assigned from.",
               "$ref": "../../../datatypes/b2b/b2b-source.schema.json",
+              "meta:titleId": "revenueStageChanged##xdm:previousStageKey##title##52771",
+              "meta:descriptionId": "revenueStageChanged##xdm:previousStageKey##description##92771",
               "meta:xdmField": "xdm:previousStageKey",
               "tagNumber": 5
             },
@@ -64,6 +78,8 @@
               "title": "Previous Stage Name",
               "type": "string",
               "description": "Name of the previous stage person assigned from.",
+              "meta:titleId": "revenueStageChanged##xdm:previousStageName##title##53261",
+              "meta:descriptionId": "revenueStageChanged##xdm:previousStageName##description##52311",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:previousStageName",
               "tagNumber": 6
@@ -72,6 +88,8 @@
               "title": "Reason",
               "type": "string",
               "description": "Reason to indicate changes in model stages for a person.",
+              "meta:titleId": "revenueStageChanged##xdm:reason##title##98711",
+              "meta:descriptionId": "revenueStageChanged##xdm:reason##description##10861",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:reason",
               "tagNumber": 7

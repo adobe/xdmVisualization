@@ -8,6 +8,8 @@
   "description": "Used to identify a single or a set of column(s) that must be enforced as non-null and unique.",
   "meta:status": "stable",
   "meta:createdDate": "2021-03-04",
+  "meta:titleId": "descriptorPrimaryKey##title##33171",
+  "meta:descriptionId": "descriptorPrimaryKey##description##67201",
   "meta:xdmType": "object",
   "properties": {
     "_id": {
@@ -25,7 +27,10 @@
       "title": "Type",
       "type": "string",
       "description": "The type of descriptor this object represents.",
-      "meta:titleId": "schemadescriptor##@type##title##15981",
+      "meta:titleId": [
+        "schemadescriptor##@type##title##15981",
+        "descriptorPrimaryKey##@type##title##12931"
+      ],
       "meta:descriptionId": "schemadescriptor##@type##description##6141",
       "meta:xdmType": "string",
       "const": "xdm:descriptorPrimaryKey",

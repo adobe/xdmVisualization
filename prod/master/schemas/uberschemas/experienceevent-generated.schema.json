@@ -247,22 +247,29 @@
     "experienceevent-request-credit-score-steps##title##39251",
     "experienceevent-support-request##title##75561",
     "experienceevent-watchlist-steps##title##99601",
+    "add-to-campaign##title##14431",
     "add-to-list##title##73091",
     "add-to-opportunity##title##24251",
+    "callwebhook##title##39001",
+    "change-campaign-cadence##title##7231",
+    "change-campaign-stream##title##88891",
     "convert-lead##title##73621",
     "emailbounced##title##15731",
     "emailbouncedsoft##title##22151",
     "emailclicked##title##93821",
     "emaildelivered##title##57361",
     "emailopened##title##571",
+    "emailsent##title##32201",
     "emailunsubscribed##title##61161",
     "formfilledout##title##30531",
     "interesting-moment##title##55331",
     "linkclicks##title##9351",
+    "merge-leads##title##2971",
     "new-lead##title##47891",
     "opportunityupdated##title##36141",
     "remove-from-list##title##40341",
     "remove-from-opportunity##title##79971",
+    "revenueStageChanged##title##16311",
     "scorechanged##title##37241",
     "statusincampaignprogressionchanged##title##14221",
     "visit-webpage##title##80601",
@@ -291,8 +298,11 @@
     "experienceevent-profile-stitch##title##91271",
     "experienceevent-pushtracking##title##95431",
     "experienceevent-quote-request-details##title##72671",
+    "experienceevent-reference-keys##title##6331",
     "experienceevent-service-payment-details##title##21851",
+    "experienceevent-site-search##title##48661",
     "experienceevent-social-network-usage-details##title##74461",
+    "experienceevent-stitching##title##22731",
     "experienceevent-support-site-search##title##68971",
     "experienceevent-survey-response-details##title##17721",
     "experienceevent-user-login-details##title##51971",
@@ -335,22 +345,29 @@
     "experienceevent-request-credit-score-steps##description##16781",
     "experienceevent-support-request##description##42671",
     "experienceevent-watchlist-steps##description##46731",
+    "add-to-campaign##description##57431",
     "add-to-list##description##75021",
     "add-to-opportunity##description##3131",
+    "callwebhook##description##71171",
+    "change-campaign-cadence##description##64181",
+    "change-campaign-stream##description##48971",
     "convert-lead##description##91911",
     "emailbounced##description##64041",
     "emailbouncedsoft##description##92111",
     "emailclicked##description##18121",
     "emaildelivered##description##6511",
     "emailopened##description##29591",
+    "emailsent##description##20691",
     "emailunsubscribed##description##19881",
     "formfilledout##description##66631",
     "interesting-moment##description##18981",
     "linkclicks##description##92801",
+    "merge-leads##description##54861",
     "new-lead##description##83991",
     "opportunityupdated##description##17561",
     "remove-from-list##description##29411",
     "remove-from-opportunity##description##46521",
+    "revenueStageChanged##description##98331",
     "scorechanged##description##17391",
     "statusincampaignprogressionchanged##description##13771",
     "visit-webpage##description##62281",
@@ -379,8 +396,11 @@
     "experienceevent-profile-stitch##description##1091",
     "experienceevent-pushtracking##description##78191",
     "experienceevent-quote-request-details##description##91621",
+    "experienceevent-reference-keys##description##77561",
     "experienceevent-service-payment-details##description##64881",
+    "experienceevent-site-search##description##16361",
     "experienceevent-social-network-usage-details##description##1171",
+    "experienceevent-stitching##description##79081",
     "experienceevent-support-site-search##description##51491",
     "experienceevent-survey-response-details##description##21211",
     "experienceevent-user-login-details##description##22841",
@@ -788,6 +808,8 @@
           "title": "Account Profile Create",
           "type": "integer",
           "description": "Counter event indicating a user has created an account profile.",
+          "meta:titleId": "experienceevent-user-login-details##xdm:createProfile##title##47601",
+          "meta:descriptionId": "experienceevent-user-login-details##xdm:createProfile##description##90041",
           "meta:xdmType": "int",
           "meta:xdmField": "xdm:createProfile",
           "tagNumber": 22
@@ -1338,6 +1360,8 @@
               "title": "Web Interaction Key",
               "description": "Unique key of the link clicked.",
               "$ref": "../datatypes/b2b/b2b-source.schema.json",
+              "meta:titleId": "linkclicks##xdm:webInteractionKey##title##58071",
+              "meta:descriptionId": "linkclicks##xdm:webInteractionKey##description##19121",
               "meta:xdmField": "xdm:webInteractionKey",
               "tagNumber": 2
             },
@@ -1400,6 +1424,8 @@
               "title": "Web Form Key",
               "description": "Unique key of the form.",
               "$ref": "../datatypes/b2b/b2b-source.schema.json",
+              "meta:titleId": "formfilledout##xdm:webFormKey##title##84331",
+              "meta:descriptionId": "formfilledout##xdm:webFormKey##description##19751",
               "meta:xdmField": "xdm:webFormKey",
               "tagNumber": 3
             }
@@ -1482,6 +1508,8 @@
               "title": "Web Page Key",
               "description": "Unique key of the web page.",
               "$ref": "../datatypes/b2b/b2b-source.schema.json",
+              "meta:titleId": "visit-webpage##xdm:webPageKey##title##45241",
+              "meta:descriptionId": "visit-webpage##xdm:webPageKey##description##13131",
               "meta:xdmField": "xdm:webPageKey",
               "tagNumber": 4
             },
@@ -1568,24 +1596,33 @@
     "leadOperation": {
       "title": "Lead Operation",
       "type": "object",
-      "meta:xdmType": "object",
       "meta:titleId": [
+        "add-to-campaign##xdm:leadOperation##title##19001",
+        "callwebhook##xdm:leadOperation##title##50061",
+        "change-campaign-cadence##xdm:leadOperation##title##95281",
+        "change-campaign-stream##xdm:leadOperation##title##35491",
         "convert-lead##xdm:leadOperation##title##37391",
         "interesting-moment##xdm:leadOperation##title##97001",
+        "merge-leads##xdm:leadOperation##title##31021",
         "new-lead##xdm:leadOperation##title##54291",
+        "revenueStageChanged##xdm:leadOperation##title##3911",
         "scorechanged##xdm:leadOperation##title##65571",
         "statusincampaignprogressionchanged##xdm:leadOperation##title##27501"
       ],
+      "meta:xdmType": "object",
       "properties": {
         "addToCampaign": {
           "title": "Add To Campaign",
           "type": "object",
+          "meta:titleId": "add-to-campaign##xdm:addToCampaign##title##26721",
           "meta:xdmType": "object",
           "properties": {
             "campaignKey": {
               "title": "Campaign Key",
               "description": "Unique composite identifier of the campaign.",
               "$ref": "../datatypes/b2b/b2b-source.schema.json",
+              "meta:titleId": "add-to-campaign##xdm:campaignKey##title##39421",
+              "meta:descriptionId": "add-to-campaign##xdm:campaignKey##description##67731",
               "meta:xdmField": "xdm:campaignKey",
               "tagNumber": 1
             },
@@ -1593,6 +1630,8 @@
               "title": "Stream Key",
               "description": "Unique composite identifier of the stream.",
               "$ref": "../datatypes/b2b/b2b-source.schema.json",
+              "meta:titleId": "add-to-campaign##xdm:streamKey##title##73241",
+              "meta:descriptionId": "add-to-campaign##xdm:streamKey##description##39201",
               "meta:xdmField": "xdm:streamKey",
               "tagNumber": 2
             },
@@ -1600,6 +1639,8 @@
               "title": "Stream Name",
               "type": "string",
               "description": "Name of the stream.",
+              "meta:titleId": "add-to-campaign##xdm:streamName##title##99131",
+              "meta:descriptionId": "add-to-campaign##xdm:streamName##description##27331",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:streamName",
               "tagNumber": 3
@@ -1611,12 +1652,15 @@
         "callWebhook": {
           "title": "Call Webhook",
           "type": "object",
+          "meta:titleId": "callwebhook##xdm:callWebhook##title##45641",
           "meta:xdmType": "object",
           "properties": {
             "webhookID": {
               "title": "Webhook ID (deprecated)",
               "type": "string",
               "description": "Webhook ID is going to depreciate soon. Please use Webhook Key.",
+              "meta:titleId": "callwebhook##xdm:webhookID##title##45001",
+              "meta:descriptionId": "callwebhook##xdm:webhookID##description##3851",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:webhookID",
               "tagNumber": 1
@@ -1625,6 +1669,8 @@
               "title": "Webhook Key",
               "description": "Unique composite identifier of the Webhook.",
               "$ref": "../datatypes/b2b/b2b-source.schema.json",
+              "meta:titleId": "callwebhook##xdm:webhookKey##title##37211",
+              "meta:descriptionId": "callwebhook##xdm:webhookKey##description##51371",
               "meta:xdmField": "xdm:webhookKey",
               "tagNumber": 2
             },
@@ -1632,6 +1678,8 @@
               "title": "Webhook Name",
               "type": "string",
               "description": "Name of the Webhook.",
+              "meta:titleId": "callwebhook##xdm:webhookName##title##15441",
+              "meta:descriptionId": "callwebhook##xdm:webhookName##description##81481",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:webhookName",
               "tagNumber": 3
@@ -1640,6 +1688,8 @@
               "title": "Response Code",
               "type": "integer",
               "description": "HTTP response code from Webhook request.",
+              "meta:titleId": "callwebhook##xdm:responseCode##title##89381",
+              "meta:descriptionId": "callwebhook##xdm:responseCode##description##3901",
               "meta:xdmType": "int",
               "meta:xdmField": "xdm:responseCode",
               "tagNumber": 4
@@ -1651,12 +1701,15 @@
         "changeCampaignCadence": {
           "title": "Change Campaign Cadence",
           "type": "object",
+          "meta:titleId": "change-campaign-cadence##xdm:changeCampaignCadence##title##81131",
           "meta:xdmType": "object",
           "properties": {
             "campaignKey": {
               "title": "Campaign Key",
               "description": "Unique composite identifier of the campaign.",
               "$ref": "../datatypes/b2b/b2b-source.schema.json",
+              "meta:titleId": "change-campaign-cadence##xdm:campaignKey##title##72181",
+              "meta:descriptionId": "change-campaign-cadence##xdm:campaignKey##description##46751",
               "meta:xdmField": "xdm:campaignKey",
               "tagNumber": 2
             },
@@ -1664,6 +1717,8 @@
               "title": "New Cadence",
               "type": "string",
               "description": "New value of campaign cadence.",
+              "meta:titleId": "change-campaign-cadence##xdm:newCadence##title##8711",
+              "meta:descriptionId": "change-campaign-cadence##xdm:newCadence##description##11261",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:newCadence",
               "tagNumber": 3
@@ -1672,6 +1727,8 @@
               "title": "Previous Cadence",
               "type": "string",
               "description": "Previous value of campaign cadence.",
+              "meta:titleId": "change-campaign-cadence##xdm:previousCadence##title##11621",
+              "meta:descriptionId": "change-campaign-cadence##xdm:previousCadence##description##50041",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:previousCadence",
               "tagNumber": 4
@@ -1683,12 +1740,15 @@
         "changeCampaignStream": {
           "title": "Change Campaign Stream",
           "type": "object",
+          "meta:titleId": "change-campaign-stream##xdm:changeCampaignStream##title##98251",
           "meta:xdmType": "object",
           "properties": {
             "campaignKey": {
               "title": "Campaign Key",
               "description": "Unique composite identifier of the campaign.",
               "$ref": "../datatypes/b2b/b2b-source.schema.json",
+              "meta:titleId": "change-campaign-stream##xdm:campaignKey##title##32161",
+              "meta:descriptionId": "change-campaign-stream##xdm:campaignKey##description##74621",
               "meta:xdmField": "xdm:campaignKey",
               "tagNumber": 1
             },
@@ -1696,6 +1756,8 @@
               "title": "New Stream Key",
               "description": "Unique composite identifier of the new stream.",
               "$ref": "../datatypes/b2b/b2b-source.schema.json",
+              "meta:titleId": "change-campaign-stream##xdm:newStreamKey##title##68821",
+              "meta:descriptionId": "change-campaign-stream##xdm:newStreamKey##description##21981",
               "meta:xdmField": "xdm:newStreamKey",
               "tagNumber": 2
             },
@@ -1703,6 +1765,8 @@
               "title": "New Stream Name",
               "type": "string",
               "description": "Name of the new stream.",
+              "meta:titleId": "change-campaign-stream##xdm:newStreamName##title##51741",
+              "meta:descriptionId": "change-campaign-stream##xdm:newStreamName##description##74511",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:newStreamName",
               "tagNumber": 3
@@ -1711,6 +1775,8 @@
               "title": "Previous Stream Key",
               "description": "Unique composite identifier of the previous stream.",
               "$ref": "../datatypes/b2b/b2b-source.schema.json",
+              "meta:titleId": "change-campaign-stream##xdm:previousStreamKey##title##40241",
+              "meta:descriptionId": "change-campaign-stream##xdm:previousStreamKey##description##96791",
               "meta:xdmField": "xdm:previousStreamKey",
               "tagNumber": 4
             },
@@ -1718,6 +1784,8 @@
               "title": "Previous Stream Name",
               "type": "string",
               "description": "Name of the previous stream.",
+              "meta:titleId": "change-campaign-stream##xdm:previousStreamName##title##90581",
+              "meta:descriptionId": "change-campaign-stream##xdm:previousStreamName##description##54991",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:previousStreamName",
               "tagNumber": 5
@@ -1820,12 +1888,15 @@
         "mergeLeads": {
           "title": "Merge Leads",
           "type": "object",
+          "meta:titleId": "merge-leads##xdm:mergeLeads##title##29161",
           "meta:xdmType": "object",
           "properties": {
             "sourceKeys": {
               "title": "Source Keys",
               "type": "array",
               "description": "A list of unique composite identifier of losing leads.",
+              "meta:titleId": "merge-leads##xdm:sourceKeys##title##28741",
+              "meta:descriptionId": "merge-leads##xdm:sourceKeys##description##44911",
               "meta:xdmType": "array",
               "items": {
                 "$ref": "../datatypes/b2b/b2b-source.schema.json",
@@ -1838,6 +1909,8 @@
               "title": "Target Updated",
               "type": "boolean",
               "description": "Boolean indicating if winning lead is updated after merge operation.",
+              "meta:titleId": "merge-leads##xdm:targetUpdated##title##67271",
+              "meta:descriptionId": "merge-leads##xdm:targetUpdated##description##71201",
               "meta:xdmType": "boolean",
               "meta:xdmField": "xdm:targetUpdated",
               "tagNumber": 2
@@ -1846,6 +1919,8 @@
               "title": "Merged In CRM",
               "type": "boolean",
               "description": "Boolean indicating if leads were/should be merged in CRM.",
+              "meta:titleId": "merge-leads##xdm:mergedInCRM##title##88831",
+              "meta:descriptionId": "merge-leads##xdm:mergedInCRM##description##26161",
               "meta:xdmType": "boolean",
               "meta:xdmField": "xdm:mergedInCRM",
               "tagNumber": 3
@@ -1854,6 +1929,8 @@
               "title": "Merge Source",
               "type": "string",
               "description": "Source of merge operation.",
+              "meta:titleId": "merge-leads##xdm:mergeSource##title##36391",
+              "meta:descriptionId": "merge-leads##xdm:mergeSource##description##16671",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:mergeSource",
               "tagNumber": 4
@@ -1936,12 +2013,15 @@
         "changeRevenueStage": {
           "title": "Change Revenue Stage",
           "type": "object",
+          "meta:titleId": "revenueStageChanged##xdm:changeRevenueStage##title##83221",
           "meta:xdmType": "object",
           "properties": {
             "modelKey": {
               "title": "Model Key",
               "description": "Unique composite identifier for the model of the Revenue Cycle Modeler.",
               "$ref": "../datatypes/b2b/b2b-source.schema.json",
+              "meta:titleId": "revenueStageChanged##xdm:modelKey##title##25831",
+              "meta:descriptionId": "revenueStageChanged##xdm:modelKey##description##37271",
               "meta:xdmField": "xdm:modelKey",
               "tagNumber": 1
             },
@@ -1949,6 +2029,8 @@
               "title": "Model Name",
               "type": "string",
               "description": "Name of the model for Revenue Cycle Modeler.",
+              "meta:titleId": "revenueStageChanged##xdm:modelName##title##61941",
+              "meta:descriptionId": "revenueStageChanged##xdm:modelName##description##64651",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:modelName",
               "tagNumber": 2
@@ -1957,6 +2039,8 @@
               "title": "New Stage Key",
               "description": "Unique composite identifier of the stage person assigned to.",
               "$ref": "../datatypes/b2b/b2b-source.schema.json",
+              "meta:titleId": "revenueStageChanged##xdm:newStageKey##title##7731",
+              "meta:descriptionId": "revenueStageChanged##xdm:newStageKey##description##67771",
               "meta:xdmField": "xdm:newStageKey",
               "tagNumber": 3
             },
@@ -1964,6 +2048,8 @@
               "title": "New Stage Name",
               "type": "string",
               "description": "Name of the new stage person assigned to.",
+              "meta:titleId": "revenueStageChanged##xdm:newStageName##title##21601",
+              "meta:descriptionId": "revenueStageChanged##xdm:newStageName##description##80421",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:newStageName",
               "tagNumber": 4
@@ -1972,6 +2058,8 @@
               "title": "Previous Stage Key",
               "description": "Unique composite identifier of the previous stage person assigned from.",
               "$ref": "../datatypes/b2b/b2b-source.schema.json",
+              "meta:titleId": "revenueStageChanged##xdm:previousStageKey##title##52771",
+              "meta:descriptionId": "revenueStageChanged##xdm:previousStageKey##description##92771",
               "meta:xdmField": "xdm:previousStageKey",
               "tagNumber": 5
             },
@@ -1979,6 +2067,8 @@
               "title": "Previous Stage Name",
               "type": "string",
               "description": "Name of the previous stage person assigned from.",
+              "meta:titleId": "revenueStageChanged##xdm:previousStageName##title##53261",
+              "meta:descriptionId": "revenueStageChanged##xdm:previousStageName##description##52311",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:previousStageName",
               "tagNumber": 6
@@ -1987,6 +2077,8 @@
               "title": "Reason",
               "type": "string",
               "description": "Reason to indicate changes in model stages for a person.",
+              "meta:titleId": "revenueStageChanged##xdm:reason##title##98711",
+              "meta:descriptionId": "revenueStageChanged##xdm:reason##description##10861",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:reason",
               "tagNumber": 7
@@ -2015,6 +2107,8 @@
               "title": "Score Attribute Key",
               "description": "Unique key of the lead score attribute.",
               "$ref": "../datatypes/b2b/b2b-source.schema.json",
+              "meta:titleId": "scorechanged##xdm:scoreAttributeKey##title##30551",
+              "meta:descriptionId": "scorechanged##xdm:scoreAttributeKey##description##24971",
               "meta:xdmField": "xdm:scoreAttributeKey",
               "tagNumber": 2
             },
@@ -2349,7 +2443,7 @@
           "meta:xdmField": "xdm:dataValueChanges",
           "tagNumber": 5,
           "items": {
-            "$ref": "obj7583261524002523.schema.json"
+            "$ref": "obj4276255835739635.schema.json"
           }
         }
       },
@@ -2365,6 +2459,7 @@
         "emailclicked##xdm:directMarketing##title##9041",
         "emaildelivered##xdm:directMarketing##title##24411",
         "emailopened##xdm:directMarketing##title##64081",
+        "emailsent##xdm:directMarketing##title##63671",
         "emailunsubscribed##xdm:directMarketing##title##64801",
         "experienceevent-directmarketing##xdm:directMarketing##title##34631"
       ],
@@ -2401,6 +2496,22 @@
           "title": "Mailing Key",
           "description": "Unique key of the email asset.",
           "$ref": "../datatypes/b2b/b2b-source.schema.json",
+          "meta:titleId": [
+            "emailbounced##xdm:mailingKey##title##2421",
+            "emailbouncedsoft##xdm:mailingKey##title##6181",
+            "emailclicked##xdm:mailingKey##title##92451",
+            "emaildelivered##xdm:mailingKey##title##52601",
+            "emailopened##xdm:mailingKey##title##29531",
+            "emailunsubscribed##xdm:mailingKey##title##36621"
+          ],
+          "meta:descriptionId": [
+            "emailbounced##xdm:mailingKey##description##59841",
+            "emailbouncedsoft##xdm:mailingKey##description##41501",
+            "emailclicked##xdm:mailingKey##description##71981",
+            "emaildelivered##xdm:mailingKey##description##66361",
+            "emailopened##xdm:mailingKey##description##28831",
+            "emailunsubscribed##xdm:mailingKey##description##17531"
+          ],
           "meta:xdmField": "xdm:mailingKey",
           "tagNumber": 2
         },
@@ -2528,6 +2639,22 @@
           "title": "Automation Run ID",
           "type": "string",
           "description": "Automation Run ID",
+          "meta:titleId": [
+            "emailbounced##xdm:automationRunID##title##92921",
+            "emailbouncedsoft##xdm:automationRunID##title##53501",
+            "emailclicked##xdm:automationRunID##title##78571",
+            "emaildelivered##xdm:automationRunID##title##79261",
+            "emailopened##xdm:automationRunID##title##28201",
+            "emailunsubscribed##xdm:automationRunID##title##44581"
+          ],
+          "meta:descriptionId": [
+            "emailbounced##xdm:automationRunID##description##77281",
+            "emailbouncedsoft##xdm:automationRunID##description##201",
+            "emailclicked##xdm:automationRunID##description##90301",
+            "emaildelivered##xdm:automationRunID##description##55741",
+            "emailopened##xdm:automationRunID##description##35011",
+            "emailunsubscribed##xdm:automationRunID##description##61651"
+          ],
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:automationRunID",
           "tagNumber": 9
@@ -2545,12 +2672,15 @@
         "emailSent": {
           "title": "Email Sent",
           "type": "object",
+          "meta:titleId": "emailsent##xdm:emailSent##title##64981",
           "meta:xdmType": "object",
           "properties": {
             "mailingKey": {
               "title": "Mailing Key",
               "description": "Unique composite identifier of the email asset.",
               "$ref": "../datatypes/b2b/b2b-source.schema.json",
+              "meta:titleId": "emailsent##xdm:mailingKey##title##61031",
+              "meta:descriptionId": "emailsent##xdm:mailingKey##description##91801",
               "meta:xdmField": "xdm:mailingKey",
               "tagNumber": 1
             },
@@ -2558,6 +2688,8 @@
               "title": "Mailing Name",
               "type": "string",
               "description": "Name of the email asset.",
+              "meta:titleId": "emailsent##xdm:mailingName##title##85571",
+              "meta:descriptionId": "emailsent##xdm:mailingName##description##71351",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:mailingName",
               "tagNumber": 2
@@ -2566,6 +2698,8 @@
               "title": "Test Variant ID",
               "type": "string",
               "description": "Unique ID of the test variant of the email asset.",
+              "meta:titleId": "emailsent##xdm:testVariantID##title##88571",
+              "meta:descriptionId": "emailsent##xdm:testVariantID##description##43451",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:testVariantID",
               "tagNumber": 3
@@ -2574,6 +2708,8 @@
               "title": "Test Variant Name",
               "type": "string",
               "description": "Name of the test variant of the email asset.",
+              "meta:titleId": "emailsent##xdm:testVariantName##title##36121",
+              "meta:descriptionId": "emailsent##xdm:testVariantName##description##34381",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:testVariantName",
               "tagNumber": 4
@@ -2582,6 +2718,8 @@
               "title": "Automation Run ID",
               "type": "string",
               "description": "Unique ID of the automation run.",
+              "meta:titleId": "emailsent##xdm:automationRunID##title##72971",
+              "meta:descriptionId": "emailsent##xdm:automationRunID##description##71141",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:automationRunID",
               "tagNumber": 5
@@ -3118,6 +3256,20 @@
           },
           "meta:xdmField": "xdm:statesEnd",
           "tagNumber": 9
+        },
+        "endUserIDs": {
+          "title": "End User IDs",
+          "$ref": "../datatypes/enduserids.schema.json",
+          "description": "Condensed, normalized encapsulation of all end user identifiers. At least one of the fields is required.",
+          "meta:xdmField": "xdm:endUserIDs",
+          "tagNumber": 10
+        },
+        "implementationDetails": {
+          "title": "Implementation Details",
+          "$ref": "../datatypes/industry-verticals/implementationdetails.schema.json",
+          "description": "Details about the SDK, library, or service used in an application or web page implementation of a service.",
+          "meta:xdmField": "xdm:implementationDetails",
+          "tagNumber": 11
         }
       },
       "meta:xdmField": "xdm:mediaCollection",
@@ -3128,54 +3280,40 @@
       "description": "Media Reporting related fields.",
       "meta:xdmType": "object",
       "properties": {
-        "playerEventDetails": {
-          "title": "Player Event Details",
-          "$ref": "../datatypes/playereventdetails.schema.json",
-          "description": "Player event details information related to the experience event.",
-          "meta:xdmField": "xdm:playerEventDetails",
-          "tagNumber": 1
-        },
         "sessionDetails": {
           "title": "Session Details",
           "$ref": "../datatypes/sessiondetails.schema.json",
           "description": "Session details information related to the experience event.",
           "meta:xdmField": "xdm:sessionDetails",
-          "tagNumber": 2
+          "tagNumber": 1
         },
         "advertisingDetails": {
           "title": "Advertising Details",
           "$ref": "../datatypes/advertisingdetails.schema.json",
           "description": "Advertising details information related to the experience event.",
           "meta:xdmField": "xdm:advertisingDetails",
-          "tagNumber": 3
+          "tagNumber": 2
         },
         "advertisingPodDetails": {
           "title": "Advertising Pod Details",
           "$ref": "../datatypes/advertisingpoddetails.schema.json",
           "description": "Advertising pod details information related to the experience event.",
           "meta:xdmField": "xdm:advertisingPodDetails",
-          "tagNumber": 4
+          "tagNumber": 3
         },
         "chapterDetails": {
           "title": "Chapter Details",
           "$ref": "../datatypes/chapterdetails.schema.json",
           "description": "Chapter details information related to the experience event.",
           "meta:xdmField": "xdm:chapterDetails",
-          "tagNumber": 5
-        },
-        "errorDetails": {
-          "title": "Error Details",
-          "$ref": "../datatypes/errordetails.schema.json",
-          "description": "Error details information related to the experience event.",
-          "meta:xdmField": "xdm:errorDetails",
-          "tagNumber": 6
+          "tagNumber": 4
         },
         "qoeDataDetails": {
           "title": "Qoe Data Details",
           "$ref": "../datatypes/qoedatadetails.schema.json",
           "description": "Qoe data details information related to the experience event.",
           "meta:xdmField": "xdm:qoeDataDetails",
-          "tagNumber": 7
+          "tagNumber": 5
         },
         "states": {
           "title": "List Of States",
@@ -3187,10 +3325,20 @@
             "tagNumber": 1
           },
           "meta:xdmField": "xdm:states",
-          "tagNumber": 8
+          "tagNumber": 6
+        },
+        "implementationDetails": {
+          "title": "Implementation Details",
+          "$ref": "../datatypes/industry-verticals/implementationdetails.schema.json",
+          "description": "Details about the SDK, library, or service used in an application or web page implementation of a service.",
+          "meta:xdmField": "xdm:implementationDetails",
+          "tagNumber": 7
         }
       },
       "meta:xdmField": "xdm:mediaReporting",
+      "required": [
+        "sessionDetails"
+      ],
       "tagNumber": 39
     },
     "offers": {
@@ -3457,6 +3605,7 @@
     "person": {
       "title": "Person Reference Properties",
       "type": "object",
+      "meta:titleId": "experienceevent-reference-keys##xdm:person##title##19721",
       "meta:xdmType": "object",
       "properties": {
         "personalEmailID": {
@@ -3464,6 +3613,8 @@
           "type": "string",
           "format": "email",
           "description": "The technical address, for example, 'name@domain.com' as commonly defined in RFC2822 and subsequent standards.",
+          "meta:titleId": "experienceevent-reference-keys##xdm:personalEmailID##title##76881",
+          "meta:descriptionId": "experienceevent-reference-keys##xdm:personalEmailID##description##87691",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:personalEmailID",
           "tagNumber": 1
@@ -3472,6 +3623,8 @@
           "title": "Account ID",
           "type": "string",
           "description": "Account ID.",
+          "meta:titleId": "experienceevent-reference-keys##xdm:accountID##title##85891",
+          "meta:descriptionId": "experienceevent-reference-keys##xdm:accountID##description##88611",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:accountID",
           "tagNumber": 2
@@ -3480,6 +3633,8 @@
           "title": "Account Type",
           "type": "string",
           "description": "Account Type.",
+          "meta:titleId": "experienceevent-reference-keys##xdm:accountType##title##35281",
+          "meta:descriptionId": "experienceevent-reference-keys##xdm:accountType##description##80081",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:accountType",
           "tagNumber": 3
@@ -3511,6 +3666,8 @@
       "title": "Site Search",
       "$ref": "../datatypes/sitesearch.schema.json",
       "description": "The information related to site search.",
+      "meta:titleId": "experienceevent-site-search##xdm:siteSearch##title##57341",
+      "meta:descriptionId": "experienceevent-site-search##xdm:siteSearch##description##11031",
       "meta:xdmField": "xdm:siteSearch",
       "tagNumber": 51
     },
@@ -3518,6 +3675,8 @@
       "title": "Search Request",
       "$ref": "../datatypes/data/measure.schema.json",
       "description": "A search request has been sent.",
+      "meta:titleId": "experienceevent-site-search##xdm:searchRequest##title##64271",
+      "meta:descriptionId": "experienceevent-site-search##xdm:searchRequest##description##2271",
       "meta:xdmField": "xdm:searchRequest",
       "tagNumber": 52
     },
@@ -3525,6 +3684,8 @@
       "title": "Search Response",
       "$ref": "../datatypes/data/measure.schema.json",
       "description": "A search response has been received.",
+      "meta:titleId": "experienceevent-site-search##xdm:searchResponse##title##21471",
+      "meta:descriptionId": "experienceevent-site-search##xdm:searchResponse##description##55701",
       "meta:xdmField": "xdm:searchResponse",
       "tagNumber": 53
     },
@@ -3622,6 +3783,8 @@
       "title": "Stitched ID",
       "$ref": "../datatypes/identity.schema.json",
       "description": "Identifier computed by the Stitching service, containing a pair of (id, namespace) that uniquely identifies an individual to which this event belongs.",
+      "meta:titleId": "experienceevent-stitching##xdm:stitchedID##title##54581",
+      "meta:descriptionId": "experienceevent-stitching##xdm:stitchedID##description##53511",
       "meta:xdmField": "xdm:stitchedID",
       "tagNumber": 55
     },
@@ -3947,7 +4110,7 @@
           "meta:xdmField": "xdm:diningReservations",
           "tagNumber": 1,
           "items": {
-            "$ref": "obj9741816743983123.schema.json"
+            "$ref": "obj7442252978148172.schema.json"
           }
         },
         "cancellation": {
@@ -4120,7 +4283,7 @@
           "meta:xdmField": "xdm:flightReservations",
           "tagNumber": 19,
           "items": {
-            "$ref": "obj24945330834885038.schema.json"
+            "$ref": "obj5046058086752734.schema.json"
           }
         },
         "lodgingReservations": {
@@ -4129,7 +4292,7 @@
           "meta:xdmField": "xdm:lodgingReservations",
           "tagNumber": 20,
           "items": {
-            "$ref": "obj24732794378402057.schema.json"
+            "$ref": "obj6805119337877858.schema.json"
           }
         },
         "vehicleReservations": {
@@ -4138,7 +4301,7 @@
           "meta:xdmField": "xdm:vehicleReservations",
           "tagNumber": 21,
           "items": {
-            "$ref": "obj6817410043252574.schema.json"
+            "$ref": "obj8099404857885757.schema.json"
           }
         }
       },
@@ -4388,7 +4551,7 @@
           "meta:xdmField": "xdm:tickets",
           "tagNumber": 6,
           "items": {
-            "$ref": "obj16562375225555526.schema.json"
+            "$ref": "obj6800139916505317.schema.json"
           }
         },
         "ticketPurchase": {

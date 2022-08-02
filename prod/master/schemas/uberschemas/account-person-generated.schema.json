@@ -18,12 +18,16 @@
     "account-person##title##54851",
     "record##title##65961",
     "external-source-system-audit-details##title##88991",
+    "record-status##title##68531",
+    "account-person-details##title##96791",
     "account-person-components##title##43731"
   ],
   "meta:descriptionId": [
     "account-person##description##46121",
     "record##description##3921",
     "external-source-system-audit-details##description##98601",
+    "record-status##description##57781",
+    "account-person-details##description##98201",
     "account-person-components##description##31241"
   ],
   "meta:createdDate": [
@@ -107,6 +111,8 @@
       "title": "Person Roles",
       "description": "An array of roles of the person on this account.",
       "type": "array",
+      "meta:titleId": "account-person##xdm:personRoles##title##98611",
+      "meta:descriptionId": "account-person##xdm:personRoles##description##67421",
       "meta:xdmType": "array",
       "items": {
         "type": "string",
@@ -187,6 +193,8 @@
       "title": "Relationship Source",
       "description": "Source of Account Person relation.",
       "type": "string",
+      "meta:titleId": "account-person##xdm:relationshipSource##title##40031",
+      "meta:descriptionId": "account-person##xdm:relationshipSource##description##88321",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:relationshipSource",
       "tagNumber": 16
@@ -204,6 +212,8 @@
       "title": "Soft Delete Flag",
       "description": "Soft delete flag to indicate if the record is marked for deletion.",
       "type": "boolean",
+      "meta:titleId": "record-status##xdm:isDeleted##title##77601",
+      "meta:descriptionId": "record-status##xdm:isDeleted##description##95591",
       "meta:xdmType": "boolean",
       "meta:xdmField": "xdm:isDeleted",
       "tagNumber": 18
@@ -211,12 +221,15 @@
     "matchedAccount": {
       "title": "Matched Account",
       "type": "object",
+      "meta:titleId": "account-person-details##xdm:matchedAccount##title##59111",
       "meta:xdmType": "object",
       "properties": {
         "matchingScore": {
           "title": "Matching Score",
           "description": "Computed matching score for account person affinity.",
           "type": "number",
+          "meta:titleId": "account-person-details##xdm:matchingScore##title##49431",
+          "meta:descriptionId": "account-person-details##xdm:matchingScore##description##18911",
           "meta:xdmType": "number",
           "meta:xdmField": "xdm:matchingScore",
           "tagNumber": 1
@@ -226,6 +239,8 @@
           "description": "The date when the account-person affinity score was computed.",
           "type": "string",
           "format": "date-time",
+          "meta:titleId": "account-person-details##xdm:scoreCreatedDate##title##94031",
+          "meta:descriptionId": "account-person-details##xdm:scoreCreatedDate##description##57471",
           "meta:xdmType": "date-time",
           "meta:xdmField": "xdm:scoreCreatedDate",
           "tagNumber": 2
@@ -240,7 +255,7 @@
       "meta:xdmField": "xdm:accountPersonComponents",
       "tagNumber": 20,
       "items": {
-        "$ref": "obj848899901797761.schema.json"
+        "$ref": "obj2332859021479543.schema.json"
       }
     }
   },

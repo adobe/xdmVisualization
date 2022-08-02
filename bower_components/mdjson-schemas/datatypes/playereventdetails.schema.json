@@ -17,12 +17,12 @@
       "meta:xdmField": "xdm:playhead",
       "tagNumber": 1
     },
-    "sessionId": {
+    "sessionID": {
       "title": "Media Session ID",
       "type": "string",
       "description": "Identifies an instance of a content stream unique to an individual playback.",
       "meta:xdmType": "string",
-      "meta:xdmField": "xdm:sessionId",
+      "meta:xdmField": "xdm:sessionID",
       "tagNumber": 2
     }
   },

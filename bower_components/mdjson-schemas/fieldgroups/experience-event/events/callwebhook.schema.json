@@ -11,22 +11,28 @@
   "description": "Use to capture details when Webhook is called for a person",
   "meta:status": "experimental",
   "meta:createdDate": "2022-01-13",
+  "meta:titleId": "callwebhook##title##39001",
+  "meta:descriptionId": "callwebhook##description##71171",
   "meta:xdmType": "object",
   "properties": {
     "leadOperation": {
       "title": "Lead Operation",
       "type": "object",
+      "meta:titleId": "callwebhook##xdm:leadOperation##title##50061",
       "meta:xdmType": "object",
       "properties": {
         "callWebhook": {
           "title": "Call Webhook",
           "type": "object",
+          "meta:titleId": "callwebhook##xdm:callWebhook##title##45641",
           "meta:xdmType": "object",
           "properties": {
             "webhookID": {
               "title": "Webhook ID (deprecated)",
               "type": "string",
               "description": "Webhook ID is going to depreciate soon. Please use Webhook Key.",
+              "meta:titleId": "callwebhook##xdm:webhookID##title##45001",
+              "meta:descriptionId": "callwebhook##xdm:webhookID##description##3851",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:webhookID",
               "tagNumber": 1
@@ -35,6 +41,8 @@
               "title": "Webhook Key",
               "description": "Unique composite identifier of the Webhook.",
               "$ref": "../../../datatypes/b2b/b2b-source.schema.json",
+              "meta:titleId": "callwebhook##xdm:webhookKey##title##37211",
+              "meta:descriptionId": "callwebhook##xdm:webhookKey##description##51371",
               "meta:xdmField": "xdm:webhookKey",
               "tagNumber": 2
             },
@@ -42,6 +50,8 @@
               "title": "Webhook Name",
               "type": "string",
               "description": "Name of the Webhook.",
+              "meta:titleId": "callwebhook##xdm:webhookName##title##15441",
+              "meta:descriptionId": "callwebhook##xdm:webhookName##description##81481",
               "meta:xdmType": "string",
               "meta:xdmField": "xdm:webhookName",
               "tagNumber": 3
@@ -50,6 +60,8 @@
               "title": "Response Code",
               "type": "integer",
               "description": "HTTP response code from Webhook request.",
+              "meta:titleId": "callwebhook##xdm:responseCode##title##89381",
+              "meta:descriptionId": "callwebhook##xdm:responseCode##description##3901",
               "meta:xdmType": "int",
               "meta:xdmField": "xdm:responseCode",
               "tagNumber": 4

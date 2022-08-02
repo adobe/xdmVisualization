@@ -8,6 +8,8 @@
   "description": "Used to mark one or more standard fields as deprecated for the specific ImsOrg.",
   "meta:status": "stable",
   "meta:createdDate": "2021-12-01",
+  "meta:titleId": "descriptorDeprecated##title##83531",
+  "meta:descriptionId": "descriptorDeprecated##description##13301",
   "meta:xdmType": "object",
   "properties": {
     "_id": {
@@ -25,7 +27,10 @@
       "title": "Type",
       "type": "string",
       "description": "The type of descriptor this object represents.",
-      "meta:titleId": "schemadescriptor##@type##title##15981",
+      "meta:titleId": [
+        "schemadescriptor##@type##title##15981",
+        "descriptorDeprecated##@type##title##82941"
+      ],
       "meta:descriptionId": "schemadescriptor##@type##description##6141",
       "meta:xdmType": "string",
       "const": "xdm:descriptorDeprecated",

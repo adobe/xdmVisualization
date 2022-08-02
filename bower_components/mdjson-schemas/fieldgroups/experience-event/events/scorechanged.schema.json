@@ -41,6 +41,8 @@
               "title": "Score Attribute Key",
               "description": "Unique key of the lead score attribute.",
               "$ref": "../../../datatypes/b2b/b2b-source.schema.json",
+              "meta:titleId": "scorechanged##xdm:scoreAttributeKey##title##30551",
+              "meta:descriptionId": "scorechanged##xdm:scoreAttributeKey##description##24971",
               "meta:xdmField": "xdm:scoreAttributeKey",
               "tagNumber": 2
             },

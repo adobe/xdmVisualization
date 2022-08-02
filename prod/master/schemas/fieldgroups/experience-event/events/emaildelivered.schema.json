@@ -35,6 +35,8 @@
           "title": "Mailing Key",
           "description": "Unique key of the email asset.",
           "$ref": "../../../datatypes/b2b/b2b-source.schema.json",
+          "meta:titleId": "emaildelivered##xdm:mailingKey##title##52601",
+          "meta:descriptionId": "emaildelivered##xdm:mailingKey##description##66361",
           "meta:xdmField": "xdm:mailingKey",
           "tagNumber": 2
         },
@@ -72,6 +74,8 @@
           "title": "Automation Run ID",
           "type": "string",
           "description": "Automation Run ID",
+          "meta:titleId": "emaildelivered##xdm:automationRunID##title##79261",
+          "meta:descriptionId": "emaildelivered##xdm:automationRunID##description##55741",
           "meta:xdmType": "string",
           "meta:xdmField": "xdm:automationRunID",
           "tagNumber": 6

@@ -16,10 +16,18 @@
     "experimental",
     "stable"
   ],
+  "meta:titleId": [
+    "aep-hygiene-ops##title##2891",
+    "aep-hygiene##title##2981",
+    "record##title##65961"
+  ],
+  "meta:descriptionId": [
+    "aep-hygiene-ops##description##7621",
+    "aep-hygiene##description##47561",
+    "record##description##3921"
+  ],
   "meta:xdmType": "object",
   "meta:createdDate": "2020-08-10",
-  "meta:titleId": "record##title##65961",
-  "meta:descriptionId": "record##description##3921",
   "properties": {
     "_id": {
       "title": "Identifier",
@@ -37,6 +45,8 @@
       "description": "Time the hygiene batch was created",
       "type": "string",
       "format": "date-time",
+      "meta:titleId": "aep-hygiene-ops##xdm:batchTime##title##84111",
+      "meta:descriptionId": "aep-hygiene-ops##xdm:batchTime##description##85271",
       "meta:xdmType": "date-time",
       "meta:xdmField": "xdm:batchTime",
       "tagNumber": 2
@@ -49,6 +59,8 @@
         "deleteIdentity",
         "updateField"
       ],
+      "meta:titleId": "aep-hygiene-ops##xdm:action##title##96551",
+      "meta:descriptionId": "aep-hygiene-ops##xdm:action##description##71821",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:action",
       "tagNumber": 3
@@ -57,6 +69,8 @@
       "title": "Target Dataset ID specified by the user to apply hygiene operations",
       "description": "May be \"*\", but only if operationType = \"deleteIdentity\". Otherwise a valid value is required.",
       "type": "string",
+      "meta:titleId": "aep-hygiene-ops##xdm:targetDatasetID##title##10841",
+      "meta:descriptionId": "aep-hygiene-ops##xdm:targetDatasetID##description##86781",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:targetDatasetID",
       "tagNumber": 4
@@ -65,6 +79,8 @@
       "title": "Work Order ID for tracking purposes.",
       "description": "Each row in a batch will be produced by a different customer REST API request, and will therefore have a different workorderID for tracking purposes.",
       "type": "string",
+      "meta:titleId": "aep-hygiene-ops##xdm:workorderID##title##7131",
+      "meta:descriptionId": "aep-hygiene-ops##xdm:workorderID##description##50431",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:workorderID",
       "tagNumber": 5
@@ -73,23 +89,29 @@
       "title": "Payload of the hygiene op request",
       "description": "Contents of this payload provides identities to delete, or records to update",
       "type": "object",
+      "meta:titleId": "aep-hygiene-ops##xdm:operation##title##23961",
+      "meta:descriptionId": "aep-hygiene-ops##xdm:operation##description##80191",
       "meta:xdmType": "object",
       "properties": {
         "deleteIdentity": {
           "title": "Specifies rows to delete for matching identities",
           "description": "Specifies rows to delete for matching identities",
           "type": "object",
+          "meta:titleId": "aep-hygiene-ops##xdm:deleteIdentity##title##65751",
+          "meta:descriptionId": "aep-hygiene-ops##xdm:deleteIdentity##description##86391",
           "meta:xdmType": "object",
           "properties": {
             "identities": {
               "title": "Set of primary identities",
               "description": "Set of primary identities",
               "type": "array",
+              "meta:titleId": "aep-hygiene-ops##xdm:identities##title##19841",
+              "meta:descriptionId": "aep-hygiene-ops##xdm:identities##description##14911",
               "meta:xdmType": "array",
               "meta:xdmField": "xdm:identities",
               "tagNumber": 1,
               "items": {
-                "$ref": "obj21938539787333156.schema.json"
+                "$ref": "obj346605136237335.schema.json"
               }
             }
           },
@@ -100,17 +122,23 @@
           "title": "Details of the update operation",
           "description": "Details of the update operation",
           "type": "object",
+          "meta:titleId": "aep-hygiene-ops##xdm:updateField##title##65571",
+          "meta:descriptionId": "aep-hygiene-ops##xdm:updateField##description##2691",
           "meta:xdmType": "object",
           "properties": {
             "changes": {
               "title": "Array of records to update",
               "description": "Array of records to update",
               "type": "array",
+              "meta:titleId": "aep-hygiene-ops##xdm:changes##title##99521",
+              "meta:descriptionId": "aep-hygiene-ops##xdm:changes##description##4771",
               "meta:xdmType": "array",
               "items": {
                 "title": "String-encoded JSON record to update",
                 "description": "String-encoded JSON record to update",
                 "type": "string",
+                "meta:titleId": "aep-hygiene-ops##items##title##26921",
+                "meta:descriptionId": "aep-hygiene-ops##items##description##24961",
                 "meta:xdmType": "string",
                 "tagNumber": 1
               },
