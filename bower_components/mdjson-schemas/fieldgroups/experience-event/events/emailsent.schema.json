@@ -9,7 +9,7 @@
   "meta:conditionalField": "xdm:eventType",
   "meta:conditionalValue": "directMarketing.emailSent",
   "description": "Use to capture details when sending emails to people.",
-  "meta:status": "experimental",
+  "meta:status": "stable",
   "meta:createdDate": "2020-03-22",
   "meta:titleId": "emailsent##title##32201",
   "meta:descriptionId": "emailsent##description##20691",

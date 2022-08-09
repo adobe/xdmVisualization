@@ -64,13 +64,21 @@
       "meta:xdmField": "xdm:isDroppedBeforeStart",
       "tagNumber": 7
     },
+    "framesPerSecond": {
+      "title": "Frames Per Second",
+      "type": "integer",
+      "description": "The current value of the stream frame-rate (in frames per second). The field is mapped to the fps field on the close call and can be accessed through processing rules.",
+      "meta:xdmType": "int",
+      "meta:xdmField": "xdm:framesPerSecond",
+      "tagNumber": 8
+    },
     "timeToStart": {
       "title": "Time To Start",
       "type": "integer",
       "description": "Describes the duration (in seconds) passed between video load and start.",
       "meta:xdmType": "int",
       "meta:xdmField": "xdm:timeToStart",
-      "tagNumber": 8
+      "tagNumber": 9
     },
     "hasBufferImpactedStreams": {
       "title": "Buffer Impacted Streams",
@@ -78,7 +86,7 @@
       "description": "The number of streams impacted by buffering. This metric is set to true only if at least one buffer event occurred during a playback session.",
       "meta:xdmType": "boolean",
       "meta:xdmField": "xdm:hasBufferImpactedStreams",
-      "tagNumber": 9
+      "tagNumber": 10
     },
     "bufferCount": {
       "title": "Buffer Events",
@@ -86,7 +94,7 @@
       "description": "The number of buffer events. This metric is computed as a count of the different buffer states that occurred during a playback session. This is a count of how many times the player enters a buffer state from other states, e.g., playing or pausing.",
       "meta:xdmType": "int",
       "meta:xdmField": "xdm:bufferCount",
-      "tagNumber": 10
+      "tagNumber": 11
     },
     "bufferTime": {
       "title": "Total Buffer Duration",
@@ -94,7 +102,7 @@
       "description": "The total amount of time, in seconds, spent buffering. This value is computed as a sum of all buffer events durations that occurred during a playback session.",
       "meta:xdmType": "int",
       "meta:xdmField": "xdm:bufferTime",
-      "tagNumber": 11
+      "tagNumber": 12
     },
     "hasErrorImpactedStreams": {
       "title": "Error Impacted Streams",
@@ -102,7 +110,7 @@
       "description": "The number of streams in which an error event occurred (i.e., trackError was called during the playback session, and a type=error heartbeat call was generated). This metric is set to true only if at least one error occurred during playback.",
       "meta:xdmType": "boolean",
       "meta:xdmField": "xdm:hasErrorImpactedStreams",
-      "tagNumber": 12
+      "tagNumber": 13
     },
     "errorCount": {
       "title": "Errors",
@@ -110,7 +118,7 @@
       "description": "The number of errors that occurred (Integer). This value is computed as a sum of all error events that occurred during a playback session.",
       "meta:xdmType": "int",
       "meta:xdmField": "xdm:errorCount",
-      "tagNumber": 13
+      "tagNumber": 14
     },
     "hasStall": {
       "title": "Stalling Impacted Streams",
@@ -118,7 +126,7 @@
       "description": "The number of streams in which a stalled event occurred. This metric is set to true only if at least one stall occurred during playback.",
       "meta:xdmType": "boolean",
       "meta:xdmField": "xdm:hasStall",
-      "tagNumber": 14
+      "tagNumber": 15
     },
     "stallCount": {
       "title": "Stalling Events",
@@ -126,7 +134,7 @@
       "description": "The number of times the playback was stalled during a playback session.",
       "meta:xdmType": "int",
       "meta:xdmField": "xdm:stallCount",
-      "tagNumber": 15
+      "tagNumber": 16
     },
     "stallTime": {
       "title": "Total Stalling Duration",
@@ -134,7 +142,7 @@
       "description": "The total time (seconds; integer) the playback was stalled during a playback session.",
       "meta:xdmType": "int",
       "meta:xdmField": "xdm:stallTime",
-      "tagNumber": 16
+      "tagNumber": 17
     },
     "playerSdkErrors": {
       "title": "Player SDK Error IDs",
@@ -147,7 +155,7 @@
         "tagNumber": 1
       },
       "meta:xdmField": "xdm:playerSdkErrors",
-      "tagNumber": 17
+      "tagNumber": 18
     },
     "externalErrors": {
       "title": "External Error IDs",
@@ -160,7 +168,7 @@
         "tagNumber": 1
       },
       "meta:xdmField": "xdm:externalErrors",
-      "tagNumber": 18
+      "tagNumber": 19
     },
     "mediaSdkErrors": {
       "title": "Media SDK Error IDs",
@@ -173,7 +181,7 @@
         "tagNumber": 1
       },
       "meta:xdmField": "xdm:mediaSdkErrors",
-      "tagNumber": 19
+      "tagNumber": 20
     }
   },
   "meta:xdmId": "https://ns.adobe.com/xdm/datatypes/qoeDataDetails",

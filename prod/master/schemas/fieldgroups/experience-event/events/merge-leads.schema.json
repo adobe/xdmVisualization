@@ -9,7 +9,7 @@
   "meta:conditionalField": "xdm:eventType",
   "meta:conditionalValue": "leadOperation.mergeLeads",
   "description": "Use to capture details when two or more leads are merged.",
-  "meta:status": "experimental",
+  "meta:status": "stable",
   "meta:createdDate": "2022-03-22",
   "meta:titleId": "merge-leads##title##2971",
   "meta:descriptionId": "merge-leads##description##54861",

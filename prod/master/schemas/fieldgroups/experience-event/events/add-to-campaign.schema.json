@@ -9,7 +9,7 @@
   "meta:conditionalField": "xdm:eventType",
   "meta:conditionalValue": "leadOperation.addToCampaign",
   "description": "Use to add a person to the specific campaign.",
-  "meta:status": "experimental",
+  "meta:status": "stable",
   "meta:createdDate": "2022-02-14",
   "meta:titleId": "add-to-campaign##title##14431",
   "meta:descriptionId": "add-to-campaign##description##57431",

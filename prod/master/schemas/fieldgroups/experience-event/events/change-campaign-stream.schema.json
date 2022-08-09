@@ -9,7 +9,7 @@
   "meta:conditionalField": "xdm:eventType",
   "meta:conditionalValue": "leadOperation.changeCampaignStream",
   "description": "Use to change the stream of the specific campaign.",
-  "meta:status": "experimental",
+  "meta:status": "stable",
   "meta:createdDate": "2022-02-14",
   "meta:titleId": "change-campaign-stream##title##88891",
   "meta:descriptionId": "change-campaign-stream##description##48971",

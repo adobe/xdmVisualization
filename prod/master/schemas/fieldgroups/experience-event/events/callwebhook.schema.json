@@ -9,7 +9,7 @@
   "meta:conditionalField": "xdm:eventType",
   "meta:conditionalValue": "leadOperation.callWebhook",
   "description": "Use to capture details when Webhook is called for a person",
-  "meta:status": "experimental",
+  "meta:status": "stable",
   "meta:createdDate": "2022-01-13",
   "meta:titleId": "callwebhook##title##39001",
   "meta:descriptionId": "callwebhook##description##71171",

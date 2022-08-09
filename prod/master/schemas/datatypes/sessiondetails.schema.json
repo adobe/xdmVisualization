@@ -44,7 +44,7 @@
     "contentType": {
       "title": "Broadcast Content Type",
       "type": "string",
-      "description": "The type of the stream delivery.",
+      "description": "The type of the stream delivery. Available values per Stream Type: Audio: “song”, “podcast”, “audiobook”, “radio”;  Video: “VoD”, “Live”, “Linear”, “UGC”, “DVoD”. Customers can provide custom values for this parameter.",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:contentType",
       "tagNumber": 5

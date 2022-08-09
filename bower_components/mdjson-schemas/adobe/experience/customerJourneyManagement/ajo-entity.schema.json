@@ -342,6 +342,30 @@
                                       "meta:xdmType": "string",
                                       "meta:xdmField": "https://ns.adobe.com/experience/customerJourneyManagement/ajo/journey/journeyVersionID",
                                       "tagNumber": 1
+                                    },
+                                    "journeyName": {
+                                      "title": "Journey Name",
+                                      "type": "string",
+                                      "description": "Represents the journey name",
+                                      "meta:xdmType": "string",
+                                      "meta:xdmField": "https://ns.adobe.com/experience/customerJourneyManagement/ajo/journey/journeyName",
+                                      "tagNumber": 2
+                                    },
+                                    "journeyID": {
+                                      "title": "Journey ID",
+                                      "type": "string",
+                                      "description": "Represents the journey ID",
+                                      "meta:xdmType": "string",
+                                      "meta:xdmField": "https://ns.adobe.com/experience/customerJourneyManagement/ajo/journey/journeyID",
+                                      "tagNumber": 3
+                                    },
+                                    "journeyActionName": {
+                                      "title": "Journey Action Name",
+                                      "type": "string",
+                                      "description": "Represents the Journey Label",
+                                      "meta:xdmType": "string",
+                                      "meta:xdmField": "https://ns.adobe.com/experience/customerJourneyManagement/ajo/journey/journeyActionName",
+                                      "tagNumber": 4
                                     }
                                   },
                                   "tagNumber": 1
