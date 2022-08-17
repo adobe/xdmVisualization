@@ -52,6 +52,14 @@
       "meta:xdmField": "xdm:name",
       "tagNumber": 4
     },
+    "productImageUrl": {
+      "title": "Product Image URL",
+      "type": "string",
+      "description": "Product main image URL.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:productImageUrl",
+      "tagNumber": 5
+    },
     "productAddMethod": {
       "title": "Product add method",
       "type": "string",
@@ -60,7 +68,7 @@
       "meta:descriptionId": "productlistitem##xdm:productAddMethod##description##26061",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:productAddMethod",
-      "tagNumber": 5
+      "tagNumber": 6
     },
     "currencyCode": {
       "title": "Currency code",
@@ -75,7 +83,7 @@
       "meta:descriptionId": "productlistitem##xdm:currencyCode##description##61431",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:currencyCode",
-      "tagNumber": 6
+      "tagNumber": 7
     },
     "quantity": {
       "title": "Quantity",
@@ -85,7 +93,7 @@
       "meta:descriptionId": "productlistitem##xdm:quantity##description##51001",
       "meta:xdmType": "int",
       "meta:xdmField": "xdm:quantity",
-      "tagNumber": 7
+      "tagNumber": 8
     },
     "priceTotal": {
       "title": "Price total",
@@ -95,7 +103,7 @@
       "meta:descriptionId": "productlistitem##xdm:priceTotal##description##23221",
       "meta:xdmType": "number",
       "meta:xdmField": "xdm:priceTotal",
-      "tagNumber": 8
+      "tagNumber": 9
     },
     "selectedOptions": {
       "title": "Selected Options",
@@ -105,9 +113,9 @@
       "meta:descriptionId": "productlistitem##xdm:selectedOptions##description##80401",
       "meta:xdmType": "array",
       "meta:xdmField": "xdm:selectedOptions",
-      "tagNumber": 9,
+      "tagNumber": 10,
       "items": {
-        "$ref": "obj2930514176879415.schema.json"
+        "$ref": "obj8026194673991673.schema.json"
       }
     },
     "discountAmount": {
@@ -118,7 +126,7 @@
       "meta:descriptionId": "productlistitem##xdm:discountAmount##description##67611",
       "meta:xdmType": "number",
       "meta:xdmField": "xdm:discountAmount",
-      "tagNumber": 10
+      "tagNumber": 11
     },
     "unitOfMeasureCode": {
       "title": "Product Unit Of Measure Code",
@@ -128,7 +136,7 @@
       "meta:descriptionId": "product-measurement##xdm:unitOfMeasureCode##description##24871",
       "meta:xdmType": "string",
       "meta:xdmField": "xdm:unitOfMeasureCode",
-      "tagNumber": 11
+      "tagNumber": 12
     }
   },
   "meta:xdmId": "https://ns.adobe.com/xdm/content/productlistitem",

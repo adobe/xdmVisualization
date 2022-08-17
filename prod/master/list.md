@@ -211,6 +211,7 @@
 [fieldgroups.plan.healthcare-plan-details](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.plan.healthcare-plan-details.html)<br/>
 [fieldgroups.location.sports-entertainment-event-venue](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.location.sports-entertainment-event-venue.html)<br/>
 [fieldgroups.provider.healthcare-provider-details](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.provider.healthcare-provider-details.html)<br/>
+[fieldgroups.shared.segmentation](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.shared.segmentation.html)<br/>
 [fieldgroups.shared.current-weather](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.shared.current-weather.html)<br/>
 [fieldgroups.shared.external-source-system-audit-details](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.shared.external-source-system-audit-details.html)<br/>
 [fieldgroups.shared.weather-triggers](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.shared.weather-triggers.html)<br/>
@@ -231,7 +232,6 @@
 [fieldgroups.profile.profile-personal-tax-profile-details](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.profile.profile-personal-tax-profile-details.html)<br/>
 [fieldgroups.profile.profile-healthcare-member](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.profile.profile-healthcare-member.html)<br/>
 [fieldgroups.profile.profile-travel-preferences](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.profile.profile-travel-preferences.html)<br/>
-[fieldgroups.profile.profile-segmentation](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.profile.profile-segmentation.html)<br/>
 [fieldgroups.profile.profile-test-profile](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.profile.profile-test-profile.html)<br/>
 [fieldgroups.profile.profile-work-details](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.profile.profile-work-details.html)<br/>
 [fieldgroups.profile.profile-personal-finance-details](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.profile.profile-personal-finance-details.html)<br/>
@@ -419,6 +419,7 @@
 [adobe.experience.workfront.project](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.workfront.project.html)<br/>
 [adobe.experience.workfront.opTask](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.workfront.opTask.html)<br/>
 [adobe.experience.workfront.program](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.workfront.program.html)<br/>
+[adobe.experience.workfront.workobjects-all](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.workfront.workobjects-all.html)<br/>
 [adobe.experience.workfront.task](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.workfront.task.html)<br/>
 [adobe.experience.analytics-experienceevent](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.analytics-experienceevent.html)<br/>
 [adobe.experience.intelligentServices.profile-journeyai-engagementscores](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.intelligentServices.profile-journeyai-engagementscores.html)<br/>

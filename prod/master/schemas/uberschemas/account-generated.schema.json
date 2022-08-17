@@ -23,7 +23,8 @@
     "record-status##title##68531",
     "account-components##title##12001",
     "account-details##title##16521",
-    "related-accounts##title##50181"
+    "related-accounts##title##50181",
+    "profile-segmentation##title##98301"
   ],
   "meta:descriptionId": [
     "account##description##65781",
@@ -32,7 +33,8 @@
     "record-status##description##57781",
     "account-components##description##67441",
     "account-details##description##72981",
-    "related-accounts##description##47861"
+    "related-accounts##description##47861",
+    "profile-segmentation##description##95051"
   ],
   "meta:createdDate": [
     "2020-08-10",
@@ -98,7 +100,7 @@
       "meta:xdmField": "xdm:accountComponents",
       "tagNumber": 6,
       "items": {
-        "$ref": "obj2285391507048824.schema.json"
+        "$ref": "obj19048176521061833.schema.json"
       }
     },
     "accountName": {
@@ -324,6 +326,29 @@
       },
       "meta:xdmField": "xdm:relatedAccountKeys",
       "tagNumber": 28
+    },
+    "segmentMembership": {
+      "title": "Segment membership map",
+      "type": "object",
+      "meta:xdmType": "map",
+      "meta:titleId": "profile-segmentation##xdm:segmentMembership##title##24061",
+      "meta:xdmField": "xdm:segmentMembership",
+      "tagNumber": 30,
+      "properties": {
+        "mapObj": {
+          "title": "Segment membership per namespace",
+          "type": "object",
+          "meta:xdmType": "map",
+          "meta:titleId": "profile-segmentation##additionalProperties##title##73981",
+          "tagNumber": 1,
+          "properties": {
+            "mapObj": {
+              "$ref": "../datatypes/segmentmembership.schema.json",
+              "tagNumber": 1
+            }
+          }
+        }
+      }
     }
   },
   "meta:xdmId": "https://ns.adobe.com/xdm/context/account-generated",

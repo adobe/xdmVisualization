@@ -299,6 +299,7 @@
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.workfront.project.html">project</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.workfront.task.html">task</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.workfront.workobject.html">workobject</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.workfront.workobjects-all.html">workobjects-all</a></li>
 </ul>
 </details>
 </ul>
@@ -767,7 +768,6 @@
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.profile.profile-privacy.html">profile-privacy</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.profile.profile-push-notification-details.html">profile-push-notification-details</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.profile.profile-responses.html">profile-responses</a></li>
-<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.profile.profile-segmentation.html">profile-segmentation</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.profile.profile-source-system-markers.html">profile-source-system-markers</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.profile.profile-subscriptions.html">profile-subscriptions</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.profile.profile-telecom-subscription.html">profile-telecom-subscription</a></li>
@@ -801,6 +801,7 @@
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.shared.product-triggers.html">product-triggers</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.shared.record-status.html">record-status</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.shared.relative-triggers.html">relative-triggers</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.shared.segmentation.html">segmentation</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.shared.severe-triggers.html">severe-triggers</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.shared.weather-triggers.html">weather-triggers</a></li>
 </ul>
