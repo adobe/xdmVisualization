@@ -1,0 +1,75 @@
+{
+  "type": "object",
+  "meta:xdmType": "object",
+  "additionalProperties": false,
+  "properties": {
+    "ID": {
+      "title": "Prescription ID",
+      "type": "string",
+      "description": "Unique identifier for the prescription.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:ID",
+      "tagNumber": 1
+    },
+    "name": {
+      "title": "Prescription Name",
+      "type": "string",
+      "description": "Name of the prescription.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:name",
+      "tagNumber": 2
+    },
+    "numberOfRefills": {
+      "title": "Number Of Refills",
+      "type": "integer",
+      "description": "Number of refills prescribed by the provider for this prescription.",
+      "meta:xdmType": "int",
+      "meta:xdmField": "xdm:numberOfRefills",
+      "tagNumber": 3
+    },
+    "refillLocation": {
+      "title": "Prescription Refill Location",
+      "$ref": "../../datatypes/demographic/address.schema.json",
+      "description": "Address at which the prescription will be filled.",
+      "meta:xdmField": "xdm:refillLocation",
+      "tagNumber": 4
+    },
+    "refillType": {
+      "title": "Refill Type",
+      "type": "string",
+      "description": "Type of prescription refill.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:refillType",
+      "tagNumber": 5
+    },
+    "startDate": {
+      "title": "Prescription Start Date",
+      "type": "string",
+      "format": "date-time",
+      "description": "Date on which the patient began taking the prescription.",
+      "meta:xdmType": "date-time",
+      "meta:xdmField": "xdm:startDate",
+      "tagNumber": 6
+    },
+    "endDate": {
+      "title": "Prescription End Date",
+      "type": "string",
+      "format": "date-time",
+      "description": "Date on which the patient stops taking the prescription.",
+      "meta:xdmType": "date-time",
+      "meta:xdmField": "xdm:endDate",
+      "tagNumber": 7
+    },
+    "isCurrent": {
+      "title": "Is Current",
+      "type": "boolean",
+      "description": "Indicates whether the prescription is current or past.",
+      "meta:xdmType": "boolean",
+      "meta:xdmField": "xdm:isCurrent",
+      "tagNumber": 8
+    }
+  },
+  "tagNumber": 1,
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "id": "obj19025919681650816.schema.json"
+}
