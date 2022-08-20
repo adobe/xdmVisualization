@@ -334,31 +334,23 @@
                           "tagNumber": 14
                         },
                         "uvIndex": {
-                          "title": "UV Index",
-                          "description": "Maximum UV index for the 12 hour forecast period.",
-                          "type": "string",
-                          "enum": [
-                            "0",
-                            "1",
-                            "2",
-                            "3",
-                            "4",
-                            "5",
-                            "6",
-                            "7",
-                            "8",
-                            "9",
-                            "10",
-                            "11",
-                            "12",
-                            "13",
-                            "14",
-                            "15",
-                            "16",
-                            "-2",
-                            "-1"
-                          ],
-                          "meta:xdmType": "string",
+                          "properties": {
+                            "_name": {
+                              "type": "string",
+                              "description": "Index name",
+                              "meta:xdmType": "string",
+                              "meta:xdmField": "xdm:_name",
+                              "tagNumber": 1
+                            },
+                            "value": {
+                              "type": "string",
+                              "description": "Index value",
+                              "meta:xdmType": "string",
+                              "meta:xdmField": "xdm:value",
+                              "tagNumber": 2
+                            }
+                          },
+                          "type": "object",
                           "meta:xdmField": "uvIndex",
                           "tagNumber": 15
                         }
@@ -614,31 +606,23 @@
                           "tagNumber": 14
                         },
                         "uvIndex": {
-                          "title": "UV Index",
-                          "description": "Maximum UV index for the 12 hour forecast period.",
-                          "type": "string",
-                          "enum": [
-                            "0",
-                            "1",
-                            "2",
-                            "3",
-                            "4",
-                            "5",
-                            "6",
-                            "7",
-                            "8",
-                            "9",
-                            "10",
-                            "11",
-                            "12",
-                            "13",
-                            "14",
-                            "15",
-                            "16",
-                            "-2",
-                            "-1"
-                          ],
-                          "meta:xdmType": "string",
+                          "properties": {
+                            "_name": {
+                              "type": "string",
+                              "description": "Index name",
+                              "meta:xdmType": "string",
+                              "meta:xdmField": "xdm:_name",
+                              "tagNumber": 1
+                            },
+                            "value": {
+                              "type": "string",
+                              "description": "Index value",
+                              "meta:xdmType": "string",
+                              "meta:xdmField": "xdm:value",
+                              "tagNumber": 2
+                            }
+                          },
+                          "type": "object",
                           "meta:xdmField": "uvIndex",
                           "tagNumber": 15
                         }
@@ -993,31 +977,23 @@
                           "tagNumber": 14
                         },
                         "uvIndex": {
-                          "title": "UV Index",
-                          "description": "Maximum UV index for the 12 hour forecast period.",
-                          "type": "string",
-                          "enum": [
-                            "0",
-                            "1",
-                            "2",
-                            "3",
-                            "4",
-                            "5",
-                            "6",
-                            "7",
-                            "8",
-                            "9",
-                            "10",
-                            "11",
-                            "12",
-                            "13",
-                            "14",
-                            "15",
-                            "16",
-                            "-2",
-                            "-1"
-                          ],
-                          "meta:xdmType": "string",
+                          "properties": {
+                            "_name": {
+                              "type": "string",
+                              "description": "Index name",
+                              "meta:xdmType": "string",
+                              "meta:xdmField": "xdm:_name",
+                              "tagNumber": 1
+                            },
+                            "value": {
+                              "type": "string",
+                              "description": "Index value",
+                              "meta:xdmType": "string",
+                              "meta:xdmField": "xdm:value",
+                              "tagNumber": 2
+                            }
+                          },
+                          "type": "object",
                           "meta:xdmField": "uvIndex",
                           "tagNumber": 15
                         }
@@ -1273,31 +1249,23 @@
                           "tagNumber": 14
                         },
                         "uvIndex": {
-                          "title": "UV Index",
-                          "description": "Maximum UV index for the 12 hour forecast period.",
-                          "type": "string",
-                          "enum": [
-                            "0",
-                            "1",
-                            "2",
-                            "3",
-                            "4",
-                            "5",
-                            "6",
-                            "7",
-                            "8",
-                            "9",
-                            "10",
-                            "11",
-                            "12",
-                            "13",
-                            "14",
-                            "15",
-                            "16",
-                            "-2",
-                            "-1"
-                          ],
-                          "meta:xdmType": "string",
+                          "properties": {
+                            "_name": {
+                              "type": "string",
+                              "description": "Index name",
+                              "meta:xdmType": "string",
+                              "meta:xdmField": "xdm:_name",
+                              "tagNumber": 1
+                            },
+                            "value": {
+                              "type": "string",
+                              "description": "Index value",
+                              "meta:xdmType": "string",
+                              "meta:xdmField": "xdm:value",
+                              "tagNumber": 2
+                            }
+                          },
+                          "type": "object",
                           "meta:xdmField": "uvIndex",
                           "tagNumber": 15
                         }
@@ -1652,31 +1620,23 @@
                           "tagNumber": 14
                         },
                         "uvIndex": {
-                          "title": "UV Index",
-                          "description": "Maximum UV index for the 12 hour forecast period.",
-                          "type": "string",
-                          "enum": [
-                            "0",
-                            "1",
-                            "2",
-                            "3",
-                            "4",
-                            "5",
-                            "6",
-                            "7",
-                            "8",
-                            "9",
-                            "10",
-                            "11",
-                            "12",
-                            "13",
-                            "14",
-                            "15",
-                            "16",
-                            "-2",
-                            "-1"
-                          ],
-                          "meta:xdmType": "string",
+                          "properties": {
+                            "_name": {
+                              "type": "string",
+                              "description": "Index name",
+                              "meta:xdmType": "string",
+                              "meta:xdmField": "xdm:_name",
+                              "tagNumber": 1
+                            },
+                            "value": {
+                              "type": "string",
+                              "description": "Index value",
+                              "meta:xdmType": "string",
+                              "meta:xdmField": "xdm:value",
+                              "tagNumber": 2
+                            }
+                          },
+                          "type": "object",
                           "meta:xdmField": "uvIndex",
                           "tagNumber": 15
                         }
@@ -1932,31 +1892,23 @@
                           "tagNumber": 14
                         },
                         "uvIndex": {
-                          "title": "UV Index",
-                          "description": "Maximum UV index for the 12 hour forecast period.",
-                          "type": "string",
-                          "enum": [
-                            "0",
-                            "1",
-                            "2",
-                            "3",
-                            "4",
-                            "5",
-                            "6",
-                            "7",
-                            "8",
-                            "9",
-                            "10",
-                            "11",
-                            "12",
-                            "13",
-                            "14",
-                            "15",
-                            "16",
-                            "-2",
-                            "-1"
-                          ],
-                          "meta:xdmType": "string",
+                          "properties": {
+                            "_name": {
+                              "type": "string",
+                              "description": "Index name",
+                              "meta:xdmType": "string",
+                              "meta:xdmField": "xdm:_name",
+                              "tagNumber": 1
+                            },
+                            "value": {
+                              "type": "string",
+                              "description": "Index value",
+                              "meta:xdmType": "string",
+                              "meta:xdmField": "xdm:value",
+                              "tagNumber": 2
+                            }
+                          },
+                          "type": "object",
                           "meta:xdmField": "uvIndex",
                           "tagNumber": 15
                         }
@@ -2311,31 +2263,23 @@
                           "tagNumber": 14
                         },
                         "uvIndex": {
-                          "title": "UV Index",
-                          "description": "Maximum UV index for the 12 hour forecast period.",
-                          "type": "string",
-                          "enum": [
-                            "0",
-                            "1",
-                            "2",
-                            "3",
-                            "4",
-                            "5",
-                            "6",
-                            "7",
-                            "8",
-                            "9",
-                            "10",
-                            "11",
-                            "12",
-                            "13",
-                            "14",
-                            "15",
-                            "16",
-                            "-2",
-                            "-1"
-                          ],
-                          "meta:xdmType": "string",
+                          "properties": {
+                            "_name": {
+                              "type": "string",
+                              "description": "Index name",
+                              "meta:xdmType": "string",
+                              "meta:xdmField": "xdm:_name",
+                              "tagNumber": 1
+                            },
+                            "value": {
+                              "type": "string",
+                              "description": "Index value",
+                              "meta:xdmType": "string",
+                              "meta:xdmField": "xdm:value",
+                              "tagNumber": 2
+                            }
+                          },
+                          "type": "object",
                           "meta:xdmField": "uvIndex",
                           "tagNumber": 15
                         }
@@ -2591,31 +2535,23 @@
                           "tagNumber": 14
                         },
                         "uvIndex": {
-                          "title": "UV Index",
-                          "description": "Maximum UV index for the 12 hour forecast period.",
-                          "type": "string",
-                          "enum": [
-                            "0",
-                            "1",
-                            "2",
-                            "3",
-                            "4",
-                            "5",
-                            "6",
-                            "7",
-                            "8",
-                            "9",
-                            "10",
-                            "11",
-                            "12",
-                            "13",
-                            "14",
-                            "15",
-                            "16",
-                            "-2",
-                            "-1"
-                          ],
-                          "meta:xdmType": "string",
+                          "properties": {
+                            "_name": {
+                              "type": "string",
+                              "description": "Index name",
+                              "meta:xdmType": "string",
+                              "meta:xdmField": "xdm:_name",
+                              "tagNumber": 1
+                            },
+                            "value": {
+                              "type": "string",
+                              "description": "Index value",
+                              "meta:xdmType": "string",
+                              "meta:xdmField": "xdm:value",
+                              "tagNumber": 2
+                            }
+                          },
+                          "type": "object",
                           "meta:xdmField": "uvIndex",
                           "tagNumber": 15
                         }
@@ -2804,31 +2740,23 @@
                   "tagNumber": 7
                 },
                 "uvIndex": {
-                  "title": "UV Index",
-                  "description": "Maximum UV index for the 12 hour forecast period.",
-                  "type": "string",
-                  "enum": [
-                    "0",
-                    "1",
-                    "2",
-                    "3",
-                    "4",
-                    "5",
-                    "6",
-                    "7",
-                    "8",
-                    "9",
-                    "10",
-                    "11",
-                    "12",
-                    "13",
-                    "14",
-                    "15",
-                    "16",
-                    "-2",
-                    "-1"
-                  ],
-                  "meta:xdmType": "string",
+                  "properties": {
+                    "_name": {
+                      "type": "string",
+                      "description": "Index name",
+                      "meta:xdmType": "string",
+                      "meta:xdmField": "xdm:_name",
+                      "tagNumber": 1
+                    },
+                    "value": {
+                      "type": "string",
+                      "description": "Index value",
+                      "meta:xdmType": "string",
+                      "meta:xdmField": "xdm:value",
+                      "tagNumber": 2
+                    }
+                  },
+                  "type": "object",
                   "meta:xdmField": "xdm:uvIndex",
                   "tagNumber": 8
                 }
@@ -2986,31 +2914,23 @@
                   "tagNumber": 7
                 },
                 "uvIndex": {
-                  "title": "UV Index",
-                  "description": "Maximum UV index for the 12 hour forecast period.",
-                  "type": "string",
-                  "enum": [
-                    "0",
-                    "1",
-                    "2",
-                    "3",
-                    "4",
-                    "5",
-                    "6",
-                    "7",
-                    "8",
-                    "9",
-                    "10",
-                    "11",
-                    "12",
-                    "13",
-                    "14",
-                    "15",
-                    "16",
-                    "-2",
-                    "-1"
-                  ],
-                  "meta:xdmType": "string",
+                  "properties": {
+                    "_name": {
+                      "type": "string",
+                      "description": "Index name",
+                      "meta:xdmType": "string",
+                      "meta:xdmField": "xdm:_name",
+                      "tagNumber": 1
+                    },
+                    "value": {
+                      "type": "string",
+                      "description": "Index value",
+                      "meta:xdmType": "string",
+                      "meta:xdmField": "xdm:value",
+                      "tagNumber": 2
+                    }
+                  },
+                  "type": "object",
                   "meta:xdmField": "xdm:uvIndex",
                   "tagNumber": 8
                 }
@@ -3168,31 +3088,23 @@
                   "tagNumber": 7
                 },
                 "uvIndex": {
-                  "title": "UV Index",
-                  "description": "Maximum UV index for the 12 hour forecast period.",
-                  "type": "string",
-                  "enum": [
-                    "0",
-                    "1",
-                    "2",
-                    "3",
-                    "4",
-                    "5",
-                    "6",
-                    "7",
-                    "8",
-                    "9",
-                    "10",
-                    "11",
-                    "12",
-                    "13",
-                    "14",
-                    "15",
-                    "16",
-                    "-2",
-                    "-1"
-                  ],
-                  "meta:xdmType": "string",
+                  "properties": {
+                    "_name": {
+                      "type": "string",
+                      "description": "Index name",
+                      "meta:xdmType": "string",
+                      "meta:xdmField": "xdm:_name",
+                      "tagNumber": 1
+                    },
+                    "value": {
+                      "type": "string",
+                      "description": "Index value",
+                      "meta:xdmType": "string",
+                      "meta:xdmField": "xdm:value",
+                      "tagNumber": 2
+                    }
+                  },
+                  "type": "object",
                   "meta:xdmField": "xdm:uvIndex",
                   "tagNumber": 8
                 }
