@@ -1,0 +1,63 @@
+{
+  "id": "_xdm.mixins.industry-verticals.experienceevent-upsell-details",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Upsell Details",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:tags": {
+    "industry": [
+      "retail",
+      "financial_services",
+      "travel_and_hospitality",
+      "telecom",
+      "automotive",
+      "education",
+      "high_tech"
+    ]
+  },
+  "description": "Upsell details such as offer name, type, and ID, as well as transaction details such as type and amount.",
+  "meta:status": "stable",
+  "meta:createdDate": "2021-02-02",
+  "meta:titleId": "experienceevent-upsell-details##title##14631",
+  "meta:descriptionId": "experienceevent-upsell-details##description##98371",
+  "meta:xdmType": "object",
+  "properties": {
+    "upsells": {
+      "type": "object",
+      "description": "Upsell information including impressions and transactions associated with upsells.",
+      "meta:descriptionId": "experienceevent-upsell-details##xdm:upsells##description##93591",
+      "meta:xdmType": "object",
+      "properties": {
+        "upsellImpressions": {
+          "title": "Upsell Impressions",
+          "type": "array",
+          "description": "Array of the impressions data type.",
+          "meta:titleId": "experienceevent-upsell-details##xdm:upsellImpressions##title##381",
+          "meta:descriptionId": "experienceevent-upsell-details##xdm:upsellImpressions##description##27091",
+          "meta:xdmType": "array",
+          "items": {
+            "$ref": "../../../datatypes/industry-verticals/impressions.schema.json",
+            "tagNumber": 1
+          },
+          "meta:xdmField": "xdm:upsellImpressions",
+          "tagNumber": 2
+        },
+        "upsellTransaction": {
+          "title": "Upsell Transaction",
+          "$ref": "../../../datatypes/industry-verticals/transaction.schema.json",
+          "description": "Extension of transaction data type.",
+          "meta:titleId": "experienceevent-upsell-details##xdm:upsellTransaction##title##29501",
+          "meta:descriptionId": "experienceevent-upsell-details##xdm:upsellTransaction##description##99481",
+          "meta:xdmField": "xdm:upsellTransaction",
+          "tagNumber": 3
+        }
+      },
+      "meta:xdmField": "xdm:upsells",
+      "tagNumber": 1
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/mixins/industry-verticals/experienceevent-upsell-details",
+  "meta:altId": "_xdm.mixins.industry-verticals.experienceevent-upsell-details",
+  "id": "_xdm.mixins.industry-verticals.experienceevent-upsell-details"
+}

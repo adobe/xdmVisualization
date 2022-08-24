@@ -1,0 +1,91 @@
+{
+  "id": "_xdm.mixins.events.emaildelivered",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Email Delivered",
+  "type": "object",
+  "meta:tags": {
+    "b2bSchema": true
+  },
+  "meta:conditionalField": "xdm:eventType",
+  "meta:conditionalValue": "directMarketing.emailDelivered",
+  "description": "Use to capture details when an email is successfully delivered to a person.",
+  "meta:status": "experimental",
+  "meta:createdDate": "2020-12-02",
+  "meta:titleId": "emaildelivered##title##57361",
+  "meta:descriptionId": "emaildelivered##description##6511",
+  "meta:xdmType": "object",
+  "properties": {
+    "directMarketing": {
+      "title": "Direct marketing",
+      "type": "object",
+      "meta:titleId": "emaildelivered##xdm:directMarketing##title##24411",
+      "meta:xdmType": "object",
+      "properties": {
+        "mailingID": {
+          "title": "Mailing ID (deprecated)",
+          "type": "string",
+          "description": "Mailing ID is going to depreciate soon. Please use Mailing Key.",
+          "meta:titleId": "emaildelivered##xdm:mailingID##title##61861",
+          "meta:descriptionId": "emaildelivered##xdm:mailingID##description##45971",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:mailingID",
+          "tagNumber": 1
+        },
+        "mailingKey": {
+          "title": "Mailing Key",
+          "description": "Unique key of the email asset.",
+          "$ref": "../../../datatypes/b2b/b2b-source.schema.json",
+          "meta:titleId": "emaildelivered##xdm:mailingKey##title##52601",
+          "meta:descriptionId": "emaildelivered##xdm:mailingKey##description##66361",
+          "meta:xdmField": "xdm:mailingKey",
+          "tagNumber": 2
+        },
+        "mailingName": {
+          "title": "Mailing Name",
+          "type": "string",
+          "description": "Name of the email asset.",
+          "meta:titleId": "emaildelivered##xdm:mailingName##title##47211",
+          "meta:descriptionId": "emaildelivered##xdm:mailingName##description##97971",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:mailingName",
+          "tagNumber": 3
+        },
+        "testVariantID": {
+          "title": "Test Variant ID",
+          "type": "string",
+          "description": "Unique ID of the test variant of the email asset.",
+          "meta:titleId": "emaildelivered##xdm:testVariantID##title##54271",
+          "meta:descriptionId": "emaildelivered##xdm:testVariantID##description##17421",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:testVariantID",
+          "tagNumber": 4
+        },
+        "testVariantName": {
+          "title": "Test Variant Name",
+          "type": "string",
+          "description": "Friendly name of the test variant of the email asset.",
+          "meta:titleId": "emaildelivered##xdm:testVariantName##title##39651",
+          "meta:descriptionId": "emaildelivered##xdm:testVariantName##description##89611",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:testVariantName",
+          "tagNumber": 5
+        },
+        "automationRunID": {
+          "title": "Automation Run ID",
+          "type": "string",
+          "description": "Automation Run ID",
+          "meta:titleId": "emaildelivered##xdm:automationRunID##title##79261",
+          "meta:descriptionId": "emaildelivered##xdm:automationRunID##description##55741",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:automationRunID",
+          "tagNumber": 6
+        }
+      },
+      "meta:xdmField": "xdm:directMarketing",
+      "tagNumber": 1
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/mixins/events/emaildelivered",
+  "meta:altId": "_xdm.mixins.events.emaildelivered",
+  "id": "_xdm.mixins.events.emaildelivered"
+}

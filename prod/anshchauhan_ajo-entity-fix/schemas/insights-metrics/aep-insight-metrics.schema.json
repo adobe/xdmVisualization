@@ -1,0 +1,177 @@
+{
+  "id": "_xdm.schemas.aep-insights-metrics",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "AEP Insights Metrics",
+  "type": "object",
+  "meta:extensible": [
+    false,
+    true
+  ],
+  "meta:abstract": [
+    false,
+    true
+  ],
+  "description": "Use this Schema to add summary metrics for various AEP services like Activations, Destinations, schema etc.",
+  "meta:status": [
+    "stable",
+    "experimental"
+  ],
+  "meta:xdmType": "object",
+  "meta:tags": {
+    "industry": [
+      "all"
+    ]
+  },
+  "meta:createdDate": [
+    "2022-03-28",
+    "2020-08-10"
+  ],
+  "meta:titleId": [
+    "summarymetrics##title##88001",
+    "time-series##title##66611"
+  ],
+  "meta:descriptionId": [
+    "summarymetrics##description##15321",
+    "time-series##description##35031"
+  ],
+  "properties": {
+    "destinationMetrics": {
+      "type": "object",
+      "description": "Captures metrics related to various destinations on AEP.",
+      "meta:xdmType": "object",
+      "properties": {
+        "flowRunID": {
+          "title": "Flow Run ID",
+          "type": "string",
+          "description": "Flow run identifier to uniquely identify a flow which was triggered when a segment was activated over a destination.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:flowRunID",
+          "tagNumber": 1
+        },
+        "flowCompletedTime": {
+          "title": "Flow Completed Time",
+          "type": "string",
+          "format": "date-time",
+          "description": "The date and time when the flow was completed. It could be blank or NULL if the flow was not successful.",
+          "meta:xdmType": "date-time",
+          "meta:xdmField": "xdm:flowCompletedTime",
+          "tagNumber": 2
+        },
+        "flowRunStatus": {
+          "title": "Flow Run Status",
+          "type": "string",
+          "description": "The status of flow run. This could be success/partial-success/failed etc.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:flowRunStatus",
+          "tagNumber": 3
+        },
+        "totalProfilesActivated": {
+          "title": "Total Profiles Activated",
+          "type": "number",
+          "description": "Total number of profiles activated summarized at the granularity of provided dimensions in this record.",
+          "meta:xdmType": "number",
+          "meta:xdmField": "xdm:totalProfilesActivated",
+          "tagNumber": 4
+        },
+        "totalIdentitiesSkipped": {
+          "title": "Total Identities Skipped",
+          "type": "number",
+          "description": "Total number of identities skipped summarized at the granularity of provided dimensions in this record.",
+          "meta:xdmType": "number",
+          "meta:xdmField": "xdm:totalIdentitiesSkipped",
+          "tagNumber": 5
+        },
+        "failedIdentitiesCount": {
+          "title": "Count of failed Identities",
+          "type": "number",
+          "description": "Count of failed identities summarized at the granularity of provided dimensions in this record.",
+          "meta:xdmType": "number",
+          "meta:xdmField": "xdm:failedIdentitiesCount",
+          "tagNumber": 6
+        },
+        "totalIdentitiesActivated": {
+          "title": "Total Identities Activated",
+          "type": "number",
+          "description": "Total number of identities activated summarized at the granularity of provided dimensions in this record.",
+          "meta:xdmType": "number",
+          "meta:xdmField": "xdm:totalIdentitiesActivated",
+          "tagNumber": 7
+        }
+      },
+      "meta:xdmField": "xdm:destinationMetrics",
+      "tagNumber": 1
+    },
+    "segment": {
+      "type": "object",
+      "description": "Segment dimension properties.",
+      "meta:xdmType": "object",
+      "properties": {
+        "ID": {
+          "title": "Segment Identifier",
+          "type": "string",
+          "description": "Unique identifier of the segment.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:ID",
+          "tagNumber": 1
+        }
+      },
+      "meta:xdmField": "xdm:segment",
+      "tagNumber": 2
+    },
+    "destination": {
+      "type": "object",
+      "description": "Destination dimension properties.",
+      "meta:xdmType": "object",
+      "properties": {
+        "ID": {
+          "title": "Destination Identifier",
+          "type": "string",
+          "description": "Unique identifier of the Destination.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:ID",
+          "tagNumber": 1
+        }
+      },
+      "meta:xdmField": "xdm:destination",
+      "tagNumber": 3
+    },
+    "_id": {
+      "title": "Identifier",
+      "type": "string",
+      "format": "uri-reference",
+      "description": "A unique identifier for the time-series event.",
+      "meta:titleId": "time-series##@id##title##97851",
+      "meta:descriptionId": "time-series##@id##description##91771",
+      "meta:xdmType": "string",
+      "meta:xdmField": "@id",
+      "tagNumber": 4
+    },
+    "timestamp": {
+      "title": "Timestamp",
+      "type": "string",
+      "format": "date-time",
+      "description": "The time when an event or observation occurred.",
+      "meta:titleId": "time-series##xdm:timestamp##title##71321",
+      "meta:descriptionId": "time-series##xdm:timestamp##description##1861",
+      "meta:xdmType": "date-time",
+      "meta:xdmField": "xdm:timestamp",
+      "tagNumber": 5
+    },
+    "eventType": {
+      "title": "Event Type",
+      "type": "string",
+      "description": "The primary event type for this time-series record.",
+      "meta:titleId": "time-series##xdm:eventType##title##79221",
+      "meta:descriptionId": "time-series##xdm:eventType##description##27681",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:eventType",
+      "tagNumber": 6
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/schemas/aep-insights-metrics",
+  "meta:altId": "_xdm.schemas.aep-insights-metrics",
+  "required": [
+    "timestamp"
+  ],
+  "id": "_xdm.schemas.aep-insights-metrics"
+}

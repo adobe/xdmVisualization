@@ -1,0 +1,45 @@
+{
+  "id": "_xdm.external.iptc.series",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Series",
+  "type": "object",
+  "description": "The series the show belongs to. Based on [www.iptc.org](https://www.iptc.org/std/videometadatahub/recommendation/pre-versions/IPTC-VideoMetadataHub-props-Rec_1.1.html)",
+  "meta:status": "stable",
+  "meta:createdDate": "2020-08-10",
+  "meta:titleId": "series##title##71601",
+  "meta:descriptionId": "series##description##58931",
+  "meta:xdmType": "object",
+  "properties": {
+    "_iptc4xmpExt": {
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "Name": {
+          "title": "Series Name",
+          "type": "string",
+          "description": "Name of the series.",
+          "meta:titleId": "series##iptc4xmpExt:Name##title##15311",
+          "meta:descriptionId": "series##iptc4xmpExt:Name##description##96081",
+          "meta:xdmType": "string",
+          "meta:xdmField": "iptc4xmpExt:Name",
+          "tagNumber": 1
+        },
+        "Identifier": {
+          "title": "Series Identifier",
+          "type": "string",
+          "format": "uri",
+          "description": "Identifier of the series.",
+          "meta:titleId": "series##iptc4xmpExt:Identifier##title##27261",
+          "meta:descriptionId": "series##iptc4xmpExt:Identifier##description##50771",
+          "meta:xdmType": "string",
+          "meta:xdmField": "iptc4xmpExt:Identifier",
+          "tagNumber": 2
+        }
+      },
+      "tagNumber": 1
+    }
+  },
+  "meta:xdmId": "http://www.iptc.org/series",
+  "meta:altId": "_xdm.external.iptc.series",
+  "id": "_xdm.external.iptc.series"
+}

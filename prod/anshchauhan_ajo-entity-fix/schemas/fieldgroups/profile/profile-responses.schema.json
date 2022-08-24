@@ -1,0 +1,59 @@
+{
+  "id": "_xdm.mixins.profile-responses",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Phone Responses (Experimental, please expect breaking changes)",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "description": "Use this to add various profile responses like email, postal mail etc(Experimental, please expect breaking changes).",
+  "meta:status": "experimental",
+  "meta:titleId": "profile-responses##title##10381",
+  "meta:descriptionId": "profile-responses##description##1341",
+  "meta:xdmType": "object",
+  "properties": {
+    "emailResponse": {
+      "type": "object",
+      "title": "Email responses",
+      "meta:titleId": "profile-responses##xdm:emailResponse##title##50741",
+      "meta:xdmType": "object",
+      "properties": {
+        "isEmailBounced": {
+          "title": "Email Bounced Indicator",
+          "type": "boolean",
+          "description": "Email bounced Indicator.",
+          "meta:titleId": "profile-responses##xdm:isEmailBounced##title##92141",
+          "meta:descriptionId": "profile-responses##xdm:isEmailBounced##description##11371",
+          "meta:xdmType": "boolean",
+          "meta:xdmField": "xdm:isEmailBounced",
+          "tagNumber": 1
+        },
+        "emailBouncedDate": {
+          "title": "Email Bounced Date",
+          "type": "string",
+          "format": "date-time",
+          "description": "Email bounced date.",
+          "meta:titleId": "profile-responses##xdm:emailBouncedDate##title##68831",
+          "meta:descriptionId": "profile-responses##xdm:emailBouncedDate##description##39011",
+          "meta:xdmType": "date-time",
+          "meta:xdmField": "xdm:emailBouncedDate",
+          "tagNumber": 2
+        },
+        "emailBouncedReason": {
+          "title": "Email Bounced Reason",
+          "type": "string",
+          "description": "Email bounced reason.",
+          "meta:titleId": "profile-responses##xdm:emailBouncedReason##title##24051",
+          "meta:descriptionId": "profile-responses##xdm:emailBouncedReason##description##52991",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:emailBouncedReason",
+          "tagNumber": 3
+        }
+      },
+      "meta:xdmField": "xdm:emailResponse",
+      "tagNumber": 1
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/mixins/profile-responses",
+  "meta:altId": "_xdm.mixins.profile-responses",
+  "id": "_xdm.mixins.profile-responses"
+}

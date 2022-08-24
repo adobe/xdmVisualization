@@ -1,0 +1,66 @@
+{
+  "id": "_experience.decisioning.strategy-details",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Decision Strategy Details",
+  "type": "object",
+  "meta:extensible": true,
+  "description": "Decision strategy details capture data values for a particular step that will be or was taken during the decision process.",
+  "meta:status": "stable",
+  "meta:titleId": "strategy-details##title##75191",
+  "meta:descriptionId": "strategy-details##description##47541",
+  "meta:xdmType": "object",
+  "properties": {
+    "step": {
+      "type": "string",
+      "title": "Execution Step",
+      "description": "Indicator for the step type in the overall decision strategy",
+      "meta:titleId": "strategy-details##xdm:step##title##50481",
+      "meta:descriptionId": "strategy-details##xdm:step##description##73001",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:step",
+      "tagNumber": 1
+    },
+    "strategyID": {
+      "type": "string",
+      "title": "Step's Strategy Identifier",
+      "description": "The unique identifier of the step's strategy. When executing a decision various steps are performed. Each step is performed according to a strategy or policy and the chosen idetifier is recorded to measure its performance. This identifier could be the URI of a profile merge policy, an eligibility rule, a ML ranking strategy, a function that calculates the rank, a capping threshold or any object that signficantly contributes to the decision result.",
+      "meta:titleId": "strategy-details##xdm:strategyID##title##76321",
+      "meta:descriptionId": "strategy-details##xdm:strategyID##description##30291",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:strategyID",
+      "tagNumber": 2
+    },
+    "algorithmID": {
+      "title": "Algorithm Identifier",
+      "type": "string",
+      "format": "uri-reference",
+      "description": "Unique identifier for the algorithm used to make the decision, if applicable.",
+      "meta:titleId": "strategy-details##xdm:algorithmID##title##97171",
+      "meta:descriptionId": "strategy-details##xdm:algorithmID##description##87711",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:algorithmID",
+      "tagNumber": 3
+    },
+    "treatmentID": {
+      "title": "Treatment Identifier",
+      "type": "string",
+      "description": "Identifier for the experiment treatment or traffic allocation strategy that was selected for the decision.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:treatmentID",
+      "tagNumber": 4
+    },
+    "trafficType": {
+      "title": "Traffic Type",
+      "type": "string",
+      "description": "The class of algorithm/policy that was used to compute this decision. 'Contextual Traffic' indicates that event and profile context were used in deciding what to show. Noncontextual means that the decision was not made based on any contextual data. Random indicates that the decision was made by some pseudo-random process.",
+      "meta:titleId": "strategy-details##xdm:trafficType##title##26241",
+      "meta:descriptionId": "strategy-details##xdm:trafficType##description##69241",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:trafficType",
+      "tagNumber": 5
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/experience/decisioning/strategy-details",
+  "meta:altId": "_experience.decisioning.strategy-details",
+  "id": "_experience.decisioning.strategy-details"
+}

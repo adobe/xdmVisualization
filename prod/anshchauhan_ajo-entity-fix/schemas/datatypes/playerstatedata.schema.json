@@ -1,0 +1,51 @@
+{
+  "id": "_xdm.datatypes.playerstatedata",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Player state data information",
+  "type": "object",
+  "meta:status": "experimental",
+  "meta:extensible": true,
+  "description": "Player state data information.",
+  "meta:xdmType": "object",
+  "properties": {
+    "name": {
+      "title": "Player State Name",
+      "type": "string",
+      "pattern": "^[a-zA-Z0-9_.]{1,64}$",
+      "description": "The name of the player state.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:name",
+      "tagNumber": 1
+    },
+    "isSet": {
+      "title": "Player State Set",
+      "type": "boolean",
+      "description": "Whether or not the player state is set on that state.",
+      "meta:xdmType": "boolean",
+      "meta:xdmField": "xdm:isSet",
+      "tagNumber": 2
+    },
+    "count": {
+      "title": "Player State Count",
+      "type": "integer",
+      "description": "The number of times that player state was set on the stream.",
+      "meta:xdmType": "int",
+      "meta:xdmField": "xdm:count",
+      "tagNumber": 3
+    },
+    "time": {
+      "title": "Player State Time",
+      "type": "integer",
+      "description": "The total duration of that player state.",
+      "meta:xdmType": "int",
+      "meta:xdmField": "xdm:time",
+      "tagNumber": 4
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/datatypes/playerStateData",
+  "meta:altId": "_xdm.datatypes.playerstatedata",
+  "required": [
+    "name"
+  ],
+  "id": "_xdm.datatypes.playerstatedata"
+}

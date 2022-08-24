@@ -1,0 +1,50 @@
+{
+  "id": "_xdm.classes.provider",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Provider",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:tags": {
+    "industry": [
+      "healthcare_services"
+    ]
+  },
+  "description": "Provider business entity to collect data pertaining to providers (e.g. health provider, insurance provider).",
+  "meta:status": "stable",
+  "meta:xdmType": "object",
+  "meta:createdDate": "2020-08-10",
+  "meta:titleId": "record##title##65961",
+  "meta:descriptionId": "record##description##3921",
+  "properties": {
+    "providerID": {
+      "title": "Provider ID",
+      "type": "string",
+      "description": "Unique identifier of the provider.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:providerID",
+      "tagNumber": 1
+    },
+    "providerName": {
+      "title": "Provider Name",
+      "description": "Name of the provider.",
+      "$ref": "../datatypes/person/person-name.schema.json",
+      "meta:xdmField": "xdm:providerName",
+      "tagNumber": 2
+    },
+    "_id": {
+      "title": "Identifier",
+      "type": "string",
+      "format": "uri-reference",
+      "description": "A unique identifier for the record.",
+      "meta:titleId": "record##@id##title##51271",
+      "meta:descriptionId": "record##@id##description##16181",
+      "meta:xdmType": "string",
+      "meta:xdmField": "@id",
+      "tagNumber": 3
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/classes/provider",
+  "meta:altId": "_xdm.classes.provider",
+  "id": "_xdm.classes.provider"
+}

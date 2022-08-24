@@ -1,0 +1,69 @@
+{
+  "id": "_experience.decisioning.proposition-event-type",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "AJO Classification Fields",
+  "description": "A set of direct customer interactions that an end-user might perform when shown a proposition.",
+  "type": "object",
+  "meta:status": "stable",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:xdmType": "object",
+  "properties": {
+    "_experience": {
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "decisioning": {
+          "type": "object",
+          "meta:xdmType": "object",
+          "properties": {
+            "propositionEventType": {
+              "type": "object",
+              "meta:xdmType": "object",
+              "properties": {
+                "send": {
+                  "title": "send",
+                  "description": "Proposition was sent to the client. This does not guarantee the proposition arrived or was displayed to the user.",
+                  "type": "integer",
+                  "meta:xdmType": "int",
+                  "meta:xdmField": "https://ns.adobe.com/experience/decisioning/proposition-event-type/send",
+                  "tagNumber": 1
+                },
+                "display": {
+                  "title": "display",
+                  "description": "Proposition was displayed to the user.",
+                  "type": "integer",
+                  "meta:xdmType": "int",
+                  "meta:xdmField": "https://ns.adobe.com/experience/decisioning/proposition-event-type/display",
+                  "tagNumber": 2
+                },
+                "interact": {
+                  "title": "interact",
+                  "description": "User interacted with the proposition, usually in a positive way.",
+                  "type": "integer",
+                  "meta:xdmType": "int",
+                  "meta:xdmField": "https://ns.adobe.com/experience/decisioning/proposition-event-type/interact",
+                  "tagNumber": 3
+                },
+                "dismiss": {
+                  "title": "dismiss",
+                  "description": "User dismissed the proposition without any other direct interaction.",
+                  "type": "integer",
+                  "meta:xdmType": "int",
+                  "meta:xdmField": "https://ns.adobe.com/experience/decisioning/proposition-event-type/dismiss",
+                  "tagNumber": 4
+                }
+              },
+              "tagNumber": 1
+            }
+          },
+          "tagNumber": 1
+        }
+      },
+      "tagNumber": 1
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/experience/decisioning/proposition-event-type",
+  "meta:altId": "_experience.decisioning.proposition-event-type",
+  "id": "_experience.decisioning.proposition-event-type"
+}

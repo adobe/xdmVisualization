@@ -1,0 +1,117 @@
+{
+  "id": "_xdm.mixins.experienceevent-media-collection",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "MediaCollection Interaction Details ",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:tags": {
+    "industry": [
+      "all"
+    ]
+  },
+  "description": "Track interactions with media collection.",
+  "meta:status": "experimental",
+  "meta:xdmType": "object",
+  "properties": {
+    "mediaCollection": {
+      "type": "object",
+      "description": "Media Collection related fields.",
+      "meta:xdmType": "object",
+      "properties": {
+        "playerEventDetails": {
+          "title": "Player Event Details",
+          "$ref": "../../datatypes/playereventdetails.schema.json",
+          "description": "Player event details information related to the experience event.",
+          "meta:xdmField": "xdm:playerEventDetails",
+          "tagNumber": 1
+        },
+        "sessionDetails": {
+          "title": "Session Details",
+          "$ref": "../../datatypes/sessiondetails.schema.json",
+          "description": "Session details information related to the experience event.",
+          "meta:xdmField": "xdm:sessionDetails",
+          "tagNumber": 2
+        },
+        "advertisingDetails": {
+          "title": "Advertising Details",
+          "$ref": "../../datatypes/advertisingdetails.schema.json",
+          "description": "Advertising details information related to the experience event.",
+          "meta:xdmField": "xdm:advertisingDetails",
+          "tagNumber": 3
+        },
+        "advertisingPodDetails": {
+          "title": "Advertising Pod Details",
+          "$ref": "../../datatypes/advertisingpoddetails.schema.json",
+          "description": "Advertising pod details information related to the experience event.",
+          "meta:xdmField": "xdm:advertisingPodDetails",
+          "tagNumber": 4
+        },
+        "chapterDetails": {
+          "title": "Chapter Details",
+          "$ref": "../../datatypes/chapterdetails.schema.json",
+          "description": "Chapter details information related to the experience event.",
+          "meta:xdmField": "xdm:chapterDetails",
+          "tagNumber": 5
+        },
+        "errorDetails": {
+          "title": "Error Details",
+          "$ref": "../../datatypes/errordetails.schema.json",
+          "description": "Error details information related to the experience event.",
+          "meta:xdmField": "xdm:errorDetails",
+          "tagNumber": 6
+        },
+        "qoeDataDetails": {
+          "title": "Qoe Data Details",
+          "$ref": "../../datatypes/qoedatadetails.schema.json",
+          "description": "Qoe data details information related to the experience event.",
+          "meta:xdmField": "xdm:qoeDataDetails",
+          "tagNumber": 7
+        },
+        "statesStart": {
+          "title": "List Of States Start",
+          "type": "array",
+          "description": "The list of states start.",
+          "meta:xdmType": "array",
+          "items": {
+            "$ref": "../../datatypes/playerstatedata.schema.json",
+            "tagNumber": 1
+          },
+          "meta:xdmField": "xdm:statesStart",
+          "tagNumber": 8
+        },
+        "statesEnd": {
+          "title": "List Of States End",
+          "type": "array",
+          "description": "The list of states end.",
+          "meta:xdmType": "array",
+          "items": {
+            "$ref": "../../datatypes/playerstatedata.schema.json",
+            "tagNumber": 1
+          },
+          "meta:xdmField": "xdm:statesEnd",
+          "tagNumber": 9
+        },
+        "endUserIDs": {
+          "title": "End User IDs",
+          "$ref": "../../datatypes/enduserids.schema.json",
+          "description": "Condensed, normalized encapsulation of all end user identifiers. At least one of the fields is required.",
+          "meta:xdmField": "xdm:endUserIDs",
+          "tagNumber": 10
+        },
+        "implementationDetails": {
+          "title": "Implementation Details",
+          "$ref": "../../datatypes/industry-verticals/implementationdetails.schema.json",
+          "description": "Details about the SDK, library, or service used in an application or web page implementation of a service.",
+          "meta:xdmField": "xdm:implementationDetails",
+          "tagNumber": 11
+        }
+      },
+      "meta:xdmField": "xdm:mediaCollection",
+      "tagNumber": 1
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/mixins/experienceevent-media-collection",
+  "meta:altId": "_xdm.mixins.experienceevent-media-collection",
+  "id": "_xdm.mixins.experienceevent-media-collection"
+}

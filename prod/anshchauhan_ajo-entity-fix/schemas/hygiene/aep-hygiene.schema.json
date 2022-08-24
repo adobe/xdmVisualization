@@ -1,0 +1,45 @@
+{
+  "id": "_xdm.classes.aep-hygiene",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "AEP Hygiene",
+  "type": "object",
+  "meta:extensible": [
+    false,
+    true
+  ],
+  "meta:abstract": [
+    false,
+    true
+  ],
+  "description": "AEP Hygiene.",
+  "meta:status": [
+    "experimental",
+    "stable"
+  ],
+  "meta:titleId": [
+    "aep-hygiene##title##2981",
+    "record##title##65961"
+  ],
+  "meta:descriptionId": [
+    "aep-hygiene##description##47561",
+    "record##description##3921"
+  ],
+  "meta:xdmType": "object",
+  "meta:createdDate": "2020-08-10",
+  "properties": {
+    "_id": {
+      "title": "Identifier",
+      "type": "string",
+      "format": "uri-reference",
+      "description": "A unique identifier for the record.",
+      "meta:titleId": "record##@id##title##51271",
+      "meta:descriptionId": "record##@id##description##16181",
+      "meta:xdmType": "string",
+      "meta:xdmField": "@id",
+      "tagNumber": 1
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/classes/aep-hygiene",
+  "meta:altId": "_xdm.classes.aep-hygiene",
+  "id": "_xdm.classes.aep-hygiene"
+}

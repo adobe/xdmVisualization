@@ -1,0 +1,63 @@
+{
+  "id": "_xdm.datatypes.financial-account",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Financial Account",
+  "type": "object",
+  "meta:extensible": true,
+  "description": "Financial account details, such as owners, balances, and types.",
+  "meta:status": "stable",
+  "meta:createdDate": "2021-02-19",
+  "meta:titleId": "financial-account##title##1381",
+  "meta:descriptionId": "financial-account##description##18451",
+  "meta:xdmType": "object",
+  "properties": {
+    "currentAccountBalance": {
+      "title": "Current Financial Account Balance",
+      "$ref": "../currency.schema.json",
+      "description": "Balance in the account.",
+      "meta:titleId": "financial-account##xdm:currentAccountBalance##title##93831",
+      "meta:descriptionId": "financial-account##xdm:currentAccountBalance##description##63431",
+      "meta:xdmField": "xdm:currentAccountBalance",
+      "tagNumber": 1
+    },
+    "financialAccountID": {
+      "title": "Financial Account ID",
+      "type": "string",
+      "description": "Current account balance for a single user account.",
+      "meta:titleId": "financial-account##xdm:financialAccountID##title##37801",
+      "meta:descriptionId": "financial-account##xdm:financialAccountID##description##31511",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:financialAccountID",
+      "tagNumber": 2
+    },
+    "financialAccountName": {
+      "title": "Financial Account Name",
+      "type": "string",
+      "description": "Name assigned to the financial account.",
+      "meta:titleId": "financial-account##xdm:financialAccountName##title##12351",
+      "meta:descriptionId": "financial-account##xdm:financialAccountName##description##58581",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:financialAccountName",
+      "tagNumber": 3
+    },
+    "financialAccountType": {
+      "title": "Financial Account Type",
+      "type": "string",
+      "enum": [
+        "checking",
+        "savings",
+        "retirement",
+        "investment"
+      ],
+      "description": "Describes the type of finanical account, such as checking, savings, or retirement.",
+      "meta:titleId": "financial-account##xdm:financialAccountType##title##92371",
+      "meta:descriptionId": "financial-account##xdm:financialAccountType##description##30951",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:financialAccountType",
+      "tagNumber": 4
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/datatypes/financial-account",
+  "meta:altId": "_xdm.datatypes.financial-account",
+  "id": "_xdm.datatypes.financial-account"
+}

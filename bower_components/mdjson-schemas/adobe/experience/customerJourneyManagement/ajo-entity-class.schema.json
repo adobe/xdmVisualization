@@ -1,0 +1,37 @@
+{
+  "id": "_experience.customerjourneymanagement.ajoentity",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "AJO Entity Class",
+  "type": "object",
+  "auditable": true,
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "description": "A Record based AJO Entity class for creating lookup based schemas",
+  "meta:status": [
+    "experimental",
+    "stable"
+  ],
+  "examples": [
+    {}
+  ],
+  "meta:xdmType": "object",
+  "meta:createdDate": "2020-08-10",
+  "meta:titleId": "record##title##65961",
+  "meta:descriptionId": "record##description##3921",
+  "properties": {
+    "_id": {
+      "title": "Identifier",
+      "type": "string",
+      "format": "uri-reference",
+      "description": "A unique identifier for the record.",
+      "meta:titleId": "record##@id##title##51271",
+      "meta:descriptionId": "record##@id##description##16181",
+      "meta:xdmType": "string",
+      "meta:xdmField": "@id",
+      "tagNumber": 1
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/experience/customerJourneyManagement/ajoEntity",
+  "meta:altId": "_experience.customerjourneymanagement.ajoentity",
+  "id": "_experience.customerjourneymanagement.ajoentity"
+}

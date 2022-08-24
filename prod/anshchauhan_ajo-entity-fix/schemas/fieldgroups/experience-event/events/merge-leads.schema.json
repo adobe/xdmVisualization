@@ -1,0 +1,86 @@
+{
+  "id": "_xdm.mixins.events.merge-leads",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Merge Leads",
+  "type": "object",
+  "meta:tags": {
+    "b2bSchema": true
+  },
+  "meta:conditionalField": "xdm:eventType",
+  "meta:conditionalValue": "leadOperation.mergeLeads",
+  "description": "Use to capture details when two or more leads are merged.",
+  "meta:status": "stable",
+  "meta:createdDate": "2022-03-22",
+  "meta:titleId": "merge-leads##title##2971",
+  "meta:descriptionId": "merge-leads##description##54861",
+  "meta:xdmType": "object",
+  "properties": {
+    "leadOperation": {
+      "title": "Lead Operation",
+      "type": "object",
+      "meta:titleId": "merge-leads##xdm:leadOperation##title##31021",
+      "meta:xdmType": "object",
+      "properties": {
+        "mergeLeads": {
+          "title": "Merge Leads",
+          "type": "object",
+          "meta:titleId": "merge-leads##xdm:mergeLeads##title##29161",
+          "meta:xdmType": "object",
+          "properties": {
+            "sourceKeys": {
+              "title": "Source Keys",
+              "type": "array",
+              "description": "A list of unique composite identifier of losing leads.",
+              "meta:titleId": "merge-leads##xdm:sourceKeys##title##28741",
+              "meta:descriptionId": "merge-leads##xdm:sourceKeys##description##44911",
+              "meta:xdmType": "array",
+              "items": {
+                "$ref": "../../../datatypes/b2b/b2b-source.schema.json",
+                "tagNumber": 1
+              },
+              "meta:xdmField": "xdm:sourceKeys",
+              "tagNumber": 1
+            },
+            "targetUpdated": {
+              "title": "Target Updated",
+              "type": "boolean",
+              "description": "Boolean indicating if winning lead is updated after merge operation.",
+              "meta:titleId": "merge-leads##xdm:targetUpdated##title##67271",
+              "meta:descriptionId": "merge-leads##xdm:targetUpdated##description##71201",
+              "meta:xdmType": "boolean",
+              "meta:xdmField": "xdm:targetUpdated",
+              "tagNumber": 2
+            },
+            "mergedInCRM": {
+              "title": "Merged In CRM",
+              "type": "boolean",
+              "description": "Boolean indicating if leads were/should be merged in CRM.",
+              "meta:titleId": "merge-leads##xdm:mergedInCRM##title##88831",
+              "meta:descriptionId": "merge-leads##xdm:mergedInCRM##description##26161",
+              "meta:xdmType": "boolean",
+              "meta:xdmField": "xdm:mergedInCRM",
+              "tagNumber": 3
+            },
+            "mergeSource": {
+              "title": "Merge Source",
+              "type": "string",
+              "description": "Source of merge operation.",
+              "meta:titleId": "merge-leads##xdm:mergeSource##title##36391",
+              "meta:descriptionId": "merge-leads##xdm:mergeSource##description##16671",
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:mergeSource",
+              "tagNumber": 4
+            }
+          },
+          "meta:xdmField": "xdm:mergeLeads",
+          "tagNumber": 1
+        }
+      },
+      "meta:xdmField": "xdm:leadOperation",
+      "tagNumber": 1
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/mixins/events/merge-leads",
+  "meta:altId": "_xdm.mixins.events.merge-leads",
+  "id": "_xdm.mixins.events.merge-leads"
+}

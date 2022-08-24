@@ -1,0 +1,36 @@
+{
+  "id": "_xdm.mixins.product-triggers",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:status": "experimental",
+  "title": "Product Triggers",
+  "type": "object",
+  "description": "Weather Product Triggers",
+  "meta:xdmType": "object",
+  "properties": {
+    "productTriggers": {
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "triggersProduct": {
+          "type": "array",
+          "title": "Product Triggers",
+          "meta:xdmType": "array",
+          "items": {
+            "type": "integer",
+            "meta:xdmType": "int",
+            "tagNumber": 1
+          },
+          "meta:xdmField": "xdm:triggersProduct",
+          "tagNumber": 1
+        }
+      },
+      "meta:xdmField": "xdm:productTriggers",
+      "tagNumber": 1
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/mixins/product-triggers",
+  "meta:altId": "_xdm.mixins.product-triggers",
+  "id": "_xdm.mixins.product-triggers"
+}

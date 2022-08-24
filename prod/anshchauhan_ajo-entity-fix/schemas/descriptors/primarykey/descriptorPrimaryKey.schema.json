@@ -1,0 +1,82 @@
+{
+  "id": "_xdm.common.descriptors.descriptorprimarykey",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Primary Key Descriptor",
+  "meta:extensible": false,
+  "meta:abstract": false,
+  "type": "object",
+  "description": "Used to identify a single or a set of column(s) that must be enforced as non-null and unique.",
+  "meta:status": "stable",
+  "meta:createdDate": "2021-03-04",
+  "meta:titleId": "descriptorPrimaryKey##title##33171",
+  "meta:descriptionId": "descriptorPrimaryKey##description##67201",
+  "meta:xdmType": "object",
+  "properties": {
+    "_id": {
+      "title": "Identifier",
+      "type": "string",
+      "format": "uri-reference",
+      "description": "The unique identifier for the schema descriptor. This property is required when the descriptor is defined outside of the applicable schema, but is optional when applied via 'meta:descriptors'.",
+      "meta:titleId": "schemadescriptor##@id##title##10581",
+      "meta:descriptionId": "schemadescriptor##@id##description##77541",
+      "meta:xdmType": "string",
+      "meta:xdmField": "@id",
+      "tagNumber": 1
+    },
+    "_type": {
+      "title": "Type",
+      "type": "string",
+      "description": "The type of descriptor this object represents.",
+      "meta:titleId": [
+        "schemadescriptor##@type##title##15981",
+        "descriptorPrimaryKey##@type##title##12931"
+      ],
+      "meta:descriptionId": "schemadescriptor##@type##description##6141",
+      "meta:xdmType": "string",
+      "const": "xdm:descriptorPrimaryKey",
+      "meta:xdmField": "@type",
+      "tagNumber": 2
+    },
+    "sourceSchema": {
+      "title": "Source Schema",
+      "type": "string",
+      "format": "uri",
+      "description": "The source schema this descriptor applies to. This property is required when the descriptor is defined outside of the applicable schema, but is optional when applied via 'meta:descriptors'",
+      "meta:titleId": "schemadescriptor##xdm:sourceSchema##title##68671",
+      "meta:descriptionId": "schemadescriptor##xdm:sourceSchema##description##98211",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:sourceSchema",
+      "tagNumber": 3
+    },
+    "sourceProperty": {
+      "title": "Source Property",
+      "description": "When present, the property of the source schema to which this descriptor applies. This value is a JSON Pointer, applied to an instance of an object described by `xdm:sourceSchema`.",
+      "meta:titleId": "schemadescriptor##xdm:sourceProperty##title##2001",
+      "meta:descriptionId": "schemadescriptor##xdm:sourceProperty##description##85661",
+      "meta:xdmField": "xdm:sourceProperty",
+      "tagNumber": 4
+    },
+    "sourceVersion": {
+      "title": "Source Version",
+      "type": "number",
+      "description": "Major version being referenced.",
+      "meta:titleId": "schemadescriptor##xdm:sourceVersion##title##89331",
+      "meta:descriptionId": "schemadescriptor##xdm:sourceVersion##description##21461",
+      "meta:xdmType": "number",
+      "meta:xdmField": "xdm:sourceVersion",
+      "tagNumber": 5
+    },
+    "sourceItem": {
+      "meta:xdmField": "xdm:sourceItem",
+      "tagNumber": 6
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/common/descriptors/descriptorPrimaryKey",
+  "meta:altId": "_xdm.common.descriptors.descriptorprimarykey",
+  "required": [
+    "sourceProperty",
+    "sourceSchema",
+    "sourceVersion"
+  ],
+  "id": "_xdm.common.descriptors.descriptorprimarykey"
+}

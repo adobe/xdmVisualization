@@ -1,0 +1,87 @@
+{
+  "id": "_xdm.datatypes.chapterdetails",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Chapter details information",
+  "type": "object",
+  "meta:status": "experimental",
+  "meta:extensible": true,
+  "description": "Chapter details information.",
+  "meta:xdmType": "object",
+  "properties": {
+    "friendlyName": {
+      "title": "Chapter Name",
+      "type": "string",
+      "description": "The name of the chapter and/or segment.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:friendlyName",
+      "tagNumber": 1
+    },
+    "length": {
+      "title": "Chapter Length Or Duration",
+      "type": "integer",
+      "description": "The length of the chapter, in seconds.",
+      "meta:xdmType": "int",
+      "meta:xdmField": "xdm:length",
+      "tagNumber": 2
+    },
+    "offset": {
+      "title": "Chapter Offset",
+      "type": "integer",
+      "description": "The offset of the chapter inside the content (in seconds) from the start.",
+      "meta:xdmType": "int",
+      "meta:xdmField": "xdm:offset",
+      "tagNumber": 3
+    },
+    "index": {
+      "title": "Chapter Position",
+      "type": "integer",
+      "description": "The position (index, integer) of the chapter inside the content.",
+      "meta:xdmType": "int",
+      "meta:xdmField": "xdm:index",
+      "tagNumber": 4
+    },
+    "chapterID": {
+      "title": "Chapter ID",
+      "type": "string",
+      "description": "The auto-generated ID of the chapter.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:chapterID",
+      "tagNumber": 5
+    },
+    "isStarted": {
+      "title": "Chapter Started",
+      "type": "boolean",
+      "description": "Chapter is started.",
+      "meta:xdmType": "boolean",
+      "meta:xdmField": "xdm:isStarted",
+      "tagNumber": 6
+    },
+    "isCompleted": {
+      "title": "Chapter Completed",
+      "type": "boolean",
+      "description": "Chapter is completed.",
+      "meta:xdmType": "boolean",
+      "meta:xdmField": "xdm:isCompleted",
+      "tagNumber": 7
+    },
+    "timePlayed": {
+      "title": "Chapter Time Played",
+      "type": "integer",
+      "description": "The time spent on the chapter, in seconds.",
+      "meta:xdmType": "int",
+      "meta:xdmField": "xdm:timePlayed",
+      "tagNumber": 8
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/datatypes/chapterDetails",
+  "meta:altId": "_xdm.datatypes.chapterdetails",
+  "required": [
+    "length",
+    "offset",
+    "index",
+    "isStarted",
+    "isCompleted",
+    "timePlayed"
+  ],
+  "id": "_xdm.datatypes.chapterdetails"
+}

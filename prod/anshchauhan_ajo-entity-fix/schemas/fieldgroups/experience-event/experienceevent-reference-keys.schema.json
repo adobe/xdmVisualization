@@ -1,0 +1,64 @@
+{
+  "id": "_xdm.mixins.experienceevent-reference-keys",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Reference keys",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:tags": {
+    "industry": [
+      "all"
+    ]
+  },
+  "description": "Add this field group to only Experience Event Class based schemas to add reference keys to build relationships to Other class based schemas.",
+  "meta:status": "experimental",
+  "meta:titleId": "experienceevent-reference-keys##title##6331",
+  "meta:descriptionId": "experienceevent-reference-keys##description##77561",
+  "meta:xdmType": "object",
+  "properties": {
+    "person": {
+      "title": "Person Reference Properties",
+      "type": "object",
+      "meta:titleId": "experienceevent-reference-keys##xdm:person##title##19721",
+      "meta:xdmType": "object",
+      "properties": {
+        "personalEmailID": {
+          "title": "Personal Email Address",
+          "type": "string",
+          "format": "email",
+          "description": "The technical address, for example, 'name@domain.com' as commonly defined in RFC2822 and subsequent standards.",
+          "meta:titleId": "experienceevent-reference-keys##xdm:personalEmailID##title##76881",
+          "meta:descriptionId": "experienceevent-reference-keys##xdm:personalEmailID##description##87691",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:personalEmailID",
+          "tagNumber": 1
+        },
+        "accountID": {
+          "title": "Account ID",
+          "type": "string",
+          "description": "Account ID.",
+          "meta:titleId": "experienceevent-reference-keys##xdm:accountID##title##85891",
+          "meta:descriptionId": "experienceevent-reference-keys##xdm:accountID##description##88611",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:accountID",
+          "tagNumber": 2
+        },
+        "accountType": {
+          "title": "Account Type",
+          "type": "string",
+          "description": "Account Type.",
+          "meta:titleId": "experienceevent-reference-keys##xdm:accountType##title##35281",
+          "meta:descriptionId": "experienceevent-reference-keys##xdm:accountType##description##80081",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:accountType",
+          "tagNumber": 3
+        }
+      },
+      "meta:xdmField": "xdm:person",
+      "tagNumber": 1
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/mixins/experienceevent-reference-keys",
+  "meta:altId": "_xdm.mixins.experienceevent-reference-keys",
+  "id": "_xdm.mixins.experienceevent-reference-keys"
+}

@@ -1,0 +1,37 @@
+{
+  "id": "_xdm.datatypes.cart",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Cart",
+  "type": "object",
+  "description": "Cart-specific properties",
+  "meta:status": "experimental",
+  "meta:createdDate": "2022-03-02",
+  "meta:titleId": "cart##title##89681",
+  "meta:descriptionId": "cart##description##25591",
+  "meta:xdmType": "object",
+  "properties": {
+    "cartID": {
+      "title": "Cart ID",
+      "type": "string",
+      "description": "Unique identifier assigned by the seller for the cart.",
+      "meta:titleId": "cart##xdm:cartID##title##16131",
+      "meta:descriptionId": "cart##xdm:cartID##description##66661",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:cartID",
+      "tagNumber": 1
+    },
+    "cartSource": {
+      "title": "Cart Source",
+      "type": "string",
+      "description": "Where one or more products was added to the cart from.",
+      "meta:titleId": "cart##xdm:cartSource##title##55321",
+      "meta:descriptionId": "cart##xdm:cartSource##description##1551",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:cartSource",
+      "tagNumber": 2
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/datatypes/cart",
+  "meta:altId": "_xdm.datatypes.cart",
+  "id": "_xdm.datatypes.cart"
+}

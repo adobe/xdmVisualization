@@ -1,0 +1,121 @@
+{
+  "id": "_xdm.mixins.events.emailbounced",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Email Bounced",
+  "type": "object",
+  "meta:tags": {
+    "b2bSchema": true
+  },
+  "meta:conditionalField": "xdm:eventType",
+  "meta:conditionalValue": "directMarketing.emailBounced",
+  "description": "Use to capture details when email to person bounces.",
+  "meta:status": "experimental",
+  "meta:createdDate": "2020-12-02",
+  "meta:titleId": "emailbounced##title##15731",
+  "meta:descriptionId": "emailbounced##description##64041",
+  "meta:xdmType": "object",
+  "properties": {
+    "directMarketing": {
+      "title": "Direct marketing",
+      "type": "object",
+      "meta:titleId": "emailbounced##xdm:directMarketing##title##99321",
+      "meta:xdmType": "object",
+      "properties": {
+        "mailingID": {
+          "title": "Mailing ID (deprecated)",
+          "type": "string",
+          "description": "Mailing ID is going to depreciate soon. Please use Mailing Key.",
+          "meta:titleId": "emailbounced##xdm:mailingID##title##69611",
+          "meta:descriptionId": "emailbounced##xdm:mailingID##description##27341",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:mailingID",
+          "tagNumber": 1
+        },
+        "mailingKey": {
+          "title": "Mailing Key",
+          "description": "Unique key of the email asset.",
+          "$ref": "../../../datatypes/b2b/b2b-source.schema.json",
+          "meta:titleId": "emailbounced##xdm:mailingKey##title##2421",
+          "meta:descriptionId": "emailbounced##xdm:mailingKey##description##59841",
+          "meta:xdmField": "xdm:mailingKey",
+          "tagNumber": 2
+        },
+        "mailingName": {
+          "title": "Mailing Name",
+          "type": "string",
+          "description": "Friendly name of the email asset.",
+          "meta:titleId": "emailbounced##xdm:mailingName##title##26401",
+          "meta:descriptionId": "emailbounced##xdm:mailingName##description##24861",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:mailingName",
+          "tagNumber": 3
+        },
+        "emailBouncedCode": {
+          "title": "Email Bounced Category",
+          "type": "string",
+          "description": "Code denoting the type of bounce received from the Mail Transfer Agent.",
+          "meta:titleId": "emailbounced##xdm:emailBouncedCode##title##51721",
+          "meta:descriptionId": "emailbounced##xdm:emailBouncedCode##description##92581",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:emailBouncedCode",
+          "tagNumber": 4
+        },
+        "emailBouncedDetails": {
+          "title": "Email Bounced Details",
+          "type": "string",
+          "description": "Details of email bounce from the Mail Transfer Agent.",
+          "meta:titleId": "emailbounced##xdm:emailBouncedDetails##title##60831",
+          "meta:descriptionId": "emailbounced##xdm:emailBouncedDetails##description##25591",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:emailBouncedDetails",
+          "tagNumber": 5
+        },
+        "email": {
+          "title": "email",
+          "type": "string",
+          "description": "Recipient's email address.",
+          "meta:titleId": "emailbounced##xdm:email##title##16471",
+          "meta:descriptionId": "emailbounced##xdm:email##description##57961",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:email",
+          "tagNumber": 6
+        },
+        "testVariantID": {
+          "title": "Test Variant ID",
+          "type": "string",
+          "description": "Unique ID of the test variant of the email asset.",
+          "meta:titleId": "emailbounced##xdm:testVariantID##title##29941",
+          "meta:descriptionId": "emailbounced##xdm:testVariantID##description##83421",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:testVariantID",
+          "tagNumber": 7
+        },
+        "testVariantName": {
+          "title": "Test Variant Name",
+          "type": "string",
+          "description": "Friendly name of the test variant of the email asset .",
+          "meta:titleId": "emailbounced##xdm:testVariantName##title##61761",
+          "meta:descriptionId": "emailbounced##xdm:testVariantName##description##51881",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:testVariantName",
+          "tagNumber": 8
+        },
+        "automationRunID": {
+          "title": "Automation Run ID",
+          "type": "string",
+          "description": "Automation Run ID",
+          "meta:titleId": "emailbounced##xdm:automationRunID##title##92921",
+          "meta:descriptionId": "emailbounced##xdm:automationRunID##description##77281",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:automationRunID",
+          "tagNumber": 9
+        }
+      },
+      "meta:xdmField": "xdm:directMarketing",
+      "tagNumber": 1
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/mixins/events/emailbounced",
+  "meta:altId": "_xdm.mixins.events.emailbounced",
+  "id": "_xdm.mixins.events.emailbounced"
+}

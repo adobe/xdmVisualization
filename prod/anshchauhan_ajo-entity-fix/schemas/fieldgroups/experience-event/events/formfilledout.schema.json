@@ -1,0 +1,178 @@
+{
+  "id": "_xdm.mixins.events.formfilledout",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Form Filled Out",
+  "type": "object",
+  "meta:tags": {
+    "b2bSchema": true
+  },
+  "meta:conditionalField": "xdm:eventType",
+  "meta:conditionalValue": "web.formFilledOut",
+  "description": "Use to capture details when a person fills out a form on a web page.",
+  "meta:status": "experimental",
+  "meta:createdDate": "2021-02-19",
+  "meta:titleId": "formfilledout##title##30531",
+  "meta:descriptionId": "formfilledout##description##66631",
+  "meta:xdmType": "object",
+  "properties": {
+    "web": {
+      "title": "Web",
+      "type": "object",
+      "description": "Link clicks, web page details, referrer information, and browser details.",
+      "meta:titleId": "formfilledout##xdm:web##title##61311",
+      "meta:descriptionId": "formfilledout##xdm:web##description##8151",
+      "meta:xdmType": "object",
+      "properties": {
+        "fillOutForm": {
+          "title": "Fill Out Form",
+          "type": "object",
+          "meta:titleId": "formfilledout##xdm:fillOutForm##title##47321",
+          "meta:xdmType": "object",
+          "properties": {
+            "webFormID": {
+              "title": "Web Form ID (deprecated)",
+              "type": "string",
+              "description": "Web Form ID is going to depreciate soon. Please use  Web Form Key.",
+              "meta:titleId": "formfilledout##xdm:webFormID##title##36241",
+              "meta:descriptionId": "formfilledout##xdm:webFormID##description##30331",
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:webFormID",
+              "tagNumber": 1
+            },
+            "webFormKey": {
+              "title": "Web Form Key",
+              "description": "Unique key of the form.",
+              "$ref": "../../../datatypes/b2b/b2b-source.schema.json",
+              "meta:titleId": "formfilledout##xdm:webFormKey##title##84331",
+              "meta:descriptionId": "formfilledout##xdm:webFormKey##description##19751",
+              "meta:xdmField": "xdm:webFormKey",
+              "tagNumber": 2
+            },
+            "webFormName": {
+              "title": "Web Form Name",
+              "type": "string",
+              "description": "Name of the form.",
+              "meta:titleId": "formfilledout##xdm:webFormName##title##3391",
+              "meta:descriptionId": "formfilledout##xdm:webFormName##description##62561",
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:webFormName",
+              "tagNumber": 3
+            }
+          },
+          "meta:xdmField": "xdm:fillOutForm",
+          "tagNumber": 1
+        },
+        "webPageDetails": {
+          "title": "Web Page Details",
+          "type": "object",
+          "meta:titleId": "formfilledout##xdm:webPageDetails##title##32491",
+          "meta:xdmType": "object",
+          "properties": {
+            "webPageID": {
+              "title": "Web Page ID",
+              "type": "string",
+              "description": "Unique ID of the web page.",
+              "meta:titleId": "formfilledout##xdm:webPageID##title##54511",
+              "meta:descriptionId": "formfilledout##xdm:webPageID##description##29891",
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:webPageID",
+              "tagNumber": 1
+            },
+            "name": {
+              "title": "Name",
+              "type": "string",
+              "description": "The normative name of the web page. This name is not necessarily the page title or directly associate with page content, but is used to organize a site's pages for classification purposes.",
+              "meta:titleId": "formfilledout##xdm:name##title##50361",
+              "meta:descriptionId": "formfilledout##xdm:name##description##77841",
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:name",
+              "tagNumber": 2
+            },
+            "queryParameters": {
+              "title": "Query Parameters",
+              "type": "string",
+              "description": "Query Parameters used for the web page. This is normally the value of a string after `?` in the url.",
+              "meta:titleId": "formfilledout##xdm:queryParameters##title##34301",
+              "meta:descriptionId": "formfilledout##xdm:queryParameters##description##69451",
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:queryParameters",
+              "tagNumber": 3
+            }
+          },
+          "meta:xdmField": "xdm:webPageDetails",
+          "tagNumber": 2
+        },
+        "webReferrer": {
+          "title": "Web Referrer",
+          "type": "object",
+          "meta:titleId": "formfilledout##xdm:webReferrer##title##42681",
+          "meta:xdmType": "object",
+          "properties": {
+            "URL": {
+              "title": "URL",
+              "type": "string",
+              "description": "The referrer URL.",
+              "meta:titleId": "formfilledout##xdm:URL##title##38591",
+              "meta:descriptionId": "formfilledout##xdm:URL##description##48901",
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:URL",
+              "tagNumber": 1
+            }
+          },
+          "meta:xdmField": "xdm:webReferrer",
+          "tagNumber": 3
+        }
+      },
+      "meta:xdmField": "xdm:web",
+      "tagNumber": 1
+    },
+    "environment": {
+      "title": "Environment",
+      "type": "object",
+      "description": "The information related to web page and link of the ExperienceEvent.",
+      "meta:titleId": "formfilledout##xdm:environment##title##52861",
+      "meta:descriptionId": "formfilledout##xdm:environment##description##45761",
+      "meta:xdmType": "object",
+      "properties": {
+        "ipV4": {
+          "title": "IPv4",
+          "type": "string",
+          "format": "ipv4",
+          "description": "The numerical label assigned to a device participating in a computer network that uses the Internet Protocol for communication.",
+          "meta:titleId": "formfilledout##xdm:ipV4##title##89171",
+          "meta:descriptionId": "formfilledout##xdm:ipV4##description##38441",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:ipV4",
+          "tagNumber": 1
+        },
+        "browserDetails": {
+          "title": "Browser details",
+          "type": "object",
+          "description": "The browser specific details such as browser name, version, javascript version, user agent string, and accept language.",
+          "meta:titleId": "formfilledout##xdm:browserDetails##title##73971",
+          "meta:descriptionId": "formfilledout##xdm:browserDetails##description##26001",
+          "meta:xdmType": "object",
+          "properties": {
+            "userAgent": {
+              "title": "User agent",
+              "type": "string",
+              "description": "The HTTP user-agent string from the client request.",
+              "meta:titleId": "formfilledout##xdm:userAgent##title##69601",
+              "meta:descriptionId": "formfilledout##xdm:userAgent##description##75941",
+              "meta:xdmType": "string",
+              "meta:xdmField": "xdm:userAgent",
+              "tagNumber": 1
+            }
+          },
+          "meta:xdmField": "xdm:browserDetails",
+          "tagNumber": 2
+        }
+      },
+      "meta:xdmField": "xdm:environment",
+      "tagNumber": 2
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/mixins/events/formfilledout",
+  "meta:altId": "_xdm.mixins.events.formfilledout",
+  "id": "_xdm.mixins.events.formfilledout"
+}

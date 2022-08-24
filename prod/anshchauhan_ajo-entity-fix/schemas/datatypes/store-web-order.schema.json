@@ -1,0 +1,92 @@
+{
+  "id": "_xdm.datatypes.store-web-order",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Store and Web Order",
+  "type": "object",
+  "description": "The order placed via a store or web portal.",
+  "meta:status": "experimental",
+  "meta:xdmType": "object",
+  "properties": {
+    "orderID": {
+      "title": "Order ID",
+      "type": "string",
+      "description": "Unique identifier assigned by the seller for this order. There is no guarantee that the ID is unique.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:orderID",
+      "tagNumber": 1
+    },
+    "orderDate": {
+      "title": "Order Date",
+      "type": "string",
+      "format": "date-time",
+      "description": "The date and time when the order was placed.",
+      "meta:xdmType": "date-time",
+      "meta:xdmField": "xdm:orderDate",
+      "tagNumber": 2
+    },
+    "priceTotal": {
+      "title": "Price Total",
+      "type": "number",
+      "description": "The total price of this order after all discounts and taxes have been applied.",
+      "meta:xdmType": "number",
+      "meta:xdmField": "xdm:priceTotal",
+      "tagNumber": 3
+    },
+    "payment": {
+      "title": "Payment Details",
+      "type": "object",
+      "description": "Payment related information.",
+      "meta:xdmType": "object",
+      "properties": {
+        "transactionID": {
+          "title": "Transaction ID",
+          "type": "string",
+          "description": "Unique identifier assigned by the payment system.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:transactionID",
+          "tagNumber": 1
+        },
+        "paymentType": {
+          "title": "Payment Type",
+          "type": "string",
+          "description": "Type of payment used.",
+          "enum": [
+            "credit",
+            "debit",
+            "gift",
+            "cash"
+          ],
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:paymentType",
+          "tagNumber": 2
+        },
+        "paymentAmount": {
+          "title": "Payment Amount",
+          "type": "number",
+          "description": "Unique identifier assigned by the payment system.",
+          "meta:xdmType": "number",
+          "meta:xdmField": "xdm:paymentAmount",
+          "tagNumber": 3
+        },
+        "currencyCode": {
+          "title": "Currency",
+          "type": "string",
+          "examples": [
+            "USD",
+            "EUR"
+          ],
+          "pattern": "^[A-Z]{3}$",
+          "description": "The ISO 4217 currency code used for the order totals.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:currencyCode",
+          "tagNumber": 4
+        }
+      },
+      "meta:xdmField": "xdm:payment",
+      "tagNumber": 4
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/datatypes/store-web-order",
+  "meta:altId": "_xdm.datatypes.store-web-order",
+  "id": "_xdm.datatypes.store-web-order"
+}

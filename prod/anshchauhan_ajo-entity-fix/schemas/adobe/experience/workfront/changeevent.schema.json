@@ -1,0 +1,165 @@
+{
+  "id": "_experience.workfront.changeevent",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Workfront Change Event",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "description": "Data associated with a change event within Workfront project execution",
+  "meta:status": [
+    "experimental",
+    "stable"
+  ],
+  "meta:xdmType": "object",
+  "meta:createdDate": "2020-08-10",
+  "meta:titleId": "time-series##title##66611",
+  "meta:descriptionId": "time-series##description##35031",
+  "properties": {
+    "_id": {
+      "title": "Identifier",
+      "type": "string",
+      "format": "uri-reference",
+      "description": "A unique identifier for the time-series event.",
+      "meta:titleId": "time-series##@id##title##97851",
+      "meta:descriptionId": "time-series##@id##description##91771",
+      "meta:xdmType": "string",
+      "meta:xdmField": "@id",
+      "tagNumber": 1
+    },
+    "timestamp": {
+      "title": "Timestamp",
+      "type": "string",
+      "format": "date-time",
+      "description": "The time when an event or observation occurred.",
+      "meta:titleId": "time-series##xdm:timestamp##title##71321",
+      "meta:descriptionId": "time-series##xdm:timestamp##description##1861",
+      "meta:xdmType": "date-time",
+      "meta:xdmField": "xdm:timestamp",
+      "tagNumber": 2
+    },
+    "eventType": {
+      "title": "Event Type",
+      "type": "string",
+      "description": "The primary event type for this time-series record.",
+      "meta:titleId": "time-series##xdm:eventType##title##79221",
+      "meta:descriptionId": "time-series##xdm:eventType##description##27681",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:eventType",
+      "tagNumber": 3
+    },
+    "_workfront": {
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "created": {
+          "title": "Created",
+          "description": "Set to 1 if this was a created event",
+          "type": "integer",
+          "meta:xdmType": "int",
+          "meta:xdmField": "workfront:created",
+          "tagNumber": 1
+        },
+        "updated": {
+          "title": "Updated",
+          "description": "Set to 1 if this was a updated event",
+          "type": "integer",
+          "meta:xdmType": "int",
+          "meta:xdmField": "workfront:updated",
+          "tagNumber": 2
+        },
+        "deleted": {
+          "title": "Deleted",
+          "description": "Set to 1 if this was a deleted event",
+          "type": "integer",
+          "meta:xdmType": "int",
+          "meta:xdmField": "workfront:deleted",
+          "tagNumber": 3
+        },
+        "completed": {
+          "title": "Completed",
+          "description": "Set to 1 if this was a completed event",
+          "type": "integer",
+          "meta:xdmType": "int",
+          "meta:xdmField": "workfront:completed",
+          "tagNumber": 4
+        },
+        "objectName": {
+          "title": "Object Name",
+          "description": "Name assigned to this object",
+          "type": "string",
+          "meta:xdmType": "string",
+          "meta:xdmField": "workfront:objectName",
+          "tagNumber": 5
+        },
+        "objectID": {
+          "title": "Object ID",
+          "description": "The ID of this object",
+          "type": "string",
+          "meta:xdmType": "string",
+          "meta:xdmField": "workfront:objectID",
+          "tagNumber": 6
+        },
+        "objectType": {
+          "title": "Object Type",
+          "description": "The type of object",
+          "type": "string",
+          "meta:xdmType": "string",
+          "meta:xdmField": "workfront:objectType",
+          "tagNumber": 7
+        },
+        "parentID": {
+          "title": "Parent Object ID",
+          "description": "The ID of the parent object",
+          "type": "string",
+          "meta:xdmType": "string",
+          "meta:xdmField": "workfront:parentID",
+          "tagNumber": 8
+        },
+        "parentObjectType": {
+          "title": "Parent Object Type",
+          "description": "String value representing the type of parent - PROJECT, TASK, etc.",
+          "type": "string",
+          "meta:xdmType": "string",
+          "meta:xdmField": "workfront:parentObjectType",
+          "tagNumber": 9
+        },
+        "customData": {
+          "title": "Custom Form Fields",
+          "description": "Custom form data in the form of key/value pairs",
+          "type": "object",
+          "meta:xdmType": "map",
+          "meta:xdmField": "workfront:customData",
+          "tagNumber": 10,
+          "properties": {
+            "mapObj": {
+              "type": "string",
+              "meta:xdmType": "string",
+              "tagNumber": 1
+            }
+          }
+        },
+        "creationDate": {
+          "title": "Creation Date",
+          "description": "The entry date from the source system",
+          "type": "string",
+          "format": "date-time",
+          "meta:xdmType": "date-time",
+          "meta:xdmField": "workfront:creationDate",
+          "tagNumber": 11
+        },
+        "createdByEmployeeID": {
+          "title": "Created By ID",
+          "type": "string",
+          "description": "The employeeID involved in the CREATE event",
+          "meta:xdmType": "string",
+          "meta:xdmField": "workfront:createdByEmployeeID",
+          "tagNumber": 12
+        }
+      },
+      "tagNumber": 4
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/experience/workfront/changeevent",
+  "meta:altId": "_experience.workfront.changeevent",
+  "id": "_experience.workfront.changeevent"
+}
