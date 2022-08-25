@@ -48,6 +48,13 @@
           "type": "object",
           "meta:xdmType": "object",
           "properties": {
+            "propositionEventType": {
+              "title": "Proposition Event",
+              "description": "A record of how the user interacted with the proposition. All propositions recorded on this event will be associated with the same event that is recorded here.",
+              "$ref": "proposition-event-type.schema.json",
+              "meta:xdmField": "https://ns.adobe.com/experience/decisioning/propositionEventType",
+              "tagNumber": 1
+            },
             "propositions": {
               "title": "Involved Propositions",
               "type": "array",
@@ -60,7 +67,7 @@
                 "tagNumber": 1
               },
               "meta:xdmField": "https://ns.adobe.com/experience/decisioning/propositions",
-              "tagNumber": 1
+              "tagNumber": 2
             }
           },
           "tagNumber": 1

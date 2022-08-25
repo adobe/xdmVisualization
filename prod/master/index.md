@@ -161,8 +161,8 @@
 <details>
 <summary>customerJourneyManagement</summary>
 <ul>
-<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.customerJourneyManagement.ajo-entity.html">ajo-entity</a></li>
-<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.customerJourneyManagement.ajo-execution-entity.html">ajo-execution-entity</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.customerJourneyManagement.ajo-entity-class.html">ajo-entity-class</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.customerJourneyManagement.ajo-entity-mixins.html">ajo-entity-mixins</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.customerJourneyManagement.message-delivery-feedback.html">message-delivery-feedback</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.customerJourneyManagement.message-interaction.html">message-interaction</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.customerJourneyManagement.messageexecution.html">messageexecution</a></li>
@@ -205,6 +205,7 @@
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.decisioning.proposition.html">proposition</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.decisioning.proposition-detail.html">proposition-detail</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.decisioning.proposition-details.html">proposition-details</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.decisioning.proposition-event-type.html">proposition-event-type</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.decisioning.proposition-interaction-detail.html">proposition-interaction-detail</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.decisioning.proposition-metric-profile.html">proposition-metric-profile</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.decisioning.proposition-metric-total.html">proposition-metric-total</a></li>

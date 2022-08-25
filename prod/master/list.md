@@ -460,6 +460,7 @@
 [adobe.experience.decisioning.criteria](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.decisioning.criteria.html)<br/>
 [adobe.experience.decisioning.profile-constraints](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.decisioning.profile-constraints.html)<br/>
 [adobe.experience.decisioning.option](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.decisioning.option.html)<br/>
+[adobe.experience.decisioning.proposition-event-type](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.decisioning.proposition-event-type.html)<br/>
 [adobe.experience.decisioning.content-component-details](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.decisioning.content-component-details.html)<br/>
 [adobe.experience.decisioning.proposition-metric-total](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.decisioning.proposition-metric-total.html)<br/>
 [adobe.experience.aep-mobile-lifecycle-details](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.aep-mobile-lifecycle-details.html)<br/>
@@ -498,15 +499,15 @@
 [adobe.experience.campaign.experienceevent-profile-segmentation](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.campaign.experienceevent-profile-segmentation.html)<br/>
 [adobe.experience.campaign-experienceevent](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.campaign-experienceevent.html)<br/>
 [adobe.experience.customerJourneyManagement.offers](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.customerJourneyManagement.offers.html)<br/>
+[adobe.experience.customerJourneyManagement.ajo-entity-class](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.customerJourneyManagement.ajo-entity-class.html)<br/>
 [adobe.experience.customerJourneyManagement.secondary-recipient-detail](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.customerJourneyManagement.secondary-recipient-detail.html)<br/>
 [adobe.experience.customerJourneyManagement.message-delivery-feedback](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.customerJourneyManagement.message-delivery-feedback.html)<br/>
 [adobe.experience.customerJourneyManagement.profile-counters-v2](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.customerJourneyManagement.profile-counters-v2.html)<br/>
+[adobe.experience.customerJourneyManagement.ajo-entity-mixins](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.customerJourneyManagement.ajo-entity-mixins.html)<br/>
 [adobe.experience.customerJourneyManagement.messageprofile](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.customerJourneyManagement.messageprofile.html)<br/>
 [adobe.experience.customerJourneyManagement.message-interaction](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.customerJourneyManagement.message-interaction.html)<br/>
 [adobe.experience.customerJourneyManagement.processing-flow-timeline](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.customerJourneyManagement.processing-flow-timeline.html)<br/>
 [adobe.experience.customerJourneyManagement.messageexecution](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.customerJourneyManagement.messageexecution.html)<br/>
-[adobe.experience.customerJourneyManagement.ajo-execution-entity](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.customerJourneyManagement.ajo-execution-entity.html)<br/>
-[adobe.experience.customerJourneyManagement.ajo-entity](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.customerJourneyManagement.ajo-entity.html)<br/>
 [adobe.experience.mobile-lifecycle-details-test](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.mobile-lifecycle-details-test.html)<br/>
 [adobe.experience.experienceevent-edgeregion](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.experienceevent-edgeregion.html)<br/>
 [adobe.experience.journeyOrchestration.journeyOrchestrationIdentity](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.journeyOrchestration.journeyOrchestrationIdentity.html)<br/>
