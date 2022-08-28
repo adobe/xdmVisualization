@@ -1,0 +1,95 @@
+{
+  "type": "object",
+  "meta:xdmType": "object",
+  "properties": {
+    "sourceCampaignMemberID": {
+      "title": "Source Campaign Member ID",
+      "description": "Campaign member unique identifier at source.",
+      "$ref": "../datatypes/b2b/b2b-source.schema.json",
+      "meta:titleId": "campaign-member-components##xdm:sourceCampaignMemberID##title##63131",
+      "meta:descriptionId": "campaign-member-components##xdm:sourceCampaignMemberID##description##22311",
+      "meta:xdmField": "xdm:sourceCampaignMemberID",
+      "tagNumber": 1
+    },
+    "sourceCampaignID": {
+      "title": "Source Campaign ID",
+      "description": "Campaign unique identifier at the source.",
+      "$ref": "../datatypes/b2b/b2b-source.schema.json",
+      "meta:titleId": "campaign-member-components##xdm:sourceCampaignID##title##7131",
+      "meta:descriptionId": "campaign-member-components##xdm:sourceCampaignID##description##26431",
+      "meta:xdmField": "xdm:sourceCampaignID",
+      "tagNumber": 2
+    },
+    "sourceExternalID": {
+      "title": "Source External ID",
+      "description": "External unique identifier at the source.",
+      "$ref": "../datatypes/b2b/b2b-source.schema.json",
+      "meta:titleId": "campaign-member-components##xdm:sourceExternalID##title##40131",
+      "meta:descriptionId": "campaign-member-components##xdm:sourceExternalID##description##76961",
+      "meta:xdmField": "xdm:sourceExternalID",
+      "tagNumber": 3
+    },
+    "sourcePersonID": {
+      "title": "Source Person ID",
+      "description": "Campaign owner unique identifier at the source.",
+      "$ref": "../datatypes/b2b/b2b-source.schema.json",
+      "meta:titleId": "campaign-member-components##xdm:sourcePersonID##title##40431",
+      "meta:descriptionId": "campaign-member-components##xdm:sourcePersonID##description##3171",
+      "meta:xdmField": "xdm:sourcePersonID",
+      "tagNumber": 4
+    },
+    "sourceAcquiredByCampaignID": {
+      "title": "Source Acquired By CampaignID",
+      "description": "",
+      "$ref": "../datatypes/b2b/b2b-source.schema.json",
+      "meta:titleId": "campaign-member-components##xdm:sourceAcquiredByCampaignID##title##30871",
+      "meta:descriptionId": "campaign-member-components##xdm:sourceAcquiredByCampaignID##description##45471",
+      "meta:xdmField": "xdm:sourceAcquiredByCampaignID",
+      "tagNumber": 5
+    },
+    "memberStatus": {
+      "title": "Source Campaign Member Status",
+      "description": "",
+      "type": "string",
+      "meta:titleId": "campaign-member-components##xdm:memberStatus##title##43131",
+      "meta:descriptionId": "campaign-member-components##xdm:memberStatus##description##11891",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:memberStatus",
+      "tagNumber": 6
+    },
+    "memberStatusReason": {
+      "title": "Source Status Reason",
+      "description": "",
+      "type": "string",
+      "meta:titleId": "campaign-member-components##xdm:memberStatusReason##title##51491",
+      "meta:descriptionId": "campaign-member-components##xdm:memberStatusReason##description##99341",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:memberStatusReason",
+      "tagNumber": 7
+    },
+    "hasReachedSuccess": {
+      "title": "Source Has Reached Success",
+      "description": "",
+      "type": "boolean",
+      "meta:titleId": "campaign-member-components##xdm:hasReachedSuccess##title##76221",
+      "meta:descriptionId": "campaign-member-components##xdm:hasReachedSuccess##description##90611",
+      "meta:xdmType": "boolean",
+      "meta:xdmField": "xdm:hasReachedSuccess",
+      "tagNumber": 8
+    },
+    "reachedSuccessDate": {
+      "title": "Source Reached Success Date",
+      "description": "",
+      "type": "string",
+      "format": "date-time",
+      "meta:titleId": "campaign-member-components##xdm:reachedSuccessDate##title##22071",
+      "meta:descriptionId": "campaign-member-components##xdm:reachedSuccessDate##description##92491",
+      "meta:xdmType": "date-time",
+      "meta:xdmField": "xdm:reachedSuccessDate",
+      "tagNumber": 9
+    }
+  },
+  "tagNumber": 1,
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "id": "obj6864172741313264.schema.json"
+}
