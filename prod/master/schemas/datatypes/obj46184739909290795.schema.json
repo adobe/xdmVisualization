@@ -1,0 +1,31 @@
+{
+  "type": "object",
+  "description": "User-agent associated commercial name with significant versions.",
+  "meta:descriptionId": "browserdetails##items##description##47111",
+  "meta:xdmType": "object",
+  "properties": {
+    "brand": {
+      "title": "Brand",
+      "type": "string",
+      "description": "The user-agent's commercial name (e.g., cURL, Edge).",
+      "meta:titleId": "browserdetails##xdm:brand##title##30831",
+      "meta:descriptionId": "browserdetails##xdm:brand##description##7011",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:brand",
+      "tagNumber": 1
+    },
+    "version": {
+      "title": "Significant version",
+      "type": "string",
+      "description": "The marketing version which includes distinguishable web-exposed features (e.g., 72, 3, or 12.1), corresponding to the user-agent.",
+      "meta:titleId": "browserdetails##xdm:version##title##28851",
+      "meta:descriptionId": "browserdetails##xdm:version##description##4681",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:version",
+      "tagNumber": 2
+    }
+  },
+  "tagNumber": 1,
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "id": "obj46184739909290795.schema.json"
+}
