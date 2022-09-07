@@ -9,7 +9,7 @@
   "meta:conditionalField": "xdm:eventType",
   "meta:conditionalValue": "leadOperation.newLead",
   "description": "Use to record the creation and details of a new marketing lead.",
-  "meta:status": "experimental",
+  "meta:status": "stable",
   "meta:createdDate": "2021-02-19",
   "meta:titleId": "new-lead##title##47891",
   "meta:descriptionId": "new-lead##description##83991",

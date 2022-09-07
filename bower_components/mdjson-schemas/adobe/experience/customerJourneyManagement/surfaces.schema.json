@@ -1,0 +1,52 @@
+{
+  "id": "_experience.customerjourneymanagement.surfaces",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Adobe CJM ExperienceEvent - Surfaces",
+  "description": "Surfaces for the Adobe CJM ExperienceEvent.",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:status": "stable",
+  "meta:xdmType": "object",
+  "properties": {
+    "_experience": {
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "customerJourneyManagement": {
+          "type": "object",
+          "meta:xdmType": "object",
+          "properties": {
+            "surfaces": {
+              "title": "Surfaces",
+              "type": "array",
+              "description": "Array of Surface for AJO Inbound channel delivery",
+              "meta:xdmType": "array",
+              "items": {
+                "type": "string",
+                "meta:xdmType": "string",
+                "tagNumber": 1
+              },
+              "meta:xdmField": "https://ns.adobe.com/experience/customerJourneyManagement/surfaces",
+              "tagNumber": 1
+            }
+          },
+          "required": [
+            "surfaces"
+          ],
+          "tagNumber": 1
+        }
+      },
+      "required": [
+        "customerJourneyManagement"
+      ],
+      "tagNumber": 1
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/experience/customerJourneyManagement/surfaces",
+  "meta:altId": "_experience.customerjourneymanagement.surfaces",
+  "required": [
+    "_experience"
+  ],
+  "id": "_experience.customerjourneymanagement.surfaces"
+}

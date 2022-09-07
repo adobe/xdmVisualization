@@ -1,0 +1,31 @@
+{
+  "id": "_xdm.datatypes.custommetadatadetails",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Custom metadata details information",
+  "type": "object",
+  "meta:status": "experimental",
+  "meta:extensible": true,
+  "description": "Custom metadata details information.",
+  "meta:xdmType": "object",
+  "properties": {
+    "name": {
+      "title": "Custom Metadata Field Name",
+      "type": "string",
+      "description": "The name of the custom field.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:name",
+      "tagNumber": 1
+    },
+    "value": {
+      "title": "Custom Metadata Field Value",
+      "type": "string",
+      "description": "The value of the custom field.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:value",
+      "tagNumber": 2
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/datatypes/customMetadataDetails",
+  "meta:altId": "_xdm.datatypes.custommetadatadetails",
+  "id": "_xdm.datatypes.custommetadatadetails"
+}

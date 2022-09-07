@@ -1,55 +1,14 @@
 # XDM Visualization
 ## Git Repo Branch: master
 ### Standard XDM Schemas
-[uberschemas.health_and_life_sciences.profile-generated-health_and_life_sciences](http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.health_and_life_sciences.profile-generated-health_and_life_sciences.html)<br/>
-[uberschemas.health_and_life_sciences.experienceevent-generated-health_and_life_sciences](http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.health_and_life_sciences.experienceevent-generated-health_and_life_sciences.html)<br/>
-[uberschemas.media_and_entertainment.profile-generated-media_and_entertainment](http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.media_and_entertainment.profile-generated-media_and_entertainment.html)<br/>
-[uberschemas.media_and_entertainment.experienceevent-generated-media_and_entertainment](http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.media_and_entertainment.experienceevent-generated-media_and_entertainment.html)<br/>
-[uberschemas.product-generated](http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.product-generated.html)<br/>
-[uberschemas.opportunity-contact-role-generated](http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.opportunity-contact-role-generated.html)<br/>
-[uberschemas.opportunity-person-generated](http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.opportunity-person-generated.html)<br/>
-[uberschemas.location-generated](http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.location-generated.html)<br/>
-[uberschemas.weather-generated](http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.weather-generated.html)<br/>
 [uberschemas.campaign-generated](http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.campaign-generated.html)<br/>
-[uberschemas.opportunity-generated](http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.opportunity-generated.html)<br/>
-[uberschemas.financial_services.experienceevent-generated-financial_services](http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.financial_services.experienceevent-generated-financial_services.html)<br/>
-[uberschemas.financial_services.profile-generated-financial_services](http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.financial_services.profile-generated-financial_services.html)<br/>
-[uberschemas.profile-generated](http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.profile-generated.html)<br/>
-[uberschemas.healthcare_services.plan-generated-healthcare_services](http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.healthcare_services.plan-generated-healthcare_services.html)<br/>
-[uberschemas.healthcare_services.medication-generated-healthcare_services](http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.healthcare_services.medication-generated-healthcare_services.html)<br/>
-[uberschemas.healthcare_services.provider-generated-healthcare_services](http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.healthcare_services.provider-generated-healthcare_services.html)<br/>
-[uberschemas.healthcare_services.profile-generated-healthcare_services](http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.healthcare_services.profile-generated-healthcare_services.html)<br/>
-[uberschemas.healthcare_services.experienceevent-generated-healthcare_services](http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.healthcare_services.experienceevent-generated-healthcare_services.html)<br/>
 [uberschemas.education.profile-generated-education](http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.education.profile-generated-education.html)<br/>
 [uberschemas.education.experienceevent-generated-education](http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.education.experienceevent-generated-education.html)<br/>
-[uberschemas.marketing-list-generated](http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.marketing-list-generated.html)<br/>
-[uberschemas.travel_and_hospitality.profile-generated-travel_and_hospitality](http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.travel_and_hospitality.profile-generated-travel_and_hospitality.html)<br/>
-[uberschemas.travel_and_hospitality.experienceevent-generated-travel_and_hospitality](http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.travel_and_hospitality.experienceevent-generated-travel_and_hospitality.html)<br/>
-[uberschemas.travel_and_hospitality.location-generated-travel_and_hospitality](http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.travel_and_hospitality.location-generated-travel_and_hospitality.html)<br/>
-[uberschemas.travel_and_hospitality.live-event-schedule-generated-travel_and_hospitality](http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.travel_and_hospitality.live-event-schedule-generated-travel_and_hospitality.html)<br/>
-[uberschemas.segmentdefinition-generated](http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.segmentdefinition-generated.html)<br/>
-[uberschemas.medication-generated](http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.medication-generated.html)<br/>
-[uberschemas.retail.experienceevent-generated-retail](http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.retail.experienceevent-generated-retail.html)<br/>
-[uberschemas.retail.profile-generated-retail](http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.retail.profile-generated-retail.html)<br/>
-[uberschemas.graphs-generated](http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.graphs-generated.html)<br/>
-[uberschemas.plan-generated](http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.plan-generated.html)<br/>
-[uberschemas.high_tech.experienceevent-generated-high_tech](http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.high_tech.experienceevent-generated-high_tech.html)<br/>
-[uberschemas.high_tech.profile-generated-high_tech](http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.high_tech.profile-generated-high_tech.html)<br/>
 [uberschemas.automotive.profile-generated-automotive](http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.automotive.profile-generated-automotive.html)<br/>
 [uberschemas.automotive.experienceevent-generated-automotive](http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.automotive.experienceevent-generated-automotive.html)<br/>
-[uberschemas.experienceevent-generated](http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.experienceevent-generated.html)<br/>
-[uberschemas.manufacturing.profile-generated-manufacturing](http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.manufacturing.profile-generated-manufacturing.html)<br/>
-[uberschemas.manufacturing.experienceevent-generated-manufacturing](http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.manufacturing.experienceevent-generated-manufacturing.html)<br/>
-[uberschemas.telecom.experienceevent-generated-telecom](http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.telecom.experienceevent-generated-telecom.html)<br/>
-[uberschemas.telecom.profile-generated-telecom](http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.telecom.profile-generated-telecom.html)<br/>
 [uberschemas.account-generated](http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.account-generated.html)<br/>
-[uberschemas.live-event-schedule-generated](http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.live-event-schedule-generated.html)<br/>
-[uberschemas.marketing-list-member-generated](http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.marketing-list-member-generated.html)<br/>
-[uberschemas.provider-generated](http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.provider-generated.html)<br/>
 [uberschemas.account-person-generated](http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.account-person-generated.html)<br/>
 [uberschemas.campaign-member-generated](http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.campaign-member-generated.html)<br/>
-[uberschemas.public_sector.experienceevent-generated-public_sector](http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.public_sector.experienceevent-generated-public_sector.html)<br/>
-[uberschemas.public_sector.profile-generated-public_sector](http://opensource.adobe.com/xdmVisualization/prod/master/uberschemas.public_sector.profile-generated-public_sector.html)<br/>
 ### Standard Core Components
 #### behaviors
 [behaviors.time-series](http://opensource.adobe.com/xdmVisualization/prod/master/behaviors.time-series.html)<br/>
@@ -91,6 +50,7 @@
 [datatypes.device](http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.device.html)<br/>
 [datatypes.shipping](http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.shipping.html)<br/>
 [datatypes.identityitem](http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.identityitem.html)<br/>
+[datatypes.custommetadatadetails](http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.custommetadatadetails.html)<br/>
 [datatypes.currency](http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.currency.html)<br/>
 [datatypes.environment](http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.environment.html)<br/>
 [datatypes.qoedatadetails](http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.qoedatadetails.html)<br/>
@@ -105,13 +65,13 @@
 [datatypes.person.person-name](http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.person.person-name.html)<br/>
 [datatypes.webinfo](http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.webinfo.html)<br/>
 [datatypes.store-web-order](http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.store-web-order.html)<br/>
+[datatypes.mediaevent](http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.mediaevent.html)<br/>
 [datatypes.advertisingpoddetails](http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.advertisingpoddetails.html)<br/>
 [datatypes.poi-detail](http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.poi-detail.html)<br/>
 [datatypes.advertisingdetails](http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.advertisingdetails.html)<br/>
 [datatypes.cart](http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.cart.html)<br/>
 [datatypes.optinout-additional-details](http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.optinout-additional-details.html)<br/>
 [datatypes.product](http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.product.html)<br/>
-[datatypes.playereventdetails](http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.playereventdetails.html)<br/>
 [datatypes.pushnotificationtoken](http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.pushnotificationtoken.html)<br/>
 [datatypes.b2b.account-organization](http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.b2b.account-organization.html)<br/>
 [datatypes.b2b.organization](http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.b2b.organization.html)<br/>
@@ -180,6 +140,7 @@
 [datatypes.segmentmembershipitem](http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.segmentmembershipitem.html)<br/>
 [datatypes.application](http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.application.html)<br/>
 [datatypes.segmentmembership](http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.segmentmembership.html)<br/>
+[datatypes.mediadetails](http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.mediadetails.html)<br/>
 [datatypes.profilestitchidentity](http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.profilestitchidentity.html)<br/>
 [datatypes.channels.channel](http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.channels.channel.html)<br/>
 [datatypes.channels.application](http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.channels.application.html)<br/>
@@ -272,16 +233,15 @@
 [fieldgroups.experience-event.experienceevent-pushtracking](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.experienceevent-pushtracking.html)<br/>
 [fieldgroups.experience-event.experienceevent-offer-impression-details](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.experienceevent-offer-impression-details.html)<br/>
 [fieldgroups.experience-event.experienceevent-file-upload-details](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.experienceevent-file-upload-details.html)<br/>
+[fieldgroups.experience-event.experienceevent-media-analytics](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.experienceevent-media-analytics.html)<br/>
 [fieldgroups.experience-event.experienceevent-reference-keys](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.experienceevent-reference-keys.html)<br/>
 [fieldgroups.experience-event.experienceevent-channel](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.experienceevent-channel.html)<br/>
 [fieldgroups.experience-event.experienceevent-web](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.experienceevent-web.html)<br/>
-[fieldgroups.experience-event.experienceevent-media-reporting](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.experienceevent-media-reporting.html)<br/>
 [fieldgroups.experience-event.experienceevent-privacy](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.experienceevent-privacy.html)<br/>
 [fieldgroups.experience-event.experienceevent-search](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.experienceevent-search.html)<br/>
 [fieldgroups.experience-event.experienceevent-file-download-details](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.experienceevent-file-download-details.html)<br/>
 [fieldgroups.experience-event.experienceevent-advertising](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.experienceevent-advertising.html)<br/>
 [fieldgroups.experience-event.experienceevent-environment-details](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.experienceevent-environment-details.html)<br/>
-[fieldgroups.experience-event.experienceevent-media-collection](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.experienceevent-media-collection.html)<br/>
 [fieldgroups.experience-event.experienceevent-media](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.experienceevent-media.html)<br/>
 [fieldgroups.experience-event.experienceevent-survey-response-details](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.experienceevent-survey-response-details.html)<br/>
 [fieldgroups.experience-event.experienceevent-application](http://opensource.adobe.com/xdmVisualization/prod/master/fieldgroups.experience-event.experienceevent-application.html)<br/>
@@ -506,6 +466,7 @@
 [adobe.experience.customerJourneyManagement.ajo-entity-mixins](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.customerJourneyManagement.ajo-entity-mixins.html)<br/>
 [adobe.experience.customerJourneyManagement.messageprofile](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.customerJourneyManagement.messageprofile.html)<br/>
 [adobe.experience.customerJourneyManagement.message-interaction](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.customerJourneyManagement.message-interaction.html)<br/>
+[adobe.experience.customerJourneyManagement.surfaces](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.customerJourneyManagement.surfaces.html)<br/>
 [adobe.experience.customerJourneyManagement.processing-flow-timeline](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.customerJourneyManagement.processing-flow-timeline.html)<br/>
 [adobe.experience.customerJourneyManagement.messageexecution](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.customerJourneyManagement.messageexecution.html)<br/>
 [adobe.experience.mobile-lifecycle-details-test](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.mobile-lifecycle-details-test.html)<br/>

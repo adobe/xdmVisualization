@@ -25,7 +25,6 @@
           "title": "Opportunity ID",
           "type": "string",
           "description": "Unique identifier of the Opportunity",
-          "meta:status": "experimental",
           "meta:titleId": "opportunityupdated##xdm:opportunityID##title##98021",
           "meta:descriptionId": "opportunityupdated##xdm:opportunityID##description##64771",
           "meta:xdmType": "string",
@@ -51,7 +50,7 @@
           "meta:xdmField": "xdm:dataValueChanges",
           "tagNumber": 3,
           "items": {
-            "$ref": "obj41662169876532995.schema.json"
+            "$ref": "obj41139670053086186.schema.json"
           }
         }
       },

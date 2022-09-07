@@ -9,7 +9,7 @@
   "meta:conditionalField": "xdm:eventType",
   "meta:conditionalValue": "leadOperation.scoreChanged",
   "description": "Use to capture details when the lead score of a person changes.",
-  "meta:status": "experimental",
+  "meta:status": "stable",
   "meta:createdDate": "2021-02-19",
   "meta:titleId": "scorechanged##title##37241",
   "meta:descriptionId": "scorechanged##description##17391",

@@ -1,0 +1,39 @@
+{
+  "id": "_xdm.datatypes.mediaevent",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Media event information",
+  "type": "object",
+  "meta:status": "experimental",
+  "meta:extensible": true,
+  "description": "Media event information.",
+  "meta:xdmType": "object",
+  "properties": {
+    "mediaCollection": {
+      "title": "Media Details",
+      "$ref": "mediadetails.schema.json",
+      "description": "Media details information related to the experience event.",
+      "meta:xdmField": "xdm:mediaCollection",
+      "tagNumber": 1
+    },
+    "mediaEventTimestamp": {
+      "title": "Media Timestamp",
+      "type": "string",
+      "format": "date-time",
+      "description": "The time when an event or observation occurred.",
+      "meta:xdmType": "date-time",
+      "meta:xdmField": "xdm:mediaEventTimestamp",
+      "tagNumber": 2
+    },
+    "mediaEventType": {
+      "title": "Media Event Type",
+      "type": "string",
+      "description": "The media event type.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:mediaEventType",
+      "tagNumber": 3
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/datatypes/mediaEvent",
+  "meta:altId": "_xdm.datatypes.mediaevent",
+  "id": "_xdm.datatypes.mediaevent"
+}

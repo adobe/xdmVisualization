@@ -1,0 +1,136 @@
+{
+  "id": "_xdm.datatypes.mediadetails",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Media details information",
+  "type": "object",
+  "meta:status": "experimental",
+  "meta:extensible": true,
+  "description": "Media details information.",
+  "meta:xdmType": "object",
+  "properties": {
+    "playhead": {
+      "title": "Playhead",
+      "type": "integer",
+      "minimum": 0,
+      "description": "If the content is live, the playhead must be the current second of the day, 0 <= playhead < 86400. If the content is recorded, the playhead must be the current second of content, 0 <= playhead < content length.",
+      "meta:xdmType": "int",
+      "meta:xdmField": "xdm:playhead",
+      "tagNumber": 1
+    },
+    "sessionID": {
+      "title": "Media Session ID",
+      "type": "string",
+      "description": "Identifies an instance of a content stream unique to an individual playback.",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:sessionID",
+      "tagNumber": 2
+    },
+    "sessionDetails": {
+      "title": "Session Details",
+      "$ref": "sessiondetails.schema.json",
+      "description": "Session details information related to the experience event.",
+      "meta:xdmField": "xdm:sessionDetails",
+      "tagNumber": 3
+    },
+    "advertisingDetails": {
+      "title": "Advertising Details",
+      "$ref": "advertisingdetails.schema.json",
+      "description": "Advertising details information related to the experience event.",
+      "meta:xdmField": "xdm:advertisingDetails",
+      "tagNumber": 4
+    },
+    "advertisingPodDetails": {
+      "title": "Advertising Pod Details",
+      "$ref": "advertisingpoddetails.schema.json",
+      "description": "Advertising pod details information related to the experience event.",
+      "meta:xdmField": "xdm:advertisingPodDetails",
+      "tagNumber": 5
+    },
+    "chapterDetails": {
+      "title": "Chapter Details",
+      "$ref": "chapterdetails.schema.json",
+      "description": "Chapter details information related to the experience event.",
+      "meta:xdmField": "xdm:chapterDetails",
+      "tagNumber": 6
+    },
+    "errorDetails": {
+      "title": "Error Details",
+      "$ref": "errordetails.schema.json",
+      "description": "Error details information related to the experience event.",
+      "meta:xdmField": "xdm:errorDetails",
+      "tagNumber": 7
+    },
+    "qoeDataDetails": {
+      "title": "Qoe Data Details",
+      "$ref": "qoedatadetails.schema.json",
+      "description": "Qoe data details information related to the experience event.",
+      "meta:xdmField": "xdm:qoeDataDetails",
+      "tagNumber": 8
+    },
+    "statesStart": {
+      "title": "List Of States Start",
+      "type": "array",
+      "description": "The list of states start.",
+      "meta:xdmType": "array",
+      "items": {
+        "$ref": "playerstatedata.schema.json",
+        "tagNumber": 1
+      },
+      "meta:xdmField": "xdm:statesStart",
+      "tagNumber": 9
+    },
+    "statesEnd": {
+      "title": "List Of States End",
+      "type": "array",
+      "description": "The list of states end.",
+      "meta:xdmType": "array",
+      "items": {
+        "$ref": "playerstatedata.schema.json",
+        "tagNumber": 1
+      },
+      "meta:xdmField": "xdm:statesEnd",
+      "tagNumber": 10
+    },
+    "states": {
+      "title": "List Of States",
+      "type": "array",
+      "description": "The list of states.",
+      "meta:xdmType": "array",
+      "items": {
+        "$ref": "playerstatedata.schema.json",
+        "tagNumber": 1
+      },
+      "meta:xdmField": "xdm:states",
+      "tagNumber": 11
+    },
+    "customMetadata": {
+      "title": "The Custom Metadata",
+      "type": "array",
+      "description": "The list of custom metadata.",
+      "meta:xdmType": "array",
+      "items": {
+        "$ref": "custommetadatadetails.schema.json",
+        "tagNumber": 1
+      },
+      "meta:xdmField": "xdm:customMetadata",
+      "tagNumber": 12
+    },
+    "endUserIDs": {
+      "title": "End User IDs",
+      "$ref": "enduserids.schema.json",
+      "description": "Condensed, normalized encapsulation of all end user identifiers. At least one of the fields is required.",
+      "meta:xdmField": "xdm:endUserIDs",
+      "tagNumber": 13
+    },
+    "implementationDetails": {
+      "title": "Implementation Details",
+      "$ref": "industry-verticals/implementationdetails.schema.json",
+      "description": "Details about the SDK, library, or service used in an application or web page implementation of a service.",
+      "meta:xdmField": "xdm:implementationDetails",
+      "tagNumber": 14
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/datatypes/mediaDetails",
+  "meta:altId": "_xdm.datatypes.mediadetails",
+  "id": "_xdm.datatypes.mediadetails"
+}

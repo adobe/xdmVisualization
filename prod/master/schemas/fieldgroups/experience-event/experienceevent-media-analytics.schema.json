@@ -1,0 +1,47 @@
+{
+  "id": "_xdm.mixins.experienceevent-media-analytics",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "MediaAnalytics Interaction Details ",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:tags": {
+    "industry": [
+      "all"
+    ]
+  },
+  "description": "Track interactions with media.",
+  "meta:status": "experimental",
+  "meta:xdmType": "object",
+  "properties": {
+    "mediaCollection": {
+      "title": "Media Collection Details",
+      "$ref": "../../datatypes/mediadetails.schema.json",
+      "description": "Media Collection related fields.",
+      "meta:xdmField": "xdm:mediaCollection",
+      "tagNumber": 1
+    },
+    "mediaReporting": {
+      "title": "Media Reporting Details",
+      "$ref": "../../datatypes/mediadetails.schema.json",
+      "description": "Media Reporting related fields.",
+      "meta:xdmField": "xdm:mediaReporting",
+      "tagNumber": 2
+    },
+    "mediaDownloadedEvents": {
+      "title": "List Of Media Collection Downloaded Content Events",
+      "type": "array",
+      "description": "The list of media collection downloaded content events.",
+      "meta:xdmType": "array",
+      "items": {
+        "$ref": "../../datatypes/mediaevent.schema.json",
+        "tagNumber": 1
+      },
+      "meta:xdmField": "xdm:mediaDownloadedEvents",
+      "tagNumber": 3
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/mixins/experienceevent-media-analytics",
+  "meta:altId": "_xdm.mixins.experienceevent-media-analytics",
+  "id": "_xdm.mixins.experienceevent-media-analytics"
+}

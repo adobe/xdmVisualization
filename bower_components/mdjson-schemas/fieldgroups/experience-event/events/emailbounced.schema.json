@@ -9,7 +9,7 @@
   "meta:conditionalField": "xdm:eventType",
   "meta:conditionalValue": "directMarketing.emailBounced",
   "description": "Use to capture details when email to person bounces.",
-  "meta:status": "experimental",
+  "meta:status": "stable",
   "meta:createdDate": "2020-12-02",
   "meta:titleId": "emailbounced##title##15731",
   "meta:descriptionId": "emailbounced##description##64041",

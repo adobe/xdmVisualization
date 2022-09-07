@@ -9,7 +9,7 @@
   "meta:conditionalField": "xdm:eventType",
   "meta:conditionalValue": "directMarketing.emailUnsubscribed",
   "description": "Use to capture details when a person unsubscribes from an email.",
-  "meta:status": "experimental",
+  "meta:status": "stable",
   "meta:createdDate": "2021-02-19",
   "meta:titleId": "emailunsubscribed##title##61161",
   "meta:descriptionId": "emailunsubscribed##description##19881",

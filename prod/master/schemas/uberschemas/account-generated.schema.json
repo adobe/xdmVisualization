@@ -59,7 +59,6 @@
       "title": "Account Identifier",
       "description": "Unique ID for the account.",
       "type": "string",
-      "meta:status": "experimental",
       "meta:titleId": "account##xdm:accountID##title##59121",
       "meta:descriptionId": "account##xdm:accountID##description##27991",
       "meta:xdmType": "string",
@@ -100,7 +99,7 @@
       "meta:xdmField": "xdm:accountComponents",
       "tagNumber": 6,
       "items": {
-        "$ref": "obj031422629488514486.schema.json"
+        "$ref": "obj974184302667674.schema.json"
       }
     },
     "accountName": {
@@ -165,7 +164,6 @@
       "title": "Parent Account",
       "description": "Parent company for companies that are subsidiaries of a larger company or organization. The parent account must be an existing account in salesforce. You can enter the account name, or select (or optionally, create) the account using the lookup icon.",
       "type": "string",
-      "meta:status": "experimental",
       "meta:titleId": "account-details##xdm:accountParentID##title##80371",
       "meta:descriptionId": "account-details##xdm:accountParentID##description##84671",
       "meta:xdmType": "string",

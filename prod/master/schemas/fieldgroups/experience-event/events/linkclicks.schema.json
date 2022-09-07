@@ -9,7 +9,7 @@
   "meta:conditionalField": "xdm:eventType",
   "meta:conditionalValue": "web.webInteraction.linkClicks",
   "description": "Use to capture details when a person clicks a link on a web page.",
-  "meta:status": "experimental",
+  "meta:status": "stable",
   "meta:createdDate": "2021-02-19",
   "meta:titleId": "linkclicks##title##9351",
   "meta:descriptionId": "linkclicks##description##92801",

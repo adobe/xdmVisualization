@@ -9,58 +9,53 @@
   "meta:abstract": true,
   "meta:xdmType": "object",
   "properties": {
-    "_experience": {
-      "type": "object",
-      "meta:xdmType": "object",
-      "properties": {
-        "decisioning": {
-          "type": "object",
-          "meta:xdmType": "object",
-          "properties": {
-            "propositionEventType": {
-              "type": "object",
-              "meta:xdmType": "object",
-              "properties": {
-                "send": {
-                  "title": "send",
-                  "description": "Proposition was sent to the client. This does not guarantee the proposition arrived or was displayed to the user.",
-                  "type": "integer",
-                  "meta:xdmType": "int",
-                  "meta:xdmField": "https://ns.adobe.com/experience/decisioning/proposition-event-type/send",
-                  "tagNumber": 1
-                },
-                "display": {
-                  "title": "display",
-                  "description": "Proposition was displayed to the user.",
-                  "type": "integer",
-                  "meta:xdmType": "int",
-                  "meta:xdmField": "https://ns.adobe.com/experience/decisioning/proposition-event-type/display",
-                  "tagNumber": 2
-                },
-                "interact": {
-                  "title": "interact",
-                  "description": "User interacted with the proposition, usually in a positive way.",
-                  "type": "integer",
-                  "meta:xdmType": "int",
-                  "meta:xdmField": "https://ns.adobe.com/experience/decisioning/proposition-event-type/interact",
-                  "tagNumber": 3
-                },
-                "dismiss": {
-                  "title": "dismiss",
-                  "description": "User dismissed the proposition without any other direct interaction.",
-                  "type": "integer",
-                  "meta:xdmType": "int",
-                  "meta:xdmField": "https://ns.adobe.com/experience/decisioning/proposition-event-type/dismiss",
-                  "tagNumber": 4
-                }
-              },
-              "tagNumber": 1
-            }
-          },
-          "tagNumber": 1
-        }
-      },
+    "send": {
+      "title": "send",
+      "description": "Proposition was sent to the client. This does not guarantee the proposition arrived or was displayed to the user.",
+      "type": "integer",
+      "meta:xdmType": "int",
+      "meta:xdmField": "xdm:send",
       "tagNumber": 1
+    },
+    "trigger": {
+      "title": "trigger",
+      "description": "Proposition was chosen to be displayed by the client SDK. Other factors may prevent it from actually being displayed.",
+      "type": "integer",
+      "meta:xdmType": "int",
+      "meta:xdmField": "xdm:trigger",
+      "tagNumber": 2
+    },
+    "display": {
+      "title": "display",
+      "description": "Proposition was displayed to the user.",
+      "type": "integer",
+      "meta:xdmType": "int",
+      "meta:xdmField": "xdm:display",
+      "tagNumber": 3
+    },
+    "interact": {
+      "title": "interact",
+      "description": "User interacted with the proposition, usually in a positive way.",
+      "type": "integer",
+      "meta:xdmType": "int",
+      "meta:xdmField": "xdm:interact",
+      "tagNumber": 4
+    },
+    "dismiss": {
+      "title": "dismiss",
+      "description": "User dismissed or rejected the proposition without any other direct interaction.",
+      "type": "integer",
+      "meta:xdmType": "int",
+      "meta:xdmField": "xdm:dismiss",
+      "tagNumber": 5
+    },
+    "unsubscribe": {
+      "title": "unsubscribe",
+      "description": "User has requested to not be shown the proposition in the future.",
+      "type": "integer",
+      "meta:xdmType": "int",
+      "meta:xdmField": "xdm:unsubscribe",
+      "tagNumber": 6
     }
   },
   "meta:xdmId": "https://ns.adobe.com/experience/decisioning/proposition-event-type",
