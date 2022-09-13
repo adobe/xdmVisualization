@@ -680,6 +680,110 @@
           },
           "meta:xdmField": "workfront:opTask",
           "tagNumber": 5
+        },
+        "category": {
+          "type": "object",
+          "title": "Category Attributes",
+          "meta:xdmType": "object",
+          "properties": {
+            "_workfront": {
+              "type": "object",
+              "meta:xdmType": "object",
+              "properties": {
+                "description": {
+                  "title": "Category Description",
+                  "description": "Description of the wf category object",
+                  "type": "string",
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "workfront:description",
+                  "tagNumber": 1
+                },
+                "isActive": {
+                  "title": "Category is Active",
+                  "description": "Flag that describes if category is active",
+                  "type": "boolean",
+                  "meta:xdmType": "boolean",
+                  "meta:xdmField": "workfront:isActive",
+                  "tagNumber": 2
+                },
+                "groupID": {
+                  "title": "Category's Group ID",
+                  "description": "Group id this category belongs to",
+                  "type": "string",
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "workfront:groupID",
+                  "tagNumber": 3
+                },
+                "objectCode": {
+                  "title": "Category's object code",
+                  "description": "Object code for category",
+                  "type": "string",
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "workfront:objectCode",
+                  "tagNumber": 4
+                }
+              },
+              "tagNumber": 1
+            }
+          },
+          "meta:xdmField": "workfront:category",
+          "tagNumber": 6
+        },
+        "categoryparameter": {
+          "type": "object",
+          "title": "Category Parameter Attributes",
+          "meta:xdmType": "object",
+          "properties": {
+            "_workfront": {
+              "type": "object",
+              "meta:xdmType": "object",
+              "properties": {
+                "categoryParameterExpressionID": {
+                  "title": "Category Parameter Expression ID",
+                  "description": "Expression ID of category parameter",
+                  "type": "string",
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "workfront:categoryParameterExpressionID",
+                  "tagNumber": 1
+                },
+                "parameterID": {
+                  "title": "Parameter ID",
+                  "description": "Parameter ID of category parameter object",
+                  "type": "string",
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "workfront:parameterID",
+                  "tagNumber": 2
+                },
+                "parameterGroupID": {
+                  "title": "Parameter Group ID",
+                  "description": "Group ID to which the category parameter belongs to",
+                  "type": "string",
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "workfront:parameterGroupID",
+                  "tagNumber": 3
+                },
+                "securityLevel": {
+                  "title": "Security Level",
+                  "description": "Security level the category parameter belongs to",
+                  "type": "string",
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "workfront:securityLevel",
+                  "tagNumber": 4
+                },
+                "viewSecurityLevel": {
+                  "title": "View Security Level",
+                  "description": "Security level view",
+                  "type": "string",
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "workfront:viewSecurityLevel",
+                  "tagNumber": 5
+                }
+              },
+              "tagNumber": 1
+            }
+          },
+          "meta:xdmField": "workfront:categoryparameter",
+          "tagNumber": 7
         }
       },
       "tagNumber": 1

@@ -2638,7 +2638,8 @@
                 "uvIndex": {
                   "title": "UV Index",
                   "description": "Maximum UV index for the 12 hour forecast period.",
-                  "$ref": "../#/definitions/uvIndex.schema.json",
+                  "type": "integer",
+                  "meta:xdmType": "int",
                   "meta:xdmField": "xdm:uvIndex",
                   "tagNumber": 8
                 }
@@ -2798,7 +2799,8 @@
                 "uvIndex": {
                   "title": "UV Index",
                   "description": "Maximum UV index for the 12 hour forecast period.",
-                  "$ref": "../#/definitions/uvIndex.schema.json",
+                  "type": "integer",
+                  "meta:xdmType": "int",
                   "meta:xdmField": "xdm:uvIndex",
                   "tagNumber": 8
                 }
@@ -2958,7 +2960,8 @@
                 "uvIndex": {
                   "title": "UV Index",
                   "description": "Maximum UV index for the 12 hour forecast period.",
-                  "$ref": "../#/definitions/uvIndex.schema.json",
+                  "type": "integer",
+                  "meta:xdmType": "int",
                   "meta:xdmField": "xdm:uvIndex",
                   "tagNumber": 8
                 }

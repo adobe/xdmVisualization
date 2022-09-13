@@ -1,0 +1,71 @@
+{
+  "id": "_experience.workfront.category",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Work Category Attributes",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "description": "Category related fields",
+  "meta:status": "experimental",
+  "meta:xdmType": "object",
+  "properties": {
+    "_workfront": {
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "category": {
+          "type": "object",
+          "title": "Category Attributes",
+          "meta:xdmType": "object",
+          "properties": {
+            "_workfront": {
+              "type": "object",
+              "meta:xdmType": "object",
+              "properties": {
+                "description": {
+                  "title": "Category Description",
+                  "description": "Description of the wf category object",
+                  "type": "string",
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "workfront:description",
+                  "tagNumber": 1
+                },
+                "isActive": {
+                  "title": "Category is Active",
+                  "description": "Flag that describes if category is active",
+                  "type": "boolean",
+                  "meta:xdmType": "boolean",
+                  "meta:xdmField": "workfront:isActive",
+                  "tagNumber": 2
+                },
+                "groupID": {
+                  "title": "Category's Group ID",
+                  "description": "Group id this category belongs to",
+                  "type": "string",
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "workfront:groupID",
+                  "tagNumber": 3
+                },
+                "objectCode": {
+                  "title": "Category's object code",
+                  "description": "Object code for category",
+                  "type": "string",
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "workfront:objectCode",
+                  "tagNumber": 4
+                }
+              },
+              "tagNumber": 1
+            }
+          },
+          "meta:xdmField": "workfront:category",
+          "tagNumber": 1
+        }
+      },
+      "tagNumber": 1
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/experience/workfront/category",
+  "meta:altId": "_experience.workfront.category",
+  "id": "_experience.workfront.category"
+}

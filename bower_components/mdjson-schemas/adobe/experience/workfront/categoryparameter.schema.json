@@ -1,0 +1,79 @@
+{
+  "id": "_experience.workfront.categoryparameter",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Work Category Attributes",
+  "type": "object",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "description": "Category Parameter related fields",
+  "meta:status": "experimental",
+  "meta:xdmType": "object",
+  "properties": {
+    "_workfront": {
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "categoryparameter": {
+          "type": "object",
+          "title": "Category Parameter Attributes",
+          "meta:xdmType": "object",
+          "properties": {
+            "_workfront": {
+              "type": "object",
+              "meta:xdmType": "object",
+              "properties": {
+                "categoryParameterExpressionID": {
+                  "title": "Category Parameter Expression ID",
+                  "description": "Expression ID of category parameter",
+                  "type": "string",
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "workfront:categoryParameterExpressionID",
+                  "tagNumber": 1
+                },
+                "parameterID": {
+                  "title": "Parameter ID",
+                  "description": "Parameter ID of category parameter object",
+                  "type": "string",
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "workfront:parameterID",
+                  "tagNumber": 2
+                },
+                "parameterGroupID": {
+                  "title": "Parameter Group ID",
+                  "description": "Group ID to which the category parameter belongs to",
+                  "type": "string",
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "workfront:parameterGroupID",
+                  "tagNumber": 3
+                },
+                "securityLevel": {
+                  "title": "Security Level",
+                  "description": "Security level the category parameter belongs to",
+                  "type": "string",
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "workfront:securityLevel",
+                  "tagNumber": 4
+                },
+                "viewSecurityLevel": {
+                  "title": "View Security Level",
+                  "description": "Security level view",
+                  "type": "string",
+                  "meta:xdmType": "string",
+                  "meta:xdmField": "workfront:viewSecurityLevel",
+                  "tagNumber": 5
+                }
+              },
+              "tagNumber": 1
+            }
+          },
+          "meta:xdmField": "workfront:categoryparameter",
+          "tagNumber": 1
+        }
+      },
+      "tagNumber": 1
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/experience/workfront/categoryparameter",
+  "meta:altId": "_experience.workfront.categoryparameter",
+  "id": "_experience.workfront.categoryparameter"
+}

@@ -1,0 +1,545 @@
+{
+  "id": "_xdm.context.experienceevent-generated-healthcare_services",
+  "title": "Uber schema for https://ns.adobe.com/xdm/context/experienceevent",
+  "description": "Uber schema for https://ns.adobe.com/xdm/context/experienceevent",
+  "type": "object",
+  "meta:xdmType": "object",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:tags": [
+    {
+      "industry": [
+        "all"
+      ]
+    },
+    {
+      "industry": [
+        "healthcare_services"
+      ]
+    }
+  ],
+  "meta:status": [
+    "stable",
+    "experimental"
+  ],
+  "meta:createdDate": [
+    "2020-08-10",
+    "2022-03-24"
+  ],
+  "meta:titleId": [
+    "experienceevent##title##58361",
+    "identitymap##title##90811",
+    "time-series##title##66611",
+    "experienceevent-advertising##title##82361",
+    "experienceevent-commerce##title##83091",
+    "experienceevent-directmarketing##title##34641",
+    "experienceevent-environment-details##title##62031",
+    "experienceevent-implementation-details##title##73141",
+    "experienceevent-marketing##title##3931",
+    "experienceevent-media##title##81291",
+    "experienceevent-reference-keys##title##6331",
+    "experienceevent-stitching##title##22731",
+    "experienceevent-web##title##4021",
+    "profile-personal-details##title##17051"
+  ],
+  "meta:descriptionId": [
+    "experienceevent##description##41211",
+    "identitymap##description##41821",
+    "time-series##description##35031",
+    "experienceevent-advertising##description##92721",
+    "experienceevent-commerce##description##81391",
+    "experienceevent-directmarketing##description##53941",
+    "experienceevent-environment-details##description##46401",
+    "experienceevent-implementation-details##description##63811",
+    "experienceevent-marketing##description##48971",
+    "experienceevent-media##description##54191",
+    "experienceevent-reference-keys##description##77561",
+    "experienceevent-stitching##description##79081",
+    "experienceevent-web##description##72121",
+    "profile-personal-details##description##5771"
+  ],
+  "properties": {
+    "identityMap": {
+      "type": "object",
+      "meta:xdmType": "map",
+      "meta:xdmField": "xdm:identityMap",
+      "tagNumber": 1,
+      "properties": {
+        "mapObj": {
+          "type": "array",
+          "meta:xdmType": "array",
+          "items": {
+            "$ref": "../../datatypes/identityitem.schema.json",
+            "tagNumber": 1
+          },
+          "tagNumber": 1
+        }
+      }
+    },
+    "_id": {
+      "title": "Identifier",
+      "type": "string",
+      "format": "uri-reference",
+      "description": "A unique identifier for the time-series event.",
+      "meta:titleId": "time-series##@id##title##97851",
+      "meta:descriptionId": "time-series##@id##description##91771",
+      "meta:xdmType": "string",
+      "meta:xdmField": "@id",
+      "tagNumber": 2
+    },
+    "timestamp": {
+      "title": "Timestamp",
+      "type": "string",
+      "format": "date-time",
+      "description": "The time when an event or observation occurred.",
+      "meta:titleId": "time-series##xdm:timestamp##title##71321",
+      "meta:descriptionId": "time-series##xdm:timestamp##description##1861",
+      "meta:xdmType": "date-time",
+      "meta:xdmField": "xdm:timestamp",
+      "tagNumber": 3
+    },
+    "eventType": {
+      "title": "Event Type",
+      "type": "string",
+      "description": "The primary event type for this time-series record.",
+      "meta:titleId": "time-series##xdm:eventType##title##79221",
+      "meta:descriptionId": "time-series##xdm:eventType##description##27681",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:eventType",
+      "tagNumber": 4
+    },
+    "eventMergeId": {
+      "title": "ExperienceEvent merge ID",
+      "description": "An ID to correlate or merge multiple Experience events together that are essentially the same event or should be merged. This is intended to be populated by the data producer prior to ingestion.",
+      "type": "string",
+      "meta:titleId": "experienceevent##xdm:eventMergeId##title##19131",
+      "meta:descriptionId": "experienceevent##xdm:eventMergeId##description##15091",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:eventMergeId",
+      "tagNumber": 5
+    },
+    "producedBy": {
+      "title": "Produced By",
+      "description": "Value that describes the producer of the event - suggested values would be 'self', 'system', 'salesRep', etc. Can be used to filter out certain producers if needed.",
+      "type": "string",
+      "default": "self",
+      "meta:titleId": "experienceevent##xdm:producedBy##title##22021",
+      "meta:descriptionId": "experienceevent##xdm:producedBy##description##23981",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:producedBy",
+      "tagNumber": 6
+    },
+    "advertising": {
+      "title": "Advertising",
+      "$ref": "../../datatypes/marketing/advertising.schema.json",
+      "description": "Information related to advertising impressions, clickthroughs, and attribution.",
+      "meta:titleId": "experienceevent-advertising##xdm:advertising##title##83851",
+      "meta:descriptionId": "experienceevent-advertising##xdm:advertising##description##21321",
+      "meta:xdmField": "xdm:advertising",
+      "tagNumber": 7
+    },
+    "productListItems": {
+      "title": "Product list items",
+      "type": "array",
+      "description": "A list of items representing a product selected by a customer with specific options and pricing that are for that usage context at a specific point of time and may differ from the product record.",
+      "meta:titleId": "experienceevent-commerce##xdm:productListItems##title##38781",
+      "meta:descriptionId": "experienceevent-commerce##xdm:productListItems##description##34691",
+      "meta:xdmType": "array",
+      "items": {
+        "$ref": "../../datatypes/productlistitem.schema.json",
+        "tagNumber": 1
+      },
+      "meta:xdmField": "xdm:productListItems",
+      "tagNumber": 8
+    },
+    "commerce": {
+      "title": "Commerce",
+      "$ref": "../../datatypes/marketing/commerce.schema.json",
+      "description": "Product returns, warranty registration, and shopping cart/order process.",
+      "meta:titleId": "experienceevent-commerce##xdm:commerce##title##36691",
+      "meta:descriptionId": "experienceevent-commerce##xdm:commerce##description##4271",
+      "meta:xdmField": "xdm:commerce",
+      "tagNumber": 9
+    },
+    "directMarketing": {
+      "title": "Direct marketing",
+      "$ref": "../../datatypes/marketing/direct-marketing.schema.json",
+      "description": "Events and properties related to direct and outbound marketing such as email, direct mail, texts, and in-app notifications.",
+      "meta:titleId": "experienceevent-directmarketing##xdm:directMarketing##title##34631",
+      "meta:descriptionId": "experienceevent-directmarketing##xdm:directMarketing##description##64681",
+      "meta:xdmField": "xdm:directMarketing",
+      "tagNumber": 10
+    },
+    "environment": {
+      "title": "Environment",
+      "$ref": "../../datatypes/environment.schema.json",
+      "description": "Information about the surrounding situation the event observation occurred in, specifically detailing transitory information such as the network or software versions.",
+      "meta:titleId": "experienceevent-environment-details##xdm:environment##title##51051",
+      "meta:descriptionId": "experienceevent-environment-details##xdm:environment##description##68071",
+      "meta:xdmField": "xdm:environment",
+      "tagNumber": 11
+    },
+    "device": {
+      "title": "Device",
+      "$ref": "../../datatypes/device.schema.json",
+      "description": "An identified device, application or device browser instance that is trackable across sessions, normally by cookies.",
+      "meta:titleId": "experienceevent-environment-details##xdm:device##title##96081",
+      "meta:descriptionId": "experienceevent-environment-details##xdm:device##description##29621",
+      "meta:xdmField": "xdm:device",
+      "tagNumber": 12
+    },
+    "placeContext": {
+      "title": "Place context",
+      "$ref": "../../datatypes/placecontext.schema.json",
+      "description": "The transient circumstances related to the observation. Examples include locale specific information such as weather, local time, traffic, day of the week, workday vs. holiday, and working hours.",
+      "meta:titleId": "experienceevent-environment-details##xdm:placeContext##title##83141",
+      "meta:descriptionId": "experienceevent-environment-details##xdm:placeContext##description##71761",
+      "meta:xdmField": "xdm:placeContext",
+      "tagNumber": 13
+    },
+    "implementationDetails": {
+      "title": "Implementation details",
+      "$ref": "../../datatypes/industry-verticals/implementationdetails.schema.json",
+      "description": "Accomodates tracking versioning details for the Adobe Experience Cloud solutions deployed.",
+      "meta:titleId": "experienceevent-implementation-details##xdm:implementationDetails##title##51731",
+      "meta:descriptionId": "experienceevent-implementation-details##xdm:implementationDetails##description##79571",
+      "meta:xdmField": "xdm:implementationDetails",
+      "tagNumber": 14
+    },
+    "marketing": {
+      "title": "Marketing",
+      "$ref": "../../datatypes/marketing/marketing.schema.json",
+      "description": "Tracks offer impression and social network interactions.",
+      "meta:titleId": "experienceevent-marketing##xdm:marketing##title##38331",
+      "meta:descriptionId": "experienceevent-marketing##xdm:marketing##description##30041",
+      "meta:xdmField": "xdm:marketing",
+      "tagNumber": 15
+    },
+    "mediaCollection": {
+      "title": "Media Collection Details",
+      "$ref": "../../datatypes/mediadetails.schema.json",
+      "description": "Media Collection related fields.",
+      "meta:xdmField": "xdm:mediaCollection",
+      "tagNumber": 16
+    },
+    "mediaReporting": {
+      "title": "Media Reporting Details",
+      "$ref": "../../datatypes/mediadetails.schema.json",
+      "description": "Media Reporting related fields.",
+      "meta:xdmField": "xdm:mediaReporting",
+      "tagNumber": 17
+    },
+    "mediaDownloadedEvents": {
+      "title": "List Of Media Collection Downloaded Content Events",
+      "type": "array",
+      "description": "The list of media collection downloaded content events.",
+      "meta:xdmType": "array",
+      "items": {
+        "$ref": "../../datatypes/mediaevent.schema.json",
+        "tagNumber": 1
+      },
+      "meta:xdmField": "xdm:mediaDownloadedEvents",
+      "tagNumber": 18
+    },
+    "media": {
+      "title": "Media",
+      "$ref": "../../datatypes/media.schema.json",
+      "description": "Media activity information related to the experience event.",
+      "meta:titleId": "experienceevent-media##xdm:media##title##8591",
+      "meta:descriptionId": "experienceevent-media##xdm:media##description##16281",
+      "meta:xdmField": "xdm:media",
+      "tagNumber": 19
+    },
+    "order": {
+      "title": "Order",
+      "$ref": "../../datatypes/store-web-order.schema.json",
+      "description": "Product Orders and realted information like payments.",
+      "meta:xdmField": "xdm:order",
+      "tagNumber": 20
+    },
+    "store": {
+      "title": "Store Details",
+      "type": "object",
+      "description": "Store related information.",
+      "meta:xdmType": "object",
+      "properties": {
+        "storeID": {
+          "title": "Store ID",
+          "type": "string",
+          "description": "Unique identifier for the store.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:storeID",
+          "tagNumber": 1
+        }
+      },
+      "meta:xdmField": "xdm:store",
+      "tagNumber": 21
+    },
+    "billing": {
+      "title": "Billing Details",
+      "type": "object",
+      "description": "Billing related information.",
+      "meta:xdmType": "object",
+      "properties": {
+        "address": {
+          "title": "Billing Address",
+          "description": "Billing Address.",
+          "$ref": "../../datatypes/demographic/address.schema.json",
+          "meta:xdmField": "xdm:address",
+          "tagNumber": 1
+        }
+      },
+      "meta:xdmField": "xdm:billing",
+      "tagNumber": 22
+    },
+    "shipping": {
+      "title": "Shipping",
+      "$ref": "../../datatypes/shipping.schema.json",
+      "description": "Shipping related informnation for the order.",
+      "meta:xdmField": "xdm:shipping",
+      "tagNumber": 23
+    },
+    "person": {
+      "title": "Person Reference Properties",
+      "type": "object",
+      "meta:titleId": "experienceevent-reference-keys##xdm:person##title##19721",
+      "meta:xdmType": "object",
+      "properties": {
+        "personalEmailID": {
+          "title": "Personal Email Address",
+          "type": "string",
+          "format": "email",
+          "description": "The technical address, for example, 'name@domain.com' as commonly defined in RFC2822 and subsequent standards.",
+          "meta:titleId": "experienceevent-reference-keys##xdm:personalEmailID##title##76881",
+          "meta:descriptionId": "experienceevent-reference-keys##xdm:personalEmailID##description##87691",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:personalEmailID",
+          "tagNumber": 1
+        },
+        "accountID": {
+          "title": "Account ID",
+          "type": "string",
+          "description": "Account ID.",
+          "meta:titleId": "experienceevent-reference-keys##xdm:accountID##title##85891",
+          "meta:descriptionId": "experienceevent-reference-keys##xdm:accountID##description##88611",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:accountID",
+          "tagNumber": 2
+        },
+        "accountType": {
+          "title": "Account Type",
+          "type": "string",
+          "description": "Account Type.",
+          "meta:titleId": "experienceevent-reference-keys##xdm:accountType##title##35281",
+          "meta:descriptionId": "experienceevent-reference-keys##xdm:accountType##description##80081",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:accountType",
+          "tagNumber": 3
+        }
+      },
+      "meta:xdmField": "xdm:person",
+      "tagNumber": 24
+    },
+    "stitchedID": {
+      "title": "Stitched ID",
+      "$ref": "../../datatypes/identity.schema.json",
+      "description": "Identifier computed by the Stitching service, containing a pair of (id, namespace) that uniquely identifies an individual to which this event belongs.",
+      "meta:titleId": "experienceevent-stitching##xdm:stitchedID##title##54581",
+      "meta:descriptionId": "experienceevent-stitching##xdm:stitchedID##description##53511",
+      "meta:xdmField": "xdm:stitchedID",
+      "tagNumber": 25
+    },
+    "web": {
+      "title": "Web",
+      "$ref": "../../datatypes/webinfo.schema.json",
+      "description": "Link clicks, web page details, referrer information, and browser details.",
+      "meta:titleId": "experienceevent-web##xdm:web##title##43111",
+      "meta:descriptionId": "experienceevent-web##xdm:web##description##40241",
+      "meta:xdmField": "xdm:web",
+      "tagNumber": 26
+    },
+    "sitetool": {
+      "Title": "Site Tool",
+      "description": "Information collected by sitetool.",
+      "type": "object",
+      "meta:xdmType": "object",
+      "properties": {
+        "name": {
+          "Title": "Site Tool Name",
+          "type": "string",
+          "description": "Name of the site tool. I.e., chatbot, survey, questionnaire.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:name",
+          "tagNumber": 1
+        },
+        "section": {
+          "Title": "Site Tool Section",
+          "type": "string",
+          "description": "Section of the site tool. I.e., main, sub, etc.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:section",
+          "tagNumber": 2
+        },
+        "actor": {
+          "Title": "Actor",
+          "type": "string",
+          "description": "A person/member who did the action.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:actor",
+          "tagNumber": 3
+        },
+        "actorID": {
+          "Title": "Actor ID",
+          "type": "string",
+          "description": "Reference to the actor who could be a member,practionner or a relatedperson.",
+          "meta:xdmType": "string",
+          "meta:xdmField": "xdm:actorID",
+          "tagNumber": 4
+        },
+        "dataGatheringEvent": {
+          "Title": "Data Gathering Event",
+          "type": "object",
+          "description": "Indicates if this event is a data gathering event and the other event details.",
+          "meta:xdmType": "object",
+          "properties": {
+            "isTrue": {
+              "Title": "Is True",
+              "type": "boolean",
+              "description": "Indicates if this event is a data gathering event like quiz,survey, poll.",
+              "meta:xdmType": "boolean",
+              "meta:xdmField": "xdm:isTrue",
+              "tagNumber": 1
+            },
+            "data": {
+              "Title": "Data",
+              "type": "object",
+              "meta:xdmType": "map",
+              "description": "Data that is collected and submitted as part of quiz,survey or poll submit event.",
+              "meta:xdmField": "xdm:data",
+              "tagNumber": 2,
+              "properties": {
+                "mapObj": {
+                  "type": "object",
+                  "meta:xdmType": "object",
+                  "properties": {
+                    "question": {
+                      "Title": "Question",
+                      "type": "string",
+                      "description": "Question of for which the response is collected.",
+                      "meta:xdmType": "string",
+                      "meta:xdmField": "xdm:question",
+                      "tagNumber": 1
+                    },
+                    "response": {
+                      "Title": "Response",
+                      "type": "string",
+                      "description": "Response provided by the actor.",
+                      "meta:xdmType": "string",
+                      "meta:xdmField": "xdm:response",
+                      "tagNumber": 2
+                    }
+                  },
+                  "tagNumber": 1
+                }
+              }
+            },
+            "score": {
+              "Title": "Score",
+              "type": "integer",
+              "description": "Score secured by the actor based on event responses.",
+              "meta:xdmType": "int",
+              "meta:xdmField": "xdm:score",
+              "tagNumber": 3
+            }
+          },
+          "meta:xdmField": "xdm:dataGatheringEvent",
+          "tagNumber": 5
+        },
+        "isKeyEvent": {
+          "Title": "Is Key Event",
+          "type": "boolean",
+          "description": "Indicates if this event is a key event.",
+          "meta:xdmType": "boolean",
+          "meta:xdmField": "xdm:isKeyEvent",
+          "tagNumber": 6
+        }
+      },
+      "meta:xdmField": "xdm:sitetool",
+      "tagNumber": 27
+    },
+    "homeAddress": {
+      "title": "Home Address",
+      "$ref": "../../datatypes/demographic/address.schema.json",
+      "description": "A home postal address.",
+      "meta:titleId": "profile-personal-details##xdm:homeAddress##title##98571",
+      "meta:descriptionId": "profile-personal-details##xdm:homeAddress##description##35241",
+      "meta:xdmField": "xdm:homeAddress",
+      "tagNumber": 28
+    },
+    "personalEmail": {
+      "title": "Personal Email",
+      "$ref": "../../datatypes/demographic/emailaddress.schema.json",
+      "description": "A personal email address.",
+      "meta:titleId": "profile-personal-details##xdm:personalEmail##title##13501",
+      "meta:descriptionId": "profile-personal-details##xdm:personalEmail##description##54181",
+      "meta:xdmField": "xdm:personalEmail",
+      "tagNumber": 29
+    },
+    "homePhone": {
+      "title": "Home Phone",
+      "$ref": "../../datatypes/demographic/phonenumber.schema.json",
+      "description": "Home phone number.",
+      "meta:titleId": "profile-personal-details##xdm:homePhone##title##28261",
+      "meta:descriptionId": "profile-personal-details##xdm:homePhone##description##45111",
+      "meta:xdmField": "xdm:homePhone",
+      "tagNumber": 30
+    },
+    "mobilePhone": {
+      "title": "Mobile Phone",
+      "$ref": "../../datatypes/demographic/phonenumber.schema.json",
+      "description": "Mobile phone number.",
+      "meta:titleId": "profile-personal-details##xdm:mobilePhone##title##76241",
+      "meta:descriptionId": "profile-personal-details##xdm:mobilePhone##description##51801",
+      "meta:xdmField": "xdm:mobilePhone",
+      "tagNumber": 31
+    },
+    "faxPhone": {
+      "title": "Fax Phone",
+      "$ref": "../../datatypes/demographic/phonenumber.schema.json",
+      "description": "Fax phone number.",
+      "meta:titleId": "profile-personal-details##xdm:faxPhone##title##15761",
+      "meta:descriptionId": "profile-personal-details##xdm:faxPhone##description##5951",
+      "meta:xdmField": "xdm:faxPhone",
+      "tagNumber": 32
+    },
+    "shippingAddress": {
+      "title": "Shipping Address",
+      "$ref": "../../datatypes/demographic/address.schema.json",
+      "description": "Shipping postal address.",
+      "meta:xdmField": "xdm:shippingAddress",
+      "tagNumber": 33
+    },
+    "billingAddress": {
+      "title": "Billing Address",
+      "$ref": "../../datatypes/demographic/address.schema.json",
+      "description": "Billing postal address.",
+      "meta:xdmField": "xdm:billingAddress",
+      "tagNumber": 34
+    },
+    "mailingAddress": {
+      "title": "Mailing Address",
+      "$ref": "../../datatypes/demographic/address.schema.json",
+      "description": "Mailing postal address.",
+      "meta:xdmField": "xdm:mailingAddress",
+      "tagNumber": 35
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/xdm/context/experienceevent-generated-healthcare_services",
+  "meta:altId": "_xdm.context.experienceevent-generated-healthcare_services",
+  "required": [
+    "_id",
+    "timestamp"
+  ],
+  "id": "_xdm.context.experienceevent-generated-healthcare_services"
+}
