@@ -204,6 +204,7 @@
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.decisioning.profile-constraint-details.html">profile-constraint-details</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.decisioning.profile-constraints.html">profile-constraints</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.decisioning.proposition.html">proposition</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.decisioning.proposition-action.html">proposition-action</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.decisioning.proposition-detail.html">proposition-detail</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.decisioning.proposition-details.html">proposition-details</a></li>
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.decisioning.proposition-event-type.html">proposition-event-type</a></li>

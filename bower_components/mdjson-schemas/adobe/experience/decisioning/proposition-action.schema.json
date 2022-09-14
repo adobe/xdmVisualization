@@ -1,0 +1,32 @@
+{
+  "id": "_experience.decisioning.proposition-action",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "AJO Classification Fields",
+  "description": "Properties of a specific element that was interacted with which caused the proposition event to be triggered.",
+  "type": "object",
+  "meta:status": "stable",
+  "meta:extensible": true,
+  "meta:abstract": true,
+  "meta:xdmType": "object",
+  "properties": {
+    "id": {
+      "title": "id",
+      "description": "The customer generated id of the element with which the end-user interacted.",
+      "type": "string",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:id",
+      "tagNumber": 1
+    },
+    "label": {
+      "title": "label",
+      "description": "The customer generated display name of the element with which the end-user interacted.",
+      "type": "string",
+      "meta:xdmType": "string",
+      "meta:xdmField": "xdm:label",
+      "tagNumber": 2
+    }
+  },
+  "meta:xdmId": "https://ns.adobe.com/experience/decisioning/proposition-action",
+  "meta:altId": "_experience.decisioning.proposition-action",
+  "id": "_experience.decisioning.proposition-action"
+}

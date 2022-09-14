@@ -13665,6 +13665,13 @@
               "meta:xdmField": "https://ns.adobe.com/experience/decisioning/propositionEventType",
               "tagNumber": 1
             },
+            "propositionAction": {
+              "title": "Proposition Action",
+              "description": "The specific element that was interacted with which caused the proposition event to be triggered.",
+              "$ref": "../../adobe/experience/decisioning/proposition-action.schema.json",
+              "meta:xdmField": "https://ns.adobe.com/experience/decisioning/propositionAction",
+              "tagNumber": 2
+            },
             "propositions": {
               "title": "Involved Propositions",
               "type": "array",
@@ -13677,7 +13684,7 @@
                 "tagNumber": 1
               },
               "meta:xdmField": "https://ns.adobe.com/experience/decisioning/propositions",
-              "tagNumber": 2
+              "tagNumber": 3
             }
           },
           "tagNumber": 5

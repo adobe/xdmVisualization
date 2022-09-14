@@ -463,6 +463,7 @@
 [adobe.experience.decisioning.criteria](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.decisioning.criteria.html)<br/>
 [adobe.experience.decisioning.profile-constraints](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.decisioning.profile-constraints.html)<br/>
 [adobe.experience.decisioning.option](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.decisioning.option.html)<br/>
+[adobe.experience.decisioning.proposition-action](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.decisioning.proposition-action.html)<br/>
 [adobe.experience.decisioning.proposition-event-type](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.decisioning.proposition-event-type.html)<br/>
 [adobe.experience.decisioning.content-component-details](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.decisioning.content-component-details.html)<br/>
 [adobe.experience.decisioning.proposition-metric-total](http://opensource.adobe.com/xdmVisualization/prod/master/adobe.experience.decisioning.proposition-metric-total.html)<br/>

@@ -20,6 +20,7 @@
             "debugInfo": {
               "title": "Journey Orchestration debug related fields.",
               "type": "object",
+              "description": "This event is in relation with journey and describes the debug related fields",
               "meta:xdmType": "object",
               "properties": {
                 "_experience": {
