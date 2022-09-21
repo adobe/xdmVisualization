@@ -114,20 +114,6 @@
       },
       "meta:xdmField": "xdm:customMetadata",
       "tagNumber": 12
-    },
-    "endUserIDs": {
-      "title": "End User IDs",
-      "$ref": "enduserids.schema.json",
-      "description": "Condensed, normalized encapsulation of all end user identifiers. At least one of the fields is required.",
-      "meta:xdmField": "xdm:endUserIDs",
-      "tagNumber": 13
-    },
-    "implementationDetails": {
-      "title": "Implementation Details",
-      "$ref": "industry-verticals/implementationdetails.schema.json",
-      "description": "Details about the SDK, library, or service used in an application or web page implementation of a service.",
-      "meta:xdmField": "xdm:implementationDetails",
-      "tagNumber": 14
     }
   },
   "meta:xdmId": "https://ns.adobe.com/xdm/datatypes/mediaDetails",

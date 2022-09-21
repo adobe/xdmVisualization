@@ -17,7 +17,7 @@
       "tagNumber": 1
     },
     "name": {
-      "title": "Series ID",
+      "title": "Content ID",
       "type": "string",
       "pattern": "^.{1,}$",
       "description": "Content ID of the content, which can be used to tie back to other industry / CMS IDs.",
@@ -179,12 +179,12 @@
       "meta:xdmField": "xdm:mvpd",
       "tagNumber": 21
     },
-    "isAuthenticated": {
+    "isAuthorized": {
       "title": "Media Authorized",
       "type": "boolean",
       "description": "The user has been authorized via Adobe authentication.",
       "meta:xdmType": "boolean",
-      "meta:xdmField": "xdm:isAuthenticated",
+      "meta:xdmField": "xdm:isAuthorized",
       "tagNumber": 22
     },
     "dayPart": {

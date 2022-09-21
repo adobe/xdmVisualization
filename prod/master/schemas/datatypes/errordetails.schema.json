@@ -8,16 +8,16 @@
   "description": "Error details information.",
   "meta:xdmType": "object",
   "properties": {
-    "errorID": {
+    "ID": {
       "title": "Error ID",
       "type": "string",
       "pattern": "^.{1,}$",
       "description": "The error ID.",
       "meta:xdmType": "string",
-      "meta:xdmField": "xdm:errorID",
+      "meta:xdmField": "xdm:ID",
       "tagNumber": 1
     },
-    "errorSource": {
+    "source": {
       "title": "Error Source",
       "type": "string",
       "description": "The error source.",
@@ -26,15 +26,15 @@
         "external"
       ],
       "meta:xdmType": "string",
-      "meta:xdmField": "xdm:errorSource",
+      "meta:xdmField": "xdm:source",
       "tagNumber": 2
     }
   },
   "meta:xdmId": "https://ns.adobe.com/xdm/datatypes/errorDetails",
   "meta:altId": "_xdm.datatypes.errordetails",
   "required": [
-    "errorID",
-    "errorSource"
+    "ID",
+    "source"
   ],
   "id": "_xdm.datatypes.errordetails"
 }

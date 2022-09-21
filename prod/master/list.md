@@ -87,6 +87,7 @@
 [classes.fsi.policy](http://opensource.adobe.com/xdmVisualization/prod/master/classes.fsi.policy.html)<br/>
 [classes.fsi.branch](http://opensource.adobe.com/xdmVisualization/prod/master/classes.fsi.branch.html)<br/>
 #### datatypes
+[datatypes.keyvalue](http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.keyvalue.html)<br/>
 [datatypes.playerstatedata](http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.playerstatedata.html)<br/>
 [datatypes.device](http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.device.html)<br/>
 [datatypes.shipping](http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.shipping.html)<br/>
@@ -111,6 +112,7 @@
 [datatypes.poi-detail](http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.poi-detail.html)<br/>
 [datatypes.advertisingdetails](http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.advertisingdetails.html)<br/>
 [datatypes.cart](http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.cart.html)<br/>
+[datatypes.keyedlist](http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.keyedlist.html)<br/>
 [datatypes.optinout-additional-details](http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.optinout-additional-details.html)<br/>
 [datatypes.product](http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.product.html)<br/>
 [datatypes.pushnotificationtoken](http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.pushnotificationtoken.html)<br/>

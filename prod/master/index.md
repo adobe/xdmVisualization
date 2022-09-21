@@ -528,6 +528,8 @@
 <li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.industry-verticals.transaction.html">transaction</a></li>
 </ul>
 </details>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.keyedlist.html">keyedlist</a></li>
+<li><a href="http://opensource.adobe.com/xdmVisualization/prod/master/datatypes.keyvalue.html">keyvalue</a></li>
 <details>
 <summary>marketing</summary>
 <ul>

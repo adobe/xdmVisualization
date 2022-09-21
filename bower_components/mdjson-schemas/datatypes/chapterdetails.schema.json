@@ -40,12 +40,12 @@
       "meta:xdmField": "xdm:index",
       "tagNumber": 4
     },
-    "chapterID": {
+    "ID": {
       "title": "Chapter ID",
       "type": "string",
       "description": "The auto-generated ID of the chapter.",
       "meta:xdmType": "string",
-      "meta:xdmField": "xdm:chapterID",
+      "meta:xdmField": "xdm:ID",
       "tagNumber": 5
     },
     "isStarted": {

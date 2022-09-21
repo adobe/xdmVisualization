@@ -169,6 +169,13 @@
       },
       "meta:xdmField": "xdm:geoInteractionDetails",
       "tagNumber": 9
+    },
+    "metadata": {
+      "title": "POI metadata",
+      "description": "metadata assigned to the POI by the administrator of the POI definitions.",
+      "$ref": "keyedlist.schema.json",
+      "meta:xdmField": "xdm:metadata",
+      "tagNumber": 10
     }
   },
   "meta:xdmId": "https://ns.adobe.com/xdm/context/poi-detail",

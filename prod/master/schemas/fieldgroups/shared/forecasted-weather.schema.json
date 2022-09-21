@@ -92,257 +92,250 @@
                 },
                 "day": {
                   "properties": {
-                    "_unqualified": {
-                      "type": "object",
-                      "meta:xdmType": "object",
+                    "cloudCover": {
                       "properties": {
-                        "cloudCover": {
-                          "properties": {
-                            "kilometers": {
-                              "title": "Kilometers",
-                              "type": "number",
-                              "description": "Distance in kilometers.",
-                              "meta:xdmType": "number",
-                              "meta:xdmField": "xdm:kilometers",
-                              "tagNumber": 1
-                            },
-                            "inches": {
-                              "title": "Miles",
-                              "type": "number",
-                              "description": "Distance in miles.",
-                              "meta:xdmType": "number",
-                              "meta:xdmField": "xdm:inches",
-                              "tagNumber": 2
-                            }
-                          },
-                          "type": "object",
-                          "meta:xdmField": "cloudCover",
+                        "kilometers": {
+                          "title": "Kilometers",
+                          "type": "number",
+                          "description": "Distance in kilometers.",
+                          "meta:xdmType": "number",
+                          "meta:xdmField": "xdm:kilometers",
                           "tagNumber": 1
                         },
-                        "precipChance": {
-                          "title": "Precipitation Chance",
-                          "description": "Probability that there will be precipitation (percentage).",
-                          "type": "integer",
-                          "meta:xdmType": "int",
-                          "meta:xdmField": "precipChance",
+                        "inches": {
+                          "title": "Miles",
+                          "type": "number",
+                          "description": "Distance in miles.",
+                          "meta:xdmType": "number",
+                          "meta:xdmField": "xdm:inches",
                           "tagNumber": 2
-                        },
-                        "precipType": {
-                          "title": "Precipitation Type",
-                          "description": "The form of precipitation that could fall (rain, snow, sleet, etc).",
-                          "type": "string",
-                          "enum": [
-                            "rain",
-                            "snow",
-                            "precip"
-                          ],
-                          "meta:xdmType": "string",
-                          "meta:xdmField": "precipType",
-                          "tagNumber": 3
-                        },
-                        "qpf": {
-                          "properties": {
-                            "millimeters": {
-                              "title": "Millimeters",
-                              "type": "number",
-                              "description": "Precipitation in millimeters",
-                              "meta:xdmType": "number",
-                              "meta:xdmField": "xdm:millimeters",
-                              "tagNumber": 1
-                            },
-                            "inches": {
-                              "title": "Inches",
-                              "type": "number",
-                              "description": "Precipitation in inches",
-                              "meta:xdmType": "number",
-                              "meta:xdmField": "xdm:inches",
-                              "tagNumber": 2
-                            }
-                          },
-                          "type": "object",
-                          "meta:xdmField": "qpf",
-                          "tagNumber": 4
-                        },
-                        "relativeHumidity": {
-                          "title": "Relative Humidity",
-                          "description": "The relative humidity of the air, which is defined as the ratio of the amount of water vapor in the air to the amount of vapor required to bring the air to saturation at a constant temperature. Relative humidity is always expressed as a percentage.\nRange - 0 to 100.",
-                          "type": "integer",
-                          "meta:xdmType": "int",
-                          "meta:xdmField": "relativeHumidity",
-                          "tagNumber": 5
-                        },
-                        "snowRange": {
-                          "title": "Snow Range",
-                          "description": "Bucket of potential snowfall (1-3”, 3-6” etc).",
-                          "type": "string",
-                          "meta:xdmType": "string",
-                          "meta:xdmField": "snowRange",
-                          "tagNumber": 6
-                        },
-                        "temperature": {
-                          "properties": {
-                            "celsius": {
-                              "title": "Celsius",
-                              "type": "integer",
-                              "description": "Temperature in degrees Celsius",
-                              "meta:xdmType": "int",
-                              "meta:xdmField": "xdm:celsius",
-                              "tagNumber": 1
-                            },
-                            "fahrenheit": {
-                              "title": "Fahrenheit",
-                              "type": "integer",
-                              "description": "Temperature in degrees Fahrenheit",
-                              "meta:xdmType": "int",
-                              "meta:xdmField": "xdm:fahrenheit",
-                              "tagNumber": 2
-                            }
-                          },
-                          "type": "object",
-                          "meta:xdmField": "temperature",
-                          "tagNumber": 7
-                        },
-                        "temperatureHeatIndex": {
-                          "properties": {
-                            "celsius": {
-                              "title": "Celsius",
-                              "type": "integer",
-                              "description": "Temperature in degrees Celsius",
-                              "meta:xdmType": "int",
-                              "meta:xdmField": "xdm:celsius",
-                              "tagNumber": 1
-                            },
-                            "fahrenheit": {
-                              "title": "Fahrenheit",
-                              "type": "integer",
-                              "description": "Temperature in degrees Fahrenheit",
-                              "meta:xdmType": "int",
-                              "meta:xdmField": "xdm:fahrenheit",
-                              "tagNumber": 2
-                            }
-                          },
-                          "type": "object",
-                          "meta:xdmField": "temperatureHeatIndex",
-                          "tagNumber": 8
-                        },
-                        "temperatureWindChill": {
-                          "properties": {
-                            "celsius": {
-                              "title": "Celsius",
-                              "type": "integer",
-                              "description": "Temperature in degrees Celsius",
-                              "meta:xdmType": "int",
-                              "meta:xdmField": "xdm:celsius",
-                              "tagNumber": 1
-                            },
-                            "fahrenheit": {
-                              "title": "Fahrenheit",
-                              "type": "integer",
-                              "description": "Temperature in degrees Fahrenheit",
-                              "meta:xdmType": "int",
-                              "meta:xdmField": "xdm:fahrenheit",
-                              "tagNumber": 2
-                            }
-                          },
-                          "type": "object",
-                          "meta:xdmField": "temperatureWindChill",
-                          "tagNumber": 9
-                        },
-                        "thunderIndex": {
-                          "title": "Thunder Index",
-                          "description": "Index of the probability of thunderstorms impacting an area. 0 (no thunder to 5 (high risk of severe thunderstorms).",
-                          "type": "integer",
-                          "meta:xdmType": "int",
-                          "meta:xdmField": "thunderIndex",
-                          "tagNumber": 10
-                        },
-                        "windDirection": {
-                          "title": "Wind Direction",
-                          "description": "The magnetic wind direction from which the wind blows expressed in degrees. The magnetic direction varies from 0 to 359 degrees, where 0° indicates the North, 90° the East, 180° the South, 270° the West, and so forth.\nRange - 0<=wind_dire_deg<=350, in 10 degree intervals.",
-                          "type": "integer",
-                          "meta:xdmType": "int",
-                          "meta:xdmField": "windDirection",
-                          "tagNumber": 11
-                        },
-                        "windSpeed": {
-                          "properties": {
-                            "kilometersPerHour": {
-                              "title": "Kilometers per Hour",
-                              "type": "integer",
-                              "description": "Wind speed in kilometers per hour",
-                              "meta:xdmType": "int",
-                              "meta:xdmField": "xdm:kilometersPerHour",
-                              "tagNumber": 1
-                            },
-                            "milesPerHour": {
-                              "title": "Miles per Hour",
-                              "type": "integer",
-                              "description": "Wind speed in miles per hour",
-                              "meta:xdmType": "int",
-                              "meta:xdmField": "xdm:milesPerHour",
-                              "tagNumber": 2
-                            }
-                          },
-                          "type": "object",
-                          "meta:xdmField": "windSpeed",
-                          "tagNumber": 12
-                        },
-                        "windGust": {
-                          "properties": {
-                            "kilometersPerHour": {
-                              "title": "Kilometers per Hour",
-                              "type": "integer",
-                              "description": "Wind speed in kilometers per hour",
-                              "meta:xdmType": "int",
-                              "meta:xdmField": "xdm:kilometersPerHour",
-                              "tagNumber": 1
-                            },
-                            "milesPerHour": {
-                              "title": "Miles per Hour",
-                              "type": "integer",
-                              "description": "Wind speed in miles per hour",
-                              "meta:xdmType": "int",
-                              "meta:xdmField": "xdm:milesPerHour",
-                              "tagNumber": 2
-                            }
-                          },
-                          "type": "object",
-                          "meta:xdmField": "windGust",
-                          "tagNumber": 13
-                        },
-                        "qpfSnow": {
-                          "properties": {
-                            "centimeters": {
-                              "title": "Centimeters",
-                              "type": "number",
-                              "description": "Snowfall in centimeters",
-                              "meta:xdmType": "number",
-                              "meta:xdmField": "xdm:centimeters",
-                              "tagNumber": 1
-                            },
-                            "inches": {
-                              "title": "Inches",
-                              "type": "number",
-                              "description": "Snowfall in inches",
-                              "meta:xdmType": "number",
-                              "meta:xdmField": "xdm:inches",
-                              "tagNumber": 2
-                            }
-                          },
-                          "type": "object",
-                          "meta:xdmField": "qpfSnow",
-                          "tagNumber": 14
-                        },
-                        "uvIndex": {
-                          "title": "UV Index",
-                          "description": "Maximum UV index for the 12 hour forecast period.",
-                          "type": "integer",
-                          "meta:xdmType": "int",
-                          "meta:xdmField": "uvIndex",
-                          "tagNumber": 15
                         }
                       },
+                      "type": "object",
+                      "meta:xdmField": "xdm:cloudCover",
                       "tagNumber": 1
+                    },
+                    "precipChance": {
+                      "title": "Precipitation Chance",
+                      "description": "Probability that there will be precipitation (percentage).",
+                      "type": "integer",
+                      "meta:xdmType": "int",
+                      "meta:xdmField": "xdm:precipChance",
+                      "tagNumber": 2
+                    },
+                    "precipType": {
+                      "title": "Precipitation Type",
+                      "description": "The form of precipitation that could fall (rain, snow, sleet, etc).",
+                      "type": "string",
+                      "enum": [
+                        "rain",
+                        "snow",
+                        "precip"
+                      ],
+                      "meta:xdmType": "string",
+                      "meta:xdmField": "xdm:precipType",
+                      "tagNumber": 3
+                    },
+                    "qpf": {
+                      "properties": {
+                        "millimeters": {
+                          "title": "Millimeters",
+                          "type": "number",
+                          "description": "Precipitation in millimeters",
+                          "meta:xdmType": "number",
+                          "meta:xdmField": "xdm:millimeters",
+                          "tagNumber": 1
+                        },
+                        "inches": {
+                          "title": "Inches",
+                          "type": "number",
+                          "description": "Precipitation in inches",
+                          "meta:xdmType": "number",
+                          "meta:xdmField": "xdm:inches",
+                          "tagNumber": 2
+                        }
+                      },
+                      "type": "object",
+                      "meta:xdmField": "xdm:qpf",
+                      "tagNumber": 4
+                    },
+                    "relativeHumidity": {
+                      "title": "Relative Humidity",
+                      "description": "The relative humidity of the air, which is defined as the ratio of the amount of water vapor in the air to the amount of vapor required to bring the air to saturation at a constant temperature. Relative humidity is always expressed as a percentage.\nRange - 0 to 100.",
+                      "type": "integer",
+                      "meta:xdmType": "int",
+                      "meta:xdmField": "xdm:relativeHumidity",
+                      "tagNumber": 5
+                    },
+                    "snowRange": {
+                      "title": "Snow Range",
+                      "description": "Bucket of potential snowfall (1-3”, 3-6” etc).",
+                      "type": "string",
+                      "meta:xdmType": "string",
+                      "meta:xdmField": "xdm:snowRange",
+                      "tagNumber": 6
+                    },
+                    "temperature": {
+                      "properties": {
+                        "celsius": {
+                          "title": "Celsius",
+                          "type": "integer",
+                          "description": "Temperature in degrees Celsius",
+                          "meta:xdmType": "int",
+                          "meta:xdmField": "xdm:celsius",
+                          "tagNumber": 1
+                        },
+                        "fahrenheit": {
+                          "title": "Fahrenheit",
+                          "type": "integer",
+                          "description": "Temperature in degrees Fahrenheit",
+                          "meta:xdmType": "int",
+                          "meta:xdmField": "xdm:fahrenheit",
+                          "tagNumber": 2
+                        }
+                      },
+                      "type": "object",
+                      "meta:xdmField": "xdm:temperature",
+                      "tagNumber": 7
+                    },
+                    "temperatureHeatIndex": {
+                      "properties": {
+                        "celsius": {
+                          "title": "Celsius",
+                          "type": "integer",
+                          "description": "Temperature in degrees Celsius",
+                          "meta:xdmType": "int",
+                          "meta:xdmField": "xdm:celsius",
+                          "tagNumber": 1
+                        },
+                        "fahrenheit": {
+                          "title": "Fahrenheit",
+                          "type": "integer",
+                          "description": "Temperature in degrees Fahrenheit",
+                          "meta:xdmType": "int",
+                          "meta:xdmField": "xdm:fahrenheit",
+                          "tagNumber": 2
+                        }
+                      },
+                      "type": "object",
+                      "meta:xdmField": "xdm:temperatureHeatIndex",
+                      "tagNumber": 8
+                    },
+                    "temperatureWindChill": {
+                      "properties": {
+                        "celsius": {
+                          "title": "Celsius",
+                          "type": "integer",
+                          "description": "Temperature in degrees Celsius",
+                          "meta:xdmType": "int",
+                          "meta:xdmField": "xdm:celsius",
+                          "tagNumber": 1
+                        },
+                        "fahrenheit": {
+                          "title": "Fahrenheit",
+                          "type": "integer",
+                          "description": "Temperature in degrees Fahrenheit",
+                          "meta:xdmType": "int",
+                          "meta:xdmField": "xdm:fahrenheit",
+                          "tagNumber": 2
+                        }
+                      },
+                      "type": "object",
+                      "meta:xdmField": "xdm:temperatureWindChill",
+                      "tagNumber": 9
+                    },
+                    "thunderIndex": {
+                      "title": "Thunder Index",
+                      "description": "Index of the probability of thunderstorms impacting an area. 0 (no thunder to 5 (high risk of severe thunderstorms).",
+                      "type": "integer",
+                      "meta:xdmType": "int",
+                      "meta:xdmField": "xdm:thunderIndex",
+                      "tagNumber": 10
+                    },
+                    "windDirection": {
+                      "title": "Wind Direction",
+                      "description": "The magnetic wind direction from which the wind blows expressed in degrees. The magnetic direction varies from 0 to 359 degrees, where 0° indicates the North, 90° the East, 180° the South, 270° the West, and so forth.\nRange - 0<=wind_dire_deg<=350, in 10 degree intervals.",
+                      "type": "integer",
+                      "meta:xdmType": "int",
+                      "meta:xdmField": "xdm:windDirection",
+                      "tagNumber": 11
+                    },
+                    "windSpeed": {
+                      "properties": {
+                        "kilometersPerHour": {
+                          "title": "Kilometers per Hour",
+                          "type": "integer",
+                          "description": "Wind speed in kilometers per hour",
+                          "meta:xdmType": "int",
+                          "meta:xdmField": "xdm:kilometersPerHour",
+                          "tagNumber": 1
+                        },
+                        "milesPerHour": {
+                          "title": "Miles per Hour",
+                          "type": "integer",
+                          "description": "Wind speed in miles per hour",
+                          "meta:xdmType": "int",
+                          "meta:xdmField": "xdm:milesPerHour",
+                          "tagNumber": 2
+                        }
+                      },
+                      "type": "object",
+                      "meta:xdmField": "xdm:windSpeed",
+                      "tagNumber": 12
+                    },
+                    "windGust": {
+                      "properties": {
+                        "kilometersPerHour": {
+                          "title": "Kilometers per Hour",
+                          "type": "integer",
+                          "description": "Wind speed in kilometers per hour",
+                          "meta:xdmType": "int",
+                          "meta:xdmField": "xdm:kilometersPerHour",
+                          "tagNumber": 1
+                        },
+                        "milesPerHour": {
+                          "title": "Miles per Hour",
+                          "type": "integer",
+                          "description": "Wind speed in miles per hour",
+                          "meta:xdmType": "int",
+                          "meta:xdmField": "xdm:milesPerHour",
+                          "tagNumber": 2
+                        }
+                      },
+                      "type": "object",
+                      "meta:xdmField": "xdm:windGust",
+                      "tagNumber": 13
+                    },
+                    "qpfSnow": {
+                      "properties": {
+                        "centimeters": {
+                          "title": "Centimeters",
+                          "type": "number",
+                          "description": "Snowfall in centimeters",
+                          "meta:xdmType": "number",
+                          "meta:xdmField": "xdm:centimeters",
+                          "tagNumber": 1
+                        },
+                        "inches": {
+                          "title": "Inches",
+                          "type": "number",
+                          "description": "Snowfall in inches",
+                          "meta:xdmType": "number",
+                          "meta:xdmField": "xdm:inches",
+                          "tagNumber": 2
+                        }
+                      },
+                      "type": "object",
+                      "meta:xdmField": "xdm:qpfSnow",
+                      "tagNumber": 14
+                    },
+                    "uvIndex": {
+                      "title": "UV Index",
+                      "description": "Maximum UV index for the 12 hour forecast period.",
+                      "type": "integer",
+                      "meta:xdmType": "int",
+                      "meta:xdmField": "xdm:uvIndex",
+                      "tagNumber": 15
                     }
                   },
                   "type": "object",
@@ -351,257 +344,250 @@
                 },
                 "night": {
                   "properties": {
-                    "_unqualified": {
-                      "type": "object",
-                      "meta:xdmType": "object",
+                    "cloudCover": {
                       "properties": {
-                        "cloudCover": {
-                          "properties": {
-                            "kilometers": {
-                              "title": "Kilometers",
-                              "type": "number",
-                              "description": "Distance in kilometers.",
-                              "meta:xdmType": "number",
-                              "meta:xdmField": "xdm:kilometers",
-                              "tagNumber": 1
-                            },
-                            "inches": {
-                              "title": "Miles",
-                              "type": "number",
-                              "description": "Distance in miles.",
-                              "meta:xdmType": "number",
-                              "meta:xdmField": "xdm:inches",
-                              "tagNumber": 2
-                            }
-                          },
-                          "type": "object",
-                          "meta:xdmField": "cloudCover",
+                        "kilometers": {
+                          "title": "Kilometers",
+                          "type": "number",
+                          "description": "Distance in kilometers.",
+                          "meta:xdmType": "number",
+                          "meta:xdmField": "xdm:kilometers",
                           "tagNumber": 1
                         },
-                        "precipChance": {
-                          "title": "Precipitation Chance",
-                          "description": "Probability that there will be precipitation (percentage).",
-                          "type": "integer",
-                          "meta:xdmType": "int",
-                          "meta:xdmField": "precipChance",
+                        "inches": {
+                          "title": "Miles",
+                          "type": "number",
+                          "description": "Distance in miles.",
+                          "meta:xdmType": "number",
+                          "meta:xdmField": "xdm:inches",
                           "tagNumber": 2
-                        },
-                        "precipType": {
-                          "title": "Precipitation Type",
-                          "description": "The form of precipitation that could fall (rain, snow, sleet, etc).",
-                          "type": "string",
-                          "enum": [
-                            "rain",
-                            "snow",
-                            "precip"
-                          ],
-                          "meta:xdmType": "string",
-                          "meta:xdmField": "precipType",
-                          "tagNumber": 3
-                        },
-                        "qpf": {
-                          "properties": {
-                            "millimeters": {
-                              "title": "Millimeters",
-                              "type": "number",
-                              "description": "Precipitation in millimeters",
-                              "meta:xdmType": "number",
-                              "meta:xdmField": "xdm:millimeters",
-                              "tagNumber": 1
-                            },
-                            "inches": {
-                              "title": "Inches",
-                              "type": "number",
-                              "description": "Precipitation in inches",
-                              "meta:xdmType": "number",
-                              "meta:xdmField": "xdm:inches",
-                              "tagNumber": 2
-                            }
-                          },
-                          "type": "object",
-                          "meta:xdmField": "qpf",
-                          "tagNumber": 4
-                        },
-                        "relativeHumidity": {
-                          "title": "Relative Humidity",
-                          "description": "The relative humidity of the air, which is defined as the ratio of the amount of water vapor in the air to the amount of vapor required to bring the air to saturation at a constant temperature. Relative humidity is always expressed as a percentage.\nRange - 0 to 100.",
-                          "type": "integer",
-                          "meta:xdmType": "int",
-                          "meta:xdmField": "relativeHumidity",
-                          "tagNumber": 5
-                        },
-                        "snowRange": {
-                          "title": "Snow Range",
-                          "description": "Bucket of potential snowfall (1-3”, 3-6” etc).",
-                          "type": "string",
-                          "meta:xdmType": "string",
-                          "meta:xdmField": "snowRange",
-                          "tagNumber": 6
-                        },
-                        "temperature": {
-                          "properties": {
-                            "celsius": {
-                              "title": "Celsius",
-                              "type": "integer",
-                              "description": "Temperature in degrees Celsius",
-                              "meta:xdmType": "int",
-                              "meta:xdmField": "xdm:celsius",
-                              "tagNumber": 1
-                            },
-                            "fahrenheit": {
-                              "title": "Fahrenheit",
-                              "type": "integer",
-                              "description": "Temperature in degrees Fahrenheit",
-                              "meta:xdmType": "int",
-                              "meta:xdmField": "xdm:fahrenheit",
-                              "tagNumber": 2
-                            }
-                          },
-                          "type": "object",
-                          "meta:xdmField": "temperature",
-                          "tagNumber": 7
-                        },
-                        "temperatureHeatIndex": {
-                          "properties": {
-                            "celsius": {
-                              "title": "Celsius",
-                              "type": "integer",
-                              "description": "Temperature in degrees Celsius",
-                              "meta:xdmType": "int",
-                              "meta:xdmField": "xdm:celsius",
-                              "tagNumber": 1
-                            },
-                            "fahrenheit": {
-                              "title": "Fahrenheit",
-                              "type": "integer",
-                              "description": "Temperature in degrees Fahrenheit",
-                              "meta:xdmType": "int",
-                              "meta:xdmField": "xdm:fahrenheit",
-                              "tagNumber": 2
-                            }
-                          },
-                          "type": "object",
-                          "meta:xdmField": "temperatureHeatIndex",
-                          "tagNumber": 8
-                        },
-                        "temperatureWindChill": {
-                          "properties": {
-                            "celsius": {
-                              "title": "Celsius",
-                              "type": "integer",
-                              "description": "Temperature in degrees Celsius",
-                              "meta:xdmType": "int",
-                              "meta:xdmField": "xdm:celsius",
-                              "tagNumber": 1
-                            },
-                            "fahrenheit": {
-                              "title": "Fahrenheit",
-                              "type": "integer",
-                              "description": "Temperature in degrees Fahrenheit",
-                              "meta:xdmType": "int",
-                              "meta:xdmField": "xdm:fahrenheit",
-                              "tagNumber": 2
-                            }
-                          },
-                          "type": "object",
-                          "meta:xdmField": "temperatureWindChill",
-                          "tagNumber": 9
-                        },
-                        "thunderIndex": {
-                          "title": "Thunder Index",
-                          "description": "Index of the probability of thunderstorms impacting an area. 0 (no thunder to 5 (high risk of severe thunderstorms).",
-                          "type": "integer",
-                          "meta:xdmType": "int",
-                          "meta:xdmField": "thunderIndex",
-                          "tagNumber": 10
-                        },
-                        "windDirection": {
-                          "title": "Wind Direction",
-                          "description": "The magnetic wind direction from which the wind blows expressed in degrees. The magnetic direction varies from 0 to 359 degrees, where 0° indicates the North, 90° the East, 180° the South, 270° the West, and so forth.\nRange - 0<=wind_dire_deg<=350, in 10 degree intervals.",
-                          "type": "integer",
-                          "meta:xdmType": "int",
-                          "meta:xdmField": "windDirection",
-                          "tagNumber": 11
-                        },
-                        "windSpeed": {
-                          "properties": {
-                            "kilometersPerHour": {
-                              "title": "Kilometers per Hour",
-                              "type": "integer",
-                              "description": "Wind speed in kilometers per hour",
-                              "meta:xdmType": "int",
-                              "meta:xdmField": "xdm:kilometersPerHour",
-                              "tagNumber": 1
-                            },
-                            "milesPerHour": {
-                              "title": "Miles per Hour",
-                              "type": "integer",
-                              "description": "Wind speed in miles per hour",
-                              "meta:xdmType": "int",
-                              "meta:xdmField": "xdm:milesPerHour",
-                              "tagNumber": 2
-                            }
-                          },
-                          "type": "object",
-                          "meta:xdmField": "windSpeed",
-                          "tagNumber": 12
-                        },
-                        "windGust": {
-                          "properties": {
-                            "kilometersPerHour": {
-                              "title": "Kilometers per Hour",
-                              "type": "integer",
-                              "description": "Wind speed in kilometers per hour",
-                              "meta:xdmType": "int",
-                              "meta:xdmField": "xdm:kilometersPerHour",
-                              "tagNumber": 1
-                            },
-                            "milesPerHour": {
-                              "title": "Miles per Hour",
-                              "type": "integer",
-                              "description": "Wind speed in miles per hour",
-                              "meta:xdmType": "int",
-                              "meta:xdmField": "xdm:milesPerHour",
-                              "tagNumber": 2
-                            }
-                          },
-                          "type": "object",
-                          "meta:xdmField": "windGust",
-                          "tagNumber": 13
-                        },
-                        "qpfSnow": {
-                          "properties": {
-                            "centimeters": {
-                              "title": "Centimeters",
-                              "type": "number",
-                              "description": "Snowfall in centimeters",
-                              "meta:xdmType": "number",
-                              "meta:xdmField": "xdm:centimeters",
-                              "tagNumber": 1
-                            },
-                            "inches": {
-                              "title": "Inches",
-                              "type": "number",
-                              "description": "Snowfall in inches",
-                              "meta:xdmType": "number",
-                              "meta:xdmField": "xdm:inches",
-                              "tagNumber": 2
-                            }
-                          },
-                          "type": "object",
-                          "meta:xdmField": "qpfSnow",
-                          "tagNumber": 14
-                        },
-                        "uvIndex": {
-                          "title": "UV Index",
-                          "description": "Maximum UV index for the 12 hour forecast period.",
-                          "type": "integer",
-                          "meta:xdmType": "int",
-                          "meta:xdmField": "uvIndex",
-                          "tagNumber": 15
                         }
                       },
+                      "type": "object",
+                      "meta:xdmField": "xdm:cloudCover",
                       "tagNumber": 1
+                    },
+                    "precipChance": {
+                      "title": "Precipitation Chance",
+                      "description": "Probability that there will be precipitation (percentage).",
+                      "type": "integer",
+                      "meta:xdmType": "int",
+                      "meta:xdmField": "xdm:precipChance",
+                      "tagNumber": 2
+                    },
+                    "precipType": {
+                      "title": "Precipitation Type",
+                      "description": "The form of precipitation that could fall (rain, snow, sleet, etc).",
+                      "type": "string",
+                      "enum": [
+                        "rain",
+                        "snow",
+                        "precip"
+                      ],
+                      "meta:xdmType": "string",
+                      "meta:xdmField": "xdm:precipType",
+                      "tagNumber": 3
+                    },
+                    "qpf": {
+                      "properties": {
+                        "millimeters": {
+                          "title": "Millimeters",
+                          "type": "number",
+                          "description": "Precipitation in millimeters",
+                          "meta:xdmType": "number",
+                          "meta:xdmField": "xdm:millimeters",
+                          "tagNumber": 1
+                        },
+                        "inches": {
+                          "title": "Inches",
+                          "type": "number",
+                          "description": "Precipitation in inches",
+                          "meta:xdmType": "number",
+                          "meta:xdmField": "xdm:inches",
+                          "tagNumber": 2
+                        }
+                      },
+                      "type": "object",
+                      "meta:xdmField": "xdm:qpf",
+                      "tagNumber": 4
+                    },
+                    "relativeHumidity": {
+                      "title": "Relative Humidity",
+                      "description": "The relative humidity of the air, which is defined as the ratio of the amount of water vapor in the air to the amount of vapor required to bring the air to saturation at a constant temperature. Relative humidity is always expressed as a percentage.\nRange - 0 to 100.",
+                      "type": "integer",
+                      "meta:xdmType": "int",
+                      "meta:xdmField": "xdm:relativeHumidity",
+                      "tagNumber": 5
+                    },
+                    "snowRange": {
+                      "title": "Snow Range",
+                      "description": "Bucket of potential snowfall (1-3”, 3-6” etc).",
+                      "type": "string",
+                      "meta:xdmType": "string",
+                      "meta:xdmField": "xdm:snowRange",
+                      "tagNumber": 6
+                    },
+                    "temperature": {
+                      "properties": {
+                        "celsius": {
+                          "title": "Celsius",
+                          "type": "integer",
+                          "description": "Temperature in degrees Celsius",
+                          "meta:xdmType": "int",
+                          "meta:xdmField": "xdm:celsius",
+                          "tagNumber": 1
+                        },
+                        "fahrenheit": {
+                          "title": "Fahrenheit",
+                          "type": "integer",
+                          "description": "Temperature in degrees Fahrenheit",
+                          "meta:xdmType": "int",
+                          "meta:xdmField": "xdm:fahrenheit",
+                          "tagNumber": 2
+                        }
+                      },
+                      "type": "object",
+                      "meta:xdmField": "xdm:temperature",
+                      "tagNumber": 7
+                    },
+                    "temperatureHeatIndex": {
+                      "properties": {
+                        "celsius": {
+                          "title": "Celsius",
+                          "type": "integer",
+                          "description": "Temperature in degrees Celsius",
+                          "meta:xdmType": "int",
+                          "meta:xdmField": "xdm:celsius",
+                          "tagNumber": 1
+                        },
+                        "fahrenheit": {
+                          "title": "Fahrenheit",
+                          "type": "integer",
+                          "description": "Temperature in degrees Fahrenheit",
+                          "meta:xdmType": "int",
+                          "meta:xdmField": "xdm:fahrenheit",
+                          "tagNumber": 2
+                        }
+                      },
+                      "type": "object",
+                      "meta:xdmField": "xdm:temperatureHeatIndex",
+                      "tagNumber": 8
+                    },
+                    "temperatureWindChill": {
+                      "properties": {
+                        "celsius": {
+                          "title": "Celsius",
+                          "type": "integer",
+                          "description": "Temperature in degrees Celsius",
+                          "meta:xdmType": "int",
+                          "meta:xdmField": "xdm:celsius",
+                          "tagNumber": 1
+                        },
+                        "fahrenheit": {
+                          "title": "Fahrenheit",
+                          "type": "integer",
+                          "description": "Temperature in degrees Fahrenheit",
+                          "meta:xdmType": "int",
+                          "meta:xdmField": "xdm:fahrenheit",
+                          "tagNumber": 2
+                        }
+                      },
+                      "type": "object",
+                      "meta:xdmField": "xdm:temperatureWindChill",
+                      "tagNumber": 9
+                    },
+                    "thunderIndex": {
+                      "title": "Thunder Index",
+                      "description": "Index of the probability of thunderstorms impacting an area. 0 (no thunder to 5 (high risk of severe thunderstorms).",
+                      "type": "integer",
+                      "meta:xdmType": "int",
+                      "meta:xdmField": "xdm:thunderIndex",
+                      "tagNumber": 10
+                    },
+                    "windDirection": {
+                      "title": "Wind Direction",
+                      "description": "The magnetic wind direction from which the wind blows expressed in degrees. The magnetic direction varies from 0 to 359 degrees, where 0° indicates the North, 90° the East, 180° the South, 270° the West, and so forth.\nRange - 0<=wind_dire_deg<=350, in 10 degree intervals.",
+                      "type": "integer",
+                      "meta:xdmType": "int",
+                      "meta:xdmField": "xdm:windDirection",
+                      "tagNumber": 11
+                    },
+                    "windSpeed": {
+                      "properties": {
+                        "kilometersPerHour": {
+                          "title": "Kilometers per Hour",
+                          "type": "integer",
+                          "description": "Wind speed in kilometers per hour",
+                          "meta:xdmType": "int",
+                          "meta:xdmField": "xdm:kilometersPerHour",
+                          "tagNumber": 1
+                        },
+                        "milesPerHour": {
+                          "title": "Miles per Hour",
+                          "type": "integer",
+                          "description": "Wind speed in miles per hour",
+                          "meta:xdmType": "int",
+                          "meta:xdmField": "xdm:milesPerHour",
+                          "tagNumber": 2
+                        }
+                      },
+                      "type": "object",
+                      "meta:xdmField": "xdm:windSpeed",
+                      "tagNumber": 12
+                    },
+                    "windGust": {
+                      "properties": {
+                        "kilometersPerHour": {
+                          "title": "Kilometers per Hour",
+                          "type": "integer",
+                          "description": "Wind speed in kilometers per hour",
+                          "meta:xdmType": "int",
+                          "meta:xdmField": "xdm:kilometersPerHour",
+                          "tagNumber": 1
+                        },
+                        "milesPerHour": {
+                          "title": "Miles per Hour",
+                          "type": "integer",
+                          "description": "Wind speed in miles per hour",
+                          "meta:xdmType": "int",
+                          "meta:xdmField": "xdm:milesPerHour",
+                          "tagNumber": 2
+                        }
+                      },
+                      "type": "object",
+                      "meta:xdmField": "xdm:windGust",
+                      "tagNumber": 13
+                    },
+                    "qpfSnow": {
+                      "properties": {
+                        "centimeters": {
+                          "title": "Centimeters",
+                          "type": "number",
+                          "description": "Snowfall in centimeters",
+                          "meta:xdmType": "number",
+                          "meta:xdmField": "xdm:centimeters",
+                          "tagNumber": 1
+                        },
+                        "inches": {
+                          "title": "Inches",
+                          "type": "number",
+                          "description": "Snowfall in inches",
+                          "meta:xdmType": "number",
+                          "meta:xdmField": "xdm:inches",
+                          "tagNumber": 2
+                        }
+                      },
+                      "type": "object",
+                      "meta:xdmField": "xdm:qpfSnow",
+                      "tagNumber": 14
+                    },
+                    "uvIndex": {
+                      "title": "UV Index",
+                      "description": "Maximum UV index for the 12 hour forecast period.",
+                      "type": "integer",
+                      "meta:xdmType": "int",
+                      "meta:xdmField": "xdm:uvIndex",
+                      "tagNumber": 15
                     }
                   },
                   "type": "object",
@@ -709,257 +695,250 @@
                 },
                 "day": {
                   "properties": {
-                    "_unqualified": {
-                      "type": "object",
-                      "meta:xdmType": "object",
+                    "cloudCover": {
                       "properties": {
-                        "cloudCover": {
-                          "properties": {
-                            "kilometers": {
-                              "title": "Kilometers",
-                              "type": "number",
-                              "description": "Distance in kilometers.",
-                              "meta:xdmType": "number",
-                              "meta:xdmField": "xdm:kilometers",
-                              "tagNumber": 1
-                            },
-                            "inches": {
-                              "title": "Miles",
-                              "type": "number",
-                              "description": "Distance in miles.",
-                              "meta:xdmType": "number",
-                              "meta:xdmField": "xdm:inches",
-                              "tagNumber": 2
-                            }
-                          },
-                          "type": "object",
-                          "meta:xdmField": "cloudCover",
+                        "kilometers": {
+                          "title": "Kilometers",
+                          "type": "number",
+                          "description": "Distance in kilometers.",
+                          "meta:xdmType": "number",
+                          "meta:xdmField": "xdm:kilometers",
                           "tagNumber": 1
                         },
-                        "precipChance": {
-                          "title": "Precipitation Chance",
-                          "description": "Probability that there will be precipitation (percentage).",
-                          "type": "integer",
-                          "meta:xdmType": "int",
-                          "meta:xdmField": "precipChance",
+                        "inches": {
+                          "title": "Miles",
+                          "type": "number",
+                          "description": "Distance in miles.",
+                          "meta:xdmType": "number",
+                          "meta:xdmField": "xdm:inches",
                           "tagNumber": 2
-                        },
-                        "precipType": {
-                          "title": "Precipitation Type",
-                          "description": "The form of precipitation that could fall (rain, snow, sleet, etc).",
-                          "type": "string",
-                          "enum": [
-                            "rain",
-                            "snow",
-                            "precip"
-                          ],
-                          "meta:xdmType": "string",
-                          "meta:xdmField": "precipType",
-                          "tagNumber": 3
-                        },
-                        "qpf": {
-                          "properties": {
-                            "millimeters": {
-                              "title": "Millimeters",
-                              "type": "number",
-                              "description": "Precipitation in millimeters",
-                              "meta:xdmType": "number",
-                              "meta:xdmField": "xdm:millimeters",
-                              "tagNumber": 1
-                            },
-                            "inches": {
-                              "title": "Inches",
-                              "type": "number",
-                              "description": "Precipitation in inches",
-                              "meta:xdmType": "number",
-                              "meta:xdmField": "xdm:inches",
-                              "tagNumber": 2
-                            }
-                          },
-                          "type": "object",
-                          "meta:xdmField": "qpf",
-                          "tagNumber": 4
-                        },
-                        "relativeHumidity": {
-                          "title": "Relative Humidity",
-                          "description": "The relative humidity of the air, which is defined as the ratio of the amount of water vapor in the air to the amount of vapor required to bring the air to saturation at a constant temperature. Relative humidity is always expressed as a percentage.\nRange - 0 to 100.",
-                          "type": "integer",
-                          "meta:xdmType": "int",
-                          "meta:xdmField": "relativeHumidity",
-                          "tagNumber": 5
-                        },
-                        "snowRange": {
-                          "title": "Snow Range",
-                          "description": "Bucket of potential snowfall (1-3”, 3-6” etc).",
-                          "type": "string",
-                          "meta:xdmType": "string",
-                          "meta:xdmField": "snowRange",
-                          "tagNumber": 6
-                        },
-                        "temperature": {
-                          "properties": {
-                            "celsius": {
-                              "title": "Celsius",
-                              "type": "integer",
-                              "description": "Temperature in degrees Celsius",
-                              "meta:xdmType": "int",
-                              "meta:xdmField": "xdm:celsius",
-                              "tagNumber": 1
-                            },
-                            "fahrenheit": {
-                              "title": "Fahrenheit",
-                              "type": "integer",
-                              "description": "Temperature in degrees Fahrenheit",
-                              "meta:xdmType": "int",
-                              "meta:xdmField": "xdm:fahrenheit",
-                              "tagNumber": 2
-                            }
-                          },
-                          "type": "object",
-                          "meta:xdmField": "temperature",
-                          "tagNumber": 7
-                        },
-                        "temperatureHeatIndex": {
-                          "properties": {
-                            "celsius": {
-                              "title": "Celsius",
-                              "type": "integer",
-                              "description": "Temperature in degrees Celsius",
-                              "meta:xdmType": "int",
-                              "meta:xdmField": "xdm:celsius",
-                              "tagNumber": 1
-                            },
-                            "fahrenheit": {
-                              "title": "Fahrenheit",
-                              "type": "integer",
-                              "description": "Temperature in degrees Fahrenheit",
-                              "meta:xdmType": "int",
-                              "meta:xdmField": "xdm:fahrenheit",
-                              "tagNumber": 2
-                            }
-                          },
-                          "type": "object",
-                          "meta:xdmField": "temperatureHeatIndex",
-                          "tagNumber": 8
-                        },
-                        "temperatureWindChill": {
-                          "properties": {
-                            "celsius": {
-                              "title": "Celsius",
-                              "type": "integer",
-                              "description": "Temperature in degrees Celsius",
-                              "meta:xdmType": "int",
-                              "meta:xdmField": "xdm:celsius",
-                              "tagNumber": 1
-                            },
-                            "fahrenheit": {
-                              "title": "Fahrenheit",
-                              "type": "integer",
-                              "description": "Temperature in degrees Fahrenheit",
-                              "meta:xdmType": "int",
-                              "meta:xdmField": "xdm:fahrenheit",
-                              "tagNumber": 2
-                            }
-                          },
-                          "type": "object",
-                          "meta:xdmField": "temperatureWindChill",
-                          "tagNumber": 9
-                        },
-                        "thunderIndex": {
-                          "title": "Thunder Index",
-                          "description": "Index of the probability of thunderstorms impacting an area. 0 (no thunder to 5 (high risk of severe thunderstorms).",
-                          "type": "integer",
-                          "meta:xdmType": "int",
-                          "meta:xdmField": "thunderIndex",
-                          "tagNumber": 10
-                        },
-                        "windDirection": {
-                          "title": "Wind Direction",
-                          "description": "The magnetic wind direction from which the wind blows expressed in degrees. The magnetic direction varies from 0 to 359 degrees, where 0° indicates the North, 90° the East, 180° the South, 270° the West, and so forth.\nRange - 0<=wind_dire_deg<=350, in 10 degree intervals.",
-                          "type": "integer",
-                          "meta:xdmType": "int",
-                          "meta:xdmField": "windDirection",
-                          "tagNumber": 11
-                        },
-                        "windSpeed": {
-                          "properties": {
-                            "kilometersPerHour": {
-                              "title": "Kilometers per Hour",
-                              "type": "integer",
-                              "description": "Wind speed in kilometers per hour",
-                              "meta:xdmType": "int",
-                              "meta:xdmField": "xdm:kilometersPerHour",
-                              "tagNumber": 1
-                            },
-                            "milesPerHour": {
-                              "title": "Miles per Hour",
-                              "type": "integer",
-                              "description": "Wind speed in miles per hour",
-                              "meta:xdmType": "int",
-                              "meta:xdmField": "xdm:milesPerHour",
-                              "tagNumber": 2
-                            }
-                          },
-                          "type": "object",
-                          "meta:xdmField": "windSpeed",
-                          "tagNumber": 12
-                        },
-                        "windGust": {
-                          "properties": {
-                            "kilometersPerHour": {
-                              "title": "Kilometers per Hour",
-                              "type": "integer",
-                              "description": "Wind speed in kilometers per hour",
-                              "meta:xdmType": "int",
-                              "meta:xdmField": "xdm:kilometersPerHour",
-                              "tagNumber": 1
-                            },
-                            "milesPerHour": {
-                              "title": "Miles per Hour",
-                              "type": "integer",
-                              "description": "Wind speed in miles per hour",
-                              "meta:xdmType": "int",
-                              "meta:xdmField": "xdm:milesPerHour",
-                              "tagNumber": 2
-                            }
-                          },
-                          "type": "object",
-                          "meta:xdmField": "windGust",
-                          "tagNumber": 13
-                        },
-                        "qpfSnow": {
-                          "properties": {
-                            "centimeters": {
-                              "title": "Centimeters",
-                              "type": "number",
-                              "description": "Snowfall in centimeters",
-                              "meta:xdmType": "number",
-                              "meta:xdmField": "xdm:centimeters",
-                              "tagNumber": 1
-                            },
-                            "inches": {
-                              "title": "Inches",
-                              "type": "number",
-                              "description": "Snowfall in inches",
-                              "meta:xdmType": "number",
-                              "meta:xdmField": "xdm:inches",
-                              "tagNumber": 2
-                            }
-                          },
-                          "type": "object",
-                          "meta:xdmField": "qpfSnow",
-                          "tagNumber": 14
-                        },
-                        "uvIndex": {
-                          "title": "UV Index",
-                          "description": "Maximum UV index for the 12 hour forecast period.",
-                          "type": "integer",
-                          "meta:xdmType": "int",
-                          "meta:xdmField": "uvIndex",
-                          "tagNumber": 15
                         }
                       },
+                      "type": "object",
+                      "meta:xdmField": "xdm:cloudCover",
                       "tagNumber": 1
+                    },
+                    "precipChance": {
+                      "title": "Precipitation Chance",
+                      "description": "Probability that there will be precipitation (percentage).",
+                      "type": "integer",
+                      "meta:xdmType": "int",
+                      "meta:xdmField": "xdm:precipChance",
+                      "tagNumber": 2
+                    },
+                    "precipType": {
+                      "title": "Precipitation Type",
+                      "description": "The form of precipitation that could fall (rain, snow, sleet, etc).",
+                      "type": "string",
+                      "enum": [
+                        "rain",
+                        "snow",
+                        "precip"
+                      ],
+                      "meta:xdmType": "string",
+                      "meta:xdmField": "xdm:precipType",
+                      "tagNumber": 3
+                    },
+                    "qpf": {
+                      "properties": {
+                        "millimeters": {
+                          "title": "Millimeters",
+                          "type": "number",
+                          "description": "Precipitation in millimeters",
+                          "meta:xdmType": "number",
+                          "meta:xdmField": "xdm:millimeters",
+                          "tagNumber": 1
+                        },
+                        "inches": {
+                          "title": "Inches",
+                          "type": "number",
+                          "description": "Precipitation in inches",
+                          "meta:xdmType": "number",
+                          "meta:xdmField": "xdm:inches",
+                          "tagNumber": 2
+                        }
+                      },
+                      "type": "object",
+                      "meta:xdmField": "xdm:qpf",
+                      "tagNumber": 4
+                    },
+                    "relativeHumidity": {
+                      "title": "Relative Humidity",
+                      "description": "The relative humidity of the air, which is defined as the ratio of the amount of water vapor in the air to the amount of vapor required to bring the air to saturation at a constant temperature. Relative humidity is always expressed as a percentage.\nRange - 0 to 100.",
+                      "type": "integer",
+                      "meta:xdmType": "int",
+                      "meta:xdmField": "xdm:relativeHumidity",
+                      "tagNumber": 5
+                    },
+                    "snowRange": {
+                      "title": "Snow Range",
+                      "description": "Bucket of potential snowfall (1-3”, 3-6” etc).",
+                      "type": "string",
+                      "meta:xdmType": "string",
+                      "meta:xdmField": "xdm:snowRange",
+                      "tagNumber": 6
+                    },
+                    "temperature": {
+                      "properties": {
+                        "celsius": {
+                          "title": "Celsius",
+                          "type": "integer",
+                          "description": "Temperature in degrees Celsius",
+                          "meta:xdmType": "int",
+                          "meta:xdmField": "xdm:celsius",
+                          "tagNumber": 1
+                        },
+                        "fahrenheit": {
+                          "title": "Fahrenheit",
+                          "type": "integer",
+                          "description": "Temperature in degrees Fahrenheit",
+                          "meta:xdmType": "int",
+                          "meta:xdmField": "xdm:fahrenheit",
+                          "tagNumber": 2
+                        }
+                      },
+                      "type": "object",
+                      "meta:xdmField": "xdm:temperature",
+                      "tagNumber": 7
+                    },
+                    "temperatureHeatIndex": {
+                      "properties": {
+                        "celsius": {
+                          "title": "Celsius",
+                          "type": "integer",
+                          "description": "Temperature in degrees Celsius",
+                          "meta:xdmType": "int",
+                          "meta:xdmField": "xdm:celsius",
+                          "tagNumber": 1
+                        },
+                        "fahrenheit": {
+                          "title": "Fahrenheit",
+                          "type": "integer",
+                          "description": "Temperature in degrees Fahrenheit",
+                          "meta:xdmType": "int",
+                          "meta:xdmField": "xdm:fahrenheit",
+                          "tagNumber": 2
+                        }
+                      },
+                      "type": "object",
+                      "meta:xdmField": "xdm:temperatureHeatIndex",
+                      "tagNumber": 8
+                    },
+                    "temperatureWindChill": {
+                      "properties": {
+                        "celsius": {
+                          "title": "Celsius",
+                          "type": "integer",
+                          "description": "Temperature in degrees Celsius",
+                          "meta:xdmType": "int",
+                          "meta:xdmField": "xdm:celsius",
+                          "tagNumber": 1
+                        },
+                        "fahrenheit": {
+                          "title": "Fahrenheit",
+                          "type": "integer",
+                          "description": "Temperature in degrees Fahrenheit",
+                          "meta:xdmType": "int",
+                          "meta:xdmField": "xdm:fahrenheit",
+                          "tagNumber": 2
+                        }
+                      },
+                      "type": "object",
+                      "meta:xdmField": "xdm:temperatureWindChill",
+                      "tagNumber": 9
+                    },
+                    "thunderIndex": {
+                      "title": "Thunder Index",
+                      "description": "Index of the probability of thunderstorms impacting an area. 0 (no thunder to 5 (high risk of severe thunderstorms).",
+                      "type": "integer",
+                      "meta:xdmType": "int",
+                      "meta:xdmField": "xdm:thunderIndex",
+                      "tagNumber": 10
+                    },
+                    "windDirection": {
+                      "title": "Wind Direction",
+                      "description": "The magnetic wind direction from which the wind blows expressed in degrees. The magnetic direction varies from 0 to 359 degrees, where 0° indicates the North, 90° the East, 180° the South, 270° the West, and so forth.\nRange - 0<=wind_dire_deg<=350, in 10 degree intervals.",
+                      "type": "integer",
+                      "meta:xdmType": "int",
+                      "meta:xdmField": "xdm:windDirection",
+                      "tagNumber": 11
+                    },
+                    "windSpeed": {
+                      "properties": {
+                        "kilometersPerHour": {
+                          "title": "Kilometers per Hour",
+                          "type": "integer",
+                          "description": "Wind speed in kilometers per hour",
+                          "meta:xdmType": "int",
+                          "meta:xdmField": "xdm:kilometersPerHour",
+                          "tagNumber": 1
+                        },
+                        "milesPerHour": {
+                          "title": "Miles per Hour",
+                          "type": "integer",
+                          "description": "Wind speed in miles per hour",
+                          "meta:xdmType": "int",
+                          "meta:xdmField": "xdm:milesPerHour",
+                          "tagNumber": 2
+                        }
+                      },
+                      "type": "object",
+                      "meta:xdmField": "xdm:windSpeed",
+                      "tagNumber": 12
+                    },
+                    "windGust": {
+                      "properties": {
+                        "kilometersPerHour": {
+                          "title": "Kilometers per Hour",
+                          "type": "integer",
+                          "description": "Wind speed in kilometers per hour",
+                          "meta:xdmType": "int",
+                          "meta:xdmField": "xdm:kilometersPerHour",
+                          "tagNumber": 1
+                        },
+                        "milesPerHour": {
+                          "title": "Miles per Hour",
+                          "type": "integer",
+                          "description": "Wind speed in miles per hour",
+                          "meta:xdmType": "int",
+                          "meta:xdmField": "xdm:milesPerHour",
+                          "tagNumber": 2
+                        }
+                      },
+                      "type": "object",
+                      "meta:xdmField": "xdm:windGust",
+                      "tagNumber": 13
+                    },
+                    "qpfSnow": {
+                      "properties": {
+                        "centimeters": {
+                          "title": "Centimeters",
+                          "type": "number",
+                          "description": "Snowfall in centimeters",
+                          "meta:xdmType": "number",
+                          "meta:xdmField": "xdm:centimeters",
+                          "tagNumber": 1
+                        },
+                        "inches": {
+                          "title": "Inches",
+                          "type": "number",
+                          "description": "Snowfall in inches",
+                          "meta:xdmType": "number",
+                          "meta:xdmField": "xdm:inches",
+                          "tagNumber": 2
+                        }
+                      },
+                      "type": "object",
+                      "meta:xdmField": "xdm:qpfSnow",
+                      "tagNumber": 14
+                    },
+                    "uvIndex": {
+                      "title": "UV Index",
+                      "description": "Maximum UV index for the 12 hour forecast period.",
+                      "type": "integer",
+                      "meta:xdmType": "int",
+                      "meta:xdmField": "xdm:uvIndex",
+                      "tagNumber": 15
                     }
                   },
                   "type": "object",
@@ -968,257 +947,250 @@
                 },
                 "night": {
                   "properties": {
-                    "_unqualified": {
-                      "type": "object",
-                      "meta:xdmType": "object",
+                    "cloudCover": {
                       "properties": {
-                        "cloudCover": {
-                          "properties": {
-                            "kilometers": {
-                              "title": "Kilometers",
-                              "type": "number",
-                              "description": "Distance in kilometers.",
-                              "meta:xdmType": "number",
-                              "meta:xdmField": "xdm:kilometers",
-                              "tagNumber": 1
-                            },
-                            "inches": {
-                              "title": "Miles",
-                              "type": "number",
-                              "description": "Distance in miles.",
-                              "meta:xdmType": "number",
-                              "meta:xdmField": "xdm:inches",
-                              "tagNumber": 2
-                            }
-                          },
-                          "type": "object",
-                          "meta:xdmField": "cloudCover",
+                        "kilometers": {
+                          "title": "Kilometers",
+                          "type": "number",
+                          "description": "Distance in kilometers.",
+                          "meta:xdmType": "number",
+                          "meta:xdmField": "xdm:kilometers",
                           "tagNumber": 1
                         },
-                        "precipChance": {
-                          "title": "Precipitation Chance",
-                          "description": "Probability that there will be precipitation (percentage).",
-                          "type": "integer",
-                          "meta:xdmType": "int",
-                          "meta:xdmField": "precipChance",
+                        "inches": {
+                          "title": "Miles",
+                          "type": "number",
+                          "description": "Distance in miles.",
+                          "meta:xdmType": "number",
+                          "meta:xdmField": "xdm:inches",
                           "tagNumber": 2
-                        },
-                        "precipType": {
-                          "title": "Precipitation Type",
-                          "description": "The form of precipitation that could fall (rain, snow, sleet, etc).",
-                          "type": "string",
-                          "enum": [
-                            "rain",
-                            "snow",
-                            "precip"
-                          ],
-                          "meta:xdmType": "string",
-                          "meta:xdmField": "precipType",
-                          "tagNumber": 3
-                        },
-                        "qpf": {
-                          "properties": {
-                            "millimeters": {
-                              "title": "Millimeters",
-                              "type": "number",
-                              "description": "Precipitation in millimeters",
-                              "meta:xdmType": "number",
-                              "meta:xdmField": "xdm:millimeters",
-                              "tagNumber": 1
-                            },
-                            "inches": {
-                              "title": "Inches",
-                              "type": "number",
-                              "description": "Precipitation in inches",
-                              "meta:xdmType": "number",
-                              "meta:xdmField": "xdm:inches",
-                              "tagNumber": 2
-                            }
-                          },
-                          "type": "object",
-                          "meta:xdmField": "qpf",
-                          "tagNumber": 4
-                        },
-                        "relativeHumidity": {
-                          "title": "Relative Humidity",
-                          "description": "The relative humidity of the air, which is defined as the ratio of the amount of water vapor in the air to the amount of vapor required to bring the air to saturation at a constant temperature. Relative humidity is always expressed as a percentage.\nRange - 0 to 100.",
-                          "type": "integer",
-                          "meta:xdmType": "int",
-                          "meta:xdmField": "relativeHumidity",
-                          "tagNumber": 5
-                        },
-                        "snowRange": {
-                          "title": "Snow Range",
-                          "description": "Bucket of potential snowfall (1-3”, 3-6” etc).",
-                          "type": "string",
-                          "meta:xdmType": "string",
-                          "meta:xdmField": "snowRange",
-                          "tagNumber": 6
-                        },
-                        "temperature": {
-                          "properties": {
-                            "celsius": {
-                              "title": "Celsius",
-                              "type": "integer",
-                              "description": "Temperature in degrees Celsius",
-                              "meta:xdmType": "int",
-                              "meta:xdmField": "xdm:celsius",
-                              "tagNumber": 1
-                            },
-                            "fahrenheit": {
-                              "title": "Fahrenheit",
-                              "type": "integer",
-                              "description": "Temperature in degrees Fahrenheit",
-                              "meta:xdmType": "int",
-                              "meta:xdmField": "xdm:fahrenheit",
-                              "tagNumber": 2
-                            }
-                          },
-                          "type": "object",
-                          "meta:xdmField": "temperature",
-                          "tagNumber": 7
-                        },
-                        "temperatureHeatIndex": {
-                          "properties": {
-                            "celsius": {
-                              "title": "Celsius",
-                              "type": "integer",
-                              "description": "Temperature in degrees Celsius",
-                              "meta:xdmType": "int",
-                              "meta:xdmField": "xdm:celsius",
-                              "tagNumber": 1
-                            },
-                            "fahrenheit": {
-                              "title": "Fahrenheit",
-                              "type": "integer",
-                              "description": "Temperature in degrees Fahrenheit",
-                              "meta:xdmType": "int",
-                              "meta:xdmField": "xdm:fahrenheit",
-                              "tagNumber": 2
-                            }
-                          },
-                          "type": "object",
-                          "meta:xdmField": "temperatureHeatIndex",
-                          "tagNumber": 8
-                        },
-                        "temperatureWindChill": {
-                          "properties": {
-                            "celsius": {
-                              "title": "Celsius",
-                              "type": "integer",
-                              "description": "Temperature in degrees Celsius",
-                              "meta:xdmType": "int",
-                              "meta:xdmField": "xdm:celsius",
-                              "tagNumber": 1
-                            },
-                            "fahrenheit": {
-                              "title": "Fahrenheit",
-                              "type": "integer",
-                              "description": "Temperature in degrees Fahrenheit",
-                              "meta:xdmType": "int",
-                              "meta:xdmField": "xdm:fahrenheit",
-                              "tagNumber": 2
-                            }
-                          },
-                          "type": "object",
-                          "meta:xdmField": "temperatureWindChill",
-                          "tagNumber": 9
-                        },
-                        "thunderIndex": {
-                          "title": "Thunder Index",
-                          "description": "Index of the probability of thunderstorms impacting an area. 0 (no thunder to 5 (high risk of severe thunderstorms).",
-                          "type": "integer",
-                          "meta:xdmType": "int",
-                          "meta:xdmField": "thunderIndex",
-                          "tagNumber": 10
-                        },
-                        "windDirection": {
-                          "title": "Wind Direction",
-                          "description": "The magnetic wind direction from which the wind blows expressed in degrees. The magnetic direction varies from 0 to 359 degrees, where 0° indicates the North, 90° the East, 180° the South, 270° the West, and so forth.\nRange - 0<=wind_dire_deg<=350, in 10 degree intervals.",
-                          "type": "integer",
-                          "meta:xdmType": "int",
-                          "meta:xdmField": "windDirection",
-                          "tagNumber": 11
-                        },
-                        "windSpeed": {
-                          "properties": {
-                            "kilometersPerHour": {
-                              "title": "Kilometers per Hour",
-                              "type": "integer",
-                              "description": "Wind speed in kilometers per hour",
-                              "meta:xdmType": "int",
-                              "meta:xdmField": "xdm:kilometersPerHour",
-                              "tagNumber": 1
-                            },
-                            "milesPerHour": {
-                              "title": "Miles per Hour",
-                              "type": "integer",
-                              "description": "Wind speed in miles per hour",
-                              "meta:xdmType": "int",
-                              "meta:xdmField": "xdm:milesPerHour",
-                              "tagNumber": 2
-                            }
-                          },
-                          "type": "object",
-                          "meta:xdmField": "windSpeed",
-                          "tagNumber": 12
-                        },
-                        "windGust": {
-                          "properties": {
-                            "kilometersPerHour": {
-                              "title": "Kilometers per Hour",
-                              "type": "integer",
-                              "description": "Wind speed in kilometers per hour",
-                              "meta:xdmType": "int",
-                              "meta:xdmField": "xdm:kilometersPerHour",
-                              "tagNumber": 1
-                            },
-                            "milesPerHour": {
-                              "title": "Miles per Hour",
-                              "type": "integer",
-                              "description": "Wind speed in miles per hour",
-                              "meta:xdmType": "int",
-                              "meta:xdmField": "xdm:milesPerHour",
-                              "tagNumber": 2
-                            }
-                          },
-                          "type": "object",
-                          "meta:xdmField": "windGust",
-                          "tagNumber": 13
-                        },
-                        "qpfSnow": {
-                          "properties": {
-                            "centimeters": {
-                              "title": "Centimeters",
-                              "type": "number",
-                              "description": "Snowfall in centimeters",
-                              "meta:xdmType": "number",
-                              "meta:xdmField": "xdm:centimeters",
-                              "tagNumber": 1
-                            },
-                            "inches": {
-                              "title": "Inches",
-                              "type": "number",
-                              "description": "Snowfall in inches",
-                              "meta:xdmType": "number",
-                              "meta:xdmField": "xdm:inches",
-                              "tagNumber": 2
-                            }
-                          },
-                          "type": "object",
-                          "meta:xdmField": "qpfSnow",
-                          "tagNumber": 14
-                        },
-                        "uvIndex": {
-                          "title": "UV Index",
-                          "description": "Maximum UV index for the 12 hour forecast period.",
-                          "type": "integer",
-                          "meta:xdmType": "int",
-                          "meta:xdmField": "uvIndex",
-                          "tagNumber": 15
                         }
                       },
+                      "type": "object",
+                      "meta:xdmField": "xdm:cloudCover",
                       "tagNumber": 1
+                    },
+                    "precipChance": {
+                      "title": "Precipitation Chance",
+                      "description": "Probability that there will be precipitation (percentage).",
+                      "type": "integer",
+                      "meta:xdmType": "int",
+                      "meta:xdmField": "xdm:precipChance",
+                      "tagNumber": 2
+                    },
+                    "precipType": {
+                      "title": "Precipitation Type",
+                      "description": "The form of precipitation that could fall (rain, snow, sleet, etc).",
+                      "type": "string",
+                      "enum": [
+                        "rain",
+                        "snow",
+                        "precip"
+                      ],
+                      "meta:xdmType": "string",
+                      "meta:xdmField": "xdm:precipType",
+                      "tagNumber": 3
+                    },
+                    "qpf": {
+                      "properties": {
+                        "millimeters": {
+                          "title": "Millimeters",
+                          "type": "number",
+                          "description": "Precipitation in millimeters",
+                          "meta:xdmType": "number",
+                          "meta:xdmField": "xdm:millimeters",
+                          "tagNumber": 1
+                        },
+                        "inches": {
+                          "title": "Inches",
+                          "type": "number",
+                          "description": "Precipitation in inches",
+                          "meta:xdmType": "number",
+                          "meta:xdmField": "xdm:inches",
+                          "tagNumber": 2
+                        }
+                      },
+                      "type": "object",
+                      "meta:xdmField": "xdm:qpf",
+                      "tagNumber": 4
+                    },
+                    "relativeHumidity": {
+                      "title": "Relative Humidity",
+                      "description": "The relative humidity of the air, which is defined as the ratio of the amount of water vapor in the air to the amount of vapor required to bring the air to saturation at a constant temperature. Relative humidity is always expressed as a percentage.\nRange - 0 to 100.",
+                      "type": "integer",
+                      "meta:xdmType": "int",
+                      "meta:xdmField": "xdm:relativeHumidity",
+                      "tagNumber": 5
+                    },
+                    "snowRange": {
+                      "title": "Snow Range",
+                      "description": "Bucket of potential snowfall (1-3”, 3-6” etc).",
+                      "type": "string",
+                      "meta:xdmType": "string",
+                      "meta:xdmField": "xdm:snowRange",
+                      "tagNumber": 6
+                    },
+                    "temperature": {
+                      "properties": {
+                        "celsius": {
+                          "title": "Celsius",
+                          "type": "integer",
+                          "description": "Temperature in degrees Celsius",
+                          "meta:xdmType": "int",
+                          "meta:xdmField": "xdm:celsius",
+                          "tagNumber": 1
+                        },
+                        "fahrenheit": {
+                          "title": "Fahrenheit",
+                          "type": "integer",
+                          "description": "Temperature in degrees Fahrenheit",
+                          "meta:xdmType": "int",
+                          "meta:xdmField": "xdm:fahrenheit",
+                          "tagNumber": 2
+                        }
+                      },
+                      "type": "object",
+                      "meta:xdmField": "xdm:temperature",
+                      "tagNumber": 7
+                    },
+                    "temperatureHeatIndex": {
+                      "properties": {
+                        "celsius": {
+                          "title": "Celsius",
+                          "type": "integer",
+                          "description": "Temperature in degrees Celsius",
+                          "meta:xdmType": "int",
+                          "meta:xdmField": "xdm:celsius",
+                          "tagNumber": 1
+                        },
+                        "fahrenheit": {
+                          "title": "Fahrenheit",
+                          "type": "integer",
+                          "description": "Temperature in degrees Fahrenheit",
+                          "meta:xdmType": "int",
+                          "meta:xdmField": "xdm:fahrenheit",
+                          "tagNumber": 2
+                        }
+                      },
+                      "type": "object",
+                      "meta:xdmField": "xdm:temperatureHeatIndex",
+                      "tagNumber": 8
+                    },
+                    "temperatureWindChill": {
+                      "properties": {
+                        "celsius": {
+                          "title": "Celsius",
+                          "type": "integer",
+                          "description": "Temperature in degrees Celsius",
+                          "meta:xdmType": "int",
+                          "meta:xdmField": "xdm:celsius",
+                          "tagNumber": 1
+                        },
+                        "fahrenheit": {
+                          "title": "Fahrenheit",
+                          "type": "integer",
+                          "description": "Temperature in degrees Fahrenheit",
+                          "meta:xdmType": "int",
+                          "meta:xdmField": "xdm:fahrenheit",
+                          "tagNumber": 2
+                        }
+                      },
+                      "type": "object",
+                      "meta:xdmField": "xdm:temperatureWindChill",
+                      "tagNumber": 9
+                    },
+                    "thunderIndex": {
+                      "title": "Thunder Index",
+                      "description": "Index of the probability of thunderstorms impacting an area. 0 (no thunder to 5 (high risk of severe thunderstorms).",
+                      "type": "integer",
+                      "meta:xdmType": "int",
+                      "meta:xdmField": "xdm:thunderIndex",
+                      "tagNumber": 10
+                    },
+                    "windDirection": {
+                      "title": "Wind Direction",
+                      "description": "The magnetic wind direction from which the wind blows expressed in degrees. The magnetic direction varies from 0 to 359 degrees, where 0° indicates the North, 90° the East, 180° the South, 270° the West, and so forth.\nRange - 0<=wind_dire_deg<=350, in 10 degree intervals.",
+                      "type": "integer",
+                      "meta:xdmType": "int",
+                      "meta:xdmField": "xdm:windDirection",
+                      "tagNumber": 11
+                    },
+                    "windSpeed": {
+                      "properties": {
+                        "kilometersPerHour": {
+                          "title": "Kilometers per Hour",
+                          "type": "integer",
+                          "description": "Wind speed in kilometers per hour",
+                          "meta:xdmType": "int",
+                          "meta:xdmField": "xdm:kilometersPerHour",
+                          "tagNumber": 1
+                        },
+                        "milesPerHour": {
+                          "title": "Miles per Hour",
+                          "type": "integer",
+                          "description": "Wind speed in miles per hour",
+                          "meta:xdmType": "int",
+                          "meta:xdmField": "xdm:milesPerHour",
+                          "tagNumber": 2
+                        }
+                      },
+                      "type": "object",
+                      "meta:xdmField": "xdm:windSpeed",
+                      "tagNumber": 12
+                    },
+                    "windGust": {
+                      "properties": {
+                        "kilometersPerHour": {
+                          "title": "Kilometers per Hour",
+                          "type": "integer",
+                          "description": "Wind speed in kilometers per hour",
+                          "meta:xdmType": "int",
+                          "meta:xdmField": "xdm:kilometersPerHour",
+                          "tagNumber": 1
+                        },
+                        "milesPerHour": {
+                          "title": "Miles per Hour",
+                          "type": "integer",
+                          "description": "Wind speed in miles per hour",
+                          "meta:xdmType": "int",
+                          "meta:xdmField": "xdm:milesPerHour",
+                          "tagNumber": 2
+                        }
+                      },
+                      "type": "object",
+                      "meta:xdmField": "xdm:windGust",
+                      "tagNumber": 13
+                    },
+                    "qpfSnow": {
+                      "properties": {
+                        "centimeters": {
+                          "title": "Centimeters",
+                          "type": "number",
+                          "description": "Snowfall in centimeters",
+                          "meta:xdmType": "number",
+                          "meta:xdmField": "xdm:centimeters",
+                          "tagNumber": 1
+                        },
+                        "inches": {
+                          "title": "Inches",
+                          "type": "number",
+                          "description": "Snowfall in inches",
+                          "meta:xdmType": "number",
+                          "meta:xdmField": "xdm:inches",
+                          "tagNumber": 2
+                        }
+                      },
+                      "type": "object",
+                      "meta:xdmField": "xdm:qpfSnow",
+                      "tagNumber": 14
+                    },
+                    "uvIndex": {
+                      "title": "UV Index",
+                      "description": "Maximum UV index for the 12 hour forecast period.",
+                      "type": "integer",
+                      "meta:xdmType": "int",
+                      "meta:xdmField": "xdm:uvIndex",
+                      "tagNumber": 15
                     }
                   },
                   "type": "object",
@@ -1326,257 +1298,250 @@
                 },
                 "day": {
                   "properties": {
-                    "_unqualified": {
-                      "type": "object",
-                      "meta:xdmType": "object",
+                    "cloudCover": {
                       "properties": {
-                        "cloudCover": {
-                          "properties": {
-                            "kilometers": {
-                              "title": "Kilometers",
-                              "type": "number",
-                              "description": "Distance in kilometers.",
-                              "meta:xdmType": "number",
-                              "meta:xdmField": "xdm:kilometers",
-                              "tagNumber": 1
-                            },
-                            "inches": {
-                              "title": "Miles",
-                              "type": "number",
-                              "description": "Distance in miles.",
-                              "meta:xdmType": "number",
-                              "meta:xdmField": "xdm:inches",
-                              "tagNumber": 2
-                            }
-                          },
-                          "type": "object",
-                          "meta:xdmField": "cloudCover",
+                        "kilometers": {
+                          "title": "Kilometers",
+                          "type": "number",
+                          "description": "Distance in kilometers.",
+                          "meta:xdmType": "number",
+                          "meta:xdmField": "xdm:kilometers",
                           "tagNumber": 1
                         },
-                        "precipChance": {
-                          "title": "Precipitation Chance",
-                          "description": "Probability that there will be precipitation (percentage).",
-                          "type": "integer",
-                          "meta:xdmType": "int",
-                          "meta:xdmField": "precipChance",
+                        "inches": {
+                          "title": "Miles",
+                          "type": "number",
+                          "description": "Distance in miles.",
+                          "meta:xdmType": "number",
+                          "meta:xdmField": "xdm:inches",
                           "tagNumber": 2
-                        },
-                        "precipType": {
-                          "title": "Precipitation Type",
-                          "description": "The form of precipitation that could fall (rain, snow, sleet, etc).",
-                          "type": "string",
-                          "enum": [
-                            "rain",
-                            "snow",
-                            "precip"
-                          ],
-                          "meta:xdmType": "string",
-                          "meta:xdmField": "precipType",
-                          "tagNumber": 3
-                        },
-                        "qpf": {
-                          "properties": {
-                            "millimeters": {
-                              "title": "Millimeters",
-                              "type": "number",
-                              "description": "Precipitation in millimeters",
-                              "meta:xdmType": "number",
-                              "meta:xdmField": "xdm:millimeters",
-                              "tagNumber": 1
-                            },
-                            "inches": {
-                              "title": "Inches",
-                              "type": "number",
-                              "description": "Precipitation in inches",
-                              "meta:xdmType": "number",
-                              "meta:xdmField": "xdm:inches",
-                              "tagNumber": 2
-                            }
-                          },
-                          "type": "object",
-                          "meta:xdmField": "qpf",
-                          "tagNumber": 4
-                        },
-                        "relativeHumidity": {
-                          "title": "Relative Humidity",
-                          "description": "The relative humidity of the air, which is defined as the ratio of the amount of water vapor in the air to the amount of vapor required to bring the air to saturation at a constant temperature. Relative humidity is always expressed as a percentage.\nRange - 0 to 100.",
-                          "type": "integer",
-                          "meta:xdmType": "int",
-                          "meta:xdmField": "relativeHumidity",
-                          "tagNumber": 5
-                        },
-                        "snowRange": {
-                          "title": "Snow Range",
-                          "description": "Bucket of potential snowfall (1-3”, 3-6” etc).",
-                          "type": "string",
-                          "meta:xdmType": "string",
-                          "meta:xdmField": "snowRange",
-                          "tagNumber": 6
-                        },
-                        "temperature": {
-                          "properties": {
-                            "celsius": {
-                              "title": "Celsius",
-                              "type": "integer",
-                              "description": "Temperature in degrees Celsius",
-                              "meta:xdmType": "int",
-                              "meta:xdmField": "xdm:celsius",
-                              "tagNumber": 1
-                            },
-                            "fahrenheit": {
-                              "title": "Fahrenheit",
-                              "type": "integer",
-                              "description": "Temperature in degrees Fahrenheit",
-                              "meta:xdmType": "int",
-                              "meta:xdmField": "xdm:fahrenheit",
-                              "tagNumber": 2
-                            }
-                          },
-                          "type": "object",
-                          "meta:xdmField": "temperature",
-                          "tagNumber": 7
-                        },
-                        "temperatureHeatIndex": {
-                          "properties": {
-                            "celsius": {
-                              "title": "Celsius",
-                              "type": "integer",
-                              "description": "Temperature in degrees Celsius",
-                              "meta:xdmType": "int",
-                              "meta:xdmField": "xdm:celsius",
-                              "tagNumber": 1
-                            },
-                            "fahrenheit": {
-                              "title": "Fahrenheit",
-                              "type": "integer",
-                              "description": "Temperature in degrees Fahrenheit",
-                              "meta:xdmType": "int",
-                              "meta:xdmField": "xdm:fahrenheit",
-                              "tagNumber": 2
-                            }
-                          },
-                          "type": "object",
-                          "meta:xdmField": "temperatureHeatIndex",
-                          "tagNumber": 8
-                        },
-                        "temperatureWindChill": {
-                          "properties": {
-                            "celsius": {
-                              "title": "Celsius",
-                              "type": "integer",
-                              "description": "Temperature in degrees Celsius",
-                              "meta:xdmType": "int",
-                              "meta:xdmField": "xdm:celsius",
-                              "tagNumber": 1
-                            },
-                            "fahrenheit": {
-                              "title": "Fahrenheit",
-                              "type": "integer",
-                              "description": "Temperature in degrees Fahrenheit",
-                              "meta:xdmType": "int",
-                              "meta:xdmField": "xdm:fahrenheit",
-                              "tagNumber": 2
-                            }
-                          },
-                          "type": "object",
-                          "meta:xdmField": "temperatureWindChill",
-                          "tagNumber": 9
-                        },
-                        "thunderIndex": {
-                          "title": "Thunder Index",
-                          "description": "Index of the probability of thunderstorms impacting an area. 0 (no thunder to 5 (high risk of severe thunderstorms).",
-                          "type": "integer",
-                          "meta:xdmType": "int",
-                          "meta:xdmField": "thunderIndex",
-                          "tagNumber": 10
-                        },
-                        "windDirection": {
-                          "title": "Wind Direction",
-                          "description": "The magnetic wind direction from which the wind blows expressed in degrees. The magnetic direction varies from 0 to 359 degrees, where 0° indicates the North, 90° the East, 180° the South, 270° the West, and so forth.\nRange - 0<=wind_dire_deg<=350, in 10 degree intervals.",
-                          "type": "integer",
-                          "meta:xdmType": "int",
-                          "meta:xdmField": "windDirection",
-                          "tagNumber": 11
-                        },
-                        "windSpeed": {
-                          "properties": {
-                            "kilometersPerHour": {
-                              "title": "Kilometers per Hour",
-                              "type": "integer",
-                              "description": "Wind speed in kilometers per hour",
-                              "meta:xdmType": "int",
-                              "meta:xdmField": "xdm:kilometersPerHour",
-                              "tagNumber": 1
-                            },
-                            "milesPerHour": {
-                              "title": "Miles per Hour",
-                              "type": "integer",
-                              "description": "Wind speed in miles per hour",
-                              "meta:xdmType": "int",
-                              "meta:xdmField": "xdm:milesPerHour",
-                              "tagNumber": 2
-                            }
-                          },
-                          "type": "object",
-                          "meta:xdmField": "windSpeed",
-                          "tagNumber": 12
-                        },
-                        "windGust": {
-                          "properties": {
-                            "kilometersPerHour": {
-                              "title": "Kilometers per Hour",
-                              "type": "integer",
-                              "description": "Wind speed in kilometers per hour",
-                              "meta:xdmType": "int",
-                              "meta:xdmField": "xdm:kilometersPerHour",
-                              "tagNumber": 1
-                            },
-                            "milesPerHour": {
-                              "title": "Miles per Hour",
-                              "type": "integer",
-                              "description": "Wind speed in miles per hour",
-                              "meta:xdmType": "int",
-                              "meta:xdmField": "xdm:milesPerHour",
-                              "tagNumber": 2
-                            }
-                          },
-                          "type": "object",
-                          "meta:xdmField": "windGust",
-                          "tagNumber": 13
-                        },
-                        "qpfSnow": {
-                          "properties": {
-                            "centimeters": {
-                              "title": "Centimeters",
-                              "type": "number",
-                              "description": "Snowfall in centimeters",
-                              "meta:xdmType": "number",
-                              "meta:xdmField": "xdm:centimeters",
-                              "tagNumber": 1
-                            },
-                            "inches": {
-                              "title": "Inches",
-                              "type": "number",
-                              "description": "Snowfall in inches",
-                              "meta:xdmType": "number",
-                              "meta:xdmField": "xdm:inches",
-                              "tagNumber": 2
-                            }
-                          },
-                          "type": "object",
-                          "meta:xdmField": "qpfSnow",
-                          "tagNumber": 14
-                        },
-                        "uvIndex": {
-                          "title": "UV Index",
-                          "description": "Maximum UV index for the 12 hour forecast period.",
-                          "type": "integer",
-                          "meta:xdmType": "int",
-                          "meta:xdmField": "uvIndex",
-                          "tagNumber": 15
                         }
                       },
+                      "type": "object",
+                      "meta:xdmField": "xdm:cloudCover",
                       "tagNumber": 1
+                    },
+                    "precipChance": {
+                      "title": "Precipitation Chance",
+                      "description": "Probability that there will be precipitation (percentage).",
+                      "type": "integer",
+                      "meta:xdmType": "int",
+                      "meta:xdmField": "xdm:precipChance",
+                      "tagNumber": 2
+                    },
+                    "precipType": {
+                      "title": "Precipitation Type",
+                      "description": "The form of precipitation that could fall (rain, snow, sleet, etc).",
+                      "type": "string",
+                      "enum": [
+                        "rain",
+                        "snow",
+                        "precip"
+                      ],
+                      "meta:xdmType": "string",
+                      "meta:xdmField": "xdm:precipType",
+                      "tagNumber": 3
+                    },
+                    "qpf": {
+                      "properties": {
+                        "millimeters": {
+                          "title": "Millimeters",
+                          "type": "number",
+                          "description": "Precipitation in millimeters",
+                          "meta:xdmType": "number",
+                          "meta:xdmField": "xdm:millimeters",
+                          "tagNumber": 1
+                        },
+                        "inches": {
+                          "title": "Inches",
+                          "type": "number",
+                          "description": "Precipitation in inches",
+                          "meta:xdmType": "number",
+                          "meta:xdmField": "xdm:inches",
+                          "tagNumber": 2
+                        }
+                      },
+                      "type": "object",
+                      "meta:xdmField": "xdm:qpf",
+                      "tagNumber": 4
+                    },
+                    "relativeHumidity": {
+                      "title": "Relative Humidity",
+                      "description": "The relative humidity of the air, which is defined as the ratio of the amount of water vapor in the air to the amount of vapor required to bring the air to saturation at a constant temperature. Relative humidity is always expressed as a percentage.\nRange - 0 to 100.",
+                      "type": "integer",
+                      "meta:xdmType": "int",
+                      "meta:xdmField": "xdm:relativeHumidity",
+                      "tagNumber": 5
+                    },
+                    "snowRange": {
+                      "title": "Snow Range",
+                      "description": "Bucket of potential snowfall (1-3”, 3-6” etc).",
+                      "type": "string",
+                      "meta:xdmType": "string",
+                      "meta:xdmField": "xdm:snowRange",
+                      "tagNumber": 6
+                    },
+                    "temperature": {
+                      "properties": {
+                        "celsius": {
+                          "title": "Celsius",
+                          "type": "integer",
+                          "description": "Temperature in degrees Celsius",
+                          "meta:xdmType": "int",
+                          "meta:xdmField": "xdm:celsius",
+                          "tagNumber": 1
+                        },
+                        "fahrenheit": {
+                          "title": "Fahrenheit",
+                          "type": "integer",
+                          "description": "Temperature in degrees Fahrenheit",
+                          "meta:xdmType": "int",
+                          "meta:xdmField": "xdm:fahrenheit",
+                          "tagNumber": 2
+                        }
+                      },
+                      "type": "object",
+                      "meta:xdmField": "xdm:temperature",
+                      "tagNumber": 7
+                    },
+                    "temperatureHeatIndex": {
+                      "properties": {
+                        "celsius": {
+                          "title": "Celsius",
+                          "type": "integer",
+                          "description": "Temperature in degrees Celsius",
+                          "meta:xdmType": "int",
+                          "meta:xdmField": "xdm:celsius",
+                          "tagNumber": 1
+                        },
+                        "fahrenheit": {
+                          "title": "Fahrenheit",
+                          "type": "integer",
+                          "description": "Temperature in degrees Fahrenheit",
+                          "meta:xdmType": "int",
+                          "meta:xdmField": "xdm:fahrenheit",
+                          "tagNumber": 2
+                        }
+                      },
+                      "type": "object",
+                      "meta:xdmField": "xdm:temperatureHeatIndex",
+                      "tagNumber": 8
+                    },
+                    "temperatureWindChill": {
+                      "properties": {
+                        "celsius": {
+                          "title": "Celsius",
+                          "type": "integer",
+                          "description": "Temperature in degrees Celsius",
+                          "meta:xdmType": "int",
+                          "meta:xdmField": "xdm:celsius",
+                          "tagNumber": 1
+                        },
+                        "fahrenheit": {
+                          "title": "Fahrenheit",
+                          "type": "integer",
+                          "description": "Temperature in degrees Fahrenheit",
+                          "meta:xdmType": "int",
+                          "meta:xdmField": "xdm:fahrenheit",
+                          "tagNumber": 2
+                        }
+                      },
+                      "type": "object",
+                      "meta:xdmField": "xdm:temperatureWindChill",
+                      "tagNumber": 9
+                    },
+                    "thunderIndex": {
+                      "title": "Thunder Index",
+                      "description": "Index of the probability of thunderstorms impacting an area. 0 (no thunder to 5 (high risk of severe thunderstorms).",
+                      "type": "integer",
+                      "meta:xdmType": "int",
+                      "meta:xdmField": "xdm:thunderIndex",
+                      "tagNumber": 10
+                    },
+                    "windDirection": {
+                      "title": "Wind Direction",
+                      "description": "The magnetic wind direction from which the wind blows expressed in degrees. The magnetic direction varies from 0 to 359 degrees, where 0° indicates the North, 90° the East, 180° the South, 270° the West, and so forth.\nRange - 0<=wind_dire_deg<=350, in 10 degree intervals.",
+                      "type": "integer",
+                      "meta:xdmType": "int",
+                      "meta:xdmField": "xdm:windDirection",
+                      "tagNumber": 11
+                    },
+                    "windSpeed": {
+                      "properties": {
+                        "kilometersPerHour": {
+                          "title": "Kilometers per Hour",
+                          "type": "integer",
+                          "description": "Wind speed in kilometers per hour",
+                          "meta:xdmType": "int",
+                          "meta:xdmField": "xdm:kilometersPerHour",
+                          "tagNumber": 1
+                        },
+                        "milesPerHour": {
+                          "title": "Miles per Hour",
+                          "type": "integer",
+                          "description": "Wind speed in miles per hour",
+                          "meta:xdmType": "int",
+                          "meta:xdmField": "xdm:milesPerHour",
+                          "tagNumber": 2
+                        }
+                      },
+                      "type": "object",
+                      "meta:xdmField": "xdm:windSpeed",
+                      "tagNumber": 12
+                    },
+                    "windGust": {
+                      "properties": {
+                        "kilometersPerHour": {
+                          "title": "Kilometers per Hour",
+                          "type": "integer",
+                          "description": "Wind speed in kilometers per hour",
+                          "meta:xdmType": "int",
+                          "meta:xdmField": "xdm:kilometersPerHour",
+                          "tagNumber": 1
+                        },
+                        "milesPerHour": {
+                          "title": "Miles per Hour",
+                          "type": "integer",
+                          "description": "Wind speed in miles per hour",
+                          "meta:xdmType": "int",
+                          "meta:xdmField": "xdm:milesPerHour",
+                          "tagNumber": 2
+                        }
+                      },
+                      "type": "object",
+                      "meta:xdmField": "xdm:windGust",
+                      "tagNumber": 13
+                    },
+                    "qpfSnow": {
+                      "properties": {
+                        "centimeters": {
+                          "title": "Centimeters",
+                          "type": "number",
+                          "description": "Snowfall in centimeters",
+                          "meta:xdmType": "number",
+                          "meta:xdmField": "xdm:centimeters",
+                          "tagNumber": 1
+                        },
+                        "inches": {
+                          "title": "Inches",
+                          "type": "number",
+                          "description": "Snowfall in inches",
+                          "meta:xdmType": "number",
+                          "meta:xdmField": "xdm:inches",
+                          "tagNumber": 2
+                        }
+                      },
+                      "type": "object",
+                      "meta:xdmField": "xdm:qpfSnow",
+                      "tagNumber": 14
+                    },
+                    "uvIndex": {
+                      "title": "UV Index",
+                      "description": "Maximum UV index for the 12 hour forecast period.",
+                      "type": "integer",
+                      "meta:xdmType": "int",
+                      "meta:xdmField": "xdm:uvIndex",
+                      "tagNumber": 15
                     }
                   },
                   "type": "object",
@@ -1585,257 +1550,250 @@
                 },
                 "night": {
                   "properties": {
-                    "_unqualified": {
-                      "type": "object",
-                      "meta:xdmType": "object",
+                    "cloudCover": {
                       "properties": {
-                        "cloudCover": {
-                          "properties": {
-                            "kilometers": {
-                              "title": "Kilometers",
-                              "type": "number",
-                              "description": "Distance in kilometers.",
-                              "meta:xdmType": "number",
-                              "meta:xdmField": "xdm:kilometers",
-                              "tagNumber": 1
-                            },
-                            "inches": {
-                              "title": "Miles",
-                              "type": "number",
-                              "description": "Distance in miles.",
-                              "meta:xdmType": "number",
-                              "meta:xdmField": "xdm:inches",
-                              "tagNumber": 2
-                            }
-                          },
-                          "type": "object",
-                          "meta:xdmField": "cloudCover",
+                        "kilometers": {
+                          "title": "Kilometers",
+                          "type": "number",
+                          "description": "Distance in kilometers.",
+                          "meta:xdmType": "number",
+                          "meta:xdmField": "xdm:kilometers",
                           "tagNumber": 1
                         },
-                        "precipChance": {
-                          "title": "Precipitation Chance",
-                          "description": "Probability that there will be precipitation (percentage).",
-                          "type": "integer",
-                          "meta:xdmType": "int",
-                          "meta:xdmField": "precipChance",
+                        "inches": {
+                          "title": "Miles",
+                          "type": "number",
+                          "description": "Distance in miles.",
+                          "meta:xdmType": "number",
+                          "meta:xdmField": "xdm:inches",
                           "tagNumber": 2
-                        },
-                        "precipType": {
-                          "title": "Precipitation Type",
-                          "description": "The form of precipitation that could fall (rain, snow, sleet, etc).",
-                          "type": "string",
-                          "enum": [
-                            "rain",
-                            "snow",
-                            "precip"
-                          ],
-                          "meta:xdmType": "string",
-                          "meta:xdmField": "precipType",
-                          "tagNumber": 3
-                        },
-                        "qpf": {
-                          "properties": {
-                            "millimeters": {
-                              "title": "Millimeters",
-                              "type": "number",
-                              "description": "Precipitation in millimeters",
-                              "meta:xdmType": "number",
-                              "meta:xdmField": "xdm:millimeters",
-                              "tagNumber": 1
-                            },
-                            "inches": {
-                              "title": "Inches",
-                              "type": "number",
-                              "description": "Precipitation in inches",
-                              "meta:xdmType": "number",
-                              "meta:xdmField": "xdm:inches",
-                              "tagNumber": 2
-                            }
-                          },
-                          "type": "object",
-                          "meta:xdmField": "qpf",
-                          "tagNumber": 4
-                        },
-                        "relativeHumidity": {
-                          "title": "Relative Humidity",
-                          "description": "The relative humidity of the air, which is defined as the ratio of the amount of water vapor in the air to the amount of vapor required to bring the air to saturation at a constant temperature. Relative humidity is always expressed as a percentage.\nRange - 0 to 100.",
-                          "type": "integer",
-                          "meta:xdmType": "int",
-                          "meta:xdmField": "relativeHumidity",
-                          "tagNumber": 5
-                        },
-                        "snowRange": {
-                          "title": "Snow Range",
-                          "description": "Bucket of potential snowfall (1-3”, 3-6” etc).",
-                          "type": "string",
-                          "meta:xdmType": "string",
-                          "meta:xdmField": "snowRange",
-                          "tagNumber": 6
-                        },
-                        "temperature": {
-                          "properties": {
-                            "celsius": {
-                              "title": "Celsius",
-                              "type": "integer",
-                              "description": "Temperature in degrees Celsius",
-                              "meta:xdmType": "int",
-                              "meta:xdmField": "xdm:celsius",
-                              "tagNumber": 1
-                            },
-                            "fahrenheit": {
-                              "title": "Fahrenheit",
-                              "type": "integer",
-                              "description": "Temperature in degrees Fahrenheit",
-                              "meta:xdmType": "int",
-                              "meta:xdmField": "xdm:fahrenheit",
-                              "tagNumber": 2
-                            }
-                          },
-                          "type": "object",
-                          "meta:xdmField": "temperature",
-                          "tagNumber": 7
-                        },
-                        "temperatureHeatIndex": {
-                          "properties": {
-                            "celsius": {
-                              "title": "Celsius",
-                              "type": "integer",
-                              "description": "Temperature in degrees Celsius",
-                              "meta:xdmType": "int",
-                              "meta:xdmField": "xdm:celsius",
-                              "tagNumber": 1
-                            },
-                            "fahrenheit": {
-                              "title": "Fahrenheit",
-                              "type": "integer",
-                              "description": "Temperature in degrees Fahrenheit",
-                              "meta:xdmType": "int",
-                              "meta:xdmField": "xdm:fahrenheit",
-                              "tagNumber": 2
-                            }
-                          },
-                          "type": "object",
-                          "meta:xdmField": "temperatureHeatIndex",
-                          "tagNumber": 8
-                        },
-                        "temperatureWindChill": {
-                          "properties": {
-                            "celsius": {
-                              "title": "Celsius",
-                              "type": "integer",
-                              "description": "Temperature in degrees Celsius",
-                              "meta:xdmType": "int",
-                              "meta:xdmField": "xdm:celsius",
-                              "tagNumber": 1
-                            },
-                            "fahrenheit": {
-                              "title": "Fahrenheit",
-                              "type": "integer",
-                              "description": "Temperature in degrees Fahrenheit",
-                              "meta:xdmType": "int",
-                              "meta:xdmField": "xdm:fahrenheit",
-                              "tagNumber": 2
-                            }
-                          },
-                          "type": "object",
-                          "meta:xdmField": "temperatureWindChill",
-                          "tagNumber": 9
-                        },
-                        "thunderIndex": {
-                          "title": "Thunder Index",
-                          "description": "Index of the probability of thunderstorms impacting an area. 0 (no thunder to 5 (high risk of severe thunderstorms).",
-                          "type": "integer",
-                          "meta:xdmType": "int",
-                          "meta:xdmField": "thunderIndex",
-                          "tagNumber": 10
-                        },
-                        "windDirection": {
-                          "title": "Wind Direction",
-                          "description": "The magnetic wind direction from which the wind blows expressed in degrees. The magnetic direction varies from 0 to 359 degrees, where 0° indicates the North, 90° the East, 180° the South, 270° the West, and so forth.\nRange - 0<=wind_dire_deg<=350, in 10 degree intervals.",
-                          "type": "integer",
-                          "meta:xdmType": "int",
-                          "meta:xdmField": "windDirection",
-                          "tagNumber": 11
-                        },
-                        "windSpeed": {
-                          "properties": {
-                            "kilometersPerHour": {
-                              "title": "Kilometers per Hour",
-                              "type": "integer",
-                              "description": "Wind speed in kilometers per hour",
-                              "meta:xdmType": "int",
-                              "meta:xdmField": "xdm:kilometersPerHour",
-                              "tagNumber": 1
-                            },
-                            "milesPerHour": {
-                              "title": "Miles per Hour",
-                              "type": "integer",
-                              "description": "Wind speed in miles per hour",
-                              "meta:xdmType": "int",
-                              "meta:xdmField": "xdm:milesPerHour",
-                              "tagNumber": 2
-                            }
-                          },
-                          "type": "object",
-                          "meta:xdmField": "windSpeed",
-                          "tagNumber": 12
-                        },
-                        "windGust": {
-                          "properties": {
-                            "kilometersPerHour": {
-                              "title": "Kilometers per Hour",
-                              "type": "integer",
-                              "description": "Wind speed in kilometers per hour",
-                              "meta:xdmType": "int",
-                              "meta:xdmField": "xdm:kilometersPerHour",
-                              "tagNumber": 1
-                            },
-                            "milesPerHour": {
-                              "title": "Miles per Hour",
-                              "type": "integer",
-                              "description": "Wind speed in miles per hour",
-                              "meta:xdmType": "int",
-                              "meta:xdmField": "xdm:milesPerHour",
-                              "tagNumber": 2
-                            }
-                          },
-                          "type": "object",
-                          "meta:xdmField": "windGust",
-                          "tagNumber": 13
-                        },
-                        "qpfSnow": {
-                          "properties": {
-                            "centimeters": {
-                              "title": "Centimeters",
-                              "type": "number",
-                              "description": "Snowfall in centimeters",
-                              "meta:xdmType": "number",
-                              "meta:xdmField": "xdm:centimeters",
-                              "tagNumber": 1
-                            },
-                            "inches": {
-                              "title": "Inches",
-                              "type": "number",
-                              "description": "Snowfall in inches",
-                              "meta:xdmType": "number",
-                              "meta:xdmField": "xdm:inches",
-                              "tagNumber": 2
-                            }
-                          },
-                          "type": "object",
-                          "meta:xdmField": "qpfSnow",
-                          "tagNumber": 14
-                        },
-                        "uvIndex": {
-                          "title": "UV Index",
-                          "description": "Maximum UV index for the 12 hour forecast period.",
-                          "type": "integer",
-                          "meta:xdmType": "int",
-                          "meta:xdmField": "uvIndex",
-                          "tagNumber": 15
                         }
                       },
+                      "type": "object",
+                      "meta:xdmField": "xdm:cloudCover",
                       "tagNumber": 1
+                    },
+                    "precipChance": {
+                      "title": "Precipitation Chance",
+                      "description": "Probability that there will be precipitation (percentage).",
+                      "type": "integer",
+                      "meta:xdmType": "int",
+                      "meta:xdmField": "xdm:precipChance",
+                      "tagNumber": 2
+                    },
+                    "precipType": {
+                      "title": "Precipitation Type",
+                      "description": "The form of precipitation that could fall (rain, snow, sleet, etc).",
+                      "type": "string",
+                      "enum": [
+                        "rain",
+                        "snow",
+                        "precip"
+                      ],
+                      "meta:xdmType": "string",
+                      "meta:xdmField": "xdm:precipType",
+                      "tagNumber": 3
+                    },
+                    "qpf": {
+                      "properties": {
+                        "millimeters": {
+                          "title": "Millimeters",
+                          "type": "number",
+                          "description": "Precipitation in millimeters",
+                          "meta:xdmType": "number",
+                          "meta:xdmField": "xdm:millimeters",
+                          "tagNumber": 1
+                        },
+                        "inches": {
+                          "title": "Inches",
+                          "type": "number",
+                          "description": "Precipitation in inches",
+                          "meta:xdmType": "number",
+                          "meta:xdmField": "xdm:inches",
+                          "tagNumber": 2
+                        }
+                      },
+                      "type": "object",
+                      "meta:xdmField": "xdm:qpf",
+                      "tagNumber": 4
+                    },
+                    "relativeHumidity": {
+                      "title": "Relative Humidity",
+                      "description": "The relative humidity of the air, which is defined as the ratio of the amount of water vapor in the air to the amount of vapor required to bring the air to saturation at a constant temperature. Relative humidity is always expressed as a percentage.\nRange - 0 to 100.",
+                      "type": "integer",
+                      "meta:xdmType": "int",
+                      "meta:xdmField": "xdm:relativeHumidity",
+                      "tagNumber": 5
+                    },
+                    "snowRange": {
+                      "title": "Snow Range",
+                      "description": "Bucket of potential snowfall (1-3”, 3-6” etc).",
+                      "type": "string",
+                      "meta:xdmType": "string",
+                      "meta:xdmField": "xdm:snowRange",
+                      "tagNumber": 6
+                    },
+                    "temperature": {
+                      "properties": {
+                        "celsius": {
+                          "title": "Celsius",
+                          "type": "integer",
+                          "description": "Temperature in degrees Celsius",
+                          "meta:xdmType": "int",
+                          "meta:xdmField": "xdm:celsius",
+                          "tagNumber": 1
+                        },
+                        "fahrenheit": {
+                          "title": "Fahrenheit",
+                          "type": "integer",
+                          "description": "Temperature in degrees Fahrenheit",
+                          "meta:xdmType": "int",
+                          "meta:xdmField": "xdm:fahrenheit",
+                          "tagNumber": 2
+                        }
+                      },
+                      "type": "object",
+                      "meta:xdmField": "xdm:temperature",
+                      "tagNumber": 7
+                    },
+                    "temperatureHeatIndex": {
+                      "properties": {
+                        "celsius": {
+                          "title": "Celsius",
+                          "type": "integer",
+                          "description": "Temperature in degrees Celsius",
+                          "meta:xdmType": "int",
+                          "meta:xdmField": "xdm:celsius",
+                          "tagNumber": 1
+                        },
+                        "fahrenheit": {
+                          "title": "Fahrenheit",
+                          "type": "integer",
+                          "description": "Temperature in degrees Fahrenheit",
+                          "meta:xdmType": "int",
+                          "meta:xdmField": "xdm:fahrenheit",
+                          "tagNumber": 2
+                        }
+                      },
+                      "type": "object",
+                      "meta:xdmField": "xdm:temperatureHeatIndex",
+                      "tagNumber": 8
+                    },
+                    "temperatureWindChill": {
+                      "properties": {
+                        "celsius": {
+                          "title": "Celsius",
+                          "type": "integer",
+                          "description": "Temperature in degrees Celsius",
+                          "meta:xdmType": "int",
+                          "meta:xdmField": "xdm:celsius",
+                          "tagNumber": 1
+                        },
+                        "fahrenheit": {
+                          "title": "Fahrenheit",
+                          "type": "integer",
+                          "description": "Temperature in degrees Fahrenheit",
+                          "meta:xdmType": "int",
+                          "meta:xdmField": "xdm:fahrenheit",
+                          "tagNumber": 2
+                        }
+                      },
+                      "type": "object",
+                      "meta:xdmField": "xdm:temperatureWindChill",
+                      "tagNumber": 9
+                    },
+                    "thunderIndex": {
+                      "title": "Thunder Index",
+                      "description": "Index of the probability of thunderstorms impacting an area. 0 (no thunder to 5 (high risk of severe thunderstorms).",
+                      "type": "integer",
+                      "meta:xdmType": "int",
+                      "meta:xdmField": "xdm:thunderIndex",
+                      "tagNumber": 10
+                    },
+                    "windDirection": {
+                      "title": "Wind Direction",
+                      "description": "The magnetic wind direction from which the wind blows expressed in degrees. The magnetic direction varies from 0 to 359 degrees, where 0° indicates the North, 90° the East, 180° the South, 270° the West, and so forth.\nRange - 0<=wind_dire_deg<=350, in 10 degree intervals.",
+                      "type": "integer",
+                      "meta:xdmType": "int",
+                      "meta:xdmField": "xdm:windDirection",
+                      "tagNumber": 11
+                    },
+                    "windSpeed": {
+                      "properties": {
+                        "kilometersPerHour": {
+                          "title": "Kilometers per Hour",
+                          "type": "integer",
+                          "description": "Wind speed in kilometers per hour",
+                          "meta:xdmType": "int",
+                          "meta:xdmField": "xdm:kilometersPerHour",
+                          "tagNumber": 1
+                        },
+                        "milesPerHour": {
+                          "title": "Miles per Hour",
+                          "type": "integer",
+                          "description": "Wind speed in miles per hour",
+                          "meta:xdmType": "int",
+                          "meta:xdmField": "xdm:milesPerHour",
+                          "tagNumber": 2
+                        }
+                      },
+                      "type": "object",
+                      "meta:xdmField": "xdm:windSpeed",
+                      "tagNumber": 12
+                    },
+                    "windGust": {
+                      "properties": {
+                        "kilometersPerHour": {
+                          "title": "Kilometers per Hour",
+                          "type": "integer",
+                          "description": "Wind speed in kilometers per hour",
+                          "meta:xdmType": "int",
+                          "meta:xdmField": "xdm:kilometersPerHour",
+                          "tagNumber": 1
+                        },
+                        "milesPerHour": {
+                          "title": "Miles per Hour",
+                          "type": "integer",
+                          "description": "Wind speed in miles per hour",
+                          "meta:xdmType": "int",
+                          "meta:xdmField": "xdm:milesPerHour",
+                          "tagNumber": 2
+                        }
+                      },
+                      "type": "object",
+                      "meta:xdmField": "xdm:windGust",
+                      "tagNumber": 13
+                    },
+                    "qpfSnow": {
+                      "properties": {
+                        "centimeters": {
+                          "title": "Centimeters",
+                          "type": "number",
+                          "description": "Snowfall in centimeters",
+                          "meta:xdmType": "number",
+                          "meta:xdmField": "xdm:centimeters",
+                          "tagNumber": 1
+                        },
+                        "inches": {
+                          "title": "Inches",
+                          "type": "number",
+                          "description": "Snowfall in inches",
+                          "meta:xdmType": "number",
+                          "meta:xdmField": "xdm:inches",
+                          "tagNumber": 2
+                        }
+                      },
+                      "type": "object",
+                      "meta:xdmField": "xdm:qpfSnow",
+                      "tagNumber": 14
+                    },
+                    "uvIndex": {
+                      "title": "UV Index",
+                      "description": "Maximum UV index for the 12 hour forecast period.",
+                      "type": "integer",
+                      "meta:xdmType": "int",
+                      "meta:xdmField": "xdm:uvIndex",
+                      "tagNumber": 15
                     }
                   },
                   "type": "object",
@@ -1943,257 +1901,250 @@
                 },
                 "day": {
                   "properties": {
-                    "_unqualified": {
-                      "type": "object",
-                      "meta:xdmType": "object",
+                    "cloudCover": {
                       "properties": {
-                        "cloudCover": {
-                          "properties": {
-                            "kilometers": {
-                              "title": "Kilometers",
-                              "type": "number",
-                              "description": "Distance in kilometers.",
-                              "meta:xdmType": "number",
-                              "meta:xdmField": "xdm:kilometers",
-                              "tagNumber": 1
-                            },
-                            "inches": {
-                              "title": "Miles",
-                              "type": "number",
-                              "description": "Distance in miles.",
-                              "meta:xdmType": "number",
-                              "meta:xdmField": "xdm:inches",
-                              "tagNumber": 2
-                            }
-                          },
-                          "type": "object",
-                          "meta:xdmField": "cloudCover",
+                        "kilometers": {
+                          "title": "Kilometers",
+                          "type": "number",
+                          "description": "Distance in kilometers.",
+                          "meta:xdmType": "number",
+                          "meta:xdmField": "xdm:kilometers",
                           "tagNumber": 1
                         },
-                        "precipChance": {
-                          "title": "Precipitation Chance",
-                          "description": "Probability that there will be precipitation (percentage).",
-                          "type": "integer",
-                          "meta:xdmType": "int",
-                          "meta:xdmField": "precipChance",
+                        "inches": {
+                          "title": "Miles",
+                          "type": "number",
+                          "description": "Distance in miles.",
+                          "meta:xdmType": "number",
+                          "meta:xdmField": "xdm:inches",
                           "tagNumber": 2
-                        },
-                        "precipType": {
-                          "title": "Precipitation Type",
-                          "description": "The form of precipitation that could fall (rain, snow, sleet, etc).",
-                          "type": "string",
-                          "enum": [
-                            "rain",
-                            "snow",
-                            "precip"
-                          ],
-                          "meta:xdmType": "string",
-                          "meta:xdmField": "precipType",
-                          "tagNumber": 3
-                        },
-                        "qpf": {
-                          "properties": {
-                            "millimeters": {
-                              "title": "Millimeters",
-                              "type": "number",
-                              "description": "Precipitation in millimeters",
-                              "meta:xdmType": "number",
-                              "meta:xdmField": "xdm:millimeters",
-                              "tagNumber": 1
-                            },
-                            "inches": {
-                              "title": "Inches",
-                              "type": "number",
-                              "description": "Precipitation in inches",
-                              "meta:xdmType": "number",
-                              "meta:xdmField": "xdm:inches",
-                              "tagNumber": 2
-                            }
-                          },
-                          "type": "object",
-                          "meta:xdmField": "qpf",
-                          "tagNumber": 4
-                        },
-                        "relativeHumidity": {
-                          "title": "Relative Humidity",
-                          "description": "The relative humidity of the air, which is defined as the ratio of the amount of water vapor in the air to the amount of vapor required to bring the air to saturation at a constant temperature. Relative humidity is always expressed as a percentage.\nRange - 0 to 100.",
-                          "type": "integer",
-                          "meta:xdmType": "int",
-                          "meta:xdmField": "relativeHumidity",
-                          "tagNumber": 5
-                        },
-                        "snowRange": {
-                          "title": "Snow Range",
-                          "description": "Bucket of potential snowfall (1-3”, 3-6” etc).",
-                          "type": "string",
-                          "meta:xdmType": "string",
-                          "meta:xdmField": "snowRange",
-                          "tagNumber": 6
-                        },
-                        "temperature": {
-                          "properties": {
-                            "celsius": {
-                              "title": "Celsius",
-                              "type": "integer",
-                              "description": "Temperature in degrees Celsius",
-                              "meta:xdmType": "int",
-                              "meta:xdmField": "xdm:celsius",
-                              "tagNumber": 1
-                            },
-                            "fahrenheit": {
-                              "title": "Fahrenheit",
-                              "type": "integer",
-                              "description": "Temperature in degrees Fahrenheit",
-                              "meta:xdmType": "int",
-                              "meta:xdmField": "xdm:fahrenheit",
-                              "tagNumber": 2
-                            }
-                          },
-                          "type": "object",
-                          "meta:xdmField": "temperature",
-                          "tagNumber": 7
-                        },
-                        "temperatureHeatIndex": {
-                          "properties": {
-                            "celsius": {
-                              "title": "Celsius",
-                              "type": "integer",
-                              "description": "Temperature in degrees Celsius",
-                              "meta:xdmType": "int",
-                              "meta:xdmField": "xdm:celsius",
-                              "tagNumber": 1
-                            },
-                            "fahrenheit": {
-                              "title": "Fahrenheit",
-                              "type": "integer",
-                              "description": "Temperature in degrees Fahrenheit",
-                              "meta:xdmType": "int",
-                              "meta:xdmField": "xdm:fahrenheit",
-                              "tagNumber": 2
-                            }
-                          },
-                          "type": "object",
-                          "meta:xdmField": "temperatureHeatIndex",
-                          "tagNumber": 8
-                        },
-                        "temperatureWindChill": {
-                          "properties": {
-                            "celsius": {
-                              "title": "Celsius",
-                              "type": "integer",
-                              "description": "Temperature in degrees Celsius",
-                              "meta:xdmType": "int",
-                              "meta:xdmField": "xdm:celsius",
-                              "tagNumber": 1
-                            },
-                            "fahrenheit": {
-                              "title": "Fahrenheit",
-                              "type": "integer",
-                              "description": "Temperature in degrees Fahrenheit",
-                              "meta:xdmType": "int",
-                              "meta:xdmField": "xdm:fahrenheit",
-                              "tagNumber": 2
-                            }
-                          },
-                          "type": "object",
-                          "meta:xdmField": "temperatureWindChill",
-                          "tagNumber": 9
-                        },
-                        "thunderIndex": {
-                          "title": "Thunder Index",
-                          "description": "Index of the probability of thunderstorms impacting an area. 0 (no thunder to 5 (high risk of severe thunderstorms).",
-                          "type": "integer",
-                          "meta:xdmType": "int",
-                          "meta:xdmField": "thunderIndex",
-                          "tagNumber": 10
-                        },
-                        "windDirection": {
-                          "title": "Wind Direction",
-                          "description": "The magnetic wind direction from which the wind blows expressed in degrees. The magnetic direction varies from 0 to 359 degrees, where 0° indicates the North, 90° the East, 180° the South, 270° the West, and so forth.\nRange - 0<=wind_dire_deg<=350, in 10 degree intervals.",
-                          "type": "integer",
-                          "meta:xdmType": "int",
-                          "meta:xdmField": "windDirection",
-                          "tagNumber": 11
-                        },
-                        "windSpeed": {
-                          "properties": {
-                            "kilometersPerHour": {
-                              "title": "Kilometers per Hour",
-                              "type": "integer",
-                              "description": "Wind speed in kilometers per hour",
-                              "meta:xdmType": "int",
-                              "meta:xdmField": "xdm:kilometersPerHour",
-                              "tagNumber": 1
-                            },
-                            "milesPerHour": {
-                              "title": "Miles per Hour",
-                              "type": "integer",
-                              "description": "Wind speed in miles per hour",
-                              "meta:xdmType": "int",
-                              "meta:xdmField": "xdm:milesPerHour",
-                              "tagNumber": 2
-                            }
-                          },
-                          "type": "object",
-                          "meta:xdmField": "windSpeed",
-                          "tagNumber": 12
-                        },
-                        "windGust": {
-                          "properties": {
-                            "kilometersPerHour": {
-                              "title": "Kilometers per Hour",
-                              "type": "integer",
-                              "description": "Wind speed in kilometers per hour",
-                              "meta:xdmType": "int",
-                              "meta:xdmField": "xdm:kilometersPerHour",
-                              "tagNumber": 1
-                            },
-                            "milesPerHour": {
-                              "title": "Miles per Hour",
-                              "type": "integer",
-                              "description": "Wind speed in miles per hour",
-                              "meta:xdmType": "int",
-                              "meta:xdmField": "xdm:milesPerHour",
-                              "tagNumber": 2
-                            }
-                          },
-                          "type": "object",
-                          "meta:xdmField": "windGust",
-                          "tagNumber": 13
-                        },
-                        "qpfSnow": {
-                          "properties": {
-                            "centimeters": {
-                              "title": "Centimeters",
-                              "type": "number",
-                              "description": "Snowfall in centimeters",
-                              "meta:xdmType": "number",
-                              "meta:xdmField": "xdm:centimeters",
-                              "tagNumber": 1
-                            },
-                            "inches": {
-                              "title": "Inches",
-                              "type": "number",
-                              "description": "Snowfall in inches",
-                              "meta:xdmType": "number",
-                              "meta:xdmField": "xdm:inches",
-                              "tagNumber": 2
-                            }
-                          },
-                          "type": "object",
-                          "meta:xdmField": "qpfSnow",
-                          "tagNumber": 14
-                        },
-                        "uvIndex": {
-                          "title": "UV Index",
-                          "description": "Maximum UV index for the 12 hour forecast period.",
-                          "type": "integer",
-                          "meta:xdmType": "int",
-                          "meta:xdmField": "uvIndex",
-                          "tagNumber": 15
                         }
                       },
+                      "type": "object",
+                      "meta:xdmField": "xdm:cloudCover",
                       "tagNumber": 1
+                    },
+                    "precipChance": {
+                      "title": "Precipitation Chance",
+                      "description": "Probability that there will be precipitation (percentage).",
+                      "type": "integer",
+                      "meta:xdmType": "int",
+                      "meta:xdmField": "xdm:precipChance",
+                      "tagNumber": 2
+                    },
+                    "precipType": {
+                      "title": "Precipitation Type",
+                      "description": "The form of precipitation that could fall (rain, snow, sleet, etc).",
+                      "type": "string",
+                      "enum": [
+                        "rain",
+                        "snow",
+                        "precip"
+                      ],
+                      "meta:xdmType": "string",
+                      "meta:xdmField": "xdm:precipType",
+                      "tagNumber": 3
+                    },
+                    "qpf": {
+                      "properties": {
+                        "millimeters": {
+                          "title": "Millimeters",
+                          "type": "number",
+                          "description": "Precipitation in millimeters",
+                          "meta:xdmType": "number",
+                          "meta:xdmField": "xdm:millimeters",
+                          "tagNumber": 1
+                        },
+                        "inches": {
+                          "title": "Inches",
+                          "type": "number",
+                          "description": "Precipitation in inches",
+                          "meta:xdmType": "number",
+                          "meta:xdmField": "xdm:inches",
+                          "tagNumber": 2
+                        }
+                      },
+                      "type": "object",
+                      "meta:xdmField": "xdm:qpf",
+                      "tagNumber": 4
+                    },
+                    "relativeHumidity": {
+                      "title": "Relative Humidity",
+                      "description": "The relative humidity of the air, which is defined as the ratio of the amount of water vapor in the air to the amount of vapor required to bring the air to saturation at a constant temperature. Relative humidity is always expressed as a percentage.\nRange - 0 to 100.",
+                      "type": "integer",
+                      "meta:xdmType": "int",
+                      "meta:xdmField": "xdm:relativeHumidity",
+                      "tagNumber": 5
+                    },
+                    "snowRange": {
+                      "title": "Snow Range",
+                      "description": "Bucket of potential snowfall (1-3”, 3-6” etc).",
+                      "type": "string",
+                      "meta:xdmType": "string",
+                      "meta:xdmField": "xdm:snowRange",
+                      "tagNumber": 6
+                    },
+                    "temperature": {
+                      "properties": {
+                        "celsius": {
+                          "title": "Celsius",
+                          "type": "integer",
+                          "description": "Temperature in degrees Celsius",
+                          "meta:xdmType": "int",
+                          "meta:xdmField": "xdm:celsius",
+                          "tagNumber": 1
+                        },
+                        "fahrenheit": {
+                          "title": "Fahrenheit",
+                          "type": "integer",
+                          "description": "Temperature in degrees Fahrenheit",
+                          "meta:xdmType": "int",
+                          "meta:xdmField": "xdm:fahrenheit",
+                          "tagNumber": 2
+                        }
+                      },
+                      "type": "object",
+                      "meta:xdmField": "xdm:temperature",
+                      "tagNumber": 7
+                    },
+                    "temperatureHeatIndex": {
+                      "properties": {
+                        "celsius": {
+                          "title": "Celsius",
+                          "type": "integer",
+                          "description": "Temperature in degrees Celsius",
+                          "meta:xdmType": "int",
+                          "meta:xdmField": "xdm:celsius",
+                          "tagNumber": 1
+                        },
+                        "fahrenheit": {
+                          "title": "Fahrenheit",
+                          "type": "integer",
+                          "description": "Temperature in degrees Fahrenheit",
+                          "meta:xdmType": "int",
+                          "meta:xdmField": "xdm:fahrenheit",
+                          "tagNumber": 2
+                        }
+                      },
+                      "type": "object",
+                      "meta:xdmField": "xdm:temperatureHeatIndex",
+                      "tagNumber": 8
+                    },
+                    "temperatureWindChill": {
+                      "properties": {
+                        "celsius": {
+                          "title": "Celsius",
+                          "type": "integer",
+                          "description": "Temperature in degrees Celsius",
+                          "meta:xdmType": "int",
+                          "meta:xdmField": "xdm:celsius",
+                          "tagNumber": 1
+                        },
+                        "fahrenheit": {
+                          "title": "Fahrenheit",
+                          "type": "integer",
+                          "description": "Temperature in degrees Fahrenheit",
+                          "meta:xdmType": "int",
+                          "meta:xdmField": "xdm:fahrenheit",
+                          "tagNumber": 2
+                        }
+                      },
+                      "type": "object",
+                      "meta:xdmField": "xdm:temperatureWindChill",
+                      "tagNumber": 9
+                    },
+                    "thunderIndex": {
+                      "title": "Thunder Index",
+                      "description": "Index of the probability of thunderstorms impacting an area. 0 (no thunder to 5 (high risk of severe thunderstorms).",
+                      "type": "integer",
+                      "meta:xdmType": "int",
+                      "meta:xdmField": "xdm:thunderIndex",
+                      "tagNumber": 10
+                    },
+                    "windDirection": {
+                      "title": "Wind Direction",
+                      "description": "The magnetic wind direction from which the wind blows expressed in degrees. The magnetic direction varies from 0 to 359 degrees, where 0° indicates the North, 90° the East, 180° the South, 270° the West, and so forth.\nRange - 0<=wind_dire_deg<=350, in 10 degree intervals.",
+                      "type": "integer",
+                      "meta:xdmType": "int",
+                      "meta:xdmField": "xdm:windDirection",
+                      "tagNumber": 11
+                    },
+                    "windSpeed": {
+                      "properties": {
+                        "kilometersPerHour": {
+                          "title": "Kilometers per Hour",
+                          "type": "integer",
+                          "description": "Wind speed in kilometers per hour",
+                          "meta:xdmType": "int",
+                          "meta:xdmField": "xdm:kilometersPerHour",
+                          "tagNumber": 1
+                        },
+                        "milesPerHour": {
+                          "title": "Miles per Hour",
+                          "type": "integer",
+                          "description": "Wind speed in miles per hour",
+                          "meta:xdmType": "int",
+                          "meta:xdmField": "xdm:milesPerHour",
+                          "tagNumber": 2
+                        }
+                      },
+                      "type": "object",
+                      "meta:xdmField": "xdm:windSpeed",
+                      "tagNumber": 12
+                    },
+                    "windGust": {
+                      "properties": {
+                        "kilometersPerHour": {
+                          "title": "Kilometers per Hour",
+                          "type": "integer",
+                          "description": "Wind speed in kilometers per hour",
+                          "meta:xdmType": "int",
+                          "meta:xdmField": "xdm:kilometersPerHour",
+                          "tagNumber": 1
+                        },
+                        "milesPerHour": {
+                          "title": "Miles per Hour",
+                          "type": "integer",
+                          "description": "Wind speed in miles per hour",
+                          "meta:xdmType": "int",
+                          "meta:xdmField": "xdm:milesPerHour",
+                          "tagNumber": 2
+                        }
+                      },
+                      "type": "object",
+                      "meta:xdmField": "xdm:windGust",
+                      "tagNumber": 13
+                    },
+                    "qpfSnow": {
+                      "properties": {
+                        "centimeters": {
+                          "title": "Centimeters",
+                          "type": "number",
+                          "description": "Snowfall in centimeters",
+                          "meta:xdmType": "number",
+                          "meta:xdmField": "xdm:centimeters",
+                          "tagNumber": 1
+                        },
+                        "inches": {
+                          "title": "Inches",
+                          "type": "number",
+                          "description": "Snowfall in inches",
+                          "meta:xdmType": "number",
+                          "meta:xdmField": "xdm:inches",
+                          "tagNumber": 2
+                        }
+                      },
+                      "type": "object",
+                      "meta:xdmField": "xdm:qpfSnow",
+                      "tagNumber": 14
+                    },
+                    "uvIndex": {
+                      "title": "UV Index",
+                      "description": "Maximum UV index for the 12 hour forecast period.",
+                      "type": "integer",
+                      "meta:xdmType": "int",
+                      "meta:xdmField": "xdm:uvIndex",
+                      "tagNumber": 15
                     }
                   },
                   "type": "object",
@@ -2202,257 +2153,250 @@
                 },
                 "night": {
                   "properties": {
-                    "_unqualified": {
-                      "type": "object",
-                      "meta:xdmType": "object",
+                    "cloudCover": {
                       "properties": {
-                        "cloudCover": {
-                          "properties": {
-                            "kilometers": {
-                              "title": "Kilometers",
-                              "type": "number",
-                              "description": "Distance in kilometers.",
-                              "meta:xdmType": "number",
-                              "meta:xdmField": "xdm:kilometers",
-                              "tagNumber": 1
-                            },
-                            "inches": {
-                              "title": "Miles",
-                              "type": "number",
-                              "description": "Distance in miles.",
-                              "meta:xdmType": "number",
-                              "meta:xdmField": "xdm:inches",
-                              "tagNumber": 2
-                            }
-                          },
-                          "type": "object",
-                          "meta:xdmField": "cloudCover",
+                        "kilometers": {
+                          "title": "Kilometers",
+                          "type": "number",
+                          "description": "Distance in kilometers.",
+                          "meta:xdmType": "number",
+                          "meta:xdmField": "xdm:kilometers",
                           "tagNumber": 1
                         },
-                        "precipChance": {
-                          "title": "Precipitation Chance",
-                          "description": "Probability that there will be precipitation (percentage).",
-                          "type": "integer",
-                          "meta:xdmType": "int",
-                          "meta:xdmField": "precipChance",
+                        "inches": {
+                          "title": "Miles",
+                          "type": "number",
+                          "description": "Distance in miles.",
+                          "meta:xdmType": "number",
+                          "meta:xdmField": "xdm:inches",
                           "tagNumber": 2
-                        },
-                        "precipType": {
-                          "title": "Precipitation Type",
-                          "description": "The form of precipitation that could fall (rain, snow, sleet, etc).",
-                          "type": "string",
-                          "enum": [
-                            "rain",
-                            "snow",
-                            "precip"
-                          ],
-                          "meta:xdmType": "string",
-                          "meta:xdmField": "precipType",
-                          "tagNumber": 3
-                        },
-                        "qpf": {
-                          "properties": {
-                            "millimeters": {
-                              "title": "Millimeters",
-                              "type": "number",
-                              "description": "Precipitation in millimeters",
-                              "meta:xdmType": "number",
-                              "meta:xdmField": "xdm:millimeters",
-                              "tagNumber": 1
-                            },
-                            "inches": {
-                              "title": "Inches",
-                              "type": "number",
-                              "description": "Precipitation in inches",
-                              "meta:xdmType": "number",
-                              "meta:xdmField": "xdm:inches",
-                              "tagNumber": 2
-                            }
-                          },
-                          "type": "object",
-                          "meta:xdmField": "qpf",
-                          "tagNumber": 4
-                        },
-                        "relativeHumidity": {
-                          "title": "Relative Humidity",
-                          "description": "The relative humidity of the air, which is defined as the ratio of the amount of water vapor in the air to the amount of vapor required to bring the air to saturation at a constant temperature. Relative humidity is always expressed as a percentage.\nRange - 0 to 100.",
-                          "type": "integer",
-                          "meta:xdmType": "int",
-                          "meta:xdmField": "relativeHumidity",
-                          "tagNumber": 5
-                        },
-                        "snowRange": {
-                          "title": "Snow Range",
-                          "description": "Bucket of potential snowfall (1-3”, 3-6” etc).",
-                          "type": "string",
-                          "meta:xdmType": "string",
-                          "meta:xdmField": "snowRange",
-                          "tagNumber": 6
-                        },
-                        "temperature": {
-                          "properties": {
-                            "celsius": {
-                              "title": "Celsius",
-                              "type": "integer",
-                              "description": "Temperature in degrees Celsius",
-                              "meta:xdmType": "int",
-                              "meta:xdmField": "xdm:celsius",
-                              "tagNumber": 1
-                            },
-                            "fahrenheit": {
-                              "title": "Fahrenheit",
-                              "type": "integer",
-                              "description": "Temperature in degrees Fahrenheit",
-                              "meta:xdmType": "int",
-                              "meta:xdmField": "xdm:fahrenheit",
-                              "tagNumber": 2
-                            }
-                          },
-                          "type": "object",
-                          "meta:xdmField": "temperature",
-                          "tagNumber": 7
-                        },
-                        "temperatureHeatIndex": {
-                          "properties": {
-                            "celsius": {
-                              "title": "Celsius",
-                              "type": "integer",
-                              "description": "Temperature in degrees Celsius",
-                              "meta:xdmType": "int",
-                              "meta:xdmField": "xdm:celsius",
-                              "tagNumber": 1
-                            },
-                            "fahrenheit": {
-                              "title": "Fahrenheit",
-                              "type": "integer",
-                              "description": "Temperature in degrees Fahrenheit",
-                              "meta:xdmType": "int",
-                              "meta:xdmField": "xdm:fahrenheit",
-                              "tagNumber": 2
-                            }
-                          },
-                          "type": "object",
-                          "meta:xdmField": "temperatureHeatIndex",
-                          "tagNumber": 8
-                        },
-                        "temperatureWindChill": {
-                          "properties": {
-                            "celsius": {
-                              "title": "Celsius",
-                              "type": "integer",
-                              "description": "Temperature in degrees Celsius",
-                              "meta:xdmType": "int",
-                              "meta:xdmField": "xdm:celsius",
-                              "tagNumber": 1
-                            },
-                            "fahrenheit": {
-                              "title": "Fahrenheit",
-                              "type": "integer",
-                              "description": "Temperature in degrees Fahrenheit",
-                              "meta:xdmType": "int",
-                              "meta:xdmField": "xdm:fahrenheit",
-                              "tagNumber": 2
-                            }
-                          },
-                          "type": "object",
-                          "meta:xdmField": "temperatureWindChill",
-                          "tagNumber": 9
-                        },
-                        "thunderIndex": {
-                          "title": "Thunder Index",
-                          "description": "Index of the probability of thunderstorms impacting an area. 0 (no thunder to 5 (high risk of severe thunderstorms).",
-                          "type": "integer",
-                          "meta:xdmType": "int",
-                          "meta:xdmField": "thunderIndex",
-                          "tagNumber": 10
-                        },
-                        "windDirection": {
-                          "title": "Wind Direction",
-                          "description": "The magnetic wind direction from which the wind blows expressed in degrees. The magnetic direction varies from 0 to 359 degrees, where 0° indicates the North, 90° the East, 180° the South, 270° the West, and so forth.\nRange - 0<=wind_dire_deg<=350, in 10 degree intervals.",
-                          "type": "integer",
-                          "meta:xdmType": "int",
-                          "meta:xdmField": "windDirection",
-                          "tagNumber": 11
-                        },
-                        "windSpeed": {
-                          "properties": {
-                            "kilometersPerHour": {
-                              "title": "Kilometers per Hour",
-                              "type": "integer",
-                              "description": "Wind speed in kilometers per hour",
-                              "meta:xdmType": "int",
-                              "meta:xdmField": "xdm:kilometersPerHour",
-                              "tagNumber": 1
-                            },
-                            "milesPerHour": {
-                              "title": "Miles per Hour",
-                              "type": "integer",
-                              "description": "Wind speed in miles per hour",
-                              "meta:xdmType": "int",
-                              "meta:xdmField": "xdm:milesPerHour",
-                              "tagNumber": 2
-                            }
-                          },
-                          "type": "object",
-                          "meta:xdmField": "windSpeed",
-                          "tagNumber": 12
-                        },
-                        "windGust": {
-                          "properties": {
-                            "kilometersPerHour": {
-                              "title": "Kilometers per Hour",
-                              "type": "integer",
-                              "description": "Wind speed in kilometers per hour",
-                              "meta:xdmType": "int",
-                              "meta:xdmField": "xdm:kilometersPerHour",
-                              "tagNumber": 1
-                            },
-                            "milesPerHour": {
-                              "title": "Miles per Hour",
-                              "type": "integer",
-                              "description": "Wind speed in miles per hour",
-                              "meta:xdmType": "int",
-                              "meta:xdmField": "xdm:milesPerHour",
-                              "tagNumber": 2
-                            }
-                          },
-                          "type": "object",
-                          "meta:xdmField": "windGust",
-                          "tagNumber": 13
-                        },
-                        "qpfSnow": {
-                          "properties": {
-                            "centimeters": {
-                              "title": "Centimeters",
-                              "type": "number",
-                              "description": "Snowfall in centimeters",
-                              "meta:xdmType": "number",
-                              "meta:xdmField": "xdm:centimeters",
-                              "tagNumber": 1
-                            },
-                            "inches": {
-                              "title": "Inches",
-                              "type": "number",
-                              "description": "Snowfall in inches",
-                              "meta:xdmType": "number",
-                              "meta:xdmField": "xdm:inches",
-                              "tagNumber": 2
-                            }
-                          },
-                          "type": "object",
-                          "meta:xdmField": "qpfSnow",
-                          "tagNumber": 14
-                        },
-                        "uvIndex": {
-                          "title": "UV Index",
-                          "description": "Maximum UV index for the 12 hour forecast period.",
-                          "type": "integer",
-                          "meta:xdmType": "int",
-                          "meta:xdmField": "uvIndex",
-                          "tagNumber": 15
                         }
                       },
+                      "type": "object",
+                      "meta:xdmField": "xdm:cloudCover",
                       "tagNumber": 1
+                    },
+                    "precipChance": {
+                      "title": "Precipitation Chance",
+                      "description": "Probability that there will be precipitation (percentage).",
+                      "type": "integer",
+                      "meta:xdmType": "int",
+                      "meta:xdmField": "xdm:precipChance",
+                      "tagNumber": 2
+                    },
+                    "precipType": {
+                      "title": "Precipitation Type",
+                      "description": "The form of precipitation that could fall (rain, snow, sleet, etc).",
+                      "type": "string",
+                      "enum": [
+                        "rain",
+                        "snow",
+                        "precip"
+                      ],
+                      "meta:xdmType": "string",
+                      "meta:xdmField": "xdm:precipType",
+                      "tagNumber": 3
+                    },
+                    "qpf": {
+                      "properties": {
+                        "millimeters": {
+                          "title": "Millimeters",
+                          "type": "number",
+                          "description": "Precipitation in millimeters",
+                          "meta:xdmType": "number",
+                          "meta:xdmField": "xdm:millimeters",
+                          "tagNumber": 1
+                        },
+                        "inches": {
+                          "title": "Inches",
+                          "type": "number",
+                          "description": "Precipitation in inches",
+                          "meta:xdmType": "number",
+                          "meta:xdmField": "xdm:inches",
+                          "tagNumber": 2
+                        }
+                      },
+                      "type": "object",
+                      "meta:xdmField": "xdm:qpf",
+                      "tagNumber": 4
+                    },
+                    "relativeHumidity": {
+                      "title": "Relative Humidity",
+                      "description": "The relative humidity of the air, which is defined as the ratio of the amount of water vapor in the air to the amount of vapor required to bring the air to saturation at a constant temperature. Relative humidity is always expressed as a percentage.\nRange - 0 to 100.",
+                      "type": "integer",
+                      "meta:xdmType": "int",
+                      "meta:xdmField": "xdm:relativeHumidity",
+                      "tagNumber": 5
+                    },
+                    "snowRange": {
+                      "title": "Snow Range",
+                      "description": "Bucket of potential snowfall (1-3”, 3-6” etc).",
+                      "type": "string",
+                      "meta:xdmType": "string",
+                      "meta:xdmField": "xdm:snowRange",
+                      "tagNumber": 6
+                    },
+                    "temperature": {
+                      "properties": {
+                        "celsius": {
+                          "title": "Celsius",
+                          "type": "integer",
+                          "description": "Temperature in degrees Celsius",
+                          "meta:xdmType": "int",
+                          "meta:xdmField": "xdm:celsius",
+                          "tagNumber": 1
+                        },
+                        "fahrenheit": {
+                          "title": "Fahrenheit",
+                          "type": "integer",
+                          "description": "Temperature in degrees Fahrenheit",
+                          "meta:xdmType": "int",
+                          "meta:xdmField": "xdm:fahrenheit",
+                          "tagNumber": 2
+                        }
+                      },
+                      "type": "object",
+                      "meta:xdmField": "xdm:temperature",
+                      "tagNumber": 7
+                    },
+                    "temperatureHeatIndex": {
+                      "properties": {
+                        "celsius": {
+                          "title": "Celsius",
+                          "type": "integer",
+                          "description": "Temperature in degrees Celsius",
+                          "meta:xdmType": "int",
+                          "meta:xdmField": "xdm:celsius",
+                          "tagNumber": 1
+                        },
+                        "fahrenheit": {
+                          "title": "Fahrenheit",
+                          "type": "integer",
+                          "description": "Temperature in degrees Fahrenheit",
+                          "meta:xdmType": "int",
+                          "meta:xdmField": "xdm:fahrenheit",
+                          "tagNumber": 2
+                        }
+                      },
+                      "type": "object",
+                      "meta:xdmField": "xdm:temperatureHeatIndex",
+                      "tagNumber": 8
+                    },
+                    "temperatureWindChill": {
+                      "properties": {
+                        "celsius": {
+                          "title": "Celsius",
+                          "type": "integer",
+                          "description": "Temperature in degrees Celsius",
+                          "meta:xdmType": "int",
+                          "meta:xdmField": "xdm:celsius",
+                          "tagNumber": 1
+                        },
+                        "fahrenheit": {
+                          "title": "Fahrenheit",
+                          "type": "integer",
+                          "description": "Temperature in degrees Fahrenheit",
+                          "meta:xdmType": "int",
+                          "meta:xdmField": "xdm:fahrenheit",
+                          "tagNumber": 2
+                        }
+                      },
+                      "type": "object",
+                      "meta:xdmField": "xdm:temperatureWindChill",
+                      "tagNumber": 9
+                    },
+                    "thunderIndex": {
+                      "title": "Thunder Index",
+                      "description": "Index of the probability of thunderstorms impacting an area. 0 (no thunder to 5 (high risk of severe thunderstorms).",
+                      "type": "integer",
+                      "meta:xdmType": "int",
+                      "meta:xdmField": "xdm:thunderIndex",
+                      "tagNumber": 10
+                    },
+                    "windDirection": {
+                      "title": "Wind Direction",
+                      "description": "The magnetic wind direction from which the wind blows expressed in degrees. The magnetic direction varies from 0 to 359 degrees, where 0° indicates the North, 90° the East, 180° the South, 270° the West, and so forth.\nRange - 0<=wind_dire_deg<=350, in 10 degree intervals.",
+                      "type": "integer",
+                      "meta:xdmType": "int",
+                      "meta:xdmField": "xdm:windDirection",
+                      "tagNumber": 11
+                    },
+                    "windSpeed": {
+                      "properties": {
+                        "kilometersPerHour": {
+                          "title": "Kilometers per Hour",
+                          "type": "integer",
+                          "description": "Wind speed in kilometers per hour",
+                          "meta:xdmType": "int",
+                          "meta:xdmField": "xdm:kilometersPerHour",
+                          "tagNumber": 1
+                        },
+                        "milesPerHour": {
+                          "title": "Miles per Hour",
+                          "type": "integer",
+                          "description": "Wind speed in miles per hour",
+                          "meta:xdmType": "int",
+                          "meta:xdmField": "xdm:milesPerHour",
+                          "tagNumber": 2
+                        }
+                      },
+                      "type": "object",
+                      "meta:xdmField": "xdm:windSpeed",
+                      "tagNumber": 12
+                    },
+                    "windGust": {
+                      "properties": {
+                        "kilometersPerHour": {
+                          "title": "Kilometers per Hour",
+                          "type": "integer",
+                          "description": "Wind speed in kilometers per hour",
+                          "meta:xdmType": "int",
+                          "meta:xdmField": "xdm:kilometersPerHour",
+                          "tagNumber": 1
+                        },
+                        "milesPerHour": {
+                          "title": "Miles per Hour",
+                          "type": "integer",
+                          "description": "Wind speed in miles per hour",
+                          "meta:xdmType": "int",
+                          "meta:xdmField": "xdm:milesPerHour",
+                          "tagNumber": 2
+                        }
+                      },
+                      "type": "object",
+                      "meta:xdmField": "xdm:windGust",
+                      "tagNumber": 13
+                    },
+                    "qpfSnow": {
+                      "properties": {
+                        "centimeters": {
+                          "title": "Centimeters",
+                          "type": "number",
+                          "description": "Snowfall in centimeters",
+                          "meta:xdmType": "number",
+                          "meta:xdmField": "xdm:centimeters",
+                          "tagNumber": 1
+                        },
+                        "inches": {
+                          "title": "Inches",
+                          "type": "number",
+                          "description": "Snowfall in inches",
+                          "meta:xdmType": "number",
+                          "meta:xdmField": "xdm:inches",
+                          "tagNumber": 2
+                        }
+                      },
+                      "type": "object",
+                      "meta:xdmField": "xdm:qpfSnow",
+                      "tagNumber": 14
+                    },
+                    "uvIndex": {
+                      "title": "UV Index",
+                      "description": "Maximum UV index for the 12 hour forecast period.",
+                      "type": "integer",
+                      "meta:xdmType": "int",
+                      "meta:xdmField": "xdm:uvIndex",
+                      "tagNumber": 15
                     }
                   },
                   "type": "object",

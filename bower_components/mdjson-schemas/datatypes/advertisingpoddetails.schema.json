@@ -8,12 +8,12 @@
   "description": "Advertising Pod details information.",
   "meta:xdmType": "object",
   "properties": {
-    "adBreakID": {
+    "ID": {
       "title": "Ad Break ID",
       "type": "string",
       "description": "The ID of the ad break.",
       "meta:xdmType": "string",
-      "meta:xdmField": "xdm:adBreakID",
+      "meta:xdmField": "xdm:ID",
       "tagNumber": 1
     },
     "friendlyName": {
@@ -32,12 +32,12 @@
       "meta:xdmField": "xdm:index",
       "tagNumber": 3
     },
-    "second": {
-      "title": "Pod Second",
+    "offset": {
+      "title": "Pod Offset",
       "type": "integer",
       "description": "The offset of the ad break inside the content, in seconds.",
       "meta:xdmType": "int",
-      "meta:xdmField": "xdm:second",
+      "meta:xdmField": "xdm:offset",
       "tagNumber": 4
     }
   },
@@ -45,8 +45,8 @@
   "meta:altId": "_xdm.datatypes.advertisingpoddetails",
   "required": [
     "index",
-    "second",
-    "adBreakID"
+    "offset",
+    "ID"
   ],
   "id": "_xdm.datatypes.advertisingpoddetails"
 }
